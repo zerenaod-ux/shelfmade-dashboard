@@ -25,6 +25,33 @@ def font(size):
         try:return ImageFont.truetype(f,size)
         except Exception:pass
     return ImageFont.load_default()
+
+MOVE=os.environ.get('DOODLES_MOVE')=='1'   # subtle head/shoulder motion driven by the voice (full videos; Shorts can opt in)
+def head_move(img,tt,e,fg,who_active):
+    """Local, feathered warp around each character's head+shoulders: talk bob, tilt and lean for the speaker (strength follows the voice level e), slow breathing sway for the listener."""
+    import cv2
+    arr=np.asarray(img);Hh,Ww=arr.shape[:2];out=arr
+    for who,(cx,cy,S) in fg.items():
+        ph=0.0 if who=='leo' else 1.7
+        if who==who_active:
+            amp=0.30+0.70*min(1.0,e*1.6)
+            th=math.radians(1.8)*amp*math.sin(2*math.pi*1.05*tt+ph);dy=0.022*S*amp*math.sin(2*math.pi*2.3*tt+ph);dx=0.030*S*math.sin(2*math.pi*0.65*tt+ph)
+        else:
+            th=math.radians(0.6)*math.sin(2*math.pi*0.40*tt+ph);dy=0.007*S*math.sin(2*math.pi*0.50*tt+ph);dx=0.008*S*math.sin(2*math.pi*0.30*tt+ph)
+        hx=0.85*S;up=1.0*S;dn=2.1*S
+        x0=int(max(0,cx-hx));x1=int(min(Ww,cx+hx));y0=int(max(0,cy-up));y1=int(min(Hh,cy+dn))
+        if x1-x0<8 or y1-y0<8:continue
+        ys,xs=np.mgrid[y0:y1,x0:x1].astype('float32')
+        wx=0.5*(1+np.cos(np.pi*np.clip((xs-cx)/hx,-1,1)))
+        ry=np.where(ys<cy,(ys-cy)/up,(ys-cy)/dn);wy=0.5*(1+np.cos(np.pi*np.clip(ry,-1,1)))
+        w=wx*wy;px,py=cx,cy+1.3*S
+        a=-th*w;ca,sa=np.cos(a),np.sin(a)
+        rx=xs-px;ry2=ys-py
+        sx=px+ca*rx-sa*ry2-w*dx;sy=py+sa*rx+ca*ry2-w*dy
+        roi=cv2.remap(out,sx,sy,cv2.INTER_LINEAR,borderMode=cv2.BORDER_REFLECT)
+        if out is arr:out=arr.copy()
+        out[y0:y1,x0:x1]=roi
+    return Image.fromarray(out) if out is not arr else img
 COLOR={'leo':(255,214,90),'mia':(127,224,208)}
 FOCUS={'leo':0.30,'mia':0.70,'both':0.50}
 def read_wav(p):
@@ -175,6 +202,7 @@ def render(work):
             align[(int(_s[1]),int(_s[2]))]={'c':np.clip(_c,0,1),'hz':_hz}
         except Exception as ex:print('align file unusable',_p.name,ex,flush=True)
     print('aligned lines:',len(align),flush=True)
+    facegeo={}
     ls_clips={}
     _lj=work/'ls_in'/'jobs.json'
     if (work/'ls_out').is_dir() and _lj.is_file():
@@ -196,6 +224,8 @@ def render(work):
                 _mk=_cv.GaussianBlur(_mk,(0,0),max(1.5,0.16*_j['mw']))
                 ls_clips[(_j['si'],_j['li'])]={'fr':_fr,'mask':_mk,'xy':(_wx0,_wy0)}
             except Exception as ex:print('lip-sync clip unusable',_p.name,ex,flush=True)
+    if MOVE and _lj.is_file():
+        for _j in json.loads(_lj.read_text())['jobs']:facegeo.setdefault(_j['si'],{})[_j['who']]=(_j['x0']+_j['side']/2,_j['y0']+_j['side']/2,float(_j['side']))
     print('cloud lip-sync lines:',len(ls_clips),flush=True)
     def lvl(a,t):
         i=int(t*a['hz'])
@@ -283,6 +313,7 @@ def render(work):
                 _gz=life[_who].gaze(tt,_tw,away=(not active and u>0.6))
                 eyes.apply(_arr,_E,_bl,_gz)
             if _arr is not None:img=Image.fromarray(_arr)
+        if MOVE and facegeo.get(si):img=head_move(img,tt,e,facegeo[si],active['who'] if active else None)
         iw,ih=img.size;bw,bh=iw/z,ih/z
         cx=min(max(fx*iw,bw/2),iw-bw/2);cy=min(max(fy*ih,bh/2),ih-bh/2)
         frame=img.resize((W,H),Image.BICUBIC,box=(cx-bw/2,cy-bh/2,cx+bw/2,cy+bh/2)).convert('RGBA')

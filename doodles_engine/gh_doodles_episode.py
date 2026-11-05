@@ -12,6 +12,7 @@ POOL = DATA / 'episode_pool.json'; USED = DATA / 'episodes_used.json'; OUT = ROO
 W, H, FPS = 1920, 1080, 30
 LAND = os.environ.get('EPISODE_LANDSCAPE') == '1'   # true 16:9 pictures (set by the workflow input)
 if LAND: os.environ['DOODLES_LANDSCAPE'] = '1'
+os.environ.setdefault('DOODLES_MOVE', os.environ.get('EPISODE_MOVE', '1'))   # subtle head/shoulder motion in full videos (render.py)
 TAGS = '#psychology #mindset #animation #relatable #AnimationDoodles'
 FONTS = ['/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf', '/System/Library/Fonts/Supplemental/Arial Bold.ttf',
          '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf', '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']
