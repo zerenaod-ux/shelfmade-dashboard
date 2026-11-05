@@ -38,7 +38,7 @@ def check(txt_norm, d):
         bad.append('need exactly one passage per section')
     narr = ' '.join(s.get('narration', '') for s in secs)
     words = len(narr.split())
-    lo, hi = (950, 1250) if SH else (1100, 1500)
+    lo, hi = (950, 1250) if SH else (1100, 1350)
     if not lo <= words <= hi:
         bad.append('narration has %d words; need %d-%d' % (words, lo, hi))
     nn = norm(narr)
@@ -197,7 +197,7 @@ def _expand(d, bad, lo, hi):
         print('ml_autoscripts: expand failed:', str(e)[:100], flush=True)
         return None
 def _lenfix(tn, window, d, bad):
-    lo, hi = (950, 1250) if SH else (1100, 1500)
+    lo, hi = (950, 1250) if SH else (1100, 1350)
     for _ in range(2):
         if not bad or not all(x.startswith('narration has') for x in bad): break
         d2 = _expand(d, bad, lo, hi)
@@ -280,7 +280,7 @@ def make_one():
             'Choose ONE fresh angle/question from the SOURCE below that is NOT any of these existing hooks: %s.\n'
             'Return JSON: {"public_title": "question-style title | Author", "hook": "one-sentence opening question", "thumb": "3-5 WORD CAPS HEADLINE", '
             '"sections": [{"title":..., "narration":...} x7], "passages": [{"chapter":..., "excerpt":...} x7]}.\n'
-            'Rules: 7 sections, 1100-1500 words TOTAL (about 170 words each), plain spoken English, friendly, original commentary. '
+            'Rules: 7 sections, 1100-1350 words TOTAL (about 165 words each), plain spoken English, friendly, original commentary. '
             'Section i must contain passages[i].excerpt WORD FOR WORD inside double quotation marks, copied exactly from the SOURCE '
             '(at least 8 words, one clause, taken from a stretch of the SOURCE that has NO underscores, quotation marks, square brackets, equals signs or footnote numbers in it). Be honest about limits: say this is an old book, name where later research differs, '
             'do not invent studies or quotes. No underscores, no hashtags, no stage directions.\nSOURCE:\n%s')

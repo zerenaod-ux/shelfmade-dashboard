@@ -11,7 +11,8 @@ def main(n):
  built=load(state,[]);books=[{'id':p.stem} for p in sorted(Path('cinematic-scripts-mindlore').glob('*.json'),key=lambda p:(p.stem.count('-'),p.stem))];skip=set();made=0
  import full_jobs
  Path('out').mkdir(exist_ok=True)
- for i in range(n):
+ for i in range(n*5):
+  if made>=n:break
   done=set(built)|skip
   book=None
   for b in books:
