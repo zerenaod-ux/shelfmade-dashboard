@@ -1,22 +1,25 @@
 {
  "short": {
   "do_more": [
-   "Use physical objects as metaphors in the title like 'Mug' or 'Raincoat' rather than abstract concepts.",
-   "Focus titles on paradoxical or certain everyday situations that spark immediate curiosity.",
-   "Keep the runtime closer to the 'standard' length to allow Leo and Mia enough room for a funny skit."
+   "Pick everyday, tangible objects (mug, raincoat, coffee) as the story anchor",
+   "Frame the concept as a paradox, surprise or certainty violation to spark curiosity",
+   "Start with a visual gag or hook in the first 3\u20115 seconds",
+   "Keep the runtime around 40\u201145 seconds (standard length)",
+   "Use the \"The X Y\" title pattern that names the object and the twist"
   ],
   "avoid": [
-   "Avoid abstract or tech-heavy metaphors like 'Tabs Open' in the title.",
-   "Avoid food-related psychology analogies like 'Soup' and 'Cereal' which underperformed.",
-   "Avoid dry academic definitions without a bizarre relational dynamic between Leo and Mia right at the start."
+   "Abstract or overly academic phrasing in titles",
+   "Choosing niche topics that lack immediate visual comedy potential",
+   "Running videos under 30 seconds unless the joke lands instantly"
   ],
-  "title_style": "Winning titles use concrete everyday objects paired with psychological phenomena to create an intriguing contradiction.",
+  "title_style": "Use a simple \"The [Everyday Object] [Paradox/Contradiction]\" format that promises a surprising twist",
   "next_tests": [
-   "Test a standard-length video titled 'The Alarm Clock Illusion' featuring Leo and Mia.",
-   "Test an object-based paradox title like 'The Blanket Logic' to see if it beats food analogies."
+   "Create tight 30\u2011second versions of the top\u2011performing concepts to see if brevity boosts VPD",
+   "Add a bold, question\u2011style hook in the first 2 seconds (e.g., \"Ever wondered why your mug never empties?\")",
+   "Experiment with titles that pose a direct curiosity question instead of a statement, like \"Why does a raincoat feel certain?\""
   ],
   "n": 7,
-  "best_vpd": 2.83,
+  "best_vpd": 2.77,
   "best_title": "The Mug Paradox"
  },
  "updated": "2026-11-05"

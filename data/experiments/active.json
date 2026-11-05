@@ -1,0 +1,50 @@
+{
+ "shelfmade:short": {
+  "factor": "hook_style",
+  "variants": [
+   "question",
+   "claim"
+  ],
+  "started": "2026-11-05"
+ },
+ "mindlore:short": {
+  "factor": "hook_style",
+  "variants": [
+   "claim",
+   "question"
+  ],
+  "started": "2026-11-05"
+ },
+ "doodles:short": {
+  "factor": "music_energy",
+  "variants": [
+   "calm",
+   "lively"
+  ],
+  "started": "2026-11-05"
+ },
+ "shelfmade:full": {
+  "factor": "music_energy",
+  "variants": [
+   "calm",
+   "lively"
+  ],
+  "started": "2026-11-05"
+ },
+ "mindlore:full": {
+  "factor": "music_energy",
+  "variants": [
+   "calm",
+   "lively"
+  ],
+  "started": "2026-11-05"
+ },
+ "doodles:full": {
+  "factor": "music_energy",
+  "variants": [
+   "calm",
+   "lively"
+  ],
+  "started": "2026-11-05"
+ }
+}
