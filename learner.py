@@ -41,7 +41,7 @@ def one(b, kind, rows):
     k = max(3, len(rows) // 4)
     top, low = rows[:k], rows[-k:]
     prompt = ('You are a short-form video growth analyst. Channel: %s\nFormat being analysed: %s videos only.\nTOP videos (views per day since publishing):\n%s\n\nBOTTOM videos:\n%s\n\n'
-              'Find what the winners share that the losers lack (topic, angle, hook, title wording, length, emotion, format). Be concrete and honest; sample sizes are small, so give patterns, not statistics. '
+              'Find what the winners share that the losers lack (topic, angle, hook, title wording, length, emotion, format; if a variant field exists, tight = about 30 s and standard = about 42 s, so say which length wins). Be concrete and honest; sample sizes are small, so give patterns, not statistics. '
               'Return ONLY JSON: {"do_more":[3-5 short concrete instructions for the script writer],"avoid":[2-4 short instructions],"title_style":"one sentence about hook/title wording that wins","next_tests":[2-3 experiments to try next week]}'
               ) % (BRIEF[b], 'Short (up to 3 minutes)' if kind == 'short' else 'full-length (over 3 minutes)', json.dumps(top, indent=0), json.dumps(low, indent=0))
     j = ask(prompt)
@@ -62,6 +62,13 @@ def brand(b):
             continue
         rows.append(dict(title=v['title'], kind='short' if secs(v['duration']) <= 180 else 'full', vpd=round(v['views'] / max(age, 1), 2), views=v['views'], likes=v['likes'],
                          avgPercent=v.get('avgPercent'), days=round(age, 1)))
+    if b == 'doodles':    # length test: Shorts are written as 'tight' (~30 s) or 'standard' (~42 s); tag each video so the analysis can compare
+        try:
+            pool = {x['title'].strip().lower(): x.get('variant', 'standard') for x in json.loads(Path('data/doodles/story_pool.json').read_text())}
+        except Exception:
+            pool = {}
+        for r in rows:
+            r['variant'] = pool.get(r['title'].strip().lower(), 'standard')
     try:
         doc = json.loads((OUT / (b + '.json')).read_text())
         if 'short' not in doc and 'full' not in doc:

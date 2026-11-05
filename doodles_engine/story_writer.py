@@ -60,7 +60,7 @@ def gemini(prompt):
             t=llm.text(rules,prompt+"\nReturn ONLY the JSON object, no markdown.",True,0.95);m=re.search(r'\{.*\}',t,re.S);return m.group(0) if m else t
     except Exception as e:last=f'{last}; free fallback: {str(e)[:80]}'
     raise SystemExit('Gemini failed: '+str(last))
-def valid(s,taken):
+def valid(s,taken,variant='standard'):
     try:
         assert re.fullmatch(r'[a-z0-9-]{3,40}',s['id']) and s['id'] not in taken
         assert len(s['shots'])==6
@@ -69,7 +69,8 @@ def valid(s,taken):
             for l in sh['lines']:assert l['who'] in('leo','mia') and 3<=len(l['text'].split())<=18
         alll=[l['text'] for sh in s['shots'] for l in sh['lines']]
         assert len(alll[0].split())<=8, 'hook too long'
-        assert 70<=sum(len(t.split()) for t in alll)<=90, 'length'
+        lo,hi=(52,68) if variant=='tight' else (70,90)
+        assert lo<=sum(len(t.split()) for t in alll)<=hi, 'length'
         assert alll[-1].strip()[-1:] in ('?','—','…','-') or alll[-1].strip().endswith('...'), 'no loop'
         s['explain_shot']=int(s.get('explain_shot',3));assert 0<=s['explain_shot']<=5
         return True
@@ -81,10 +82,12 @@ def main():
         if made>=n:break
         topic=next((t for t in TOPICS if re.sub(r'[^a-z]+','-',t.lower()).strip('-')[:20] not in ' '.join(taken)),TOPICS[attempt%len(TOPICS)])
         TOPICS.remove(topic) if topic in TOPICS else None
-        try:s=json.loads(gemini(f'Write a new episode about: {topic}. Already used ids (do not reuse): {sorted(taken)}'))
+        variant='tight' if len(pool)%2==0 else 'standard'   # length test: alternate ~30 s and ~42 s Shorts, the learner compares them
+        vnote=' LENGTH VARIANT (overrides the word count above): the whole video is 52 to 68 spoken words in total (about 28 to 35 seconds), every line punchy, keep the hook, the payoff and the loop.' if variant=='tight' else ''
+        try:s=json.loads(gemini(f'Write a new episode about: {topic}. Already used ids (do not reuse): {sorted(taken)}'+vnote))
         except SystemExit as e:print(e);time.sleep(20);continue
         except Exception as e:print('bad json',e);continue
-        if valid(s,taken):pool.append(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
+        if valid(s,taken,variant):s['variant']=variant;pool.append(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
         else:print('rejected a story (format)')
     print('pool size',len(pool))
 if __name__=='__main__':main()
