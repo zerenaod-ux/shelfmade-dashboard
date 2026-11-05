@@ -157,7 +157,7 @@ def _call(prompt):
     """Google is often busy (503). Go through the models, then wait and go round again, a few times."""
     import time
     last = None
-    for rnd in range(4):
+    for rnd in range(8):   # PATIENT: free providers reset their per-minute limits, so wait and retry
         for model in _models()[:8]:
             if model in _DEAD:
                 continue
@@ -181,7 +181,7 @@ def _call(prompt):
                 return llm.json_call('You are a careful script writer. Reply with JSON only.', prompt)
         except Exception as e:
             print('ml_autoscripts: free fallback failed:', str(e)[:100], flush=True)
-        time.sleep(40 * (rnd + 1))
+        time.sleep(65)
     raise ValueError(last or 'Gemini failed')
 
 
