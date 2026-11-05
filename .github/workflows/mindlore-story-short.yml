@@ -1,5 +1,7 @@
 name: mindlore-story-short
 on:
+  schedule:
+    - cron: '40 13 * * *'   # 8:40 AM Chicago (CDT)
   workflow_dispatch:
     inputs:
       count:
