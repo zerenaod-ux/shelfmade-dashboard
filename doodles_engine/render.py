@@ -360,7 +360,7 @@ def mix(work,silent,wav_path,total,mood):
     except Exception as ex:print('music director skipped:',ex)
     if music:
         flt=(f'[1:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,asplit=2[vo][sc];'
-             f'[2:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,volume=0.9,afade=t=in:st=0:d=0.15,afade=t=out:st={total-0.2:.2f}:d=0.2[mu];'
+             f'[2:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,volume=0.6,afade=t=in:st=0:d=0.15,afade=t=out:st={total-0.2:.2f}:d=0.2[mu];'
              '[mu][sc]sidechaincompress=threshold=0.03:ratio=3:attack=40:release=500[du];[vo][du]amix=inputs=2:duration=first:dropout_transition=2:normalize=0,alimiter=limit=0.95[a]')
         cmd=['ffmpeg','-v','error','-y','-i',str(silent),'-i',str(wav_path),'-stream_loop','-1','-ss',str(_off),'-i',str(music),'-filter_complex',flt,'-map','0:v','-map','[a]']
     else:

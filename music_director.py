@@ -52,7 +52,7 @@ def _ensure(tr):
 
 def _targets(brand, kind, pace):
     """desired (energy, density) from format and speaking pace. Fast talking -> sparser music; slow narration -> more room for melody."""
-    base_e = {'shelfmade': .22, 'mindlore': .42, 'doodles': .65}.get(brand, .35)
+    base_e = {'shelfmade': .22, 'mindlore': .42, 'doodles': .30}   # DOODLES_CALM: was .65 (distracting under dialogue).get(brand, .35)
     if kind == 'short': base_e += .08
     p = pace or 2.5
     dens = max(.15, min(.8, .62 - (p - 2.0) * .2))
@@ -111,6 +111,7 @@ def make_bed(brand, kind, text, total, out_path, mood=None, words=None, key='', 
             if p: files.append((t, p))
         if not files: return None
         g = gain if gain is not None else (0.8 if (pace or 0) > 3.3 else (1.1 if (pace or 3) < 2.2 else 1.0))
+        if brand == 'doodles' and gain is None: g *= 0.55   # DOODLES_CALM: music sits well under the voices
         out = Path(out_path); out.parent.mkdir(parents=True, exist_ok=True)
         cmd = ['ffmpeg', '-v', 'error', '-y']
         rng = random.Random(key or 'x')
