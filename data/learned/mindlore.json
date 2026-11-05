@@ -1,45 +1,49 @@
 {
  "short": {
   "do_more": [
-   "Focus topics directly on observable human behavior and body language (e.g., facial expressions, reading emotions, posture).",
-   "Use direct, clear book/concept titles with structural subtitles (e.g., 'Book Title \u00b7 Sub-topic \u00b7 Reading X') rather than clickbait essay-style titles.",
-   "Keep Short scripts tight (closer to 30 seconds) to maximize completion rate and initial swipe-away retention.",
-   "Hook viewers using universal human experiences (emotions, habits, memory, focus) rather than historical or academic context."
+   "Use classic public\u2011domain psychology titles (e.g., original book name and author) as the video hook",
+   "Keep titles concise, no emojis, and include a clear reference to the source material",
+   "Aim for a ~42\u2011second runtime (standard length) to allow a full, engaging excerpt",
+   "Open with a striking quote or question from the text to capture curiosity",
+   "Maintain a calm, authoritative narration style matching the vintage content"
   ],
   "avoid": [
-   "Avoid meta- commentary titles, clickbait phrasing, or emoji-heavy headlines (e.g., 'The psychology of...', 'here's how \ud83c\udfaf').",
-   "Avoid framing psychology through historical figures, Victorian literature, or academic origins (e.g., Galton, Le Bon, 1890 blueprints).",
-   "Avoid vague or overly broad topics like public speaking or corporate/industrial efficiency."
+   "Clickbait emojis or modern slang in titles and thumbnails",
+   "Cover overly generic trending topics that aren\u2019t tied to classic works",
+   "Produce ultra\u2011short <30\u2011second cuts that truncate the reading",
+   "Use flashy, unrelated visuals that break the vintage aesthetic"
   ],
-  "title_style": "Simple, authoritative book titles paired with specific, intriguing sub-topics (e.g., 'The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5') perform drastically better than generic modern clickbait titles.",
+  "title_style": "Use the original work\u2019s title and author as a clear, authoritative hook\u2014e.g., \u201cThe Expression of the Emotions in Man and Animals \u2013 Chapter\u202f3\u201d.",
   "next_tests": [
-   "Test a 30-second vs. 45-second script using the exact same excerpt from Darwin's 'Expression of the Emotions' to confirm optimal retention length.",
-   "Test framing classic passages as immediate self-discovery tools (e.g., 'Why you express X') versus standard reading formats to see if direct personal relevance boosts shares."
+   "Test tight 30\u2011second edits of the same classic excerpt against the 42\u2011second standard version",
+   "Add an on\u2011screen citation of the original author/book to see if shares increase",
+   "Launch a \u201cReading\u202fX\u201d series without emojis but with consistent branding to gauge binge\u2011ability"
   ],
   "n": 77,
-  "best_vpd": 39.74,
+  "best_vpd": 38.16,
   "best_title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5"
  },
  "full": {
   "do_more": [
-   "Focus on specific, highly actionable psychological processes like observation and interpretation rather than broad psychoanalytic theory.",
-   "Use structured naming conventions like 'Reading X' combined with a clear thematic subtitle to set viewer expectations.",
-   "Target applied and behavioral psychology domains such as industrial efficiency and visible human emotions.",
-   "Keep initial titles punchy and focused on direct cognitive phenomena."
+   "Pick concrete, everyday\u2011life or productivity\u2011focused psychology topics (e.g., decision\u2011making, work habits)",
+   "Start each script with a punchy hook question or bold claim within the first 5 seconds",
+   "Keep the core content tight\u2014aim for ~30\u2011second segments rather than 40\u2011plus seconds",
+   "Add a series tag or episode number in the title to signal continuity",
+   "Use clear, actionable takeaways and visual cues to reinforce key points"
   ],
   "avoid": [
-   "Avoid dense, abstract overarching topics like 'A General Introduction to Psychoanalysis' or 'The Psychology of Revolution' for full-length formats.",
-   "Refrain from vague framing like 'A question worth keeping' which fails to communicate immediate value.",
-   "Avoid long, dry academic titles without a clear behavioral hook."
+   "Abstract or highly academic subjects that lack immediate relevance (e.g., psychoanalysis theory, revolution psychology)",
+   "Long, meandering introductions without a clear hook",
+   "Titles that are vague or lack a series/episode identifier"
   ],
-  "title_style": "Winning titles pair a recognized classic author or domain with a concrete, observable human behavior or specific reading part rather than a generic book title.",
+  "title_style": "Hook with a bold promise or question, then a concise subtitle and a series/episode tag (e.g., \u201cBoost Focus in 30\u202fs \u2013 Guided Reading #2\u201d).",
   "next_tests": [
-   "Test a full-length video focused entirely on practical workplace behavior using the industrial efficiency framework.",
-   "Test titling a psychoanalysis concept around a specific daily habit instead of an academic introduction.",
-   "Compare performance between multi-part reading sequences versus standalone behavioral deep dives."
+   "Compare tight (~30\u202fs) vs. standard (~42\u202fs) video lengths for the same topic",
+   "A/B test titles that start with a question vs. a declarative promise",
+   "Run a series\u2011tagged video against a standalone title to measure binge\u2011watch propensity"
   ],
   "n": 16,
-  "best_vpd": 6.07,
+  "best_vpd": 5.4,
   "best_title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4"
  },
  "updated": "2026-11-05"

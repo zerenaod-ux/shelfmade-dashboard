@@ -1,8 +1,8 @@
 # Weekly experiment report - 2026-11-05
 
-- **shelfmade:short**: NEW experiment hook_style: question vs claim.
-- **mindlore:short**: NEW experiment hook_style: claim vs question.
-- **doodles:short**: NEW experiment music_energy: calm vs lively.
-- **shelfmade:full**: NEW experiment music_energy: calm vs lively.
-- **mindlore:full**: NEW experiment music_energy: calm vs lively.
-- **doodles:full**: NEW experiment music_energy: calm vs lively.
+- **shelfmade:short** hook_style: testing question vs claim, so far n={'question': 0, 'claim': 0} (needs 4 each), day 0.
+- **mindlore:short** hook_style: testing claim vs question, so far n={'claim': 0, 'question': 0} (needs 4 each), day 0.
+- **doodles:short** music_energy: testing calm vs lively, so far n={'calm': 0, 'lively': 0} (needs 4 each), day 0.
+- **shelfmade:full** music_energy: testing calm vs lively, so far n={'calm': 0, 'lively': 0} (needs 4 each), day 0.
+- **mindlore:full** music_energy: testing calm vs lively, so far n={'calm': 0, 'lively': 0} (needs 4 each), day 0.
+- **doodles:full** music_energy: testing calm vs lively, so far n={'calm': 0, 'lively': 0} (needs 4 each), day 0.

@@ -1,25 +1,23 @@
 {
  "short": {
   "do_more": [
-   "Pick everyday, tangible objects (mug, raincoat, coffee) as the story anchor",
-   "Frame the concept as a paradox, surprise or certainty violation to spark curiosity",
-   "Start with a visual gag or hook in the first 3\u20115 seconds",
-   "Keep the runtime around 40\u201145 seconds (standard length)",
-   "Use the \"The X Y\" title pattern that names the object and the twist"
+   "Lead with visual paradoxes or absurd contradictions (like the Mug) rather than dry explanations of cognitive biases.",
+   "Use concrete, everyday objects (mugs, raincoats) to ground abstract psychology concepts instead of generic scenarios.",
+   "Prioritize titles that present a specific, tangible 'thing' or 'situation' over broad questions about brain mechanics."
   ],
   "avoid": [
-   "Abstract or overly academic phrasing in titles",
-   "Choosing niche topics that lack immediate visual comedy potential",
-   "Running videos under 30 seconds unless the joke lands instantly"
+   "Using tech or computer metaphors (e.g., 'tabs open') which seem to underperform compared to physical/prop-based humor.",
+   "Focusing on high-relatability but low-visual-impact topics like 'choice overload' or 'sunk cost' without a strong visual anchor.",
+   "Relying on standard explanatory hooks; the data suggests the 'what is this weird object?' curiosity gap is stronger."
   ],
-  "title_style": "Use a simple \"The [Everyday Object] [Paradox/Contradiction]\" format that promises a surprising twist",
+  "title_style": "Use concrete noun phrases that imply a visual contradiction or specific prop (e.g., 'The [Object] Paradox') rather than abstract concept names or questions.",
   "next_tests": [
-   "Create tight 30\u2011second versions of the top\u2011performing concepts to see if brevity boosts VPD",
-   "Add a bold, question\u2011style hook in the first 2 seconds (e.g., \"Ever wondered why your mug never empties?\")",
-   "Experiment with titles that pose a direct curiosity question instead of a statement, like \"Why does a raincoat feel certain?\""
+   "Create a 'tight' (30s) version of a top-performing concept (e.g., Mug Paradox) to test if shorter runtime boosts VPD.",
+   "Flip a bottom-performing topic (e.g., Sunk Cost) into a visual paradox format and compare performance.",
+   "Test a new topic using a non-tech, physical prop metaphor to see if the 'object-first' hook is the actual driver."
   ],
   "n": 7,
-  "best_vpd": 2.77,
+  "best_vpd": 2.73,
   "best_title": "The Mug Paradox"
  },
  "updated": "2026-11-05"

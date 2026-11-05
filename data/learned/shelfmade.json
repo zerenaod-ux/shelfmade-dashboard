@@ -1,46 +1,47 @@
 {
  "short": {
   "do_more": [
-   "Start with a concise, curiosity\u2011driven hook (question or bold statement) in the first 3\u20115 seconds",
-   "Keep the script tight ~30\u202fseconds, focusing on one clear takeaway",
-   "Use plain language without emojis; let the quote or lesson speak for itself",
-   "Frame titles as a direct promise or challenge, e.g., \u201cYou can turn over a new leaf every hour\u201d",
-   "Repeat a single key phrase or visual cue to aid binge\u2011watching"
+   "Use the specific quote or lesson as the title (e.g., 'Know your enemy'), not a meta-description or summary.",
+   "Focus on tactical, actionable, or stoic-style wisdom (Sun Tzu, practical self-discipline) rather than broad philosophical overviews.",
+   "Keep titles under 15 words where possible; the top performers are concise and direct, while bottom performers are long, narrative-heavy, or use emojis.",
+   "Avoid emojis in titles entirely; the top 5 videos have zero emojis, while the bottom 25 all feature them."
   ],
   "avoid": [
-   "Long, emoji\u2011filled titles that try to cram multiple ideas",
-   "Overly broad or generic summaries that lack a specific hook",
-   "Videos longer than ~40\u202fseconds"
+   "Do not use 'in 60 seconds' or 'summary' framing in the title; it signals low value and feels like a textbook clip.",
+   "Stop using narrative hooks like 'He spent his youth...' or 'The man who...'; the algorithm and audience here prefer the direct insight over the backstory.",
+   "Avoid broad, abstract topics like 'Justice,' 'Morality,' or 'Ideal Government' without a specific, sharp angle or quote to anchor them."
   ],
-  "title_style": "Use a short, punchy statement or question that promises an immediate insight or action, without emojis.",
+  "title_style": "Winning titles are direct, quote-centric, or present a single sharp tactical lesson without emojis or meta-commentary.",
   "next_tests": [
-   "Produce two versions of the same short: one 30\u202fs (tight) and one 42\u202fs (standard) to compare VPD",
-   "Add a direct question hook versus a statement hook and measure impact",
-   "Create titles with and without the word \u201cshorts\u201d to see click\u2011through effect"
+   "Publish 3 Shorts using the exact title format of the top performer ('[Short Quote/Lesson]') with no emojis and compare VPD to the previous week's narrative-style titles.",
+   "Test a 30-second tight cut of a high-performing quote (like Sun Tzu) vs. a 42-second standard cut to see if brevity boosts retention on the 'war material' style topics.",
+   "Create a series of 3 videos on 'Stoic Tactics' using direct quotes as titles to see if a specific sub-niche cluster drives more serial viewing than random book picks."
   ],
   "n": 102,
-  "best_vpd": 27.37,
+  "best_vpd": 24.53,
   "best_title": "You can turn over a new leaf every hour if you choose"
  },
  "full": {
   "do_more": [
-   "Frame titles as direct, provocative questions targeting the viewer's personal certainty (\"Question what you know\", \"How sure are you that you are right\").",
-   "Focus on timeless philosophical frameworks and practical dilemmas rather than broad historical author biographies.",
-   "Keep titles punchy and under 10 words to maximize curiosity gap.",
-   "Lead the first 5 seconds of the script with an immediate existential or cognitive challenge."
+   "Start videos with a direct question that challenges the viewer\u2019s assumptions",
+   "Use concise, curiosity\u2011driven titles (question or bold statement)",
+   "Keep the core hook within the first 30\u202fseconds, aiming for ~30\u202fs tight segments",
+   "Tie classic book ideas to modern everyday dilemmas",
+   "Add a quick visual or text prompt that invites viewers to comment their answer"
   ],
   "avoid": [
-   "Using documentary-style titles that sound like book reports (\"The Essay That Changed American Thinking\").",
-   "Relying solely on famous book titles and author names as the primary hook.",
-   "Making titles overly academic or descriptive."
+   "Long explanatory intros without a hook",
+   "Descriptive titles that read like a summary",
+   "Videos longer than 45\u202fseconds before the main point appears"
   ],
-  "title_style": "Winning titles use direct second-person confrontation and philosophical interrogation rather than historical book summaries.",
+  "title_style": "Ask a punchy, personal question or make a bold claim that links the ancient idea to today\u2019s life",
   "next_tests": [
-   "Test framing Marcus Aurelius and Emerson quotes as direct questions to the viewer instead of biographical overviews.",
-   "Compare a standard 3+ minute deep-dive with an aggressive psychological hook in the first 10 seconds against the current format."
+   "Compare a 30\u2011second tight edit vs a 45\u2011second standard edit for the same quote",
+   "Run two title formats: question vs statement, measure VPD",
+   "Add a \u201cwhat would you do?\u201d prompt at the end and track comment/share rates"
   ],
   "n": 11,
-  "best_vpd": 1.26,
+  "best_vpd": 1.19,
   "best_title": "Question what you know"
  },
  "updated": "2026-11-05"

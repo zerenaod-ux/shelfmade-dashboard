@@ -1,23 +1,24 @@
 {
  "hot_themes": [
-  "Workplace exploitation and feeling undervalued",
-  "Social awkwardness and high-stakes peer interactions",
-  "Overthinking in relationships",
-  "Psychological tricks for handling bullies or critics",
-  "The dark side of turning passions into work"
+  "workplace undervaluation",
+  "crush rejection anxiety",
+  "overthinking and rumination",
+  "people\u2011pleasing & control",
+  "bullying coping strategies",
+  "value vs money"
  ],
  "hook_patterns": [
-  "High-contrast comedic confrontation ('Say THIS when...')",
-  "Exposing corporate or workplace secrets people secretly suspect",
-  "Calling out hyper-relatable flaws like overthinking or people-pleasing"
+  "Start with a relatable question or scenario",
+  "Bold promise of a simple fix or secret",
+  "Use humor\u2011driven contrast to reveal a psychology fact"
  ],
  "ideas_for_us": [
-  "The Overjustification Effect: One friend explains why monetizing their favorite video game ruined it forever, animated through dramatic overreactions.",
-  "The Spotlight Effect: One friend wears an absurd outfit in public, convincing themselves everyone is staring, while the other breaks down the cognitive bias.",
-  "The Scarcity Heuristic: The friends create a fake absurdly limited-edition rock to demonstrate why people buy useless junk they don't need.",
-  "The Pratfall Effect: One friend accidentally trips in front of their crush, and the second friend explains why being clumsy actually made them more likable."
+  "Two friends debate waiting for a text reply, then break down the rumination loop and give a quick mental reset tip.",
+  "Animated office banter where the pals expose why we feel undervalued at work and share a 2\u2011step confidence boost.",
+  "Best\u2011friends react to a \u2018just friends\u2019 confession and explain the brain\u2019s friend\u2011zone response with a funny analogy.",
+  "Friends practice saying \u2018no\u2019 in goofy situations, revealing the psychology of people\u2011pleasing and how it actually builds respect."
  ],
  "updated": "2026-11-05",
  "sample": 46,
- "top_vpd": 100154
+ "top_vpd": 101240
 }
