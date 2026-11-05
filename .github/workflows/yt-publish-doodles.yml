@@ -1,0 +1,37 @@
+name: yt-publish-doodles
+on:
+  schedule:
+    - cron: '35 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: yt-publish-doodles
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Upload approved Doodles full videos to YouTube
+        env:
+          GH_TOKEN: ${{ github.token }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+          PUBLISH_LIVE: ${{ vars.PUBLISH_LIVE_DDFULL }}
+          YT_KIND: ddfull
+          YT_CHANNEL_ID: ${{ vars.YT_CHANNEL_DOODLES }}
+        run: python yt_publish.py
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "publisher-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/state-ddfull.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "no state change"; exit 0; }
+          git commit -qm "yt-publish: state"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done

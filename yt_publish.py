@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 B = Path(__file__).resolve().parent
 REPO = os.environ.get('GITHUB_REPOSITORY', 'zerenaod-ux/shelfmade-dashboard')
 KIND = os.environ.get('YT_KIND', 'mlfull')   # mlfull = MindLore, shfull = ShelfMade
-CHANNEL = 'UC0HKWwSPFOSG12--0dtp5Zw' if KIND == 'mlfull' else 'UCI4dLh_Uz4HrNq7NOetzbxQ'
+CHANNEL = {'mlfull': 'UC0HKWwSPFOSG12--0dtp5Zw', 'shfull': 'UCI4dLh_Uz4HrNq7NOetzbxQ'}.get(KIND) or os.environ.get('YT_CHANNEL_ID', '')   # ddfull = AnimationDoodles: id comes from the repo variable YT_CHANNEL_DOODLES
 LIVE = os.environ.get('PUBLISH_LIVE') == '1'
 STATE = B / 'publish' / ('state-%s.json' % KIND)
 TZ = ZoneInfo('America/Chicago')
@@ -42,7 +42,7 @@ def taken_days(access):
     with http('https://www.googleapis.com/youtube/v3/channels?part=id&mine=true', headers=h) as r:
         ids = [i['id'] for i in json.load(r).get('items', [])]
     if ids != [CHANNEL]:
-        raise RuntimeError('Token is not for the MindLore channel: %s' % ids)
+        raise RuntimeError('Token is not for the expected %s channel: %s' % (KIND, ids))
     pl = 'UU' + CHANNEL[2:]
     with http('https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=25&playlistId=' + pl, headers=h) as r:
         vids = [i['contentDetails']['videoId'] for i in json.load(r).get('items', [])]
@@ -101,16 +101,16 @@ def main():
         with zipfile.ZipFile(z) as f:
             names = [n for n in f.namelist() if not n.startswith('/') and '..' not in Path(n).parts]
             f.extractall(tmp, members=names)
-        vid = sorted(Path(tmp).glob('*_LONGFORM.mp4'))[0]
+        vid = (sorted(Path(tmp).glob('*_LONGFORM.mp4')) or sorted(Path(tmp).glob('final.mp4')))[0]
         res = upload(access, vid, item['title'], item['description'], when)
         state['done'][item['id']] = {'video': res.get('id'), 'at': when, 'day': day.isoformat()}
         STATE.write_text(json.dumps(state, indent=1))     # remember at once: never upload twice
         print('uploaded', res.get('id'), 'scheduled', when)
-        thumb = next(iter(sorted(Path(tmp).glob('*.jpg'))), None)
+        thumb = next(iter(sorted(Path(tmp).glob('*.jpg')) + sorted(Path(tmp).glob('thumbnail.png'))), None)
         if thumb and thumb.stat().st_size <= 2 * 1024 * 1024:
             try:
                 http('https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=%s&uploadType=media' % res['id'], thumb.read_bytes(),
-                     {'Authorization': 'Bearer ' + access, 'Content-Type': 'image/jpeg'}).close()
+                     {'Authorization': 'Bearer ' + access, 'Content-Type': 'image/png' if thumb.suffix == '.png' else 'image/jpeg'}).close()
                 print('thumbnail set')
             except Exception as e:
                 print('thumbnail skipped:', str(e)[:120])

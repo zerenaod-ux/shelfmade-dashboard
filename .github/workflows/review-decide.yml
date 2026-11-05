@@ -25,7 +25,7 @@ jobs:
       - name: Save approvals
         run: |
           git config user.name "review-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -f publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json 2>/dev/null || true
+          git add -f publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json publish/approved-ddfull.json 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -qm "review: approved"
           for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done

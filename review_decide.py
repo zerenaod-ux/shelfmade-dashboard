@@ -27,7 +27,13 @@ def main():
         sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Could not read this video data. Nothing queued.'); return
     d = json.loads(m.group(1))
     if d.get('kind') == 'ddfull':
-        sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Approved. Download final.mp4 from the release and upload it to the Doodles YouTube account (automatic upload comes after the one-time Doodles YouTube authorization).')
+        out = B / 'publish' / 'approved-ddfull.json'
+        cur = json.loads(out.read_text()) if out.is_file() else {'items': []}
+        iid = 'gh%d-ddfull' % num
+        if iid not in {i['id'] for i in cur['items']}:
+            cur['items'].append({'id': iid, 'tag': d['tag'], 'zip': d['zip'], 'title': d['title'], 'description': d['description']})
+        out.parent.mkdir(exist_ok=True); out.write_text(json.dumps(cur, indent=1))
+        sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Approved. Queued for the Doodles YouTube channel (private, scheduled 18:00 Chicago on the next free day; needs the one-time Doodles YouTube authorization).')
         sh('gh', 'issue', 'close', str(num), '--repo', REPO); print('approved ddfull', num); return
     if d.get('kind') in ('mlfull', 'shfull'):
         suf = d['kind']

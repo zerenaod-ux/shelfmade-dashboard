@@ -136,10 +136,10 @@ def main():
                         continue
                     raw = post.read_text(errors='ignore'); lines = [l.strip() for l in raw.splitlines() if l.strip()]
                     title = (lines[0] if lines else z.stem)[:100]
-                    data = {'kind': 'ddfull', 'brand': 'doodles', 'tag': tag, 'zip': z.name, 'title': title, 'description': raw[:4900]}
+                    data = {'kind': 'ddfull', 'brand': 'doodles', 'tag': tag, 'zip': z.name, 'title': title, 'description': (raw.split('\n\n', 1)[1] if '\n\n' in raw else raw)[:4900]}
                     rel = 'https://github.com/%s/releases/tag/%s' % (REPO, tag)
                     body = ('## Review this Doodles FULL video (8-9 min, YouTube)\n\n**Watch:** download `%s` from %s\n\n**Title:** %s\n\n**Post text with chapters:**\n\n%s\n\n---\n'
-                            'Label **approve** = keep it; **skip** = drop it. Upload today is manual from the release (Doodles YouTube account) until the one-time Doodles YouTube authorization is done.\n\n<!--DATA %s DATA-->' % (z.name, rel, title, raw[:3000], json.dumps(data)))
+                            'Label **approve** = keep it; **skip** = drop it. On approve it is uploaded to the Doodles YouTube channel (private, scheduled 18:00 Chicago on the next free day) once the one-time Doodles YouTube authorization is done.\n\n<!--DATA %s DATA-->' % (z.name, rel, title, raw[:3000], json.dumps(data)))
                     (Path(tmp) / 'body.md').write_text(body)
                     out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', 'Review DOODLES FULL: ' + title[:60], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok')
                     seen['issues'].append(out.strip()); seen['titles'].append(title); made += 1
