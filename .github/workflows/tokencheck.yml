@@ -1,0 +1,47 @@
+name: tokencheck
+on:
+  schedule:
+    - cron: '20 14 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test every stored key
+        id: chk
+        continue-on-error: true
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
+          YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+          BUFFER_TOKEN_MINDLORE: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
+          BUFFER_TOKEN_SHELFMADE: ${{ secrets.BUFFER_TOKEN_SHELFMADE }}
+          BUFFER_TOKEN_DOODLES: ${{ secrets.BUFFER_TOKEN_DOODLES }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python tokencheck.py
+      - name: Phone alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OUTCOME: ${{ steps.chk.outcome }}
+        run: |
+          N=$(gh issue list --state open --search "ALERT: token problem in:title" --json number -q '.[0].number' || true)
+          if [ "$OUTCOME" = "failure" ]; then
+            BODY="A stored key stopped working ($(date -u +%F)). Re-connect it:\n\n$(cat alert.md 2>/dev/null)"
+            if [ -z "$N" ]; then gh issue create --title "ALERT: token problem" --body "$(printf "$BODY")"; else gh issue comment "$N" --body "$(printf "$BODY")"; fi
+          elif [ -n "$N" ]; then
+            gh issue close "$N" --comment "All keys work again."
+          fi
+      - name: Fail when a key is dead
+        if: steps.chk.outcome == 'failure'
+        run: exit 1
