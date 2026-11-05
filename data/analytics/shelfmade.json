@@ -1,0 +1,1359 @@
+{
+ "brand": "shelfmade",
+ "channel": "ShelfMade",
+ "subscribers": "9",
+ "collected": "2026-11-05",
+ "note": "analytics API unavailable (HTTP 403): enable YouTube Analytics API in the Google Cloud project",
+ "videos": [
+  {
+   "id": "318wFWISd8c",
+   "title": "Studies In Pessimism",
+   "published": "2026-10-14T20:26:14Z",
+   "duration": "PT26S",
+   "privacy": "public",
+   "views": 405,
+   "likes": 9,
+   "comments": 0
+  },
+  {
+   "id": "BMne6TFjLpk",
+   "title": "Know your enemy",
+   "published": "2026-10-27T03:42:21Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 138,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "VIzfsOTiXG0",
+   "title": "The Art of War: 3 Lessons from Sun Tzu #Shorts",
+   "published": "2026-10-13T02:37:47Z",
+   "duration": "PT19S",
+   "privacy": "public",
+   "views": 103,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "bXvLqJ5TB1I",
+   "title": "You can turn over a new leaf every hour if you choose",
+   "published": "2026-11-01T18:03:56Z",
+   "duration": "PT31S",
+   "privacy": "public",
+   "views": 96,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "YBEF_RwIYLc",
+   "title": "Bring war material with you from home, but forage on the enemy",
+   "published": "2026-10-28T03:52:19Z",
+   "duration": "PT24S",
+   "privacy": "public",
+   "views": 86,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "xgYwXfv-9Gg",
+   "title": "Where is your attention?",
+   "published": "2026-10-28T03:50:46Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 75,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "ny9cec0KpdY",
+   "title": "The Imitation of Christ",
+   "published": "2026-10-15T01:32:23Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 74,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "x3YArPfqBjg",
+   "title": "There are of course some books which we must read, mark, learn, and inwardly digest",
+   "published": "2026-10-20T19:36:24Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 65,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "ZVUS3mUbOaQ",
+   "title": "Up from Slavery",
+   "published": "2026-10-16T01:26:27Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 63,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "LApY3ii5G4Y",
+   "title": "The Republic",
+   "published": "2026-10-14T19:35:05Z",
+   "duration": "PT20S",
+   "privacy": "public",
+   "views": 60,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "pWVzUeSbav0",
+   "title": "That which is necessary in order to learn something else is an Axiom",
+   "published": "2026-10-16T16:28:52Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 55,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "id": "NdyYlv5koBQ",
+   "title": "You must learn to shut off mental steam when you quit work",
+   "published": "2026-10-28T22:00:41Z",
+   "duration": "PT21S",
+   "privacy": "public",
+   "views": 51,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "rhV-RVacC7s",
+   "title": "I think you may like to know something of his person and character",
+   "published": "2026-11-03T01:26:49Z",
+   "duration": "PT39S",
+   "privacy": "public",
+   "views": 50,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "7P-eD_FErv0",
+   "title": "Where is your attention?",
+   "published": "2026-10-18T23:44:02Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 48,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "wxefvX3oShc",
+   "title": "It is for everyone's interest to let this truth sink deep into his mind",
+   "published": "2026-10-25T23:20:34Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 43,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "f4QurVhXoMc",
+   "title": "It had spread words like plaster over the whole field of knowledge",
+   "published": "2026-10-18T23:54:07Z",
+   "duration": "PT20S",
+   "privacy": "public",
+   "views": 41,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "ACA6qTf08r8",
+   "title": "Walden",
+   "published": "2026-10-14T19:35:39Z",
+   "duration": "PT19S",
+   "privacy": "public",
+   "views": 41,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "0OxyEvY3YvU",
+   "title": "Moreover, nothing is good but virtue, and nothing but vice is bad",
+   "published": "2026-11-03T01:26:52Z",
+   "duration": "PT27S",
+   "privacy": "public",
+   "views": 36,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "umzrnh-AmiA",
+   "title": "But take whichever you please to be true; what will this knowledge profit us?",
+   "published": "2026-10-19T19:20:57Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 36,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "zgDUyrNpGOY",
+   "title": "The ancient dinner party where every guest had a different definition of love \ud83c\udf77",
+   "published": "2026-06-19T04:45:42Z",
+   "duration": "PT27S",
+   "privacy": "public",
+   "views": 36,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "G4c2nrTsFNc",
+   "title": "But of what use is his knowledge, if he may not communicate it?",
+   "published": "2026-10-20T19:33:34Z",
+   "duration": "PT21S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "nQlibcVN19o",
+   "title": "Victories after all never",
+   "published": "2026-11-03T01:26:20Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 34,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "jwCDi7yBZQA",
+   "title": "Neon Dreams: Futuristic Journey #shorts",
+   "published": "2025-01-22T05:45:02Z",
+   "duration": "PT34S",
+   "privacy": "public",
+   "views": 33,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "sGfMrVc9aVQ",
+   "title": "Your moral character must be not only pure, but, like Caesar\u2019s wife, unsuspected",
+   "published": "2026-11-03T03:00:44Z",
+   "duration": "PT33S",
+   "privacy": "public",
+   "views": 32,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "hHymwJY9Yi8",
+   "title": "It will facilitate our discussion if we keep all these distinctions well in mind",
+   "published": "2026-10-29T02:00:44Z",
+   "duration": "PT31S",
+   "privacy": "public",
+   "views": 32,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "eFMuACpNNxI",
+   "title": "Knowledge of the enemy\u2019s dispositions can only be obtained from other men",
+   "published": "2026-11-03T01:26:37Z",
+   "duration": "PT20S",
+   "privacy": "public",
+   "views": 31,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "hzAmyueIWyQ",
+   "title": "Everyone quotes Pragmatism. Few get it.",
+   "published": "2026-11-03T01:10:57Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "DA9pXjqUXfQ",
+   "title": "William James spent his career trying to understand what happens inside a human soul \u2728",
+   "published": "2026-06-22T03:50:26Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "b50yfXR5djU",
+   "title": "Question what you know | Acres of Diamonds",
+   "published": "2026-11-03T01:26:53Z",
+   "duration": "PT26S",
+   "privacy": "public",
+   "views": 28,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "I0Q6d7pqqEE",
+   "title": "And how without this knowledge can you support the truth of Christianity?",
+   "published": "2026-10-25T23:19:55Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 26,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "usfd7CGMtGA",
+   "title": "Where is your attention?",
+   "published": "2026-10-23T03:58:25Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "epWlk-Ra3Rs",
+   "title": "Let thus much be accepted as a definition of Knowledge",
+   "published": "2026-10-29T17:02:58Z",
+   "duration": "PT27S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "nuQLBWcyPzQ",
+   "title": "Plato had a warning for you.",
+   "published": "2026-11-04T18:02:59Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "24m9dl3C6uo",
+   "title": "The sluggard and the self-indulgent can have no knowledge of Truth",
+   "published": "2026-10-19T00:37:22Z",
+   "duration": "PT26S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "goI_lzWhMaw",
+   "title": "Where is your attention?",
+   "published": "2026-11-01T02:01:05Z",
+   "duration": "PT33S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "qcKc4yxs1xQ",
+   "title": "Why did the physical sciences never arrive at any true knowledge or make any real progress?",
+   "published": "2026-10-31T17:02:45Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "BiRfxu5fbko",
+   "title": "Why is Bacon's Essays still read today?",
+   "published": "2026-11-04T03:01:07Z",
+   "duration": "PT1M3S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "ElOI_lM9VtE",
+   "title": "Pushing to the Front",
+   "published": "2026-10-16T01:29:22Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "hl6yAlc682w",
+   "title": "How can a man know what is good or best for him, and yet chronically fail to act upon his knowledge?",
+   "published": "2026-10-31T22:01:43Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "88SeG1rSwzc",
+   "title": "Never mind; she can't scratch you while Florrie is holding her",
+   "published": "2026-11-05T03:01:29Z",
+   "duration": "PT28S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "PqOXPgtpPVY",
+   "title": "The Republic \u00b7 Improved replacement",
+   "published": "2026-10-14T20:14:26Z",
+   "duration": "PT18S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "sNiieAkdNpg",
+   "title": "Acres of Diamonds: The Fortune You're Standing On | Russell Conwell",
+   "published": "2026-06-14T18:53:21Z",
+   "duration": "PT2M31S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "ysH8vGfZpVA",
+   "title": "How a man's truth comes to mind, long after we have forgotten all his words!",
+   "published": "2026-10-20T19:27:15Z",
+   "duration": "PT24S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "F8l3ipKPjVU",
+   "title": "When you summon them before your mind's eye, it is no ideal creation that you see",
+   "published": "2026-10-22T00:27:15Z",
+   "duration": "PT24S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "QHacncwEVO4",
+   "title": "Now a prig is a pert fellow who gives himself airs of superior wisdom",
+   "published": "2026-11-01T23:02:04Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "skC7OMC7xjU",
+   "title": "Why fancy that you have all the truth in your keeping?",
+   "published": "2026-10-25T23:21:02Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "FZIiZwUDOCw",
+   "title": "Growth in knowledge and wisdom should be the only indication of our added years",
+   "published": "2026-10-23T04:02:55Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "8_WBSGQzzUs",
+   "title": "How to Live on 24 Hours a Day",
+   "published": "2026-10-16T01:32:24Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "33wZsS1WEs4",
+   "title": "Walden \u00b7 Improved replacement",
+   "published": "2026-10-14T20:27:15Z",
+   "duration": "PT17S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "O_1dpa8rPxM",
+   "title": "Question what you know",
+   "published": "2026-10-22T00:31:00Z",
+   "duration": "PT28S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "lB1khz_EYhg",
+   "title": "And still we must labour on; for the work of self-culture is never finished",
+   "published": "2026-11-03T01:26:46Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "a1cQi88hrm0",
+   "title": "Question what you know",
+   "published": "2026-10-18T23:51:17Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "nw9L0WbCy1s",
+   "title": "Meditations by Marcus Aurelius \u2014 The Stoic Mind That Ruled an Empire",
+   "published": "2026-06-11T16:37:06Z",
+   "duration": "PT8M37S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "qXGDCd5Zme8",
+   "title": "The Art of War by Sun Tzu in 60 Seconds \u2694\ufe0f #shorts",
+   "published": "2026-06-09T03:55:43Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "mX0Yjfx_vsM",
+   "title": "You must have observed this trait of character?",
+   "published": "2026-11-03T01:20:23Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "jTyrD15cQHM",
+   "title": "Bacon S Essays",
+   "published": "2026-10-14T02:39:25Z",
+   "duration": "PT35S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "QETj1OyodGA",
+   "title": "The forgotten success bible that built titans \ud83c\udfd4\ufe0f",
+   "published": "2026-06-13T22:52:46Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "X3V948qB6Ng",
+   "title": "Question what you know",
+   "published": "2026-10-29T23:00:17Z",
+   "duration": "PT6M39S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "mcV0u5NRAvI",
+   "title": "If you would learn to converse, put yourself into positions where you _must_ speak",
+   "published": "2026-10-23T04:05:15Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "1TFujFgiGXw",
+   "title": "Question what you know",
+   "published": "2026-10-19T17:46:19Z",
+   "duration": "PT27S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "-JBCZpJJaj8",
+   "title": "But it is the same with the physical type of wisdom, gold",
+   "published": "2026-10-22T00:23:57Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "rlRbKJij9Po",
+   "title": "You waste 16 of your 24 hours every day \u2014 and you don't even notice it \u23f3",
+   "published": "2026-06-24T02:29:35Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "M_SmNMSpJ0w",
+   "title": "Bertrand Russell asked questions so basic they collapse everything you think you know \u2728",
+   "published": "2026-06-16T04:45:59Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "-AEoyekZses",
+   "title": "The philosopher who said your boss has no right to tell you what to think \ud83d\udee3\ufe0f",
+   "published": "2026-06-16T04:44:52Z",
+   "duration": "PT44S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "hKktePcjLPM",
+   "title": "The book that inspired the American Revolution \ud83d\uddfd",
+   "published": "2026-06-16T02:53:15Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "OeEfBiHYLLc",
+   "title": "Self-Help by Samuel Smiles: The 1859 Book That Changed Everything",
+   "published": "2026-06-16T02:44:16Z",
+   "duration": "PT2M54S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "19NEY5x_reI",
+   "title": "Tao Te Ching: Ancient Wisdom That Changes Everything",
+   "published": "2026-06-23T20:36:41Z",
+   "duration": "PT2M52S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "ZNG5ueUwq1g",
+   "title": "Thus Spake Zarathustra: Nietzsche's Blueprint for Human Greatness",
+   "published": "2026-06-22T03:30:01Z",
+   "duration": "PT2M50S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "E8gvNc6Gyrw",
+   "title": "Self-Reliance by Emerson: The Essay That Changed American Thinking",
+   "published": "2026-06-19T04:39:41Z",
+   "duration": "PT3M8S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "i-XPr9WOSzk",
+   "title": "The teacher whose words still rule half the world \ud83c\udfef",
+   "published": "2026-06-11T01:52:23Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "__rojRBMTyk",
+   "title": "Meditations by Marcus Aurelius in 60 Seconds \ud83d\udcda #shorts",
+   "published": "2026-06-09T03:53:32Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "OD2YHuJCIY4",
+   "title": "How sure are you that you are right | Nicomachean Ethics",
+   "published": "2026-10-23T05:17:30Z",
+   "duration": "PT6M25S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "K6npdyBg4R0",
+   "title": "Where does your time go?",
+   "published": "2026-10-19T19:15:42Z",
+   "duration": "PT6M47S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "GUENFhxiucg",
+   "title": "Question what you see | The Republic",
+   "published": "2026-10-16T17:06:32Z",
+   "duration": "PT6M22S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "SuYd4PbqjtI",
+   "title": "Walden \u00b7 Cinematic full video \u00b7 Visual draft",
+   "published": "2026-10-15T02:40:40Z",
+   "duration": "PT10M42S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "_cPKH-hbmjA",
+   "title": "Tolstoy quit writing fiction to answer the one question he couldn't escape \ud83c\udf05",
+   "published": "2026-06-18T04:23:15Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "g2G4OwxG8dY",
+   "title": "The slave who became Rome's greatest philosopher \u26d3\ufe0f",
+   "published": "2026-06-11T01:53:49Z",
+   "duration": "PT44S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "KG74aA9UEFo",
+   "title": "Where is your attention?",
+   "published": "2026-10-19T19:18:21Z",
+   "duration": "PT21S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "wyjEsb-AHBI",
+   "title": "The rigorously scientific mind may, in truth, easily overshoot the mark",
+   "published": "2026-10-16T16:31:47Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "PMX30vSNJ18",
+   "title": "Acres Of Diamonds",
+   "published": "2026-10-14T00:51:43Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "EZ9BviYODGg",
+   "title": "Is it possible to believe something with zero evidence \u2014 and still be right? \u2728",
+   "published": "2026-06-26T02:15:36Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "1Dx-LYGQH4U",
+   "title": "The most copied book in human history \u2014 and almost no one knows it \ud83d\udd6f\ufe0f",
+   "published": "2026-06-24T02:30:08Z",
+   "duration": "PT30S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "5vbJoMcLLmo",
+   "title": "\ud83d\udcda Tao Te Ching \u2014 in 60 seconds",
+   "published": "2026-06-11T01:50:17Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "IcXafNdEFm8",
+   "title": "\ud83d\udcda Self-Reliance (Essays) \u2014 in 60 seconds",
+   "published": "2026-06-10T16:23:43Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "8Q5tVQ3L3_Y",
+   "title": "As a Man Thinketh by James Allen in 60 Seconds \ud83e\udde0 #shorts",
+   "published": "2026-06-09T03:57:13Z",
+   "duration": "PT41S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "eimcxgtfNtc",
+   "title": "Nietzsche asks a radical question: why do we assume truth is better than untruth?",
+   "published": "2026-10-17T15:03:20Z",
+   "duration": "PT6M25S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "ln4lkoTdlEY",
+   "title": "Who controls your day? | The Enchiridion",
+   "published": "2026-10-16T01:12:30Z",
+   "duration": "PT6M5S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "ATI1EOpt4xc",
+   "title": "Aristotle's answer to 'what is the point of being alive?' is not what you expect \ud83c\udfdb\ufe0f",
+   "published": "2026-06-26T02:14:08Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "Xh4ysniFDCQ",
+   "title": "The self-help book that sold millions but almost no one reads anymore \ud83c\udfd4\ufe0f",
+   "published": "2026-06-26T02:12:55Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "P8tQJnPATFU",
+   "title": "Socrates spent his last hours alive proving that death is nothing to fear \ud83c\udf05",
+   "published": "2026-06-23T21:07:33Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "7_iBPB6szIw",
+   "title": "Is it better to do wrong or to have wrong done to you? Socrates had an answer \ud83c\udfdb\ufe0f",
+   "published": "2026-06-22T03:49:25Z",
+   "duration": "PT26S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "D4eGWbl0qu4",
+   "title": "Cicero said only two things make life worth living \u2014 most people never find either \ud83c\udf07",
+   "published": "2026-06-19T04:45:11Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "dC9xQfgWRBA",
+   "title": "Condemned to death, waiting for execution \u2014 he wrote the most serene book ever \ud83e\ude9f",
+   "published": "2026-06-18T04:24:10Z",
+   "duration": "PT34S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "dvqqYUoMVJ0",
+   "title": "Without laws and government, life is 'solitary, poor, nasty, brutish, and short' \ud83c\udf0a",
+   "published": "2026-06-16T19:35:04Z",
+   "duration": "PT37S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "S7tuoQoLKFQ",
+   "title": "How Rome's greatest mind conquered the fear of death \ud83c\udf07",
+   "published": "2026-06-14T18:24:48Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "Ja2LEc0t50Y",
+   "title": "The Art of War by Sun Tzu: 2,400 Years of Timeless Strategy",
+   "published": "2026-06-13T22:26:36Z",
+   "duration": "PT2M56S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "1ViIE80FGEc",
+   "title": "The book that broke every rule of morality \ud83c\udf11",
+   "published": "2026-06-12T05:41:06Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "ia_HHb2Evgc",
+   "title": "\ud83d\udcda Autobiography of Ben Franklin \u2014 in 60 seconds",
+   "published": "2026-06-10T16:21:56Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "bIeNOgFWT_I",
+   "title": "Put effort into practice",
+   "published": "2026-10-25T23:26:05Z",
+   "duration": "PT6M30S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "GvmQ-OHoVtE",
+   "title": "Apology",
+   "published": "2026-10-14T01:24:29Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "t1nVb95pmt4",
+   "title": "Aristotle designed the ideal government 2,300 years ago \u2014 we still haven't built it \ud83c\udfdb\ufe0f",
+   "published": "2026-06-18T04:21:51Z",
+   "duration": "PT28S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "FbzqyOcCjVE",
+   "title": "Benjamin Franklin's Autobiography: The Blueprint for Self-Made Success",
+   "published": "2026-06-16T19:26:16Z",
+   "duration": "PT2M59S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "L8hFPW6Xcb4",
+   "title": "Aristotle's 2,300-year-old formula for a good life \ud83c\udfdb\ufe0f",
+   "published": "2026-06-13T22:53:31Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "wR1PTMnIblo",
+   "title": "As a Man Thinketh: The Book That Changed How Millions Think",
+   "published": "2026-06-12T22:09:37Z",
+   "duration": "PT8M30S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "vJptFAapDT4",
+   "title": "\ud83d\udcda Self-Help \u2014 in 60 seconds",
+   "published": "2026-06-10T16:19:49Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "HsfBs54QE9Q",
+   "title": "Acres of Diamonds by Russell Conwell in 60 Seconds \ud83d\udc8e #shorts",
+   "published": "2026-06-10T03:36:08Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "QmvgVXfWJT8",
+   "title": "Why does Simple Life still matter?",
+   "published": "2026-11-03T00:57:00Z",
+   "duration": "PT6M16S",
+   "privacy": "private",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "UfLyrBxj34E",
+   "title": "What Men Live By",
+   "published": "2026-10-14T00:51:50Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "S52fhpBuPEU",
+   "title": "The Analects by Confucius: Ancient Wisdom That Still Governs Us",
+   "published": "2026-06-24T20:34:36Z",
+   "duration": "PT2M53S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "A31DF-LrV10",
+   "title": "Born into slavery, whipped as a child \u2014 he ended up advising presidents \ud83c\udf05",
+   "published": "2026-06-24T02:28:48Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "T7anxpbtrAE",
+   "title": "Plato said love is not an emotion \u2014 it is a memory of something you lost \ud83c\udf0a",
+   "published": "2026-06-23T21:08:45Z",
+   "duration": "PT26S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "gtcQeCf1ohw",
+   "title": "The psychology behind every great teacher \u2014 and why most teachers never learn it \ud83d\udcda",
+   "published": "2026-06-23T20:57:11Z",
+   "duration": "PT33S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "yOuCdGMofqY",
+   "title": "The only question that matters: does it actually work? \ud83e\udded",
+   "published": "2026-06-22T03:51:37Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "MHjUyCjOSmY",
+   "title": "The guards left his cell unlocked \u2014 Socrates refused to walk out \ud83c\udf05",
+   "published": "2026-06-19T04:46:28Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "hZZC3IwYDPw",
+   "title": "The Prince by Machiavelli: The Brutal Truth About Power",
+   "published": "2026-06-18T04:12:51Z",
+   "duration": "PT2M54S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "oA_FIauEPd8",
+   "title": "He spent his youth in chaos, addiction, and sin \u2014 then wrote the most honest book of his life \ud83d\udd6f\ufe0f",
+   "published": "2026-06-16T19:34:11Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "UApe_HfuMLE",
+   "title": "What would a perfect world actually look like? Someone tried to write it in 1516 \ud83c\udfdd\ufe0f",
+   "published": "2026-06-16T19:33:29Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "EqrFeBjG0yw",
+   "title": "His friends begged him to run \u2014 he refused and drank the poison \ud83c\udfdb\ufe0f",
+   "published": "2026-06-16T04:43:40Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "5XBu73krAa4",
+   "title": "The man who invented writing honestly about yourself \ud83d\udd6f\ufe0f",
+   "published": "2026-06-16T02:54:36Z",
+   "duration": "PT37S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "TwfGtJZJwzk",
+   "title": "Master your mind, and nothing can touch you \u26d3\ufe0f",
+   "published": "2026-06-16T02:53:55Z",
+   "duration": "PT55S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "drqrS9BBo8o",
+   "title": "The philosopher who said desire is the root of all suffering \ud83c\udf2b\ufe0f",
+   "published": "2026-06-14T18:25:40Z",
+   "duration": "PT46S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "LiiQYEUiVVg",
+   "title": "What is justice? The question that built Western thought \ud83c\udfdb\ufe0f",
+   "published": "2026-06-12T05:40:29Z",
+   "duration": "PT42S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "NrR9I45fH8Q",
+   "title": "He left society for 2 years \u2014 here's what he learned \ud83c\udf32",
+   "published": "2026-06-12T05:39:46Z",
+   "duration": "PT41S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "_ELUY-tobIU",
+   "title": "Thus Spake Zarathustra by Nietzsche in 60 Seconds \u26a1 #shorts",
+   "published": "2026-06-10T03:34:28Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "hkd29aXx644",
+   "title": "The Prince by Machiavelli in 60 Seconds \ud83d\udc51 #shorts",
+   "published": "2026-06-10T03:32:59Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "6z0IxWs-qko",
+   "title": "Why does Mental Efficiency still matter?",
+   "published": "2026-11-05T00:00:18Z",
+   "duration": "PT7M25S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "nrt78mj2OJQ",
+   "title": "What is Ambition and Success really about?",
+   "published": "2026-11-04T22:29:10Z",
+   "duration": "PT6M56S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "cPmS7p3wuaY",
+   "title": "What is Ambition and Success really about?",
+   "published": "2026-11-04T22:18:02Z",
+   "duration": "PT6M56S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "YBzvMjEOTFE",
+   "title": "Franklin had a warning for you.",
+   "published": "2026-11-03T20:51:44Z",
+   "duration": "PT6M53S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "XU8c9iqTGlI",
+   "title": "Think before you fight | The Art of War",
+   "published": "2026-11-03T20:51:36Z",
+   "duration": "PT6M43S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "lX71jEZ8QNg",
+   "title": "Allen would hate how you live.",
+   "published": "2026-11-03T20:51:29Z",
+   "duration": "PT6M45S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "xIxtLasPyV8",
+   "title": "You were taught Meditations wrong.",
+   "published": "2026-11-03T20:51:22Z",
+   "duration": "PT6M49S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "nlzBtL-I8EE",
+   "title": "Listen to what Conwell warned about.",
+   "published": "2026-11-03T20:51:16Z",
+   "duration": "PT6M52S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "rmj2YzElBjM",
+   "title": "Self-Help is not what you think.",
+   "published": "2026-11-03T20:51:07Z",
+   "duration": "PT6M35S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "BNa2CaE60Mc",
+   "title": "When is it rational to believe without proof? \u2728",
+   "published": "2026-06-14T18:22:52Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 1,
+   "comments": 0
+  }
+ ]
+}

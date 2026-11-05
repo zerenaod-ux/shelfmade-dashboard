@@ -1,0 +1,169 @@
+{
+ "brand": "doodles",
+ "channel": "Animation Doodles Studio",
+ "subscribers": "2",
+ "collected": "2026-11-05",
+ "note": "analytics API unavailable (HTTP 403): enable YouTube Analytics API in the Google Cloud project",
+ "videos": [
+  {
+   "id": "vz_gR7GgfU0",
+   "title": "The Confidence Curve",
+   "published": "2026-11-03T18:04:42Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 199,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "id": "EB1TXPXl1FI",
+   "title": "The Planning Fallacy",
+   "published": "2026-10-29T22:01:42Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "5AVFE-hB5Bo",
+   "title": "The Mug Paradox",
+   "published": "2026-11-02T01:00:50Z",
+   "duration": "PT1M16S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "YtiYnC--Tew",
+   "title": "The Spotlight Effect",
+   "published": "2026-10-30T02:00:46Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "Zc1do-DnYrE",
+   "title": "The Rehearsal Trap",
+   "published": "2026-11-02T18:03:22Z",
+   "duration": "PT44S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "NzrDNYTxgjE",
+   "title": "The Jacket He Never Wears",
+   "published": "2026-11-04T03:02:07Z",
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "B1Xmi2FOMmY",
+   "title": "The Price Tag Trap",
+   "published": "2026-11-02T23:02:28Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "FRvSh7VxKvY",
+   "title": "The Sunk Cost Soup",
+   "published": "2026-10-30T17:03:07Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "j9gyJISpFX0",
+   "title": "The Dinner Spiral",
+   "published": "2026-11-03T03:01:54Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "ImJ1YpyYRlM",
+   "title": "Choice Overload Cereal",
+   "published": "2026-10-31T02:01:00Z",
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "UKi9L1WWhCo",
+   "title": "The Raincoat Certainty",
+   "published": "2026-11-02T03:00:43Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "Rqbov1l-rYw",
+   "title": "The Clean Room Trap",
+   "published": "2026-11-04T18:03:01Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "QSe-RWtqWKs",
+   "title": "Why Your Brain Keeps Tabs Open",
+   "published": "2026-10-30T22:01:49Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "pWjmSxnfjV0",
+   "title": "The Pastry Paradox",
+   "published": "2026-11-03T23:02:44Z",
+   "duration": "PT1M14S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "ItInAPU8iXs",
+   "title": "The Sunday Scaries",
+   "published": "2026-11-02T20:02:10Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "SEbuuZbI--8",
+   "title": "The Doomscroll Trap",
+   "published": "2026-11-05T03:01:48Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  }
+ ]
+}

@@ -1,0 +1,1149 @@
+{
+ "brand": "mindlore",
+ "channel": "MindLore",
+ "subscribers": "10",
+ "collected": "2026-11-05",
+ "note": "analytics API unavailable (HTTP 403): enable YouTube Analytics API in the Google Cloud project",
+ "videos": [
+  {
+   "id": "uOqGecmhSTs",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
+   "published": "2026-10-27T01:30:23Z",
+   "duration": "PT1M19S",
+   "privacy": "public",
+   "views": 367,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "TbWW3mHgwVQ",
+   "title": "The Principles Of Psychology",
+   "published": "2026-10-20T19:44:13Z",
+   "duration": "PT48S",
+   "privacy": "public",
+   "views": 305,
+   "likes": 5,
+   "comments": 0
+  },
+  {
+   "id": "mDO-wdlrW9Q",
+   "title": "What IS a thought? The answer will shake you \ud83c\udf0c",
+   "published": "2026-06-14T19:35:25Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 159,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "NOrxJfIaNfE",
+   "title": "Your dreams are sending you coded messages every night \ud83d\udcad",
+   "published": "2026-06-12T04:32:57Z",
+   "duration": "PT40S",
+   "privacy": "public",
+   "views": 109,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "id": "ytsefh1LTFM",
+   "title": "Human Nature And The Social Order",
+   "published": "2026-10-25T23:04:23Z",
+   "duration": "PT48S",
+   "privacy": "public",
+   "views": 85,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "leCHsYO2yWM",
+   "title": "What makes a calm society suddenly snap \ud83c\udf0a",
+   "published": "2026-06-14T19:36:44Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 80,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "8j6NBqbneQ8",
+   "title": "Your deepest instincts are running your life silently \ud83d\udc3e",
+   "published": "2026-06-19T04:30:23Z",
+   "duration": "PT48S",
+   "privacy": "public",
+   "views": 77,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "id": "BV3cQpYluag",
+   "title": "The science of suggestion: your mind accepts more than you think \ud83c\udf00",
+   "published": "2026-06-16T19:46:38Z",
+   "duration": "PT37S",
+   "privacy": "public",
+   "views": 75,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "xPmE_Y7DFjI",
+   "title": "The Expression Of The Emotions",
+   "published": "2026-10-23T04:21:54Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 58,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "id": "_l6TVDbYKnE",
+   "title": "Smart people do stupid things in groups \u2014 science explains why \ud83e\udde0",
+   "published": "2026-06-12T22:32:31Z",
+   "duration": "PT32S",
+   "privacy": "public",
+   "views": 55,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "8p2wahKgCLE",
+   "title": "Smart people do stupid things in groups \u2014 science explains why \ud83e\udde0",
+   "published": "2026-06-12T04:04:49Z",
+   "duration": "PT31S",
+   "privacy": "public",
+   "views": 53,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "j1B3iRBBZZY",
+   "title": "The Theory Of The Leisure Class",
+   "published": "2026-10-22T01:12:07Z",
+   "duration": "PT46S",
+   "privacy": "public",
+   "views": 52,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "4qzeT6uxt3A",
+   "title": "Memory: How to Develop, Train, and Use It",
+   "published": "2026-10-23T04:10:17Z",
+   "duration": "PT48S",
+   "privacy": "public",
+   "views": 49,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "70hQFkZl71o",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 6",
+   "published": "2026-10-30T02:00:45Z",
+   "duration": "PT1M35S",
+   "privacy": "public",
+   "views": 48,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "8BNtkyQFi9Q",
+   "title": "A General Introduction to Psychoanalysis \u00b7 Small mistakes and large meanings \u00b7 Reading 1",
+   "published": "2026-10-19T16:12:09Z",
+   "duration": "PT1M31S",
+   "privacy": "public",
+   "views": 47,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "sdpifdp9fdw",
+   "title": "Why humans laugh \u2014 and what it reveals about the social mind \ud83d\ude04",
+   "published": "2026-06-18T04:53:20Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 44,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "7hPDKOKO5oI",
+   "title": "Most people never learn to think logically. This changes that \ud83c\udfaf",
+   "published": "2026-06-18T04:51:56Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 43,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "id": "0toRAe_otrI",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Opposite postures \u00b7 Reading 2",
+   "published": "2026-10-20T19:36:17Z",
+   "duration": "PT1M29S",
+   "privacy": "public",
+   "views": 37,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "fpl-ZNdJENw",
+   "title": "Applied psychology: understand yourself better \ud83d\udd2c",
+   "published": "2026-06-16T19:45:14Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "YT26hcYPqPA",
+   "title": "You become the person others think you are \u2014 science proves it \ud83e\ude9e",
+   "published": "2026-06-14T19:38:54Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 34,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "NIb4cEtDf24",
+   "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
+   "published": "2026-06-18T04:47:26Z",
+   "duration": "PT2M45S",
+   "privacy": "public",
+   "views": 33,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "V5cZxesdo6w",
+   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 6",
+   "published": "2026-10-30T22:01:13Z",
+   "duration": "PT1M34S",
+   "privacy": "public",
+   "views": 32,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "GzQK0sKMEEs",
+   "title": "Self-consciousness explained \u2014 and how to break free from it \ud83e\ude9f",
+   "published": "2026-06-19T04:31:04Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 31,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "ysnCdNLO_RE",
+   "title": "Your thoughts have more physical force than you realize \u26a1",
+   "published": "2026-06-18T04:52:44Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 30,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "sAcQkvFxvt4",
+   "title": "The Law Of The New Thought",
+   "published": "2026-11-02T03:01:15Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "vTk9JMEjaSQ",
+   "title": "Dream Psychology \u00b7 A historical approach \u00b7 Reading 5",
+   "published": "2026-10-27T01:02:51Z",
+   "duration": "PT1M24S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "up2dlmMxvcg",
+   "title": "Suggestion and Autosuggestion",
+   "published": "2026-10-23T04:16:27Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "EzKs0ef9QYY",
+   "title": "Mental Efficiency",
+   "published": "2026-11-02T18:04:23Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 26,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "CH3X01m7mio",
+   "title": "A psychologist in 1913 predicted how your boss controls you \u26a1",
+   "published": "2026-06-13T20:15:05Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 26,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "SyRDyfv-noQ",
+   "title": "The Art Of Logical Thinking",
+   "published": "2026-11-03T03:01:45Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "uDTf6cqlUUI",
+   "title": "Darwin proved emotions are a survival tool \u2014 not a weakness \ud83d\udd2c",
+   "published": "2026-06-12T22:34:27Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "ZGePr4OW-pk",
+   "title": "Applied Psychology",
+   "published": "2026-11-01T02:00:58Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "QgbUl7uQ00I",
+   "title": "Mind Power",
+   "published": "2026-10-22T01:05:55Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "dRGjYC0-rDM",
+   "title": "The 1890 blueprint for how your mind ACTUALLY works \ud83e\udde0",
+   "published": "2026-06-26T02:30:22Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "EhKFYv-OSsI",
+   "title": "Freud said your dreams reveal what your conscious mind hides \ud83d\udcad",
+   "published": "2026-06-16T19:45:52Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "awhOFsaSkXA",
+   "title": "The Power Of Concentration",
+   "published": "2026-11-01T23:01:50Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "jcbv6oWRsSk",
+   "title": "The Psychology Of Revolution",
+   "published": "2026-10-29T18:03:26Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "GUUj1ASdeLg",
+   "title": "The psychology of why meaningful work feels different from a job \ud83d\udd28",
+   "published": "2026-06-19T04:29:48Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "oKVOydsLxa4",
+   "title": "How We Think by John Dewey: The Hidden Science of Your Mind",
+   "published": "2026-06-23T20:40:26Z",
+   "duration": "PT2M52S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "z9hWcaXaosE",
+   "title": "The law that determines what your mind attracts into your life \ud83d\udcab",
+   "published": "2026-06-22T03:36:30Z",
+   "duration": "PT1M11S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "YG8unHg5xWw",
+   "title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4",
+   "published": "2026-11-02T00:00:18Z",
+   "duration": "PT5M29S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "mC-icbk8HVo",
+   "title": "Psychology and Industrial Efficiency \u00b7 Guided reading",
+   "published": "2026-10-20T20:00:21Z",
+   "duration": "PT6M6S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "AS50bK_ot-Q",
+   "title": "The Crowd by Gustave Le Bon: Why Groups Make Us Lose Our Minds",
+   "published": "2026-06-12T14:30:34Z",
+   "duration": "PT8M12S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "-FD8LOO2XG4",
+   "title": "The Psychology Of Suggestion",
+   "published": "2026-10-31T22:01:42Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "---QS4XG_IY",
+   "title": "Psychology and Industrial Efficiency \u00b7 A task has conditions \u00b7 Reading 6",
+   "published": "2026-10-30T17:02:28Z",
+   "duration": "PT1M27S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "UbddSXgqSCk",
+   "title": "The hidden force controlling every decision you make \ud83c\udf0a",
+   "published": "2026-06-12T04:36:00Z",
+   "duration": "PT1M3S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "xBaiLW-oBrs",
+   "title": "Nobody warns you about Psychology Of Revolution.",
+   "published": "2026-11-04T18:04:07Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "XzN7lxh73iM",
+   "title": "Almost everyone gets How We Think wrong.",
+   "published": "2026-11-04T03:01:51Z",
+   "duration": "PT1M10S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "yza63zQvJqI",
+   "title": "How We Think",
+   "published": "2026-10-31T17:02:59Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "eoD9osLZfz0",
+   "title": "The psychology of The Psychology of Suggestion \ud83e\udde0",
+   "published": "2026-06-12T22:33:30Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "p0PfFIRsQR8",
+   "title": "Instinct And The Unconscious",
+   "published": "2026-10-25T23:31:01Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "qQLRo3ZcWG8",
+   "title": "Your ability to focus is a trainable muscle \u2014 here's how \ud83c\udfaf",
+   "published": "2026-06-16T02:28:33Z",
+   "duration": "PT48S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "oP6N_ffOukE",
+   "title": "The Analysis Of Mind",
+   "published": "2026-10-28T05:19:32Z",
+   "duration": "PT48S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "EPBe9hIGqbc",
+   "title": "Self-consciousness \u00b7 An original reflection",
+   "published": "2026-10-28T05:18:42Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "85Cr6T6bYYo",
+   "title": "Why you buy things you don't need to impress people you don't like \ud83d\udcb8",
+   "published": "2026-06-16T02:32:55Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "VqsCT8boy3s",
+   "title": "Your brain's exact 5-step process for solving any problem \ud83d\udca1",
+   "published": "2026-06-13T20:16:33Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "Kjx5KmP1s7w",
+   "title": "The Interpretation Of Dreams",
+   "published": "2026-10-31T02:01:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "UAe6oPKqTX0",
+   "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
+   "published": "2026-10-27T01:08:55Z",
+   "duration": "PT1M41S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "IuMXZIOMMXc",
+   "title": "Inquiries Into Human Faculty",
+   "published": "2026-10-25T23:21:45Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "u-bjxB9PmgY",
+   "title": "Why you buy things you don't need to impress people you don't like \ud83d\udcb8",
+   "published": "2026-06-26T02:27:52Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "mW0rJ7sZRXU",
+   "title": "\ud83e\udde0 The Analysis of Mind",
+   "published": "2026-06-24T02:14:27Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Z5ifzR5nOV0",
+   "title": "The Instinct Of Workmanship",
+   "published": "2026-11-02T23:01:53Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "VsvMwBHBL_Q",
+   "title": "Read this line from Crowd twice.",
+   "published": "2026-11-03T18:03:06Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "D2NH7kCZ1ac",
+   "title": "Psychology And Industrial Efficiency",
+   "published": "2026-10-28T18:02:03Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "GiSqnmTVkRo",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 1",
+   "published": "2026-10-18T23:27:41Z",
+   "duration": "PT1M34S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "IAVh1Ptv14k",
+   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 1",
+   "published": "2026-10-18T23:07:40Z",
+   "duration": "PT1M25S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "YzBT3NQAcWg",
+   "title": "The 1890 blueprint for how your mind ACTUALLY works \ud83e\udde0",
+   "published": "2026-06-16T02:27:32Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "YJKHtFwKuPw",
+   "title": "Inquiries Into Human Faculty: Galton's Controversial Psychology Classic",
+   "published": "2026-06-22T03:32:46Z",
+   "duration": "PT2M50S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "n1SUdSt-YeE",
+   "title": "The Psychology of Suggestion: How Victorian Streets Shaped Young Minds",
+   "published": "2026-06-16T02:16:36Z",
+   "duration": "PT2M29S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "id": "vmDBuaWt5CQ",
+   "title": "The forgotten psychology of why some people command any room \ud83c\udf99\ufe0f",
+   "published": "2026-06-22T03:34:41Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "3wxpN733RQ8",
+   "title": "Laughter: An Essay on the Meaning of the Comic",
+   "published": "2026-10-29T02:00:46Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "s2csm1mzmRY",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Guided reading",
+   "published": "2026-10-28T23:00:19Z",
+   "duration": "PT6M4S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "ZPz6PwOcS4M",
+   "title": "The Psychology Of Revolution \u00b7 Belief and belonging \u00b7 Reading 1",
+   "published": "2026-10-19T15:54:19Z",
+   "duration": "PT1M32S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "fKBiAsV-AEs",
+   "title": "Psychology and Industrial Efficiency \u00b7 A task has conditions \u00b7 Reading 1",
+   "published": "2026-10-18T23:08:35Z",
+   "duration": "PT1M31S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "sPj_Yg2iX1Q",
+   "title": "The Crowd \u00b7 Emotion travels \u00b7 Reading 1",
+   "published": "2026-10-19T16:05:10Z",
+   "duration": "PT1M24S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "oe3Y1OmzJik",
+   "title": "Dream Psychology",
+   "published": "2026-10-17T16:17:31Z",
+   "duration": "PT6M55S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "VY7tIwmvqfw",
+   "title": "The first man who tried to scientifically measure the mind \ud83d\udcca",
+   "published": "2026-06-13T20:15:47Z",
+   "duration": "PT37S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "3sMZ0_phVOA",
+   "title": "An Introduction to Social Psychology \u00b7 Guided reading",
+   "published": "2026-10-28T05:26:10Z",
+   "duration": "PT5M38S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "r5TYsXKyFPA",
+   "title": "Dream Psychology \u00b7 Guided reading",
+   "published": "2026-10-27T03:42:36Z",
+   "duration": "PT6M17S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "gusPDMxwqh8",
+   "title": "The Crowd",
+   "published": "2026-10-22T01:17:08Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "PyrLZOt60Io",
+   "title": "What makes a calm society suddenly snap \ud83c\udf0a",
+   "published": "2026-06-24T02:06:41Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "vf5N9t4z-x0",
+   "title": "The part of Psychology nobody mentions.",
+   "published": "2026-11-05T03:01:46Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "EMQX3FI6-Lk",
+   "title": "Inquiries into Human Faculty and Its Development \u00b7 Guided reading",
+   "published": "2026-10-30T23:00:10Z",
+   "duration": "PT5M55S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "YTKbRT9tkpo",
+   "title": "The Crowd \u00b7 Guided reading",
+   "published": "2026-10-26T00:15:58Z",
+   "duration": "PT5M37S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "gVJLfRlF6aM",
+   "title": "The Art Of Public Speaking",
+   "published": "2026-10-17T22:28:30Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "8XyhN2mvpeM",
+   "title": "The Psychology of Revolution: How Crowds Really Behave | Le Bon",
+   "published": "2026-06-24T20:38:35Z",
+   "duration": "PT2M44S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "0m0sHfUvubE",
+   "title": "How We Think \u00b7 Guided reading",
+   "published": "2026-10-31T23:00:07Z",
+   "duration": "PT5M44S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "84PQTiIIbHU",
+   "title": "Thought-Force in Business and Everyday Life",
+   "published": "2026-10-20T19:51:29Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "wEEbLtq5Ap0",
+   "title": "Psychology: Briefer Course \u00b7 Attention selects \u00b7 Reading 1",
+   "published": "2026-10-19T16:31:14Z",
+   "duration": "PT6M14S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "fVN4suHCJz0",
+   "title": "Punch Magazine's Savage Parody of Victorian Saga Writing (1891)",
+   "published": "2026-06-16T19:31:25Z",
+   "duration": "PT2M50S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "tdGU19VsfVw",
+   "title": "William James's Psychology: What Victorian Fiction Reveals About the Mind",
+   "published": "2026-06-14T21:22:46Z",
+   "duration": "PT2M40S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "Fmy0woRULvo",
+   "title": "Freud's Introduction to Psychoanalysis: The Book That Changed Psychology",
+   "published": "2026-06-13T22:49:41Z",
+   "duration": "PT2M58S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "8lmhT2wqPj8",
+   "title": "What to do when you cannot tell which road is right | John Dewey",
+   "published": "2026-11-04T00:00:13Z",
+   "duration": "PT7M39S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "cOkUIin-TGA",
+   "title": "Psychology: Briefer Course \u00b7 Guided reading",
+   "published": "2026-10-29T23:00:29Z",
+   "duration": "PT5M38S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "6QgLvzJ8GV8",
+   "title": "A General Introduction to Psychoanalysis \u00b7 Guided reading",
+   "published": "2026-10-18T15:03:19Z",
+   "duration": "PT5M43S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "kBXKZ5Zcmow",
+   "title": "The Psychology Of Revolution \u00b7 Guided reading",
+   "published": "2026-10-23T04:28:01Z",
+   "duration": "PT5M35S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "U7ufylUmlKQ",
+   "title": "The Psychology Of Suggestion \u00b7 Guided reading",
+   "published": "2026-10-22T01:34:47Z",
+   "duration": "PT5M41S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "uQcS30Co6Rs",
+   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 1",
+   "published": "2026-10-18T23:35:32Z",
+   "duration": "PT5M50S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "W7-ZOJoCzSE",
+   "title": "Psychology and Industrial Efficiency: The Book That Changed Work Forever",
+   "published": "2026-06-19T04:29:41Z",
+   "duration": "PT2M56S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "9lec7AhXEP8",
+   "title": "Why dreams feel meaningful and strange at the same time | Freud",
+   "published": "2026-11-05T00:00:17Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "D2VOAPsZqKw",
+   "title": "Can a crowd be better than the people in it? | Gustave Le Bon",
+   "published": "2026-11-04T20:45:23Z",
+   "duration": "PT7M45S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "4qWHmBcx-I4",
+   "title": "How many explanations do you try before you choose one? | John Dewey",
+   "published": "2026-11-03T20:41:14Z",
+   "duration": "PT7M22S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "RwXYKd7gBCE",
+   "title": "Why we believe what impressive people say | Gustave Le Bon",
+   "published": "2026-11-03T20:41:05Z",
+   "duration": "PT7M22S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "EPGy8t4XRkI",
+   "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
+   "published": "2026-11-03T15:49:25Z",
+   "duration": "PT7M24S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "CKZhAbMI7Ek",
+   "title": "What your daily habits were really built from | William James",
+   "published": "2026-11-03T15:49:19Z",
+   "duration": "PT7M7S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Nl1SAPaJEuY",
+   "title": "Are children's dreams really simpler than ours? | Freud",
+   "published": "2026-11-03T15:48:56Z",
+   "duration": "PT7M31S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "4lZoI4B4VbE",
+   "title": "Is a slip of the tongue random, or does it mean something? | Sigmund Freud",
+   "published": "2026-11-03T15:48:49Z",
+   "duration": "PT7M26S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "v9w9gRnfbOQ",
+   "title": "Do you choose your face, or does it choose you? | Charles Darwin",
+   "published": "2026-11-03T15:48:42Z",
+   "duration": "PT7M23S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "MN_liz83nkU",
+   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
+   "published": "2026-11-03T15:48:20Z",
+   "duration": "PT7M24S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-03T06:17:38Z",
+   "duration": "PT7M47S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "23BZecAP85c",
+   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
+   "published": "2026-11-03T00:00:22Z",
+   "duration": "PT5M55S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "qqY1isMJtrM",
+   "title": "The Art Of Public Speaking",
+   "published": "2026-10-17T15:46:07Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "FIMRv-bdI5k",
+   "title": "Your ability to focus is a trainable muscle \u2014 here's how \ud83c\udfaf",
+   "published": "2026-06-26T02:31:24Z",
+   "duration": "PT48S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "I2T4IFkCqyc",
+   "title": "\ud83e\udde0 Human Nature and the Social Order",
+   "published": "2026-06-24T02:12:33Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  }
+ ]
+}
