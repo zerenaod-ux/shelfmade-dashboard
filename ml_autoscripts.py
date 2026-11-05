@@ -258,6 +258,40 @@ def _gate(c, d):
         return ['video builder rejected it: %s' % str(e)[:300]]
 
 
+ML_RULES = ('\nCHANNEL RULES: The FIRST sentence of section 1 narration must be EXACTLY the "hook" value: a complete question or claim of 5-30 words, no greeting, no "welcome", no channel name. '
+            'The "thumb" headline must be 2-5 words and reuse at least two key words that appear in the hook sentence. The last section must NOT say subscribe, thank you for watching or any sign-off.')
+def _gate_ml(c, d):
+    """MindLore: run the real video-builder checks (creative review, visual brief) on the draft before keeping it. Same idea as ShelfMade's _gate."""
+    bid = c['id']; refs = _existing(bid)
+    ref = json.load(open(refs[0])) if refs else {'source_kind': c.get('source_kind') or 'Original commentary on the retained original public-domain text; modern examples identified and limitations discussed; owner review required', 'retained_source_sha256': c.get('sha256', '')}
+    n = 2
+    while (OUT / ('%s-%d.json' % (bid, n))).exists():
+        n += 1
+    f = OUT / ('%s-%d.json' % (bid, n))
+    out = {'book_id': bid, 'title': c['title'], 'author': c['author'], 'public_title': d['public_title'], 'hook': d['hook'], 'thumbnail_headline': d['thumb'], 'source_url': c['canonical_url'],
+           'source_kind': ref['source_kind'], 'retained_source_sha256': ref['retained_source_sha256'],
+           'source_passages': [{'section': i, 'source_chapter': p['chapter'], 'excerpt': p['excerpt']} for i, p in enumerate(d['passages'])],
+           'sections': [{'title': s['title'], 'narration': s['narration']} for s in d['sections']]}
+    f.write_text(json.dumps(out, indent=1, ensure_ascii=False))
+    old = (os.environ.get('BRAND'), os.environ.get('ML_VARIANT'))
+    try:
+        import sys as _sys
+        _sys.path.insert(0, str(B)); os.environ['BRAND'] = 'mindlore'; os.environ['ML_VARIANT'] = str(n)
+        import cinematic_content, visual_admission
+        script = cinematic_content.build(bid)
+        visual_admission.require(script)
+        return []
+    except ImportError as e:
+        print('ml_autoscripts: builder check skipped:', str(e)[:100], flush=True)
+        return []
+    except Exception as e:
+        return ['video builder rejected it: %s' % str(e)[:300]]
+    finally:
+        try: f.unlink()
+        except Exception: pass
+        for k, v in zip(('BRAND', 'ML_VARIANT'), old):
+            if v is None: os.environ.pop(k, None)
+            else: os.environ[k] = v
 def make_one():
     c = _pick_book()
     if not c:
@@ -297,6 +331,8 @@ def make_one():
     except Exception:
         pass
     if not SH:
+        extra += ML_RULES
+    if not SH:
         try:   # MindLore series: everyday question title + radar pattern (ml_series.py)
             import ml_series; extra += ml_series.brief()
         except Exception:
@@ -325,6 +361,8 @@ def make_one():
             if not bad:
                 print('ml_autoscripts: wrote %s.json (passed the video builder checks)' % bid, flush=True)
                 return '%s.json' % bid
+        if not bad and not SH:
+            bad = _gate_ml(c, d)
         if not bad:
             break
         prompt = base % (kind, chan, c['title'], c['author'], prior, window) + extra + '\nYour last attempt failed these checks, fix them: ' + '; '.join(bad[:6])
