@@ -32,7 +32,7 @@ jobs:
       - name: Save new scripts
         run: |
           git config user.name "mindlore-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -f cinematic-scripts-mindlore
+          git add -f cinematic-scripts-mindlore data/mindlore/series.json 2>/dev/null || git add -f cinematic-scripts-mindlore
           git diff --cached --quiet && { echo "nothing new"; exit 0; }
           git commit -qm "MindLore: new scripts written and checked automatically"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((RANDOM % 10 + 5)); done

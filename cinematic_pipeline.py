@@ -192,6 +192,9 @@ def build(book,folder):
  # Caption is the completion marker: incomplete renders never enter the review library.
  description+='\n\n'+(__import__('hashtags').mindlore if os.environ.get('BRAND')=='mindlore' else __import__('hashtags').shelfmade)(script['hook']+' '+script.get('book_title',''),'full')
  description+='\n\n'+footage_director.credit_block(assets,max(0,4800-len(description)-2))
+ if os.environ.get('BRAND')=='mindlore':
+  try:description+=__import__('ml_series').footer(script)
+  except Exception:pass
  (folder/'POST_THIS.txt').write_text('--- TITLE ---\n'+script['public_title']+'\n\n--- DESCRIPTION ---\n'+description)
  footage_director.commit(folder,assets)
  checkpoint.stage(folder,'ready','Draft complete. Owner review is required before publishing.')

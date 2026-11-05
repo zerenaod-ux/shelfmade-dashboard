@@ -272,6 +272,11 @@ def make_one():
         extra += learned.guidance('shelfmade' if SH else 'mindlore', 'full')
     except Exception:
         pass
+    if not SH:
+        try:   # MindLore series: everyday question title + radar pattern (ml_series.py)
+            import ml_series; extra += ml_series.brief()
+        except Exception:
+            pass
     prompt += extra
     for attempt in range(4):
         d = _call(prompt)
@@ -319,6 +324,10 @@ def make_one():
     fn = '%s.json' % bid if SH else '%s-%d.json' % (bid, n)
     (OUT / fn).write_text(json.dumps(out, indent=1, ensure_ascii=False))
     print('ml_autoscripts: wrote %s' % fn, flush=True)
+    try:
+        import ml_series; ml_series.record(fn, d['public_title'])
+    except Exception:
+        pass
     return fn
 
 
