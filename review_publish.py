@@ -94,7 +94,7 @@ def auto_approve(issue_url, brand, d):
     have = {i['id'] for i in cur['items']}
     for plat in ('youtube', 'instagram', 'tiktok'):
         iid = 'gh%d-%s%s' % (num, tagname, plat)
-        if iid not in have:
+        if iid not in have and not any(i['platform'] == plat and i['title'] == d['title'] and i['text'] == d['text'] for i in cur['items']):
             cur['items'].append({'id': iid, 'platform': plat, 'title': d['title'], 'text': d['text'], 'url': d['url']})
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(cur, indent=1))
@@ -151,6 +151,17 @@ def main():
         print('seeded', len(seen['tags']), 'releases')
         return
     import captions
+    import re as _re
+    existing = set()
+    try:   # every video that already has a Review Issue (open or closed): rerunning or racing runs must never open a second one
+        for _b in json.loads(sh('gh', 'issue', 'list', '--repo', REPO, '--state', 'all', '--limit', '500', '--json', 'body', check=False) or '[]'):
+            _m = _re.search(r'<!--DATA (\{.*?\}) DATA-->', _b.get('body') or '', _re.S)
+            if _m:
+                try:
+                    _d = json.loads(_m.group(1)); existing.add(str(_d.get('tag')) + '/' + (str(_d.get('book')) if _d.get('book') else Path(str(_d.get('zip', ''))).stem))
+                except Exception: pass
+    except Exception as _e:
+        print('existing-issue scan skipped:', str(_e)[:100])
     made = 0
     for tag in reversed(tags()):
         if tag in seen['tags']:
@@ -158,6 +169,9 @@ def main():
         with tempfile.TemporaryDirectory() as tmp:
             sh('gh', 'release', 'download', tag, '--repo', REPO, '--pattern', '*.zip', '--dir', tmp, check=False)
             for z in sorted(Path(tmp).glob('*.zip')):
+                if (tag + '/' + z.stem) in existing:
+                    print('already has a Review Issue, skipped:', tag, z.stem)
+                    continue
                 d = Path(tmp) / ('x_' + z.stem)
                 with zipfile.ZipFile(z) as f:
                     if any(n.startswith('/') or '..' in Path(n).parts for n in f.namelist()):

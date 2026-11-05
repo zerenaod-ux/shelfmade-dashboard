@@ -55,6 +55,12 @@ def free_slots(platform, taken, now):
 def main():
     q = load(B / 'publish' / 'queue.json', {'items': []}) if BRAND == 'shelfmade' else {'items': []}
     q['items'] = list(q.get('items', [])) + list(load(B / 'publish' / ('approved%s.json' % SUF), {'items': []}).get('items', []))
+    _k = set(); _u = []
+    for _i in q['items']:   # never schedule the same post twice (same platform, title and text)
+        _t = (_i.get('platform'), _i.get('title'), _i.get('text'))
+        if _t in _k: continue
+        _k.add(_t); _u.append(_i)
+    q['items'] = _u
     state = load(STATE, {'done': {}})
     if LIVE and BRAND == 'shelfmade' and load(B / 'publish' / 'queue.json', {}).get('owner') != 'github':
         print('LIVE but the queue was exported while the Mac still sent posts: waiting for a fresh export (prevents double posts).')
