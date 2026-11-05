@@ -1,0 +1,22 @@
+{
+ "do_more": [
+  "Focus on concrete, quirky physical objects as psychological metaphors like mugs and raincoats.",
+  "Use active, high-stakes narrative scenarios in titles rather than abstract descriptive phrases.",
+  "Keep the emotional tone immediately relatable and slightly absurd from frame one."
+ ],
+ "avoid": [
+  "Using computer science or digital metaphors like open browser tabs that feel dry.",
+  "Using generalized conceptual titles like 'Choice Overload' without a tangible anchor.",
+  "Starting with a slow definition instead of dropping Leo and Mia right into a funny dilemma."
+ ],
+ "title_style": "Winning titles use the format 'The [Specific Everyday Object] [Unusual Noun]', creating immediate curiosity through quirky juxtaposition.",
+ "next_tests": [
+  "Test an object-based paradox about procrastination using a ridiculously specific household item.",
+  "Test an episode featuring a social awkwardness psychology concept tied to a single piece of clothing or food.",
+  "Test starting the hook mid-argument between Leo and Mia over a minor illogical habit."
+ ],
+ "updated": "2026-11-05",
+ "n": 7,
+ "best_vpd": 2.87,
+ "best_title": "The Mug Paradox"
+}

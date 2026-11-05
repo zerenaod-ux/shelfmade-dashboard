@@ -1,0 +1,23 @@
+{
+ "do_more": [
+  "Use direct, profound verbatim book quotes as titles instead of modern summaries or explanations",
+  "Focus on practical, actionable psychological advice and inner mental control (e.g., managing attention, turning over a new leaf)",
+  "Keep titles concise and provocative without relying on emojis or hashtags in the title text",
+  "Lean into philosophical frameworks that speak directly to the viewer's daily self-improvement and mental clarity"
+ ],
+ "avoid": [
+  "Avoid generic 'in 60 seconds' or book review formats which heavily underperform",
+  "Avoid long, descriptive narrative hook titles about historical figures or plot summaries",
+  "Avoid cluttering titles with emojis, numbers like '2,400 Years', and platform tags like #shorts"
+ ],
+ "title_style": "Winning titles frame profound philosophical truths as direct commands or stark psychological realizations using the book's exact verbatim words rather than modern commentary.",
+ "next_tests": [
+  "Test 5 new shorts using pure, hard-hitting 1-sentence book quotes as titles with zero emojis",
+  "Compare the performance of actionable self-improvement quotes against abstract philosophical quotes",
+  "Test removing all hashtags and numbers from current title templates to check impact on algorithmic reach"
+ ],
+ "updated": "2026-11-05",
+ "n": 113,
+ "best_vpd": 27.99,
+ "best_title": "You can turn over a new leaf every hour if you choose"
+}

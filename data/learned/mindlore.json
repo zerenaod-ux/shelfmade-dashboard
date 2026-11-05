@@ -1,0 +1,22 @@
+{
+ "do_more": [
+  "Focus explicitly on classic book titles paired with specific section themes (e.g., Book Name \u00b7 Specific Topic \u00b7 Reading X)",
+  "Use straightforward, academic, and curiosity-driven subject matter directly from public-domain texts rather than modern-style clickbait questions",
+  "Maintain a clear episodic structure (e.g., numbered 'Readings') which signals a binge-able series to the viewer",
+  "Keep titles descriptive of the actual psychological phenomenon or behavioral observation being analyzed in the text"
+ ],
+ "avoid": [
+  "Avoid modern pop-psychology listicle hooks and generic self-help questions (e.g., 'Why you buy things you don't need')",
+  "Avoid using emojis in the video titles and descriptions",
+  "Avoid over-dramatized historical or biographical framing that strays from the core psychological text"
+ ],
+ "title_style": "Winning titles clearly state the source book and specific reading topic in a structured format, whereas losing titles rely on modern internet-style hooks and emojis.",
+ "next_tests": [
+  "Test a brand new classic book series using the exact winning format: '[Book Title] \u00b7 [Specific Concept] \u00b7 Reading 1'",
+  "A/B test a well-performing book title using a straightforward descriptive title versus a modern curiosity-gap hook to verify platform preference"
+ ],
+ "updated": "2026-11-05",
+ "n": 93,
+ "best_vpd": 40.24,
+ "best_title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5"
+}

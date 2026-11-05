@@ -856,16 +856,6 @@
    "comments": 0
   },
   {
-   "id": "vf5N9t4z-x0",
-   "title": "The part of Psychology nobody mentions.",
-   "published": "2026-11-05T03:01:46Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "0m0sHfUvubE",
    "title": "How We Think \u00b7 Guided reading",
    "published": "2026-10-31T23:00:07Z",
@@ -922,6 +912,16 @@
    "duration": "PT2M58S",
    "privacy": "public",
    "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "vf5N9t4z-x0",
+   "title": "The part of Psychology nobody mentions.",
+   "published": "2026-11-05T03:01:46Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 2,
    "likes": 0,
    "comments": 0
   },
