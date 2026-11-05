@@ -30,5 +30,37 @@
   "brand": "doodles",
   "kind": "short",
   "date": "2026-11-05"
+ },
+ "The Sunday Blanket Panic | Leo & Mia #3": {
+  "styles": [
+   "dd_bounce"
+  ],
+  "tracks": [
+   "dd_bounce_04"
+  ],
+  "mood": "dramatic",
+  "pace": 1.57,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-05"
+ },
+ "The Text Wall Retreat | Leo & Mia #4": {
+  "styles": [
+   "dd_bounce"
+  ],
+  "tracks": [
+   "dd_bounce_02"
+  ],
+  "mood": "curious",
+  "pace": 1.7,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-05"
  }
 }
