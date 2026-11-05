@@ -82,9 +82,15 @@ def apply(script,book,edition,evidence_url):
   if q!=old:
    script['points']=[old]+[p for p in script['points'] if p!=q]
  else:
-  kind,hook,loop=make(kind,book['title'],book.get('author'),rng)
+  ai=None
+  if rng.random()<0.8:   # most hooks are now written for the passage (original, learned from viewers); templates stay as fallback and variety
+   try:
+    import ai_hook,os;ai=ai_hook.generate(book['title'],book.get('author'),sentences,'mindlore' if os.environ.get('BRAND')=='mindlore' else 'shelfmade')
+   except Exception:ai=None
+  if ai:kind,(hook,loop)='ai',ai
+  else:kind,hook,loop=make(kind,book['title'],book.get('author'),rng)
   script['points']=[old,*script['points']]
-  script['source_evidence']=[{'chapter':'Opening hook','kind':'editorial hook','excerpt':hook,'source_url':evidence_url,'verification':'Editorial template line. Not a quotation. The source passage follows as lesson 1.'},*script['source_evidence']]
+  script['source_evidence']=[{'chapter':'Opening hook','kind':'editorial hook','excerpt':hook,'source_url':evidence_url,'verification':('Editorial hook written for this passage. Not a quotation.' if kind=='ai' else 'Editorial template line. Not a quotation.')+' The source passage follows as lesson 1.'},*script['source_evidence']]
  script['hook']=hook;script['cta']=loop
  words=hook.rstrip('.?!').split()
  script['thumbnail_headline']=' '.join(words[:5]).rstrip('.,').lower()

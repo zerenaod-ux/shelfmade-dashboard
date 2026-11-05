@@ -52,6 +52,7 @@ jobs:
       - name: Build shorts (never repeat a used passage)
         env:
           CE_VOICE_ENGINE: edge
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           COUNT: ${{ github.event.inputs.count || '3' }}
         run: |
           python gh_build.py "$COUNT"
