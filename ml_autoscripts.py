@@ -196,18 +196,43 @@ def _expand(d, bad, lo, hi):
     except Exception as e:
         print('ml_autoscripts: expand failed:', str(e)[:100], flush=True)
         return None
+def _grow(tn, d, lo, hi):
+    """Lengthen (or trim) each section narration separately toward the target. Keeps every quoted excerpt exactly; a section whose rewrite loses its quote keeps the old text."""
+    secs = d.get('sections') or []; pas = d.get('passages') or []
+    total = sum(len(str(x.get('narration', '')).split()) for x in secs); tgt = ((lo + hi) // 2) // max(1, len(secs))
+    changed = 0
+    for k, sec in enumerate(secs):
+        nar = str(sec.get('narration', '')); n = len(nar.split())
+        if total < lo and n >= tgt: continue
+        if total > hi and n <= tgt: continue
+        ex = str(pas[k].get('excerpt', '')) if k < len(pas) and isinstance(pas[k], dict) else ''
+        prompt = ('Rewrite this ONE section narration (section %d of %d of a spoken video script) to about %d words (it has %d). %s Plain spoken English, short sentences, everyday examples, honest limits. '
+                  '%sKeep every number, researcher and year that is already there; never invent studies, names, quotes or numbers. No underscores or stage directions. Return JSON {"narration": "..."} only.\nNARRATION: %s') % (
+                  k + 1, len(secs), tgt, n, 'Lengthen it with one more concrete example or comparison.' if n < tgt else 'Trim it, keeping the strongest lines.',
+                  ('Keep this quote EXACTLY, word for word, inside double quotation marks: "%s". ' % ex) if ex else '', nar)
+        try:
+            r = _call(prompt)
+        except Exception as e:
+            print('ml_autoscripts: grow section failed:', str(e)[:80], flush=True); continue
+        new = str(r.get('narration', '')).strip() if isinstance(r, dict) else ''
+        if new and (not ex or norm(ex) in norm(new)) and '_' not in new and abs(len(new.split()) - tgt) < abs(n - tgt):
+            total += len(new.split()) - n; sec['narration'] = new; changed += 1
+    return changed
+
+
 def _lenfix(tn, window, d, bad):
     lo, hi = (950, 1250) if SH else (1100, 1350)
-    for _ in range(2):
+    for _ in range(3):
         if not bad or not all(x.startswith('narration has') for x in bad): break
-        d2 = _expand(d, bad, lo, hi)
-        if not d2: break
-        d2.setdefault('public_title', d.get('public_title')); d2.setdefault('hook', d.get('hook')); d2.setdefault('thumb', d.get('thumb'))
-        d2['passages'] = [x if isinstance(x, dict) else {'excerpt': str(x), 'chapter': ''} for x in (d2.get('passages') or d.get('passages') or [])]
-        d2['sections'] = [x if isinstance(x, dict) else {'title': '', 'narration': str(x)} for x in (d2.get('sections') or [])]
-        d2 = force(tn, window, repair(tn, d2)); nb = check(tn, d2)
-        print('ml_autoscripts: expand pass ->', nb[:2] or 'OK', flush=True)
-        d, bad = d2, nb
+        if _grow(tn, d, lo, hi) == 0:
+            d2 = _expand(d, bad, lo, hi)
+            if not d2: break
+            d2.setdefault('public_title', d.get('public_title')); d2.setdefault('hook', d.get('hook')); d2.setdefault('thumb', d.get('thumb')); d2.setdefault('claims', d.get('claims', []))
+            d2['passages'] = [x if isinstance(x, dict) else {'excerpt': str(x), 'chapter': ''} for x in (d2.get('passages') or d.get('passages') or [])]
+            d2['sections'] = [x if isinstance(x, dict) else {'title': '', 'narration': str(x)} for x in (d2.get('sections') or [])]
+            d = d2
+        d = force(tn, window, repair(tn, d)); bad = check(tn, d)
+        print('ml_autoscripts: length pass ->', bad[:2] or 'OK', flush=True)
     return d, bad
 def _existing(bid):
     return sorted(OUT.glob('%s*.json' % bid))
