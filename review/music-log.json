@@ -62,5 +62,89 @@
   "brand": "doodles",
   "kind": "short",
   "date": "2026-11-05"
+ },
+ "Nobody warns you about Sesame and Lilies.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_03"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-05"
+ },
+ "What Mental Efficiency really asks of you.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_04"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-05"
+ },
+ "Stop reading Pleasures of Life like this.": {
+  "styles": [
+   "sm_tender"
+  ],
+  "tracks": [
+   "ace_sm_tender_02"
+  ],
+  "mood": "reflective",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-05"
+ },
+ "You have Dream Psychology backwards.": {
+  "styles": [
+   "ml_deep"
+  ],
+  "tracks": [
+   "ml_deep_01"
+  ],
+  "mood": "mysterious",
+  "pace": null,
+  "exp": {},
+  "brand": "mindlore",
+  "kind": "short",
+  "date": "2026-11-05"
+ },
+ "What is How We Think really about?": {
+  "styles": [
+   "ml_pulse"
+  ],
+  "tracks": [
+   "ml_pulse_03"
+  ],
+  "mood": "curious",
+  "pace": null,
+  "exp": {},
+  "brand": "mindlore",
+  "kind": "short",
+  "date": "2026-11-05"
+ },
+ "Bon had a warning for you.": {
+  "styles": [
+   "ml_lofi"
+  ],
+  "tracks": [
+   "ml_lofi_05"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "mindlore",
+  "kind": "short",
+  "date": "2026-11-05"
  }
 }
