@@ -1048,5 +1048,425 @@
   "density": 0.75,
   "dur": 79.4,
   "source": "synth"
+ },
+ {
+  "id": "ace_ml_deep_01",
+  "file": "ace_ml_deep_01.mp3",
+  "style": "ml_deep",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "mysterious",
+  "bpm": 68,
+  "energy": 0.28,
+  "density": 0.2,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_hype_01",
+  "file": "ace_dd_hype_01.mp3",
+  "style": "dd_hype",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "upbeat",
+  "bpm": 131,
+  "energy": 0.9,
+  "density": 0.75,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_hype_02",
+  "file": "ace_dd_hype_02.mp3",
+  "style": "dd_hype",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "upbeat",
+  "bpm": 131,
+  "energy": 0.9,
+  "density": 0.75,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_tender_02",
+  "file": "ace_sm_tender_02.mp3",
+  "style": "sm_tender",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "reflective",
+  "bpm": 62,
+  "energy": 0.18,
+  "density": 0.26,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_pulse_01",
+  "file": "ace_ml_pulse_01.mp3",
+  "style": "ml_pulse",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "curious",
+  "bpm": 102,
+  "energy": 0.55,
+  "density": 0.55,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_library_02",
+  "file": "ace_sm_library_02.mp3",
+  "style": "sm_library",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "reflective",
+  "bpm": 56,
+  "energy": 0.12,
+  "density": 0.18,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_adventure_02",
+  "file": "ace_sm_adventure_02.mp3",
+  "style": "sm_adventure",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "curious",
+  "bpm": 94,
+  "energy": 0.45,
+  "density": 0.5,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_sneak_01",
+  "file": "ace_dd_sneak_01.mp3",
+  "style": "dd_sneak",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "sneaky",
+  "bpm": 96,
+  "energy": 0.5,
+  "density": 0.4,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_tender_01",
+  "file": "ace_sm_tender_01.mp3",
+  "style": "sm_tender",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "reflective",
+  "bpm": 62,
+  "energy": 0.18,
+  "density": 0.26,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_adventure_01",
+  "file": "ace_sm_adventure_01.mp3",
+  "style": "sm_adventure",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "curious",
+  "bpm": 94,
+  "energy": 0.45,
+  "density": 0.5,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_tension_01",
+  "file": "ace_ml_tension_01.mp3",
+  "style": "ml_tension",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "dramatic",
+  "bpm": 110,
+  "energy": 0.65,
+  "density": 0.5,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_gothic_01",
+  "file": "ace_sm_gothic_01.mp3",
+  "style": "sm_gothic",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "dramatic",
+  "bpm": 54,
+  "energy": 0.3,
+  "density": 0.22,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_chill_02",
+  "file": "ace_dd_chill_02.mp3",
+  "style": "dd_chill",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "warm",
+  "bpm": 83,
+  "energy": 0.38,
+  "density": 0.42,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_tension_02",
+  "file": "ace_ml_tension_02.mp3",
+  "style": "ml_tension",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "dramatic",
+  "bpm": 110,
+  "energy": 0.65,
+  "density": 0.5,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_wonder_02",
+  "file": "ace_ml_wonder_02.mp3",
+  "style": "ml_wonder",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "curious",
+  "bpm": 67,
+  "energy": 0.22,
+  "density": 0.3,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_sneak_02",
+  "file": "ace_dd_sneak_02.mp3",
+  "style": "dd_sneak",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "sneaky",
+  "bpm": 96,
+  "energy": 0.5,
+  "density": 0.4,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_pulse_02",
+  "file": "ace_ml_pulse_02.mp3",
+  "style": "ml_pulse",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "curious",
+  "bpm": 102,
+  "energy": 0.55,
+  "density": 0.55,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_bounce_02",
+  "file": "ace_dd_bounce_02.mp3",
+  "style": "dd_bounce",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "playful",
+  "bpm": 117,
+  "energy": 0.75,
+  "density": 0.65,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_gothic_02",
+  "file": "ace_sm_gothic_02.mp3",
+  "style": "sm_gothic",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "dramatic",
+  "bpm": 54,
+  "energy": 0.3,
+  "density": 0.22,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_chill_01",
+  "file": "ace_dd_chill_01.mp3",
+  "style": "dd_chill",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "warm",
+  "bpm": 83,
+  "energy": 0.38,
+  "density": 0.42,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_library_01",
+  "file": "ace_sm_library_01.mp3",
+  "style": "sm_library",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "reflective",
+  "bpm": 56,
+  "energy": 0.12,
+  "density": 0.18,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_deep_02",
+  "file": "ace_ml_deep_02.mp3",
+  "style": "ml_deep",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "mysterious",
+  "bpm": 68,
+  "energy": 0.28,
+  "density": 0.2,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_candle_02",
+  "file": "ace_sm_candle_02.mp3",
+  "style": "sm_candle",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "warm",
+  "bpm": 66,
+  "energy": 0.2,
+  "density": 0.3,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_quirky_02",
+  "file": "ace_dd_quirky_02.mp3",
+  "style": "dd_quirky",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "playful",
+  "bpm": 106,
+  "energy": 0.6,
+  "density": 0.6,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_sm_candle_01",
+  "file": "ace_sm_candle_01.mp3",
+  "style": "sm_candle",
+  "brands": [
+   "shelfmade"
+  ],
+  "mood": "warm",
+  "bpm": 66,
+  "energy": 0.2,
+  "density": 0.3,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_lofi_02",
+  "file": "ace_ml_lofi_02.mp3",
+  "style": "ml_lofi",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "calm",
+  "bpm": 78,
+  "energy": 0.38,
+  "density": 0.45,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_bounce_01",
+  "file": "ace_dd_bounce_01.mp3",
+  "style": "dd_bounce",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "playful",
+  "bpm": 117,
+  "energy": 0.75,
+  "density": 0.65,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_wonder_01",
+  "file": "ace_ml_wonder_01.mp3",
+  "style": "ml_wonder",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "curious",
+  "bpm": 67,
+  "energy": 0.22,
+  "density": 0.3,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_ml_lofi_01",
+  "file": "ace_ml_lofi_01.mp3",
+  "style": "ml_lofi",
+  "brands": [
+   "mindlore"
+  ],
+  "mood": "calm",
+  "bpm": 78,
+  "energy": 0.38,
+  "density": 0.45,
+  "dur": 75.0,
+  "source": "ace"
+ },
+ {
+  "id": "ace_dd_quirky_01",
+  "file": "ace_dd_quirky_01.mp3",
+  "style": "dd_quirky",
+  "brands": [
+   "doodles"
+  ],
+  "mood": "playful",
+  "bpm": 106,
+  "energy": 0.6,
+  "density": 0.6,
+  "dur": 75.0,
+  "source": "ace"
  }
 ]
