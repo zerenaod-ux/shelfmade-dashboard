@@ -23,14 +23,14 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 1,
-   "last": 1
+   "uses": 2,
+   "last": 7
   },
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 1,
-   "last": 2
+   "uses": 2,
+   "last": 8
   },
   {
    "id": "gerald",
@@ -119,6 +119,26 @@
    "title": "The Feather Duster Detour",
    "concept": "PRODUCTIVE PROCRASTINATION",
    "gag": "scoreboard",
+   "callback": true,
+   "date": "2026-11-05"
+  },
+  {
+   "n": 7,
+   "kind": "short",
+   "id": "variable-reward-phone",
+   "title": "The Infinite Refresh",
+   "concept": "VARIABLE REWARD",
+   "gag": "battery",
+   "callback": false,
+   "date": "2026-11-05"
+  },
+  {
+   "n": 8,
+   "kind": "short",
+   "id": "catastrophizing-job-ai",
+   "title": "The Robot Takeover",
+   "concept": "CATASTROPHIZING",
+   "gag": "minute",
    "callback": true,
    "date": "2026-11-05"
   }
