@@ -8,6 +8,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
 import story_writer as sw, stories
+sw.KIND = 'full'   # this module writes episodes: use the full-video viewer notes
 POOL = ROOT / 'data/doodles/episode_pool.json'
 import os
 SCENES = int(os.environ.get('EPISODE_SCENES', '4'))   # 4 scenes = about 3:40 with cards (owner decision 2026-11-04: 3-4 min for now)

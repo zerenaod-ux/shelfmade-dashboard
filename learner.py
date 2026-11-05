@@ -28,6 +28,24 @@ def ask(prompt):
         return None
 
 
+def one(b, kind, rows):
+    rows = [r for r in rows if r['kind'] == kind]
+    if len(rows) < MINVIDS:
+        return None, 'only %d %s videos (need %d)' % (len(rows), kind, MINVIDS)
+    rows.sort(key=lambda r: -r['vpd'])
+    k = max(3, len(rows) // 4)
+    top, low = rows[:k], rows[-k:]
+    prompt = ('You are a short-form video growth analyst. Channel: %s\nFormat being analysed: %s videos only.\nTOP videos (views per day since publishing):\n%s\n\nBOTTOM videos:\n%s\n\n'
+              'Find what the winners share that the losers lack (topic, angle, hook, title wording, length, emotion, format). Be concrete and honest; sample sizes are small, so give patterns, not statistics. '
+              'Return ONLY JSON: {"do_more":[3-5 short concrete instructions for the script writer],"avoid":[2-4 short instructions],"title_style":"one sentence about hook/title wording that wins","next_tests":[2-3 experiments to try next week]}'
+              ) % (BRIEF[b], 'Short (up to 3 minutes)' if kind == 'short' else 'full-length (over 3 minutes)', json.dumps(top, indent=0), json.dumps(low, indent=0))
+    j = ask(prompt)
+    if not j:
+        return None, 'Gemini unavailable'
+    j.update(n=len(rows), best_vpd=top[0]['vpd'], best_title=top[0]['title'])
+    return j, 'learned from %d %s videos; best: %s (%.1f views/day)' % (len(rows), kind, top[0]['title'][:50], top[0]['vpd'])
+
+
 def brand(b):
     d = json.loads((A / (b + '.json')).read_text())
     rows = []
@@ -39,21 +57,22 @@ def brand(b):
             continue
         rows.append(dict(title=v['title'], kind='short' if secs(v['duration']) <= 180 else 'full', vpd=round(v['views'] / max(age, 1), 2), views=v['views'], likes=v['likes'],
                          avgPercent=v.get('avgPercent'), days=round(age, 1)))
-    if len(rows) < MINVIDS:
-        return 'only %d usable videos (need %d): keep previous notes' % (len(rows), MINVIDS)
-    rows.sort(key=lambda r: -r['vpd'])
-    k = max(3, len(rows) // 4)
-    top, low = rows[:k], rows[-k:]
-    prompt = ('You are a short-form video growth analyst. Channel: %s\nTOP videos (views per day since publishing):\n%s\n\nBOTTOM videos:\n%s\n\n'
-              'Find what the winners share that the losers lack (topic, angle, hook, title wording, length, emotion, format). Be concrete and honest; sample sizes are small, so give patterns, not statistics. '
-              'Return ONLY JSON: {"do_more":[3-5 short concrete instructions for the script writer],"avoid":[2-4 short instructions],"title_style":"one sentence about hook/title wording that wins","next_tests":[2-3 experiments to try next week]}'
-              ) % (BRIEF[b], json.dumps(top, indent=0), json.dumps(low, indent=0))
-    j = ask(prompt)
-    if not j:
-        return 'Gemini unavailable: keep previous notes'
-    j.update(updated=str(NOW.date()), n=len(rows), best_vpd=top[0]['vpd'], best_title=top[0]['title'])
-    (OUT / (b + '.json')).write_text(json.dumps(j, indent=1))
-    return 'learned from %d videos; best: %s (%.1f views/day)' % (len(rows), top[0]['title'][:50], top[0]['vpd'])
+    try:
+        doc = json.loads((OUT / (b + '.json')).read_text())
+        if 'short' not in doc and 'full' not in doc:
+            doc = {}          # old single-notes format: replaced
+    except Exception:
+        doc = {}
+    msgs = []
+    for kind in ('short', 'full'):
+        j, m = one(b, kind, rows)
+        msgs.append(m)
+        if j:
+            doc[kind] = j
+    doc['updated'] = str(NOW.date())
+    if doc.get('short') or doc.get('full'):
+        (OUT / (b + '.json')).write_text(json.dumps(doc, indent=1))
+    return ' | '.join(msgs)
 
 
 bad = []

@@ -263,7 +263,7 @@ def make_one():
                  'The "thumb" headline must reuse at least two key words that appear in that hook sentence. The last section must NOT say subscribe, thank you for watching or any sign-off. Every excerpt must start at the beginning of a sentence (capital letter) and be a complete clause.')
     try:   # what our real viewers watch (learner.py): angle/hook guidance, refreshed twice a week
         import learned
-        extra += learned.guidance('shelfmade' if SH else 'mindlore')
+        extra += learned.guidance('shelfmade' if SH else 'mindlore', 'full')
     except Exception:
         pass
     prompt += extra

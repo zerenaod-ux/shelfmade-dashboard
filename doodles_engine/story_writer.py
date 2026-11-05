@@ -30,10 +30,11 @@ def models():
     except Exception as e:print('model list failed:',str(e)[:80])
     if not _MODELS:_MODELS.extend(['gemini-2.5-flash','gemini-2.5-flash-lite','gemini-2.0-flash','gemini-flash-latest','gemini-flash-lite-latest','gemma-3-27b-it','gemma-3-12b-it'])
     print('story models:',_MODELS[:5],flush=True);return _MODELS
+KIND='short'   # episode_writer switches this to 'full' while it writes an episode
 def _lg():
     try:   # what our real viewers watch (learner.py); empty when not available
         sys.path.insert(0,str(HERE.parent)); import learned
-        return learned.guidance('doodles')
+        return learned.guidance('doodles',KIND)
     except Exception:
         return ''
 def gemini(prompt):

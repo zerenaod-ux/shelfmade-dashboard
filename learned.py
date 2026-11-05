@@ -3,11 +3,14 @@ import json
 from pathlib import Path
 
 
-def guidance(brand):
+def guidance(brand, kind='short'):
     for base in (Path('data/learned'), Path(__file__).resolve().parent / 'data' / 'learned', Path(__file__).resolve().parent.parent / 'data' / 'learned'):
         f = base / (brand + '.json')
         try:
             d = json.loads(f.read_text())
+            top = d.get('updated', '?')
+            d = d.get(kind) or d.get('full' if kind == 'short' else 'short') or d     # other format's notes when this one has none yet
+            d.setdefault('updated', top)
             if d.get('do_more') or d.get('avoid'):
                 t = '\nLEARNED FROM OUR REAL VIEWERS (updated %s, based on %s videos): ' % (d.get('updated', '?'), d.get('n', '?'))
                 if d.get('do_more'):
