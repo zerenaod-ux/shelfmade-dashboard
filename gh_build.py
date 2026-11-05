@@ -19,6 +19,7 @@ def main(count):
   if made>=count or tried>=count*8:break
   b=books[i];tried+=1;bid=b['id'];folder=out/bid
   if folder.exists():shutil.rmtree(folder)
+  os.environ['SHELFMADE_MUSIC_DIR']=str(folder/'.render')
   print('=== Trying book',bid,b['title'],flush=True)
   try:r=subprocess.run([sys.executable,'worker.py',json.dumps(b),'1',str(folder)],capture_output=True,text=True,timeout=1800)
   except subprocess.TimeoutExpired:print('timeout',bid);continue

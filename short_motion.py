@@ -11,6 +11,14 @@ def music_asset():
  """Use the same owner-configured bed as full videos; fail clearly if it is absent."""
  import cinematic_pipeline as cinema,os
  key=os.environ.get('SHELFMADE_MUSIC_KEY','')
+ try:   # Music Director: bed chosen for this video's mood/brand (falls back to the old track on any problem)
+  _d=os.environ.get('SHELFMADE_MUSIC_DIR')
+  if _d and not os.environ.get('CE_DISABLE_MUSIC'):
+   import music_director as _md
+   Path(_d).mkdir(parents=True,exist_ok=True)
+   _i=_md.make_bed(os.environ.get('BRAND') or 'shelfmade','short',key or _d,62,Path(_d)/'bed.wav',key=key or _d)
+   if _i:return Path(_i['path'])
+ except Exception as _e:print('short music director skipped:',_e,flush=True)
  tracks=sorted(p for p in (BASE/'music').glob('*.mp3') if p.is_file() and not p.is_symlink())
  if key and tracks:return tracks[int(hashlib.sha256(key.encode()).hexdigest(),16)%len(tracks)]  # a different mood per video
  configured=Path(cinema.settings().get('music_path','')).expanduser()
