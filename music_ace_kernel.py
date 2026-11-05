@@ -21,6 +21,8 @@ for line in open(T + '/ACE/requirements.txt').read().splitlines():
     if not pipi(line):
         if not pipi(name): failed.append(line)
 SETUP.append('requirements failed: %s' % failed)
+SETUP.append('upgrade: %s' % pipi('huggingface_hub>=0.30') )
+for pkg in ('transformers', 'diffusers', 'accelerate', 'peft'): SETUP.append('upgrade %s: %s' % (pkg, pipi('-U ' + pkg) if False else subprocess.run([sys.executable, '-m', 'pip', 'install', '-q', '-U', pkg], capture_output=True, text=True).returncode == 0))
 SETUP.append(sh(f'cd {T}/ACE && {sys.executable} -m pip install -q --no-deps -e . 2>&1 | tail -3').stdout[-300:])
 import importlib; importlib.invalidate_caches()
 sys.path.insert(0, T + '/ACE')
