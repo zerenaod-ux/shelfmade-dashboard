@@ -3,6 +3,23 @@ import json
 from pathlib import Path
 
 
+def trending(brand):
+    for base in (Path('data/trends'), Path(__file__).resolve().parent / 'data' / 'trends', Path(__file__).resolve().parent.parent / 'data' / 'trends'):
+        try:
+            d = json.loads((base / (brand + '.json')).read_text())
+            t = ''
+            if d.get('hot_themes'):
+                t += 'RISING THEMES THIS WEEK in our niche: ' + ' | '.join(d['hot_themes'][:6]) + '. '
+            if d.get('hook_patterns'):
+                t += 'HOOK PATTERNS getting views now: ' + ' | '.join(d['hook_patterns'][:3]) + '. '
+            if d.get('ideas_for_us'):
+                t += 'IDEAS TO TRY: ' + ' | '.join(d['ideas_for_us'][:4]) + '. '
+            return ('\nTRENDING NOW (updated %s; inspiration only, never copy titles, scripts or footage): ' % d.get('updated', '?') + t + '\n') if t else ''
+        except Exception:
+            continue
+    return ''
+
+
 def guidance(brand, kind='short'):
     for base in (Path('data/learned'), Path(__file__).resolve().parent / 'data' / 'learned', Path(__file__).resolve().parent.parent / 'data' / 'learned'):
         f = base / (brand + '.json')
@@ -19,7 +36,7 @@ def guidance(brand, kind='short'):
                     t += 'DO LESS: ' + ' | '.join(d['avoid'][:5]) + '. '
                 if d.get('title_style'):
                     t += 'TITLE/HOOK STYLE THAT WORKS: ' + d['title_style'] + '. '
-                return t + 'Apply this, but keep every other rule above.\n'
+                return t + 'Apply this, but keep every other rule above.\n' + trending(brand)
         except Exception:
             continue
-    return ''
+    return trending(brand)

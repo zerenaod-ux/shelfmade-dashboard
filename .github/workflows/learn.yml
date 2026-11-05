@@ -33,11 +33,12 @@ jobs:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: |
           python analytics.py
+          python trends.py
           python learner.py
       - name: Save results
         run: |
           git config user.name "studio-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -f data/analytics data/learned
+          git add -f data/analytics data/trends data/learned
           git diff --cached --quiet || { git commit -qm "twice-weekly learning: analytics + viewer notes"; for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 5; done; }
       - name: Phone alert issue
         env:
