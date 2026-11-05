@@ -1,4 +1,4 @@
-"""Mac driver: composes music on the FREE Kaggle GPU (account minddoodles) with ACE-Step.
+"""Driver (runs on GitHub Actions, workflow music-ace.yml; no Mac needed): composes music on the FREE Kaggle GPU (account minddoodles) with ACE-Step.
   python3 music_ace.py test   -> 3 short test tracks + speed report (decides if the free GPU is fast enough)
   python3 music_ace.py full [per_style] -> a full AI-composed library merged into music-lib/index.json (then run push-music2.sh)"""
 import json, os, shutil, subprocess, sys, time
@@ -60,7 +60,7 @@ def main():
         log('test tracks in', out, [p.name for p in out.glob('*.mp3')])
     else:
         per = int(sys.argv[2]) if len(sys.argv) > 2 else 4
-        dl = run(specs(per, 75, 40)); lib = HERE / 'music-lib'; idxp = lib / 'index.json'; idx = json.loads(idxp.read_text())
+        dl = run(specs(per, 75, 40)); lib = HERE / 'music-lib'; lib.mkdir(exist_ok=True); idxp = HERE / 'data' / 'music' / 'index.json'; idx = json.loads(idxp.read_text())
         got = 0
         for f in dl.rglob('ace_*.mp3'):
             style = f.stem.split('_', 1)[1].rsplit('_', 1)[0]; S = music_studio.STYLES[style]; shutil.copy(f, lib / f.name)
