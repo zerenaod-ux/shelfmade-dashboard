@@ -10,6 +10,8 @@ HERE = Path(__file__).resolve().parent; ROOT = HERE.parent; DATA = ROOT / 'data/
 sys.path.insert(0, str(HERE))
 POOL = DATA / 'episode_pool.json'; USED = DATA / 'episodes_used.json'; OUT = ROOT / 'out'; OUT.mkdir(exist_ok=True)
 W, H, FPS = 1920, 1080, 30
+LAND = os.environ.get('EPISODE_LANDSCAPE') == '1'   # true 16:9 pictures (set by the workflow input)
+if LAND: os.environ['DOODLES_LANDSCAPE'] = '1'
 TAGS = '#psychology #mindset #animation #relatable #AnimationDoodles'
 FONTS = ['/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf', '/System/Library/Fonts/Supplemental/Arial Bold.ttf',
          '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf', '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']
@@ -66,10 +68,11 @@ def panel(path, i, n, concept, clock):
     from PIL import Image, ImageDraw
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     f1 = font(52); f2 = font(40); lx = 70; maxw = 480
-    d.rounded_rectangle((lx - 24, 300, lx + maxw + 24, 640), 28, fill=(20, 16, 50, 190))
-    d.text((lx, 330), "TODAY'S TRAP", font=f2, fill=(255, 214, 10))
-    y = 400
-    for ln in wrap(d, concept.title(), f1, maxw)[:4]: d.text((lx, y), ln, font=f1, fill=(255, 255, 255)); y += 66
+    if not LAND:
+        d.rounded_rectangle((lx - 24, 300, lx + maxw + 24, 640), 28, fill=(20, 16, 50, 190))
+        d.text((lx, 330), "TODAY'S TRAP", font=f2, fill=(255, 214, 10))
+        y = 400
+        for ln in wrap(d, concept.title(), f1, maxw)[:4]: d.text((lx, y), ln, font=f1, fill=(255, 255, 255)); y += 66
     d.text((W - 70 - d.textlength(clock, font=f2), 80), clock, font=f2, fill=(255, 255, 255))
     bx0, bx1, by = 70, W - 70, H - 46
     d.rounded_rectangle((bx0, by, bx1, by + 12), 6, fill=(255, 255, 255, 70))
@@ -137,7 +140,8 @@ def stitch(work, ep, sc, subs):
         silent = sd / 'silent.mp4'; wav = sd / 'voice.wav'; d = probe(silent)
         panel(tmp / f'p{j}.png', j + 1, n, s['concept'], s['time'])
         o = tmp / f'sc{j}.mp4'
-        flt = (f'[0:v]split=2[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=40:6,eq=brightness=-0.15[bg];'
+        flt = ('[0:v][1:v]overlay=0:0,format=yuv420p[v]' if LAND else
+               f'[0:v]split=2[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=40:6,eq=brightness=-0.15[bg];'
                f'[b]scale=-2:{H}[fg];[bg][fg]overlay=(W-w)/2:0[m];[m][1:v]overlay=0:0,format=yuv420p[v]')
         ff('-i', silent, '-i', tmp / f'p{j}.png', '-i', wav, '-filter_complex', flt, '-map', '[v]', '-map', '2:a', '-t', f'{d:.3f}', *A, o)
         segs.append(o); t += probe(o)
@@ -176,7 +180,7 @@ def main():
     assert all(len(s['story']['shots']) == 6 for s in sc), 'every scene must have 6 shots'
     work = DATA / f"{time.strftime('%Y-%m-%d')}-full-{ep['id']}"; work.mkdir(exist_ok=True)
     shots = [sh for s in sc for sh in s['story']['shots']]
-    (work / 'story.json').write_text(json.dumps({'id': ep['id'], 'title': ep['title'], 'concept': '', 'mood': sc[0]['story'].get('mood', 'curious'), 'explain_shot': 99, 'shots': shots}, indent=1))
+    (work / 'story.json').write_text(json.dumps({'id': ep['id'], 'title': ep['title'], 'concept': '', 'mood': sc[0]['story'].get('mood', 'curious'), 'explain_shot': 99, 'landscape': LAND, 'shots': shots}, indent=1))
     t0 = time.time(); log('EPISODE', ep['id'], len(sc), 'scenes', len(shots), 'shots')
     (ROOT / 'data').mkdir(exist_ok=True)
     if run(HERE / 'kaggle_make.py', work).returncode: log('Kaggle stage 1 failed'); sys.exit(1)

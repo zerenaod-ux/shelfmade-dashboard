@@ -12,11 +12,14 @@ def kg(*a):
     r = subprocess.run([sys.executable, '-c', code, *a], capture_output=True, text=True, env=E); return (r.stdout + r.stderr).strip()
 FRONT = (" IMPORTANT FRAMING: both characters look straight toward the camera (front view, face fully visible, head upright and level, not tilted or turned away), "
          "faces large and well lit, mouths ALWAYS CLOSED (lips together, no open mouth, no teeth showing, even when shouting or explaining), hands and props never covering the faces.")
+WIDE = (" WIDE CINEMATIC 16:9 COMPOSITION: the two characters stand close together in the centre-left and centre-right of the frame, filling about half the height, in a realistic, detailed, lived-in location with depth, specific props and everyday clutter (not an empty room). "
+        "Any other person mentioned in the scene (boss, barista, neighbour, ex) is visible in the background or at the edge, smaller, never in front of the two faces.")
 def main(work):
     work = Path(work).resolve(); st = json.loads((work / 'story.json').read_text())
     if (work / 'kaggle_stage1.DONE').exists(): log('stage 1 already done'); return
     vj = [{'who': l['who'], 'text': l['text'], 'feel': l['feel'], 'wav': f'line_{si:02d}_{li:02d}.wav'} for si, sh in enumerate(st['shots']) for li, l in enumerate(sh['lines'])]
-    pj = [{'prompt': stories.LOOK + sh['scene'] + FRONT, 'out': f'shot_{i:02d}.png', 'seed': 100 + i} for i, sh in enumerate(st['shots'])]
+    wide = bool(st.get('landscape'))
+    pj = [{'prompt': stories.LOOK + sh['scene'] + FRONT + (WIDE if wide else ''), 'out': f'shot_{i:02d}.png', 'seed': 100 + i, **({'w': 1024, 'h': 576} if wide else {})} for i, sh in enumerate(st['shots'])]
     ins = work / 'k1_in'; shutil.rmtree(ins, ignore_errors=True); ins.mkdir()
     shutil.copy(ROOT / 'data/production/reference-v1/Opening-frame.png', ins / 'ref.png'); shutil.copy(HERE / 'voices.py', ins / 'voices.py'); shutil.copy(HERE / 'align.py', ins / 'align.py')
     (ins / 'jobs.json').write_text(json.dumps({'story': st, 'prompts': pj, 'voice_jobs': vj}))

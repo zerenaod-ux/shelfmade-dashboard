@@ -37,7 +37,7 @@ from PIL import Image
 p = Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-4B', torch_dtype=torch.float16); p.enable_model_cpu_offload()
 ref = Image.open(IN + '/ref.png').convert('RGB')
 for k, jb in enumerate(J['prompts']):
-    img = p(image=[ref], prompt=jb['prompt'], width=576, height=1024, num_inference_steps=4, guidance_scale=1.0, generator=torch.Generator('cpu').manual_seed(int(jb['seed']))).images[0]
+    img = p(image=[ref], prompt=jb['prompt'], width=int(jb.get('w',576)), height=int(jb.get('h',1024)), num_inference_steps=4, guidance_scale=1.0, generator=torch.Generator('cpu').manual_seed(int(jb['seed']))).images[0]
     img.save(OUT + '/' + jb['out']); print('picture', jb['out'], flush=True)
 del p; gc.collect(); torch.cuda.empty_cache()
 shutil.copy(IN + '/align.py', '/kaggle/working/align.py')

@@ -1,7 +1,7 @@
 """AnimationDoodles Short renderer: still pictures + two voices -> 1080x1920 video.
 Camera push/pull, speaker-follow, speech bounce, word-highlight captions, concept chip, end card, ducked music.
 No AI video model needed. Usage: python render.py <workdir>   (workdir holds story.json, shot_XX.png, line_XX_YY.wav)"""
-import json,math,re,subprocess,sys,wave
+import json,math,os,re,subprocess,sys,wave
 from pathlib import Path
 import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parent))
@@ -14,7 +14,9 @@ try:
 except Exception as _e:
     fastlip=None;print('fast mouth unavailable:',_e,flush=True)
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
-W,H,FPS=1080,1920,30
+LAND=os.environ.get('DOODLES_LANDSCAPE')=='1'   # full videos: 16:9 pictures, 1920x1080
+W,H,FPS=(1920,1080,30) if LAND else (1080,1920,30)
+CAPW=1500 if LAND else 900;CAPY=830 if LAND else 1330;CHIPY=40 if LAND else 150;CAPSZ=64 if LAND else 74;CAPLH=80 if LAND else 92
 GAP=0.24;LEAD=0.35;SHOT_TAIL=0.30;END=0.0;SR=24000
 FONTS=['/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf','/System/Library/Fonts/Supplemental/Arial Bold.ttf','/System/Library/Fonts/Helvetica.ttc',
        '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']
@@ -40,12 +42,12 @@ def wrap(draw,words,fnt,maxw):
         else:lines[-1].append(i)
     return lines
 class Caption:
-    def __init__(self):self.cache={};self.f=font(74);self.d=ImageDraw.Draw(Image.new('RGBA',(10,10)))
+    def __init__(self):self.cache={};self.f=font(CAPSZ);self.d=ImageDraw.Draw(Image.new('RGBA',(10,10)))
     def get(self,text,who,active):
         key=(text,who,active)
         if key in self.cache:return self.cache[key]
-        words=text.split();lines=wrap(self.d,words,self.f,900)
-        lh=92;h=lh*len(lines)+40;img=Image.new('RGBA',(W,h),(0,0,0,0));d=ImageDraw.Draw(img)
+        words=text.split();lines=wrap(self.d,words,self.f,CAPW)
+        lh=CAPLH;h=lh*len(lines)+40;img=Image.new('RGBA',(W,h),(0,0,0,0));d=ImageDraw.Draw(img)
         for li,idxs in enumerate(lines):
             full=' '.join(words[i] for i in idxs);x=(W-d.textlength(full,font=self.f))/2;y=20+li*lh
             for i in idxs:
@@ -303,8 +305,8 @@ def render(work):
                     acc+=wt
                     if p<acc:aw=i;break
                 ci=cap.get(active['text'],active['who'],aw)
-                frame.alpha_composite(ci,(0,1330))
-            if si>=explain and st.get('concept'):frame.alpha_composite(chip_img,((W-chip_img.size[0])//2,150))
+                frame.alpha_composite(ci,(0,CAPY))
+            if si>=explain and st.get('concept'):frame.alpha_composite(chip_img,((W-chip_img.size[0])//2,CHIPY))
         ff.stdin.write(frame.convert('RGB').tobytes())
     ff.stdin.close();ff.wait()
     return silent,wav_path,total
