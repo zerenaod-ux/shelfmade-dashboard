@@ -1,7 +1,7 @@
 ml_autoscripts: start, scripts on disk = 6 target = 90
 ml_autoscripts: models to try: ['gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash', 'gemini-omni-1.2-flash', 'gemini-omni-1.1-flash']
 ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
 ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
@@ -9,31 +9,21 @@ ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code":
 ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.5-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
 ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-flash-latest 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.8-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
-ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: attempt 0 rejected: excerpt 3 must start at the beginning of a sentence (capital letter), not mid-word
-ml_autoscripts: attempt 1 rejected: within the first 3 sentences give the surprise: the past/ancient people/research says something different
-ml_autoscripts: attempt 2 rejected: no underscores in narration
-ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.5-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
 ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-llm.py: answered by GROQ openai/gpt-oss-20b
-ml_autoscripts: Gemini gemini-3.5-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
-ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
-llm.py: answered by GROQ openai/gpt-oss-120b
-ml_autoscripts: length pass -> OK
-ml_autoscripts: attempt 3 rejected: within the first 3 sentences give the surprise: the past/ancient people/research says something different; ask the viewer's doubt as a question (at least 3 question sentences) and answer it
-ml_autoscripts: gave up on 1998 ['within the first 3 sentences give the surprise: the past/ancient people/research says something different', "ask the viewer's doubt as a question (at least 3 question sentences) and answer it"]
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: stopped: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your 
 ml_autoscripts: DONE, scripts made = 0
