@@ -26,7 +26,7 @@ for evidence_file in sorted((BASE/'generated').glob('*/*/content-review.json')):
 for _name in ('used-mac.json','used-gh.json','used-mindlore.json'):
  try:used_passages.extend(json.loads((BASE/'gh-state'/_name).read_text()).get('books',{}).get(book['id'],[]))
  except (OSError,ValueError):pass
-script,evidence=content_logic.build(book,text,edition=edition,used_passages=used_passages)
+script,evidence=(json.loads(Path(os.environ['STORY_SCRIPT']).read_text()) if os.environ.get('STORY_SCRIPT') else content_logic.build(book,text,edition=edition,used_passages=used_passages))
 (folder/'edition.json').write_text(json.dumps({'book_id':book['id'],'edition':edition,'edition_capacity':evidence['edition_capacity'],'selection_version':'passage-edition-v1'},indent=2))
 points=[script['hook'],*script['points']]
 (folder/'content-review.json').write_text(json.dumps(evidence,indent=2))

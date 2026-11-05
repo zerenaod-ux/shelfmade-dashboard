@@ -10,18 +10,46 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - name: System packages
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu fonts-liberation
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng fonts-dejavu fonts-liberation
       - name: Python packages
-        run: pip install --quiet pillow numpy edge-tts requests
+        run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet kokoro soundfile numpy pillow phonemizer huggingface_hub requests edge-tts
+      - name: Shims (espeak, fonts, voice model) and layout
+        run: |
+          sudo mkdir -p /opt/homebrew/opt/espeak-ng/lib /opt/homebrew/opt/espeak-ng/share
+          sudo ln -sf $(ls /usr/lib/x86_64-linux-gnu/libespeak-ng.so* | head -1) /opt/homebrew/opt/espeak-ng/lib/libespeak-ng.dylib
+          sudo ln -sfn $(dirname $(find /usr -name phontab | head -1)) /opt/homebrew/opt/espeak-ng/share/espeak-ng-data
+          sudo mkdir -p /System/Library/Fonts/Supplemental
+          L=/usr/share/fonts/truetype/liberation
+          sudo ln -sf $L/LiberationSans-Bold.ttf "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+          sudo ln -sf $L/LiberationSans-Regular.ttf /System/Library/Fonts/Supplemental/Arial.ttf
+          sudo ln -sf $L/LiberationSans-Regular.ttf /System/Library/Fonts/Helvetica.ttc
+          W=$(dirname $(dirname $GITHUB_WORKSPACE))/work
+          mkdir -p $W/kokoro-runtime/bin $W/kokoro-models
+          ln -sf $(which python) $W/kokoro-runtime/bin/python
+          HF_HOME=$W/kokoro-models python -c "from huggingface_hub import snapshot_download as s;s('hexgrad/Kokoro-82M')"
+      - name: Pexels key and music
+        env:
+          PEXELS: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          mkdir -p private-footage generator/assets; printf '%s' "$PEXELS" > private-footage/pexels-key
+          [ -s private-footage/pexels-key ] || { echo "PEXELS KEY MISSING"; exit 1; }
+          if [ ! -s generator/assets/music.mp3 ]; then
+            echo "No real music in repo: using synthesized bed"
+            ffmpeg -y -loglevel error -f lavfi -i "sine=f=196:d=180" -f lavfi -i "sine=f=247:d=180" -f lavfi -i "sine=f=294:d=180" -filter_complex "amix=inputs=3,volume=0.5,lowpass=f=900,afade=t=in:d=3" -c:a libmp3lame generator/assets/music.mp3
+          fi
+          python -c "import json;c=json.load(open('cinematic-settings.json'));c['music_path']='generator/assets/music.mp3';json.dump(c,open('cinematic-settings.json','w'))"
       - name: Write and build story Shorts
         env:
+          CE_VOICE_ENGINE: edge
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -33,7 +61,7 @@ jobs:
           mkdir -p out gh-state
           python story_learn.py shelfmade || true
           python story_short.py "$COUNT" || true
-          python gh_story_short.py "$COUNT"
+          python gh_story_short_sm.py "$COUNT"
           ls -lh out/*.zip || true
       - name: Publish to GitHub Release and save state
         env:
@@ -44,5 +72,5 @@ jobs:
           TAG=shorts-story-$(date -u +%Y%m%d-%H%M)
           gh release create "$TAG" "${F[@]}" --title "ShelfMade story Shorts $TAG" --notes "Built automatically. Review before posting. Nothing is posted automatically."
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add -f gh-state/built-story-shorts-shelfmade.json story-shorts data/story-learn-log-shelfmade.json data/story-learn-shelfmade.json data/story-shorts-shelfmade.json; git commit -m "Record story Shorts"
+          git add -f gh-state/built-story-shorts-shelfmade.json gh-state/built-story-shorts-shelfmade-old.json story-shorts data/story-learn-log-shelfmade.json data/story-learn-shelfmade.json data/story-shorts-shelfmade.json; git commit -m "Record story Shorts"
           for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push && break; sleep 8; done
