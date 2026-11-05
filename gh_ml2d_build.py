@@ -22,7 +22,12 @@ def main(n):
         except Exception as e:
             print('FAILED', sid, str(e)[:400], flush=True); continue
         z = Path('out/mlfull-2d-' + sid + '.zip')
-        subprocess.run('cd %s && zip -q ../%s ml2d_LONGFORM.mp4 THUMBNAIL.jpg POST_THIS.txt ml2d-plan.json' % (folder, z.name), shell=True, check=True)
+        extra = ''
+        try:   # vertical 2D Short from the same script (kept inside the zip for review; not auto-posted)
+            ml2d.build(sid, folder / 'short', vert=True)
+            shutil.copy(folder / 'short' / 'ml2d_SHORT.mp4', folder / 'ml2d_SHORT.mp4'); extra = ' ml2d_SHORT.mp4'
+        except Exception as e: print('2D short skipped:', str(e)[:300], flush=True)
+        subprocess.run('cd %s && zip -q ../%s ml2d_LONGFORM.mp4 THUMBNAIL.jpg POST_THIS.txt ml2d-plan.json%s' % (folder, z.name, extra), shell=True, check=True)
         built.append(sid); state.write_text(json.dumps(built)); made += 1; print('BUILT', sid, flush=True)
         shutil.rmtree(folder, ignore_errors=True)
     print('made', made); sys.exit(0 if made else 1)

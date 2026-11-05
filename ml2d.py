@@ -312,6 +312,7 @@ def draw_frame(fi):
         for y in range(0, H, 64): c.circ(x + 32, y + 32, 1.6, SOFT, None, 0)
     idx = max(0, bisect.bisect_right(G['starts'], now) - 1); sp = scenes[idx]; lt = now - sp['start']; dur = max(.5, sp['end'] - sp['start'])
     SCENES[sp['type']](c, sp, lt, dur, now)
+    if G.get('vert'): return vframe(c.out(), now)
     sec = G['secs'][sp['sec']]; chip = '%d  %s' % (sp['sec'] + 1, sec['title'][:34])
     cw = tw(chip, 26) + 36; c.rr(24, 22, 24 + cw, 68, 16, INK, INK, 2); c.text((42, 33), chip, 26, WHITE)
     c.text((W - 26, 30), 'MindLore', 28, BLUE, 'ra')
@@ -324,6 +325,41 @@ def draw_frame(fi):
             on = wrd['s'] <= now; c.text((x, 626), wrd['w'], size, GOLD if (on and now <= wrd['e'] + .12) else (WHITE if on else (175, 175, 185))); x += tw(wrd['w'] + ' ', size)
     c.rr(0, H - 5, W * clamp(now / G['total']), H, 0, ACC, None, 0)
     return c.out().tobytes()
+
+def f1(px): return font(px / K)
+def vframe(img, now):
+    """9:16 Short layout: title on top, the 16:9 scene in the middle, big captions below, call to action at the bottom."""
+    V = Image.new('RGB', (1080, 1920), PAPER); d = ImageDraw.Draw(V)
+    V.paste(img.resize((1080, 608), Image.LANCZOS), (0, 470))
+    d.rounded_rectangle([60, 70, 330, 130], radius=16, fill=BLUE, outline=INK, width=4); d.text((195, 100), 'MindLore', font=f1(36), fill=WHITE, anchor='mm')
+    y = 175
+    for ln in wrap(G['vtitle'], 64 / 1.0, 940)[:4]: d.text((540, y), ln, font=f1(64), fill=INK, anchor='ma'); y += 78
+    ci = max(0, bisect.bisect_right(G['cstarts'], now) - 1); ch = G['chunks'][ci]
+    if now <= ch[-1]['e'] + .6:
+        size = 70; lines = []; cur = []
+        for w in ch:
+            t = ' '.join(x['w'] for x in cur + [w])
+            if cur and f1(size).getlength(t) > 900: lines.append(cur); cur = [w]
+            else: cur.append(w)
+        if cur: lines.append(cur)
+        top = 1150; hh = len(lines) * 96 + 40
+        d.rounded_rectangle([60, top, 1020, top + hh], radius=30, fill=INK)
+        for li, ln in enumerate(lines):
+            txt = ' '.join(x['w'] for x in ln); x = 540 - f1(size).getlength(txt) / 2
+            for w in ln:
+                on = w['s'] <= now; col = GOLD if (on and now <= w['e'] + .12) else (WHITE if on else (175, 175, 185))
+                d.text((x, top + 24 + li * 96), w['w'], font=f1(size), fill=col); x += f1(size).getlength(w['w'] + ' ')
+    d.text((540, 1780), 'Full video on the MindLore channel', font=f1(42), fill=BLUE, anchor='mm')
+    d.rectangle([0, 1912, int(1080 * clamp(now / G['total'])), 1920], fill=ACC)
+    return V.tobytes()
+def short_script(script):
+    """First ~100-125 words of section 1 (whole sentences) plus a call to action, as a one-section script."""
+    sents = split_sentences(script['sections'][0]['narration']); out = []; n = 0
+    for st in sents:
+        out.append(st); n += len(st.split())
+        if n >= 100: break
+    sc = json.loads(json.dumps(script)); sc['sections'] = [{'title': script['sections'][0].get('title', ''), 'narration': ' '.join(out) + ' Watch the full video on MindLore.'}]
+    return sc
 
 def thumbnail(script, path):
     c = Cv()
@@ -339,14 +375,15 @@ def thumbnail(script, path):
     c.rr(80, 62, 330, 112, 14, BLUE, INK, 4); c.text((205, 87), 'MindLore', 32, WHITE, 'mm')
     c.out().save(path, quality=92)
 
-def build(sid, out):
+def build(sid, out, vert=False):
     out = Path(out); out.mkdir(parents=True, exist_ok=True); work = out / '.work'; work.mkdir(exist_ok=True)
     p = Path(sid) if str(sid).endswith('.json') else BASE / 'cinematic-scripts-mindlore' / (str(sid) + '.json')
     script = json.loads(p.read_text())
+    if vert: script = short_script(script)
     jobs = make_voice(script, work); secs, words, total, narr = assemble(script, jobs, work)
     if os.environ.get('ML2D_MAXSEC'): total = min(total, float(os.environ['ML2D_MAXSEC']))   # tests only
     scenes = llm_refine(script, plan_scenes(script, secs))
-    G.update(scenes=scenes, starts=[s['start'] for s in scenes], secs=secs, total=total)
+    G.update(vert=vert, vtitle=(script.get('hook') or script.get('public_title', '')), scenes=scenes, starts=[s['start'] for s in scenes], secs=secs, total=total)
     chunks = caption_chunks(words); G['chunks'] = chunks; G['cstarts'] = [ch[0]['s'] for ch in chunks]
     # music bed
     mix = work / 'mix.m4a'; bed = None
@@ -360,8 +397,8 @@ def build(sid, out):
         cmd = ['ffmpeg', '-v', 'error', '-y', '-i', str(narr), '-i', bed, '-filter_complex', fc, '-map', '[a]', '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', str(mix)]
     else: cmd = ['ffmpeg', '-v', 'error', '-y', '-i', str(narr), '-af', 'loudnorm=I=-16:TP=-2:LRA=9', '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', str(mix)]
     subprocess.run(cmd, check=True)
-    nf = int(total * FPS); final = out / 'ml2d_LONGFORM.mp4'
-    enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', '%dx%d' % (W, H), '-r', str(FPS), '-i', '-', '-i', str(mix), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22', '-pix_fmt', 'yuv420p', '-c:a', 'copy', '-t', '%.2f' % total, '-movflags', '+faststart', str(final)], stdin=subprocess.PIPE)
+    nf = int(total * FPS); final = out / ('ml2d_SHORT.mp4' if vert else 'ml2d_LONGFORM.mp4')
+    enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', '%dx%d' % ((1080, 1920) if vert else (W, H)), '-r', str(FPS), '-i', '-', '-i', str(mix), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22', '-pix_fmt', 'yuv420p', '-c:a', 'copy', '-t', '%.2f' % total, '-movflags', '+faststart', str(final)], stdin=subprocess.PIPE)
     import multiprocessing as mp
     with mp.get_context('fork').Pool(max(1, os.cpu_count() or 2)) as pool:
         for k, b in enumerate(pool.imap(draw_frame, range(nf), chunksize=24)):
@@ -369,7 +406,7 @@ def build(sid, out):
             if k % 600 == 0: print('ml2d: frame %d/%d' % (k, nf), flush=True)
     enc.stdin.close()
     if enc.wait(): raise RuntimeError('video encode failed')
-    thumbnail(script, out / 'THUMBNAIL.jpg')
+    if not vert: thumbnail(script, out / 'THUMBNAIL.jpg')
     chapters = '\n'.join('%d:%02d %s' % (int(s['start']) // 60, int(s['start']) % 60, s['title']) for s in secs)
     desc = (script.get('hook', '') + '\n\nMindLore explains psychology from the original texts. Original commentary inspired by %s by %s. Modern examples are our interpretations, not author quotations.\n\nChapters:\n%s' % (script.get('title', ''), script.get('author', ''), chapters))
     try:
@@ -386,4 +423,4 @@ def build(sid, out):
     return final
 
 if __name__ == '__main__':
-    build(sys.argv[1], sys.argv[2])
+    build(sys.argv[1], sys.argv[2], len(sys.argv) > 3 and sys.argv[3] == 'short')
