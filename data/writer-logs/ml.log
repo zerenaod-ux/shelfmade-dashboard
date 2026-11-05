@@ -6,12 +6,15 @@ ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,
 ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
 ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-flash-latest 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
-ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
-ml_autoscripts: stopped: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded yo
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
+ml_autoscripts: stopped: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your 
 ml_autoscripts: DONE, scripts made = 0
