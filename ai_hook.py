@@ -48,12 +48,19 @@ def generate(title, author, sentences, brand):
             guide = learned.guidance(brand)
         except Exception:
             guide = ''
+        style_txt = ''
+        try:
+            import exp
+            _v = exp.choose(brand, 'short', 'hook_style', title)
+            style_txt = ('\n' + exp.HOOK_STYLES[_v]) if _v else ''
+        except Exception:
+            pass
         passage = ' '.join(s.strip() for s in sentences[:4] if isinstance(s, str))[:900]
         prompt = ('You write the opening line of a 30-second vertical Short built from a public-domain book passage.\nBook: "%s" by %s.\nPassage the Short is built on: %s\n\n'
                   'Write ONE scroll-stopping opening line (5 to 9 words) and ONE loop line (3 to 10 words) that makes the viewer replay from the start. '
                   'The opening line must be specific to THIS passage (never a generic template such as "Almost everyone gets X wrong"), create tension or curiosity in its first three words, '
                   'speak to the viewer, and never put words in the author\'s mouth that the passage does not support. Plain English, no emoji, no hashtags, no digits, no quotation marks. '
-                  'Each line must end with . ? or !%s\nReturn ONLY JSON: {"hook":"...","loop":"..."}') % (title, author or 'unknown', passage, guide)
+                  'Each line must end with . ? or !%s\nReturn ONLY JSON: {"hook":"...","loop":"..."}') % (title, author or 'unknown', passage, guide + style_txt)
         try:
             models = M._models()[:4] if os.environ.get('GEMINI_API_KEY') else []
         except Exception:

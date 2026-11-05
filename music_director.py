@@ -65,11 +65,12 @@ def _bias(brand):
         except Exception: continue
     return {}
 
-def pick(brand, kind='short', mood=None, text='', pace=None, key='', avoid=(), n=1):
+def pick(brand, kind='short', mood=None, text='', pace=None, key='', avoid=(), n=1, shift=0):
     idx = _index()
     if not idx: return []
     mood = ALIAS.get(mood, mood) if mood else mood_for(text)
     en_t, de_t = _targets(brand, kind, pace)
+    en_t = max(.05, min(.98, en_t + shift))
     bias = _bias(brand)
     scored = []
     for t in idx:
@@ -96,7 +97,14 @@ def make_bed(brand, kind, text, total, out_path, mood=None, words=None, key='', 
         if os.environ.get('CE_DISABLE_MUSIC'): return None
         pace = (words / total) if (words and total) else None
         want = 1 if total <= 75 else min(6, int(total // 65) + 1)
-        tracks = pick(brand, kind, mood, text, pace, key, n=want)
+        _ev, _expd = None, {}
+        try:
+            import exp
+            _ev = exp.choose(brand, kind, 'music_energy', key)
+            _expd = exp.take()
+        except Exception:
+            pass
+        tracks = pick(brand, kind, mood, text, pace, key, n=want, shift={'calm': -.15, 'lively': .15}.get(_ev, 0))
         files = []
         for t in tracks:
             p = _ensure(t)
@@ -119,7 +127,7 @@ def make_bed(brand, kind, text, total, out_path, mood=None, words=None, key='', 
             f = '[0:a]volume=%.2f,afade=t=out:st=%.2f:d=2.5,atrim=0:%.2f[a]' % (g, max(0, total - 2.5), total)
         cmd += ['-filter_complex', f, '-map', '[a]', '-t', '%.2f' % total, '-ar', '48000', '-ac', '2', str(out)]
         subprocess.run(cmd, check=True, capture_output=True)
-        info = {'path': str(out), 'tracks': [t['id'] for t, _ in files], 'styles': [t['style'] for t, _ in files], 'mood': ALIAS.get(mood, mood) if mood else mood_for(text), 'pace': round(pace, 2) if pace else None, 'gain': g}
+        info = {'path': str(out), 'tracks': [t['id'] for t, _ in files], 'styles': [t['style'] for t, _ in files], 'mood': ALIAS.get(mood, mood) if mood else mood_for(text), 'pace': round(pace, 2) if pace else None, 'gain': g, 'brand': brand, 'kind': kind, 'exp': _expd}
         try: out.with_suffix('.music.json').write_text(json.dumps(info))
         except Exception: pass
         print('music director:', info, flush=True)

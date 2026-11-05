@@ -133,7 +133,7 @@ def music_record(d, title):
     try:
         m = json.loads((Path(d) / 'MUSIC.json').read_text())
         p = Path('review') / 'music-log.json'; log = json.loads(p.read_text()) if p.is_file() else {}
-        log[title] = {'styles': m.get('styles', []), 'tracks': m.get('tracks', []), 'mood': m.get('mood'), 'pace': m.get('pace')}
+        log[title] = {'styles': m.get('styles', []), 'tracks': m.get('tracks', []), 'mood': m.get('mood'), 'pace': m.get('pace'), 'exp': m.get('exp'), 'brand': m.get('brand'), 'kind': m.get('kind'), 'date': __import__('datetime').date.today().isoformat()}
         p.parent.mkdir(exist_ok=True); p.write_text(json.dumps(log, indent=1))
     except Exception:
         pass
