@@ -1,0 +1,67 @@
+{
+ "items": [
+  {
+   "id": "st-261105-15ba0",
+   "title": "Your willpower is a liar. Here is the proof.",
+   "theme": "Self-Control, Its Kingship and Majesty by William George Jordan",
+   "acts": [
+    "cheer",
+    "explain",
+    "no",
+    "point",
+    "read",
+    "run",
+    "sad",
+    "shrug",
+    "think",
+    "wave"
+   ],
+   "bgs": [
+    "history",
+    "library",
+    "school"
+   ],
+   "props": [
+    "battery",
+    "brain",
+    "chart",
+    "clock",
+    "num",
+    "question",
+    "quill"
+   ]
+  },
+  {
+   "id": "st-261105-5ebb9",
+   "title": "Is modern life really more chaotic than Hobbes thought?",
+   "theme": "Leviathan by Thomas Hobbes",
+   "acts": [
+    "explain",
+    "idle",
+    "lookup",
+    "point",
+    "read",
+    "shrug",
+    "think"
+   ],
+   "bgs": [
+    "library",
+    "office",
+    "school",
+    "study"
+   ],
+   "props": [
+    "book",
+    "brain",
+    "chart",
+    "clock",
+    "crowd",
+    "flag",
+    "globe",
+    "lamp",
+    "num",
+    "question"
+   ]
+  }
+ ]
+}

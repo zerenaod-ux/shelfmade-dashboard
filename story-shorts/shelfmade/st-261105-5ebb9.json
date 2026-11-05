@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261105-5ebb9",
+ "title": "Leviathan",
+ "author": "Thomas Hobbes",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Is modern life really more chaotic than Hobbes thought?",
+ "hook": "You think life is chaotic and you blame it on modern society.",
+ "thumbnail_headline": "CHAOS VS HOBBES",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think life is chaotic and you blame it on modern society. Hobbes argued in 1651 that humans live in constant war. He said only a strong ruler could keep peace. Modern research paints a different picture. Steven Pinker’s 2011 study shows homicide rates fell from about 30 to 6 per 100,000. That decline spans many countries over a century. Robert Putnam’s 2015 work found neighbor trust fell from about 30% to about 15%. These findings support the civilizing process theory. The result? Violence is less common than Hobbes imagined, even if trust shrinks. So why do we assume the world is getting more violent? Because headlines focus on rare tragedies, not long‑term trends. That's it. So next time you feel chaos, remember you are safer than Hobbes thought. You think life is chaotic and you blame it on modern society."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "homicide rates fell from about 30 to 6 per 100,000",
+   "who": "Steven Pinker",
+   "year": "2011",
+   "place": "Western Europe"
+  },
+  {
+   "claim": "neighbor trust fell from about 30% to about 15%",
+   "who": "Robert Putnam",
+   "year": "2015",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Leviathan by Thomas Hobbes"
+}
