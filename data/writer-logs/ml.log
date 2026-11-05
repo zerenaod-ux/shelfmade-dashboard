@@ -8,6 +8,28 @@ ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code":
 ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.5-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
+ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: length pass -> OK
+ml_autoscripts: attempt 0 rejected: within the first 3 sentences give the surprise: the past/ancient people/research says something different
+ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: length pass -> OK
+ml_autoscripts: attempt 1 rejected: within the first 3 sentences give the surprise: the past/ancient people/research says something different
+ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+llm.py: answered by GROQ qwen/qwen3.8-27b
+ml_autoscripts: fact check: Kurt Lewin: found on Wikipedia; Gustave Le Bon: found on Wikipedia
+ml_autoscripts: builder check skipped: No module named 'PIL'
+ml_autoscripts: wrote 445-5.json
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
@@ -16,5 +38,5 @@ ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:f
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
 ml_autoscripts: free fallback failed: llm.py: OPENROUTER google/gemma-4-31b-it:free HTTP 429
-ml_autoscripts: stopped: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your 
-ml_autoscripts: DONE, scripts made = 0
+ml_autoscripts: stopped: Gemini failed
+ml_autoscripts: DONE, scripts made = 1
