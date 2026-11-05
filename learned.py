@@ -3,7 +3,34 @@ import json
 from pathlib import Path
 
 
+def _radar(brand):
+    """TODAY'S SPIKES: the daily radar (last 48 h). Ignored when older than 3 days."""
+    import datetime
+    for base in (Path('data/radar'), Path(__file__).resolve().parent / 'data' / 'radar'):
+        try:
+            d = json.loads((base / (brand + '.json')).read_text())
+            if (datetime.date.today() - datetime.date.fromisoformat(d.get('updated', '2000-01-01'))).days > 3:
+                return ''
+            t = ''
+            if d.get('todays_angle'):
+                t += "TODAY'S ANGLE (spiking in the last 48 hours): " + d['todays_angle'] + '. '
+            if d.get('why'):
+                t += 'WHY RECENT SPIKES WORK: ' + ' | '.join('%s - %s' % (x.get('title', '')[:50], x.get('why', '')) for x in d['why'][:3]) + '. '
+            if d.get('ideas'):
+                t += "TODAY'S IDEAS: " + ' | '.join(d['ideas'][:3]) + '. '
+            if d.get('avoid'):
+                t += 'TIRED THIS WEEK, AVOID: ' + ' | '.join(d['avoid'][:2]) + '. '
+            return ('\nDAILY RADAR (updated %s; inspiration only, never copy titles, scripts, footage or characters): ' % d.get('updated') + t + '\n') if t else ''
+        except Exception:
+            continue
+    return ''
+
+
 def trending(brand):
+    return _radar(brand) + _trending_14d(brand)
+
+
+def _trending_14d(brand):
     for base in (Path('data/trends'), Path(__file__).resolve().parent / 'data' / 'trends', Path(__file__).resolve().parent.parent / 'data' / 'trends'):
         try:
             d = json.loads((base / (brand + '.json')).read_text())

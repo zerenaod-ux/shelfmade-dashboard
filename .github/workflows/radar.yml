@@ -1,0 +1,36 @@
+name: radar
+on:
+  schedule:
+    - cron: '0 7 * * *'   # 1-2 AM Chicago, before the nightly script writers and builders
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: radar
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Daily viral radar
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
+          YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: python radar.py
+      - name: Save results
+        run: |
+          git config user.name "studio-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f data/radar
+          git diff --cached --quiet || { git commit -qm "daily viral radar"; for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 5; done; }
