@@ -9,9 +9,19 @@ T = '/kaggle/temp'; OUT = '/kaggle/working/out'; os.makedirs(T, exist_ok=True); 
 sh('nvidia-smi -L')
 sh(f'git clone --depth 1 https://github.com/ace-step/ACE-Step {T}/ACE')
 SETUP = []
-SETUP.append(sh(f"cd {T}/ACE && grep -viE '^(torch|torchaudio|torchvision)([=<>~ ]|$)' requirements.txt > req_notorch.txt; {sys.executable} -m pip install -q -r req_notorch.txt 2>&1 | tail -12").stdout[-900:])
-SETUP.append(sh(f'cd {T}/ACE && {sys.executable} -m pip install -q --no-deps -e . 2>&1 | tail -3').stdout[-400:])
-SETUP.append(sh(f'{sys.executable} -m pip install -q loguru 2>&1 | tail -3').stdout[-300:])
+import re as _re
+def pipi(spec):
+    r = subprocess.run([sys.executable, '-m', 'pip', 'install', '-q', spec], capture_output=True, text=True); return r.returncode == 0
+failed = []
+for line in open(T + '/ACE/requirements.txt').read().splitlines():
+    line = line.split('#')[0].strip()
+    if not line or line.startswith('-'): continue
+    name = _re.split(r'[=<>~;\[ ]', line)[0].lower()
+    if name in ('torch', 'torchaudio', 'torchvision'): continue
+    if not pipi(line):
+        if not pipi(name): failed.append(line)
+SETUP.append('requirements failed: %s' % failed)
+SETUP.append(sh(f'cd {T}/ACE && {sys.executable} -m pip install -q --no-deps -e . 2>&1 | tail -3').stdout[-300:])
 import importlib; importlib.invalidate_caches()
 sys.path.insert(0, T + '/ACE')
 timing = {'tracks': {}, 'errors': [], 'setup': SETUP}
