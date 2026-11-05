@@ -1,23 +1,42 @@
 {
- "do_more": [
-  "Use direct, profound verbatim book quotes as titles instead of modern summaries or explanations",
-  "Focus on practical, actionable psychological advice and inner mental control (e.g., managing attention, turning over a new leaf)",
-  "Keep titles concise and provocative without relying on emojis or hashtags in the title text",
-  "Lean into philosophical frameworks that speak directly to the viewer's daily self-improvement and mental clarity"
- ],
- "avoid": [
-  "Avoid generic 'in 60 seconds' or book review formats which heavily underperform",
-  "Avoid long, descriptive narrative hook titles about historical figures or plot summaries",
-  "Avoid cluttering titles with emojis, numbers like '2,400 Years', and platform tags like #shorts"
- ],
- "title_style": "Winning titles frame profound philosophical truths as direct commands or stark psychological realizations using the book's exact verbatim words rather than modern commentary.",
- "next_tests": [
-  "Test 5 new shorts using pure, hard-hitting 1-sentence book quotes as titles with zero emojis",
-  "Compare the performance of actionable self-improvement quotes against abstract philosophical quotes",
-  "Test removing all hashtags and numbers from current title templates to check impact on algorithmic reach"
- ],
- "updated": "2026-11-05",
- "n": 113,
- "best_vpd": 27.99,
- "best_title": "You can turn over a new leaf every hour if you choose"
+ "short": {
+  "do_more": [
+   "Use direct, profound verbatim quotes as the title instead of generalized summaries or clickbait hooks.",
+   "Focus on actionable daily psychology and personal state-of-mind shifts like focus, mental energy, and renewal.",
+   "Keep titles concise and declarative, dropping emojis and generic framing like 'in 60 seconds'."
+  ],
+  "avoid": [
+   "Avoid broad, meta-summaries of books or biographical overviews (e.g., 'Autobiography of Ben Franklin \u2014 in 60 seconds').",
+   "Avoid heavy use of emojis and dramatic narrative teaser questions in the titles.",
+   "Avoid packaging content as academic history lessons instead of immediate practical wisdom."
+  ],
+  "title_style": "Winning titles frame the video as a direct statement of profound, actionable truth or a striking quote rather than a promotional summary.",
+  "next_tests": [
+   "Test a batch of 5 Shorts using raw, single-sentence philosophical quotes as the title and hook, completely stripping out emojis.",
+   "Compare direct behavioral instruction hooks ('You must learn to...') against storytelling/biographical hooks to validate retention preference."
+  ],
+  "n": 102,
+  "best_vpd": 27.91,
+  "best_title": "You can turn over a new leaf every hour if you choose"
+ },
+ "full": {
+  "do_more": [
+   "Focus titles on provocative, direct questions directed at the viewer's personal certainty and behavior.",
+   "Use philosophical framing from specific, actionable concepts rather than broad book overviews.",
+   "Keep full-length video titles punchy and under 10 words to create immediate intellectual curiosity."
+  ],
+  "avoid": [
+   "Avoid using standard book title and author formats that look like academic reading assignments.",
+   "Avoid descriptive subtitle formulas like 'The Book That Changed...' which feel like historical retrospectives rather than personal challenges."
+  ],
+  "title_style": "Winning titles use direct, second-person interrogatives that challenge the viewer's core assumptions rather than simply stating the source material.",
+  "next_tests": [
+   "Test a full-length video using a controversial quote as the primary title hook.",
+   "Compare a question-based title against a direct command title using the same underlying book summary."
+  ],
+  "n": 11,
+  "best_vpd": 1.28,
+  "best_title": "Question what you know"
+ },
+ "updated": "2026-11-05"
 }

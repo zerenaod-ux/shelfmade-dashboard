@@ -1,22 +1,24 @@
 {
- "do_more": [
-  "Focus on concrete, quirky physical objects as psychological metaphors like mugs and raincoats.",
-  "Use active, high-stakes narrative scenarios in titles rather than abstract descriptive phrases.",
-  "Keep the emotional tone immediately relatable and slightly absurd from frame one."
- ],
- "avoid": [
-  "Using computer science or digital metaphors like open browser tabs that feel dry.",
-  "Using generalized conceptual titles like 'Choice Overload' without a tangible anchor.",
-  "Starting with a slow definition instead of dropping Leo and Mia right into a funny dilemma."
- ],
- "title_style": "Winning titles use the format 'The [Specific Everyday Object] [Unusual Noun]', creating immediate curiosity through quirky juxtaposition.",
- "next_tests": [
-  "Test an object-based paradox about procrastination using a ridiculously specific household item.",
-  "Test an episode featuring a social awkwardness psychology concept tied to a single piece of clothing or food.",
-  "Test starting the hook mid-argument between Leo and Mia over a minor illogical habit."
- ],
- "updated": "2026-11-05",
- "n": 7,
- "best_vpd": 2.87,
- "best_title": "The Mug Paradox"
+ "short": {
+  "do_more": [
+   "Focus on concrete, quirky physical objects as the central metaphor (mugs, raincoats) rather than abstract brain concepts.",
+   "Use active, paradoxical framing in the title (e.g., 'The X Paradox' or 'The X Certainty') to trigger instant curiosity.",
+   "Keep the psychological premise grounded in embarrassing everyday micro-failures that Leo and Mia can immediately act out.",
+   "Punch up the dialogue humor in the first 3 seconds with a high-stakes disagreement between Leo and Mia."
+  ],
+  "avoid": [
+   "Avoid dry, literal titles like 'Why Your Brain Keeps Tabs Open' that sound like a textbook lecture.",
+   "Avoid overly complex metaphors like computer tabs or endless cereal aisles that dilute the visual comedy.",
+   "Avoid starting skits with setup exposition instead of jumping straight into the comedic argument."
+  ],
+  "title_style": "Winning titles use a catchy, specific noun paired with an intriguing abstract noun or outcome (e.g., 'The Mug Paradox', 'The Raincoat Certainty') creating an immediate cognitive itch.",
+  "next_tests": [
+   "Test a title format using 'The [Everyday Object] Effect' to see if object-based paradoxes consistently outperform behavioral concepts.",
+   "Test a high-conflict cold open where Leo accuses Mia of a specific psychological fallacy within the first 2 seconds."
+  ],
+  "n": 7,
+  "best_vpd": 2.86,
+  "best_title": "The Mug Paradox"
+ },
+ "updated": "2026-11-05"
 }

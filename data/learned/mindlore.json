@@ -1,22 +1,45 @@
 {
- "do_more": [
-  "Focus explicitly on classic book titles paired with specific section themes (e.g., Book Name \u00b7 Specific Topic \u00b7 Reading X)",
-  "Use straightforward, academic, and curiosity-driven subject matter directly from public-domain texts rather than modern-style clickbait questions",
-  "Maintain a clear episodic structure (e.g., numbered 'Readings') which signals a binge-able series to the viewer",
-  "Keep titles descriptive of the actual psychological phenomenon or behavioral observation being analyzed in the text"
- ],
- "avoid": [
-  "Avoid modern pop-psychology listicle hooks and generic self-help questions (e.g., 'Why you buy things you don't need')",
-  "Avoid using emojis in the video titles and descriptions",
-  "Avoid over-dramatized historical or biographical framing that strays from the core psychological text"
- ],
- "title_style": "Winning titles clearly state the source book and specific reading topic in a structured format, whereas losing titles rely on modern internet-style hooks and emojis.",
- "next_tests": [
-  "Test a brand new classic book series using the exact winning format: '[Book Title] \u00b7 [Specific Concept] \u00b7 Reading 1'",
-  "A/B test a well-performing book title using a straightforward descriptive title versus a modern curiosity-gap hook to verify platform preference"
- ],
- "updated": "2026-11-05",
- "n": 93,
- "best_vpd": 40.24,
- "best_title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5"
+ "short": {
+  "do_more": [
+   "Structure titles explicitly as serial chapters or sequential readings (e.g., Book Name \u00b7 Specific Topic \u00b7 Reading X) rather than generic modern hook questions.",
+   "Focus content strictly on classic, highly observable behavioral phenotypes and expressions, drawing directly from foundational figures like Darwin and William James.",
+   "Keep titles clean, formal, and authoritative, directly naming the classic text and the exact psychological theme being explored."
+  ],
+  "avoid": [
+   "Avoid modern, clickbaity self-help framing and generic hook questions like 'Why you buy things you don't need' or emojis in titles.",
+   "Avoid overly academic or historical deep-dives into the authors and Victorian eras that alienate casual viewers looking for direct psychological insights."
+  ],
+  "title_style": "Winning titles act like a structured library index or textbook table of contents, combining the classic book title with a clear, specific subject and reading number.",
+  "next_tests": [
+   "Test a mini-series format breaking down Charles Darwin's 'The Expression of the Emotions' into numbered daily reading parts.",
+   "Compare a modern self-help hook title against a direct classical textbook title for the exact same underlying script.",
+   "Publish a sequence of 5 consecutive shorts under a single prominent psychology book banner to measure binge-ability and returning viewers."
+  ],
+  "n": 77,
+  "best_vpd": 40.2,
+  "best_title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5"
+ },
+ "full": {
+  "do_more": [
+   "Focus topics on practical, observable human behavior rather than abstract theory or psychoanalysis.",
+   "Use curiosity-driven, specific subtitle frameworks like 'Observation and interpretation' instead of generic 'Guided reading' labels.",
+   "Frame titles around actionable psychological insights that viewers can immediately apply to themselves.",
+   "Maintain concise, digestible content structures that favor direct reading of engaging public-domain excerpts."
+  ],
+  "avoid": [
+   "Avoid dry, academic-sounding titles like 'A General Introduction to Psychoanalysis' or 'The Psychology Of Suggestion'.",
+   "Avoid broad socio-political or historical psychology topics like revolutions, which fail to drive high daily views.",
+   "Avoid monotonous formatting that relies solely on the generic phrase 'Guided reading' without a compelling thematic hook."
+  ],
+  "title_style": "Winning titles pair a recognized foundational psychology text with a specific, intriguing behavioral focus rather than a generic reading label.",
+  "next_tests": [
+   "Test a classic William James or Darwin text with a provocative, benefit-driven title about reading human emotions.",
+   "Compare a standard 'Guided reading' title format directly against a title framed as a psychological mystery or test.",
+   "Test splitting longer book excerpts into punchier, problem-solution-oriented topic themes."
+  ],
+  "n": 16,
+  "best_vpd": 6.27,
+  "best_title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4"
+ },
+ "updated": "2026-11-05"
 }
