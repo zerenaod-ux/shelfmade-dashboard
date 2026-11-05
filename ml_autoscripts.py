@@ -185,6 +185,30 @@ def _call(prompt):
     raise ValueError(last or 'Gemini failed')
 
 
+def _expand(d, bad, lo, hi):
+    """A draft that is only too SHORT (common with the free fallback models) is lengthened by a dedicated call instead of being thrown away."""
+    prompt = ('Here is a draft video script as JSON. Problem: %s. Rewrite the SAME JSON with every section narration lengthened (more everyday examples, a modern comparison, honest limits, a rhetorical question) '
+              'so the TOTAL narration is about %d words (must be between %d and %d). Keep exactly 7 sections and 7 passages, keep every passages[i].excerpt EXACTLY unchanged and word for word inside double quotation marks in section i, '
+              'keep public_title, hook and thumb. No underscores. Return the full JSON only.\n%s') % ('; '.join(bad[:3]), (lo + hi) // 2, lo, hi, json.dumps(d, ensure_ascii=False))
+    try:
+        r = _call(prompt)
+        return r if isinstance(r, dict) else None
+    except Exception as e:
+        print('ml_autoscripts: expand failed:', str(e)[:100], flush=True)
+        return None
+def _lenfix(tn, window, d, bad):
+    lo, hi = (950, 1250) if SH else (1100, 1500)
+    for _ in range(2):
+        if not bad or not all(x.startswith('narration has') for x in bad): break
+        d2 = _expand(d, bad, lo, hi)
+        if not d2: break
+        d2.setdefault('public_title', d.get('public_title')); d2.setdefault('hook', d.get('hook')); d2.setdefault('thumb', d.get('thumb'))
+        d2['passages'] = [x if isinstance(x, dict) else {'excerpt': str(x), 'chapter': ''} for x in (d2.get('passages') or d.get('passages') or [])]
+        d2['sections'] = [x if isinstance(x, dict) else {'title': '', 'narration': str(x)} for x in (d2.get('sections') or [])]
+        d2 = force(tn, window, repair(tn, d2)); nb = check(tn, d2)
+        print('ml_autoscripts: expand pass ->', nb[:2] or 'OK', flush=True)
+        d, bad = d2, nb
+    return d, bad
 def _existing(bid):
     return sorted(OUT.glob('%s*.json' % bid))
 
@@ -294,6 +318,8 @@ def make_one():
         d = repair(tn, d)
         d = force(tn, window, d)
         bad = check(tn, d)
+        if bad:
+            d, bad = _lenfix(tn, window, d, bad)
         if not bad and SH:
             bad = _gate(c, d)
             if not bad:

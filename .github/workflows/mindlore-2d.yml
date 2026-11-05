@@ -1,0 +1,44 @@
+name: mindlore-2d
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many 2D MindLore full videos to build'
+        default: '1'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu fonts-liberation
+      - name: Python packages
+        run: pip install --quiet pillow numpy edge-tts requests
+      - name: Build 2D explainers
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          COUNT: ${{ github.event.inputs.count || '1' }}
+        run: |
+          mkdir -p out gh-state
+          python gh_ml2d_build.py "$COUNT"
+          ls -lh out/*.zip || true
+      - name: Publish to GitHub Release and save state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob; F=(out/mlfull-2d-*.zip)
+          [ ${#F[@]} -eq 0 ] && { echo "Nothing built"; exit 1; }
+          TAG=mlfull-2d-$(date -u +%Y%m%d-%H%M)
+          gh release create "$TAG" "${F[@]}" --title "MindLore 2D full video $TAG" --notes "Built automatically. Review before posting."
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add gh-state/built-2d-mindlore.json; git commit -m "Record built 2D videos"; git pull --rebase --autostash -q; git push
