@@ -6,6 +6,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 concurrency:
   group: review-publish
   cancel-in-progress: false
@@ -27,6 +28,12 @@ jobs:
           CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
           AUTO_APPROVE_SHORTS: ${{ vars.AUTO_APPROVE_SHORTS }}
         run: python review_publish.py
+      - name: Start overdue scheduled jobs (GitHub delays or skips crons)
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python kick.py
       - name: Save
         if: always()
         run: |
