@@ -13,6 +13,8 @@ def main(n):
     allf = sorted(p.stem for p in Path('cinematic-scripts-mindlore').glob('*.json'))
     order = [s for s in series if s in allf] + [s for s in allf if s not in series]
     todo = [s for s in order if s not in built]; Path('out').mkdir(exist_ok=True); made = 0
+    only = os.environ.get('ML2D_ONLY', '').strip()
+    if only and only in allf: todo = [only]
     import ml2d
     for sid in todo[:n]:
         folder = Path('out/d_' + sid)

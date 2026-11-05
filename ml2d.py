@@ -1,5 +1,5 @@
 """MindLore 2D EXPLAINER engine: turns a checked MindLore script (cinematic-scripts-mindlore/*.json) into a faceless 2D animated explainer video.
-Style: warm paper background, hand-drawn stick narrator, icons, THEN-vs-NOW panels, quote cards, big stats, word-by-word captions.
+Style v4: a living stick-man world. Joint-angle narrator (walk, run, point, think, laugh, sleep...), scene backdrops, props that match the words, everything timed to the spoken words.
 Everything is drawn in code (PIL) and encoded with ffmpeg: free, fully automatic, no stock footage, no AI image service.
   python ml2d.py <script id or path> <out folder>          (ML2D_FAKE=1 uses silent timing for tests)
 Output folder: ml2d_LONGFORM.mp4, THUMBNAIL.jpg, POST_THIS.txt (same shape the review step already reads)."""
@@ -36,7 +36,7 @@ def ease(x): x = clamp(x); return 1 - (1 - x) ** 3
 def pop(lt, t0, dur=.45): return back((lt - t0) / dur) if lt > t0 else 0.0
 
 class Cv:
-    def __init__(s): s.im = Image.new('RGB', (W * K, H * K), PAPER); s.d = ImageDraw.Draw(s.im)
+    def __init__(s, base=None): s.im = base.copy() if base is not None else Image.new('RGB', (W * K, H * K), PAPER); s.d = ImageDraw.Draw(s.im)
     def P(s, pts): return [(x * K, y * K) for x, y in pts]
     def line(s, pts, w=7, col=INK):
         P = s.P(pts); s.d.line(P, fill=col, width=max(1, int(w * K)), joint='curve'); r = w * K / 2
@@ -110,155 +110,461 @@ def icon(c, name, cx, cy, r, now=0.0):
         for i in range(8): a = -math.pi / 2 + (i - 3.5) * math.pi / 5; c.line([(cx + math.cos(a) * 80 * u, cy - 15 * u + math.sin(a) * 80 * u), (cx + math.cos(a) * (100 + 6 * math.sin(now * 6 + i)) * u, cy - 15 * u + math.sin(a) * (100 + 6 * math.sin(now * 6 + i)) * u)], 5, GOLD)
         c.circ(cx, cy - 15 * u, 56 * u, (255, 232, 130), INK, 6); c.rr(cx - 26 * u, cy + 38 * u, cx + 26 * u, cy + 72 * u, 6, SOFT, INK, 5); c.line([(cx - 14 * u, cy + 4 * u), (cx - 5 * u, cy + 24 * u), (cx + 5 * u, cy + 4 * u), (cx + 14 * u, cy + 24 * u)], 4)
 
-# ---------------- the narrator ----------------
+# ---------------- v4: the stick-man rig (joint angles, so every action can move) ----------------
+GROUND = 585
+def lerp(a, b, t): return a + (b - a) * t
+def limb(a0, a1, L1=56, L2=56):
+    r0, r1 = math.radians(a0), math.radians(a0 + a1)
+    p1 = (math.sin(r0) * L1, math.cos(r0) * L1)
+    return p1, (p1[0] + math.sin(r1) * L2, p1[1] + math.cos(r1) * L2)
+
+BASE_A = dict(lean=0, tilt=0, la=-26, le=14, ra=28, re=16, ll=5, lk=0, rl=-5, rk=0, dy=0, rot=0, sit=0, expr='n')
+ACTS = ['idle', 'explain', 'point', 'think', 'shrug', 'cheer', 'wave', 'walk', 'run', 'sit', 'sleep', 'surprised', 'laugh', 'sad', 'read', 'phone', 'lookup', 'dance', 'no', 'jump']
+def acts(name, t, tc=0.0, ph=0.0, aim=100.0):
+    """Joint angles for an action. t = seconds into the beat, tc = seconds relative to the key word (negative = before it is spoken), ph = walking phase, aim = pointing angle."""
+    e = 0.4 + 0.6 * ease((tc + .15) / .35); s = math.sin; a = dict(BASE_A)
+    if name == 'idle': a.update(la=-30 + 6 * s(t * 2.1), ra=32 + 6 * s(t * 2.1 + 1.5), re=22 + 6 * s(t * 1.7), le=18)
+    elif name == 'explain': a.update(ra=55 + 30 * e * s(t * 4.2), re=-35 + 25 * e * s(t * 4.2 + 1.2), la=-18 + 8 * s(t * 2.5), le=20 + 10 * s(t * 3), lean=3 + 2 * s(t * 2))
+    elif name == 'point': k = ease((tc + .1) / .3); a.update(ra=lerp(45, aim, k), re=lerp(35, 0, k), la=-12, le=10, lean=3 * k)
+    elif name == 'think': a.update(ra=20, re=168, la=-12, le=10, tilt=-6 + 4 * s(t * 1.5), expr='think')
+    elif name == 'shrug': k = ease(t / .3) * e; a.update(ra=lerp(8, 48, k), re=lerp(8, 100, k), la=-lerp(8, 48, k), le=-lerp(8, 100, k), dy=-3 * k, tilt=8 * s(t * 2))
+    elif name == 'cheer': a.update(ra=138 + 10 * s(t * 8), re=22, la=-138 - 10 * s(t * 8), le=-22, dy=18 * abs(s(t * 6)) * e, expr='happy')
+    elif name == 'wave': a.update(ra=150, re=-25 + 30 * s(t * 9), la=-8, le=8, expr='happy')
+    elif name == 'walk': a.update(ll=32 * s(ph), rl=-32 * s(ph), lk=-42 * max(0, s(ph + 1.3)), rk=-42 * max(0, -s(ph + 1.3)), la=-28 * s(ph), ra=28 * s(ph), le=10, re=10, dy=4 * abs(s(ph)), lean=4)
+    elif name == 'run': a.update(ll=55 * s(ph), rl=-55 * s(ph), lk=-80 * max(0, s(ph + 1.3)), rk=-80 * max(0, -s(ph + 1.3)), la=-50 * s(ph), ra=50 * s(ph), le=-85, re=-85, dy=10 * abs(s(ph)), lean=14)
+    elif name == 'sit': a.update(sit=1, ll=88, lk=-88, rl=88, rk=-88, ra=30, re=60, la=-10, le=20)
+    elif name == 'sleep': a.update(rot=88, sit=2, ra=4, la=-4, expr='sleep')
+    elif name == 'surprised':
+        st = ease(tc / .2) if tc > 0 else 0.0
+        a.update(lean=-14 * st, ra=lerp(8, 75, st), re=lerp(8, 35, st), la=-lerp(8, 75, st), le=-lerp(8, 35, st), dy=22 * max(0, 1 - tc * 4) if tc > 0 else 0, expr='surp' if tc > -.1 else 'n')
+    elif name == 'laugh': a.update(lean=-8, tilt=-10, dy=5 * abs(s(t * 16)), ra=35, re=100, la=-10, le=10, expr='laugh')
+    elif name == 'sad': a.update(lean=12, tilt=22, ra=4, la=-4, expr='sad')
+    elif name == 'read': a.update(ra=62, re=85, la=-30, le=70, tilt=14)
+    elif name == 'phone': a.update(ra=75, re=80, la=-20, le=10, tilt=16)
+    elif name == 'lookup': a.update(tilt=-18, ra=150, re=130, la=-10, le=8)
+    elif name == 'dance': a.update(ra=120 + 30 * s(t * 6), re=20, la=-(120 + 30 * s(t * 6 + 3)), le=-20, dy=14 * abs(s(t * 6)), ll=12 * s(t * 6), rl=-12 * s(t * 6), expr='happy')
+    elif name == 'no': a.update(ra=100, re=80, la=-10, le=10, tilt=14 * s(t * 8), lean=-3)
+    elif name == 'jump': a.update(ra=125, re=20, la=-125, le=-20, dy=48 * abs(s(t * 5)) * e, expr='happy')
+    else: a.update(ra=8, la=-8)
+    return a
+def mix_a(a, b, k):
+    out = {}
+    for key in a:
+        out[key] = lerp(a[key], b[key], k) if key != 'expr' else (b[key] if k > .5 else a[key])
+    return out
+
+def rig(c, x, ground, s, a, now, talk, d=1, mouth=0.0, blink=False):
+    """Draws the stick narrator. a = joint angles. Returns key points (hands, head) for props and emotes."""
+    hipy = ground - 104 * s - a['dy'] * s
+    if a['sit'] == 1: hipy = ground - 56 * s
+    elif a['sit'] == 2: hipy = ground - 24 * s
+    rot = math.radians(a['rot']); cr, sr = math.cos(rot), math.sin(rot)
+    def T(p):
+        px = p[0] * d; return (x + (px * cr - p[1] * sr) * s, hipy + (px * sr + p[1] * cr) * s)
+    lean = math.radians(a['lean']); sh = (math.sin(lean) * 88, -math.cos(lean) * 88)
+    hd = math.radians(a['lean'] + a['tilt']); hc = (sh[0] + math.sin(hd) * 54, sh[1] - math.cos(hd) * 54)
+    def chain(origin, a0, a1):
+        p1, p2 = limb(a0, a1); return [origin, (origin[0] + p1[0], origin[1] + p1[1]), (origin[0] + p2[0], origin[1] + p2[1])]
+    legL = chain((0, 0), a['ll'], a['lk']); legR = chain((0, 0), a['rl'], a['rk']); armL = chain(sh, a['la'], a['le']); armR = chain(sh, a['ra'], a['re'])
+    sw = 8 * s
+    def draw(ch, foot=False):
+        pts = [T(p) for p in ch]; c.line(pts, sw / s * s, INK)
+        if foot: e = ch[-1]; c.line([T(e), T((e[0] + 15, e[1]))], sw / s * s, INK)
+    draw(legL, True); draw(armL); draw(legR, True)
+    c.line([T((0, 0)), T(sh)], sw, INK)
+    draw(armR)
+    for ch in (armL, armR): hx, hy = T(ch[-1]); c.circ(hx, hy, 5.5 * s, INK, None, 0)
+    H0 = T(hc); c.circ(H0[0], H0[1], 44 * s, WHITE, INK, sw)
+    tuft = [T((hc[0] + dx, hc[1] - 44 - dy)) for dx, dy in ((-16, -2), (-6, 12), (4, 3), (14, 14))]; c.line(tuft, sw * .7, INK)
+    ex = [(hc[0] + 8, hc[1] - 6), (hc[0] + 30, hc[1] - 6)]; ex = [T(p) for p in ex]
+    expr = a['expr']; closed = blink or expr == 'sleep'
+    for p in ex:
+        c.circ(p[0], p[1], 13 * s, None, INK, 3.5 * s)
+        if closed: c.line([(p[0] - 8 * s, p[1]), (p[0] + 8 * s, p[1])], 3.5 * s, INK)
+        else: c.circ(p[0] + 2 * s * d, p[1] + (3 * s if expr == 'sad' else 0), 4.2 * s, INK, None, 0)
+    c.line([(ex[0][0] + 13 * s * d, ex[0][1]), (ex[1][0] - 13 * s * d, ex[1][1])], 3 * s, INK)
+    if expr in ('surp', 'think', 'sad'):   # eyebrows
+        for i, p in enumerate(ex):
+            up = 16 if expr == 'surp' else 13; sl = (-5 if expr == 'think' and i == 1 else 5 if expr == 'sad' else 0)
+            c.line([(p[0] - 10 * s, p[1] - up * s + sl * s * (1 if i == 0 else -1)), (p[0] + 10 * s, p[1] - up * s - sl * s * (1 if i == 0 else -1))], 3 * s, INK)
+    m = T((hc[0] + 20, hc[1] + 24))
+    if expr == 'surp': c.ell(m[0] - 8 * s, m[1] - 10 * s, m[0] + 8 * s, m[1] + 10 * s, INK, INK, 2)
+    elif expr == 'sad': c.arc(m[0] - 12 * s, m[1] - 2 * s, m[0] + 12 * s, m[1] + 16 * s, 200, 340, 3.5 * s)
+    elif expr == 'sleep': c.line([(m[0] - 8 * s, m[1]), (m[0] + 8 * s, m[1])], 3.5 * s)
+    elif talk or expr == 'laugh':
+        h = (3 + 11 * mouth) * s; c.ell(m[0] - 9 * s, m[1] - h / 2, m[0] + 9 * s, m[1] + h / 2, INK, INK, 2)
+    elif expr == 'happy': c.arc(m[0] - 13 * s, m[1] - 10 * s, m[0] + 13 * s, m[1] + 8 * s, 20, 160, 3.5 * s)
+    else: c.line([(m[0] - 10 * s, m[1]), (m[0] + 10 * s, m[1] - 1 * s)], 3.5 * s)
+    return {'hand_r': T(armR[-1]), 'hand_l': T(armL[-1]), 'head': (H0[0], H0[1] - 66 * s), 'chest': T((sh[0] * .5, sh[1] * .5)), 'sh': T(sh), 'foot': (x, ground)}
+
 def figure(c, x, y, s, pose, now, talking=True):
-    col = INK; sw = 8 * s; b = wob(0, now, 2.0) * s
-    hx, hy = x, y - 262 * s + b; sh_y = y - 205 * s + b; hip = (x, y - 105 * s + b)
-    c.line([(x, sh_y), hip], sw, col); c.line([hip, (x - 38 * s, y)], sw, col); c.line([hip, (x + 38 * s, y)], sw, col)
-    sway = math.sin(now * 3) * 10 * s
-    if pose == 'point': arms = [[(x, sh_y + 12 * s), (x - 52 * s, y - 120 * s), (x - 70 * s, y - 80 * s + sway)], [(x, sh_y + 12 * s), (x + 70 * s, y - 215 * s), (x + 135 * s, y - 250 * s + sway)]]
-    elif pose == 'think': arms = [[(x, sh_y + 12 * s), (x - 52 * s, y - 120 * s), (x - 60 * s, y - 70 * s)], [(x, sh_y + 12 * s), (x + 55 * s, y - 150 * s), (x + 20 * s, y - 232 * s)]]
-    elif pose == 'shrug': arms = [[(x, sh_y + 12 * s), (x - 60 * s, y - 150 * s), (x - 80 * s, y - 190 * s + sway)], [(x, sh_y + 12 * s), (x + 60 * s, y - 150 * s), (x + 80 * s, y - 190 * s - sway)]]
-    elif pose == 'cheer': arms = [[(x, sh_y + 12 * s), (x - 60 * s, y - 250 * s), (x - 80 * s, y - 330 * s + sway)], [(x, sh_y + 12 * s), (x + 60 * s, y - 250 * s), (x + 80 * s, y - 330 * s - sway)]]
-    else: arms = [[(x, sh_y + 12 * s), (x - 55 * s, y - 130 * s), (x - 62 * s, y - 85 * s + sway)], [(x, sh_y + 12 * s), (x + 55 * s, y - 130 * s), (x + 62 * s, y - 85 * s - sway)]]
-    for a in arms: c.line(a, sw, col)
-    c.circ(hx, hy, 46 * s, WHITE, col, sw)
-    c.arc(hx - 22 * s, hy - 62 * s, hx + 22 * s, hy - 36 * s, 200, 340, sw * .8)   # tuft of hair
-    for dx in (-18, 18): c.circ(hx + dx * s, hy - 6 * s, 15 * s, None, col, 4 * s)   # glasses
-    c.line([(hx - 3 * s, hy - 6 * s), (hx + 3 * s, hy - 6 * s)], 3 * s)
-    for dx in (-18, 18): c.circ(hx + dx * s, hy - 6 * s, 4 * s, col, None, 0)
-    if talking and int(now * 7) % 2 == 0: c.ell(hx - 11 * s, hy + 16 * s, hx + 11 * s, hy + 34 * s, col, col, 2)
-    else: c.line([(hx - 12 * s, hy + 24 * s), (hx + 12 * s, hy + 22 * s)], 4 * s)
+    """Compatibility wrapper (thumbnail): draws the narrator standing with a named pose."""
+    name = {'point': 'point', 'think': 'think', 'shrug': 'shrug', 'cheer': 'cheer'}.get(pose, 'idle')
+    rig(c, x, y, s * 1.0, acts(name, now, 1.0), now, talking, 1, .5)
 
-# ---------------- scenes ----------------
-def typed(t, lt, t0, cps=34): return t[:max(0, int((lt - t0) * cps))]
-def center_lines(c, lines, cx, y, size, col=INK, lh=1.2, **kw):
-    for i, ln in enumerate(lines): c.text((cx, y + i * size * lh), ln, size, col, 'ma', **kw)
-def underline(c, x0, x1, y, lt, t0, col=ACC):
-    g = ease((lt - t0) / .5)
-    if g > 0: c.line([(x0, y), (x0 + (x1 - x0) * g, y + 3 * math.sin(g * 6))], 8, col)
+# ---------------- v4: backdrops (drawn once, cached) ----------------
+SKYC = (190, 224, 242); GRASSC = (148, 198, 118); SANDC = (240, 208, 146); DARK = (28, 36, 74)
+def _sky(c, col=SKYC, hz=585): c.d.rectangle([0, 0, W * K, hz * K], fill=col)
+def _ground(c, col, y=GROUND):
+    c.d.rectangle([0, y * K, W * K, H * K], fill=col); c.line([(0, y), (W, y)], 4, INK)
+def _tree(c, x, y, u=1.0, col=(96, 168, 92)):
+    c.rr(x - 10 * u, y - 90 * u, x + 10 * u, y, 3, (140, 98, 60), INK, 4)
+    for dx, dy, r in ((0, -130, 52), (-34, -100, 36), (34, -100, 36)): c.circ(x + dx * u, y + dy * u, r * u, col, INK, 4)
+def bg_plain(c): _ground(c, SOFT)
+def bg_park(c):
+    _sky(c); c.ell(-200, 440, 700, 760, (170, 214, 140), INK, 4); c.ell(500, 470, 1500, 800, (160, 206, 130), INK, 4); _ground(c, GRASSC); _tree(c, 150, 585, 1.5); _tree(c, 1140, 585, 1.2)
+    c.circ(1000, 120, 48, (255, 226, 120), INK, 5)
+def bg_desert(c):
+    _sky(c, (252, 226, 178)); c.circ(980, 150, 70, (255, 214, 120), INK, 5)
+    c.poly([(150, 480), (260, 330), (370, 480)], (226, 188, 120), INK, 4); c.poly([(300, 480), (380, 390), (460, 480)], (214, 176, 110), INK, 4)
+    c.ell(-250, 430, 600, 800, (236, 200, 134), INK, 4); c.ell(450, 400, 1500, 820, (228, 190, 122), INK, 4); _ground(c, SANDC)
+    c.rr(1130, 470, 1150, 585, 8, (90, 160, 90), INK, 4); c.rr(1105, 500, 1130, 515, 6, (90, 160, 90), INK, 3); c.rr(1105, 500, 1117, 540, 6, (90, 160, 90), INK, 3)
+def bg_city(c):
+    _sky(c, (200, 220, 236)); import random as _r; r = _r.Random(4); x = 0
+    while x < W:
+        w = r.randint(90, 170); h = r.randint(180, 400); col = r.choice([(150, 160, 190), (170, 150, 170), (140, 170, 180), (182, 170, 150)])
+        c.rr(x, 585 - h, x + w, 585, 2, col, INK, 4)
+        for yy in range(585 - h + 20, 560, 38):
+            for xx in range(x + 14, x + w - 20, 32): c.rr(xx, yy, xx + 16, yy + 22, 2, (255, 236, 160) if r.random() < .5 else (120, 140, 170), None, 0)
+        x += w
+    _ground(c, (120, 124, 136))
+    for xx in range(40, W, 140): c.line([(xx, 650), (xx + 60, 650)], 6, (240, 240, 230))
+def bg_home(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(238, 224, 198)); c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(196, 152, 112)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    c.rr(120, 90, 360, 330, 6, SKYC, INK, 8); c.line([(240, 90), (240, 330)], 5); c.line([(120, 210), (360, 210)], 5)
+    c.rr(520, 120, 700, 240, 4, (250, 236, 200), INK, 6); c.circ(610, 180, 30, GREEN, INK, 4); c.rr(940, 330, 1180, 380, 8, (160, 110, 80), INK, 5); c.rr(1010, 380, 1030, 585, 3, (160, 110, 80), INK, 4)
+    c.ell(480, 610, 800, 700, (200, 100, 100), INK, 4)
+def bg_bedroom(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(66, 70, 128)); c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(92, 76, 100)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    c.rr(900, 90, 1160, 330, 6, (30, 36, 84), INK, 8); c.circ(1060, 190, 42, GOLD, INK, 4); c.circ(1080, 176, 36, (30, 36, 84), None, 0)
+    for xx, yy in ((930, 130), (1000, 290), (1120, 120), (940, 250)): c.circ(xx, yy, 3, WHITE, None, 0)
+    c.rr(130, 330, 190, 420, 4, (120, 100, 140), INK, 4)
+def bg_ocean(c):
+    _sky(c, SKYC, 400); c.d.rectangle([0, 380 * K, W * K, 540 * K], fill=(84, 164, 214)); c.line([(0, 380), (W, 380)], 4, INK)
+    c.circ(220, 140, 52, (255, 226, 120), INK, 5); c.d.rectangle([0, 540 * K, W * K, H * K], fill=SANDC); c.line([(0, 540), (W, 540)], 4, INK)
+def bg_space(c):
+    import random as _r; r = _r.Random(8); c.d.rectangle([0, 0, W * K, H * K], fill=(14, 16, 44))
+    for _ in range(90): c.circ(r.randint(0, W), r.randint(0, 540), r.choice([1.5, 2, 2.5]), WHITE, None, 0)
+    c.circ(1000, 170, 70, (210, 120, 90), INK, 5); c.ell(900, 150, 1100, 190, None, (240, 200, 150), 5); c.circ(250, 140, 40, (120, 150, 220), INK, 4)
+    c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(110, 112, 130)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    for xx, yy, rr_ in ((200, 640, 30), (700, 660, 22), (1050, 630, 36)): c.ell(xx - rr_, yy - rr_ / 2, xx + rr_, yy + rr_ / 2, (90, 92, 110), INK, 3)
+def bg_brain(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(236, 228, 248)); import random as _r; r = _r.Random(6); pts = [(r.randint(40, W - 40), r.randint(40, 540)) for _ in range(26)]
+    for i, p in enumerate(pts):
+        for q in pts[i + 1:i + 4]: c.line([p, q], 2.5, (196, 180, 226))
+    for p in pts: c.circ(p[0], p[1], 9, (206, 190, 236), (170, 150, 210), 3)
+    _ground(c, (216, 204, 236))
+def bg_night(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=DARK); import random as _r; r = _r.Random(2)
+    for _ in range(60): c.circ(r.randint(0, W), r.randint(0, 400), 2, WHITE, None, 0)
+    c.circ(1020, 130, 52, (250, 236, 170), INK, 4); c.circ(1044, 118, 46, DARK, None, 0)
+    for x0, h in ((100, 150), (330, 190), (760, 170)): c.rr(x0, 585 - h, x0 + 150, 585, 2, (46, 52, 96), INK, 4); c.poly([(x0 - 10, 585 - h), (x0 + 75, 585 - h - 60), (x0 + 160, 585 - h)], (60, 44, 80), INK, 4); c.rr(x0 + 55, 585 - h + 40, x0 + 95, 585 - h + 90, 2, (255, 224, 130), None, 0)
+    _ground(c, (36, 62, 70))
+def bg_forest(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(176, 212, 170))
+    for x0, u in ((60, 1.9), (330, 1.5), (600, 1.8), (880, 1.5), (1150, 1.9)): _tree(c, x0, 585, u, (72, 140, 82))
+    _ground(c, (110, 160, 90))
+def bg_mountain(c):
+    _sky(c); c.poly([(-50, 585), (260, 230), (560, 585)], (150, 156, 170), INK, 4); c.poly([(380, 585), (720, 150), (1100, 585)], (138, 144, 160), INK, 4); c.poly([(900, 585), (1150, 300), (1400, 585)], (156, 162, 176), INK, 4)
+    c.poly([(640, 235), (720, 150), (800, 235), (760, 220), (720, 245), (680, 220)], WHITE, INK, 3); c.poly([(222, 290), (260, 230), (298, 290), (260, 280)], WHITE, INK, 3); _ground(c, GRASSC)
+def bg_office(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(214, 224, 232)); c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(150, 150, 160)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    c.rr(80, 80, 420, 330, 6, SKYC, INK, 8); c.line([(250, 80), (250, 330)], 5); c.rr(780, 110, 1000, 230, 4, WHITE, INK, 5)
+    for i in range(3): c.line([(810, 140 + i * 30), (960 - i * 30, 140 + i * 30)], 4, BLUE)
+    c.rr(1040, 470, 1240, 585, 4, (160, 120, 90), INK, 5)
+def bg_school(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(232, 222, 196)); c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(184, 148, 108)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    c.rr(300, 70, 980, 360, 8, (52, 96, 80), (140, 100, 60), 10)
+    c.line([(350, 130), (520, 130)], 4, WHITE); c.line([(350, 170), (700, 170)], 4, WHITE); c.circ(860, 200, 40, None, WHITE, 4); c.line([(380, 250), (460, 300), (560, 240), (660, 310)], 4, WHITE)
+def bg_stage(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(120, 40, 56))
+    for x0 in range(0, W, 120): c.line([(x0, 0), (x0 + 30, 585)], 8, (150, 56, 72))
+    c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(176, 130, 86)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    c.poly([(560, 0), (720, 0), (900, 585), (380, 585)], (255, 236, 170), None, 0)
+def bg_history(c):
+    _sky(c, (244, 222, 190))
+    for x0 in (120, 300, 980, 1140):
+        c.rr(x0, 150, x0 + 60, 585, 2, (232, 220, 200), INK, 4); c.rr(x0 - 12, 120, x0 + 72, 152, 2, (220, 206, 184), INK, 4)
+    c.poly([(60, 120), (640, 40), (1220, 120)], (226, 210, 186), INK, 4); _ground(c, (206, 190, 160))
+BGS = {'plain': bg_plain, 'park': bg_park, 'desert': bg_desert, 'city': bg_city, 'home': bg_home, 'bedroom': bg_bedroom, 'ocean': bg_ocean, 'space': bg_space, 'brain': bg_brain, 'night': bg_night,
+       'forest': bg_forest, 'mountain': bg_mountain, 'office': bg_office, 'school': bg_school, 'stage': bg_stage, 'history': bg_history}
+SKYBG = {'park', 'desert', 'city', 'ocean', 'mountain', 'history'}
+def bg_anim(c, name, now):
+    if name in SKYBG:
+        for i, (x0, y0, sc) in enumerate(((100, 100, 1.0), (560, 70, 1.3), (900, 160, .8))):
+            x = (x0 + now * (8 + 4 * i)) % (W + 300) - 150
+            for dx, dy, r in ((0, 0, 30), (30, -10, 36), (62, 4, 28)): c.circ(x + dx * sc, y0 + dy * sc, r * sc, WHITE, None, 0)
+    if name == 'ocean':
+        for row in range(3):
+            for x0 in range(-80, W + 80, 120): c.arc(x0 + ((now * 30 + row * 40) % 120), 410 + row * 45, x0 + 90 + ((now * 30 + row * 40) % 120), 440 + row * 45, 190, 350, 5, WHITE)
+    if name in ('night', 'space', 'bedroom'):
+        for i in range(6):
+            sx = (i * 211 + 60) % W; sy = (i * 97 + 40) % 300; r = 3 + 2 * math.sin(now * 3 + i); c.circ(sx, sy, r, WHITE, None, 0)
+    if name == 'brain':
+        for i in range(5):
+            a = now * .6 + i * 1.3; c.circ(640 + math.cos(a) * (200 + 90 * i), 280 + math.sin(a * 1.2) * (110 + 20 * i), 7, (150, 120, 210), None, 0)
 
-def scene_figure(c, sp, lt, dur, now):
-    figure(c, 290, 585, 1.0, sp.get('pose', 'idle'), now)
-    icon(c, sp.get('icon', 'bulb'), 880, 270, 130 * pop(lt, .15), now)
-    lines = wrap(sp.get('text', ''), 50, 560)[:3]; shown = typed(sp.get('text', ''), lt, .5, 30)
-    y0 = 430
-    k = 0
-    for i, ln in enumerate(lines):
-        part = shown[k:k + len(ln) + 1]; k += len(ln) + 1
-        c.text((880, y0 + i * 60), part.strip(), 50, INK, 'ma', stroke=2)
-    if lines: underline(c, 880 - min(tw(max(lines, key=len), 50), 560) / 2, 880 + min(tw(max(lines, key=len), 50), 560) / 2, y0 + len(lines) * 60 + 6, lt, 1.2)
-def scene_big(c, sp, lt, dur, now):
-    icon(c, sp.get('icon', 'bulb'), 640, 185, 105 * pop(lt, .1), now)
-    lines = wrap(sp.get('text', ''), 70, 1080)[:3]; k = 0; shown = typed(sp.get('text', ''), lt, .45, 34)
-    for i, ln in enumerate(lines):
-        part = shown[k:k + len(ln) + 1]; k += len(ln) + 1; c.text((640, 330 + i * 84), part.strip(), 70, INK, 'ma', stroke=2)
-    if lines: underline(c, 640 - min(tw(max(lines, key=len), 70), 1080) / 2, 640 + min(tw(max(lines, key=len), 70), 1080) / 2, 330 + len(lines) * 84 + 4, lt, 1.3)
-def scene_versus(c, sp, lt, dur, now):
-    for side, (x0, x1, head, col, ic, lab, t0) in enumerate(((70, 610, 'THEN', BLUE, sp.get('left_icon', 'scroll'), sp.get('left', ''), .15), (670, 1210, 'NOW', ACC, sp.get('right_icon', 'phone'), sp.get('right', ''), max(.9, dur * .38)))):
-        p = pop(lt, t0)
-        if p <= 0: continue
-        m = (x0 + x1) / 2; yo = (1 - clamp(p)) * 40
-        c.rr(x0, 110 + yo, x1, 560 + yo, 26, WHITE, INK, 6); c.rr(m - 90, 90 + yo, m + 90, 150 + yo, 18, col, INK, 5); c.text((m, 120 + yo), head, 38, WHITE, 'mm')
-        icon(c, ic, m, 280 + yo, 100 * p, now)
-        center_lines(c, wrap(lab, 40, 480)[:3], m, 400 + yo, 40, INK)
-    if pop(lt, .6) > 0: c.circ(640, 335, 36 * pop(lt, .6), INK, INK, 3); c.text((640, 335), 'vs', 34 * clamp(pop(lt, .6)), WHITE, 'mm')
-def scene_quote(c, sp, lt, dur, now):
-    p = pop(lt, .05, .5); yo = (1 - clamp(p)) * 50
-    c.rr(130, 100 + yo, 1150, 520 + yo, 28, WHITE, INK, 7); c.text((175, 85 + yo), '“', 150, ACC, 'la', stroke=0)
-    t = sp.get('text', ''); lines = wrap(t, 38, 880, False, True)[:7]; shown = typed(t, lt, .4, 40); k = 0
-    for i, ln in enumerate(lines):
-        part = shown[k:k + len(ln) + 1]; k += len(ln) + 1; c.text((200, 190 + yo + i * 46), part.strip(), 38, INK, 'la', False, True)
-    if lt > dur * .6: c.text((1100, 478 + yo), '— ' + sp.get('who', ''), 30, BLUE, 'ra')
-def scene_stat(c, sp, lt, dur, now):
-    p = pop(lt, .1, .6); sz = 210 * max(.05, p)
-    for i in range(10): a = i * math.pi / 5 + .3; r0 = 250 + 8 * math.sin(now * 5 + i); c.line([(640 + math.cos(a) * r0, 300 + math.sin(a) * r0 * .55), (640 + math.cos(a) * (r0 + 40), 300 + math.sin(a) * (r0 + 40) * .55)], 7, GOLD)
-    c.text((640, 300), sp.get('big', ''), min(sz, 230), ACC, 'mm', stroke=3)
-    center_lines(c, wrap(sp.get('text', ''), 50, 1000)[:2], 640, 445, 50, INK) if lt > .6 else None
-def scene_question(c, sp, lt, dur, now):
-    figure(c, 1010, 600, .62, 'think', now); c.text((1070, 150 + 8 * math.sin(now * 4)), '?', 120, ACC, 'mm', stroke=3)
-    lines = wrap(sp.get('text', ''), 66, 860)[:4]; shown = typed(sp.get('text', ''), lt, .3, 32); k = 0
-    for i, ln in enumerate(lines):
-        part = shown[k:k + len(ln) + 1]; k += len(ln) + 1; c.text((90, 140 + i * 80), part.strip(), 66, INK, 'la', stroke=2)
-def scene_take(c, sp, lt, dur, now):
-    figure(c, 250, 585, .95, 'cheer', now); icon(c, 'bulb', 870, 230, 120 * pop(lt, .1), now)
-    center_lines(c, wrap(sp.get('text', ''), 54, 600)[:3], 870, 380, 54, INK, stroke=2)
-SCENES = {'figure': scene_figure, 'big': scene_big, 'versus': scene_versus, 'quote': scene_quote, 'stat': scene_stat, 'question': scene_question, 'takeaway': scene_take}
+# ---------------- v4: props (things the story is about) ----------------
+def P_dog(c, x, y, u, now):
+    S = lambda dx, dy: (x + dx * u, y + dy * u); col = (205, 150, 92)
+    for lx in (-38, -18, 22, 40): c.line([S(lx, -34), S(lx + 3 * math.sin(now * 9 + lx), 0)], 8 * u, INK)
+    c.line([S(-58, -58), S(-86, -86 + 12 * math.sin(now * 14))], 7 * u, INK)
+    c.ell(*S(-62, -80), *S(48, -30), col, INK, 5); c.circ(*S(58, -80), 27 * u, col, INK, 5)
+    c.poly([S(40, -100), S(30, -62), S(52, -76)], (150, 100, 60), INK, 4); c.ell(*S(60, -82), *S(92, -58), (230, 200, 160), INK, 4)
+    c.circ(*S(94, -72), 5 * u, INK, None, 0); c.circ(*S(62, -90), 4 * u, INK, None, 0)
+def P_cat(c, x, y, u, now):
+    S = lambda dx, dy: (x + dx * u, y + dy * u); col = (150, 150, 160)
+    c.line([S(-52, -40), S(-90, -50), S(-100, -100 + 6 * math.sin(now * 4))], 7 * u, INK)
+    c.ell(*S(-56, -74), *S(40, -26), col, INK, 5)
+    for lx in (-34, 24): c.line([S(lx, -32), S(lx, 0)], 8 * u, INK)
+    c.circ(*S(52, -80), 26 * u, col, INK, 5); c.poly([S(32, -98), S(36, -128), S(52, -102)], col, INK, 4); c.poly([S(56, -102), S(72, -128), S(76, -96)], col, INK, 4)
+    for dx in (46, 62): c.circ(*S(dx, -84), 3.5 * u, INK, None, 0)
+    for dy in (-70, -64): c.line([S(60, dy), S(92, dy - 6)], 2 * u); c.line([S(60, dy), S(92, dy + 6)], 2 * u)
+def P_bird(c, x, y, u, now):
+    S = lambda dx, dy: (x + dx * u, y + dy * u + 6 * math.sin(now * 5) * u); f = math.sin(now * 12) * 22
+    c.poly([S(-12, -4), S(-60, -30 + f), S(10, -26)], (140, 180, 230), INK, 4); c.ell(*S(-40, -26), *S(34, 20), (110, 160, 220), INK, 5); c.circ(*S(36, -20), 20 * u, (110, 160, 220), INK, 5)
+    c.poly([S(52, -22), S(78, -14), S(52, -8)], GOLD, INK, 3); c.circ(*S(40, -26), 3.5 * u, INK, None, 0); c.poly([S(-38, 0), S(-80, 16), S(-36, 14)], (140, 180, 230), INK, 3)
+def P_fish(c, x, y, u, now):
+    S = lambda dx, dy: (x + dx * u, y + dy * u + 5 * math.sin(now * 3) * u)
+    c.poly([S(-40, 0), S(-82, -26 + 6 * math.sin(now * 9)), S(-82, 26 - 6 * math.sin(now * 9))], ACC, INK, 4); c.ell(*S(-56, -32), *S(50, 32), (250, 150, 90), INK, 5); c.circ(*S(28, -8), 5 * u, INK, None, 0)
+def P_tree(c, x, y, u, now): _tree(c, x, y, u * 1.2)
+def P_car(c, x, y, u, now):
+    S = lambda dx, dy: (x + dx * u, y + dy * u)
+    c.rr(*S(-90, -62), *S(90, -22), 12 * u, ACC, INK, 5); c.poly([S(-50, -62), S(-30, -98), S(36, -98), S(62, -62)], (240, 120, 100), INK, 5); c.poly([S(-38, -66), S(-24, -92), S(2, -92), S(2, -66)], SKYC, INK, 3)
+    for wx in (-52, 52): c.circ(*S(wx, -18), 22 * u, INK, INK, 3); c.circ(*S(wx, -18), 9 * u, SOFT, None, 0)
+def P_ball(c, x, y, u, now):
+    yy = abs(math.sin(now * 4.5)) * 70 * u; c.ell(x - 26 * u, y - 52 * u - yy, x + 26 * u, y - yy, ACC, INK, 5); c.line([(x - 26 * u, y - 26 * u - yy), (x + 26 * u, y - 26 * u - yy)], 4)
+def P_apple(c, x, y, u, now):
+    c.circ(x, y, 44 * u, ACC, INK, 5); c.line([(x, y - 44 * u), (x + 6 * u, y - 66 * u)], 5 * u); c.poly([(x + 6 * u, y - 60 * u), (x + 40 * u, y - 74 * u), (x + 24 * u, y - 50 * u)], GREEN, INK, 3)
+def P_cup(c, x, y, u, now):
+    c.rr(x - 40 * u, y - 40 * u, x + 30 * u, y + 40 * u, 8 * u, WHITE, INK, 5); c.arc(x + 14 * u, y - 24 * u, x + 60 * u, y + 20 * u, 270, 90, 6)
+    for i in range(3): xx = x - 20 * u + i * 20 * u; c.line([(xx, y - 52 * u), (xx + 6 * u * math.sin(now * 3 + i), y - 70 * u), (xx, y - 88 * u)], 3.5 * u, (160, 160, 170))
+def P_bed(c, x, y, u, now):
+    S = lambda dx, dy: (x + dx * u, y + dy * u)
+    c.rr(*S(-110, -70), *S(110, -30), 6 * u, (190, 140, 100), INK, 5); c.rr(*S(-110, -100), *S(-92, 0), 3, (150, 100, 70), INK, 4); c.rr(*S(92, -60), *S(110, 0), 3, (150, 100, 70), INK, 4)
+    c.rr(*S(-100, -84), *S(-50, -66), 8 * u, WHITE, INK, 4); c.rr(*S(-40, -80), *S(100, -62), 6 * u, BLUE, INK, 4)
+def P_cloud(c, x, y, u, now):
+    for dx, dy, r in ((-40, 6, 34), (0, -12, 44), (44, 6, 34)): c.circ(x + dx * u, y + dy * u, r * u, (216, 224, 236), INK, 4)
+    for i in range(4): c.line([(x - 40 * u + i * 26 * u, y + 50 * u + (now * 90 + i * 30) % 40), (x - 46 * u + i * 26 * u, y + 66 * u + (now * 90 + i * 30) % 40)], 3.5, BLUE)
+def P_money(c, x, y, u, now):
+    sq = abs(math.cos(now * 3)); c.ell(x - 46 * u * (.15 + .85 * sq), y - 46 * u, x + 46 * u * (.15 + .85 * sq), y + 46 * u, GOLD, INK, 5)
+    if sq > .5: c.text((x, y), '$', 56 * u, INK, 'mm')
+def P_mirror(c, x, y, u, now):
+    c.line([(x, y + 50 * u), (x, y + 112 * u)], 10 * u, (150, 100, 60)); c.ell(x - 62 * u, y - 86 * u, x + 62 * u, y + 56 * u, (206, 230, 244), (190, 150, 70), 9)
+    c.circ(x, y - 14 * u, 28 * u, WHITE, INK, 4); c.circ(x - 10 * u, y - 20 * u, 3.5 * u, INK, None, 0); c.circ(x + 10 * u, y - 20 * u, 3.5 * u, INK, None, 0); c.arc(x - 12 * u, y - 14 * u, x + 12 * u, y + 2 * u, 20, 160, 3)
+def P_camera(c, x, y, u, now):
+    c.rr(x - 62 * u, y - 36 * u, x + 62 * u, y + 40 * u, 10 * u, (90, 96, 110), INK, 5); c.rr(x - 20 * u, y - 52 * u, x + 20 * u, y - 36 * u, 4, (90, 96, 110), INK, 4); c.circ(x, y + 2 * u, 26 * u, (160, 200, 230), INK, 5)
+    if int(now * 2) % 2 == 0: c.circ(x + 46 * u, y - 22 * u, 5 * u, ACC, None, 0)
+def P_pyramid(c, x, y, u, now): c.poly([(x - 110 * u, y), (x, y - 150 * u), (x + 110 * u, y)], (232, 196, 120), INK, 5); c.line([(x, y - 150 * u), (x - 20 * u, y)], 3, INK)
+def P_camel(c, x, y, u, now):
+    S = lambda dx, dy: (x + dx * u, y + dy * u + 4 * abs(math.sin(now * 4)) * u); col = (214, 170, 100)
+    for lx in (-50, -26, 30, 54): c.line([S(lx, -50), S(lx + 6 * math.sin(now * 5 + lx), 0)], 8 * u, INK)
+    c.ell(*S(-70, -110), *S(70, -42), col, INK, 5); c.circ(*S(-28, -118), 24 * u, col, INK, 5); c.circ(*S(22, -118), 24 * u, col, INK, 5)
+    c.line([S(66, -90), S(90, -150)], 16 * u, col); c.line([S(66, -90), S(90, -150)], 4, INK); c.ell(*S(80, -170), *S(122, -142), col, INK, 5); c.circ(*S(108, -158), 3.5 * u, INK, None, 0)
+def P_mountain(c, x, y, u, now):
+    c.poly([(x - 130 * u, y), (x, y - 190 * u), (x + 130 * u, y)], (150, 156, 172), INK, 5); c.poly([(x - 36 * u, y - 140 * u), (x, y - 190 * u), (x + 36 * u, y - 140 * u), (x + 10 * u, y - 150 * u), (x - 10 * u, y - 134 * u)], WHITE, INK, 3)
+def P_flag(c, x, y, u, now):
+    c.line([(x, y), (x, y - 190 * u)], 7 * u)
+    pts = [(x + i * 8 * u, y - 190 * u + 6 * u * math.sin(now * 5 + i * .7)) for i in range(11)]; pts2 = [(p[0], p[1] + 80 * u) for p in reversed(pts)]; c.poly(pts + pts2, ACC, INK, 4)
+def P_star(c, x, y, u, now):
+    pts = []
+    for i in range(10): a = -math.pi / 2 + i * math.pi / 5 + now * .8; r = (50 if i % 2 == 0 else 22) * u; pts.append((x + math.cos(a) * r, y + math.sin(a) * r))
+    c.poly(pts, GOLD, INK, 5)
+def P_laptop(c, x, y, u, now):
+    c.rr(x - 60 * u, y - 70 * u, x + 60 * u, y + 10 * u, 6, (60, 66, 84), INK, 5); c.rr(x - 50 * u, y - 60 * u, x + 50 * u, y, 3, (170, 214, 240), None, 0)
+    c.poly([(x - 80 * u, y + 40 * u), (x - 60 * u, y + 10 * u), (x + 60 * u, y + 10 * u), (x + 80 * u, y + 40 * u)], (150, 154, 168), INK, 4)
+    for i in range(3): c.line([(x - 36 * u, y - 44 * u + i * 16 * u), (x + 30 * u - i * 12 * u, y - 44 * u + i * 16 * u)], 3.5, BLUE)
+def P_door(c, x, y, u, now):
+    k = .5 + .5 * math.sin(now * 1.6); c.rr(x - 50 * u, y - 150 * u, x + 50 * u, y, 4, (40, 40, 60), INK, 5); c.poly([(x - 50 * u, y - 150 * u), (x - 50 * u + 70 * u * (.3 + k * .4), y - 140 * u), (x - 50 * u + 70 * u * (.3 + k * .4), y - 10 * u), (x - 50 * u, y)], (176, 126, 84), INK, 4)
+def P_fire(c, x, y, u, now):
+    for i, (w, h, col) in enumerate(((46, 110, ACC), (32, 80, GOLD), (16, 50, (255, 240, 170)))):
+        hh = h * (1 + .12 * math.sin(now * 11 + i * 2)); c.poly([(x - w * u, y), (x - w * .5 * u, y - hh * .6 * u), (x, y - hh * u), (x + w * .5 * u, y - hh * .6 * u), (x + w * u, y)], col, INK if i == 0 else None, 4)
+def P_battery(c, x, y, u, now):
+    lv = 0.12 + .88 * (.5 + .5 * math.cos(now * 1.3)); c.rr(x - 66 * u, y - 36 * u, x + 60 * u, y + 36 * u, 8 * u, WHITE, INK, 6); c.rr(x + 60 * u, y - 14 * u, x + 76 * u, y + 14 * u, 3, INK, INK, 2)
+    c.rr(x - 58 * u, y - 28 * u, x - 58 * u + 110 * u * lv, y + 28 * u, 4, GREEN if lv > .3 else ACC, None, 0)
+def P_zzz(c, x, y, u, now):
+    for i in range(3):
+        k = (now * .6 + i / 3) % 1; c.text((x + 16 * i * u + 10 * k, y - k * 120 * u), 'Z', (30 + 14 * i) * u, BLUE, 'mm', stroke=2)
+def P_bang(c, x, y, u, now): c.text((x, y), '!', 190 * u, ACC, 'mm', stroke=4)
+def P_sign(c, x, y, u, now, text=''):
+    c.line([(x, y), (x, y - 160 * u)], 9 * u, (140, 98, 60)); lines = wrap(text, 34, 330)[:3] or ['']; hh = 24 + 40 * len(lines)
+    c.rr(x - 190, y - 190 * u - hh + 40, x + 190, y - 150 * u + 40, 10, (240, 214, 160), (140, 98, 60), 6)
+    for i, ln in enumerate(lines): c.text((x, y - 190 * u - hh + 60 + i * 40), ln, 32, INK, 'ma')
+def P_num(c, x, y, u, now, text=''):
+    s = 1 + .05 * math.sin(now * 6); c.rr(x - 150 * u * s, y - 70 * u * s, x + 150 * u * s, y + 70 * u * s, 26, WHITE, ACC, 7); c.text((x, y), text[:8], 92 * u * s, ACC, 'mm')
+ICON_NAMES = {'brain', 'clock', 'book', 'phone', 'house', 'eye', 'heart', 'moon', 'sun', 'crowd', 'chart', 'face', 'lock', 'scroll', 'question', 'bulb'}
+PROPS = {'dog': (P_dog, 'g'), 'cat': (P_cat, 'g'), 'bird': (P_bird, 'f'), 'fish': (P_fish, 'f'), 'tree': (P_tree, 'g'), 'car': (P_car, 'g'), 'ball': (P_ball, 'g'), 'apple': (P_apple, 'f'), 'cup': (P_cup, 'f'),
+         'bed': (P_bed, 'g'), 'cloud': (P_cloud, 'f'), 'money': (P_money, 'f'), 'mirror': (P_mirror, 'f'), 'camera': (P_camera, 'f'), 'pyramid': (P_pyramid, 'g'), 'camel': (P_camel, 'g'), 'mountain': (P_mountain, 'g'),
+         'flag': (P_flag, 'g'), 'star': (P_star, 'f'), 'laptop': (P_laptop, 'f'), 'door': (P_door, 'g'), 'fire': (P_fire, 'g'), 'battery': (P_battery, 'f'), 'zzz': (P_zzz, 'f'), 'bang': (P_bang, 'f'), 'sign': (P_sign, 'g'), 'num': (P_num, 'f')}
+for _n in ICON_NAMES: PROPS[_n] = (None, 'f')
+def draw_prop(c, k, x, tc, now, text='', out=1.0):
+    """tc = seconds since the prop was first spoken about. It pops in (spring), then idles."""
+    pp = pop(tc, 0, .5) * out
+    if pp <= 0: return
+    fn, kind = PROPS[k]
+    if k in ICON_NAMES: icon(c, k, x, 330 + 8 * math.sin(now * 2 + x), 112 * pp, now)
+    elif kind == 'g': fn(c, x, GROUND, 1.25 * pp, now) if k not in ('sign', 'num') else fn(c, x, GROUND, 1.0 * pp, now, text)
+    else: (fn(c, x, 330 + 7 * math.sin(now * 2 + x), 1.6 * pp, now, text) if k == 'num' else fn(c, x, 340 + 7 * math.sin(now * 2 + x), 1.5 * pp, now))
 
-# ---------------- planning ----------------
-ICONS = [('brain', r'\b(brain|mind|think\w*|thought\w*|psycholog\w*|mental|conscious\w*)\b'), ('moon', r'\b(sleep\w*|dream\w*|night|tired)\b'), ('sun', r'\b(morning|wake\w*|alarm|dawn)\b'),
-         ('heart', r'\b(love|feel\w*|emotion\w*|fear|anger|joy|heart|grief|sad)\b'), ('face', r'\b(face|smile\w*|expression\w*|laugh\w*|cry\w*)\b'), ('crowd', r'\b(people|crowd|others|social|group|society|friends?|everyone)\b'),
-         ('phone', r'\b(phone|screen|app|modern|today|digital|online|scroll\w*)\b'), ('chart', r'\b(percent|study|studies|research|experiment\w*|data|evidence|found|measured|survey)\b'),
-         ('eye', r'\b(see|saw|look\w*|attention|notice\w*|watch\w*|eyes?|observ\w*)\b'), ('lock', r'\b(habit\w*|stuck|trap|control|secret|hidden)\b'), ('house', r'\b(home|house|room|door|family)\b'),
-         ('clock', r'\b(time|clock|hours?|minutes?|days?|years?|century)\b'), ('book', r'\b(book|wrote|write|author|text|read\w*|essay|chapter)\b'), ('bulb', r'\b(idea|insight|realize\w*|learn\w*|understand\w*|answer)\b')]
-STOP = set('a an the and or but of to in on at for with from by is are was were be been it its this that these those you your we our they their he she his her i me my as if so than then there here do does did not no yes can could would should will just very really also about into over under up down out more most some any all each every one'.split())
-def icon_for(t, i):
-    low = t.lower()
-    for n, p in ICONS:
-        if re.search(p, low): return n
-    return ['bulb', 'brain', 'book', 'eye', 'clock'][i % 5]
-def key_phrase(t):
-    t = re.sub(r'["\u201c\u201d]', '', t).strip()
-    first = re.split(r'[,;:\u2014]|(?<=[.!?])\s', t)[0]
-    ws = first.split()
-    if len(ws) > 7:
-        ws = ws[:6]
-        while len(ws) > 2 and ws[-1].lower().strip('.,!?') in STOP: ws.pop()
-    return ' '.join(ws).strip(' .') or t[:40]
-def split_sentences(text): return [s.strip() for s in re.split(r'(?<=[.!?])\s+(?=[A-Z“"\'])', text.strip()) if s.strip()]
+# ---------------- v4: the director (decides what happens on screen for every few words) ----------------
+PROP_KW = [('dog', r'dogs?|puppy|puppies|wolf|wolves'), ('cat', r'cats?|kitten'), ('bird', r'birds?|eagles?|pigeons?|owls?'), ('fish', r'fish|sharks?'), ('tree', r'trees?|leaf|leaves|plants?'), ('car', r'cars?|driving|drives?|driver|traffic'),
+    ('ball', r'ball|sports?|games?|playing'), ('apple', r'food|eat|eating|ate|hungry|apples?|meals?|diet|sugar'), ('cup', r'coffee|tea|drink\w*|cups?'), ('bed', r'bed|sleep\w*|nap|insomnia|dream\w*'), ('cloud', r'clouds?|weather|rain|storm'),
+    ('money', r'money|rich|poor|pay|paid|price|cost|buy|wealth|profit|salary'), ('mirror', r'mirrors?|reflect\w*|faces?|expressions?|appearance|looks'), ('camera', r'camera|photos?|photograph\w*|film|recorded|footage'),
+    ('pyramid', r'pyramids?|egypt\w*|pharaohs?'), ('camel', r'camels?|sahara|nomads?|caravan'), ('mountain', r'mountains?|climb\w*|summit|everest|hik\w+'), ('flag', r'countr\w+|nations?|flag|war|army|government|politic\w*'),
+    ('star', r'stars?|famous|celebrit\w*|fame|winner|champion'), ('laptop', r'computers?|laptop|office|emails?|internet|job|jobs|career'), ('door', r'door|doors|enter\w*|exit|opportunit\w*'), ('fire', r'fire|burn\w*|anger|angry|rage'),
+    ('battery', r'energy|tired|exhaust\w*|fatigue|drain\w*|burnout|willpower'),
+    ('brain', r'brains?|neurons?|mind|minds|mental|psycholog\w*|conscious\w*|subconscious|memory|memories|thought\w*|thinking'), ('clock', r'clock|hours?|minutes?|years?|decades?|centur\w+|time'), ('book', r'books?|wrote|writes|author|essay|chapter|pages?'),
+    ('phone', r'phones?|screens?|apps?|scroll\w*|notification\w*|social media|online'), ('house', r'home|house|room|family|kitchen'), ('eye', r'eyes?|saw|watch\w*|notice\w*|stare\w*|gaze|observ\w*'), ('heart', r'love|loved|heart|emotion\w*|feelings?|fear|grief|joy'),
+    ('moon', r'moon|night|midnight'), ('sun', r'sun|morning|dawn|sunrise|alarm'), ('crowd', r'people|crowd|others|social|group|society|friends?|everyone|strangers?'), ('chart', r'percent|study|studies|research\w*|data|evidence|experiments?|survey|scientists?'),
+    ('lock', r'habits?|stuck|trap\w*|secret|hidden|locked'), ('scroll', r'ancient|history|century|empire|philosopher'), ('bulb', r'idea|insight|realiz\w+|understand\w*|discover\w*|answer|learn\w*'), ('question', r'why|how come|mystery|puzzle|wonder\w*|question')]
+BG_KW = [('desert', r'desert|sahara|dunes?|sand|camels?|egypt\w*'), ('ocean', r'ocean|sea|beach|waves?|swim\w*|island|water'), ('space', r'space|planets?|universe|galaxy|cosmos|astronaut|stars'), ('mountain', r'mountains?|climb\w*|summit|cliffs?|hik\w+'),
+    ('forest', r'forest|woods|jungle|wild|hunt\w*|ancestors?|survival|caves?'), ('history', r'ancient|history|centur\w+|empire|rome|roman|greek|greece|kings?|philosopher\w*|medieval|castle|pharaoh'), ('city', r'cities|city|street|traffic|urban|downtown|commut\w*|strangers?|crowds?'),
+    ('bedroom', r'bed|sleep\w*|dream\w*|insomnia|tired|midnight'), ('night', r'night|dark|moon'), ('office', r'office|job|jobs|work|boss|career|meeting|desk|emails?|computer'), ('school', r'school|class\w*|teacher|students?|exam|lab|experiments?|research\w*|scientists?|studies|study'),
+    ('stage', r'audience|speech|perform\w*|stage|speaking|applause'), ('home', r'home|house|room|kitchen|family|apartment|couch'), ('park', r'park|walk\w*|garden|grass|picnic|outdoor\w*|dog|dogs'), ('brain', r'brain|neurons?|mind|memory|memories|thought\w*|conscious\w*|psycholog\w*|habits?|emotion\w*')]
+ACT_KW = [('run', r'run|running|chas\w+|flee\w*|rush\w*|sprint\w*|escap\w*|hurry'), ('sleep', r'asleep|fall asleep|sleeping|nap|snor\w+|bed'), ('walk', r'walk\w*|travel\w*|journey|wander\w*|march\w*|explor\w*'), ('jump', r'jump\w*|leap\w*|bounce\w*|spike|surge|boost'),
+    ('surprised', r'shock\w*|surpris\w*|suddenly|unexpected\w*|startl\w*|wow|incredibl\w*|turns out|sudden|bizarre|strange|weird|astonish\w*'), ('laugh', r'laugh\w*|funny|humou?r\w*|joke\w*|giggl\w*'), ('sad', r'sad\w*|cry\w*|griev\w*|lone\w*|depress\w*|loss|lose|lost|fail\w*|regret\w*|hurt\w*|pain\w*|mourn\w*'),
+    ('cheer', r'win|won|success\w*|celebrat\w*|triumph\w*|amazing|best|achiev\w*|victory|happy|joy\w*|great'), ('read', r'read\w*|book|wrote|writes|written|author|essay|chapter|pages?'), ('phone', r'phones?|scroll\w*|app|apps|notification\w*|social media|texting'),
+    ('lookup', r'look\w*|watch\w*|see|saw|notice\w*|stare\w*|gaze|observ\w*|eyes?'), ('think', r'think\w*|wonder\w*|imagine|ponder\w*|why|how|maybe|perhaps|mystery|curious|puzzl\w*|decid\w*|choose|choice|question\w*'),
+    ('no', r'never|myth|wrong|false|not true|stop|nothing|cannot|avoid|ignore|don.t|can.t'), ('shrug', r'but|however|yet|although|though|unclear|unknown|not sure|depends|maybe'), ('sit', r'sit\w*|rest\w*|relax\w*|calm|wait\w*|quiet|stay\w*'), ('point', r'first|second|third|next|then|here|this|these|that|those|example|called|named')]
+AHA = re.compile(r'\b(realiz\w+|insight|idea|discover\w*|aha|understand\w*|figured|solution|answer)\b', re.I)
+ROT_BG = ['home', 'park', 'city', 'brain', 'office', 'night', 'school']
+def _words_re(rx): return re.compile(r'^(?:' + rx + r')$', re.I)
+PROP_RE = {n: _words_re(r) for n, r in PROP_KW}; PROP_RX = {n: re.compile(r'\b(?:' + r + r')\b', re.I) for n, r in PROP_KW}
+BG_RX = [(n, re.compile(r'\b(?:' + r + r')\b', re.I)) for n, r in BG_KW]; ACT_RX = [(n, re.compile(r'\b(?:' + r + r')\b', re.I)) for n, r in ACT_KW]
 
-def plan_scenes(script, secs):
-    """secs: list of {'title','sentences':[{'text','start','end'}]}. Returns scene list [{'start','end','sec','type',...}]."""
-    quotes = [re.sub(r'\s+', ' ', p.get('excerpt', '')).strip() for p in script.get('source_passages', [])]
-    who = script.get('author', '')
-    scenes, n = [], 0
+def split_beats(ws):
+    out, cur = [], []
+    for w in ws:
+        cur.append(w); dur = w['e'] - cur[0]['s']
+        if (re.search(r'[.!?]["”]?$', w['w']) and dur >= 2.2) or (re.search(r'[,;:—–]$', w['w']) and dur >= 3.4) or dur >= 5.6: out.append(cur); cur = []
+    if cur:
+        if out and cur[-1]['e'] - cur[0]['s'] < 1.3: out[-1].extend(cur)
+        else: out.append(cur)
+    return out
+def cue_time(name, ws):
+    rx = PROP_RE.get(name)
+    if rx:
+        for w in ws:
+            if rx.match(re.sub(r'[^\w]', '', w['w'])): return max(ws[0]['s'], w['s'] - .12)
+    return ws[0]['s'] + .35
+def plan_world(script, secs, words, journeys, vert=False):
+    beats = []; N = len(secs); cur_bg = 'brain'; bg_t = -99.0; last_act = ''; rot = 0; n_empty = 0
     for si, sec in enumerate(secs):
-        sents = sec['sentences']; i = 0
-        while i < len(sents):
-            j = i; a = sents[i]['start']
-            while j + 1 < len(sents) and sents[j]['end'] - a < 4.5: j += 1
-            txt = ' '.join(s['text'] for s in sents[i:j + 1]); end = sents[j]['end']
-            sp = {'start': a, 'sec': si, 'text': key_phrase(txt), 'icon': icon_for(txt, n)}
-            low = txt.lower(); typ = 'figure' if n % 2 == 0 else 'big'
-            q = next((q for q in quotes if q and len(q) > 25 and q[:40] in re.sub(r'\s+', ' ', txt)), None)
-            m = re.search(r'\b(\d[\d,\.]*\s?(?:%|percent|years?|hours?|minutes?|days?)?)', txt)
-            if si == 0 and i == 0: typ = 'question'; sp['text'] = script.get('hook') or script.get('public_title', '').split('|')[0].strip()
-            elif q: typ = 'quote'; sp['text'] = q[:230]; sp['who'] = who
-            elif re.search(r'\b(today|now|modern|nowadays)\b', low) and re.search(r'\b(then|back then|century|centuries|ago|old|once|earlier|past)\b', low):
-                typ = 'versus'; parts = re.split(r'(?i)\b(?:today|now|nowadays|modern)\b', txt, 1)
-                sp.update({'left': key_phrase(parts[0]) if parts[0].strip() else 'Back then', 'right': key_phrase(parts[1]) if len(parts) > 1 and parts[1].strip() else 'Today', 'left_icon': 'scroll', 'right_icon': 'phone'})
-            elif m and len(m.group(1).strip()) <= 12 and re.search(r'\d', m.group(1)): typ = 'stat'; sp['big'] = m.group(1).strip(); sp['text'] = key_phrase(txt.replace(m.group(1), ''))
-            elif si == len(secs) - 1 and i + (j - i + 1) >= len(sents): typ = 'takeaway'
-            if typ == 'figure': sp['pose'] = ['point', 'idle', 'shrug', 'think'][(n // 2) % 4]
-            sp['type'] = typ; sp['end'] = end; scenes.append(sp); n += 1; i = j + 1
-    for k in range(len(scenes) - 1): scenes[k]['end'] = scenes[k + 1]['start']
-    return scenes
-
-def llm_refine(script, scenes):
-    """Optional: let the free LLM improve each scene's short phrase/icon (never the narration). Validated; any problem keeps the heuristic plan."""
+        ws = [w for w in words if w['sec'] == si]
+        if not ws: continue
+        groups = split_beats(ws); sb = []
+        for gi, g in enumerate(groups):
+            txt = ' '.join(w['w'] for w in g); low = txt.lower(); start = sec['start'] if gi == 0 else g[0]['s']
+            b = {'start': start, 'end': g[-1]['e'] + .4, 'sec': si, 'text': txt, 'ws': g, 'props': [], 'journey': False}
+            # backdrop
+            hit = next((n for n, rx in BG_RX if rx.search(low) and (n != 'brain' or gi == 0)), None)
+            if (si == 0 and gi == 0): hit = 'brain'
+            if hit and hit != cur_bg and (start - bg_t >= 5.0 or gi == 0): cur_bg = hit; bg_t = start
+            elif gi == 0 and not hit:
+                rot += 1; nxt = ROT_BG[rot % len(ROT_BG)]
+                if nxt == cur_bg: rot += 1; nxt = ROT_BG[rot % len(ROT_BG)]
+                cur_bg = nxt; bg_t = start
+            b['bg'] = cur_bg
+            # props: specific things first, then symbols
+            found = []
+            for n, rx in PROP_RX.items():
+                m = rx.search(low)
+                if m: found.append((n in ICON_NAMES, m.start(), n))
+            found.sort(); names = [n for _, _, n in found][:2]
+            m = re.search(r'\b(\d[\d,\.]*\s?(?:%|percent|per cent)?)', txt)
+            if m and re.search(r'\d', m.group(1)) and len(m.group(1).strip()) <= 8:
+                names = names[:1]; b['num'] = m.group(1).strip().replace(' percent', '%')
+            if si == 0 and gi == 0: names = ['question'] + [n for n in names if n not in ICON_NAMES][:1]
+            if not names and n_empty % 3 == 2 and not vert: names = [['bulb', 'eye', 'brain', 'clock'][(si + gi) % 4]]
+            n_empty = n_empty + 1 if not names else 0
+            b['props'] = [{'k': n, 'cue': cue_time(n, g)} for n in names]
+            if b.get('num'): b['props'].append({'k': 'num', 'cue': g[0]['s'] + .6, 'text': b['num']})
+            # action
+            act = next((n for n, rx in ACT_RX if rx.search(low)), None)
+            if txt.rstrip().endswith('?') and act not in ('run', 'surprised', 'sad'): act = 'think'
+            if si == 0 and gi == 0: act = 'think'
+            if act == 'point' and not b['props']: act = None
+            if act and act == last_act and act not in ('walk', 'run'): act = None
+            if not act: act = ['explain', 'idle', 'explain', 'point' if b['props'] else 'shrug', 'explain'][len(beats) % 5]
+            if si == N - 1 and gi == len(groups) - 1 and not vert: act = 'wave'
+            b['act'] = act; last_act = act
+            b['cue'] = (b['props'][0]['cue'] if b['props'] else g[0]['s'] + .5)
+            b['aha'] = bool(AHA.search(txt)); sb.append(b)
+        beats.extend(sb)
+    if len(beats) > 1:
+        for i in range(len(beats) - 1):
+            if beats[i]['sec'] == beats[i + 1]['sec']: beats[i]['end'] = beats[i + 1]['start']
+    # journeys between sections: the narrator walks through to the next scene while the music plays
+    allb = list(beats)
+    for j in journeys:
+        nxt = next((b for b in beats if b['sec'] == j['sec']), None); prev = [b for b in beats if b['sec'] == j['sec'] - 1]
+        if prev: prev[-1]['end'] = j['start']
+        allb.append({'start': j['start'], 'end': j['end'], 'sec': j['sec'], 'text': '', 'ws': [], 'bg': nxt['bg'] if nxt else cur_bg, 'act': 'walk', 'journey': True, 'cue': j['start'], 'aha': False,
+                     'props': [{'k': 'sign', 'cue': j['start'] + .3, 'text': secs[j['sec']].get('title', '')[:60]}]})
+    allb.sort(key=lambda b: b['start'])
+    return allb
+def llm_direct(script, beats):
+    """Optional: the free LLM re-directs scene / action / props per beat (never the narration). Validated; anything odd keeps the heuristic plan."""
     try:
         import llm
-        if not llm.available(): return scenes
-        items = [{'i': i, 'type': s['type'], 'text': s['text'], 'icon': s['icon']} for i, s in enumerate(scenes) if s['type'] in ('figure', 'big', 'takeaway')]
-        allowed = [n for n, _ in ICONS] + ['scroll', 'question']
-        for k in range(0, len(items), 40):
-            chunk = items[k:k + 40]
-            prompt = ('For a 2D animated psychology explainer, improve the on-screen phrase (max 6 words, punchy, plain English, no quotes) and pick the best icon for each scene. '
-                      'Icons allowed: %s. Return JSON {"scenes":[{"i":N,"text":"...","icon":"..."}]} for exactly these scenes. The narration is: %s\nScenes: %s' % (', '.join(allowed), json.dumps(script.get('hook', '')), json.dumps(chunk)))
-            r = llm.json_call('You write short on-screen captions. Reply with JSON only.', prompt)
-            for o in (r.get('scenes') or []):
+        if not llm.available(): return
+        props_ok = sorted(PROPS); bgs = sorted(BGS)
+        items = [{'i': i, 'text': b['text'][:220], 'bg': b['bg'], 'act': b['act'], 'props': [p['k'] for p in b['props']]} for i, b in enumerate(beats) if not b['journey']]
+        for k in range(0, len(items), 36):
+            chunk = items[k:k + 36]
+            prompt = ('You direct a 2D stick-figure explainer. For each narration beat choose a SCENE (bg), an ACTION for the stick man, and 0-2 PROPS that literally illustrate what is said (a dog if dogs are mentioned, a desert if the Sahara is). '
+                      'Make it creative and varied; avoid repeating the same action twice in a row; actions must match the meaning. Allowed bg: %s. Allowed act: %s. Allowed props: %s (never use sign or num). '
+                      'Return JSON {"beats":[{"i":N,"bg":"..","act":"..","props":["..",".."]}]} for exactly these beats.\n%s' % (', '.join(bgs), ', '.join(ACTS), ', '.join(p for p in props_ok if p not in ('sign', 'num')), json.dumps(chunk)))
+            r = llm.json_call('You are a visual director. Reply with JSON only.', prompt)
+            for o in (r.get('beats') or []):
                 i = o.get('i')
-                if isinstance(i, int) and 0 <= i < len(scenes) and scenes[i]['type'] in ('figure', 'big', 'takeaway'):
-                    t = re.sub(r'\s+', ' ', str(o.get('text', ''))).strip()
-                    if 2 <= len(t) <= 48 and '_' not in t: scenes[i]['text'] = t
-                    if o.get('icon') in allowed: scenes[i]['icon'] = o['icon']
+                if not isinstance(i, int) or not (0 <= i < len(beats)) or beats[i]['journey']: continue
+                b = beats[i]
+                ac = o.get('act')
+                if ac in ACTS and (ac not in ('sit', 'sleep') or re.search(r'sleep|bed|rest|nap|calm|quiet|dream|tired', b['text'], re.I)): b['act'] = ac
+                if o.get('bg') in BGS: b['bg'] = o['bg']
+                ps = [p for p in (o.get('props') or []) if p in PROPS and p not in ('sign', 'num')][:2]
+                if ps and not b.get('num'): b['props'] = [{'k': p, 'cue': cue_time(p, b['ws'])} for p in ps]
+        # a scene must not flicker: keep at least 4.5 s between backdrop changes inside a section
+        last = None; lt = -99; prev_sec = -1
+        for b in beats:
+            if b['journey']: continue
+            if last and b['bg'] != last and b['start'] - lt < 4.5 and b['sec'] == prev_sec: b['bg'] = last
+            if b['bg'] != last: last = b['bg']; lt = b['start']
+            prev_sec = b['sec']
     except Exception as e:
-        print('ml2d: llm refine skipped:', str(e)[:100], flush=True)
-    return scenes
+        print('ml2d: llm director skipped:', str(e)[:100], flush=True)
+def layout(beats, vert=False):
+    """Walks the narrator across the stage, picks facing, places props on the open side, computes where to point."""
+    x = 300.0; d = 1; still = 0; ph = 0.0
+    for i, b in enumerate(beats):
+        L = max(.5, b['end'] - b['start']); act = b['act']
+        if b['journey']: act = 'walk'
+        elif act in ('idle', 'explain', 'point', 'shrug') and still >= 3 and L >= 2.8 and not vert: act = 'walk'
+        if act == 'point' and not b['props']: act = 'explain'
+        b['act'] = act; b['x0'] = x; b['ph0'] = ph
+        if act in ('walk', 'run'):
+            v = 170.0 if act == 'walk' else 330.0; target = 1010.0 if x < 640 else 270.0; dist = abs(target - x)
+            if dist < 120: target = 270.0 if target > 640 else 1010.0; dist = abs(target - x)
+            dd = 1 if target > x else -1; trav = min(dist, v * L * .92); b['x1'] = x + dd * trav; b['arrive'] = trav / v; b['v'] = v; d = dd; still = 0
+        else: b['x1'] = x; b['arrive'] = 0; b['v'] = 0; still += 1
+        x = b['x1']; side_right = x <= 640
+        slots = [890, 1060, 760] if side_right else [390, 220, 520]
+        for k, p in enumerate(b['props']): p['x'] = slots[k % 3] if p['k'] != 'sign' else (b['x1'] + (260 if side_right else -260))
+        if act not in ('walk', 'run') and b['props']: d = 1 if b['props'][0]['x'] > x else -1
+        if act == 'sleep':
+            for p in b['props']:
+                if p['k'] == 'bed': p['x'] = x + 40; d = 1
+        b['d'] = d
+        if b['props']:
+            p = b['props'][0]; vx = (p['x'] - x) * d; vy = (480 if PROPS[p['k']][1] == 'g' else 340) - 393
+            b['aim'] = max(20.0, min(170.0, math.degrees(math.atan2(vx, vy))))
+        else: b['aim'] = 100.0
+    return beats
 
-# ---------------- audio / timing ----------------
+# ---------------- audio / timing (v4: journeys between chapters, tempo so the video lands at 8-10 minutes) ----------------
+TR = 3.2
 def make_voice(script, work):
-    """Per-section narration wav + word timings. Real: edge neural voice. ML2D_FAKE=1: silent wav with even timing (tests)."""
     jobs = []
     for i, s in enumerate(script['sections']): jobs.append({'text': s['narration'], 'wav': str(work / ('sec%02d.wav' % i)), 'timing': str(work / ('sec%02d.json' % i))})
     if os.environ.get('ML2D_FAKE'):
@@ -273,28 +579,31 @@ def make_voice(script, work):
         import local_voice
         local_voice.edge_run(jobs)
     return jobs
-
-def assemble(script, jobs, work):
-    """Concatenate section audio with a short gap, build sentence/word timeline. Returns (secs, words, total, narration_path)."""
-    GAP = .45; t = 0.0; secs = []; words = []; frames = []
+def assemble(script, jobs, work, journey=True):
+    """Narration timeline: sections separated by a short walking-journey gap. Returns (secs, words, total, narration_path, journeys)."""
+    t = 0.0; secs = []; words = []; frames = []; journeys = []; rate = 24000
     for si, j in enumerate(jobs):
         tm = json.loads(Path(j['timing']).read_text()); toks = tm.get('tokens') or []; dur = tm['duration']
         with wave.open(j['wav']) as w: frames.append(w.readframes(w.getnframes())); rate = w.getframerate()
-        text = script['sections'][si]['narration']; sents = split_sentences(text); allw = text.split(); ratio = (len(toks) / max(1, len(allw))) if toks else 0
-        def tok(i, key):
-            if toks: tt = toks[min(len(toks) - 1, int(i * ratio))]; return tt[key]
-            return (i / max(1, len(allw))) * dur
-        k = 0; ss = []
-        for s in sents:
-            n = len(s.split()); a = t + tok(k, 'start'); b = t + (tok(min(len(allw) - 1, k + n - 1), 'end') if toks else ((k + n) / max(1, len(allw))) * dur)
-            for q, wd in enumerate(s.split()): words.append({'w': wd, 's': t + tok(k + q, 'start'), 'e': t + (tok(k + q, 'end') if toks else ((k + q + 1) / max(1, len(allw))) * dur), 'sent': len(words)})
-            ss.append({'text': s, 'start': a, 'end': b}); k += n
-        if ss: ss[0]['start'] = t
-        secs.append({'title': script['sections'][si].get('title', ''), 'sentences': ss, 'start': t, 'end': t + dur})
-        t += dur + GAP; frames.append(b'\x00\x00' * int(rate * GAP))
+        text = script['sections'][si]['narration']; allw = text.split(); ratio = (len(toks) / max(1, len(allw))) if toks else 0
+        for q, wd in enumerate(allw):
+            if toks:
+                a = toks[min(len(toks) - 1, int(q * ratio))]; b2 = toks[min(len(toks) - 1, max(int(q * ratio), int((q + 1) * ratio) - 1))]; s0, e0 = a['start'], b2['end']
+            else: s0, e0 = (q / max(1, len(allw))) * dur, ((q + 1) / max(1, len(allw))) * dur
+            words.append({'w': wd, 's': t + s0, 'e': t + max(e0, s0 + .08), 'sec': si})
+        secs.append({'title': script['sections'][si].get('title', ''), 'start': t, 'end': t + dur})
+        gap = TR if (journey and si < len(jobs) - 1) else .45
+        if journey and si < len(jobs) - 1: journeys.append({'start': t + dur, 'end': t + dur + gap, 'sec': si + 1})
+        t += dur + gap; frames.append(b'\x00\x00' * int(rate * gap))
     out = work / 'narration.wav'
     with wave.open(str(out), 'wb') as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(rate); w.writeframes(b''.join(frames))
-    return secs, words, t + 1.0, out
+    return secs, words, t + 1.0, out, journeys
+def retime(secs, words, journeys, total, f):
+    """Scale every time by f (tempo change of the narration)."""
+    for s in secs: s['start'] *= f; s['end'] *= f
+    for w in words: w['s'] *= f; w['e'] *= f
+    for j in journeys: j['start'] *= f; j['end'] *= f
+    return total * f
 
 def caption_chunks(words):
     chunks = []; cur = []
@@ -307,25 +616,57 @@ def caption_chunks(words):
 # ---------------- frames ----------------
 G = {}
 def draw_frame(fi):
-    now = fi / FPS; c = Cv(); scenes = G['scenes']
-    for x in range(0, W, 64):
-        for y in range(0, H, 64): c.circ(x + 32, y + 32, 1.6, SOFT, None, 0)
-    idx = max(0, bisect.bisect_right(G['starts'], now) - 1); sp = scenes[idx]; lt = now - sp['start']; dur = max(.5, sp['end'] - sp['start'])
-    SCENES[sp['type']](c, sp, lt, dur, now)
+    now = fi / FPS; beats = G['beats']; i = max(0, bisect.bisect_right(G['bstarts'], now) - 1); b = beats[i]; lt = now - b['start']; L = max(.5, b['end'] - b['start'])
+    c = Cv(G['bgimg'][b['bg']]); bg_anim(c, b['bg'], now)
+    # who is speaking right now
+    wi = bisect.bisect_right(G['wstarts'], now) - 1; talk = False; mouth = 0.0; pulse = 0.0
+    if wi >= 0:
+        w = G['words'][wi]
+        if now <= w['e'] + .04: talk = True; mouth = abs(math.sin((now - w['s']) * 24 + wi))
+        pulse = math.exp(-(now - w['s']) * 8)
+    # position and pose
+    act = b['act']; move = act in ('walk', 'run'); ph = 0.0
+    if move:
+        trav = min(abs(b['x1'] - b['x0']), b['v'] * lt); x = b['x0'] + (1 if b['x1'] >= b['x0'] else -1) * trav; ph = b['ph0'] + trav / (26.0 if act == 'walk' else 40.0)
+        if lt > b['arrive'] + .1 and not b['journey']: act = 'explain'
+    else: x = b['x0']
+    a = acts(act, lt, now - b['cue'], ph, b['aim'])
+    if lt < .3 and i > 0:
+        pb = beats[i - 1]; pl = pb['end'] - pb['start']; pa = acts(pb['act'] if pb['act'] not in ('walk', 'run') else 'explain', pl, 1.0, 0.0, pb['aim']); a = mix_a(pa, a, ease(lt / .3))
+    if not move and act not in ('sleep',): a['dy'] += 3 * pulse; a['tilt'] += 3 * pulse
+    # ground props behind the narrator, float props in front
+    out = clamp((b['end'] - now) / .18)
+    for p in b['props']:
+        if PROPS[p['k']][1] == 'g': draw_prop(c, p['k'], p['x'], (now - p['cue']) , now, p.get('text', ''), out)
+    gy = GROUND - 80 if (act == 'sleep' and any(p['k'] == 'bed' for p in b['props'])) else GROUND
+    pts = rig(c, x, gy, 1.32, a, now, talk, b['d'], mouth, (now % 3.6) < .12)
+    for p in b['props']:
+        if PROPS[p['k']][1] != 'g': draw_prop(c, p['k'], p['x'], (now - p['cue']), now, p.get('text', ''), out)
+    if act == 'read': icon(c, 'book', pts['hand_r'][0] + 34 * b['d'], pts['hand_r'][1] - 18, 46, now)
+    if act == 'phone': icon(c, 'phone', pts['hand_r'][0] + 22 * b['d'], pts['hand_r'][1] - 6, 36, now)
+    hx, hy = pts['head']
+    if act == 'think' and not b['props'] or (act == 'think' and (b['props'][0]['k'] != 'question')): c.text((hx + 56 * b['d'], hy - 4 + 5 * math.sin(now * 3)), '?', 70, ACC, 'mm', stroke=3)
+    if act == 'surprised' and now > b['cue']: c.text((hx + 56 * b['d'], hy - 4), '!', 90 * pop(now - b['cue'], 0, .3), ACC, 'mm', stroke=3)
+    if act == 'sleep': P_zzz(c, pts['sh'][0] + 40, pts['sh'][1] - 70, 1.0, now)
+    if act in ('cheer', 'dance', 'jump', 'laugh'):
+        for k in range(3): ang = now * 3 + k * 2.1; c.text((hx + math.cos(ang) * 78, hy + 20 + math.sin(ang) * 30), '*', 54, GOLD, 'mm', stroke=2)
+    if b.get('aha') and now > b['cue']: icon(c, 'bulb', hx + 70 * b['d'], hy - 10, 38 * pop(now - b['cue'], 0, .35), now)
+    if act == 'run': 
+        for k in range(3): c.line([(x - b['d'] * (70 + k * 22), 400 + k * 55), (x - b['d'] * (130 + k * 22), 400 + k * 55)], 4, (150, 150, 160))
     if G.get('vert'): return vframe(c.out(), now)
-    sec = G['secs'][sp['sec']]; chip = '%d  %s' % (sp['sec'] + 1, sec['title'][:34])
+    sec = G['secs'][min(b['sec'], len(G['secs']) - 1)]; chip = '%d  %s' % (b['sec'] + 1, sec['title'][:34])
     cw = tw(chip, 26) + 36; c.rr(24, 22, 24 + cw, 68, 16, INK, INK, 2); c.text((42, 33), chip, 26, WHITE)
     c.text((W - 26, 30), 'MindLore', 28, BLUE, 'ra')
     ci = max(0, bisect.bisect_right(G['cstarts'], now) - 1); ch = G['chunks'][ci]
     if now >= ch[0]['s'] - .05 and now <= ch[-1]['e'] + .6:
         txt = ' '.join(x['w'] for x in ch); size = 38; wd = tw(txt, size) + 50
         if wd > 1180: size = 32; wd = tw(txt, size) + 50
-        x0 = (W - wd) / 2; c.rr(x0, 618, x0 + wd, 684, 20, INK, INK, 2); x = x0 + 25
+        x0 = (W - wd) / 2; c.rr(x0, 618, x0 + wd, 684, 20, INK, INK, 2); xx = x0 + 25
         for wrd in ch:
-            on = wrd['s'] <= now; c.text((x, 626), wrd['w'], size, GOLD if (on and now <= wrd['e'] + .12) else (WHITE if on else (175, 175, 185))); x += tw(wrd['w'] + ' ', size)
+            on = wrd['s'] <= now; c.text((xx, 626), wrd['w'], size, GOLD if (on and now <= wrd['e'] + .12) else (WHITE if on else (175, 175, 185))); xx += tw(wrd['w'] + ' ', size)
     c.rr(0, H - 5, W * clamp(now / G['total']), H, 0, ACC, None, 0)
     return c.out().tobytes()
-
+def split_sentences(text): return [s.strip() for s in re.split(r'(?<=[.!?])\s+(?=[A-Z“"\'])', text.strip()) if s.strip()]
 def f1(px): return font(px / K)
 def vframe(img, now):
     """9:16 Short layout: title on top, the 16:9 scene in the middle, big captions below, call to action at the bottom."""
@@ -380,10 +721,20 @@ def build(sid, out, vert=False):
     p = Path(sid) if str(sid).endswith('.json') else BASE / 'cinematic-scripts-mindlore' / (str(sid) + '.json')
     script = json.loads(p.read_text())
     if vert: script = short_script(script)
-    jobs = make_voice(script, work); secs, words, total, narr = assemble(script, jobs, work)
+    jobs = make_voice(script, work); secs, words, total, narr, journeys = assemble(script, jobs, work, journey=not vert)
+    tempo = 1.0
+    if not vert and not os.environ.get('ML2D_NOTEMPO'):   # land between 8 and 10 minutes: slow the narration a little when the script is short
+        if total < 500: tempo = max(.88, total / 515.)
+        elif total > 590: tempo = min(1.06, total / 585.)
+        if abs(tempo - 1) > .005:
+            nt = work / 'narration_t.wav'; subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(narr), '-filter:a', 'atempo=%.4f' % tempo, str(nt)], check=True); narr = nt
+            total = retime(secs, words, journeys, total, 1.0 / tempo)
+    print('ml2d: runtime %.0fs (%.1f min), tempo %.2f' % (total, total / 60, tempo), flush=True)
     if os.environ.get('ML2D_MAXSEC'): total = min(total, float(os.environ['ML2D_MAXSEC']))   # tests only
-    scenes = llm_refine(script, plan_scenes(script, secs))
-    G.update(vert=vert, vtitle=(script.get('hook') or script.get('public_title', '')), scenes=scenes, starts=[s['start'] for s in scenes], secs=secs, total=total)
+    beats = plan_world(script, secs, words, journeys, vert); llm_direct(script, beats); beats = layout(beats, vert); beats[0]['start'] = 0.0
+    bgimg = {}
+    for n in {b['bg'] for b in beats}: cv = Cv(); BGS[n](cv); bgimg[n] = cv.im
+    G.update(vert=vert, vtitle=(script.get('hook') or script.get('public_title', '')), beats=beats, bstarts=[b['start'] for b in beats], secs=secs, total=total, words=words, wstarts=[w['s'] for w in words], bgimg=bgimg)
     chunks = caption_chunks(words); G['chunks'] = chunks; G['cstarts'] = [ch[0]['s'] for ch in chunks]
     # music bed
     mix = work / 'mix.m4a'; bed = None
@@ -418,7 +769,7 @@ def build(sid, out, vert=False):
         import hashtags; desc += '\n\n' + hashtags.mindlore(script.get('hook', '') + ' ' + script.get('title', ''), 'full')
     except Exception: desc += '\n\n#psychology #MindLore'
     (out / 'POST_THIS.txt').write_text('--- TITLE ---\n' + script.get('public_title', script.get('title', '')) + '\n\n--- DESCRIPTION ---\n' + desc[:4900])
-    (out / 'ml2d-plan.json').write_text(json.dumps({'scenes': scenes, 'total': total, 'style': 'ml2d-v1'}, indent=1))
+    (out / 'ml2d-plan.json').write_text(json.dumps({'beats': [{k: v for k, v in b.items() if k != 'ws'} for b in beats], 'total': total, 'tempo': tempo, 'style': 'ml2d-v4'}, indent=1))
     print('ml2d: done', final, '%.0fs' % total, flush=True)
     return final
 

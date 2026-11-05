@@ -5,6 +5,9 @@ on:
       count:
         description: 'How many 2D MindLore full videos to build'
         default: '1'
+      script:
+        description: 'Optional: build this script id (for example 37423-4). Empty = next unused script.'
+        default: ''
 permissions:
   contents: write
 jobs:
@@ -28,6 +31,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           COUNT: ${{ github.event.inputs.count || '1' }}
+          ML2D_ONLY: ${{ github.event.inputs.script || '' }}
         run: |
           mkdir -p out gh-state
           python gh_ml2d_build.py "$COUNT"
@@ -41,4 +45,4 @@ jobs:
           TAG=mlfull-2d-$(date -u +%Y%m%d-%H%M)
           gh release create "$TAG" "${F[@]}" --title "MindLore 2D full video $TAG" --notes "Built automatically. Review before posting."
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add gh-state/built-2d-mindlore.json; git commit -m "Record built 2D videos"; git pull --rebase --autostash -q; git push
+          git add gh-state/built-2d-mindlore.json; git commit -m "Record built 2D videos"; for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push && break; sleep 8; done
