@@ -66,4 +66,4 @@ jobs:
           TAG=full-$(date -u +%Y%m%d-%H%M)
           gh release create "$TAG" "${F[@]}" --title "Full videos $TAG" --notes "Built automatically. Review before posting."
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add gh-state/built-full.json; git commit -m "Record built full videos"; git pull --rebase --autostash -q; git push
+          git add gh-state/built-full.json; git commit -m "Record built full videos"; for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && break; sleep 8; done

@@ -71,4 +71,4 @@ jobs:
           TAG=mindlore-$(date -u +%Y%m%d-%H%M)
           gh release create "$TAG" "${F[@]}" --title "MindLore $TAG" --notes "Built automatically. Review before posting. Nothing is posted automatically."
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add gh-state/built-mindlore.json gh-state/used-mindlore.json; git commit -m "Record built MindLore books" ; git pull --rebase --autostash -q; git push
+          git add gh-state/built-mindlore.json gh-state/used-mindlore.json; git commit -m "Record built MindLore books" ; for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && break; sleep 8; done
