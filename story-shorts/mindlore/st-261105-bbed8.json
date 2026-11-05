@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261105-bbed8",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why you chase danger",
+ "hook": "You feel a jolt of electricity when you skip a turn signal.",
+ "thumbnail_headline": "ANCIENT THRILL SEEKERS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a jolt of electricity when you skip a turn signal. Ancient humans felt the same spike. But not from cars. From surviving. Richard Lee studied the San people in the Kalahari in 1979. He found they spent about 25 hours a week hunting. The result? Their brains evolved to crave that specific adrenaline. It was a survival tool, not a hobby. That's it. Later, researchers like Robin Dunbar in Oxford showed this isn't unique to one tribe. The idea is called the arousal theory. Your brain treats uncertainty as a threat or a reward. It cannot tell the difference. So why do we assume thrill is modern? Because we stopped hunting. The biology stayed. Your limbic system still scans for high-stakes danger. So next time you feel that jolt when you skip a turn signal, remember the hunter in you. You feel a jolt of electricity when you skip a turn signal."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "San people in the Kalahari spent about 25 hours a week hunting",
+   "who": "Richard Lee",
+   "year": "1979",
+   "place": "Kalahari Desert"
+  },
+  {
+   "claim": "Primate and human social bonds are maintained through high-arousal activities",
+   "who": "Robin Dunbar",
+   "year": "1990s",
+   "place": "Oxford University"
+  }
+ ],
+ "source_url": "",
+ "theme": "risk and thrill"
+}

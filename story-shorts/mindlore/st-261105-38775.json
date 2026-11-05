@@ -1,0 +1,38 @@
+{
+ "book_id": "st-261105-38775",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your memory isn't a notebook",
+ "hook": "You think your memory works like a reliable notebook.",
+ "thumbnail_headline": "MEMORY MYSTERY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think your memory works like a reliable notebook. But Hermann Ebbinghaus in Germany, 1885, found you lose about 58% of new info after just 20 minutes. The result? Your short‑term store empties faster than you expect. Later, Dr. Nelson Cowan at the University of Missouri, 2001, reported working memory holds about four chunks. That same limit appears in studies of ancient Greek orators who used the method of loci to expand recall. The idea is called limited‑capacity memory, and it shows the brain conserves resources. Modern research with the Hadza hunter‑gatherers, led by Michael Gurven in 2015, shows they use landscape memory similarly to ancient Greeks. They navigate vast savannas by recalling landmarks, a skill rooted in the same limited‑capacity system. So why do we assume we can store endless details? Because we forget the forgetting curve, a fact proven over a century ago. That's it. So next time you trust your recall, remember you think your memory works like a reliable notebook."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "You lose about 58% of new information after 20 minutes",
+   "who": "Hermann Ebbinghaus",
+   "year": "1885",
+   "place": "Germany"
+  },
+  {
+   "claim": "Working memory holds about four chunks",
+   "who": "Nelson Cowan",
+   "year": "2001",
+   "place": "University of Missouri"
+  },
+  {
+   "claim": "Hadza use landscape memory similar to ancient Greeks",
+   "who": "Michael Gurven",
+   "year": "2015",
+   "place": "Tanzania"
+  }
+ ],
+ "source_url": "",
+ "theme": "memory"
+}
