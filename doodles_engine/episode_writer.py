@@ -29,6 +29,12 @@ SCENE_NOTE = ("This skit is scene {i} of {n} of ONE continuous episode titled '{
               "Write it as a 6-shot skit in the usual JSON format, 75 to 95 spoken words in total, every line 3 to 18 words, every line with a 'feel'. Use the id '{sid}'. Do not introduce the characters; do not say goodbye unless this is the last scene. "
               "Only the last scene may end warmly; every other scene may end on a hook that leads to the next scene.")
 
+COMEDY = ("COMEDY DIRECTION (this is the main goal): make it genuinely funny, like chaotic best friends. Mia is dry, savage but loving: backhanded compliments, petty roasts, 'I told you so', "
+          "passive-aggressive texts, guilt trips. Leo catastrophizes, over-explains and loses arguments with himself. Toxic-friend banter is allowed and encouraged as long as it is playful (never cruel to real groups, no slurs, no self-harm, no sex). "
+          "Every scene needs a clear punchline in its last one or two lines and one specific, concrete, absurd detail (an exact object, number of minutes, or petty grievance). Escalate the absurdity scene by scene and call back to the running gag. "
+          "Show the psychology idea through behaviour and jokes, never as a lecture. Other people who are mentioned (a boss, a barista, an ex, a neighbour) should be visible in the shot descriptions, "
+          "described in a few words (clothes, expression) and placed in the background or at the edge so Leo and Mia stay in front. Backgrounds should look like real, specific places with real clutter, not empty rooms.")
+
 
 def jcall(system, prompt):
     keep = sw.RULES
@@ -80,7 +86,7 @@ def make_episode(pool):
     o = None
     for attempt in range(4):
         try:
-            o = jcall(OUTLINE_RULES.replace("__N__", str(SCENES)), "Plan a new episode. Theme: %s. Already used episode ids: %s" % (theme, sorted(taken)))
+            o = jcall(OUTLINE_RULES.replace("__N__", str(SCENES)) + "\n" + COMEDY, "Plan a new episode. Theme: %s. Already used episode ids: %s" % (theme, sorted(taken)))
             check_outline(o)
             if o['id'] in taken:
                 o['id'] += '-' + time.strftime('%m%d')
@@ -101,7 +107,7 @@ def make_episode(pool):
         story = None; hint = ''
         for attempt in range(8):
             try:
-                txt = sw.gemini(note + hint)
+                txt = sw.gemini(note + ' ' + COMEDY + hint)
                 s, _ = json.JSONDecoder().raw_decode(txt.strip())
                 s['id'] = sid
                 why = scene_why(s, skit_taken)
