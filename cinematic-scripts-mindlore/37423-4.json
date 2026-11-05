@@ -1,0 +1,78 @@
+{
+ "book_id": "37423",
+ "title": "How We Think",
+ "author": "John Dewey",
+ "public_title": "Why do you assume things that aren't true? | John Dewey",
+ "hook": "Why does your mind jump to conclusions about everyday events before you even have a chance to look at the real facts?",
+ "thumbnail_headline": "WHY WE ASSUME",
+ "source_url": "https://www.gutenberg.org/ebooks/37423",
+ "source_kind": "Original MindLore commentary on retained passages of the original; limitations and later criticism discussed; owner review required",
+ "retained_source_sha256": "18716d0967dff6f23bcf91ede0b6fc76827b1cace77cb350d9d23e2b3e671c94",
+ "source_passages": [
+  {
+   "section": 0,
+   "source_chapter": "CHAPTER ELEVEN",
+   "excerpt": "He simply, from frequently recurring conjunctions of the events, has associated them so that when he sees one he thinks of the other."
+  },
+  {
+   "section": 1,
+   "source_chapter": "CHAPTER ELEVEN",
+   "excerpt": "Since the mind naturally demands some principle of continuity, some connecting link between separate facts and causes, forces are arbitrarily invented for that purpose."
+  },
+  {
+   "section": 2,
+   "source_chapter": "CHAPTER ELEVEN",
+   "excerpt": "Our beliefs about human nature in individuals (psychology) and in masses (sociology) are still very largely of a purely empirical sort."
+  },
+  {
+   "section": 3,
+   "source_chapter": "CHAPTER ELEVEN",
+   "excerpt": "Empirical inference follows the grooves and ruts that custom wears, and has no track to follow when the groove disappears."
+  },
+  {
+   "section": 4,
+   "source_chapter": "CHAPTER ELEVEN",
+   "excerpt": "They had learned from repeated observations that things happened in about such and such a fashion."
+  },
+  {
+   "section": 5,
+   "source_chapter": "CHAPTER ELEVEN",
+   "excerpt": "Every opportunity that occurs within their practical activities for developing curiosity and susceptibility to intellectual problems should be seized."
+  },
+  {
+   "section": 6,
+   "source_chapter": "CHAPTER ELEVEN",
+   "excerpt": "Since they rest upon past uniformities, they are useless when further experience departs in any considerable measure from ancient incident and wonted precedent."
+  }
+ ],
+ "sections": [
+  {
+   "title": "The Rain Predictor in Your Mind",
+   "narration": "You look out your window, see a dark grey sky, and instantly reach for an umbrella. You did not measure the atmospheric pressure or consult a radar map, yet you feel entirely certain that rain is on the way. Why does your mind make these rapid leaps without double checking the actual facts? We do this constantly, from guessing someone's mood by their text message to assuming a headache means something terrible. It is a universal mental glitch where we treat two things happening together as if one caused the other. Philosopher and psychologist John Dewey spent decades examining why our minds rely on these shortcuts long before we learn to think critically. Think about the last time you ordered a coffee because the barista smiled, assuming the drink would taste better—only to find it was just your mood. Or consider how a social media post about a traffic jam makes you avoid that route, even if the jam was a one‑off incident. These everyday shortcuts save time, but they also hide uncertainty. So, should we trust that gut feeling, or pause to ask what evidence actually supports it? Here is how the book itself puts it: \"He simply, from frequently recurring conjunctions of the events, has associated them so that when he sees one he thinks of the other.\""
+  },
+  {
+   "title": "The Flaw of Past Experience",
+   "narration": "We often assume that our daily observations are enough to give us an accurate picture of the world. If you take a vitamin and your cold clears up two days later, you credit the vitamin. But is that really what happened? Dewey pointed out that relying purely on past habits of observation leaves us vulnerable to major errors. When we do not understand the underlying mechanism connecting two events, our conclusions are just educated guesses. Dewey described this basic level of thought in his 1910 work on cognitive habits. He wrote that \"He does not perceive any connection between the appearance of the sky and coming rain; he is not aware of any continuity in the facts themselves--any law or principle, as we usually say.\" Without that deeper link, our beliefs are purely surface level. Imagine blaming a new pair of shoes for a sprained ankle without checking the uneven pavement, or assuming a new app caused your phone slowdown when background updates were the real culprit. These honest limits remind us that correlation is not causation. Could we be missing the real cause if we stop questioning? Here is how the book itself puts it: \"Since the mind naturally demands some principle of continuity, some connecting link between separate facts and causes, forces are arbitrarily invented for that purpose.\""
+  },
+  {
+   "title": "Old Proverb vs Modern Feeds",
+   "narration": "Century after century, human beings built entire systems of living around these unchecked associations. Weather proverbs and ancient folklore were early attempts to make sense of recurring patterns in nature. Today, we do the exact same thing when scrolling through digital feeds or trying to optimize our daily routines. You might notice that working at a specific coffee shop seems to make you productive, so you treat that location like a magic charm. But what happens when the circumstances change entirely? Empirical thinking works fine when tomorrow looks exactly like yesterday, but it breaks down the second you face a totally novel situation. Consider how the phrase \"the early bird catches the worm\" guides us to wake up early, yet a night‑owl may outperform the same task with a different rhythm. Modern comparison shows that the same mental shortcut can both help and hinder depending on context. So, when should we follow an old proverb, and when should we test it against current data? Here is how the book itself puts it: \"Our beliefs about human nature in individuals (psychology) and in masses (sociology) are still very largely of a purely empirical sort.\""
+  },
+  {
+   "title": "Customs, Ruts, and Mental Inertia",
+   "narration": "Why is it so hard to break out of these cognitive habits once they take root? Dewey argued that relying solely on casual observation creates severe mental inertia, making us defensive when our assumptions are challenged. When a routine works out by sheer luck, we celebrate our insight, but when it fails, we simply slur over the mistake. In his text, Dewey highlighted how easily this habit leads to intellectual laziness. He noted that \"Empirical inference follows the grooves and ruts that custom wears, and has no track to follow when the groove disappears.\" When life pushes us out of those comfortable ruts, we are left totally lost unless we learn to analyze what is actually happening. Think of a driver who always takes the same shortcut because it once saved time, yet a new construction makes it slower. The honest limit is that habits are blind to change. Do we keep driving into a dead‑end because the road once felt familiar?"
+  },
+  {
+   "title": "Testing Dewey against Modern Science",
+   "narration": "Dewey's account of empirical shortcuts was insightful for 1910, but how does it hold up today? Cognitive psychologists like Daniel Kahneman and Amos Tversky later formalized these exact mental shortcuts as heuristics, such as the availability heuristic and confirmation bias. Modern neuroscience confirms that our brains evolved to conserve energy by matching patterns rather than performing deep analysis on every detail. However, while Dewey viewed empirical thought as an inferior habit to be overcome by scientific education, modern evolutionary psychology shows these rapid mental shortcuts are actually essential survival mechanisms. They keep us alive when we need to act quickly, even if they occasionally make us wrong about the weather. A modern comparison: a driver instinctively brakes when a child darts onto the road, a split‑second decision that saves lives despite lacking full analysis. Yet the same shortcut can mislead us, like assuming a headline tells the whole story. Are we willing to accept the trade‑off between speed and accuracy? Here is how the book itself puts it: \"They had learned from repeated observations that things happened in about such and such a fashion.\""
+  },
+  {
+   "title": "Does Scientific Thinking Take Too Much Energy?",
+   "narration": "But does that mean you need to run a controlled scientific experiment every time you make a decision? Of course not. Analyzing every single detail of your daily life would cause complete mental paralysis. You cannot test the atmospheric pressure before stepping out the door each morning. The goal is not to eliminate automatic pattern recognition, but to notice when you are relying on it for high‑stakes choices. When a major problem arises at work or in a relationship, that is the moment to stop acting on mere habit and start actively varying the conditions to see what is truly driving the result. Imagine deciding whether to invest in a new stock based solely on a trending tweet versus checking earnings reports. The honest limit is that we cannot gather perfect data for every choice, yet we can prioritize scrutiny where the stakes are high. So, how do we balance effort and insight? Here is how the book itself puts it: \"Every opportunity that occurs within their practical activities for developing curiosity and susceptibility to intellectual problems should be seized.\""
+  },
+  {
+   "title": "Breaking the Groove",
+   "narration": "The next time you catch yourself reaching for an easy explanation when your morning routine goes sideways, pause for ten seconds. Ask yourself whether you are looking at a real cause or just repeating an old mental habit. Are you acting on a proven link, or are you just following a groove that custom wore into your mind? By isolating the variables in front of you instead of trusting your first impression, you shift from passive observation to active reasoning. That simple habit of deliberate questioning is what turns automatic reactions into actual thought. For example, if you feel sluggish after lunch, consider whether it is the food, the time of day, or a lack of movement before concluding it must be the sandwich. The honest limit is that not every variable can be tested, but a brief check can prevent bigger errors. Could a moment of curiosity save you from a costly mistake? Here is how the book itself puts it: \"Since they rest upon past uniformities, they are useless when further experience departs in any considerable measure from ancient incident and wonted precedent.\""
+  }
+ ]
+}
