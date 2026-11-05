@@ -35,6 +35,17 @@ def main():
         if runs and runs[0]['conclusion'] == 'failure' and age > hours / 2:
             problems.append('%s: latest run FAILED' % wf)
     try:
+        rel = gh('releases?per_page=1')
+        if rel:
+            rage = (NOW - datetime.datetime.fromisoformat(rel[0]['published_at'].replace('Z', '+00:00'))).total_seconds() / 3600
+            notes.append('newest release %.1fh ago (%s)' % (rage, rel[0]['tag_name']))
+            if rage > 36:
+                problems.append('No new video built for %.0fh (newest release %s): the night builds may be stuck' % (rage, rel[0]['tag_name']))
+        else:
+            problems.append('no releases found')
+    except Exception as e:
+        problems.append('could not read releases (%s)' % str(e)[:60])
+    try:
         q = json.load(open('publish/queue.json'))
         left = len(q.get('items', []))
         notes.append('publish queue: %d posts' % left)
@@ -43,6 +54,10 @@ def main():
     except Exception:
         problems.append('publish/queue.json missing')
     print('\n'.join(notes))
+    try:
+        open('alert.md', 'w').write('\n'.join('- ' + x for x in problems))
+    except Exception:
+        pass
     if problems:
         print('\nPROBLEMS:\n- ' + '\n- '.join(problems))
         sys.exit(1)

@@ -6,6 +6,7 @@ on:
 permissions:
   contents: read
   actions: read
+  issues: write
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -16,6 +17,23 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check the whole system
+        id: chk
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python watchdog.py
+      - name: Phone alert (GitHub Issue; push via the GitHub mobile app)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OUTCOME: ${{ steps.chk.outcome }}
+        run: |
+          N=$(gh issue list --state open --search "ALERT: system problem in:title" --json number -q '.[0].number' || true)
+          if [ "$OUTCOME" = "failure" ]; then
+            BODY="Watchdog found problems ($(date -u +%F\ %H:%M) UTC):\n\n$(cat alert.md 2>/dev/null)"
+            if [ -z "$N" ]; then gh issue create --title "ALERT: system problem" --body "$(printf "$BODY")"; else gh issue comment "$N" --body "$(printf "$BODY")"; fi
+          elif [ -n "$N" ]; then
+            gh issue close "$N" --comment "All good again."
+          fi
+      - name: Fail the run when problems exist
+        if: steps.chk.outcome == 'failure'
+        run: exit 1
