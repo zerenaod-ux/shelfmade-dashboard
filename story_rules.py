@@ -23,7 +23,7 @@ SHELF = ('\nSHELFMADE ANGLE: the video is "a book vs today". Open with a claim a
          'Be fair to the book: say what it got right and where research differs.\n')
 MIND = ('\nMINDLORE ANGLE: the video is "what ancient humans / old thinkers knew vs what you do now", backed by named real studies.\n')
 BANNED = re.compile(r"\b(welcome|in this video|let'?s dive|delve|in conclusion|subscribe|thanks? for watching|stay tuned|without further ado|today we(?: are|'re)? going to)\b", re.I)
-CONTRAST = re.compile(r"\b(ancient|past|years? ago|centur(?:y|ies)|then|once|used to|history|historic\w*|today|now|modern|really|actually|wrong|myth|less|more than|fewer|decades?|old(?:er)?|before)\b", re.I)
+CONTRAST = re.compile(r"\b(ancient|past|years? ago|centur(?:y|ies)|then|once|used to|history|historic\w*|today|now|modern|really|actually|wrong|myth|less|more than|fewer|decades?|old(?:er)?|before|warned|wrote|said|knew|believed|thought|claimed|argued|predicted|saw|researchers?|studies|study|scientists?|psycholog\w+|anthropolog\w+)\b", re.I)
 YEAR = re.compile(r"\b(1[0-9]{3}|20[0-2][0-9])s?\b")
 STOP = set('a an the and or but of to in on at for with from by is are was were be been it its this that these those you your we our they their he she his her i me my as if so than then there here do does did not no yes can could would should will just very really also about into over under up down out more most some any all each every one what why how who when'.split())
 
@@ -47,7 +47,7 @@ def check(d, brand='mindlore', short=False):
     first = (secs[0].get('narration') if secs else narr) or ''
     fs = sentences(first)[:3]; head = ' '.join(fs)
     if not re.search(r"\b(you|your|you're)\b", fs[0] if fs else '', re.I) and not re.search(r'\d', fs[0] if fs else ''): bad.append('the FIRST sentence must be a claim about the viewer\'s own life using you/your')
-    if not CONTRAST.search(head): bad.append('within the first 3 sentences give the surprise: the past/ancient people/research says something different')
+    if not CONTRAST.search(head) and not YEAR.search(head): bad.append('within the first 3 sentences give the surprise: the past/ancient people/research says something different')
     if BANNED.search(narr): bad.append('remove filler openers/closers: "%s"' % BANNED.search(narr).group(0))
     years = set(m.group(0) for m in YEAR.finditer(narr))
     if len(years) < (1 if short else 2): bad.append('name at least %d real year(s) or decade(s) of the evidence' % (1 if short else 2))

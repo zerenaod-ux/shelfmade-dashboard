@@ -7,6 +7,8 @@ import os, sys, json, re, math, random, subprocess, wave, bisect, datetime
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 BASE = Path(__file__).resolve().parent
+SM = os.environ.get('BRAND') == 'shelfmade'   # ShelfMade look: bookish narrator, library worlds
+BRAND_NAME = 'ShelfMade' if SM else 'MindLore'
 W, H, FPS, K = 1280, 720, 15, 2
 PAPER = (247, 240, 225); INK = (34, 34, 42); ACC = (224, 86, 60); BLUE = (52, 110, 190); GOLD = (244, 186, 52); GREEN = (56, 150, 108); SOFT = (228, 217, 192); WHITE = (255, 253, 247); PINK = (250, 184, 196)
 _FONTS = {}
@@ -187,6 +189,9 @@ def rig(c, x, ground, s, a, now, talk, d=1, mouth=0.0, blink=False):
         for i, p in enumerate(ex):
             up = 16 if expr == 'surp' else 13; sl = (-5 if expr == 'think' and i == 1 else 5 if expr == 'sad' else 0)
             c.line([(p[0] - 10 * s, p[1] - up * s + sl * s * (1 if i == 0 else -1)), (p[0] + 10 * s, p[1] - up * s - sl * s * (1 if i == 0 else -1))], 3 * s, INK)
+    if SM:   # bookish narrator: bow tie and a little cap
+        bt = T((sh[0] * .98, sh[1] * .98 + 4)); c.poly([(bt[0] - 20 * s, bt[1] - 9 * s), (bt[0], bt[1]), (bt[0] - 20 * s, bt[1] + 9 * s)], ACC, INK, 3); c.poly([(bt[0] + 20 * s, bt[1] - 9 * s), (bt[0], bt[1]), (bt[0] + 20 * s, bt[1] + 9 * s)], ACC, INK, 3); c.circ(bt[0], bt[1], 4 * s, INK, None, 0)
+        cap = T((hc[0], hc[1] - 40)); c.rr(cap[0] - 34 * s, cap[1] - 14 * s, cap[0] + 34 * s, cap[1] + 4 * s, 6 * s, (60, 90, 70), INK, 3)
     m = T((hc[0] + 20, hc[1] + 24))
     if expr == 'surp': c.ell(m[0] - 8 * s, m[1] - 10 * s, m[0] + 8 * s, m[1] + 10 * s, INK, INK, 2)
     elif expr == 'sad': c.arc(m[0] - 12 * s, m[1] - 2 * s, m[0] + 12 * s, m[1] + 16 * s, 200, 340, 3.5 * s)
@@ -288,6 +293,28 @@ def bg_history(c):
     c.poly([(60, 120), (640, 40), (1220, 120)], (226, 210, 186), INK, 4); _ground(c, (206, 190, 160))
 BGS = {'plain': bg_plain, 'park': bg_park, 'desert': bg_desert, 'city': bg_city, 'home': bg_home, 'bedroom': bg_bedroom, 'ocean': bg_ocean, 'space': bg_space, 'brain': bg_brain, 'night': bg_night,
        'forest': bg_forest, 'mountain': bg_mountain, 'office': bg_office, 'school': bg_school, 'stage': bg_stage, 'history': bg_history}
+
+def bg_library(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(120, 84, 60)); c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(92, 62, 44)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    import random as _r; r = _r.Random(11)
+    for sx in (40, 700):
+        c.rr(sx, 70, sx + 540, 585, 4, (96, 64, 44), INK, 5)
+        for row in range(4):
+            y0 = 90 + row * 120; c.line([(sx + 10, y0 + 100), (sx + 530, y0 + 100)], 6, (70, 46, 32)); x = sx + 18
+            while x < sx + 500:
+                w = r.randint(16, 30); h = r.randint(60, 96); c.rr(x, y0 + 100 - h, x + w, y0 + 100, 2, r.choice([ACC, BLUE, GREEN, GOLD, (150, 90, 130), (90, 140, 150)]), INK, 3); x += w + 2
+def bg_study(c):
+    c.d.rectangle([0, 0, W * K, H * K], fill=(214, 190, 150)); c.d.rectangle([0, GROUND * K, W * K, H * K], fill=(130, 96, 66)); c.line([(0, GROUND), (W, GROUND)], 4, INK)
+    c.rr(90, 80, 330, 330, 6, (250, 222, 150), INK, 8); c.circ(210, 205, 70, (255, 240, 190), None, 0); c.line([(210, 80), (210, 330)], 5); c.line([(90, 205), (330, 205)], 5)
+    c.rr(800, 340, 1220, 380, 8, (120, 84, 56), INK, 5); c.rr(840, 380, 870, 585, 3, (120, 84, 56), INK, 4); c.rr(1150, 380, 1180, 585, 3, (120, 84, 56), INK, 4)
+    c.rr(520, 90, 700, 230, 4, (170, 130, 96), INK, 6); c.line([(540, 130), (680, 130)], 4, INK); c.line([(540, 170), (650, 170)], 4, INK)
+def bg_bookshop(c):
+    _sky(c, (232, 214, 188)); c.d.rectangle([0, 0, W * K, 120 * K], fill=(52, 96, 80)); c.text((640, 60), 'BOOKS', 70, GOLD, 'mm', stroke=0)
+    c.rr(60, 160, 360, 585, 4, (150, 100, 70), INK, 5); c.rr(920, 160, 1220, 585, 4, (150, 100, 70), INK, 5); c.rr(430, 170, 850, 540, 6, (186, 224, 236), INK, 6)
+    for xx in range(90, 340, 40): c.rr(xx, 200, xx + 28, 300, 2, (ACC, BLUE, GREEN, GOLD)[(xx // 40) % 4], INK, 3)
+    _ground(c, (176, 150, 122))
+BGS.update({'library': bg_library, 'study': bg_study, 'bookshop': bg_bookshop})
+
 SKYBG = {'park', 'desert', 'city', 'ocean', 'mountain', 'history'}
 def bg_anim(c, name, now):
     if name in SKYBG:
@@ -392,10 +419,22 @@ def P_sign(c, x, y, u, now, text=''):
     for i, ln in enumerate(lines): c.text((x, y - 190 * u - hh + 60 + i * 40), ln, 32, INK, 'ma')
 def P_num(c, x, y, u, now, text=''):
     s = 1 + .05 * math.sin(now * 6); c.rr(x - 150 * u * s, y - 70 * u * s, x + 150 * u * s, y + 70 * u * s, 26, WHITE, ACC, 7); c.text((x, y), text[:8], 92 * u * s, ACC, 'mm')
+
+def P_stack(c, x, y, u, now):
+    for i, (w, col) in enumerate(((120, ACC), (100, BLUE), (110, GREEN), (90, GOLD))): c.rr(x - w / 2 * u, y - (i + 1) * 26 * u, x + w / 2 * u, y - i * 26 * u, 3, col, INK, 4)
+def P_quill(c, x, y, u, now):
+    r = math.sin(now * 2) * 4; c.poly([(x - 60 * u, y + 60 * u), (x + 50 * u, y - 70 * u + r), (x + 70 * u, y - 40 * u + r), (x - 40 * u, y + 70 * u)], (240, 240, 232), INK, 4); c.line([(x - 60 * u, y + 60 * u), (x - 86 * u, y + 92 * u)], 4)
+def P_lamp(c, x, y, u, now):
+    c.line([(x, y), (x, y - 90 * u)], 8 * u); c.poly([(x - 50 * u, y - 90 * u), (x + 50 * u, y - 90 * u), (x + 24 * u, y - 140 * u), (x - 24 * u, y - 140 * u)], GOLD, INK, 5); c.rr(x - 40 * u, y - 10 * u, x + 40 * u, y, 4, INK, INK, 2)
+def P_globe(c, x, y, u, now):
+    c.circ(x, y - 70 * u, 60 * u, (110, 170, 220), INK, 5)
+    for k in range(3): xx = x + math.sin(now * 1.2 + k * 2.1) * 40 * u; c.ell(xx - 18 * u, y - 100 * u + k * 22 * u, xx + 18 * u, y - 80 * u + k * 22 * u, GREEN, None, 0)
+    c.line([(x, y), (x, y - 12 * u)], 8 * u); c.rr(x - 30 * u, y - 12 * u, x + 30 * u, y, 3, (140, 98, 60), INK, 4)
+
 ICON_NAMES = {'brain', 'clock', 'book', 'phone', 'house', 'eye', 'heart', 'moon', 'sun', 'crowd', 'chart', 'face', 'lock', 'scroll', 'question', 'bulb'}
 PROPS = {'dog': (P_dog, 'g'), 'cat': (P_cat, 'g'), 'bird': (P_bird, 'f'), 'fish': (P_fish, 'f'), 'tree': (P_tree, 'g'), 'car': (P_car, 'g'), 'ball': (P_ball, 'g'), 'apple': (P_apple, 'f'), 'cup': (P_cup, 'f'),
          'bed': (P_bed, 'g'), 'cloud': (P_cloud, 'f'), 'money': (P_money, 'f'), 'mirror': (P_mirror, 'f'), 'camera': (P_camera, 'f'), 'pyramid': (P_pyramid, 'g'), 'camel': (P_camel, 'g'), 'mountain': (P_mountain, 'g'),
-         'flag': (P_flag, 'g'), 'star': (P_star, 'f'), 'laptop': (P_laptop, 'f'), 'door': (P_door, 'g'), 'fire': (P_fire, 'g'), 'battery': (P_battery, 'f'), 'zzz': (P_zzz, 'f'), 'bang': (P_bang, 'f'), 'sign': (P_sign, 'g'), 'num': (P_num, 'f')}
+         'flag': (P_flag, 'g'), 'star': (P_star, 'f'), 'laptop': (P_laptop, 'f'), 'door': (P_door, 'g'), 'fire': (P_fire, 'g'), 'battery': (P_battery, 'f'), 'zzz': (P_zzz, 'f'), 'bang': (P_bang, 'f'), 'sign': (P_sign, 'g'), 'num': (P_num, 'f'), 'stack': (P_stack, 'g'), 'quill': (P_quill, 'f'), 'lamp': (P_lamp, 'g'), 'globe': (P_globe, 'g')}
 for _n in ICON_NAMES: PROPS[_n] = (None, 'f')
 def draw_prop(c, k, x, tc, now, text='', out=1.0):
     """tc = seconds since the prop was first spoken about. It pops in (spring), then idles."""
@@ -407,7 +446,7 @@ def draw_prop(c, k, x, tc, now, text='', out=1.0):
     else: (fn(c, x, 330 + 7 * math.sin(now * 2 + x), 1.6 * pp, now, text) if k == 'num' else fn(c, x, 340 + 7 * math.sin(now * 2 + x), 1.5 * pp, now))
 
 # ---------------- v4: the director (decides what happens on screen for every few words) ----------------
-PROP_KW = [('dog', r'dogs?|puppy|puppies|wolf|wolves'), ('cat', r'cats?|kitten'), ('bird', r'birds?|eagles?|pigeons?|owls?'), ('fish', r'fish|sharks?'), ('tree', r'trees?|leaf|leaves|plants?'), ('car', r'cars?|driving|drives?|driver|traffic'),
+PROP_KW = [('stack', r'books|library|libraries|shelf|shelves|volumes?'), ('quill', r'wrote|writing|writes|letters?|essays?|manuscripts?|pen'), ('lamp', r'candle|lamp|evening|reading|study'), ('globe', r'world|globe|countries|travel\w*|voyage|explor\w*'), ('dog', r'dogs?|puppy|puppies|wolf|wolves'), ('cat', r'cats?|kitten'), ('bird', r'birds?|eagles?|pigeons?|owls?'), ('fish', r'fish|sharks?'), ('tree', r'trees?|leaf|leaves|plants?'), ('car', r'cars?|driving|drives?|driver|traffic'),
     ('ball', r'ball|sports?|games?|playing'), ('apple', r'food|eat|eating|ate|hungry|apples?|meals?|diet|sugar'), ('cup', r'coffee|tea|drink\w*|cups?'), ('bed', r'bed|sleep\w*|nap|insomnia|dream\w*'), ('cloud', r'clouds?|weather|rain|storm'),
     ('money', r'money|rich|poor|pay|paid|price|cost|buy|wealth|profit|salary'), ('mirror', r'mirrors?|reflect\w*|faces?|expressions?|appearance|looks'), ('camera', r'camera|photos?|photograph\w*|film|recorded|footage'),
     ('pyramid', r'pyramids?|egypt\w*|pharaohs?'), ('camel', r'camels?|sahara|nomads?|caravan'), ('mountain', r'mountains?|climb\w*|summit|everest|hik\w+'), ('flag', r'countr\w+|nations?|flag|war|army|government|politic\w*'),
@@ -417,7 +456,7 @@ PROP_KW = [('dog', r'dogs?|puppy|puppies|wolf|wolves'), ('cat', r'cats?|kitten')
     ('phone', r'phones?|screens?|apps?|scroll\w*|notification\w*|social media|online'), ('house', r'home|house|room|family|kitchen'), ('eye', r'eyes?|saw|watch\w*|notice\w*|stare\w*|gaze|observ\w*'), ('heart', r'love|loved|heart|emotion\w*|feelings?|fear|grief|joy'),
     ('moon', r'moon|night|midnight'), ('sun', r'sun|morning|dawn|sunrise|alarm'), ('crowd', r'people|crowd|others|social|group|society|friends?|everyone|strangers?'), ('chart', r'percent|study|studies|research\w*|data|evidence|experiments?|survey|scientists?'),
     ('lock', r'habits?|stuck|trap\w*|secret|hidden|locked'), ('scroll', r'ancient|history|century|empire|philosopher'), ('bulb', r'idea|insight|realiz\w+|understand\w*|discover\w*|answer|learn\w*'), ('question', r'why|how come|mystery|puzzle|wonder\w*|question')]
-BG_KW = [('desert', r'desert|sahara|kalahari|savanna|dunes?|sand|camels?|egypt\w*|africa\w*|tanzania'), ('ocean', r'ocean|sea|beach|waves?|swim\w*|island|water'), ('space', r'space|planets?|universe|galaxy|cosmos|astronaut|stars'), ('mountain', r'mountains?|climb\w*|summit|cliffs?|hik\w+'),
+BG_KW = [('library', r'librar\w*|shelf|shelves|bookcase|manuscripts?'), ('bookshop', r'bookshop|bookstore|publisher|printed|printing|sold'), ('study', r'study|desk|wrote|writing|letters?|essays?|diary|candle'), ('desert', r'desert|sahara|kalahari|savanna|dunes?|sand|camels?|egypt\w*|africa\w*|tanzania'), ('ocean', r'ocean|sea|beach|waves?|swim\w*|island|water'), ('space', r'space|planets?|universe|galaxy|cosmos|astronaut|stars'), ('mountain', r'mountains?|climb\w*|summit|cliffs?|hik\w+'),
     ('forest', r'forest|woods|jungle|wild|hunt\w*|gatherers?|foraging|foragers?|ancestors?|survival|caves?'), ('history', r'ancient|history|centur\w+|empire|rome|roman|greek|greece|kings?|philosopher\w*|medieval|castle|pharaoh'), ('city', r'cities|city|street|traffic|urban|downtown|commut\w*|strangers?|crowds?'),
     ('bedroom', r'bed|sleep\w*|dream\w*|insomnia|tired|midnight'), ('night', r'night|dark|moon'), ('office', r'office|job|jobs|work|boss|career|meeting|desk|emails?|computer'), ('school', r'school|class\w*|teacher|students?|exam|lab|experiments?|research\w*|scientists?|studies|study'),
     ('stage', r'audience|speech|perform\w*|stage|speaking|applause'), ('home', r'home|house|room|kitchen|family|apartment|couch'), ('park', r'park|walk\w*|garden|grass|picnic|outdoor\w*|dog|dogs'), ('brain', r'brain|neurons?|mind|memory|memories|thought\w*|conscious\w*|psycholog\w*|habits?|emotion\w*')]
@@ -427,7 +466,7 @@ ACT_KW = [('run', r'run|running|chas\w+|flee\w*|rush\w*|sprint\w*|escap\w*|hurry
     ('lookup', r'look\w*|watch\w*|see|saw|notice\w*|stare\w*|gaze|observ\w*|eyes?'), ('think', r'think\w*|wonder\w*|imagine|ponder\w*|why|how|maybe|perhaps|mystery|curious|puzzl\w*|decid\w*|choose|choice|question\w*'),
     ('no', r'never|myth|wrong|false|not true|stop|nothing|cannot|avoid|ignore|don.t|can.t'), ('shrug', r'but|however|yet|although|though|unclear|unknown|not sure|depends|maybe'), ('sit', r'sit\w*|rest\w*|relax\w*|calm|wait\w*|quiet|stay\w*'), ('point', r'first|second|third|next|then|here|this|these|that|those|example|called|named')]
 AHA = re.compile(r'\b(realiz\w+|insight|idea|discover\w*|aha|understand\w*|figured|solution|answer)\b', re.I)
-ROT_BG = ['home', 'park', 'city', 'brain', 'office', 'night', 'school']
+ROT_BG = ['library', 'study', 'bookshop', 'city', 'park', 'history', 'home'] if SM else ['home', 'park', 'city', 'brain', 'office', 'night', 'school']
 def _words_re(rx): return re.compile(r'^(?:' + rx + r')$', re.I)
 PROP_RE = {n: _words_re(r) for n, r in PROP_KW}; PROP_RX = {n: re.compile(r'\b(?:' + r + r')\b', re.I) for n, r in PROP_KW}
 BG_RX = [(n, re.compile(r'\b(?:' + r + r')\b', re.I)) for n, r in BG_KW]; ACT_RX = [(n, re.compile(r'\b(?:' + r + r')\b', re.I)) for n, r in ACT_KW]
@@ -448,7 +487,7 @@ def cue_time(name, ws):
             if rx.match(re.sub(r'[^\w]', '', w['w'])): return max(ws[0]['s'], w['s'] - .12)
     return ws[0]['s'] + .35
 def plan_world(script, secs, words, journeys, vert=False):
-    beats = []; N = len(secs); cur_bg = 'brain'; bg_t = -99.0; last_act = ''; rot = 0; n_empty = 0
+    beats = []; N = len(secs); cur_bg = 'library' if SM else 'brain'; bg_t = -99.0; last_act = ''; rot = 0; n_empty = 0
     for si, sec in enumerate(secs):
         ws = [w for w in words if w['sec'] == si]
         if not ws: continue
@@ -458,7 +497,7 @@ def plan_world(script, secs, words, journeys, vert=False):
             b = {'start': start, 'end': g[-1]['e'] + .4, 'sec': si, 'text': txt, 'ws': g, 'props': [], 'journey': False}
             # backdrop
             hit = next((n for n, rx in BG_RX if rx.search(low) and (n != 'brain' or gi == 0)), None)
-            if (si == 0 and gi == 0): hit = 'brain'
+            if (si == 0 and gi == 0): hit = 'library' if SM else 'brain'
             if hit and hit != cur_bg and (start - bg_t >= 5.0 or gi == 0): cur_bg = hit; bg_t = start
             elif gi == 0 and not hit:
                 rot += 1; nxt = ROT_BG[rot % len(ROT_BG)]
@@ -473,7 +512,7 @@ def plan_world(script, secs, words, journeys, vert=False):
             found.sort(); names = [n for _, _, n in found][:2]
             m = re.search(r'\b(\d[\d,\.]*\s?(?:%|percent|per cent)?)', txt)
             if m and re.search(r'\d', m.group(1)) and len(m.group(1).strip()) <= 8:
-                names = names[:1]; b['num'] = m.group(1).strip().replace(' percent', '%')
+                names = names[:1]; b['num'] = m.group(1).strip(' .,').replace(' percent', '%')
             if si == 0 and gi == 0: names = ['question'] + [n for n in names if n not in ICON_NAMES][:1]
             if not names and n_empty % 3 == 2 and not vert: names = [['bulb', 'eye', 'brain', 'clock'][(si + gi) % 4]]
             n_empty = n_empty + 1 if not names else 0
@@ -656,7 +695,7 @@ def draw_frame(fi):
     if G.get('vert'): return vframe(c.out(), now)
     sec = G['secs'][min(b['sec'], len(G['secs']) - 1)]; chip = '%d  %s' % (b['sec'] + 1, sec['title'][:34])
     cw = tw(chip, 26) + 36; c.rr(24, 22, 24 + cw, 68, 16, INK, INK, 2); c.text((42, 33), chip, 26, WHITE)
-    c.text((W - 26, 30), 'MindLore', 28, BLUE, 'ra')
+    c.text((W - 26, 30), BRAND_NAME, 28, BLUE, 'ra')
     ci = max(0, bisect.bisect_right(G['cstarts'], now) - 1); ch = G['chunks'][ci]
     if now >= ch[0]['s'] - .05 and now <= ch[-1]['e'] + .6:
         txt = ' '.join(x['w'] for x in ch); size = 38; wd = tw(txt, size) + 50
@@ -672,7 +711,7 @@ def vframe(img, now):
     """9:16 Short layout: title on top, the 16:9 scene in the middle, big captions below, call to action at the bottom."""
     V = Image.new('RGB', (1080, 1920), PAPER); d = ImageDraw.Draw(V)
     V.paste(img.crop((160, 0, 1120, 720)).resize((1080, 810), Image.LANCZOS), (0, 420))   # centre of the scene, bigger
-    d.rounded_rectangle([60, 70, 330, 130], radius=16, fill=BLUE, outline=INK, width=4); d.text((195, 100), 'MindLore', font=f1(36), fill=WHITE, anchor='mm')
+    d.rounded_rectangle([60, 70, 330, 130], radius=16, fill=BLUE, outline=INK, width=4); d.text((195, 100), BRAND_NAME, font=f1(36), fill=WHITE, anchor='mm')
     y = 160
     for ln in wrap(G['vtitle'], 60 / 1.0, 940)[:3]: d.text((540, y), ln, font=f1(60), fill=INK, anchor='ma'); y += 72
     ci = max(0, bisect.bisect_right(G['cstarts'], now) - 1); ch = G['chunks'][ci]
@@ -690,7 +729,7 @@ def vframe(img, now):
             for w in ln:
                 on = w['s'] <= now; col = GOLD if (on and now <= w['e'] + .12) else (WHITE if on else (175, 175, 185))
                 d.text((x, top + 24 + li * 96), w['w'], font=f1(size), fill=col); x += f1(size).getlength(w['w'] + ' ')
-    d.text((540, 1780), 'Full video on the MindLore channel', font=f1(42), fill=BLUE, anchor='mm')
+    d.text((540, 1780), ('Classic books, explained on ShelfMade' if SM else 'Full video on the MindLore channel'), font=f1(42), fill=BLUE, anchor='mm')
     d.rectangle([0, 1912, int(1080 * clamp(now / G['total'])), 1920], fill=ACC)
     return V.tobytes()
 def short_script(script):
@@ -741,7 +780,7 @@ def build(sid, out, vert=False):
     mix = work / 'mix.m4a'; bed = None
     try:
         sys.path.insert(0, str(BASE)); import music_director
-        info = music_director.make_bed('mindlore', 'full', json.dumps(script)[:6000], total, work / 'bed.wav', words=len(words), key=str(script.get('book_id', '')) + '|' + str(script.get('public_title', '')))
+        info = music_director.make_bed('shelfmade' if SM else 'mindlore', 'full', json.dumps(script)[:6000], total, work / 'bed.wav', words=len(words), key=str(script.get('book_id', '')) + '|' + str(script.get('public_title', '')))
         bed = info['path'] if info else None
     except Exception as e: print('ml2d: music skipped:', str(e)[:100], flush=True)
     if bed:
