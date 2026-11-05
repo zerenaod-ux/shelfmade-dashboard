@@ -26,6 +26,7 @@ def font(size):
         except Exception:pass
     return ImageFont.load_default()
 
+STEADY=os.environ.get('DOODLES_STEADY','1')=='1'   # DOODLES_STEADY: set 0 to bring the old moving camera back
 MOVE=os.environ.get('DOODLES_MOVE')=='1'   # subtle head/shoulder motion driven by the voice (full videos; Shorts can opt in)
 def head_move(img,tt,e,fg,who_active):
     """Local, feathered warp around each character's head+shoulders: talk bob, tilt and lean for the speaker (strength follows the voice level e), slow breathing sway for the listener."""
@@ -255,7 +256,7 @@ def render(work):
         # talk-driven camera: wide when quiet, push toward the speaker while talking, punch-in at each line start, pulse on key words
         if active:
             lp=min(1,max(0,(tt-active['start'])/max(active['end']-active['start'],0.01)))
-            zt=(1.30+0.11*lp) if si%2==0 else (1.24+0.12*lp)
+            zt=(1.30 if si%2==0 else 1.24) if STEADY else ((1.30+0.11*lp) if si%2==0 else (1.24+0.12*lp))
             pun=0.055*max(0.0,1-(tt-active['start'])/0.30)**2
             _w=active['text'].split();_ws=[weight(x) for x in _w];_tot=sum(_ws);_p=lp*_tot;_acc=0;_aw=len(_w)-1
             for _i,_wt in enumerate(_ws):
@@ -265,11 +266,15 @@ def render(work):
                 cam['aw']=_aw;cam['li']=(active['si'],active['li'])
                 if len(_w[_aw].strip('.,!?;:'))>=6 or re.search(r'[!?]$',_w[_aw]):cam['pulse']=1.0
         else:
-            u2=min(1,max(0,(tt-sh['start'])/max(sh['end']-sh['start'],0.01)));zt=1.12+0.04*u2;pun=0.0;cam['aw']=-1;cam['li']=None
+            u2=min(1,max(0,(tt-sh['start'])/max(sh['end']-sh['start'],0.01)));zt=1.12+(0.0 if STEADY else 0.04*u2);pun=0.0;cam['aw']=-1;cam['li']=None
         cam['z']+=(zt-cam['z'])*0.10;cam['pulse']*=0.86
-        z=cam['z']+pun+0.025*cam['pulse']+0.012*e
-        fx+=0.004*math.sin(2*math.pi*0.35*tt)*0.15
-        fy=((_fy-0.02) if _fy is not None else 0.43-(0.03 if active else 0))-0.004*e+0.004*math.sin(2*math.pi*0.27*tt)
+        if STEADY:   # DOODLES_STEADY: no punch-in, no word pulse, no voice-driven zoom or wobble; fixed framing per shot
+            z=cam['z']
+            fy=((_fy-0.02) if _fy is not None else 0.43-(0.03 if active else 0))
+        else:
+            z=cam['z']+pun+0.025*cam['pulse']+0.012*e
+            fx+=0.004*math.sin(2*math.pi*0.35*tt)*0.15
+            fy=((_fy-0.02) if _fy is not None else 0.43-(0.03 if active else 0))-0.004*e+0.004*math.sin(2*math.pi*0.27*tt)
         img=imgs[si]
         _real=bool(active) and isinstance(geo.get((si,active['who'])),dict) and 'open' in geo[(si,active['who'])]
         if active and (active['si'],active['li']) in ls_clips:
