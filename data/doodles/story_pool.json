@@ -2232,5 +2232,83 @@
     ]
    }
   ]
+ },
+ {
+  "id": "pluralistic-ignorance-meeting-nod",
+  "title": "The Meeting Nod That Sealed My Doom",
+  "concept": "PLURALISTIC IGNORANCE",
+  "mood": "dramatic",
+  "insight": "We all fake understanding because we assume everyone else gets it.",
+  "caption": "Why do we always nod when we have zero clue what is happening?",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit upright at a wooden table facing the camera. Leo has a worried squint; Mia wears a calm smirk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I agreed to spearhead the Q3 synergy pivot."
+     }
+    ]
+   },
+   {
+    "scene": "Leo clutches his yellow hoodie strings tightly, sweating nervously. Mia checks her phone, which shows a blinking red low battery icon.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Greg said it out loud and everyone else nodded along slowly!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans forward anxiously, raising his hands in despair. Mia gives him a flat, unimpressed sideways glance.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Now I have to build a spreadsheet about synergy by noon!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia points calmly at Leo with a deadpan expression. Leo blinks in sudden realization.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That is pluralistic ignorance. Everyone fakes certainty while privately being entirely lost."
+     }
+    ]
+   },
+   {
+    "scene": "Leo crosses his arms and nods slowly, looking relieved. Mia taps her dead phone screen.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Just raise your hand and ask what synergy actually means."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looks directly ahead with a curious, questioning expression. Mia looks slightly amused.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Wait, does anyone actually know what synergy is?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight"
  }
 ]

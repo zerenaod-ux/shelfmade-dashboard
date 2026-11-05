@@ -1,0 +1,76 @@
+{
+ "show": "Leo & Mia",
+ "arc": "Leo's Big Plan: become 'a person who has it together' this season. Mia keeps score and is rarely impressed.",
+ "cast": [
+  {
+   "name": "Greg",
+   "desc": "Leo's boss, who only ever emails one word: 'Noted.' or 'Per my last email.' (seen small in the background, never in front of the faces)"
+  },
+  {
+   "name": "Brenda",
+   "desc": "the nosy neighbour with a clipboard and opinions"
+  },
+  {
+   "name": "Dev",
+   "desc": "the barista who misspells Leo's name every single time (Leeo, Lyle, Leonard)"
+  },
+  {
+   "name": "Gerald",
+   "desc": "Leo's houseplant, whose health is a running worry"
+  }
+ ],
+ "gags": [
+  {
+   "id": "battery",
+   "text": "Mia's phone is always at 3% battery at the worst moment",
+   "uses": 1,
+   "last": 1
+  },
+  {
+   "id": "minute",
+   "text": "Leo says 'just one more minute' and it is never one minute",
+   "uses": 0,
+   "last": 0
+  },
+  {
+   "id": "gerald",
+   "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
+   "uses": 0,
+   "last": 0
+  },
+  {
+   "id": "greg",
+   "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
+   "uses": 0,
+   "last": 0
+  },
+  {
+   "id": "dev",
+   "text": "the barista writes Leo's name wrong on the cup, again",
+   "uses": 0,
+   "last": 0
+  },
+  {
+   "id": "scoreboard",
+   "text": "Mia announces her 'I told you so' scoreboard",
+   "uses": 0,
+   "last": 0
+  }
+ ],
+ "catch": {
+  "mia": "Anyway.",
+  "leo": "Okay but hear me out."
+ },
+ "episodes": [
+  {
+   "n": 1,
+   "kind": "short",
+   "id": "pluralistic-ignorance-meeting-nod",
+   "title": "The Meeting Nod That Sealed My Doom",
+   "concept": "PLURALISTIC IGNORANCE",
+   "gag": "battery",
+   "callback": false,
+   "date": "2026-11-05"
+  }
+ ]
+}
