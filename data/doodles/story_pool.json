@@ -2310,5 +2310,475 @@
    }
   ],
   "variant": "tight"
+ },
+ {
+  "id": "telephone-spotlight-effect",
+  "title": "The Takeout Phone Trap",
+  "concept": "THE SPOTLIGHT EFFECT",
+  "mood": "dramatic",
+  "insight": "Nobody is judging your phone call script as harshly as you are.",
+  "caption": "Rehearsing a simple phone call five times? Here is why your brain over-prepares everyday interactions.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Modern kitchen. Leo stands upright holding a phone, worried eyes facing camera. Mia stands beside him in a teal sweater, smirk facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Because ordering pizza requires absolute military perfection."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "What if Dev answers and mispronounces my name?"
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen counter. Leo holds one finger up while staring anxiously at phone. Mia stands upright with arms folded, raised eyebrow facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Give me just one more minute to practice greeting them."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Stuttering on pepperoni will ruin my social standing."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen counter. Leo grips his phone tightly with worried eyes. Mia stands beside a small potted houseplant, deadpan look facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Script version six! What if they ask about crust options?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It's a dinner order, not a court trial."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen counter. Mia gestures toward Leo with a calm expression facing camera. Leo stands upright, holding his phone down with surprised eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You've fallen into THE SPOTLIGHT EFFECT."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "You assume people judge you, but nobody is watching."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen counter. Mia taps Leo's phone screen with a subtle smile. Leo stands upright, looking relieved with wide curious eyes facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Press call before your brain starts overthinking."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Fine. That makes ten on your scoreboard."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen counter. Mia raises an eyebrow looking at Leo. Leo stands upright holding phone to ear, blinking, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Why are you pacing around with your phone?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
+ },
+ {
+  "id": "anticipatory-anxiety-sunday-blanket",
+  "title": "The Sunday Blanket Panic",
+  "concept": "ANTICIPATORY ANXIETY",
+  "mood": "dramatic",
+  "insight": "Don't let tomorrow steal your present calm.",
+  "caption": "Ever feel your Sunday disappear into Monday panic before the sun even sets? Here is why your brain does that.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Bright living room. Leo sits upright on the sofa wrapped in a yellow blanket with worried eyes. Mia stands nearby holding a ceramic mug with a flat expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "It is ruining my entire Sunday evening!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Leo, it\u2019s only three PM."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo remains upright, clutching his yellow blanket tightly around his shoulders with wide eyes. Mia stands facing forward with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Okay but hear me out, boss Greg will email \"Noted!\""
+     }
+    ]
+   },
+   {
+    "scene": "Living room corner near a potted houseplant. Leo sits upright clutching a throw pillow with anxious eyes. Mia stands nearby with a subtle smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Just like my meeting nod doom, even Gerald's wilting!"
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo sits upright looking reflective. Mia stands facing the camera, gesturing calmly with one hand, keeping a closed-mouth expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's anticipatory anxiety, suffering imaginary future Mondays today."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo sits upright with hands resting on a small paper notebook. Mia stands beside him with a soft, encouraging closed-mouth expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Write tomorrow's task list down now, then close it."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo sits upright under his blanket, peeking towards the camera with a sheepish expression while Mia stands beside him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Why am I sweating under this blanket when..."
+     }
+    ]
+   }
+  ],
+  "variant": "tight"
+ },
+ {
+  "id": "task-paralysis-text",
+  "title": "The Text Wall Retreat",
+  "concept": "TASK PARALYSIS",
+  "mood": "curious",
+  "insight": "Big messages trigger cognitive fatigue, making tiny replies feel safe.",
+  "caption": "Ever replied with a single letter because a text was just too long? Here is why your brain freezes.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo stands in the living room holding his phone with worried eyes. Mia sits on the couch in a teal sweater with a raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "A ten-line text is an emotional trap!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It\u2019s just Brenda asking for your shift."
+     }
+    ]
+   },
+   {
+    "scene": "Leo clutches his phone tightly with a tense, tight lip. Mia leans back on the sofa, watching him with calm eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "If I open it, I have to reply correctly!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "So you typed 'k' and locked your phone."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looks nervously at his phone with wide eyes. Mia holds up her phone, looking down at a quick notification.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Okay but hear me out! What if she gets mad?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Greg just emailed you one word: 'Noted.'"
+     }
+    ]
+   },
+   {
+    "scene": "Mia stands beside Leo, gesturing calmly with a flat expression. Leo stands next to her with sheepish relief.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That's Task Paralysis\u2014your brain sees big texts as heavy labor."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Still safer than my meeting nod disaster!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia smirks slightly while nodding at Leo. Leo listens quietly, clutching a small yellow mug with thoughtful eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Score's fourteen. Just break texts into one short sentence."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares at his phone screen with furrowed brows. Mia watches him from the side with a dry, patient smirk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Why does typing anything more feel impossible?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
+ },
+ {
+  "id": "pluralistic-ignorance-whiteboard-nod",
+  "title": "The Whiteboard Nod",
+  "concept": "PLURALISTIC IGNORANCE",
+  "mood": "dramatic",
+  "insight": "We hide our confusion when we wrongly assume everyone else understands.",
+  "caption": "Ever nodded along in a meeting while completely lost? Here is why everyone else was probably faking it too.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Break room with grey counter and water cooler. Leo stands upright in his yellow hoodie with worried eyes. Mia stands next to him in her teal sweater, smirking.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Everyone else clearly understood the synergy matrix."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Leo, Greg made those words up."
+     }
+    ]
+   },
+   {
+    "scene": "Break room near the counter. Leo holds a paper coffee cup with an anxious closed-mouth expression. Mia stands beside him with raised eyebrows, looking directly forward.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I couldn't admit I was completely lost!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You stared right at your cup marked 'Leopold'."
+     }
+    ]
+   },
+   {
+    "scene": "Break room setting. Leo stands stiffly, facing forward with wide, stressed eyes. Mia watches him calmly with a neutral, closed-mouth expression.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Nobody raised a hand, so I was the dumbest!"
+     }
+    ]
+   },
+   {
+    "scene": "Break room. Mia stands upright facing the camera with a confident, closed-mouth smirk. Leo stands beside her, looking thoughtful with a subtle frown.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That\u2019s pluralistic ignorance\u2014everyone secretly feels lost, but assumes everyone else understands."
+     }
+    ]
+   },
+   {
+    "scene": "Break room counter. Mia turns slightly forward with a gentle closed-mouth expression. Leo nods slightly, relaxed, holding his coffee cup upright.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Just break the silence and ask."
+     }
+    ]
+   },
+   {
+    "scene": "Break room. Mia stands facing the camera with an amused, curious expression. Leo stands next to her, blinking with slightly wide eyes.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Why were you nodding like a bobblehead earlier?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight"
+ },
+ {
+  "id": "feather-duster-procrastination",
+  "title": "The Feather Duster Detour",
+  "concept": "PRODUCTIVE PROCRASTINATION",
+  "mood": "dramatic",
+  "insight": "Tidying feels like progress, but it is just emotional dodgeball.",
+  "caption": "Ever scrubbed your entire kitchen to avoid opening one scary email? Here is why your brain chooses chores when deadlines loom.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Living room. Leo stands holding a yellow feather duster, eyes wide with anxiety. Mia stands next to him with arms crossed and a dry smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My entire desk is spotless!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You have a five-page report due in twenty minutes."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo proudly points to a neatly stacked bookshelf nearby. Mia looks on with a raised eyebrow and closed-mouth gaze.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "text": "I even alphabetized Gerald the plant's surrounding books!"
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Okay but hear me out, a clean space creates focus!"
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo anxiously grips a lint roller. Mia holds up a tiny wooden tally board with a sharp smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "That's eighteen on my told-you-so scoreboard."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "It's not takeout phone trap bad, but I wiped baseboards!"
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Mia stands centered, looking calmly forward. Leo remains standing in place with worried eyes, resting hands on his hoodie.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It\u2019s called productive procrastination."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Your brain does useful chores to soothe the dread of starting."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Mia gently gestures toward a desk with a single blank notepad. Leo looks down with slight concern.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Set a five-minute timer and write just one terrible sentence."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Mia turns slightly toward Leo, who is suddenly clutching a basket of neatly rolled socks.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Wait, why are you color-coding your socks right now?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
  }
 ]

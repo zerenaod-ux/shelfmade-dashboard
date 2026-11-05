@@ -29,32 +29,32 @@
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 0,
-   "last": 0
+   "uses": 1,
+   "last": 2
   },
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 0,
-   "last": 0
+   "uses": 1,
+   "last": 3
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 0,
-   "last": 0
+   "uses": 1,
+   "last": 4
   },
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 0,
-   "last": 0
+   "uses": 1,
+   "last": 5
   },
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 0,
-   "last": 0
+   "uses": 1,
+   "last": 6
   }
  ],
  "catch": {
@@ -70,6 +70,56 @@
    "concept": "PLURALISTIC IGNORANCE",
    "gag": "battery",
    "callback": false,
+   "date": "2026-11-05"
+  },
+  {
+   "n": 2,
+   "kind": "short",
+   "id": "telephone-spotlight-effect",
+   "title": "The Takeout Phone Trap",
+   "concept": "THE SPOTLIGHT EFFECT",
+   "gag": "minute",
+   "callback": false,
+   "date": "2026-11-05"
+  },
+  {
+   "n": 3,
+   "kind": "short",
+   "id": "anticipatory-anxiety-sunday-blanket",
+   "title": "The Sunday Blanket Panic",
+   "concept": "ANTICIPATORY ANXIETY",
+   "gag": "gerald",
+   "callback": true,
+   "date": "2026-11-05"
+  },
+  {
+   "n": 4,
+   "kind": "short",
+   "id": "task-paralysis-text",
+   "title": "The Text Wall Retreat",
+   "concept": "TASK PARALYSIS",
+   "gag": "greg",
+   "callback": true,
+   "date": "2026-11-05"
+  },
+  {
+   "n": 5,
+   "kind": "short",
+   "id": "pluralistic-ignorance-whiteboard-nod",
+   "title": "The Whiteboard Nod",
+   "concept": "PLURALISTIC IGNORANCE",
+   "gag": "dev",
+   "callback": false,
+   "date": "2026-11-05"
+  },
+  {
+   "n": 6,
+   "kind": "short",
+   "id": "feather-duster-procrastination",
+   "title": "The Feather Duster Detour",
+   "concept": "PRODUCTIVE PROCRASTINATION",
+   "gag": "scoreboard",
+   "callback": true,
    "date": "2026-11-05"
   }
  ]
