@@ -1,0 +1,41 @@
+name: music-ace
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "test (3 short tracks + speed report) or full (AI library)"
+        default: "test"
+      per_style:
+        description: "tracks per style for full"
+        default: "4"
+permissions:
+  contents: write
+jobs:
+  ace:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet numpy kaggle
+      - name: Compose on the free Kaggle GPU
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "full" ]; then python music_ace.py full "${{ github.event.inputs.per_style }}"; else python music_ace.py test; fi
+      - name: Publish results
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "full" ]; then
+            shopt -s nullglob; F=(music-lib/ace_*.mp3)
+            [ ${#F[@]} -gt 0 ] && gh release upload music-lib "${F[@]}" --clobber
+            git config user.name github-actions; git config user.email actions@github.com
+            git add -f data/music/index.json; git commit -m "Music library: AI-composed tracks" || true
+            git pull --rebase --autostash -q; git push
+          else
+            gh release view music-samples >/dev/null 2>&1 || gh release create music-samples --title "Music samples" --notes "test beds"
+            shopt -s nullglob
+            for f in music-ace-test/*.mp3; do cp "$f" "music-ace-test/AI-test-$(basename $f)"; done
+            F=(music-ace-test/AI-test-*.mp3); [ ${#F[@]} -gt 0 ] && gh release upload music-samples "${F[@]}" --clobber
+            [ -f _ace_work/dl/timing.json ] && cp _ace_work/dl/timing.json timing.json && gh release upload music-samples timing.json --clobber
+          fi
