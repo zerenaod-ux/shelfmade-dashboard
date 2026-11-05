@@ -28,11 +28,13 @@ jobs:
           ML_PER_PASS: ${{ github.event.inputs.count || '2' }}
         run: |
           [ -n "$GEMINI_API_KEY" ] || { echo "GEMINI_API_KEY secret missing"; exit 1; }
-          python ml_autoscripts.py
+          mkdir -p data/writer-logs; set -o pipefail
+          python -u ml_autoscripts.py 2>&1 | tee data/writer-logs/ml.log
       - name: Save new scripts
         run: |
           git config user.name "mindlore-bot"; git config user.email "bot@users.noreply.github.com"
           git add -f cinematic-scripts-mindlore data/mindlore/series.json 2>/dev/null || git add -f cinematic-scripts-mindlore
+          git add -f data/writer-logs/ml.log 2>/dev/null || true
           git diff --cached --quiet && { echo "nothing new"; exit 0; }
           git commit -qm "MindLore: new scripts written and checked automatically"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((RANDOM % 10 + 5)); done

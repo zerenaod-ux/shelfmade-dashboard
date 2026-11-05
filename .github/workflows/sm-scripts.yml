@@ -30,11 +30,13 @@ jobs:
           ML_PER_PASS: ${{ github.event.inputs.count || '2' }}
         run: |
           [ -n "$GEMINI_API_KEY" ] || { echo "GEMINI_API_KEY secret missing"; exit 1; }
-          ML_BRAND=shelfmade python ml_autoscripts.py
+          mkdir -p data/writer-logs; set -o pipefail
+          ML_BRAND=shelfmade python -u ml_autoscripts.py 2>&1 | tee data/writer-logs/sm.log
       - name: Save new scripts
         run: |
           git config user.name "shelfmade-bot"; git config user.email "bot@users.noreply.github.com"
           git add -f cinematic-scripts
+          git add -f data/writer-logs/sm.log 2>/dev/null || true
           git diff --cached --quiet && { echo "nothing new"; exit 0; }
           git commit -qm "ShelfMade: new scripts written and checked automatically"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((RANDOM % 10 + 5)); done
