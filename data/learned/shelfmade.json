@@ -1,38 +1,44 @@
 {
  "short": {
   "do_more": [
-   "Use direct, profound verbatim quotes as the title instead of generalized summaries or clickbait hooks.",
-   "Focus on actionable daily psychology and personal state-of-mind shifts like focus, mental energy, and renewal.",
-   "Keep titles concise and declarative, dropping emojis and generic framing like 'in 60 seconds'."
+   "Use direct, profound quotes as titles rather than generic video descriptions or summaries",
+   "Frame titles as universal philosophical questions or direct commands addressed to the viewer",
+   "Keep titles concise and thought-provoking without emojis or clickbait signifiers like 'in 60 seconds'"
   ],
   "avoid": [
-   "Avoid broad, meta-summaries of books or biographical overviews (e.g., 'Autobiography of Ben Franklin \u2014 in 60 seconds').",
-   "Avoid heavy use of emojis and dramatic narrative teaser questions in the titles.",
-   "Avoid packaging content as academic history lessons instead of immediate practical wisdom."
+   "Structuring titles as overview summaries of famous books (e.g., 'X Book in 60 Seconds')",
+   "Using emojis and heavy formatting in the video titles",
+   "Relying on narrative teaser hooks about historical events rather than raw psychological wisdom"
   ],
-  "title_style": "Winning titles frame the video as a direct statement of profound, actionable truth or a striking quote rather than a promotional summary.",
+  "title_style": "Winning titles act as direct philosophical hooks or impactful standalone quotes that challenge the reader's mindset instantly.",
   "next_tests": [
-   "Test a batch of 5 Shorts using raw, single-sentence philosophical quotes as the title and hook, completely stripping out emojis.",
-   "Compare direct behavioral instruction hooks ('You must learn to...') against storytelling/biographical hooks to validate retention preference."
+   "Test 5 videos using direct punchy book quotes as titles versus summary titles on identical source material",
+   "Test removing all emojis from upcoming short titles to measure if clean formatting increases click-through",
+   "Test framing the first 3 seconds around a controversial philosophical question instead of a historical story"
   ],
   "n": 102,
-  "best_vpd": 27.91,
+  "best_vpd": 27.68,
   "best_title": "You can turn over a new leaf every hour if you choose"
  },
  "full": {
   "do_more": [
-   "Focus titles on provocative, direct questions directed at the viewer's personal certainty and behavior.",
-   "Use philosophical framing from specific, actionable concepts rather than broad book overviews.",
-   "Keep full-length video titles punchy and under 10 words to create immediate intellectual curiosity."
+   "Use a short, curiosity\u2011driven question as the title and opening hook",
+   "Keep the main segment tight \u2013 aim for ~30\u202fseconds of focused insight before any deeper dive",
+   "Deliver one clear, actionable takeaway that feels personally relevant",
+   "Frame the content as a self\u2011challenge or reflection rather than a pure summary",
+   "Use punchy, minimal subtitles that echo the hook"
   ],
   "avoid": [
-   "Avoid using standard book title and author formats that look like academic reading assignments.",
-   "Avoid descriptive subtitle formulas like 'The Book That Changed...' which feel like historical retrospectives rather than personal challenges."
+   "Long, descriptive titles that read like a book synopsis",
+   "Overly broad overviews without a single clear hook",
+   "Video intros longer than 45\u202fseconds before the main point",
+   "Generic, non\u2011emotive language"
   ],
-  "title_style": "Winning titles use direct, second-person interrogatives that challenge the viewer's core assumptions rather than simply stating the source material.",
+  "title_style": "Lead with a brief, provocative question that makes viewers question their own habits or beliefs",
   "next_tests": [
-   "Test a full-length video using a controversial quote as the primary title hook.",
-   "Compare a question-based title against a direct command title using the same underlying book summary."
+   "Add a 15\u2011second teaser that poses a bold question before the main content",
+   "A/B test pure\u2011question titles against statement titles for the same video topic",
+   "Produce two versions of a video \u2013 one ~30\u202fseconds tight and one ~45\u202fseconds \u2013 to compare VPD"
   ],
   "n": 11,
   "best_vpd": 1.28,
