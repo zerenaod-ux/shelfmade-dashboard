@@ -30,14 +30,20 @@ def models():
     except Exception as e:print('model list failed:',str(e)[:80])
     if not _MODELS:_MODELS.extend(['gemini-2.5-flash','gemini-2.5-flash-lite','gemini-2.0-flash','gemini-flash-latest','gemini-flash-lite-latest','gemma-3-27b-it','gemma-3-12b-it'])
     print('story models:',_MODELS[:5],flush=True);return _MODELS
+def _lg():
+    try:   # what our real viewers watch (learner.py); empty when not available
+        sys.path.insert(0,str(HERE.parent)); import learned
+        return learned.guidance('doodles')
+    except Exception:
+        return ''
 def gemini(prompt):
-    key=secret();last=None
+    key=secret();last=None;rules=RULES+_lg()
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):
-                body=json.dumps({"contents":[{"role":"user","parts":[{"text":RULES+"\nReturn ONLY the JSON object, no markdown.\n\n"+prompt}]}],"generationConfig":{"temperature":0.95}}).encode()
+                body=json.dumps({"contents":[{"role":"user","parts":[{"text":rules+"\nReturn ONLY the JSON object, no markdown.\n\n"+prompt}]}],"generationConfig":{"temperature":0.95}}).encode()
             else:
-                body=json.dumps({"systemInstruction":{"parts":[{"text":RULES}]},"contents":[{"role":"user","parts":[{"text":prompt}]}],"generationConfig":{"temperature":0.95,"responseMimeType":"application/json"}}).encode()
+                body=json.dumps({"systemInstruction":{"parts":[{"text":rules}]},"contents":[{"role":"user","parts":[{"text":prompt}]}],"generationConfig":{"temperature":0.95,"responseMimeType":"application/json"}}).encode()
             req=urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}",body,{'Content-Type':'application/json'})
             try:
                 d=json.loads(urllib.request.urlopen(req,timeout=120).read());t=''.join(p.get('text','') for p in d['candidates'][0]['content']['parts']);m=re.search(r'\{.*\}',t,re.S);return m.group(0) if m else t

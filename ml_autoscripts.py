@@ -261,6 +261,11 @@ def make_one():
     if SH:
         extra = ('\nCHANNEL RULES: total narration 950-1250 words (NOT more). The FIRST sentence of section 1 narration must be EXACTLY the "hook" value: a vivid question or claim, no greeting, no "welcome", no channel name. '
                  'The "thumb" headline must reuse at least two key words that appear in that hook sentence. The last section must NOT say subscribe, thank you for watching or any sign-off. Every excerpt must start at the beginning of a sentence (capital letter) and be a complete clause.')
+    try:   # what our real viewers watch (learner.py): angle/hook guidance, refreshed twice a week
+        import learned
+        extra += learned.guidance('shelfmade' if SH else 'mindlore')
+    except Exception:
+        pass
     prompt += extra
     for attempt in range(4):
         d = _call(prompt)
