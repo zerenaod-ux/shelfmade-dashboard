@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: publisher-doodles
   cancel-in-progress: false
@@ -23,6 +24,12 @@ jobs:
           PUBLISH_LIVE: ${{ vars.PUBLISH_LIVE_DOODLES }}
           PUBLISH_BRAND: doodles
         run: python publisher.py
+      - name: Start overdue scheduled jobs (GitHub delays or skips crons)
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python kick.py
       - name: Save publish state
         if: always()
         run: |
