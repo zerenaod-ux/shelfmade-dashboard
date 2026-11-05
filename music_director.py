@@ -52,7 +52,7 @@ def _ensure(tr):
 
 def _targets(brand, kind, pace):
     """desired (energy, density) from format and speaking pace. Fast talking -> sparser music; slow narration -> more room for melody."""
-    base_e = {'shelfmade': .22, 'mindlore': .42, 'doodles': .30}   # DOODLES_CALM: was .65 (distracting under dialogue).get(brand, .35)
+    base_e = {'shelfmade': .22, 'mindlore': .42, 'doodles': .20}.get(brand, .35)   # DOODLES_CALM: was .65 (distracting under dialogue)
     if kind == 'short': base_e += .08
     p = pace or 2.5
     dens = max(.15, min(.8, .62 - (p - 2.0) * .2))
@@ -67,6 +67,9 @@ def _bias(brand):
 
 def pick(brand, kind='short', mood=None, text='', pace=None, key='', avoid=(), n=1, shift=0):
     idx = _index()
+    if brand == 'doodles':   # DOODLES_SLOW: only slow, gentle, unobtrusive beds (no bounce / hype / quirky / sneak)
+        idx = [x for x in idx if x['style'] in ('dd_chill', 'sm_candle', 'sm_tender', 'sm_library')]
+        mood = 'calm'
     if not idx: return []
     mood = ALIAS.get(mood, mood) if mood else mood_for(text)
     en_t, de_t = _targets(brand, kind, pace)
@@ -77,7 +80,7 @@ def pick(brand, kind='short', mood=None, text='', pace=None, key='', avoid=(), n
         if t['id'] in avoid: continue
         s = 0.0
         s += 1.0 if t['mood'] == mood else (.45 if t['mood'] in NEAR.get(mood, ()) else 0)
-        s += 1.0 if brand in t.get('brands', []) else -.8
+        s += 1.0 if (brand in t.get('brands', []) or brand == 'doodles') else -.8
         s -= 1.4 * abs(t['energy'] - en_t) + 1.0 * abs(t['density'] - de_t)
         s += bias.get(t['style'], 0)
         scored.append((s, t))
