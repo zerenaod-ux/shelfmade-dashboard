@@ -28,6 +28,18 @@ BRIEFS=[
  ('craft',('carve','carving','carved','sculpture','sculpting','sculptor','drawing'),['sculptor carving wood','hands carving sculpture','artist drawing sketch','woodworker carving detail','sculptor modeling clay','craftsperson carving wood workshop']),
  ('suffering',('pain','suffering','happiness','desire','fear'),['person sitting alone window rain','person walking out into sunlight','hands releasing tension'])]
 
+STORY_BRIEFS=[
+ ('sleep',('sleep','dream','dreams','bed','tired','rest','night'),['person sleeping bed night','person yawning morning','bedroom window moonlight','person waking up stretching']),
+ ('memory',('memory','remember','forget','forgot','notebook','recall','brain'),['hands writing notes notebook','old photographs close up','person thinking window','person studying notes library']),
+ ('workday',('hours','job','productivity','office','desk','busy','boss','career','hustle'),['person working laptop office','person tired at desk','commuters train station','hands typing keyboard','busy office people']),
+ ('screens',('phone','scrolling','screen','notifications','internet','online','social'),['person scrolling phone close up','phone notifications close up','person typing message smartphone','person putting phone down']),
+ ('alone',('alone','lonely','loneliness','elderly','aging','family','friends'),['elderly person window','person sitting alone park','family dinner table','friends laughing cafe']),
+ ('danger',('danger','risk','threat','chase','thrill','scared','afraid'),['storm clouds sky','city night street walking','person standing cliff edge','person looking over shoulder']),
+ ('health',('health','stress','calm','breath','body','anxiety','relax'),['person breathing outdoors','person stretching morning','person meditating sunrise','hands releasing tension']),
+ ('willpower',('willpower','self','control','resist','temptation','discipline','king','ruler'),['person resisting dessert','person training gym determination','hands closing door','person standing mountain top']),
+ ('society',('modern','society','city','crowd','chaos','civilization','violence','trust','neighbors'),['crowded street walking','city traffic timelapse','people crossing street','neighbors talking fence'])]
+if os.environ.get('STORY_SCRIPT'):BRIEFS=BRIEFS+STORY_BRIEFS
+
 def key():
  value=os.environ.get('PEXELS_API_KEY','')
  if value:return value
@@ -50,6 +62,7 @@ HINT=''  # set by hook_rules: the real source quote behind a template hook line
 def brief(text,chapter='',book=''):
  words=set(re.findall('[a-z]+',text.lower()));context=set(re.findall('[a-z]+',chapter.lower()))
  if HINT and chapter.lower()=='hook':words|=set(re.findall('[a-z]+',HINT.lower()))
+ if os.environ.get('STORY_SCRIPT') and not any(x in words for _t,_terms,_q in BRIEFS for x in _terms):words.add('mind')   # story Shorts: abstract sentence -> calm learning/thinking footage
  scored=[(sum(4 for t in terms if t in words)+sum(.25 for t in terms if t in context),theme,queries,[t for t in terms if t in words]) for theme,terms,queries in BRIEFS]
  score,theme,queries,hits=max(scored,key=lambda row:row[0])
  if not hits:raise ValueError('No confident visual brief for: '+chapter+'. Add a specific editorial footage brief instead of generic scenery.')
