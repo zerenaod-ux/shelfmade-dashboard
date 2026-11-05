@@ -1,0 +1,34 @@
+{
+ "The Sunday Spiral": {
+  "styles": [
+   "dd_sneak"
+  ],
+  "tracks": [
+   "dd_sneak_01"
+  ],
+  "mood": "dramatic",
+  "pace": 1.72,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-05"
+ },
+ "The Nodding Trap": {
+  "styles": [
+   "dd_sneak"
+  ],
+  "tracks": [
+   "dd_sneak_04"
+  ],
+  "mood": "dramatic",
+  "pace": 1.8,
+  "exp": {
+   "music_energy": "calm"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-05"
+ }
+}
