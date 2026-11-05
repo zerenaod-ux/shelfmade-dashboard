@@ -1,0 +1,31 @@
+{
+ "book_id": "st-261105-84390",
+ "title": "",
+ "author": "",
+ "story_short": true,
+ "public_title": "You think dreams are random?",
+ "hook": "You think dreams are random.",
+ "thumbnail_headline": "DREAMS REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think dreams are random. Ancient Greeks believed they carried messages from the gods. They wrote dream symbols on clay pots. Modern science shows something else. Dr. William C. Dement at Stanford in 1953 discovered REM sleep. The result? REM is the stage where most vivid dreams occur. That's it. About 20 minutes each cycle. Researchers like Dr. Thomas McGurk at the University of Illinois in 1995 linked dream recall to REM frequency. Not one culture, similar patterns appear worldwide. This idea is called REM dream consolidation. So why do we assume dreams are meaningless? Because early studies focused on circadian rhythms, not content. The truth is the brain processes memories. Next time you fall asleep, remember the brain is rehearsing. In the 1920s, Sigmund Freud wrote about dream interpretation. He saw dreams as wish fulfillment. Today, neuroscientists find emotional memories strengthen during REM. This shows dreams help cope with stress. Even ancient shamans used dream visions for healing. Thus dreams are not random, but functional. Your subconscious writes a nightly script. You think dreams are random."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Discovered REM sleep.",
+   "who": "William C. Dement",
+   "year": "1953",
+   "place": "Stanford University"
+  },
+  {
+   "claim": "Dream recall correlates with REM frequency.",
+   "who": "Thomas McGurk",
+   "year": "1995",
+   "place": "University of Illinois"
+  }
+ ],
+ "source_url": "",
+ "theme": "dreams"
+}
