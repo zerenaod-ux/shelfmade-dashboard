@@ -25,6 +25,11 @@ def ask(prompt):
         return M._call(prompt)
     except Exception as e:
         print('  Gemini failed:', str(e)[:150])
+    try:
+        import llm
+        return llm.json_call('You are a short-form video growth analyst. Reply with JSON only.', prompt, temperature=0.4)
+    except Exception as e:
+        print('  free fallback failed:', str(e)[:150])
         return None
 
 

@@ -54,6 +54,11 @@ def gemini(prompt):
                 if e.code in (500,503):time.sleep(15*(attempt+1));continue
                 break
             except Exception as e:last=f'{model} {e}';break
+    try:   # Gemini quota used up: free fallback providers (llm.py in the repo root) when a key is configured
+        sys.path.insert(0,str(HERE.parent));import llm
+        if llm.available():
+            t=llm.text(rules,prompt+"\nReturn ONLY the JSON object, no markdown.",True,0.95);m=re.search(r'\{.*\}',t,re.S);return m.group(0) if m else t
+    except Exception as e:last=f'{last}; free fallback: {str(e)[:80]}'
     raise SystemExit('Gemini failed: '+str(last))
 def valid(s,taken):
     try:

@@ -17,7 +17,13 @@ def _ok(h, l):
 
 
 def generate(title, author, sentences, brand):
-    if os.environ.get('AI_HOOKS', '1') == '0' or not os.environ.get('GEMINI_API_KEY'):
+    if os.environ.get('AI_HOOKS', '1') == '0':
+        return None
+    try:
+        import llm
+    except Exception:
+        llm = None
+    if not os.environ.get('GEMINI_API_KEY') and not (llm and llm.available()):
         return None
     try:
         import ml_autoscripts as M
@@ -32,7 +38,10 @@ def generate(title, author, sentences, brand):
                   'The opening line must be specific to THIS passage (never a generic template such as "Almost everyone gets X wrong"), create tension or curiosity in its first three words, '
                   'speak to the viewer, and never put words in the author\'s mouth that the passage does not support. Plain English, no emoji, no hashtags, no digits, no quotation marks. '
                   'Each line must end with . ? or !%s\nReturn ONLY JSON: {"hook":"...","loop":"..."}') % (title, author or 'unknown', passage, guide)
-        models = M._models()[:4]
+        try:
+            models = M._models()[:4] if os.environ.get('GEMINI_API_KEY') else []
+        except Exception:
+            models = []
         for model in models:
             try:
                 d = M._one(model, prompt, True)
@@ -44,6 +53,12 @@ def generate(title, author, sentences, brand):
             h, l = (d.get('hook') or '').strip(), (d.get('loop') or '').strip()
             if _ok(h, l):
                 return h, l
+        if llm and llm.available():      # Gemini quota is often used up: free fallbacks (Groq, Cerebras, OpenRouter, Mistral)
+            for _ in range(2):
+                d = llm.json_call('You write short-form video hooks. Reply with JSON only.', prompt)
+                h, l = (d.get('hook') or '').strip(), (d.get('loop') or '').strip()
+                if _ok(h, l):
+                    return h, l
     except Exception:
         return None
     return None

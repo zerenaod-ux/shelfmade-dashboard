@@ -175,6 +175,12 @@ def _call(prompt):
                     last = 'Gemini %s failed: %s' % (model, str(e)[:80])
                     break
             print('ml_autoscripts:', last, flush=True)
+        try:   # Gemini quota used up: free fallback providers (Groq, Cerebras, OpenRouter, Mistral) if a key is configured
+            import llm
+            if llm.available():
+                return llm.json_call('You are a careful script writer. Reply with JSON only.', prompt)
+        except Exception as e:
+            print('ml_autoscripts: free fallback failed:', str(e)[:100], flush=True)
         time.sleep(40 * (rnd + 1))
     raise ValueError(last or 'Gemini failed')
 

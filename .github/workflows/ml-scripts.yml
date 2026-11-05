@@ -21,6 +21,10 @@ jobs:
       - name: Write and check new scripts
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           ML_PER_PASS: ${{ github.event.inputs.count || '2' }}
         run: |
           [ -n "$GEMINI_API_KEY" ] || { echo "GEMINI_API_KEY secret missing"; exit 1; }
