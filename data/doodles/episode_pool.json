@@ -1,0 +1,425 @@
+[
+ {
+  "id": "leos-presentation-panic",
+  "title": "The 5 PM Slide Deck Disaster",
+  "theme": "Leo's presentation day (everything that can sabotage a talk, from 7 AM alarm to the 5 PM stage)",
+  "premise": "Leo needs to deliver a ten-minute presentation at 5 PM to keep his job, but his brain treats a minor slide deck as a life-or-death battle for survival. Mia agrees to drag him to the finish line, mostly to see if he will physically melt from stress.",
+  "running_gag": "a squeaking neon-green dolphin laser pointer that Leo bought for luck and keeps accidentally triggering at terrible moments",
+  "payoff": "When Leo panics on stage, he accidentally targets his boss's chin with the squeaking dolphin laser, turning his paralyzing fear into an absurd icebreaker that wins over the room.",
+  "description": "Leo has 10 minutes to pitch his slides, but his overactive brain is convinced every minor mistake will trigger social ruin. Watch Mia try to keep him grounded using blunt roasts, cold brew, and an absurdly loud dolphin laser pointer. Can a little psychological understanding help Leo survive the scariest 5 PM of his life?",
+  "scenes": [
+   {
+    "time": "07:15 AM",
+    "setting": "Leo's tiny apartment kitchen, cluttered with 12 half-empty coffee mugs, cue cards taped to the microwave, and a grumpy landlord in a floral bathrobe peering through the window.",
+    "concept": "CATASTROPHIZING",
+    "beat": "Leo rehearses slide one 40 times while clutching his neon-green dolphin laser pointer, convinced a single typo will end in immediate homelessness. Mia drinks cold brew straight from his carton, noting that if he dies of stress today, she is taking his good pillows.",
+    "story": {
+     "id": "leos-presentation-panic-01",
+     "title": "The 5 PM Slide Deck Disaster",
+     "concept": "CATASTROPHIZING",
+     "mood": "dramatic",
+     "insight": "Treating a minor setback as a total catastrophe creates extra stress.",
+     "caption": "Why does one typo feel like a total career collapse?",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo holds a neon-green dolphin laser pointer in a cramped kitchen. A neighbor in a floral robe watches from the window.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "If this font is wrong, I will surely be homeless by sunset."
+        }
+       ]
+      },
+      {
+       "scene": "Leo paces near a stack of twelve coffee mugs while Mia leans against the microwave, drinking from a milk carton.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Your landlord is watching you sweat, and it is honestly quite impressive."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "He knows I am a failure who cannot align a simple text box!"
+        }
+       ]
+      },
+      {
+       "scene": "The laser pointer accidentally clicks, casting a neon dot on the neighbor's forehead. Leo shakes violently.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "You just targeted a man in a bathrobe with a plastic dolphin."
+        },
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "That is it, I am officially a criminal and my life is over."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sets the carton down, looking at Leo with a flat, bored expression.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "You are catastrophizing, taking one tiny error and inflating it into a disaster."
+        }
+       ]
+      },
+      {
+       "scene": "Leo stares at the ceiling. Mia checks her watch, looking unimpressed by his drama.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "Just pause for a second and ask yourself what actually happens if you fail."
+        }
+       ]
+      },
+      {
+       "scene": "Leo looks at the neon-green dolphin, his hand trembling slightly.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "But if I don't prepare for the absolute worst case,"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "01:30 PM",
+    "setting": "A cramped coffee shop where a barista with a handlebar mustache and a stained apron glares from behind a sputtering espresso machine.",
+    "concept": "SPOTLIGHT EFFECT",
+    "beat": "Leo spills exactly three drops of oat milk on his yellow hoodie and assumes every person in the cafe is mentally documenting his complete downfall. Mia tests the squeaking dolphin laser on a stranger's tote bag to prove nobody is paying attention to his tiny stain.",
+    "story": {
+     "id": "leos-presentation-panic-02",
+     "title": "The 5 PM Slide Deck Disaster",
+     "concept": "SPOTLIGHT EFFECT",
+     "mood": "dramatic",
+     "insight": "We think everyone stares at our tiny flaws, but they barely notice.",
+     "caption": "Three drops of oat milk and Leo thinks his life is over.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Cramped coffee shop at 1:30 PM. A glaring barista with a handlebar mustache works an espresso machine. Leo stares at his yellow hoodie, panicking, while clutching a neon-green dolphin laser pointer. Mia sips cold brew.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Everyone in this cafe just watched me ruin my life."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "It is three drops of oat milk, not an execution."
+        }
+       ]
+      },
+      {
+       "scene": "Same coffee shop. Leo frantically dabbing his yellow hoodie with a tiny napkin. Mia points the squeaking green dolphin laser at a stranger's canvas tote bag.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "That hipster with the mustache is memorizing my exact failure."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "He is literally staring at foam, Leo, not your tragedy."
+        }
+       ]
+      },
+      {
+       "scene": "Coffee shop counter. Leo sweating through his yellow hoodie, accidentally clicking the dolphin laser. Mia casually steals a pastry from his tray.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "My entire professional legacy is currently dissolving into cotton fibers."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Your legacy is a stained hoodie and bad posture."
+        }
+       ]
+      },
+      {
+       "scene": "Coffee shop table. Mia holds up her phone to block Leo's view of the crowd. Leo blinks in sudden confusion.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "You are experiencing the spotlight effect right now."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "The what effect?"
+        }
+       ]
+      },
+      {
+       "scene": "Coffee shop corner. Mia pats Leo's shoulder with exaggerated pity. Leo clutches his neon-green dolphin laser like a lifeline.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Assume nobody cares, because frankly, they really do not."
+        }
+       ]
+      },
+      {
+       "scene": "Coffee shop exit. Leo zips his yellow hoodie all the way up to his nose. Mia rolls her eyes and pushes the door open.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Everyone in this cafe just watched me ruin my life."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "04:15 PM",
+    "setting": "The fluorescent-lit office holding room, filled with stale donut boxes and a rival presenter in a tight grey suit hyperventilating into a paper bag.",
+    "concept": "IMPOSTER SYNDROME",
+    "beat": "Leo insists he was accidentally hired three years ago and tries to hide under a plastic folding table. Mia gives him a savage pep talk, reminding him that his coworkers are far too lazy to notice he is faking it, while repeatedly squeaking the dolphin laser near his ear.",
+    "story": {
+     "id": "leos-presentation-panic-03",
+     "title": "The 5 PM Slide Deck Disaster",
+     "concept": "IMPOSTER SYNDROME",
+     "mood": "dramatic",
+     "insight": "Feeling like a fraud just means you care.",
+     "caption": "Leo tries to hide under a folding table at 4:15 PM.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Bright office holding room with stale donuts, a rival in a tight grey suit hyperventilating in the background. Leo and Mia facing camera, Leo trying to crawl under a plastic table.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "I was accidentally hired three years ago and now they will know."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Stop whimpering under the folding table, you are thirty-one."
+        }
+       ]
+      },
+      {
+       "scene": "Holding room with a half-eaten donut box on a desk, rival still breathing into a paper bag. Leo clutching a squeaking neon-green dolphin laser pointer.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "My slides use basic shapes, they are going to deport me."
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "No one cares about your triangles, Leo, they want free pizza."
+        }
+       ]
+      },
+      {
+       "scene": "Holding room with fluorescent lights buzzing, rival nervously adjusting his grey tie. Mia aggressively squeaking the green dolphin pointer near Leo's ear.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "The dolphin laser is squeaking because my career is dying."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "It squeaks because you are pressing the button with your thumb."
+        }
+       ]
+      },
+      {
+       "scene": "Holding room with a stack of paper plates on the counter, rival staring blankly at the wall. Mia tapping her teal sweater sleeve.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "This is classic imposter syndrome, where competent people feel like total frauds."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "You mean I am not an accidental employee on trial?"
+        }
+       ]
+      },
+      {
+       "scene": "Holding room with empty coffee cups scattered everywhere, rival finally lowering his paper bag. Mia handing Leo a warm paper cup.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "text": "Should I just focus on my third slide instead?"
+        },
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Drink this cold brew and pretend you belong here."
+        }
+       ]
+      },
+      {
+       "scene": "Holding room with the rival packing his bag, door marked conference room ahead. Leo holding his neon dolphin pointer tightly.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "What if the projector screen actually catches fire right now?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "04:58 PM",
+    "setting": "The packed auditorium stage, with Leo's terrifying boss\u2014a woman in a sharp red blazer\u2014staring sternly from the front row.",
+    "concept": "EMBODIED COGNITION",
+    "beat": "When Leo forces himself to stand tall and hold out his hands, the confident posture can trick his brain into feeling calm, even as he accidentally shines the squeaking dolphin laser right on his boss's chin. The entire room bursts into laughter, and Leo effortlessly glides through his slides.",
+    "story": {
+     "id": "leos-presentation-panic-04",
+     "title": "The 5 PM Slide Deck Disaster",
+     "concept": "EMBODIED COGNITION",
+     "mood": "dramatic",
+     "insight": "Physical posture can trick your nervous system into feeling safe.",
+     "caption": "How a fake power pose saves a career at five PM.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Stage edges, Leo in yellow hoodie holding squeaking neon dolphin laser pointer, Mia in teal sweater beside him, red-blazer boss staring from front row.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "My legs have literally fused into the auditorium floorboards."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Stop whining and just stand upright like a normal human."
+        }
+       ]
+      },
+      {
+       "scene": "Bright stage lights, Leo stretching arms wide, boss glaring from front row with folded arms, Mia smirking.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "I am radiating confidence while my soul attempts to exit."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Your ribs are practically touching your spine right now."
+        }
+       ]
+      },
+      {
+       "scene": "Stage podium, Leo striking a wide power pose, accidentally clicking the neon dolphin laser pointer onto boss's chin.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Wait, why is the dolphin squeaking at her chin?"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "You just illuminated her face with a glowing green mammal."
+        }
+       ]
+      },
+      {
+       "scene": "Auditorium filled with blurry laughing coworkers, boss smirking, Leo standing tall, Mia looking impressed.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "That is embodied cognition, where physical poses actually calm brains."
+        },
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "text": "The laughter magically stopped my entire nervous system from melting."
+        }
+       ]
+      },
+      {
+       "scene": "Center stage podium, Leo gesturing smoothly at blank screen, boss nodding approvingly, Mia leaning against backdrop.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "text": "Watch me seamlessly glide through these ridiculous corporate slides."
+        },
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Try not to faint until slide four at least."
+        }
+       ]
+      },
+      {
+       "scene": "Auditorium stage, Leo holding pointer high, boss watching intently, Mia giving thumbs up.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "My legs have literally fused into the auditorium floorboards."
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ }
+]
