@@ -205,6 +205,7 @@ def main():
     z = OUT / f"doodles-full-{ep['id']}.zip"
     with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as f:
         f.write(final, 'final.mp4'); f.write(work / 'thumbnail.png', 'thumbnail.png'); f.writestr('POST_THIS.txt', post)
+        if (work / 'bed.music.json').is_file(): f.write(work / 'bed.music.json', 'MUSIC.json')
     if not test:
         used = jl(USED, []); used.append(ep['id']); USED.write_text(json.dumps(used))
     (OUT / 'made.txt').write_text(ep['id']); log('DONE', ep['id'], stamp(total), 'long,', round((time.time() - t0) / 60), 'min')

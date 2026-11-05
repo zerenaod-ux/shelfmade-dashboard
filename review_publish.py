@@ -106,6 +106,28 @@ def auto_approve(issue_url, brand, d):
 
 
 
+STYLE_WORDS = {'sm_candle': 'soft candlelit piano', 'sm_library': 'quiet library ambience', 'sm_gothic': 'dark gothic drone', 'sm_adventure': 'light adventurous strings', 'sm_tender': 'tender sad piano',
+               'ml_lofi': 'lo-fi beat', 'ml_pulse': 'thinking pulse', 'ml_deep': 'deep mysterious drone', 'ml_wonder': 'airy wonder bells', 'ml_tension': 'tense electronic pulse',
+               'dd_bounce': 'bouncy comedy', 'dd_quirky': 'quirky pizzicato comedy', 'dd_sneak': 'sneaky tiptoe comedy', 'dd_chill': 'chill feel-good', 'dd_hype': 'hype upbeat'}
+
+
+def music_add(body, d):
+    """Adds a plain 'Music:' line (what the director chose and why) to a Review Issue body. Never fails the issue."""
+    try:
+        m = json.loads((Path(d) / 'MUSIC.json').read_text())
+        names = []
+        for s in m.get('styles', []):
+            n = STYLE_WORDS.get(s.replace('ace_', ''), s)
+            if n not in names: names.append(n)
+        pace = m.get('pace')
+        feel = '' if not pace else (' - fast talker, so lighter music' if pace > 3.3 else (' - slow narration, so more melody' if pace < 2.2 else ''))
+        ai = ' (AI-composed)' if any(str(t).startswith('ace_') for t in m.get('tracks', [])) else ''
+        line = '**Music:** %s%s - mood %s%s' % (' > '.join(names), ai, m.get('mood', '?'), feel)
+        return body.replace('\n---\n', '\n' + line + '\n\n---\n', 1) if '\n---\n' in body else body + '\n\n' + line
+    except Exception:
+        return body
+
+
 def main():
     seen = load(SEEN, {'tags': [], 'issues': []})
     seen.setdefault('titles', [])
@@ -140,7 +162,7 @@ def main():
                     rel = 'https://github.com/%s/releases/tag/%s' % (REPO, tag)
                     body = ('## Review this Doodles FULL video (8-9 min, YouTube)\n\n**Watch:** download `%s` from %s\n\n**Title:** %s\n\n**Post text with chapters:**\n\n%s\n\n---\n'
                             'Label **approve** = keep it; **skip** = drop it. On approve it is uploaded to the Doodles YouTube channel (private, scheduled 18:00 Chicago on the next free day) once the one-time Doodles YouTube authorization is done.\n\n<!--DATA %s DATA-->' % (z.name, rel, title, raw[:3000], json.dumps(data)))
-                    (Path(tmp) / 'body.md').write_text(body)
+                    (Path(tmp) / 'body.md').write_text(music_add(body, d))
                     out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', 'Review DOODLES FULL: ' + title[:60], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok')
                     seen['issues'].append(out.strip()); seen['titles'].append(title); made += 1
                     continue
@@ -158,7 +180,7 @@ def main():
                     rel = 'https://github.com/%s/releases/tag/%s' % (REPO, tag)
                     body = ('## Review this FULL video (%s, YouTube)\n\n**Watch:** download `%s` from %s\n\n**Title:** %s\n\n**Description:**\n\n%s\n\n---\n'
                             '**Automatic checks:**\n```\n%s\n```\nTo schedule it on YouTube (18:00 Chicago, next free day): add the label **approve**. To drop it: **skip**.\n\n<!--DATA %s DATA-->' % ('MindLore' if ml_full else 'ShelfMade', z.name, rel, title, desc, '\n'.join(ql), json.dumps(data)))
-                    (Path(tmp) / 'body.md').write_text(body)
+                    (Path(tmp) / 'body.md').write_text(music_add(body, d))
                     out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', ('Review ML FULL: ' if ml_full else 'Review FULL: ') + title[:70], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok' if okq else 'checks-warn')
                     seen['issues'].append(out.strip())
                     seen['titles'].append(title)
@@ -177,7 +199,7 @@ def main():
                 body = ('## Review this video\n\n**Video:** %s\n\n**Title:** %s\n\n**Caption (all platforms):**\n\n%s\n\n**Automatic checks:**\n```\n%s\n```\n---\n'
                         'To publish it on YouTube, Instagram and TikTok: add the label **approve**. To drop it: add the label **skip**.\n\n'
                         '<!--DATA %s DATA-->' % (url, title, text, '\n'.join(ql), json.dumps(data)))
-                (Path(tmp) / 'body.md').write_text(body)
+                (Path(tmp) / 'body.md').write_text(music_add(body, d))
                 out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', {'mindlore': 'Review ML: ', 'doodles': 'Review DOODLES: '}.get(brand, 'Review: ') + title[:70], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok' if okq else 'checks-warn')
                 seen['issues'].append(out.strip())
                 seen['titles'].append(title)

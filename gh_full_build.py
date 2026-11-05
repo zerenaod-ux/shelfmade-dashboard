@@ -25,6 +25,8 @@ def main(n):
   r=subprocess.run([sys.executable,'full_jobs.py',book,str(folder)],capture_output=True,text=True)
   print((r.stdout+r.stderr)[-1500:],flush=True)
   if r.returncode or not list(folder.glob('*_LONGFORM.mp4')):print('FAILED',book);skip.add(book);continue
+  try:__import__('shutil').copy(folder/'.render'/'bed.music.json',folder/'MUSIC.json')
+  except Exception:pass
   z=Path('out/full-'+book+'.zip')
   subprocess.run(f"cd {folder} && (zip -q ../full-{book}.zip *_LONGFORM.mp4 *.json *.txt *.jpg 2>/dev/null || zip -q ../full-{book}.zip *_LONGFORM.mp4 POST_THIS.txt)",shell=True)
   if not z.is_file():print('ZIP FAILED',book);continue

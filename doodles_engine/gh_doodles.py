@@ -35,6 +35,7 @@ def main():
         z = OUT / f"doodles-{s['id']}.zip"
         with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as f:
             f.write(work / 'short.mp4', 'final.mp4'); f.writestr('POST_THIS.txt', post)
+            if (work / 'bed.music.json').is_file(): f.write(work / 'bed.music.json', 'MUSIC.json')
         used = jl(USED, []); used.append(s['id']); USED.write_text(json.dumps(used))
         made.append(s['id']); log('DONE', s['id'], round(time.time() - t), 's')
         for junk in ('k1_in', 'k1_kernel', 'k1_dl', 'ls_in', 'ls_kernel', 'ls_dl', 'silent.mp4'):

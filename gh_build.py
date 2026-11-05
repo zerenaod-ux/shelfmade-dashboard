@@ -30,6 +30,8 @@ def main(count):
   built.append(bid)
   (state/BUILT).write_text(json.dumps(built));(state/USED).write_text(json.dumps(used))
   shutil.copy(folder/'final.mp4',out/f'{bid}-final.mp4');shutil.copy(folder/'POST_THIS.txt',out/f'{bid}-POST_THIS.txt')
+  try:shutil.copy(folder/'.render'/'bed.music.json',folder/'MUSIC.json')
+  except Exception:pass
   subprocess.run(f"cd out/{bid} && zip -q -r ../{bid}.zip . -x 'f_*.png' 'local-motion*' 'kokoro_*.wav' 'source.txt' '*.tmp'",shell=True)
   if ML:os.replace(out/f'{bid}.zip',out/f'ml-{bid}-{int(time.time())}.zip')
   made+=1;print('BUILT',bid,flush=True)
