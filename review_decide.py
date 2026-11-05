@@ -56,7 +56,7 @@ def main():
     for plat in ('youtube', 'instagram', 'tiktok'):
         iid = 'gh%d-%s%s' % (num, tagname, plat)
         if iid not in have:
-            cur['items'].append({'id': iid, 'platform': plat, 'title': d['title'], 'text': d['text'], 'url': d['url']})
+            cur['items'].append({'id': iid, 'platform': plat, 'title': d['title'], 'text': d['text'].replace('Source-supported draft. Review facts, wording and length before posting.', '').replace('\n\n\n', '\n\n').strip(), 'url': d['url']})   # DRAFTNOTE
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(cur, indent=1))
     sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Approved. Queued for YouTube, Instagram and TikTok; the publisher schedules it in the next free slots.')
