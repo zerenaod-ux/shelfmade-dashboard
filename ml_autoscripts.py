@@ -407,6 +407,8 @@ def make_one():
                 return '%s.json' % bid
         if not bad and not SH:
             bad = _gate_ml(c, d)
+        if bad:
+            print('ml_autoscripts: attempt %d rejected:' % attempt, '; '.join(str(x) for x in bad[:4])[:500], flush=True)
         if not bad:
             break
         prompt = base % (kind, chan, c['title'], c['author'], prior, window) + extra + '\nYour last attempt failed these checks, fix them: ' + '; '.join(bad[:6])
@@ -537,4 +539,5 @@ def top_up():
 
 
 if __name__ == '__main__':
-    print(top_up())
+    print('ml_autoscripts: start, scripts on disk =', len(list(OUT.glob('*.json'))), 'target =', 90 if SH else TARGET, flush=True)
+    print('ml_autoscripts: DONE, scripts made =', top_up(), flush=True)

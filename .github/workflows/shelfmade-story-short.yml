@@ -1,5 +1,7 @@
 name: shelfmade-story-short
 on:
+  schedule:
+    - cron: '10 14 * * *'   # 9:10 AM Chicago (CDT)
   workflow_dispatch:
     inputs:
       count:
