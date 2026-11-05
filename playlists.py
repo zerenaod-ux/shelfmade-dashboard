@@ -9,8 +9,14 @@ API = 'https://www.googleapis.com/youtube/v3/'
 def call(tok, path, body=None):
     req = urllib.request.Request(API + path, json.dumps(body).encode() if body is not None else None,
                                  {'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    for n in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code == 404 and n < 3 and 'playlistId' in path or e.code in (500, 503) and n < 3:
+                import time; time.sleep(5); continue   # a just-created playlist needs a moment before YouTube finds it
+            raise RuntimeError('%s -> HTTP %s %s' % (path.split('&')[0][:60], e.code, e.read()[:150].decode('utf8', 'ignore')))
 
 
 def pages(tok, path):
@@ -45,19 +51,20 @@ def run(b, budget):
         want = [v for v in ids if vids.get(v) == kind]
         if not want:
             continue
-        if title not in have:
+        fresh = title not in have
+        if fresh:
             have[title] = call(tok, 'playlists?part=snippet,status', {'snippet': {'title': title, 'description': '%s: %s' % (name, kind)}, 'status': {'privacyStatus': 'public'}})['id']
             print(b, 'created playlist', title)
         pid = have[title]
-        inpl = {i['contentDetails']['videoId'] for i in pages(tok, 'playlistItems?part=contentDetails&maxResults=50&playlistId=' + pid)}
+        inpl = set() if fresh else {i['contentDetails']['videoId'] for i in pages(tok, 'playlistItems?part=contentDetails&maxResults=50&playlistId=' + pid)}
         for v in want:
             if v in inpl or budget <= 0:
                 continue
             try:
                 call(tok, 'playlistItems?part=snippet', {'snippet': {'playlistId': pid, 'resourceId': {'kind': 'youtube#video', 'videoId': v}}})
                 added += 1; budget -= 1
-            except urllib.error.HTTPError as e:
-                print(b, 'skip', v, e.code)
+            except Exception as e:
+                print(b, 'skip', v, str(e)[:100])
     print(b, 'added', added, 'videos')
     return budget
 
