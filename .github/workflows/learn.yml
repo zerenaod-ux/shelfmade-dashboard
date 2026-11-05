@@ -35,6 +35,7 @@ jobs:
           python analytics.py
           python trends.py
           python learner.py
+          python music_learn.py
       - name: Save results
         run: |
           git config user.name "studio-bot"; git config user.email "bot@users.noreply.github.com"

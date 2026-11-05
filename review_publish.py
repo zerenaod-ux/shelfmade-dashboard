@@ -128,6 +128,17 @@ def music_add(body, d):
         return body
 
 
+def music_record(d, title):
+    """Remembers the music used per video title (review/music-log.json) so music_learn.py can compare real viewer numbers by style."""
+    try:
+        m = json.loads((Path(d) / 'MUSIC.json').read_text())
+        p = Path('review') / 'music-log.json'; log = json.loads(p.read_text()) if p.is_file() else {}
+        log[title] = {'styles': m.get('styles', []), 'tracks': m.get('tracks', []), 'mood': m.get('mood'), 'pace': m.get('pace')}
+        p.parent.mkdir(exist_ok=True); p.write_text(json.dumps(log, indent=1))
+    except Exception:
+        pass
+
+
 def main():
     seen = load(SEEN, {'tags': [], 'issues': []})
     seen.setdefault('titles', [])
@@ -162,7 +173,7 @@ def main():
                     rel = 'https://github.com/%s/releases/tag/%s' % (REPO, tag)
                     body = ('## Review this Doodles FULL video (8-9 min, YouTube)\n\n**Watch:** download `%s` from %s\n\n**Title:** %s\n\n**Post text with chapters:**\n\n%s\n\n---\n'
                             'Label **approve** = keep it; **skip** = drop it. On approve it is uploaded to the Doodles YouTube channel (private, scheduled 18:00 Chicago on the next free day) once the one-time Doodles YouTube authorization is done.\n\n<!--DATA %s DATA-->' % (z.name, rel, title, raw[:3000], json.dumps(data)))
-                    (Path(tmp) / 'body.md').write_text(music_add(body, d))
+                    (Path(tmp) / 'body.md').write_text(music_add(body, d)); music_record(d, title)
                     out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', 'Review DOODLES FULL: ' + title[:60], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok')
                     seen['issues'].append(out.strip()); seen['titles'].append(title); made += 1
                     continue
@@ -180,7 +191,7 @@ def main():
                     rel = 'https://github.com/%s/releases/tag/%s' % (REPO, tag)
                     body = ('## Review this FULL video (%s, YouTube)\n\n**Watch:** download `%s` from %s\n\n**Title:** %s\n\n**Description:**\n\n%s\n\n---\n'
                             '**Automatic checks:**\n```\n%s\n```\nTo schedule it on YouTube (18:00 Chicago, next free day): add the label **approve**. To drop it: **skip**.\n\n<!--DATA %s DATA-->' % ('MindLore' if ml_full else 'ShelfMade', z.name, rel, title, desc, '\n'.join(ql), json.dumps(data)))
-                    (Path(tmp) / 'body.md').write_text(music_add(body, d))
+                    (Path(tmp) / 'body.md').write_text(music_add(body, d)); music_record(d, title)
                     out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', ('Review ML FULL: ' if ml_full else 'Review FULL: ') + title[:70], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok' if okq else 'checks-warn')
                     seen['issues'].append(out.strip())
                     seen['titles'].append(title)
@@ -199,7 +210,7 @@ def main():
                 body = ('## Review this video\n\n**Video:** %s\n\n**Title:** %s\n\n**Caption (all platforms):**\n\n%s\n\n**Automatic checks:**\n```\n%s\n```\n---\n'
                         'To publish it on YouTube, Instagram and TikTok: add the label **approve**. To drop it: add the label **skip**.\n\n'
                         '<!--DATA %s DATA-->' % (url, title, text, '\n'.join(ql), json.dumps(data)))
-                (Path(tmp) / 'body.md').write_text(music_add(body, d))
+                (Path(tmp) / 'body.md').write_text(music_add(body, d)); music_record(d, title)
                 out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', {'mindlore': 'Review ML: ', 'doodles': 'Review DOODLES: '}.get(brand, 'Review: ') + title[:70], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok' if okq else 'checks-warn')
                 seen['issues'].append(out.strip())
                 seen['titles'].append(title)

@@ -59,11 +59,18 @@ def _targets(brand, kind, pace):
     en = max(.1, min(.95, base_e + (p - 2.5) * .12))
     return en, dens
 
+def _bias(brand):
+    for base in (Path('data/learned'), BASE / 'data' / 'learned'):
+        try: return {k: v.get('bias', 0) for k, v in json.loads((base / ('music-%s.json' % brand)).read_text()).get('styles', {}).items()}
+        except Exception: continue
+    return {}
+
 def pick(brand, kind='short', mood=None, text='', pace=None, key='', avoid=(), n=1):
     idx = _index()
     if not idx: return []
     mood = ALIAS.get(mood, mood) if mood else mood_for(text)
     en_t, de_t = _targets(brand, kind, pace)
+    bias = _bias(brand)
     scored = []
     for t in idx:
         if t['id'] in avoid: continue
@@ -71,6 +78,7 @@ def pick(brand, kind='short', mood=None, text='', pace=None, key='', avoid=(), n
         s += 1.0 if t['mood'] == mood else (.45 if t['mood'] in NEAR.get(mood, ()) else 0)
         s += 1.0 if brand in t.get('brands', []) else -.8
         s -= 1.4 * abs(t['energy'] - en_t) + 1.0 * abs(t['density'] - de_t)
+        s += bias.get(t['style'], 0)
         scored.append((s, t))
     scored.sort(key=lambda x: -x[0])
     pool = scored[:max(6, n * 4)]
