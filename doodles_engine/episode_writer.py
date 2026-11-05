@@ -138,6 +138,10 @@ def main():
         ep = make_episode(pool)
         if ep:
             pool.append(ep)
+            try:
+                import series; series.record(ep['id'], ep['title'], ep.get('theme', ''), 'full')
+            except Exception:
+                pass
             POOL.write_text(json.dumps(pool, indent=1))
             print('wrote episode', ep['id'], flush=True)
     print('episode pool size', len(pool))

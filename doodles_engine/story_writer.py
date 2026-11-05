@@ -37,8 +37,19 @@ def _lg():
         return learned.guidance('doodles',KIND)
     except Exception:
         return ''
+def _sr():
+    try:   # series bible: recurring cast, running gag, callback (series.py)
+        sys.path.insert(0,str(HERE)); import series
+        return series.brief(KIND)
+    except Exception:
+        return ''
+def _rec(s):
+    try:
+        import series; series.record(s['id'],s.get('title',''),s.get('concept',''),'short')
+    except Exception:
+        pass
 def gemini(prompt):
-    key=secret();last=None;rules=RULES+_lg()
+    key=secret();last=None;rules=RULES+_lg()+_sr()
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):
@@ -87,7 +98,7 @@ def main():
         try:s=json.loads(gemini(f'Write a new episode about: {topic}. Already used ids (do not reuse): {sorted(taken)}'+vnote))
         except SystemExit as e:print(e);time.sleep(20);continue
         except Exception as e:print('bad json',e);continue
-        if valid(s,taken,variant):s['variant']=variant;pool.append(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
+        if valid(s,taken,variant):s['variant']=variant;pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
         else:print('rejected a story (format)')
     print('pool size',len(pool))
 if __name__=='__main__':main()

@@ -201,7 +201,11 @@ def main():
         log('rendered scene', j + 1, '/', len(subs))
     final, chapters, total = stitch(work, ep, sc, subs)
     ch = '\n'.join('%s %s' % (stamp(a), b) for a, b in chapters)
-    post = f"{ep['title']}\n\n{ep['description']}\n\nChapters:\n{ch}\n\n{TAGS} #Leo #Mia\n"
+    try:
+        import series as _se; _t = _se.title(ep['id'], ep['title'], 'full')
+    except Exception:
+        _t = ep['title']
+    post = f"{_t}\n\n{ep['description']}\n\nChapters:\n{ch}\n\n{TAGS} #Leo #Mia\n"
     z = OUT / f"doodles-full-{ep['id']}.zip"
     with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as f:
         f.write(final, 'final.mp4'); f.write(work / 'thumbnail.png', 'thumbnail.png'); f.writestr('POST_THIS.txt', post)

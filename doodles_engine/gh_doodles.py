@@ -30,7 +30,10 @@ def main():
         if run(HERE / 'kaggle_make.py', work).returncode: log('Kaggle stage 1 failed for', s['id'], '- skipping this story'); continue
         if run(HERE / 'ls_cloud.py', work).returncode: log('cloud lip-sync incomplete; render falls back to fast mouths'); os.environ['FASTLIP'] = '1'
         if run(HERE / 'render.py', work).returncode or not (work / 'short.mp4').is_file(): log('render failed for', s['id']); continue
-        title = s['title']
+        try:
+            import series; title = series.title(s['id'], s['title'], 'short')
+        except Exception:
+            title = s['title']
         post = f"{title}\n\n{s['caption']}\n\n{TAGS}\n"
         z = OUT / f"doodles-{s['id']}.zip"
         with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as f:
