@@ -418,7 +418,7 @@ def P_sign(c, x, y, u, now, text=''):
     c.rr(x - 190, y - 190 * u - hh + 40, x + 190, y - 150 * u + 40, 10, (240, 214, 160), (140, 98, 60), 6)
     for i, ln in enumerate(lines): c.text((x, y - 190 * u - hh + 60 + i * 40), ln, 32, INK, 'ma')
 def P_num(c, x, y, u, now, text=''):
-    s = 1 + .05 * math.sin(now * 6); c.rr(x - 150 * u * s, y - 70 * u * s, x + 150 * u * s, y + 70 * u * s, 26, WHITE, ACC, 7); c.text((x, y), text[:8], 92 * u * s, ACC, 'mm')
+    s = 1 + .05 * math.sin(now * 6); t = text[:9]; hw = max(150, 40 * len(t) + 50) * u * s; c.rr(x - hw, y - 70 * u * s, x + hw, y + 70 * u * s, 26, WHITE, ACC, 7); c.text((x, y), t, 92 * u * s, ACC, 'mm')
 
 def P_stack(c, x, y, u, now):
     for i, (w, col) in enumerate(((120, ACC), (100, BLUE), (110, GREEN), (90, GOLD))): c.rr(x - w / 2 * u, y - (i + 1) * 26 * u, x + w / 2 * u, y - i * 26 * u, 3, col, INK, 4)
@@ -443,7 +443,7 @@ def draw_prop(c, k, x, tc, now, text='', out=1.0):
     fn, kind = PROPS[k]
     if k in ICON_NAMES: icon(c, k, x, 330 + 8 * math.sin(now * 2 + x), 112 * pp, now)
     elif kind == 'g': fn(c, x, GROUND, 1.25 * pp, now) if k not in ('sign', 'num') else fn(c, x, GROUND, 1.0 * pp, now, text)
-    else: (fn(c, x, 330 + 7 * math.sin(now * 2 + x), 1.6 * pp, now, text) if k == 'num' else fn(c, x, 340 + 7 * math.sin(now * 2 + x), 1.5 * pp, now))
+    else: (fn(c, x, 330 + 7 * math.sin(now * 2 + x), (1.0 if G.get('vert') else 1.6) * pp, now, text) if k == 'num' else fn(c, x, 340 + 7 * math.sin(now * 2 + x), 1.5 * pp, now))
 
 # ---------------- v4: the director (decides what happens on screen for every few words) ----------------
 PROP_KW = [('stack', r'books|library|libraries|shelf|shelves|volumes?'), ('quill', r'wrote|writing|writes|letters?|essays?|manuscripts?|pen'), ('lamp', r'candle|lamp|evening|reading|study'), ('globe', r'world|globe|countries|travel\w*|voyage|explor\w*'), ('dog', r'dogs?|puppy|puppies|wolf|wolves'), ('cat', r'cats?|kitten'), ('bird', r'birds?|eagles?|pigeons?|owls?'), ('fish', r'fish|sharks?'), ('tree', r'trees?|leaf|leaves|plants?'), ('car', r'cars?|driving|drives?|driver|traffic'),
@@ -466,16 +466,26 @@ ACT_KW = [('run', r'run|running|chas\w+|flee\w*|rush\w*|sprint\w*|escap\w*|hurry
     ('lookup', r'look\w*|watch\w*|see|saw|notice\w*|stare\w*|gaze|observ\w*|eyes?'), ('think', r'think\w*|wonder\w*|imagine|ponder\w*|why|how|maybe|perhaps|mystery|curious|puzzl\w*|decid\w*|choose|choice|question\w*'),
     ('no', r'never|myth|wrong|false|not true|stop|nothing|cannot|avoid|ignore|don.t|can.t'), ('shrug', r'but|however|yet|although|though|unclear|unknown|not sure|depends|maybe'), ('sit', r'sit\w*|rest\w*|relax\w*|calm|wait\w*|quiet|stay\w*'), ('point', r'first|second|third|next|then|here|this|these|that|those|example|called|named')]
 AHA = re.compile(r'\b(realiz\w+|insight|idea|discover\w*|aha|understand\w*|figured|solution|answer)\b', re.I)
+def _learn():
+    try: return json.loads((BASE / ('data/story-learn-%s.json' % ('shelfmade' if SM else 'mindlore'))).read_text())
+    except Exception: return {}
+LEARN = _learn()
+def pref(items, kind):
+    """Order choices by what our viewers watched (data/story-learn.json), with 30% exploration so new ideas still get tried."""
+    w = (LEARN.get(kind) or {})
+    if not w or random.random() < .3: return list(items)
+    return sorted(items, key=lambda k: -float(w.get(k, 0)))
 ROT_BG = ['library', 'study', 'bookshop', 'city', 'park', 'history', 'home'] if SM else ['home', 'park', 'city', 'brain', 'office', 'night', 'school']
 def _words_re(rx): return re.compile(r'^(?:' + rx + r')$', re.I)
 PROP_RE = {n: _words_re(r) for n, r in PROP_KW}; PROP_RX = {n: re.compile(r'\b(?:' + r + r')\b', re.I) for n, r in PROP_KW}
 BG_RX = [(n, re.compile(r'\b(?:' + r + r')\b', re.I)) for n, r in BG_KW]; ACT_RX = [(n, re.compile(r'\b(?:' + r + r')\b', re.I)) for n, r in ACT_KW]
 
-def split_beats(ws):
+def split_beats(ws, vert=False):
     out, cur = [], []
+    A, Bv, C = (1.5, 2.4, 3.6) if vert else (2.2, 3.4, 5.6)
     for w in ws:
         cur.append(w); dur = w['e'] - cur[0]['s']
-        if (re.search(r'[.!?]["”]?$', w['w']) and dur >= 2.2) or (re.search(r'[,;:—–]$', w['w']) and dur >= 3.4) or dur >= 5.6: out.append(cur); cur = []
+        if (re.search(r'[.!?]["”]?$', w['w']) and dur >= A) or (re.search(r'[,;:—–]$', w['w']) and dur >= Bv) or dur >= C: out.append(cur); cur = []
     if cur:
         if out and cur[-1]['e'] - cur[0]['s'] < 1.3: out[-1].extend(cur)
         else: out.append(cur)
@@ -491,17 +501,17 @@ def plan_world(script, secs, words, journeys, vert=False):
     for si, sec in enumerate(secs):
         ws = [w for w in words if w['sec'] == si]
         if not ws: continue
-        groups = split_beats(ws); sb = []
+        groups = split_beats(ws, vert); sb = []
         for gi, g in enumerate(groups):
             txt = ' '.join(w['w'] for w in g); low = txt.lower(); start = sec['start'] if gi == 0 else g[0]['s']
             b = {'start': start, 'end': g[-1]['e'] + .4, 'sec': si, 'text': txt, 'ws': g, 'props': [], 'journey': False}
             # backdrop
             hit = next((n for n, rx in BG_RX if rx.search(low) and (n != 'brain' or gi == 0)), None)
             if (si == 0 and gi == 0): hit = 'library' if SM else 'brain'
-            if hit and hit != cur_bg and (start - bg_t >= 5.0 or gi == 0): cur_bg = hit; bg_t = start
+            if hit and hit != cur_bg and (start - bg_t >= (3.0 if vert else 5.0) or gi == 0): cur_bg = hit; bg_t = start
             elif gi == 0 and not hit:
-                rot += 1; nxt = ROT_BG[rot % len(ROT_BG)]
-                if nxt == cur_bg: rot += 1; nxt = ROT_BG[rot % len(ROT_BG)]
+                rot += 1; pool = pref(ROT_BG, 'bg'); nxt = pool[rot % len(pool)]
+                if nxt == cur_bg: rot += 1; nxt = pool[rot % len(pool)]
                 cur_bg = nxt; bg_t = start
             b['bg'] = cur_bg
             # props: specific things first, then symbols
@@ -509,8 +519,8 @@ def plan_world(script, secs, words, journeys, vert=False):
             for n, rx in PROP_RX.items():
                 m = rx.search(low)
                 if m: found.append((n in ICON_NAMES, m.start(), n))
-            found.sort(); names = [n for _, _, n in found][:2]
-            m = re.search(r'\b(\d[\d,\.]*\s?(?:%|percent|per cent)?)', txt)
+            found.sort(); names = [n for _, _, n in found][:(3 if vert else 2)]
+            m = re.search(r'\b(\d[\d,\.]*(?:s\b)?\s?(?:%|percent|per cent)?)', txt)
             if m and re.search(r'\d', m.group(1)) and len(m.group(1).strip()) <= 8:
                 names = names[:1]; b['num'] = m.group(1).strip(' .,').replace(' percent', '%')
             if si == 0 and gi == 0: names = ['question'] + [n for n in names if n not in ICON_NAMES][:1]
@@ -524,7 +534,7 @@ def plan_world(script, secs, words, journeys, vert=False):
             if si == 0 and gi == 0: act = 'think'
             if act == 'point' and not b['props']: act = None
             if act and act == last_act and act not in ('walk', 'run'): act = None
-            if not act: act = ['explain', 'idle', 'explain', 'point' if b['props'] else 'shrug', 'explain'][len(beats) % 5]
+            if not act: act = ['explain', pref(['idle', 'shrug', 'lookup', 'think'], 'act')[0], 'explain', 'point' if b['props'] else pref(['shrug', 'lookup', 'no'], 'act')[0], 'explain'][len(beats) % 5]
             if si == N - 1 and gi == len(groups) - 1 and not vert: act = 'wave'
             b['act'] = act; last_act = act
             b['cue'] = (b['props'][0]['cue'] if b['props'] else g[0]['s'] + .5)
@@ -583,18 +593,19 @@ def layout(beats, vert=False):
         if act == 'point' and not b['props']: act = 'explain'
         b['act'] = act; b['x0'] = x; b['ph0'] = ph
         if act in ('walk', 'run'):
-            v = 170.0 if act == 'walk' else 330.0; target = 1010.0 if x < 640 else 270.0; dist = abs(target - x)
-            if dist < 120: target = 270.0 if target > 640 else 1010.0; dist = abs(target - x)
+            v = 170.0 if act == 'walk' else 330.0; lo_x, hi_x = (330.0, 950.0) if vert else (270.0, 1010.0); target = hi_x if x < 640 else lo_x; dist = abs(target - x)
+            if dist < 120: target = lo_x if target > 640 else hi_x; dist = abs(target - x)
             dd = 1 if target > x else -1; trav = min(dist, v * L * .92); b['x1'] = x + dd * trav; b['arrive'] = trav / v; b['v'] = v; d = dd; still = 0
         else: b['x1'] = x; b['arrive'] = 0; b['v'] = 0; still += 1
         x = b['x1']; side_right = x <= 640
-        slots = [890, 1060, 760] if side_right else [390, 220, 520]
+        slots = ([x + 340, x + 500, x + 190] if side_right else [x - 340, x - 500, x - 190]) if vert else ([890, 1060, 760] if side_right else [390, 220, 520])
         for k, p in enumerate(b['props']): p['x'] = slots[k % 3] if p['k'] != 'sign' else (b['x1'] + (260 if side_right else -260))
         if act not in ('walk', 'run') and b['props']: d = 1 if b['props'][0]['x'] > x else -1
         if act == 'sleep':
             for p in b['props']:
                 if p['k'] == 'bed': p['x'] = x + 40; d = 1
         b['d'] = d
+        pxs = [p['x'] for p in b['props']] or [x + (200 if d > 0 else -200)]; b['cam1'] = max(418.0, min(862.0, (x + sum(pxs) / len(pxs)) / 2)); b['cam0'] = beats[i - 1]['cam1'] if i else b['cam1']
         if b['props']:
             p = b['props'][0]; vx = (p['x'] - x) * d; vy = (480 if PROPS[p['k']][1] == 'g' else 340) - 393
             b['aim'] = max(20.0, min(170.0, math.degrees(math.atan2(vx, vy))))
@@ -692,7 +703,12 @@ def draw_frame(fi):
     if b.get('aha') and now > b['cue']: icon(c, 'bulb', hx + 70 * b['d'], hy - 10, 38 * pop(now - b['cue'], 0, .35), now)
     if act == 'run': 
         for k in range(3): c.line([(x - b['d'] * (70 + k * 22), 400 + k * 55), (x - b['d'] * (130 + k * 22), 400 + k * 55)], 4, (150, 150, 160))
-    if G.get('vert'): return vframe(c.out(), now)
+    if G.get('vert'):
+        if move: cx = max(418.0, min(862.0, x + 100 * b['d'])); cx = lerp(b['cam0'], cx, ease(lt / .5))
+        else: cx = lerp(b['cam0'], b['cam1'], ease(lt / .5))
+        zk = 0.0
+        if b['props']: zk = math.exp(-max(0.0, now - b['cue']) * 5.0) if now >= b['cue'] else 0.0
+        return vframe(c.out(), now, (cx, 1.0 + .12 * zk))
     sec = G['secs'][min(b['sec'], len(G['secs']) - 1)]; chip = '%d  %s' % (b['sec'] + 1, sec['title'][:34])
     cw = tw(chip, 26) + 36; c.rr(24, 22, 24 + cw, 68, 16, INK, INK, 2); c.text((42, 33), chip, 26, WHITE)
     c.text((W - 26, 30), BRAND_NAME, 28, BLUE, 'ra')
@@ -707,10 +723,11 @@ def draw_frame(fi):
     return c.out().tobytes()
 def split_sentences(text): return [s.strip() for s in re.split(r'(?<=[.!?])\s+(?=[A-Z“"\'])', text.strip()) if s.strip()]
 def f1(px): return font(px / K)
-def vframe(img, now):
+def vframe(img, now, cam=(640, 1.0)):
     """9:16 Short layout: title on top, the 16:9 scene in the middle, big captions below, call to action at the bottom."""
     V = Image.new('RGB', (1080, 1920), PAPER); d = ImageDraw.Draw(V)
-    V.paste(img.crop((160, 0, 1120, 720)).resize((1080, 810), Image.LANCZOS), (0, 420))   # centre of the scene, bigger
+    cx, zm = cam; cw, ch_ = 836 / zm, 720 / zm; x0 = max(0, min(W - cw, cx - cw / 2)); y0 = max(0, min(H - ch_, 380 - ch_ / 2))
+    V.paste(img.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch_))).resize((1080, 930), Image.LANCZOS), (0, 400))   # camera follows the action, punches in on key words
     d.rounded_rectangle([60, 70, 330, 130], radius=16, fill=BLUE, outline=INK, width=4); d.text((195, 100), BRAND_NAME, font=f1(36), fill=WHITE, anchor='mm')
     y = 160
     for ln in wrap(G['vtitle'], 60 / 1.0, 940)[:3]: d.text((540, y), ln, font=f1(60), fill=INK, anchor='ma'); y += 72
@@ -722,14 +739,15 @@ def vframe(img, now):
             if cur and f1(size).getlength(t) > 900: lines.append(cur); cur = [w]
             else: cur.append(w)
         if cur: lines.append(cur)
-        top = 1260; hh = len(lines) * 96 + 40
+        top = 1360; hh = len(lines) * 96 + 40
         d.rounded_rectangle([60, top, 1020, top + hh], radius=30, fill=INK)
         for li, ln in enumerate(lines):
             txt = ' '.join(x['w'] for x in ln); x = 540 - f1(size).getlength(txt) / 2
             for w in ln:
                 on = w['s'] <= now; col = GOLD if (on and now <= w['e'] + .12) else (WHITE if on else (175, 175, 185))
+                if on and re.search(r'\d', w['w']): col = (255, 120, 90)
                 d.text((x, top + 24 + li * 96), w['w'], font=f1(size), fill=col); x += f1(size).getlength(w['w'] + ' ')
-    d.text((540, 1780), ('Classic books, explained on ShelfMade' if SM else 'Full video on the MindLore channel'), font=f1(42), fill=BLUE, anchor='mm')
+    d.text((540, 1830), ('Classic books, explained on ShelfMade' if SM else 'Full video on the MindLore channel'), font=f1(42), fill=BLUE, anchor='mm')
     d.rectangle([0, 1912, int(1080 * clamp(now / G['total'])), 1920], fill=ACC)
     return V.tobytes()
 def short_script(script):

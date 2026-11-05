@@ -31,6 +31,7 @@ jobs:
           BRAND: shelfmade
         run: |
           mkdir -p out gh-state
+          python story_learn.py shelfmade || true
           python story_short.py "$COUNT" || true
           python gh_story_short.py "$COUNT"
           ls -lh out/*.zip || true
@@ -43,5 +44,5 @@ jobs:
           TAG=shorts-story-$(date -u +%Y%m%d-%H%M)
           gh release create "$TAG" "${F[@]}" --title "ShelfMade story Shorts $TAG" --notes "Built automatically. Review before posting. Nothing is posted automatically."
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add -f gh-state/built-story-shorts-shelfmade.json story-shorts data/story-shorts-shelfmade.json; git commit -m "Record story Shorts"
+          git add -f gh-state/built-story-shorts-shelfmade.json story-shorts data/story-learn-log-shelfmade.json data/story-learn-shelfmade.json data/story-shorts-shelfmade.json; git commit -m "Record story Shorts"
           for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push && break; sleep 8; done

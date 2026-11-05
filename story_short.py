@@ -20,6 +20,10 @@ def pick_theme(h):
         books = load(B / 'books.json', []); cand = [b for b in books if ('%s by %s' % (b['title'], b['author'])) not in used] or books
         b = random.choice(cand); return '%s by %s' % (b['title'], b['author'])
     cand = [t for t in THEMES if t not in used] or THEMES
+    w = load(B / ('data/story-learn-%s.json' % BRAND), {}).get('theme') or {}   # learned from real views (story_learn.py); 30% exploration
+    if w and random.random() > .3:
+        best = sorted(cand, key=lambda t: -float(w.get(t, 0)))
+        if w.get(best[0]): return best[0]
     return random.choice(cand)
 def one(llm_call):
     import story_rules
