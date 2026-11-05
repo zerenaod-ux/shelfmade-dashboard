@@ -8,9 +8,13 @@ SPECS = json.loads('''__SPECS__''')
 T = '/kaggle/temp'; OUT = '/kaggle/working/out'; os.makedirs(T, exist_ok=True); os.makedirs(OUT, exist_ok=True)
 sh('nvidia-smi -L')
 sh(f'git clone --depth 1 https://github.com/ace-step/ACE-Step {T}/ACE')
-sh(f'cd {T}/ACE && pip install -q -e . 2>&1 | tail -3')
+SETUP = []
+SETUP.append(sh(f"cd {T}/ACE && grep -viE '^(torch|torchaudio|torchvision)([=<>~ ]|$)' requirements.txt > req_notorch.txt; {sys.executable} -m pip install -q -r req_notorch.txt 2>&1 | tail -12").stdout[-900:])
+SETUP.append(sh(f'cd {T}/ACE && {sys.executable} -m pip install -q --no-deps -e . 2>&1 | tail -3').stdout[-400:])
+SETUP.append(sh(f'{sys.executable} -m pip install -q loguru 2>&1 | tail -3').stdout[-300:])
+import importlib; importlib.invalidate_caches()
 sys.path.insert(0, T + '/ACE')
-timing = {'tracks': {}, 'errors': []}
+timing = {'tracks': {}, 'errors': [], 'setup': SETUP}
 def save():
     json.dump(timing, open('/kaggle/working/timing.json', 'w'), indent=1)
 pipe = None

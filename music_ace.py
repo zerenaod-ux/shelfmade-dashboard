@@ -58,6 +58,7 @@ def main():
         out = HERE / 'music-ace-test'; out.mkdir(exist_ok=True)
         for f in dl.rglob('*.mp3'): shutil.copy(f, out / f.name)
         log('test tracks in', out, [p.name for p in out.glob('*.mp3')])
+        if not list(out.glob('*.mp3')): raise SystemExit('NO TRACKS MADE - see timing above')
     else:
         per = int(sys.argv[2]) if len(sys.argv) > 2 else 4
         dl = run(specs(per, 75, 40)); lib = HERE / 'music-lib'; lib.mkdir(exist_ok=True); idxp = HERE / 'data' / 'music' / 'index.json'; idx = json.loads(idxp.read_text())
@@ -66,4 +67,5 @@ def main():
             style = f.stem.split('_', 1)[1].rsplit('_', 1)[0]; S = music_studio.STYLES[style]; shutil.copy(f, lib / f.name)
             idx = [i for i in idx if i['id'] != f.stem] + [dict(id=f.stem, file=f.name, style=style, brands=S['brands'], mood=S['mood'], bpm=int(sum(S['bpm']) / 2), energy=S['energy'], density=S['dens'], dur=75.0, source='ace')]; got += 1
         idxp.write_text(json.dumps(idx, indent=1)); log('added', got, 'AI tracks to the library')
+        if not got: raise SystemExit('NO TRACKS MADE')
 main()
