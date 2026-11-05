@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Weekly review · ShelfMade</title>
+<style>
+:root{--paper:#f1eee4;--muted:#a6b4aa;--gold:#e0bd76;--teal:#8ce0d7;--bg:#0d1c19;--card:#14292b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font:16px/1.5 -apple-system,system-ui,sans-serif}
+.wrap{max-width:560px;margin:0 auto;padding:16px}
+a{color:var(--teal)}h1{font-size:20px;margin:6px 0}
+.bar{height:6px;background:#ffffff1a;border-radius:3px;margin:8px 0 14px}.bar i{display:block;height:100%;background:var(--teal);border-radius:3px}
+.card{background:var(--card);border-radius:14px;padding:14px}
+video{width:100%;max-height:60vh;border-radius:10px;background:#000}
+label{display:block;font-size:12px;color:var(--muted);margin:10px 0 4px}
+input[type=text],textarea{width:100%;background:#0d1c19;color:var(--paper);border:1px solid #a6b4aa66;border-radius:8px;padding:8px;font:inherit}
+textarea{min-height:140px}
+.row{display:flex;gap:10px;margin-top:12px}.row button{flex:1}
+button{padding:12px;border-radius:10px;border:1px solid var(--muted);background:transparent;color:var(--paper);font:inherit;cursor:pointer}
+button.go{background:var(--teal);color:#06201d;border-color:var(--teal);font-weight:600}
+button:disabled{opacity:.4}
+.warn{color:var(--gold);font-size:13px;margin:8px 0}.msg{margin-top:10px;font-size:14px}.muted{color:var(--muted);font-size:13px}
+.chk{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:14px}.chk input{width:auto;margin-top:4px}
+.wrap{max-width:1000px!important}.narrow{max-width:560px;margin-left:auto;margin-right:auto}.gh{font-size:18px;font-weight:600;margin:2px 0 12px;color:var(--gold)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}.tile{background:#0d1c19;border-radius:12px;padding:8px}.tile video{max-height:46vh;width:100%;object-fit:contain;background:#000;border-radius:8px}.tt{font-weight:600;font-size:14px;margin:8px 0 2px}.bdg{display:inline-block;font-size:11px;border:1px solid var(--muted);border-radius:6px;padding:0 6px;color:var(--muted)}
+.sch{color:var(--gold);font-size:13px}.sub2{font-weight:600;margin:6px 0}details>summary{list-style:none}details>summary::-webkit-details-marker{display:none}
+</style></head><body><div class="wrap">
+<a href="/">← Studios</a><h1>Weekly review · ShelfMade</h1>
+<div class="narrow muted" id="sub">Loading your ready Shorts…</div><div class="narrow bar"><i id="prog" style="width:0"></i></div>
+<div class="narrow card" id="card"></div>
+<div class="card narrow" id="makeBox"></div>
+<div class="card narrow" id="fullBox"></div>
+<div class="card narrow" id="ghBox"></div>
+<div class="card" id="approvedGallery"></div>
+</div>
+<script>
+const H={'Content-Type':'application/json','X-ShelfMade':'local'};
+const $=id=>document.getElementById(id);
+let picks=[],idx=0,done=0,skipped=0,multi={},sched={},perDay=3;
+async function api(path,body){
+ const o={credentials:'same-origin'};
+ if(body){o.method='POST';o.headers=H;o.body=JSON.stringify(body)}
+ const r=await fetch(path,o);
+ if(r.status===401){location.href='/';throw Error('Sign in again.')}
+ let j;try{j=await r.json()}catch{throw Error('Incomplete response.')}
+ if(!r.ok||(j.error&&!(r.ok&&/^Prepared\./.test(j.error))))throw Error(j.error||'Request failed');return j;
+}
+function el(t,txt,cls){const e=document.createElement(t);if(txt!==undefined)e.textContent=txt;if(cls)e.className=cls;return e}
+function btn(txt,fn,cls){const b=el('button',txt,cls);b.onclick=fn;return b}
+function stripPexels(s){return s.replace(/^\s*(?:Videos|Photos|Footage) provided by Pexels.*$/gim,'')}
+function cleanCaption(s){s=stripPexels(s||'').replace(/\r\n?/g,'\n');
+ const m=/^\s*(?:[-=═─━_]+\s*)?CAPTION(?:\s*\([^\n]*\))?\s*:?(?:\s*[-=═─━_]+)?\s*$/im.exec(s);if(m)s=s.slice(m.index+m[0].length);
+ let skip=false;const out=[];
+ for(let line of s.split('\n')){line=line.trim();
+  if(/^Upload\s+final\.mp4\b/i.test(line))break;
+  if(/^[=═─━_\-]{3,}$/.test(line)||/^READY TO POST\b|^Platforms\s*:/i.test(line))continue;
+  if(/^(?:YOUTUBE\s*\/\s*TIKTOK\s+)?TITLE\s*\(copy this\)\s*:/i.test(line)){skip=true;continue}
+  if(skip){if(line)skip=false;continue}
+  if(/^Source-supported draft\.\s*Review|^Review facts, wording and length before posting\./i.test(line))continue;
+  out.push(line.replace(/\s+by\s*$/,''))}
+ return out.join('\n').trim().replace(/\n{3,}/g,'\n\n')}
+const CUR=/\b(if|but|why|how|when|never)\b/i,DRA=/\b(quit|refused|begged|waste|wasted|only|mistook|abandoned|lost|stop|never|died|chose)\b/i;
+function hook(i){return cleanCaption(i.publish_caption??i.caption).split('\n\n')[0]||''}
+function score(i){const h=hook(i);return 3*(h.includes('?'))+2*CUR.test(h)+2*DRA.test(h)-2*(h.length>110)-3*(h.length<15)}
+function book(i){return i.title.split(' · ')[0]}
+function isDone(i,posts){
+ if(multi.existing?.[i.id]&&Object.values(multi.existing[i.id]).every(Boolean))return true;
+ return posts.some(p=>p.item===i.id&&(['published','queued','hosting','submitting','sending','scheduled','needs_reconciliation','uploading','awaiting_publisher'].includes(p.state)||/^(processing_|uploaded_)/.test(p.state||'')))}
+function progress(){$('prog').style.width=(picks.length?Math.round(100*(done+skipped)/picks.length):0)+'%';
+ $('sub').textContent=picks.length?`${done} approved · ${skipped} skipped · ${picks.length-done-skipped} left`:''}
+async function start(){
+ try{
+  const [items,posts,m,s,boost]=await Promise.all([api('/api/items'),api('/api/publishing'),api('/api/multiplatform'),api('/api/scheduling'),api('/api/daily')]);
+  multi=m;sched=s.shelfmade||{};perDay=boost.target||3;
+  const pool=items.filter(i=>i.content_type!=='full'&&i.generated&&i.ready&&i.status!=='rejected'&&i.quality?.can_approve&&!isDone(i,[...posts,...(m.posts||[])]));
+  pool.sort((a,b)=>(!!b.generated-!!a.generated)||score(b)-score(a));
+  const left=[...pool],out=[];
+  for(let d=0;d<7&&left.length;d++){
+   const seen=new Set();
+   for(let k=0;k<perDay;k++){
+    const p=left.find(i=>!seen.has(book(i)))||left[0];if(!p)break;
+    left.splice(left.indexOf(p),1);seen.add(book(p));out.push({...p,day:d});
+   }
+  }
+  const fulls=items.filter(i=>i.content_type==='full'&&i.ready&&i.status!=='rejected'&&i.quality?.can_approve&&!isDone(i,[...posts,...(m.posts||[])]));
+  fulls.sort((a,b)=>(!!b.generated-!!a.generated));
+  fulls.slice(0,7).forEach((f,n)=>out.push({...f,day:n,full:true}));
+  picks=out;
+  if(!picks.length){$('sub').textContent='';$('card').replaceChildren(el('p','Nothing is waiting for review right now.','muted'));return}
+  progress();next();
+ }catch(e){$('card').replaceChildren(el('p',e.message,'warn'))}
+}
+function next(){
+ const card=$('card');card.replaceChildren();progress();
+ if(idx>=picks.length){card.append(el('h2','All done'),el('p',`${done} approved, ${skipped} skipped.`+(sched.enabled?' Approved videos go live at their next free slot.':' Auto-scheduling is OFF, so nothing was posted yet.')));const a=el('a','Back to studios');a.href='/';card.append(a);return}
+ const i=picks[idx];
+ const plats=['youtube','instagram','tiktok'].filter(n=>multi.networks?.[n]?.connected!==false);
+ card.append(el('div',i.full?`Full video (YouTube) · plan day ${i.day+1} · ${book(i)}`:`Short · plan day ${i.day+1} · ${book(i)} · hook score ${score(i)}${i.generated?'':' · older draft (before music/new voice)'}`,'muted'));
+ const v=document.createElement('video');v.controls=true;v.playsInline=true;v.preload='metadata';v.src='/media/'+i.id+'/video?v='+encodeURIComponent(i.quality?.fingerprint||'');card.append(v);
+ const t=document.createElement('input');t.type='text';t.value=i.publish_title||i.title.replace(' · New local draft','');t.maxLength=100;
+ const c=document.createElement('textarea');c.value=cleanCaption(i.publish_caption??i.caption);c.maxLength=2200;
+ card.append(el('label','Title'),t,el('label','Caption'),c);
+ (i.quality?.warnings||[]).forEach(w=>card.append(el('div',w,'warn')));
+ if(!i.full&&!multi.ready)card.append(el('div','Buffer or hosting setup is incomplete, so this can only be approved, not published.','warn'));
+ else if(!i.full&&!sched.enabled)card.append(el('div','Auto-scheduling for ShelfMade is OFF: approving here will NOT post. Turn it on in the studio first if you want it to schedule.','warn'));
+ const checks={},boxes=[];
+ for(const [k,label] of [['facts','Source passages and caption are right'],['narration','Narration is clear and pronounced correctly'],['visuals','Opening and footage fit the story']]){
+  const row=el('label','','chk'),cb=document.createElement('input');cb.type='checkbox';cb.onchange=()=>{checks[k]=cb.checked};boxes.push(cb);row.append(cb,el('span',label));card.append(row)}
+ const msg=el('div','','msg');
+ const ok=btn(i.full?(sched.enabled?'Approve & schedule full video':'Approve (scheduling is OFF)'):(sched.enabled&&multi.ready?'Approve & schedule':'Approve'),async()=>{
+  if(!['facts','narration','visuals'].every(k=>checks[k])){msg.textContent='Tick all three boxes after you have reviewed it.';return}
+  ok.disabled=sk.disabled=true;msg.textContent='Approving…';
+  try{
+   if(i.status!=='approved')await api('/api/decision',{id:i.id,status:'approved',checks});
+   if(i.full){
+    if(!sched.enabled)throw Error('Turn auto-scheduling ON for ShelfMade first; full videos are only approved, not uploaded.');
+    const prep=await api('/api/publishing/prepare',{id:i.id,title:t.value,description:c.value});
+    await api('/api/publishing/upload',{id:prep.id,visibility:'public',madeForKids:false,schedule:true});
+   }else if(sched.enabled&&multi.ready&&plats.length){
+    const prep=await api('/api/publishing/prepare',{id:i.id,title:t.value,description:c.value});
+    await api('/api/multiplatform/publish',{id:prep.id,platforms:plats,confirm:true});
+   }
+   done++;idx++;next();
+  }catch(e){
+   if(/API allowance|daily reset/i.test(e.message||'')){msg.textContent='Approved. It will be scheduled automatically after the daily reset (about 6-7 PM Chicago). Nothing else to do.';done++;idx++;setTimeout(next,1500);return}
+   msg.textContent=e.message;ok.disabled=sk.disabled=false}
+ },'go');
+ const sk=btn('Skip',()=>{skipped++;idx++;next()});
+ const r2=el('div','','row');r2.append(sk,ok);card.append(r2,msg);
+ [t,c].forEach(x=>x.oninput=()=>{boxes.forEach(b=>b.checked=false);Object.keys(checks).forEach(k=>checks[k]=false)});
+}
+start();
+
+function galleryRender(box,groups){
+ const e=(t,x,c)=>{const n=document.createElement(t);if(x!==undefined)n.textContent=x;if(c)n.className=c;return n};
+ const when=d=>d?new Date(d).toLocaleString([], {weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'';
+ const nm={youtube:'YouTube',instagram:'Instagram',tiktok:'TikTok'};
+ function tile(it){const c=e('div','','tile');
+  if(it.src){const v=document.createElement('video');v.controls=true;v.preload='metadata';v.playsInline=true;v.src=it.src+'#t=0.5';c.append(v)}
+  else{const b=e('div',it.nofile||'No preview file','muted');b.style.cssText='aspect-ratio:9/16;max-height:30vh;display:flex;align-items:center;justify-content:center;text-align:center;background:#000;border-radius:8px;padding:8px';c.append(b)}
+  if(it.link){const a=e('a','Watch on YouTube ↗');a.href=it.link;a.target='_blank';a.rel='noopener';a.style.cssText='display:block;font-size:13px;margin-top:6px';c.append(a)}
+  c.append(e('div',it.title,'tt'));
+  for(const p of it.plats){c.append(e('div',(nm[p.name]||p.name)+' · '+(p.done?'published ✓':(p.due?'goes live '+when(p.due):(p.state||'waiting'))),p.done?'muted':'sch'))}
+  if(!it.plats.length)c.append(e('div','Approved · no scheduled or published post found','sch'));
+  if(it.extra)c.append(it.extra);
+  return c}
+ for(const g of groups){
+  const up=g.items.filter(i=>!i.published),pub=g.items.filter(i=>i.published);
+  up.sort((a,b)=>(a.next||9e15)-(b.next||9e15));
+  box.append(e('div',g.label+' · '+g.items.length+' approved','gh'));
+  box.append(e('div',up.length+' coming up or not published yet · '+pub.length+' already published','muted'));
+  if(up.length){const gu=e('div','','grid');up.forEach(i=>gu.append(tile(i)));box.append(e('div','Coming up','sub2'),gu)}
+  else box.append(e('div','Nothing waiting. Everything approved is already published.','muted'));
+  const d=document.createElement('details');d.style.marginTop='12px';const s=e('summary','Show '+pub.length+' already published');s.style.cssText='cursor:pointer;padding:8px 0;color:var(--teal)';d.append(s);
+  const gp=e('div','','grid');let filled=false;
+  d.addEventListener('toggle',()=>{s.textContent=(d.open?'Hide ':'Show ')+pub.length+' already published';if(d.open&&!filled){filled=true;pub.forEach(i=>gp.append(tile(i)))}});
+  d.append(gp);box.append(d);
+  const sp=e('div');sp.style.height='22px';box.append(sp)}
+}
+
+(async function(){const box=document.getElementById('approvedGallery');
+ try{const [items,m,pubs]=await Promise.all([fetch('/api/items',{credentials:'same-origin'}).then(r=>r.json()),fetch('/api/multiplatform',{credentials:'same-origin'}).then(r=>r.json()),fetch('/api/publishing',{credentials:'same-origin'}).then(r=>r.json())]);
+  const wait=items.filter(i=>i.status==='review'&&i.ready).length;box.append((()=>{const n=document.createElement('div');n.className='muted';n.textContent=wait+' waiting for your review above.';return n})());
+  const jobOf=i=>{const mm=(i.folder||'').match(/generated\/([0-9a-f]{32})\//);return mm?mm[1]:null};
+  const mk=i=>{const keys=new Set([i.id]);const j=jobOf(i);if(j)keys.add('job-'+j);
+   const byPlat={};
+   for(const p of m.posts.filter(p=>keys.has(p.item)))(byPlat[p.platform]=byPlat[p.platform]||[]).push({state:p.state,due:p.due_at,url:p.url});
+   for(const p of pubs.filter(p=>keys.has(p.item)))(byPlat[p.platform]=byPlat[p.platform]||[]).push({state:p.state,due:p.publish_at,url:p.url});
+   const plats=Object.entries(byPlat).map(([name,list])=>{const pb=list.find(x=>x.state==='published');if(pb)return {name,done:true,url:pb.url};const sc=list.find(x=>['scheduled','queued'].includes(x.state));if(sc)return {name,due:sc.due,state:sc.state==='queued'?'queued, waiting for a free slot':sc.state};return {name,state:list[0].state==='awaiting_publisher'?'prepared, not scheduled':list[0].state}});
+   const published=plats.length>0&&plats.every(p=>p.done);const dues=plats.filter(p=>!p.done&&p.due).map(p=>Date.parse(p.due));
+   const yt=(plats.find(p=>p.name==='youtube'&&p.done)||{}).url;
+   return {title:i.title,src:'/media/'+i.id+'/video?v='+encodeURIComponent((i.quality&&i.quality.fingerprint)||''),plats,published,next:dues.length?Math.min(...dues):null,link:(i.content_type==='full'&&yt)?yt:null}};
+  const ap=items.filter(i=>i.status==='approved'&&i.ready);
+  galleryRender(box,[{label:'Shorts',items:ap.filter(i=>i.content_type!=='full').map(mk)},{label:'Full videos',items:ap.filter(i=>i.content_type==='full').map(mk)}])}catch(x){const n=document.createElement('div');n.className='warn';n.textContent='Could not load approved videos: '+x.message;box.append(n)}})();
+
+(async function(){const box=document.getElementById('makeBox');
+ const e=(t,x,c)=>{const n=document.createElement(t);if(x!==undefined)n.textContent=x;if(c)n.className=c;return n};
+ const H2={'Content-Type':'application/json','X-ShelfMade':'local'};
+ async function draw(){try{const g=await (await fetch('/api/generation-status',{cache:'no-store',credentials:'same-origin'})).json();const sh=g.shorts||{};
+  box.replaceChildren(e('div','Make more ShelfMade Shorts','gh'),e('div','Building now: '+(sh.running||0)+' running · '+(sh.queued||0)+' waiting in line. They build one at a time, about 25 minutes each. Nothing posts until you approve.','muted'));
+  const row=e('div','','row');row.style.marginTop='10px';
+  for(const n of [3,7,21]){const b=e('button','Make '+n+(n===21?' (a week)':''));b.className='go';b.onclick=async()=>{b.disabled=true;try{const r=await (await fetch('/api/shorts/make',{method:'POST',headers:H2,credentials:'same-origin',body:JSON.stringify({n})})).json();if(r.error)throw Error(r.error);msg.textContent='Queued '+r.queued+' of '+r.requested+'.'+(r.note?' '+r.note:'');draw2()}catch(x){msg.textContent=x.message}b.disabled=false};row.append(b)}
+  const msg=e('div','','msg');box.append(row,msg);window._mk=msg}catch(x){box.textContent='Could not load status: '+x.message}}
+ const draw2=()=>setTimeout(()=>{const m=window._mk&&window._mk.textContent;draw().then(()=>{if(window._mk)window._mk.textContent=m})},800);
+ draw();setInterval(()=>{const m=window._mk&&window._mk.textContent;draw().then(()=>{if(window._mk)window._mk.textContent=m})},30000)})();
+</script><script>(function(){const box=document.getElementById('fullBox');
+ const e=(t,x,c)=>{const n=document.createElement(t);if(x!==undefined)n.textContent=x;if(c)n.className=c;return n};
+ const row=e('div','','row');row.style.marginTop='10px';const msg=e('div','','msg');
+ for(const n of [1,3,6]){const b=e('button','Make '+n+' full video'+(n>1?'s':''));b.className='go';b.onclick=async()=>{b.disabled=true;msg.textContent='Queuing…';try{const r=await (await fetch('/api/full/make',{method:'POST',headers:{'Content-Type':'application/json','X-ShelfMade':'local'},credentials:'same-origin',body:JSON.stringify({n})})).json();if(r.error)throw Error(r.error);msg.textContent='Queued '+r.queued+' of '+r.requested+'.'+(r.note?' '+r.note:'')}catch(x){msg.textContent=x.message}b.disabled=false};row.append(b)}
+ box.append(e('div','Make more ShelfMade full videos','gh'),e('div','Builds now, any time. One at a time, roughly 1–2 hours each. Nothing posts until you approve. Do not restart the studio while one is building.','muted'),row,msg)})();</script>
+<script>(function(){const box=document.getElementById('ghBox');
+ const e=(t,x,c)=>{const n=document.createElement(t);if(x!==undefined)n.textContent=x;if(c)n.className=c;return n};
+ const msg=e('div','','msg');const b=e('button','Get new videos from GitHub');b.className='go';
+ b.onclick=async()=>{b.disabled=true;msg.textContent='Checking GitHub…';try{const r=await (await fetch('/api/github/sync',{method:'POST',headers:{'Content-Type':'application/json','X-ShelfMade':'local'},credentials:'same-origin',body:'{}'})).json();if(r.error)throw Error(r.error);msg.textContent=r.new?('Added '+r.new+' new video(s). Reloading…'):'No new videos on GitHub.';if(r.new)setTimeout(()=>location.reload(),1200)}catch(x){msg.textContent=x.message}b.disabled=false};
+ const row=e('div','','row');row.style.marginTop='10px';
+ for(const n of [3,6,9]){const bb=e('button','Build '+n+' on GitHub');bb.className='go';bb.onclick=async()=>{bb.disabled=true;msg.textContent='Starting GitHub…';try{const r=await (await fetch('/api/github/build',{method:'POST',headers:{'Content-Type':'application/json','X-ShelfMade':'local'},credentials:'same-origin',body:JSON.stringify({n})})).json();if(r.error)throw Error(r.error);msg.textContent=r.note}catch(x){msg.textContent=x.message}bb.disabled=false};row.append(bb)}
+ {const fb=e('button','Build 1 FULL video on GitHub');fb.className='go';fb.onclick=async()=>{fb.disabled=true;msg.textContent='Starting GitHub…';try{const r=await (await fetch('/api/github/build-full',{method:'POST',headers:{'Content-Type':'application/json','X-ShelfMade':'local'},credentials:'same-origin',body:'{}'})).json();if(r.error)throw Error(r.error);msg.textContent=r.note}catch(x){msg.textContent=x.message}fb.disabled=false};row.append(fb)}
+ row.append(b);
+ box.append(e('div','Videos built on GitHub (free server)','gh'),e('div','GitHub builds 3 Shorts every morning at 6 AM Chicago. Press Build to make more now (new books only), wait, then press Get new videos. Nothing posts until you approve.','muted'),row,msg)})();</script>
+</body></html>

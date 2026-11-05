@@ -1,0 +1,57 @@
+name: short-test
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng fonts-dejavu fonts-liberation
+      - name: Python packages
+        run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet kokoro soundfile numpy pillow phonemizer huggingface_hub requests
+      - name: Mac-path shims (espeak) and layout
+        run: |
+          sudo mkdir -p /opt/homebrew/opt/espeak-ng/lib /opt/homebrew/opt/espeak-ng/share
+          sudo ln -sf $(ls /usr/lib/x86_64-linux-gnu/libespeak-ng.so* | head -1) /opt/homebrew/opt/espeak-ng/lib/libespeak-ng.dylib
+          sudo ln -sfn $(dirname $(find /usr -name phontab | head -1)) /opt/homebrew/opt/espeak-ng/share/espeak-ng-data
+          sudo mkdir -p /System/Library/Fonts/Supplemental
+          L=/usr/share/fonts/truetype/liberation
+          sudo ln -sf $L/LiberationSans-Bold.ttf "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+          sudo ln -sf $L/LiberationSans-Regular.ttf /System/Library/Fonts/Supplemental/Arial.ttf
+          sudo ln -sf $L/LiberationSans-Regular.ttf /System/Library/Fonts/Helvetica.ttc
+          W=$(dirname $(dirname $GITHUB_WORKSPACE))/work
+          mkdir -p $W/kokoro-runtime/bin $W/kokoro-models
+          ln -sf $(which python) $W/kokoro-runtime/bin/python
+          HF_HOME=$W/kokoro-models python -c "from huggingface_hub import snapshot_download as s;s('hexgrad/Kokoro-82M')"
+          echo "W=$W" >> $GITHUB_ENV
+      - name: Pexels key (from GitHub Secret)
+        env:
+          PEXELS: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          mkdir -p private-footage; printf '%s' "$PEXELS" > private-footage/pexels-key
+          [ -s private-footage/pexels-key ] && echo "key present" || echo "KEY MISSING"
+      - name: Test music bed (synthesized; real music is added later)
+        run: |
+          mkdir -p generator/assets
+          ffmpeg -y -loglevel error -f lavfi -i "sine=f=196:d=180" -f lavfi -i "sine=f=247:d=180" -f lavfi -i "sine=f=294:d=180" -filter_complex "amix=inputs=3,volume=0.5,lowpass=f=900,afade=t=in:d=3" -c:a libmp3lame generator/assets/music.mp3
+          python -c "import json;c=json.load(open('cinematic-settings.json'));c['music_path']='generator/assets/music.mp3';json.dump(c,open('cinematic-settings.json','w'))"
+      - name: Build one Short
+        env:
+          CE_VOICE_ENGINE: kokoro
+        run: |
+          mkdir -p out
+          BOOK=$(python -c "import json;print(json.dumps(json.load(open('books.json'))[0]))")
+          set -o pipefail
+          python worker.py "$BOOK" 1 out/short 2>&1 | tail -60
+          echo '=== RESULT ==='; ls -lh out/short/*.mp4; cat out/short/validation.json | head -40; tail -3 out/short/POST_THIS.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: short-out
+          path: out/

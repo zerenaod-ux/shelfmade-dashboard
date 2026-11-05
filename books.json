@@ -1,0 +1,332 @@
+[
+  {
+    "id": "4507",
+    "title": "As a Man Thinketh",
+    "author": "James Allen"
+  },
+  {
+    "id": "2680",
+    "title": "Meditations",
+    "author": "Marcus Aurelius"
+  },
+  {
+    "id": "132",
+    "title": "The Art of War",
+    "author": "Sun Tzu"
+  },
+  {
+    "id": "368",
+    "title": "Acres of Diamonds",
+    "author": "Russell Conwell"
+  },
+  {
+    "id": "935",
+    "title": "Self-Help",
+    "author": "Samuel Smiles"
+  },
+  {
+    "id": "148",
+    "title": "Autobiography of Ben Franklin",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "id": "1232",
+    "title": "The Prince",
+    "author": "Machiavelli"
+  },
+  {
+    "id": "16643",
+    "title": "Self-Reliance (Essays)",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "id": "1998",
+    "title": "Thus Spake Zarathustra",
+    "author": "Friedrich Nietzsche"
+  },
+  {
+    "id": "216",
+    "title": "Tao Te Ching",
+    "author": "Lao Tzu"
+  },
+  {
+    "id": "3330",
+    "title": "The Analects",
+    "author": "Confucius"
+  },
+  {
+    "id": "45109",
+    "title": "The Enchiridion",
+    "author": "Epictetus"
+  },
+  {
+    "id": "205",
+    "title": "Walden",
+    "author": "Henry David Thoreau"
+  },
+  {
+    "id": "1497",
+    "title": "The Republic",
+    "author": "Plato"
+  },
+  {
+    "id": "4363",
+    "title": "Beyond Good and Evil",
+    "author": "Friedrich Nietzsche"
+  },
+  {
+    "id": "1653",
+    "title": "The Imitation of Christ",
+    "author": "Thomas a Kempis"
+  },
+  {
+    "id": "2274",
+    "title": "How to Live on 24 Hours a Day",
+    "author": "Arnold Bennett"
+  },
+  {
+    "id": "2376",
+    "title": "Up from Slavery",
+    "author": "Booker T. Washington"
+  },
+  {
+    "id": "21291",
+    "title": "Pushing to the Front",
+    "author": "Orison Swett Marden"
+  },
+  {
+    "id": "8438",
+    "title": "Nicomachean Ethics",
+    "author": "Aristotle"
+  },
+  {
+    "id": "26659",
+    "title": "The Will to Believe",
+    "author": "William James"
+  },
+  {
+    "id": "14988",
+    "title": "Tusculan Disputations",
+    "author": "Cicero"
+  },
+  {
+    "id": "38427",
+    "title": "The World as Will and Idea",
+    "author": "Arthur Schopenhauer"
+  },
+  {
+    "id": "7370",
+    "title": "Second Treatise of Government",
+    "author": "John Locke"
+  },
+  {
+    "id": "10661",
+    "title": "Discourses of Epictetus",
+    "author": "Epictetus"
+  },
+  {
+    "id": "3600",
+    "title": "Essays of Montaigne",
+    "author": "Michel de Montaigne"
+  },
+  {
+    "id": "1656",
+    "title": "Apology",
+    "author": "Plato (Socrates)"
+  },
+  {
+    "id": "34901",
+    "title": "On Liberty",
+    "author": "John Stuart Mill"
+  },
+  {
+    "id": "5827",
+    "title": "The Problems of Philosophy",
+    "author": "Bertrand Russell"
+  },
+  {
+    "id": "2130",
+    "title": "Utopia",
+    "author": "Thomas More"
+  },
+  {
+    "id": "3296",
+    "title": "Confessions",
+    "author": "Saint Augustine"
+  },
+  {
+    "id": "3207",
+    "title": "Leviathan",
+    "author": "Thomas Hobbes"
+  },
+  {
+    "id": "6762",
+    "title": "Politics",
+    "author": "Aristotle"
+  },
+  {
+    "id": "6157",
+    "title": "What Men Live By",
+    "author": "Leo Tolstoy"
+  },
+  {
+    "id": "14328",
+    "title": "The Consolation of Philosophy",
+    "author": "Boethius"
+  },
+  {
+    "id": "2808",
+    "title": "On Friendship and Old Age",
+    "author": "Cicero"
+  },
+  {
+    "id": "1600",
+    "title": "Symposium",
+    "author": "Plato"
+  },
+  {
+    "id": "1657",
+    "title": "Crito",
+    "author": "Plato"
+  },
+  {
+    "id": "1672",
+    "title": "Gorgias",
+    "author": "Plato"
+  },
+  {
+    "id": "621",
+    "title": "Varieties of Religious Experience",
+    "author": "William James"
+  },
+  {
+    "id": "5116",
+    "title": "Pragmatism",
+    "author": "William James"
+  },
+  {
+    "id": "16287",
+    "title": "Talks to Teachers",
+    "author": "William James"
+  },
+  {
+    "id": "1658",
+    "title": "Phaedo",
+    "author": "Plato"
+  },
+  {
+    "id": "1636",
+    "title": "Phaedrus",
+    "author": "Plato"
+  },
+  {
+    "id": "10732",
+    "title": "Studies in Pessimism",
+    "author": "Arthur Schopenhauer"
+  },
+  {
+    "id": "56463",
+    "title": "Bacon's Essays",
+    "author": "Francis Bacon"
+  },
+  {
+    "id": "10740",
+    "title": "The Way of Peace",
+    "author": "James Allen"
+  },
+  {
+    "id": "74178",
+    "title": "Out from the Heart",
+    "author": "James Allen"
+  },
+  {
+    "id": "6911",
+    "title": "The Majesty of Calmness",
+    "author": "William George Jordan"
+  },
+  {
+    "id": "26716",
+    "title": "The Crown of Wild Olive",
+    "author": "John Ruskin"
+  },
+  {
+    "id": "3794",
+    "title": "L. Annaeus Seneca on Benefits",
+    "author": "Lucius Annaeus Seneca"
+  },
+  {
+    "id": "3361",
+    "title": "Letters to His Son, Complete",
+    "author": "Earl of Philip Dormer Stanhope Chesterfield"
+  },
+  {
+    "id": "39827",
+    "title": "The Conduct of Life",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "id": "23860",
+    "title": "The Young Man's Guide",
+    "author": "William A. Alcott"
+  },
+  {
+    "id": "7952",
+    "title": "The Pleasures of Life",
+    "author": "Sir John Lubbock"
+  },
+  {
+    "id": "1293",
+    "title": "Sesame and Lilies",
+    "author": "John Ruskin"
+  },
+  {
+    "id": "23347",
+    "title": "Mental Efficiency, and Other Hints to Men and Women",
+    "author": "Arnold Bennett"
+  },
+  {
+    "id": "2541",
+    "title": "Character",
+    "author": "Samuel Smiles"
+  },
+  {
+    "id": "12811",
+    "title": "The Human Machine",
+    "author": "Arnold Bennett"
+  },
+  {
+    "id": "41901",
+    "title": "The Victorious Attitude",
+    "author": "Orison Swett Marden"
+  },
+  {
+    "id": "51469",
+    "title": "Self-Control, Its Kingship and Majesty",
+    "author": "William George Jordan"
+  },
+  {
+    "id": "44795",
+    "title": "Aids to Reflection; and, The Confessions of an Inquiring Spirit",
+    "author": "Samuel Taylor Coleridge"
+  },
+  {
+    "id": "23092",
+    "title": "The Simple Life",
+    "author": "Charles Wagner"
+  },
+  {
+    "id": "6312",
+    "title": "Representative Men: Seven Lectures",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "id": "57651",
+    "title": "Ambition and Success",
+    "author": "Orison Swett Marden"
+  },
+  {
+    "id": "14589",
+    "title": "Certain Success",
+    "author": "Norval A. Hawkins"
+  }
+]

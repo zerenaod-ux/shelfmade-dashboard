@@ -1,0 +1,2236 @@
+[
+ {
+  "id": "anchoring-bias-lamp",
+  "title": "The Price Tag Trap",
+  "concept": "ANCHORING BIAS",
+  "mood": "curious",
+  "insight": "The first price you see tricks your brain into seeing a bargain.",
+  "caption": "Ever buy something useless just because it was heavily marked down? That initial number anchors your brain more than you think.",
+  "explain_shot": 2,
+  "shots": [
+   {
+    "scene": "Leo and Mia stand side by side in a cozy thrift shop facing the camera. Leo holds an old brass lamp. Mia raises one eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "text": "Mia, this antique lamp was marked down from three hundred dollars!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It has no cord, Leo. It is just heavy metal."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds the lamp tight with wide eyes. Mia stands upright beside him with folded arms and a faint smirk. Both look straight ahead.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Still, paying sixty instead of three hundred feels like free money."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You just paid sixty dollars to own yard waste."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand together facing forward. Leo glances sideways with worried eyes. Mia gently gestures toward the lamp with a calm, neutral expression.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is anchoring bias. The first number you see secretly sets your benchmark."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "So my brain locked onto the fake big price?"
+     }
+    ]
+   },
+   {
+    "scene": "Both stand shoulder to shoulder facing the camera. Leo blinks with a dazed expression. Mia looks ahead with a slight knowing nod.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Exactly. Any lower price looks like a genius bargain afterward."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "I felt like a master negotiator two minutes ago."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looks forward at the viewer with mild regret while holding the lamp. Mia stands upright beside him with an amused, closed-mouth expression.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "I do not even have a desk for this."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You bought a number, not an object."
+     }
+    ]
+   },
+   {
+    "scene": "Both stand side by side facing the camera with relaxed postures. Leo gives a timid nod while Mia offers a soft, closed-mouth half-smile.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Next time, decide what an item is worth before reading the tag."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Hide the original price so the anchor never drops."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "decision-fatigue-dinner",
+  "title": "The Dinner Spiral",
+  "concept": "DECISION FATIGUE",
+  "mood": "dramatic",
+  "insight": "Your brain runs low on willpower as choices pile up.",
+  "caption": "Ever spent forty minutes debating between tacos and soup? It is not indecisiveness, it is decision fatigue.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Kitchen island under warm pendant lights. Leo holds two takeout menus with wide, worried eyes. Mia stands beside him with arms folded and a raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "I have negotiated multimillion-dollar budgets today, yet dinner is defeating me."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It has been forty minutes. Just pick the noodles."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen counter at evening. Leo stares at a blank plate with slumped shoulders. Mia leans against the counter, calmly holding a green apple.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "Every option feels like a life-altering crossroads right now."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "It is spicy peanut or mild sesame, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Modern kitchen counter. Leo sits stiffly on a stool, looking troubled. Mia tilts her head with a thoughtful, gentle expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Why does my brain literally freeze up after six in the evening?"
+     }
+    ]
+   },
+   {
+    "scene": "Cozy kitchen setup. Mia stands upright beside Leo, resting one hand on the island with a slight smirk. Leo gazes forward, listening intently.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is decision fatigue. Every tiny choice slowly drains your mental fuel tank."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "So by dinner time, my brain is running on fumes?"
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen island with warm lighting. Mia taps her fingers lightly on the surface. Leo clutches his forehead gently with worried eyes, facing forward.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Exactly. Even choosing between fork or spoon can feel exhausting."
+     },
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "Suddenly eating cereal out of a mug feels deeply rational."
+     }
+    ]
+   },
+   {
+    "scene": "Bright kitchen island. Mia places a single noodle box in front of Leo with a calm smirk. Leo looks relieved with closed-mouth calm.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Automate tiny evening choices early, or let someone else pick."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Thank you for saving me from my own brain."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dunning-kruger-coffee",
+  "title": "The Confidence Curve",
+  "concept": "DUNNING-KRUGER EFFECT",
+  "mood": "reflective",
+  "insight": "True mastery starts right where early overconfidence ends.",
+  "caption": "Ever feel like a total genius after watching one tutorial? That sudden spike in confidence is surprisingly common.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo stands beside Mia in a kitchen holding a glass coffee dripper. Both face forward. Mia watches with a deadpan closed-mouth expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "text": "I watched one online video. I am basically a master barista now."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You bought the dripper twenty minutes ago."
+     }
+    ]
+   },
+   {
+    "scene": "Leo carefully holds a kettle over a mug. Mia stands upright beside him, facing the camera with a raised eyebrow and closed lips.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "text": "Bean elevation and grind geometry. It is honestly absurdly simple."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Confidence usually peaks before the first sip."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds a mug with worried eyes. Mia stands beside him, facing forward with a subtle smirk and closed lips.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Wait. Why does it taste like steeped pencil shavings?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Because coffee chemistry might have more than one rule."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stands upright looking sheepish. Mia faces the camera with hands in her teal sweater pockets, offering a calm, warm look.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is the Dunning-Kruger effect. We feel most confident when we know the least."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "The tiny bit of knowledge tricked me into feeling like an expert."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looks straight ahead with wide, curious eyes. Mia stands beside him facing forward with gentle, warm eyes and closed lips.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "So feeling suddenly humbled is actually progress?"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Realizing how much you do not know means you are truly learning."
+     }
+    ]
+   },
+   {
+    "scene": "Both stand side by side facing the camera in the kitchen. Leo holds his kettle with closed-lip optimism. Mia gives an encouraging nod.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Embrace the awkward beginner phase instead of rushing to feel expert."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Time to brew cup number two with slightly more humility."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "temporal-discounting-pastry",
+  "title": "The Pastry Paradox",
+  "concept": "TEMPORAL DISCOUNTING",
+  "mood": "reflective",
+  "insight": "Your brain values right now far more than a distant tomorrow.",
+  "caption": "Why is it so easy to sacrifice tomorrow's happiness for a treat right now? Meet temporal discounting.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo stands in a kitchen holding a chocolate pastry with worried eyes. Mia stands beside him facing forward, upright, observing with a calm smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Future Leo wants abs, but Present Leo wants this pastry right now."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Future Leo always gets outvoted in less than thirty seconds."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds the pastry closer to his chest with anxious eyes. Mia stands straight facing the camera, offering a steady, knowing look.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Why do I treat next week like a completely fictional place?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Because your brain treats your future self like a total stranger."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares down at the pastry with a sheepish expression. Mia stands beside him facing front, tilting her head with a raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "So Present Leo is basically robbing Future Leo of everything good?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Constantly. And he never even leaves a polite apology note."
+     }
+    ]
+   },
+   {
+    "scene": "Mia gestures toward the kitchen counter with an upright posture and thoughtful expression. Leo stands facing the camera, listening with wide, attentive eyes.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Psychologists call this temporal discounting. Immediate rewards feel much more valuable than later."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "A tiny treat now outshines huge benefits next month."
+     }
+    ]
+   },
+   {
+    "scene": "Leo slowly lowers the pastry toward a ceramic plate with reluctant eyes. Mia watches upright, sporting an amused, tight-lipped smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Future me is going to be so furious about this dilemma."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "He will manage, right after he buys another box."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sets the pastry on a high shelf with determined eyes. Mia stands next to him facing front, nodding gently with warm approval.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Make future rewards tangible. Give your future self a very clear face."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "I will picture him smiling on the gym treadmill tomorrow."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "loss-aversion-jacket",
+  "title": "The Jacket He Never Wears",
+  "concept": "LOSS AVERSION",
+  "mood": "reflective",
+  "insight": "The pain of losing hurts twice as much as gaining.",
+  "caption": "Why do we hold onto things we don't even like? Blame our brains.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit side by side on a minimalist grey sofa holding a faded green winter jacket. Leo hugs it tightly with worried eyes. Mia stares at the sleeve with a flat deadpan expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I haven't worn this jacket in literally three whole years."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Then why are you clutching it like a beloved injured child?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit upright facing the camera on the grey sofa. Leo gestures anxiously toward the jacket. Mia rests her chin on her hand with a slight smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Because if I donate it, I will never own it again."
+     },
+     {
+      "who": "mia",
+      "feel": "dry",
+      "text": "You literally hate green. And it has a permanent mysterious stain."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit on the sofa facing forward. Mia holds up an empty ceramic mug. Leo looks at the mug with wide anxious eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Psychologists call this loss aversion. Losing feels twice as painful as winning."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "My brain thinks giving up a bad jacket is actual danger."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit on the sofa facing the camera. Leo looks down at the jacket with a thoughtful frown. Mia points gently at the door with a calm smile.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "So I am keeping junk just to avoid feeling sad?"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Exactly. Your brain fears subtraction more than it values actual peace."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit side by side on the sofa. Leo holds the jacket out toward the edge of the frame with a hopeful smile. Mia nods approvingly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Okay, I am putting it in the charity bag right now."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Look at you, bravely surviving the agony of a lighter closet."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit upright on the sofa facing the camera with relaxed postures. Leo smiles softly while Mia sips from a clean white mug.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "amused",
+      "text": "Wait, can I also apply this to my ancient browser tabs?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Let not try to break modern science all in one afternoon."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "endowment-effect-mug",
+  "title": "The Mug Paradox",
+  "concept": "ENDOWMENT EFFECT",
+  "mood": "curious",
+  "insight": "We overvalue things just because they are ours.",
+  "caption": "Why parting with your old mug feels like actual heartbreak.",
+  "explain_shot": 2,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at a wooden kitchen table. Leo hugs a chipped ceramic mug with worried eyes. Mia holds a crisp twenty dollar bill.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "You cannot buy my favourite mug. It has profound sentimental value."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Leo, you found it in the office breakroom five minutes ago."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand in the kitchen. Leo clutches the mug tighter with raised eyebrows. Mia gestures calmly toward the ceramic cup.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "calm",
+      "text": "That is the endowment effect. We overvalue items simply because we own them."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Ownership creates a weird emotional glue in my brain."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit side by side at the table. Leo looks down at the mug with a thoughtful frown. Mia rests her chin on her hand.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Does this mean I am trapped in a ceramic prison of my own making?"
+     },
+     {
+      "who": "mia",
+      "feel": "dry",
+      "text": "Only if you refuse to sell it for less than a million dollars."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand by the kitchen counter. Leo holds the mug out hesitantly. Mia points firmly toward the door.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "How do I break this bias before I hoard every broken mug?"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Just ask yourself if you would buy it today at market price."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit at the table. Leo places the mug gently down on the wood with a neutral expression. Mia nods approvingly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "Okay. I suppose standard mugs are actually quite replaceable after all."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Progress. Now let us address your vintage paperclip collection."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand facing the camera in the kitchen. Leo crosses his arms with a slight smirk. Mia points at him cheerfully.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "text": "Remember, ownership is just a temporary psychological illusion."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Except when I own the last slice of pizza. That is legally binding."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hindsight-bias-umbrella",
+  "title": "The Raincoat Certainty",
+  "concept": "HINDSIGHT BIAS",
+  "mood": "curious",
+  "insight": "We rewrite past uncertainty to feel like we always knew.",
+  "caption": "Ever told yourself 'I knew that would happen!' right after it did? Meet hindsight bias.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia stand side by side facing the camera holding a bright blue umbrella under a sunny cloudless sky, Leo looking worried and Mia wearing a deadpan smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I completely predicted this sudden weather disaster."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "The sky is literally cloudless, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit upright at a wooden park bench facing the camera with a dropped ice cream cone on the ground between them, Leo wearing a sheepish frown and Mia raising an eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "I just knew gravity would betray that cone."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You said it was safely balanced."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand in a bright kitchen facing the camera with a ceramic teapot on the counter behind them, Leo looking thoughtful and Mia offering a calm nod.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Why does the past always look so obvious?"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is hindsight bias tricking your memory."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand side by side facing the camera against a plain pastel wall, Leo holding a blank notepad with a neutral expression and Mia pointing gently toward him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "curious",
+      "text": "My brain rewrites history to feel smarter."
+     },
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "It can make random events feel completely predictable."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit on a green sofa facing the camera with a potted fern beside them, Leo looking tired and Mia smiling faintly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "It makes me judge my past choices harshly."
+     },
+     {
+      "who": "mia",
+      "feel": "kind",
+      "text": "Because you forget how uncertain things actually were."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand upright facing the camera holding small sticky notes, Leo looking hopeful and Mia giving a reassuring nod.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Next time I will write down my doubts first."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "A little written proof beats a hazy memory."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ikea-effect-shelf",
+  "title": "The IKEA Effect",
+  "concept": "THE IKEA EFFECT",
+  "mood": "curious",
+  "insight": "We value things more when we build them ourselves.",
+  "caption": "Ever love a wobbly handmade shelf way too much? Blame the IKEA effect.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia stand in a brightly lit room facing the camera, staring blankly at a crooked wooden bookshelf with spare screws on the floor.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "This wobbly shelf took me six hours and three emotional breakdowns."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It leans left, Leo. It's aggressively crooked."
+     }
+    ]
+   },
+   {
+    "scene": "Leo defensively hugs the crooked wooden bookshelf while Mia crosses her arms, both facing the camera with neutral expressions.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Yeah, but my sweat and tears are basically structural support."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "That is a very generous description of poor carpentry."
+     }
+    ]
+   },
+   {
+    "scene": "Mia points at the crooked wooden bookshelf while Leo nods earnestly, both standing upright and facing the camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "curious",
+      "text": "Why do I love this disaster so much?"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is the IKEA effect. Labor builds abnormal affection."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds up a single leftover metal screw while Mia looks at it with a flat expression, both facing the camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Does loving my own clumsy effort mean I am biased?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "We often overvalue things simply because we built them."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits on a small stool next to the crooked wooden bookshelf, looking thoughtfully at the camera while Mia stands beside him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "reflective",
+      "text": "So my terrible craftsmanship is actually a psychological trap."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "A trap padded with your own misguided pride."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand side by side facing the camera, holding a small instruction manual together with calm expressions.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Next time, I am buying pre-assembled furniture."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bystander-effect-spilled-coffee",
+  "title": "The Bystander Effect",
+  "concept": "BYSTANDER EFFECT",
+  "mood": "dramatic",
+  "insight": "Everyone assumes someone else will help, so nobody does.",
+  "caption": "Why does nobody help when someone drops their coffee? Blame the crowd.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo in yellow hoodie staring at spilled coffee on a park bench, looking panicked. Mia in teal sweater standing beside him with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Someone dropped their travel mug and nobody is moving at all."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Except us, standing here judging everyone else for not moving."
+     }
+    ]
+   },
+   {
+    "scene": "Leo crossing arms defensively, looking at a distant crowd. Mia holding a paper cup, watching him with a calm expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Surely someone else will grab paper towels from the cafe."
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "text": "That is literally what every single person in this park thinks."
+     }
+    ]
+   },
+   {
+    "scene": "Mia pointing directly at the camera with a serious look. Leo nodding nervously next to her.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Psychologists call this the bystander effect, where shared responsibility kills action."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "So the more people watch a mess, the less likely anyone helps."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holding a napkin awkwardly, looking down. Mia giving him an encouraging nod.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "We assume someone more qualified will naturally step up."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "And the only qualified person here is apparently wearing a yellow hoodie."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leaning down to wipe the bench, wincing slightly. Mia holding out an extra napkin with a supportive smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Look at you becoming the change you want to see."
+     },
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "My anxiety hates being the main character right now."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia standing side by side facing forward, holding cleaning supplies with neutral expressions.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "hopeful",
+      "text": "Next time, just point at one specific person and ask for help."
+     },
+     {
+      "who": "leo",
+      "feel": "confident",
+      "text": "Assigning a job breaks the spell instantly. Good to know."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "halo-effect-shiny-toaster",
+  "title": "The Halo Effect",
+  "concept": "HALO EFFECT",
+  "mood": "curious",
+  "insight": "One nice trait makes us assume all other traits are good.",
+  "caption": "Why do we trust someone just because they look neat? Blame the halo effect.",
+  "explain_shot": 2,
+  "shots": [
+   {
+    "scene": "Leo and Mia stand side by side facing camera in a brightly lit kitchen. Leo holds a very sleek, expensive toaster, looking wide-eyed and worried.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "This toaster looks so smart. I trust it with my life."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It just heats bread, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit upright at a wooden kitchen table. Leo stares intensely at the shiny toaster with worried eyes and raised eyebrows.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "But it has a chrome finish. That means it's morally superior."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand side by side facing the camera. Mia gestures calmly toward the toaster with a slightly raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is the halo effect in action."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "The what now?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit upright at the wooden table. Mia keeps a calm expression while Leo looks thoughtful with pursed lips.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "One nice trait makes us assume someone is wonderful at everything."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Like my very sharp looking accountant who lost my cat."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia stand side by side facing the camera in the kitchen. Leo looks down at the toaster with worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Brains love quick shortcuts. They often trick us completely."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "So chrome appliances are plotting against me."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit upright at the kitchen table. Mia gives a gentle, closed-mouth smile while Leo nods slowly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "hopeful",
+      "text": "Separate the surface shine from the actual substance."
+     },
+     {
+      "who": "leo",
+      "feel": "confident",
+      "text": "Got it. Testing the toaster's personality today."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "availability-heuristic-shark",
+  "title": "The Shark in the Swimming Pool",
+  "concept": "AVAILABILITY HEURISTIC",
+  "mood": "dramatic",
+  "insight": "We judge danger by what we remember, not reality.",
+  "caption": "Why do we panic about rare threats while ignoring normal ones? Meet the brain's favorite shortcut.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo in yellow hoodie stares with wide eyes at a glass of tap water, clutching a tiny plastic shark.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "There could be a miniature shark hiding inside this kitchen glass."
+     }
+    ]
+   },
+   {
+    "scene": "Mia in teal sweater stands beside Leo, crossing her arms with a dry, unimpressed expression.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It is city tap water, Leo. Not a coral reef."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "I saw a documentary yesterday. The images are still super vivid."
+     }
+    ]
+   },
+   {
+    "scene": "Mia holds a small notebook flat on her palm, looking calmly at Leo with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That is the availability heuristic at work in your tired brain."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "We often mistake how easy things are to remember for actual danger."
+     }
+    ]
+   },
+   {
+    "scene": "Leo lowers the toy shark slowly, his shoulders dropping as he processes Mia's plain explanation.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "So loud memories do not equal actual probability."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Correct. Your kitchen sink is entirely shark free."
+     }
+    ]
+   },
+   {
+    "scene": "Both characters stand side by side, looking directly forward with thoughtful, composed expressions.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "My brain just grabs the scariest picture it can find."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "It tries to protect you, but it mostly just creates drama."
+     }
+    ]
+   },
+   {
+    "scene": "Leo takes a calm sip of water from the glass, while Mia gives a supportive nod.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Pause and check the actual odds before you start panicking."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mental-rehearsal-phone-call",
+  "title": "The Rehearsal Trap",
+  "concept": "MENTAL RUMINATION",
+  "mood": "dramatic",
+  "insight": "Rehearsing calls makes you the star of a show nobody else is watching.",
+  "caption": "Why do we practice a thirty-second phone call for three hours?",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits stiffly on a grey couch holding an old telephone, eyes wide with panic. Mia stands nearby, arms crossed, looking unimpressed.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Six times. Out loud. In the shower."
+     }
+    ]
+   },
+   {
+    "scene": "Leo paces back and forth across a small rug, clutching the phone tightly. Mia leans against the wall, watching him closely.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It's a dentist appointment, Leo."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "What if she hears my voice shake?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo stands in the center of the room with both hands on his head, sweating slightly. Mia points at him with a calm expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "She'll write a report. 'Patient sounded weird.'"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "She'll ask your name and birthday. That's it."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits back down slowly, looking confused. Mia steps closer, gesturing with an open palm to explain.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That's mental rumination: replaying a scene nobody else is watching."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "So I wrote a movie for one receptionist?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds the phone out in front of him, taking a deep breath. Mia gives him an encouraging nod.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Yes. Skip rehearsal number seven. Just dial."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Okay. Dialing. Hello, I need to cancel..."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds the phone to his ear with a tense grimace. Mia rolls her eyes playfully beside him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Honestly, how many times did you practice that?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sunday-scaries",
+  "title": "The Sunday Scaries",
+  "concept": "ANTICIPATORY ANXIETY",
+  "mood": "dramatic",
+  "insight": "Borrowing tomorrow's stress only ruins today's peace.",
+  "caption": "Why does Sunday afternoon feel heavier than Monday morning? Here is why your brain borrows trouble early.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit side-by-side on a cozy living room couch facing forward, tea mugs on the table. Leo has worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My weekend is officially dead."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Leo, it's four in the afternoon."
+     }
+    ]
+   },
+   {
+    "scene": "Leo slouches deeper into his yellow hoodie with tense shoulders, staring forward. Mia holds her mug with a raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Monday's dread is already in my living room."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You're mourning a Monday that hasn't arrived."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright and rigid on the sofa with wide anxious eyes. Mia watches him with a calm, flat expression.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I can feel tomorrow's unread emails buzzing."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "That's a lot of dread for a Sunday."
+     }
+    ]
+   },
+   {
+    "scene": "Mia gestures with one hand toward Leo while keeping a dry, patient gaze. Leo listens with a tense frown.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's anticipatory anxiety: borrowing tomorrow's stress today."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "So I'm time-traveling just to suffer?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia rests her hands calmly on her lap. Leo blinks at her with a slightly softer, hopeful gaze.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Write Monday's first step down. Then close the notebook."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "So Monday gets one sentence, not my evening?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo exhales softly while holding his tea mug, facing the camera with a subtle, sheepish smirk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Fine. But what's left of my weekend?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "avoidance-coping-text",
+  "title": "The Panic of 'K'",
+  "concept": "AVOIDANCE COPING",
+  "mood": "dramatic",
+  "insight": "Dodging a heavy message only multiplies your future anxiety.",
+  "caption": "Why do we send a single letter to avoid a giant text? Here is what your brain is actually doing.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Living room couch. Leo clutches a blank smartphone with worried eyes while Mia sits upright in her teal sweater, watching him calmly. Both face front.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Just 'k'. One letter isn't rude."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "To an entire paragraph, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch. Leo stares tensely at his dark phone in both hands. Mia tilts her head with a raised eyebrow, facing the camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "They wrote five essays! My brain flatlined."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "So you sent the emotional equivalent of a slammed door."
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch. Leo sits rigid with wide anxious eyes. Mia stays upright beside him, folding her arms across her chest with a calm smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Now they're typing again. Three dots of doom!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You bought ten seconds of silence with a war."
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch. Mia turns slightly toward Leo with a steady gaze while Leo slumps his shoulders, looking sheepish. Both face the viewer.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's avoidance coping: dodging small effort, sparking big panic."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "My silence was supposed to bring peace."
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch. Mia holds up an open palm in a gentle gesture. Leo looks at his blank phone screen with thoughtful, softened eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Just say you'll reply tonight."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Full sentences actually solve problems?"
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch. Leo hovers a tense thumb over his dark phone with hesitant eyes. Mia watches him from the side with a dry, knowing glance.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Be honest. What did you actually reply?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pluralistic-ignorance-nod",
+  "title": "The Silent Nod",
+  "concept": "PLURALISTIC IGNORANCE",
+  "mood": "dramatic",
+  "insight": "When everyone fakes understanding, nobody speaks up.",
+  "caption": "Ever nod along in a meeting you didn't understand because everyone else seemed confident? You fell for this trap.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit upright at a glass conference table facing the camera. Leo looks panicked with wide eyes, while Mia gives a dry side-eye.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I just agreed to lead a committee."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Did you understand any of that slide?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans forward at the table with tense shoulders, facing forward with worried eyes. Mia sits calmly beside him with a raised eyebrow.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "No. But everyone was nodding."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Asking would prove I'm the lost one."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits upright, resting her arms on the table facing forward with a smirk. Leo stares ahead, deeply distressed.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Dave was nodding in his sleep."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "He looked so intellectual, Mia."
+     }
+    ]
+   },
+   {
+    "scene": "Mia gestures slightly toward the empty table while looking straight ahead with a calm, knowing expression. Leo listens with wide, surprised eyes.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That's pluralistic ignorance: everyone doubts, assuming everyone else gets it."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Wait. None of them knew either?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia looks directly at the camera with a gentle, reassuring smile and closed lips. Leo sits beside her, blinking in mild relief.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Ask once. You'll secretly rescue the whole room."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Okay. I'm raising my hand."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright facing the camera, blinking sheepishly with a tight nervous smile, while Mia watches him with a flat, knowing stare.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "So, what exactly did you agree to lead?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rumination-midnight-replay",
+  "title": "The Midnight Replay",
+  "concept": "RUMINATION",
+  "mood": "reflective",
+  "insight": "Replaying awkward moments is rumination, not problem-solving.",
+  "caption": "Ever replay a tiny awkward moment at 2 AM? Here is why your brain traps you in the cringe loop.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit side-by-side on a quiet park bench facing front. Leo has wide, tense eyes while Mia watches him with a calm, neutral stare.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I told the waiter to enjoy his meal."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "And he just stared?"
+     }
+    ]
+   },
+   {
+    "scene": "Both sit upright on the bench facing forward. Leo stares ahead with worried eyes and hunched shoulders, while Mia raises one dry eyebrow.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "He walked away, leaving me to suffer."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "It's been four hours, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits rigidly, gripping his knees with an anxious upward gaze. Mia rests her chin on her palm, eyes half-closed in mild amusement.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Tonight at two a.m., it will replay forever."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "In high definition, with dramatic lighting?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits upright, facing forward with a steady, reassuring expression. Leo looks straight ahead, furrowing his brow in reluctant realization.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's rumination: chewing endlessly on things you can't change."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "It feels like solving a crime, though."
+     }
+    ]
+   },
+   {
+    "scene": "Mia holds an unclicked ballpoint pen in her lap, looking forward with a gentle gaze. Leo blinks, his expression shifting toward thoughtful curiosity.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Break the loop. Write it down, put the pen away."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Pen away. Perfect."
+     }
+    ]
+   },
+   {
+    "scene": "Both face forward on the park bench. Leo stares blankly ahead with wide, haunted eyes again, while Mia gives a dry, knowing smirk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Okay. What was the embarrassing thing again?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "productive-procrastination-cleaning",
+  "title": "The Clean Room Trap",
+  "concept": "PRODUCTIVE PROCRASTINATION",
+  "mood": "dramatic",
+  "insight": "Chores feel productive, but they often mask task anxiety.",
+  "caption": "Ever clean your entire apartment just to avoid one scary email? Here is why your brain loves chore relief.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Living room desk. Leo in yellow hoodie holds a yellow duster with worried eyes. Mia in teal sweater stands beside him, arms crossed with raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "I cannot write with dusty baseboards."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Your taxes are due in two hours."
+     }
+    ]
+   },
+   {
+    "scene": "Living room floor. Leo sits upright on the carpet holding a spray bottle. Mia stands beside him facing camera, deadpan expression.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "A clean room means mental clarity!"
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Hand me the tiny grout brush."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen counter. Leo stands upright holding two canned jars with intense focus. Mia stands beside him facing camera with a flat, dry expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You just alphabetized the spice rack."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Cumin cannot sit next to cinnamon!"
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo clutches a cleaning sponge to his chest with sheepish eyes. Mia stands beside the desk, speaking calmly forward.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That's productive procrastination: chores relieve the dread of starting."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Bleach smells safer than failure."
+     }
+    ]
+   },
+   {
+    "scene": "Desk area. Mia calmly points a finger toward the closed laptop. Leo sits upright in his yellow hoodie, looking reluctant.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Do five tiny minutes on the draft first."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Five minutes before vacuuming? Deal."
+     }
+    ]
+   },
+   {
+    "scene": "Desk area. Leo sits upright, suddenly glancing sideways at the baseboard with wide eyes. Mia stands beside him, weary deadpan expression.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "So why are you holding the duster again?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "negativity-bias-phone",
+  "title": "The Doomscroll Trap",
+  "concept": "NEGATIVITY BIAS",
+  "mood": "dramatic",
+  "insight": "Our brains evolved to hunt threats, not happy news.",
+  "caption": "Why can't we look away from bad news? Blame evolution.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit upright on a sleek grey sofa facing the camera. Leo squeezes his phone tightly with worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Another global disaster is literally loading right now."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You have refreshed that news app forty times today."
+     }
+    ]
+   },
+   {
+    "scene": "Leo slouches slightly in his yellow hoodie, staring intensely at his glowing phone screen with a tense frown.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "If I stop reading, I will miss the absolute apocalypse."
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "text": "You are actively hunting for things to fear."
+     }
+    ]
+   },
+   {
+    "scene": "Mia leans forward in her teal sweater, gesturing firmly toward Leo's glowing phone with a raised eyebrow.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My brain says danger hides in every single pixel."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Your prehistoric brain just craves threat detection."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looks up from his phone with wide, blinking eyes while Mia keeps a calm, reassuring posture facing forward.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That is negativity bias. Evolution glues us to bad news."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "So panic-scrolling is just my inner caveman surviving."
+     }
+    ]
+   },
+   {
+    "scene": "Leo places his phone face down on the coffee table and rests his hands flat, breathing out a slow sigh.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "I should set a strict fifteen minute doom limit."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sit side by side on the sofa, looking straight ahead as Leo's thumb twitches toward his pocket.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Wait, did something else terrible just happen?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "productivity-guilt-couch",
+  "title": "The Rest Trap",
+  "concept": "PRODUCTIVITY GUILT",
+  "mood": "dramatic",
+  "insight": "Rest isn't wasted time, it fuels the next step.",
+  "caption": "Why does sitting down feel like committing a crime?",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sitting rigidly on a floral couch holding a pillow like a shield, staring straight ahead with wide anxious eyes. Mia sitting beside him, sipping tea with a calm, flat expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Doing nothing actually feels illegal right now."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Your breathing is louder than the television, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leaning forward frantically, clutching his yellow hoodie pockets. Mia watching him with a mild, pitying side-eye while holding her mug.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Every second here is a chore I am actively ignoring."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pressing both palms against his temples, squinting shut. Mia gesturing calmly with one hand toward his rigid posture.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My brain keeps listing emails while I stare at the wall!"
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "text": "You are aggressively relaxing and it looks exhausting."
+     }
+    ]
+   },
+   {
+    "scene": "Mia setting her mug down on a small side table, looking directly at Leo with kind firmness. Leo blinking in sudden realization.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is productivity guilt, where your worth gets tied only to output."
+     }
+    ]
+   },
+   {
+    "scene": "Leo slowly loosening his shoulders and resting his hands flat on his knees. Mia nodding approvingly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "hopeful",
+      "text": "Try setting a timer for ten guilt-free minutes."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looking thoughtfully off-camera with a slight smirk. Mia watching him wait for his next thought.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Or I could just worry about..."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rehearsal-trap-phone",
+  "title": "The Rehearsal Trap",
+  "concept": "SCRIPT PARALYSIS",
+  "mood": "dramatic",
+  "insight": "Over-rehearsing turns simple interactions into high-stakes mini-dramas.",
+  "caption": "Ever repeat a simple phone order in your head ten times before pressing call? Here is why your brain over-prepares.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits upright on a couch holding his smartphone with worried eyes. Mia stands beside him holding a plain blue mug, wearing a subtle smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Because ordering pizza shouldn't feel like an audition."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "I'm on script attempt number six."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright staring intently at his phone screen with a tense posture. Mia stands leaning against the sofa armrest with a neutral expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It's just extra cheese, Leo."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "If I mispronounce mushrooms, the cashier will judge me forever."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright holding his phone with raised eyebrows and worried eyes. Mia stands beside him, taking a slow sip from her blue mug.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "My heart is pounding and I haven't even dialed!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You're treating a five-second call like a live speech."
+     }
+    ]
+   },
+   {
+    "scene": "Mia stands pointing gently toward the phone, showing a gentle closed-mouth smile. Leo sits upright, looking at her with wide eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That's script paralysis, where overthinking social interactions creates fake high stakes."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "So they won't remember if I stutter?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia reaches over to tap the phone screen while smiling gently. Leo sits upright on the couch with surprised, wide eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Just hit dial before your brain writes a tragic play."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright holding the phone up to his ear with a nervous expression. Mia stands facing forward with a slight smirk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Why do you keep practicing your opening line?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "anticipatory-anxiety-sunday",
+  "title": "The Sunday Spiral",
+  "concept": "ANTICIPATORY ANXIETY",
+  "mood": "dramatic",
+  "insight": "Future stress can hijack your present before anything actually happens.",
+  "caption": "Ever spend your Sunday worrying about a Monday that hasn't happened yet? Here is why your brain spiraled.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Living room couch, Leo in yellow hoodie gripping a cushion, Mia in teal sweater sitting upright, both facing camera with mild concern.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Tomorrow's catastrophic, totally fake workday."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I've already ruined three hypothetical presentations."
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch, Leo leans forward with worried eyes, Mia looks at him with a raised eyebrow, both facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It's four PM on a sunny Sunday."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Which means Monday morning starts in sixteen hours!"
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch, Leo stares at ceiling with tense posture, Mia maintains a neutral expression, both facing camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My boss will send a vague memo, and I'll be fired."
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch, Mia looks directly ahead with a slight smirk, Leo slumps into the cushions, both facing camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That is classic anticipatory anxiety."
+     },
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Your brain can treat upcoming stress as a present danger."
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch, Mia offers a soft nod, Leo tilts his head with a curious look, both facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Write down tonight's worries to dump them out."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "So my brain knows Monday isn't here yet?"
+     }
+    ]
+   },
+   {
+    "scene": "Living room couch, Mia turns slightly toward Leo with a calm smirk, Leo listens intently, both facing camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Exactly. Otherwise, what are you even panicking about?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pluralistic-ignorance-chart",
+  "title": "The Nodding Trap",
+  "concept": "PLURALISTIC IGNORANCE",
+  "mood": "dramatic",
+  "insight": "We often conform to a fake consensus nobody actually believes.",
+  "caption": "Ever found yourself nodding along in a meeting you didn't understand at all? Here is why everyone else was probably faking it too.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Bright glass conference room. Leo sits upright in a yellow hoodie with wide eyes. Mia sits beside him in a teal sweater with a flat expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Because everyone else was smiling!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That chart was literally upside down, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Conference room table with notebooks. Leo stiffly tilts his head forward with tight lips. Mia leans back, calmly resting her chin on her hand.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "I couldn't be the only idiot who didn't understand."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "So you just aggressively nodded for ten minutes?"
+     }
+    ]
+   },
+   {
+    "scene": "Glass conference room. Leo rubs his tense neck with a strained, worried face. Mia turns slightly, pointing a pen toward the background.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My neck aches, but stopping meant admitting defeat!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Look across the room. Dave is sweating too."
+     }
+    ]
+   },
+   {
+    "scene": "Conference room setting. Mia speaks calmly with raised eyebrows while looking forward. Leo squints upright with a puzzled, silent mouth.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "It's pluralistic ignorance. Everyone secretly doubts, but assumes everyone else understands."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Wait, so nobody knows what synergy matrix means?"
+     }
+    ]
+   },
+   {
+    "scene": "Clean office background. Mia sits upright with a soft, supportive look. Leo leans forward slightly, listening attentively with a slight frown.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Next time, break the spell and ask a simple question."
+     }
+    ]
+   },
+   {
+    "scene": "Glass conference room table. Mia stares dryly directly at the camera with raised eyebrows. Leo sits frozen beside her with wide, regretful eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "So why did you just agree to lead the project?"
+     }
+    ]
+   }
+  ]
+ }
+]

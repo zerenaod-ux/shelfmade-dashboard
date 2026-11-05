@@ -1,0 +1,24 @@
+{
+ "enabled": true,
+ "note": "Set enabled to true to give each approved post the next free slot instead of posting instantly. Times are 24h in the timezone below. Based on 2026 research: Shorts/Reels about 1 PM and 9 PM, TikTok evenings.",
+ "timezone": "America/Chicago",
+ "min_lead_minutes": 10,
+ "slots": {
+  "youtube": [
+   "12:00",
+   "21:00"
+  ],
+  "instagram": [
+   "12:00",
+   "20:00"
+  ],
+  "tiktok": [
+   "14:00",
+   "21:30"
+  ],
+  "youtube_full": [
+   "18:00"
+  ]
+ },
+ "buffer_queue_limit": 10
+}

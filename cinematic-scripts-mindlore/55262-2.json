@@ -1,0 +1,78 @@
+{
+ "book_id": "55262",
+ "title": "Psychology: Briefer Course",
+ "author": "William James",
+ "public_title": "Why we notice so little of what is in front of us | William James",
+ "hook": "Right now your senses are taking in far more than you will ever notice, so what decides what gets through?",
+ "thumbnail_headline": "WHY YOU MISS SO MUCH",
+ "source_url": "https://www.gutenberg.org/ebooks/55262",
+ "source_kind": "Original MindLore commentary on retained passages of the original; limitations and later criticism discussed; owner review required",
+ "retained_source_sha256": "b444d78b3e9efaf68037077da0b825116b5a443ae28efeabe8dfbfdaf4505299",
+ "source_passages": [
+  {
+   "section": 0,
+   "source_chapter": "Chapter XIII, Attention",
+   "excerpt": "One of the most extraordinary facts of our life is that, although we are besieged at every moment by impressions from our whole sensory surface, we notice so very small a part of them."
+  },
+  {
+   "section": 1,
+   "source_chapter": "Chapter XIII, Attention",
+   "excerpt": "which runs through this sum total like a tiny rill through a broad flowery mead"
+  },
+  {
+   "section": 2,
+   "source_chapter": "Chapter XIII, Attention",
+   "excerpt": "They may show their faces at the door, but are turned back until the actual possessors of the place are tired."
+  },
+  {
+   "section": 3,
+   "source_chapter": "Chapter XIII, Attention",
+   "excerpt": "The eyes are fixed on vacancy, the sounds of the world melt into confused unity"
+  },
+  {
+   "section": 4,
+   "source_chapter": "Chapter XIII, Attention",
+   "excerpt": "When the letters formed familiar words, three times as many of them could be named as when their combination was meaningless."
+  },
+  {
+   "section": 5,
+   "source_chapter": "Chapter XIII, Attention",
+   "excerpt": "the most favorable condition for the doubling of the mind was its simultaneous application to two heterogeneous operations"
+  },
+  {
+   "section": 6,
+   "source_chapter": "Chapter XIII, Attention",
+   "excerpt": "there must be a rapid oscillation of the mind from one to the next, and no consequent gain of time"
+  }
+ ],
+ "sections": [
+  {
+   "title": "You miss almost everything",
+   "narration": "Right now your eyes, ears, skin and inner body are sending a flood of signals, and you are aware of only a thin slice of it. The hum of a fridge, the pressure of your shoes, the edge of your tongue against your teeth: all of it was there a moment ago and most of it never reached you. The psychologist William James, in his 1892 textbook Psychology: Briefer Course, opens his chapter on attention with a striking claim. He writes: \"One of the most extraordinary facts of our life is that, although we are besieged at every moment by impressions from our whole sensory surface, we notice so very small a part of them.\" That is the puzzle this video is about. If the world is pouring in all the time, what decides which small part becomes your actual experience? James has a surprisingly modern answer, and a few parts of it have aged better than others. Let us walk through what he says, what experiments he leans on, and where later science asks us to be careful."
+  },
+  {
+   "title": "A tiny stream in a wide meadow",
+   "narration": "James offers a picture that is hard to forget. The total of everything that touches your senses is a wide meadow, and your conscious experience is a narrow stream crossing it. In his words, your experience is something \"which runs through this sum total like a tiny rill through a broad flowery mead\". The flowers on either side are real. They affect your sense organs just as strongly as the ones the stream happens to touch. James is careful to say that this is a mystery which has only been named, not explained, when we call it the narrowness of consciousness. That honesty matters. Naming a thing is not the same as understanding it, and James says so about his own favorite phrase. Notice also what the picture implies for daily life: two people can stand in the same room, with the same light and sound, and live through different streams. What you attend to is not a small detail of your life. In a very real sense, it is your life as you experience it."
+  },
+  {
+   "title": "Why other thoughts wait outside",
+   "narration": "James tries to ground this in the brain, and here we should be modest, because he wrote before modern neuroscience existed. His idea is that the activity of the brain tends to be unified, so that one set of processes holds the floor at a time. When one current of activity fills the brain with its consequences, others are kept out. He puts it vividly: \"They may show their faces at the door, but are turned back until the actual possessors of the place are tired.\" Those ideas that belong to the reigning set of processes are exactly the ones that interest us at that moment. It is a neat story, and it fits ordinary experience: when you are deeply absorbed in a problem, a knock at the door or a call of your name can fail to register. But treat the mechanism as a historical sketch rather than settled biology. Today researchers speak of networks and competing signals rather than a single room with a door. The lesson about experience survives; the anatomy has been rewritten."
+  },
+  {
+   "title": "The fog we all fall into",
+   "narration": "James does not only describe sharp focus. He describes the opposite, and it is oddly familiar. He says most of us fall several times a day into a kind of fit, in which, in his words, \"The eyes are fixed on vacancy, the sounds of the world melt into confused unity\". In the background we know what we ought to be doing, getting up, answering someone, taking the next step in our reasoning, but we cannot seem to start. The spell goes on, pulse after pulse, until some energy arrives that we cannot account for, we shake our heads, and the wheels of life go round again. James calls this dispersed attention, and he sets it against the extreme of concentrated attention, where absorption is so complete that bodily injuries may go unfelt. Between the two there are many degrees. It is a useful reminder that attention is not an on and off switch. It is a range, and most of us move along it all day without noticing."
+  },
+  {
+   "title": "Why meaning widens what you can take in",
+   "narration": "Next James turns to experiments, and one of them is quietly profound. The researcher Cattell showed people combinations of letters for a fraction of a second, too short to look at them one by one. The result was that, in the words James reports, \"When the letters formed familiar words, three times as many of them could be named as when their combination was meaningless.\" A whole sentence did nearly as well, about twice as many words as unconnected ones. James explains that a word, or a sentence flashed at once, is a conceptual system: the mind grabs it as one thing rather than as separate pieces. So the span of attention is not a fixed number of items. It depends on how well the items hang together. This is the same reason an expert chess player sees a position at a glance, or why you can read a familiar sentence faster than a random string of letters. Meaning is a kind of compression, and compression widens the stream."
+  },
+  {
+   "title": "Can you really do two things at once?",
+   "narration": "James then asks whether we can attend to two separate things at once, and he reports experiments by a French researcher named Paulhan, who recited one poem aloud while writing another, or calculated while reciting verse. Paulhan concluded that \"the most favorable condition for the doubling of the mind was its simultaneous application to two heterogeneous operations\". In plain terms, two quite different tasks, such as arithmetic and reciting, worked better together than two of the same kind. James adds that this works best when one of the tasks is very habitual. His own summary is cautious: not easily more than one process, unless the processes are very habitual, and then perhaps two or three. Here is a fair note of caution. These were small experiments by a few investigators, run with the tools of the 1890s. Later research on dual tasks has generally found that the more attention-hungry both tasks are, the more they interfere with each other, which fits what James suspected but measured far more carefully."
+  },
+  {
+   "title": "The case of the busy emperor",
+   "narration": "James closes this part with a story about Julius Caesar, who was said to dictate four letters while writing a fifth. It sounds like proof that the mind can truly multitask. James is not convinced. When the tasks are not automatic, he says, \"there must be a rapid oscillation of the mind from one to the next, and no consequent gain of time\". In other words, the mind is not doing both at once; it is switching quickly, and switching has a cost. Modern studies of task switching and the famous experiments on people failing to notice a surprising event while counting passes have supported the broad idea that attention is selective and that switching is not free. We should still avoid pretending James settled everything, since the details of attention remain an active research field. But his practical point lasts. If what you attend to becomes your experience, then protecting your attention is protecting your life. Choose where the stream runs."
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Review · AnimationDoodles</title>
+<style>
+:root{--paper:#f1eee4;--muted:#a6b4aa;--gold:#e0bd76;--teal:#8ce0d7;--bg:#1d1a16;--card:#2a2620}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font:16px/1.5 -apple-system,system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:16px}a{color:var(--teal)}h1{font-size:20px;margin:6px 0}
+.bar{height:6px;background:#ffffff1a;border-radius:3px;margin:8px 0 14px}.bar i{display:block;height:100%;background:var(--gold);border-radius:3px}
+.card{background:var(--card);border-radius:14px;padding:14px;margin-top:12px}
+video{width:100%;max-height:62vh;border-radius:10px;background:#000}
+label{display:block;font-size:12px;color:var(--muted);margin:10px 0 4px}
+input[type=text],textarea{width:100%;background:#15130f;color:var(--paper);border:1px solid #a6b4aa66;border-radius:8px;padding:8px;font:inherit}
+textarea{min-height:120px}.row{display:flex;gap:10px;margin-top:12px}.row button{flex:1}
+button{padding:12px;border-radius:10px;border:1px solid var(--muted);background:transparent;color:var(--paper);font:inherit;cursor:pointer}
+button.go{background:var(--gold);color:#241c0c;border-color:var(--gold);font-weight:600}button:disabled{opacity:.4}
+.warn{color:var(--gold);font-size:13px;margin:8px 0}.msg{margin-top:10px;font-size:14px}.muted{color:var(--muted);font-size:13px}
+.chk{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:14px}.chk input{width:auto;margin-top:4px}
+.narrow{max-width:560px;margin-left:auto;margin-right:auto}.gh{font-size:18px;font-weight:600;margin:2px 0 12px;color:var(--gold)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}.tile{background:#15130f;border-radius:12px;padding:8px}.tile video{max-height:46vh;width:100%;object-fit:contain}.tt{font-weight:600;font-size:14px;margin:8px 0 2px}
+.sch{color:var(--gold);font-size:13px}.sub2{font-weight:600;margin:6px 0}details>summary{list-style:none}details>summary::-webkit-details-marker{display:none}
+</style></head><body><div class="wrap">
+<a href="/">← Studios</a><h1>Weekly review · AnimationDoodles</h1>
+<div class="card narrow" id="make"></div>
+<div class="card narrow" id="postbox"></div><div class="msg warn narrow" id="note"></div>
+<div class="muted narrow" id="sub" style="margin-top:12px">Loading…</div><div class="bar narrow"><i id="prog" style="width:0"></i></div>
+<div class="card narrow" id="card"></div>
+<div class="card" id="approved" style="display:none;max-height:none"></div>
+</div>
+<script>
+const H={'Content-Type':'application/json','X-ShelfMade':'local'};const $=id=>document.getElementById(id);
+function galleryRender(box,groups){
+ const e=(t,x,c)=>{const n=document.createElement(t);if(x!==undefined)n.textContent=x;if(c)n.className=c;return n};
+ const when=d=>d?new Date(d).toLocaleString([], {weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'';
+ const nm={youtube:'YouTube',instagram:'Instagram',tiktok:'TikTok'};
+ function tile(it){const c=e('div','','tile');
+  if(it.src){const v=document.createElement('video');v.controls=true;v.preload='metadata';v.playsInline=true;v.src=it.src+'#t=0.5';c.append(v)}
+  else{const b=e('div',it.nofile||'No preview file','muted');b.style.cssText='aspect-ratio:9/16;max-height:30vh;display:flex;align-items:center;justify-content:center;text-align:center;background:#000;border-radius:8px;padding:8px';c.append(b)}
+  if(it.link){const a=e('a','Watch on YouTube ↗');a.href=it.link;a.target='_blank';a.rel='noopener';a.style.cssText='display:block;font-size:13px;margin-top:6px';c.append(a)}
+  c.append(e('div',it.title,'tt'));
+  for(const p of it.plats){c.append(e('div',(nm[p.name]||p.name)+' · '+(p.done?'published ✓':(p.due?'goes live '+when(p.due):(p.state||'waiting'))),p.done?'muted':'sch'))}
+  if(!it.plats.length)c.append(e('div','Approved · no scheduled or published post found','sch'));
+  if(it.extra)c.append(it.extra);
+  return c}
+ for(const g of groups){
+  const up=g.items.filter(i=>!i.published),pub=g.items.filter(i=>i.published);
+  up.sort((a,b)=>(a.next||9e15)-(b.next||9e15));
+  box.append(e('div',g.label+' · '+g.items.length+' approved','gh'));
+  box.append(e('div',up.length+' coming up or not published yet · '+pub.length+' already published','muted'));
+  if(up.length){const gu=e('div','','grid');up.forEach(i=>gu.append(tile(i)));box.append(e('div','Coming up','sub2'),gu)}
+  else box.append(e('div','Nothing waiting. Everything approved is already published.','muted'));
+  const d=document.createElement('details');d.style.marginTop='12px';const s=e('summary','Show '+pub.length+' already published');s.style.cssText='cursor:pointer;padding:8px 0;color:var(--teal)';d.append(s);
+  const gp=e('div','','grid');let filled=false;
+  d.addEventListener('toggle',()=>{s.textContent=(d.open?'Hide ':'Show ')+pub.length+' already published';if(d.open&&!filled){filled=true;pub.forEach(i=>gp.append(tile(i)))}});
+  d.append(gp);box.append(d);
+  const sp=e('div');sp.style.height='22px';box.append(sp)}
+}
+
+let picks=[],idx=0,done=0,skipped=0,rejected=0,lastRunning=false;
+async function api(path,body){const o={credentials:'same-origin'};if(body){o.method='POST';o.headers=H;o.body=JSON.stringify(body)}
+ const r=await fetch(path,o);if(r.status===401){location.href='/';throw Error('Sign in again.')}
+ let j;try{j=await r.json()}catch{throw Error('Incomplete response.')}if(!r.ok||j.error)throw Error(j.error||'Request failed');return j}
+function el(t,txt,cls){const e=document.createElement(t);if(txt!==undefined)e.textContent=txt;if(cls)e.className=cls;return e}
+function btn(txt,fn,cls){const b=el('button',txt,cls);b.onclick=fn;return b}
+function progress(){$('prog').style.width=(picks.length?Math.round(100*(done+skipped+rejected)/picks.length):0)+'%';
+ $('sub').textContent=picks.length?`${done} approved · ${rejected} rejected · ${skipped} skipped · ${picks.length-done-skipped-rejected} left`:''}
+function drawMake(m){const c=$('make');c.replaceChildren();
+ if(m&&m.running){c.append(el('div',`Making ${m.n||''} new videos… ${m.step||'starting'}${m.pct!=null?' ('+m.pct+'%)':''}`),el('div','Each video takes about 12–15 minutes. You can leave this page; new ones appear here when ready.','muted'))}
+ else{const row=el('div','','row');row.style.marginTop='0';for(const n of[1,3]){row.append(btn(`Make ${n} more video${n>1?'s':''}`,async()=>{try{drawMake((await api('/api/doodles/make',{n})))}catch(e){c.append(el('div',e.message,'warn'))}},'go'))}
+  c.append(row,el('div','New videos are also made automatically every night.','muted'))}}
+function drawPost(p,ap){const b=$('postbox');if(b.contains(document.activeElement)||[...b.querySelectorAll('input')].some(i=>i.value))return;b.replaceChildren();if(!p)return;
+ const row=el('div','','row');row.style.marginTop='0';row.style.alignItems='center';
+ const label=el('div',p.auto_post?'Auto-post: ON · approved videos go live at the next free slot (YouTube + Instagram + TikTok)':'Auto-post: OFF · approved videos are only saved','');label.style.flex='1';
+ const sw=btn(p.auto_post?'Turn off':'Turn on',async()=>{try{drawPost((await api('/api/doodles/post-switch',{on:!p.auto_post})),ap)}catch(e){$('note').textContent=e.message}},p.auto_post?'':'go');sw.style.flex='0 0 auto';
+ row.append(label,sw);b.append(row);if(!p.ready){b.append(el('div',p.message||'Video-host setup needed before posting.','muted'));
+  const f=el('div','','');const mk=(ph,type)=>{const i=document.createElement('input');i.type=type;i.placeholder=ph;i.autocomplete='off';i.style.marginTop='8px';return i};
+  const cn=mk('Cloud name','text'),ak=mk('API key','text'),sec=mk('API secret','password');
+  const save=btn('Save video host',async()=>{try{await api('/api/doodles/hosting',{cloud_name:cn.value.trim(),api_key:ak.value.trim(),api_secret:sec.value.trim()});sec.value='';ak.value='';cn.value='';document.activeElement&&document.activeElement.blur();$('note').textContent='Video host saved.';poll()}catch(e){$('note').textContent=e.message}},'go');save.style.marginTop='10px';
+  f.append(el('label','AnimationDoodles video host (Cloudinary) — typed here, saved only on this computer'),cn,ak,sec,save);b.append(f)}
+ const box=$('approved');if(ap&&ap.length){box.style.display='';
+  const sig=JSON.stringify(ap.map(a=>[a.id,a.title,a.posting]));if(box.dataset.sig===sig)return;box.dataset.sig=sig;box.replaceChildren();const nowT=Date.now();
+  const items=ap.map(a=>{const ps=a.posting?Object.entries(a.posting).map(([k,v])=>({name:k,due:v.due_at,state:v.state,done:v.state==='published'||v.state==='sent'||(!!v.due_at&&Date.parse(v.due_at)<nowT)})):[];
+   const published=ps.length>0&&ps.every(p=>p.done);const dues=ps.filter(p=>!p.done&&p.due).map(p=>Date.parse(p.due));
+   const it={title:a.title,src:'/api/doodles/media?id='+encodeURIComponent(a.id),plats:ps,published,next:dues.length?Math.min(...dues):null};
+   if(!published){const rm=btn('Remove',async()=>{if(!confirm('Remove "'+a.title+'" and take it out of the posting queue?'))return;rm.disabled=true;rm.textContent='Removing…';try{const r=await api('/api/doodles/remove',{id:a.id});rm.closest('.tile').replaceChildren(el('div',a.title,'tt'),el('div',r.all_removed?'Removed from the queue. It will not post.':'Marked removed here, but Buffer did not confirm: '+(r.buffer||[]).filter(x=>!x.removed).map(x=>x.platform+' ('+x.note+')').join('; ')+'. Please delete it in Buffer.','warn'))}catch(e){rm.disabled=false;rm.textContent='Remove';alert(e.message)}},'');rm.style.cssText='padding:4px 10px;font-size:12px;margin-top:6px;border-color:#c0584a;color:#e8a095';it.extra=rm}
+   return it});
+  galleryRender(box,[{label:'Shorts',items}])}}
+async function poll(){try{const d=await api('/api/doodles/list');drawMake(d.make);drawPost(d.post,d.approved);
+  if(lastRunning&&!d.make.running){lastRunning=false;await start()}lastRunning=d.make.running}catch(e){}}
+async function start(){
+ try{const d=await api('/api/doodles/list');drawMake(d.make);drawPost(d.post,d.approved);lastRunning=d.make.running;picks=d.ready;idx=0;done=skipped=rejected=0;
+  if(!picks.length){$('sub').textContent='';$('card').replaceChildren(el('p','Nothing is waiting for review. Press “Make more videos” above.','muted'));return}
+  progress();next()}catch(e){$('card').replaceChildren(el('p',e.message,'warn'))}}
+function next(){
+ const card=$('card');card.replaceChildren();progress();
+ if(idx>=picks.length){card.append(el('h2','All done'),el('p',`${done} approved, ${rejected} rejected, ${skipped} skipped.`));const a=el('a','Back to studios');a.href='/';card.append(a);return}
+ const i=picks[idx];card.append(el('div',`${i.concept||'Short'} · made ${(i.created||'').slice(0,10)}`,'muted'));
+ const v=document.createElement('video');v.controls=true;v.playsInline=true;v.preload='metadata';v.src='/api/doodles/media?id='+encodeURIComponent(i.id)+'&v='+i.fingerprint;card.append(v);
+ const t=document.createElement('input');t.type='text';t.value=i.title;t.maxLength=100;const c=document.createElement('textarea');c.value=i.caption;c.maxLength=2200;
+ card.append(el('label','Title'),t,el('label','Caption'),c);
+ const checks={},boxes=[];
+ for(const [k,label] of [['voice','Voices and words are right'],['mouths','Mouths and faces look good enough'],['story','Story is clear and fun']]){
+  const row=el('label','','chk'),cb=document.createElement('input');cb.type='checkbox';cb.onchange=()=>{checks[k]=cb.checked};boxes.push(cb);row.append(cb,el('span',label));card.append(row)}
+ const msg=el('div','','msg');
+ const ok=btn('Approve',async()=>{if(!['voice','mouths','story'].every(k=>checks[k])){msg.textContent='Tick all three boxes after you have watched it.';return}
+  ok.disabled=sk.disabled=rj.disabled=true;msg.textContent='Saving…';
+  try{const r=await api('/api/doodles/decision',{id:i.id,status:'approved',title:t.value,caption:c.value});done++;idx++;const po=r.post;$('note').textContent=po&&po.posted?('Queued: '+Object.entries(po.results).map(([k,v])=>k+' '+(v.due_at?new Date(v.due_at).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'}):v.state)).join(' · ')):'Approved and saved (auto-post is off).';next()}catch(e){msg.textContent=e.message;ok.disabled=sk.disabled=rj.disabled=false}},'go');
+ const sk=btn('Skip',()=>{skipped++;idx++;next()});
+ const rj=btn('Reject',async()=>{rj.disabled=ok.disabled=sk.disabled=true;try{await api('/api/doodles/decision',{id:i.id,status:'rejected'});rejected++;idx++;next()}catch(e){msg.textContent=e.message;rj.disabled=ok.disabled=sk.disabled=false}});
+ const r2=el('div','','row');r2.append(rj,sk,ok);card.append(r2,msg,el('div','Approve queues the video for the next free YouTube + Instagram + TikTok slot when Auto-post is ON; otherwise it is saved as ready.','muted'));
+ [t,c].forEach(x=>x.oninput=()=>{boxes.forEach(b=>b.checked=false);Object.keys(checks).forEach(k=>checks[k]=false)})}
+start();setInterval(poll,15000);
+</script></body></html>

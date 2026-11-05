@@ -1,0 +1,67 @@
+import unittest,tempfile,datetime,sys
+from pathlib import Path
+from zoneinfo import ZoneInfo
+from unittest.mock import patch
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+import production_boost;production_boost.CFG=Path('/nonexistent-boost.json')  # tests assume the normal 3 Shorts/day
+import daily_plan as d
+class Tests(unittest.TestCase):
+ def setUp(self):self.job_rows=[]
+ def save_job(self,book):
+  result={'id':'job-'+book,'book':book,'state':'queued'};self.job_rows.append(result);return result
+ def setup_plan(self,path):
+  return [patch.object(d,'DB',Path(path)/'test.db'),patch.object(d,'history',return_value={}),patch.object(d.jobs,'BOOKS',[{'id':str(i),'title':'Book '+str(i)} for i in range(8)]),patch.object(d.jobs,'list_jobs',side_effect=lambda:self.job_rows)]
+ def test_three_once_per_chicago_day(self):
+  with tempfile.TemporaryDirectory() as p:
+   patches=self.setup_plan(p)
+   for x in patches:x.start();self.addCleanup(x.stop)
+   at=datetime.datetime(2026,10,15,9,tzinfo=ZoneInfo('America/Chicago'))
+   with patch.object(d.jobs,'enqueue',side_effect=self.save_job) as queue:
+    d.queue_fresh([],[],at);d.queue_fresh([],[],at);self.assertEqual(queue.call_count,3)
+    with d.connection() as c:self.assertEqual(c.execute('select count(*) from short_daily_slots').fetchone()[0],3)
+ def test_legacy_slot_counts_as_one_and_before_nine_waits(self):
+  with tempfile.TemporaryDirectory() as p:
+   patches=self.setup_plan(p)
+   for x in patches:x.start();self.addCleanup(x.stop)
+   with d.connection() as c:
+    d.short_slots(c);c.execute("insert into daily_generation values ('2026-10-15','0')")
+   self.job_rows.append({'book':'0','id':'legacy','state':'ready'})
+   with patch.object(d.jobs,'enqueue',side_effect=self.save_job) as queue:
+    d.queue_fresh([],[],datetime.datetime(2026,10,15,8,tzinfo=ZoneInfo('America/Chicago')));queue.assert_not_called()
+    d.queue_fresh([],[],datetime.datetime(2026,10,15,9,tzinfo=ZoneInfo('America/Chicago')));self.assertEqual(queue.call_count,2)
+ def test_enqueue_failure_releases_uncreated_slot(self):
+  with tempfile.TemporaryDirectory() as p:
+   patches=self.setup_plan(p)
+   for x in patches:x.start();self.addCleanup(x.stop)
+   with patch.object(d.jobs,'enqueue',side_effect=ValueError('Attempt limit')):
+    with self.assertRaises(ValueError):d.queue_fresh([],[],datetime.datetime(2026,10,15,9,tzinfo=ZoneInfo('America/Chicago')))
+   with d.connection() as c:self.assertEqual(c.execute('select count(*) from short_daily_slots').fetchone()[0],0)
+ def test_orphan_reservation_recovers_after_crash(self):
+  with tempfile.TemporaryDirectory() as p:
+   patches=self.setup_plan(p)
+   for x in patches:x.start();self.addCleanup(x.stop)
+   with d.connection() as c:
+    d.short_slots(c)
+    for i in range(3):c.execute('insert into short_daily_slots values (?,?,?,NULL)',('2026-10-15',i+1,str(i)))
+   with patch.object(d.jobs,'enqueue',side_effect=self.save_job) as queue:
+    d.queue_fresh([],[],datetime.datetime(2026,10,15,9,tzinfo=ZoneInfo('America/Chicago')));self.assertEqual(queue.call_count,3)
+   self.assertEqual({j['book'] for j in self.job_rows},{'0','1','2'})
+ def test_exhausted_titles_reuse_completed_books_as_new_passage_editions(self):
+  with tempfile.TemporaryDirectory() as p:
+   patches=self.setup_plan(p)
+   for x in patches:x.start();self.addCleanup(x.stop)
+   self.job_rows=[{'id':'old-0','book':'0','state':'ready','edition':1,'attempts':1},{'id':'old-1','book':'1','state':'ready','edition':1,'attempts':1}]
+   with patch.object(d.jobs,'BOOKS',[{'id':'0','title':'Book 0'},{'id':'1','title':'Book 1'}]),patch.object(d.jobs,'enqueue',side_effect=self.save_job) as queue:
+    result=d.queue_fresh([],[],datetime.datetime(2026,10,15,9,tzinfo=ZoneInfo('America/Chicago')))
+   self.assertEqual(queue.call_count,2)
+   self.assertEqual({job['book'] for job in result},{'0','1'})
+ def test_exhausted_titles_reuse_completed_books_as_new_passage_editions(self):
+  with tempfile.TemporaryDirectory() as p:
+   patches=self.setup_plan(p)
+   for x in patches:x.start();self.addCleanup(x.stop)
+   self.job_rows=[{'id':'old-0','book':'0','state':'ready','edition':1,'attempts':1},{'id':'old-1','book':'1','state':'ready','edition':1,'attempts':1}]
+   with patch.object(d.jobs,'BOOKS',[{'id':'0','title':'Book 0'},{'id':'1','title':'Book 1'}]),patch.object(d.jobs,'enqueue',side_effect=self.save_job) as queue:
+    result=d.queue_fresh([],[],datetime.datetime(2026,10,15,9,tzinfo=ZoneInfo('America/Chicago')))
+   self.assertEqual(queue.call_count,2)
+   self.assertEqual({job['book'] for job in result},{'0','1'})
+if __name__=='__main__':unittest.main()

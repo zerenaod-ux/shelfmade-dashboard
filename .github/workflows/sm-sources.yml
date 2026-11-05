@@ -1,0 +1,31 @@
+name: sm-sources
+on:
+  schedule:
+    - cron: '20 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many new ShelfMade source books to retain'
+        default: '10'
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download and pin new Project Gutenberg texts
+        env:
+          SM_SOURCES_PER_RUN: ${{ github.event.inputs.count || '10' }}
+        run: python sm_sources.py
+      - name: Save
+        run: |
+          git config user.name "shelfmade-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f sources/shelfmade
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -qm "ShelfMade: retained more original texts"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((RANDOM % 10 + 5)); done

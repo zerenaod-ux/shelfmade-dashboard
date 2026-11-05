@@ -1,0 +1,907 @@
+{
+  "window_start": "2026-10-16",
+  "window_end": "2026-10-22",
+  "timezone": "America/Chicago",
+  "observations": [
+    {
+      "observed_at": "2026-10-16T12:20:34.280369-05:00",
+      "day": "2026-10-16",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 2,
+        "full": 1
+      },
+      "production_target_met": false,
+      "items": [
+        {
+          "item": "job-ed3adae0e39b4e44a099c7c8edb84b0a",
+          "book": "8438",
+          "type": "short",
+          "completed_at": "2026-10-16T14:08:55+00:00",
+          "duration": 28.5,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=pWVzUeSbav0"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Dej9pGjm8dv/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7697303350936734989"
+            }
+          }
+        },
+        {
+          "item": "job-bf22fa69c8c2487fb182657f64212a3c",
+          "book": "26659",
+          "type": "short",
+          "completed_at": "2026-10-16T14:09:49+00:00",
+          "duration": 21.63,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=wyjEsb-AHBI"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Dej-FXOik7c/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7697304122663423245"
+            }
+          }
+        },
+        {
+          "item": "long-ec90665cbad6b1962fac37b4",
+          "book": "1497",
+          "type": "full",
+          "completed_at": "2026-10-16T16:53:19+00:00",
+          "duration": 381.47,
+          "attempts": 2,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=GUENFhxiucg"
+            }
+          }
+        }
+      ],
+      "problems": [
+        {
+          "type": "short",
+          "book": "3600",
+          "state": "failed",
+          "reason": "Opening and cover did not match. The pairing rule is now corrected for a future attempt; today\u2019s generation limit still applies."
+        }
+      ],
+      "all_completed_items_published": true,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-16T12:59:48.399855-05:00",
+      "day": "2026-10-16",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 2,
+        "full": 1
+      },
+      "production_target_met": false,
+      "items": [
+        {
+          "item": "job-ed3adae0e39b4e44a099c7c8edb84b0a",
+          "book": "8438",
+          "type": "short",
+          "completed_at": "2026-10-16T14:08:55+00:00",
+          "duration": 28.5,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=pWVzUeSbav0"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Dej9pGjm8dv/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7697303350936734989"
+            }
+          }
+        },
+        {
+          "item": "job-bf22fa69c8c2487fb182657f64212a3c",
+          "book": "26659",
+          "type": "short",
+          "completed_at": "2026-10-16T14:09:49+00:00",
+          "duration": 21.63,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=wyjEsb-AHBI"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Dej-FXOik7c/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7697304122663423245"
+            }
+          }
+        },
+        {
+          "item": "long-ec90665cbad6b1962fac37b4",
+          "book": "1497",
+          "type": "full",
+          "completed_at": "2026-10-16T16:53:19+00:00",
+          "duration": 381.47,
+          "attempts": 2,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=GUENFhxiucg"
+            }
+          }
+        }
+      ],
+      "problems": [
+        {
+          "type": "short",
+          "book": "3600",
+          "state": "failed",
+          "reason": "Opening and cover did not match. The pairing rule is now corrected for a future attempt; today\u2019s generation limit still applies."
+        }
+      ],
+      "all_completed_items_published": true,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-17T13:51:31.036552-05:00",
+      "day": "2026-10-17",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 1,
+        "full": 1
+      },
+      "production_target_met": false,
+      "items": [
+        {
+          "item": "job-8fe4ec7b23a448d198e630c0b7646ba5",
+          "book": "1636",
+          "type": "short",
+          "completed_at": "2026-10-17T14:01:31+00:00",
+          "duration": 19.2,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "long-5b719d6ec7ad4067eb574b50",
+          "book": "4363",
+          "type": "full",
+          "completed_at": "2026-10-17T14:07:22+00:00",
+          "duration": 384.97,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=eimcxgtfNtc"
+            }
+          }
+        }
+      ],
+      "problems": [],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-18T12:57:55.546857-05:00",
+      "day": "2026-10-18",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 0,
+        "full": 0
+      },
+      "production_target_met": false,
+      "items": [],
+      "problems": [
+        {
+          "type": "full",
+          "book": "1653",
+          "state": "failed",
+          "reason": "Full-video build stopped: Render readiness: unreadable audio metadata. Restore the asset before retrying."
+        }
+      ],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-18T19:51:16.097248-05:00",
+      "day": "2026-10-18",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 3,
+        "full": 0
+      },
+      "production_target_met": false,
+      "items": [
+        {
+          "item": "job-aefac4c795df44e7a8e1002671658659",
+          "book": "10740",
+          "type": "short",
+          "completed_at": "2026-10-18T23:07:19+00:00",
+          "duration": 25.9,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=24m9dl3C6uo"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Dep_NMvjdoD/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7698171436132748557"
+            }
+          }
+        },
+        {
+          "item": "job-27f9d3b6880d4e4c8d2c7f7a5598b45f",
+          "book": "74178",
+          "type": "short",
+          "completed_at": "2026-10-18T23:08:15+00:00",
+          "duration": 22.53,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=7P-eD_FErv0"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Dep5BVxlaTl/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7698157686424259854"
+            }
+          }
+        },
+        {
+          "item": "job-69a13fa78bd346fe9ea81363b2e9995e",
+          "book": "6911",
+          "type": "short",
+          "completed_at": "2026-10-18T23:09:12+00:00",
+          "duration": 20.97,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=a1cQi88hrm0"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Dep52zlFH1f/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7698159596413701390"
+            }
+          }
+        }
+      ],
+      "problems": [
+        {
+          "type": "full",
+          "book": "1653",
+          "state": "failed",
+          "reason": "Full-video build stopped: Not enough fresh footage for theme: choice. Found 1 of 3 required distinct matching clips within the search budget. Add matching footage or retry later; reused clips were not substituted."
+        }
+      ],
+      "all_completed_items_published": true,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-19T13:02:33.669752-05:00",
+      "day": "2026-10-19",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 1,
+        "full": 0
+      },
+      "production_target_met": false,
+      "items": [
+        {
+          "item": "job-66d4c67062b74e848a1796273b796239",
+          "book": "3361",
+          "type": "short",
+          "completed_at": "2026-10-19T14:03:34+00:00",
+          "duration": 26.8,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=1TFujFgiGXw"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Der08I_EZYp/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7698436558759742733"
+            }
+          }
+        }
+      ],
+      "problems": [
+        {
+          "type": "short",
+          "book": "26716",
+          "state": "failed",
+          "reason": "Generation failed. See local job log."
+        },
+        {
+          "type": "short",
+          "book": "3794",
+          "state": "failed",
+          "reason": "Interrupted by restart. A previous worker may still be running. Check its log and process before manually retrying."
+        }
+      ],
+      "all_completed_items_published": true,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-19T14:00:07.201409-05:00",
+      "day": "2026-10-19",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 3,
+        "full": 1
+      },
+      "production_target_met": true,
+      "items": [
+        {
+          "item": "job-95ba824fd025434fb0f5f33d61f60881",
+          "book": "26716",
+          "type": "short",
+          "completed_at": "2026-10-19T18:39:24+00:00",
+          "duration": 20.03,
+          "attempts": 2,
+          "destinations": {
+            "youtube": {
+              "state": "awaiting_publisher",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-237b099dfb4346a583d0a74981393100",
+          "book": "3794",
+          "type": "short",
+          "completed_at": "2026-10-19T18:40:59+00:00",
+          "duration": 24.7,
+          "attempts": 2,
+          "destinations": {
+            "youtube": {
+              "state": "awaiting_publisher",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-66d4c67062b74e848a1796273b796239",
+          "book": "3361",
+          "type": "short",
+          "completed_at": "2026-10-19T14:03:34+00:00",
+          "duration": 26.8,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=1TFujFgiGXw"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/Der08I_EZYp/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7698436558759742733"
+            }
+          }
+        },
+        {
+          "item": "long-f47e37e0d914c64e2be015fa",
+          "book": "2274",
+          "type": "full",
+          "completed_at": "2026-10-19T18:58:51+00:00",
+          "duration": 406.17,
+          "attempts": 4,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        }
+      ],
+      "problems": [],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-20T13:16:40.854323-05:00",
+      "day": "2026-10-20",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 3,
+        "full": 0
+      },
+      "production_target_met": false,
+      "items": [
+        {
+          "item": "job-05fceec0857d43368eefdcaaec2ba842",
+          "book": "39827",
+          "type": "short",
+          "completed_at": "2026-10-20T14:06:47+00:00",
+          "duration": 23.17,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-c7580f148ae54eed876bd6842cca8049",
+          "book": "23860",
+          "type": "short",
+          "completed_at": "2026-10-20T14:07:31+00:00",
+          "duration": 20.73,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-731bbb5f9c544e8dacecff294772050a",
+          "book": "7952",
+          "type": "short",
+          "completed_at": "2026-10-20T14:08:18+00:00",
+          "duration": 24.5,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        }
+      ],
+      "problems": [
+        {
+          "type": "full",
+          "book": "2376",
+          "state": "failed",
+          "reason": "Full-video build stopped: No confident visual brief for: Educational Lineage Shapes Leaders. Add a specific editorial footage brief instead of generic scenery."
+        }
+      ],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-21T12:59:26.136583-05:00",
+      "day": "2026-10-21",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 0,
+        "full": 0
+      },
+      "production_target_met": false,
+      "items": [],
+      "problems": [],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-21T14:32:50.132434-05:00",
+      "day": "2026-10-21",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 3,
+        "full": 1
+      },
+      "production_target_met": true,
+      "items": [
+        {
+          "item": "job-e31f7dc28c704695a7ce59c66d8d8c31",
+          "book": "1293",
+          "type": "short",
+          "completed_at": "2026-10-21T18:43:16+00:00",
+          "duration": 22.67,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-4afcb8fca94f4ba3bead18f4c1f39816",
+          "book": "23347",
+          "type": "short",
+          "completed_at": "2026-10-21T18:44:10+00:00",
+          "duration": 23.47,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-87ebce9f93ef4ccda67f0990a09d11ff",
+          "book": "2541",
+          "type": "short",
+          "completed_at": "2026-10-21T18:45:18+00:00",
+          "duration": 27.33,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "long-7fab6e65c971db6414ce2309",
+          "book": "21291",
+          "type": "full",
+          "completed_at": "2026-10-21T18:53:30+00:00",
+          "duration": 389.9,
+          "attempts": 2,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        }
+      ],
+      "problems": [],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-22T13:04:40.171015-05:00",
+      "day": "2026-10-22",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 3,
+        "full": 1
+      },
+      "production_target_met": true,
+      "items": [
+        {
+          "item": "job-1ebb175efc9347a8865128f6df09c79b",
+          "book": "12811",
+          "type": "short",
+          "completed_at": "2026-10-22T14:09:07+00:00",
+          "duration": 21.9,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-1a9cd77c47784154a557555dc38e77cf",
+          "book": "41901",
+          "type": "short",
+          "completed_at": "2026-10-22T14:10:11+00:00",
+          "duration": 21.03,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "job-0681ce630b794848b904e775a8b75ab6",
+          "book": "51469",
+          "type": "short",
+          "completed_at": "2026-10-22T14:11:07+00:00",
+          "duration": 21.6,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "instagram": {
+              "state": "not_submitted",
+              "url": null
+            },
+            "tiktok": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        },
+        {
+          "item": "long-e43d16dd1f4f146600137e17",
+          "book": "8438",
+          "type": "full",
+          "completed_at": "2026-10-22T14:08:07+00:00",
+          "duration": 384.2,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "not_submitted",
+              "url": null
+            }
+          }
+        }
+      ],
+      "problems": [],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    },
+    {
+      "observed_at": "2026-10-22T23:33:09.360441-05:00",
+      "day": "2026-10-22",
+      "timezone": "America/Chicago",
+      "targets": {
+        "shorts": 3,
+        "full": 1
+      },
+      "completed": {
+        "shorts": 3,
+        "full": 1
+      },
+      "production_target_met": true,
+      "items": [
+        {
+          "item": "job-1ebb175efc9347a8865128f6df09c79b",
+          "book": "12811",
+          "type": "short",
+          "completed_at": "2026-10-22T14:09:07+00:00",
+          "duration": 21.9,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=usfd7CGMtGA"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/De0pVN9j2BD/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7699707681581337870"
+            }
+          }
+        },
+        {
+          "item": "job-1a9cd77c47784154a557555dc38e77cf",
+          "book": "41901",
+          "type": "short",
+          "completed_at": "2026-10-22T14:10:11+00:00",
+          "duration": 21.03,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=FZIiZwUDOCw"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/De0p2irFOhx/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7699708809614216461"
+            }
+          }
+        },
+        {
+          "item": "job-0681ce630b794848b904e775a8b75ab6",
+          "book": "51469",
+          "type": "short",
+          "completed_at": "2026-10-22T14:11:07+00:00",
+          "duration": 21.6,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "published",
+              "url": "https://www.youtube.com/watch?v=mcV0u5NRAvI"
+            },
+            "instagram": {
+              "state": "published",
+              "url": "https://www.instagram.com/reel/De0qHsnlANN/"
+            },
+            "tiktok": {
+              "state": "published",
+              "url": "https://tiktok.com/@shelfmade.daily/video/7699709395160124685"
+            }
+          }
+        },
+        {
+          "item": "long-e43d16dd1f4f146600137e17",
+          "book": "8438",
+          "type": "full",
+          "completed_at": "2026-10-22T14:08:07+00:00",
+          "duration": 384.2,
+          "attempts": 1,
+          "destinations": {
+            "youtube": {
+              "state": "failed",
+              "url": null
+            }
+          }
+        }
+      ],
+      "problems": [],
+      "all_completed_items_published": false,
+      "limits": "Observed local completed packages and last verified receipts. Not continuous uptime, provider authentication, source-fact or visual playback review. Pending provider states may be stale; no missing observations are backfilled."
+    }
+  ]
+}

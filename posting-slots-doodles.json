@@ -1,0 +1,20 @@
+{
+ "enabled": true,
+ "note": "AnimationDoodles: approved Shorts go to the next free slot (Instagram + TikTok via Buffer). Times are 24h in the timezone below.",
+ "timezone": "America/Chicago",
+ "min_lead_minutes": 10,
+ "slots": {
+  "instagram": [
+   "12:00",
+   "20:00"
+  ],
+  "tiktok": [
+   "14:00",
+   "21:30"
+  ],
+  "youtube": [
+   "12:00",
+   "21:00"
+  ]
+ }
+}

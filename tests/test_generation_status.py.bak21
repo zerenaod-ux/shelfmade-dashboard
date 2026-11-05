@@ -1,0 +1,44 @@
+import unittest,sys,tempfile,datetime,sqlite3,json,hashlib
+from pathlib import Path
+from unittest.mock import patch
+from zoneinfo import ZoneInfo
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+import generation_status as g,worker_health as h
+class Tests(unittest.TestCase):
+ def lane(self,states=(),hour=10,remaining=3,candidates=True,automatic=True,heartbeat=None,dependencies=()):
+  now=datetime.datetime(2026,10,15,hour,tzinfo=ZoneInfo('America/Chicago'))
+  jobs=[{'id':str(i),'book':str(i),'state':state,'updated':now.astimezone(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} for i,state in enumerate(states)]
+  return g.inspect_lane('shorts',3,[{'job':j['id'],'book':j['book']} for j in jobs],jobs,0,remaining,[1] if candidates else [],list(dependencies),now,heartbeat if heartbeat is not None else {'last_seen':now.timestamp()},automatic)
+ def test_completed_including_published_is_not_missing(self):
+  x=self.lane(['ready']*3,remaining=0,candidates=False,dependencies=['Missing future dependency']);self.assertEqual(x['state'],'complete');self.assertEqual(x['issues'],[])
+ def test_before_nine_waits_without_false_alarm(self):
+  self.assertEqual(self.lane(hour=8,heartbeat={})['state'],'scheduled')
+ def test_active_queue_not_falsely_blocked_by_reserved_capacity(self):
+  x=self.lane(['running','queued','queued'],remaining=0);self.assertEqual(x['state'],'building');self.assertEqual(x['issues'],[]);self.assertEqual(self.lane(['running'],heartbeat={'last_seen':0})['state'],'building')
+ def test_failed_limit_and_catalog_have_distinct_actions(self):
+  x=self.lane(['failed'],remaining=0,candidates=False);self.assertEqual({i['code'] for i in x['issues']},{'failed','attempt_limit','catalog'});self.assertEqual(x['eligible_books'],0);self.assertIn('restarting',next(i['action'] for i in x['issues'] if i['code']=='catalog'))
+ def test_pause_stale_worker_and_dependency(self):
+  x=self.lane(automatic=False,heartbeat={'last_seen':0},dependencies=['Voice missing']);self.assertTrue({'paused','worker_stale','dependency'}<={i['code'] for i in x['issues']})
+ def test_heartbeat_preserves_safe_error_until_success(self):
+  with tempfile.TemporaryDirectory() as d,patch.object(h,'DB',Path(d)/'state.db'),patch.object(h,'LAST',{}):
+   h.record('shorts',ValueError('daily attempt limit secret-should-not-be-stored'));h.heartbeat('shorts')
+   with sqlite3.connect(h.DB) as c:
+    row=c.execute('select error_code from worker_health').fetchone();self.assertEqual(row[0],'attempt_limit')
+   self.assertNotIn(b'secret-should-not-be-stored',h.DB.read_bytes());h.record('shorts')
+   with sqlite3.connect(h.DB) as c:self.assertIsNone(c.execute('select error_code from worker_health').fetchone()[0])
+ def test_status_snapshot_is_read_only_and_offline(self):
+  with tempfile.TemporaryDirectory() as d,patch.object(g,'DB',Path(d)/'state.db'),patch.object(g.jobs,'health',return_value={'missing':[]}),patch.object(g.footage_director,'key',return_value='fixture'),patch.object(g.cinematic_content,'available_books',return_value=[]),patch.object(g.daily_plan,'history',return_value={}):
+   with sqlite3.connect(g.DB) as c:c.execute('create table sentinel(value)');c.execute("insert into sentinel values ('unchanged')")
+   before=hashlib.sha256(g.DB.read_bytes()).hexdigest()
+   with patch('urllib.request.urlopen',side_effect=AssertionError('No network allowed')):result=g.snapshot(datetime.datetime(2026,10,15,8,tzinfo=ZoneInfo('America/Chicago')))
+   self.assertEqual(result['shorts']['target'],3);self.assertEqual(result['full']['target'],1);self.assertEqual(before,hashlib.sha256(g.DB.read_bytes()).hexdigest())
+if __name__=='__main__':unittest.main()
+
+class RecoveryStatus(unittest.TestCase):
+ lane=Tests.lane
+ def test_owner_recovery_counts_as_active_without_new_attempt_capacity(self):
+  result=self.lane(['ready','recovering','ready'],remaining=0)
+  self.assertEqual(result['running'],1);self.assertEqual(result['state'],'building')
+ def test_exhausted_recovery_does_not_claim_only_timer_is_needed(self):
+  result=self.lane(['retry_wait'],remaining=0)
+  self.assertIn('attempt_limit',{i['code'] for i in result['issues']})

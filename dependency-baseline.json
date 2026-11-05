@@ -1,0 +1,17 @@
+{
+  "recorded_date": "2026-10-15",
+  "python": "3.12.14",
+  "pillow": "12.3.0",
+  "ffmpeg": "ffmpeg version 8.1.1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "voice_runtime": {
+    "python": "3.12.14",
+    "kokoro": "0.9.4",
+    "torch": "2.14.1",
+    "transformers": "5.19.0",
+    "numpy": "2.5.4",
+    "soundfile": "0.14.0",
+    "huggingface-hub": "2.2.0"
+  },
+  "cryptography": "50.0.2",
+  "recovery_dependency_recorded_date": "2026-10-16"
+}

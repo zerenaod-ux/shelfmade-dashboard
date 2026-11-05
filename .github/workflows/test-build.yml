@@ -1,0 +1,23 @@
+name: test-build
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Machine info
+        run: |
+          nproc; free -h; df -h / | tail -1; ffmpeg -version | head -1
+      - name: Render a 60s vertical test video (timed)
+        run: |
+          T0=$(date +%s)
+          ffmpeg -y -f lavfi -i testsrc2=size=1080x1920:rate=30:duration=60 -f lavfi -i sine=frequency=220:duration=60 -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -c:a aac -shortest test.mp4
+          echo "RENDER SECONDS: $(( $(date +%s) - T0 ))"
+          ls -lh test.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: test-video
+          path: test.mp4

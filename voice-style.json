@@ -1,0 +1,1 @@
+{"enabled": false, "engine": "qwen", "note": "engine: qwen = expressive Qwen3-TTS (Vivian) with per-sentence emotion; kokoro = previous flat voice. Set engine to kokoro to switch back instantly."}

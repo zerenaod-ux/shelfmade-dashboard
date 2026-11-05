@@ -1,0 +1,20 @@
+{
+ "enabled": true,
+ "timezone": "America/Chicago",
+ "min_lead_minutes": 10,
+ "slots": {
+  "youtube": [
+   "12:00",
+   "21:00"
+  ],
+  "instagram": [
+   "12:00",
+   "20:00"
+  ],
+  "tiktok": [
+   "14:00",
+   "21:30"
+  ]
+ },
+ "buffer_queue_limit": 10
+}

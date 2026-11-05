@@ -1,0 +1,112 @@
+"""Read-only local daily readiness. No provider requests, jobs, approvals or writes."""
+import datetime,json,sqlite3,time
+from pathlib import Path
+from zoneinfo import ZoneInfo
+import jobs,daily_plan,cinematic_content,footage_director,full_jobs
+BASE=Path(__file__).resolve().parent;DB=BASE/'decisions.sqlite3'
+ACTIONS={
+ 'attempt_limit':('Daily attempt limit reached','Wait for the next Chicago day; do not delete attempt history.'),
+ 'database_busy':('The local database is busy','Keep one studio process running; inspect local health if this continues.'),
+ 'footage':('Fresh footage needs attention','Check the footage connection, quota and chapter brief; no old clips will be substituted.'),
+ 'source':('Source or narration needs attention','Review the source/script and voice configuration before retrying.'),
+ 'worker_error':('Background worker needs attention','Inspect the local worker log or run Check-ShelfMade.command.')}
+def rows(c,table,where='',values=()):
+ if table not in {r[0] for r in c.execute("select name from sqlite_master where type='table'")}:return []
+ return [dict(r) for r in c.execute('select * from '+table+(' where '+where if where else ''),values)]
+def issue(code,message,action):return {'code':code,'message':message,'action':action}
+def short_source_candidates(alljobs,prior,posted):
+ latest={}
+ for job in alljobs:
+  if job['book'] not in latest or int(job.get('edition',1) or 1)>int(latest[job['book']].get('edition',1) or 1):latest[job['book']]=job
+ candidates=[]
+ for book in jobs.BOOKS:
+  job=latest.get(book['id'])
+  if not job:
+   if daily_plan.normalize(book['title']) not in prior and daily_plan.normalize(book['title']) not in posted:candidates.append(book)
+   continue
+  if job['state']!='ready':continue
+  try:
+   metadata=json.loads((jobs.package(job)/'edition.json').read_text())
+   if int(metadata.get('edition_capacity',job.get('edition',1)+1))>int(job.get('edition',1)):candidates.append(book)
+  except (OSError,ValueError,TypeError):
+   # Existing completed drafts have no passage manifest; one new edition will
+   # establish the verified capacity without removing old work.
+   candidates.append(book)
+ return candidates
+def inspect_lane(name,target,reservations,alljobs,attempts,remaining,candidates,dependencies,now,heartbeat,automatic=True,start_hour=9):
+ by_book={};by_id={j['id']:j for j in alljobs}
+ for job in alljobs:
+  if job['book'] not in by_book or int(job.get('edition',1) or 1)>int(by_book[job['book']].get('edition',1) or 1):by_book[job['book']]=job
+ lane={'target':target,'completed':0,'queued':0,'running':0,'failed':0,'reserved':len(reservations),'unreserved':max(0,target-len(reservations)),'eligible_books':len(candidates),'issues':[],'state':'waiting','worker_last_seen':heartbeat.get('last_seen'),'attempts_used':attempts,'attempts_remaining':max(0,remaining)}
+ for slot in reservations:
+  job=by_id.get(slot.get('job')) or by_book.get(slot.get('book'))
+  if not job:continue
+  state=job['state']
+  if state=='ready':lane['completed']+=1
+  elif state=='retry_wait':
+   lane['queued']+=1
+   lane['issues'].append(issue('retry_wait','Recoverable generation: recovery is waiting','Saved work is checked and reused when the timer and existing daily capacity permit another generation attempt. No publication is retried.'))
+  elif state=='recovering':lane['running']+=1
+  elif state in ('queued','running','failed'):lane[state]+=1
+  if state=='running':
+   try:started=datetime.datetime.fromisoformat(job['updated']).replace(tzinfo=datetime.timezone.utc).timestamp()
+   except (ValueError,KeyError,TypeError):started=now.timestamp()
+   if now.timestamp()-started>(1320 if name=='shorts' else 7320):lane['issues'].append(issue('overdue','A render has exceeded its expected time window','Inspect its worker log before restarting or retrying.'))
+ if lane['completed']>=target:
+  lane.update(state='complete',message=f'{target}/{target} drafts completed. Review and publishing are separate.');return lane
+ if lane['queued'] and not lane['running'] and remaining<=0 and any((by_id.get(slot.get('job')) or by_book.get(slot.get('book')) or {}).get('state')=='retry_wait' for slot in reservations):
+  lane['issues'].append(issue('attempt_limit','Recovery paused: today’s render attempts are used','The saved draft has not completed. Another restart will not create capacity; inspect its cause before a future permitted attempt.'))
+ if lane['failed']:
+  lane['issues'].append(issue('failed',f"{lane['failed']} generation job(s) failed",'Read the failed job below. Retry only after checking the cause and available daily attempts.'))
+ active=lane['queued']+lane['running']
+ if not automatic and not active:lane['issues'].append(issue('paused','Automatic full-video generation is paused','Enable daily_generation in cinematic-settings.json when you want it to resume.'))
+ if now.hour<start_hour and not active and not lane['issues']:
+  lane.update(state='scheduled',message=f'Waiting until {start_hour}:00 Chicago time. Keep the studio running.');return lane
+ if not active and lane['completed']<target:
+  for missing in dependencies:lane['issues'].append(issue('dependency',missing,'Restore this dependency, then check the daily job list.'))
+  if remaining<=0:lane['issues'].append(issue('attempt_limit','Daily attempt limit reached','Capacity resets at midnight America/Chicago. Do not reset records to bypass it.'))
+  if lane['unreserved'] and not candidates:lane['issues'].append(issue('catalog','No unused verified source passages remain for a fresh Short','Every supported passage set has been used or its latest draft needs attention. Add verified source material or review the saved failure; restarting alone cannot create new source passages. Published files stay protected from duplicates.'))
+  if heartbeat.get('error_code') in ACTIONS:
+   message,action=ACTIONS[heartbeat['error_code']];lane['issues'].append(issue('scheduler_'+heartbeat['error_code'],message,action))
+  if not heartbeat:lane['issues'].append(issue('worker_unknown','Worker status is not available yet','After a code update, restart the studio once and wait for its first check.'))
+  elif now.timestamp()-heartbeat['last_seen']>180:lane['issues'].append(issue('worker_stale','Background worker has not checked in recently','Keep the studio running; inspect local health before restarting.'))
+ elif lane['queued'] and not lane['running']:
+  if heartbeat and now.timestamp()-heartbeat['last_seen']>180:lane['issues'].append(issue('worker_stale','Queued work has not been picked up','Inspect local health and the worker log before restarting.'))
+ if lane['issues']:lane.update(state='attention',message='Needs attention — see the explanation below.')
+ elif active:lane.update(state='building',message=f"{lane['completed']}/{target} complete · {lane['running']} building · {lane['queued']} waiting.")
+ else:lane.update(state='waiting',message='Waiting for the next background check. Keep the studio running.')
+ return lane
+
+def snapshot(now=None):
+ now=(now or datetime.datetime.now(ZoneInfo('America/Chicago'))).astimezone(ZoneInfo('America/Chicago'));day=now.date().isoformat()
+ if not DB.exists():return {'day':day,'timezone':'America/Chicago','available':False,'message':'Start the studio to initialize its local state.'}
+ start,end=jobs.attempt_window(now)
+ with sqlite3.connect(DB.as_uri()+'?mode=ro',uri=True,timeout=10) as c:
+  c.row_factory=sqlite3.Row
+  short=rows(c,'jobs');full=rows(c,'full_jobs');slots=rows(c,'short_daily_slots','day=?',(day,))
+  if not slots:slots=[{'slot':1,'book':r['book']} for r in rows(c,'daily_generation','day=?',(day,))]
+  full_today=rows(c,'full_jobs','created>=? and created<?',(start,end))
+  full_slots=[{'job':j['id'],'book':j['book']} for j in full_today]
+  if not full_slots:full_slots=rows(c,'full_daily_generation','day=?',(day,))
+  full_attempts=rows(c,'full_generation_attempts','started>=? and started<?',(start,end))
+  attempts=rows(c,'attempts','source_ready=1 and started>=? and started<?',(start,end))
+  health={r['worker']:r for r in rows(c,'worker_health')}
+  posts=rows(c,'publications')+rows(c,'platform_posts')
+ prior=daily_plan.history()
+ posted={daily_plan.normalize(p['title']) for p in posts if p.get('url') and not p['item'].startswith('long-')}
+ short_candidates=short_source_candidates(short,prior,posted)
+ full_used={r['book'] for r in full}
+ studio=Path(__import__('os').environ.get('SHELFMADE_STUDIO',str(Path.home()/'Documents'/'ContentEmpire-Studio')))
+ full_used.update(p.name.split('_')[0] for p in (studio/'LONGFORM').glob('*') if p.is_dir())
+ for p in (BASE/'full-generated').glob('*/package.json'):
+  try:full_used.add(str(json.loads(p.read_text())['book']))
+  except (OSError,ValueError,KeyError):pass
+ full_candidates=[b for b in cinematic_content.available_books() if b['id'] not in full_used]
+ config=json.loads((BASE/'cinematic-settings.json').read_text());dependencies=jobs.health()['missing']
+ if not footage_director.key():dependencies=dependencies+['Free footage connection is not configured']
+ shorts_remaining=jobs.DAILY_LIMIT-len(attempts)-sum(j['state']=='queued' for j in short)
+ shorts=inspect_lane('shorts',3,slots,short,len(attempts),shorts_remaining,short_candidates,dependencies,now,health.get('shorts',{}))
+ full_deps=list(dependencies)
+ if not Path(config['music_path']).is_file():full_deps.append('Approved music is missing')
+ long=inspect_lane('full',1,full_slots,full,max(len(full_today),len(full_attempts)),full_jobs.DAILY_ATTEMPT_LIMIT-max(len(full_today),len(full_attempts)),full_candidates,full_deps,now,health.get('full',{}),config.get('daily_generation',False),config.get('daily_hour_chicago',9))
+ return {'available':True,'day':day,'timezone':'America/Chicago','checked_at':now.isoformat(),'shorts':shorts,'full':long,'automatic_publish':False}

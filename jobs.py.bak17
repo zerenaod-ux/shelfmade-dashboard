@@ -1,0 +1,187 @@
+import render_capacity
+import generation_recovery
+import local_voice
+import worker_health
+import sqlite3,json,uuid,threading,subprocess,sys,time,os,shutil,importlib.util,signal,datetime
+from zoneinfo import ZoneInfo
+from pathlib import Path
+BASE=Path(__file__).resolve().parent
+DB=BASE/'decisions.sqlite3';ROOT=BASE/'generated';DAILY_LIMIT=6
+BOOKS=json.loads((BASE/'books.json').read_text())
+def refresh_catalogue():
+ global BOOKS
+ if DB.resolve()==(BASE/'decisions.sqlite3').resolve():
+  import catalogue_data
+  BOOKS=catalogue_data.load(BASE/'books.json')
+ return BOOKS
+def connect():
+ c=sqlite3.connect(DB,timeout=20);c.row_factory=sqlite3.Row
+ c.execute('CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY,book TEXT NOT NULL,edition INTEGER NOT NULL DEFAULT 1,state TEXT NOT NULL,attempts INTEGER DEFAULT 0,error TEXT,created TEXT DEFAULT CURRENT_TIMESTAMP,updated TEXT DEFAULT CURRENT_TIMESTAMP)')
+ columns={r['name'] for r in c.execute('PRAGMA table_info(jobs)')}
+ if 'edition' not in columns:c.execute('ALTER TABLE jobs ADD COLUMN edition INTEGER NOT NULL DEFAULT 1')
+ schema=c.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='jobs'").fetchone()['sql'] or ''
+ if 'book TEXT UNIQUE' in schema or 'book TEXT NOT NULL UNIQUE' in schema:
+  # Upgrade the old one-job-per-book table in place while preserving every job,
+  # retry field, and explicit index. SQLite's auto UNIQUE index cannot be dropped.
+  indexes=[r['sql'] for r in c.execute("SELECT sql FROM sqlite_master WHERE type='index' AND tbl_name='jobs' AND sql IS NOT NULL")]
+  info=list(c.execute('PRAGMA table_info(jobs)'))
+  defs=[]
+  for col in info:
+   name=col['name'];typ=col['type'] or ''
+   if col['pk']:defs.append('"'+name+'" '+typ+' PRIMARY KEY')
+   else:
+    part='"'+name+'" '+typ
+    if col['notnull']:part+=' NOT NULL'
+    if col['dflt_value'] is not None:part+=' DEFAULT '+str(col['dflt_value'])
+    defs.append(part)
+  c.execute('CREATE TABLE jobs_edition_migration ('+','.join(defs)+')')
+  names=[r['name'] for r in info];quoted=','.join('"'+n+'"' for n in names)
+  c.execute('INSERT INTO jobs_edition_migration ('+quoted+') SELECT '+quoted+' FROM jobs')
+  c.execute('DROP TABLE jobs');c.execute('ALTER TABLE jobs_edition_migration RENAME TO jobs')
+  for sql in indexes:c.execute(sql)
+ c.execute('CREATE UNIQUE INDEX IF NOT EXISTS jobs_book_edition ON jobs(book,edition)')
+ c.execute('CREATE TABLE IF NOT EXISTS attempts(job TEXT, started TEXT DEFAULT CURRENT_TIMESTAMP, source_ready INTEGER NOT NULL DEFAULT 1)')
+ if 'source_ready' not in {r['name'] for r in c.execute('PRAGMA table_info(attempts)')}:
+  c.execute('ALTER TABLE attempts ADD COLUMN source_ready INTEGER NOT NULL DEFAULT 1')
+  # Old ledgers counted every launch, including jobs that failed before their
+  # original source was even loaded. Reclassify those from their saved artifact.
+  counts={}
+  for attempt_row in c.execute('SELECT rowid,job FROM attempts ORDER BY rowid').fetchall():
+   counts[attempt_row['job']]=counts.get(attempt_row['job'],0)+1
+   source=ROOT/attempt_row['job']/str(counts[attempt_row['job']])/'source.txt'
+   if not source.is_file():c.execute('UPDATE attempts SET source_ready=0 WHERE rowid=?',(attempt_row['rowid'],))
+ generation_recovery.migrate(c,'jobs');return c
+def health():
+ missing=[x for x in ('ffmpeg','ffprobe') if not shutil.which(x)]
+ if not importlib.util.find_spec('PIL'):missing.append('Pillow')
+ if not local_voice.available():missing.append('Kokoro Heart local voice')
+ return {'ready':not missing,'missing':missing,'paid_enabled':False,'provider_budget_usd':0,'daily_attempt_limit':DAILY_LIMIT,'day_timezone':'America/Chicago','mode':'Source extracts + Kokoro Heart (free local voice)'}
+def list_jobs():
+ refresh_catalogue()
+ with connect() as c:rows=[dict(r) for r in c.execute('SELECT * FROM jobs ORDER BY created DESC,edition DESC,rowid DESC')]
+ for row in rows:row['needs_narration']=row['state']=='ready' and (package(row)/'warning.txt').exists()
+ return rows
+def attempt_window(now=None):
+ local=(now or datetime.datetime.now(ZoneInfo('America/Chicago'))).astimezone(ZoneInfo('America/Chicago'))
+ start=datetime.datetime.combine(local.date(),datetime.time(),ZoneInfo('America/Chicago'))
+ end=datetime.datetime.combine(local.date()+datetime.timedelta(days=1),datetime.time(),ZoneInfo('America/Chicago'))
+ return tuple(t.astimezone(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S') for t in (start,end))
+def attempts_used(c,start=None,end=None):
+ start,end=(start,end) if start is not None else attempt_window()
+ return c.execute('SELECT count(*) FROM attempts WHERE source_ready=1 AND started>=? AND started<?',(start,end)).fetchone()[0]
+def pre_source_retryable(job):
+ if int(job.get('attempts',0) or 0)>=2:return False
+ with connect() as c:
+  row=c.execute('SELECT source_ready FROM attempts WHERE job=? ORDER BY rowid DESC LIMIT 1',(job['id'],)).fetchone()
+ return bool(row and not row['source_ready'])
+def pipeline_fix_retryable(job):
+ """Retry only the two known failures fixed by the current local pipeline."""
+ if job.get('state')!='failed':return False
+ try:log=(package(job)/'worker.log').read_text(errors='replace')
+ except OSError:return False
+ return ('subprocess.TimeoutExpired:' in log and "timed out after 180 seconds" in log) or ('Creative review: Cover headline does not connect to the spoken opening.' in log)
+def enqueue(book,retry=False):
+ refresh_catalogue()
+ if book not in {b['id'] for b in BOOKS}:raise ValueError('Unknown book')
+ if not health()['ready']:raise ValueError('Missing dependencies: '+', '.join(health()['missing']))
+ with connect() as c:
+  c.execute('BEGIN IMMEDIATE')
+  existing=c.execute("SELECT * FROM jobs WHERE book=? AND state IN ('queued','running','retry_wait','recovering') ORDER BY edition DESC LIMIT 1",(book,)).fetchone()
+  if existing and not retry:return dict(existing)
+  if retry:
+   existing=None
+   for candidate in c.execute("SELECT * FROM jobs WHERE book=? AND state IN ('failed','ready') ORDER BY edition DESC",(book,)):
+    if candidate['state']=='failed' or (package(dict(candidate))/'warning.txt').exists():
+     existing=candidate;break
+   if not existing:raise ValueError('Only failed or caption-only jobs can be retried')
+  if existing and retry and existing['worker_pid']:
+   try:os.kill(existing['worker_pid'],0)
+   except ProcessLookupError:pass
+   except PermissionError:raise ValueError('Previous worker status cannot be verified. Inspect it before retrying.')
+   else:raise ValueError('Previous worker is still running. Wait for it to finish before retrying.')
+  today=attempts_used(c,*attempt_window())
+  queued=c.execute("SELECT count(*) FROM jobs WHERE state='queued'").fetchone()[0]
+  if today+queued>=DAILY_LIMIT:raise ValueError('Daily limit reached: six generation attempts per America/Chicago day')
+  if existing and retry:
+   c.execute("UPDATE jobs SET state='queued',error=NULL,updated=CURRENT_TIMESTAMP WHERE id=?",(existing['id'],));id=existing['id']
+  else:
+   edition=c.execute('SELECT COALESCE(MAX(edition),0)+1 FROM jobs WHERE book=?',(book,)).fetchone()[0]
+   id=uuid.uuid4().hex;c.execute("INSERT INTO jobs(id,book,edition,state) VALUES (?,?,?,'queued')",(id,book,edition))
+  return dict(c.execute('SELECT * FROM jobs WHERE id=?',(id,)).fetchone())
+def recover():
+ with connect() as c:generation_recovery.interrupted(c,'jobs')
+
+@render_capacity.guarded(lambda: DB)
+def work_once():
+ with connect() as c:
+  c.execute('BEGIN IMMEDIATE')
+  used=attempts_used(c,*attempt_window())
+  queued=c.execute("SELECT count(*) FROM jobs WHERE state='queued'").fetchone()[0]
+  generation_recovery.promote(c,'jobs',DAILY_LIMIT-used-queued)
+  row=c.execute("SELECT * FROM jobs WHERE state='queued' ORDER BY created LIMIT 1").fetchone()
+  if not row:return False
+  id=row['id'];attempt=row['attempts']+1;c.execute("UPDATE jobs SET state='running',attempts=?,updated=CURRENT_TIMESTAMP WHERE id=?",(attempt,id));attempt_row=c.execute('INSERT INTO attempts(job,source_ready) VALUES (?,0)',(id,)).lastrowid
+ folder=ROOT/id/str(attempt);folder.mkdir(parents=True,exist_ok=True)
+ try:
+  book=next(b for b in BOOKS if b['id']==row['book'])
+  env={k:v for k,v in os.environ.items() if not any(x in k for x in ('API_KEY','TOKEN','VOICE_ID'))}
+  with (folder/'worker.log').open('w') as log:
+   process=subprocess.Popen([sys.executable,str(BASE/'generation_worker.py'),str(BASE/'worker.py'),json.dumps(book),str(row['edition']),str(folder)],stdout=log,stderr=log,env=env,start_new_session=True,pass_fds=render_capacity.inherited_fds())
+   with connect() as c:c.execute('UPDATE jobs SET worker_pid=? WHERE id=?',(process.pid,id))
+   deadline=time.monotonic()+1200;charged=False
+   while True:
+    if not charged and (folder/'source.txt').is_file():
+     with connect() as c:c.execute('UPDATE attempts SET source_ready=1 WHERE rowid=?',(attempt_row,))
+     charged=True
+    remaining=deadline-time.monotonic()
+    if remaining<=0:
+     os.killpg(process.pid,signal.SIGKILL);process.wait();raise subprocess.TimeoutExpired(process.args,1200)
+    try:code=process.wait(timeout=min(1,remaining))
+    except subprocess.TimeoutExpired:continue
+    break
+   if code:raise subprocess.CalledProcessError(code,process.args)
+   if not charged and (folder/'source.txt').is_file():
+    with connect() as c:c.execute('UPDATE attempts SET source_ready=1 WHERE rowid=?',(attempt_row,))
+  if not (folder/'final.mp4').is_file() or not (folder/'validation.json').is_file() or not (folder/'POST_THIS.txt').is_file():raise RuntimeError('Generation returned without validated package')
+  if not charged:
+   with connect() as c:c.execute('UPDATE attempts SET source_ready=1 WHERE rowid=?',(attempt_row,))
+  with connect() as c:c.execute("UPDATE jobs SET state='ready',error=NULL,worker_pid=NULL,updated=CURRENT_TIMESTAMP WHERE id=?",(id,))
+ except Exception as e:
+  if (folder/'source.txt').is_file():
+   with connect() as c:c.execute('UPDATE attempts SET source_ready=1 WHERE rowid=?',(attempt_row,))
+  message='Generation timed out.' if isinstance(e,subprocess.TimeoutExpired) else ('Generation failed. See local job log.' if isinstance(e,subprocess.CalledProcessError) else str(e))
+  try:
+   failure_info=json.loads((folder/'failure.json').read_text())
+   if failure_info.get('message'):message=failure_info['message']
+  except (OSError,ValueError,TypeError):pass
+  if isinstance(e,subprocess.CalledProcessError) and message=='Generation failed. See local job log.':
+   try:
+    lines=(folder/'worker.log').read_text(errors='replace').splitlines()
+    detail=next((line.split(': ',1)[1] for line in reversed(lines) if line.startswith(('ValueError: ','RuntimeError: '))),None)
+    if detail:message=detail[:240]
+   except OSError:pass
+  with connect() as c:generation_recovery.failure(c,'jobs',row,folder,message)
+ return True
+DAILY_CALLBACK=None
+def start():
+ recover()
+ def loop():
+  last_daily=0
+  while True:
+   try:worker_health.heartbeat('shorts')
+   except Exception:pass # Diagnostics must not stop the real queue.
+   if DAILY_CALLBACK and time.time()-last_daily>60:
+    last_daily=time.time()
+    try:
+     DAILY_CALLBACK();worker_health.record('shorts')
+    except Exception as error:
+     try:worker_health.record('shorts',error)
+     except Exception:pass
+   try:
+    if not work_once():time.sleep(1)
+   except Exception as error:
+    try:worker_health.record('shorts',error)
+    except Exception:pass
+    time.sleep(2)
+ threading.Thread(target=loop,daemon=True).start()
+def package(job):return ROOT/job['id']/str(job['attempts'])

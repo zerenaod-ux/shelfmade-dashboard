@@ -1,0 +1,20 @@
+{
+  "source": "Metricool connector",
+  "checked_at": "2026-10-14T02:45:36.269618+00:00",
+  "networks": {
+    "instagram": {
+      "account": "shelfmade.daily",
+      "connected": true,
+      "posts": [],
+      "refresh_mode": "snapshot",
+      "message": "Connected in Metricool. Its analytics response currently contains no posts; existing profile posts are not confirmed absent. Direct dashboard refresh is not configured."
+    },
+    "tiktok": {
+      "account": "shelfmade.daily",
+      "connected": true,
+      "posts": [],
+      "refresh_mode": "snapshot",
+      "message": "Connected in Metricool. Its analytics response currently contains no posts; existing profile posts are not confirmed absent. Direct dashboard refresh is not configured."
+    }
+  }
+}

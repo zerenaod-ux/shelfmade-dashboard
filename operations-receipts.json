@@ -1,0 +1,11 @@
+{
+  "restore_test": {
+    "checked_at": "2026-10-16T15:25:05.377544+00:00",
+    "verified": true,
+    "files": 93,
+    "databases": 3,
+    "scope": "Actual app state/source encrypted round trip into a disposable private directory; excludes media and raw provider credentials.",
+    "live_files_overwritten": false,
+    "off_device_copy_verified": false
+  }
+}
