@@ -15,8 +15,18 @@ PER_PASS = int(os.environ.get('ML_PER_PASS', '2'))  # new scripts per run
 MODEL = 'gemini-2.5-flash'
 
 
+_CUR = [0]   # GKEYS: index of the Gemini key in use
+
+
+def _keys():
+    ks = [os.environ.get(n, '').strip() for n in ('GEMINI_API_KEY', 'GEMINI_API_KEY2', 'GEMINI_API_KEY3')]
+    return [k for k in ks if k]
+
+
 def _key():
-    k = os.environ.get('GEMINI_API_KEY', '').strip()
+    ks = _keys()
+    if ks: return ks[_CUR[0] % len(ks)]
+    k = ''
     f = B / 'gemini-key.txt'
     if not k and f.is_file():
         k = f.read_text().strip()
@@ -158,8 +168,9 @@ def _call(prompt):
     import time
     last = None
     for rnd in range(8):   # PATIENT: free providers reset their per-minute limits, so wait and retry
-        for model in _models()[:8]:
-            if model in _DEAD:
+        for ki, model in [(a_, m_) for a_ in range(max(1, len(_keys()))) for m_ in _models()[:8]]:
+            _CUR[0] = ki
+            if (ki, model) in _DEAD:
                 continue
             for think in (True, False):
                 try:
@@ -169,7 +180,7 @@ def _call(prompt):
                     if e.code == 400 and think:
                         continue          # model does not accept the thinking setting: retry without
                     if e.code in (404, 403, 429):
-                        _DEAD.add(model)  # not available / over its free quota: stop using it
+                        _DEAD.add((ki, model))  # not available / over its free quota: stop using it
                     break
                 except (OSError, ValueError, KeyError) as e:
                     last = 'Gemini %s failed: %s' % (model, str(e)[:80])
