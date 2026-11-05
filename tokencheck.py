@@ -41,6 +41,12 @@ check('Gemini', s, b)
 p = os.environ.get('PEXELS_API_KEY', '')
 s, b = call('https://api.pexels.com/v1/search?query=sky&per_page=1', headers={'Authorization': p, 'User-Agent': 'studio'})
 check('Pexels', s, b)
+for name, env, url in (('Groq', 'GROQ_API_KEY', 'https://api.groq.com/openai/v1/models'), ('Cerebras', 'CEREBRAS_API_KEY', 'https://api.cerebras.ai/v1/models'),
+                       ('OpenRouter', 'OPENROUTER_API_KEY', 'https://openrouter.ai/api/v1/auth/key'), ('Mistral', 'MISTRAL_API_KEY', 'https://api.mistral.ai/v1/models')):
+    k = os.environ.get(env, '').strip()
+    if k:   # optional free fallbacks: only checked when configured
+        s, b = call(url, headers={'Authorization': 'Bearer ' + k, 'User-Agent': 'studio/1.0'})
+        check(name, s, b)
 print('OK: ' + ', '.join(ok))
 open('alert.md', 'w').write('\n'.join('- ' + x for x in bad))
 if bad:

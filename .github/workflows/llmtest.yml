@@ -1,0 +1,26 @@
+name: llmtest
+on:
+  workflow_dispatch:
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Ask the free fallback for a hook
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          python - <<'PY'
+          import llm, ai_hook, os
+          print('providers with keys:', llm.available())
+          print('raw JSON:', llm.json_call('Reply with JSON only.', 'Return {"ok": true, "word": "hello"}'))
+          os.environ.pop('GEMINI_API_KEY', None)
+          print('hook:', ai_hook.generate('On Anger', 'Seneca', ['Anger is a brief madness.', 'The best cure for anger is delay.'], 'mindlore'))
+          PY
