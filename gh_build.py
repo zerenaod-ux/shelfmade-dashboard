@@ -26,6 +26,7 @@ def main(count):
   if r.returncode or not (folder/'final.mp4').is_file():print('skipped',bid,'(no unused passages or failed)');continue
   review=load(folder/'content-review.json',{})
   used['books'].setdefault(bid,[]).extend(x for x in review.get('source_sentences',[]) if isinstance(x,str))
+  if isinstance(review.get('hook'),str):used['hooks']=(used.get('hooks',[])+[review['hook']])[-80:]   # variety guard memory
   built.append(bid)
   (state/BUILT).write_text(json.dumps(built));(state/USED).write_text(json.dumps(used))
   shutil.copy(folder/'final.mp4',out/f'{bid}-final.mp4');shutil.copy(folder/'POST_THIS.txt',out/f'{bid}-POST_THIS.txt')

@@ -88,7 +88,17 @@ def apply(script,book,edition,evidence_url):
     import ai_hook,os;ai=ai_hook.generate(book['title'],book.get('author'),sentences,'mindlore' if os.environ.get('BRAND')=='mindlore' else 'shelfmade')
    except Exception:ai=None
   if ai:kind,(hook,loop)='ai',ai
-  else:kind,hook,loop=make(kind,book['title'],book.get('author'),rng)
+  else:
+   kind,hook,loop=make(kind,book['title'],book.get('author'),rng)
+   try:   # variety guard: do not repeat a hook that is too close to a recent one
+    import variety,os;b='mindlore' if os.environ.get('BRAND')=='mindlore' else 'shelfmade'
+    for _ in range(8):
+     if not variety.too_close(hook,b):break
+     kind,hook,loop=make(rng.choice(TYPES[1:]),book['title'],book.get('author'),rng)
+   except Exception:pass
+  try:
+   import variety,os;variety.note('mindlore' if os.environ.get('BRAND')=='mindlore' else 'shelfmade',hook)
+  except Exception:pass
   script['points']=[old,*script['points']]
   script['source_evidence']=[{'chapter':'Opening hook','kind':'editorial hook','excerpt':hook,'source_url':evidence_url,'verification':('Editorial hook written for this passage. Not a quotation.' if kind=='ai' else 'Editorial template line. Not a quotation.')+' The source passage follows as lesson 1.'},*script['source_evidence']]
  script['hook']=hook;script['cta']=loop

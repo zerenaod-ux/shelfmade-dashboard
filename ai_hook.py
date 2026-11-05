@@ -16,6 +16,22 @@ def _ok(h, l):
     return not h.lower().startswith(BAD_START)
 
 
+def _close(h, brand):
+    try:
+        import variety
+        return variety.too_close(h, brand)
+    except Exception:
+        return False
+
+
+def _note(h, brand):
+    try:
+        import variety
+        variety.note(brand, h)
+    except Exception:
+        pass
+
+
 def generate(title, author, sentences, brand):
     if os.environ.get('AI_HOOKS', '1') == '0':
         return None
@@ -51,13 +67,15 @@ def generate(title, author, sentences, brand):
                 except Exception:
                     continue
             h, l = (d.get('hook') or '').strip(), (d.get('loop') or '').strip()
-            if _ok(h, l):
+            if _ok(h, l) and not _close(h, brand):
+                _note(h, brand)
                 return h, l
         if llm and llm.available():      # Gemini quota is often used up: free fallbacks (Groq, Cerebras, OpenRouter, Mistral)
             for _ in range(2):
                 d = llm.json_call('You write short-form video hooks. Reply with JSON only.', prompt)
                 h, l = (d.get('hook') or '').strip(), (d.get('loop') or '').strip()
-                if _ok(h, l):
+                if _ok(h, l) and not _close(h, brand):
+                    _note(h, brand)
                     return h, l
     except Exception:
         return None
