@@ -1,0 +1,42 @@
+name: playlists
+on:
+  schedule:
+    - cron: '10 15 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: playlists
+jobs:
+  keep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Keep playlists up to date
+        id: chk
+        continue-on-error: true
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
+          YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+        run: python playlists.py
+      - name: Phone alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OUTCOME: ${{ steps.chk.outcome }}
+        run: |
+          N=$(gh issue list --state open --search "ALERT: playlist problem in:title" --json number -q '.[0].number' || true)
+          if [ "$OUTCOME" = "failure" ]; then
+            BODY="Playlist update failed ($(date -u +%F)):\n\n$(cat alert.md 2>/dev/null)"
+            if [ -z "$N" ]; then gh issue create --title "ALERT: playlist problem" --body "$(printf "$BODY")"; else gh issue comment "$N" --body "$(printf "$BODY")"; fi
+          elif [ -n "$N" ]; then gh issue close "$N" --comment "Works again."; fi
+      - name: Fail when collection failed
+        if: steps.chk.outcome == 'failure'
+        run: exit 1
