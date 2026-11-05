@@ -6,7 +6,7 @@ from pathlib import Path
 A, OUT = Path('data/analytics'), Path('data/learned'); OUT.mkdir(parents=True, exist_ok=True)
 KEY = os.environ.get('GEMINI_API_KEY', '').strip()
 NOW = datetime.datetime.now(datetime.timezone.utc)
-MINAGE, MINVIDS = 3, 8
+MINAGE, MINVIDS = 3, 6
 BRIEF = {
     'mindlore': 'MindLore: psychology Shorts and longer videos from public-domain psychology books. Goal: the most watched, shared, binge-able videos.',
     'shelfmade': 'ShelfMade: Shorts and full videos built from public-domain books (quotes, lessons, summaries). Goal: the most watched, shared, binge-able videos.',
@@ -19,15 +19,13 @@ def secs(d):
 
 
 def ask(prompt):
-    for model in ('gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-2.5-pro'):
-        try:
-            body = json.dumps({'contents': [{'parts': [{'text': prompt}]}], 'generationConfig': {'temperature': 0.4, 'responseMimeType': 'application/json'}}).encode()
-            req = urllib.request.Request('https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent' % model, body, {'Content-Type': 'application/json', 'x-goog-api-key': KEY})
-            r = json.load(urllib.request.urlopen(req, timeout=120))
-            return json.loads(r['candidates'][0]['content']['parts'][0]['text'])
-        except Exception as e:
-            print('  model', model, 'failed:', str(e)[:80])
-    return None
+    """Uses the same model discovery + retries as the script writers (model names change, so Google is asked which ones exist)."""
+    try:
+        import ml_autoscripts as M
+        return M._call(prompt)
+    except Exception as e:
+        print('  Gemini failed:', str(e)[:150])
+        return None
 
 
 def brand(b):
