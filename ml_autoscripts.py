@@ -240,7 +240,7 @@ def _gate(c, d):
            'thumbnail_headline': d['thumb'], 'source_url': c['canonical_url'],
            'source_kind': ref['source_kind'], 'retained_source_sha256': ref['retained_source_sha256'],
            'source_passages': [{'section': i, 'source_chapter': p['chapter'], 'excerpt': p['excerpt']} for i, p in enumerate(d['passages'])],
-           'sections': [{'title': s['title'], 'narration': s['narration']} for s in d['sections']]}
+           'sections': [{'title': s['title'], 'narration': s['narration']} for s in d['sections']], 'claims': d.get('claims', []), 'story_v2': True}
     f = OUT / ('%s.json' % bid)
     f.write_text(json.dumps(out, indent=1, ensure_ascii=False))
     try:
@@ -271,7 +271,7 @@ def _gate_ml(c, d):
     out = {'book_id': bid, 'title': c['title'], 'author': c['author'], 'public_title': d['public_title'], 'hook': d['hook'], 'thumbnail_headline': d['thumb'], 'source_url': c['canonical_url'],
            'source_kind': ref['source_kind'], 'retained_source_sha256': ref['retained_source_sha256'],
            'source_passages': [{'section': i, 'source_chapter': p['chapter'], 'excerpt': p['excerpt']} for i, p in enumerate(d['passages'])],
-           'sections': [{'title': s['title'], 'narration': s['narration']} for s in d['sections']]}
+           'sections': [{'title': s['title'], 'narration': s['narration']} for s in d['sections']], 'claims': d.get('claims', []), 'story_v2': True}
     f.write_text(json.dumps(out, indent=1, ensure_ascii=False))
     old = (os.environ.get('BRAND'), os.environ.get('ML_VARIANT'))
     try:
@@ -292,6 +292,19 @@ def _gate_ml(c, d):
         for k, v in zip(('BRAND', 'ML_VARIANT'), old):
             if v is None: os.environ.pop(k, None)
             else: os.environ[k] = v
+def _story_gate(d):
+    """Strict storytelling rules + Wikipedia check of the named researchers. Never blocks when the checker itself is missing."""
+    try:
+        import story_rules
+    except ImportError:
+        return []
+    bad = story_rules.check(d, 'shelfmade' if SH else 'mindlore')
+    if not bad:
+        v, rep = story_rules.verify_claims(d); bad = v
+        print('ml_autoscripts: fact check:', '; '.join(rep) or 'n/a', flush=True)
+    return bad
+
+
 def make_one():
     c = _pick_book()
     if not c:
@@ -332,6 +345,10 @@ def make_one():
         pass
     if not SH:
         extra += ML_RULES
+    try:   # STRICT STORYTELLING RULES (story_rules.py): every new script is told this way
+        import story_rules; extra += story_rules.rules('shelfmade' if SH else 'mindlore')
+    except Exception as e:
+        print('ml_autoscripts: story rules unavailable:', str(e)[:80], flush=True)
     if not SH:
         try:   # MindLore series: everyday question title + radar pattern (ml_series.py)
             import ml_series; extra += ml_series.brief()
@@ -356,6 +373,8 @@ def make_one():
         bad = check(tn, d)
         if bad:
             d, bad = _lenfix(tn, window, d, bad)
+        if not bad:
+            bad = _story_gate(d)
         if not bad and SH:
             bad = _gate(c, d)
             if not bad:
@@ -384,7 +403,7 @@ def make_one():
            'thumbnail_headline': d['thumb'], 'source_url': c['canonical_url'],
            'source_kind': ref['source_kind'], 'retained_source_sha256': ref['retained_source_sha256'],
            'source_passages': [{'section': i, 'source_chapter': p['chapter'], 'excerpt': p['excerpt']} for i, p in enumerate(d['passages'])],
-           'sections': [{'title': s['title'], 'narration': s['narration']} for s in d['sections']]}
+           'sections': [{'title': s['title'], 'narration': s['narration']} for s in d['sections']], 'claims': d.get('claims', []), 'story_v2': True}
     fn = '%s.json' % bid if SH else '%s-%d.json' % (bid, n)
     (OUT / fn).write_text(json.dumps(out, indent=1, ensure_ascii=False))
     print('ml_autoscripts: wrote %s' % fn, flush=True)

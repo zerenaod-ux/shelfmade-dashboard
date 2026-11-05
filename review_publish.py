@@ -229,7 +229,7 @@ def main():
                 seen['issues'].append(out.strip())
                 seen['titles'].append(title)
                 made += 1
-                if okq and brand in ('shelfmade', 'mindlore') and os.environ.get('AUTO_APPROVE_SHORTS') == '1':
+                if okq and brand in ('shelfmade', 'mindlore') and os.environ.get('AUTO_APPROVE_SHORTS') == '1' and 'story' not in z.stem:   # story Shorts stay manual until the owner approves the format
                     try:
                         auto_approve(out.strip(), brand, data)
                     except Exception as e:

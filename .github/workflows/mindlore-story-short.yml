@@ -1,0 +1,46 @@
+name: mindlore-story-short
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many story Shorts to write and build'
+        default: '2'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu fonts-liberation
+      - name: Python packages
+        run: pip install --quiet pillow numpy edge-tts requests
+      - name: Write and build story Shorts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          COUNT: ${{ github.event.inputs.count || '2' }}
+        run: |
+          mkdir -p out gh-state
+          python story_short.py "$COUNT" || true
+          python gh_story_short.py "$COUNT"
+          ls -lh out/*.zip || true
+      - name: Publish to GitHub Release and save state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob; F=(out/ml-story-*.zip)
+          [ ${#F[@]} -eq 0 ] && { echo "Nothing built"; exit 1; }
+          TAG=mindlore-story-$(date -u +%Y%m%d-%H%M)
+          gh release create "$TAG" "${F[@]}" --title "MindLore story Shorts $TAG" --notes "Built automatically. Review before posting. Nothing is posted automatically."
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add -f gh-state/built-story-shorts.json story-shorts data/mindlore/story-shorts.json; git commit -m "Record story Shorts"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push && break; sleep 8; done

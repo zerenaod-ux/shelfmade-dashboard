@@ -417,8 +417,8 @@ PROP_KW = [('dog', r'dogs?|puppy|puppies|wolf|wolves'), ('cat', r'cats?|kitten')
     ('phone', r'phones?|screens?|apps?|scroll\w*|notification\w*|social media|online'), ('house', r'home|house|room|family|kitchen'), ('eye', r'eyes?|saw|watch\w*|notice\w*|stare\w*|gaze|observ\w*'), ('heart', r'love|loved|heart|emotion\w*|feelings?|fear|grief|joy'),
     ('moon', r'moon|night|midnight'), ('sun', r'sun|morning|dawn|sunrise|alarm'), ('crowd', r'people|crowd|others|social|group|society|friends?|everyone|strangers?'), ('chart', r'percent|study|studies|research\w*|data|evidence|experiments?|survey|scientists?'),
     ('lock', r'habits?|stuck|trap\w*|secret|hidden|locked'), ('scroll', r'ancient|history|century|empire|philosopher'), ('bulb', r'idea|insight|realiz\w+|understand\w*|discover\w*|answer|learn\w*'), ('question', r'why|how come|mystery|puzzle|wonder\w*|question')]
-BG_KW = [('desert', r'desert|sahara|dunes?|sand|camels?|egypt\w*'), ('ocean', r'ocean|sea|beach|waves?|swim\w*|island|water'), ('space', r'space|planets?|universe|galaxy|cosmos|astronaut|stars'), ('mountain', r'mountains?|climb\w*|summit|cliffs?|hik\w+'),
-    ('forest', r'forest|woods|jungle|wild|hunt\w*|ancestors?|survival|caves?'), ('history', r'ancient|history|centur\w+|empire|rome|roman|greek|greece|kings?|philosopher\w*|medieval|castle|pharaoh'), ('city', r'cities|city|street|traffic|urban|downtown|commut\w*|strangers?|crowds?'),
+BG_KW = [('desert', r'desert|sahara|kalahari|savanna|dunes?|sand|camels?|egypt\w*|africa\w*|tanzania'), ('ocean', r'ocean|sea|beach|waves?|swim\w*|island|water'), ('space', r'space|planets?|universe|galaxy|cosmos|astronaut|stars'), ('mountain', r'mountains?|climb\w*|summit|cliffs?|hik\w+'),
+    ('forest', r'forest|woods|jungle|wild|hunt\w*|gatherers?|foraging|foragers?|ancestors?|survival|caves?'), ('history', r'ancient|history|centur\w+|empire|rome|roman|greek|greece|kings?|philosopher\w*|medieval|castle|pharaoh'), ('city', r'cities|city|street|traffic|urban|downtown|commut\w*|strangers?|crowds?'),
     ('bedroom', r'bed|sleep\w*|dream\w*|insomnia|tired|midnight'), ('night', r'night|dark|moon'), ('office', r'office|job|jobs|work|boss|career|meeting|desk|emails?|computer'), ('school', r'school|class\w*|teacher|students?|exam|lab|experiments?|research\w*|scientists?|studies|study'),
     ('stage', r'audience|speech|perform\w*|stage|speaking|applause'), ('home', r'home|house|room|kitchen|family|apartment|couch'), ('park', r'park|walk\w*|garden|grass|picnic|outdoor\w*|dog|dogs'), ('brain', r'brain|neurons?|mind|memory|memories|thought\w*|conscious\w*|psycholog\w*|habits?|emotion\w*')]
 ACT_KW = [('run', r'run|running|chas\w+|flee\w*|rush\w*|sprint\w*|escap\w*|hurry'), ('sleep', r'asleep|fall asleep|sleeping|nap|snor\w+|bed'), ('walk', r'walk\w*|travel\w*|journey|wander\w*|march\w*|explor\w*'), ('jump', r'jump\w*|leap\w*|bounce\w*|spike|surge|boost'),
@@ -671,10 +671,10 @@ def f1(px): return font(px / K)
 def vframe(img, now):
     """9:16 Short layout: title on top, the 16:9 scene in the middle, big captions below, call to action at the bottom."""
     V = Image.new('RGB', (1080, 1920), PAPER); d = ImageDraw.Draw(V)
-    V.paste(img.resize((1080, 608), Image.LANCZOS), (0, 470))
+    V.paste(img.crop((160, 0, 1120, 720)).resize((1080, 810), Image.LANCZOS), (0, 420))   # centre of the scene, bigger
     d.rounded_rectangle([60, 70, 330, 130], radius=16, fill=BLUE, outline=INK, width=4); d.text((195, 100), 'MindLore', font=f1(36), fill=WHITE, anchor='mm')
-    y = 175
-    for ln in wrap(G['vtitle'], 64 / 1.0, 940)[:4]: d.text((540, y), ln, font=f1(64), fill=INK, anchor='ma'); y += 78
+    y = 160
+    for ln in wrap(G['vtitle'], 60 / 1.0, 940)[:3]: d.text((540, y), ln, font=f1(60), fill=INK, anchor='ma'); y += 72
     ci = max(0, bisect.bisect_right(G['cstarts'], now) - 1); ch = G['chunks'][ci]
     if now <= ch[-1]['e'] + .6:
         size = 70; lines = []; cur = []
@@ -683,7 +683,7 @@ def vframe(img, now):
             if cur and f1(size).getlength(t) > 900: lines.append(cur); cur = [w]
             else: cur.append(w)
         if cur: lines.append(cur)
-        top = 1150; hh = len(lines) * 96 + 40
+        top = 1260; hh = len(lines) * 96 + 40
         d.rounded_rectangle([60, top, 1020, top + hh], radius=30, fill=INK)
         for li, ln in enumerate(lines):
             txt = ' '.join(x['w'] for x in ln); x = 540 - f1(size).getlength(txt) / 2
@@ -695,6 +695,7 @@ def vframe(img, now):
     return V.tobytes()
 def short_script(script):
     """First ~100-125 words of section 1 (whole sentences) plus a call to action, as a one-section script."""
+    if script.get('story_short'): return script   # story Shorts are complete as written (they loop back to their own opening line)
     sents = split_sentences(script['sections'][0]['narration']); out = []; n = 0
     for st in sents:
         out.append(st); n += len(st.split())
@@ -765,6 +766,10 @@ def build(sid, out, vert=False):
         desc += ml_series.footer({'public_title': script.get('public_title'), 'book_title': script.get('title'), 'author': script.get('author'), 'source_url': script.get('source_url')})
     except Exception:
         desc += '\n\nSource: ' + str(script.get('source_url', ''))
+    try:
+        import story_rules; ev = story_rules.evidence_lines(script)
+        if ev: desc += '\n\nEvidence mentioned in this video:\n- ' + '\n- '.join(ev)
+    except Exception: pass
     try:
         import hashtags; desc += '\n\n' + hashtags.mindlore(script.get('hook', '') + ' ' + script.get('title', ''), 'full')
     except Exception: desc += '\n\n#psychology #MindLore'
