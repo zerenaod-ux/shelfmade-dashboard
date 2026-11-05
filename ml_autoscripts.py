@@ -391,7 +391,7 @@ def make_one():
         except Exception:
             pass
     prompt += extra
-    for attempt in range(4):
+    for attempt in range(6):
         d = _call(prompt)
         if not isinstance(d, dict):
             continue
