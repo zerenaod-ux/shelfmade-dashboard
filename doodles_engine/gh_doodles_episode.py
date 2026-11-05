@@ -158,6 +158,13 @@ def stitch(work, ep, sc, subs):
         import music_lab
         mood = {'tense': 'dramatic', 'hopeful': 'warm', 'suspense': 'mysterious', 'sad': 'reflective'}.get(sc[0]['story'].get('mood', 'curious'), sc[0]['story'].get('mood', 'curious'))
         music = music_lab.track(mood); log('music', music)
+        try:
+            import music_director
+            try: _w = sum(len(l['text'].split()) for s in sc for sh in s['story']['shots'] for l in sh['lines'])
+            except Exception: _w = None
+            _b = music_director.make_bed('doodles', 'full', json.dumps(sc[0]['story'], default=str)[:4000], total, work / 'bed.wav', mood=sc[0]['story'].get('mood'), words=_w, key=str(work.name))
+            if _b: music = Path(_b['path']); log('music bed', _b['tracks'])
+        except Exception as e: log('music director skipped:', e)
     except Exception as e: log('music unavailable:', e)
     final = work / 'final.mp4'
     if music:

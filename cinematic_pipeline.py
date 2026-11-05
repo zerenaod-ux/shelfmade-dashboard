@@ -130,8 +130,15 @@ def render(script,folder,chapters,assets):
   cmd+=['-filter_complex',';'.join(filters),'-map',f'[{prev}]','-map',f'{len(clips)}:a','-t',str(c['duration']),'-c:v','libx264','-preset','veryfast','-crf','20','-threads','2','-c:a','aac','-ar','24000','-ac','1',str(out)];run(cmd);run(['ffmpeg','-v','error','-i',str(out),'-f','null','-'],timeout=300);checkpoint.seal(folder,'chapter-'+str(c['index']),chapter_identity,[out]);print('Rendered chapter',c['index']+1,flush=True)
  (work/'video.txt').write_text(''.join(f"file '{p.name}'\n" for p in outputs));run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',str(work/'video.txt'),'-c','copy',str(work/'joined.mp4')]);run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',str(work/'audio.txt'),str(work/'narration.wav')])
  import music_lab
- try:music=music_lab.track(music_lab.mood_for(json.dumps(script,default=str)))
- except Exception:music=Path(__file__).resolve().parent/'music'/'calm.mp3'
+ music=None
+ try:
+  import music_director
+  _b=music_director.make_bed(os.environ.get('BRAND') or 'shelfmade','full' if total>75 else 'short',json.dumps(script,default=str)[:6000],total,work/'bed.wav',words=len(timed_words),key=str(script.get('book_id',''))+'|'+str(script.get('title','')))
+  if _b:music=Path(_b['path'])
+ except Exception as _e:print('music director skipped:',_e,flush=True)
+ if music is None:
+  try:music=music_lab.track(music_lab.mood_for(json.dumps(script,default=str)))
+  except Exception:music=Path(__file__).resolve().parent/'music'/'calm.mp3'
  if not music.is_file():raise ValueError('Background music file is missing: '+str(music))
  base=work/'base.mp4';run(['ffmpeg','-v','error','-y','-i',str(work/'joined.mp4'),'-i',str(work/'narration.wav'),'-stream_loop','-1','-i',str(music),'-filter_complex',f'[1:a]loudnorm=I=-17:TP=-2:LRA=9,asplit=2[v][sc];[2:a]aresample=48000,volume=0.5[m0];[m0][sc]sidechaincompress=threshold=0.03:ratio=3:attack=40:release=500[m];[v][m]amix=inputs=2:duration=first:dropout_transition=2:normalize=0,alimiter=limit=0.95,afade=t=out:st={total-1.5}:d=1.5[a]','-map','0:v','-map','[a]','-t',str(total),'-c:v','copy','-c:a','aac','-b:a','192k','-movflags','+faststart',str(base)])
  art(script,shots[0]['source'],folder,shots[0]['source_start'])

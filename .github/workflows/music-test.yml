@@ -1,0 +1,34 @@
+name: music-test
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build sample beds with the music director
+        run: |
+          mkdir -p samples
+          python3 - <<'PY'
+          import music_director as d, subprocess, json
+          cases=[('shelfmade','short','a quiet life, memory and regret, the old house',32,'reflective',70),
+                 ('shelfmade','full','a gothic night, fear and shadow in the castle',150,'dramatic',330),
+                 ('mindlore','short','why your brain tricks you, bias and attention',34,'curious',105),
+                 ('mindlore','full','the hidden habit of procrastination and the mind',150,'mysterious',420),
+                 ('doodles','short','funny boss coffee argument',35,'playful',115),
+                 ('doodles','full','awkward neighbour prank and snacks',150,'playful',430)]
+          for i,(b,k,t,tot,m,w) in enumerate(cases):
+              name=f'samples/{i+1}-{b}-{k}'
+              r=d.make_bed(b,k,t,tot,name+'.wav',mood=m,words=w,key='sample%d'%i)
+              print(name,r)
+              if r: subprocess.run(['ffmpeg','-v','error','-y','-i',name+'.wav','-b:a','128k',name+'.mp3'],check=True)
+          PY
+          ls -la samples
+      - name: Publish samples to a release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view music-samples >/dev/null 2>&1 || gh release create music-samples --title "Music samples" --notes "Auto-made test beds from the music director (no voice)."
+          gh release upload music-samples samples/*.mp3 --clobber

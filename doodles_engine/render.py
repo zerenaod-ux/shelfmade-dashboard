@@ -351,6 +351,13 @@ def mix(work,silent,wav_path,total,mood):
         mood={'tense':'dramatic','hopeful':'warm','suspense':'mysterious','sad':'reflective'}.get(mood,mood);_key=work.name
         _v=[music_lab.track(mood)]+sorted((music_lab.BASE/'music').glob(mood+'_v*.mp3'));_h=int(hashlib.md5(_key.encode()).hexdigest(),16);music=_v[_h%len(_v)];_off=(_h>>8)%50;print('music:',music.name,'start',_off,'s',flush=True)
     except Exception as ex:print('music unavailable:',ex)
+    try:
+        sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
+        import music_director
+        _st=json.loads((work/'story.json').read_text());_w=sum(len(l.get('text','').split()) for sh in _st.get('shots',[]) for l in sh.get('lines',[]))
+        _b=music_director.make_bed('doodles','short',json.dumps(_st)[:4000],total,work/'bed.wav',mood=_st.get('mood'),words=_w,key=work.name)
+        if _b:music=Path(_b['path']);_off=0
+    except Exception as ex:print('music director skipped:',ex)
     if music:
         flt=(f'[1:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,asplit=2[vo][sc];'
              f'[2:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,volume=0.9,afade=t=in:st=0:d=0.15,afade=t=out:st={total-0.2:.2f}:d=0.2[mu];'
