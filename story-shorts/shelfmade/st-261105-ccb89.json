@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261105-ccb89",
+ "title": "Apology",
+ "author": "Plato (Socrates)",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Do your emails kill your soul?",
+ "hook": "You spend most of your day answering emails.",
+ "thumbnail_headline": "EMAILS VS SOCRATES",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your day answering emails. Socrates claimed that chasing external tasks clouds the soul. In his Apology, he said the unexamined life isn’t worth living. Psychologist James Pennebaker at the University of Texas showed expressive writing helps health. The result? About 20 minutes a day for four days improved immune markers. Later, the Harvard Study of Adult Development found reflective people report higher life satisfaction. That pattern is called psychological introspection benefits across cultures. A 2015 UCLA mindfulness trial found about 30 minutes of daily meditation lowered cortisol levels. The result? Participants reported about 15 percent less perceived stress. Similar findings appear in Buddhist traditions, known as mindfulness practice. So why do we assume constant busyness equals progress? The answer: research shows a few minutes of self‑reflection boost decision‑making and wellbeing. That's it. So next time you clear your inbox, remember Socrates warned against an unexamined life. You spend"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Expressive writing improves immune markers",
+   "who": "James Pennebaker",
+   "year": "1997",
+   "place": "University of Texas at Austin"
+  },
+  {
+   "claim": "Reflective people have higher life satisfaction",
+   "who": "Harvard Study of Adult Development",
+   "year": "2015",
+   "place": "Harvard University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Apology by Plato (Socrates)"
+}

@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261105-41a05",
+ "title": "The Way of Peace",
+ "author": "James Allen",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Your hustle vs real peace: what science says",
+ "hook": "You think you need constant hustle to feel at peace.",
+ "thumbnail_headline": "HUSTLE VS PEACE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think you need constant hustle to feel at peace. But James Allen wrote in 1907 that peace comes from mastering thoughts. He said doing more won’t bring calm. Modern science says the opposite: stress hormones stay high when we never pause. Your mind never rests, and fatigue builds up. The result? A 2014 Johns Hopkins meta‑analysis found mindfulness cut anxiety by about 30 %. That's it. Richard Davidson’s 2003 study at Wisconsin‑Madison showed eight weeks of meditation lowered amygdala activity. It cut stress responses by about 30 %. The brain shows more gray matter in calm practitioners. Those findings echo Allen’s claim that inner calm beats endless effort. So why do we assume busyness equals progress? Because culture rewards visible output, not quiet focus. Yet research shows quiet minds boost creativity and health. Studies link lower cortisol to better sleep and immunity. So next time you chase another deadline, remember calm beats hustle. You think you need constant hustle to feel at peace."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "mindfulness cut anxiety by about 30 %",
+   "who": "Johns Hopkins University researchers (Goyal et al.)",
+   "year": "2014",
+   "place": "USA"
+  },
+  {
+   "claim": "eight weeks of meditation lowered amygdala activity by about 30 %",
+   "who": "Richard Davidson",
+   "year": "2003",
+   "place": "University of Wisconsin‑Madison, USA"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Way of Peace by James Allen"
+}
