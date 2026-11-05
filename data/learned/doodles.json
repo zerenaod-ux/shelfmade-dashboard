@@ -1,24 +1,15 @@
 {
  "short": {
   "do_more": [
-   "Lead with visual paradoxes or absurd contradictions (like the Mug) rather than dry explanations of cognitive biases.",
-   "Use concrete, everyday objects (mugs, raincoats) to ground abstract psychology concepts instead of generic scenarios.",
-   "Prioritize titles that present a specific, tangible 'thing' or 'situation' over broad questions about brain mechanics."
+   "Use concise, curiosity\u2011driven titles like 'The Rehearsal Trap' that hint at a paradox or trap",
+   "Keep the opening 5 seconds packed with a visual gag or punchline to hook viewers",
+   "Maintain a tight runtime around 40 seconds; avoid any filler or long intros",
+   "Emphasize absurdity\u2014over\u2011exaggerated scenarios that make psychological concepts funny",
+   "Add a clear, memorable punchline or twist at the end to encourage sharing"
   ],
-  "avoid": [
-   "Using tech or computer metaphors (e.g., 'tabs open') which seem to underperform compared to physical/prop-based humor.",
-   "Focusing on high-relatability but low-visual-impact topics like 'choice overload' or 'sunk cost' without a strong visual anchor.",
-   "Relying on standard explanatory hooks; the data suggests the 'what is this weird object?' curiosity gap is stronger."
-  ],
-  "title_style": "Use concrete noun phrases that imply a visual contradiction or specific prop (e.g., 'The [Object] Paradox') rather than abstract concept names or questions.",
-  "next_tests": [
-   "Create a 'tight' (30s) version of a top-performing concept (e.g., Mug Paradox) to test if shorter runtime boosts VPD.",
-   "Flip a bottom-performing topic (e.g., Sunk Cost) into a visual paradox format and compare performance.",
-   "Test a new topic using a non-tech, physical prop metaphor to see if the 'object-first' hook is the actual driver."
-  ],
-  "n": 7,
-  "best_vpd": 2.73,
-  "best_title": "The Mug Paradox"
+  "n": 9,
+  "best_vpd": 2.89,
+  "best_title": "The Rehearsal Trap"
  },
  "updated": "2026-11-05"
 }

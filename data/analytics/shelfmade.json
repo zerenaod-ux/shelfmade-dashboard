@@ -176,16 +176,6 @@
    "comments": 0
   },
   {
-   "id": "nuQLBWcyPzQ",
-   "title": "Plato had a warning for you.",
-   "published": "2026-11-04T18:02:59Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 39,
-   "likes": 2,
-   "comments": 0
-  },
-  {
    "id": "0OxyEvY3YvU",
    "title": "Moreover, nothing is good but virtue, and nothing but vice is bad",
    "published": "2026-11-03T01:26:52Z",
@@ -226,10 +216,30 @@
    "comments": 0
   },
   {
+   "id": "nuQLBWcyPzQ",
+   "title": "Plato had a warning for you.",
+   "published": "2026-11-04T18:02:59Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 2,
+   "comments": 0
+  },
+  {
    "id": "sGfMrVc9aVQ",
    "title": "Your moral character must be not only pure, but, like Caesar\u2019s wife, unsuspected",
    "published": "2026-11-03T03:00:44Z",
    "duration": "PT33S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "G4c2nrTsFNc",
+   "title": "But of what use is his knowledge, if he may not communicate it?",
+   "published": "2026-10-20T19:33:34Z",
+   "duration": "PT21S",
    "privacy": "public",
    "views": 35,
    "likes": 1,
@@ -241,18 +251,8 @@
    "published": "2026-11-03T01:26:20Z",
    "duration": "PT1M1S",
    "privacy": "public",
-   "views": 35,
+   "views": 34,
    "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "G4c2nrTsFNc",
-   "title": "But of what use is his knowledge, if he may not communicate it?",
-   "published": "2026-10-20T19:33:34Z",
-   "duration": "PT21S",
-   "privacy": "public",
-   "views": 35,
-   "likes": 1,
    "comments": 0
   },
   {
@@ -336,22 +336,22 @@
    "comments": 0
   },
   {
-   "id": "BiRfxu5fbko",
-   "title": "Why is Bacon's Essays still read today?",
-   "published": "2026-11-04T03:01:07Z",
-   "duration": "PT1M3S",
-   "privacy": "public",
-   "views": 24,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "epWlk-Ra3Rs",
    "title": "Let thus much be accepted as a definition of Knowledge",
    "published": "2026-10-29T17:02:58Z",
    "duration": "PT27S",
    "privacy": "public",
    "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "BiRfxu5fbko",
+   "title": "Why is Bacon's Essays still read today?",
+   "published": "2026-11-04T03:01:07Z",
+   "duration": "PT1M3S",
+   "privacy": "public",
+   "views": 23,
    "likes": 0,
    "comments": 0
   },
@@ -662,6 +662,16 @@
    "duration": "PT2M54S",
    "privacy": "public",
    "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "JvIgBaYCJdU",
+   "title": "This Studies in Pessimism line is uncomfortable.",
+   "published": "2026-11-05T18:03:48Z",
+   "duration": "PT57S",
+   "privacy": "public",
+   "views": 6,
    "likes": 0,
    "comments": 0
   },

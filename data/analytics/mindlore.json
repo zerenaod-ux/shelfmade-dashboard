@@ -246,6 +246,16 @@
    "comments": 0
   },
   {
+   "id": "SyRDyfv-noQ",
+   "title": "The Art Of Logical Thinking",
+   "published": "2026-11-03T03:01:45Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 2,
+   "comments": 0
+  },
+  {
    "id": "sAcQkvFxvt4",
    "title": "The Law Of The New Thought",
    "published": "2026-11-02T03:01:15Z",
@@ -276,16 +286,6 @@
    "comments": 0
   },
   {
-   "id": "SyRDyfv-noQ",
-   "title": "The Art Of Logical Thinking",
-   "published": "2026-11-03T03:01:45Z",
-   "duration": "PT49S",
-   "privacy": "public",
-   "views": 26,
-   "likes": 2,
-   "comments": 0
-  },
-  {
    "id": "EzKs0ef9QYY",
    "title": "Mental Efficiency",
    "published": "2026-11-02T18:04:23Z",
@@ -312,6 +312,16 @@
    "duration": "PT50S",
    "privacy": "public",
    "views": 25,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "vf5N9t4z-x0",
+   "title": "The part of Psychology nobody mentions.",
+   "published": "2026-11-05T03:01:46Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 24,
    "likes": 1,
    "comments": 0
   },
@@ -356,6 +366,16 @@
    "comments": 0
   },
   {
+   "id": "xBaiLW-oBrs",
+   "title": "Nobody warns you about Psychology Of Revolution.",
+   "published": "2026-11-04T18:04:07Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "awhOFsaSkXA",
    "title": "The Power Of Concentration",
    "published": "2026-11-01T23:01:50Z",
@@ -386,16 +406,6 @@
    "comments": 0
   },
   {
-   "id": "xBaiLW-oBrs",
-   "title": "Nobody warns you about Psychology Of Revolution.",
-   "published": "2026-11-04T18:04:07Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 22,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "oKVOydsLxa4",
    "title": "How We Think by John Dewey: The Hidden Science of Your Mind",
    "published": "2026-06-23T20:40:26Z",
@@ -416,10 +426,10 @@
    "comments": 0
   },
   {
-   "id": "vf5N9t4z-x0",
-   "title": "The part of Psychology nobody mentions.",
-   "published": "2026-11-05T03:01:46Z",
-   "duration": "PT1M4S",
+   "id": "XzN7lxh73iM",
+   "title": "Almost everyone gets How We Think wrong.",
+   "published": "2026-11-04T03:01:51Z",
+   "duration": "PT1M10S",
    "privacy": "public",
    "views": 21,
    "likes": 1,
@@ -443,16 +453,6 @@
    "privacy": "public",
    "views": 21,
    "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "XzN7lxh73iM",
-   "title": "Almost everyone gets How We Think wrong.",
-   "published": "2026-11-04T03:01:51Z",
-   "duration": "PT1M10S",
-   "privacy": "public",
-   "views": 20,
-   "likes": 1,
    "comments": 0
   },
   {
@@ -641,7 +641,7 @@
    "published": "2026-11-03T18:03:06Z",
    "duration": "PT1M6S",
    "privacy": "public",
-   "views": 11,
+   "views": 12,
    "likes": 1,
    "comments": 0
   },
@@ -992,6 +992,16 @@
    "duration": "PT2M56S",
    "privacy": "public",
    "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "xGaGRBalAvQ",
+   "title": "M\u00fcnsterberg would hate how you live.",
+   "published": "2026-11-05T18:04:28Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 0,
    "likes": 0,
    "comments": 0
   },

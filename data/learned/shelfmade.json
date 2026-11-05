@@ -1,47 +1,48 @@
 {
  "short": {
   "do_more": [
-   "Use the specific quote or lesson as the title (e.g., 'Know your enemy'), not a meta-description or summary.",
-   "Focus on tactical, actionable, or stoic-style wisdom (Sun Tzu, practical self-discipline) rather than broad philosophical overviews.",
-   "Keep titles under 15 words where possible; the top performers are concise and direct, while bottom performers are long, narrative-heavy, or use emojis.",
-   "Avoid emojis in titles entirely; the top 5 videos have zero emojis, while the bottom 25 all feature them."
+   "Use concise titles (5\u20117 words) that pose a direct question or statement",
+   "Drop emojis and the \u201cin 60 seconds\u201d tagline",
+   "Keep videos around 30\u202fs for tighter pacing",
+   "Highlight actionable insight from the quote",
+   "Mention the book only if it adds immediate value"
   ],
   "avoid": [
-   "Do not use 'in 60 seconds' or 'summary' framing in the title; it signals low value and feels like a textbook clip.",
-   "Stop using narrative hooks like 'He spent his youth...' or 'The man who...'; the algorithm and audience here prefer the direct insight over the backstory.",
-   "Avoid broad, abstract topics like 'Justice,' 'Morality,' or 'Ideal Government' without a specific, sharp angle or quote to anchor them."
+   "Avoid excessive emojis or emojis in the title",
+   "Avoid long, narrative titles over 10 words",
+   "Avoid generic \u201cin 60 seconds\u201d phrasing",
+   "Avoid over\u2011use of hashtags in the title"
   ],
-  "title_style": "Winning titles are direct, quote-centric, or present a single sharp tactical lesson without emojis or meta-commentary.",
+  "title_style": "A short, question or imperative hook that invites reflection, free of emojis and long descriptive phrases",
   "next_tests": [
-   "Publish 3 Shorts using the exact title format of the top performer ('[Short Quote/Lesson]') with no emojis and compare VPD to the previous week's narrative-style titles.",
-   "Test a 30-second tight cut of a high-performing quote (like Sun Tzu) vs. a 42-second standard cut to see if brevity boosts retention on the 'war material' style topics.",
-   "Create a series of 3 videos on 'Stoic Tactics' using direct quotes as titles to see if a specific sub-niche cluster drives more serial viewing than random book picks."
+   "Test 5\u2011word titles versus 10\u2011word titles on the same content",
+   "Compare 30\u2011s videos to 45\u2011s videos for the same hook",
+   "Run a A/B test adding the book name to the title versus omitting it"
   ],
   "n": 102,
-  "best_vpd": 24.53,
+  "best_vpd": 23.55,
   "best_title": "You can turn over a new leaf every hour if you choose"
  },
  "full": {
   "do_more": [
-   "Start videos with a direct question that challenges the viewer\u2019s assumptions",
-   "Use concise, curiosity\u2011driven titles (question or bold statement)",
-   "Keep the core hook within the first 30\u202fseconds, aiming for ~30\u202fs tight segments",
-   "Tie classic book ideas to modern everyday dilemmas",
-   "Add a quick visual or text prompt that invites viewers to comment their answer"
+   "Start each script with a direct, curiosity\u2011driven question that targets the viewer\u2019s self\u2011belief or daily life",
+   "Keep the core segment tight (~30\u202fs) and focus on one bite\u2011size insight rather than a broad summary",
+   "Use \u201cyou\u201d language and personal relevance to create an emotional hook",
+   "Add a brief, vivid anecdote or surprising fact within the first 5\u202fseconds to boost intrigue"
   ],
   "avoid": [
-   "Long explanatory intros without a hook",
-   "Descriptive titles that read like a summary",
-   "Videos longer than 45\u202fseconds before the main point appears"
+   "Long, descriptive titles that read like a book subtitle",
+   "Generic \u201csummary\u201d format that lists facts without a personal hook",
+   "Over\u2011extending the video to a standard ~42\u2011second length without a clear focal point"
   ],
-  "title_style": "Ask a punchy, personal question or make a bold claim that links the ancient idea to today\u2019s life",
+  "title_style": "Use a short, punchy question or bold statement that puts the viewer\u2019s own experience front\u2011and\u2011center (e.g., \u201cWhere does your time really go?\u201d)",
   "next_tests": [
-   "Compare a 30\u2011second tight edit vs a 45\u2011second standard edit for the same quote",
-   "Run two title formats: question vs statement, measure VPD",
-   "Add a \u201cwhat would you do?\u201d prompt at the end and track comment/share rates"
+   "Compare tight 30\u2011second edits vs standard 42\u2011second edits for the same topic",
+   "Run A/B thumbnails: one with a bold question text vs a plain book\u2011cover image",
+   "Try opening each video with a surprising fact or anecdote before the main question"
   ],
   "n": 11,
-  "best_vpd": 1.19,
+  "best_vpd": 1.16,
   "best_title": "Question what you know"
  },
  "updated": "2026-11-05"
