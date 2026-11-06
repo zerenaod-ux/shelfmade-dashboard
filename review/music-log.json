@@ -146,5 +146,21 @@
   "brand": "mindlore",
   "kind": "short",
   "date": "2026-11-05"
+ },
+ "The Whiteboard Nod | Leo & Mia #5": {
+  "styles": [
+   "dd_chill"
+  ],
+  "tracks": [
+   "dd_chill_03"
+  ],
+  "mood": "dramatic",
+  "pace": 1.76,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-06"
  }
 }
