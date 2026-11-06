@@ -2,7 +2,7 @@ name: bio-page
 on:
   workflow_dispatch:
   push:
-    paths: ['gen_bio.py', 'books.json', 'affiliate.py', 'affiliate-config.json', '.github/workflows/bio.yml']
+    paths: ['gen_bio.py', 'books.json', 'affiliate.py', 'affiliate-config.json', 'docs/index.html', '.github/workflows/bio.yml']
   schedule:
     - cron: '45 12 * * *'
 permissions:
@@ -21,6 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 gen_bio.py
+      - run: mkdir -p bio/review && cp docs/index.html bio/review/index.html   # phone review page lives at /review/ next to the bio page
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
