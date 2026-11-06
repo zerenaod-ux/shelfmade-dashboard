@@ -1,0 +1,44 @@
+name: review-publish
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+  actions: write
+concurrency:
+  group: review-publish
+  cancel-in-progress: false
+jobs:
+  open:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: ffmpeg
+        run: command -v ffprobe >/dev/null || timeout 240 sudo apt-get install -y -qq --no-install-recommends ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)
+      - name: Open review issues for new videos
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CLOUDINARY_JSON: ${{ secrets.CLOUDINARY_JSON }}
+          CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
+          AUTO_APPROVE_SHORTS: ${{ vars.AUTO_APPROVE_SHORTS }}
+        run: python review_publish.py
+      - name: Start overdue scheduled jobs (GitHub delays or skips crons)
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python kick.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "review-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f review/seen.json review/music-log.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "review: seen"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
