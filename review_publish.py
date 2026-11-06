@@ -200,6 +200,9 @@ def main():
                     mt = re.search(r'--- TITLE ---\s*(.*?)\s*--- DESCRIPTION ---\s*(.*)', raw, re.S)
                     title = (mt.group(1).strip().splitlines()[0] if mt and mt.group(1).strip() else z.stem)[:100]
                     desc = (mt.group(2).strip() if mt else raw.strip())[:4900]
+                    try:
+                        import affiliate; desc = affiliate.add(desc, z.stem.split('-', 1)[1] if '-' in z.stem else z.stem, 'mindlore' if ml_full else 'shelfmade')
+                    except Exception as _e: print('affiliate skipped:', str(_e)[:80])
                     okq, ql = qc(longs[0], title, desc, True, set(seen['titles']))
                     data = {'kind': 'mlfull' if ml_full else 'shfull', 'brand': 'mindlore' if ml_full else 'shelfmade', 'tag': tag, 'zip': z.name, 'title': title, 'description': desc}
                     rel = 'https://github.com/%s/releases/tag/%s' % (REPO, tag)
