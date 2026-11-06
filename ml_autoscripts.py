@@ -438,6 +438,10 @@ def make_one():
         extra += learned.guidance('shelfmade' if SH else 'mindlore', 'full')
     except Exception:
         pass
+    try:   # WINNERS: go deeper on topics our viewers already proved (winners.py)
+        import winners; extra += winners.follow_up('shelfmade' if SH else 'mindlore')
+    except Exception:
+        pass
     if not SH:
         extra += ML_RULES
     try:   # STRICT STORYTELLING RULES (story_rules.py): every new script is told this way
