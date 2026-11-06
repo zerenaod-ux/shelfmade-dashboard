@@ -798,7 +798,7 @@ def build(sid, out, vert=False):
     mix = work / 'mix.m4a'; bed = None
     try:
         sys.path.insert(0, str(BASE)); import music_director
-        info = music_director.make_bed('shelfmade' if SM else 'mindlore', 'full', json.dumps(script)[:6000], total, work / 'bed.wav', words=len(words), key=str(script.get('book_id', '')) + '|' + str(script.get('public_title', '')))
+        info = music_director.make_bed('shelfmade' if SM else 'mindlore', 'full', json.dumps(script)[:6000], total, work / 'bed.wav', words=len(words), sections=[str(_s.get('narration', '')) for _s in script.get('sections', [])], key=str(script.get('book_id', '')) + '|' + str(script.get('public_title', '')))
         bed = info['path'] if info else None
     except Exception as e: print('ml2d: music skipped:', str(e)[:100], flush=True)
     if bed:

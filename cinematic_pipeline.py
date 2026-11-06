@@ -133,7 +133,7 @@ def render(script,folder,chapters,assets):
  music=None
  try:
   import music_director
-  _b=music_director.make_bed(os.environ.get('BRAND') or 'shelfmade','full' if total>75 else 'short',json.dumps(script,default=str)[:6000],total,work/'bed.wav',words=len(timed_words),key=str(script.get('book_id',''))+'|'+str(script.get('title','')))
+  _b=music_director.make_bed(os.environ.get('BRAND') or 'shelfmade','full' if total>75 else 'short',json.dumps(script,default=str)[:6000],total,work/'bed.wav',words=len(timed_words),sections=[str(_s.get('narration','')) for _s in script.get('sections',[])],key=str(script.get('book_id',''))+'|'+str(script.get('title','')))
   if _b:music=Path(_b['path'])
  except Exception as _e:print('music director skipped:',_e,flush=True)
  if music is None:

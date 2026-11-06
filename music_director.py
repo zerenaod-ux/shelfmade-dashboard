@@ -95,7 +95,22 @@ def pick(brand, kind='short', mood=None, text='', pace=None, key='', avoid=(), n
         out.append(pool.pop(i)[1])
     return out
 
-def make_bed(brand, kind, text, total, out_path, mood=None, words=None, key='', gain=None):
+def _arc_tracks(brand, kind, sections, want, pace, key, shift):
+    """SECTION_MUSIC: one track per stretch of the video; the stretch's mood comes from the narration that plays during it."""
+    ws = [max(1, len(s.split())) for s in sections]; W = float(sum(ws)); segs = [''] * want; acc = 0
+    for s, w in zip(sections, ws):
+        j = min(want - 1, int(((acc + w / 2.0) / W) * want)); acc += w; segs[j] += ' ' + s
+    out, used = [], set()
+    for j, tx in enumerate(segs):
+        m = mood_for(tx) if tx.strip() else None
+        tr = pick(brand, kind, m, tx, pace, '%s|%d' % (key, j), avoid=used, n=1, shift=shift) or pick(brand, kind, m, tx, pace, '%s|%d' % (key, j), n=1, shift=shift)
+        if tr:
+            out += tr; used.add(tr[0]['id'])
+    print('music director: per-section moods', [mood_for(x) if x.strip() else None for x in segs], flush=True)
+    return out
+
+
+def make_bed(brand, kind, text, total, out_path, mood=None, words=None, key='', gain=None, sections=None):
     try:
         if os.environ.get('CE_DISABLE_MUSIC'): return None
         pace = (words / total) if (words and total) else None
@@ -107,7 +122,12 @@ def make_bed(brand, kind, text, total, out_path, mood=None, words=None, key='', 
             _expd = exp.take()
         except Exception:
             pass
-        tracks = pick(brand, kind, mood, text, pace, key, n=want, shift={'calm': -.15, 'lively': .15}.get(_ev, 0))
+        _sh = {'calm': -.15, 'lively': .15}.get(_ev, 0); tracks = None
+        if sections and want > 1 and len(sections) >= 2 and not os.environ.get('NO_SECTION_MUSIC'):
+            try: tracks = _arc_tracks(brand, kind, [str(x) for x in sections], want, pace, key, _sh)
+            except Exception as e: print('music director: per-section failed, one mood used:', str(e)[:80], flush=True)
+        if not tracks:
+            tracks = pick(brand, kind, mood, text, pace, key, n=want, shift=_sh)
         files = []
         for t in tracks:
             p = _ensure(t)
