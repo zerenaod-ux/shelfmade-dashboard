@@ -13,6 +13,7 @@ W, H, FPS = 1920, 1080, 30
 LAND = os.environ.get('EPISODE_LANDSCAPE') == '1'   # true 16:9 pictures (set by the workflow input)
 if LAND: os.environ['DOODLES_LANDSCAPE'] = '1'
 os.environ.setdefault('DOODLES_MOVE', os.environ.get('EPISODE_MOVE', '1'))   # subtle head/shoulder motion in full videos (render.py)
+CLEAN = LAND and os.environ.get('EPISODE_CLEAN', '1') != '0'   # full-screen 16:9, nothing drawn on top: no panel, clock, progress bar, chapter/intro/outro cards
 TAGS = '#psychology #mindset #animation #relatable #AnimationDoodles'
 FONTS = ['/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf', '/System/Library/Fonts/Supplemental/Arial Bold.ttf',
          '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf', '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']
@@ -134,21 +135,27 @@ def stitch(work, ep, sc, subs):
         segs.append(o); return secs
     card(tmp / 'intro.png', [ep['title']], ep['premise'], big=120)
     shutil.copy(tmp / 'intro.png', work / 'thumbnail.png')
-    chapters.append((t, 'Intro')); t += still('intro', tmp / 'intro.png', 5)
+    if not CLEAN: chapters.append((t, 'Intro')); t += still('intro', tmp / 'intro.png', 5)
     for j, (s, sd) in enumerate(zip(sc, subs)):
-        card(tmp / f'c{j}.png', ['%d / %d' % (j + 1, n), s['concept'].title()], '%s - %s' % (s['time'], s['setting']), big=110)
-        chapters.append((t, '%s (%s)' % (s['concept'].title(), s['time']))); t += still(f'c{j}', tmp / f'c{j}.png', 2.6)
+        if CLEAN: chapters.append((t, 'Intro' if j == 0 else '%s (%s)' % (s['concept'].title(), s['time'])))
+        else:
+            card(tmp / f'c{j}.png', ['%d / %d' % (j + 1, n), s['concept'].title()], '%s - %s' % (s['time'], s['setting']), big=110)
+            chapters.append((t, '%s (%s)' % (s['concept'].title(), s['time']))); t += still(f'c{j}', tmp / f'c{j}.png', 2.6)
         silent = sd / 'silent.mp4'; wav = sd / 'voice.wav'; d = probe(silent)
-        panel(tmp / f'p{j}.png', j + 1, n, s['concept'], s['time'])
         o = tmp / f'sc{j}.mp4'
+        if CLEAN:
+            ff('-i', silent, '-i', wav, '-vf', f'scale={W}:{H},format=yuv420p', '-map', '0:v', '-map', '1:a', '-t', f'{d:.3f}', *A, o)
+            segs.append(o); t += probe(o); log('stitched scene', j + 1, '/', n); continue
+        panel(tmp / f'p{j}.png', j + 1, n, s['concept'], s['time'])
         flt = ('[0:v][1:v]overlay=0:0,format=yuv420p[v]' if LAND else
                f'[0:v]split=2[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=40:6,eq=brightness=-0.15[bg];'
                f'[b]scale=-2:{H}[fg];[bg][fg]overlay=(W-w)/2:0[m];[m][1:v]overlay=0:0,format=yuv420p[v]')
         ff('-i', silent, '-i', tmp / f'p{j}.png', '-i', wav, '-filter_complex', flt, '-map', '[v]', '-map', '2:a', '-t', f'{d:.3f}', *A, o)
         segs.append(o); t += probe(o)
         log('stitched scene', j + 1, '/', n)
-    card(tmp / 'outro.png', ['Which trap was yours?'], 'Tell Leo and Mia in the comments. New story every week - subscribe so you do not miss the next one.', big=100)
-    still('outro', tmp / 'outro.png', 7)
+    if not CLEAN:
+        card(tmp / 'outro.png', ['Which trap was yours?'], 'Tell Leo and Mia in the comments. New story every week - subscribe so you do not miss the next one.', big=100)
+        still('outro', tmp / 'outro.png', 7)
     lst = tmp / 'list.txt'; lst.write_text(''.join("file '%s'\n" % p.resolve() for p in segs))
     plain = work / 'plain.mp4'; ff('-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', plain)
     total = probe(plain); music = None
