@@ -47,6 +47,14 @@ def _trending_14d(brand):
     return ''
 
 
+import re as _re
+_LEN = _re.compile(r'narrative|\blong\b|descriptive|\d+\s*[-\u2011 ]?\s*words?\b|word titles|short titles?|concise titles?', _re.I)   # DATAFIX 2026-11-05: length advice contradicted the data (best posts have long person-story titles)
+
+
+def _keep(items):
+    return [x for x in (items or []) if not _LEN.search(str(x))]
+
+
 def guidance(brand, kind='short'):
     for base in (Path('data/learned'), Path(__file__).resolve().parent / 'data' / 'learned', Path(__file__).resolve().parent.parent / 'data' / 'learned'):
         f = base / (brand + '.json')
@@ -55,6 +63,7 @@ def guidance(brand, kind='short'):
             top = d.get('updated', '?')
             d = d.get(kind) or d.get('full' if kind == 'short' else 'short') or d     # other format's notes when this one has none yet
             d.setdefault('updated', top)
+            d = dict(d); d['do_more'] = _keep(d.get('do_more')); d['avoid'] = _keep(d.get('avoid')); d.pop('title_style', None)
             if d.get('do_more') or d.get('avoid'):
                 t = '\nLEARNED FROM OUR REAL VIEWERS (updated %s, based on %s videos): ' % (d.get('updated', '?'), d.get('n', '?'))
                 if d.get('do_more'):
@@ -63,6 +72,7 @@ def guidance(brand, kind='short'):
                     t += 'DO LESS: ' + ' | '.join(d['avoid'][:5]) + '. '
                 if d.get('title_style'):
                     t += 'TITLE/HOOK STYLE THAT WORKS: ' + d['title_style'] + '. '
+                t += 'WHAT OUR NUMBERS SHOW: openings about a named person doing something specific get the most views; warning-style openers get the fewest. '
                 return t + 'Apply this, but keep every other rule above.\n' + trending(brand)
         except Exception:
             continue
