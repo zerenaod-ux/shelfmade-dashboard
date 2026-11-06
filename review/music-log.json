@@ -162,5 +162,31 @@
   "brand": "doodles",
   "kind": "short",
   "date": "2026-11-06"
+ },
+ "Is Your Suffering Actually Good for You? | Samuel Smiles": {
+  "styles": [
+   "sm_candle",
+   "sm_candle",
+   "sm_adventure",
+   "sm_library",
+   "sm_adventure",
+   "sm_adventure"
+  ],
+  "tracks": [
+   "sm_candle_01",
+   "ace_sm_candle_02",
+   "sm_adventure_05",
+   "sm_library_05",
+   "sm_adventure_02",
+   "ace_sm_adventure_01"
+  ],
+  "mood": "curious",
+  "pace": 2.37,
+  "exp": {
+   "music_energy": "calm"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-06"
  }
 }
