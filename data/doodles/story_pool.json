@@ -2538,7 +2538,7 @@
      {
       "who": "mia",
       "feel": "deadpan",
-      "text": "Leo, it’s only three PM."
+      "text": "Leo, it\u2019s only three PM."
      }
     ]
    },
@@ -2621,7 +2621,7 @@
      {
       "who": "mia",
       "feel": "deadpan",
-      "text": "It’s just Brenda asking for your shift."
+      "text": "It\u2019s just Brenda asking for your shift."
      }
     ]
    },
@@ -2664,7 +2664,7 @@
      {
       "who": "mia",
       "feel": "confident",
-      "text": "That's Task Paralysis—your brain sees big texts as heavy labor."
+      "text": "That's Task Paralysis\u2014your brain sees big texts as heavy labor."
      },
      {
       "who": "leo",
@@ -2757,7 +2757,7 @@
      {
       "who": "mia",
       "feel": "confident",
-      "text": "That’s pluralistic ignorance—everyone secretly feels lost, but assumes everyone else understands."
+      "text": "That\u2019s pluralistic ignorance\u2014everyone secretly feels lost, but assumes everyone else understands."
      }
     ]
    },
@@ -2850,7 +2850,7 @@
      {
       "who": "mia",
       "feel": "deadpan",
-      "text": "It’s called productive procrastination."
+      "text": "It\u2019s called productive procrastination."
      },
      {
       "who": "mia",
@@ -2878,187 +2878,6 @@
       "who": "mia",
       "feel": "amused",
       "text": "Wait, why are you color-coding your socks right now?"
-     }
-    ]
-   }
-  ],
-  "variant": "standard"
- },
- {
-  "id": "variable-reward-phone",
-  "title": "The Infinite Refresh",
-  "concept": "VARIABLE REWARD",
-  "mood": "dramatic",
-  "insight": "Unpredictable rewards hook our brains into endless checking loops.",
-  "caption": "Why we keep refreshing apps for absolutely nothing.",
-  "explain_shot": 3,
-  "shots": [
-   {
-    "scene": "Leo and Mia sit on a gray sofa facing the camera. Leo stares intensely at a blank phone screen with wide eyes.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "panicked",
-      "text": "I just checked it three seconds ago."
-     },
-     {
-      "who": "leo",
-      "feel": "anxious",
-      "text": "Maybe something happened since then."
-     }
-    ]
-   },
-   {
-    "scene": "Leo aggressively swipes down on his phone screen. Mia looks at him with a deadpan expression, her phone dead in her lap.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "text": "My phone died at three percent, yet you persist."
-     },
-     {
-      "who": "leo",
-      "feel": "sheepish",
-      "text": "The next swipe could be the lucky one."
-     }
-    ]
-   },
-   {
-    "scene": "Leo rapid-fires thumb swipes while sweat beads on his forehead. Mia raises one eyebrow, leaning slightly away.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "panicked",
-      "text": "It is a digital slot machine and I am winning nothing!"
-     }
-    ]
-   },
-   {
-    "scene": "Mia points at Leo with a calm, knowing smirk. Leo lowers his phone slowly.",
-    "focus": "mia",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "confident",
-      "text": "That is the variable reward loop at work."
-     },
-     {
-      "who": "mia",
-      "feel": "warm",
-      "text": "Unpredictable payouts keep your brain hooked on checking."
-     }
-    ]
-   },
-   {
-    "scene": "Leo places his phone face down on the cushion and takes a deep breath.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "hopeful",
-      "text": "Put it in another room for ten minutes."
-     }
-    ]
-   },
-   {
-    "scene": "Leo looks to the side with sudden suspicion, holding his breath as if waiting for a notification sound.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "anxious",
-      "text": "Did you hear something?"
-     }
-    ]
-   }
-  ],
-  "variant": "tight"
- },
- {
-  "id": "catastrophizing-job-ai",
-  "title": "The Robot Takeover",
-  "concept": "CATASTROPHIZING",
-  "mood": "dramatic",
-  "insight": "Our brain loves to leap straight to the absolute worst ending.",
-  "caption": "Is the toaster coming for your career? Leo is spiraling again.",
-  "explain_shot": 3,
-  "shots": [
-   {
-    "scene": "A cramped home office with a wilting houseplant Gerald on a stack of unopened mail. Leo in his yellow hoodie clutches a notepad, eyes wide with panic. Mia in her teal sweater sits upright beside him, sipping tea.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "panicked",
-      "text": "My spreadsheet skills are officially obsolete."
-     }
-    ]
-   },
-   {
-    "scene": "Same cramped home office. Leo frantically writes notes with a broken pen while staring at a blank screen. Mia watches with a flat, unimpressed expression.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "text": "You got one polite email from Dev at the coffee shop."
-     },
-     {
-      "who": "leo",
-      "feel": "anxious",
-      "text": "Next week I will be living in a cardboard box."
-     }
-    ]
-   },
-   {
-    "scene": "Leo paces behind Mia, holding a cardboard box under his arm dramatically. Mia slowly counts on her fingers with a tiny smirk.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "smug",
-      "text": "That is scoreboard point twenty-two for my told-you-so list."
-     },
-     {
-      "who": "leo",
-      "feel": "panicked",
-      "text": "Greg just emailed Noted and my entire career is over."
-     }
-    ]
-   },
-   {
-    "scene": "Leo stops pacing and blinks at Mia. Mia gestures calmly toward the laptop screen, maintaining deadpan eye contact.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "confident",
-      "text": "You are catastrophizing, jumping straight to the absolute worst disaster."
-     }
-    ]
-   },
-   {
-    "scene": "Leo exhales slowly, lowering the cardboard box. Mia points a finger toward the kitchen counter helpfully.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "warm",
-      "text": "Try writing down three facts instead of one big fear."
-     }
-    ]
-   },
-   {
-    "scene": "Leo sits back down at the desk, looking slightly calmer as he sets the cardboard box aside. Facing the camera.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "sheepish",
-      "text": "My spreadsheet skills are officially..."
      }
     ]
    }
