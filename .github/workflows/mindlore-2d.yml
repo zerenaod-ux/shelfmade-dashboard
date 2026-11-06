@@ -1,7 +1,7 @@
 name: mindlore-2d
 on:
   schedule:
-    - cron: '20 11 * * *'   # ML2D_DAILY: MindLore full video, 2D stick-man, every day 6:20 AM Chicago
+    - cron: '20 11 * * 3,6'   # ML2D_TWICE: MindLore full video, 2D stick-man, Wed+Sat 6:20 AM Chicago (was daily; cut 2026-11-05: full videos got ~5 views)
   workflow_dispatch:
     inputs:
       count:

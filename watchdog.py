@@ -6,7 +6,7 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'zerenaod-ux/shelfmade-dashboard')
 TOKEN = os.environ.get('GITHUB_TOKEN', '')
 NOW = datetime.datetime.now(datetime.timezone.utc)
 # workflow file -> max hours since the last successful run
-EXPECT = {'publisher.yml': 5, 'publisher-mindlore.yml': 5, 'yt-publish-mindlore.yml': 8, 'yt-publish-shelfmade.yml': 8, 'yt-publish-doodles.yml': 8, 'review-publish.yml': 4, 'ml-scripts.yml': 14, 'sm-scripts.yml': 14, 'publisher-doodles.yml': 5, 'doodles.yml': 30, 'mindlore-2d.yml': 30, 'mindlore-story-short.yml': 30, 'shelfmade-story-short.yml': 30, 'full-video.yml': 30}
+EXPECT = {'publisher.yml': 5, 'publisher-mindlore.yml': 5, 'yt-publish-mindlore.yml': 8, 'yt-publish-shelfmade.yml': 8, 'yt-publish-doodles.yml': 8, 'review-publish.yml': 4, 'ml-scripts.yml': 14, 'sm-scripts.yml': 14, 'publisher-doodles.yml': 5, 'doodles.yml': 30, 'mindlore-2d.yml': 110, 'mindlore-story-short.yml': 30, 'shelfmade-story-short.yml': 30, 'full-video.yml': 110}
 
 
 def gh(path):

@@ -1,7 +1,7 @@
 name: full-video
 on:
   schedule:
-    - cron: '10 9 * * *'
+    - cron: '10 9 * * 1,4'
   workflow_dispatch:
     inputs:
       count:
