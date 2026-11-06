@@ -2,6 +2,9 @@ name: review-publish
 on:
   schedule:
     - cron: '*/30 * * * *'
+  workflow_run:   # AUTO_RP: run right after a builder finishes
+    workflows: [doodles, doodles-full, daily-shorts, mindlore-shorts, mindlore-story-short, shelfmade-story-short, mindlore-2d, mindlore-full, full-video, recut-shorts]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: write
@@ -12,6 +15,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   open:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
