@@ -41,8 +41,8 @@
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 1,
-   "last": 4
+   "uses": 2,
+   "last": 10
   },
   {
    "id": "dev",
@@ -149,6 +149,18 @@
    "title": "The Moving Day Trap",
    "concept": "Leo moves into a new apartment (decisions, boxes, neighbours, first night)",
    "gag": "gerald",
+   "callback": true,
+   "milestone": false,
+   "season": 1,
+   "date": "2026-11-06"
+  },
+  {
+   "n": 2,
+   "kind": "full",
+   "id": "leos-first-date-snare",
+   "title": "Leo's First Date Snare",
+   "concept": "Leo's first date with someone he met online (nerves, texts, restaurant, the walk home)",
+   "gag": "greg",
    "callback": true,
    "milestone": false,
    "season": 1,

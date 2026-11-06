@@ -834,5 +834,418 @@
     }
    }
   ]
+ },
+ {
+  "id": "leos-first-date-snare",
+  "title": "Leo's First Date Snare",
+  "theme": "Leo's first date with someone he met online (nerves, texts, restaurant, the walk home)",
+  "premise": "Leo wants to survive his first online dating meet-up without hyperventilating, while Mia wants to see if he can last ten minutes before talking about his houseplant Gerald. What is at stake is Leo's fragile dignity and Mia's twenty-five-dollar bet that he will flee through a bathroom window.",
+  "running_gag": "Greg's one-word email ('Noted.') pings on Leo's phone at increasingly catastrophic moments.",
+  "payoff": "The date turns out to be a disaster because the match only wanted to talk about crypto, but Leo and Mia end up sharing stale fries on the curb while Mia adds one more point to her scoreboard.",
+  "description": "Leo braves his first online date with the help of Mia's savage commentary, a dying houseplant, and zero social skills. Watch two best friends turn relationship anxiety into competitive sport. Next time: Leo tries to return a toaster without a receipt and accidentally joins a cult.",
+  "scenes": [
+   {
+    "time": "5:15 PM",
+    "setting": "A cluttered kitchen with a dying fern named Gerald and a half-empty tub of hummus",
+    "concept": "SPOTLIGHT EFFECT",
+    "beat": "Leo spends three minutes and forty seconds staring at one comma in a greeting text while Mia eats dry cereal from the box. Mia reads a text from Kyle: 'Kyle says: just wing it, bro,' before Leo catastrophizes that the entire restaurant will judge his elbow angle.",
+    "story": {
+     "id": "leos-first-date-snare-01",
+     "title": "The Spotlight Effect Snare",
+     "concept": "SPOTLIGHT EFFECT",
+     "mood": "dramatic",
+     "insight": "We think everyone stares at us, but nobody is looking.",
+     "caption": "Leo spends four minutes panicking over a comma before his first date.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Cluttered kitchen at 5:15 PM. Dying fern Gerald on the counter, half-empty tub of hummus. Leo in yellow hoodie stares at his phone. Mia in teal sweater eats dry cereal from the box. Greg's ghost-like figure with one-word email sign outside the window.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Three minutes and forty seconds staring at one single comma in her greeting."
+        }
+       ]
+      },
+      {
+       "scene": "Same kitchen. Leo grips his yellow hoodie strings tightly. Mia chews dry cereal with zero emotion, glaring at Leo's phone screen.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle says just wing it bro, which worked great when he lost his passport."
+        },
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Every single person in that restaurant will judge my elbow angle immediately."
+        }
+       ]
+      },
+      {
+       "scene": "Kitchen counter. Gerald the fern looks more depressed. Leo's phone buzzes with Greg's background email notification: 'Noted.' Mia smirks, shaking the cereal box.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "That's twenty-five dollars says you climb out the bathroom window by six."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "My elbow angle is a public safety hazard and you know it."
+        }
+       ]
+      },
+      {
+       "scene": "Close on Leo and Mia. Mia points a cereal flake at Leo. Leo's eyes widen in sudden realization of his own ridiculousness.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "You are experiencing the spotlight effect, assuming everyone is analyzing your posture."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Wait, people are actually too busy worrying about their own embarrassing elbows?"
+        }
+       ]
+      },
+      {
+       "scene": "Kitchen. Mia rolls her eyes. Leo takes a deep, slightly steadier breath, dropping his hoodie strings.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "Nobody cares, Leo. Just go eat bread."
+        }
+       ]
+      },
+      {
+       "scene": "Leo turns toward the front door, phone in hand, looking back nervously at Mia.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Three minutes and forty seconds staring at one single comma in her greeting..."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "6:30 PM",
+    "setting": "A dimly lit bistro with sticky velvet booths and a barista named Dev in the background spelling 'Leo' as 'Leeo' on a receipt",
+    "concept": "CONFIRMATION BIAS",
+    "beat": "Leo decides every cough from the next table means his outfit is failing, ignoring the glowing health inspector sign behind him. Greg's email notification ('Noted.') pings just as Leo tries a suave smile that looks like a facial spasm.",
+    "story": {
+     "id": "leos-first-date-snare-02",
+     "title": "Leo's First Date Snare",
+     "concept": "CONFIRMATION BIAS",
+     "mood": "dramatic",
+     "insight": "We hunt for proof that our fears are true and ignore everything else",
+     "caption": "Why every cough in the restaurant feels like a personal attack.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "A dimly lit bistro with sticky velvet booths. Dev the barista in the background writes 'Leeo' on a receipt with a red marker. Leo clutches his phone in his yellow hoodie while Mia eats cold fries.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "That cough from table four means my jacket texture is offensive."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle says just wing it bro while eating dumpster sushi."
+        }
+       ]
+      },
+      {
+       "scene": "Leo pulls his yellow hoodie strings tighter, staring at the health inspector sign glowing red behind Mia. Greg's reflection on a stainless steel teapot shows his email open. In the background, clearly visible and drawn in the same style, stands a polite waiter with a towel on his arm (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "See? The waiter rolled his eyes at my elbow angle."
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "He dropped a tray of lasagna, Leo. It is not about you."
+        }
+       ]
+      },
+      {
+       "scene": "Leo tries a suave smile that looks like a facial spasm. His phone buzzes loudly on the table with Greg's new email. Dev watches from the counter, shaking his head.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Greg just emailed me Noted and now my entire life is forfeit."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "That is twenty five dollars you owe me for fleeing through the window."
+        }
+       ]
+      },
+      {
+       "scene": "Mia points a fry at Leo across the sticky velvet booth. Dev glares at a broken espresso machine in the background, holding the misspelled receipt.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "This is confirmation bias because you only notice proof that confirms your panic."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Even the health inspector sign is judging my posture."
+        }
+       ]
+      },
+      {
+       "scene": "Leo takes a deep breath, letting go of his hoodie strings. Mia counts out a single crumpled five-dollar bill onto the table next to a ketchup stain.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "text": "I will list three nice things about Gerald the houseplant right now."
+        }
+       ]
+      },
+      {
+       "scene": "Leo freezes mid-sentence as a new notification banner pops up on his phone. Dev drops a ceramic mug in the background.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "That cough from table four means my jacket texture is offensive."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "7:45 PM",
+    "setting": "The restaurant alleyway next to noisy garbage cans where Brenda the nosy neighbour glares from her upstairs window with a clipboard",
+    "concept": "BYSTANDER EFFECT",
+    "beat": "Leo hides behind a plastic recycling bin after his date mentions she loves taxidermy, refusing to come out until Mia reminds him about the Robot Takeover incident. Mia's scoreboard ticks up to twenty-six while she munches on a stolen breadstick.",
+    "story": {
+     "id": "leos-first-date-snare-03",
+     "title": "Leo's First Date Snare",
+     "concept": "BYSTANDER EFFECT",
+     "mood": "dramatic",
+     "insight": "Assuming someone else will help actually ensures nobody does anything.",
+     "caption": "Leo hides behind a recycling bin because his date loves taxidermy.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Restaurant alleyway at night with noisy green bins. Brenda glares from an upstairs window with a clipboard.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "She owns three stuffed badgers and asked if Gerald wants siblings!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Scoreboard is twenty-six. You are fleeing through the kitchen right now."
+        }
+       ]
+      },
+      {
+       "scene": "Alleyway beside tall metal garbage cans. Brenda watches intently from her lit window above.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Nobody is helping me hide behind these smelly tomato crates."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Everyone assumes someone else will rescue you from taxidermy."
+        }
+       ]
+      },
+      {
+       "scene": "Alleyway floor where Leo crouches behind a blue recycling bin holding a half-eaten breadstick.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Are they waiting for Greg to email Noted before rescuing me?"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle says just crawl home."
+        }
+       ]
+      },
+      {
+       "scene": "Alleyway next to clattering dumpsters. Brenda taps her clipboard angrily from above.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "This is the bystander effect, where diffusion of responsibility stops any action."
+        },
+        {
+         "who": "leo",
+         "feel": "tired",
+         "text": "So nobody cares that my social life just flatlined?"
+        }
+       ]
+      },
+      {
+       "scene": "Alleyway edge near a blinking neon sign. Gerald the potted houseplant sits abandoned on a crate.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Try shouting for help instead of waiting for a hero."
+        }
+       ]
+      },
+      {
+       "scene": "Alleyway corner with loose gravel. Brenda closes her window with a sharp thud. In the background, clearly visible and drawn in the same style, stands a nervous date in a nice shirt (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "text": "Did the Robot Takeover prepare us for bad taxidermy dates?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "9:00 PM",
+    "setting": "The damp concrete curb outside their apartment building under a flickering streetlamp",
+    "concept": "FUNDAMENTAL ATTRIBUTION ERROR",
+    "beat": "Leo blames the universe's magnetic alignment for his dating ruin, while Mia deadpans that he just wears fleece to a steakhouse. They share a single stale fry in silence as Greg's final email of the day arrives with a punctuation mark, landing on a warm laugh.",
+    "story": {
+     "id": "leos-first-date-snare-04",
+     "title": "The Fundamental Attribution Error Trap",
+     "concept": "FUNDAMENTAL ATTRIBUTION ERROR",
+     "mood": "reflective",
+     "insight": "We blame character for our fails and circumstance for others.",
+     "caption": "Why you blame the universe when you wear fleece to a steakhouse.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo in yellow hoodie sitting on damp concrete curb under flickering streetlamp, holding dead phone. Greg in background wearing grey suit staring at wrist watch. In the background, clearly visible and drawn in the same style, stands a nervous date in a nice shirt (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "The entire cosmos conspired against my romantic destiny tonight."
+        }
+       ]
+      },
+      {
+       "scene": "Mia in teal sweater standing next to Leo, holding twenty-six tally marks on a greasy napkin. Dev in background spelling Leo as 'Leeo' on a coffee cup.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "You wore a neon fleece hoodie to a four-star steakhouse."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Fleece is a valid emotional boundary."
+        }
+       ]
+      },
+      {
+       "scene": "Both sitting on curb sharing one single bent french fry. Brenda in background holding clipboard with stern look under amber porch light.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Scoreboard is twenty-six. Anyway, my twenty-five dollars is safe."
+        },
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Okay but hear me out about the Robot Takeover incident."
+        }
+       ]
+      },
+      {
+       "scene": "Leo staring blankly at screen while phone dings. Greg in background holds up single paper sheet saying 'Period.'",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "Classic fundamental attribution error. We blame our flaws on bad luck."
+        },
+        {
+         "who": "leo",
+         "feel": "tired",
+         "text": "Greg just emailed me a single glowing period mark."
+        }
+       ]
+      },
+      {
+       "scene": "Mia nudging Leo with her elbow on the curb. Gerald the sad houseplant sits on a nearby milk crate with one drooping leaf.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Next time, blame your terrible fashion choices first."
+        }
+       ]
+      },
+      {
+       "scene": "Both looking up at streetlamp buzzing in the dark. A distant cat knocks over a metal trash can off camera. In the background, clearly visible and drawn in the same style, stands a nervous date in a nice shirt (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "text": "So you are saying malevolent astrological forces ruined everything?"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]
