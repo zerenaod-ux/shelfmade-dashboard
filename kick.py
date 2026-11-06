@@ -6,8 +6,8 @@ GRACE = 150   # minutes: GitHub delays of ~2.5 h were observed; after that we st
 MAXLATE = 10 * 60
 JOBS = [  # workflow file, hour UTC, minute, weekdays (Mon=0..Sun=6) or None=daily
     ('radar.yml', 7, 0, None), ('doodles.yml', 7, 30, None), ('doodles-full.yml', 6, 40, (1, 4)),
-    ('full-video.yml', 9, 10, None), ('daily-shorts.yml', 11, 0, None), ('mindlore-full.yml', 11, 20, None),
-    ('mindlore-shorts.yml', 12, 30, None), ('learn.yml', 14, 0, (0, 3)),
+    ('full-video.yml', 9, 10, None), ('daily-shorts.yml', 11, 0, None), ('mindlore-2d.yml', 11, 20, None),   # KICK2D: MindLore full video is 2D only
+    ('mindlore-story-short.yml', 13, 40, None), ('shelfmade-story-short.yml', 14, 10, None), ('learn.yml', 14, 0, (0, 3)),
 ]
 def sh(*a):
     return subprocess.run(a, capture_output=True, text=True, timeout=60)
