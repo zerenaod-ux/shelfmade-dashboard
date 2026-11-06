@@ -1,8 +1,38 @@
 {
  "brand": "shelfmade",
- "collected": "2026-11-06T05:45:25Z",
+ "collected": "2026-11-06T18:32:16Z",
  "more": true,
  "posts": [
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Plato had a warning for you.\n\nPhaedrus by Plato\n\nPlato had a warning for you.\n\nPHAEDRUS: You shall hear, if yo",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-06T18:17:06.379Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Nobody warns you about Tao Te Ching.\n\nTao Te Ching by Lao Tzu\n\nNobody warns you about Tao Te Ching.\n\nMusic and",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-06T18:17:05.567Z"
+  },
   {
    "platform": "tiktok",
    "status": "scheduled",
@@ -83,7 +113,7 @@
    "url": "https://www.youtube.com/watch?v=QmvgVXfWJT8",
    "sent": "2026-11-06T00:00:06.000Z",
    "text": "Why does Simple Life still matter?\n\nLessons and original commentary inspired by The Simple Life by Charles Wag",
-   "views": 1,
+   "views": 4,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -93,7 +123,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T00:02:21.167Z"
+   "updated": "2026-11-06T06:01:11.639Z"
   },
   {
    "platform": "youtube",
@@ -245,7 +275,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -521,7 +551,7 @@
    "url": "https://www.youtube.com/shorts/JvIgBaYCJdU",
    "sent": "2026-11-05T18:03:26.204Z",
    "text": "This Studies in Pessimism line is uncomfortable.\n\nStudies in Pessimism by Arthur Schopenhauer\n\nThis Studies in",
-   "views": 0,
+   "views": 20,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -531,7 +561,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T18:06:15.421Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -539,7 +569,7 @@
    "url": "https://www.youtube.com/shorts/nuQLBWcyPzQ",
    "sent": "2026-11-04T18:02:38.668Z",
    "text": "Plato had a warning for you.\n\nPhaedrus by Plato\n\nPlato had a warning for you.\n\nPHAEDRUS: You shall hear, if yo",
-   "views": 27,
+   "views": 35,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -549,7 +579,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -557,7 +587,7 @@
    "url": "https://www.youtube.com/shorts/BiRfxu5fbko",
    "sent": "2026-11-04T03:00:36.969Z",
    "text": "Why is Bacon's Essays still read today?\n\nBacon's Essays by Francis Bacon\n\nWhy is Bacon's Essays still read tod",
-   "views": 21,
+   "views": 25,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -567,7 +597,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -575,7 +605,7 @@
    "url": "https://www.youtube.com/shorts/0OxyEvY3YvU",
    "sent": "2026-11-03T01:26:34.919Z",
    "text": "Moreover, nothing is good but virtue, and nothing but vice is bad\n\nMeditations by Marcus Aurelius\n\nMoreover, n",
-   "views": 38,
+   "views": 39,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -585,7 +615,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -593,7 +623,7 @@
    "url": "https://www.youtube.com/shorts/b50yfXR5djU",
    "sent": "2026-11-03T01:26:31.769Z",
    "text": "Question what you know | Acres of Diamonds\n\nAcres of Diamonds by Russell Conwell\n\nWhen will you manufacturers ",
-   "views": 27,
+   "views": 30,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -603,7 +633,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -621,7 +651,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -639,7 +669,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -657,7 +687,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -710,7 +740,7 @@
    "url": "https://www.youtube.com/shorts/nQlibcVN19o",
    "sent": "2026-11-03T01:25:57.367Z",
    "text": "Victories after all never\n\nThe Prince by Machiavelli\n\nVictories after all are never so complete that the victo",
-   "views": 34,
+   "views": 35,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -720,7 +750,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -805,7 +835,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -858,7 +888,7 @@
    "url": "https://www.youtube.com/shorts/hzAmyueIWyQ",
    "sent": "2026-11-03T01:10:30.269Z",
    "text": "Everyone quotes Pragmatism. Few get it.\n\nPragmatism by William James\n\nEveryone quotes Pragmatism. Few get it.\n",
-   "views": 29,
+   "views": 30,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -868,7 +898,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "instagram",
@@ -899,7 +929,7 @@
    "url": "https://www.youtube.com/shorts/sGfMrVc9aVQ",
    "sent": "2026-11-03T03:00:28.920Z",
    "text": "Your moral character must be not only pure, but, like Caesar\u2019s wife, unsuspected\n\nLetters to His Son, Complete",
-   "views": 32,
+   "views": 35,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -909,7 +939,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -1039,9 +1069,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfaNhJhnLpG/",
+   "sent": "2026-11-06T18:07:54.901Z",
    "text": "If so, you may enter the narrow way of Truth, and find that peace from which the world is shut out\n\nThe Way of",
    "views": null,
    "likes": null,
@@ -1051,9 +1081,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/Y-FWlbV5SYM",
+   "sent": "2026-11-06T18:05:39.692Z",
    "text": "If so, you may enter the narrow way of Truth, and find that peace from which the world is shut out\n\nThe Way of",
    "views": 0,
    "likes": 0,
@@ -1065,7 +1095,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-10-31T01:18:30.136Z"
+   "updated": "2026-11-06T18:08:12.104Z"
   },
   {
    "platform": "instagram",
@@ -1118,7 +1148,7 @@
    "url": "https://www.youtube.com/shorts/8QKdl9NNi3Y",
    "sent": "2026-11-06T03:01:32.494Z",
    "text": "We avowedly follow not the truth but the will of the many (compare Republic)\n\nPhaedrus by Plato\n\nWe avowedly f",
-   "views": 0,
+   "views": 3,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1128,7 +1158,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T03:04:22.080Z"
+   "updated": "2026-11-06T06:01:11.639Z"
   },
   {
    "platform": "instagram",
@@ -1181,7 +1211,7 @@
    "url": "https://www.youtube.com/shorts/6ekA7k96fUk",
    "sent": "2026-11-05T23:02:35.519Z",
    "text": "Where is your attention?\n\nOut from the Heart by James Allen\n\nAnd can a man fashion his mind in accordance with",
-   "views": 0,
+   "views": 12,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1191,7 +1221,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T23:06:18.915Z"
+   "updated": "2026-11-06T06:01:11.639Z"
   },
   {
    "platform": "tiktok",
@@ -1244,7 +1274,7 @@
    "url": "https://www.youtube.com/shorts/88SeG1rSwzc",
    "sent": "2026-11-05T03:01:13.233Z",
    "text": "Never mind; she can't scratch you while Florrie is holding her\n\nThe Crown of Wild Olive by John Ruskin\n\nNever ",
-   "views": 22,
+   "views": 37,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1254,7 +1284,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "youtube",
@@ -1272,7 +1302,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -1325,7 +1355,7 @@
    "url": "https://www.youtube.com/shorts/QHacncwEVO4",
    "sent": "2026-11-01T23:01:44.653Z",
    "text": "Now a prig is a pert fellow who gives himself airs of superior wisdom\n\nHow to Live on 24 Hours a Day by Arnold",
-   "views": 16,
+   "views": 17,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1335,7 +1365,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -1388,7 +1418,7 @@
    "url": "https://www.youtube.com/shorts/bXvLqJ5TB1I",
    "sent": "2026-11-01T18:03:31.176Z",
    "text": "You can turn over a new leaf every hour if you choose\n\nHow to Live on 24 Hours a Day by Arnold Bennett\n\nYou ca",
-   "views": 96,
+   "views": 97,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1398,7 +1428,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -1451,7 +1481,7 @@
    "url": "https://www.youtube.com/shorts/goI_lzWhMaw",
    "sent": "2026-11-01T02:00:42.441Z",
    "text": "Where is your attention?\n\nPushing to the Front by Orison Swett Marden\n\nThere are critical moments in every suc",
-   "views": 22,
+   "views": 23,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1461,7 +1491,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "instagram",
@@ -1524,7 +1554,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -1564,7 +1594,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "instagram",
@@ -1650,7 +1680,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.640Z"
   },
   {
    "platform": "tiktok",
@@ -1690,7 +1720,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.641Z"
   },
   {
    "platform": "instagram",
@@ -1776,7 +1806,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.641Z"
   },
   {
    "platform": "tiktok",
@@ -1839,7 +1869,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.641Z"
   },
   {
    "platform": "tiktok",
@@ -1902,7 +1932,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-05T07:37:56.775Z"
+   "updated": "2026-11-06T06:01:11.641Z"
   },
   {
    "platform": "tiktok",
@@ -1925,47 +1955,6 @@
     "views"
    ],
    "updated": "2026-11-06T03:40:19.222Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/De-6rYxjauQ/",
-   "sent": "2026-10-27T03:43:01.781Z",
-   "text": "Know your enemy\n\nThe Art of War by Sun Tzu\n\nHow victory may be produced for them out of the enemy\u2019s own tactic",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-06T03:18:23.489Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/BMne6TFjLpk",
-   "sent": "2026-10-27T03:42:05.473Z",
-   "text": "Know your enemy\n\nThe Art of War by Sun Tzu\n\nHow victory may be produced for them out of the enemy\u2019s own tactic",
-   "views": 138,
-   "likes": 2,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-05T07:37:56.775Z"
   }
  ]
 }
