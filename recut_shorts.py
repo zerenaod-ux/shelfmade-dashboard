@@ -69,7 +69,7 @@ def cut(src, out, start, L, brand, channel):
         base = "[0:v]crop=ih*9/16:ih,scale=1080:1920,setsar=1[v0];"
     else:                    # 16:9 -> vertical: blurred copy fills the screen, sharp video in the middle
         base = ("[0:v]split=2[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=28[bg];"
-                "[b]scale=1080:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1[v0];")
+                "[b]crop=ih*4/5:ih,scale=1080:1350[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1[v0];")   # 4:5 centre crop fills ~70% of the screen (was a small 16:9 strip)
     card = ("[v0]drawbox=x=0:y=0:w=iw:h=ih:color=black@0.72:t=fill:enable='gte(t,%.2f)',"
             "drawtext=fontfile='%s':text='Watch the full video':fontsize=92:fontcolor=white:x=(w-text_w)/2:y=h*0.40:enable='gte(t,%.2f)',"
             "drawtext=fontfile='%s':text='on the %s channel':fontsize=60:fontcolor=0xE0BD76:x=(w-text_w)/2:y=h*0.40+130:enable='gte(t,%.2f)'[v]") % (end, fx, end, fx, channel, end)
