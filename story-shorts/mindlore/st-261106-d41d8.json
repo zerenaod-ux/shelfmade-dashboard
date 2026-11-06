@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261106-d41d8",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Boredom is a modern invention? 🛑 #BoredomScience",
+ "hook": "",
+ "thumbnail_headline": "BOREDOM IS NEW",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel bored before lunch. Ancient hunter gatherers rarely felt that way. In the 1960s, anthropologist Richard Lee studied the San people. He found they worked only about 25 hours a week. The result? They had plenty of free time. But why were they so busy? They spent those hours foraging. Yet they never felt time pressure. Their rhythm matched nature's cycles. They rested when their bodies needed it. That is it. A study in 2017 confirmed this pattern. Researchers observed multiple indigenous groups. Even in the 1970s, Marshall Sahlins made a famous argument. He called them the original affluent society. So why do we assume boredom is natural? Because modern jobs are fixed. Our schedules ignore our energy levels. Ancient people did not check the clock. They followed their instincts. So next time you feel bored, remember: you work 40 hours a week."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "San people worked about 25 hours a week",
+   "who": "Richard Lee",
+   "year": "1960s",
+   "place": "Kalahari Desert"
+  },
+  {
+   "claim": "Indigenous groups had free time despite foraging",
+   "who": "Marshall Sahlins",
+   "year": "1970s",
+   "place": "Global indigenous societies"
+  }
+ ],
+ "source_url": "",
+ "theme": "boredom"
+}

@@ -155,6 +155,82 @@
     "question",
     "scroll"
    ]
+  },
+  {
+   "id": "st-261106-b5824",
+   "title": "Your brain can't truly multitask \ud83e\udd2f #CognitiveScience",
+   "theme": "multitasking",
+   "acts": [
+    "explain",
+    "lookup",
+    "no",
+    "point",
+    "read",
+    "run",
+    "sad",
+    "shrug",
+    "surprised",
+    "think",
+    "walk"
+   ],
+   "bgs": [
+    "brain",
+    "desert",
+    "forest",
+    "history",
+    "night",
+    "office",
+    "plain",
+    "study"
+   ],
+   "props": [
+    "brain",
+    "camera",
+    "chart",
+    "clock",
+    "eye",
+    "laptop",
+    "money",
+    "num",
+    "phone",
+    "question",
+    "scroll",
+    "tree"
+   ]
+  },
+  {
+   "id": "st-261106-d41d8",
+   "title": "Boredom is a modern invention? \ud83d\uded1 #BoredomScience",
+   "theme": "boredom",
+   "acts": [
+    "explain",
+    "lookup",
+    "no",
+    "point",
+    "sit",
+    "think"
+   ],
+   "bgs": [
+    "brain",
+    "forest",
+    "history",
+    "office",
+    "school",
+    "study"
+   ],
+   "props": [
+    "battery",
+    "chart",
+    "clock",
+    "crowd",
+    "eye",
+    "lamp",
+    "laptop",
+    "num",
+    "question",
+    "scroll",
+    "star"
+   ]
   }
  ]
 }
