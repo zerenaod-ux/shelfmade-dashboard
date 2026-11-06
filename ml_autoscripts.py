@@ -356,48 +356,87 @@ def _pick_passages(window, n=7):
     return [ok[int(i * step)] for i in range(n)]
 
 
+_SECC = {}   # SECC: progress per book across attempts: outline + finished sections
+
+
+def _scall(prompt, tries=4):
+    """One small call, retried patiently (free providers rate-limit per minute)."""
+    import time
+    last = None
+    for k in range(tries):
+        try:
+            return _call(prompt)
+        except Exception as e:
+            last = e
+            print('ml_autoscripts: small call retry %d: %s' % (k + 1, str(e)[:100]), flush=True)
+            time.sleep(50)
+    raise last
+
+
 def _sectionwise(c, tn, window, prior, extra, fix=''):
-    """SM_SECTIONS: outline call + 7 small section calls. Returns the same dict shape as the one-call draft."""
-    import story_rules
+    """SM_SECTIONS: outline call + 7 small section calls. Returns the same dict shape as the one-call draft. Progress is kept in _SECC so a rate limit never costs the finished parts."""
+    import story_rules, time
     pas = _pick_passages(window)
     if not pas:
         raise ValueError('no usable passages in this window')
+    st = _SECC.setdefault(c['id'], {})
+    if fix:
+        st.clear()   # the last draft was rejected for content: write a fresh one
     base = 'Channel: ShelfMade (classic books explained for modern readers). Book: "%s" by %s (public domain). Existing hooks to avoid: %s.\n' % (c['title'], c['author'], prior)
     lines = '\n'.join('Section %d will quote: "%s"' % (i + 1, p) for i, p in enumerate(pas))
-    o = _call(base + 'Plan a 7-section narrated video. Return JSON only: {"public_title": "question-style title | %s", "hook": "ONE opening sentence: a plain claim about the viewer\'s own life using you/your, 6-14 words", '
-              '"thumb": "2-5 WORD CAPS HEADLINE reusing two words of the hook", "outline": ["one line per section, 7 lines, each linking the passage to modern life"], '
-              '"claims": [{"claim":"...","who":"real researcher or institution","year":"e.g. 1966 or 1960s","place":"..."} x3, ONLY findings you are certain are real and famous]}.\n' % c['author']
-              + lines + story_rules.CORE + (extra or '') + (('\nFix these problems from the last attempt: ' + fix) if fix else ''))
+    o = st.get('o')
+    if not o:
+        o = _scall(base + 'Plan a 7-section narrated video. Return JSON only: {"public_title": "question-style title | %s", "hook": "ONE opening sentence: a plain claim about the viewer\'s own life using you/your, 6-14 words", '
+                   '"thumb": "2-5 WORD CAPS HEADLINE reusing two words of the hook", "outline": ["one line per section, 7 lines, each linking the passage to modern life"], '
+                   '"claims": [{"claim":"...","who":"real researcher or institution","year":"e.g. 1966 or 1960s","place":"..."} x3, ONLY findings you are certain are real and famous, each with a year]}.\n' % c['author']
+                   + lines + story_rules.CORE + (extra or '') + (('\nFix these problems from the last attempt: ' + fix) if fix else ''))
+        st['o'] = o
     hook = str(o.get('hook', '')).strip(); outline = [str(x) for x in (o.get('outline') or [])][:7]
     claims = o.get('claims') or []
     if not hook or len(outline) < 7:
-        raise ValueError('outline incomplete')
+        st.clear(); raise ValueError('outline incomplete')
     who = '; '.join('%s %s: %s' % (x.get('who', ''), x.get('year', ''), str(x.get('claim', ''))[:100]) for x in claims if isinstance(x, dict))
-    secs = []; prev = ''
-    for i in range(7):
+    secs = st.setdefault('secs', [])
+    for i in range(len(secs), 7):
         role = ''
         if i == 0:
             role = ('Begin EXACTLY with this sentence: "%s" Then sentence 2 = what ancient people / the past / real research actually found (use a word like ancient, years ago, century, actually). '
                     'Sentence 3 = who studied it and in which year, with a number. Then the pivot line "The result?" and a short answer. ' % hook)
         elif i in (1, 3, 5):
             role = 'Include one question the viewer is thinking (one sentence ending with a question mark) and answer it right after with a fact. '
+        if i in (2, 4):
+            role += 'Name one real researcher and the YEAR of their finding from the evidence list. '
         if i == 2:
             role += 'Use the line "That\'s it." once after a surprising number. '
         if i == 6:
             role = ('Close it: bring it back to the viewer\'s life ("So next time you ..., remember ...") and make the LAST sentence repeat the key words of this opening: "%s". '
                     'No sign-off, no subscribe, no thanks. ' % hook)
-        r = _call(base + 'Write ONLY the narration of section %d of 7 for this video. Title: %s. Hook: %s. Section plan: %s. Real evidence you may use (do not invent others): %s. '
-                  'Previous section ended: "%s". %sUse 130-170 words, short spoken sentences of 6-14 words, plain words, no greeting, no underscores, no hashtags, no stage directions. '
-                  'It MUST contain this passage word for word inside double quotation marks: "%s". Return JSON only: {"narration": "..."}'
-                  % (i + 1, o.get('public_title', ''), hook, outline[i], who, prev[-160:], role, pas[i]))
+        prev = secs[-1]['narration'] if secs else ''
+        r = _scall(base + 'Write ONLY the narration of section %d of 7 for this video. Title: %s. Hook: %s. Section plan: %s. Real evidence you may use (do not invent others): %s. '
+                   'Previous section ended: "%s". %sUse 130-170 words, short spoken sentences of 6-14 words, plain words, no greeting, no underscores, no hashtags, no stage directions. '
+                   'It MUST contain this passage word for word inside double quotation marks: "%s". Return JSON only: {"narration": "..."}'
+                   % (i + 1, o.get('public_title', ''), hook, outline[i], who, prev[-160:], role, pas[i]))
         nar = str((r or {}).get('narration', '')).strip() if isinstance(r, dict) else ''
         if len(nar.split()) < 60:
             raise ValueError('section %d too short' % (i + 1))
         if norm(pas[i]) not in norm(nar):
             nar += ' As the book puts it, "%s"' % pas[i]
-        secs.append({'title': (outline[i][:60]), 'narration': nar}); prev = nar
+        secs.append({'title': (outline[i][:60]), 'narration': nar})
+        time.sleep(4)
+    out = [dict(s) for s in secs]
+    years = set(m.group(0) for m in story_rules.YEAR.finditer(' '.join(s['narration'] for s in out)))
+    for x in claims:   # deterministic evidence years from the model's own claims
+        if len(years) >= 2:
+            break
+        try:
+            yr = str(x.get('year', '')).strip(); wh = str(x.get('who', '')).strip(); cl = str(x.get('claim', '')).strip().rstrip('.')
+            if story_rules.YEAR.search(yr) and wh and yr not in years:
+                out[1]['narration'] += ' In %s, %s reported this: %s.' % (yr, wh, cl); years.add(yr)
+        except Exception:
+            pass
+    st.clear()
     return {'public_title': o.get('public_title') or '%s | %s' % (c['title'], c['author']), 'hook': hook, 'thumb': o.get('thumb') or hook.upper()[:30],
-            'sections': secs, 'passages': [{'chapter': c['title'], 'excerpt': p} for p in pas], 'claims': claims}
+            'sections': out, 'passages': [{'chapter': c['title'], 'excerpt': p} for p in pas], 'claims': claims}
 
 
 def make_one():
@@ -460,8 +499,9 @@ def make_one():
             try:
                 d = _sectionwise(c, tn, window, prior, extra, _fixlast)
             except Exception as e:
-                print('ml_autoscripts: section-by-section failed:', str(e)[:160], flush=True)
-                d = _call(prompt)
+                print('ml_autoscripts: section-by-section failed (progress kept, waiting):', str(e)[:160], flush=True)
+                __import__('time').sleep(70)
+                continue
         else:
             d = _call(prompt)
         if not isinstance(d, dict):
