@@ -1,7 +1,5 @@
 name: mindlore-full
 on:
-  schedule:
-    - cron: '20 11 * * *'
   workflow_dispatch:
     inputs:
       count:

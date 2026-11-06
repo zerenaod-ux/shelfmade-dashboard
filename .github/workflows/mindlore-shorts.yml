@@ -1,7 +1,5 @@
 name: mindlore-shorts
 on:
-  schedule:
-    - cron: '30 12 * * *'   # 7:30 AM Chicago
   workflow_dispatch:
     inputs:
       count:
