@@ -20,6 +20,22 @@ LOOPS={
  'curiosity':['Now you know why. Watch it again.','Watch the first line again.'],
  'author':['Now hear the first line again.','Watch it again. Listen closely.'],
 }
+_LEAD={'why','does','do','did','what','how','is','are','was','were','can','could','will','would','should','when','who','which','have','has','you','your'}
+_TAILBAD={'how','does','do','did','why','what','not','the','a','an','of','to','and','in','is','it','with','for','this','that','your','you','or','but','are','at','on','by','than','then'}
+def thumb_phrase(hook):
+    """2-6 word headline that is a COMPLETE phrase of the hook (never cut mid-thought like 'why does simple life still')."""
+    import re as _re
+    t=hook.rstrip('.?!').replace('|',' ')
+    t=_re.split(r'[,;:]| or ',t)[0]
+    w=t.split()
+    if len(w)<=6:
+        return ' '.join(w).lower()
+    core=list(w)
+    while len(core)>5 and core[0].lower() in _LEAD:core=core[1:]
+    core=core[:5]
+    while len(core)>2 and core[-1].lower().strip(',;:') in _TAILBAD:core=core[:-1]
+    return ' '.join(core).rstrip('.,;:').lower()
+
 def short_title(title):
  t=re.split(r'[:;,(]| or ',title)[0].strip()
  t=re.sub(r'^(the|a|an)\s+','',t,flags=re.I)
@@ -104,7 +120,7 @@ def apply(script,book,edition,evidence_url):
   script['source_evidence']=[{'chapter':'Opening hook','kind':'editorial hook','excerpt':hook,'source_url':evidence_url,'verification':('Editorial hook written for this passage. Not a quotation.' if kind=='ai' else 'Editorial template line. Not a quotation.')+' The source passage follows as lesson 1.'},*script['source_evidence']]
  script['hook']=hook;script['cta']=loop
  words=hook.rstrip('.?!').split()
- script['thumbnail_headline']=' '.join(words[:5]).rstrip('.,').lower()
+ script['thumbnail_headline']=thumb_phrase(hook)
  script['public_title']=hook
  script['hook_type']=kind;script['hook_rules']='v2: <=9 word hook, answer last, loop ending'
  d=script.get('creative_director')
@@ -133,7 +149,7 @@ def apply_full(script):
   s['sections'][0]['narration']=hook+' '+s['sections'][0]['narration']
   s['sections'][-1]['narration']=s['sections'][-1]['narration'].rstrip()+' '+loop
   old=s['hook'];s['hook']=hook
-  s['thumbnail_headline']=' '.join(hook.rstrip('.').split()[:5]).lower()
+  s['thumbnail_headline']=thumb_phrase(hook)
   s['public_title']=hook
   s['hook_type']=kind
   if s.get('opening_payoff'):s['opening_payoff']['question']=old

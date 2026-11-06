@@ -30,9 +30,9 @@ def graphic(script,size=(1280,720),background=None):
  w,h=size;im=background.copy().resize(size).convert('RGBA') if background else Image.new('RGBA',size)
  layer=Image.new('RGBA',size);d=ImageDraw.Draw(layer);portrait=h>w
  # Small headline block with most of the scene unobscured. No title-page furniture.
- x=int(w*.065);y=int(h*((.61 if portrait else .60) if background else .13));maxwidth=int(w*.84)
+ x=int(w*.065);y=int(h*((.61 if portrait else .56) if background else .13));maxwidth=int(w*.84)
  text=headline(script)
- for sizefont in range(int(w*.075),int(w*.04),-2):
+ for sizefont in range(int(w*.09),int(w*.045),-2):
   f=ImageFont.truetype(FONT,sizefont);lines=[];line=''
   for word in text.split():
    test=(line+' '+word).strip()
