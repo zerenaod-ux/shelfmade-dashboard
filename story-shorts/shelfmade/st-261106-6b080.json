@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261106-6b080",
+ "title": "As a Man Thinketh",
+ "author": "James Allen",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Your thoughts control your health? 🧠 #mindset",
+ "hook": "You believe your thoughts directly control your physical health.",
+ "thumbnail_headline": "THOUGHTS VS SCIENCE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You believe your thoughts directly control your physical health. Over a century ago, James Allen wrote that pure thoughts create a healthy body. In 2007, psychologist Crum and Langer studied hotel room attendants at Harvard. They split 84 workers into two groups and told one group that their daily work met active lifestyle guidelines. The result? That single mindset shift caused a measured drop in blood pressure and weight after four weeks. That's it. But does stress work the exact same way? A 2012 study by Keller and colleagues looked at about 30000 adults across the United States. They found that high stress only increased mortality risk by 43 percent if people believed stress was harmful. Wide view research calls this the perception effect, proving our framing shapes bodily responses. So why do we still doubt the mind body connection? Because negative thoughts alone do not magically create physical disease without biological pathways. Next time you catch a bad mood, remember you believe your thoughts directly control your physical health."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Informing hotel housekeepers that their work met exercise guidelines led to actual weight loss and lower blood pressure.",
+   "who": "Alia Crum and Ellen Langer",
+   "year": "2007",
+   "place": "Harvard University"
+  },
+  {
+   "claim": "High stress increased mortality risk by 43 percent only among people who believed stress was bad for their health.",
+   "who": "Abiola Keller and colleagues",
+   "year": "2012",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "As a Man Thinketh by James Allen"
+}

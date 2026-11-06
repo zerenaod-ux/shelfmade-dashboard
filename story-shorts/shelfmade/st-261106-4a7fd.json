@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261106-4a7fd",
+ "title": "Utopia",
+ "author": "Thomas More",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why working 6 days a week is wrong ⏰ #productivity",
+ "hook": "You work 40 hours every single week.",
+ "thumbnail_headline": "LESS WORK REAL PEACE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You work 40 hours every single week. In 1516, Thomas More wrote that six hours of daily work was enough for a good life. In 1930, economist John Maynard Keynes predicted that people in the West would work about 15 hours a week by the year 2030. What happened instead? Modern research shows that more hours do not mean more output. In 2014, researcher John Pencavel at Stanford University studied ammunition workers in Britain. He found that productivity drops sharply after a person works about 49 hours a week. At 55 hours, extra work produces almost nothing. The result? Working longer hours actually hurts your total output. It was not just one factory in Britain. Studies across modern tech firms show the exact same pattern. Psychologists call this the law of diminishing returns on human labor. So why do we assume long hours equal better results? We confuse physical presence at a desk with actual progress. Thomas More saw the truth five centuries ago. That's it. So next time you log extra overtime, remember: you work 40 hours every single week."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Thomas More claimed a six hour workday was ideal for human flourishing.",
+   "who": "Thomas More",
+   "year": "1516",
+   "place": "England"
+  },
+  {
+   "claim": "Productivity drops sharply after 49 hours of work per week and produces almost nothing extra after 55 hours.",
+   "who": "John Pencavel",
+   "year": "2014",
+   "place": "Stanford University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Utopia by Thomas More"
+}
