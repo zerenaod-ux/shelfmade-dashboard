@@ -12,7 +12,7 @@ POOL = DATA / 'episode_pool.json'; USED = DATA / 'episodes_used.json'; OUT = ROO
 W, H, FPS = 1920, 1080, 30
 LAND = os.environ.get('EPISODE_LANDSCAPE') == '1'   # true 16:9 pictures (set by the workflow input)
 if LAND: os.environ['DOODLES_LANDSCAPE'] = '1'
-os.environ.setdefault('DOODLES_MOVE', os.environ.get('EPISODE_MOVE', '1'))   # subtle head/shoulder motion in full videos (render.py)
+os.environ.setdefault('DOODLES_MOVE', os.environ.get('EPISODE_MOVE', '0'))   # head/shoulder warp moved the background too: OFF by default (owner feedback 2026-11-06); EPISODE_MOVE=1 turns it on
 CLEAN = LAND and os.environ.get('EPISODE_CLEAN', '1') != '0'   # full-screen 16:9, nothing drawn on top: no panel, clock, progress bar, chapter/intro/outro cards
 TAGS = '#psychology #mindset #animation #relatable #AnimationDoodles'
 FONTS = ['/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf', '/System/Library/Fonts/Supplemental/Arial Bold.ttf',
@@ -160,6 +160,7 @@ def stitch(work, ep, sc, subs):
     plain = work / 'plain.mp4'; ff('-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', plain)
     total = probe(plain); music = None
     try:
+        if os.environ.get('DOODLES_SFX', '1') != '0': raise RuntimeError('real sounds only, no music bed')
         for p in (ROOT, HERE):
             if (p / 'music_lab.py').is_file(): sys.path.insert(0, str(p))
         import music_lab

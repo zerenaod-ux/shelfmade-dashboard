@@ -352,8 +352,9 @@ def render(work):
     return silent,wav_path,total
 def mix(work,silent,wav_path,total,mood):
     work=Path(work);out=work/'short.mp4'
-    music=None
+    music=None;_sfx=os.environ.get('DOODLES_SFX','1')!='0'
     try:
+        if _sfx:raise RuntimeError('real sounds only')
         for _p in (Path(__file__).resolve().parent.parent,Path(__file__).resolve().parent,Path.home()/'Documents/Codex/2026-10-12/referenced-chatgpt-conversation-this-is-an/outputs/shelfmade-dashboard'):
             if (_p/'music_lab.py').is_file():sys.path.insert(0,str(_p))
         import music_lab,hashlib
@@ -361,6 +362,7 @@ def mix(work,silent,wav_path,total,mood):
         _v=[music_lab.track(mood)]+sorted((music_lab.BASE/'music').glob(mood+'_v*.mp3'));_h=int(hashlib.md5(_key.encode()).hexdigest(),16);music=_v[_h%len(_v)];_off=(_h>>8)%50;print('music:',music.name,'start',_off,'s',flush=True)
     except Exception as ex:print('music unavailable:',ex)
     try:
+        if _sfx:raise RuntimeError('real sounds only')
         sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
         import music_director
         _st=json.loads((work/'story.json').read_text());_w=sum(len(l.get('text','').split()) for sh in _st.get('shots',[]) for l in sh.get('lines',[]))
