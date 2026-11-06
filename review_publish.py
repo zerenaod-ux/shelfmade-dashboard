@@ -206,7 +206,7 @@ def main():
                     okq, ql = qc(longs[0], title, desc, True, set(seen['titles']))
                     data = {'kind': 'mlfull' if ml_full else 'shfull', 'brand': 'mindlore' if ml_full else 'shelfmade', 'tag': tag, 'zip': z.name, 'title': title, 'description': desc}
                     rel = 'https://github.com/%s/releases/tag/%s' % (REPO, tag)
-                    body = ('## Review this FULL video (%s, YouTube)\n\n**Watch:** download `%s` from %s\n\n**Title:** %s\n\n**Description:**\n\n%s\n\n---\n'
+                    body = ('## Review this FULL video (%s, YouTube)\n\n**To post it: add the label `approve`. To drop it: add the label `skip`.**\n\n**Watch:** download `%s` from %s\n\n**Title:** %s\n\n**Description:**\n\n%s\n\n---\n'
                             '**Automatic checks:**\n```\n%s\n```\nTo schedule it on YouTube (18:00 Chicago, next free day): add the label **approve**. To drop it: **skip**.\n\n<!--DATA %s DATA-->' % ('MindLore' if ml_full else 'ShelfMade', z.name, rel, title, desc, '\n'.join(ql), json.dumps(data)))
                     (Path(tmp) / 'body.md').write_text(music_add(body, d)); music_record(d, title)
                     out = sh('gh', 'issue', 'create', '--repo', REPO, '--title', ('Review ML FULL: ' if ml_full else 'Review FULL: ') + title[:70], '--body-file', str(Path(tmp) / 'body.md'), '--label', 'review', '--label', 'checks-ok' if okq else 'checks-warn')
@@ -227,7 +227,7 @@ def main():
                 okq, ql = qc(video, title, text, False, set(seen['titles']))
                 url = cloud_upload(video, brand)
                 data = {'book': z.stem, 'tag': tag, 'title': title, 'text': text, 'url': url, 'brand': brand}
-                body = ('## Review this video\n\n**Video:** %s\n\n**Title:** %s\n\n**Caption (all platforms):**\n\n%s\n\n**Automatic checks:**\n```\n%s\n```\n---\n'
+                body = ('## Review this video\n\n**To post it: add the label `approve`. To drop it: add the label `skip`.**\n\n**Video:** %s\n\n**Title:** %s\n\n**Caption (all platforms):**\n\n%s\n\n**Automatic checks:**\n```\n%s\n```\n---\n'
                         'To publish it on YouTube, Instagram and TikTok: add the label **approve**. To drop it: add the label **skip**.\n\n'
                         '<!--DATA %s DATA-->' % (url, title, text, '\n'.join(ql), json.dumps(data)))
                 (Path(tmp) / 'body.md').write_text(music_add(body, d)); music_record(d, title)
