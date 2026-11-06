@@ -26,6 +26,28 @@ def _aff_text(d, plat, text):
     return text
 
 
+def _note_skip(issue, num):
+    """A skip teaches the writers: keep the skipped video's brand/format/title/opening line in data/learned/skips.json (newest 40 per brand). learner.py shows them to the model as 'the owner rejected these'."""
+    m = re.search(r'<!--DATA (.*?) DATA-->', issue.get('body') or '', re.S)
+    d = json.loads(m.group(1)) if m else {}
+    brand = d.get('brand') or ('mindlore' if d.get('kind') == 'mlfull' else 'shelfmade' if d.get('kind') == 'shfull' else 'doodles' if d.get('kind') == 'ddfull' else '')
+    if not brand:
+        t = issue.get('title') or ''
+        brand = 'mindlore' if ' ML' in t or 'MINDLORE' in t.upper() else 'doodles' if 'DOODLES' in t.upper() else 'shelfmade'
+    title = d.get('title') or (issue.get('title') or '').split(':', 1)[-1].strip()
+    text = (d.get('text') or d.get('description') or '').strip().split('\n')
+    rec = {'issue': num, 'brand': brand, 'kind': 'full' if d.get('kind') in ('mlfull', 'shfull', 'ddfull') else 'short',
+           'title': title[:120], 'opening': (text[0] if text else '')[:140], 'date': __import__('datetime').date.today().isoformat()}
+    f = B / 'data' / 'learned' / 'skips.json'
+    cur = json.loads(f.read_text()) if f.is_file() else []
+    cur = [c for c in cur if c.get('issue') != num] + [rec]
+    keep = []
+    for b in {c['brand'] for c in cur}:
+        keep += [c for c in cur if c['brand'] == b][-40:]
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps(sorted(keep, key=lambda c: c['issue']), indent=1))
+
+
 def main():
     ev = json.load(open(os.environ['GITHUB_EVENT_PATH']))
     label = ev['label']['name']
@@ -35,6 +57,10 @@ def main():
     if 'review' not in labels or label not in ('approve', 'skip'):
         print('not a review decision'); return
     if label == 'skip':
+        try:
+            _note_skip(issue, num)
+        except Exception as e:
+            print('skip note failed:', str(e)[:100])
         sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Skipped. Nothing will be posted.')
         sh('gh', 'issue', 'close', str(num), '--repo', REPO); return
     m = re.search(r'<!--DATA (.*?) DATA-->', issue['body'] or '', re.S)

@@ -33,6 +33,17 @@ def ask(prompt):
         return None
 
 
+def _rejected(b, kind):
+    """Videos the owner skipped in review (data/learned/skips.json), newest 15 of this brand and format."""
+    try:
+        sk = [x for x in json.loads(Path('data/learned/skips.json').read_text()) if x.get('brand') == b and x.get('kind') == kind]
+    except Exception:
+        return ''
+    if not sk:
+        return ''
+    return 'REJECTED by the owner in review (she skipped these; the next scripts must NOT repeat their style, topic or hook pattern):\n%s\n\n' % '\n'.join('- %s | opening: %s' % (x['title'], x.get('opening', '')) for x in sk[-15:])
+
+
 def one(b, kind, rows):
     rows = [r for r in rows if r['kind'] == kind]
     if len(rows) < MINVIDS:
@@ -44,6 +55,7 @@ def one(b, kind, rows):
               'Find what the winners share that the losers lack (topic, angle, hook, title wording, length, emotion, format; if a variant field exists, tight = about 30 s and standard = about 42 s, so say which length wins). Be concrete and honest; sample sizes are small, so give patterns, not statistics. '
               'Return ONLY JSON: {"do_more":[3-5 short concrete instructions for the script writer],"avoid":[2-4 short instructions],"title_style":"one sentence about hook/title wording that wins","next_tests":[2-3 experiments to try next week]}'
               ) % (BRIEF[b], 'Short (up to 3 minutes)' if kind == 'short' else 'full-length (over 3 minutes)', json.dumps(top, indent=0), json.dumps(low, indent=0))
+    prompt = _rejected(b, kind) + prompt
     j = ask(prompt)
     if not j:
         return None, 'Gemini unavailable'

@@ -27,17 +27,17 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "review-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -f publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json publish/approved-ddfull.json 2>/dev/null || true
+          git add -f publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json publish/approved-ddfull.json data/learned/skips.json 2>/dev/null || true
           git diff --cached --quiet && exit 0
-          git commit -qm "review: approved"
+          git commit -qm "review: decision"
           # DECIDE_RETRY: on a conflict start again from the newest main and record the decision again; fail the step if nothing lands
           OK=0
           for i in 1 2 3 4 5 6; do
             if git pull --rebase -q && git push -q; then OK=1; break; fi
             git rebase --abort 2>/dev/null; git reset -q --hard origin/master
             python review_decide.py || true
-            git add -f publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json publish/approved-ddfull.json 2>/dev/null || true
+            git add -f publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json publish/approved-ddfull.json data/learned/skips.json 2>/dev/null || true
             git diff --cached --quiet && { OK=1; break; }
-            git commit -qm "review: approved"; sleep $((RANDOM % 6 + 3))
+            git commit -qm "review: decision"; sleep $((RANDOM % 6 + 3))
           done
           [ "$OK" = 1 ] || { echo "could not record the approval"; exit 1; }
