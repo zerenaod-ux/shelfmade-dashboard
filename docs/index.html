@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#14161a">
+<title>Review</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#16181d;--mut:#6a707c;--line:#e2e5ea;--ok:#1a7f45;--okbg:#e5f5ec;--warn:#9a6700;--warnbg:#fff4d6;--bad:#b42318;--badbg:#fde8e6;--ink2:#2c313a}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1e2127;--ink:#eceef2;--mut:#9aa1ad;--line:#2d323b;--ok:#4cc884;--okbg:#17301f;--warn:#e3b341;--warnbg:#33290e;--bad:#ff8a80;--badbg:#3a1a17;--ink2:#d7dae0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 16px calc(32px + env(safe-area-inset-bottom))}
+header{position:sticky;top:0;background:var(--bg);padding:14px 0 10px;display:flex;align-items:center;gap:10px;z-index:5;border-bottom:1px solid var(--line)}
+h1{font-size:20px;margin:0;flex:1}
+button{font:inherit;border:0;border-radius:12px;padding:12px 16px;cursor:pointer;color:var(--ink)}
+.ghost{background:transparent;border:1px solid var(--line);padding:8px 12px;font-size:14px;color:var(--mut)}
+#list{display:grid;gap:16px;margin-top:16px;max-width:640px;margin-left:auto;margin-right:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.card.done{opacity:.55}
+.vid{width:100%;max-height:70vh;background:#000;display:block}
+.pad{padding:14px 14px 16px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;background:var(--line);color:var(--ink2)}
+.tag.ok{background:var(--okbg);color:var(--ok)}.tag.warn{background:var(--warnbg);color:var(--warn)}.tag.bad{background:var(--badbg);color:var(--bad)}
+h2{font-size:18px;margin:8px 0 4px}
+.cap{white-space:pre-wrap;color:var(--ink2);font-size:15px;margin:6px 0}
+details{margin:8px 0;color:var(--mut);font-size:14px}details pre{white-space:pre-wrap;margin:6px 0 0;font:13px/1.4 ui-monospace,Menlo,monospace}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.btns button{min-height:52px;font-size:17px;font-weight:600}
+.go{background:var(--ok);color:#fff}.no{background:var(--card);border:2px solid var(--line)}
+.go.arm{background:#0d5a2d}.no.arm{border-color:var(--bad);color:var(--bad)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.msg{color:var(--mut);margin:20px 0;text-align:center}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:16px auto;max-width:640px}
+input{width:100%;font:16px ui-monospace,Menlo,monospace;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);margin:8px 0}
+a{color:inherit}
+.small{font-size:13px;color:var(--mut)}
+</style>
+</head>
+<body>
+<header><h1 id="ttl">Review</h1><button class="ghost" id="rf">Refresh</button><button class="ghost" id="key">Key</button></header>
+<div id="setup" class="box" hidden></div>
+<div id="list"></div>
+<p class="msg" id="msg">Loading…</p>
+<script>
+(function(){
+'use strict';
+var REPO='zerenaod-ux/shelfmade-dashboard',API='https://api.github.com/repos/'+REPO;
+var $=function(i){return document.getElementById(i)};
+var TOK='';try{TOK=localStorage.getItem('ghtok')||''}catch(e){}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function hdr(){var h={'Accept':'application/vnd.github+json'};if(TOK)h.Authorization='Bearer '+TOK;return h}
+function safeVideo(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
+function clean(body){return (body||'').replace(/<!--DATA[\s\S]*?DATA-->/g,'').replace(/\*\*/g,'').replace(/`/g,'').trim()}
+function parse(b){
+  var t=clean(b),v=(t.match(/https:\/\/[^\s)]+\.mp4/)||[])[0]||'';
+  var cap='',m=t.match(/Caption \(all platforms\):\s*([\s\S]*?)\s*Automatic checks:/);if(m)cap=m[1].trim();
+  var desc=t.match(/Description:\s*([\s\S]*?)\s*---/);if(!cap&&desc)cap=desc[1].trim();
+  var ch=t.match(/Post text with chapters:\s*([\s\S]*?)\s*(Music:|---)/);if(!cap&&ch)cap=ch[1].trim();
+  var chk='',c=t.match(/Automatic checks:\s*([\s\S]*?)\s*(Music:|---|To publish|To schedule|$)/);if(c)chk=c[1].trim();
+  return {video:v,cap:cap,checks:chk,full:/FULL video|Watch:\s*download/i.test(t)&&!v}}
+function names(it){return it.labels.map(function(l){return l.name})}
+function setup(){
+  var s=$('setup');s.hidden=false;s.textContent='';
+  s.appendChild(el('b','','Key for the buttons'));
+  s.appendChild(el('p','small','Paste your GitHub key (fine-grained, this repo only, Issues: read and write). It stays on this phone only. Without it you can watch but not press Approve or Skip.'));
+  var i=el('input');i.type='password';i.placeholder='github_pat_…';i.autocomplete='off';s.appendChild(i);
+  var r=el('div','row'),sv=el('button','go','Save key'),cl=el('button','ghost','Forget key'),hd=el('button','ghost','Close');
+  sv.onclick=function(){var v=i.value.trim();if(!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(v)){alert('That does not look like a GitHub key.');return}
+    try{localStorage.setItem('ghtok',v)}catch(e){}TOK=v;s.hidden=true;load()};
+  cl.onclick=function(){try{localStorage.removeItem('ghtok')}catch(e){}TOK='';s.hidden=true;load()};
+  hd.onclick=function(){s.hidden=true};
+  r.appendChild(sv);r.appendChild(cl);r.appendChild(hd);s.appendChild(r)}
+function decide(it,card,what,b1,b2){
+  var arm=card.__arm;
+  if(arm!==what){card.__arm=what;b1.classList.remove('arm');b2.classList.remove('arm');(what==='approve'?b1:b2).classList.add('arm');
+    (what==='approve'?b1:b2).textContent='Tap again: '+(what==='approve'?'Approve':'Skip');
+    setTimeout(function(){if(card.__arm===what){card.__arm=null;b1.textContent='Approve';b2.textContent='Skip';b1.classList.remove('arm');b2.classList.remove('arm')}},4000);return}
+  b1.disabled=b2.disabled=true;
+  fetch(API+'/issues/'+it.number+'/labels',{method:'POST',headers:Object.assign({'Content-Type':'application/json'},hdr()),body:JSON.stringify({labels:[what]})})
+   .then(function(r){if(!r.ok)throw new Error(r.status===401||r.status===403||r.status===404?'The key was refused (expired or no Issues write access).':'GitHub said '+r.status);
+     card.classList.add('done');b1.hidden=b2.hidden=true;card.querySelector('.pad').appendChild(el('p','msg',what==='approve'?'Approved ✓  It will be booked shortly.':'Skipped ✓'))})
+   .catch(function(e){b1.disabled=b2.disabled=false;card.__arm=null;b1.textContent='Approve';b2.textContent='Skip';b1.classList.remove('arm');b2.classList.remove('arm');alert(e.message)})}
+function render(it){
+  var p=parse(it.body),n=names(it),card=el('div','card');
+  if(p.video&&safeVideo(p.video)){var v=el('video','vid');v.controls=true;v.playsInline=true;v.preload='metadata';v.src=p.video;card.appendChild(v)}
+  var pad=el('div','pad');card.appendChild(pad);
+  var tg=el('div','row');var ttl=it.title.replace(/^Review\s*/i,'');
+  var kind=(ttl.match(/^(DOODLES FULL|DOODLES|ML|FULL|SHORT|MINDLORE)/i)||[''])[0];if(kind)tg.appendChild(el('span','tag',kind.toUpperCase()));
+  if(n.indexOf('checks-warn')>=0)tg.appendChild(el('span','tag warn','Check warning'));else if(n.indexOf('checks-ok')>=0)tg.appendChild(el('span','tag ok','Checks OK'));
+  tg.appendChild(el('span','small','#'+it.number));pad.appendChild(tg);
+  pad.appendChild(el('h2','',ttl.replace(/^(DOODLES FULL|DOODLES|ML|FULL|SHORT|MINDLORE)\s*:?\s*/i,'')||ttl));
+  var shown=ttl.replace(/^(DOODLES FULL|DOODLES|ML|FULL|SHORT|MINDLORE)\s*:?\s*/i,'')||ttl,cp=p.cap;
+  if(cp&&cp.split('\n')[0].trim()===shown.trim())cp=cp.split('\n').slice(1).join('\n').trim();
+  if(cp)pad.appendChild(el('div','cap',cp.slice(0,600)));
+  if(p.checks){var d=el('details');d.appendChild(el('summary','','Automatic checks'));d.appendChild(el('pre','',p.checks));pad.appendChild(d)}
+  if(!p.video){pad.appendChild(el('p','small','No inline video in this one (full videos are files in the release).'));var a=el('a','',' Open the Issue to watch ›');a.href=it.html_url;a.target='_blank';a.rel='noopener';pad.appendChild(a)}
+  var bt=el('div','btns'),ok=el('button','go','Approve'),no=el('button','no','Skip');
+  if(!TOK){ok.disabled=no.disabled=true;var kk=el('button','ghost','Add key to enable the buttons');kk.onclick=setup;pad.appendChild(kk)}
+  ok.onclick=function(){decide(it,card,'approve',ok,no)};no.onclick=function(){decide(it,card,'skip',ok,no)};
+  bt.appendChild(ok);bt.appendChild(no);pad.appendChild(bt);return card}
+function load(){
+  var L=$('list');L.textContent='';$('msg').textContent='Loading…';$('msg').hidden=false;
+  fetch(API+'/issues?state=open&labels=review&per_page=30',{headers:hdr()}).then(function(r){
+    if(r.status===403)throw new Error('GitHub is rate-limiting this phone. Add your key (Key button) or wait a few minutes.');
+    if(!r.ok)throw new Error('GitHub said '+r.status);return r.json()}).then(function(a){
+    a=a.filter(function(x){return !x.pull_request});
+    $('ttl').textContent=a.length?'Review ('+a.length+')':'Review';
+    if(!a.length){$('msg').textContent='Nothing waiting. All reviewed ✓';return}
+    $('msg').hidden=true;a.forEach(function(x){L.appendChild(render(x))})}).catch(function(e){$('msg').textContent=e.message})}
+$('rf').onclick=load;$('key').onclick=setup;load();
+})();
+</script>
+</body>
+</html>
