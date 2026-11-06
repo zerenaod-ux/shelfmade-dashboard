@@ -44,6 +44,20 @@ a{color:inherit}
 <div id="list"></div>
 <p class="msg" id="msg">Loading…</p>
 <script>
+function apBar(host,first){
+  var u='https://raw.githubusercontent.com/zerenaod-ux/shelfmade-dashboard/master/publish/autopilot.json?t='+Date.now();
+  fetch(u).then(function(r){return r.ok?r.json():{on:false}}).catch(function(){return {on:false,err:1}}).then(function(c){
+    var d=document.createElement('div');d.className='card';d.style.cssText='border:2px solid '+(c.on?'#2a9d4b':'#888')+';padding:12px;margin:10px 0;border-radius:12px';
+    var h=document.createElement('b');h.textContent='Autopilot: '+(c.on?'ON - the system approves and skips by itself':'OFF - you approve and skip');d.appendChild(h);
+    var p=document.createElement('p');p.style.cssText='margin:6px 0;font-size:14px';
+    p.textContent=c.on?('Last pass: '+(c.last_run||'-').replace('T',' ').slice(0,16)+' UTC. Latest: '+((c.log&&c.log[0])?('#'+c.log[0].issue+' '+c.log[0].act+' ('+c.log[0].why+')'):'nothing yet')):'Turn it on before you go away.';d.appendChild(p);
+    var a=document.createElement('a');a.href='https://github.com/zerenaod-ux/shelfmade-dashboard/actions/workflows/autopilot.yml';a.target='_blank';a.textContent=c.on?'Turn OFF (Run workflow > mode: off)':'Turn ON (Run workflow > mode: on)';a.style.cssText='display:inline-block;padding:8px 12px;border-radius:8px;background:'+(c.on?'#b33':'#2a9d4b')+';color:#fff;text-decoration:none';d.appendChild(a);
+    if(first)host.insertBefore(d,host.firstChild);else host.parentNode.insertBefore(d,host);
+  });
+}
+
+try{apBar(document.getElementById('list'),false);}catch(e){}
+
 (function(){
 'use strict';
 var REPO='zerenaod-ux/shelfmade-dashboard',API='https://api.github.com/repos/'+REPO;

@@ -61,12 +61,24 @@ function brand(b,S,A,AN,now){
     c.appendChild(el('p','','YouTube: '+num(AN.subscribers)+' subscribers · '+vids.length+' videos · '+num(tot)+' views'));
     var top=vids.slice().sort(function(a,b){return (b.views||0)-(a.views||0)}).slice(0,3);if(top.length){c.appendChild(el('p','','Top videos:'));var u=el('ul');top.forEach(function(v){u.appendChild(el('li','',(v.title||'').slice(0,60)+' — '+num(v.views)))});c.appendChild(u)}}
   return {card:c,lvl:lvl}}
+
+function apBar(host,first){
+  var u='https://raw.githubusercontent.com/zerenaod-ux/shelfmade-dashboard/master/publish/autopilot.json?t='+Date.now();
+  fetch(u).then(function(r){return r.ok?r.json():{on:false}}).catch(function(){return {on:false,err:1}}).then(function(c){
+    var d=document.createElement('div');d.className='card';d.style.cssText='border:2px solid '+(c.on?'#2a9d4b':'#888')+';padding:12px;margin:10px 0;border-radius:12px';
+    var h=document.createElement('b');h.textContent='Autopilot: '+(c.on?'ON - the system approves and skips by itself':'OFF - you approve and skip');d.appendChild(h);
+    var p=document.createElement('p');p.style.cssText='margin:6px 0;font-size:14px';
+    p.textContent=c.on?('Last pass: '+(c.last_run||'-').replace('T',' ').slice(0,16)+' UTC. Latest: '+((c.log&&c.log[0])?('#'+c.log[0].issue+' '+c.log[0].act+' ('+c.log[0].why+')'):'nothing yet')):'Turn it on before you go away.';d.appendChild(p);
+    var a=document.createElement('a');a.href='https://github.com/zerenaod-ux/shelfmade-dashboard/actions/workflows/autopilot.yml';a.target='_blank';a.textContent=c.on?'Turn OFF (Run workflow > mode: off)':'Turn ON (Run workflow > mode: on)';a.style.cssText='display:inline-block;padding:8px 12px;border-radius:8px;background:'+(c.on?'#b33':'#2a9d4b')+';color:#fff;text-decoration:none';d.appendChild(a);
+    if(first)host.insertBefore(d,host.firstChild);else host.parentNode.insertBefore(d,host);
+  });
+}
 function load(){
   var m=document.getElementById('m');m.textContent='';m.appendChild(el('p','','Loading…'));
   var now=Date.now();
   Promise.all([].concat(BR.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json')}),
     [jget(API+'/actions/runs?per_page=100'),jget(API+'/issues?state=open&labels=review&per_page=30')])).then(function(r){
-    m.textContent='';var runs=((r[9]||{}).workflow_runs)||[],iss=(r[10]||[]).filter(function(x){return !x.pull_request});
+    m.textContent='';apBar(m,true);var runs=((r[9]||{}).workflow_runs)||[],iss=(r[10]||[]).filter(function(x){return !x.pull_request});
     var any='ok';BR.forEach(function(b,i){var o=brand(b,r[i],r[3+i],r[6+i],now);if(o.lvl!=='ok')any=o.lvl==='bad'||any==='bad'?'bad':'warn';m.appendChild(o.card)});
     var seen={},rows=[],bad=0;runs.forEach(function(x){if(seen[x.name]||KEY.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
     rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});

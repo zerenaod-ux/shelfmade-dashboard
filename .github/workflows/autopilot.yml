@@ -1,0 +1,37 @@
+name: autopilot
+on:
+  schedule:
+    - cron: '23 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'on = owner away (system approves/skips by itself); off = you review; run = just do one pass'
+        type: choice
+        options: ['run', 'on', 'off']
+        default: 'run'
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: review-decide
+  cancel-in-progress: false
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Autopilot pass
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python autopilot.py "${{ inputs.mode || 'run' }}"
+      - name: Save
+        run: |
+          git config user.name "autopilot-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/autopilot.json publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json publish/approved-ddfull.json data/learned/skips.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -qm "autopilot: pass"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; git rebase --abort 2>/dev/null; sleep 6; done
