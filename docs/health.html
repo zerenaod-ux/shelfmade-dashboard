@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#14161a">
+<title>Health</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#16181d;--mut:#6a707c;--line:#e2e5ea;--ok:#1a7f45;--okbg:#e5f5ec;--warn:#9a6700;--warnbg:#fff4d6;--bad:#b42318;--badbg:#fde8e6}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1e2127;--ink:#eceef2;--mut:#9aa1ad;--line:#2d323b;--ok:#4cc884;--okbg:#17301f;--warn:#e3b341;--warnbg:#33290e;--bad:#ff8a80;--badbg:#3a1a17}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 16px 32px}
+header{position:sticky;top:0;background:var(--bg);padding:14px 0 10px;display:flex;align-items:center;gap:10px;z-index:5;border-bottom:1px solid var(--line)}
+h1{font-size:20px;margin:0;flex:1}
+button{font:inherit;border:1px solid var(--line);background:transparent;color:var(--mut);border-radius:12px;padding:8px 12px;font-size:14px;cursor:pointer}
+main{max-width:640px;margin:16px auto;display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+.top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+h2{font-size:18px;margin:0;flex:1}
+.tag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px}
+.ok{background:var(--okbg);color:var(--ok)}.warn{background:var(--warnbg);color:var(--warn)}.bad{background:var(--badbg);color:var(--bad)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
+.n b{display:block;font-size:22px}.n span{font-size:12px;color:var(--mut);text-transform:uppercase}
+p,li{margin:4px 0;font-size:14px;color:var(--mut)}ul{padding-left:18px;margin:6px 0}
+.big{font-size:15px;color:var(--ink)}
+.row{display:flex;justify-content:space-between;gap:8px;font-size:14px;padding:3px 0;border-top:1px solid var(--line)}
+.row span:last-child{color:var(--mut);text-align:right}
+</style>
+</head>
+<body>
+<header><h1>Health</h1><button id="rf">Refresh</button></header>
+<main id="m"><p>Loading…</p></main>
+<script>
+(function(){
+'use strict';
+var REPO='zerenaod-ux/shelfmade-dashboard',RAW='https://raw.githubusercontent.com/'+REPO+'/master/',API='https://api.github.com/repos/'+REPO;
+var BR=[{k:'shelfmade',n:'ShelfMade',s:['state.json','state-shfull.json'],a:['approved.json','approved-shfull.json']},
+        {k:'mindlore',n:'MindLore',s:['state-mindlore.json','state-mlfull.json'],a:['approved-mindlore.json','approved-mlfull.json']},
+        {k:'doodles',n:'AnimationDoodles',s:['state-doodles.json','state-ddfull.json'],a:['approved-doodles.json','approved-ddfull.json']}];
+var KEY=['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'];
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function jget(u){return fetch(u+(u.indexOf('?')<0?'?':'&')+'t='+Date.now()).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).catch(function(){return null})}
+function ago(ms){var h=ms/36e5;return h<1?Math.max(1,Math.round(ms/6e4))+' min':h<48?Math.round(h*10)/10+' h':Math.round(h/24)+' days'}
+function num(n){return Number(n||0).toLocaleString('en-US')}
+function brand(b,S,A,AN,now){
+  var pub=0,sch=0,last=null,until=null,known={},waiting={};
+  S.forEach(function(s){var d=(s&&s.done)||{};Object.keys(d).forEach(function(id){known[id]=1;var t=Date.parse(d[id]&&d[id].due);if(!t)return;if(t<=now){pub++;if(!last||t>last)last=t}else{sch++}if(!until||t>until)until=t})});
+  A.forEach(function(a){((a&&a.items)||[]).forEach(function(i){if(i.id&&!known[i.id])waiting[i.id]=1})});
+  var w=Object.keys(waiting).length,notes=[],lvl='ok';
+  if(!S.some(Boolean)){lvl='bad';notes.push('Cannot read the booking list from GitHub.')}
+  if(last&&now-last>30*36e5){lvl='warn';notes.push('Last post was '+ago(now-last)+' ago.')}
+  if(!until||until<now+36e5*6){lvl=lvl==='bad'?lvl:'warn';notes.push('Nothing booked ahead beyond a few hours.')}
+  var c=el('div','card'),t=el('div','top');t.appendChild(el('h2','',b.n));
+  t.appendChild(el('span','tag '+lvl,lvl==='ok'?'All good':lvl==='warn'?'Needs a look':'Problem'));c.appendChild(t);
+  var g=el('div','nums');[['Published',pub],['Scheduled',sch],['Waiting',w]].forEach(function(p){var d=el('div','n');d.appendChild(el('b','',num(p[1])));d.appendChild(el('span','',p[0]));g.appendChild(d)});c.appendChild(g);
+  if(until&&until>now)c.appendChild(el('p','','Booked until '+new Date(until).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})));
+  if(last)c.appendChild(el('p','','Last post '+ago(now-last)+' ago.'));
+  notes.forEach(function(x){c.appendChild(el('p','big',x))});
+  if(AN){var vids=(AN.videos||[]).filter(function(v){return (v.privacy||'public')==='public'});var tot=vids.reduce(function(a,v){return a+(v.views||0)},0);
+    c.appendChild(el('p','','YouTube: '+num(AN.subscribers)+' subscribers · '+vids.length+' videos · '+num(tot)+' views'));
+    var top=vids.slice().sort(function(a,b){return (b.views||0)-(a.views||0)}).slice(0,3);if(top.length){c.appendChild(el('p','','Top videos:'));var u=el('ul');top.forEach(function(v){u.appendChild(el('li','',(v.title||'').slice(0,60)+' — '+num(v.views)))});c.appendChild(u)}}
+  return {card:c,lvl:lvl}}
+function load(){
+  var m=document.getElementById('m');m.textContent='';m.appendChild(el('p','','Loading…'));
+  var now=Date.now();
+  Promise.all([].concat(BR.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json')}),
+    [jget(API+'/actions/runs?per_page=100'),jget(API+'/issues?state=open&labels=review&per_page=30')])).then(function(r){
+    m.textContent='';var runs=((r[9]||{}).workflow_runs)||[],iss=(r[10]||[]).filter(function(x){return !x.pull_request});
+    var any='ok';BR.forEach(function(b,i){var o=brand(b,r[i],r[3+i],r[6+i],now);if(o.lvl!=='ok')any=o.lvl==='bad'||any==='bad'?'bad':'warn';m.appendChild(o.card)});
+    var seen={},rows=[],bad=0;runs.forEach(function(x){if(seen[x.name]||KEY.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
+    rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});
+    var c=el('div','card'),t=el('div','top');t.appendChild(el('h2','','Automatic jobs'));
+    rows.forEach(function(x){if(x.conclusion==='failure')bad++});
+    t.appendChild(el('span','tag '+(bad?'bad':'ok'),bad?bad+' failed':'All ran fine'));c.appendChild(t);
+    if(!rows.length)c.appendChild(el('p','','Cannot read the job list right now (GitHub limit). Try again in a few minutes.'));
+    rows.forEach(function(x){var s=x.status!=='completed'?'running':x.conclusion==='success'?'ok':x.conclusion||'?';var rw=el('div','row');rw.appendChild(el('span','',x.name));rw.appendChild(el('span','',s+' · '+ago(now-Date.parse(x.updated_at||x.created_at))+' ago'));c.appendChild(rw)});
+    m.appendChild(c);
+    var rc=el('div','card'),rt=el('div','top');rt.appendChild(el('h2','','Waiting for you'));rt.appendChild(el('span','tag '+(iss.length?'warn':'ok'),iss.length?iss.length+' to review':'Nothing waiting'));rc.appendChild(rt);
+    var a=el('a','');a.href='review/';a.textContent='Open the review page ›';rc.appendChild(el('p','')).appendChild(a);m.appendChild(rc);
+    m.appendChild(el('p','','Counts are posts booked by GitHub (your laptop\'s older history is not included).'));
+    m.appendChild(el('p','','Updated '+new Date(now).toLocaleTimeString('en-US')+'. Same numbers as Studio, read straight from GitHub.'))})}
+document.getElementById('rf').onclick=load;load();
+})();
+</script>
+</body>
+</html>
