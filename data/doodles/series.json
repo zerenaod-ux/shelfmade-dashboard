@@ -35,8 +35,8 @@
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 1,
-   "last": 3
+   "uses": 2,
+   "last": 9
   },
   {
    "id": "greg",
@@ -141,6 +141,18 @@
    "gag": "minute",
    "callback": true,
    "date": "2026-11-05"
+  },
+  {
+   "n": 1,
+   "kind": "full",
+   "id": "the-moving-day-trap",
+   "title": "The Moving Day Trap",
+   "concept": "Leo moves into a new apartment (decisions, boxes, neighbours, first night)",
+   "gag": "gerald",
+   "callback": true,
+   "milestone": false,
+   "season": 1,
+   "date": "2026-11-06"
   }
  ]
 }

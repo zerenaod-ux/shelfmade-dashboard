@@ -421,5 +421,418 @@
     }
    }
   ]
+ },
+ {
+  "id": "the-moving-day-trap",
+  "title": "The Moving Day Trap",
+  "theme": "Leo moves into a new apartment (decisions, boxes, neighbours, first night)",
+  "premise": "Leo wants to perfectly setup his new apartment before midnight to prove he finally has his life together. What's at stake is his sanity when he realizes he has unpacked only one houseplant and forty-two mismatched socks.",
+  "running_gag": "Gerald the houseplant being treated like a fragile royal heir while actual furniture gets destroyed.",
+  "payoff": "Leo sleeps on a bare floor wrapped in bubble wrap, but Gerald the plant gets the only assembled bed under a dedicated spotlight.",
+  "description": "Moving into a new place is supposed to mean a fresh start, but Leo turns unpacking into an extreme mental sport. Watch Mia track his questionable choices while Gerald the houseplant receives five-star accommodations. Will Leo survive his first night without overthinking the wallpaper?",
+  "scenes": [
+   {
+    "time": "09:15 AM",
+    "setting": "Leo's new living room, wall-to-wall cardboard boxes",
+    "concept": "DECISION FATIGUE",
+    "beat": "Leo spends forty-seven minutes agonizing over whether to unpack the coffee mugs or the spatula first while Mia eats cold pizza on a box labelled 'IMPORTANT/DO NOT TOUCH'. Mia quotes Kyle's text ('Kyle says: just throw everything in one pile and light a scented candle, bro') and updates her Told-You-So Scoreboard to 24 after Leo accidentally tapes Gerald the plant inside a moving crate.",
+    "story": {
+     "id": "the-moving-day-trap-01",
+     "title": "The Moving Day Trap",
+     "concept": "DECISION FATIGUE",
+     "mood": "dramatic",
+     "insight": "Endless tiny choices drain your brain's decision power fast.",
+     "caption": "Why does moving make simple choices feel impossible? Meet decision fatigue.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo stands in a box-filled living room holding a spatula with worried eyes. Mia sits on a box marked IMPORTANT eating pizza with a smirk.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "This spatula decides if I'm responsible or a dumpster raccoon!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "You spent forty minutes weeping over three ceramic mugs."
+        }
+       ]
+      },
+      {
+       "scene": "Leo gestures anxiously near forty-two mismatched socks. Mia checks her phone flatly. Outside the window, Dev the barista passes carrying Leeo's coffee.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Okay but hear me out, mugs demand deep emotional balance!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle texted: burn the socks and claim insurance, bro."
+        }
+       ]
+      },
+      {
+       "scene": "Leo stands frozen next to a crate labelled GERALD, looking sheepish. Mia writes twenty-four on a tiny notepad with raised eyebrows.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "I accidentally taped Gerald the plant into crate seven!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Scoreboard update: twenty-four for me, zero for Leo."
+        }
+       ]
+      },
+      {
+       "scene": "Leo slumps tiredly against a stack of boxes. Mia steps closer, facing front with a calm, analytical expression.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "Decision fatigue struck\u2014too many tiny choices fried your brain."
+        },
+        {
+         "who": "leo",
+         "feel": "tired",
+         "text": "This is the Sunday Blanket Panic with bubble wrap!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo looks at a silver coin with hopeful eyes. Mia points at the boxes with a sly smirk, calm and upright.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Flip a coin for small choices. Next time: sofa staircase trap."
+        }
+       ]
+      },
+      {
+       "scene": "Mia stands directly beside crate seven, staring at the packaging tape with a deadpan closed-mouth expression.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Anyway. You trapped an innocent houseplant in total darkness."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "02:40 PM",
+    "setting": "Apartment hallway, outside neighbour Brenda's open door",
+    "concept": "SPOTLIGHT EFFECT",
+    "beat": "Leo drops a squeaky rubber chicken while carrying Gerald, convincing himself that nosy neighbour Brenda\u2014visible in her floral cardigan holding a clipboard\u2014now considers him a menace to the building's peace. Mia dryly points out Brenda hasn't looked up from her Sudoku once, while Leo over-explains the acoustics of linoleum flooring to an empty corridor.",
+    "story": {
+     "id": "the-moving-day-trap-02",
+     "title": "The Moving Day Trap",
+     "concept": "SPOTLIGHT EFFECT",
+     "mood": "curious",
+     "insight": "People notice your awkward moments way less than you think.",
+     "caption": "Dropped something in public and thought everyone was judging you? That's the Spotlight Effect taking over.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Linoleum apartment corridor with stacked boxes. Leo in yellow hoodie gently cradles potted fern Gerald. Mia in teal sweater stands beside him with raised eyebrows. Neighbour Brenda visible behind.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "The entire building officially hates me now."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "I dropped Gerald's emotional support squeaky-chicken near Brenda's door."
+        }
+       ]
+      },
+      {
+       "scene": "Leo crouches near linoleum floor with worried eyes, pointing dramatically at squeaky chicken toy. Mia stands upright with smirk, holding clipboard. Neighbour Brenda sits quietly in background.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Brenda is seventy-two and solving a hard Sudoku."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "She wrote 'loud menace' on her clipboard, Mia!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo hugs Gerald the plant closer with panicked eyes. Mia looks down at her phone with deadpan expression. Brenda remains seated near her apartment doorway in background.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Linoleum amplifies squeaks! Remember the Sunday Blanket Panic?"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle texts: tell Brenda you're testing acoustics for your opera career."
+        }
+       ]
+      },
+      {
+       "scene": "Mia stands with folded arms, deadpan gaze facing camera. Leo stands beside her looking sheepish. Brenda in background flips a puzzle page, unaware of them. In the background, clearly visible and drawn in the same style, stands a curious stranger watching from a bench (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "It's the SPOTLIGHT EFFECT."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "We overestimate how much strangers notice our tiny, awkward mistakes."
+        }
+       ]
+      },
+      {
+       "scene": "Leo gently rests Gerald on a cardboard box with relieved expression. Mia stands beside him with warm smirk, arms loosely crossed. Brenda visible near background door.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Try assuming nobody cares, because honestly, nobody does."
+        }
+       ]
+      },
+      {
+       "scene": "Mia leans against the apartment corridor wall, looking at Leo with amused, raised eyebrow. Leo stands facing camera with anxious eyes. Brenda remains quiet in background.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Why do you always insist that..."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "07:10 PM",
+    "setting": "Kitchen counter strewn with takeaway containers",
+    "concept": "SUNK COST FALLACY",
+    "beat": "Leo refuses to abandon a wobbly, three-legged stool he spent four hours assembling backwards because 'it represents my transition into adult self-reliance.' Mia reminds him this is worse than his breakdown during The Sunday Blanket Panic, while Dev the barista passes in the alley outside delivering coffee mislabeled 'Leon'.",
+    "story": {
+     "id": "the-moving-day-trap-03",
+     "title": "The Moving Day Trap",
+     "concept": "SUNK COST FALLACY",
+     "mood": "dramatic",
+     "insight": "We cling to bad choices just because we suffered to make them.",
+     "caption": "Spending four hours building a stool backwards doesn't make it art, Leo.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "A cramped kitchen counter at 7:10 PM with greasy takeaway boxes. Leo hugs a fragile, overly dressed Gerald the plant while staring at a wobbly three-legged stool. In the blurry alley window behind them, Dev the barista walks past holding a cup labeled 'Leon'.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "This backward stool is my absolute crowning achievement in adult self-reliance!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "It has three legs and actively hunts my ankles."
+        }
+       ]
+      },
+      {
+       "scene": "Leo aggressively tightens a loose wooden screw on the deformed stool with a butter knife. Gerald the plant wears a tiny paper crown on its single healthy leaf. Mia checks her phone with a bored tilt of her head.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Okay but hear me out. I bled twice on the cushion."
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "That is sadder than your breakdown during The Sunday Blanket Panic."
+        }
+       ]
+      },
+      {
+       "scene": "Leo raises the lopsided stool above his head like a triumphant trophy hunter. Mia pinches the bridge of her nose in deep regret, her teal sweater sleeves bunched up.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "excited",
+         "text": "If I quit now, those four hours of pure agony were completely free!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo lowers the stool gently. Mia points a single fake-nail finger straight at his chest, leaning in close with absolute deadpan confidence.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "That is the sunk cost fallacy. You are proposing to garbage."
+        }
+       ]
+      },
+      {
+       "scene": "Leo sets Gerald the plant onto the wobbly seat. The stool immediately collapses into a pile of sad matchsticks. Leo stares blankly down at the wreckage.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Next time, I am hiring a professional toddler to build furniture."
+        }
+       ]
+      },
+      {
+       "scene": "Leo gingerly scoops Gerald the plant out of the sawdust pile, cradling it like a fragile royal heir while the broken stool parts roll across the floor.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Are we framing the splintered wood as avant-garde wall decor?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "11:05 PM",
+    "setting": "Unfurnished bedroom with one solitary lamp",
+    "concept": "PARADOX OF CHOICE",
+    "beat": "Faced with eighty-four white noise tracks to help him sleep in the new room, Leo overthinks until 1:00 AM while Mia leaves him sleeping on a bubble-wrap mattress next to a perfectly cushioned Gerald. Next time: Leo tries to host his first adult dinner party and accidentally invites his boss Greg.",
+    "story": {
+     "id": "the-moving-day-trap-04",
+     "title": "The Moving Day Trap",
+     "concept": "PARADOX OF CHOICE",
+     "mood": "dramatic",
+     "insight": "Too many options paralyze action.",
+     "caption": "When choosing a white noise track ruins your entire night.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Unfurnished bedroom at 11:05 PM with one lamp. Leo sits cross-legged on bubble wrap next to Gerald the plant on a velvet cushion. Mia leans against the bare wall eating cold pizza.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Eighty-four white noise tracks remain."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Pick rain, Leo. It's midnight."
+        }
+       ]
+      },
+      {
+       "scene": "Leo scrolls frantically on his phone. Gerald wears a tiny velvet eye mask propped on a toothpick. A lonely lamp casts harsh shadows.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "But what if brown noise heals me faster than pink rain?"
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "You are vibrating at a frequency of pure regret."
+        }
+       ]
+      },
+      {
+       "scene": "Leo holds his phone inches from his face, sweating under the harsh lamp. Gerald looks suspiciously serene on the cushion.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "The thunderstorm track has aggressive thunderclaps!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "That is worse than your Sunday Blanket Panic."
+        }
+       ]
+      },
+      {
+       "scene": "Mia points at Leo's phone as he stares blankly. Gerald's eye mask slips slightly. The apartment is dead silent.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "This is the paradox of choice, Leo."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Extra options guarantee zero decisions."
+        }
+       ]
+      },
+      {
+       "scene": "Mia walks out the door, leaving Leo slumped against the bubble wrap. Gerald rests on the luxury cushion with the only pillow.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Just flip a coin."
+        }
+       ]
+      },
+      {
+       "scene": "Leo fast asleep upright against the wall, mouth open. Gerald sits comfortably on the plush cushion next to him. Lamp hums.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "tired",
+         "text": "Next time: Greg gets invited."
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]
