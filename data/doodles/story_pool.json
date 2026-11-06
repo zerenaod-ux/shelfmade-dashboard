@@ -1,5 +1,108 @@
 [
  {
+  "id": "sleep-effort-insomnia",
+  "title": "The Sleep Effort Trap",
+  "concept": "SLEEP EFFORT",
+  "mood": "warm",
+  "insight": "Trying hard to fall asleep tells your brain something is wrong, so it stays alert.",
+  "caption": "Can't sleep? Trying harder might be the reason. Leo and Mia explain the sleep effort trap.",
+  "explain_shot": 4,
+  "shots": [
+   {
+    "scene": "Bedroom at night, a digital clock reading 3:07. Leo sits bolt upright in bed in his yellow hoodie, wide eyes, hair messy. Mia lies beside him under a teal blanket with one eye barely open. A small houseplant named Gerald sits on the nightstand.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Three AM. My brain is throwing a party."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Sounds loud. Just fall asleep."
+     }
+    ]
+   },
+   {
+    "scene": "Same bedroom. Leo hugs a pillow and stares at the camera in disbelief. Mia pulls the blanket up to her chin with a flat, unbothered look.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Wow. Thirty years of living and nobody mentioned that option."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Try harder, then."
+     }
+    ]
+   },
+   {
+    "scene": "Leo lies flat with his eyes squeezed shut, fists clenched at his sides, forehead wrinkled. Mia lifts her sleep mask with one finger and peeks at him, a tiny smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I am trying so hard my eyebrows hurt."
+     },
+     {
+      "who": "mia",
+      "feel": "smug",
+      "text": "And yet, you are still awake."
+     }
+    ]
+   },
+   {
+    "scene": "The clock now reads 4:12. Leo sits cross-legged, tired, counting on his fingers beside a cartoon cloud of tiny sheep. Gerald the plant sits on the nightstand. Mia sits up and pats the bed next to her.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "Four hundred sheep. Gerald is judging me."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Gerald is a plant, Leo. Come here, listen."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits upright with a lamp glowing softly, a small thought bubble above Leo's head showing a tiny alarm bell ringing. She gestures gently, friendly closed-lip smile. Leo listens, chin on his hand.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "excited",
+      "text": "Forcing sleep tells your brain danger is near, so it stays alert. That is sleep effort."
+     }
+    ]
+   },
+   {
+    "scene": "Soft morning-blue light. Leo lies back relaxed with a small calm smile, arms loose. Mia tucks the blanket around him. Leo faces the camera at the end, sleepy and unsure.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Stop chasing sleep. Let it find you."
+     },
+     {
+      "who": "leo",
+      "feel": "tired",
+      "text": "Okay... lying here, not trying. Wait, is it still three AM?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
+ },
+ {
   "id": "anchoring-bias-lamp",
   "title": "The Price Tag Trap",
   "concept": "ANCHORING BIAS",
@@ -2435,7 +2538,7 @@
      {
       "who": "mia",
       "feel": "deadpan",
-      "text": "Leo, it\u2019s only three PM."
+      "text": "Leo, it’s only three PM."
      }
     ]
    },
@@ -2518,7 +2621,7 @@
      {
       "who": "mia",
       "feel": "deadpan",
-      "text": "It\u2019s just Brenda asking for your shift."
+      "text": "It’s just Brenda asking for your shift."
      }
     ]
    },
@@ -2561,7 +2664,7 @@
      {
       "who": "mia",
       "feel": "confident",
-      "text": "That's Task Paralysis\u2014your brain sees big texts as heavy labor."
+      "text": "That's Task Paralysis—your brain sees big texts as heavy labor."
      },
      {
       "who": "leo",
@@ -2654,7 +2757,7 @@
      {
       "who": "mia",
       "feel": "confident",
-      "text": "That\u2019s pluralistic ignorance\u2014everyone secretly feels lost, but assumes everyone else understands."
+      "text": "That’s pluralistic ignorance—everyone secretly feels lost, but assumes everyone else understands."
      }
     ]
    },
@@ -2747,7 +2850,7 @@
      {
       "who": "mia",
       "feel": "deadpan",
-      "text": "It\u2019s called productive procrastination."
+      "text": "It’s called productive procrastination."
      },
      {
       "who": "mia",
