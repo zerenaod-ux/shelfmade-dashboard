@@ -1,8 +1,60 @@
 {
  "brand": "mindlore",
- "collected": "2026-11-06T05:21:25Z",
+ "collected": "2026-11-06T05:40:06Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "M\u00fcnsterberg wrote this for you.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nFollow MindLore for",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-06T05:33:38.286Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "M\u00fcnsterberg wrote this for you.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nFollow MindLore for",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-06T05:33:37.516Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "M\u00fcnsterberg wrote this for you.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nFollow MindLore for",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-06T05:33:37.943Z"
+  },
   {
    "platform": "youtube",
    "status": "sent",
@@ -541,7 +593,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7704895665154936077?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-06T03:32:18.644Z",
    "text": "Darwin had a warning for you. The Expression of the Emotions in Man and Animals by Charles Darwin Follow MindL",
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -555,7 +607,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.404Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -617,7 +669,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7704780377264573710?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-05T20:04:25.729Z",
    "text": "Listen to what Darwin warned about. The Expression of the Emotions in Man and Animals by Charles Darwin Listen",
-   "views": 76,
+   "views": 91,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -631,7 +683,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.400Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "instagram",
@@ -676,7 +728,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.338Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -739,7 +791,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.343Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -788,7 +840,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7704153465001528589?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-04T03:31:56.340Z",
    "text": "Nobody warns you about Psychology Of Revolution. The Psychology Of Revolution by Gustave Le Bon Nobody warns y",
-   "views": 92,
+   "views": 93,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -802,7 +854,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.471Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -865,7 +917,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.423Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -928,7 +980,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.417Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -1045,7 +1097,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.335Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -1108,7 +1160,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.455Z"
+   "updated": "2026-11-06T05:39:31.010Z"
   },
   {
    "platform": "youtube",
@@ -1171,7 +1223,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.332Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1234,7 +1286,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.447Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1297,7 +1349,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.316Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1355,7 +1407,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.440Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "instagram",
@@ -1441,7 +1493,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.461Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1481,7 +1533,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.520Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "instagram",
@@ -1567,7 +1619,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.452Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1630,7 +1682,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.435Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1756,7 +1808,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.320Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1878,7 +1930,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T03:35:04.341Z"
+   "updated": "2026-11-06T05:39:31.011Z"
   },
   {
    "platform": "youtube",
@@ -1920,64 +1972,6 @@
     "views"
    ],
    "updated": "2026-11-06T05:15:33.522Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7701911433289698573?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-10-29T02:30:56.980Z",
-   "text": "Why can a tiny break in someone\u2019s routine make a scene funny? A MindLore reflection on Laughter: An Essay on t",
-   "views": 74,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-06T03:35:04.386Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/3wxpN733RQ8",
-   "sent": "2026-10-29T02:00:29.818Z",
-   "text": "Why can a tiny break in someone\u2019s routine make a scene funny?\n\nA MindLore reflection on Laughter: An Essay on ",
-   "views": 8,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-05T09:25:35.997Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=3sMZ0_phVOA",
-   "sent": "2026-10-28T05:26:10.000Z",
-   "text": "Where does a personal choice end and a social influence begin?\n\nA guided primary-text reading with original Mi",
-   "views": 5,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-05T09:25:35.998Z"
   }
  ]
 }

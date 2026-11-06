@@ -1,8 +1,60 @@
 {
  "brand": "shelfmade",
- "collected": "2026-11-06T05:21:24Z",
+ "collected": "2026-11-06T05:40:06Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Plato had a warning for you.\n\nPhaedrus by Plato\n\nPlato had a warning for you.\n\nPHAEDRUS: You shall hear, if yo",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-06T05:33:37.755Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Nobody warns you about Analects.\n\nThe Analects by Confucius\n\nNobody warns you about Analects.\n\nHow can a man c",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-06T05:33:36.309Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why is Bacon's Essays still read today?\n\nBacon's Essays by Francis Bacon\n\nWhy is Bacon's Essays still read tod",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-06T05:33:36.960Z"
+  },
   {
    "platform": "tiktok",
    "status": "scheduled",
@@ -1914,69 +1966,6 @@
     "views"
    ],
    "updated": "2026-11-05T07:37:56.775Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=bIeNOgFWT_I",
-   "sent": "2026-10-25T23:26:05.000Z",
-   "text": "One of Marden's key insights is that most people waste their efforts because their mindset contradicts their a",
-   "views": 2,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-05T07:37:56.775Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7700749543855394062?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-10-25T23:22:04.411Z",
-   "text": "Why fancy that you have all the truth in your keeping? Representative Men: Seven Lectures by Ralph Waldo Emers",
-   "views": 107,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-06T03:40:19.222Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/De74EEtirwI/",
-   "sent": "2026-10-25T23:23:55.804Z",
-   "text": "Why fancy that you have all the truth in your keeping?\n\nRepresentative Men: Seven Lectures by Ralph Waldo Emer",
-   "views": 14,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-06T03:18:23.489Z"
   }
  ]
 }
