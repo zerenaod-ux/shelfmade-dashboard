@@ -622,6 +622,16 @@
    "subsGained": 0
   },
   {
+   "id": "xGaGRBalAvQ",
+   "title": "M\u00fcnsterberg would hate how you live.",
+   "published": "2026-11-05T18:04:28Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "yza63zQvJqI",
    "title": "How We Think",
    "published": "2026-10-31T17:02:59Z",
@@ -672,16 +682,6 @@
    "avgSeconds": 1374,
    "avgPercent": 2862.61,
    "subsGained": 0
-  },
-  {
-   "id": "xGaGRBalAvQ",
-   "title": "M\u00fcnsterberg would hate how you live.",
-   "published": "2026-11-05T18:04:28Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "Kjx5KmP1s7w",
@@ -1260,6 +1260,26 @@
    "duration": "PT2M56S",
    "privacy": "public",
    "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Ylxy6FpM934",
+   "title": "Do you hold contradictory beliefs at once? | Gustave Le Bon",
+   "published": "2026-11-06T06:48:56Z",
+   "duration": "PT8M29S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "pnp7OZO0fJA",
+   "title": "Why we notice so little of what is in front of us | William James",
+   "published": "2026-11-06T06:33:52Z",
+   "duration": "PT8M13S",
+   "privacy": "private",
+   "views": 0,
    "likes": 0,
    "comments": 0
   },

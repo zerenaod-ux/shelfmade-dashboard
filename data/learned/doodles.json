@@ -1,15 +1,27 @@
 {
  "short": {
   "do_more": [
-   "Use concise, curiosity\u2011driven titles like 'The Rehearsal Trap' that hint at a paradox or trap",
-   "Keep the opening 5 seconds packed with a visual gag or punchline to hook viewers",
-   "Maintain a tight runtime around 40 seconds; avoid any filler or long intros",
-   "Emphasize absurdity\u2014over\u2011exaggerated scenarios that make psychological concepts funny",
-   "Add a clear, memorable punchline or twist at the end to encourage sharing"
+   "Start with a relatable everyday scenario in the first 3\u20115 seconds",
+   "Use a vivid metaphor (Trap, Spiral, Loop, Snare) in the title and visual gag",
+   "Keep runtime between 30\u201145 seconds, tight pacing with quick punchlines",
+   "Frame the psychological bias as a funny \u2018trap\u2019 that Leo falls into",
+   "End with a clear aha moment or punchline that reinforces the bias"
   ],
-  "n": 9,
-  "best_vpd": 2.89,
+  "avoid": [
+   "Long question\u2011style titles or abstract wording",
+   "Excessive exposition before the hook",
+   "Runtime over 45 seconds or overly slow pacing",
+   "Lack of a visual metaphor or clear comedic payoff"
+  ],
+  "title_style": "Use a short, punchy \u2018The\u202f[Everyday Situation]\u202f[Bias Metaphor]\u2019 format that instantly sparks curiosity",
+  "next_tests": [
+   "Create a 30\u2011second \u2018tight\u2019 version of a \u2018The\u202fCoffee Queue Trap\u2019 script and compare VPD to a 42\u2011second \u2018standard\u2019 cut",
+   "Try a new metaphor series (e.g., \u2018The ___ Loop\u2019) while keeping the same scenario structure",
+   "Swap the opening hook from a statement to a surprising question and measure impact on avgPercent watched"
+  ],
+  "n": 11,
+  "best_vpd": 2.37,
   "best_title": "The Rehearsal Trap"
  },
- "updated": "2026-11-05"
+ "updated": "2026-11-06"
 }
