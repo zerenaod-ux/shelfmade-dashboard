@@ -81,6 +81,80 @@
     "question",
     "scroll"
    ]
+  },
+  {
+   "id": "st-261106-280d7",
+   "title": "You think indoor life is normal? \ud83c\udf33 #NatureTime",
+   "theme": "time in nature",
+   "acts": [
+    "explain",
+    "point",
+    "sit",
+    "think"
+   ],
+   "bgs": [
+    "bedroom",
+    "brain",
+    "desert",
+    "office",
+    "park",
+    "school",
+    "study"
+   ],
+   "props": [
+    "bed",
+    "camera",
+    "chart",
+    "clock",
+    "cloud",
+    "heart",
+    "lamp",
+    "laptop",
+    "moon",
+    "num",
+    "question",
+    "sun",
+    "tree"
+   ]
+  },
+  {
+   "id": "st-261106-911d8",
+   "title": "Your language learning myth busted \ud83e\udde0 #LanguageScience",
+   "theme": "learning a language",
+   "acts": [
+    "explain",
+    "laugh",
+    "lookup",
+    "point",
+    "read",
+    "shrug",
+    "think",
+    "walk"
+   ],
+   "bgs": [
+    "brain",
+    "history",
+    "library",
+    "office",
+    "park",
+    "school",
+    "study"
+   ],
+   "props": [
+    "book",
+    "brain",
+    "bulb",
+    "chart",
+    "clock",
+    "crowd",
+    "eye",
+    "globe",
+    "lamp",
+    "num",
+    "phone",
+    "question",
+    "scroll"
+   ]
   }
  ]
 }

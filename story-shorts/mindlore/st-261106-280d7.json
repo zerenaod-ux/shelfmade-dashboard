@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261106-280d7",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "You think indoor life is normal? 🌳 #NatureTime",
+ "hook": "You spend most of your day indoors.",
+ "thumbnail_headline": "OUTSIDE VS INDOOR",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your day indoors. Ancient peoples lived almost entirely outside, under the sky. In the 1970s, anthropologist Robert L. Kelly studied the Hadza of Tanzania and recorded about 12 to 14 hours of outdoor activity daily. Later research at the University of Oxford in 2015 measured office workers and found they spent about 8 hours inside each day. Why do we think indoor life is normal? Because modern buildings provide comfort and technology hides the sun. What did the researchers discover about health? They linked more outdoor time to lower stress hormones and better sleep. Does this pattern still appear today? Yes, many societies still spend most daylight outside, a concept called biophilic time. The result? More daylight exposure boosts mood and immune function. That's it. So next time you sit at a desk, remember to step outside and breathe the sky, because you spend most of your day indoors."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Hadza spent about 12 to 14 hours outdoors daily",
+   "who": "Robert L. Kelly",
+   "year": "1970s",
+   "place": "Tanzania"
+  },
+  {
+   "claim": "Office workers spend about 8 hours indoors each day",
+   "who": "U.S. Bureau of Labor Statistics (American Time Use Survey)",
+   "year": "2015",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "time in nature"
+}

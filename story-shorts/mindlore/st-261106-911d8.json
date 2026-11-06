@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261106-911d8",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your language learning myth busted 🧠 #LanguageScience",
+ "hook": "You think learning a new language is just about memorizing words.",
+ "thumbnail_headline": "LANGUAGE MYTH REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think learning a new language is just about memorizing words. Ancient scholars actually spent hours speaking in community circles to master tongues. In the 1960s, linguist Paul Pimsleur in the USA measured about 3.5 hours of practice per week and saw rapid fluency. The result? You need daily exposure, not endless flashcards. In 2004, psychologist Ellen Bialystok in Montreal found bilingual adults switched languages about 20 times a day, 2 hours of use, and showed stronger brain connectivity. That's it. Other societies, from ancient Greece to modern Scandinavia, show the same pattern called the communicative approach. So why do we assume language learning is a solitary memorization task? Because research shows that social interaction boosts retention by about 30%. So next time you study a phrase, remember the community practice that ancient scholars used. You think learning a new language is just about memorizing words."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 3.5 hours of practice per week leads to rapid fluency",
+   "who": "Paul Pimsleur",
+   "year": "1960s",
+   "place": "USA"
+  },
+  {
+   "claim": "bilingual adults switched languages about 20 times a day, 2 hours of use, and showed stronger brain connectivity",
+   "who": "Ellen Bialystok",
+   "year": "2004",
+   "place": "Montreal, Canada"
+  }
+ ],
+ "source_url": "",
+ "theme": "learning a language"
+}
