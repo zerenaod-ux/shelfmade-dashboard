@@ -228,5 +228,37 @@
   "brand": "doodles",
   "kind": "full",
   "date": "2026-11-06"
+ },
+ "The Feather Duster Detour | Leo & Mia #6": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "ace_sm_candle_02"
+  ],
+  "mood": "dramatic",
+  "pace": 1.75,
+  "exp": {
+   "music_energy": "calm"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-06"
+ },
+ "The Infinite Refresh | Leo & Mia #7": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_02"
+  ],
+  "mood": "dramatic",
+  "pace": 1.68,
+  "exp": {
+   "music_energy": "calm"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-06"
  }
 }
