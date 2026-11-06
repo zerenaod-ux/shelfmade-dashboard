@@ -341,6 +341,65 @@ def _story_gate(d):
     return bad
 
 
+def _pick_passages(window, n=7):
+    """n exact sentences from the book window: capital start, 9-26 words, no digits/underscores/quotes/brackets, spread evenly."""
+    sents = re.split(r'(?<=[.!?])\s+', re.sub(r'\s+', ' ', window))
+    ok = []
+    for s in sents:
+        s = s.strip()
+        w = s.split()
+        if s[:1].isupper() and 9 <= len(w) <= 26 and s[-1:] in '.!?' and not re.search(r'[_"\[\]=0-9*{}<>|]|[\u201c\u201d]', s):
+            ok.append(s)
+    if len(ok) < n:
+        return []
+    step = len(ok) / float(n)
+    return [ok[int(i * step)] for i in range(n)]
+
+
+def _sectionwise(c, tn, window, prior, extra, fix=''):
+    """SM_SECTIONS: outline call + 7 small section calls. Returns the same dict shape as the one-call draft."""
+    import story_rules
+    pas = _pick_passages(window)
+    if not pas:
+        raise ValueError('no usable passages in this window')
+    base = 'Channel: ShelfMade (classic books explained for modern readers). Book: "%s" by %s (public domain). Existing hooks to avoid: %s.\n' % (c['title'], c['author'], prior)
+    lines = '\n'.join('Section %d will quote: "%s"' % (i + 1, p) for i, p in enumerate(pas))
+    o = _call(base + 'Plan a 7-section narrated video. Return JSON only: {"public_title": "question-style title | %s", "hook": "ONE opening sentence: a plain claim about the viewer\'s own life using you/your, 6-14 words", '
+              '"thumb": "2-5 WORD CAPS HEADLINE reusing two words of the hook", "outline": ["one line per section, 7 lines, each linking the passage to modern life"], '
+              '"claims": [{"claim":"...","who":"real researcher or institution","year":"e.g. 1966 or 1960s","place":"..."} x3, ONLY findings you are certain are real and famous]}.\n' % c['author']
+              + lines + story_rules.CORE + (extra or '') + (('\nFix these problems from the last attempt: ' + fix) if fix else ''))
+    hook = str(o.get('hook', '')).strip(); outline = [str(x) for x in (o.get('outline') or [])][:7]
+    claims = o.get('claims') or []
+    if not hook or len(outline) < 7:
+        raise ValueError('outline incomplete')
+    who = '; '.join('%s %s: %s' % (x.get('who', ''), x.get('year', ''), str(x.get('claim', ''))[:100]) for x in claims if isinstance(x, dict))
+    secs = []; prev = ''
+    for i in range(7):
+        role = ''
+        if i == 0:
+            role = ('Begin EXACTLY with this sentence: "%s" Then sentence 2 = what ancient people / the past / real research actually found (use a word like ancient, years ago, century, actually). '
+                    'Sentence 3 = who studied it and in which year, with a number. Then the pivot line "The result?" and a short answer. ' % hook)
+        elif i in (1, 3, 5):
+            role = 'Include one question the viewer is thinking (one sentence ending with a question mark) and answer it right after with a fact. '
+        if i == 2:
+            role += 'Use the line "That\'s it." once after a surprising number. '
+        if i == 6:
+            role = ('Close it: bring it back to the viewer\'s life ("So next time you ..., remember ...") and make the LAST sentence repeat the key words of this opening: "%s". '
+                    'No sign-off, no subscribe, no thanks. ' % hook)
+        r = _call(base + 'Write ONLY the narration of section %d of 7 for this video. Title: %s. Hook: %s. Section plan: %s. Real evidence you may use (do not invent others): %s. '
+                  'Previous section ended: "%s". %sUse 130-170 words, short spoken sentences of 6-14 words, plain words, no greeting, no underscores, no hashtags, no stage directions. '
+                  'It MUST contain this passage word for word inside double quotation marks: "%s". Return JSON only: {"narration": "..."}'
+                  % (i + 1, o.get('public_title', ''), hook, outline[i], who, prev[-160:], role, pas[i]))
+        nar = str((r or {}).get('narration', '')).strip() if isinstance(r, dict) else ''
+        if len(nar.split()) < 60:
+            raise ValueError('section %d too short' % (i + 1))
+        if norm(pas[i]) not in norm(nar):
+            nar += ' As the book puts it, "%s"' % pas[i]
+        secs.append({'title': (outline[i][:60]), 'narration': nar}); prev = nar
+    return {'public_title': o.get('public_title') or '%s | %s' % (c['title'], c['author']), 'hook': hook, 'thumb': o.get('thumb') or hook.upper()[:30],
+            'sections': secs, 'passages': [{'chapter': c['title'], 'excerpt': p} for p in pas], 'claims': claims}
+
+
 def make_one():
     c = _pick_book()
     if not c:
@@ -391,8 +450,16 @@ def make_one():
         except Exception:
             pass
     prompt += extra
+    _fixlast = ''
     for attempt in range(6):
-        d = _call(prompt)
+        if SH and os.environ.get('SM_SECTIONS', '1') == '1':   # SM_SECTIONS: small section-by-section calls (reliable on free tiers)
+            try:
+                d = _sectionwise(c, tn, window, prior, extra, _fixlast)
+            except Exception as e:
+                print('ml_autoscripts: section-by-section failed:', str(e)[:160], flush=True)
+                d = _call(prompt)
+        else:
+            d = _call(prompt)
         if not isinstance(d, dict):
             continue
         def _pas(p):   # Gemini sometimes sends a string or a [chapter, excerpt] list instead of an object
@@ -423,6 +490,7 @@ def make_one():
         if not bad:
             break
         prompt = base % (kind, chan, c['title'], c['author'], prior, window) + extra + '\nYour last attempt failed these checks, fix them: ' + '; '.join(bad[:6])
+        _fixlast = '; '.join(str(x) for x in bad[:6])
     else:
         print('ml_autoscripts: gave up on', bid, bad[:3], flush=True)
         return None
