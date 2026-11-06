@@ -1,14 +1,14 @@
 {
-  "version": "cinematic-default-v1",
-  "full_video_min_seconds": 300,
-  "full_video_max_seconds": 480,
-  "daily_generation": true,
-  "daily_hour_chicago": 9,
-  "automatic_publish": false,
-  "shot_target_seconds": 8,
-  "transition_seconds": 0.65,
-  "voice": "af_heart",
-  "voice_speed": 0.95,
-  "thumbnail": "content-specific headline on matching footage",
-  "music_path": "/Users/USER/Dev/content-empire/demo/assets/music_calm.mp3"
+ "version": "cinematic-default-v1",
+ "full_video_min_seconds": 300,
+ "full_video_max_seconds": 560,
+ "daily_generation": true,
+ "daily_hour_chicago": 9,
+ "automatic_publish": false,
+ "shot_target_seconds": 8,
+ "transition_seconds": 0.65,
+ "voice": "af_heart",
+ "voice_speed": 0.95,
+ "thumbnail": "content-specific headline on matching footage",
+ "music_path": "/Users/USER/Dev/content-empire/demo/assets/music_calm.mp3"
 }
