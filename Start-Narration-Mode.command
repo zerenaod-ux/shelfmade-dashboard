@@ -24,6 +24,5 @@ for _ in range(40):
  except Exception:time.sleep(.25)
 else:print('Startup failed. See dashboard.log.');sys.exit(1)
 print('ShelfMade is running in your normal laptop session. Open the dashboard and use Rebuild with narration on the caption-only job.')
-subprocess.run(['open','https://naods-macbook-pro.tail7f86df.ts.net/'])
 PY
 read '?Press Enter to close.'

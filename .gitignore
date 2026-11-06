@@ -47,3 +47,6 @@ runtime/
 /ROADMAP.md
 /SYSTEM.md
 /MASTER-ROADMAP.md
+
+remote.json
+*.bak*
