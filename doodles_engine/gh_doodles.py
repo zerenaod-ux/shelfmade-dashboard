@@ -14,6 +14,28 @@ def jl(p, d):
     except (OSError, ValueError): return d
 def unused():
     used = set(jl(USED, [])); return [s for s in list(stories.STORIES) + jl(POOL, []) if s['id'] not in used]
+def mark_used(sid):
+    """Record the story as used BEFORE building and push at once, so a lost/late state push can never cause a rebuild."""
+    used = jl(USED, [])
+    if sid not in used: used.append(sid); USED.write_text(json.dumps(used))
+    try:
+        subprocess.run(['git', 'config', 'user.name', 'doodles-bot']); subprocess.run(['git', 'config', 'user.email', 'bot@users.noreply.github.com'])
+        subprocess.run(['git', 'add', '-f', str(USED)])
+        if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
+            subprocess.run(['git', 'commit', '-qm', 'doodles: reserve ' + sid])
+            for _ in range(4):
+                if subprocess.run('git pull --rebase -q && git push -q', shell=True).returncode == 0: break
+                subprocess.run('git rebase --abort', shell=True, stderr=subprocess.DEVNULL)
+                try:
+                    subprocess.run('git fetch -q origin', shell=True)
+                    br = subprocess.run('git show origin/master:data/doodles/used.json', shell=True, capture_output=True, text=True).stdout
+                    union = sorted(set(json.loads(br or '[]')) | set(jl(USED, [])))
+                    subprocess.run('git reset -q --hard origin/master', shell=True)
+                    USED.write_text(json.dumps(union)); subprocess.run(['git', 'add', '-f', str(USED)])
+                    subprocess.run(['git', 'commit', '-qm', 'doodles: reserve ' + sid])
+                except Exception as e: log('merge retry', e)
+                time.sleep(4)
+    except Exception as e: log('reserve push skipped', e)
 def run(*a, **k): return subprocess.run([sys.executable, *map(str, a)], **k)
 def main():
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 2
@@ -23,9 +45,10 @@ def main():
         log('writing new stories...'); run(HERE / 'story_writer.py', n + 3)
     made = []
     for s in unused()[:n]:
+        if s['id'] in set(jl(USED, [])): log('already used, skip', s['id']); continue
         day = datetime.date.today().isoformat(); work = DATA / f"{day}-{s['id']}"; work.mkdir(exist_ok=True)
         st = dict(s); st['explain_shot'] = s.get('explain_shot', EXPLAIN.get(s['id'], 4)); (work / 'story.json').write_text(json.dumps(st, indent=1))
-        log('MAKING', s['id'])
+        mark_used(s['id']); log('MAKING', s['id'])
         t = time.time()
         if run(HERE / 'kaggle_make.py', work).returncode: log('Kaggle stage 1 failed for', s['id'], '- skipping this story'); continue
         if run(HERE / 'ls_cloud.py', work).returncode: log('cloud lip-sync incomplete; render falls back to fast mouths'); os.environ['FASTLIP'] = '1'
