@@ -1,0 +1,22 @@
+name: review-digest
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 8:00 AM Chicago (CST)
+    - cron: '0 1 * * *'    # 7:00 PM Chicago (CST)
+  workflow_dispatch:
+permissions:
+  issues: write
+  contents: read
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Tell the owner what waits for review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python review_digest.py
