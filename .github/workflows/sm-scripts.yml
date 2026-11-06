@@ -12,7 +12,7 @@ permissions:
 jobs:
   write:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 130
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,6 +21,7 @@ jobs:
       - name: Packages for the builder checks
         run: pip install --quiet numpy pillow requests
       - name: Write and check new scripts
+        timeout-minutes: 110
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY2: ${{ secrets.GEMINI_API_KEY2 }}
@@ -35,6 +36,7 @@ jobs:
           mkdir -p data/writer-logs; set -o pipefail
           ML_BRAND=shelfmade python -u ml_autoscripts.py 2>&1 | tee data/writer-logs/sm.log
       - name: Save new scripts
+        if: always()
         run: |
           git config user.name "shelfmade-bot"; git config user.email "bot@users.noreply.github.com"
           git add -f cinematic-scripts
