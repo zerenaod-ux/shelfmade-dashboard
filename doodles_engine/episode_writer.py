@@ -37,6 +37,43 @@ COMEDY = ("COMEDY DIRECTION (this is the main goal): make it genuinely funny, li
           "described in a few words (clothes, expression) and placed in the background or at the edge so Leo and Mia stay in front. Backgrounds should look like real, specific places with real clutter, not empty rooms.")
 
 
+CRAFT = ("COMEDY CRAFT (PUNCHUP): 1) SPECIFIC beats generic: 'three minutes and forty seconds of staring at one emoji' beats 'a long time'. 2) RULE OF THREE: two normal items, the third is the absurd twist. "
+         "3) MISDIRECTION: let the viewer expect one thing, then say the opposite in the last 3-6 words. 4) Mia's roasts are one short sentence, deadpan, then silence; Leo's reply makes it worse. "
+         "5) The punchline goes LAST in the scene, never explained after. 6) Callback to the running gag with a NEW twist, not the same line. 7) Cut every line that only explains. "
+         "8) TOXIC FRIEND: Mia can read a text from KYLE (never shown or heard, only quoted by Mia in a flat voice: 'Kyle says: just wing it, bro.') who always gives confident terrible advice and humble-brags; use him in at most half of the scenes. "
+         "Keep it playful: no slurs, no cruelty about real groups, no self-harm, no sex.")
+COMEDY = COMEDY + " " + CRAFT
+PUNCH_SYS = "You are a comedy punch-up writer for the animated show Leo & Mia. You return ONE JSON object only, the same skit with funnier spoken lines."
+
+
+def _punch(story, taken):
+    """PUNCHUP: funnier spoken lines. Only 'text' is taken from the rewrite, and only if the shape is identical; otherwise the original scene is kept."""
+    try:
+        import copy
+        orig = json.dumps(story, ensure_ascii=False)
+        r = jcall(PUNCH_SYS, "Rewrite ONLY the spoken 'text' of every line so the skit is funnier. Keep the JSON identical otherwise: same id, same shots, same 'scene' texts, same speakers ('who'), same 'feel', the same number of lines. "
+                  "Each line 3 to 18 words; total spoken words within 10 percent of the original. " + CRAFT + "\nSKIT:\n" + orig)
+        if not isinstance(r, dict) or len(r.get('shots', [])) != len(story['shots']):
+            return story
+        out = copy.deepcopy(story)
+        for a, b in zip(out['shots'], r['shots']):
+            if len(a['lines']) != len(b.get('lines', [])):
+                return story
+            for la, lb in zip(a['lines'], b['lines']):
+                t = str(lb.get('text', '')).strip()
+                if lb.get('who') != la['who'] or not 3 <= len(t.split()) <= 18:
+                    return story
+                la['text'] = t
+        n0 = sum(len(l['text'].split()) for sh in story['shots'] for l in sh['lines']); n1 = sum(len(l['text'].split()) for sh in out['shots'] for l in sh['lines'])
+        if abs(n1 - n0) > max(8, 0.12 * n0) or scene_why(out, taken):
+            return story
+        print('punch-up applied (%d -> %d words)' % (n0, n1), flush=True)
+        return out
+    except Exception as e:
+        print('punch-up skipped:', str(e)[:80], flush=True)
+        return story
+
+
 def jcall(system, prompt):
     keep = sw.RULES
     sw.RULES = system
@@ -113,7 +150,7 @@ def make_episode(pool):
                 s['id'] = sid
                 why = scene_why(s, skit_taken)
                 if not why:
-                    story = s
+                    story = _punch(s, skit_taken)   # PUNCHUP
                     break
                 print('scene %d rejected (%s), retry' % (i, why), flush=True)
                 hint = '\n\nYour previous attempt was rejected: %s. Fix exactly that. Return ONE JSON object only.' % why
