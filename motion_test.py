@@ -2,7 +2,7 @@
 Takes a finished clean Doodles clip (final.mp4), cuts the characters out with free models (rembg: isnet-anime, birefnet-general-lite, u2net; CPU), builds a background plate
 (inpainting), and renders a demo where ONLY the character moves (talk bob, jump + squash, shake, pop) while the wall stays still. Output goes to a pre-release 'motiontest-*'
 that the review pipeline ignores. Usage: python motion_test.py final.mp4 outdir"""
-import json, subprocess, sys, time
+import json, shutil, subprocess, sys, time
 from pathlib import Path
 import cv2
 import numpy as np
@@ -10,17 +10,31 @@ import numpy as np
 W, H, FPS = 1280, 720, 30
 
 
+def _ffmpeg():
+    p = shutil.which('ffmpeg')
+    if p: return p
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except Exception:
+        return None
+
+
+FFMPEG = _ffmpeg()
+
+
 def sh(*a):
     subprocess.run([str(x) for x in a], check=True)
 
 
 def frames(video, out):
-    d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', str(video)], capture_output=True, text=True).stdout.strip())
-    paths = []
+    """3 frames (25/50/75 percent) of the clip, scaled to 1280x720. Uses OpenCV, so no ffmpeg/ffprobe needed."""
+    cap = cv2.VideoCapture(str(video)); n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)); paths = []
     for i, f in enumerate((0.25, 0.5, 0.75)):
-        p = out / f'frame{i}.png'
-        sh('ffmpeg', '-v', 'error', '-y', '-ss', f'{d * f:.2f}', '-i', video, '-frames:v', '1', '-vf', f'scale={W}:{H}', p); paths.append(p)
-    return paths
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int(n * f)); ok, fr = cap.read()
+        if not ok: raise RuntimeError('cannot read frame %d of the clip' % int(n * f))
+        p = out / f'frame{i}.png'; cv2.imwrite(str(p), cv2.resize(fr, (W, H), interpolation=cv2.INTER_AREA)); paths.append(p)
+    cap.release(); return paths
 
 
 def rembg_mask(path, model):
@@ -118,7 +132,8 @@ def render(frame, mask, out_mp4):
                 img = draw(img, lays[k], kind if k == who else 'still', t)
             vw.write(np.clip(img, 0, 255).astype('uint8'))
     vw.release()
-    sh('ffmpeg', '-v', 'error', '-y', '-i', tmp, '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', out_mp4); tmp.unlink()
+    if FFMPEG: sh(FFMPEG, '-v', 'error', '-y', '-i', tmp, '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', out_mp4); tmp.unlink()
+    else: tmp.rename(out_mp4)   # mp4v fallback (plays on most phones)
 
 
 def preview(frame, mask, p):

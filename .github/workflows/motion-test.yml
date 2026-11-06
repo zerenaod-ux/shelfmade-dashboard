@@ -10,6 +10,7 @@ permissions:
   contents: write
 concurrency:
   group: motiontest
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -21,8 +22,7 @@ jobs:
           python-version: '3.11'
       - name: Tools
         run: |
-          command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg
-          pip install --quiet "rembg[cpu]" opencv-python-headless numpy pillow
+          pip install --quiet "rembg[cpu]" opencv-python-headless numpy pillow imageio-ffmpeg
       - name: Get a clean Doodles clip
         env:
           GH_TOKEN: ${{ github.token }}
