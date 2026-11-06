@@ -31,6 +31,12 @@ def models():
     if not _MODELS:_MODELS.extend(['gemini-2.5-flash','gemini-2.5-flash-lite','gemini-2.0-flash','gemini-flash-latest','gemini-flash-lite-latest','gemma-3-27b-it','gemma-3-12b-it'])
     print('story models:',_MODELS[:5],flush=True);return _MODELS
 KIND='short'   # episode_writer switches this to 'full' while it writes an episode
+ACTION = ("ACTION AND SOUND: in EVERY shot's 'scene' text describe one clear physical action in plain words, so the animation moves and real sounds can be added from the words. "
+          "Use these everyday actions and these exact words: typing on his phone / texting / scrolling, typing on a laptop, someone knocking on the door, walking / pacing the hallway, "
+          "a coffee mug / a cup of tea, pulling the blanket / pillow / lying in bed, an alarm going off, a notification / message arrives, a digital clock showing a time. "
+          "Vary the action from shot to shot (never the same twice in a row), at most two actions per shot, and keep Leo and Mia large in frame and visibly moving, not standing still.")
+
+
 def _lg():
     try:   # what our real viewers watch (learner.py); empty when not available
         sys.path.insert(0,str(HERE.parent)); import learned
@@ -49,7 +55,7 @@ def _rec(s):
     except Exception:
         pass
 def gemini(prompt):
-    key=secret();last=None;rules=RULES+_lg()+_sr()
+    key=secret();last=None;rules=RULES+_lg()+_sr()+" "+ACTION
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):

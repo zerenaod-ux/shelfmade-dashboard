@@ -1,8 +1,8 @@
 name: review-digest
 on:
   schedule:
-    - cron: '0 14 * * *'   # 8:00 AM Chicago (CST)
-    - cron: '0 1 * * *'    # 7:00 PM Chicago (CST)
+    - cron: '3 14 * * *'   # 8:00 AM Chicago (CST)
+    - cron: '3 1 * * *'    # 7:00 PM Chicago (CST)
   workflow_dispatch:
 permissions:
   issues: write

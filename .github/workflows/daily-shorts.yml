@@ -1,7 +1,7 @@
 name: daily-shorts
 on:
   schedule:
-    - cron: '0 11 * * *'   # 6 AM Chicago (CDT) every day
+    - cron: '7 11 * * *'   # 6 AM Chicago (CDT) every day
   workflow_dispatch:
     inputs:
       count:

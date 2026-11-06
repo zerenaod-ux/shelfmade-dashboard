@@ -1,7 +1,7 @@
 name: doodles
 on:
   schedule:
-    - cron: '30 7 * * *'   # 1:30 AM Chicago (CST)
+    - cron: '37 7 * * *'   # 1:30 AM Chicago (CST)
   workflow_dispatch:
     inputs:
       count:

@@ -1,7 +1,7 @@
 name: radar
 on:
   schedule:
-    - cron: '0 7 * * *'   # 1-2 AM Chicago, before the nightly script writers and builders
+    - cron: '7 7 * * *'   # 1-2 AM Chicago, before the nightly script writers and builders
   workflow_dispatch:
 permissions:
   contents: write
