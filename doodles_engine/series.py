@@ -25,6 +25,27 @@ DEFAULT = {
     'catch': {'mia': 'Anyway.', 'leo': 'Okay but hear me out.'},
     'episodes': [],
 }
+ARCS = [None,   # LADDER: season 1 uses the bible's own arc
+        "Season 2 - Mia's Comeback: Mia quietly decides to fix her own bad habit; Leo keeps score of HER now.",
+        "Season 3 - The Move: Leo and Mia look at a bigger flat; every episode a tiny sign they should (or should not) go.",
+        "Season 4 - The Rival: a smug coworker, Trent, keeps showing up with a better life; Leo and Mia scheme."]
+def _season(n): return (n - 1) // 10 + 1
+def _arc(b, kind):   # LADDER
+    try:
+        sn = _season(_n(b, kind)); return ARCS[(sn - 1) % len(ARCS)] or b['arc']
+    except Exception:
+        return b['arc']
+def _ladder(b, kind):   # LADDER
+    n = _n(b, kind); sn = _season(n); e = (n - 1) % 10 + 1
+    t = "\nFRANCHISE LADDER: this is %s %d (Season %d, episode %d of 10). " % ('episode' if kind == 'full' else '#', n, sn, e)
+    if n % 5 == 0:
+        t += ("MILESTONE EPISODE: make it the BIGGEST one so far - a larger set-piece, at least two recurring people actually SEEN on screen, a payoff of a running gag from earlier episodes, and a small reveal that moves the season arc forward. "
+              "Give it a warm last line. Do NOT end on a cliffhanger.\n")
+    elif n % 5 == 4:
+        t += "CLIFFHANGER: end on an unresolved moment and a last line that sets up next time: 'Next time: ...' (it leads into a milestone episode).\n"
+    else:
+        t += "End with ONE short teaser line for the next episode, starting 'Next time:'.\n"
+    return t
 _CUR = {}
 def load():
     try: return json.loads(F.read_text())
@@ -47,7 +68,9 @@ def brief(kind='short'):
                 "SEASON ARC: %s\nRECURRING PEOPLE (mention them or show them small in the background, never in front of the faces): %s\n"
                 "RUNNING GAG TO WEAVE IN THIS TIME (one quick bit): %s.\nCALLBACK: %s.\nCATCHPHRASES (use each at most once, only if natural): Mia says '%s' / Leo says '%s'\n"
                 "MIA'S 'TOLD YOU SO' SCOREBOARD currently stands at %d (she may announce it, it always goes up).\n") % (
-                b['arc'], '; '.join('%s = %s' % (c['name'], c['desc']) for c in b['cast']), g['text'], cb or 'none this time', b['catch']['mia'], b['catch']['leo'], score)
+                _arc(b, kind), '; '.join('%s = %s' % (c['name'], c['desc']) for c in b['cast']), g['text'], cb or 'none this time', b['catch']['mia'], b['catch']['leo'], score)
+        try: text += _ladder(b, kind)
+        except Exception: pass
         _CUR[kind] = {'text': text, 'gag': g['id'], 'cb': cb}
         return text
     except Exception:
@@ -56,7 +79,7 @@ def record(item_id, title, concept, kind='short'):
     try:
         b = load(); cur = _CUR.pop(kind, None) or {}
         n = _n(b, kind)
-        b['episodes'].append({'n': n, 'kind': kind, 'id': item_id, 'title': title, 'concept': concept, 'gag': cur.get('gag'), 'callback': bool(cur.get('cb')), 'date': datetime.date.today().isoformat()})
+        b['episodes'].append({'n': n, 'kind': kind, 'id': item_id, 'title': title, 'concept': concept, 'gag': cur.get('gag'), 'callback': bool(cur.get('cb')), 'milestone': (n % 5 == 0), 'season': _season(n), 'date': datetime.date.today().isoformat()})
         total = len(b['episodes'])
         for g in b['gags']:
             if g['id'] == cur.get('gag'): g['uses'] = g.get('uses', 0) + 1; g['last'] = total
@@ -67,7 +90,7 @@ def title(item_id, base, kind='short'):
     try:
         for e in load()['episodes']:
             if e['id'] == item_id and e.get('kind') == kind:
-                return ('%s | %s %s' % (base, load()['show'], ('#%d' % e['n']) if kind == 'short' else ('Ep. %d' % e['n'])))[:100]
+                return ('%s | %s %s%s' % (base, load()['show'], ('#%d' % e['n']) if kind == 'short' else ('Ep. %d' % e['n']), ' \u2605 Milestone' if e.get('milestone') else ''))[:100]
     except Exception:
         pass
     return base
