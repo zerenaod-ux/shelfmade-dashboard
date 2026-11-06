@@ -83,13 +83,26 @@ def main():
     items = load(B / 'publish' / ('approved-%s.json' % KIND), {'items': []})['items']
     state = load(STATE, {'done': {}})
     todo = [i for i in items if i['id'] not in state['done']]
+    # duplicate guard: the same title is never uploaded twice (a script built again must not go live again)
+    _norm = lambda t: ' '.join(str(t or '').lower().split())
+    _have = {_norm(i['title']) for i in items if i['id'] in state['done']}
+    _keep = []
+    for i in todo:
+        if _norm(i['title']) in _have:
+            state['done'][i['id']] = {'video': None, 'at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'skipped': 'duplicate title: %s' % i['title']}
+            print('SKIPPED duplicate:', i['title'])
+        else:
+            _have.add(_norm(i['title'])); _keep.append(i)
+    if len(_keep) != len(todo):
+        STATE.write_text(json.dumps(state, indent=1))
+    todo = _keep
     print('%s: approved full videos waiting: %d' % ('LIVE' if LIVE else 'DRY-RUN', len(todo)))
     if not todo or not os.environ.get('YT_REFRESH_TOKEN'):
         if todo:
             print('No YT_REFRESH_TOKEN secret.')
         return
     access = token()
-    taken = taken_days(access) | {datetime.date.fromisoformat(v['day']) for v in state['done'].values()}
+    taken = taken_days(access) | {datetime.date.fromisoformat(v['day']) for v in state['done'].values() if v.get('day')}
     item = todo[0]
     day, when = next_slot(taken)
     print('next:', item['title'], '->', when)
