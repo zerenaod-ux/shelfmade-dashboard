@@ -1,0 +1,37 @@
+name: recut-shorts
+on:
+  schedule:
+    - cron: '30 20 * * *'   # 3:30 PM Chicago: cut Shorts from full videos that are already on YouTube
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many re-cut Shorts to make'
+        default: '2'
+permissions:
+  contents: write
+concurrency:
+  group: recut-shorts
+  cancel-in-progress: false
+jobs:
+  recut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Cut Shorts from full videos
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RECUT_MAX: ${{ github.event.inputs.count || '2' }}
+        run: |
+          mkdir -p gh-state
+          python recut_shorts.py
+      - name: Save state
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add -f gh-state/recut-done.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "Record re-cut Shorts"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && break; sleep 8; done
