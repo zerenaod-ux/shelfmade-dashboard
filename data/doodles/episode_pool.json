@@ -1247,5 +1247,413 @@
     }
    }
   ]
+ },
+ {
+  "id": "leos-inbox-snare",
+  "title": "Leo vs. The Inbox Snare",
+  "theme": "Leo vs. the inbox: one Monday at work that will not end",
+  "premise": "Leo wants to clear his work inbox before noon to achieve peak life mastery, but every email from his boss pushes him deeper into the Analysis Paralysis Loop. Mia keeps score as his grand plan dissolves into staring at a single draft for forty minutes.",
+  "running_gag": "The barista writes Leo's name wrong on the coffee cup, changing it to a more insulting word each scene.",
+  "payoff": "Leo finally presses send on an email that just says 'Noted', matching his boss Greg's energy, while Mia adds another point to her scoreboard.",
+  "description": "Leo tries to conquer his work inbox before noon and falls straight into the overthinking trap. Mia tracks his inevitable downfall with extreme petty precision and zero sympathy. Watch two anxious best friends turn corporate dread into a comedy masterclass.",
+  "scenes": [
+   {
+    "time": "09:14 AM",
+    "setting": "A sticky corner booth at Neon Bean Cafe, surrounded by empty oat milk cartons and Brenda the neighbour glaring from the condiment station.",
+    "concept": "ANALYSIS PARALYSIS",
+    "beat": "Leo spends three minutes and forty seconds deciding between three exclamation points and a period for a work greeting, while Dev the barista hands him a cup labelled 'Li-oh'. Mia reads a text from Kyle saying 'Just vibe with the syntax, bro' before roasting Leo's career trajectory.",
+    "story": {
+     "id": "leos-inbox-snare-01",
+     "title": "The Inbox Snare",
+     "concept": "ANALYSIS PARALYSIS",
+     "mood": "dramatic",
+     "insight": "Too many choices destroy decision-making.",
+     "caption": "Why picking punctuation for an email takes forty minutes.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "A sticky corner booth at Neon Bean Cafe with empty oat milk cartons. Dev the barista in a stained apron stands in the background handing a cup labelled 'Li-oh'.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Three exclamation points screams desperate, one period screams divorce papers, and emojis scream toddler."
+        }
+       ]
+      },
+      {
+       "scene": "Leo stares at his phone screen with wide eyes while Mia sips her tea. Brenda the neighbour glares from the condiment station with a clipboard.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle texted. He said just vibe with the syntax, bro."
+        },
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Kyle trades crypto from a hammock, Mia, while I weep over font sizes."
+        }
+       ]
+      },
+      {
+       "scene": "Leo holds his head in his hands. In the background, Dev wipes the counter with a greasy rag, looking bored.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "tired",
+         "text": "If I reply with a thumbs up, my entire career arc permanently nosedives."
+        }
+       ]
+      },
+      {
+       "scene": "Mia points a finger at Leo with a smug expression. Brenda in the background drops a pen in disapproval.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "Scoreboard is twenty eight. That is pure analysis paralysis, destroying all my patience."
+        }
+       ]
+      },
+      {
+       "scene": "Leo looks at the coffee cup labelled 'Li-oh' in utter defeat. Mia checks her notes.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Okay but hear me out. Just set a two minute timer before panicking."
+        }
+       ]
+      },
+      {
+       "scene": "Leo stares blankly at the screen again. Dev holds up a fresh cup labelled 'L-Loser'.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Next time: Gerald the fern judges my corporate life choices even harder."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "11:42 AM",
+    "setting": "The open-plan office bullpen under flickering fluorescent lights, with Greg visible in his glass office typing 'Noted' with one finger.",
+    "concept": "PARADOX OF CHOICE",
+    "beat": "Leo opens an email with four distinct action items and immediately starts reorganizing his desktop folders instead of replying. Mia points out that his houseplant Gerald has more professional direction, bringing her scoreboard up to 28.",
+    "story": {
+     "id": "leos-inbox-snare-02",
+     "title": "The Inbox Snare",
+     "concept": "PARADOX OF CHOICE",
+     "mood": "dramatic",
+     "insight": "Too many options paralyze action and trigger endless busywork.",
+     "caption": "When four action items destroy your entire corporate future.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo and Mia in the open-plan office bullpen under flickering lights. Greg is visible in his glass office typing with one finger. A coffee cup on Leo's desk is clearly labelled 'Lee-Ouch'.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Four distinct action items require absolute structural alignment right now."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "You alphabetized your desktop folders instead of opening the email."
+        }
+       ]
+      },
+      {
+       "scene": "Leo clutching his yellow hoodie strings tightly while staring at a blank reply window. Gerald the houseplant droops sadly on the metal filing cabinet behind him.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "If I pick the wrong font size, my career ends by noon."
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "Kyle just texted: just wing it, bro, corporate ladders are fake."
+        }
+       ]
+      },
+      {
+       "scene": "Mia holding up a tally counter with a loud click, glaring at Leo with a raised eyebrow. Greg drinks cold water from a mug in the background.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "Gerald the houseplant currently shows more professional direction than you."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Gerald has fewer stakeholders and zero demanding bosses."
+        }
+       ]
+      },
+      {
+       "scene": "Both facing the camera squarely with intense office glare. A red neon sign glows faintly through the distant office window.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "That is the paradox of choice freezing your nervous system entirely."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "So picking a font size is actually a psychological trap."
+        }
+       ]
+      },
+      {
+       "scene": "Leo pointing frantically at his mouse while Mia sips water and checks her watch. The office clock on the wall reads 11:42 AM.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Close one tab and reply to just the first sentence."
+        }
+       ]
+      },
+      {
+       "scene": "Leo hovering his trembling finger over the trackpad while Greg glares from his glass office. The fluorescent light above flickers once.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Next time, I am simply deleting this entire email account forever because"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "02:15 PM",
+    "setting": "The office microwave area where Brenda from accounting is aggressively microwaving leftover fish while judging Leo's screen time.",
+    "concept": "IMPOSTER SYNDROME",
+    "beat": "Leo convinces himself that a simple spreadsheet update is actually a secret intelligence test designed to get him fired. Mia tells him to stop catastrophizing, casually noting that his coffee cup now reads 'Lame-o'.",
+    "story": {
+     "id": "leos-inbox-snare-03",
+     "title": "The Inbox Snare",
+     "concept": "IMPOSTER SYNDROME",
+     "mood": "dramatic",
+     "insight": "Treating routine emails as secret firing tests guarantees burnout.",
+     "caption": "Why a simple spreadsheet update feels like a trap.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Office microwave area. Brenda from accounting in beige cardigan aggressively heats fish. Leo and Mia stand facing the camera, holding coffee cups.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "This pivot table formula is clearly a secret intelligence test."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Brenda is microwaving fish again while judging your screen time."
+        }
+       ]
+      },
+      {
+       "scene": "Breakroom corner with dying fern and scattered paper cups. Leo clutches his forehead in yellow hoodie while Mia sips tea in teal sweater.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Greg's email said noted, which means I am getting fired tomorrow."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Scoreboard is twenty-nine, and your cup now says Lame-o."
+        }
+       ]
+      },
+      {
+       "scene": "Office hallway beside humping vending machine. Leo stares at his phone screen with wide eyes. Mia adjusts her teal sweater sleeve.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Kyle texted to say he manifested a promotion while sleeping."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle also eats cereal with water."
+        }
+       ]
+      },
+      {
+       "scene": "Office copy machine corner with jammed paper trays and flickering fluorescent lights. Leo and Mia face the camera directly.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "That is imposter syndrome making you treat basic math like treason."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "So Greg does not suspect my plant Gerald runs this department?"
+        }
+       ]
+      },
+      {
+       "scene": "Breakroom counter with empty sugar packets and sticky spots. Leo holds his coffee cup lower. Mia points at the screen.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Just reply with one word and close the laptop."
+        }
+       ]
+      },
+      {
+       "scene": "Breakroom doorway with Brenda glaring from behind her clipboard. Leo looks back nervously.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "This pivot table formula is clearly a secret intelligence test."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "04:58 PM",
+    "setting": "Back at the cafe table as the sun sets, with Gerald the houseplant leaning dramatically to the left and Dev handing Leo a final cup labelled 'Loss'.",
+    "concept": "CLOSURE BIAS",
+    "beat": "Leo tries to write a grand concluding paragraph to wrap up his entire Monday, but Mia deletes it all and types a single period. They walk out into the dusk as Leo whispers 'Okay but hear me out' to a passing pigeon. Next time: Leo discovers why his smart fridge is judging his grocery choices.",
+    "story": {
+     "id": "leos-inbox-snare-04",
+     "title": "Leo vs. The Inbox Snare",
+     "concept": "CLOSURE BIAS",
+     "mood": "reflective",
+     "insight": "The brain craves a neat ending so badly it ruins the present",
+     "caption": "Watching Leo try to wrap up an inbox is our Roman Empire.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Sunset at the cafe table. Gerald the houseplant leans left. Dev hands Leo a cup labelled Loss.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Forty minutes crafting this grand concluding sentence to wrap up Monday forever."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Your cup literally calls you Loss, Leo. Just send it."
+        }
+       ]
+      },
+      {
+       "scene": "Leo types furiously while Mia stares blankly at his yellow hoodie with raised eyebrows.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "If I miss a poetic sign-off, the universe will completely unravel."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Scoreboard is twenty-eight. You are catastrophizing over a simple typo."
+        }
+       ]
+      },
+      {
+       "scene": "Mia reaches across the sticky cafe table and firmly deletes Leo's entire paragraph.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "My masterpiece! You just murdered forty minutes of pure emotional labor!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle says just wing it, bro. I am saving your soul."
+        }
+       ]
+      },
+      {
+       "scene": "Mia types a single dot and hits send. Leo stares in horror at the glowing screen.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "That is closure bias. Our brains demand tidy endings where none exist."
+        },
+        {
+         "who": "leo",
+         "feel": "tired",
+         "text": "That single period felt like an emotional drive-by shooting."
+        }
+       ]
+      },
+      {
+       "scene": "They pack bags as dusk falls. A pigeon watches them from the metal chair.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "text": "Let us leave before the smart fridge starts judging your grocery choices."
+        }
+       ]
+      },
+      {
+       "scene": "Leo walking into dusk, leaning down to speak earnestly to a passing pigeon.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Next time: okay but hear me out about this spreadsheet."
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]

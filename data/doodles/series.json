@@ -47,8 +47,8 @@
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 1,
-   "last": 5
+   "uses": 2,
+   "last": 11
   },
   {
    "id": "scoreboard",
@@ -161,6 +161,18 @@
    "title": "Leo's First Date Snare",
    "concept": "Leo's first date with someone he met online (nerves, texts, restaurant, the walk home)",
    "gag": "greg",
+   "callback": true,
+   "milestone": false,
+   "season": 1,
+   "date": "2026-11-06"
+  },
+  {
+   "n": 3,
+   "kind": "full",
+   "id": "leos-inbox-snare",
+   "title": "Leo vs. The Inbox Snare",
+   "concept": "Leo vs. the inbox: one Monday at work that will not end",
+   "gag": "dev",
    "callback": true,
    "milestone": false,
    "season": 1,
