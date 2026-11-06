@@ -62,7 +62,8 @@ def pick(sentences,rng):
  if w:  # learned from real views (hook_learn.py): better types more often, weak ones still tested
   return rng.choices(kinds,weights=[max(0.4,float(w.get(k,1.0))) for k in kinds])[0]
  if 'curiosity' in kinds and rng.random()<.5:kinds.remove('curiosity')  # measured weakest hook style
- return rng.choice(kinds)
+ bias={'quote':1.6,'author':1.5,'contrarian':1.0,'curiosity':0.6,'warning':0.3,'sting':0.5,'myth':0.5}   # measured: warning/bold-claim hooks average ~10 views, person/quote hooks 40-58
+ return rng.choices(kinds,weights=[bias.get(k,1.0) for k in kinds])[0]
 def apply(script,book,edition,evidence_url):
  rng=random.Random()
  old=script['hook'];sentences=[old,*script['points']]
@@ -70,7 +71,7 @@ def apply(script,book,edition,evidence_url):
  try:
   import footage_director;footage_director.HINT=old
  except Exception:pass
- if STORY.search(old or '') and re.match(r"^[A-Z][\w.' -]{2,25} ",old or '') and len((old or '').split())<=16 and rng.random()<0.6:
+ if STORY.search(old or '') and re.match(r"^[A-Z][\w.' -]{2,25} ",old or '') and len((old or '').split())<=16 and rng.random()<0.9:
   # measured best hook style: a short story about a real person. Keep the script's own hook.
   script['hook_type']='story';script['hook_rules']='v3: kept person-story hook';return script
  kind=pick(sentences,rng)

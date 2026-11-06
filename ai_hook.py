@@ -4,7 +4,8 @@ so a Gemini hiccup can never break a build. Needs GEMINI_API_KEY in the environm
 import os, re, json
 
 BAD_START = ('almost everyone gets', 'you were taught', 'stop reading', 'everyone quotes', 'nobody warns you', 'read this before you open', 'do not read',
-             'the part of', 'forget what you know', 'what the book really asks', 'one line in', 'this line from', 'read this line', 'why does', 'what did', 'what is', 'why is')
+             'the part of', 'forget what you know', 'what the book really asks', 'one line in', 'this line from', 'read this line', 'why does', 'what did', 'what is', 'why is',
+             'nobody tells', 'almost everyone', 'this is uncomfortable', 'you have it backwards', 'is not what you think', 'everyone gets', 'you are wrong')
 
 
 def _ok(h, l):
@@ -59,7 +60,8 @@ def generate(title, author, sentences, brand):
         prompt = ('You write the opening line of a 30-second vertical Short built from a public-domain book passage.\nBook: "%s" by %s.\nPassage the Short is built on: %s\n\n'
                   'Write ONE scroll-stopping opening line (5 to 9 words) and ONE loop line (3 to 10 words) that makes the viewer replay from the start. '
                   'The opening line must be specific to THIS passage (never a generic template such as "Almost everyone gets X wrong"), create tension or curiosity in its first three words, '
-                  'speak to the viewer, and never put words in the author\'s mouth that the passage does not support. Plain English, no emoji, no hashtags, no digits, no quotation marks. '
+                  'Prefer opening on a real PERSON doing or saying something specific that the passage or the author supports (a tiny story, for example "Seneca wrote this while exiled.") - this style gets the most views; avoid warning-style openers such as "Nobody tells you". '
+                  'Speak to the viewer, and never put words in the author\'s mouth that the passage does not support. Plain English, no emoji, no hashtags, no digits, no quotation marks. '
                   'Each line must end with . ? or !%s\nReturn ONLY JSON: {"hook":"...","loop":"..."}') % (title, author or 'unknown', passage, guide + style_txt)
         try:
             models = M._models()[:4] if os.environ.get('GEMINI_API_KEY') else []

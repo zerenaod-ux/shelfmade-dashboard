@@ -13,7 +13,7 @@ HOOK_STYLES = {
 }
 # experiment queue per brand:kind -> list of (factor, (variant_a, variant_b))
 QUEUE = {
-    'shelfmade:short': [('hook_style', ('question', 'claim')), ('music_energy', ('calm', 'lively')), ('hook_style', ('story', 'command'))],
+    'shelfmade:short': [('hook_style', ('question', 'story')), ('music_energy', ('calm', 'lively')), ('hook_style', ('story', 'command'))],
     'mindlore:short': [('hook_style', ('claim', 'question')), ('music_energy', ('calm', 'lively')), ('hook_style', ('story', 'command'))],
     'doodles:short': [('music_energy', ('calm', 'lively'))],
     'shelfmade:full': [('music_energy', ('calm', 'lively'))],
