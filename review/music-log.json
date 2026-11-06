@@ -188,5 +188,23 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-06"
+ },
+ "The Sleep Effort Trap": {
+  "styles": [
+   "sm_candle",
+   "sm_library"
+  ],
+  "tracks": [
+   "sm_candle_03",
+   "sm_library_01"
+  ],
+  "mood": "warm",
+  "pace": 0.92,
+  "exp": {
+   "music_energy": "calm"
+  },
+  "brand": "doodles",
+  "kind": "short",
+  "date": "2026-11-06"
  }
 }
