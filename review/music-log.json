@@ -324,5 +324,47 @@
   "brand": "doodles",
   "kind": "full",
   "date": "2026-11-06"
+ },
+ "Read this line from Certain Success twice.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_04"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-06"
+ },
+ "Marden had a warning for you.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_04"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-06"
+ },
+ "Forget what you know about Representative Men.": {
+  "styles": [
+   "sm_adventure"
+  ],
+  "tracks": [
+   "ace_sm_adventure_02"
+  ],
+  "mood": "curious",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-06"
  }
 }
