@@ -1,0 +1,15 @@
+name: phone-test
+on:
+  workflow_dispatch:
+permissions:
+  issues: write
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Open a test Issue from the bot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "TEST: phone alert (ignore)" --body "This is only a test to see if your phone buzzes. It has no video and cannot post anything. Reply to Claude in the chat that it arrived."
