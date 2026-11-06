@@ -1,138 +1,129 @@
 {
  "why": [
   {
-   "title": "Strict Parents vs Chill Parents \ud83d\udc94 #shirts",
-   "why": "High breakout achieved by tapping into universally shared childhood trauma and contrasting household dynamics using a clean, rapid-fire format."
+   "title": "She Made Half Her Class Feel Inferior in Just One Day #shorts",
+   "why": "A bold, relatable school\u2011power\u2011dynamic hook promises a quick social\u2011psych lesson that spikes curiosity."
   },
   {
-   "title": "When Someone Makes Fun of You, Use This Psychological Trick! \ud83e\udde0\ud83d\udd25",
-   "why": "Leverages immediate practical utility combined with curiosity gaps, promising viewers a secret weapon for social defense."
+   "title": "\u00bfAmor o miedo? El experimento del puente \ud83c\udf09",
+   "why": "Emotional contrast (love vs. fear) plus a visual experiment draws viewers into relationship psychology."
   },
   {
-   "title": "Why Is There A Stranger In Our Basement  #animation  #relatable  #cartoon",
-   "why": "Blends absurd, surreal animation premises with hyper-relatable everyday roommate tension to trap viewers' attention immediately."
+   "title": "When Someone Makes Fun of You, Use This Psychological Trick! \ud83e\udd20\ud83d\udd25",
+   "why": "Direct promise of a usable trick creates immediate utility and taps into defensive emotions."
   },
   {
-   "title": "The loop your brain can't stop (Earworms Explained)  #animation #psychologyfacts #funny",
-   "why": "Examines an instantly recognizable internal annoyance and pairs it with fascinating brain science through animated storytelling."
+   "title": "Why Does Your Voice Sound So Cringe on Recordings? \ud83d\ude2c",
+   "why": "Self\u2011conscious humor paired with a common anxiety makes viewers stay for the relief."
   }
  ],
  "hook_patterns": [
-  "Starting mid-chaos with a bizarre physical predicament or spatial mystery",
-  "Calling out an annoying, inescapable subconscious habit right in the first second",
-  "Offering an immediate psychological hack to fix a common social awkwardness"
+  "Question\u2011or\u2011challenge + instant payoff",
+  "Relatable conflict that flips expectations",
+  "Bold promise of a secret/technique delivered in <60\u202fseconds"
  ],
- "todays_angle": "Focus on weird, involuntary brain glitches that make us feel like our minds are actively trolling us.",
+ "todays_angle": "Show how everyday misunderstandings trigger classic cognitive biases, using Leo and Mia\u2019s banter.",
  "ideas": [
-  {
-   "title": "The Doorway Effect Reset",
-   "plot": "Leo walks into the kitchen to grab a snack, completely forgets why he's there, and Mia has to run a system reboot diagnostic on his brain cells."
-  },
-  {
-   "title": "The Phantom Phone Vibration",
-   "plot": "Mia panics thinking her phone is buzzing in her pocket, only to discover it's just her own anxiety manifesting as physical hallucinations."
-  },
-  {
-   "title": "Accidental Eye Contact Panic",
-   "plot": "Leo and Mia break down the psychology of why locking eyes with a stranger across the grocery store makes the brain instantly panic and pretend to examine soup cans."
-  }
+  "Leo convinces Mia that the \u2018spotlight effect\u2019 makes everyone notice her typo \u2013 then they expose the bias with a funny classroom scene.",
+  "Mia bets Leo that the \u2018confirmation bias\u2019 will ruin his grocery list, leading to a chaotic supermarket chase.",
+  "Leo and Mia role\u2011play the \u2018bystander effect\u2019 at a park, turning a simple lost\u2011dog rescue into a comedic lesson on social inertia."
  ],
  "avoid": [
-  "Generic textbook definitions of psychological terms without a funny character dynamic",
-  "Overdone animation styles that lack expressive, meme-ready character reactions"
+  "Overused \u2018top 10 list\u2019 countdown format",
+  "Generic reaction\u2011style clips without a psychology twist"
  ],
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "sample": 75,
  "spikes": [
   {
+   "title": "Its a worldwide phenomenon\ud83d\udc80. #animation #skit #relatable #men #sick",
+   "channel": "RefCantDraw ",
+   "views": 185676,
+   "hours": 20,
+   "vph": 9280.6,
+   "subs": 163000,
+   "breakout": 1.1
+  },
+  {
    "title": "wolf pelts #funny #relatable #rpg #skyrim",
    "channel": "So Okay Here's the Thing",
-   "views": 139850,
-   "hours": 10,
-   "vph": 13574.2,
+   "views": 242515,
+   "hours": 39,
+   "vph": 6252.4,
    "subs": 265000,
-   "breakout": 0.5
+   "breakout": 0.9
   },
   {
-   "title": "Ranking The Most Relatable Random Moments",
-   "channel": "The Ranking Guy",
-   "views": 100814,
-   "hours": 32,
-   "vph": 3106.7,
-   "subs": 80600,
-   "breakout": 1.3
-  },
-  {
-   "title": "Then I just STOP\ud83e\udee1 #relatable #animatic #animation #sketch #sketchbook #digitalart #artist #artsona",
-   "channel": "Cloudy Art ",
-   "views": 72854,
-   "hours": 36,
-   "vph": 2051.8,
-   "subs": 27900,
-   "breakout": 2.6
+   "title": "#artist",
+   "channel": "fecto full",
+   "views": 51357,
+   "hours": 28,
+   "vph": 1836.4,
+   "subs": 78000,
+   "breakout": 0.7
   },
   {
    "title": "These should be EVERYWHERE #relatable #animatic #animation #sketch #sketchbook #digitalart #artist",
    "channel": "Cloudy Art ",
-   "views": 22265,
-   "hours": 11,
-   "vph": 1936.9,
-   "subs": 27900,
-   "breakout": 0.8
+   "views": 71094,
+   "hours": 40,
+   "vph": 1778.2,
+   "subs": 28200,
+   "breakout": 2.5
   },
   {
-   "title": "Strict Parents vs Chill Parents \ud83d\udc94 #shirts",
-   "channel": "The Quiet Fix",
-   "views": 55579,
-   "hours": 34,
-   "vph": 1646.4,
-   "subs": 730,
-   "breakout": 76.1
+   "title": "Reverse psychology 101 #couplecomedy #marriagehumor #marriagelife #husbandandwifr #relatable #fyp",
+   "channel": "Damelio Animation ",
+   "views": 50532,
+   "hours": 36,
+   "vph": 1399.0,
+   "subs": 80700,
+   "breakout": 0.6
   },
   {
-   "title": "Its a worldwide phenomenon\ud83d\udc80. #animation #skit #relatable #men #sick",
-   "channel": "RefCantDraw ",
-   "views": 21005,
-   "hours": 15,
-   "vph": 1404.9,
-   "subs": 163000,
-   "breakout": 0.1
+   "title": "She Made Half Her Class Feel Inferior in Just One Day #shorts",
+   "channel": "Branchlight",
+   "views": 27801,
+   "hours": 20,
+   "vph": 1361.1,
+   "subs": 30,
+   "breakout": 139.0
   },
   {
-   "title": "The Whole Building Is Him?? \ud83d\udeaa\ud83d\udc80#shorts #funny #comedy #skit #anime #betrayal #roommates #relatable",
-   "channel": "BS AI Funny moments",
-   "views": 33971,
-   "hours": 43,
-   "vph": 796.2,
-   "subs": 38300,
+   "title": "You worked for two different clients | #shorts #shortvideo #psychology #money",
+   "channel": "Learn With Rafid ",
+   "views": 13783,
+   "hours": 12,
+   "vph": 1151.8,
+   "subs": 15200,
    "breakout": 0.9
+  },
+  {
+   "title": "Psychology of Anime lovers",
+   "channel": "Ujjwal Singh",
+   "views": 48209,
+   "hours": 46,
+   "vph": 1055.7,
+   "subs": 135000,
+   "breakout": 0.4
+  },
+  {
+   "title": "\u00bfAmor o miedo? El experimento del puente \ud83c\udf09",
+   "channel": "Psique Masculina",
+   "views": 22407,
+   "hours": 46,
+   "vph": 484.0,
+   "subs": 131,
+   "breakout": 112.0
   },
   {
    "title": "When Someone Makes Fun of You, Use This Psychological Trick! \ud83e\udde0\ud83d\udd25",
    "channel": "Psyche decoded",
-   "views": 14501,
-   "hours": 18,
-   "vph": 785.9,
-   "subs": 126,
-   "breakout": 72.5
-  },
-  {
-   "title": "Why Is There A Stranger In Our Basement  #animation  #relatable  #cartoon",
-   "channel": "Jax Animation",
-   "views": 23108,
-   "hours": 31,
-   "vph": 751.1,
-   "subs": 146,
-   "breakout": 115.5
-  },
-  {
-   "title": "The loop your brain can't stop (Earworms Explained)  #animation #psychologyfacts #funny",
-   "channel": "Primal Glitch",
-   "views": 10491,
-   "hours": 20,
-   "vph": 516.2,
-   "subs": 154,
-   "breakout": 52.5
+   "views": 17978,
+   "hours": 47,
+   "vph": 383.0,
+   "subs": 136,
+   "breakout": 89.9
   }
  ]
 }
