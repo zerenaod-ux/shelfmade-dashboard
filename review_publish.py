@@ -79,7 +79,7 @@ def qc(video, title, text, full=False, seen_titles=()):
         r.append(chk(h > w and h >= 1280, 'vertical %dx%d' % (w, h), 'not vertical HD (%dx%d)' % (w, h)))
         r.append(chk(len(text) <= 2200, 'caption %d characters (Instagram limit 2200)' % len(text), 'caption too long for Instagram (%d)' % len(text)))
     r.append(chk(0 < len(title) <= 100, 'title %d characters' % len(title), 'title empty or over 100 characters'))
-    r.append(chk('_' not in text and 'Source-supported draft' not in text, 'no leftover markup', 'caption has leftover markup (_ or draft note)'))
+    r.append(chk('_' not in re.sub(r'(?:https?://|youtube\.com/|www\.)\S+', '', text) and 'Source-supported draft' not in text, 'no leftover markup', 'caption has leftover markup (_ or draft note)'))
     r.append(chk(title not in seen_titles, 'title is new', 'same title already reviewed before'))
     return all(r), out
 
