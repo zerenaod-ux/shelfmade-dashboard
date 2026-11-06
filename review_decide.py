@@ -11,6 +11,19 @@ def sh(*a):
     return subprocess.run(a, capture_output=True, text=True)
 
 
+def _aff_text(d, plat, text):
+    """YouTube copy of a Short gets the Amazon book link (clickable in the description); Instagram/TikTok stay link-free."""
+    try:
+        if plat != 'youtube' or d.get('brand') not in ('shelfmade', 'mindlore'): return text
+        import affiliate
+        for m in re.finditer(r'\d{3,6}', str(d.get('book', ''))):
+            if affiliate.book_info(m.group(0))[0]:
+                return affiliate.add(text, m.group(0), d['brand'], 4900)
+    except Exception as e:
+        print('affiliate skipped:', str(e)[:80])
+    return text
+
+
 def main():
     ev = json.load(open(os.environ['GITHUB_EVENT_PATH']))
     label = ev['label']['name']
@@ -56,7 +69,7 @@ def main():
     for plat in ('youtube', 'instagram', 'tiktok'):
         iid = 'gh%d-%s%s' % (num, tagname, plat)
         if iid not in have:
-            cur['items'].append({'id': iid, 'platform': plat, 'title': d['title'], 'text': d['text'].replace('Source-supported draft. Review facts, wording and length before posting.', '').replace('\n\n\n', '\n\n').strip(), 'url': d['url']})   # DRAFTNOTE
+            cur['items'].append({'id': iid, 'platform': plat, 'title': d['title'], 'text': _aff_text(d, plat, d['text'].replace('Source-supported draft. Review facts, wording and length before posting.', '').replace('\n\n\n', '\n\n').strip()), 'url': d['url']})   # DRAFTNOTE
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(cur, indent=1))
     sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Approved. Queued for YouTube, Instagram and TikTok; the publisher schedules it in the next free slots.')
