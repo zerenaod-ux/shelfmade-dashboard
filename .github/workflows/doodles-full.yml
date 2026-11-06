@@ -27,7 +27,7 @@ jobs:
       - name: System packages
         run: command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null || timeout 300 sudo apt-get install -y -qq --no-install-recommends ffmpeg fonts-liberation fonts-dejavu || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-liberation fonts-dejavu)
       - name: Python packages
-        run: pip install --quiet numpy pillow opencv-python-headless six python-slugify python-dateutil requests tqdm urllib3 certifi bleach protobuf text-unidecode kaggle
+        run: pip install --quiet numpy scipy pillow opencv-python-headless six python-slugify python-dateutil requests tqdm urllib3 certifi bleach protobuf text-unidecode kaggle
       - name: Make the Doodles full video (Kaggle GPU + CPU render + stitch)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

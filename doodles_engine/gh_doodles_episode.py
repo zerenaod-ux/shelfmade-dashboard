@@ -166,6 +166,7 @@ def stitch(work, ep, sc, subs):
             if _b: music = Path(_b['path']); log('music bed', _b['tracks'])
         except Exception as e: log('music director skipped:', e)
     except Exception as e: log('music unavailable:', e)
+    if os.environ.get('DOODLES_SFX', '1') != '0': music = None; log('music off: real action sounds only')
     final = work / 'final.mp4'
     if music:
         flt = ('[0:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,asplit=2[vo][sc];'

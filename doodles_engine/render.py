@@ -113,6 +113,10 @@ def build(work):
         env[f]=math.sqrt(float(np.mean(seg_**2))) if len(seg_) else 0
     ref=float(np.percentile(env[env>0.004],90)) if (env>0.004).any() else 1.0
     env=np.clip(env/ref,0,1.2);k=np.array([.25,.5,.25]);env=np.convolve(env,k,mode='same')
+    if os.environ.get('DOODLES_SFX','1')!='0':   # real action sounds mixed under the voices (no music); lip-sync env above stays from the pure voice
+        try:
+            import sfx_engine;track,_ev=sfx_engine.mix(track,st,timeline,SR,total);print('sfx:',[(e['cue'],round(e['t'],1)) for e in _ev],flush=True)
+        except Exception as _ex:print('sfx skipped:',_ex,flush=True)
     wav_path=work/'voice.wav'
     with wave.open(str(wav_path),'wb') as w:
         w.setnchannels(1);w.setsampwidth(2);w.setframerate(SR);w.writeframes((np.clip(track,-1,1)*32767).astype('<i2').tobytes())
@@ -363,6 +367,7 @@ def mix(work,silent,wav_path,total,mood):
         _b=music_director.make_bed('doodles','short',json.dumps(_st)[:4000],total,work/'bed.wav',mood=_st.get('mood'),words=_w,key=work.name)
         if _b:music=Path(_b['path']);_off=0
     except Exception as ex:print('music director skipped:',ex)
+    if os.environ.get('DOODLES_SFX','1')!='0':music=None   # real sounds only, no music bed
     if music:
         flt=(f'[1:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,asplit=2[vo][sc];'
              f'[2:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,volume=0.6,afade=t=in:st=0:d=0.15,afade=t=out:st={total-0.2:.2f}:d=0.2[mu];'
