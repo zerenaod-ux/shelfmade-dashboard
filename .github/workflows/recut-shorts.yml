@@ -1,7 +1,6 @@
 name: recut-shorts
 on:
-  schedule:
-    - cron: '30 20 * * *'   # 3:30 PM Chicago: cut Shorts from full videos that are already on YouTube
+  # recuts switched off (owner decision 2026-11-05): only the original native Shorts post. Run by hand only.
   workflow_dispatch:
     inputs:
       count:
