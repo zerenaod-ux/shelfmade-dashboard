@@ -221,6 +221,9 @@ def main():
                 title = (lines[0] if lines else z.stem)[:100]
                 text = __import__('re').sub(r'(?<![\w/])_([^_\n]+?)_(?![\w/])', r'\1', captions.clean(raw))  # book titles come as _Italic_ from Gutenberg
                 brand = 'mindlore' if tag.startswith('mindlore-') else ('doodles' if tag.startswith('doodles-') else 'shelfmade')
+                try:
+                    import engage; text = engage.add(text, brand, title)
+                except Exception as _e: print('engage skipped:', str(_e)[:80])
                 okq, ql = qc(video, title, text, False, set(seen['titles']))
                 url = cloud_upload(video, brand)
                 data = {'book': z.stem, 'tag': tag, 'title': title, 'text': text, 'url': url, 'brand': brand}
