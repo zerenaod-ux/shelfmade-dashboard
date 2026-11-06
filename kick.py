@@ -19,10 +19,14 @@ def main():
             due = now.replace(hour=h, minute=m, second=0, microsecond=0)
             late = (now - due).total_seconds() / 60
             if late < GRACE or late > MAXLATE: continue
-            r = sh('gh', 'run', 'list', '--workflow', wf, '--limit', '10', '--json', 'createdAt,event,status')
+            r = sh('gh', 'run', 'list', '--workflow', wf, '--limit', '10', '--json', 'createdAt,event,status,conclusion')
             runs = json.loads(r.stdout or '[]')
             since = due - datetime.timedelta(minutes=5)
-            if any(datetime.datetime.fromisoformat(x['createdAt'].replace('Z', '+00:00')) >= since for x in runs):
+            rs = [x for x in runs if datetime.datetime.fromisoformat(x['createdAt'].replace('Z', '+00:00')) >= since]
+            if rs:   # RETRY_ONCE: self-repair - if every run today failed and there is only one, try once more (never a third time)
+                if len(rs) == 1 and rs[0]['status'] == 'completed' and rs[0]['conclusion'] == 'failure' and late >= 20:
+                    d = sh('gh', 'workflow', 'run', wf)
+                    print('RETRIED once', wf, (d.stdout + d.stderr).strip()[:120], flush=True)
                 continue
             d = sh('gh', 'workflow', 'run', wf)
             print('KICKED', wf, 'late by %d min' % late, (d.stdout + d.stderr).strip()[:120], flush=True)

@@ -41,6 +41,17 @@ def decide(i, label):
     return r.returncode == 0, (r.stdout + r.stderr)[-200:]
 
 
+PUB = {'shelfmade': 'yt-publish-shelfmade.yml', 'mindlore': 'yt-publish-mindlore.yml', 'doodles': 'yt-publish-doodles.yml'}
+
+
+def paused(brand):   # PAUSE_GUARD: 3+ failures in the channel's last 5 publisher runs -> approve nothing new for it
+    try:
+        r = sh('gh', 'run', 'list', '--repo', REPO, '--workflow', PUB.get(brand, ''), '--limit', '5', '--json', 'conclusion')
+        return sum(1 for x in json.loads(r.stdout or '[]') if x.get('conclusion') == 'failure') >= 3
+    except Exception:
+        return False
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else 'run'
     c = load()
@@ -77,6 +88,9 @@ def main():
         if dup and age >= 1:
             act, why = 'skip', 'duplicate title'
         elif age < c['hold_hours']:
+            continue
+        elif 'checks-ok' in names and paused(brand):
+            c['log'] = ([{'t': c['last_run'], 'issue': i['number'], 'act': 'hold', 'why': 'channel paused: publisher failing', 'ok': True}] + c['log'])[:40]
             continue
         elif 'checks-ok' in names:
             if c['counts'].get(brand, 0) < c['cap']:
