@@ -21,6 +21,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: System packages (ffmpeg, fonts)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
       - name: Cut Shorts from full videos
         env:
           GH_TOKEN: ${{ github.token }}

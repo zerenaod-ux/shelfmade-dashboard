@@ -129,6 +129,8 @@ def main():
             print('recut ok', it['id'], 'start %.0f len %.0f' % (s, L), '->', tag, flush=True)
         except Exception as e:
             print('recut failed', it.get('id'), str(e)[:300], flush=True)
+            if 'release not found' in str(e).lower() or 'no assets match' in str(e).lower():
+                done.add(it['id'])   # the full video's release is gone: never retry
     DONE.parent.mkdir(exist_ok=True); DONE.write_text(json.dumps(sorted(done)))
     print('recut: made %d' % made)
 
