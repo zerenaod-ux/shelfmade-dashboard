@@ -1,3 +1,4 @@
+import re
 """Original AnimationDoodles Shorts: Leo (overthinker) and Mia (dry, kind, blunt) explain one pop-psychology idea.
 Each story is 6 shots / ~35-45 s. Keep claims soft ('can', 'often'); no invented statistics. Props only, no text in pictures."""
 LOOK=("Same two characters and the same polished Pixar-style 3D animated look as the reference picture. "
@@ -103,3 +104,25 @@ STORIES=[
   S("Leo starts the stopwatch with a determined grin, fingers flying across the keyboard. Mia holds her tea and smiles.",
     ('leo','confident',"Ten minutes. Starting now."),('mia','warm',"That's the spirit."))]},
 ]
+
+
+# --- show the people they talk about (2026-11-05) ---
+PEOPLE=[('boss','a stern boss in a grey suit holding a coffee mug'),('barista','a tired barista in a green apron'),('ex','a smug-looking ex in a stylish jacket'),
+ ('neighbour','a grumpy neighbour in a bathrobe'),('neighbor','a grumpy neighbor in a bathrobe'),('mom','a worried mom in a cardigan'),('mother','a worried mother in a cardigan'),
+ ('dad','a proud dad in a polo shirt'),('waiter','a polite waiter with a towel on his arm'),('waitress','a busy waitress with a tray'),('coworker','a nosy coworker with a lanyard'),
+ ('colleague','a nosy colleague with a lanyard'),('landlord','a suspicious landlord with a clipboard'),('date','a nervous date in a nice shirt'),('teacher','a strict teacher with glasses'),
+ ('doctor','a calm doctor in a white coat'),('manager','a stern manager with a clipboard'),('intern','a wide-eyed intern with a huge stack of papers'),('roommate','a sleepy roommate in pyjamas'),
+ ('cashier','a bored cashier at a till'),('driver','a impatient driver leaning on a car horn'),('stranger','a curious stranger watching from a bench'),('crowd','a small crowd of curious onlookers'),
+ ('grandma','a smiling grandma with a knitted scarf'),('cousin','a loud cousin in a party hat'),('kyle','')]
+def show_people(story):
+    """If a line mentions a person (boss, barista, ex...), make sure that shot's picture text shows them in the background. Returns number of additions."""
+    n=0
+    for sh in story.get('shots',[]):
+        txt=' '.join(l.get('text','') for l in sh.get('lines',[])).lower()
+        sc=sh.get('scene','')
+        for w,desc in PEOPLE:
+            if not desc:continue
+            if re.search(r'\b'+w+r's?\b',txt) and not re.search(r'\b'+w+r's?\b',sc.lower()):
+                sh['scene']=sc=sc.rstrip(' .')+'. In the background, clearly visible and drawn in the same style, stands '+desc+' (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.'
+                n+=1;break
+    return n

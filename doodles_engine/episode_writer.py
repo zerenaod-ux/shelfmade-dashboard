@@ -97,6 +97,8 @@ def scene_why(s, taken):
         n = sum(len(l['text'].split()) for sh in s['shots'] for l in sh['lines'])
         if not 55 <= n <= 115: return 'total spoken words must be 75 to 95, yours was %d' % n
         s['explain_shot'] = 3
+        try: stories.show_people(s)
+        except Exception: pass
         return ''
     except Exception as e:
         return 'wrong JSON shape (%s)' % repr(e)[:50]

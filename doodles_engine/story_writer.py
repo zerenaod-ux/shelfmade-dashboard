@@ -84,6 +84,8 @@ def valid(s,taken,variant='standard'):
         assert lo<=sum(len(t.split()) for t in alll)<=hi, 'length'
         assert alll[-1].strip()[-1:] in ('?','—','…','-') or alll[-1].strip().endswith('...'), 'no loop'
         s['explain_shot']=int(s.get('explain_shot',3));assert 0<=s['explain_shot']<=5
+        try:stories.show_people(s)
+        except Exception:pass
         return True
     except Exception:return False
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []
