@@ -2,8 +2,8 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-05",
- "note": "analytics API unavailable (HTTP 403): enable YouTube Analytics API in the Google Cloud project",
+ "collected": "2026-11-06",
+ "note": "",
  "videos": [
   {
    "id": "vz_gR7GgfU0",
@@ -11,9 +11,12 @@
    "published": "2026-11-03T18:04:42Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 202,
+   "views": 205,
    "likes": 3,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 15,
+   "avgPercent": 23.58,
+   "subsGained": 1
   },
   {
    "id": "EB1TXPXl1FI",
@@ -23,7 +26,23 @@
    "privacy": "public",
    "views": 13,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 35,
+   "avgPercent": 66.18,
+   "subsGained": 0
+  },
+  {
+   "id": "NzrDNYTxgjE",
+   "title": "The Jacket He Never Wears",
+   "published": "2026-11-04T03:02:07Z",
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 172,
+   "avgPercent": 236.87,
+   "subsGained": 0
   },
   {
    "id": "5AVFE-hB5Bo",
@@ -32,6 +51,19 @@
    "duration": "PT1M16S",
    "privacy": "public",
    "views": 10,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 31,
+   "avgPercent": 41.17,
+   "subsGained": 0
+  },
+  {
+   "id": "Rqbov1l-rYw",
+   "title": "The Clean Room Trap",
+   "published": "2026-11-04T18:03:01Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 9,
    "likes": 1,
    "comments": 0
   },
@@ -43,7 +75,10 @@
    "privacy": "public",
    "views": 9,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 12,
+   "avgPercent": 28.74,
+   "subsGained": 0
   },
   {
    "id": "YtiYnC--Tew",
@@ -53,17 +88,10 @@
    "privacy": "public",
    "views": 9,
    "likes": 2,
-   "comments": 0
-  },
-  {
-   "id": "NzrDNYTxgjE",
-   "title": "The Jacket He Never Wears",
-   "published": "2026-11-04T03:02:07Z",
-   "duration": "PT1M13S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 10,
+   "avgPercent": 18.17,
+   "subsGained": 0
   },
   {
    "id": "j9gyJISpFX0",
@@ -73,7 +101,10 @@
    "privacy": "public",
    "views": 8,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 28,
+   "avgPercent": 41.12,
+   "subsGained": 0
   },
   {
    "id": "B1Xmi2FOMmY",
@@ -83,7 +114,10 @@
    "privacy": "public",
    "views": 8,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 15,
+   "avgPercent": 25.230000000000004,
+   "subsGained": 1
   },
   {
    "id": "ImJ1YpyYRlM",
@@ -93,7 +127,10 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 7.139999999999999,
+   "subsGained": 0
   },
   {
    "id": "FRvSh7VxKvY",
@@ -103,17 +140,23 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 12.03,
+   "subsGained": 0
   },
   {
-   "id": "Rqbov1l-rYw",
-   "title": "The Clean Room Trap",
-   "published": "2026-11-04T18:03:01Z",
-   "duration": "PT51S",
+   "id": "pWjmSxnfjV0",
+   "title": "The Pastry Paradox",
+   "published": "2026-11-03T23:02:44Z",
+   "duration": "PT1M14S",
    "privacy": "public",
    "views": 6,
-   "likes": 1,
-   "comments": 0
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 12.879999999999999,
+   "subsGained": 0
   },
   {
    "id": "UKi9L1WWhCo",
@@ -123,7 +166,10 @@
    "privacy": "public",
    "views": 6,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 28,
+   "avgPercent": 56.11999999999999,
+   "subsGained": 0
   },
   {
    "id": "SEbuuZbI--8",
@@ -131,18 +177,8 @@
    "published": "2026-11-05T03:01:48Z",
    "duration": "PT49S",
    "privacy": "public",
-   "views": 4,
+   "views": 5,
    "likes": 1,
-   "comments": 0
-  },
-  {
-   "id": "pWjmSxnfjV0",
-   "title": "The Pastry Paradox",
-   "published": "2026-11-03T23:02:44Z",
-   "duration": "PT1M14S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 2,
    "comments": 0
   },
   {
@@ -153,7 +189,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 10,
+   "avgPercent": 18.81,
+   "subsGained": 1
   },
   {
    "id": "QSe-RWtqWKs",
@@ -163,13 +202,36 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "KvC6egp-HYQ",
    "title": "The IKEA Effect",
    "published": "2026-11-05T18:05:53Z",
    "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "bRr0CpAVqi4",
+   "title": "The Rehearsal Trap",
+   "published": "2026-11-06T03:01:44Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "FHoaRv9TFTc",
+   "title": "The Rest Trap",
+   "published": "2026-11-06T03:01:33Z",
+   "duration": "PT38S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
@@ -178,9 +240,9 @@
   {
    "id": "pJfbbo-cJAQ",
    "title": "The 5 PM Slide Deck Disaster",
-   "published": "2026-11-05T09:24:09Z",
+   "published": "2026-11-06T00:00:23Z",
    "duration": "PT3M58S",
-   "privacy": "private",
+   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0

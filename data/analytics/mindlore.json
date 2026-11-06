@@ -2,8 +2,8 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-05",
- "note": "analytics API unavailable (HTTP 403): enable YouTube Analytics API in the Google Cloud project",
+ "collected": "2026-11-06",
+ "note": "",
  "videos": [
   {
    "id": "uOqGecmhSTs",
@@ -13,7 +13,10 @@
    "privacy": "public",
    "views": 368,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 100,
+   "avgPercent": 126.83,
+   "subsGained": 0
   },
   {
    "id": "TbWW3mHgwVQ",
@@ -23,7 +26,10 @@
    "privacy": "public",
    "views": 305,
    "likes": 5,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 31,
+   "avgPercent": 65.26,
+   "subsGained": 0
   },
   {
    "id": "mDO-wdlrW9Q",
@@ -33,7 +39,10 @@
    "privacy": "public",
    "views": 159,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 70,
+   "avgPercent": 149.47,
+   "subsGained": 0
   },
   {
    "id": "NOrxJfIaNfE",
@@ -53,7 +62,10 @@
    "privacy": "public",
    "views": 85,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 16,
+   "avgPercent": 34.16,
+   "subsGained": 0
   },
   {
    "id": "leCHsYO2yWM",
@@ -63,7 +75,10 @@
    "privacy": "public",
    "views": 80,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 21,
+   "avgPercent": 42.86,
+   "subsGained": 0
   },
   {
    "id": "8j6NBqbneQ8",
@@ -83,7 +98,10 @@
    "privacy": "public",
    "views": 75,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 16,
+   "avgPercent": 45.72,
+   "subsGained": 0
   },
   {
    "id": "xPmE_Y7DFjI",
@@ -93,7 +111,10 @@
    "privacy": "public",
    "views": 58,
    "likes": 3,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 20,
+   "avgPercent": 41.58,
+   "subsGained": 1
   },
   {
    "id": "_l6TVDbYKnE",
@@ -103,7 +124,10 @@
    "privacy": "public",
    "views": 55,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 6,
+   "avgPercent": 18.75,
+   "subsGained": 0
   },
   {
    "id": "8p2wahKgCLE",
@@ -123,7 +147,10 @@
    "privacy": "public",
    "views": 52,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 23,
+   "avgPercent": 50.81,
+   "subsGained": 1
   },
   {
    "id": "70hQFkZl71o",
@@ -133,7 +160,10 @@
    "privacy": "public",
    "views": 49,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 21,
+   "avgPercent": 22.63,
+   "subsGained": 0
   },
   {
    "id": "4qzeT6uxt3A",
@@ -143,7 +173,10 @@
    "privacy": "public",
    "views": 49,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 21,
+   "avgPercent": 44.36,
+   "subsGained": 0
   },
   {
    "id": "8BNtkyQFi9Q",
@@ -151,9 +184,12 @@
    "published": "2026-10-19T16:12:09Z",
    "duration": "PT1M31S",
    "privacy": "public",
-   "views": 47,
+   "views": 48,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 65,
+   "avgPercent": 71.48,
+   "subsGained": 0
   },
   {
    "id": "sdpifdp9fdw",
@@ -163,7 +199,10 @@
    "privacy": "public",
    "views": 44,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 15,
+   "avgPercent": 32.09,
+   "subsGained": 0
   },
   {
    "id": "7hPDKOKO5oI",
@@ -173,7 +212,10 @@
    "privacy": "public",
    "views": 43,
    "likes": 3,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 29,
+   "avgPercent": 58.20000000000001,
+   "subsGained": 0
   },
   {
    "id": "0toRAe_otrI",
@@ -183,7 +225,23 @@
    "privacy": "public",
    "views": 37,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 16.13,
+   "subsGained": 0
+  },
+  {
+   "id": "NIb4cEtDf24",
+   "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
+   "published": "2026-06-18T04:47:26Z",
+   "duration": "PT2M45S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 65,
+   "avgPercent": 39.81,
+   "subsGained": 0
   },
   {
    "id": "fpl-ZNdJENw",
@@ -193,17 +251,10 @@
    "privacy": "public",
    "views": 35,
    "likes": 2,
-   "comments": 0
-  },
-  {
-   "id": "NIb4cEtDf24",
-   "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
-   "published": "2026-06-18T04:47:26Z",
-   "duration": "PT2M45S",
-   "privacy": "public",
-   "views": 34,
-   "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 53,
+   "avgPercent": 96.25,
+   "subsGained": 0
   },
   {
    "id": "YT26hcYPqPA",
@@ -213,7 +264,10 @@
    "privacy": "public",
    "views": 34,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 38,
+   "avgPercent": 71.11,
+   "subsGained": 0
   },
   {
    "id": "V5cZxesdo6w",
@@ -223,7 +277,10 @@
    "privacy": "public",
    "views": 32,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 14.17,
+   "subsGained": 0
   },
   {
    "id": "GzQK0sKMEEs",
@@ -233,7 +290,10 @@
    "privacy": "public",
    "views": 31,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 22,
+   "avgPercent": 37.04,
+   "subsGained": 0
   },
   {
    "id": "ysnCdNLO_RE",
@@ -243,7 +303,10 @@
    "privacy": "public",
    "views": 30,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 32.44,
+   "subsGained": 0
   },
   {
    "id": "SyRDyfv-noQ",
@@ -253,7 +316,10 @@
    "privacy": "public",
    "views": 29,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 19,
+   "avgPercent": 40.5,
+   "subsGained": 0
   },
   {
    "id": "sAcQkvFxvt4",
@@ -263,7 +329,10 @@
    "privacy": "public",
    "views": 29,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 20,
+   "avgPercent": 40.86,
+   "subsGained": 0
   },
   {
    "id": "vTk9JMEjaSQ",
@@ -273,7 +342,10 @@
    "privacy": "public",
    "views": 29,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 22,
+   "avgPercent": 26.47,
+   "subsGained": 0
   },
   {
    "id": "up2dlmMxvcg",
@@ -283,7 +355,10 @@
    "privacy": "public",
    "views": 29,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 17,
+   "avgPercent": 32.22,
+   "subsGained": 0
   },
   {
    "id": "EzKs0ef9QYY",
@@ -293,7 +368,10 @@
    "privacy": "public",
    "views": 26,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 12,
+   "avgPercent": 25.4,
+   "subsGained": 0
   },
   {
    "id": "CH3X01m7mio",
@@ -303,7 +381,10 @@
    "privacy": "public",
    "views": 26,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 11,
+   "avgPercent": 19.8,
+   "subsGained": 0
   },
   {
    "id": "uDTf6cqlUUI",
@@ -313,7 +394,10 @@
    "privacy": "public",
    "views": 25,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 37,
+   "avgPercent": 75.04,
+   "subsGained": 0
   },
   {
    "id": "vf5N9t4z-x0",
@@ -333,7 +417,10 @@
    "privacy": "public",
    "views": 24,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 105,
+   "avgPercent": 223.53,
+   "subsGained": 0
   },
   {
    "id": "QgbUl7uQ00I",
@@ -343,7 +430,10 @@
    "privacy": "public",
    "views": 24,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 20,
+   "avgPercent": 40.09,
+   "subsGained": 0
   },
   {
    "id": "dRGjYC0-rDM",
@@ -353,7 +443,10 @@
    "privacy": "public",
    "views": 24,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "EhKFYv-OSsI",
@@ -363,7 +456,10 @@
    "privacy": "public",
    "views": 24,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 10,
+   "avgPercent": 21.22,
+   "subsGained": 0
   },
   {
    "id": "xBaiLW-oBrs",
@@ -383,7 +479,10 @@
    "privacy": "public",
    "views": 23,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 25.22,
+   "subsGained": 0
   },
   {
    "id": "jcbv6oWRsSk",
@@ -393,7 +492,10 @@
    "privacy": "public",
    "views": 23,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 25,
+   "avgPercent": 49.54,
+   "subsGained": 0
   },
   {
    "id": "GUUj1ASdeLg",
@@ -413,7 +515,10 @@
    "privacy": "public",
    "views": 22,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 121,
+   "avgPercent": 70.58,
+   "subsGained": 0
   },
   {
    "id": "z9hWcaXaosE",
@@ -433,7 +538,10 @@
    "privacy": "public",
    "views": 21,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 12.990000000000002,
+   "subsGained": 0
   },
   {
    "id": "mC-icbk8HVo",
@@ -443,7 +551,10 @@
    "privacy": "public",
    "views": 21,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 80,
+   "avgPercent": 21.9,
+   "subsGained": 0
   },
   {
    "id": "AS50bK_ot-Q",
@@ -453,7 +564,10 @@
    "privacy": "public",
    "views": 21,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 360,
+   "avgPercent": 73.32,
+   "subsGained": 0
   },
   {
    "id": "YG8unHg5xWw",
@@ -463,7 +577,10 @@
    "privacy": "public",
    "views": 20,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 4.33,
+   "subsGained": 2
   },
   {
    "id": "-FD8LOO2XG4",
@@ -473,7 +590,10 @@
    "privacy": "public",
    "views": 19,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 19,
+   "avgPercent": 40.78,
+   "subsGained": 1
   },
   {
    "id": "---QS4XG_IY",
@@ -483,7 +603,10 @@
    "privacy": "public",
    "views": 19,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 26,
+   "avgPercent": 30.84,
+   "subsGained": 1
   },
   {
    "id": "UbddSXgqSCk",
@@ -493,7 +616,10 @@
    "privacy": "public",
    "views": 19,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "yza63zQvJqI",
@@ -503,7 +629,10 @@
    "privacy": "public",
    "views": 18,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 10,
+   "avgPercent": 21.65,
+   "subsGained": 0
   },
   {
    "id": "eoD9osLZfz0",
@@ -513,7 +642,10 @@
    "privacy": "public",
    "views": 18,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "p0PfFIRsQR8",
@@ -523,7 +655,10 @@
    "privacy": "public",
    "views": 17,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 11,
+   "avgPercent": 23.41,
+   "subsGained": 0
   },
   {
    "id": "qQLRo3ZcWG8",
@@ -533,7 +668,23 @@
    "privacy": "public",
    "views": 17,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 1374,
+   "avgPercent": 2862.61,
+   "subsGained": 0
+  },
+  {
+   "id": "Kjx5KmP1s7w",
+   "title": "The Interpretation Of Dreams",
+   "published": "2026-10-31T02:01:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 18,
+   "avgPercent": 35.26,
+   "subsGained": 0
   },
   {
    "id": "oP6N_ffOukE",
@@ -543,7 +694,10 @@
    "privacy": "public",
    "views": 16,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 63,
+   "avgPercent": 133.22,
+   "subsGained": 0
   },
   {
    "id": "EPBe9hIGqbc",
@@ -553,7 +707,10 @@
    "privacy": "public",
    "views": 16,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 20,
+   "avgPercent": 41.83,
+   "subsGained": 0
   },
   {
    "id": "85Cr6T6bYYo",
@@ -563,7 +720,10 @@
    "privacy": "public",
    "views": 16,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 46,
+   "avgPercent": 95.42,
+   "subsGained": 0
   },
   {
    "id": "VqsCT8boy3s",
@@ -576,16 +736,6 @@
    "comments": 0
   },
   {
-   "id": "Kjx5KmP1s7w",
-   "title": "The Interpretation Of Dreams",
-   "published": "2026-10-31T02:01:01Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 1,
-   "comments": 0
-  },
-  {
    "id": "UAe6oPKqTX0",
    "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
    "published": "2026-10-27T01:08:55Z",
@@ -593,7 +743,10 @@
    "privacy": "public",
    "views": 15,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 50,
+   "avgPercent": 49.68,
+   "subsGained": 0
   },
   {
    "id": "IuMXZIOMMXc",
@@ -603,7 +756,10 @@
    "privacy": "public",
    "views": 15,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 20,
+   "avgPercent": 41.98,
+   "subsGained": 0
   },
   {
    "id": "u-bjxB9PmgY",
@@ -613,7 +769,10 @@
    "privacy": "public",
    "views": 14,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "mW0rJ7sZRXU",
@@ -622,6 +781,19 @@
    "duration": "PT47S",
    "privacy": "public",
    "views": 14,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 29.469999999999995,
+   "subsGained": 0
+  },
+  {
+   "id": "xGaGRBalAvQ",
+   "title": "M\u00fcnsterberg would hate how you live.",
+   "published": "2026-11-05T18:04:28Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 13,
    "likes": 0,
    "comments": 0
   },
@@ -633,7 +805,10 @@
    "privacy": "public",
    "views": 13,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 10,
+   "avgPercent": 19.35,
+   "subsGained": 1
   },
   {
    "id": "VsvMwBHBL_Q",
@@ -643,7 +818,10 @@
    "privacy": "public",
    "views": 12,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 21.38,
+   "subsGained": 0
   },
   {
    "id": "D2NH7kCZ1ac",
@@ -653,7 +831,10 @@
    "privacy": "public",
    "views": 11,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 19,
+   "avgPercent": 35.59,
+   "subsGained": 1
   },
   {
    "id": "GiSqnmTVkRo",
@@ -663,7 +844,10 @@
    "privacy": "public",
    "views": 11,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 5.87,
+   "subsGained": 0
   },
   {
    "id": "IAVh1Ptv14k",
@@ -673,7 +857,10 @@
    "privacy": "public",
    "views": 11,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 63,
+   "avgPercent": 74.63,
+   "subsGained": 0
   },
   {
    "id": "YzBT3NQAcWg",
@@ -683,7 +870,10 @@
    "privacy": "public",
    "views": 11,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "YJKHtFwKuPw",
@@ -693,7 +883,10 @@
    "privacy": "public",
    "views": 10,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 21,
+   "avgPercent": 12.76,
+   "subsGained": 0
   },
   {
    "id": "n1SUdSt-YeE",
@@ -703,7 +896,10 @@
    "privacy": "public",
    "views": 10,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 12,
+   "avgPercent": 8.15,
+   "subsGained": 0
   },
   {
    "id": "vmDBuaWt5CQ",
@@ -723,7 +919,10 @@
    "privacy": "public",
    "views": 8,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 23,
+   "avgPercent": 47.18,
+   "subsGained": 0
   },
   {
    "id": "s2csm1mzmRY",
@@ -733,7 +932,10 @@
    "privacy": "public",
    "views": 8,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 177,
+   "avgPercent": 48.63,
+   "subsGained": 0
   },
   {
    "id": "ZPz6PwOcS4M",
@@ -743,7 +945,10 @@
    "privacy": "public",
    "views": 8,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 34,
+   "avgPercent": 37.8,
+   "subsGained": 0
   },
   {
    "id": "fKBiAsV-AEs",
@@ -753,7 +958,10 @@
    "privacy": "public",
    "views": 8,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "sPj_Yg2iX1Q",
@@ -763,7 +971,10 @@
    "privacy": "public",
    "views": 7,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 8,
+   "avgPercent": 9.64,
+   "subsGained": 0
   },
   {
    "id": "oe3Y1OmzJik",
@@ -773,7 +984,10 @@
    "privacy": "public",
    "views": 6,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 213,
+   "avgPercent": 51.53,
+   "subsGained": 0
   },
   {
    "id": "VY7tIwmvqfw",
@@ -783,7 +997,10 @@
    "privacy": "public",
    "views": 6,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "3sMZ0_phVOA",
@@ -793,7 +1010,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 126,
+   "avgPercent": 37.29,
+   "subsGained": 0
   },
   {
    "id": "r5TYsXKyFPA",
@@ -803,7 +1023,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 132,
+   "avgPercent": 35.06,
+   "subsGained": 0
   },
   {
    "id": "gusPDMxwqh8",
@@ -813,7 +1036,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 10.59,
+   "subsGained": 0
   },
   {
    "id": "PyrLZOt60Io",
@@ -823,7 +1049,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "EMQX3FI6-Lk",
@@ -833,7 +1062,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 4,
+   "avgPercent": 1.19,
+   "subsGained": 0
   },
   {
    "id": "YTKbRT9tkpo",
@@ -843,7 +1075,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 25,
+   "avgPercent": 7.61,
+   "subsGained": 0
   },
   {
    "id": "gVJLfRlF6aM",
@@ -853,7 +1088,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "8XyhN2mvpeM",
@@ -863,7 +1101,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 59,
+   "avgPercent": 36.28,
+   "subsGained": 0
   },
   {
    "id": "0m0sHfUvubE",
@@ -873,7 +1114,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 4,
+   "avgPercent": 1.35,
+   "subsGained": 0
   },
   {
    "id": "84PQTiIIbHU",
@@ -883,7 +1127,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 10.61,
+   "subsGained": 0
   },
   {
    "id": "wEEbLtq5Ap0",
@@ -893,7 +1140,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 80,
+   "avgPercent": 21.43,
+   "subsGained": 0
   },
   {
    "id": "fVN4suHCJz0",
@@ -933,7 +1183,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 18,
+   "avgPercent": 4.13,
+   "subsGained": 0
   },
   {
    "id": "cOkUIin-TGA",
@@ -943,7 +1196,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 2,
+   "avgPercent": 0.66,
+   "subsGained": 0
   },
   {
    "id": "6QgLvzJ8GV8",
@@ -953,7 +1209,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 17,
+   "avgPercent": 4.97,
+   "subsGained": 0
   },
   {
    "id": "kBXKZ5Zcmow",
@@ -963,7 +1222,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "U7ufylUmlKQ",
@@ -973,7 +1235,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 7,
+   "avgPercent": 2.11,
+   "subsGained": 0
   },
   {
    "id": "uQcS30Co6Rs",
@@ -983,7 +1248,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 349,
+   "avgPercent": 99.73,
+   "subsGained": 0
   },
   {
    "id": "W7-ZOJoCzSE",
@@ -996,11 +1264,41 @@
    "comments": 0
   },
   {
-   "id": "xGaGRBalAvQ",
-   "title": "M\u00fcnsterberg would hate how you live.",
-   "published": "2026-11-05T18:04:28Z",
-   "duration": "PT1M1S",
+   "id": "Y2dnDEONRD0",
+   "title": "Listen to what Darwin warned about.",
+   "published": "2026-11-06T03:01:33Z",
+   "duration": "PT57S",
    "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-06T00:00:34Z",
+   "duration": "PT7M47S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "QNTiEqKvMFM",
+   "title": "Do you choose your face, or does it choose you? | Charles Darwin",
+   "published": "2026-11-05T23:39:10Z",
+   "duration": "PT7M23S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "pMsD8Ac229E",
+   "title": "Do you choose your face, or does it choose you? | Charles Darwin",
+   "published": "2026-11-05T21:28:34Z",
+   "duration": "PT7M20S",
+   "privacy": "private",
    "views": 0,
    "likes": 0,
    "comments": 0
@@ -1106,16 +1404,6 @@
    "comments": 0
   },
   {
-   "id": "lzNbwJLpncg",
-   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
-   "published": "2026-11-03T06:17:38Z",
-   "duration": "PT7M47S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "23BZecAP85c",
    "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
    "published": "2026-11-03T00:00:22Z",
@@ -1133,7 +1421,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "FIMRv-bdI5k",
@@ -1143,7 +1434,10 @@
    "privacy": "private",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "I2T4IFkCqyc",
