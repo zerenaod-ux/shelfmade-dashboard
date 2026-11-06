@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261106-95b56",
+ "title": "The Will to Believe",
+ "author": "William James",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Is your doubt holding you back? 🧠 #mindset",
+ "hook": "You wait for absolute proof before making big life choices.",
+ "thumbnail_headline": "FAITH VS PROOF",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You wait for absolute proof before making big life choices. In 1896, philosopher William James claimed that waiting for total certainty actually ruins your success. In 2011, psychologist Martin Seligman studied high performers at the University of Pennsylvania and found that about 80 percent of successful outcomes required early belief before evidence existed. James called this the option to believe. Later studies proved this was not just one isolated finding. Researchers call this phenomenon the self-fulfilling prophecy effect. So why do we assume that waiting for facts is always safer? Because your brain treats uncertainty as a physical threat to avoid mistakes. But what did modern neuroscience actually discover about action? In 2016, neuroscientist Lisa Feldman Barrett at Northeastern University showed that your brain predicts reality based on prior beliefs before processing new sensory input. William James got it right. Action creates the truth, not the other way around. The result? Total doubt paralyzes your actual growth. That's it. So next time you hesitate on a decision, remember that you wait for absolute proof before making big life choices."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "About 80 percent of successful outcomes required positive expectation and early belief before full evidence existed in high performers.",
+   "who": "Martin Seligman",
+   "year": "2011",
+   "place": "University of Pennsylvania"
+  },
+  {
+   "claim": "The brain constructs perceptions and predicts reality based on prior beliefs before processing incoming sensory data.",
+   "who": "Lisa Feldman Barrett",
+   "year": "2016",
+   "place": "Northeastern University"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Will to Believe by William James"
+}

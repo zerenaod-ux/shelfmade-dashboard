@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261106-3503e",
+ "title": "Up from Slavery",
+ "author": "Booker T. Washington",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Is hard work really the only key to success? 🛠️ #mindset",
+ "hook": "You believe that working hard always leads to equal economic success.",
+ "thumbnail_headline": "HARD WORK MYTH",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You believe that working hard always leads to equal economic success. A century ago, Booker T. Washington argued that practical skills and character would guarantee upward mobility. In 1901, he published Up from Slavery based on his work at the Tuskegee Institute in Alabama. Was his focus on individual grit entirely correct? Economists William Darity and Darrick Hamilton studied American wealth gaps across the 2010s. Their work showed that black families with college degrees often hold less net worth than white families without high school diplomas. The result? Individual effort alone cannot overcome systemic barriers. Other researchers in sociology found the same structural pattern across multiple decades. The idea is called the racial wealth gap. So why do we assume effort solves everything? We confuse personal grit with systemic access. Washington correctly saw that skills build personal resilience. That's it. But he missed how policy shapes long term wealth. So next time you measure your progress, remember you believe that working hard always leads to equal economic success."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Individual effort and education do not close the racial wealth gap due to structural barriers.",
+   "who": "William Darity and Darrick Hamilton",
+   "year": "2010s",
+   "place": "United States"
+  },
+  {
+   "claim": "Practical vocational training builds personal resilience and character.",
+   "who": "Booker T. Washington",
+   "year": "1901",
+   "place": "Tuskegee Institute, Alabama"
+  }
+ ],
+ "source_url": "",
+ "theme": "Up from Slavery by Booker T. Washington"
+}
