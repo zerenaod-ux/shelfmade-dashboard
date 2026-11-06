@@ -14,6 +14,8 @@ def sh(*a):
 def _aff_text(d, plat, text):
     """YouTube copy of a Short gets the Amazon book link (clickable in the description); Instagram/TikTok stay link-free."""
     try:
+        if d.get('brand') in ('shelfmade', 'mindlore') and plat in ('instagram', 'tiktok'):
+            return text.rstrip() + '\n\nGet the book: link in bio'
         if plat != 'youtube' or d.get('brand') not in ('shelfmade', 'mindlore'): return text
         import affiliate
         for m in re.finditer(r'\d{3,6}', str(d.get('book', ''))):
