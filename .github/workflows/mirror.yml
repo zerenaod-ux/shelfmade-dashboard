@@ -1,0 +1,32 @@
+name: mirror
+# BACKUP: copies the whole repo (code + data + history) to a PRIVATE GitLab project every day, so GitHub is not a single point of failure.
+# Needs the repo secret GITLAB_MIRROR_TOKEN (GitLab project access token, write_repository). Without it this job FAILS on purpose so selfcheck.py raises an ALERT.
+on:
+  schedule:
+    - cron: '47 4 * * *'
+  push:
+    branches: [master]
+    paths: ['.github/workflows/mirror.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: mirror
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Push to GitLab (private backup)
+        env:
+          T: ${{ secrets.GITLAB_MIRROR_TOKEN }}
+        shell: bash
+        run: |
+          if [ -z "$T" ]; then echo "GITLAB_MIRROR_TOKEN is not set - backup NOT done"; exit 1; fi
+          git remote add gl "https://oauth2:${T}@gitlab.com/contentempire1/shelfmade-backup.git"
+          git push --force gl "HEAD:refs/heads/backup" 2>&1 | sed "s/${T}/***/g"
+          git push --force gl --tags 2>&1 | sed "s/${T}/***/g" || true
+          echo "backup pushed"

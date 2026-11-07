@@ -87,6 +87,11 @@ def main():
     dp = jl('publish/deps.json', {})
     hot = ['%s %s%%' % (r['name'], r['used_percent']) for r in dp.get('rows', []) if (r.get('used_percent') or 0) >= 80]
     rec('Free-tier room', not hot, ('running out: ' + ', '.join(hot)) if hot else 'all services under 80%', 'ALERT: a free service is above 80% used')
+    # 6 private GitLab backup ran OK in the last 40 h
+    mr = [r for r in last_run('mirror.yml') if r.get('status') == 'completed']
+    ok = bool(mr) and mr[0].get('conclusion') == 'success' and (age_h(mr[0].get('createdAt', '')) or 999) <= 40
+    rec('GitLab backup', ok, ('last: %s %s' % (mr[0].get('conclusion'), mr[0].get('createdAt', '')[:16])) if mr else 'no run yet', 'ALERT: GitLab backup not working',
+        lambda: sh('gh', 'workflow', 'run', 'mirror.yml', '--repo', REPO))
     out = {'at': NOW.isoformat(timespec='seconds'), 'level': 'ok' if all(r['ok'] for r in res) else 'warn', 'checks': res}
     (B / 'publish').mkdir(exist_ok=True)
     (B / 'publish/selfcheck.json').write_text(json.dumps(out, indent=1))
