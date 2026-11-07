@@ -61,6 +61,17 @@ def probes():
             d = urllib.parse.urlencode({'client_id': cid, 'client_secret': sec, 'refresh_token': rt, 'grant_type': 'refresh_token'}).encode()
             s, _ = get('https://oauth2.googleapis.com/token', {'User-Agent': 'studio-canary'}, d)
             P.append(('YouTube ' + who.title(), okc(s), '', 'Shorts also go through Buffer; full videos wait until the key is reconnected'))
+    try:   # Kaggle GPU (Doodles voices/pictures): read the result the Doodles run saved, no extra quota used
+        k = json.loads((B / 'data' / 'doodles' / 'kaggle-status.json').read_text())
+        st = 'down' if k.get('fails_in_row', 0) >= 2 else 'busy' if k.get('fails_in_row', 0) == 1 else 'up'
+        P.append(('Kaggle GPU (Doodles)', st, '', 'OUTAGE MODE: Doodles stops building, gives the story back, retries next run; already-approved Doodles posts keep going out'))
+        if st == 'down':
+            import subprocess
+            r = subprocess.run(['gh', 'issue', 'list', '--state', 'open', '--search', 'ALERT: Kaggle in:title', '--json', 'number'], capture_output=True, text=True)
+            if not json.loads(r.stdout or '[]'):
+                subprocess.run(['gh', 'issue', 'create', '--title', 'ALERT: Kaggle GPU failing (Doodles paused)', '--body', 'The Kaggle GPU stage failed twice in a row. Doodles stops and retries by itself. Check the Kaggle token/quota if it lasts more than a day.'])
+    except Exception:
+        pass
     s, _ = get('https://zerenaod-ux.github.io/shelfmade-dashboard/')
     P.append(('GitHub Pages (phone pages)', okc(s), '', 'Issues on GitHub still work for approve/skip'))
     return P
