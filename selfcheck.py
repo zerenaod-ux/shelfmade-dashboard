@@ -105,6 +105,14 @@ def main():
         young = (NOW - datetime.datetime.fromisoformat(launch + 'T00:00:00+00:00')).days < 9
         rec(label, fresh or (young and not (wr and wr[0].get('conclusion') == 'failure')), ('last: %s %s' % (wr[0].get('conclusion'), wr[0].get('createdAt', '')[:10])) if wr else 'not run yet (launched %s)' % launch,
             'ALERT: %s job not working' % label, lambda w=wf: sh('gh', 'workflow', 'run', w, '--repo', REPO))
+    # 9 viewer flywheel (playlists): no brand reporting an error
+    fs = jl('data/growth/flywheel-status.json', None)
+    if fs is None:
+        rec('Playlist flywheel', True, 'not run yet (launched 2026-11-07)')
+    else:
+        badb = {k: v for k, v in fs.get('brands', {}).items() if str(v).startswith(('error', 'HTTP'))}
+        rec('Playlist flywheel', not badb, ('problem: ' + '; '.join('%s %s' % (k, v[:60]) for k, v in badb.items())) if badb else 'ok (%s)' % '; '.join('%s: %s' % kv for kv in fs.get('brands', {}).items()), 'ALERT: playlist flywheel failing',
+            lambda: sh('gh', 'workflow', 'run', 'flywheel.yml', '--repo', REPO))
     out = {'at': NOW.isoformat(timespec='seconds'), 'level': 'ok' if all(r['ok'] for r in res) else 'warn', 'checks': res}
     (B / 'publish').mkdir(exist_ok=True)
     (B / 'publish/selfcheck.json').write_text(json.dumps(out, indent=1))

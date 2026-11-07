@@ -1,0 +1,36 @@
+name: flywheel
+# Daily: keeps a Shorts playlist and a full-videos playlist per channel and adds new public videos (max 6 per list per run). Honors the kill switch.
+on:
+  schedule:
+    - cron: '11 16 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: flywheel
+jobs:
+  playlists:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Playlists
+        env:
+          FLYWHEEL_LIVE: '1'
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
+          YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+        run: python flywheel.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "flywheel-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f data/growth/playlists.json data/growth/flywheel-status.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "flywheel: playlists"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; git rebase --abort 2>/dev/null; sleep 6; done
