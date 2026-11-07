@@ -30,6 +30,8 @@ def build():
         if win: L.append('  - Working: ' + '; '.join('%s = %s (%.1fx)' % (x['feature'], x['value'], x['lift']) for x in win))
         if lose: L.append('  - Not working: ' + '; '.join('%s = %s (%.1fx)' % (x['feature'], x['value'], x['lift']) for x in lose))
     lg = [e for e in jl('data/growth/title_log.json', []) if e.get('source') == 'auto' and not e.get('reverted')]
+    rs = jl('data/growth/retitle-status.json', {})
+    if rs: L.append('- Retitle campaign: %s changed, %s checked and kept, still waiting: %s.' % (rs.get('changed_total'), rs.get('kept_total'), rs.get('pending_after_this_run')))
     if lg: L.append('- Titles auto-improved so far: %d Shorts (full list with old titles: data/growth/title_log.json; undo all: run workflow `retitle` with mode revert-all).' % len(lg))
     L.append('\n### System health')
     bad = [c for c in sc.get('checks', []) if not c.get('ok')]
