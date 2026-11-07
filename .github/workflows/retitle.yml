@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'run or revert-all'
+        description: 'run, revert-all or revert-mindlore'
         default: 'run'
 permissions:
   contents: write
@@ -35,7 +35,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: |
-          if [ "$MODE" = "revert-all" ]; then python retitle.py revert-all; else python retitle.py; fi
+          case "$MODE" in revert-all) python retitle.py revert-all;; revert-mindlore) python retitle.py revert-all mindlore;; *) python retitle.py;; esac
       - name: Save
         if: always()
         run: |

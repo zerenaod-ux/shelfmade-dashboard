@@ -9,7 +9,7 @@ import title_apply as ta
 B = Path(__file__).resolve().parent
 LOG = ta.LOG
 LIVE = os.environ.get('RETITLE_LIVE') == '1'
-BRANDS = ('shelfmade', 'mindlore')
+BRANDS = ('shelfmade',)   # MindLore PAUSED 2026-11-06: canary showed its titles were already hooky and the rewrites were weaker. Re-enable only with a better prompt.
 VOICE = {'shelfmade': 'ShelfMade: classic books and their big ideas, calm and curious.', 'mindlore': 'MindLore: everyday psychology from real research, kind and curious.'}
 EMOJI = re.compile('[\U0001F300-\U0001FAFF☀-➿]')
 
@@ -67,11 +67,11 @@ def write_titles(brand, items):
     return res
 
 
-def revert_all():
+def revert_all(only=None):
     log = ta.jl(LOG, [])
     toks = {}
     for e in log:
-        if e.get('source') != 'auto' or e.get('reverted'):
+        if e.get('source') != 'auto' or e.get('reverted') or (only and e['brand'] != only):
             continue
         b = e['brand']
         try:
@@ -84,7 +84,7 @@ def revert_all():
 
 def main():
     if len(sys.argv) > 1 and sys.argv[1] == 'revert-all':
-        return revert_all()
+        return revert_all(sys.argv[2] if len(sys.argv) > 2 else None)
     try:
         import guard
     except Exception:
@@ -104,6 +104,9 @@ def main():
             items = []
             for vid in todo[:n_run]:
                 v = ta.call(tok, 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=' + vid)['items'][0]['snippet']
+                _w = v['title'].split()
+                if len(_w) <= 6 and ('?' in v['title'] or re.search(r'\byou(r)?\b', v['title'], re.I)) and not re.search(r'[\u201c\u201d]', v['title']):
+                    log.append({'id': vid, 'brand': brand, 'old': v['title'], 'new': v['title'], 'date': datetime.date.today().isoformat(), 'source': 'auto-skip'}); print('  kept (already short and hooky):', v['title']); continue
                 items.append({'id': vid, 'title': v['title'], 'desc': (v.get('description') or '').split('\n\n', 1)[-1] if v.get('description') else ''})
             new = write_titles(brand, items)
         except Exception as e:
