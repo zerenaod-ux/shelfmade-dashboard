@@ -113,7 +113,7 @@ def revert_all(only=None, ids=None):
             toks[b] = toks.get(b) or ta.access(os.environ['YT_REFRESH_TOKEN_' + b.upper()])
             ta.set_title(toks[b], e['id'], e['old']); e['reverted'] = True; print('reverted', e['id'])
         except Exception as ex:
-            print('revert failed', e['id'], str(ex)[:100])
+            e['revert_error'] = str(ex)[:300]; print('revert failed', e['id'], str(ex)[:300])
     LOG.write_text(json.dumps(log, indent=1))
 
 
