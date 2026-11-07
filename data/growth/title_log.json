@@ -299,7 +299,8 @@
   "old": "What would a perfect world actually look like? Someone tried to write it in 1516 \ud83c\udfdd\ufe0f",
   "new": "What does a perfect world look?",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "reverted": true
  },
  {
   "id": "M_SmNMSpJ0w",
