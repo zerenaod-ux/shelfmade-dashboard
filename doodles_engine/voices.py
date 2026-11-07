@@ -5,8 +5,9 @@ from pathlib import Path
 import numpy as np
 MODEL="mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-bf16";SR=24000
 SPK={'leo':'Ryan','mia':'Vivian'}
-BASE={'leo':"A young man in his twenties, an overthinking, lovable goofball. ",
-      'mia':"A young woman in her twenties, dry-witted, kind and quick. "}
+PACE="Talk at a quick, natural conversational pace like a real friend chatting, casual and unscripted, with short natural pauses, never like a narrator or announcer. "   # PACE
+BASE={'leo':"A young man in his twenties, an overthinking, lovable goofball. "+PACE,
+      'mia':"A young woman in her twenties, dry-witted, kind and quick. "+PACE}
 FEEL={'confident':"Speak confidently and a little too sure of himself.",'deadpan':"Speak flat and deadpan with a hint of amusement, dry timing.",
  'sheepish':"Speak sheepishly and defensively, a bit embarrassed.",'panicked':"Speak in rising panic, fast and high-pitched, comically alarmed.",
  'tired':"Speak exhausted and drained, slow and slurred.",'warm':"Speak warmly and gently, with a smile in the voice.",

@@ -37,6 +37,15 @@ ACTION = ("ACTION AND SOUND: in EVERY shot's 'scene' text describe one clear phy
           "Vary the action from shot to shot (never the same twice in a row), at most two actions per shot, and keep Leo and Mia large in frame and visibly moving, not standing still.")
 
 
+SPICE = ("VOICE OF THE SCRIPT (make it addictive, owner request): write like real best friends talking, never like a script. Mia is the savage deadpan roaster (lovingly toxic): "
+         "one-line burns about Leo's habits, calling him out with EXACT specifics. Leo is the dramatic, defensive overthinker who over-reacts, gets petty, argues back and loses. "
+         "Humor tools: playful roasting, petty drama, exaggeration, a running joke where the same object or habit comes back, rule of three with a twist, an unexpected comparison, "
+         "and at least ONE line a viewer would screenshot or send to a friend with 'this is literally you'. Make it spoken and fast: contractions, fragments, interruptions "
+         "('wait-', 'no, listen', 'excuse me?'), reactions ('oh my god', 'okay but why'), lines of 4 to 9 words, quick back-and-forth, never a speech or a lecture. "
+         "Roast habits and everyday situations only: no slurs, no hate, no jokes about bodies or real harm, and the friendship stays warm underneath. "
+         "The viewer should feel 'I need to see what Leo and Mia do tomorrow'.")
+
+
 def _lg():
     try:   # what our real viewers watch (learner.py); empty when not available
         sys.path.insert(0,str(HERE.parent)); import learned
@@ -55,7 +64,7 @@ def _rec(s):
     except Exception:
         pass
 def gemini(prompt):
-    key=secret();last=None;rules=RULES+_lg()+_sr()+" "+ACTION
+    key=secret();last=None;rules=RULES+_lg()+_sr()+" "+ACTION+" "+SPICE
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):

@@ -42,7 +42,7 @@ CRAFT = ("COMEDY CRAFT (PUNCHUP): 1) SPECIFIC beats generic: 'three minutes and 
          "5) The punchline goes LAST in the scene, never explained after. 6) Callback to the running gag with a NEW twist, not the same line. 7) Cut every line that only explains. "
          "8) TOXIC FRIEND: Mia can read a text from KYLE (never shown or heard, only quoted by Mia in a flat voice: 'Kyle says: just wing it, bro.') who always gives confident terrible advice and humble-brags; use him in at most half of the scenes. "
          "Keep it playful: no slurs, no cruelty about real groups, no self-harm, no sex.")
-COMEDY = COMEDY + " " + CRAFT + " " + sw.ACTION
+COMEDY = COMEDY + " " + CRAFT + " " + sw.ACTION + " " + sw.SPICE
 PUNCH_SYS = "You are a comedy punch-up writer for the animated show Leo & Mia. You return ONE JSON object only, the same skit with funnier spoken lines."
 
 
