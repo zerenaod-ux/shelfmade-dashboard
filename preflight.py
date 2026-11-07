@@ -37,6 +37,7 @@ def main():
             failed.append(w['name'])
     add('Jobs', 'ok' if not failed else 'warn', 'every job last ran fine' if not failed else 'last run failed: ' + ', '.join(failed[:6]))
     al = gh('issue', 'list', '--repo', REPO, '--state', 'open', '--search', 'ALERT in:title', '--json', 'number,title') or []
+    al = [a for a in al if a['title'].startswith('ALERT:')]
     add('Alerts', 'ok' if not al else 'bad', 'no open alerts' if not al else '%d open: %s' % (len(al), '; '.join(a['title'][:40] for a in al[:3])))
     tc = gh('run', 'list', '--repo', REPO, '--workflow', 'tokencheck.yml', '--limit', '1', '--json', 'conclusion,createdAt') or []
     if tc:
