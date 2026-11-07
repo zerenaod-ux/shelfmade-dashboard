@@ -380,7 +380,8 @@
   "old": "Aristotle's 2,300-year-old formula for a good life \ud83c\udfdb\ufe0f",
   "new": "Can you achieve eudaimonia?",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "revert_error": "HTTP Error 403: Forbidden"
  },
  {
   "id": "qfwKKgBIkvI",
@@ -412,7 +413,8 @@
   "old": "The part of Psychology nobody mentions.",
   "new": "Why does the mind miss m?",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "revert_error": "HTTP Error 403: Forbidden"
  },
  {
   "id": "xBaiLW-oBrs",
@@ -436,6 +438,7 @@
   "old": "The Art Of Public Speaking",
   "new": "What makes a speaker command?",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "reverted": true
  }
 ]
