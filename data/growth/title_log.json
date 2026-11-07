@@ -45,7 +45,8 @@
   "old": "Darwin had a warning for you.",
   "new": "Darwin\u2019s hidden warning about emotion",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "reverted": true
  },
  {
   "id": "Y2dnDEONRD0",
@@ -53,7 +54,8 @@
   "old": "Listen to what Darwin warned about.",
   "new": "When blushing clouds the mind",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "reverted": true
  },
  {
   "id": "xGaGRBalAvQ",
@@ -61,7 +63,8 @@
   "old": "M\u00fcnsterberg would hate how you live.",
   "new": "Psychology\u2019s secret behind workplace habits",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "reverted": true
  },
  {
   "id": "vf5N9t4z-x0",
@@ -69,6 +72,7 @@
   "old": "The part of Psychology nobody mentions.",
   "new": "The overlooked piece of psychology",
   "date": "2026-11-07",
-  "source": "auto"
+  "source": "auto",
+  "reverted": true
  }
 ]
