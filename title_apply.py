@@ -1,6 +1,6 @@
 """Applies OWNER-APPROVED title proposals (G1). Usage: python title_apply.py <issue number> <apply|revert>.
 Only proposals whose issue number matches are touched. Only the TITLE is changed (all other fields are sent back exactly as YouTube returned them). Old title is logged for revert."""
-import datetime, json, os, sys, urllib.parse, urllib.request
+import datetime, json, os, sys, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 B = Path(__file__).resolve().parent
 PROP, LOG = B / 'data/growth/title_proposals.json', B / 'data/growth/title_log.json'
@@ -21,7 +21,10 @@ def access(rt):
 
 def call(tok, url, body=None, method='GET'):
     req = urllib.request.Request(url, json.dumps(body).encode() if body else None, {'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'}, method=method)
-    return json.load(urllib.request.urlopen(req, timeout=60))
+    try:
+        return json.load(urllib.request.urlopen(req, timeout=60))
+    except urllib.error.HTTPError as e:
+        raise RuntimeError('HTTP %s %s' % (e.code, e.read()[:300].decode('utf8', 'ignore')))
 
 
 def set_title(tok, vid, title):
