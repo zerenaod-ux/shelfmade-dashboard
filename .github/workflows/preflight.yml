@@ -1,0 +1,29 @@
+name: preflight
+on:
+  schedule:
+    - cron: '41 12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: read
+  actions: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python preflight.py
+      - name: Save
+        run: |
+          git config user.name "preflight-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/preflight.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "preflight: status"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; git rebase --abort 2>/dev/null; sleep 6; done
