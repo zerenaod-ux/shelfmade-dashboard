@@ -1,0 +1,11 @@
+{
+ "on": false,
+ "cap": 3,
+ "hold_hours": 3,
+ "skip_after_hours": 48,
+ "day": "",
+ "counts": {},
+ "changed": "",
+ "last_run": "2026-11-07T00:28:23+00:00",
+ "log": []
+}
