@@ -381,7 +381,7 @@
   "new": "Can you achieve eudaimonia?",
   "date": "2026-11-07",
   "source": "auto",
-  "revert_error": "HTTP Error 403: Forbidden"
+  "revert_error": "HTTP 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceed"
  },
  {
   "id": "qfwKKgBIkvI",
@@ -414,7 +414,7 @@
   "new": "Why does the mind miss m?",
   "date": "2026-11-07",
   "source": "auto",
-  "revert_error": "HTTP Error 403: Forbidden"
+  "revert_error": "HTTP 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceed"
  },
  {
   "id": "xBaiLW-oBrs",
