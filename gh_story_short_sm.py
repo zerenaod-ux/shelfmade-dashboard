@@ -26,9 +26,14 @@ def make_script(s, book):
     ev = [{'chapter': 'Evidence', 'kind': 'named research claim', 'excerpt': '%s (%s): %s' % (c.get('who'), c.get('year'), c.get('claim')), 'source_url': url, 'verification': 'Named researcher/year checked against Wikipedia by the story gate.'} for c in s.get('claims', []) if isinstance(c, dict)]
     ev.append({'chapter': 'Book', 'kind': 'editorial paraphrase with source context', 'excerpt': hook, 'source_url': url, 'verification': 'Compare with the linked book.'})
     script = {'hook': hook, 'title': book['title'], 'points': points, 'cta': cta, 'thumbnail_headline': s.get('thumbnail_headline') or opening_design.short_headline(hook),
-              'public_title': s['public_title'][:100], 'source_evidence': ev, 'source_kind': 'story'}
+              'public_title': _ft(s['public_title'])[:100], 'source_evidence': ev, 'source_kind': 'story'}
     evidence = {'version': 'story-v2-shelfmade', 'edition': 1, 'edition_capacity': 1, 'hook': hook, 'source_sentences': [hook], 'source_url': url, 'source_checkpoints': ev}
     return script, evidence
+def _ft(t):
+    try:
+        import growth; return growth.fix_title(__import__('os').environ.get('BRAND', 'shelfmade'), t)
+    except Exception: return t
+
 def main(n):
     state = Path('gh-state/built-story-shorts-shelfmade-old.json'); state.parent.mkdir(exist_ok=True); built = load(state, [])
     todo = [p for p in sorted(Path('story-shorts/shelfmade').glob('*.json')) if p.stem not in built][:n]
@@ -44,7 +49,7 @@ def main(n):
         if r.returncode or not (folder / 'final.mp4').is_file(): print('FAILED', sid); continue
         import story_rules, hashtags
         ev = story_rules.evidence_lines(s); tags = hashtags.shelfmade(s.get('hook', ''), 'short')
-        text = s['public_title'] + '\n\n' + s['hook'] + '\n\n' + ('Evidence: ' + '; '.join(ev) + '\n\n' if ev else '') + 'Book: %s by %s. Classic books, explained on ShelfMade.\n\n' % (book['title'], book['author']) + tags
+        text = _ft(s['public_title']) + '\n\n' + s['hook'] + '\n\n' + ('Evidence: ' + '; '.join(ev) + '\n\n' if ev else '') + 'Book: %s by %s. Classic books, explained on ShelfMade.\n\n' % (book['title'], book['author']) + tags
         z = folder / 'zip'; z.mkdir(exist_ok=True); shutil.copy(folder / 'final.mp4', z / 'final.mp4'); (z / 'POST_THIS.txt').write_text(text)
         subprocess.run('cd %s && zip -q %s final.mp4 POST_THIS.txt' % (z, Path('out').resolve() / ('sm-story-%s.zip' % sid)), shell=True, check=True)
         built.append(sid); state.write_text(json.dumps(built)); made += 1; print('BUILT', sid, flush=True); shutil.rmtree(folder, ignore_errors=True)

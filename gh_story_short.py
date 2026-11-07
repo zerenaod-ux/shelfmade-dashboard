@@ -5,6 +5,11 @@ BRAND = os.environ.get('BRAND', 'mindlore'); os.environ['BRAND'] = BRAND; os.env
 def load(p, d):
     try: return json.loads(Path(p).read_text())
     except Exception: return d
+def _ft(t):
+    try:
+        import growth; return growth.fix_title(BRAND, t)
+    except Exception: return t
+
 def main(n):
     state = Path('gh-state/built-story-shorts.json' if BRAND == 'mindlore' else 'gh-state/built-story-shorts-%s.json' % BRAND); state.parent.mkdir(exist_ok=True); built = load(state, [])
     todo = [p for p in sorted(Path('story-shorts/%s' % BRAND).glob('*.json')) if p.stem not in built][:n]
@@ -20,7 +25,7 @@ def main(n):
             import hashtags; tags = (hashtags.shelfmade if BRAND == 'shelfmade' else hashtags.mindlore)(s.get('hook', ''), 'short')
         except Exception: tags = '#psychology #MindLore #shorts'
         ev = story_rules.evidence_lines(s)
-        text = s['public_title'] + '\n\n' + s['hook'] + '\n\n' + ('Evidence: ' + '; '.join(ev) + '\n\n' if ev else '') + ('Book: %s by %s. Classic books, explained on ShelfMade.\n\n' % (s.get('title', ''), s.get('author', '')) if BRAND == 'shelfmade' else 'MindLore: how your mind works, from real research.\n\n') + tags
+        text = _ft(s['public_title']) + '\n\n' + s['hook'] + '\n\n' + ('Evidence: ' + '; '.join(ev) + '\n\n' if ev else '') + ('Book: %s by %s. Classic books, explained on ShelfMade.\n\n' % (s.get('title', ''), s.get('author', '')) if BRAND == 'shelfmade' else 'MindLore: how your mind works, from real research.\n\n') + tags
         z = folder / 'zip'; z.mkdir(exist_ok=True); shutil.copy(folder / 'ml2d_SHORT.mp4', z / 'final.mp4'); (z / 'POST_THIS.txt').write_text(text)
         subprocess.run('cd %s && zip -q %s final.mp4 POST_THIS.txt' % (z, Path('out').resolve() / ('%s-story-%s.zip' % ('sm' if BRAND == 'shelfmade' else 'ml', sid))), shell=True, check=True)
         try:   # learning log: which scenes / actions / props this video used (story_learn.py matches it to real views later)

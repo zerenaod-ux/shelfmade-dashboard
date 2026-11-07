@@ -140,3 +140,18 @@ def guidance(brand):
 
 if __name__ == '__main__':
     main()
+
+
+def fix_title(brand, title):
+    """DECISION ENGINE ACTION: remove emoji from a Shorts title when OUR measured numbers say emoji titles lose (lift <= DOWN, >=5 videos). Any problem -> title unchanged."""
+    try:
+        bd = json.loads((OUT / 'scoreboard.json').read_text())['brands'][brand]
+        bad = any(x['feature'] == 'emoji' and x['value'] == 'has emoji' and x['lift'] <= DOWN for x in bd.get('feature_lifts', []))
+        if bad and EMOJI.search(title):
+            t = re.sub(r'\s{2,}', ' ', EMOJI.sub('', title)).strip()
+            if len(t) >= 8:
+                print('growth: removed emoji from title (our data: emoji titles lose)')
+                return t
+    except Exception:
+        pass
+    return title
