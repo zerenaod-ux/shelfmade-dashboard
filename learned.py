@@ -77,3 +77,18 @@ def guidance(brand, kind='short'):
         except Exception:
             continue
     return trending(brand)
+
+
+_base_guidance = guidance
+
+
+def guidance(brand, kind='short'):
+    """Notes from viewers (above) + HARD NUMBERS from growth.py (Shorts only; small data = a nudge)."""
+    g = _base_guidance(brand, kind)
+    if kind != 'short':
+        return g
+    try:
+        import growth
+        return g + growth.guidance(brand)
+    except Exception:
+        return g

@@ -1,0 +1,598 @@
+{
+ "updated": "2026-11-07T01:11:47+00:00",
+ "brands": {
+  "shelfmade": {
+   "totals": {
+    "videos": 139,
+    "views": 2741,
+    "likes": 116,
+    "subs": 9
+   },
+   "measured_videos": 122,
+   "median_views_per_day": 0.16,
+   "top": [
+    {
+     "id": "bXvLqJ5TB1I",
+     "title": "You can turn over a new leaf every hour if you choose",
+     "views": 97,
+     "vpd": 18.31,
+     "age_days": 5.3,
+     "avg_percent": 32.45,
+     "subs": 0
+    },
+    {
+     "id": "318wFWISd8c",
+     "title": "Studies In Pessimism",
+     "views": 405,
+     "vpd": 17.46,
+     "age_days": 23.2,
+     "avg_percent": 59.53000000000001,
+     "subs": 3
+    },
+    {
+     "id": "rhV-RVacC7s",
+     "title": "I think you may like to know something of his person and character",
+     "views": 53,
+     "vpd": 13.28,
+     "age_days": 4.0,
+     "avg_percent": 34.62,
+     "subs": 0
+    },
+    {
+     "id": "BMne6TFjLpk",
+     "title": "Know your enemy",
+     "views": 138,
+     "vpd": 12.67,
+     "age_days": 10.9,
+     "avg_percent": 70.3,
+     "subs": 1
+    },
+    {
+     "id": "0OxyEvY3YvU",
+     "title": "Moreover, nothing is good but virtue, and nothing but vice is bad",
+     "views": 39,
+     "vpd": 9.78,
+     "age_days": 4.0,
+     "avg_percent": 36.28,
+     "subs": 0
+    }
+   ],
+   "bottom": [
+    {
+     "id": "LiiQYEUiVVg",
+     "title": "What is justice? The question that built Western thought \ud83c\udfdb\ufe0f",
+     "views": 1,
+     "vpd": 0.01,
+     "age_days": 147.8,
+     "avg_percent": null,
+     "subs": 0
+    },
+    {
+     "id": "NrR9I45fH8Q",
+     "title": "He left society for 2 years \u2014 here's what he learned \ud83c\udf32",
+     "views": 1,
+     "vpd": 0.01,
+     "age_days": 147.8,
+     "avg_percent": null,
+     "subs": 0
+    },
+    {
+     "id": "_ELUY-tobIU",
+     "title": "Thus Spake Zarathustra by Nietzsche in 60 Seconds \u26a1 #shorts",
+     "views": 1,
+     "vpd": 0.01,
+     "age_days": 149.9,
+     "avg_percent": null,
+     "subs": 0
+    },
+    {
+     "id": "hkd29aXx644",
+     "title": "The Prince by Machiavelli in 60 Seconds \ud83d\udc51 #shorts",
+     "views": 1,
+     "vpd": 0.01,
+     "age_days": 149.9,
+     "avg_percent": null,
+     "subs": 0
+    },
+    {
+     "id": "BNa2CaE60Mc",
+     "title": "When is it rational to believe without proof? \u2728",
+     "views": 0,
+     "vpd": 0.0,
+     "age_days": 145.3,
+     "avg_percent": null,
+     "subs": 0
+    }
+   ],
+   "feature_lifts": [
+    {
+     "feature": "emoji",
+     "value": "no emoji",
+     "n": 57,
+     "median_vpd": 2.52,
+     "lift": 11.45,
+     "rest_median_vpd": 0.02
+    },
+    {
+     "feature": "question title",
+     "value": "question title",
+     "n": 19,
+     "median_vpd": 1.68,
+     "lift": 7.64,
+     "rest_median_vpd": 0.18
+    },
+    {
+     "feature": "short length",
+     "value": "up to 30s",
+     "n": 52,
+     "median_vpd": 1.5,
+     "lift": 6.82,
+     "rest_median_vpd": 0.03
+    },
+    {
+     "feature": "speaks to \"you\"",
+     "value": "title says you/your",
+     "n": 28,
+     "median_vpd": 1.5,
+     "lift": 6.82,
+     "rest_median_vpd": 0.05
+    },
+    {
+     "feature": "command/hook opener",
+     "value": "opens with a direct word (know, stop, why, how, your...)",
+     "n": 22,
+     "median_vpd": 1.5,
+     "lift": 6.82,
+     "rest_median_vpd": 0.08
+    },
+    {
+     "feature": "title length",
+     "value": "short title (1-5 words)",
+     "n": 24,
+     "median_vpd": 0.95,
+     "lift": 4.32,
+     "rest_median_vpd": 0.05
+    },
+    {
+     "feature": "publish time (Chicago)",
+     "value": "midday (11-17)",
+     "n": 27,
+     "median_vpd": 0.69,
+     "lift": 3.14,
+     "rest_median_vpd": 0.18
+    },
+    {
+     "feature": "number in title",
+     "value": "no number",
+     "n": 86,
+     "median_vpd": 0.66,
+     "lift": 3.0,
+     "rest_median_vpd": 0.02
+    },
+    {
+     "feature": "publish time (Chicago)",
+     "value": "evening (17-23)",
+     "n": 71,
+     "median_vpd": 0.21,
+     "lift": 0.95,
+     "rest_median_vpd": 0.33
+    },
+    {
+     "feature": "question title",
+     "value": "not a question",
+     "n": 84,
+     "median_vpd": 0.18,
+     "lift": 0.82,
+     "rest_median_vpd": 1.68
+    },
+    {
+     "feature": "command/hook opener",
+     "value": "other opener",
+     "n": 81,
+     "median_vpd": 0.08,
+     "lift": 0.36,
+     "rest_median_vpd": 1.5
+    },
+    {
+     "feature": "title length",
+     "value": "long title (9+ words)",
+     "n": 63,
+     "median_vpd": 0.08,
+     "lift": 0.36,
+     "rest_median_vpd": 0.55
+    },
+    {
+     "feature": "speaks to \"you\"",
+     "value": "no you/your",
+     "n": 75,
+     "median_vpd": 0.05,
+     "lift": 0.23,
+     "rest_median_vpd": 1.5
+    },
+    {
+     "feature": "short length",
+     "value": "46-75s",
+     "n": 18,
+     "median_vpd": 0.04,
+     "lift": 0.16,
+     "rest_median_vpd": 0.63
+    },
+    {
+     "feature": "short length",
+     "value": "31-45s",
+     "n": 33,
+     "median_vpd": 0.03,
+     "lift": 0.14,
+     "rest_median_vpd": 0.95
+    },
+    {
+     "feature": "publish time (Chicago)",
+     "value": "morning (5-11)",
+     "n": 5,
+     "median_vpd": 0.03,
+     "lift": 0.14,
+     "rest_median_vpd": 0.35
+    },
+    {
+     "feature": "title length",
+     "value": "medium title (6-8 words)",
+     "n": 16,
+     "median_vpd": 0.03,
+     "lift": 0.14,
+     "rest_median_vpd": 0.46
+    },
+    {
+     "feature": "number in title",
+     "value": "has a number",
+     "n": 17,
+     "median_vpd": 0.02,
+     "lift": 0.09,
+     "rest_median_vpd": 0.66
+    },
+    {
+     "feature": "emoji",
+     "value": "has emoji",
+     "n": 46,
+     "median_vpd": 0.02,
+     "lift": 0.09,
+     "rest_median_vpd": 2.52
+    }
+   ],
+   "lifts_scope": "Shorts only (full videos behave differently, mixing them fooled the numbers)"
+  },
+  "mindlore": {
+   "totals": {
+    "videos": 120,
+    "views": 2972,
+    "likes": 73,
+    "subs": 10
+   },
+   "measured_videos": 99,
+   "median_views_per_day": 0.38,
+   "top": [
+    {
+     "id": "uOqGecmhSTs",
+     "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
+     "views": 368,
+     "vpd": 33.49,
+     "age_days": 11.0,
+     "avg_percent": 126.83,
+     "subs": 0
+    },
+    {
+     "id": "TbWW3mHgwVQ",
+     "title": "The Principles Of Psychology",
+     "views": 305,
+     "vpd": 17.7,
+     "age_days": 17.2,
+     "avg_percent": 65.26,
+     "subs": 0
+    },
+    {
+     "id": "SyRDyfv-noQ",
+     "title": "The Art Of Logical Thinking",
+     "views": 29,
+     "vpd": 7.39,
+     "age_days": 3.9,
+     "avg_percent": 40.5,
+     "subs": 0
+    },
+    {
+     "id": "ytsefh1LTFM",
+     "title": "Human Nature And The Social Order",
+     "views": 86,
+     "vpd": 7.11,
+     "age_days": 12.1,
+     "avg_percent": 34.16,
+     "subs": 0
+    },
+    {
+     "id": "70hQFkZl71o",
+     "title": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 6",
+     "views": 49,
+     "vpd": 6.15,
+     "age_days": 8.0,
+     "avg_percent": 22.63,
+     "subs": 0
+    }
+   ],
+   "bottom": [
+    {
+     "id": "Fmy0woRULvo",
+     "title": "Freud's Introduction to Psychoanalysis: The Book That Changed Psychology",
+     "views": 3,
+     "vpd": 0.02,
+     "age_days": 146.1,
+     "avg_percent": null,
+     "subs": 0
+    },
+    {
+     "id": "W7-ZOJoCzSE",
+     "title": "Psychology and Industrial Efficiency: The Book That Changed Work Forever",
+     "views": 1,
+     "vpd": 0.01,
+     "age_days": 140.9,
+     "avg_percent": null,
+     "subs": 0
+    },
+    {
+     "id": "23BZecAP85c",
+     "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
+     "views": 0,
+     "vpd": 0.0,
+     "age_days": 4.0,
+     "avg_percent": null,
+     "subs": 0
+    },
+    {
+     "id": "qqY1isMJtrM",
+     "title": "The Art Of Public Speaking",
+     "views": 0,
+     "vpd": 0.0,
+     "age_days": 20.4,
+     "avg_percent": 0,
+     "subs": 0
+    },
+    {
+     "id": "I2T4IFkCqyc",
+     "title": "\ud83e\udde0 Human Nature and the Social Order",
+     "views": 0,
+     "vpd": 0.0,
+     "age_days": 136.0,
+     "avg_percent": null,
+     "subs": 0
+    }
+   ],
+   "feature_lifts": [
+    {
+     "feature": "emoji",
+     "value": "no emoji",
+     "n": 28,
+     "median_vpd": 2.8,
+     "lift": 7.58,
+     "rest_median_vpd": 0.17
+    },
+    {
+     "feature": "title length",
+     "value": "short title (1-5 words)",
+     "n": 23,
+     "median_vpd": 1.95,
+     "lift": 5.27,
+     "rest_median_vpd": 0.2
+    },
+    {
+     "feature": "speaks to \"you\"",
+     "value": "no you/your",
+     "n": 43,
+     "median_vpd": 1.24,
+     "lift": 3.35,
+     "rest_median_vpd": 0.17
+    },
+    {
+     "feature": "short length",
+     "value": "46-75s",
+     "n": 50,
+     "median_vpd": 0.72,
+     "lift": 1.95,
+     "rest_median_vpd": 0.21
+    },
+    {
+     "feature": "publish time (Chicago)",
+     "value": "evening (17-23)",
+     "n": 37,
+     "median_vpd": 0.55,
+     "lift": 1.49,
+     "rest_median_vpd": 0.3
+    },
+    {
+     "feature": "title length",
+     "value": "medium title (6-8 words)",
+     "n": 12,
+     "median_vpd": 0.55,
+     "lift": 1.49,
+     "rest_median_vpd": 0.36
+    },
+    {
+     "feature": "command/hook opener",
+     "value": "other opener",
+     "n": 45,
+     "median_vpd": 0.52,
+     "lift": 1.41,
+     "rest_median_vpd": 0.27
+    },
+    {
+     "feature": "publish time (Chicago)",
+     "value": "midday (11-17)",
+     "n": 21,
+     "median_vpd": 0.37,
+     "lift": 1.0,
+     "rest_median_vpd": 0.46
+    },
+    {
+     "feature": "command/hook opener",
+     "value": "opens with a direct word (know, stop, why, how, your...)",
+     "n": 14,
+     "median_vpd": 0.27,
+     "lift": 0.73,
+     "rest_median_vpd": 0.52
+    },
+    {
+     "feature": "short length",
+     "value": "31-45s",
+     "n": 9,
+     "median_vpd": 0.21,
+     "lift": 0.57,
+     "rest_median_vpd": 0.72
+    },
+    {
+     "feature": "title length",
+     "value": "long title (9+ words)",
+     "n": 24,
+     "median_vpd": 0.18,
+     "lift": 0.49,
+     "rest_median_vpd": 1.63
+    },
+    {
+     "feature": "speaks to \"you\"",
+     "value": "title says you/your",
+     "n": 16,
+     "median_vpd": 0.17,
+     "lift": 0.47,
+     "rest_median_vpd": 1.24
+    },
+    {
+     "feature": "emoji",
+     "value": "has emoji",
+     "n": 31,
+     "median_vpd": 0.17,
+     "lift": 0.46,
+     "rest_median_vpd": 2.8
+    }
+   ],
+   "lifts_scope": "Shorts only (full videos behave differently, mixing them fooled the numbers)"
+  },
+  "doodles": {
+   "totals": {
+    "videos": 20,
+    "views": 325,
+    "likes": 22,
+    "subs": 2
+   },
+   "measured_videos": 13,
+   "median_views_per_day": 1.6,
+   "top": [
+    {
+     "id": "vz_gR7GgfU0",
+     "title": "The Confidence Curve",
+     "views": 205,
+     "vpd": 62.19,
+     "age_days": 3.3,
+     "avg_percent": 23.58,
+     "subs": 1
+    },
+    {
+     "id": "Zc1do-DnYrE",
+     "title": "The Rehearsal Trap",
+     "views": 9,
+     "vpd": 2.09,
+     "age_days": 4.3,
+     "avg_percent": 28.74,
+     "subs": 0
+    },
+    {
+     "id": "j9gyJISpFX0",
+     "title": "The Dinner Spiral",
+     "views": 8,
+     "vpd": 2.04,
+     "age_days": 3.9,
+     "avg_percent": 41.12,
+     "subs": 0
+    },
+    {
+     "id": "5AVFE-hB5Bo",
+     "title": "The Mug Paradox",
+     "views": 10,
+     "vpd": 2.0,
+     "age_days": 5.0,
+     "avg_percent": 41.17,
+     "subs": 0
+    },
+    {
+     "id": "B1Xmi2FOMmY",
+     "title": "The Price Tag Trap",
+     "views": 8,
+     "vpd": 1.96,
+     "age_days": 4.1,
+     "avg_percent": 25.230000000000004,
+     "subs": 1
+    }
+   ],
+   "bottom": [
+    {
+     "id": "YtiYnC--Tew",
+     "title": "The Spotlight Effect",
+     "views": 9,
+     "vpd": 1.13,
+     "age_days": 8.0,
+     "avg_percent": 18.17,
+     "subs": 0
+    },
+    {
+     "id": "ImJ1YpyYRlM",
+     "title": "Choice Overload Cereal",
+     "views": 7,
+     "vpd": 1.0,
+     "age_days": 7.0,
+     "avg_percent": 7.139999999999999,
+     "subs": 0
+    },
+    {
+     "id": "FRvSh7VxKvY",
+     "title": "The Sunk Cost Soup",
+     "views": 7,
+     "vpd": 0.95,
+     "age_days": 7.3,
+     "avg_percent": 12.03,
+     "subs": 0
+    },
+    {
+     "id": "ItInAPU8iXs",
+     "title": "The Sunday Scaries",
+     "views": 4,
+     "vpd": 0.95,
+     "age_days": 4.2,
+     "avg_percent": 18.81,
+     "subs": 1
+    },
+    {
+     "id": "QSe-RWtqWKs",
+     "title": "Why Your Brain Keeps Tabs Open",
+     "views": 4,
+     "vpd": 0.56,
+     "age_days": 7.1,
+     "avg_percent": 0,
+     "subs": 0
+    }
+   ],
+   "feature_lifts": [
+    {
+     "feature": "publish time (Chicago)",
+     "value": "evening (17-23)",
+     "n": 6,
+     "median_vpd": 1.58,
+     "lift": 1.12,
+     "rest_median_vpd": 1.27
+    },
+    {
+     "feature": "publish time (Chicago)",
+     "value": "midday (11-17)",
+     "n": 6,
+     "median_vpd": 1.27,
+     "lift": 0.9,
+     "rest_median_vpd": 1.58
+    }
+   ],
+   "lifts_scope": "Shorts only (full videos behave differently, mixing them fooled the numbers)"
+  }
+ }
+}
