@@ -103,10 +103,12 @@ def main():
         vids = d.get('videos', [])
         tot = {'videos': len(vids), 'views': sum(int(v.get('views') or 0) for v in vids), 'likes': sum(int(v.get('likes') or 0) for v in vids), 'subs': int(str(d.get('subscribers') or 0) or 0)}
         row[b] = tot
+        hrs = round(sum(int(v.get('views') or 0) * float(v.get('avgSeconds') or 0) for v in vids) / 3600, 1)   # ESTIMATE: lifetime views x average seconds watched (YouTube counts the last 12 months)
+        tot['est_watch_hours'] = hrs
         ranked = sorted(rs, key=lambda x: -x['vpd'])
         slim = lambda r: {k: r[k] for k in ('id', 'title', 'views', 'vpd', 'age_days', 'avg_percent', 'subs')}
         board['brands'][b] = {'totals': tot, 'measured_videos': len(rs), 'median_views_per_day': round(statistics.median([r['vpd'] for r in rs]), 2) if rs else None,
-                              'top': [slim(r) for r in ranked[:5]], 'bottom': [slim(r) for r in ranked[-5:]] if len(ranked) > 5 else [], 'feature_lifts': lifts([r for r in rs if r['f']['format'].startswith('short')]), 'lifts_scope': 'Shorts only (full videos behave differently, mixing them fooled the numbers)'}
+                              'top': [slim(r) for r in ranked[:5]], 'bottom': [slim(r) for r in ranked[-5:]] if len(ranked) > 5 else [], 'feature_lifts': lifts([r for r in rs if r['f']['format'].startswith('short')]), 'monetization': {'subs_needed': 1000, 'subs_now': tot['subs'], 'subs_pct': round(100 * tot['subs'] / 1000, 1), 'watch_hours_needed': 4000, 'est_watch_hours': hrs, 'hours_pct': round(100 * hrs / 4000, 1), 'note': 'YouTube Partner Program: 1,000 subscribers AND 4,000 public watch hours in 12 months (or 10 million Shorts views in 90 days). Hours here are an estimate.'}, 'lifts_scope': 'Shorts only (full videos behave differently, mixing them fooled the numbers)'}
     hist.append(row); hist = sorted(hist, key=lambda h: h['date'])[-400:]
     for b, bd in board['brands'].items():
         for days in (3, 7):

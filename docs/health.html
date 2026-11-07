@@ -104,6 +104,7 @@ function growCard(host){
     Object.keys(c.brands).forEach(function(k){var b=c.brands[k],t=b.totals||{},ch=b.change_7d||b.change_3d;
       var p=document.createElement('div');p.style.cssText='font-size:13px;margin:4px 0';
       p.textContent=k+': '+t.views+' views, '+t.subs+' subs'+(ch?' (last days: +'+ch.views+' views, +'+ch.subs+' subs)':' (change shows after a few days)');d.appendChild(p);
+      var mo=b.monetization;if(mo){var q0=document.createElement('div');q0.style.cssText='font-size:12px;opacity:.75;margin-left:8px';q0.textContent='pay threshold: '+mo.subs_now+'/1000 subs ('+mo.subs_pct+'%), ~'+mo.est_watch_hours+'/4000 watch hours ('+mo.hours_pct+'%)';d.appendChild(q0)}
       var top=(b.top||[])[0];if(top){var q=document.createElement('div');q.style.cssText='font-size:12px;opacity:.75;margin-left:8px';q.textContent='best: '+top.title+' ('+top.vpd+'/day)';d.appendChild(q)}
       (b.feature_lifts||[]).slice(0,2).forEach(function(x){var q=document.createElement('div');q.style.cssText='font-size:12px;opacity:.75;margin-left:8px';q.textContent=x.feature+' = '+x.value+': '+x.lift+'x ('+x.n+' videos)';d.appendChild(q)})});
     var t=document.createElement('div');t.style.cssText='font-size:12px;opacity:.7;margin-top:6px';t.textContent='Updated '+(c.updated||'').replace('T',' ').slice(0,16)+' UTC';d.appendChild(t);
