@@ -1,23 +1,23 @@
 {
- "updated": 1793971057,
+ "updated": 1794014109,
  "measured_posts": 13,
- "avg_views": 9.3,
+ "avg_views": 9.9,
  "per_type": {
   "author": {
    "posts": 4,
-   "avg": 9.5
+   "avg": 10.0
   },
   "contrarian": {
    "posts": 2,
    "avg": 15.0
   },
+  "sting": {
+   "posts": 1,
+   "avg": 29.0
+  },
   "curiosity": {
    "posts": 5,
    "avg": 6.0
-  },
-  "sting": {
-   "posts": 1,
-   "avg": 23.0
   },
   "myth": {
    "posts": 1,

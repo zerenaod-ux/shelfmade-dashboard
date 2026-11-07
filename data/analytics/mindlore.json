@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-06",
+ "collected": "2026-11-07",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 368,
+   "views": 374,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 100,
@@ -99,8 +99,8 @@
    "views": 75,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 16,
-   "avgPercent": 45.72,
+   "avgSeconds": 10,
+   "avgPercent": 29.45,
    "subsGained": 0
   },
   {
@@ -223,7 +223,7 @@
    "published": "2026-10-20T19:36:17Z",
    "duration": "PT1M29S",
    "privacy": "public",
-   "views": 37,
+   "views": 39,
    "likes": 1,
    "comments": 0,
    "avgSeconds": 14,
@@ -257,6 +257,19 @@
    "subsGained": 0
   },
   {
+   "id": "V5cZxesdo6w",
+   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 6",
+   "published": "2026-10-30T22:01:13Z",
+   "duration": "PT1M34S",
+   "privacy": "public",
+   "views": 34,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 14.17,
+   "subsGained": 0
+  },
+  {
    "id": "YT26hcYPqPA",
    "title": "You become the person others think you are \u2014 science proves it \ud83e\ude9e",
    "published": "2026-06-14T19:38:54Z",
@@ -267,19 +280,6 @@
    "comments": 0,
    "avgSeconds": 38,
    "avgPercent": 71.11,
-   "subsGained": 0
-  },
-  {
-   "id": "V5cZxesdo6w",
-   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 6",
-   "published": "2026-10-30T22:01:13Z",
-   "duration": "PT1M34S",
-   "privacy": "public",
-   "views": 32,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 14.17,
    "subsGained": 0
   },
   {
@@ -317,8 +317,8 @@
    "views": 29,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 19,
-   "avgPercent": 40.5,
+   "avgSeconds": 18,
+   "avgPercent": 37.89,
    "subsGained": 0
   },
   {
@@ -387,6 +387,19 @@
    "subsGained": 0
   },
   {
+   "id": "xBaiLW-oBrs",
+   "title": "Nobody warns you about Psychology Of Revolution.",
+   "published": "2026-11-04T18:04:07Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 15.54,
+   "subsGained": 0
+  },
+  {
    "id": "uDTf6cqlUUI",
    "title": "Darwin proved emotions are a survival tool \u2014 not a weakness \ud83d\udd2c",
    "published": "2026-06-12T22:34:27Z",
@@ -407,7 +420,10 @@
    "privacy": "public",
    "views": 24,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 17,
+   "avgPercent": 27.229999999999997,
+   "subsGained": 0
   },
   {
    "id": "ZGePr4OW-pk",
@@ -420,6 +436,19 @@
    "comments": 0,
    "avgSeconds": 105,
    "avgPercent": 223.53,
+   "subsGained": 0
+  },
+  {
+   "id": "jcbv6oWRsSk",
+   "title": "The Psychology Of Revolution",
+   "published": "2026-10-29T18:03:26Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 25,
+   "avgPercent": 49.54,
    "subsGained": 0
   },
   {
@@ -462,16 +491,6 @@
    "subsGained": 0
   },
   {
-   "id": "xBaiLW-oBrs",
-   "title": "Nobody warns you about Psychology Of Revolution.",
-   "published": "2026-11-04T18:04:07Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 23,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "awhOFsaSkXA",
    "title": "The Power Of Concentration",
    "published": "2026-11-01T23:01:50Z",
@@ -482,19 +501,6 @@
    "comments": 0,
    "avgSeconds": 13,
    "avgPercent": 25.22,
-   "subsGained": 0
-  },
-  {
-   "id": "jcbv6oWRsSk",
-   "title": "The Psychology Of Revolution",
-   "published": "2026-10-29T18:03:26Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 23,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 49.54,
    "subsGained": 0
   },
   {
@@ -539,8 +545,8 @@
    "views": 21,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 12.990000000000002,
+   "avgSeconds": 11,
+   "avgPercent": 16.78,
    "subsGained": 0
   },
   {
@@ -565,9 +571,19 @@
    "views": 21,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 360,
-   "avgPercent": 73.32,
+   "avgSeconds": 298,
+   "avgPercent": 60.68,
    "subsGained": 0
+  },
+  {
+   "id": "qfwKKgBIkvI",
+   "title": "Darwin had a warning for you.",
+   "published": "2026-11-06T18:04:24Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 1,
+   "comments": 0
   },
   {
    "id": "YG8unHg5xWw",
@@ -807,7 +823,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 10,
-   "avgPercent": 19.35,
+   "avgPercent": 20.72,
    "subsGained": 1
   },
   {
@@ -876,6 +892,19 @@
    "subsGained": 0
   },
   {
+   "id": "s2csm1mzmRY",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Guided reading",
+   "published": "2026-10-28T23:00:19Z",
+   "duration": "PT6M4S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 177,
+   "avgPercent": 48.63,
+   "subsGained": 0
+  },
+  {
    "id": "YJKHtFwKuPw",
    "title": "Inquiries Into Human Faculty: Galton's Controversial Psychology Classic",
    "published": "2026-06-22T03:32:46Z",
@@ -922,19 +951,6 @@
    "comments": 0,
    "avgSeconds": 23,
    "avgPercent": 47.18,
-   "subsGained": 0
-  },
-  {
-   "id": "s2csm1mzmRY",
-   "title": "The Expression of the Emotions in Man and Animals \u00b7 Guided reading",
-   "published": "2026-10-28T23:00:19Z",
-   "duration": "PT6M4S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 177,
-   "avgPercent": 48.63,
    "subsGained": 0
   },
   {
@@ -985,8 +1001,8 @@
    "views": 6,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 213,
-   "avgPercent": 51.53,
+   "avgSeconds": 112,
+   "avgPercent": 27.08,
    "subsGained": 0
   },
   {
@@ -1105,6 +1121,16 @@
    "avgSeconds": 59,
    "avgPercent": 36.28,
    "subsGained": 0
+  },
+  {
+   "id": "Y2dnDEONRD0",
+   "title": "Listen to what Darwin warned about.",
+   "published": "2026-11-06T03:01:33Z",
+   "duration": "PT57S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "0m0sHfUvubE",
@@ -1264,6 +1290,16 @@
    "comments": 0
   },
   {
+   "id": "MN_liz83nkU",
+   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
+   "published": "2026-11-07T00:00:20Z",
+   "duration": "PT7M24S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "Ylxy6FpM934",
    "title": "Do you hold contradictory beliefs at once? | Gustave Le Bon",
    "published": "2026-11-06T06:48:56Z",
@@ -1284,16 +1320,6 @@
    "comments": 0
   },
   {
-   "id": "Y2dnDEONRD0",
-   "title": "Listen to what Darwin warned about.",
-   "published": "2026-11-06T03:01:33Z",
-   "duration": "PT57S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "lzNbwJLpncg",
    "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
    "published": "2026-11-06T00:00:34Z",
@@ -1308,16 +1334,6 @@
    "title": "Do you choose your face, or does it choose you? | Charles Darwin",
    "published": "2026-11-05T23:39:10Z",
    "duration": "PT7M23S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "pMsD8Ac229E",
-   "title": "Do you choose your face, or does it choose you? | Charles Darwin",
-   "published": "2026-11-05T21:28:34Z",
-   "duration": "PT7M20S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
@@ -1408,16 +1424,6 @@
    "title": "Do you choose your face, or does it choose you? | Charles Darwin",
    "published": "2026-11-03T15:48:42Z",
    "duration": "PT7M23S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "MN_liz83nkU",
-   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
-   "published": "2026-11-03T15:48:20Z",
-   "duration": "PT7M24S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

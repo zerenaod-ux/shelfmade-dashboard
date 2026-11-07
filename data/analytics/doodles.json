@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-06",
+ "collected": "2026-11-07",
  "note": "",
  "videos": [
   {
@@ -15,7 +15,7 @@
    "likes": 3,
    "comments": 0,
    "avgSeconds": 15,
-   "avgPercent": 23.58,
+   "avgPercent": 23.53,
    "subsGained": 1
   },
   {
@@ -32,6 +32,19 @@
    "subsGained": 0
   },
   {
+   "id": "Rqbov1l-rYw",
+   "title": "The Clean Room Trap",
+   "published": "2026-11-04T18:03:01Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 42,
+   "avgPercent": 83.13,
+   "subsGained": 0
+  },
+  {
    "id": "NzrDNYTxgjE",
    "title": "The Jacket He Never Wears",
    "published": "2026-11-04T03:02:07Z",
@@ -40,8 +53,8 @@
    "views": 10,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 172,
-   "avgPercent": 236.87,
+   "avgSeconds": 117,
+   "avgPercent": 160.61,
    "subsGained": 0
   },
   {
@@ -58,16 +71,6 @@
    "subsGained": 0
   },
   {
-   "id": "Rqbov1l-rYw",
-   "title": "The Clean Room Trap",
-   "published": "2026-11-04T18:03:01Z",
-   "duration": "PT51S",
-   "privacy": "public",
-   "views": 9,
-   "likes": 1,
-   "comments": 0
-  },
-  {
    "id": "Zc1do-DnYrE",
    "title": "The Rehearsal Trap",
    "published": "2026-11-02T18:03:22Z",
@@ -76,8 +79,8 @@
    "views": 9,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 28.74,
+   "avgSeconds": 10,
+   "avgPercent": 24.03,
    "subsGained": 0
   },
   {
@@ -154,8 +157,8 @@
    "views": 6,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 12.879999999999999,
+   "avgSeconds": 8,
+   "avgPercent": 11.15,
    "subsGained": 0
   },
   {
@@ -179,7 +182,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 20.27,
+   "subsGained": 0
   },
   {
    "id": "ItInAPU8iXs",
@@ -224,6 +230,46 @@
    "duration": "PT3M58S",
    "privacy": "public",
    "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "Zoos5GbVQPU",
+   "title": "Leo vs. The Inbox Snare | Leo & Mia Ep. 3",
+   "published": "2026-11-07T00:00:14Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "FHoaRv9TFTc",
+   "title": "The Rest Trap",
+   "published": "2026-11-06T03:01:33Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "sb4WKiNkmrU",
+   "title": "The Bystander Effect",
+   "published": "2026-11-06T23:04:08Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "AvrLyAUe86Y",
+   "title": "The Planning Fallacy",
+   "published": "2026-11-06T18:03:48Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 0,
    "likes": 0,
    "comments": 0
   },
@@ -232,16 +278,6 @@
    "title": "The Rehearsal Trap",
    "published": "2026-11-06T03:01:44Z",
    "duration": "PT47S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "FHoaRv9TFTc",
-   "title": "The Rest Trap",
-   "published": "2026-11-06T03:01:33Z",
-   "duration": "PT38S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

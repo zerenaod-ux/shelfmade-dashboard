@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-06",
+ "collected": "2026-11-07",
  "note": "",
  "videos": [
   {
@@ -53,8 +53,8 @@
    "views": 97,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 32.45,
+   "avgSeconds": 9,
+   "avgPercent": 31.759999999999998,
    "subsGained": 0
   },
   {
@@ -157,8 +157,8 @@
    "views": 53,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 34.62,
+   "avgSeconds": 11,
+   "avgPercent": 29.37,
    "subsGained": 0
   },
   {
@@ -201,6 +201,19 @@
    "subsGained": 0
   },
   {
+   "id": "88SeG1rSwzc",
+   "title": "Never mind; she can't scratch you while Florrie is holding her",
+   "published": "2026-11-05T03:01:29Z",
+   "duration": "PT28S",
+   "privacy": "public",
+   "views": 41,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 53.47,
+   "subsGained": 0
+  },
+  {
    "id": "f4QurVhXoMc",
    "title": "It had spread words like plaster over the whole field of knowledge",
    "published": "2026-10-18T23:54:07Z",
@@ -227,14 +240,17 @@
    "subsGained": 0
   },
   {
-   "id": "88SeG1rSwzc",
-   "title": "Never mind; she can't scratch you while Florrie is holding her",
-   "published": "2026-11-05T03:01:29Z",
-   "duration": "PT28S",
+   "id": "nuQLBWcyPzQ",
+   "title": "Plato had a warning for you.",
+   "published": "2026-11-04T18:02:59Z",
+   "duration": "PT53S",
    "privacy": "public",
    "views": 40,
-   "likes": 0,
-   "comments": 0
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 27.1,
+   "subsGained": 0
   },
   {
    "id": "0OxyEvY3YvU",
@@ -245,19 +261,9 @@
    "views": 39,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 36.28,
+   "avgSeconds": 8,
+   "avgPercent": 33.26,
    "subsGained": 0
-  },
-  {
-   "id": "nuQLBWcyPzQ",
-   "title": "Plato had a warning for you.",
-   "published": "2026-11-04T18:02:59Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 38,
-   "likes": 2,
-   "comments": 0
   },
   {
    "id": "umzrnh-AmiA",
@@ -295,7 +301,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 11,
-   "avgPercent": 35.37,
+   "avgPercent": 34.34,
    "subsGained": 0
   },
   {
@@ -308,7 +314,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 15,
-   "avgPercent": 24.6,
+   "avgPercent": 24.99,
    "subsGained": 0
   },
   {
@@ -359,8 +365,8 @@
    "views": 32,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 61.47,
+   "avgSeconds": 9,
+   "avgPercent": 49.82,
    "subsGained": 0
   },
   {
@@ -372,8 +378,8 @@
    "views": 30,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 30,
-   "avgPercent": 116.23999999999998,
+   "avgSeconds": 26,
+   "avgPercent": 102.15,
    "subsGained": 1
   },
   {
@@ -385,9 +391,19 @@
    "views": 30,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 20,
-   "avgPercent": 38.99,
+   "avgSeconds": 19,
+   "avgPercent": 36.54,
    "subsGained": 0
+  },
+  {
+   "id": "JvIgBaYCJdU",
+   "title": "This Studies in Pessimism line is uncomfortable.",
+   "published": "2026-11-05T18:03:48Z",
+   "duration": "PT57S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "DA9pXjqUXfQ",
@@ -411,8 +427,8 @@
    "views": 26,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 16,
-   "avgPercent": 26.16,
+   "avgSeconds": 14,
+   "avgPercent": 22.76,
    "subsGained": 0
   },
   {
@@ -442,6 +458,39 @@
    "subsGained": 0
   },
   {
+   "id": "24m9dl3C6uo",
+   "title": "The sluggard and the self-indulgent can have no knowledge of Truth",
+   "published": "2026-10-19T00:37:22Z",
+   "duration": "PT26S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 10,
+   "avgPercent": 39.69,
+   "subsGained": 0
+  },
+  {
+   "id": "Y-FWlbV5SYM",
+   "title": "If so, you may enter the narrow way of Truth, and find that peace from which the world is shut out",
+   "published": "2026-11-06T18:06:07Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "8QKdl9NNi3Y",
+   "title": "We avowedly follow not the truth but the will of the many (compare Republic)",
+   "published": "2026-11-06T03:01:57Z",
+   "duration": "PT34S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "epWlk-Ra3Rs",
    "title": "Let thus much be accepted as a definition of Knowledge",
    "published": "2026-10-29T17:02:58Z",
@@ -455,10 +504,10 @@
    "subsGained": 0
   },
   {
-   "id": "JvIgBaYCJdU",
-   "title": "This Studies in Pessimism line is uncomfortable.",
-   "published": "2026-11-05T18:03:48Z",
-   "duration": "PT57S",
+   "id": "6ekA7k96fUk",
+   "title": "Where is your attention?",
+   "published": "2026-11-05T23:03:00Z",
+   "duration": "PT35S",
    "privacy": "public",
    "views": 23,
    "likes": 0,
@@ -474,20 +523,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 4,
-   "avgPercent": 13.08,
-   "subsGained": 0
-  },
-  {
-   "id": "24m9dl3C6uo",
-   "title": "The sluggard and the self-indulgent can have no knowledge of Truth",
-   "published": "2026-10-19T00:37:22Z",
-   "duration": "PT26S",
-   "privacy": "public",
-   "views": 23,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 39.69,
+   "avgPercent": 13.449999999999998,
    "subsGained": 0
   },
   {
@@ -504,16 +540,6 @@
    "subsGained": 0
   },
   {
-   "id": "8QKdl9NNi3Y",
-   "title": "We avowedly follow not the truth but the will of the many (compare Republic)",
-   "published": "2026-11-06T03:01:57Z",
-   "duration": "PT34S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "ElOI_lM9VtE",
    "title": "Pushing to the Front",
    "published": "2026-10-16T01:29:22Z",
@@ -525,16 +551,6 @@
    "avgSeconds": 5,
    "avgPercent": 20.33,
    "subsGained": 0
-  },
-  {
-   "id": "6ekA7k96fUk",
-   "title": "Where is your attention?",
-   "published": "2026-11-05T23:03:00Z",
-   "duration": "PT35S",
-   "privacy": "public",
-   "views": 20,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "hl6yAlc682w",
@@ -597,8 +613,8 @@
    "views": 17,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 20,
-   "avgPercent": 90.25,
+   "avgSeconds": 18,
+   "avgPercent": 79.89,
    "subsGained": 0
   },
   {
@@ -676,7 +692,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 7,
-   "avgPercent": 33.15,
+   "avgPercent": 30.510000000000005,
    "subsGained": 0
   },
   {
@@ -701,8 +717,8 @@
    "views": 12,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 20.68,
+   "avgSeconds": 12,
+   "avgPercent": 24.39,
    "subsGained": 0
   },
   {
@@ -885,6 +901,19 @@
    "subsGained": 0
   },
   {
+   "id": "SuYd4PbqjtI",
+   "title": "Walden \u00b7 Cinematic full video \u00b7 Visual draft",
+   "published": "2026-10-15T02:40:40Z",
+   "duration": "PT10M42S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 47,
+   "avgPercent": 7.44,
+   "subsGained": 0
+  },
+  {
    "id": "19NEY5x_reI",
    "title": "Tao Te Ching: Ancient Wisdom That Changes Everything",
    "published": "2026-06-23T20:36:41Z",
@@ -977,19 +1006,6 @@
    "comments": 0,
    "avgSeconds": 135,
    "avgPercent": 35.44,
-   "subsGained": 0
-  },
-  {
-   "id": "SuYd4PbqjtI",
-   "title": "Walden \u00b7 Cinematic full video \u00b7 Visual draft",
-   "published": "2026-10-15T02:40:40Z",
-   "duration": "PT10M42S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 47,
-   "avgPercent": 7.44,
    "subsGained": 0
   },
   {
@@ -1095,6 +1111,16 @@
    "avgSeconds": 1,
    "avgPercent": 4.27,
    "subsGained": 0
+  },
+  {
+   "id": "Ja2LEc0t50Y",
+   "title": "The Art of War by Sun Tzu: 2,400 Years of Timeless Strategy",
+   "published": "2026-06-13T22:26:36Z",
+   "duration": "PT2M56S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
   },
   {
    "id": "5vbJoMcLLmo",
@@ -1261,16 +1287,6 @@
    "avgSeconds": 57,
    "avgPercent": 133.51,
    "subsGained": 0
-  },
-  {
-   "id": "Ja2LEc0t50Y",
-   "title": "The Art of War by Sun Tzu: 2,400 Years of Timeless Strategy",
-   "published": "2026-06-13T22:26:36Z",
-   "duration": "PT2M56S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 0
   },
   {
    "id": "1ViIE80FGEc",
@@ -1595,6 +1611,16 @@
    "comments": 0
   },
   {
+   "id": "rmj2YzElBjM",
+   "title": "Self-Help is not what you think.",
+   "published": "2026-11-07T00:00:39Z",
+   "duration": "PT6M35S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "pLirzW1d_Og",
    "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
    "published": "2026-11-06T06:33:58Z",
@@ -1679,16 +1705,6 @@
    "title": "Listen to what Conwell warned about.",
    "published": "2026-11-03T20:51:16Z",
    "duration": "PT6M52S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "rmj2YzElBjM",
-   "title": "Self-Help is not what you think.",
-   "published": "2026-11-03T20:51:07Z",
-   "duration": "PT6M35S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

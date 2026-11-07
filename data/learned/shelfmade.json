@@ -1,50 +1,49 @@
 {
  "short": {
   "do_more": [
-   "Lead with a direct, second-person command or challenge rather than a historical summary (e.g., 'Know your enemy', 'Where is your attention?').",
-   "Focus on actionable, self-improvement micro-lessons (stopping mental steam, turning over a new leaf) rather than broad philosophical concepts.",
-   "Keep titles under 8 words and strip away emojis; direct language outperformed decorative hooks.",
-   "Prioritize recent content; the top-performing videos are all under 25 days old, suggesting immediate relevance is key for Shorts."
+   "Use a direct second\u2011person hook in the title (e.g., \"You can\u2026\" or \"Where is your attention?\"),",
+   "Keep titles short (under 8 words) and promise a single surprising insight",
+   "Aim for a tight video length of about 30 seconds focusing on one clear takeaway",
+   "Start the video with a bold statement or question that grabs curiosity"
   ],
   "avoid": [
-   "Do not use '60 seconds' or 'in X seconds' framing in titles; these performed worst.",
-   "Avoid starting titles with the author's name or book title (e.g., 'The Art of War by Sun Tzu') as this signals a dry summary.",
-   "Stop using emojis in titles; every video in the 'bottom' list had at least one emoji, while top performers had none.",
-   "Avoid long, narrative-style hooks that require reading to understand the context (e.g., 'Born into slavery...')."
+   "Using emojis or overly descriptive phrases in titles",
+   "Long, multi\u2011part titles or vague topics that lack a clear hook",
+   "Videos longer than ~45 seconds that try to cover many points"
   ],
-  "title_style": "Use short, punchy, imperative phrases or direct questions that address the viewer's personal behavior or mindset directly, without emojis or book titles.",
+  "title_style": "Bold second\u2011person hook that promises a single, surprising insight in under eight words",
   "next_tests": [
-   "Create a series of 5 videos using only 5-word imperative titles (e.g., 'Stop overthinking work') to test brevity vs. current medium-length titles.",
-   "Repurpose the top-performing 'Know your enemy' quote into a 30-second 'tight' variant to see if shorter retention boosts VPD compared to the standard 42s.",
-   "Test a 'common misconception' angle for one video (e.g., 'You know what is good, but why don\u2019t you do it?') to see if it outperforms direct commands."
+   "A/B test tight (~30\u202fs) vs standard (~42\u202fs) video lengths for the same script",
+   "Create paired titles: one with emojis and long description vs one short, hook\u2011only, and compare VPD",
+   "Add a numeric hook (\"3 lessons\u2026\") to otherwise similar scripts to see impact on watch percent"
   ],
   "n": 111,
-  "best_vpd": 20.2,
+  "best_vpd": 18.3,
   "best_title": "You can turn over a new leaf every hour if you choose"
  },
  "full": {
   "do_more": [
-   "Open with a bold, curiosity\u2011driving question that ties to the book's theme",
-   "Keep the first 30\u202fseconds tight and hook\u2011filled before deep dive",
-   "Use short, punchy titles that pose a personal dilemma or mystery",
-   "Highlight a relatable emotion (doubt, time\u2011pressure, certainty) early in the script",
-   "Add a quick, concrete takeaway within the first minute"
+   "Open with a provocative question or personal challenge in the first 5 seconds",
+   "Keep the intro under ~30 seconds before diving into the core content",
+   "Use curiosity\u2011driven titles that pose a question or promise a surprising insight",
+   "Add a bold visual or text teaser that hints at the payoff",
+   "Tie the lesson to everyday decisions or self\u2011improvement"
   ],
   "avoid": [
-   "Long, descriptive book\u2011title\u2011first headings",
-   "Opening with background exposition before a hook",
-   "Intro segments longer than 45\u202fseconds",
-   "Neutral or purely factual phrasing without intrigue"
+   "Long descriptive titles that just name the book or author",
+   "Extended cold\u2011openings without a hook",
+   "Purely reciting text without framing it as a question or problem",
+   "Overly academic phrasing that feels distant"
   ],
-  "title_style": "Pose a provocative question or personal dilemma, then add a brief subtitle linking to the classic work (e.g., \"What if you're always wrong? | Stoic Wisdom\")",
+  "title_style": "Start with a concise, curiosity\u2011punchy question (e.g., \"What if you\u2019re always wrong?\") followed by a brief subtitle that names the source or benefit",
   "next_tests": [
-   "Compare a 30\u2011second tight intro vs a 45\u2011second intro on retention",
-   "Create videos with question\u2011first titles vs descriptive titles and track VPD",
-   "Add a personal anecdote hook in the first 20\u202fseconds and measure likes"
+   "A/B test question\u2011based titles vs statement titles for the same video",
+   "Compare videos with a 30\u2011second tight intro versus a 45\u2011second intro",
+   "Add a 5\u2011second visual teaser (text overlay or animation) before the spoken hook and measure VPD"
   ],
   "n": 11,
-  "best_vpd": 1.05,
+  "best_vpd": 0.99,
   "best_title": "Question what you know"
  },
- "updated": "2026-11-06"
+ "updated": "2026-11-07"
 }

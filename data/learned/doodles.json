@@ -1,27 +1,27 @@
 {
  "short": {
   "do_more": [
-   "Start with a relatable everyday scenario in the first 3\u20115 seconds",
-   "Use a vivid metaphor (Trap, Spiral, Loop, Snare) in the title and visual gag",
-   "Keep runtime between 30\u201145 seconds, tight pacing with quick punchlines",
-   "Frame the psychological bias as a funny \u2018trap\u2019 that Leo falls into",
-   "End with a clear aha moment or punchline that reinforces the bias"
+   "Start with a vivid, relatable scenario in the first 2\u20113 seconds",
+   "Focus each short on ONE clear psychology concept and name it in the title",
+   "Use the \u201cThe X \u2026\u201d title pattern with a curiosity\u2011driving twist",
+   "Keep the runtime around the standard ~42\u202fseconds, but pack the hook early",
+   "Add a visual gag or exaggeration that reinforces the concept"
   ],
   "avoid": [
-   "Long question\u2011style titles or abstract wording",
-   "Excessive exposition before the hook",
-   "Runtime over 45 seconds or overly slow pacing",
-   "Lack of a visual metaphor or clear comedic payoff"
+   "Generic or vague titles without a specific concept",
+   "Introducing multiple ideas or a long setup before the hook",
+   "Overly abstract language that drops viewer interest",
+   "Running the video much longer than 45\u202fseconds"
   ],
-  "title_style": "Use a short, punchy \u2018The\u202f[Everyday Situation]\u202f[Bias Metaphor]\u2019 format that instantly sparks curiosity",
+  "title_style": "Use a concise \u201cThe\u202f[Concept]\u202f[Surprising Hook]\u201d format that promises a quick, unexpected insight",
   "next_tests": [
-   "Create a 30\u2011second \u2018tight\u2019 version of a \u2018The\u202fCoffee Queue Trap\u2019 script and compare VPD to a 42\u2011second \u2018standard\u2019 cut",
-   "Try a new metaphor series (e.g., \u2018The ___ Loop\u2019) while keeping the same scenario structure",
-   "Swap the opening hook from a statement to a surprising question and measure impact on avgPercent watched"
+   "A/B test 30\u2011second tight versions vs 42\u2011second standard to see retention impact",
+   "Experiment with opening questions vs bold statements as the first hook",
+   "Try titles that include a numeric hook (e.g., \u201c3 Ways\u2026\u201d) versus the simple \u201cThe\u202fX\u201d format"
   ],
-  "n": 11,
-  "best_vpd": 2.37,
-  "best_title": "The Rehearsal Trap"
+  "n": 13,
+  "best_vpd": 62.11,
+  "best_title": "The Confidence Curve"
  },
- "updated": "2026-11-06"
+ "updated": "2026-11-07"
 }
