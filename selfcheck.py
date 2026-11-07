@@ -113,6 +113,10 @@ def main():
         badb = {k: v for k, v in fs.get('brands', {}).items() if str(v).startswith(('error', 'HTTP'))}
         rec('Playlist flywheel', not badb, ('problem: ' + '; '.join('%s %s' % (k, v[:60]) for k, v in badb.items())) if badb else 'ok (%s)' % '; '.join('%s: %s' % kv for kv in fs.get('brands', {}).items()), 'ALERT: playlist flywheel failing',
             lambda: sh('gh', 'workflow', 'run', 'flywheel.yml', '--repo', REPO))
+    # 10 retitle campaign: daily job must not be failing
+    rt = [r for r in last_run('retitle.yml') if r.get('status') == 'completed']
+    rec('Retitle campaign', (not rt) or rt[0].get('conclusion') == 'success', ('last: %s %s' % (rt[0].get('conclusion'), rt[0].get('createdAt', '')[:10])) if rt else 'not run yet', 'ALERT: retitle job failing',
+        lambda: sh('gh', 'workflow', 'run', 'retitle.yml', '--repo', REPO))
     out = {'at': NOW.isoformat(timespec='seconds'), 'level': 'ok' if all(r['ok'] for r in res) else 'warn', 'checks': res}
     (B / 'publish').mkdir(exist_ok=True)
     (B / 'publish/selfcheck.json').write_text(json.dumps(out, indent=1))
