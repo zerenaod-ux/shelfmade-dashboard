@@ -1,0 +1,106 @@
+[
+ {
+  "id": "UfLyrBxj34E",
+  "brand": "shelfmade",
+  "old": "What Men Live By",
+  "options": [
+   "What do men truly live by?",
+   "What drives men's lives today?"
+  ],
+  "vpd": 0.04,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "83"
+ },
+ {
+  "id": "GvmQ-OHoVtE",
+  "brand": "shelfmade",
+  "old": "Apology",
+  "options": [
+   "Why do we apologize?",
+   "What makes an apology meaningful?"
+  ],
+  "vpd": 0.08,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "83"
+ },
+ {
+  "id": "qqY1isMJtrM",
+  "brand": "mindlore",
+  "old": "The Art Of Public Speaking",
+  "options": [
+   "Master Public Speaking",
+   "Public Speaking Essentials"
+  ],
+  "vpd": 0.0,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "84"
+ },
+ {
+  "id": "84PQTiIIbHU",
+  "brand": "mindlore",
+  "old": "Thought-Force in Business and Everyday Life",
+  "options": [
+   "Power of Thought in Business",
+   "Thought Influence at Work"
+  ],
+  "vpd": 0.17,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "84"
+ },
+ {
+  "id": "gVJLfRlF6aM",
+  "brand": "mindlore",
+  "old": "The Art Of Public Speaking",
+  "options": [
+   "Speak Confidently Every Time",
+   "Public Speaking Made Simple"
+  ],
+  "vpd": 0.2,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "84"
+ },
+ {
+  "id": "QSe-RWtqWKs",
+  "brand": "doodles",
+  "old": "Why Your Brain Keeps Tabs Open",
+  "options": [
+   "Why does your brain keep tabs open?",
+   "What makes your mind juggle multiple thoughts?"
+  ],
+  "vpd": 0.56,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "85"
+ },
+ {
+  "id": "ItInAPU8iXs",
+  "brand": "doodles",
+  "old": "The Sunday Scaries",
+  "options": [
+   "Why do Sundays feel so stressful?",
+   "How to beat the Sunday anxiety blues?"
+  ],
+  "vpd": 0.94,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "85"
+ },
+ {
+  "id": "FRvSh7VxKvY",
+  "brand": "doodles",
+  "old": "The Sunk Cost Soup",
+  "options": [
+   "When does paying more become a waste?",
+   "Why do we keep feeding the sunk\u2011cost soup?"
+  ],
+  "vpd": 0.95,
+  "created": "2026-11-07",
+  "status": "proposed",
+  "issue": "85"
+ }
+]
