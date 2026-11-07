@@ -63,8 +63,8 @@ def _rec(s):
         import series; series.record(s['id'],s.get('title',''),s.get('concept',''),'short')
     except Exception:
         pass
-def gemini(prompt):
-    key=secret();last=None;rules=RULES+_lg()+_sr()+" "+ACTION+" "+SPICE
+def gemini(prompt,system=None):
+    key=secret();last=None;rules=system or (RULES+_lg()+_sr()+" "+ACTION+" "+SPICE)
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):
@@ -103,6 +103,47 @@ def valid(s,taken,variant='standard'):
         except Exception:pass
         return True
     except Exception:return False
+JUDGE = ("You are a ruthless comedy editor for viral 40-second animated skits starring best friends Leo (anxious, dramatic) and Mia (dry, savage, loving). "
+         "Score each candidate script 1-10 on: FUNNY (specific roast, surprise, a line worth screenshotting), HOOK (the first line grabs in two seconds), "
+         "SPOKEN (sounds like real fast friends talking, not a written script), RELATABLE (a viewer thinks 'this is literally me'), LOOP (last line sets up the first). "
+         "Be harsh and honest; do not give everyone the same score. Return ONLY JSON: {\"scores\":[{\"i\":0,\"funny\":7,\"hook\":6,\"spoken\":8,\"relatable\":7,\"loop\":5}],\"best\":0,\"why\":\"one short sentence\"}")
+BESTOF = int(__import__('os').environ.get('DOODLES_BESTOF', '3'))
+
+
+def _text(c):
+    return '\n'.join(('%s: %s' % (l['who'].title(), l['text'])) for sh in c['shots'] for l in sh['lines'])
+
+
+def judge(cands):
+    """Pick the strongest candidate. ANY problem -> the first candidate (never blocks the pipeline). Returns (index, scores_dict_or_None)."""
+    if len(cands) < 2: return 0, None
+    try:
+        prompt = 'Candidates:\n' + '\n\n'.join('### %d (%s)\n%s' % (i, c.get('title', ''), _text(c)) for i, c in enumerate(cands)) + '\n\nScore them and choose the best.'
+        r = json.loads(gemini(prompt, JUDGE)); best = int(r.get('best'))
+        sc = {int(x['i']): x for x in r.get('scores', []) if 'i' in x}
+        assert 0 <= best < len(cands)
+        return best, {'best': best, 'why': str(r.get('why', ''))[:160], 'scores': sc.get(best), 'n': len(cands)}
+    except BaseException as e:   # SystemExit from gemini() included
+        print('judge skipped:', str(e)[:80]); return 0, None
+
+
+def pick_best(topic, taken, variant, vnote):
+    """Write BESTOF candidates for the same topic, let the judge keep the best one."""
+    cands = []; ids = set(taken)
+    for k in range(max(1, BESTOF)):
+        try: c = json.loads(gemini(f'Write a new episode about: {topic}. Already used ids (do not reuse): {sorted(ids)}' + vnote))
+        except SystemExit as e: print(e); time.sleep(20); continue
+        except Exception as e: print('bad json', e); continue
+        if valid(c, ids, variant): cands.append(c); ids.add(c['id'])
+        else: print('candidate rejected (format)')
+    if not cands: return None
+    i, info = judge(cands)
+    best = cands[i]
+    if info: best['judge'] = info
+    print('best-of-%d: kept %s%s' % (len(cands), best['id'], (' (' + info['why'] + ')') if info else ''))
+    return best
+
+
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []
 def main():
     n=int(sys.argv[1]) if len(sys.argv)>1 else 3;pool=load();taken={s['id'] for s in stories.STORIES}|{s['id'] for s in pool};made=0
@@ -112,9 +153,8 @@ def main():
         TOPICS.remove(topic) if topic in TOPICS else None
         variant='tight' if len(pool)%2==0 else 'standard'   # length test: alternate ~30 s and ~42 s Shorts, the learner compares them
         vnote=' LENGTH VARIANT (overrides the word count above): the whole video is 52 to 68 spoken words in total (about 28 to 35 seconds), every line punchy, keep the hook, the payoff and the loop.' if variant=='tight' else ''
-        try:s=json.loads(gemini(f'Write a new episode about: {topic}. Already used ids (do not reuse): {sorted(taken)}'+vnote))
-        except SystemExit as e:print(e);time.sleep(20);continue
-        except Exception as e:print('bad json',e);continue
+        s=pick_best(topic,taken,variant,vnote)
+        if s is None:continue
         if valid(s,taken,variant):s['variant']=variant;pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
         else:print('rejected a story (format)')
     print('pool size',len(pool))
