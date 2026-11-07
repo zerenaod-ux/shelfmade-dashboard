@@ -1,8 +1,152 @@
 {
  "brand": "doodles",
- "collected": "2026-11-06T18:32:17Z",
+ "collected": "2026-11-07T17:00:16Z",
  "more": false,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "The Feather Duster Detour | Leo & Mia #6\n\nEver scrubbed your entire kitchen to avoid opening one scary email? ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T10:43:27.869Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "The Feather Duster Detour | Leo & Mia #6\n\nEver scrubbed your entire kitchen to avoid opening one scary email? ",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-07T10:43:27.408Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "The Feather Duster Detour | Leo & Mia #6\n\nEver scrubbed your entire kitchen to avoid opening one scary email? ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-07T10:43:26.772Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "The Infinite Refresh | Leo & Mia #7\n\nWhy we keep refreshing apps for absolutely nothing.\n\n#psychology #mindset",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T01:18:36.189Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "The Sleep Effort Trap\n\nCan't sleep? Trying harder might be the reason. Leo and Mia explain the sleep effort tr",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T01:18:35.668Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "The Infinite Refresh | Leo & Mia #7\n\nWhy we keep refreshing apps for absolutely nothing.\n\n#psychology #mindset",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-07T01:18:34.693Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "The Infinite Refresh | Leo & Mia #7\n\nWhy we keep refreshing apps for absolutely nothing.\n\n#psychology #mindset",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-07T01:18:34.213Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=Zoos5GbVQPU",
+   "sent": "2026-11-07T00:00:14.000Z",
+   "text": "Leo tries to conquer his work inbox before noon and falls straight into the overthinking trap. Mia tracks his ",
+   "views": 1,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-07T16:25:47.097Z"
+  },
   {
    "platform": "instagram",
    "status": "scheduled",
@@ -139,9 +283,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfbD3dNCSaV/",
+   "sent": "2026-11-07T02:02:21.472Z",
    "text": "The Nodding Trap\n\nEver found yourself nodding along in a meeting you didn't understand at all? Here is why eve",
    "views": null,
    "likes": null,
@@ -151,12 +295,12 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@animationdoodleshq/video/7705266651624754446",
+   "sent": "2026-11-07T03:30:48.016Z",
    "text": "The Nodding Trap\n\nEver found yourself nodding along in a meeting you didn't understand at all? Here is why eve",
-   "views": 0,
-   "likes": 0,
+   "views": 60,
+   "likes": 2,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -169,16 +313,16 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T01:50:25.630Z"
+   "updated": "2026-11-07T14:53:38.137Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/ZBq7mV2vMZk",
+   "sent": "2026-11-07T03:00:52.644Z",
    "text": "The Nodding Trap\n\nEver found yourself nodding along in a meeting you didn't understand at all? Here is why eve",
-   "views": 0,
-   "likes": 0,
+   "views": 1,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "comments",
@@ -187,7 +331,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T01:50:24.516Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "youtube",
@@ -195,8 +339,8 @@
    "url": "https://www.youtube.com/watch?v=pJfbbo-cJAQ",
    "sent": "2026-11-06T00:00:23.000Z",
    "text": "Leo has 10 minutes to pitch his slides, but his overactive brain is convinced every minor mistake will trigger",
-   "views": 2,
-   "likes": 0,
+   "views": 3,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "comments",
@@ -205,16 +349,16 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "Why does everything take longer than you plan? Leo and Mia explain the planning fallacy.\n\n#psychology #mindset",
-   "views": 0,
-   "likes": 0,
+   "status": "sent",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7705151330595147021?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+   "sent": "2026-11-06T20:03:52.411Z",
+   "text": "Why does everything take longer than you plan? Leo and Mia explain the planning fallacy. #psychology #mindset ",
+   "views": 66,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -227,7 +371,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-05T01:43:23.441Z"
+   "updated": "2026-11-07T14:53:38.137Z"
   },
   {
    "platform": "instagram",
@@ -235,11 +379,22 @@
    "url": "https://www.instagram.com/reel/DfaNP-ejGdy/",
    "sent": "2026-11-06T18:04:45.461Z",
    "text": "Why does everything take longer than you plan? Leo and Mia explain the planning fallacy.\n\n#psychology #mindset",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-05T01:43:21.755Z"
+   "views": 114,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -247,8 +402,8 @@
    "url": "https://www.youtube.com/shorts/AvrLyAUe86Y",
    "sent": "2026-11-06T18:03:18.116Z",
    "text": "Why does everything take longer than you plan? Leo and Mia explain the planning fallacy.\n\n#psychology #mindset",
-   "views": 0,
-   "likes": 0,
+   "views": 3,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "comments",
@@ -257,16 +412,16 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T18:05:54.032Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704895699179015437",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704895699179015437?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-06T03:31:11.623Z",
-   "text": "Why does sitting down feel like committing a crime?\n\n#psychology #mindset #animation #relatable #AnimationDood",
-   "views": 70,
-   "likes": 0,
+   "text": "Why does sitting down feel like committing a crime? #psychology #mindset #animation #relatable #AnimationDoodl",
+   "views": 84,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -279,7 +434,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -287,7 +442,7 @@
    "url": "https://www.instagram.com/reel/DfYfEjFk10a/",
    "sent": "2026-11-06T02:01:49.533Z",
    "text": "Why does sitting down feel like committing a crime?\n\n#psychology #mindset #animation #relatable #AnimationDood",
-   "views": 128,
+   "views": 130,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -302,7 +457,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -320,16 +475,16 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704895687535758606",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704895687535758606?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-06T03:31:12.118Z",
-   "text": "The Rehearsal Trap\n\nEver repeat a simple phone order in your head ten times before pressing call? Here is why ",
-   "views": 71,
-   "likes": 0,
+   "text": "The Rehearsal Trap Ever repeat a simple phone order in your head ten times before pressing call? Here is why y",
+   "views": 81,
+   "likes": 2,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -342,7 +497,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.137Z"
   },
   {
    "platform": "instagram",
@@ -350,7 +505,7 @@
    "url": "https://www.instagram.com/reel/DfYfJ-WlTkf/",
    "sent": "2026-11-06T02:02:31.396Z",
    "text": "The Rehearsal Trap\n\nEver repeat a simple phone order in your head ten times before pressing call? Here is why ",
-   "views": 195,
+   "views": 201,
    "likes": 4,
    "comments": 0,
    "metrics": [
@@ -365,7 +520,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -373,7 +528,7 @@
    "url": "https://www.youtube.com/shorts/bRr0CpAVqi4",
    "sent": "2026-11-06T03:01:15.100Z",
    "text": "The Rehearsal Trap\n\nEver repeat a simple phone order in your head ten times before pressing call? Here is why ",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -383,15 +538,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704524494571982093",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704524494571982093?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-05T03:32:01.272Z",
-   "text": "Why can't we look away from bad news? Blame evolution.\n\n#psychology #mindset #animation #relatable #AnimationD",
-   "views": 95,
+   "text": "Why can't we look away from bad news? Blame evolution. #psychology #mindset #animation #relatable #AnimationDo",
+   "views": 100,
    "likes": 2,
    "comments": 1,
    "metrics": [
@@ -405,7 +560,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -428,7 +583,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -446,15 +601,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704408867500870925",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704408867500870925?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-04T20:03:56.971Z",
-   "text": "Ever clean your entire apartment just to avoid one scary email? Here is why your brain loves chore relief.\n\n#p",
-   "views": 49,
+   "text": "Ever clean your entire apartment just to avoid one scary email? Here is why your brain loves chore relief. #ps",
+   "views": 50,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -468,7 +623,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -491,7 +646,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -499,7 +654,7 @@
    "url": "https://www.youtube.com/shorts/Rqbov1l-rYw",
    "sent": "2026-11-04T18:02:40.117Z",
    "text": "Ever clean your entire apartment just to avoid one scary email? Here is why your brain loves chore relief.\n\n#p",
-   "views": 9,
+   "views": 10,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -509,7 +664,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
@@ -688,7 +843,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -706,7 +861,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
@@ -728,7 +883,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "tiktok",
@@ -750,7 +905,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -773,7 +928,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -791,7 +946,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
@@ -861,7 +1016,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.098Z"
   },
   {
    "platform": "instagram",
@@ -884,7 +1039,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "tiktok",
@@ -892,7 +1047,7 @@
    "url": "https://www.tiktok.com/@animationdoodleshq/video/7703357148176092430?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-02T00:02:19.729Z",
    "text": "Why parting with your old mug feels like actual heartbreak. #psychology #mindset #animation #relatable #Animat",
-   "views": 30,
+   "views": 31,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -906,7 +1061,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "tiktok",
@@ -928,7 +1083,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "youtube",
@@ -946,7 +1101,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "instagram",
@@ -969,7 +1124,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "instagram",
@@ -992,67 +1147,15 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "Why does nobody help when someone drops their coffee? Blame the crowd.\n\n#psychology #mindset #animation #relat",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-10-31T01:20:17.390Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "Why does nobody help when someone drops their coffee? Blame the crowd.\n\n#psychology #mindset #animation #relat",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-10-31T01:20:14.943Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "Why does nobody help when someone drops their coffee? Blame the crowd.\n\n#psychology #mindset #animation #relat",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-10-31T01:20:13.163Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704780671926947085",
-   "sent": "2026-11-05T20:04:51.443Z",
-   "text": "Ever love a wobbly handmade shelf way too much? Blame the IKEA effect.\n\n#psychology #mindset #animation #relat",
-   "views": 56,
+   "url": "https://tiktok.com/@animationdoodleshq/video/7705213357409766669",
+   "sent": "2026-11-07T00:04:21.081Z",
+   "text": "Why does nobody help when someone drops their coffee? Blame the crowd.\n\n#psychology #mindset #animation #relat",
+   "views": 62,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1066,15 +1169,15 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.137Z"
   },
   {
    "platform": "instagram",
    "status": "sent",
-   "url": "https://www.instagram.com/reel/DfXo2kBAsMH/",
-   "sent": "2026-11-05T18:08:41.395Z",
-   "text": "Ever love a wobbly handmade shelf way too much? Blame the IKEA effect.\n\n#psychology #mindset #animation #relat",
-   "views": 110,
+   "url": "https://www.instagram.com/reel/DfavnadEzlc/",
+   "sent": "2026-11-06T23:05:22.405Z",
+   "text": "Why does nobody help when someone drops their coffee? Blame the crowd.\n\n#psychology #mindset #animation #relat",
+   "views": 116,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1089,7 +1192,70 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.349Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/sb4WKiNkmrU",
+   "sent": "2026-11-06T23:02:58.019Z",
+   "text": "Why does nobody help when someone drops their coffee? Blame the crowd.\n\n#psychology #mindset #animation #relat",
+   "views": 3,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-07T16:25:47.097Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704780671926947085?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+   "sent": "2026-11-05T20:04:51.443Z",
+   "text": "Ever love a wobbly handmade shelf way too much? Blame the IKEA effect. #psychology #mindset #animation #relata",
+   "views": 63,
+   "likes": 2,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T14:53:38.138Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfXo2kBAsMH/",
+   "sent": "2026-11-05T18:08:41.395Z",
+   "text": "Ever love a wobbly handmade shelf way too much? Blame the IKEA effect.\n\n#psychology #mindset #animation #relat",
+   "views": 111,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1107,14 +1273,14 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704153522828217613",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704153522828217613?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-04T03:32:08.258Z",
-   "text": "Why do we hold onto things we don't even like? Blame our brains.\n\n#psychology #mindset #animation #relatable #",
+   "text": "Why do we hold onto things we don't even like? Blame our brains. #psychology #mindset #animation #relatable #A",
    "views": 55,
    "likes": 1,
    "comments": 0,
@@ -1129,7 +1295,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1152,7 +1318,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1170,14 +1336,14 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704100020257115406",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704100020257115406?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-04T00:03:53.440Z",
-   "text": "Why is it so easy to sacrifice tomorrow's happiness for a treat right now? Meet temporal discounting.\n\n#psycho",
+   "text": "Why is it so easy to sacrifice tomorrow's happiness for a treat right now? Meet temporal discounting. #psychol",
    "views": 39,
    "likes": 1,
    "comments": 0,
@@ -1192,7 +1358,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1215,7 +1381,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1233,12 +1399,12 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7704038326382234894",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7704038326382234894?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-03T20:04:40.994Z",
    "text": "Ever feel like a total genius after watching one tutorial? That sudden spike in confidence is surprisingly com",
    "views": 52,
@@ -1255,7 +1421,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1278,7 +1444,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1286,7 +1452,7 @@
    "url": "https://www.youtube.com/shorts/vz_gR7GgfU0",
    "sent": "2026-11-03T18:04:30.001Z",
    "text": "Ever feel like a total genius after watching one tutorial? That sudden spike in confidence is surprisingly com",
-   "views": 205,
+   "views": 206,
    "likes": 3,
    "comments": 0,
    "metrics": [
@@ -1296,7 +1462,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
@@ -1304,7 +1470,7 @@
    "url": "https://www.tiktok.com/@animationdoodleshq/video/7703782357278444813?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-03T03:50:04.220Z",
    "text": "Ever spent forty minutes debating between tacos and soup? It is not indecisiveness, it is decision fatigue. #p",
-   "views": 101,
+   "views": 104,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -1318,7 +1484,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1341,7 +1507,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1359,7 +1525,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
@@ -1381,7 +1547,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1404,7 +1570,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.383Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1422,7 +1588,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.097Z"
   },
   {
    "platform": "tiktok",
@@ -1444,7 +1610,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1464,7 +1630,7 @@
    "url": "https://www.youtube.com/shorts/ImJ1YpyYRlM",
    "sent": "2026-10-31T02:00:43.226Z",
    "text": "Why does choosing feel so hard? Choice overload, explained with a very long cereal aisle.\n\n#psychology #mindse",
-   "views": 7,
+   "views": 8,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1474,7 +1640,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.098Z"
   },
   {
    "platform": "tiktok",
@@ -1496,7 +1662,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1519,7 +1685,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.384Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1537,7 +1703,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.098Z"
   },
   {
    "platform": "tiktok",
@@ -1559,7 +1725,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.138Z"
   },
   {
    "platform": "instagram",
@@ -1582,7 +1748,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.384Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "youtube",
@@ -1600,7 +1766,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.098Z"
   },
   {
    "platform": "youtube",
@@ -1618,7 +1784,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.098Z"
   },
   {
    "platform": "youtube",
@@ -1636,7 +1802,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T17:15:10.831Z"
+   "updated": "2026-11-07T16:25:47.098Z"
   },
   {
    "platform": "tiktok",
@@ -1658,7 +1824,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.139Z"
   },
   {
    "platform": "instagram",
@@ -1681,7 +1847,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.384Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   },
   {
    "platform": "tiktok",
@@ -1703,7 +1869,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:52:48.268Z"
+   "updated": "2026-11-07T14:53:38.139Z"
   },
   {
    "platform": "instagram",
@@ -1726,7 +1892,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T15:43:12.384Z"
+   "updated": "2026-11-07T14:43:24.350Z"
   }
  ]
 }

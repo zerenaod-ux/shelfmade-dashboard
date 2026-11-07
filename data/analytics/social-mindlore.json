@@ -1,8 +1,82 @@
 {
  "brand": "mindlore",
- "collected": "2026-11-06T18:32:16Z",
+ "collected": "2026-11-07T17:00:14Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why does a deadline give you a knot?\n\nYou feel a knot in your stomach whenever a deadline looms, but ancient h",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T04:20:47.373Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why does a deadline give you a knot?\n\nYou feel a knot in your stomach whenever a deadline looms, but ancient h",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-07T04:20:46.756Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why does a deadline give you a knot?\n\nYou feel a knot in your stomach whenever a deadline looms, but ancient h",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-07T04:20:46.335Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Listen to what Freud warned about.\n\nA General Introduction to Psychoanalysis by Sigmund Freud\n\nFollow MindLore",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-06T23:18:53.295Z"
+  },
   {
    "platform": "instagram",
    "status": "scheduled",
@@ -101,7 +175,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "tiktok",
@@ -223,7 +297,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "tiktok",
@@ -287,7 +361,7 @@
    "url": "https://www.instagram.com/reel/DfXoXcYAJUn/",
    "sent": "2026-11-05T18:04:40.210Z",
    "text": "The part of Crowd nobody mentions.\n\nThe Crowd by Gustave Le Bon\n\nFollow MindLore for a new psychology lesson e",
-   "views": 31,
+   "views": 53,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -302,7 +376,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "youtube",
@@ -492,23 +566,34 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfbD_NxnOwP/",
+   "sent": "2026-11-07T02:03:00.815Z",
    "text": "This Psychology Of Revolution line is uncomfortable.\n\nThe Psychology Of Revolution by Gustave Le Bon\n\nFollow M",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-04T01:30:58.704Z"
+   "views": 4,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T04:15:43.462Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7705266662395743501",
+   "sent": "2026-11-07T03:31:51.012Z",
    "text": "This Psychology Of Revolution line is uncomfortable.\n\nThe Psychology Of Revolution by Gustave Le Bon\n\nFollow M",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -522,7 +607,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-04T01:30:57.770Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -548,20 +633,31 @@
    "url": "https://www.instagram.com/reel/DfaNRApAFGp/",
    "sent": "2026-11-06T18:06:06.340Z",
    "text": "Listen to what M\u00fcnsterberg warned about.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nFollow Min",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-04T01:30:51.033Z"
+   "views": 22,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-07T04:15:43.462Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7705151482982567182",
+   "sent": "2026-11-06T20:04:07.814Z",
    "text": "Listen to what M\u00fcnsterberg warned about.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nFollow Min",
-   "views": 0,
-   "likes": 0,
+   "views": 44,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -574,15 +670,15 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-04T01:30:49.909Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/LFZ1UKXf86A",
+   "sent": "2026-11-07T03:01:04.097Z",
    "text": "Listen to what M\u00fcnsterberg warned about.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nFollow Min",
-   "views": 0,
+   "views": 10,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -592,7 +688,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-04T01:30:48.249Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -600,7 +696,7 @@
    "url": "https://www.instagram.com/reel/DfYfDkfiNcw/",
    "sent": "2026-11-06T02:02:18.538Z",
    "text": "Darwin had a warning for you.\n\nThe Expression of the Emotions in Man and Animals by Charles Darwin\n\nFollow Min",
-   "views": 3,
+   "views": 6,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -615,7 +711,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -623,8 +719,8 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7704895665154936077?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-06T03:32:18.644Z",
    "text": "Darwin had a warning for you. The Expression of the Emotions in Man and Animals by Charles Darwin Follow MindL",
-   "views": 2,
-   "likes": 0,
+   "views": 55,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -637,7 +733,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -645,8 +741,8 @@
    "url": "https://www.youtube.com/shorts/qfwKKgBIkvI",
    "sent": "2026-11-06T18:04:02.159Z",
    "text": "Darwin had a warning for you.\n\nThe Expression of the Emotions in Man and Animals by Charles Darwin\n\nFollow Min",
-   "views": 0,
-   "likes": 0,
+   "views": 24,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "comments",
@@ -655,7 +751,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T18:06:28.643Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "youtube",
@@ -673,7 +769,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "youtube",
@@ -681,7 +777,7 @@
    "url": "https://www.youtube.com/shorts/Y2dnDEONRD0",
    "sent": "2026-11-06T03:01:06.870Z",
    "text": "Listen to what Darwin warned about.\n\nThe Expression of the Emotions in Man and Animals by Charles Darwin\n\nList",
-   "views": 0,
+   "views": 3,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -691,7 +787,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "tiktok",
@@ -699,7 +795,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7704780377264573710?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-05T20:04:25.729Z",
    "text": "Listen to what Darwin warned about. The Expression of the Emotions in Man and Animals by Charles Darwin Listen",
-   "views": 91,
+   "views": 94,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -713,7 +809,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "instagram",
@@ -721,7 +817,7 @@
    "url": "https://www.instagram.com/reel/DfV6St9gMj2/",
    "sent": "2026-11-05T02:03:01.910Z",
    "text": "M\u00fcnsterberg would hate how you live.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nM\u00fcnsterberg wo",
-   "views": 62,
+   "views": 66,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -736,7 +832,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -758,7 +854,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -766,7 +862,7 @@
    "url": "https://www.youtube.com/shorts/xGaGRBalAvQ",
    "sent": "2026-11-05T18:04:10.291Z",
    "text": "M\u00fcnsterberg would hate how you live.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nM\u00fcnsterberg wo",
-   "views": 16,
+   "views": 19,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -776,7 +872,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -799,7 +895,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -821,7 +917,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -839,7 +935,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T15:38:30.705Z"
   },
   {
    "platform": "instagram",
@@ -862,7 +958,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -884,7 +980,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -892,7 +988,7 @@
    "url": "https://www.youtube.com/shorts/xBaiLW-oBrs",
    "sent": "2026-11-04T18:03:45.360Z",
    "text": "Nobody warns you about Psychology Of Revolution.\n\nThe Psychology Of Revolution by Gustave Le Bon\n\nNobody warns",
-   "views": 23,
+   "views": 25,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -902,7 +998,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -925,7 +1021,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -947,7 +1043,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -965,7 +1061,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -988,7 +1084,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1010,7 +1106,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1028,7 +1124,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "youtube",
@@ -1046,7 +1142,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "youtube",
@@ -1064,7 +1160,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "youtube",
@@ -1082,7 +1178,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "instagram",
@@ -1105,7 +1201,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1127,7 +1223,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1135,7 +1231,7 @@
    "url": "https://www.youtube.com/shorts/SyRDyfv-noQ",
    "sent": "2026-11-03T03:01:24.454Z",
    "text": "Does your conclusion follow, or does it only feel familiar?\n\nA MindLore reflection on The Art Of Logical Think",
-   "views": 29,
+   "views": 30,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -1145,7 +1241,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -1168,7 +1264,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1190,7 +1286,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.010Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1208,7 +1304,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -1231,7 +1327,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1253,7 +1349,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1271,7 +1367,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -1294,7 +1390,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1316,7 +1412,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1334,7 +1430,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.578Z"
   },
   {
    "platform": "instagram",
@@ -1342,7 +1438,7 @@
    "url": "https://www.instagram.com/reel/DfNVDaUH1Tb/",
    "sent": "2026-11-01T18:02:31.517Z",
    "text": "What happens when you give one ordinary task your full attention?\n\nA MindLore reflection on The Power Of Conce",
-   "views": 4,
+   "views": 5,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1357,7 +1453,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1379,7 +1475,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1397,7 +1493,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "youtube",
@@ -1415,7 +1511,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "tiktok",
@@ -1423,7 +1519,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7703024762708069645?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-01T02:32:00.533Z",
    "text": "What would your intention look like if someone could actually observe it? A MindLore reflection on Applied Psy",
-   "views": 78,
+   "views": 80,
    "likes": 4,
    "comments": 0,
    "metrics": [
@@ -1437,7 +1533,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "instagram",
@@ -1460,7 +1556,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "youtube",
@@ -1478,7 +1574,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "instagram",
@@ -1501,7 +1597,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1523,7 +1619,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1541,7 +1637,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "tiktok",
@@ -1563,7 +1659,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "instagram",
@@ -1571,7 +1667,7 @@
    "url": "https://www.instagram.com/reel/DfKpiUcj_c5/",
    "sent": "2026-10-31T17:04:50.996Z",
    "text": "What would change your mind about something you believe?\n\nA MindLore reflection on How We Think.\nSource: https",
-   "views": 46,
+   "views": 48,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1586,7 +1682,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "youtube",
@@ -1604,7 +1700,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "instagram",
@@ -1627,7 +1723,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1649,7 +1745,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1667,7 +1763,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "instagram",
@@ -1690,7 +1786,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1712,7 +1808,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1720,7 +1816,7 @@
    "url": "https://www.youtube.com/shorts/V5cZxesdo6w",
    "sent": "2026-10-30T22:00:49.130Z",
    "text": "Which detail did you remember, and which did you fill in later?\n\nA MindLore reflection on Dream Psychology \u00b7 R",
-   "views": 32,
+   "views": 34,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1730,7 +1826,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "instagram",
@@ -1738,7 +1834,7 @@
    "url": "https://www.instagram.com/reel/DfIEpMHDcll/",
    "sent": "2026-10-30T17:03:38.914Z",
    "text": "What changed in the task before performance changed?\n\nA MindLore reflection on Psychology and Industrial Effic",
-   "views": 3,
+   "views": 4,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1753,7 +1849,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1793,7 +1889,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "instagram",
@@ -1801,7 +1897,7 @@
    "url": "https://www.instagram.com/reel/DfGWmzWAMoM/",
    "sent": "2026-10-30T01:01:43.949Z",
    "text": "What history might be hidden in an ordinary gesture?\n\nA MindLore reflection on The Expression of the Emotions ",
-   "views": 8,
+   "views": 9,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1816,7 +1912,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:15:33.522Z"
+   "updated": "2026-11-07T04:15:43.463Z"
   },
   {
    "platform": "tiktok",
@@ -1838,7 +1934,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T04:40:53.503Z"
   },
   {
    "platform": "youtube",
@@ -1856,7 +1952,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   },
   {
    "platform": "youtube",
@@ -1864,7 +1960,7 @@
    "url": "https://www.youtube.com/watch?v=cOkUIin-TGA",
    "sent": "2026-10-29T23:00:29.000Z",
    "text": "When you describe your mind, are you observing an experience or naming a theory?\n\nA guided primary-text readin",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1874,93 +1970,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T07:27:15.624Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfBqhiaFeUG/",
-   "sent": "2026-10-28T05:19:48.000Z",
-   "text": "What if the judgment you fear is one you have imagined?\n\nA MindLore reflection on Self-consciousness \u00b7 An orig",
-   "views": 1,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-06T05:15:33.523Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=s2csm1mzmRY",
-   "sent": "2026-10-28T23:00:19.000Z",
-   "text": "What can a face show you, and what can it never tell you by itself?\n\nA guided primary-text reading with origin",
-   "views": 8,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-06T07:27:15.624Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfFm3ZbCUWT/",
-   "sent": "2026-10-29T18:04:31.737Z",
-   "text": "How can a familiar belief become powerful enough to move a crowd?\n\nA MindLore reflection on The Psychology Of ",
-   "views": 5,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-06T05:15:33.522Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7702259634345659661?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-10-30T01:03:04.450Z",
-   "text": "How can a familiar belief become powerful enough to move a crowd? A MindLore reflection on The Psychology Of R",
-   "views": 104,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-06T05:39:31.011Z"
+   "updated": "2026-11-07T06:36:09.579Z"
   }
  ]
 }
