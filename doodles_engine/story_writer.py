@@ -144,12 +144,19 @@ def pick_best(topic, taken, variant, vnote):
     return best
 
 
+def _viewer_topic():
+    """A topic suggested by real viewer comments (comment_ideas.py), used once then removed. Any problem -> None."""
+    try:
+        f=HERE.parent/'data/doodles/comment_ideas.json';L=json.loads(f.read_text())
+        if not L:return None
+        t=L.pop(0);f.write_text(json.dumps(L,indent=1));print('viewer topic:',t);return t
+    except Exception:return None
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []
 def main():
     n=int(sys.argv[1]) if len(sys.argv)>1 else 3;pool=load();taken={s['id'] for s in stories.STORIES}|{s['id'] for s in pool};made=0
     for attempt in range(n*3):
         if made>=n:break
-        topic=next((t for t in TOPICS if re.sub(r'[^a-z]+','-',t.lower()).strip('-')[:20] not in ' '.join(taken)),TOPICS[attempt%len(TOPICS)])
+        topic=_viewer_topic() or next((t for t in TOPICS if re.sub(r'[^a-z]+','-',t.lower()).strip('-')[:20] not in ' '.join(taken)),TOPICS[attempt%len(TOPICS)])
         TOPICS.remove(topic) if topic in TOPICS else None
         variant='tight' if len(pool)%2==0 else 'standard'   # length test: alternate ~30 s and ~42 s Shorts, the learner compares them
         vnote=' LENGTH VARIANT (overrides the word count above): the whole video is 52 to 68 spoken words in total (about 28 to 35 seconds), every line punchy, keep the hook, the payoff and the loop.' if variant=='tight' else ''
