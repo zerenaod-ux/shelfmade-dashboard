@@ -1,0 +1,42 @@
+name: title-apply
+# Runs ONLY when the owner labels a 'Title proposals' issue: titles-approved = apply option A, titles-revert = put the old titles back.
+on:
+  issues:
+    types: [labeled]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: title-apply
+jobs:
+  apply:
+    if: ${{ (github.event.label.name == 'titles-approved' || github.event.label.name == 'titles-revert') && startsWith(github.event.issue.title, 'Title proposals') && github.event.sender.login == github.repository_owner }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Apply or revert titles
+        env:
+          GH_TOKEN: ${{ github.token }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
+          YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+          LABEL: ${{ github.event.label.name }}
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          MODE=apply; [ "$LABEL" = "titles-revert" ] && MODE=revert
+          python title_apply.py "$NUM" "$MODE" | tee /tmp/out.txt
+          gh issue comment "$NUM" --repo "$GITHUB_REPOSITORY" --body "$(printf 'Done (%s):\n```\n%s\n```' "$MODE" "$(cat /tmp/out.txt)")"
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "title-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f data/growth/title_proposals.json data/growth/title_log.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "titles: applied/reverted"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; git rebase --abort 2>/dev/null; sleep 6; done

@@ -37,6 +37,9 @@ def feats(v):
         'emoji': 'has emoji' if EMOJI.search(t) else 'no emoji',
         'command/hook opener': 'opens with a direct word (know, stop, why, how, your...)' if CMD.match(t.strip()) else 'other opener',
     }
+    tl = t.strip().lower()
+    out['hook style'] = ('question' if '?' in t else 'confession/I-statement' if re.match(r"^(i|i'm|i've|my|we)\b", tl) else 'warning/stop' if re.match(r"^(stop|don't|dont|never|why you (keep|can't|cant))", tl)
+                         else 'number/list' if re.match(r'^\d', tl) else 'you-statement' if re.match(r"^(you|your)\b", tl) else 'statement')
     if d and d <= 75:
         out['short length'] = 'up to 30s' if d <= 30 else '31-45s' if d <= 45 else '46-75s'
     try:
@@ -64,25 +67,26 @@ def rows(brand):
             continue
         views = int(v.get('views') or 0)
         out.append({'id': v['id'], 'title': v.get('title', ''), 'views': views, 'vpd': round(views / max(age, 1), 2), 'age_days': round(age, 1),
-                    'avg_percent': v.get('avgPercent'), 'subs': int(v.get('subsGained') or 0), 'likes': int(v.get('likes') or 0), 'f': feats(v)})
+                    'avg_percent': (float(v['avgPercent']) if str(v.get('avgPercent') or '').replace('.', '', 1).isdigit() else None), 'subs': int(v.get('subsGained') or 0), 'likes': int(v.get('likes') or 0), 'f': feats(v)})
     return d, out
 
 
-def lifts(rs):
+def lifts(rs, key='vpd'):
+    rs = [r for r in rs if r.get(key) is not None] if key != 'vpd' else rs
     if len(rs) < 2 * MINN:
         return []
-    med = statistics.median(r['vpd'] for r in rs) or 0.01
+    med = statistics.median(r[key] for r in rs) or 0.01
     groups = {}
     for r in rs:
         for k, val in r['f'].items():
-            groups.setdefault((k, val), []).append(r['vpd'])
+            groups.setdefault((k, val), []).append(r[key])
     res = []
     for (k, val), vs in groups.items():
-        rest = [r['vpd'] for r in rs if r['f'].get(k) != val and k in r['f']]
+        rest = [r[key] for r in rs if r['f'].get(k) != val and k in r['f']]
         if len(vs) < MINN or len(rest) < MINN:
             continue
         m = statistics.median(vs)
-        res.append({'feature': k, 'value': val, 'n': len(vs), 'median_vpd': round(m, 2), 'lift': round(m / med, 2), 'rest_median_vpd': round(statistics.median(rest), 2)})
+        res.append({'metric': key, 'feature': k, 'value': val, 'n': len(vs), 'median_vpd': round(m, 2), 'lift': round(m / med, 2), 'rest_median_vpd': round(statistics.median(rest), 2)})
     return sorted(res, key=lambda x: -x['lift'])
 
 
@@ -108,7 +112,7 @@ def main():
         ranked = sorted(rs, key=lambda x: -x['vpd'])
         slim = lambda r: {k: r[k] for k in ('id', 'title', 'views', 'vpd', 'age_days', 'avg_percent', 'subs')}
         board['brands'][b] = {'totals': tot, 'measured_videos': len(rs), 'median_views_per_day': round(statistics.median([r['vpd'] for r in rs]), 2) if rs else None,
-                              'top': [slim(r) for r in ranked[:5]], 'bottom': [slim(r) for r in ranked[-5:]] if len(ranked) > 5 else [], 'feature_lifts': lifts([r for r in rs if r['f']['format'].startswith('short')]), 'monetization': {'subs_needed': 1000, 'subs_now': tot['subs'], 'subs_pct': round(100 * tot['subs'] / 1000, 1), 'watch_hours_needed': 4000, 'est_watch_hours': hrs, 'hours_pct': round(100 * hrs / 4000, 1), 'note': 'YouTube Partner Program: 1,000 subscribers AND 4,000 public watch hours in 12 months (or 10 million Shorts views in 90 days). Hours here are an estimate.'}, 'lifts_scope': 'Shorts only (full videos behave differently, mixing them fooled the numbers)'}
+                              'top': [slim(r) for r in ranked[:5]], 'bottom': [slim(r) for r in ranked[-5:]] if len(ranked) > 5 else [], 'feature_lifts': lifts([r for r in rs if r['f']['format'].startswith('short')]), 'retention_lifts': lifts([r for r in rs if r['f']['format'].startswith('short')], 'avg_percent'), 'monetization': {'subs_needed': 1000, 'subs_now': tot['subs'], 'subs_pct': round(100 * tot['subs'] / 1000, 1), 'watch_hours_needed': 4000, 'est_watch_hours': hrs, 'hours_pct': round(100 * hrs / 4000, 1), 'note': 'YouTube Partner Program: 1,000 subscribers AND 4,000 public watch hours in 12 months (or 10 million Shorts views in 90 days). Hours here are an estimate.'}, 'lifts_scope': 'Shorts only (full videos behave differently, mixing them fooled the numbers)'}
     hist.append(row); hist = sorted(hist, key=lambda h: h['date'])[-400:]
     for b, bd in board['brands'].items():
         for days in (3, 7):
@@ -128,13 +132,16 @@ def guidance(brand):
         return ''
     more = ['%s (%s): %.1fx the channel median views/day, %d videos' % (x['feature'], x['value'], x['lift'], x['n']) for x in bd.get('feature_lifts', []) if x['lift'] >= UP][:3]
     less = ['%s (%s): only %.1fx the median, %d videos' % (x['feature'], x['value'], x['lift'], x['n']) for x in sorted(bd.get('feature_lifts', []), key=lambda x: x['lift']) if x['lift'] <= DOWN][:3]
-    if not (more or less):
+    ret = ['%s (%s): holds viewers %.1fx longer than the median (%d videos)' % (x['feature'], x['value'], x['lift'], x['n']) for x in bd.get('retention_lifts', []) if x['lift'] >= 1.25][:2]
+    if not (more or less or ret):
         return ''
     t = '\nHARD NUMBERS FROM OUR CHANNEL (measured, small data, use as a nudge not a law): '
     if more:
         t += 'WORKS BETTER: ' + ' | '.join(more) + '. '
     if less:
         t += 'WORKS WORSE: ' + ' | '.join(less) + '. '
+    if ret:
+        t += 'HOLDS VIEWERS LONGER: ' + ' | '.join(ret) + '. '
     return t + '\n'
 
 

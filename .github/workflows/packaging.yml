@@ -1,0 +1,39 @@
+name: packaging
+# Weekly: underperforming videos get 2 stronger title options in a GitHub Issue. NOTHING changes on YouTube until the owner adds the label titles-approved.
+on:
+  schedule:
+    - cron: '23 15 * * 3'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: packaging
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Propose titles
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          for l in titles-approved titles-skip titles-revert; do gh label create $l --repo "$GITHUB_REPOSITORY" --color 1d76db 2>/dev/null || true; done
+          python packaging.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "packaging-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f data/growth/title_proposals.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "packaging: title proposals"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; git rebase --abort 2>/dev/null; sleep 6; done

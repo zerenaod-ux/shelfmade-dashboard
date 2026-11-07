@@ -98,6 +98,13 @@ def main():
         rec('Safety guard', not on, ('KILL SWITCH ON for: ' + ', '.join(on) + ' (no new posts)') if on else 'readable, no kill switch on', 'ALERT: a channel kill switch is ON (posting stopped)')
     except Exception as e:
         rec('Safety guard', False, 'guard.json unreadable: ' + str(e)[:50], 'ALERT: safety guard file unreadable')
+    # 8 weekly jobs: last run must not have failed, and must not be older than ~9 days (a never-run job is OK for its first 9 days after launch)
+    for wf, label, launch in (('weekly-report.yml', 'Weekly report', '2026-11-07'), ('packaging.yml', 'Title proposals', '2026-11-07'), ('learn.yml', 'Learning + scoreboard', '2026-11-01')):
+        wr = [r for r in last_run(wf) if r.get('status') == 'completed']
+        fresh = bool(wr) and wr[0].get('conclusion') == 'success' and (age_h(wr[0].get('createdAt', '')) or 999) <= 9 * 24
+        young = (NOW - datetime.datetime.fromisoformat(launch + 'T00:00:00+00:00')).days < 9
+        rec(label, fresh or (young and not (wr and wr[0].get('conclusion') == 'failure')), ('last: %s %s' % (wr[0].get('conclusion'), wr[0].get('createdAt', '')[:10])) if wr else 'not run yet (launched %s)' % launch,
+            'ALERT: %s job not working' % label, lambda w=wf: sh('gh', 'workflow', 'run', w, '--repo', REPO))
     out = {'at': NOW.isoformat(timespec='seconds'), 'level': 'ok' if all(r['ok'] for r in res) else 'warn', 'checks': res}
     (B / 'publish').mkdir(exist_ok=True)
     (B / 'publish/selfcheck.json').write_text(json.dumps(out, indent=1))
