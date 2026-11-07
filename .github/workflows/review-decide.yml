@@ -22,6 +22,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python review_decide.py
+      - name: Sweep missed decisions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python sweep.py || true
       - name: Save approvals
         env:
           GH_TOKEN: ${{ github.token }}
@@ -36,6 +40,7 @@ jobs:
             if git pull --rebase -q && git push -q; then OK=1; break; fi
             git rebase --abort 2>/dev/null; git reset -q --hard origin/master
             python review_decide.py || true
+            python sweep.py || true
             git add -f publish/approved.json publish/approved-mindlore.json publish/approved-mlfull.json publish/approved-shfull.json publish/approved-doodles.json publish/approved-ddfull.json data/learned/skips.json 2>/dev/null || true
             git diff --cached --quiet && { OK=1; break; }
             git commit -qm "review: decision"; sleep $((RANDOM % 6 + 3))
