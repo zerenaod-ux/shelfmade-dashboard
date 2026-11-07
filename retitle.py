@@ -25,7 +25,7 @@ def valid(t, old):
     """A good new title: a QUESTION, 2-6 words, max 42 characters, plain text, different from the old one."""
     t = re.sub(r'\s+', ' ', str(t)).strip().strip('"').strip()
     words = t.split()
-    ok = (t.endswith('?') and 2 <= len(words) <= 6 and 8 <= len(t) <= 42 and not EMOJI.search(t) and not re.search(r'https?:|@|#|\|', t)
+    ok = (all(len(w.strip('?,\'’')) >= 2 or w.lower().strip('?') in ('a', 'i') for w in words) and len(words[-1].strip('?')) >= 3 and t.endswith('?') and 2 <= len(words) <= 6 and 8 <= len(t) <= 42 and not EMOJI.search(t) and not re.search(r'https?:|@|#|\|', t)
           and t.lower() != old.lower() and not (t.isupper() and len(t) > 12) and t.count('?') == 1)
     return t if ok else None
 
@@ -50,7 +50,7 @@ def candidates(brand, done):
 
 JUDGE = ("You are a ruthless YouTube Shorts title judge. For each video you get the CURRENT title and several NEW options (0 = current). Score what makes a stranger stop scrolling: "
          "CURIOSITY (makes them wonder what the answer is), SHORT (fewer words is better), TRUE (matches what the video really says; a title that promises something the video does not say is DISQUALIFIED), "
-         "CLEAR (a normal person understands it instantly). Pick the best. Keep the CURRENT title (best=0) unless a new option is clearly better. Return ONLY JSON: {\"items\":[{\"n\":1,\"best\":2,\"why\":\"short\"}]}")
+         "CLEAR (a normal person understands it instantly, no jargon). GRAMMAR: the title must be natural, complete, correct English; anything ungrammatical, cut off or odd-sounding is DISQUALIFIED. Pick the best. Keep the CURRENT title (best=0) unless a new option is clearly better. Return ONLY JSON: {\"items\":[{\"n\":1,\"best\":2,\"why\":\"short\"}]}")
 
 
 def write_titles(brand, items):
@@ -89,14 +89,24 @@ def write_titles(brand, items):
     except Exception as e:
         print('  judge failed -> nothing applied, will retry next run:', str(e)[:80])   # no judge = no change (never apply unjudged titles)
         return None
+    if res:
+        try:   # final proofreader: only grammatical, natural, complete titles survive
+            ks = list(res)
+            r = llm.json_call('You are a strict native-English copy editor. Reply with JSON only.',
+                              'Which of these YouTube titles are NOT perfectly natural, grammatical, complete English that a native speaker would write? Return ONLY JSON {"bad":[numbers]}.\n' + '\n'.join('%d. %s' % (i + 1, json.dumps(res[k])) for i, k in enumerate(ks)), temperature=0)
+            for n in (r or {}).get('bad', []):
+                k = ks[int(n) - 1]; print('  proofreader rejected:', res[k]); res.pop(k, None)
+        except Exception as e:
+            print('  proofreader failed -> nothing applied, will retry next run:', str(e)[:80])
+            return None
     return res
 
 
-def revert_all(only=None):
+def revert_all(only=None, ids=None):
     log = ta.jl(LOG, [])
     toks = {}
     for e in log:
-        if e.get('source') != 'auto' or e.get('reverted') or (only and e['brand'] != only):
+        if e.get('source') != 'auto' or e.get('reverted') or (only and e['brand'] != only) or (ids and e['id'] not in ids):
             continue
         b = e['brand']
         try:
@@ -109,7 +119,7 @@ def revert_all(only=None):
 
 def main():
     if len(sys.argv) > 1 and sys.argv[1] == 'revert-all':
-        return revert_all(sys.argv[2] if len(sys.argv) > 2 else None)
+        return revert_all(sys.argv[2] if len(sys.argv) > 2 and not sys.argv[2].startswith('ids:') else None, set(sys.argv[2][4:].split(',')) if len(sys.argv) > 2 and sys.argv[2].startswith('ids:') else None)
     try:
         import guard
     except Exception:
