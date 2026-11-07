@@ -2883,5 +2883,516 @@
    }
   ],
   "variant": "standard"
+ },
+ {
+  "id": "spotlight-phone-rehearsal",
+  "title": "The 40-Minute Pizza Call",
+  "concept": "THE SPOTLIGHT EFFECT",
+  "mood": "dramatic",
+  "insight": "People focus on you far less than your anxiety claims.",
+  "caption": "Ever rehearse a five-second phone call five times in your head? Here is why your brain overthinks every word.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo pacing the hallway holding a coffee mug with worried eyes while Mia sits holding a cup of tea with a raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I panic and script my reply five times!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You are just ordering a pizza, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo typing on his phone with worried eyes while Mia points at a notepad with a smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "What if Dev says 'enjoy' and I say 'you too'?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "That\u2019s entry thirty on my told-you-so board."
+     }
+    ]
+   },
+   {
+    "scene": "Leo lying in bed pulling the pillow near his face with worried eyes while a notification message arrives on his phone.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Dev just texted! Now my brain is spiraling!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You wrote three drafts for one word."
+     }
+    ]
+   },
+   {
+    "scene": "Mia typing on a laptop with a calm smirk while Leo holds a coffee mug with worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That\u2019s the Spotlight Effect. We overestimate how much people judge us."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Okay but hear me out, words are scary!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo sitting upright in bed pulling the blanket up with a steady expression while Mia watches with a warm smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Just count to three and speak without overthinking."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Fine, one attempt, no rehearsing."
+     }
+    ]
+   },
+   {
+    "scene": "A digital clock showing a time flips as someone knocking on the door makes Leo look up with wide eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Next time: what happens when Greg emails..."
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 2,
+   "why": "Candidate 2 nails the comedic punch with the hyper-relatable 'enjoy, you too' pizza panic while keeping the back-and-forth fast and naturally funny.",
+   "scores": {
+    "i": 2,
+    "funny": 9,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 9,
+    "loop": 7
+   },
+   "n": 3
+  },
+  "variant": "standard"
+ },
+ {
+  "id": "anticipatory-anxiety-sunday-clock",
+  "title": "The Sunday Scaries Trap",
+  "concept": "ANTICIPATORY ANXIETY",
+  "mood": "dramatic",
+  "insight": "Don't pay interest on trouble before it's due.",
+  "caption": "Why does Sunday afternoon feel scarier than Monday morning? Here is what your brain is doing.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is lying in bed pulling the blanket up while typing on his phone. Mia stands holding a coffee mug with worried eyes as Greg walks past the window.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Tomorrow is going to ruin my life."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It\u2019s Sunday four p.m."
+     }
+    ]
+   },
+   {
+    "scene": "A digital clock showing a time of 4:15 PM rests nearby. Leo is pacing the hallway holding a coffee mug, while Mia watches with a smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Greg\u2019s email said 'Noted'!"
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "text": "Scoreboard is thirty-two."
+     }
+    ]
+   },
+   {
+    "scene": "Brenda is outside someone knocking on the door. A notification arrives on Mia's phone showing three percent battery as she glances at anxious Leo.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My brain is predicting total disaster!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "My phone\u2019s dying anyway."
+     }
+    ]
+   },
+   {
+    "scene": "Mia is typing on a laptop on the couch. Leo sits beside her pulling the pillow tight, facing forward with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That\u2019s anticipatory anxiety."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Your brain suffers twice for things that haven't happened."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright holding a cup of tea with a hopeful closed-mouth smirk. Mia sits next to him, pointing toward the window.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Ground yourself in right now."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "So I kind of have it together?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo is lying in bed pulling the blanket up. An alarm going off sits on the nightstand, with Mia looking on in amusement.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Why are you hiding under there?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight"
+ },
+ {
+  "id": "text-avoidance-k-reply",
+  "title": "The 'K' Text Trap",
+  "concept": "TEXT AVOIDANCE",
+  "mood": "reflective",
+  "insight": "Big messages trigger task avoidance, making short replies feel safer.",
+  "caption": "Ever send a one-letter text because a long reply felt overwhelming? Here is why your brain does it. Next time: Mia tackles Leo's tab-overload obsession!",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at the kitchen table facing camera. Leo is texting while Mia holds a coffee mug with a dry smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Because five paragraphs feels like a trap."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Greg sent three lines, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is walking / pacing the hallway facing camera with worried eyes. Mia leans against the wall holding a cup of tea.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "It needs a thesis! Give me just one more minute."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "That score is now thirty-four."
+     }
+    ]
+   },
+   {
+    "scene": "A notification / message arrives on Leo's phone while he sits upright facing camera. Mia is typing on a laptop nearby.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "I typed 'k' so he thinks I'm busy."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You spent twenty minutes drafting one letter!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits facing camera holding a coffee mug with a raised eyebrow. Leo sits beside her pulling the blanket up with worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That is classic TEXT AVOIDANCE."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Your brain can treat big messages like heavy chores."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright facing camera holding his phone. Mia stands beside him facing camera with a calm closed-mouth smile.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "So how do I stop panicking?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Send a quick voice note instead."
+     }
+    ]
+   },
+   {
+    "scene": "A digital clock showing a time sits on the table between them. Mia looks directly forward with a deadpan closed-mouth expression.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Why reply with one letter after an essay?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 has the snappiest dialogue flow and cleanest loop back to the opening line.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 8,
+    "spoken": 7,
+    "relatable": 9,
+    "loop": 7
+   },
+   "n": 3
+  },
+  "variant": "standard"
+ },
+ {
+  "id": "pluralistic-ignorance-meeting-panic",
+  "title": "The Silent Meeting Nod",
+  "concept": "PLURALISTIC IGNORANCE",
+  "mood": "dramatic",
+  "insight": "Everyone is confused, but everyone assumes everyone else gets it.",
+  "caption": "Ever nodded through a meeting when you had no clue what was happening? Here is why we all fake it. Next time: Leo faces the spotlight effect.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo typing on a laptop while walking in the hallway. Mia sits nearby with a coffee mug, watching him with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Because everyone else was nodding too!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Leo, Greg\u2019s email literally just said 'Noted.'"
+     }
+    ]
+   },
+   {
+    "scene": "Leo texting on his phone with worried eyes. Mia holds a cup of tea with a closed-mouth smirk while Gerald the plant sits thriving nearby.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "He presented zero slides and I kept aggressively smiling!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo pulling the pillow on the couch with anxious eyes. Mia stays upright, typing on a laptop with a calm expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Now I'm leading the project! Even Gerald looks confused!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits upright as a notification message arrives on her phone. Leo stops pacing the hallway with wide worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's pluralistic ignorance. Everyone's confused, but assuming nobody else is."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits holding a cup of tea with subtle relief. Mia scrolling on her phone, looking calm and blunt.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Scoreboard thirty-six. Just ask 'can we recap?' next time."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits typing on a laptop, glancing up with a deadpan squint at Leo who is texting on his phone.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Wait, why were you aggressive-nodding at Greg?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight"
+ },
+ {
+  "id": "variable-rewards-phone-scroll",
+  "title": "The Phantom Ping Trap",
+  "concept": "VARIABLE REWARD LOOP",
+  "mood": "dramatic",
+  "insight": "Unpredictable rewards turn simple habits into digital slot machines.",
+  "caption": "Why you just opened your phone for the fourth empty minute in a row.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo staring blankly at a blank screen while pacing the hallway in his yellow hoodie.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Why did I just open this again?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sitting on the sofa typing on her phone, looking up with a deadpan squint.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You checked it twelve times in four minutes."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Okay but hear me out, Dev might text."
+     }
+    ]
+   },
+   {
+    "scene": "Leo furiously scrolling a blank notes app with a notification arrives sound popping.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Dev misspelled your name as Lyle three days ago."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "text": "Lyle is a strong name, Mia!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia pointing her coffee mug at Leo as Greg's email notification appears on his screen.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That is the variable reward loop trapping your brain."
+     },
+     {
+      "who": "leo",
+      "feel": "shocked",
+      "text": "Greg just emailed Noted and my soul left my body."
+     }
+    ]
+   },
+   {
+    "scene": "Leo hiding his phone under a couch cushion while sitting upright next to Mia.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Put it in another room right now please."
+     }
+    ]
+   },
+   {
+    "scene": "Leo staring at the digital clock showing a time while a notification arrives on the coffee table.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Why did I just open this again?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
  }
 ]
