@@ -1,0 +1,42 @@
+name: deps
+on:
+  schedule:
+    - cron: '53 11 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  deps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Probe every dependency
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          CLOUDINARY_JSON: ${{ secrets.CLOUDINARY_JSON }}
+          CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
+          BUFFER_TOKEN_MINDLORE: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
+          BUFFER_TOKEN_SHELFMADE: ${{ secrets.BUFFER_TOKEN_SHELFMADE }}
+          BUFFER_TOKEN_DOODLES: ${{ secrets.BUFFER_TOKEN_DOODLES }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
+          YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+        run: python deps.py
+      - name: Save
+        run: |
+          git config user.name "deps-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/deps.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "deps: canary"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; git rebase --abort 2>/dev/null; sleep 6; done
