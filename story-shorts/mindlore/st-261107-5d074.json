@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261107-5d074",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Do your doodles boost your brain?",
+ "hook": "You doodle on a napkin when you’re bored.",
+ "thumbnail_headline": "CREATIVE DOODLE POWER",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You doodle on a napkin when you’re bored. Ancient cave painters did the same, not just to decorate walls. In 2011, psychologist Jackie Andrade at the University of Texas at Austin found that about 5 minutes of doodling boosted memory by 29%. The result? Your brain keeps a visual trace while thinking. That trace sparks new connections during later tasks. Researchers also saw that creative flow emerges after focused time. In 1996, Mihaly Csikszentmihalyi observed artists entering flow after about 2 hours of uninterrupted work. So why do we think random sketches are useless? The answer: they prime neural pathways for divergent thinking. Other cultures, like Australian Aboriginal painters, spend hours daily on dot art, showing the same pattern. That pattern is called the incubation effect in cognitive science. Does it still hold today? Yes, modern labs replicate it. That's it. So next time you grab a pen, remember your brain works like ancient creators, just like you doodle on a napkin when you’re bored."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 5 minutes of doodling boosted memory by 29%",
+   "who": "Jackie Andrade",
+   "year": "2011",
+   "place": "University of Texas at Austin"
+  },
+  {
+   "claim": "artists enter flow after about 2 hours of uninterrupted work",
+   "who": "Mihaly Csikszentmihalyi",
+   "year": "1996",
+   "place": "global artists study"
+  }
+ ],
+ "source_url": "",
+ "theme": "creativity"
+}

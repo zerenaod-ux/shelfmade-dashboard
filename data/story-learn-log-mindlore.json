@@ -294,6 +294,69 @@
     "question",
     "scroll"
    ]
+  },
+  {
+   "id": "st-261107-43f84",
+   "title": "You chase every extra dollar you can earn \u2013 is it worth it?",
+   "theme": "money and happiness",
+   "acts": [
+    "cheer",
+    "explain",
+    "jump",
+    "lookup",
+    "point",
+    "run",
+    "think"
+   ],
+   "bgs": [
+    "brain",
+    "history",
+    "school",
+    "study"
+   ],
+   "props": [
+    "brain",
+    "bulb",
+    "chart",
+    "clock",
+    "crowd",
+    "heart",
+    "lamp",
+    "money",
+    "num",
+    "question"
+   ]
+  },
+  {
+   "id": "st-261107-5d074",
+   "title": "Do your doodles boost your brain?",
+   "theme": "creativity",
+   "acts": [
+    "explain",
+    "lookup",
+    "point",
+    "sad",
+    "think"
+   ],
+   "bgs": [
+    "brain",
+    "history",
+    "office",
+    "school"
+   ],
+   "props": [
+    "brain",
+    "bulb",
+    "chart",
+    "clock",
+    "eye",
+    "lamp",
+    "num",
+    "question",
+    "quill",
+    "scroll",
+    "sun"
+   ]
   }
  ]
 }
