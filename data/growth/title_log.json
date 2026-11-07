@@ -381,7 +381,8 @@
   "new": "Can you achieve eudaimonia?",
   "date": "2026-11-07",
   "source": "auto",
-  "revert_error": "HTTP 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceed"
+  "revert_error": "HTTP 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceed",
+  "reverted": true
  },
  {
   "id": "qfwKKgBIkvI",
@@ -414,7 +415,8 @@
   "new": "Why does the mind miss m?",
   "date": "2026-11-07",
   "source": "auto",
-  "revert_error": "HTTP 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceed"
+  "revert_error": "HTTP 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceed",
+  "reverted": true
  },
  {
   "id": "xBaiLW-oBrs",
@@ -440,5 +442,345 @@
   "date": "2026-11-07",
   "source": "auto",
   "reverted": true
+ },
+ {
+  "id": "zgDUyrNpGOY",
+  "brand": "shelfmade",
+  "old": "The ancient dinner party where every guest had a different definition of love \ud83c\udf77",
+  "new": "The ancient dinner party where every guest had a different definition of love \ud83c\udf77",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "UApe_HfuMLE",
+  "brand": "shelfmade",
+  "old": "What would a perfect world actually look like? Someone tried to write it in 1516 \ud83c\udfdd\ufe0f",
+  "new": "What would a perfect world actually look like? Someone tried to write it in 1516 \ud83c\udfdd\ufe0f",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "rmj2YzElBjM",
+  "brand": "shelfmade",
+  "old": "Self-Help is not what you think.",
+  "new": "Self-Help is not what you think.",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "QmvgVXfWJT8",
+  "brand": "shelfmade",
+  "old": "Why does Simple Life still matter?",
+  "new": "Does simplicity outweigh fancy appearances?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "6z0IxWs-qko",
+  "brand": "shelfmade",
+  "old": "Why does Mental Efficiency still matter?",
+  "new": "Can you remember a page without notes?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "S52fhpBuPEU",
+  "brand": "shelfmade",
+  "old": "The Analects by Confucius: Ancient Wisdom That Still Governs Us",
+  "new": "Do you lead with virtue daily?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "19NEY5x_reI",
+  "brand": "shelfmade",
+  "old": "Tao Te Ching: Ancient Wisdom That Changes Everything",
+  "new": "What if you flow like water?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "ZNG5ueUwq1g",
+  "brand": "shelfmade",
+  "old": "Thus Spake Zarathustra: Nietzsche's Blueprint for Human Greatness",
+  "new": "Do you aspire to become Superman?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "E8gvNc6Gyrw",
+  "brand": "shelfmade",
+  "old": "Self-Reliance by Emerson: The Essay That Changed American Thinking",
+  "new": "Can twenty words change your life?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "hZZC3IwYDPw",
+  "brand": "shelfmade",
+  "old": "The Prince by Machiavelli: The Brutal Truth About Power",
+  "new": "The Prince by Machiavelli: The Brutal Truth About Power",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "L8hFPW6Xcb4",
+  "brand": "shelfmade",
+  "old": "Aristotle's 2,300-year-old formula for a good life \ud83c\udfdb\ufe0f",
+  "new": "Aristotle's 2,300-year-old formula for a good life \ud83c\udfdb\ufe0f",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "QETj1OyodGA",
+  "brand": "shelfmade",
+  "old": "The forgotten success bible that built titans \ud83c\udfd4\ufe0f",
+  "new": "The forgotten success bible that built titans \ud83c\udfd4\ufe0f",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "1ViIE80FGEc",
+  "brand": "shelfmade",
+  "old": "The book that broke every rule of morality \ud83c\udf11",
+  "new": "The book that broke every rule of morality \ud83c\udf11",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "LiiQYEUiVVg",
+  "brand": "shelfmade",
+  "old": "What is justice? The question that built Western thought \ud83c\udfdb\ufe0f",
+  "new": "What is justice? The question that built Western thought \ud83c\udfdb\ufe0f",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "NrR9I45fH8Q",
+  "brand": "shelfmade",
+  "old": "He left society for 2 years \u2014 here's what he learned \ud83c\udf32",
+  "new": "He left society for 2 years \u2014 here's what he learned \ud83c\udf32",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "FbzqyOcCjVE",
+  "brand": "shelfmade",
+  "old": "Benjamin Franklin's Autobiography: The Blueprint for Self-Made Success",
+  "new": "Can vanity actually help you grow?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "OeEfBiHYLLc",
+  "brand": "shelfmade",
+  "old": "Self-Help by Samuel Smiles: The 1859 Book That Changed Everything",
+  "new": "Is failure secretly a gift?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "Ja2LEc0t50Y",
+  "brand": "shelfmade",
+  "old": "The Art of War by Sun Tzu: 2,400 Years of Timeless Strategy",
+  "new": "Was the Art of War mistranslated?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "wR1PTMnIblo",
+  "brand": "shelfmade",
+  "old": "As a Man Thinketh: The Book That Changed How Millions Think",
+  "new": "Do your thoughts create your reality?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "nw9L0WbCy1s",
+  "brand": "shelfmade",
+  "old": "Meditations by Marcus Aurelius \u2014 The Stoic Mind That Ruled an Empire",
+  "new": "Can mercy survive in the middle of war?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "vf5N9t4z-x0",
+  "brand": "mindlore",
+  "old": "The part of Psychology nobody mentions.",
+  "new": "The part of Psychology nobody mentions.",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "MN_liz83nkU",
+  "brand": "mindlore",
+  "old": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
+  "new": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "lzNbwJLpncg",
+  "brand": "mindlore",
+  "old": "Why people say things in a group they would never say alone | Gustave Le Bon",
+  "new": "Why people say things in a group they would never say alone | Gustave Le Bon",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "9lec7AhXEP8",
+  "brand": "mindlore",
+  "old": "Why dreams feel meaningful and strange at the same time | Freud",
+  "new": "Why dreams feel meaningful and strange at the same time | Freud",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "8lmhT2wqPj8",
+  "brand": "mindlore",
+  "old": "What to do when you cannot tell which road is right | John Dewey",
+  "new": "What to do when you cannot tell which road is right | John Dewey",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "23BZecAP85c",
+  "brand": "mindlore",
+  "old": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
+  "new": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "0m0sHfUvubE",
+  "brand": "mindlore",
+  "old": "How We Think \u00b7 Guided reading",
+  "new": "How We Think \u00b7 Guided reading",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "EMQX3FI6-Lk",
+  "brand": "mindlore",
+  "old": "Inquiries into Human Faculty and Its Development \u00b7 Guided reading",
+  "new": "Inquiries into Human Faculty and Its Development \u00b7 Guided reading",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "cOkUIin-TGA",
+  "brand": "mindlore",
+  "old": "Psychology: Briefer Course \u00b7 Guided reading",
+  "new": "Psychology: Briefer Course \u00b7 Guided reading",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "3sMZ0_phVOA",
+  "brand": "mindlore",
+  "old": "An Introduction to Social Psychology \u00b7 Guided reading",
+  "new": "How do I influence others?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "gusPDMxwqh8",
+  "brand": "mindlore",
+  "old": "The Crowd",
+  "new": "Can your ego survive crowds?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "r5TYsXKyFPA",
+  "brand": "mindlore",
+  "old": "Dream Psychology \u00b7 Guided reading",
+  "new": "What do dreams reveal?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "YTKbRT9tkpo",
+  "brand": "mindlore",
+  "old": "The Crowd \u00b7 Guided reading",
+  "new": "The Crowd \u00b7 Guided reading",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "kBXKZ5Zcmow",
+  "brand": "mindlore",
+  "old": "The Psychology Of Revolution \u00b7 Guided reading",
+  "new": "Do symbols drive social change?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "U7ufylUmlKQ",
+  "brand": "mindlore",
+  "old": "The Psychology Of Suggestion \u00b7 Guided reading",
+  "new": "Why do we accept suggestions?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "wEEbLtq5Ap0",
+  "brand": "mindlore",
+  "old": "Psychology: Briefer Course \u00b7 Attention selects \u00b7 Reading 1",
+  "new": "Why does attention choose focus?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "sPj_Yg2iX1Q",
+  "brand": "mindlore",
+  "old": "The Crowd \u00b7 Emotion travels \u00b7 Reading 1",
+  "new": "Why do emotions spread so fast?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "ZPz6PwOcS4M",
+  "brand": "mindlore",
+  "old": "The Psychology Of Revolution \u00b7 Belief and belonging \u00b7 Reading 1",
+  "new": "Does belonging shape belief?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "uQcS30Co6Rs",
+  "brand": "mindlore",
+  "old": "How We Think \u00b7 A question worth keeping \u00b7 Reading 1",
+  "new": "How We Think \u00b7 A question worth keeping \u00b7 Reading 1",
+  "date": "2026-11-07",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "GiSqnmTVkRo",
+  "brand": "mindlore",
+  "old": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 1",
+  "new": "Are emotions built by habit?",
+  "date": "2026-11-07",
+  "source": "auto"
  }
 ]
