@@ -1,0 +1,29 @@
+name: selfcheck
+on:
+  schedule:
+    - cron: '17 14 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+  actions: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify, decide, fix
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python selfcheck.py
+      - name: Save
+        run: |
+          git config user.name "selfcheck-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/selfcheck.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "selfcheck: status"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; git rebase --abort 2>/dev/null; sleep 6; done
