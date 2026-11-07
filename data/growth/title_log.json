@@ -74,5 +74,69 @@
   "date": "2026-11-07",
   "source": "auto",
   "reverted": true
+ },
+ {
+  "id": "nuQLBWcyPzQ",
+  "brand": "shelfmade",
+  "old": "Plato had a warning for you.",
+  "new": "Plato had a warning for you.",
+  "date": "2026-11-07",
+  "source": "auto-skip"
+ },
+ {
+  "id": "KG74aA9UEFo",
+  "brand": "shelfmade",
+  "old": "Where is your attention?",
+  "new": "Where is your attention?",
+  "date": "2026-11-07",
+  "source": "auto-skip"
+ },
+ {
+  "id": "JvIgBaYCJdU",
+  "brand": "shelfmade",
+  "old": "This Studies in Pessimism line is uncomfortable.",
+  "new": "Why does pessimism feel uncomfortable?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "88SeG1rSwzc",
+  "brand": "shelfmade",
+  "old": "Never mind; she can't scratch you while Florrie is holding her",
+  "new": "What secret lies in wild olive?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "wyjEsb-AHBI",
+  "brand": "shelfmade",
+  "old": "The rigorously scientific mind may, in truth, easily overshoot the mark",
+  "new": "Can science miss the truth?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "PMX30vSNJ18",
+  "brand": "shelfmade",
+  "old": "Acres Of Diamonds",
+  "new": "Are diamonds buried in your backyard?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "EZ9BviYODGg",
+  "brand": "shelfmade",
+  "old": "Is it possible to believe something with zero evidence \u2014 and still be right? \u2728",
+  "new": "Can belief be right without evidence?",
+  "date": "2026-11-07",
+  "source": "auto"
+ },
+ {
+  "id": "ATI1EOpt4xc",
+  "brand": "shelfmade",
+  "old": "Aristotle's answer to 'what is the point of being alive?' is not what you expect \ud83c\udfdb\ufe0f",
+  "new": "What is Aristotle's unexpected purpose?",
+  "date": "2026-11-07",
+  "source": "auto"
  }
 ]
