@@ -83,6 +83,14 @@ def main():
     items = load(B / 'publish' / ('approved-%s.json' % KIND), {'items': []})['items']
     state = load(STATE, {'done': {}})
     todo = [i for i in items if i['id'] not in state['done']]
+    try:
+        import guard
+        if guard.killed(KIND):
+            print('KILL SWITCH is ON for %s: no new uploads.' % KIND); return
+        if guard.room_today(KIND, state.get('done')) <= 0:
+            print('DAILY CAP reached for %s: no new uploads today.' % KIND); return
+    except Exception as _e:
+        print('guard skipped:', str(_e)[:80])
     # duplicate guard: the same title is never uploaded twice (a script built again must not go live again)
     _norm = lambda t: ' '.join(str(t or '').lower().split())
     _have = {_norm(i['title']) for i in items if i['id'] in state['done']}

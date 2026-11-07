@@ -1,0 +1,12 @@
+{
+ "kill": {
+  "shelfmade": false,
+  "mindlore": false,
+  "doodles": false
+ },
+ "max_new_per_day": {
+  "shelfmade": 12,
+  "mindlore": 12,
+  "doodles": 12
+ }
+}

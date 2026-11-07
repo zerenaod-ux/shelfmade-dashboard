@@ -62,6 +62,13 @@ def main():
         _k.add(_t); _u.append(_i)
     q['items'] = _u
     state = load(STATE, {'done': {}})
+    try:
+        import guard
+        if guard.killed(BRAND):
+            print('KILL SWITCH is ON for %s: no new posts.' % BRAND); return
+        _room = guard.room_today(BRAND, state.get('done'))
+    except Exception as _e:
+        print('guard skipped:', str(_e)[:80]); _room = 999
     if LIVE and BRAND == 'shelfmade' and load(B / 'publish' / 'queue.json', {}).get('owner') != 'github':
         print('LIVE but the queue was exported while the Mac still sent posts: waiting for a fresh export (prevents double posts).')
         return
@@ -93,6 +100,8 @@ def main():
             due = slots[0]
             taken.add(due)
             plan.append((plat, item, due))
+    if len(plan) > _room:
+        print('DAILY CAP: only %d of %d planned posts allowed today for %s' % (_room, len(plan), BRAND)); plan = plan[:_room]
     print('%s: Buffer holds %s | queue %d | would schedule %d' % (
         'LIVE' if LIVE else 'DRY-RUN', {k: len(v) for k, v in held.items()}, len(q['items']), len(plan)))
     for plat, item, due in plan:

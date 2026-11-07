@@ -1,0 +1,23 @@
+name: weekly-report
+on:
+  schedule:
+    - cron: '7 14 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Weekly report (plain words, no public posting)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create report --repo "$GITHUB_REPOSITORY" --color 0e8a16 2>/dev/null || true
+          python weekly_report.py

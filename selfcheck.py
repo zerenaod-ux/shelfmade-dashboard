@@ -92,6 +92,12 @@ def main():
     ok = bool(mr) and mr[0].get('conclusion') == 'success' and (age_h(mr[0].get('createdAt', '')) or 999) <= 40
     rec('GitLab backup', ok, ('last: %s %s' % (mr[0].get('conclusion'), mr[0].get('createdAt', '')[:16])) if mr else 'no run yet', 'ALERT: GitLab backup not working',
         lambda: sh('gh', 'workflow', 'run', 'mirror.yml', '--repo', REPO))
+    # 7 safety guard readable, and a reminder when a kill switch is left ON
+    try:
+        gd = json.loads((B / 'publish/guard.json').read_text()); on = [k for k, v in gd.get('kill', {}).items() if v]
+        rec('Safety guard', not on, ('KILL SWITCH ON for: ' + ', '.join(on) + ' (no new posts)') if on else 'readable, no kill switch on', 'ALERT: a channel kill switch is ON (posting stopped)')
+    except Exception as e:
+        rec('Safety guard', False, 'guard.json unreadable: ' + str(e)[:50], 'ALERT: safety guard file unreadable')
     out = {'at': NOW.isoformat(timespec='seconds'), 'level': 'ok' if all(r['ok'] for r in res) else 'warn', 'checks': res}
     (B / 'publish').mkdir(exist_ok=True)
     (B / 'publish/selfcheck.json').write_text(json.dumps(out, indent=1))
