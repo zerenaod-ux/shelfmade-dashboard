@@ -1,129 +1,141 @@
 {
  "why": [
   {
-   "title": "\u0d94\u0dba\u0dad\u0dca \u0daf\u0dd0\u0db1\u0db1\u0dca \u0dc3\u0dd2\u0da7\u0dd2\u0dba\u0dcf\u0daf \ud83d\ude2f #shorts #shortfeed #psychology #facts",
-   "why": "Local language hook + emoji creates instant cultural curiosity and shareability, driving massive engagement on a tiny channel."
+   "title": "3 Signs of a Silent Person \ud83d\udc80 | Dark Psychology & Personality Facts #shorts",
+   "why": "This works because it uses a highly relatable personality trait ('silent person') paired with an intriguing 'dark psychology' framing that drives extreme curiosity and high audience retention."
   },
   {
-   "title": "\u03c1\u0455\u0443\u043a\u03c3",
-   "why": "Ultra\u2011short title with a direct call\u2011to\u2011action leverages the low subscriber base, so each view inflates breakout dramatically."
+   "title": "Your Brain Can't Decide What It's Seeing! \ud83e\udde0 #shorts",
+   "why": "This works because it leverages an interactive optical/cognitive illusion hook that immediately forces viewers to pause, rewatch, and test their own perception."
   },
   {
-   "title": "Your Brain\u2019s Secret Nutrition: 4 Foods Worth Eating! #shorts #brain  #nutrition",
-   "why": "A provocative brain\u2011health claim paired with a list format promises quick, useful tips, sparking high curiosity."
+   "title": "(DAY-36) The Psychology Behind 3 Powerful Colours \ud83e\udd2f #shortsfeed #viralshort #pyscology",
+   "why": "This works by combining clear listicle pacing with everyday subconscious triggers (color psychology) that viewers can instantly apply to their own lives."
   },
   {
-   "title": "Knowledge That Can Change Your Life | Facts \u2022 Motivation #shorts #motivation #newtrend  #lifelessons",
-   "why": "Life\u2011changing promise plus motivation tags taps strong emotion, encouraging shares and repeat watches."
+   "title": "Signs You're Healing From Emotional Abuse #darkpsychology #shorts",
+   "why": "This works by targeting deep emotional resonance and personal validation, compelling viewers to watch completely and save the video for self-reflection."
   }
  ],
  "hook_patterns": [
-  "Bold, curiosity\u2011driven claim + emoji + niche hashtag to trigger immediate intrigue",
-  "Local language or culturally specific phrasing that feels personal and shareable",
-  "List\u2011style or rule\u2011based titles (e.g., \u20189 Dark Psychology Facts\u2019) that promise quick, digestible knowledge"
+  "The 'Self-Diagnosis' Hook: Framing a psychological concept as a trait the viewer secretly possesses.",
+  "The 'Failing Perception' Hook: Challenging the viewer's brain to process a visual or cognitive paradox in real-time.",
+  "The 'Hidden Rules' Hook: Revealing secret subconscious influences behind everyday objects, colors, or behaviors."
  ],
- "todays_angle": "Highlight an obscure but timeless psychological principle from a classic public\u2011domain text that explains a common modern habit.",
+ "todays_angle": "Translate foundational public-domain psychological concepts (like William James or Sigmund Freud) into practical self-awareness checks about subconscious behavior.",
  "ideas": [
-  "\"The Stoic Pause\": Show how ancient Stoics taught a 5\u2011second mental reset, using simple animated text over calming breath visuals.",
-  "\"Mirror Neurons 101\": Trace the concept from 19th\u2011century phrenology to today\u2019s empathy research with quick sketch animation and split\u2011screen comparisons.",
-  "\"The Forgetting Curve\": Explain why memory fades fast and present three public\u2011domain retention tricks, using rapid\u2011cut bullet points and stock footage."
+  {
+   "title": "3 Signs Your Subconscious is Buried in Stress (According to 1910 Psychology)",
+   "hook": "Show a classic vintage diagram of the brain while asking: 'Are you doing these 3 things without realizing it?'",
+   "concept": "Uses concepts from early psychoanalysis (e.g., Freud's repression mechanisms) to explain modern physical nervous ticks, creating an authoritative listicle format."
+  },
+  {
+   "title": "The 100-Year-Old Color Trick That Manipulates Your Mood",
+   "hook": "Display a striking dual-color archival illustration: 'Your brain reacts to this tint before you even notice it.'",
+   "concept": "Draws from early 20th-century perception literature (Gestalt psychology) to explain how specific visual inputs alter emotional states."
+  },
+  {
+   "title": "Why Introverts Process Noise Differently (1921 Carl Jung Theory)",
+   "hook": "Voiceover over a classic black-and-white portrait: 'If crowded rooms exhaust you instantly, your brain does this.'",
+   "concept": "Adapts Carl Jung's original definitions of Psychological Types into an empowering, relatable breakdown of introverted cognitive processing."
+  }
  ],
  "avoid": [
-  "Overused \u2018dark psychology\u2019 listicles that lack original sources",
-  "Click\u2011bait titles promising miracles without factual basis"
+  "Generic motivational quote compilations with low-effort text overlays and generic stock footage.",
+  "Hyper-sensationalized 'Dark Psychology' clickbait that lacks actual historical or scientific substance."
  ],
- "updated": "2026-11-06",
- "sample": 73,
+ "updated": "2026-11-07",
+ "sample": 72,
  "spikes": [
   {
-   "title": "Turning Your Head Instantly \u2728 #fypviral\u30b7 #jungkook #bts #psychologyfacts #viralnow #goviral",
-   "channel": "V-HOPE",
-   "views": 179693,
+   "title": "How does your brain come up with this stuff? \ud83d\ude02",
+   "channel": "Videos that make your day better ",
+   "views": 424703,
+   "hours": 13,
+   "vph": 33521.0,
+   "subs": 1000000,
+   "breakout": 0.4
+  },
+  {
+   "title": "The Republican Party is Dead #psychology #politics #lucasbean #trump",
+   "channel": "Lucas Bean",
+   "views": 120763,
+   "hours": 19,
+   "vph": 6220.3,
+   "subs": 105000,
+   "breakout": 1.2
+  },
+  {
+   "title": "Creierul t\u0103u nu arat\u0103 cum crezi \ud83d\ude33",
+   "channel": "AlinuTZu Decean",
+   "views": 85348,
+   "hours": 16,
+   "vph": 5194.5,
+   "subs": 336000,
+   "breakout": 0.3
+  },
+  {
+   "title": "3 Signs of a Silent Person \ud83d\udc80 | Dark Psychology & Personality Facts #shorts",
+   "channel": "Inner Voice",
+   "views": 127337,
    "hours": 32,
-   "vph": 5655.5,
-   "subs": 17000,
-   "breakout": 10.6
+   "vph": 4004.5,
+   "subs": 919,
+   "breakout": 138.6
   },
   {
-   "title": "Ladkon Ka Ek Aisa Dard... Jo Koi Nahi Samajhta \ud83d\udc94\u201d #shorts #darkpsychology #motivational #emotional",
-   "channel": "Mindora Factz ",
-   "views": 135594,
-   "hours": 31,
-   "vph": 4418.3,
-   "subs": 39700,
-   "breakout": 3.4
+   "title": "\u0938\u091a\u094d\u091a\u093e \u092a\u094d\u092f\u093e\u0930 #motivation #successmind #psychology #mindset #growlifebuddy #facts #quotes",
+   "channel": " GROWLIFEBUDDY ",
+   "views": 110793,
+   "hours": 30,
+   "vph": 3682.6,
+   "subs": 16400,
+   "breakout": 6.8
   },
   {
-   "title": "( This Is How A Genius Look Like ) #devendragour #ytshorts #mindset #psychology #facts #funny",
-   "channel": "Devendra Gour",
-   "views": 62368,
-   "hours": 24,
-   "vph": 2632.6,
-   "subs": 99700,
-   "breakout": 0.6
+   "title": "Disturbing Facts About You Brain #brain #about #disturbing  #Quotes #Shorts #Foryou #Success #Facts",
+   "channel": "Mind Psychology Valentin",
+   "views": 56276,
+   "hours": 20,
+   "vph": 2861.8,
+   "subs": 19900,
+   "breakout": 2.8
   },
   {
-   "title": "\u0d94\u0dba\u0dad\u0dca \u0daf\u0dd0\u0db1\u0db1\u0dca \u0dc3\u0dd2\u0da7\u0dd2\u0dba\u0dcf\u0daf \ud83d\ude2f #shorts #shortfeed #psychology #facts",
-   "channel": "Gimhani Sakunthala",
-   "views": 62115,
-   "hours": 26,
-   "vph": 2395.8,
-   "subs": 957,
-   "breakout": 64.9
+   "title": "For Men Only Save this #men #save  #Quotes #Shorts #Foryou #Success #Facts",
+   "channel": "Mind Psychology Valentin",
+   "views": 78933,
+   "hours": 29,
+   "vph": 2752.8,
+   "subs": 19900,
+   "breakout": 4.0
   },
   {
    "title": "Your Brain\u2019s Secret Nutrition: 4 Foods Worth Eating! #shorts #brain  #nutrition",
    "channel": "NutriOrgans",
-   "views": 64649,
-   "hours": 27,
-   "vph": 2377.4,
-   "subs": 18000,
-   "breakout": 3.6
-  },
-  {
-   "title": "9 Dark Psychology Facts People Learn Too Late \ud83d\ude08\ud83e\udde0 #DarkPsychology #PsychologyFacts #Mindset",
-   "channel": "Think__Up__76",
-   "views": 48496,
-   "hours": 25,
-   "vph": 1971.2,
-   "subs": 22700,
-   "breakout": 2.1
-  },
-  {
-   "title": "9 Dark Psychology Rules You Should Never Ignore",
-   "channel": "Daily Reminderr2",
-   "views": 43925,
-   "hours": 23,
-   "vph": 1935.4,
-   "subs": 79800,
-   "breakout": 0.6
-  },
-  {
-   "title": "#motivation  #factsaboutworld #psycholgyfacts #motivational",
-   "channel": "Psychology Gyan",
-   "views": 51584,
-   "hours": 27,
-   "vph": 1932.6,
-   "subs": 21400,
-   "breakout": 2.4
-  },
-  {
-   "title": "Follow for more facts.... #psychology #facts #shorts",
-   "channel": "\u03c1\u0455\u0443\u043a\u03c3",
-   "views": 9339,
-   "hours": 44,
-   "vph": 211.3,
-   "subs": 82,
-   "breakout": 46.7
+   "views": 95208,
+   "hours": 47,
+   "vph": 2018.3,
+   "subs": 18400,
+   "breakout": 5.2
   },
   {
    "title": "Your Brain Can't Decide What It's Seeing! \ud83e\udde0 #shorts",
    "channel": "ORBIX \u2014 Oddly Satisfying Simulations",
-   "views": 6510,
-   "hours": 20,
-   "vph": 322.3,
-   "subs": 46,
-   "breakout": 32.5
+   "views": 31894,
+   "hours": 40,
+   "vph": 793.9,
+   "subs": 63,
+   "breakout": 159.5
+  },
+  {
+   "title": "\u0d94\u0dba\u0dad\u0dca \u0daf\u0dd0\u0db1\u0db1\u0dca \u0dc3\u0dd2\u0da7\u0dd2\u0dba\u0dcf\u0daf \ud83d\ude2f #shorts #shortfeed #psychology #facts",
+   "channel": "Gimhani Sakunthala",
+   "views": 86037,
+   "hours": 46,
+   "vph": 1874.2,
+   "subs": 989,
+   "breakout": 87.0
   }
  ]
 }

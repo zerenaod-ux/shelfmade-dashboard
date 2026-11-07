@@ -1,129 +1,138 @@
 {
  "why": [
   {
+   "title": "Why a Bank Robber Covered His Face in Lemon Juice",
+   "why": "It uses extreme human absurdity as a narrative hook to explain a complex cognitive bias (Dunning-Kruger Effect) in an entertaining, story-driven format."
+  },
+  {
    "title": "She Made Half Her Class Feel Inferior in Just One Day #shorts",
-   "why": "A shocking, specific claim hooks viewers while tapping into the fear of social judgment, driving massive curiosity."
+   "why": "It leverages high emotional tension and social experiment storytelling to create an immediate curiosity gap about psychological manipulation."
   },
   {
-   "title": "Why Does Your Voice Sound So Cringe on Recordings?",
-   "why": "Poses an everyday anxiety question that many relate to, promising a quick, actionable explanation."
+   "title": "Your Brain Has a Door Problem",
+   "why": "It frames a mundane everyday experience (the 'Doorway Effect' memory lapse) into a surprising, highly relatable physical anomaly of the brain."
   },
   {
-   "title": "This is how! #overthinking #introvert #reels #ocd #anxiety #funny #cute #relatable",
-   "why": "Uses buzzwords and a promise of a solution to a common mental habit, delivering humor and relief."
-  },
-  {
-   "title": "Er sagt \" Alles gut \" #m\u00e4nner #beziehung #liebe #psyhologyfacts #psychology #partner #schmerz #fyp",
-   "why": "Combines a foreign phrase intrigue with relationship psychology, appealing to cross\u2011cultural curiosity and emotional resonance."
+   "title": "This always happenes when you need to be up early\ud83d\udc80. #animation #skit #relatable #sleep #insomnia",
+   "why": "The fast-paced animated skit format taps into universal bedtime anxiety, delivering instant emotional resonance through exaggerated comedic timing."
   }
  ],
  "hook_patterns": [
-  "Bold claim that triggers shock or awe",
-  "Direct question that taps into a common insecurity",
-  "Promise of a quick fix or reveal for a relatable mental struggle"
+  "Bizarre historical anecdote framed as a bizarre life hack",
+  "Hyper-relatable daily glitch framed as a 'brain defect'",
+  "High-stakes social experiment starting at the dramatic climax"
  ],
- "todays_angle": "Show how Leo and Mia use reverse\u2011psychology tricks to help a friend stop overthinking decisions.",
+ "todays_angle": "Translate absurd real-world psychological phenomena into chaotic, relatable banter between Leo and Mia.",
  "ideas": [
-  "Leo pretends to be indecisive while Mia explains the paradox of choice in a comedic skit",
-  "Mia sets up a mock \u201cpsychology lab\u201d where Leo tests the \u201ctwo\u2011option trap\u201d on a classmate, revealing the bias",
-  "Both friends stage a parody of a self\u2011help video, dramatizing the \u201cstop\u2011overthinking\u201d mantra with exaggerated facial expressions"
+  {
+   "title": "The Lemon Juice Robber (Dunning-Kruger Effect)",
+   "concept": "Leo shows up to rob Mia's apartment wearing invisible ink (lemon juice) on his face because he read it online. Mia has to calmly explain the Dunning-Kruger effect while Leo gets progressively more confused about why she can still see him."
+  },
+  {
+   "title": "Why You Forget Things In Doorways (The Doorway Effect)",
+   "concept": "Mia walks into the kitchen to tell Leo something urgent, stops dead in the doorway, and forgets everything. Leo panics thinking the room wiped her memory, leading to an animated breakdown of how the brain creates 'event boundaries'."
+  },
+  {
+   "title": "The Fake Eye Contact Hack (Pygmalion Effect)",
+   "concept": "Mia convinces Leo that looking at someone's forehead makes them think you're a genius. Leo tries it on Mia during lunch, causing an escalating standoff of psychological mind games."
+  }
  ],
  "avoid": [
-  "Overused \u201crelationship drama\u201d tropes without a fresh twist",
-  "Generic productivity or morning\u2011routine hacks that dominate the platform"
+  "Generic text-on-screen voiceover summaries without character interaction",
+  "Overused '4 Mindsets to Win' motivational speech style formats"
  ],
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "sample": 75,
  "spikes": [
   {
+   "title": "This always happenes when you need to be up early\ud83d\udc80. #animation #skit #relatable #sleep #insomnia",
+   "channel": "RefCantDraw ",
+   "views": 656483,
+   "hours": 19,
+   "vph": 34711.5,
+   "subs": 164000,
+   "breakout": 4.0
+  },
+  {
+   "title": "Light dating plans  #deathnote #lightyagami #L #anime #skit #funny #relatable #fy #fyp",
+   "channel": "Ele_ven",
+   "views": 273116,
+   "hours": 15,
+   "vph": 18687.7,
+   "subs": 352000,
+   "breakout": 0.8
+  },
+  {
    "title": "Its a worldwide phenomenon\ud83d\udc80. #animation #skit #relatable #men #sick",
    "channel": "RefCantDraw ",
-   "views": 191037,
-   "hours": 23,
-   "vph": 8225.0,
-   "subs": 163000,
-   "breakout": 1.2
-  },
-  {
-   "title": "wolf pelts #funny #relatable #rpg #skyrim",
-   "channel": "So Okay Here's the Thing",
-   "views": 243746,
-   "hours": 42,
-   "vph": 5802.5,
-   "subs": 265000,
-   "breakout": 0.9
-  },
-  {
-   "title": "#artist",
-   "channel": "fecto full",
-   "views": 52716,
-   "hours": 31,
-   "vph": 1690.4,
-   "subs": 78100,
-   "breakout": 0.7
-  },
-  {
-   "title": "These should be EVERYWHERE #relatable #animatic #animation #sketch #sketchbook #digitalart #artist",
-   "channel": "Cloudy Art ",
-   "views": 71478,
+   "views": 257356,
    "hours": 43,
-   "vph": 1654.6,
-   "subs": 28200,
-   "breakout": 2.5
+   "vph": 5956.6,
+   "subs": 164000,
+   "breakout": 1.6
   },
   {
-   "title": "Reverse psychology 101 #couplecomedy #marriagehumor #marriagelife #husbandandwifr #relatable #fyp",
-   "channel": "Damelio Animation ",
-   "views": 50694,
-   "hours": 39,
-   "vph": 1288.6,
-   "subs": 80700,
-   "breakout": 0.6
-  },
-  {
-   "title": "She Made Half Her Class Feel Inferior in Just One Day #shorts",
-   "channel": "Branchlight",
-   "views": 29109,
-   "hours": 24,
-   "vph": 1231.1,
-   "subs": 30,
-   "breakout": 145.5
+   "title": "Dare I say botw shrines...? #relatable #gaming #animation #animatic #sketch #sketchbook #digitalart",
+   "channel": "Cloudy Art ",
+   "views": 66375,
+   "hours": 15,
+   "vph": 4375.6,
+   "subs": 28400,
+   "breakout": 2.3
   },
   {
    "title": "You worked for two different clients | #shorts #shortvideo #psychology #money",
    "channel": "Learn With Rafid ",
-   "views": 16732,
+   "views": 74999,
+   "hours": 35,
+   "vph": 2132.8,
+   "subs": 16600,
+   "breakout": 4.5
+  },
+  {
+   "title": "La jalousie et la tromperie #psychologie #amour # #apprendre #animation",
+   "channel": "laure_et_histoire",
+   "views": 27679,
    "hours": 15,
-   "vph": 1101.8,
-   "subs": 15400,
-   "breakout": 1.1
+   "vph": 1833.0,
+   "subs": 2960,
+   "breakout": 9.4
   },
   {
-   "title": "Er sagt \" Alles gut \" #m\u00e4nner #beziehung #liebe #psyhologyfacts #psychology #partner #schmerz #fyp",
-   "channel": "ZwischenUns",
-   "views": 40262,
-   "hours": 40,
-   "vph": 1014.9,
-   "subs": 2050,
-   "breakout": 19.6
+   "title": "Four Mindsets. Four Bars. Only One Knows When to Stop \ud83d\udcaa",
+   "channel": "D O L L A R W I S E",
+   "views": 33919,
+   "hours": 22,
+   "vph": 1511.4,
+   "subs": 134,
+   "breakout": 169.6
   },
   {
-   "title": "Why Does Your Voice Sound So Cringe on Recordings? \ud83d\ude2c",
-   "channel": "The Creative Talk",
-   "views": 10129,
-   "hours": 45,
-   "vph": 223.4,
-   "subs": 98,
-   "breakout": 50.6
+   "title": "Why a Bank Robber Covered His Face in Lemon Juice",
+   "channel": "Od Explains",
+   "views": 27096,
+   "hours": 26,
+   "vph": 1053.5,
+   "subs": 92,
+   "breakout": 135.5
   },
   {
-   "title": "This is how! #overthinking #introvert #reels #ocd #anxiety #funny #cute #relatable",
-   "channel": "Chi Chi",
-   "views": 16239,
-   "hours": 30,
-   "vph": 547.8,
-   "subs": 340,
-   "breakout": 47.8
+   "title": "She Made Half Her Class Feel Inferior in Just One Day #shorts",
+   "channel": "Branchlight",
+   "views": 32463,
+   "hours": 44,
+   "vph": 744.1,
+   "subs": 33,
+   "breakout": 162.3
+  },
+  {
+   "title": "Glasses That Show Who Has a Crush on You",
+   "channel": "Mustard Files",
+   "views": 18094,
+   "hours": 37,
+   "vph": 484.9,
+   "subs": 16,
+   "breakout": 90.5
   }
  ]
 }
