@@ -1,6 +1,6 @@
 {
- "at": "2026-11-07T00:09:48+00:00",
- "ready": "bad",
+ "at": "2026-11-07T00:10:58+00:00",
+ "ready": "warn",
  "checks": [
   {
    "name": "Autopilot",
@@ -14,8 +14,8 @@
   },
   {
    "name": "Alerts",
-   "level": "bad",
-   "text": "1 open: TEST: phone alert (ignore)"
+   "level": "ok",
+   "text": "no open alerts"
   },
   {
    "name": "Keys",
