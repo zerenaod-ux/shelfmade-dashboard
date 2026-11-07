@@ -28,6 +28,8 @@ jobs:
           BUFFER_TOKEN_SHELFMADE: ${{ secrets.BUFFER_TOKEN_SHELFMADE }}
           BUFFER_TOKEN_DOODLES: ${{ secrets.BUFFER_TOKEN_DOODLES }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDINARY_JSON: ${{ secrets.CLOUDINARY_JSON }}
+          CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}

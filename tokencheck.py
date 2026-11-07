@@ -47,6 +47,30 @@ for name, env, url in (('Groq', 'GROQ_API_KEY', 'https://api.groq.com/openai/v1/
     if k:   # optional free fallbacks: only checked when configured
         s, b = call(url, headers={'Authorization': 'Bearer ' + k, 'User-Agent': 'studio/1.0'})
         check(name, s, b)
+
+# CLOUD_GUARD: Cloudinary hosts every Short for review. The key must work and free credits must not run out (80% = alert).
+import base64, re as _re
+for _who, _env in (('ShelfMade/MindLore', 'CLOUDINARY_JSON'), ('Doodles', 'CLOUDINARY_JSON_DOODLES')):
+    try:
+        _c = json.loads(os.environ.get(_env, '') or '{}')
+    except ValueError:
+        _c = {}
+    if not _c.get('cloud_name'):
+        continue
+    _auth = base64.b64encode((_c['api_key'] + ':' + _c['api_secret']).encode()).decode()
+    _req = urllib.request.Request('https://api.cloudinary.com/v1_1/%s/usage' % _c['cloud_name'], headers={'Authorization': 'Basic ' + _auth})
+    try:
+        with urllib.request.urlopen(_req, timeout=40) as _r:
+            _st, _txt = _r.status, _r.read().decode('utf8', 'ignore')
+    except urllib.error.HTTPError as e:
+        _st, _txt = e.code, e.read()[:200].decode('utf8', 'ignore')
+    except Exception as e:
+        _st, _txt = 0, str(e)
+    check('Cloudinary ' + _who, _st, _txt.encode())
+    if _st == 200:
+        _m = _re.search(r'"used_percent":\s*([0-9.]+)', _txt)
+        if _m and float(_m.group(1)) >= 80:
+            bad.append('Cloudinary %s: %s%% of free credits used - clean old videos or the review pages stop working' % (_who, _m.group(1)))
 print('OK: ' + ', '.join(ok))
 open('alert.md', 'w').write('\n'.join('- ' + x for x in bad))
 if bad:
