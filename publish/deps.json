@@ -1,0 +1,179 @@
+{
+ "at": "2026-11-07T00:17:42+00:00",
+ "level": "ok",
+ "rows": [
+  {
+   "name": "Writer A: Gemini",
+   "status": "up",
+   "planb": "Writer B-E (Groq > Cerebras > OpenRouter > Mistral) take over per call, Gemini is retried next call",
+   "down_recent": 0
+  },
+  {
+   "name": "Writer B: Groq",
+   "status": "up",
+   "planb": "next writer in the chain",
+   "down_recent": 0
+  },
+  {
+   "name": "Writer D: OpenRouter",
+   "status": "up",
+   "planb": "next writer in the chain",
+   "down_recent": 0
+  },
+  {
+   "name": "Stock footage: Pexels",
+   "status": "up",
+   "planb": "GAP: no second footage source yet (build: Pixabay/Wikimedia)",
+   "down_recent": 0
+  },
+  {
+   "name": "Cloudinary (ShelfMade+MindLore)",
+   "status": "up",
+   "planb": "Plan B: GitHub release file link (review still works, no inline player)",
+   "down_recent": 0,
+   "used_percent": 52.24
+  },
+  {
+   "name": "Cloudinary (Doodles)",
+   "status": "up",
+   "planb": "Plan B: GitHub release file link (review still works, no inline player)",
+   "down_recent": 0,
+   "used_percent": 10.84
+  },
+  {
+   "name": "Buffer Mindlore",
+   "status": "up",
+   "planb": "GAP: Instagram/TikTok have only Buffer; posts wait in the queue and retry",
+   "down_recent": 0
+  },
+  {
+   "name": "Buffer Shelfmade",
+   "status": "up",
+   "planb": "GAP: Instagram/TikTok have only Buffer; posts wait in the queue and retry",
+   "down_recent": 0
+  },
+  {
+   "name": "Buffer Doodles",
+   "status": "up",
+   "planb": "GAP: Instagram/TikTok have only Buffer; posts wait in the queue and retry",
+   "down_recent": 0
+  },
+  {
+   "name": "YouTube Mindlore",
+   "status": "up",
+   "planb": "Shorts also go through Buffer; full videos wait until the key is reconnected",
+   "down_recent": 0
+  },
+  {
+   "name": "YouTube Shelfmade",
+   "status": "up",
+   "planb": "Shorts also go through Buffer; full videos wait until the key is reconnected",
+   "down_recent": 0
+  },
+  {
+   "name": "YouTube Doodles",
+   "status": "up",
+   "planb": "Shorts also go through Buffer; full videos wait until the key is reconnected",
+   "down_recent": 0
+  },
+  {
+   "name": "GitHub Pages (phone pages)",
+   "status": "up",
+   "planb": "Issues on GitHub still work for approve/skip",
+   "down_recent": 0
+  }
+ ],
+ "history": {
+  "Writer A: Gemini": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "Writer B: Groq": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "Writer D: OpenRouter": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "Stock footage: Pexels": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "Cloudinary (ShelfMade+MindLore)": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    "52.24"
+   ]
+  ],
+  "Cloudinary (Doodles)": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    "10.84"
+   ]
+  ],
+  "Buffer Mindlore": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "Buffer Shelfmade": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "Buffer Doodles": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "YouTube Mindlore": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "YouTube Shelfmade": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "YouTube Doodles": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ],
+  "GitHub Pages (phone pages)": [
+   [
+    "2026-11-07T00:17:42+00:00",
+    "up",
+    ""
+   ]
+  ]
+ }
+}
