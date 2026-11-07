@@ -52,6 +52,17 @@ def paused(brand):   # PAUSE_GUARD: 3+ failures in the channel's last 5 publishe
         return False
 
 
+def alert(title, body):
+    """One open ALERT issue per problem (GitHub emails/pushes it to the owner's phone)."""
+    try:
+        r = sh('gh', 'issue', 'list', '--repo', REPO, '--state', 'open', '--search', title + ' in:title', '--json', 'number')
+        if json.loads(r.stdout or '[]'):
+            return
+        sh('gh', 'issue', 'create', '--repo', REPO, '--title', title, '--body', body)
+    except Exception:
+        pass
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else 'run'
     c = load()
@@ -91,6 +102,7 @@ def main():
             continue
         elif 'checks-ok' in names and paused(brand):
             c['log'] = ([{'t': c['last_run'], 'issue': i['number'], 'act': 'hold', 'why': 'channel paused: publisher failing', 'ok': True}] + c['log'])[:40]
+            alert('ALERT: %s paused by autopilot' % brand, 'The %s publisher failed 3 of its last 5 runs, so autopilot stopped approving new videos for it. Check the Health page and the failing workflow.' % brand)   # ALERT_ISSUE
             continue
         elif 'checks-ok' in names:
             if c['counts'].get(brand, 0) < c['cap']:
