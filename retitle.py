@@ -125,6 +125,10 @@ def main():
     except Exception:
         guard = None
     log = ta.jl(LOG, [])
+    pend = {e['id'] for e in log if e.get('revert_error') and not e.get('reverted')}
+    if pend:   # self-heal: reverts that failed earlier (for example YouTube daily quota) are retried first
+        print('retrying %d failed revert(s)' % len(pend)); revert_all(None, pend); log = ta.jl(LOG, [])
+    quota = [False]
     done = {e['id'] for e in log if not e.get('reverted') and (e.get('source') != 'auto-skip' or e.get('v') == 2)}
     n_run = per_run()
     for brand in BRANDS:
@@ -161,8 +165,14 @@ def main():
                         log.append({'id': it['id'], 'brand': brand, 'old': old, 'new': t, 'date': datetime.date.today().isoformat(), 'source': 'auto'})
                     except Exception as e:
                         print('  FAILED', it['id'], str(e)[:120])
+                        if 'quota' in str(e).lower():
+                            quota[0] = True; break
             LOG.write_text(json.dumps(log, indent=1))
+            if quota[0]:
+                print('YouTube quota reached: stopping until tomorrow'); break
         LOG.write_text(json.dumps(log, indent=1))
+        if quota[0]:
+            break
 
 
 if __name__ == '__main__':
