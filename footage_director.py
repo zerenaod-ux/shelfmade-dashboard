@@ -83,6 +83,21 @@ def brief(text,chapter='',book=''):
   if words.intersection(keys):queries=concrete;subject=label;break
  return {'theme':theme,'subject':subject,'queries':queries,'keywords':hits,'reason':'Illustrative '+theme+' imagery anchored to '+', '.join(hits),'review_required':True,'book':book,'chapter':chapter}
 
+def _pexels_or_pixabay(url,token,query,page):
+ """Pexels first. Only if it fails (or has no key) the Plan B source Pixabay answers; Pexels is tried again on the next search."""
+ err=None
+ if token:
+  try:
+   with urllib.request.urlopen(urllib.request.Request(url,headers={'Authorization':token,'User-Agent':'ShelfMade/1.0'}),timeout=30) as r:return json.load(r)
+  except Exception as e:err=e
+ try:
+  import pixabay_adapter
+  if pixabay_adapter.key():
+   d=pixabay_adapter.search(query,page)
+   if d.get('videos'):print('footage: Pexels unavailable, using Pixabay Plan B',flush=True);return d
+ except Exception as e:err=err or e
+ raise err or ValueError('no footage provider available')
+
 def search(query,page=1):
  cache_key=query if page==1 else query+' [page '+str(page)+']'
  with connect() as c:
@@ -93,10 +108,14 @@ def search(query,page=1):
   import footage_budget
   footage_budget.reserve(c,DB)
  token=key()
- if not token:raise ValueError('Connect the free Pexels footage key; fresh footage is required. No old-clip fallback was used.')
+ if not token:
+  try:
+   import pixabay_adapter;_has_b=bool(pixabay_adapter.key())
+  except Exception:_has_b=False
+  if not _has_b:raise ValueError('Connect the free Pexels footage key; fresh footage is required. No old-clip fallback was used.')
  url='https://api.pexels.com/videos/search?'+urllib.parse.urlencode({'query':query,'orientation':'landscape','size':'medium','per_page':80,'page':page})
  try:
-  with urllib.request.urlopen(urllib.request.Request(url,headers={'Authorization':token,'User-Agent':'ShelfMade/1.0'}),timeout=30) as r:data=json.load(r)
+  data=_pexels_or_pixabay(url,token,query,page)
  except Exception as error:
   import generation_recovery
   if generation_recovery.transient(error):raise generation_recovery.RecoverableGenerationError('Free footage provider is temporarily unavailable; completed work is saved.','provider_unavailable') from None
@@ -232,7 +251,7 @@ def download(video,selection,budget):
   files=[f for f in video.get('video_files',[]) if f.get('file_type')=='video/mp4' and f.get('width',0)>=1280 and f.get('height',0)>=720 and f.get('width',0)>f.get('height',0)]
   if not files:return None
   f=min(files,key=lambda f:abs(f.get('width',0)-1280));url=f['link'];parsed=urllib.parse.urlparse(url)
-  if parsed.scheme!='https' or not (parsed.hostname or '').endswith('.pexels.com'):return None
+  if parsed.scheme!='https' or not ((parsed.hostname or '').endswith('.pexels.com') or (parsed.hostname or '').endswith('.pixabay.com')):return None
   local_cached=get_cached_video(ident)
   if local_cached and local_cached.exists():
    try:

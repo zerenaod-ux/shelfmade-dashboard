@@ -22,6 +22,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           CLOUDINARY_JSON: ${{ secrets.CLOUDINARY_JSON }}
           CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
           BUFFER_TOKEN_MINDLORE: ${{ secrets.BUFFER_TOKEN_MINDLORE }}

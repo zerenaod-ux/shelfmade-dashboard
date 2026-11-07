@@ -33,7 +33,11 @@ def probes():
             s, _ = get(url, {'Authorization': 'Bearer ' + k, 'User-Agent': 'studio-canary'})
             P.append((name, okc(s), '', 'next writer in the chain'))
     s, _ = get('https://api.pexels.com/v1/search?query=sky&per_page=1', {'Authorization': os.environ.get('PEXELS_API_KEY', ''), 'User-Agent': 'studio-canary'})
-    P.append(('Stock footage: Pexels', okc(s), '', 'GAP: no second footage source yet (build: Pixabay/Wikimedia)'))
+    P.append(('Stock footage: Pexels', okc(s), '', 'Plan B: Pixabay takes over automatically'))
+    _pk = os.environ.get('PIXABAY_API_KEY', '')
+    if _pk:
+        s, _ = get('https://pixabay.com/api/videos/?key=%s&q=sky&per_page=3' % _pk)
+        P.append(('Plan B footage: Pixabay', okc(s), '', 'second footage source (used only when Pexels fails)'))
     for who, env in (('Cloudinary (ShelfMade+MindLore)', 'CLOUDINARY_JSON'), ('Cloudinary (Doodles)', 'CLOUDINARY_JSON_DOODLES')):
         try:
             c = json.loads(os.environ.get(env, '') or '{}')

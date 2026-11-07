@@ -33,8 +33,9 @@ jobs:
       - name: Pexels key (from GitHub Secret)
         env:
           PEXELS: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
-          mkdir -p private-footage; printf '%s' "$PEXELS" > private-footage/pexels-key
+          mkdir -p private-footage; printf '%s' "$PEXELS" > private-footage/pexels-key; printf '%s' "$PIXABAY" > private-footage/pixabay-key
           [ -s private-footage/pexels-key ] && echo "key present" || echo "KEY MISSING"
       - name: Test music bed (synthesized; real music is added later)
         run: |
