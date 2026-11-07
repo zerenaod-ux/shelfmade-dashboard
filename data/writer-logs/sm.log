@@ -1,45 +1,25 @@
-ml_autoscripts: start, scripts on disk = 11 target = 90
+ml_autoscripts: start, scripts on disk = 12 target = 90
 ml_autoscripts: models to try: ['gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash', 'gemini-omni-1.2-flash', 'gemini-omni-1.1-flash']
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
-ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.6-flash failed: Expecting ',' delimiter: line 2 column 435 (char 436)
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.6-flash failed: Expecting ',' delimiter: line 2 column 84 (char 85)
-ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
-ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.8-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: fact check: Ernst Fehr: found on Wikipedia; Elizabeth Dunn: found on Wikipedia
+ml_autoscripts: wrote 3794.json (passed the video builder checks)
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
+ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.5-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
 ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
 ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
 ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
-ml_autoscripts: Gemini gemini-3.8-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-llm.py: answered by GROQ openai/gpt-oss-120b
-ml_autoscripts: Gemini gemini-3.8-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-llm.py: answered by GROQ openai/gpt-oss-120b
-ml_autoscripts: fact check: Angela Duckworth: found on Wikipedia; Emily Oster: found on Wikipedia
-ml_autoscripts: wrote 935.json (passed the video builder checks)
-ml_autoscripts: section-by-section failed (progress kept, waiting): no usable passages in this window
-ml_autoscripts: section-by-section failed (progress kept, waiting): no usable passages in this window
-ml_autoscripts: section-by-section failed (progress kept, waiting): no usable passages in this window
-ml_autoscripts: section-by-section failed (progress kept, waiting): no usable passages in this window
-ml_autoscripts: section-by-section failed (progress kept, waiting): no usable passages in this window
-ml_autoscripts: section-by-section failed (progress kept, waiting): no usable passages in this window
-ml_autoscripts: gave up on 1232 ['no usable answer']
-ml_autoscripts: DONE, scripts made = 1
+ml_autoscripts: Gemini gemini-flash-latest 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
+ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.5-flash failed: Expecting ',' delimiter: line 2 column 149 (char 150)
+ml_autoscripts: Gemini gemini-flash-latest failed: The read operation timed out
+ml_autoscripts: Gemini gemini-3.8-flash failed: The read operation timed out
+ml_autoscripts: fact check: Meyer Friedman and Ray Rosenman: found on Wikipedia; Gloria Mark: found on Wikipedia; MacLean and colleagues: found on Wikipedia
+ml_autoscripts: wrote 51469.json (passed the video builder checks)
+ml_autoscripts: DONE, scripts made = 2
