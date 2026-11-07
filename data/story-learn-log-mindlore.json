@@ -231,6 +231,69 @@
     "scroll",
     "star"
    ]
+  },
+  {
+   "id": "st-261107-32965",
+   "title": "Why you feel lonely even in crowds",
+   "theme": "loneliness",
+   "acts": [
+    "explain",
+    "phone",
+    "point",
+    "read",
+    "sad",
+    "surprised",
+    "think",
+    "wave"
+   ],
+   "bgs": [
+    "brain",
+    "forest",
+    "history",
+    "study"
+   ],
+   "props": [
+    "brain",
+    "clock",
+    "crowd",
+    "heart",
+    "lamp",
+    "mirror",
+    "num",
+    "phone",
+    "question",
+    "scroll"
+   ]
+  },
+  {
+   "id": "st-261107-8fa56",
+   "title": "If you hold doors for strangers, your brain is built like an ancestor",
+   "theme": "kindness",
+   "acts": [
+    "explain",
+    "lookup",
+    "point",
+    "shrug",
+    "think"
+   ],
+   "bgs": [
+    "brain",
+    "forest"
+   ],
+   "props": [
+    "apple",
+    "book",
+    "brain",
+    "chart",
+    "clock",
+    "crowd",
+    "door",
+    "eye",
+    "money",
+    "num",
+    "question",
+    "scroll"
+   ]
   }
  ]
 }

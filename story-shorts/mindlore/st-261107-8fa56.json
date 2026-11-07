@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261107-8fa56",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "If you hold doors for strangers, your brain is built like an ancestor",
+ "hook": "You hold the elevator door for total strangers every single day.",
+ "thumbnail_headline": "WHY WE HELP STRANGERS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You hold the elevator door for total strangers every single day. Ancient hunter-gatherers actually survived purely because sharing food with unrelated neighbors kept entire groups alive during dry spells. In 2008, economist Ernst Fehr tested human cooperation in Zurich and found over about fifty percent of people share resources fairly without getting anything back. The result? Helping others is not modern politeness, it is an ancient survival trait called strong reciprocity. Was this behavior just found in Switzerland? No, anthropologists tested fifteen diverse small-scale societies in 2001 and saw the exact same selfless sharing everywhere. So why do we expect people to be selfish? Modern economic models simply assumed humans only care about money. In reality, psychologist Michael Tomasello tested toddlers at the Max Planck Institute in 2006, proving children under age two spontaneously help adults with dropped items. That's it. Your instinct to care was hardwired thousands of years ago. So next time you help a neighbor, remember you hold the elevator door."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Over 50 percent of participants act pro-socially and share resources equitably in experimental games without direct reciprocity.",
+   "who": "Ernst Fehr",
+   "year": "2008",
+   "place": "Zurich, Switzerland"
+  },
+  {
+   "claim": "Human infants under 18 months of age spontaneously help unfamiliar adults achieve goals without rewards.",
+   "who": "Michael Tomasello and Felix Warneken",
+   "year": "2006",
+   "place": "Max Planck Institute, Leipzig, Germany"
+  }
+ ],
+ "source_url": "",
+ "theme": "kindness"
+}

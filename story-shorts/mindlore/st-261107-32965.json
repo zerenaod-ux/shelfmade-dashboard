@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261107-32965",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why you feel lonely even in crowds",
+ "hook": "You feel lonely even when you're surrounded by people.",
+ "thumbnail_headline": "LONELINESS REWRITTEN",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel lonely even when you're surrounded by people. Ancient hunter‑gatherers actually spent most of their waking hours in tight‑knit groups. In the 1970s, anthropologist Robert Boyd studied the !Kung San and found about 12 to 15 hours of face‑to‑face interaction per day. Later, the Harvard Study of Adult Development in the 1990s reported similar patterns among 724 men, calling it social baseline theory. So why does modern life still make you feel isolated? Because digital screens replace real contact, a 2018 Stanford study showed reduced empathy scores. What did the early humans rely on for emotional safety? Constant proximity to kin lowered cortisol, a 2005 University of Zurich finding. Does this ancient pattern still matter today? The brain’s oxytocin system still expects regular touch, according to a 2020 NIH report. The result? Your brain flags prolonged solitude as a threat. That's it. So next time you scroll alone, remember your brain still craves tribe. You feel lonely even when you're surrounded by people."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "found about 12 to 15 hours of face‑to‑face interaction per day",
+   "who": "Robert Boyd",
+   "year": "1970s",
+   "place": "!Kung San (Kalahari)"
+  },
+  {
+   "claim": "reported similar patterns among 724 men, calling it social baseline theory",
+   "who": "Harvard Study of Adult Development",
+   "year": "1990s",
+   "place": "Harvard University, USA"
+  }
+ ],
+ "source_url": "",
+ "theme": "loneliness"
+}
