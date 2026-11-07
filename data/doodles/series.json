@@ -23,26 +23,26 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 2,
-   "last": 7
+   "uses": 3,
+   "last": 13
   },
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 2,
-   "last": 8
+   "uses": 3,
+   "last": 14
   },
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 2,
-   "last": 9
+   "uses": 3,
+   "last": 15
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 2,
-   "last": 10
+   "uses": 3,
+   "last": 16
   },
   {
    "id": "dev",
@@ -53,8 +53,8 @@
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 1,
-   "last": 6
+   "uses": 2,
+   "last": 12
   }
  ],
  "catch": {
@@ -177,6 +177,66 @@
    "milestone": false,
    "season": 1,
    "date": "2026-11-06"
+  },
+  {
+   "n": 9,
+   "kind": "short",
+   "id": "spotlight-phone-rehearsal",
+   "title": "The 40-Minute Pizza Call",
+   "concept": "THE SPOTLIGHT EFFECT",
+   "gag": "scoreboard",
+   "callback": false,
+   "milestone": false,
+   "season": 1,
+   "date": "2026-11-07"
+  },
+  {
+   "n": 10,
+   "kind": "short",
+   "id": "anticipatory-anxiety-sunday-clock",
+   "title": "The Sunday Scaries Trap",
+   "concept": "ANTICIPATORY ANXIETY",
+   "gag": "battery",
+   "callback": false,
+   "milestone": true,
+   "season": 1,
+   "date": "2026-11-07"
+  },
+  {
+   "n": 11,
+   "kind": "short",
+   "id": "text-avoidance-k-reply",
+   "title": "The 'K' Text Trap",
+   "concept": "TEXT AVOIDANCE",
+   "gag": "minute",
+   "callback": false,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-07"
+  },
+  {
+   "n": 12,
+   "kind": "short",
+   "id": "pluralistic-ignorance-meeting-panic",
+   "title": "The Silent Meeting Nod",
+   "concept": "PLURALISTIC IGNORANCE",
+   "gag": "gerald",
+   "callback": false,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-07"
+  },
+  {
+   "n": 13,
+   "kind": "short",
+   "id": "variable-rewards-phone-scroll",
+   "title": "The Phantom Ping Trap",
+   "concept": "VARIABLE REWARD LOOP",
+   "gag": "greg",
+   "callback": true,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-07"
   }
  ]
 }
