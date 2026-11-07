@@ -96,12 +96,26 @@ function depCard(host){
     host.appendChild(d);
   });
 }
+function growCard(host){
+  fetch('https://raw.githubusercontent.com/zerenaod-ux/shelfmade-dashboard/master/data/growth/scoreboard.json?t='+Date.now()).then(function(r){return r.ok?r.json():null}).catch(function(){return null}).then(function(c){
+    if(!c||!c.brands)return;
+    var d=document.createElement('div');d.className='card';d.style.cssText='border:2px solid #5b6bd6;padding:12px;margin:10px 0;border-radius:12px';
+    var h=document.createElement('b');h.textContent='Growth scoreboard';d.appendChild(h);
+    Object.keys(c.brands).forEach(function(k){var b=c.brands[k],t=b.totals||{},ch=b.change_7d||b.change_3d;
+      var p=document.createElement('div');p.style.cssText='font-size:13px;margin:4px 0';
+      p.textContent=k+': '+t.views+' views, '+t.subs+' subs'+(ch?' (last days: +'+ch.views+' views, +'+ch.subs+' subs)':' (change shows after a few days)');d.appendChild(p);
+      var top=(b.top||[])[0];if(top){var q=document.createElement('div');q.style.cssText='font-size:12px;opacity:.75;margin-left:8px';q.textContent='best: '+top.title+' ('+top.vpd+'/day)';d.appendChild(q)}
+      (b.feature_lifts||[]).slice(0,2).forEach(function(x){var q=document.createElement('div');q.style.cssText='font-size:12px;opacity:.75;margin-left:8px';q.textContent=x.feature+' = '+x.value+': '+x.lift+'x ('+x.n+' videos)';d.appendChild(q)})});
+    var t=document.createElement('div');t.style.cssText='font-size:12px;opacity:.7;margin-top:6px';t.textContent='Updated '+(c.updated||'').replace('T',' ').slice(0,16)+' UTC';d.appendChild(t);
+    host.appendChild(d);
+  });
+}
 function load(){
   var m=document.getElementById('m');m.textContent='';m.appendChild(el('p','','Loading…'));
   var now=Date.now();
   Promise.all([].concat(BR.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json')}),
     [jget(API+'/actions/runs?per_page=100'),jget(API+'/issues?state=open&labels=review&per_page=30')])).then(function(r){
-    m.textContent='';apBar(m,true);pfCard(m);depCard(m);var runs=((r[9]||{}).workflow_runs)||[],iss=(r[10]||[]).filter(function(x){return !x.pull_request});
+    m.textContent='';apBar(m,true);pfCard(m);depCard(m);growCard(m);var runs=((r[9]||{}).workflow_runs)||[],iss=(r[10]||[]).filter(function(x){return !x.pull_request});
     var any='ok';BR.forEach(function(b,i){var o=brand(b,r[i],r[3+i],r[6+i],now);if(o.lvl!=='ok')any=o.lvl==='bad'||any==='bad'?'bad':'warn';m.appendChild(o.card)});
     var seen={},rows=[],bad=0;runs.forEach(function(x){if(seen[x.name]||KEY.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
     rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});
