@@ -1,0 +1,41 @@
+{
+ "at": "2026-11-07T00:09:48+00:00",
+ "ready": "bad",
+ "checks": [
+  {
+   "name": "Autopilot",
+   "level": "warn",
+   "text": "OFF - turn it ON on the Review page before you leave"
+  },
+  {
+   "name": "Jobs",
+   "level": "ok",
+   "text": "every job last ran fine"
+  },
+  {
+   "name": "Alerts",
+   "level": "bad",
+   "text": "1 open: TEST: phone alert (ignore)"
+  },
+  {
+   "name": "Keys",
+   "level": "ok",
+   "text": "weekly key test success, 1 days ago"
+  },
+  {
+   "name": "Doodles stories",
+   "level": "ok",
+   "text": "0 unused saved (more are written automatically)"
+  },
+  {
+   "name": "ShelfMade posts waiting",
+   "level": "ok",
+   "text": "56 in the queue"
+  },
+  {
+   "name": "Waiting for review",
+   "level": "ok",
+   "text": "1 videos open (autopilot clears them when ON)"
+  }
+ ]
+}
