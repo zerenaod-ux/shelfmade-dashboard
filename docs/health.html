@@ -111,12 +111,21 @@ function growCard(host){
     host.appendChild(d);
   });
 }
+function scCard(host){
+  fetch('https://raw.githubusercontent.com/zerenaod-ux/shelfmade-dashboard/master/publish/selfcheck.json?t='+Date.now()).then(function(r){return r.ok?r.json():null}).catch(function(){return null}).then(function(c){
+    if(!c)return;var col=c.level==='ok'?'#2a9d4b':'#d98e04';
+    var d=document.createElement('div');d.className='card';d.style.cssText='border:2px solid '+col+';padding:12px;margin:10px 0;border-radius:12px';
+    var h=document.createElement('b');h.textContent='Self-check: '+(c.level==='ok'?'everything verified':'needs a look');d.appendChild(h);
+    (c.checks||[]).forEach(function(r){var p=document.createElement('div');p.style.cssText='font-size:13px;margin:3px 0';p.textContent=(r.ok?'OK ':'PROBLEM ')+r.name+' - '+r.text;d.appendChild(p)});
+    host.appendChild(d);
+  });
+}
 function load(){
   var m=document.getElementById('m');m.textContent='';m.appendChild(el('p','','Loading…'));
   var now=Date.now();
   Promise.all([].concat(BR.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))}),BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json')}),
     [jget(API+'/actions/runs?per_page=100'),jget(API+'/issues?state=open&labels=review&per_page=30')])).then(function(r){
-    m.textContent='';apBar(m,true);pfCard(m);depCard(m);growCard(m);var runs=((r[9]||{}).workflow_runs)||[],iss=(r[10]||[]).filter(function(x){return !x.pull_request});
+    m.textContent='';apBar(m,true);pfCard(m);depCard(m);growCard(m);scCard(m);var runs=((r[9]||{}).workflow_runs)||[],iss=(r[10]||[]).filter(function(x){return !x.pull_request});
     var any='ok';BR.forEach(function(b,i){var o=brand(b,r[i],r[3+i],r[6+i],now);if(o.lvl!=='ok')any=o.lvl==='bad'||any==='bad'?'bad':'warn';m.appendChild(o.card)});
     var seen={},rows=[],bad=0;runs.forEach(function(x){if(seen[x.name]||KEY.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
     rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});

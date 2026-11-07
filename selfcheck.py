@@ -83,6 +83,10 @@ def main():
     ks = jl('data/doodles/kaggle-status.json', {})
     ka = age_h(ks.get('at', '') or ks.get('updated', ''))
     rec('Kaggle GPU', ks.get('ok', True) and (ka is None or ka <= 96), 'ok=%s, checked %s h ago' % (ks.get('ok'), round(ka) if ka is not None else '?'), 'ALERT: Kaggle GPU failing or silent')
+    # 5 free-tier room: any service above 80% used (deps.json) -> alert BEFORE it runs out (cleanup needs the owner's OK, never automatic)
+    dp = jl('publish/deps.json', {})
+    hot = ['%s %s%%' % (r['name'], r['used_percent']) for r in dp.get('rows', []) if (r.get('used_percent') or 0) >= 80]
+    rec('Free-tier room', not hot, ('running out: ' + ', '.join(hot)) if hot else 'all services under 80%', 'ALERT: a free service is above 80% used')
     out = {'at': NOW.isoformat(timespec='seconds'), 'level': 'ok' if all(r['ok'] for r in res) else 'warn', 'checks': res}
     (B / 'publish').mkdir(exist_ok=True)
     (B / 'publish/selfcheck.json').write_text(json.dumps(out, indent=1))
