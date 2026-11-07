@@ -9,8 +9,9 @@
   ],
   "vpd": 0.04,
   "created": "2026-11-07",
-  "status": "proposed",
-  "issue": "83"
+  "status": "applied",
+  "issue": "83",
+  "applied": "2026-11-07"
  },
  {
   "id": "GvmQ-OHoVtE",
@@ -22,8 +23,9 @@
   ],
   "vpd": 0.08,
   "created": "2026-11-07",
-  "status": "proposed",
-  "issue": "83"
+  "status": "applied",
+  "issue": "83",
+  "applied": "2026-11-07"
  },
  {
   "id": "qqY1isMJtrM",
