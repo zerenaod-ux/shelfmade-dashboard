@@ -1,0 +1,26 @@
+{
+ "at": "2026-11-07T01:24:42+00:00",
+ "level": "ok",
+ "checks": [
+  {
+   "name": "Growth scoreboard",
+   "ok": true,
+   "text": "updated 0 h ago"
+  },
+  {
+   "name": "Doodles daily run",
+   "ok": true,
+   "text": "last: success 2026-11-06T23:17"
+  },
+  {
+   "name": "Best-of-3 judge",
+   "ok": true,
+   "text": "no judged story yet (no run since it went live)"
+  },
+  {
+   "name": "Kaggle GPU",
+   "ok": true,
+   "text": "ok=None, checked ? h ago"
+  }
+ ]
+}
