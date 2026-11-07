@@ -1,6 +1,6 @@
 {
- "at": "2026-11-07T00:10:58+00:00",
- "ready": "warn",
+ "at": "2026-11-07T17:50:46+00:00",
+ "ready": "bad",
  "checks": [
   {
    "name": "Autopilot",
@@ -9,23 +9,23 @@
   },
   {
    "name": "Jobs",
-   "level": "ok",
-   "text": "every job last ran fine"
+   "level": "warn",
+   "text": "last run failed: shelfmade-story-short"
   },
   {
    "name": "Alerts",
-   "level": "ok",
-   "text": "no open alerts"
+   "level": "bad",
+   "text": "2 open: ALERT: playlist flywheel failing; ALERT: Kaggle GPU failing (Doodles pause"
   },
   {
    "name": "Keys",
    "level": "ok",
-   "text": "weekly key test success, 1 days ago"
+   "text": "weekly key test success, 0 days ago"
   },
   {
    "name": "Doodles stories",
    "level": "ok",
-   "text": "0 unused saved (more are written automatically)"
+   "text": "5 unused saved (more are written automatically)"
   },
   {
    "name": "ShelfMade posts waiting",
