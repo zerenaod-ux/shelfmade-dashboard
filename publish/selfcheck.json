@@ -1,26 +1,26 @@
 {
- "at": "2026-11-07T02:10:11+00:00",
+ "at": "2026-11-07T18:50:19+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 1 h ago"
+   "text": "updated 18 h ago"
   },
   {
    "name": "Doodles daily run",
    "ok": true,
-   "text": "last: success 2026-11-06T23:17"
+   "text": "last: success 2026-11-07T14:18"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "no judged story yet (no run since it went live)"
+   "text": "2 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
-   "ok": true,
-   "text": "ok=None, checked ? h ago"
+   "ok": false,
+   "text": "ok=False, checked 4 h ago"
   },
   {
    "name": "Free-tier room",
@@ -30,7 +30,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-07T01:58"
+   "text": "last: success 2026-11-07T11:20"
   },
   {
    "name": "Safety guard",
@@ -54,8 +54,13 @@
   },
   {
    "name": "Playlist flywheel",
-   "ok": false,
-   "text": "problem: shelfmade HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"The | auto-fix started"
+   "ok": true,
+   "text": "ok (shelfmade: added 12 video(s); mindlore: added 12 video(s); doodles: added 6 video(s))"
+  },
+  {
+   "name": "Retitle campaign",
+   "ok": true,
+   "text": "last: success 2026-11-07"
   }
  ]
 }
