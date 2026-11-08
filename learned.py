@@ -92,3 +92,16 @@ def guidance(brand, kind='short'):
         return g + growth.guidance(brand)
     except Exception:
         return g
+
+
+_viral_prev = guidance
+
+
+def guidance(brand, kind='short'):
+    """+ LOW-WEIGHT hints from big hits on other channels (viral.py, roadmap V). Always labelled unproven."""
+    g = _viral_prev(brand, kind)
+    try:
+        import viral
+        return g + viral.guidance(brand)
+    except Exception:
+        return g

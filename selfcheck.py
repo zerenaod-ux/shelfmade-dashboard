@@ -122,6 +122,11 @@ def main():
     ok_tk = bool(tk) and tk[0].get('conclusion') == 'success' and (age_h(tk[0].get('createdAt', '')) or 999) < 9 * 24
     rec('Access check (logins)', ok_tk, ('last: %s %s' % (tk[0].get('conclusion'), tk[0].get('createdAt', '')[:10])) if tk else 'never ran', 'ALERT: YouTube login check failing or stale',
         lambda: sh('gh', 'workflow', 'run', 'tokencheck.yml', '--repo', REPO))
+    # 14 VIRAL DNA (V): weekly study must have run OK in the last 10 days
+    vr = [r for r in last_run('viral.yml') if r.get('status') == 'completed']
+    ok_v = bool(vr) and vr[0].get('conclusion') == 'success' and (age_h(vr[0].get('createdAt', '')) or 999) < 10 * 24
+    rec('Viral DNA study', ok_v, ('last: %s %s' % (vr[0].get('conclusion'), vr[0].get('createdAt', '')[:10])) if vr else 'not run yet', 'ALERT: viral DNA study failing or stale',
+        lambda: sh('gh', 'workflow', 'run', 'viral.yml', '--repo', REPO))
     # 12 DOODLES GPU BUDGET (H2): Kaggle free GPU is ~30h/week. 3 stories/day normally; drop to 2 if the last 7 days used > 24h, back to 3 under 18h.
     try:
         r = sh('gh', 'run', 'list', '--repo', REPO, '--workflow', 'doodles.yml', '--limit', '40', '--json', 'createdAt,updatedAt,status')
