@@ -1,0 +1,26 @@
+name: braintest
+# TEST ONLY: builds one MindLore "live demonstration" sample video and attaches it to a GitHub Release. Nothing is posted.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/braintest.yml', 'brain_demo.py']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu fonts-noto-color-emoji
+      - run: pip install --quiet pillow edge-tts
+      - run: python brain_demo.py
+      - name: Attach to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete braintest -y --cleanup-tag || true
+          gh release create braintest out/mindlore-braintest.mp4 --title "MindLore brain TEST (not posted)" --notes "test only" --prerelease
