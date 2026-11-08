@@ -31,8 +31,11 @@ def one(llm_call):
     # H1b TEST: our data says <=30s Shorts win ~7x; make the first 3 of every 14 days short (~30s), measured later by the scoreboard
     _lo, _hi, exp = 140, 200, ''
     try:
+        try:
+            import exp_eval; _q = exp_eval.quota(BRAND)   # H1c verdict: win -> 7, lose -> 0, else 3 per 14 days
+        except Exception: _q = 3
         _cut = (datetime.date.today() - datetime.timedelta(days=14)).isoformat()
-        if sum(1 for i in h['items'] if i.get('exp') == 's30' and i.get('date', '') >= _cut) < 3: exp = 's30'; _lo, _hi = 60, 100
+        if sum(1 for i in h['items'] if i.get('exp') == 's30' and i.get('date', '') >= _cut) < _q: exp = 's30'; _lo, _hi = 60, 100
     except Exception: pass
     radar = ''
     try:

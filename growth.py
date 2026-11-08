@@ -121,6 +121,10 @@ def main():
                 bd['change_%dd' % days] = {k: bd['totals'][k] - old[b].get(k, 0) for k in ('views', 'likes', 'subs', 'videos')}
     (OUT / 'history.json').write_text(json.dumps(hist, indent=1))
     (OUT / 'scoreboard.json').write_text(json.dumps(board, indent=1))
+    try:
+        import exp_eval; exp_eval.run()   # H1c: 30s vs 60s story Shorts verdict
+    except Exception as e:
+        print('exp_eval skipped:', str(e)[:80])
     print('growth scoreboard:', {b: (v['totals']['views'], v['measured_videos'], len(v['feature_lifts'])) for b, v in board['brands'].items()})
 
 

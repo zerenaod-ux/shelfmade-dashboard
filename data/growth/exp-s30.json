@@ -1,0 +1,25 @@
+{
+ "shelfmade": {
+  "n": {
+   "s30": 0,
+   "normal": 0
+  },
+  "median_vpd": {
+   "s30": null,
+   "normal": null
+  },
+  "verdict": "collecting"
+ },
+ "mindlore": {
+  "n": {
+   "s30": 0,
+   "normal": 0
+  },
+  "median_vpd": {
+   "s30": null,
+   "normal": null
+  },
+  "verdict": "collecting"
+ },
+ "at": "2026-11-08T17:52Z"
+}
