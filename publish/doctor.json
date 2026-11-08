@@ -24,7 +24,7 @@
    "msg": "DRILL COMPLETE: rollback path verified end to end (break -> revert -> re-run green). Drill files removed by owner-assistant."
   }
  ],
- "at": "2026-11-08T21:59:17Z",
+ "at": "2026-11-08T22:26:48Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
