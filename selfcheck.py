@@ -117,6 +117,11 @@ def main():
     rt = [r for r in last_run('retitle.yml') if r.get('status') == 'completed']
     rec('Retitle campaign', (not rt) or rt[0].get('conclusion') == 'success', ('last: %s %s' % (rt[0].get('conclusion'), rt[0].get('createdAt', '')[:10])) if rt else 'not run yet', 'ALERT: retitle job failing',
         lambda: sh('gh', 'workflow', 'run', 'retitle.yml', '--repo', REPO))
+    # 13 ACCESS CHECK (R10): weekly tokencheck proves the YouTube logins still work; it must have run OK in the last 9 days
+    tk = [r for r in last_run('tokencheck.yml') if r.get('status') == 'completed']
+    ok_tk = bool(tk) and tk[0].get('conclusion') == 'success' and (age_h(tk[0].get('createdAt', '')) or 999) < 9 * 24
+    rec('Access check (logins)', ok_tk, ('last: %s %s' % (tk[0].get('conclusion'), tk[0].get('createdAt', '')[:10])) if tk else 'never ran', 'ALERT: YouTube login check failing or stale',
+        lambda: sh('gh', 'workflow', 'run', 'tokencheck.yml', '--repo', REPO))
     # 12 DOODLES GPU BUDGET (H2): Kaggle free GPU is ~30h/week. 3 stories/day normally; drop to 2 if the last 7 days used > 24h, back to 3 under 18h.
     try:
         r = sh('gh', 'run', 'list', '--repo', REPO, '--workflow', 'doodles.yml', '--limit', '40', '--json', 'createdAt,updatedAt,status')
