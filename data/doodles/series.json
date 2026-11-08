@@ -23,14 +23,14 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 3,
-   "last": 13
+   "uses": 4,
+   "last": 19
   },
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 3,
-   "last": 14
+   "uses": 4,
+   "last": 20
   },
   {
    "id": "gerald",
@@ -47,14 +47,14 @@
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 2,
-   "last": 11
+   "uses": 3,
+   "last": 17
   },
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 2,
-   "last": 12
+   "uses": 3,
+   "last": 18
   }
  ],
  "catch": {
@@ -237,6 +237,54 @@
    "milestone": false,
    "season": 2,
    "date": "2026-11-07"
+  },
+  {
+   "n": 14,
+   "kind": "short",
+   "id": "spotlight-phone-scripting",
+   "title": "The Phone Call Script",
+   "concept": "SPOTLIGHT EFFECT",
+   "gag": "dev",
+   "callback": false,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-08"
+  },
+  {
+   "n": 15,
+   "kind": "short",
+   "id": "anticipatory-anxiety-greg-email",
+   "title": "The Sunday Panic Trap",
+   "concept": "ANTICIPATORY ANXIETY",
+   "gag": "scoreboard",
+   "callback": false,
+   "milestone": true,
+   "season": 2,
+   "date": "2026-11-08"
+  },
+  {
+   "n": 16,
+   "kind": "short",
+   "id": "productivity-guilt-nap",
+   "title": "The Unearned Rest",
+   "concept": "PRODUCTIVITY GUILT",
+   "gag": "battery",
+   "callback": false,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-08"
+  },
+  {
+   "n": 17,
+   "kind": "short",
+   "id": "catastrophizing-ai-job",
+   "title": "The Robot Replacement Panic",
+   "concept": "CATASTROPHIZING",
+   "gag": "minute",
+   "callback": false,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-08"
   }
  ]
 }
