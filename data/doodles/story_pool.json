@@ -3394,5 +3394,398 @@
    }
   ],
   "variant": "standard"
+ },
+ {
+  "id": "spotlight-phone-scripting",
+  "title": "The Phone Call Script",
+  "concept": "SPOTLIGHT EFFECT",
+  "mood": "dramatic",
+  "insight": "People focus far less on your minor slips than you think.",
+  "caption": "Ever rehearse a ten-second phone call five times? Here is why your brain over-prepares simple interactions.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo typing on his phone while sitting upright on the couch. Mia holds a coffee mug, watching him with closed-mouth curiosity.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "I practiced saying hello seven times!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It's Dev calling about your coffee."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pacing the hallway with his phone held high. Mia sitting nearby typing on a laptop with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "What if he hears me breathing?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "He misspelled your name as Lyle again."
+     }
+    ]
+   },
+   {
+    "scene": "A notification arrives on Leo's screen as he sits rigidly. Mia watches him while sipping from a coffee mug.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "text": "Okay, but hear me out! Scripting is safe!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits upright, holding a coffee mug with a calm smirk. Leo sits beside her, staring at his phone with worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's the Spotlight Effect making you over-prepare."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Nobody is judging your casual greeting, Lyle."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sitting on the couch while texting on his phone. Mia stands beside him, pointing calmly down at the screen.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Dial before your brain builds a script."
+     }
+    ]
+   },
+   {
+    "scene": "Mia holding a coffee mug, looking at Leo with a raised eyebrow. Leo sits upright, clutching his phone with worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Why did you panic over picking up lunch..."
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 features the punchiest dramatic absurdities like breathing audio panic directly in the opening lines.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 8,
+    "spoken": 6,
+    "relatable": 8,
+    "loop": 5
+   },
+   "n": 3
+  },
+  "variant": "tight"
+ },
+ {
+  "id": "anticipatory-anxiety-greg-email",
+  "title": "The Sunday Panic Trap",
+  "concept": "ANTICIPATORY ANXIETY",
+  "mood": "dramatic",
+  "insight": "Your brain suffers twice when you stress over tomorrow today.",
+  "caption": "Why does Sunday evening feel like a high-stakes exam you didn't study for? Leo experiences anticipatory anxiety in real time.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits on the sofa pulling a pillow tight, worried eyes facing camera. In the background, Greg and Dev sit at a table. A digital clock showing a time of 4:00 PM rests nearby.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My Monday is already completely ruined."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It's literally Sunday afternoon, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is pacing the hallway while scrolling on his phone with anxious eyes. Mia stands nearby holding a coffee mug, looking amused.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Greg emailed 'noted'! I'm getting fired tomorrow!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "He always emails that. Scoreboard makes forty-two."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is typing on a laptop at the table with tense shoulders. Outside the window, neighbor Brenda walks past. Mia leans against the wall, eyebrows raised.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "I'm pre-drafting apologies for meetings that haven't happened!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You are suffering twice for a fictional crisis."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sets down her cup of tea looking gently at Leo. Leo sits slumped on the chair, pulling a blanket around his hoodie.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That's anticipatory anxiety\u2014your brain treats tomorrow's potential stress like today's real emergency."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Wait, are you tracking your own habit now?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits up as a notification message arrives on his phone. He pauses, setting it down to take a sip from a coffee mug.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "Write down tomorrow's one real task, then shut down."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Okay, one task. I can do that."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits on the sofa while a digital clock showing a time of 4:15 PM glows. Mia points at him with a slight smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "So why are you panicking on Sunday afternoon?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
+ },
+ {
+  "id": "productivity-guilt-nap",
+  "title": "The Unearned Rest",
+  "concept": "PRODUCTIVITY GUILT",
+  "mood": "reflective",
+  "insight": "Rest is a functional requirement, not a reward you have to earn.",
+  "caption": "Do you feel like you aren't allowed to stop? Mia has some thoughts.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is pulling the blanket over his head while lying in bed, eyes wide.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "I feel like a fraud just sitting here."
+     }
+    ]
+   },
+   {
+    "scene": "Mia is leaning against the door frame, typing on her phone with a deadpan expression.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "You've been staring at the ceiling for twenty minutes, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is pacing the hallway, frantic.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "But if I'm not moving, I'm literally wasting my entire potential!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia is holding a coffee mug, looking bored.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That's productivity guilt. It's just a lie that rest must be earned."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is sitting upright, looking at a digital clock showing a time.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "So I can just... breathe for once?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia is scrolling on her phone, battery at 3%.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Anyway, is the world ending because you stopped, or is it just because..."
+     }
+    ]
+   }
+  ],
+  "variant": "tight"
+ },
+ {
+  "id": "catastrophizing-ai-job",
+  "title": "The Robot Replacement Panic",
+  "concept": "CATASTROPHIZING",
+  "mood": "dramatic",
+  "insight": "Our brain jumps straight to the absolute worst case scenario.",
+  "caption": "When a simple software update makes you plan your early retirement.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sitting upright at a desk typing on a laptop, eyes wide with panic. Mia holding a cup of tea, looking unimpressed.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My job is gone by Tuesday."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It was just a printer firmware update, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pacing the hallway holding his phone, scrolling furiously. Mia sipping tea nearby, watching him.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "They bought an automated scanner. Next week I live in a cardboard box."
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "text": "You scan receipts twice a year. Calm down."
+     }
+    ]
+   },
+   {
+    "scene": "Leo throwing his hands up in despair near a digital clock showing a time. Mia pointing a teaspoon at him.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "text": "I am already practicing my street magician routine just in case."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You can barely juggle two oranges without crying."
+     }
+    ]
+   },
+   {
+    "scene": "Mia crossing her arms, leaning against a desk. Leo standing stiffly, blinking in realization.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "This is catastrophizing. Your brain snowballs a minor worry into total ruin."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sitting down and typing on his phone with a calmer expression. Mia handing him a napkin.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Okay, I will write down three actual facts instead of guessing."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looking sideways at Mia waiting for her response, freezing mid-breath.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "My job is gone by Tuesday..."
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 has sharper roasts like the orange-juggling line and a seamless loop.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 7,
+    "spoken": 9,
+    "relatable": 8,
+    "loop": 8
+   },
+   "n": 2
+  },
+  "variant": "standard"
  }
 ]
