@@ -9,11 +9,11 @@ LIVE = os.environ.get('FLYWHEEL_LIVE') == '1'
 CID, SEC = os.environ.get('YT_CLIENT_ID', ''), os.environ.get('YT_CLIENT_SECRET', '')
 MAXADD = 6
 NAMES = {
-    'shelfmade': {'short': ('ShelfMade Shorts: classic books in a minute', 'Short lessons from classic books. Watch one, keep going.'),
+    'shelfmade': {'best': ('ShelfMade: the most watched', 'Start here: the videos viewers watch the most.'), 'short': ('ShelfMade Shorts: classic books in a minute', 'Short lessons from classic books. Watch one, keep going.'),
                   'full': ('ShelfMade full lessons', 'Longer explanations of classic books, start to finish.')},
-    'mindlore': {'short': ('MindLore Shorts: psychology in a minute', 'Quick ideas about how your mind works, from real research.'),
+    'mindlore': {'best': ('MindLore: the most watched', 'Start here: the ideas viewers watch the most.'), 'short': ('MindLore Shorts: psychology in a minute', 'Quick ideas about how your mind works, from real research.'),
                  'full': ('MindLore full videos', 'Deeper explanations of how your mind works, from real research.')},
-    'doodles': {'short': ('Leo & Mia: all the skits', 'Leo and Mia, two best friends, one psychology idea at a time. Watch them in order.'),
+    'doodles': {'best': ('Leo & Mia: fan favorites', 'Start here: the skits viewers watch the most.'), 'short': ('Leo & Mia: all the skits', 'Leo and Mia, two best friends, one psychology idea at a time. Watch them in order.'),
                 'full': ('Leo & Mia: full episodes', 'The longer Leo and Mia episodes.')},
 }
 
@@ -57,10 +57,15 @@ def main():
             d = json.loads(Path('data/analytics/%s.json' % brand).read_text())
             st = state.setdefault(brand, {})
             todo = plan(d.get('videos', []), st)
+            try:   # H6: a 'most watched' playlist from our own scoreboard (top 5 by views/day), the best front door for new viewers
+                top = [x['id'] for x in json.loads(Path('data/growth/scoreboard.json').read_text())['brands'][brand].get('top', [])[:5] if x.get('id')]
+                todo['best'] = [i for i in top if i not in (st.get('best', {}).get('added') or [])]
+            except Exception:
+                todo['best'] = []
             rt = os.environ.get('YT_REFRESH_TOKEN_' + brand.upper(), '')
             tok = access(rt) if (LIVE and rt) else None
             n = 0
-            for k in ('short', 'full'):
+            for k in ('short', 'full', 'best'):
                 ks = st.setdefault(k, {'id': None, 'added': []})
                 ids = todo[k][:MAXADD]
                 if not ids:
