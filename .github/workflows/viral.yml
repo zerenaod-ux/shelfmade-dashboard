@@ -3,8 +3,6 @@ on:
   schedule:
     - cron: '23 8 * * 3'
   workflow_dispatch:
-  push:
-    paths: [viral.py]    # a change to viral.py runs it once, so a new version proves itself right away
 permissions:
   contents: write
 concurrency:

@@ -90,14 +90,35 @@ def brand(b):
     (OUT / (b + '.json')).write_text(json.dumps(j, indent=1))
     return '%d hits, patterns saved, top shares %s' % (len(rows), sorted(shares.items(), key=lambda x: -x[1])[:3])
 
+FEATURE_MAP = {'has emoji': ('emoji', 'has emoji'), 'question title': ('question title', 'question title'), 'speaks to "you"': ('speaks to "you"', 'title says you/your'),
+               'number in title': ('number in title', 'has a number'), 'title <= 6 words': ('title length', 'short title (1-5 words)'), 'video <= 30s': ('short length', 'up to 30s')}
+
+def proof(b):
+    """V4 PROOF LOOP: compare how common a feature is among big hits with how it does on OUR videos (growth scoreboard lifts).
+    confirmed = hits use it (>=50%) AND our lift >= 1.6; contradicted = hits use it (>=50%) but our lift <= 0.6 (our audience punishes it); our_edge = we win with it though hits rarely use it (<35%)."""
+    try:
+        shares = json.loads((OUT / (b + '.json')).read_text()).get('shares', {})
+        lifts = {(x['feature'], x['value']): x for x in json.loads(Path('data/growth/scoreboard.json').read_text())['brands'][b].get('feature_lifts', [])}
+    except Exception:
+        return []
+    out = []
+    for name, key in FEATURE_MAP.items():
+        sh, mine = shares.get(name), lifts.get(key)
+        if sh is None or not mine or mine.get('n', 0) < 5: out.append({'feature': name, 'hits_pct': sh, 'verdict': 'untested'}); continue
+        v = 'confirmed' if sh >= 50 and mine['lift'] >= 1.6 else 'contradicted' if sh >= 50 and mine['lift'] <= 0.6 else 'our_edge' if sh < 35 and mine['lift'] >= 1.6 else 'mixed'
+        out.append({'feature': name, 'hits_pct': sh, 'our_lift': mine['lift'], 'our_n': mine['n'], 'verdict': v})
+    return out
+
 def guidance(b):
     """LOW-WEIGHT hints for writers. Labelled unproven until our own results confirm (see roadmap V4)."""
     try: j = json.loads((OUT / (b + '.json')).read_text())
     except Exception: return ''
     pats = [str(x)[:140] for x in (j.get('patterns') or [])[:3]]; forms = [str(x)[:110] for x in (j.get('title_formulas') or [])[:2]]; avoid = [str(x)[:100] for x in (j.get('avoid') or [])[:2]]
     if not pats: return ''
+    pr = proof(b); conf = [x['feature'] for x in pr if x['verdict'] == 'confirmed']; bad = [x['feature'] for x in pr if x['verdict'] == 'contradicted']
+    extra = ((' CONFIRMED on our own channel too: ' + ', '.join(conf) + '.') if conf else '') + ((' DO NOT copy (big hits do it but OUR audience punishes it): ' + ', '.join(bad) + '.') if bad else '')
     return ('\nFROM OTHER CHANNELS (big hits in our niche, UNPROVEN for us, low weight: take ONE idea at most, never copy words): patterns: ' + ' | '.join(pats) +
-            ('. title shapes: ' + ' | '.join(forms) if forms else '') + ('. avoid: ' + ' | '.join(avoid) if avoid else '') + '\n')
+            ('. title shapes: ' + ' | '.join(forms) if forms else '') + ('. avoid: ' + ' | '.join(avoid) if avoid else '') + extra + '\n')
 
 if __name__ == '__main__':
     for b in ('mindlore', 'shelfmade', 'doodles'):

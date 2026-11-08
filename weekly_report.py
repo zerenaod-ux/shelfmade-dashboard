@@ -36,6 +36,9 @@ def build():
     L.append('\n### Viral DNA (what the biggest hits in our niches do; unproven for us)')
     for b in ('shelfmade', 'mindlore', 'doodles'):
         vj = jl('data/viral/%s.json' % b, {})
+        try:
+            import viral; pr = viral.proof(b); L.append('  - Proof vs our own results: ' + '; '.join('%s %s' % (x['feature'], x['verdict']) for x in pr if x['verdict'] != 'untested'))
+        except Exception: pass
         if vj.get('patterns'): L.append('- %s (%s, %s hits): %s' % (b, vj.get('updated'), vj.get('n_hits'), str(vj['patterns'][0])[:150]))
     L.append('\n### System health')
     bad = [c for c in sc.get('checks', []) if not c.get('ok')]
