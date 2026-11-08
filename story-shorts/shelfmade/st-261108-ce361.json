@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-ce361",
+ "title": "Varieties of Religious Experience",
+ "author": "William James",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Does prayer really bring peace?",
+ "hook": "You pray every night hoping for peace.",
+ "thumbnail_headline": "PRAYER VS INNER PEACE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You pray every night hoping for peace. Ancient philosophers argued true peace comes from inner experience, not ritual. In 2001, neuroscientist Andrew Newberg at Penn scanned meditators in about 12 scans. The result? He found reduced activity in the parietal lobe, a sign of self‑transcendence. In 2014, Pew surveyed about 3,000 Americans and found roughly 20% reported mystical moments. So why do we assume prayer alone rewires the brain? Because focused meditation, not words, triggers measurable brain change. That's it. You pray every night hoping for peace."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Reduced activity in the parietal lobe, a sign of self‑transcendence",
+   "who": "Andrew Newberg",
+   "year": "2001",
+   "place": "University of Pennsylvania"
+  },
+  {
+   "claim": "Roughly 20% of Americans reported mystical moments",
+   "who": "Pew Research Center",
+   "year": "2014",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Varieties of Religious Experience by William James",
+ "exp": "s30"
+}

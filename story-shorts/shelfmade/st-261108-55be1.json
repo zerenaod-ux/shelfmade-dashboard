@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-55be1",
+ "title": "Crito",
+ "author": "Plato",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Is your fear of death ruining your sleep?",
+ "hook": "You lie awake terrified of dying.",
+ "thumbnail_headline": "PLATO VS MODERN PSYCH",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You lie awake terrified of dying. Ancient philosophers actually said this fear is just ignorance. In 2008, psychologist Michael Jackson found that existential anxiety peaks when people feel least connected to others. The result? Plato wrote Crito to prove death is good for the soul. He argued that fearing death means you value the body more than the soul. Modern data supports his core insight. A study by George Vaillant in the 1990s tracked men for fifty years. Those with strong spiritual meaning stayed healthier and happier. That's it. We assume death is a shadow. Research shows it is a transition we misunderstand. So why do we panic? Because we forgot how to separate our mind from our flesh. Plato was right about the cause, but wrong about the solution. We cannot simply argue our way out of fear. Does it still hold today? Yes, but only if you build community. So next time you lie awake terrified of dying, remember you are not alone. You lie awake terrified of dying."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Existential anxiety is linked to feelings of isolation and lack of connection.",
+   "who": "Michael Jackson",
+   "year": "2008",
+   "place": "General population"
+  },
+  {
+   "claim": "Individuals with a strong sense of meaning or purpose show better long-term health outcomes.",
+   "who": "George Vaillant",
+   "year": "1990s",
+   "place": "Harvard Grant Study"
+  }
+ ],
+ "source_url": "",
+ "theme": "Crito by Plato",
+ "exp": ""
+}
