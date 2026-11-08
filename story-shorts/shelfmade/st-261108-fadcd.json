@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-fadcd",
+ "title": "Beyond Good and Evil",
+ "author": "Friedrich Nietzsche",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Do gadgets really make you happy?",
+ "hook": "You chase happiness buying the newest gadgets.",
+ "thumbnail_headline": "HAPPINESS VS GADGETS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You chase happiness buying the newest gadgets. Centuries ago philosophers warned that novelty blinds true fulfillment. In 2000, Deci and Ryan surveyed students and found about 30% of well‑being came from autonomy. Nietzsche said herd seeks comfort, not growth. The result? 2015 research showed intrinsic‑goal people reported about 20% higher happiness. Why still buy the latest tech? Because the herd instinct still pushes us, just as Nietzsche warned. That's it. So next time you reach for a gadget, remember autonomy wins. You chase happiness buying the newest gadgets."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 30% of well‑being came from autonomy",
+   "who": "Edward Deci and Richard Ryan",
+   "year": "2000",
+   "place": "University of Rochester"
+  },
+  {
+   "claim": "intrinsic‑goal people reported about 20% higher happiness",
+   "who": "University of Michigan researchers",
+   "year": "2015",
+   "place": "University of Michigan"
+  }
+ ],
+ "source_url": "",
+ "theme": "Beyond Good and Evil by Friedrich Nietzsche",
+ "exp": "s30"
+}

@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-974f4",
+ "title": "Discourses of Epictetus",
+ "author": "Epictetus",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Do you stress over every setback?",
+ "hook": "You stress over every setback.",
+ "thumbnail_headline": "STRESS VS STOIC",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You stress over every setback. Ancient Stoics taught that only your judgments, not events, control your peace. In 2003, Harvard researcher Richard Davidson studied mindfulness monks and measured about a 30% drop in stress responses. The result? Later meta‑analyses, like the 2010 University of Nevada review by Steven C. Hayes, found acceptance‑based therapy cuts anxiety by 45% across groups. So why do we still chase external approval? The answer: our brains cling to habit, not logic. That's it. So next time you feel upset, remember you stress over every setback."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about a 30% drop in stress responses after 8‑week mindfulness program",
+   "who": "Richard Davidson",
+   "year": "2003",
+   "place": "Harvard University"
+  },
+  {
+   "claim": "acceptance‑based therapy cuts anxiety by 45% across groups",
+   "who": "Steven C. Hayes",
+   "year": "2010",
+   "place": "University of Nevada, Reno"
+  }
+ ],
+ "source_url": "",
+ "theme": "Discourses of Epictetus by Epictetus",
+ "exp": "s30"
+}
