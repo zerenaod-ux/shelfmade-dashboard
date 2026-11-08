@@ -25,10 +25,17 @@ def make_script(s, book):
     import opening_design
     ev = [{'chapter': 'Evidence', 'kind': 'named research claim', 'excerpt': '%s (%s): %s' % (c.get('who'), c.get('year'), c.get('claim')), 'source_url': url, 'verification': 'Named researcher/year checked against Wikipedia by the story gate.'} for c in s.get('claims', []) if isinstance(c, dict)]
     ev.append({'chapter': 'Book', 'kind': 'editorial paraphrase with source context', 'excerpt': hook, 'source_url': url, 'verification': 'Compare with the linked book.'})
-    script = {'hook': hook, 'title': book['title'], 'points': points, 'cta': cta, 'thumbnail_headline': s.get('thumbnail_headline') or opening_design.short_headline(hook),
+    script = {'hook': hook, 'title': book['title'], 'points': points, 'cta': cta, 'thumbnail_headline': _hl(s.get('thumbnail_headline'), hook),
               'public_title': _ft(s['public_title'])[:100], 'source_evidence': ev, 'source_kind': 'story'}
     evidence = {'version': 'story-v2-shelfmade', 'edition': 1, 'edition_capacity': 1, 'hook': hook, 'source_sentences': [hook], 'source_url': url, 'source_checkpoints': ev}
     return script, evidence
+def _hl(h, hook):
+    import opening_design
+    try:
+        import creative_quality as cq
+        if h and cq.related(h, hook): return h
+    except Exception: return h or opening_design.short_headline(hook)
+    return opening_design.short_headline(hook)
 def _ft(t):
     try:
         import growth; return growth.fix_title(__import__('os').environ.get('BRAND', 'shelfmade'), t)
