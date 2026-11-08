@@ -1,18 +1,7 @@
 {
  "on": true,
- "attempts": {
-  "doctor-drill": 2
- },
- "pending": [
-  {
-   "wf": "doctor-drill",
-   "commit": "48d386c0bfe1e87201b82cacb40786b908840a31",
-   "what": "rolled back bc23e0e \"R8 DRILL round 3: deliberate break (doctor should roll back, re-run, verify)\" (drill_target.py)",
-   "at": "2026-11-08T18:55:41Z",
-   "ts": 1794164130.0049996,
-   "log": "6-11-08T18:55:16.7608858Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.7610146Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.7611226Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.7612264Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.7613316Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.7614203Z ##[endgroup]\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.8020051Z Traceback (most recent call last):\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.8026930Z   File \"/home/runner/work/shelfmade-dashboard/shelfmade-dashboard/drill_check.py\", line 1, in <module>\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.8028380Z     import drill_target\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.8029941Z   File \"/home/runner/work/shelfmade-dashboard/shelfmade-dashboard/drill_target.py\", line 2, in <module>\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.8031387Z     raise RuntimeError(\"drill round 3: deliberate break\")\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.8032323Z RuntimeError: drill round 3: deliberate break\ndrill\tRun python drill_check.py\t2026-11-08T18:55:16.8053861Z ##[error]Process completed with exit code 1."
-  }
- ],
+ "attempts": {},
+ "pending": [],
  "log": [
   {
    "t": "11-08 17:06Z",
@@ -29,6 +18,10 @@
   {
    "t": "11-08 18:55Z",
    "msg": "doctor-drill: rolled back bc23e0e \"R8 DRILL round 3: deliberate break (doctor should roll back, re-run, verify)\" (drill_target.py) -> re-run started"
+  },
+  {
+   "t": "11-08 19:06Z",
+   "msg": "DRILL COMPLETE: rollback path verified end to end (break -> revert -> re-run green). Drill files removed by owner-assistant."
   }
  ],
  "at": "2026-11-08T18:55:45Z",

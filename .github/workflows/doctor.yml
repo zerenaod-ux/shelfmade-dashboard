@@ -4,7 +4,7 @@ on:
     - cron: '41 */3 * * *'
   workflow_dispatch:
   workflow_run:   # react right after a failure instead of waiting for the (often delayed) schedule
-    workflows: [watchdog, doctor-drill, doodles, shelfmade-story-short, mindlore-story-short, publisher, publisher-doodles, publisher-mindlore, yt-publish-shelfmade, yt-publish-mindlore, yt-publish-doodles, review-publish, daily-shorts, retitle, flywheel, viral]
+    workflows: [watchdog, doodles, shelfmade-story-short, mindlore-story-short, publisher, publisher-doodles, publisher-mindlore, yt-publish-shelfmade, yt-publish-mindlore, yt-publish-doodles, review-publish, daily-shorts, retitle, flywheel, viral]
     types: [completed]
 permissions:
   contents: write
