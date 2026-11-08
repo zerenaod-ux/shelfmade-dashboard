@@ -1,20 +1,38 @@
-ml_autoscripts: start, scripts on disk = 18 target = 90
+ml_autoscripts: start, scripts on disk = 20 target = 90
 ml_autoscripts: models to try: ['gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash', 'gemini-omni-1.2-flash', 'gemini-omni-1.1-flash']
+ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.6-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.5-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-2.5-flash 404: b'{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.5-flash is no longer avai'
+ml_autoscripts: Gemini gemini-omni-1.2-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-omni-1.1-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-flash-latest 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.8-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
+ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: fact check: Deloitte: found on Wikipedia; Netta Weinstein and colleagues at the University of Rochester: NOT FOUND; Dar Meshi and researchers at Freie Universitaet Berlin: NOT FOUND
+ml_autoscripts: attempt 0 rejected: these named researchers/groups could not be verified, replace them with well-known real studies you are certain of: Netta Weinstein and colleagues at the University of Rochester, Dar Meshi and researchers at Freie Universitaet Berlin
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
 ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
-ml_autoscripts: fact check: Daniel Kahneman and Angus Deaton: found on Wikipedia; Leaf Van Boven and Thomas Gilovich: found on Wikipedia; Robert Emmons and Michael McCullough: found on Wikipedia
-ml_autoscripts: wrote 7952.json (passed the video builder checks)
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.6-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
+ml_autoscripts: fact check: Harvard University researchers: NOT FOUND; Jean Twenge at San Diego State University: found on Wikipedia
+ml_autoscripts: wrote 1998.json (passed the video builder checks)
 ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
 ml_autoscripts: Gemini gemini-3.7-flash 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Sp'
-ml_autoscripts: fact check: Asurion: found on Wikipedia; Gloria Mark at the University of California, Irvine: found on Wikipedia; Edward Deci at the University of Rochester: found on Wikipedia
-ml_autoscripts: wrote 44795.json (passed the video builder checks)
+ml_autoscripts: Gemini gemini-3.7-flash failed: The read operation timed out
+ml_autoscripts: Gemini gemini-3.7-flash 429: b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your p'
+ml_autoscripts: fact check: Harvard Business School researchers: NOT FOUND; Norman Mackworth: found on Wikipedia
+ml_autoscripts: wrote 14589.json (passed the video builder checks)
 ml_autoscripts: DONE, scripts made = 2
