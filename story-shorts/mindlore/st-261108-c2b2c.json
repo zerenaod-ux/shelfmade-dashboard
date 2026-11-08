@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-c2b2c",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Social Media Mirror",
+ "hook": "You scroll feeds for hours each day.",
+ "thumbnail_headline": "SOCIAL COMPARISON TRAP",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You scroll feeds for hours each day. Centuries ago, hunters spent far less time comparing status. In the 1990s, Robin Dunbar found hunter‑gatherers groomed about 20 % of their day. So why does scrolling feel like a status hunt? Because dopamine spikes when we see highlights, a 2015 Harvard study showed. The result? Comparison drains energy and raises stress. In 2018, Penn researchers found limiting Facebook to 30 minutes cut depressive symptoms by 20 %. That's it. So next time you feel the urge to compare, remember you scroll"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "hunter‑gatherers groomed about 20 % of their day",
+   "who": "Robin Dunbar",
+   "year": "1990s",
+   "place": "hunter‑gatherer societies (e.g., Hadza)"
+  },
+  {
+   "claim": "Limiting Facebook to 30 minutes reduced depressive symptoms by about 20 %",
+   "who": "Andrew M. Hunt et al., University of Pennsylvania",
+   "year": "2018",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "social media comparison",
+ "exp": "s30"
+}

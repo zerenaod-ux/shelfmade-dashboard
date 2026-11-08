@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-59668",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Ancient Work Hours",
+ "hook": "You spend about 40 hours at work each week.",
+ "thumbnail_headline": "LESS THAN YOU THINK",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend about 40 hours at work each week. Centuries ago, hunter‑gatherers rested far more than you think. In the 1960s, anthropologist Richard Lee studied the Kalahari !Kung and counted about 15 to 20 hours of work per week. The result? They slept roughly nine hours a night and took frequent breaks. Later research confirmed it. In 2015, the OECD reported that Danish workers averaged about 33 hours weekly and reported high life satisfaction. Other societies show the same pattern, called the 'low‑hour work' principle. So why do we assume longer hours mean more success? The answer: modern factories rewired incentives, not biology. Does it still hold today? Yes, a 2022 Stanford study found productivity drops after about 45 hours of work. What's the practical tip? Take regular micro‑rests and cap your week near 30 hours. The result? Your focus sharpens, stress falls, and creativity spikes. That's it. So next time you schedule overtime, remember you spend about 40 hours at work each week, You spend"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 15 to 20 hours of work per week",
+   "who": "Richard Lee",
+   "year": "1960s",
+   "place": "Kalahari !Kung"
+  },
+  {
+   "claim": "average work week about 33 hours",
+   "who": "OECD",
+   "year": "2015",
+   "place": "Denmark"
+  }
+ ],
+ "source_url": "",
+ "theme": "working hours and rest",
+ "exp": ""
+}

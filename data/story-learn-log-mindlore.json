@@ -425,6 +425,72 @@
     "star",
     "sun"
    ]
+  },
+  {
+   "id": "st-261108-59668",
+   "title": "Ancient Work Hours",
+   "theme": "working hours and rest",
+   "acts": [
+    "cheer",
+    "dance",
+    "explain",
+    "point",
+    "read",
+    "shrug",
+    "sit",
+    "surprised",
+    "think"
+   ],
+   "bgs": [
+    "brain",
+    "desert",
+    "office",
+    "school",
+    "study"
+   ],
+   "props": [
+    "book",
+    "bulb",
+    "chart",
+    "clock",
+    "fire",
+    "lamp",
+    "moon",
+    "num",
+    "question",
+    "star"
+   ]
+  },
+  {
+   "id": "st-261108-c2b2c",
+   "title": "Social Media Mirror",
+   "theme": "social media comparison",
+   "acts": [
+    "explain",
+    "lookup",
+    "phone",
+    "point",
+    "read",
+    "sad",
+    "think"
+   ],
+   "bgs": [
+    "home",
+    "office",
+    "school",
+    "study"
+   ],
+   "props": [
+    "battery",
+    "chart",
+    "clock",
+    "lamp",
+    "num",
+    "phone",
+    "question",
+    "star",
+    "tree"
+   ]
   }
  ]
 }
