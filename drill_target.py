@@ -1,2 +1,2 @@
 VALUE = 1
-# raise RuntimeError("drill: deliberate break for the doctor test")
+raise RuntimeError("drill round 2: deliberate break")
