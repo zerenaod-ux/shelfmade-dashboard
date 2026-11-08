@@ -32,6 +32,9 @@ def one(llm_call):
     try:
         r = load(B / 'data/radar/mindlore.json', {}); radar = '\nToday\'s winning pattern on YouTube (borrow the pattern, never the words): %s' % ((r.get('hook_patterns') or [''])[0])
     except Exception: pass
+    try:
+        import growth; radar += growth.guidance(BRAND)   # H1: our own measured winners/losers, a nudge not a law
+    except Exception: pass
     chan = ('ShelfMade, a channel that explains classic books for modern readers: the Short is "a classic book vs today", what this old book said and what later research found. THEME BOOK' if SM else 'MindLore, a psychology channel about how your mind works, explained with real research and how people lived long ago. THEME')
     base = ('You write a 60-70 second vertical Short for %s: %s.%s\n'
             'Titles already used, do not repeat: %s.\n' % (chan, theme, radar, recent) + story_rules.rules('shelfmade' if SM else 'mindlore', short=True) +
