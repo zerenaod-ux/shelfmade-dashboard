@@ -1,0 +1,26 @@
+name: wordcaps-test
+# TEST ONLY: builds one MindLore sample video with word-by-word captions and attaches it to a GitHub Release. Nothing is posted.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/wordcaps-test.yml', 'wordcaps_test.py']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu
+      - run: pip install --quiet pillow numpy edge-tts
+      - run: python wordcaps_test.py
+      - name: Attach to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete wordtest -y --cleanup-tag || true
+          gh release create wordtest out/mindlore-wordtest.mp4 --title "MindLore word-caption TEST (not posted)" --notes "test only" --prerelease
