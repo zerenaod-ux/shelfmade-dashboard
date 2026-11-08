@@ -1,9 +1,9 @@
 {
- "at": "2026-11-08T15:55+00:00",
- "changed_total": 90,
- "kept_total": 50,
+ "at": "2026-11-08T21:20+00:00",
+ "changed_total": 97,
+ "kept_total": 52,
  "pending_after_this_run": {
   "shelfmade": 0,
-  "mindlore": 7
+  "mindlore": 0
  }
 }

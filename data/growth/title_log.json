@@ -1256,5 +1256,79 @@
   "new": "Are your dreams actually meaningful?",
   "date": "2026-11-08",
   "source": "auto"
+ },
+ {
+  "id": "mcV0u5NRAvI",
+  "brand": "shelfmade",
+  "old": "If you would learn to converse, put yourself into positions where you _must_ speak",
+  "new": "Can you control your calm?",
+  "date": "2026-11-08",
+  "source": "auto"
+ },
+ {
+  "id": "a1cQi88hrm0",
+  "brand": "shelfmade",
+  "old": "Question what you know",
+  "new": "Does calm create new wisdom?",
+  "date": "2026-11-08",
+  "source": "auto"
+ },
+ {
+  "id": "uDTf6cqlUUI",
+  "brand": "mindlore",
+  "old": "Darwin proved emotions are a survival tool \u2014 not a weakness \ud83d\udd2c",
+  "new": "Are emotions your survival edge?",
+  "date": "2026-11-08",
+  "source": "auto"
+ },
+ {
+  "id": "eoD9osLZfz0",
+  "brand": "mindlore",
+  "old": "The psychology of The Psychology of Suggestion \ud83e\udde0",
+  "new": "Do suggestions shape your thoughts?",
+  "date": "2026-11-08",
+  "source": "auto"
+ },
+ {
+  "id": "_l6TVDbYKnE",
+  "brand": "mindlore",
+  "old": "Smart people do stupid things in groups \u2014 science explains why \ud83e\udde0",
+  "new": "Can intelligence vanish in groups?",
+  "date": "2026-11-08",
+  "source": "auto"
+ },
+ {
+  "id": "UbddSXgqSCk",
+  "brand": "mindlore",
+  "old": "The hidden force controlling every decision you make \ud83c\udf0a",
+  "new": "Does your subconscious drive choices?",
+  "date": "2026-11-08",
+  "source": "auto"
+ },
+ {
+  "id": "NOrxJfIaNfE",
+  "brand": "mindlore",
+  "old": "Your dreams are sending you coded messages every night \ud83d\udcad",
+  "new": "Your dreams are sending you coded messages every night \ud83d\udcad",
+  "date": "2026-11-08",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "8p2wahKgCLE",
+  "brand": "mindlore",
+  "old": "Smart people do stupid things in groups \u2014 science explains why \ud83e\udde0",
+  "new": "Smart people do stupid things in groups \u2014 science explains why \ud83e\udde0",
+  "date": "2026-11-08",
+  "source": "auto-skip",
+  "v": 2
+ },
+ {
+  "id": "AS50bK_ot-Q",
+  "brand": "mindlore",
+  "old": "The Crowd by Gustave Le Bon: Why Groups Make Us Lose Our Minds",
+  "new": "Do crowds hijack your thoughts?",
+  "date": "2026-11-08",
+  "source": "auto"
  }
 ]
