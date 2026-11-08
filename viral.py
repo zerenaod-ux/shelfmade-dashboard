@@ -16,6 +16,9 @@ QUERIES = {   # (query, duration filter) -> 2 Shorts searches + 1 long-form sear
 BRIEF = {'doodles': 'funny animated skits of two best friends (Leo and Mia) explaining psychology ideas',
          'mindlore': 'psychology Shorts and videos built from classic public-domain psychology books',
          'shelfmade': 'Shorts and videos built from public-domain classic books (quotes, lessons, summaries)'}
+NOCOPY = {'doodles': 'Never use another channel\'s characters, catchphrases, art style tricks that identify them, or music. Our cast is only Leo and Mia.',
+          'mindlore': 'Never present medical claims, diagnoses or miracle outcomes; no shock-bait about injuries; psychology ideas must stay grounded in our public-domain classic sources.',
+          'shelfmade': 'Never quote copyrighted books or other creators\' compilations; only public-domain classics; no fake "stop doing X after 60" medical or financial promises.'}
 EMOJI = re.compile('[\U0001F300-\U0001FAFF☀-➿]')
 
 def get(url, tok):
@@ -79,7 +82,7 @@ def brand(b):
     prompt = ('You are a short-form video analyst. Our channel makes: %s.\nThese are among the BIGGEST hits of the last 12 months in our niche, with stats and what viewers said in comments:\n%s\n\n'
               'Share of hits with simple features (percent): %s\n\n'
               'Find the PATTERNS that made these work (hook type, title formula, what the first 3 seconds promise, emotion, payoff, length) and what viewers loved or asked for in the comments. '
-              'Inspiration only: describe patterns in your own words; never repeat a title, script, footage or character. '
+              'Inspiration only: describe patterns in your own words; never repeat a title, script, footage or character. OUR RULES FOR THIS CHANNEL: ' + NOCOPY[b] + ' '
               'Return ONLY JSON: {"patterns":[5 short pattern descriptions],"title_formulas":[3 short fill-in-the-blank formulas],"opening_3s":[3 short ideas],"comment_themes":[4 short items: what viewers loved/asked for],'
               '"avoid":[3 short items],"try_next":[3 concrete ideas in our style]}') % (BRIEF[b], json.dumps(slim, indent=0)[:14000], json.dumps(shares))
     j = ask(prompt)
