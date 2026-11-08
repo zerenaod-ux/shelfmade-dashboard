@@ -1,0 +1,49 @@
+{
+ "patterns": [
+  "Age\u2011specific direct address that tells viewers what to stop or start doing, often paired with a strong emoji",
+  "Bold promise of a single, counter\u2011intuitive lesson framed as a \u201cwhy/what\u201d question",
+  "Use of a short, punchy hook (\u22646 words) that hints at a payoff and triggers curiosity",
+  "Fast\u2011paced opening that cites a vivid quote or stark fact within the first 3 seconds",
+  "Emotional blend of practicality and spiritual/faith reassurance that resonates with older audiences"
+ ],
+ "title_formulas": [
+  "#\ufe0f\u20e3 X Ways to ___ After ___ \ud83d\udd25",
+  "Why ___ Like a ___ | Powerful ___ Lesson",
+  "After ___, You Must ___ \u2013 ___ Tips in ___ Seconds"
+ ],
+ "opening_3s": [
+  "Show a striking line from a classic text while a bold on\u2011screen graphic flashes \u201cSTOP DOING THIS!\u201d",
+  "Cut to a close\u2011up of a ticking clock and say \u201cYou\u2019ve only got ___ seconds to change ___ forever.\u201d",
+  "Begin with a quick personal anecdote: \u201cAt ___ years old I learned this one truth\u2026\u201d"
+ ],
+ "comment_themes": [
+  "Viewers love age\u2011related validation and practical wisdom they can apply now",
+  "Requests for more specific book titles or deeper philosophical context",
+  "Appreciation for spiritual/faith references that reinforce the lesson",
+  "Calls for clearer thumbnails and on\u2011screen text so the key message sticks"
+ ],
+ "avoid": [
+  "Generic, vague titles without a numeric or age hook",
+  "Videos longer than 60 seconds without a clear, fast\u2011moving structure",
+  "Overusing jargon or obscure references that alienate casual viewers"
+ ],
+ "try_next": [
+  "Launch a \"Decade\u2011by\u2011Decade Stoic Hacks\" series, each 30\u2011second clip targeting a specific age range",
+  "Combine split\u2011screen of original public\u2011domain text with modern animation, ending with a one\u2011sentence actionable tip",
+  "Add a pinned comment summarizing the lesson and prompting viewers to share their own experience in the comments"
+ ],
+ "updated": "2026-11-08",
+ "n_hits": 30,
+ "shares": {
+  "question title": 7,
+  "speaks to \"you\"": 53,
+  "number in title": 37,
+  "has emoji": 23,
+  "ALL-CAPS word": 3,
+  "title <= 6 words": 3,
+  "video <= 30s": 43,
+  "video 30-60s": 13,
+  "video > 60s": 43
+ },
+ "median_hit_views": 260089
+}

@@ -1,0 +1,49 @@
+{
+ "patterns": [
+  "High-concept optical and neurological glitches: Visualizing how the brain creates illusions, fake vision, or misinterprets reality.",
+  "Bizarre physical properties and extreme edge cases: Showing unexpected brain conditions, savants, or unusual physical sensations.",
+  "Anthropomorphized brain reactions: Using cute 3D character animation of a brain reacting emotionally to external inputs like food or stress.",
+  "Everyday chemical and cognitive hacks: Explaining commonplace experiences like caffeine, learning, or dark psychology tricks using simple analogies.",
+  "Active viewer self-testing: Posing interactive challenges where the audience feels their own brain reacting or falling for an illusion in real-time."
+ ],
+ "title_formulas": [
+  "Why Your Brain Can't [Counterintuitive Physical Action] [Emoji]",
+  "This Is What Happens To Your Brain When You [Common Daily Action] [Emoji]",
+  "How Your Brain Hacks [Perceptual Phenomenon or Sensation]"
+ ],
+ "opening_3s": [
+  "A striking 3D visual of a brain reacting instantly to a jarring stimulus accompanied by a direct question.",
+  "A bizarre physical mystery demonstrated immediately on screen before explaining the underlying neural cause.",
+  "An interactive visual prompt asking the viewer to stare at a specific point to trigger an immediate cognitive sensation."
+ ],
+ "comment_themes": [
+  "Relatable self-testing comments where viewers confirm feeling the exact mental effect described in the video.",
+  "Affection for charming visual metaphors, especially cute or personified representations of organs.",
+  "Dark humor and pop-culture references sparked by unusual medical facts or mind-control concepts.",
+  "Requests for explanations of everyday physical phenomena like post-meal sleepiness or sensory oddities."
+ ],
+ "avoid": [
+  "Overly clinical medical explanations without clear, relatable visual metaphors.",
+  "Audio tracks or music that clash with the visual tone and make informative content feel unnerving.",
+  "Generic tip listicles that lack an immediate visual demonstration or high-stakes hook."
+ ],
+ "try_next": [
+  "A 35-second breakdown of phantom limb sensations using historical cases from classic neurology texts with stylized 3D visualization.",
+  "A 28-second interactive video demonstrating how auditory visual illusions trick perception, asking viewers to test it with headphones.",
+  "A 40-second animated story of a historical psychological experiment illustrating how muscle memory forms while sleeping."
+ ],
+ "updated": "2026-11-08",
+ "n_hits": 30,
+ "shares": {
+  "question title": 33,
+  "speaks to \"you\"": 60,
+  "number in title": 13,
+  "has emoji": 60,
+  "ALL-CAPS word": 3,
+  "title <= 6 words": 23,
+  "video <= 30s": 33,
+  "video 30-60s": 53,
+  "video > 60s": 13
+ },
+ "median_hit_views": 9415892
+}
