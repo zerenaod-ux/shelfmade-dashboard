@@ -131,6 +131,28 @@ def main():
     ok_v = bool(vr) and vr[0].get('conclusion') == 'success' and (age_h(vr[0].get('createdAt', '')) or 999) < 10 * 24
     rec('Viral DNA study', ok_v, ('last: %s %s' % (vr[0].get('conclusion'), vr[0].get('createdAt', '')[:10])) if vr else 'not run yet', 'ALERT: viral DNA study failing or stale',
         lambda: sh('gh', 'workflow', 'run', 'viral.yml', '--repo', REPO))
+    # 15 NOTHING POSTED (the result the owner cares about): every channel must have a public video newer than 72 h (judged from the daily analytics file)
+    try:
+        import guard as _g
+    except Exception:
+        _g = None
+    for _b in ('shelfmade', 'mindlore', 'doodles'):
+        try:
+            if _g and _g.killed(_b):
+                continue
+            an = jl('data/analytics/%s.json' % _b, {})
+            pubs = [v['published'] for v in an.get('videos', []) if v.get('published') and v.get('privacy', 'public') == 'public']
+            newest = max(pubs) if pubs else ''
+            a_h = age_h(newest) if newest else None
+            fresh = age_h(an['collected'] + ('T00:00:00+00:00' if len(an['collected']) == 10 else '')) if an.get('collected') else None
+            stale_data = fresh is not None and fresh > 48
+            rec('Posting: %s' % _b, stale_data or (a_h is not None and a_h <= 72), ('newest public video %.0f h ago' % a_h) if a_h is not None else 'no video found',
+                'ALERT: %s has not posted for 3 days' % _b)
+        except Exception as e:
+            rec('Posting: %s' % _b, True, 'could not measure (%s)' % str(e)[:50])
+    # 16 SERVICE PROBES (free keys / logins): a probe failing twice in a row = alert (deps.py probes every service daily; a switch to Plan B is automatic, this tells the owner)
+    dd = [r for r in jl('publish/deps.json', {}).get('rows', []) if r.get('status') not in (None, 'up') and (r.get('down_recent') or 0) >= 2]
+    rec('Service probes', not dd, 'all probes fine' if not dd else '; '.join('%s down %dx' % (r['name'], r['down_recent']) for r in dd), 'ALERT: a free service is failing')
     # 12 DOODLES GPU BUDGET (H2): Kaggle free GPU is ~30h/week. 3 stories/day normally; drop to 2 if the last 7 days used > 24h, back to 3 under 18h.
     try:
         r = sh('gh', 'run', 'list', '--repo', REPO, '--workflow', 'doodles.yml', '--limit', '40', '--json', 'createdAt,updatedAt,status')
