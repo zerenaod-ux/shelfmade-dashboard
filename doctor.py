@@ -113,6 +113,7 @@ def ai_patch(log):
 
 def main():
     s = load()
+    sh('git', 'config', 'user.name', 'doctor-bot'); sh('git', 'config', 'user.email', 'bot@users.noreply.github.com')   # BUG found by the drill: revert failed without an identity, so rollback never ran
     if not s['on']: print('doctor off'); return
     by = latest_runs(); wfs = {w['name']: w['id'] for w in api('actions/workflows?per_page=100').get('workflows', [])}
     now = time.time(); changed = False
