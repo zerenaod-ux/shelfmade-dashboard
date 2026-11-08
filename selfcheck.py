@@ -52,6 +52,10 @@ def last_run(wf):
 
 
 def main():
+    if os.environ.get('GITHUB_EVENT_NAME') == 'workflow_run':
+        _prev = jl('publish/selfcheck.json', {}).get('at', '')
+        if _prev and (age_h(_prev) or 99) < 20:
+            print('selfcheck: already ran %.1f h ago, skipping' % age_h(_prev)); return
     res = []
     def rec(name, ok, text, title=None, fix=None):
         acted = ''

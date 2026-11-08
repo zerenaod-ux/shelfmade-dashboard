@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '17 14 * * *'
   workflow_dispatch:
+  workflow_run:   # GitHub's timer for this repo fires hours late or skips; piggyback on a job that runs several times a day (selfcheck.py skips if it already ran <20h ago)
+    workflows: [review-publish]
+    types: [completed]
 permissions:
   contents: write
   issues: write
