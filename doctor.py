@@ -161,10 +161,11 @@ def main():
                     if _bad(Path(f)): Path(f).write_text(t)
                     else: what = 'AI patch in %s: %s' % (f, w)
         if what:
+            t0 = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')   # taken BEFORE the re-run starts so that run is counted when verifying
             sha = push('doctor: ' + what[:100])
             if sha:
                 rerun(wfs.get(name, last['workflow_id']))
-                s['pending'].append({'wf': name, 'commit': sha, 'what': what, 'at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'ts': now, 'log': log[-1500:]})
+                s['pending'].append({'wf': name, 'commit': sha, 'what': what, 'at': t0, 'ts': now, 'log': log[-1500:]})
                 note(s, '%s: %s -> re-run started' % (name, what)); issue('Doctor: ' + name, 'Failure found. I did: %s. Re-run started; I will verify it.' % what); changed = True; continue
         note(s, '%s: no safe automatic fix found' % name)
         issue('Doctor: ' + name, 'Failed run %s. No safe automatic fix found (attempt %d/%d). Log tail:\n```\n%s\n```' % (last['html_url'], s['attempts'][name], MAX_ATTEMPTS, log[-2000:])); changed = True
