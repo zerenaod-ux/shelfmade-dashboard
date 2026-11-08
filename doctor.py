@@ -81,8 +81,10 @@ def _bad(p):
 def push(msg):
     sh('git', 'config', 'user.name', 'doctor-bot'); sh('git', 'config', 'user.email', 'bot@users.noreply.github.com')
     sh('git', 'add', '-A', '--', '*.py', 'publish/doctor.json')
-    if not sh('git', 'status', '--porcelain'): return None
-    sh('git', 'commit', '-qm', msg)
+    if sh('git', 'status', '--porcelain'):
+        sh('git', 'commit', '-qm', msg)
+    elif sh('git', 'rev-parse', 'HEAD') == sh('git', 'rev-parse', '@{u}'):
+        return None   # nothing to push; (a clean tree with an unpushed `git revert` commit IS pushed: found by drill round 2)
     for _ in range(3):
         if subprocess.run(['git', 'push', '-q'], capture_output=True).returncode == 0: break
         sh('git', 'pull', '-q', '--rebase')
