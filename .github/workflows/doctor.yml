@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '41 */3 * * *'
   workflow_dispatch:
+  workflow_run:   # react right after a failure instead of waiting for the (often delayed) schedule
+    workflows: [watchdog, doctor-drill, doodles, shelfmade-story-short, mindlore-story-short, publisher, publisher-doodles, publisher-mindlore, yt-publish-shelfmade, yt-publish-mindlore, yt-publish-doodles, review-publish, daily-shorts, retitle, flywheel]
+    types: [completed]
 permissions:
   contents: write
   issues: write
@@ -10,6 +13,7 @@ permissions:
 concurrency: doctor
 jobs:
   heal:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'failure'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
