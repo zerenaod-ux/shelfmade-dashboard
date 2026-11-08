@@ -28,6 +28,12 @@ def pick_theme(h):
 def one(llm_call):
     import story_rules
     h = hist(); theme = pick_theme(h); recent = [i['title'] for i in h['items'][-15:]]
+    # H1b TEST: our data says <=30s Shorts win ~7x; make the first 3 of every 14 days short (~30s), measured later by the scoreboard
+    _lo, _hi, exp = 140, 200, ''
+    try:
+        _cut = (datetime.date.today() - datetime.timedelta(days=14)).isoformat()
+        if sum(1 for i in h['items'] if i.get('exp') == 's30' and i.get('date', '') >= _cut) < 3: exp = 's30'; _lo, _hi = 60, 100
+    except Exception: pass
     radar = ''
     try:
         r = load(B / 'data/radar/mindlore.json', {}); radar = '\nToday\'s winning pattern on YouTube (borrow the pattern, never the words): %s' % ((r.get('hook_patterns') or [''])[0])
@@ -37,9 +43,9 @@ def one(llm_call):
     except Exception: pass
     chan = ('ShelfMade, a channel that explains classic books for modern readers: the Short is "a classic book vs today", what this old book said and what later research found. THEME BOOK' if SM else 'MindLore, a psychology channel about how your mind works, explained with real research and how people lived long ago. THEME')
     base = ('You write a 60-70 second vertical Short for %s: %s.%s\n'
-            'Titles already used, do not repeat: %s.\n' % (chan, theme, radar, recent) + story_rules.rules('shelfmade' if SM else 'mindlore', short=True) +
+            'Titles already used, do not repeat: %s.\n' % (chan, theme, radar, recent) + (story_rules.rules('shelfmade' if SM else 'mindlore', short=True).replace('ONE narration of 150-190 words (about 60-70 seconds)', 'ONE narration of 70-90 words (about 30 seconds, ONE idea only, hook in the first 5 words)') if exp else story_rules.rules('shelfmade' if SM else 'mindlore', short=True)) +
             'Return JSON: {"public_title": "the hook or an everyday question, under 70 characters", "hook": "the exact first sentence of the narration", "thumb": "2-5 WORD CAPS HEADLINE", '
-            '"narration": "150-190 words, first sentence EXACTLY the hook", "claims": [{"claim":"...","who":"...","year":"...","place":"..."}]}.')
+            '"narration": "'+("70-90" if exp else "150-190")+' words, first sentence EXACTLY the hook", "claims": [{"claim":"...","who":"...","year":"...","place":"..."}]}.')
     prompt = base; bad = ['no usable answer']; d = None
     for attempt in range(4):
         try: d = llm_call(prompt)
@@ -48,7 +54,7 @@ def one(llm_call):
         nar = re.sub(r'\s+', ' ', str(d.get('narration', ''))).strip(); d['narration'] = nar; d['hook'] = str(d.get('hook', '')).strip()
         d['sections'] = [{'title': 'Story', 'narration': nar}]
         n = len(nar.split()); bad = []
-        if not (140 <= n <= 200): bad.append('narration must be 150-190 words (now %d)' % n)
+        if not (_lo <= n <= _hi): bad.append('narration must be %s words (now %d)' % ('70-90' if exp else '150-190', n))
         if d['hook'] and not nar.startswith(d['hook']): bad.append('the narration must start with exactly the hook sentence')
         if re.search(r'[_#*]', nar): bad.append('no underscores, hashtags or stage directions')
         if not bad: bad = story_rules.check(d, 'shelfmade' if SM else 'mindlore', short=True)
@@ -62,9 +68,9 @@ def one(llm_call):
     sid = 'st-%s-%s' % (datetime.date.today().strftime('%y%m%d'), hashlib.md5(d['hook'].encode()).hexdigest()[:5])
     bk = theme.split(' by ') if SM else ['', '']
     out = {'book_id': sid, 'title': bk[0], 'author': bk[-1] if SM else '', 'brand': BRAND, 'story_short': True, 'public_title': str(d.get('public_title') or d['hook'])[:95], 'hook': d['hook'], 'thumbnail_headline': str(d.get('thumb', ''))[:40].upper(),
-           'sections': d['sections'], 'claims': d.get('claims', []), 'source_url': '', 'theme': theme}
+           'sections': d['sections'], 'claims': d.get('claims', []), 'source_url': '', 'theme': theme, 'exp': exp}
     OUT.mkdir(parents=True, exist_ok=True); (OUT / (sid + '.json')).write_text(json.dumps(out, indent=1, ensure_ascii=False))
-    h['items'].append({'id': sid, 'title': out['public_title'], 'theme': theme, 'date': datetime.date.today().isoformat()}); h['items'] = h['items'][-200:]
+    h['items'].append({'id': sid, 'title': out['public_title'], 'theme': theme, 'exp': exp, 'date': datetime.date.today().isoformat()}); h['items'] = h['items'][-200:]
     HIST.parent.mkdir(parents=True, exist_ok=True); HIST.write_text(json.dumps(h, indent=1))
     print('story_short: wrote', sid, '-', out['public_title'], flush=True)
     return sid
