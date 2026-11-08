@@ -33,6 +33,10 @@ def build():
     rs = jl('data/growth/retitle-status.json', {})
     if rs: L.append('- Retitle campaign: %s changed, %s checked and kept, still waiting: %s.' % (rs.get('changed_total'), rs.get('kept_total'), rs.get('pending_after_this_run')))
     if lg: L.append('- Titles auto-improved so far: %d Shorts (full list with old titles: data/growth/title_log.json; undo all: run workflow `retitle` with mode revert-all).' % len(lg))
+    L.append('\n### Viral DNA (what the biggest hits in our niches do; unproven for us)')
+    for b in ('shelfmade', 'mindlore', 'doodles'):
+        vj = jl('data/viral/%s.json' % b, {})
+        if vj.get('patterns'): L.append('- %s (%s, %s hits): %s' % (b, vj.get('updated'), vj.get('n_hits'), str(vj['patterns'][0])[:150]))
     L.append('\n### System health')
     bad = [c for c in sc.get('checks', []) if not c.get('ok')]
     L.append('- Self-check: ' + ('everything verified.' if not bad else 'NEEDS A LOOK: ' + '; '.join('%s - %s' % (c['name'], c['text']) for c in bad)))
