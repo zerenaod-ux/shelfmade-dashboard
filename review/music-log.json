@@ -450,5 +450,89 @@
   "brand": "shelfmade",
   "kind": "short",
   "date": "2026-11-07"
+ },
+ "You were taught Thus Spake Zarathustra wrong.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_04"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-08"
+ },
+ "This Tao Te Ching line is uncomfortable.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_05"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-08"
+ },
+ "This line from Analects stays with you.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_02"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-08"
+ },
+ "This Thus Spake Zarathustra line is uncomfortable.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_03"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-08"
+ },
+ "Lao Tzu wrote this for you.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_02"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-08"
+ },
+ "The part of Analects nobody mentions.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_02"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-08"
  }
 }
