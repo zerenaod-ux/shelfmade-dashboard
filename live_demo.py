@@ -230,7 +230,8 @@ def frame(t, beats, starts, words, total, wstarts):
     return c.im.resize((CW, CH), Image.LANCZOS)
 
 def build(story, outp):
-    d = json.load(open(story)); text = ' '.join(s['narration'] for s in d['sections']).replace('‑', '-').replace('–', '-')
+    d = json.load(open(story)); text = ' '.join(s['narration'] for s in d['sections'])
+    text = re.sub(r'[\u2010-\u2015]', '-', text).replace('\u2019', "'").replace('\u2018', "'"); text = re.sub(r'[^\x20-\x7e]', '', text); text = re.sub(r'\s+', ' ', text).strip()
     B.TEXT = text; words, mp3 = B.get_words(); total = words[-1]['e'] + 1.0
     for w in words: w['w'] = w['w']
     beats = llm_director(words, total); src = 'llm'
