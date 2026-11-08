@@ -1,26 +1,26 @@
 {
- "at": "2026-11-07T18:50:19+00:00",
- "level": "warn",
+ "at": "2026-11-08T18:35:15+00:00",
+ "level": "ok",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 18 h ago"
+   "text": "updated 41 h ago"
   },
   {
    "name": "Doodles daily run",
    "ok": true,
-   "text": "last: success 2026-11-07T14:18"
+   "text": "last: success 2026-11-08T13:18"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "2 stories carry a judge note"
+   "text": "4 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
-   "ok": false,
-   "text": "ok=False, checked 4 h ago"
+   "ok": true,
+   "text": "ok=True, checked 2 h ago"
   },
   {
    "name": "Free-tier room",
@@ -30,7 +30,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-07T11:20"
+   "text": "last: success 2026-11-08T11:31"
   },
   {
    "name": "Safety guard",
@@ -55,12 +55,32 @@
   {
    "name": "Playlist flywheel",
    "ok": true,
-   "text": "ok (shelfmade: added 12 video(s); mindlore: added 12 video(s); doodles: added 6 video(s))"
+   "text": "ok (shelfmade: added 8 video(s); mindlore: added 12 video(s); doodles: added 6 video(s))"
   },
   {
    "name": "Retitle campaign",
    "ok": true,
+   "text": "last: success 2026-11-08"
+  },
+  {
+   "name": "Access check (logins)",
+   "ok": true,
    "text": "last: success 2026-11-07"
+  },
+  {
+   "name": "Viral DNA study",
+   "ok": true,
+   "text": "last: success 2026-11-08"
+  },
+  {
+   "name": "Doodles GPU budget",
+   "ok": true,
+   "text": "18.6 h used in 7 days, stories/day cap 3"
+  },
+  {
+   "name": "No module shadowing",
+   "ok": true,
+   "text": "no repo file shadows a standard or pip module"
   }
  ]
 }
