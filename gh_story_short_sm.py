@@ -41,6 +41,13 @@ def _ft(t):
         import growth; return growth.fix_title(__import__('os').environ.get('BRAND', 'shelfmade'), t)
     except Exception: return t
 
+def _fail(built, state, sid):
+    """Skip rule: 2 failures park the script so it never blocks the queue (marker entries live in the built list)."""
+    built.append('fail:' + sid)
+    if built.count('fail:' + sid) >= 2 and sid not in built:
+        built.append(sid); built.append('parked:' + sid); print('PARKED', sid, '(failed twice, queue moves on)', flush=True)
+    state.write_text(json.dumps(built))
+
 def main(n):
     state = Path('gh-state/built-story-shorts-shelfmade-old.json'); state.parent.mkdir(exist_ok=True); built = load(state, [])
     todo = [p for p in sorted(Path('story-shorts/shelfmade').glob('*.json')) if p.stem not in built][:n]
@@ -53,7 +60,7 @@ def main(n):
         env = dict(os.environ, STORY_SCRIPT=str(sj.resolve()), SHELFMADE_MUSIC_DIR=str(folder.resolve() / '.render'), BRAND='shelfmade')
         r = subprocess.run([sys.executable, 'worker.py', json.dumps(book), '1', str(folder)], capture_output=True, text=True, timeout=1800, env=env)
         print((r.stdout + r.stderr)[-900:], flush=True); sj.unlink(missing_ok=True)
-        if r.returncode or not (folder / 'final.mp4').is_file(): print('FAILED', sid); continue
+        if r.returncode or not (folder / 'final.mp4').is_file(): print('FAILED', sid); _fail(built, state, sid); continue
         import story_rules, hashtags
         ev = story_rules.evidence_lines(s); tags = hashtags.shelfmade(s.get('hook', ''), 'short')
         text = _ft(s['public_title']) + '\n\n' + s['hook'] + '\n\n' + ('Evidence: ' + '; '.join(ev) + '\n\n' if ev else '') + 'Book: %s by %s. Classic books, explained on ShelfMade.\n\n' % (book['title'], book['author']) + tags

@@ -10,6 +10,13 @@ def _ft(t):
         import growth; return growth.fix_title(BRAND, t)
     except Exception: return t
 
+def _fail(built, state, sid):
+    """Skip rule: 2 failures park the script so it never blocks the queue (marker entries live in the built list)."""
+    built.append('fail:' + sid)
+    if built.count('fail:' + sid) >= 2 and sid not in built:
+        built.append(sid); built.append('parked:' + sid); print('PARKED', sid, '(failed twice, queue moves on)', flush=True)
+    state.write_text(json.dumps(built))
+
 def main(n):
     state = Path('gh-state/built-story-shorts.json' if BRAND == 'mindlore' else 'gh-state/built-story-shorts-%s.json' % BRAND); state.parent.mkdir(exist_ok=True); built = load(state, [])
     todo = [p for p in sorted(Path('story-shorts/%s' % BRAND).glob('*.json')) if p.stem not in built][:n]
@@ -18,7 +25,7 @@ def main(n):
     for p in todo:
         sid = p.stem; folder = Path('out/s_' + sid); shutil.rmtree(folder, ignore_errors=True); print('=== Building story Short', sid, flush=True)
         try: ml2d.build(str(p), folder, vert=True)
-        except Exception as e: print('FAILED', sid, str(e)[:400], flush=True); continue
+        except Exception as e: print('FAILED', sid, str(e)[:400], flush=True); _fail(built, state, sid); continue
         s = load(p, {}); import story_rules
         tags = ''
         try:
