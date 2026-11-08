@@ -74,7 +74,12 @@ def get_words():
     toks = TEXT.split()
     if os.environ.get('FAKE'):
         return [{'w': w, 's': i / 2.9 + .3, 'e': (i + 1) / 2.9 + .3} for i, w in enumerate(toks)], None
-    mp3 = OUT / 'bt.mp3'; ws = asyncio.run(_narrate(TEXT, mp3))
+    mp3 = OUT / 'bt.mp3'; ws = None
+    import time
+    for att in range(5):
+        try: ws = asyncio.run(_narrate(TEXT, mp3)); break
+        except Exception as e: print('narration retry', att, str(e)[:120], flush=True); time.sleep(3 + att * 4)
+    if ws is None: raise SystemExit('narration failed after retries')
     if len(ws) != len(toks): ws = [{'w': w, 's': i * dur(mp3) / len(toks), 'e': (i + 1) * dur(mp3) / len(toks)} for i, w in enumerate(toks)]
     for a, b in zip(ws, toks): a['w'] = b
     return ws, mp3
