@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-59a82",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Music Mood Switch",
+ "hook": "You think music just fills background noise.",
+ "thumbnail_headline": "MUSIC EMOTION LINK",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think music just fills background noise. Ancient Greeks believed music could shape emotions directly. In the 1990s, neuroscientist Daniel Levitin studied listeners and noted about 20% brain shift. The result? Your mood lifts when melody matches feeling. 2004 McGill study found skin conductance rose about fifteen percent during emotional music. Other cultures report the same music‑emotion link. So why treat music as background? Because dopamine spikes with rewarding chords. That's it. So next time you press play, notice the shift, and remember you think music fills background noise."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 20% brain shift",
+   "who": "Daniel Levitin",
+   "year": "1990s",
+   "place": "USA"
+  },
+  {
+   "claim": "skin conductance rose about fifteen percent",
+   "who": "McGill University researchers",
+   "year": "2004",
+   "place": "Canada"
+  }
+ ],
+ "source_url": "",
+ "theme": "music and emotion",
+ "exp": "s30"
+}

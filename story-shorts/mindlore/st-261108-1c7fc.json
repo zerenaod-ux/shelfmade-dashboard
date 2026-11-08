@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261108-1c7fc",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why focus fails",
+ "hook": "You check your phone every few minutes.",
+ "thumbnail_headline": "FOCUS VS DISTRACTION",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You check your phone every few minutes. Ancient hunters stayed focused for hours on one task. In the 1990s, Richard Davidson studied Tibetan monks and found about 8 hours of meditation. The result? Their brains had stronger attention networks than modern adults. That's it. Hadza research in the 2000s showed the same sustained attention trait. So why do we think multitasking helps? Because phones fragment focus, yet the brain cannot truly split tasks. So when you reach for a notification, remember you can focus like hunters. You check your phone"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Monks meditated about 8 hours daily",
+   "who": "Richard Davidson",
+   "year": "1990s",
+   "place": "Tibetan monks"
+  },
+  {
+   "claim": "Hadza exhibited sustained attention trait",
+   "who": "Researchers studying the Hadza",
+   "year": "2000s",
+   "place": "Hadza foragers, Tanzania"
+  }
+ ],
+ "source_url": "",
+ "theme": "attention and distraction",
+ "exp": "s30"
+}
