@@ -66,6 +66,9 @@ def release_used(sid, why):
 def run(*a, **k): return subprocess.run([sys.executable, *map(str, a)], **k)
 def main():
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 2
+    try:
+        n = min(n, int(json.loads(open('publish/guard.json').read()).get('doodles_count', n)))   # selfcheck lowers this when the free Kaggle GPU runs short
+    except Exception: pass
     (ROOT / 'data').mkdir(exist_ok=True)
     (ROOT / 'data/secrets.json').write_text(json.dumps({'GEMINI_API_KEY': os.environ.get('GEMINI_API_KEY', '')}))
     if len(unused()) < n + 2:

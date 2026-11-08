@@ -117,6 +117,21 @@ def main():
     rt = [r for r in last_run('retitle.yml') if r.get('status') == 'completed']
     rec('Retitle campaign', (not rt) or rt[0].get('conclusion') == 'success', ('last: %s %s' % (rt[0].get('conclusion'), rt[0].get('createdAt', '')[:10])) if rt else 'not run yet', 'ALERT: retitle job failing',
         lambda: sh('gh', 'workflow', 'run', 'retitle.yml', '--repo', REPO))
+    # 12 DOODLES GPU BUDGET (H2): Kaggle free GPU is ~30h/week. 3 stories/day normally; drop to 2 if the last 7 days used > 24h, back to 3 under 18h.
+    try:
+        r = sh('gh', 'run', 'list', '--repo', REPO, '--workflow', 'doodles.yml', '--limit', '40', '--json', 'createdAt,updatedAt,status')
+        mins = 0.0
+        for x in json.loads(r.stdout or '[]'):
+            c = datetime.datetime.fromisoformat(x['createdAt'].replace('Z', '+00:00')); u = datetime.datetime.fromisoformat(x['updatedAt'].replace('Z', '+00:00'))
+            if (NOW - c).total_seconds() <= 7 * 86400 and x.get('status') == 'completed': mins += (u - c).total_seconds() / 60
+        g = jl('publish/guard.json', {}); cap = int(g.get('doodles_count', 3)); new = cap
+        if mins > 24 * 60: new = 2
+        elif mins < 18 * 60: new = 3
+        if new != cap:
+            g['doodles_count'] = new; (B / 'publish/guard.json').write_text(json.dumps(g, indent=1))
+        rec('Doodles GPU budget', mins <= 28 * 60, '%.1f h used in 7 days, stories/day cap %d' % (mins / 60, new), 'ALERT: Doodles using too much free GPU')
+    except Exception as e:
+        rec('Doodles GPU budget', True, 'could not measure (%s)' % str(e)[:60])
     # 11 NO MODULE SHADOWING: a repo file named like a standard/pip module (for example packaging.py) silently breaks tools that import it (this killed the Kaggle step on 2026-11-07)
     import sys as _sys
     PIPN = {'packaging', 'requests', 'yaml', 'numpy', 'pandas', 'PIL', 'kaggle', 'google', 'urllib3', 'six', 'setuptools', 'pkg_resources', 'certifi', 'idna', 'dateutil', 'pytz', 'typing_extensions',
