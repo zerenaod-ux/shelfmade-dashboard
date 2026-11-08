@@ -1,6 +1,8 @@
 {
  "on": true,
- "attempts": {},
+ "attempts": {
+  "doctor-drill": 1
+ },
  "pending": [],
  "log": [
   {
@@ -10,7 +12,16 @@
   {
    "t": "11-08 18:04Z",
    "msg": "VERIFIED fix for doctor-drill (AI patch in drill_target.py: removes intentional failure to allow CI to pass)"
+  },
+  {
+   "t": "11-08 18:36Z",
+   "msg": "doctor-drill: no safe automatic fix found"
   }
  ],
- "at": "2026-11-08T18:04:05Z"
+ "at": "2026-11-08T18:36:26Z",
+ "undone": [
+  {
+   "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
+  }
+ ]
 }
