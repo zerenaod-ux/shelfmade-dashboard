@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261108-214cd",
+ "title": "Character",
+ "author": "Samuel Smiles",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "If you struggle with good habits, your view of character is wrong",
+ "hook": "If you struggle to build good habits, your willpower isn't the problem.",
+ "thumbnail_headline": "CHARACTER IS FAKE?",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "If you struggle to build good habits, your willpower isn't the problem. Victorians believed your moral character was built entirely by daily personal discipline. In 1871, author Samuel Smiles argued that individual effort alone defines a person's lifelong success. Is self control really just an inner muscle? In 1928, psychologists Hugh Hartshorne and Mark May tested over 10,000 children across the United States. The result? They found no single trait of general honesty or character across different situations. A child who cheated in school was completely honest at home. What did later brain science discover? In 2011, psychologist Wilhelm Hofmann studied hundreds of adults in Germany. He found people with high self control actually faced fewer temptations, rather than resisting more of them. So why do we assume character is just raw discipline? Smiles got it right that habits shape us, but he missed how environments trigger those habits. That's it. So next time you miss a target, remember: if you struggle to build good habits, your willpower isn't the problem."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Children do not possess a uniform trait of moral character; behavior varies heavily depending on the situation.",
+   "who": "Hugh Hartshorne and Mark May",
+   "year": "1928",
+   "place": "United States"
+  },
+  {
+   "claim": "People good at self-control do not exert more willpower, but structure their lives to encounter fewer temptations.",
+   "who": "Wilhelm Hofmann",
+   "year": "2011",
+   "place": "Germany"
+  }
+ ],
+ "source_url": "",
+ "theme": "Character by Samuel Smiles"
+}

@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261108-4d7c4",
+ "title": "The Young Man's Guide",
+ "author": "William A. Alcott",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "If you check these 3 traits, your focus is ruined",
+ "hook": "If you check these 3 traits, your daily focus is slipping away.",
+ "thumbnail_headline": "3 SIGNS YOU'RE BURNT OUT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "If you check these 3 traits, your daily focus is slipping away. In 1833, author William Alcott claimed youth ruined their minds through constant multi-tasking and quick digital-style distractions. Research by Gloria Mark at UC Irvine in 2004 tracked 36 office workers. She found people switched tasks every three minutes on average. The result? Your brain takes over twenty minutes to fully regain deep focus after one break. That is not just a modern problem. Studies across tech firms in the 2010s showed the exact same pattern of broken attention. The result? Chronic mental fatigue. So why do we assume our ancestors had perfect concentration? Alcott proved nineteenth-century workers struggled with constant interruptions too. He believed strict habit building was the only defense. Modern neuroscience agrees that clear routines protect your attention span. That's it. So next time you feel completely distracted, remember what to do if you check these 3 traits."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Office workers switch tasks roughly every three minutes and take over twenty minutes to regain focus.",
+   "who": "Gloria Mark",
+   "year": "2004",
+   "place": "UC Irvine"
+  },
+  {
+   "claim": "Constant digital interruptions cause chronic mental fatigue across knowledge workers.",
+   "who": "Gloria Mark",
+   "year": "2010s",
+   "place": "Various technology firms"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Young Man's Guide by William A. Alcott"
+}
