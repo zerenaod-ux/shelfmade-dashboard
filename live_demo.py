@@ -210,11 +210,11 @@ def frame(t, beats, starts, words, total, wstarts):
     if b.get('tag'): w_ = c.tw(b['tag'].upper(), 30) + 50; c.rr(360 - w_ / 2, 100, 360 + w_ / 2, 152, 26, acc, INK, 4); c.text(360, 126, b['tag'].upper(), 30, bg if sum(acc) > 400 else (255, 255, 255))
     DRAW[b['kind']](c, b, lt, T, bg, acc, ink)
     if b.get('sticker') and lt < 1.4: k = back(lt / .25) * (1 - ease((lt - 1.1) / .3)); c.emo(b['sticker'], 620, 210, 120 * k, 1.0, int(12 * math.sin(lt * 14) * (1 - lt / 1.4)))
-    im = c.im; z = 1 + .07 * math.exp(-lt * 9) + (.02 * math.sin(t * 2.2) if b['kind'] != 'reaction' else .0)
+    im = c.im; z = 1.03 + .07 * math.exp(-lt * 9) + (.02 * math.sin(t * 2.2) if b['kind'] != 'reaction' else .0)
     sx = sy = 0
     if b['kind'] == 'reaction' and lt < .8: sx, sy = 10 * math.sin(lt * 50) * (1 - lt / .8) * K, 8 * math.cos(lt * 43) * (1 - lt / .8) * K
     if z > 1.001 or sx or sy:
-        w, h = im.size; cw, ch = w / z, h / z; l = (w - cw) / 2 + sx; tp = (h - ch) / 2 + sy; im = im.resize((w, h), Image.BICUBIC, box=(l, tp, l + cw, tp + ch))
+        w, h = im.size; cw, ch = w / z, h / z; l = min(max(0, (w - cw) / 2 + sx), w - cw); tp = min(max(0, (h - ch) / 2 + sy), h - ch); im = im.resize((w, h), Image.BICUBIC, box=(l, tp, l + cw, tp + ch))
     c.im = im; c.d = B.ImageDraw.Draw(im)
     c.text(40, 60, 'MINDLORE', 30, ink, 'lm')
     wi = max(0, bisect.bisect_right(wstarts, t) - 1)

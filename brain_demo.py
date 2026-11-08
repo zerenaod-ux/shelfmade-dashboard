@@ -16,13 +16,13 @@ TEXT = ("Your brain deletes most of what you learn today. Here's why. Let's go i
 VOICE = 'en-US-AndrewNeural'
 
 def fnt(sz):
-    sz = int(sz * K)
+    sz = max(8, int(sz * K))
     for p in ('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'):
         if os.path.exists(p): return ImageFont.truetype(p, sz)
     return ImageFont.load_default()
 _F = {}
 def font(sz):
-    k = int(sz)
+    k = max(8, int(sz))
     if k not in _F: _F[k] = fnt(k)
     return _F[k]
 EMO = {}
