@@ -117,6 +117,13 @@ def main():
     rt = [r for r in last_run('retitle.yml') if r.get('status') == 'completed']
     rec('Retitle campaign', (not rt) or rt[0].get('conclusion') == 'success', ('last: %s %s' % (rt[0].get('conclusion'), rt[0].get('createdAt', '')[:10])) if rt else 'not run yet', 'ALERT: retitle job failing',
         lambda: sh('gh', 'workflow', 'run', 'retitle.yml', '--repo', REPO))
+    # 11 NO MODULE SHADOWING: a repo file named like a standard/pip module (for example packaging.py) silently breaks tools that import it (this killed the Kaggle step on 2026-11-07)
+    import sys as _sys
+    PIPN = {'packaging', 'requests', 'yaml', 'numpy', 'pandas', 'PIL', 'kaggle', 'google', 'urllib3', 'six', 'setuptools', 'pkg_resources', 'certifi', 'idna', 'dateutil', 'pytz', 'typing_extensions',
+            'attr', 'click', 'jinja2', 'markupsafe', 'pydantic', 'tqdm', 'scipy', 'cv2', 'moviepy', 'imageio', 'soundfile', 'edge_tts', 'aiohttp', 'bs4', 'lxml', 'cloudinary', 'tenacity', 'rich'}
+    names = {f.stem for d in (B, B / 'doodles_engine') for f in d.glob('*.py')}
+    bad = sorted(n for n in names if n in _sys.stdlib_module_names or n in PIPN)
+    rec('No module shadowing', not bad, ('files that shadow a library: ' + ', '.join(bad)) if bad else 'no repo file shadows a standard or pip module', 'ALERT: a repo file shadows a Python library')
     out = {'at': NOW.isoformat(timespec='seconds'), 'level': 'ok' if all(r['ok'] for r in res) else 'warn', 'checks': res}
     (B / 'publish').mkdir(exist_ok=True)
     (B / 'publish/selfcheck.json').write_text(json.dumps(out, indent=1))

@@ -28,7 +28,7 @@ jobs:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: |
           for l in titles-approved titles-skip titles-revert; do gh label create $l --repo "$GITHUB_REPOSITORY" --color 1d76db 2>/dev/null || true; done
-          python packaging.py
+          python title_packaging.py
       - name: Save
         if: always()
         run: |

@@ -1,4 +1,4 @@
-"""PACKAGING (G1). For videos that are clearly under the channel median after 3+ days, the model writes 2 stronger title options (using OUR measured winners from growth.py).
+"""PACKAGING (G1) - file is title_packaging.py: NEVER name a file packaging.py, it shadows the pip module packaging and broke the Kaggle CLI. For videos that are clearly under the channel median after 3+ days, the model writes 2 stronger title options (using OUR measured winners from growth.py).
 Opens ONE Issue per brand 'Title proposals <brand> <date>'. The OWNER decides: label `titles-approved` applies option A (YouTube API, title only), `titles-skip` ignores them.
 Nothing changes on YouTube without that label. Every change is logged (data/growth/title_log.json) with the old title so it can be reverted (label `titles-revert`).
 Comment/video text is never trusted as instructions; only the video's own title is shown to the model as data."""
