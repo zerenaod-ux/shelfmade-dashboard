@@ -2,7 +2,7 @@ name: mindlore-live-redo
 # One-off (owner request 2026-11-08): build the 3 MindLore topics in the new LIVE DEMO look (story-shorts/mindlore/st-261109-live*.json) and send them through the normal review/auto-approve path.
 on:
   push:
-    paths: ['publish/live-redo.trigger']
+    paths: ['publish/live-redo-never.trigger']
   workflow_dispatch:
 permissions:
   contents: write
