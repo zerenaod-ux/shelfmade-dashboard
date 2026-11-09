@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:03:45+00:00",
+ "at": "2026-11-09T22:40:19+00:00",
  "ready": "bad",
  "checks": [
   {
@@ -10,7 +10,7 @@
   {
    "name": "Jobs",
    "level": "warn",
-   "text": "last run failed: watchdog"
+   "text": "last run failed: mindlore-live-redo, review-decide, sm-scripts, watchdog"
   },
   {
    "name": "Alerts",
@@ -20,7 +20,7 @@
   {
    "name": "Keys",
    "level": "ok",
-   "text": "weekly key test success, 1 days ago"
+   "text": "weekly key test success, 2 days ago"
   },
   {
    "name": "Doodles stories",
@@ -35,7 +35,7 @@
   {
    "name": "Waiting for review",
    "level": "ok",
-   "text": "3 videos open (autopilot clears them when ON)"
+   "text": "6 videos open (autopilot clears them when ON)"
   }
  ]
 }
