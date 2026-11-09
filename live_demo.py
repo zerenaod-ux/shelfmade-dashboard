@@ -39,6 +39,32 @@ def ctext(c, x, y, t, sz, col, maxw=640, stroke=0, scol=PAPER, lh=1.12):
 def emo(c, ch, x, y, sz, a=1.0, rot=0):
     if ch and sz > 2: c.emo(ch, x, y, sz, a, rot)
 
+
+MOOD = {'😳': 'shock', '🤯': 'blown', '😅': 'sweat', '🙃': 'smirk', '😬': 'grimace', '🤨': 'brow', '💀': 'dead', '😮': 'wow', '😂': 'laugh', '😱': 'shock', '😵': 'dead', '🤔': 'brow', '😏': 'smirk', '😰': 'sweat'}
+def mascot(c, cx, cy, s, mood, lt):
+    """Recurring character 'Brainy': a pink brain with big eyes that reacts (consistent mascot = viewers come back)."""
+    PINK = (246, 196, 204); DK = (214, 140, 158); bob = 8 * math.sin(lt * 7); cy += bob
+    for (dx, dy, rx, ry) in [(-95, -40, 120, 105), (95, -40, 120, 105), (0, -85, 135, 90), (0, 30, 175, 120)]: c.ell(cx + dx * s, cy + dy * s, (rx + 7) * s, (ry + 7) * s, INK)
+    for (dx, dy, rx, ry) in [(-95, -40, 120, 105), (95, -40, 120, 105), (0, -85, 135, 90), (0, 30, 175, 120)]: c.ell(cx + dx * s, cy + dy * s, rx * s, ry * s, PINK)
+    for a in (-60, 0, 60): c.line([(cx + (a - 20) * s, cy - 120 * s), (cx + a * s, cy - 90 * s), (cx + (a + 20) * s, cy - 120 * s)], 6 * s, DK)
+    ex = 62 * s; ey = cy + 5 * s; er = 44 * s
+    for sx in (-1, 1):
+        c.ell(cx + sx * ex, ey, er, er * (1.15 if mood in ('shock', 'blown', 'wow') else 1), (255, 255, 255), INK, 5)
+        pr = er * (.28 if mood in ('shock', 'blown') else .45); off = 10 * s * math.sin(lt * 9) if mood in ('sweat', 'shock') else 0
+        if mood == 'dead':
+            for k in (-1, 1): c.line([(cx + sx * ex - 20 * s, ey - 20 * s * k), (cx + sx * ex + 20 * s, ey + 20 * s * k)], 7 * s, INK)
+        else: c.ell(cx + sx * ex + off + (8 * s if mood == 'brow' else 0), ey + (6 * s if mood != 'smirk' else 0), pr, pr, INK)
+    if mood in ('brow', 'smirk'): c.line([(cx - ex - 40 * s, ey - 60 * s), (cx - ex + 40 * s, ey - 74 * s)], 8 * s, INK); c.line([(cx + ex - 40 * s, ey - 74 * s), (cx + ex + 40 * s, ey - 50 * s)], 8 * s, INK)
+    my = cy + 95 * s
+    if mood in ('shock', 'wow', 'blown'): c.ell(cx, my, 30 * s, 38 * s * (1 + .15 * math.sin(lt * 12)), (120, 40, 50), INK, 5)
+    elif mood == 'laugh': c.ell(cx, my - 10 * s, 55 * s, 40 * s, (120, 40, 50), INK, 5)
+    elif mood == 'grimace': c.line([(cx - 55 * s, my), (cx - 20 * s, my + 8 * s), (cx + 20 * s, my - 8 * s), (cx + 55 * s, my)], 8 * s, INK)
+    elif mood == 'smirk': c.line([(cx - 40 * s, my + 8 * s), (cx + 10 * s, my + 8 * s), (cx + 50 * s, my - 14 * s)], 8 * s, INK)
+    elif mood == 'dead': c.line([(cx - 40 * s, my), (cx + 40 * s, my)], 8 * s, INK)
+    else: c.line([(cx - 45 * s, my - 5 * s), (cx, my + 12 * s), (cx + 45 * s, my - 5 * s)], 8 * s, INK)
+    if mood in ('sweat', 'shock', 'grimace'): drop = (lt * 160) % 90; emo(c, '💦', cx + 150 * s, cy - 70 * s + drop * .5, 70 * s)
+    if mood == 'blown': emo(c, '💥', cx, cy - 190 * s, 150 * s * back(lt / .3))
+
 # ---------- beat drawers: f(c, b, lt, T, bg, acc, ink) ----------
 def d_title(c, b, lt, T, bg, acc, ink):
     ws = (b.get('text') or '').upper().split() or ['WAIT']
@@ -129,12 +155,12 @@ def d_meter(c, b, lt, T, bg, acc, ink):
     emo(c, b.get('emoji'), 80 + w, 520 - 20 * abs(math.sin(lt * 6)), 150 * back(lt / .3)); (None if b.get('hide') else c.text(360, 780, '%d%%' % round(v * 100), 110, acc, 'mm', 5, bg))
     ctext(c, 360, 940, (b.get('text') or '').upper(), 48, ink, 640)
 def d_react(c, b, lt, T, bg, acc, ink):
-    emo(c, b.get('emoji') or '😳', 360 + 10 * math.sin(lt * 35) * (1 - ease(lt / 1.2)), 470, 380 * back(lt / .25))
+    mood = MOOD.get(b.get('emoji') or '😳', 'shock')
+    mascot(c, 360 + 10 * math.sin(lt * 35) * (1 - ease(lt / 1.2)), 470, 1.25 * back(lt / .25), mood, lt)
     if lt > .25:
         k = back((lt - .25) / .25); c.rr(360 - 300 * k, 760, 360 + 300 * k, 960, 36, (255, 255, 255), INK, 5); c.d.polygon([(330 * K, 760 * K), (400 * K, 760 * K), (350 * K, 700 * K)], fill=(255, 255, 255), outline=INK)
         c.d.rectangle([332 * K, 756 * K, 398 * K, 764 * K], fill=(255, 255, 255))
         if k > .7: ctext(c, 360, 860, b.get('text') or '', 64, INK, 520)
-    emo(c, '💦' if lt > .5 else None, 520, 330, 80 * ease((lt - .5) / .3))
 def d_brain(c, b, lt, T, bg, acc, ink):
     class S:
         z = 1.5 + .08 * ease(lt / T)
@@ -173,7 +199,7 @@ def llm_director(words, total):
         sysm = 'You are a viral short-video director for a psychology channel. Reply JSON only.'
         usr = ('Plan a fast, funny, creative explainer video whose pictures ACT OUT the narration live, in sync with the words.\nNarration with word indexes (index:word):\n%s\n\n'
                'Toolkit (kind: params):\n%s\n\nRules: about %d beats; each beat has "at" = word index where it starts (strictly increasing, first is 0; a new visual every 1.5-3 seconds); the first beat is a title_slam hook of <=3 words. '
-               'Use a VARIETY of kinds, at least 3 different besides title_slam; at least 2 reaction beats with kind, clean, funny quips (<=6 words, never mocking people). '
+               'Use a VARIETY of kinds, at least 3 different besides title_slam; at least 3 reaction beats starring the mascot Brainy (a talking brain): relatable, self-aware, exaggerated jokes in the style of a witty friend (<=7 words, e.g. \"Me, opening my 47th tab.\" or \"Brain: loading... still loading.\"), clean, never mocking people or groups; the emoji field sets the mood of Brainy (😳 😅 🤯 🙃 😬 🤨 💀 😮 😂). '
                'Numbers/stats in counter/chart/meter MUST come from the narration and keep the SAME meaning (never put two different quantities on one chart or compare them); never invent facts. Do NOT use chart shape bars. Emoji must be single emoji characters. Every beat may also have "tag" (<=3 word label) and "sticker" (one emoji popped on a key word). '
                'Make the visuals literally show what is being said (e.g. a memory slot overflowing, a bar filling, a thing travelling from A to B, two things competing). Output {"beats":[{"at":0,"kind":"title_slam","text":"...","emoji":"..."}, ...]}'
                % (narr, '\n'.join('- %s: %s' % kv for kv in KINDS.items()), want))
