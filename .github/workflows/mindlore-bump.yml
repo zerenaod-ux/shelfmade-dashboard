@@ -19,6 +19,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Move the 3 new videos to tomorrow (one-off)
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
+          PUBLISH_BRAND: mindlore
+        run: python reschedule3.py
       - name: Free the soonest slots
         env:
           BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
