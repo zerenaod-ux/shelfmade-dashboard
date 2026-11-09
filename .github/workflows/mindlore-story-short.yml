@@ -4,6 +4,8 @@ on:
     - cron: '40 13 * * *'   # 8:40 AM Chicago (CDT)
     - cron: '20 19 * * *'   # extra tries (GitHub timers are late/skipped); story_gate.py stops overbuilding
     - cron: '20 1 * * *'
+  push:   # start a build on demand by changing this file (no browser/laptop needed)
+    paths: ['publish/ml-build.trigger']
   workflow_dispatch:
     inputs:
       count:
