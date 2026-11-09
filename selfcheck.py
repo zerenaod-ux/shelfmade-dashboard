@@ -43,6 +43,27 @@ def alert(title, body, open_it):
         pass
 
 
+def _why_not_posting(brand):
+    """Cause finder (owner 2026-11-09): when a channel has not posted for >30 h, say WHY in the alert. Safe causes are reported, never auto-'fixed' by guessing."""
+    out = []
+    try:
+        if not jl('publish/autopilot.json', {}).get('on'): out.append('Autopilot is OFF (only matters for items that need a decision)')
+        rv = json.loads(sh('gh', 'issue', 'list', '--repo', REPO, '--state', 'open', '--label', 'review', '--limit', '60', '--json', 'title,labels').stdout or '[]')
+        pend = [i for i in rv if not any(l['name'] in ('approve', 'skip', 'auto-approved') for l in i['labels']) and (('ML' in i['title'] or 'MindLore' in i['title']) if brand == 'mindlore' else ('DOODLES' in i['title'] if brand == 'doodles' else not any(k in i['title'] for k in ('ML', 'DOODLES'))))]
+        if pend: out.append('%d review(s) waiting for approval' % len(pend))
+        appr = {'shelfmade': 'approved.json', 'mindlore': 'approved-mindlore.json', 'doodles': 'approved-doodles.json'}[brand]; st = {'shelfmade': 'state.json', 'mindlore': 'state-mindlore.json', 'doodles': 'state-doodles.json'}[brand]
+        done = jl('publish/' + st, {}).get('done', {}); wait = [i for i in jl('publish/' + appr, {}).get('items', []) if i['id'] not in done]
+        if not wait: out.append('no approved videos waiting (builder not producing / nothing approved)')
+        for wf in {'shelfmade': ['shelfmade-story-short.yml', 'publisher.yml'], 'mindlore': ['mindlore-story-short.yml', 'publisher-mindlore.yml'], 'doodles': ['doodles.yml', 'publisher-doodles.yml']}[brand]:
+            rr = [r for r in last_run(wf) if r.get('status') == 'completed']
+            if rr and rr[0].get('conclusion') != 'success': out.append('%s last run %s' % (wf, rr[0].get('conclusion')))
+            if rr and (age_h(rr[0].get('createdAt', '')) or 0) > 36 and wf.startswith(brand if brand != 'doodles' else 'doodles'): out.append('%s has not run for %.0f h' % (wf, age_h(rr[0]['createdAt'])))
+        tc = [r for r in last_run('tokencheck.yml') if r.get('status') == 'completed']
+        if tc and tc[0].get('conclusion') != 'success': out.append('login/token check failing')
+    except Exception as e:
+        out.append('(cause search failed: %s)' % str(e)[:40])
+    return ' | LIKELY CAUSE: ' + ('; '.join(out) if out else 'unknown (all job runs look fine) - check Buffer/YouTube directly')
+
 def last_run(wf):
     r = sh('gh', 'run', 'list', '--repo', REPO, '--workflow', wf, '--limit', '5', '--json', 'conclusion,status,createdAt,event')
     try:
@@ -131,7 +152,7 @@ def main():
     ok_v = bool(vr) and vr[0].get('conclusion') == 'success' and (age_h(vr[0].get('createdAt', '')) or 999) < 10 * 24
     rec('Viral DNA study', ok_v, ('last: %s %s' % (vr[0].get('conclusion'), vr[0].get('createdAt', '')[:10])) if vr else 'not run yet', 'ALERT: viral DNA study failing or stale',
         lambda: sh('gh', 'workflow', 'run', 'viral.yml', '--repo', REPO))
-    # 15 NOTHING POSTED (the result the owner cares about): every channel must have a public video newer than 72 h (judged from the daily analytics file)
+    # 15 NOTHING POSTED (the result the owner cares about): every channel must have a public video newer than 30 h (owner 2026-11-09: was 72) (judged from the daily analytics file)
     try:
         import guard as _g
     except Exception:
@@ -146,8 +167,8 @@ def main():
             a_h = age_h(newest) if newest else None
             fresh = age_h(an['collected'] + ('T00:00:00+00:00' if len(an['collected']) == 10 else '')) if an.get('collected') else None
             stale_data = fresh is not None and fresh > 48
-            rec('Posting: %s' % _b, stale_data or (a_h is not None and a_h <= 72), ('newest public video %.0f h ago' % a_h) if a_h is not None else 'no video found',
-                'ALERT: %s has not posted for 3 days' % _b)
+            rec('Posting: %s' % _b, stale_data or (a_h is not None and a_h <= 30), ('newest public video %.0f h ago' % a_h) if a_h is not None else 'no video found',
+                'ALERT: %s has not posted for over a day' % _b + ('' if (stale_data or (a_h is not None and a_h <= 30)) else _why_not_posting(_b)))
         except Exception as e:
             rec('Posting: %s' % _b, True, 'could not measure (%s)' % str(e)[:50])
     # 16 SERVICE PROBES (free keys / logins): a probe failing twice in a row = alert (deps.py probes every service daily; a switch to Plan B is automatic, this tells the owner)
