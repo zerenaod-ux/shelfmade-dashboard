@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-09e36",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Pain of Isolation",
+ "hook": "You feel physical pain when your friends leave you out.",
+ "thumbnail_headline": "BRAIN REJECTS ISOLATION",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel physical pain when your friends leave you out. Ancient ancestors depended on a tight group to survive banishment meant literal death. In 2003, neuroscientist Naomi Eisenberger at UCLA scanned human brains during social rejection and recorded a surge in the dorsal anterior cingulate cortex. What did the researchers find? The brain processes social rejection using the exact same neural circuits as physical damage. That is not just a modern quirk. Evolutionary biologists call this the social attachment system, an ancient brain shield that kept early humans together. So why do we assume hurt feelings are just in your head? Because modern culture treats emotional pain as separate from bodily harm. The result? Your nervous system sounds a physical alarm whenever your community breaks. That's it. It kept your ancestors alive for thousands of years. So next time you feel hurt after being left out, remember your brain treats isolation like physical injury because you feel physical pain when your friends leave you out."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Social rejection activates the dorsal anterior cingulate cortex, the same region that processes physical pain.",
+   "who": "Naomi Eisenberger",
+   "year": "2003",
+   "place": "University of California, Los Angeles"
+  },
+  {
+   "claim": "The social attachment system evolved in early mammals to hijack physical pain pathways to prevent separation.",
+   "who": "Matthew Lieberman and Naomi Eisenberger",
+   "year": "2004",
+   "place": "UCLA"
+  }
+ ],
+ "source_url": "",
+ "theme": "community and belonging",
+ "exp": ""
+}

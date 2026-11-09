@@ -575,6 +575,71 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261109-09e36",
+   "look": "live-demo",
+   "title": "Pain of Isolation",
+   "theme": "community and belonging",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "slots",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-761a7",
+   "look": "live-demo",
+   "title": "First Impression Myth",
+   "theme": "first impressions",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-a6bc8",
+   "look": "live-demo",
+   "title": "Why Silence Heals Your Brain",
+   "theme": "silence and noise",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "slots",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

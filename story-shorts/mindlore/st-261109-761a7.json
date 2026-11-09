@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-761a7",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "First Impression Myth",
+ "hook": "You judge a stranger in seconds.",
+ "thumbnail_headline": "FIRST IMPRESSION MYTH",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You judge a stranger in seconds. Ancient ancestors actually needed quick judgments just to spot threats. In 2006, psychologists Janine Willis and Alexander Todorov at Princeton University tested this timing. They showed faces to people for about 100 milliseconds. The result? That tiny slice of time was enough for people to form a lasting judgment of trust. Was this just a fluke in one lab? Additional studies across different cultures confirmed the same rapid response. Brain imaging shows the amygdala fires up before your conscious mind even processes the face. So why do we trust these quick reactions today? Primitive brains evolved to choose fight or flight instantly. That's it. Modern life rarely requires survival decisions in a split second, yet your brain keeps using the ancient circuit. So next time you meet someone new, remember how you judge a stranger in seconds."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Exposure to a face for 100 milliseconds is sufficient for people to form a firm first impression of traits like trustworthiness.",
+   "who": "Janine Willis and Alexander Todorov",
+   "year": "2006",
+   "place": "Princeton University"
+  },
+  {
+   "claim": "The amygdala automatically evaluates faces for facial threat and trustworthiness before conscious awareness.",
+   "who": "Alexander Todorov",
+   "year": "2008",
+   "place": "Princeton University"
+  }
+ ],
+ "source_url": "",
+ "theme": "first impressions",
+ "exp": ""
+}

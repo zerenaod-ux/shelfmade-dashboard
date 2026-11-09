@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-a6bc8",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Silence Heals Your Brain",
+ "hook": "You live in a world of constant background noise.",
+ "thumbnail_headline": "SILENCE HEALS BRAIN",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You live in a world of constant background noise. Ancient thinkers actually treated pure silence as essential medicine for the mind. In 2013, biologist Luciano Bernardi studied heart rate responses to sound at the University of Pavia and discovered that two minutes of silence reduced blood pressure more than relaxing music. The result? Silence actively relaxes your cardiovascular system. It was not just one isolated finding. Later research on auditory deprivation confirmed that quiet environments allow the central nervous system to recover from sensory overload, a process known as neural restoration. So why do we assume background sound helps us focus? Constant noise triggers a low level release of cortisol, keeping your stress response active without your knowledge. Can your mind truly rest without complete quiet? Your auditory cortex continues processing surrounding sounds even while you sleep. Ancient monastic traditions built daily life around quiet hours to preserve mental clarity. That's it. So next time you feel mentally exhausted, remember that you live in a world of constant background noise."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Two minutes of silence after listening to music caused a greater decrease in heart rate and blood pressure than the music itself",
+   "who": "Luciano Bernardi",
+   "year": "2006",
+   "place": "University of Pavia"
+  },
+  {
+   "claim": "Noise exposure leads to chronic activation of the sympathetic nervous system and elevated stress hormones like cortisol",
+   "who": "Mathias Basner",
+   "year": "2014",
+   "place": "University of Pennsylvania"
+  }
+ ],
+ "source_url": "",
+ "theme": "silence and noise",
+ "exp": ""
+}
