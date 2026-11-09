@@ -1,5 +1,7 @@
 name: publisher-mindlore
 on:
+  push:
+    paths: ['publish/publish-ml.trigger']
   schedule:
     - cron: '50 */3 * * *'
   workflow_dispatch:

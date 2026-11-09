@@ -48,4 +48,4 @@ jobs:
           git add -f publish/approved.json publish/approved-mindlore.json 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -qm "review: seen"
-          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
+          for i in 1 2 3 4 5 6; do git pull --rebase -X theirs -q && git push -q && break; git rebase --abort 2>/dev/null || true; sleep 5; done   # -X theirs: on a conflict our approvals win (a lost save once left 3 approved Shorts out of the queue)
