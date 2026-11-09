@@ -510,7 +510,7 @@ def scene(t, b, lt, T, i, starts, beats, land):
     c.im = im; c.d = B.ImageDraw.Draw(im)
     return c, bg, acc, ink
 def frame(t, beats, starts, words, total, wstarts, land=False):
-    i = max(0, bisect.bisect_right(starts, t) - 1); b = beats[i]; lt = t - starts[i]; T = (starts[i + 1] if i + 1 < len(starts) else total) - starts[i]
+    i = max(0, bisect.bisect_right(starts, t) - 1); b = beats[i]; lt = t - starts[i] + (.5 if i == 0 else 0); T = (starts[i + 1] if i + 1 < len(starts) else total) - starts[i]   # +.5: frame 0 is already a full picture (cover/thumbnail + first-second hook)
     c, bg, acc, ink = scene(t, b, lt, T, i, starts, beats, land); wi = max(0, bisect.bisect_right(wstarts, t) - 1)
     if land:   # full-screen wide scene; big live captions along the bottom
         c.text(40, 40, BRANDNAME, 28, ink, 'lm')
