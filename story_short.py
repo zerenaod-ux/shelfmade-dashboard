@@ -47,7 +47,7 @@ def one(llm_call):
     chan = ('ShelfMade, a channel that explains classic books for modern readers: the Short is "a classic book vs today", what this old book said and what later research found. THEME BOOK' if SM else 'MindLore, a psychology channel about how your mind works, explained with real research and how people lived long ago. THEME')
     base = ('You write a 60-70 second vertical Short for %s: %s.%s\n'
             'Titles already used, do not repeat: %s.\n' % (chan, theme, radar, recent) + (story_rules.rules('shelfmade' if SM else 'mindlore', short=True).replace('ONE narration of 150-190 words (about 60-70 seconds)', 'ONE narration of 70-90 words (about 30 seconds, ONE idea only, hook in the first 5 words)') if exp else story_rules.rules('shelfmade' if SM else 'mindlore', short=True)) +
-            'Return JSON: {"public_title": "the hook or an everyday question, under 70 characters", "hook": "the exact first sentence of the narration", "thumb": "2-5 WORD CAPS HEADLINE", '
+            'Return JSON: {"public_title": "2 to 5 words, no emoji, starts with You/Your or is a question (winners on our channels are short: e.g. Why You Forget, Your Brain Lies)", "hook": "the exact first sentence of the narration", "thumb": "2-5 WORD CAPS HEADLINE", '
             '"narration": "'+("70-90" if exp else "150-190")+' words, first sentence EXACTLY the hook", "claims": [{"claim":"...","who":"...","year":"...","place":"..."}]}.')
     prompt = base; bad = ['no usable answer']; d = None
     for attempt in range(4):
