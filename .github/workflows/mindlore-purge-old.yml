@@ -1,0 +1,33 @@
+name: mindlore-purge-old
+# One-off (owner request 2026-11-09): MindLore posts only NEW-look (live-demo) videos from now on. Old-look scheduled posts are removed from Buffer and parked (restorable).
+on:
+  push:
+    paths: ['publish/purge.trigger']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publisher-mindlore
+  cancel-in-progress: false
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Remove old-look scheduled posts and park the waiting ones
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
+          PUBLISH_BRAND: mindlore
+        run: python purge_old.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "publisher-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/state-mindlore.json publish/approved-mindlore.json publish/approved-mindlore-parked-oldlook.json
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -qm "purge old-look MindLore posts (parked, restorable)"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
