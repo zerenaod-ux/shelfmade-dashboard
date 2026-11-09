@@ -639,7 +639,7 @@
   },
   {
    "id": "7QFo4yYN-tM",
-   "title": "Dream Psychology is not what you think.",
+   "title": "Do dreams reveal the future?",
    "published": "2026-11-08T03:01:50Z",
    "duration": "PT56S",
    "privacy": "public",
@@ -701,7 +701,7 @@
   },
   {
    "id": "ivGIglijofs",
-   "title": "This Psychology Of Revolution line is uncomfortable.",
+   "title": "Can a collective mind spark revolutions?",
    "published": "2026-11-07T18:04:02Z",
    "duration": "PT1M2S",
    "privacy": "public",
@@ -824,6 +824,16 @@
    "comments": 0
   },
   {
+   "id": "BeQ1CnMVAns",
+   "title": "Are strong sensations always painful?",
+   "published": "2026-11-08T18:03:11Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "UAe6oPKqTX0",
    "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
    "published": "2026-10-27T01:08:55Z",
@@ -848,16 +858,6 @@
    "avgSeconds": 20,
    "avgPercent": 41.98,
    "subsGained": 0
-  },
-  {
-   "id": "BeQ1CnMVAns",
-   "title": "James had a warning for you.",
-   "published": "2026-11-08T18:03:11Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 14,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "u-bjxB9PmgY",
@@ -1065,6 +1065,19 @@
    "subsGained": 0
   },
   {
+   "id": "84PQTiIIbHU",
+   "title": "How does thought-force shape business?",
+   "published": "2026-10-20T19:51:29Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 15,
+   "avgPercent": 29.42,
+   "subsGained": 0
+  },
+  {
    "id": "sPj_Yg2iX1Q",
    "title": "Why do emotions spread so fast?",
    "published": "2026-10-19T16:05:10Z",
@@ -1075,19 +1088,6 @@
    "comments": 0,
    "avgSeconds": 8,
    "avgPercent": 9.64,
-   "subsGained": 0
-  },
-  {
-   "id": "84PQTiIIbHU",
-   "title": "How does thought-force shape business?",
-   "published": "2026-10-20T19:51:29Z",
-   "duration": "PT51S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 29.42,
    "subsGained": 0
   },
   {
@@ -1297,6 +1297,16 @@
    "comments": 0
   },
   {
+   "id": "9lec7AhXEP8",
+   "title": "Why dreams feel meaningful and strange at the same time | Freud",
+   "published": "2026-11-05T00:00:17Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "8lmhT2wqPj8",
    "title": "What to do when you cannot tell which road is right | John Dewey",
    "published": "2026-11-04T00:00:13Z",
@@ -1343,16 +1353,6 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0
-  },
-  {
-   "id": "9lec7AhXEP8",
-   "title": "Why dreams feel meaningful and strange at the same time | Freud",
-   "published": "2026-11-05T00:00:17Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
    "comments": 0
   },
   {
@@ -1405,8 +1405,18 @@
    "comments": 0
   },
   {
+   "id": "MTXe8IAf__g",
+   "title": "Why a deadline makes your stomach knot",
+   "published": "2026-11-09T18:02:22Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "4lZoI4B4VbE",
-   "title": "Is a slip of the tongue random, or does it mean something? | Sigmund Freud",
+   "title": "What if every slip carried a secret?",
    "published": "2026-11-09T00:00:28Z",
    "duration": "PT7M26S",
    "privacy": "public",
