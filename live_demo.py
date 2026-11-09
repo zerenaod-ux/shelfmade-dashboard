@@ -452,7 +452,7 @@ def scene(t, b, lt, T, i, starts, beats, land):
     except Exception as e:
         if not b.get('_warned'): b['_warned'] = 1; print('drawer failed', b['kind'], str(e)[:120], flush=True)
         c.d.rectangle([0, 0, c.W * K, c.H * K], fill=bg); (__import__('live_land').l_icon if land else d_icon)(c, {'emoji': b.get('emoji') or '💡', 'text': _s(b.get('text'), 30)}, lt, T, bg, acc, ink)
-    if b.get('tag'): w_ = c.tw(_s(b['tag'], 24).upper(), 30) + 50; c.rr(360 - w_ / 2, 100, 360 + w_ / 2, 152, 26, acc, INK, 4); c.text(360, 126, _s(b['tag'], 24).upper(), 30, bg if sum(acc) > 400 else (255, 255, 255))
+    if b.get('tag'): w_ = c.tw(_s(b['tag'], 24).upper(), 30) + 50; c.rr(c.W / 2 - w_ / 2, 100, c.W / 2 + w_ / 2, 152, 26, acc, INK, 4); c.text(c.W / 2, 126, _s(b['tag'], 24).upper(), 30, bg if sum(acc) > 400 else (255, 255, 255))
     if b.get('sticker') and lt < 1.4: k = back(lt / .25) * (1 - ease((lt - 1.1) / .3)); c.emo(b['sticker'], 620, 210, 120 * k, 1.0, int(12 * math.sin(lt * 14) * (1 - lt / 1.4)))
     im = c.im; cam = b.get('_cam', 'punch'); z = 1.03 + .07 * math.exp(-lt * 9) + (.02 * math.sin(t * 2.2) if b['kind'] != 'reaction' else .0); sx = sy = 0; ang = 0
     if cam == 'push': z += .05 * min(1, lt / max(.8, T))
