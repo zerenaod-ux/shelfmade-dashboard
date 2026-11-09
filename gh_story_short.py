@@ -58,7 +58,7 @@ def main(n):
         subprocess.run('cd %s && zip -q %s final.mp4 POST_THIS.txt' % (z, Path('out').resolve() / ('%s-story-%s.zip' % ('sm' if BRAND == 'shelfmade' else 'ml', sid))), shell=True, check=True)
         try:   # learning log: which scenes / actions / props this video used (story_learn.py matches it to real views later)
             plan = load(folder / 'ml2d-plan.json', {}).get('beats', []); lg = Path('data/story-learn-log-%s.json' % BRAND); L = load(lg, {'items': []})
-            L['items'].append({'id': sid, 'title': s.get('public_title', ''), 'theme': s.get('theme', ''), 'acts': sorted({b['act'] for b in plan}), 'bgs': sorted({b['bg'] for b in plan}), 'props': sorted({p['k'] for b in plan for p in b.get('props', [])})})
+            L['items'].append({'id': sid, 'look': load(folder / 'ml2d-plan.json', {}).get('look', 'old'), 'title': s.get('public_title', ''), 'theme': s.get('theme', ''), 'acts': sorted({b['act'] for b in plan}), 'bgs': sorted({b['bg'] for b in plan}), 'props': sorted({p['k'] for b in plan for p in b.get('props', [])})})
             L['items'] = L['items'][-300:]; lg.parent.mkdir(exist_ok=True); lg.write_text(json.dumps(L, indent=1))
         except Exception as e: print('learn log skipped:', str(e)[:100])
         built.append(sid); state.write_text(json.dumps(built)); made += 1; print('BUILT', sid, flush=True); shutil.rmtree(folder, ignore_errors=True)
