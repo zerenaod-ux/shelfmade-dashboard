@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-160f5",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Screen Hours",
+ "hook": "You spend most of your day glued to a screen.",
+ "thumbnail_headline": "SCREEN TIME SHOCK",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your day glued to a screen. Ancient hunters actually spent far less time on any single task. In the 1960s, anthropologist Richard Lee studied the Kalahari !Kung and counted about 15 to 20 hours of food work a week. The result? Their whole tribe rested, played, and socialized most of daylight. Later, cross‑cultural research showed the same pattern worldwide. Robin Dunbar, in 1992, found that human groups naturally cap at about 150 stable contacts, limiting daily social effort. That's it. So why do we assume constant multitasking boosts productivity? Brain scans from MIT in 2018 reveal that switching tasks adds about 40% more mental fatigue. The fact is, our brains need long focus blocks to consolidate memory. So next time you reach for another app, remember you spend most of your day glued to a screen."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 15 to 20 hours of food work a week",
+   "who": "Richard Lee",
+   "year": "1960s",
+   "place": "Kalahari !Kung"
+  },
+  {
+   "claim": "human groups naturally cap at about 150 stable contacts",
+   "who": "Robin Dunbar",
+   "year": "1992",
+   "place": "UK"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": ""
+}

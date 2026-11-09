@@ -719,6 +719,84 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261109-02bbb",
+   "look": "live-demo",
+   "title": "Why Animals Play Games",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-160f5",
+   "look": "live-demo",
+   "title": "Your Screen Hours",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "search",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-5c79e",
+   "look": "live-demo",
+   "title": "Why Faces Freeze On Sudden News",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "brain",
+    "checklist",
+    "clock",
+    "counter",
+    "crowd",
+    "meter",
+    "notif",
+    "reaction",
+    "search",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

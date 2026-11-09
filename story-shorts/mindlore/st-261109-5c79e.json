@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-5c79e",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Faces Freeze On Sudden News",
+ "hook": "You raise your eyebrows when bad news hits.",
+ "thumbnail_headline": "FACES FREEZE SUDDENLY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You raise your eyebrows when bad news hits. Ancient humans actually used this sudden eye expansion to take in more visual data during threats. In 2008, psychologist Joshua Susskind studied facial expressions at the University of Toronto and measured about 30 percent more light entering wider eyes. This shock response was not isolated to modern test subjects. Studies across dozens of distinct cultures confirm that micro expressions are universal. Evolutionary scientists call this the sensory intake hypothesis. So why do we assume facial movements are just emotional displays? Facial muscles move automatically to change how sensory organs process incoming information. The result? Your face adapts before your conscious mind even understands the news. That's it. Your mouth opens to take in more oxygen for a potential escape. Micro expressions process reality faster than your conscious brain ever could. So next time you hear unexpected news, remember how you raise your eyebrows when bad news hits."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Fear expressions expand the visual field and increase eye movement speed, letting in about 30 percent more light.",
+   "who": "Joshua Susskind",
+   "year": "2008",
+   "place": "University of Toronto"
+  },
+  {
+   "claim": "Facial expressions of emotion are universal across different isolated cultures.",
+   "who": "Paul Ekman",
+   "year": "1971",
+   "place": "Papua New Guinea"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}
