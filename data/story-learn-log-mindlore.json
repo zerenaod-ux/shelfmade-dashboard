@@ -491,6 +491,68 @@
     "star",
     "tree"
    ]
+  },
+  {
+   "id": "st-261109-live1",
+   "title": "Why a deadline ties your stomach in knots",
+   "theme": "stress and fear",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "slots",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-live2",
+   "title": "Your brain can't truly multitask",
+   "theme": "multitasking",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "slots",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-live3",
+   "title": "Is chasing every extra dollar worth it?",
+   "theme": "money and happiness",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "reaction",
+    "slots",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
