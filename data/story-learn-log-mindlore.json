@@ -640,6 +640,85 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261109-45126",
+   "look": "live-demo",
+   "title": "Crowds trigger ancient survival alarms",
+   "theme": "crowds and strangers",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "countdown",
+    "flow",
+    "headline",
+    "icon_burst",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-a84ae",
+   "look": "live-demo",
+   "title": "Your brain is wired to stop wanting things",
+   "theme": "curiosity",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "reaction",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261109-eb7af",
+   "look": "live-demo",
+   "title": "Your desk job steals ancient movement",
+   "theme": "storytelling",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "notif",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-a84ae",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your brain is wired to stop wanting things",
+ "hook": "You always want more.",
+ "thumbnail_headline": "HUNTING INSTINCT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You always want more. Ancient humans stopped hunting when full. In 1966, anthropologist Richard Lee studied the Kalahari !Kung people. He found they worked about 15 to 20 hours a week. The result? They had plenty of free time. That is not a myth. It is data. Why do we assume work must be exhausting? Modern jobs are artificial. Our brains evolved for bursts of effort. Then came rest. This pattern is called diminishing returns. When gains drop, the brain stops caring. You feel bored. That boredom is a signal. It tells you to stop. So why do we push harder? We confuse survival with success. In the 1970s, researchers observed similar trends in other hunter gatherer groups. The pattern holds. Your brain is not lazy. It is efficient. It saves energy for what matters. So next time you always want more, remember your brain is wired to stop wanting things."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Hunter gatherers worked about 15 to 20 hours a week",
+   "who": "Richard Lee",
+   "year": "1966",
+   "place": "Kalahari"
+  },
+  {
+   "claim": "Similar work patterns observed in other groups",
+   "who": "Researchers",
+   "year": "1970s",
+   "place": "Global"
+  }
+ ],
+ "source_url": "",
+ "theme": "curiosity",
+ "exp": ""
+}

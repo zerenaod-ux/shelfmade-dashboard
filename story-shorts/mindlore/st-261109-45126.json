@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-45126",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Crowds trigger ancient survival alarms",
+ "hook": "You feel anxious walking through a crowded city square.",
+ "thumbnail_headline": "CROWDS ARE DANGEROUS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel anxious walking through a crowded city square. Ancient humans saw crowds as a survival threat. In 2015, researchers at the Max Planck Institute found that large groups activate the brain’s fear centers. They scanned participants while showing images of dense crowds. The amygdala lit up as if the brain saw a predator. That is it. The result? Your mind treats strangers as potential enemies. This is not just about fear. It is about resource competition. In 1973, anthropologist Richard Lee studied the Kalahari San people. He found that groups over forty people became unstable. Conflict rose sharply when numbers grew. So why do we ignore this? Because modern cities normalize density. But your brain has not updated. It still runs on ancient logic. The wide view confirms this. Studies across cultures show that tight spaces increase stress hormones. This is called social crowding stress. So next time you feel tense in a crowd, remember you are walking through a city square."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Large crowds activate the amygdala, triggering a threat response similar to seeing a predator.",
+   "who": "Max Planck Institute researchers",
+   "year": "2015",
+   "place": "Global participants"
+  },
+  {
+   "claim": "Social groups larger than forty people experience significantly higher rates of conflict and instability.",
+   "who": "Richard Lee",
+   "year": "1973",
+   "place": "Kalahari San"
+  }
+ ],
+ "source_url": "",
+ "theme": "crowds and strangers",
+ "exp": ""
+}

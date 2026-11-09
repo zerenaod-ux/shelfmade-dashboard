@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-eb7af",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your desk job steals ancient movement",
+ "hook": "You spend most of your day sitting at a desk.",
+ "thumbnail_headline": "MOVE OR STAY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your day sitting at a desk. Ancient hunter‑gatherers were on the move far more than you think. In the 1960s, anthropologist Richard Lee studied the Kalahari !Kung and recorded about 15 to 20 hours of walking per week. The result? Their daily mobility boosted cardiovascular health. Modern research confirms the link. In 2015, Harvard School of Public Health reported that sedentary workers lost about three years of life expectancy. Other societies, like the Tsimane of Bolivia, maintain high activity levels today. This pattern is called the physical activity paradox. So why do we assume sitting is harmless? Because labs have measured hidden metabolic costs. A 2018 University of Copenhagen study showed prolonged sitting reduces muscle glucose uptake by about 30 percent. What can you do right now? Stand up, stretch, or walk for two minutes each hour. That's it. So next time you sit for long stretches, remember you could be moving like ancient humans, you spend"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Ancient hunter‑gatherers walked about 15 to 20 hours per week",
+   "who": "Richard Lee",
+   "year": "1960s",
+   "place": "Kalahari !Kung"
+  },
+  {
+   "claim": "Sedentary workers lose about three years of life expectancy",
+   "who": "Harvard School of Public Health",
+   "year": "2015",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "storytelling",
+ "exp": ""
+}
