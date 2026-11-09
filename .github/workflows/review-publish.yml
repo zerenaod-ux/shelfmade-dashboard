@@ -3,8 +3,10 @@ on:
   schedule:
     - cron: '*/30 * * * *'
   workflow_run:   # AUTO_RP: run right after a builder finishes
-    workflows: [doodles, doodles-full, daily-shorts, mindlore-shorts, mindlore-story-short, shelfmade-story-short, mindlore-2d, mindlore-full, full-video, recut-shorts]
+    workflows: [doodles, doodles-full, daily-shorts, mindlore-shorts, mindlore-story-short, mindlore-live-redo, shelfmade-story-short, mindlore-2d, mindlore-full, full-video, recut-shorts]
     types: [completed]
+  push:   # one-off kick for the live-demo redo (owner request 2026-11-08)
+    paths: ['publish/live-redo.trigger']
   workflow_dispatch:
 permissions:
   contents: write
