@@ -576,5 +576,31 @@
   "brand": "shelfmade",
   "kind": "short",
   "date": "2026-11-08"
+ },
+ "Ruskin wrote this for you.": {
+  "styles": [
+   "sm_adventure",
+   "sm_adventure",
+   "sm_adventure",
+   "sm_tender",
+   "sm_gothic",
+   "sm_tender"
+  ],
+  "tracks": [
+   "sm_adventure_05",
+   "sm_adventure_04",
+   "sm_adventure_02",
+   "sm_tender_05",
+   "sm_gothic_02",
+   "ace_sm_tender_01"
+  ],
+  "mood": "curious",
+  "pace": 2.35,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-09"
  }
 }
