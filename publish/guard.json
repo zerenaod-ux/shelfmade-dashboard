@@ -9,6 +9,7 @@
   "mindlore": 24,
   "doodles": 12
  },
- "retitle_per_run": 20,
- "doodles_count": 2
+ "retitle_per_run": 0,
+ "doodles_count": 2,
+ "retitle_paused_note": "Nov 9: retitled old videos get ~0.03 views/day (dead); not worth quota. Resume only with owner OK."
 }
