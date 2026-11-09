@@ -35,26 +35,26 @@
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 3,
-   "last": 15
+   "uses": 4,
+   "last": 21
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 3,
-   "last": 16
+   "uses": 4,
+   "last": 22
   },
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 3,
-   "last": 17
+   "uses": 4,
+   "last": 23
   },
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 3,
-   "last": 18
+   "uses": 4,
+   "last": 24
   }
  ],
  "catch": {
@@ -285,6 +285,54 @@
    "milestone": false,
    "season": 2,
    "date": "2026-11-08"
+  },
+  {
+   "n": 18,
+   "kind": "short",
+   "id": "phone-call-panic-script",
+   "title": "The Call Scripting Trap",
+   "concept": "SPOTLIGHT EFFECT",
+   "gag": "gerald",
+   "callback": true,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-09"
+  },
+  {
+   "n": 19,
+   "kind": "short",
+   "id": "anticipatory-anxiety-greg-noted",
+   "title": "The Sunday Scaries Trap",
+   "concept": "ANTICIPATORY ANXIETY",
+   "gag": "greg",
+   "callback": false,
+   "milestone": false,
+   "season": 2,
+   "date": "2026-11-09"
+  },
+  {
+   "n": 20,
+   "kind": "short",
+   "id": "micro-avoidance-text-reply",
+   "title": "The 'K' Reply Trap",
+   "concept": "AVOIDANCE COPING",
+   "gag": "dev",
+   "callback": true,
+   "milestone": true,
+   "season": 2,
+   "date": "2026-11-09"
+  },
+  {
+   "n": 21,
+   "kind": "short",
+   "id": "rumination-cringe-replay",
+   "title": "The 2 AM Cringe Loop",
+   "concept": "RUMINATION",
+   "gag": "scoreboard",
+   "callback": false,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-09"
   }
  ]
 }
