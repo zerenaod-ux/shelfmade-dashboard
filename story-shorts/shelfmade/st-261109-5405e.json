@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-5405e",
+ "title": "The Republic",
+ "author": "Plato",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Is your inner chaos just brain biology?",
+ "hook": "You feel an intense inner war when temptation strikes your brain.",
+ "thumbnail_headline": "BRAIN UNDER SIEGE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel an intense inner war when temptation strikes your brain. Ancient philosopher Plato claimed your soul is divided into three warring parts: reason, spirit, and appetite. In 2004, neuroscientist Samuel McClure studied hungry decision-makers at Princeton University using fMRI brain scans. What did the researchers find? The emotional limbic system fires instantly for immediate rewards like sugar or cash. Meanwhile, the prefrontal cortex lights up to calculate long-term goals. The result? Plato correctly identified our internal conflict 2,400 years ago, but it is actually a battle between distinct brain networks. Later brain imaging studies at Harvard University confirmed this exact dual-system struggle across thousands of subjects. So why do we assume willpower is just a moral failing? The brain literally runs two competing circuits with different processing speeds. That's it. Reason must actively suppress impulse through neural control. So next time you crave a late night snack, remember you feel an intense inner war."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Immediate rewards activate the limbic system while delayed rewards activate the prefrontal cortex in neural choice tasks",
+   "who": "Samuel McClure",
+   "year": "2004",
+   "place": "Princeton University"
+  },
+  {
+   "claim": "Dual-system neural architecture drives the conflict between immediate temptation and long-term planning",
+   "who": "Harvard University researchers",
+   "year": "2000s",
+   "place": "Harvard University"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Republic by Plato",
+ "exp": ""
+}

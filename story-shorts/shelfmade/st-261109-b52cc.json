@@ -1,0 +1,39 @@
+{
+ "book_id": "st-261109-b52cc",
+ "title": "Symposium",
+ "author": "Plato",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Do your online arguments echo ancient debates?",
+ "hook": "You spend most of your evenings arguing online.",
+ "thumbnail_headline": "ANCIENT VERSUS ONLINE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your evenings arguing online. Ancient Greeks gathered in a symposium to discuss love, not fights. In the 1990s, classicist Gregory Vlastos studied Plato's Symposium and estimated the gatherings lasted about three hours. The result? Those dialogues built lasting friendships. Modern research shows face‑to‑face talk boosts trust. In 2009, researchers at the University of California, Berkeley measured that a 15‑minute face‑to‑face conversation increased oxytocin by about 30%. In 2015, psychologist Robin Dunbar reported that groups larger than about 150 people lose cohesion, a limit called Dunbar's number. Other societies, from ancient China to the Maya, held nightly feasts for dialogue. So why do we assume online fights are new? Because digital platforms amplify conflict, yet humans have debated for millennia. That's it. Thus the need to share ideas is timeless. Your modern debate can still build community, just like the Greeks. So next time you log in, remember ancient dialogues lasted hours. You spend most of your evenings arguing online."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Gatherings in Plato's Symposium lasted about three hours",
+   "who": "Gregory Vlastos",
+   "year": "1990s",
+   "place": "University of Illinois"
+  },
+  {
+   "claim": "Groups larger than about 150 people lose cohesion, known as Dunbar's number",
+   "who": "Robin Dunbar",
+   "year": "2015",
+   "place": "University of Oxford"
+  },
+  {
+   "claim": "A 15‑minute face‑to‑face conversation increased oxytocin by about 30%",
+   "who": "University of California, Berkeley researchers",
+   "year": "2009",
+   "place": "Berkeley"
+  }
+ ],
+ "source_url": "",
+ "theme": "Symposium by Plato",
+ "exp": ""
+}
