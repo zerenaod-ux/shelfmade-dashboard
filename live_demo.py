@@ -314,7 +314,7 @@ def rule_director(words, title='', opening=True, pace=9):
         else: kind = rnd.choice([{'kind': 'title_slam', 'text': short, 'emoji': e0}, {'kind': 'icon_burst', 'emoji': e0, 'text': short}, {'kind': 'zoom', 'emoji': e0, 'labels': [short], 'text': ''}])
         kind['at'] = i; beats.append(kind); i = j; k += 1
     return beats
-def llm_director(words, total, title='', opening=True, pace=2.2, min_react=3, mood_hint=''):
+def llm_director(words, total, title='', opening=True, pace=2.2, min_react=3, mood_hint='', kinds_ok=None):
     try:
         import llm
         if not llm.available(): return None
@@ -327,11 +327,11 @@ def llm_director(words, total, title='', opening=True, pace=2.2, min_react=3, mo
                'Use MANY different kinds (never the same kind twice in a row; at least %d different kinds besides the opening); at least %d reaction beats starring the mascot Brainy (a talking brain): relatable, self-aware, exaggerated jokes in the style of a witty friend (<=7 words, e.g. \"Me, opening my 47th tab.\"), clean, never mocking people or groups; the emoji field sets Brainy mood (😳 😅 🤯 🙃 😬 🤨 💀 😮 😂). '
                'Numbers/stats in counter/chart/meter/timeline/checklist MUST come from the narration and keep the SAME meaning (never put two different quantities together or compare them); never invent facts or statistics. Do NOT use chart shape bars. Emoji fields must be single emoji characters; text fields use plain ASCII letters only. Every beat may also have "tag" (<=3 word label) and "sticker" (one emoji popped on a key word). %s'
                'Output {"beats":[{"at":0,"kind":"...", ...params}, ...]}'
-               % (narr, '\n'.join('- %s: %s' % kv for kv in KINDS.items()), want, pace * .7, pace * 1.4, first, 3 if total > 25 else 2, min_react, mood_hint))
+               % (narr, '\n'.join('- %s: %s' % kv for kv in KINDS.items() if not kinds_ok or kv[0] in kinds_ok), want, pace * .7, pace * 1.4, first, 3 if total > 25 else 2, min_react, mood_hint))
         r = llm.json_call(sysm, usr, temperature=0.85, max_tokens=7000)
         bs = (r or {}).get('beats') or []; out = []; last = -1
         for b in bs:
-            if not isinstance(b, dict) or b.get('kind') not in KINDS: continue
+            if not isinstance(b, dict) or b.get('kind') not in KINDS or (kinds_ok and b.get('kind') not in kinds_ok): continue
             try: a = int(b['at'])
             except Exception: continue
             if a <= last or a >= len(words): continue
@@ -398,10 +398,13 @@ def make_plan(words, total, text, title='', opening=True, long=False):
             sub = words[i:j]; tt = (words[j - 1]['e'] if j - 1 < n else sub[-1]['e']) - sub[0]['s']
             for w in sub: w['_o'] = i
             loc = [{'w': w['w'], 's': w['s'], 'e': w['e']} for w in sub]
-            bs = llm_director(loc, tt, title, opening=(i == 0), pace=3.6, min_react=1)
+            import live_land as LL
+            bs = llm_director(loc, tt, title, opening=(i == 0), pace=3.6, min_react=1, kinds_ok=set(LL.LDRAW), mood_hint='This is a LONG video: tell it like a story with curiosity gaps and surprises, show relatable everyday scenes (a search, a chat, a notification pile, a crowd, a before/after), keep the viewer wondering what comes next; avoid anything that looks like a presentation slide. ')
             if bs: srcs.add('llm')
             else: bs = rule_director(loc, title, opening=(i == 0), pace=16); srcs.add('rules')
-            for b in bs: b['at'] += i
+            for b in bs:
+                b['at'] += i
+                if b['kind'] in LL.FALLBACK: b['kind'] = LL.FALLBACK[b['kind']]
             if beats and bs and bs[0]['at'] <= beats[-1]['at']: bs = bs[1:]
             beats += bs; i = j
         src = '+'.join(sorted(srcs))
@@ -423,10 +426,18 @@ def draw_wrapped(c, seg, wi0, x0, y0, maxw, sz, acc, ink, bg, wi):
         for idx, w in ln:
             c.d.text((x * K, y * K), w['w'] + ' ', font=font(sz), fill=acc if idx == wi else ink, anchor='lm', stroke_width=int(4 * K), stroke_fill=bg); x += c.tw(w['w'] + ' ', sz)
         y += sz * 1.15
+def bg_layer(c, b, t, bg, acc):
+    """drifting faint emoji of the current topic: depth behind every scene (parallax)"""
+    e = b.get('emoji') or b.get('a') or b.get('pick') or ((b.get('items') or [''])[0] if isinstance(b.get('items'), list) and b.get('items') and not any(ch.isascii() for ch in str(b['items'][0])) else None)
+    if not e or not isinstance(e, str): return
+    r = random.Random(b.get('_seed', 3)); 
+    for n in range(7):
+        sp = .25 + r.random() * .5; x = (r.random() * c.W + t * 40 * sp * (1 if n % 2 else -1)) % (c.W + 200) - 100; y = (r.random() * c.H + t * 22 * sp) % (c.H + 200) - 100
+        c.emo(e, x, y, 90 + r.random() * 120, .13, int(20 * math.sin(t * sp + n)))
 def scene(t, b, lt, T, i, starts, beats, land):
-    bg, acc, ink = PALS[b['_pal']]; c = Cv(bg)
+    bg, acc, ink = PALS[b['_pal']]; c = Cv(bg, (1280, 720) if land else None)
     if i > 0 and lt < .24:
-        pb = PALS[beats[i - 1]['_pal']][0]; k = ease(lt / .24); tr = b.get('_tr', 'wipe'); W_, H_ = CW * K, CH * K
+        pb = PALS[beats[i - 1]['_pal']][0]; k = ease(lt / .24); tr = b.get('_tr', 'wipe'); W_, H_ = c.W * K, c.H * K
         c.d.rectangle([0, 0, W_, H_], fill=pb)
         if tr == 'wipe_v': c.d.rectangle([0, 0, W_, int(H_ * k)], fill=bg)
         elif tr == 'iris': R = 1.2 * H_ * k; c.d.ellipse([W_ / 2 - R, H_ / 2 - R, W_ / 2 + R, H_ / 2 + R], fill=bg)
@@ -434,12 +445,13 @@ def scene(t, b, lt, T, i, starts, beats, land):
         elif tr == 'slide': x = int(W_ * (1 - k)); c.d.rectangle([x, 0, W_, H_], fill=bg); c.d.rectangle([x - 14 * K, 0, x, H_], fill=INK)
         else:
             x = int(W_ * k); c.d.rectangle([0, 0, x, H_] if i % 2 else [W_ - x, 0, W_, H_], fill=bg)
-    for gx in range(0, 760, 120):
-        for gy in range(0, 1320, 120): c.ell(gx + (t * 14) % 120, gy, 4, 4, mix(bg, acc, .12))
-    try: DRAW[b['kind']](c, b, lt, T, bg, acc, ink)
+    for gx in range(0, c.W + 40, 120):
+        for gy in range(0, c.H + 40, 120): c.ell(gx + (t * 14) % 120, gy, 4, 4, mix(bg, acc, .12))
+    bg_layer(c, b, t, bg, acc)
+    try: (__import__('live_land').LDRAW if land else DRAW)[b['kind']](c, b, lt, T, bg, acc, ink)
     except Exception as e:
         if not b.get('_warned'): b['_warned'] = 1; print('drawer failed', b['kind'], str(e)[:120], flush=True)
-        c.d.rectangle([0, 0, CW * K, CH * K], fill=bg); d_icon(c, {'emoji': b.get('emoji') or '💡', 'text': _s(b.get('text'), 30)}, lt, T, bg, acc, ink)
+        c.d.rectangle([0, 0, c.W * K, c.H * K], fill=bg); (__import__('live_land').l_icon if land else d_icon)(c, {'emoji': b.get('emoji') or '💡', 'text': _s(b.get('text'), 30)}, lt, T, bg, acc, ink)
     if b.get('tag'): w_ = c.tw(_s(b['tag'], 24).upper(), 30) + 50; c.rr(360 - w_ / 2, 100, 360 + w_ / 2, 152, 26, acc, INK, 4); c.text(360, 126, _s(b['tag'], 24).upper(), 30, bg if sum(acc) > 400 else (255, 255, 255))
     if b.get('sticker') and lt < 1.4: k = back(lt / .25) * (1 - ease((lt - 1.1) / .3)); c.emo(b['sticker'], 620, 210, 120 * k, 1.0, int(12 * math.sin(lt * 14) * (1 - lt / 1.4)))
     im = c.im; cam = b.get('_cam', 'punch'); z = 1.03 + .07 * math.exp(-lt * 9) + (.02 * math.sin(t * 2.2) if b['kind'] != 'reaction' else .0); sx = sy = 0; ang = 0
@@ -455,18 +467,17 @@ def scene(t, b, lt, T, i, starts, beats, land):
 def frame(t, beats, starts, words, total, wstarts, land=False):
     i = max(0, bisect.bisect_right(starts, t) - 1); b = beats[i]; lt = t - starts[i]; T = (starts[i + 1] if i + 1 < len(starts) else total) - starts[i]
     c, bg, acc, ink = scene(t, b, lt, T, i, starts, beats, land); wi = max(0, bisect.bisect_right(wstarts, t) - 1)
-    if land:   # 1280x720: the portrait scene becomes a panel on the left, live captions on the right
-        sc = c.im.crop((0, 150 * K, CW * K, 1110 * K)).resize((540 * K, 720 * K), Image.LANCZOS)
-        L = Cv(bg); L.im = Image.new('RGB', (1280 * K, 720 * K), bg); L.d = B.ImageDraw.Draw(L.im)
-        for gx in range(0, 1300, 100):
-            for gy in range(0, 740, 100): L.ell(gx + (t * 10) % 100, gy, 4, 4, mix(bg, acc, .14))
-        L.im.paste(sc, (44 * K, 0)); L.d.rectangle([44 * K, 0, 584 * K, 720 * K], outline=INK, width=int(5 * K)); L.text(640, 44, 'MINDLORE', 30, ink, 'lm')
+    if land:   # full-screen wide scene; big live captions along the bottom
+        c.text(40, 40, 'MINDLORE', 28, ink, 'lm')
         if t >= words[0]['s']:
             st = wi
-            while st > 0 and not re.search(r'[.?!,]$', words[st - 1]['w']) and wi - st < 7: st -= 1
-            draw_wrapped(L, words[st:wi + 1], st, 640, 360, 590, 58, acc, ink, bg, wi)
-        L.d.rectangle([640 * K, 676 * K, 1240 * K, 684 * K], fill=mix(bg, (150, 150, 160), .5)); L.d.rectangle([640 * K, 676 * K, (640 + 600 * clamp(t / total)) * K, 684 * K], fill=acc)
-        return L.im.resize((1280, 720), Image.LANCZOS)
+            while st > 0 and not re.search(r'[.?!,]$', words[st - 1]['w']) and wi - st < 8: st -= 1
+            seg = words[st:wi + 1]; sz = 46; full = ' '.join(w['w'] for w in seg)
+            if c.tw(full, sz) > 1180: sz = 46 * 1180 / c.tw(full, sz)
+            x = 640 - c.tw(full, sz) / 2
+            for j, w in enumerate(seg): c.d.text((x * K, 672 * K), w['w'] + ' ', font=font(sz), fill=acc if st + j == wi else ink, anchor='lm', stroke_width=int(5 * K), stroke_fill=bg); x += c.tw(w['w'] + ' ', sz)
+        c.d.rectangle([0, 712 * K, 1280 * K, 720 * K], fill=mix(bg, (150, 150, 160), .5)); c.d.rectangle([0, 712 * K, 1280 * clamp(t / total) * K, 720 * K], fill=acc)
+        return c.im.resize((1280, 720), Image.LANCZOS)
     c.text(40, 60, 'MINDLORE', 30, ink, 'lm')
     if t >= words[0]['s']:
         st = wi

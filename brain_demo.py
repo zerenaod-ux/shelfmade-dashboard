@@ -45,7 +45,7 @@ def lerp(a, b, t): return a + (b - a) * t
 def mix(c1, c2, t): return tuple(int(lerp(c1[i], c2[i], clamp(t))) for i in range(3))
 
 class Cv:
-    def __init__(s, col): s.im = Image.new('RGB', (CW * K, CH * K), col); s.d = ImageDraw.Draw(s.im)
+    def __init__(s, col, size=None): s.W, s.H = size or (CW, CH); s.im = Image.new('RGB', (s.W * K, s.H * K), col); s.d = ImageDraw.Draw(s.im)
     def ell(s, x, y, rx, ry, fill=None, out=None, w=0):
         s.d.ellipse([(x - rx) * K, (y - ry) * K, (x + rx) * K, (y + ry) * K], fill=fill, outline=out, width=int(w * K))
     def line(s, pts, w, col):
