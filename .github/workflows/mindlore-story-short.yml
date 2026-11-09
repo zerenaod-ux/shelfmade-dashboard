@@ -2,6 +2,8 @@ name: mindlore-story-short
 on:
   schedule:
     - cron: '40 13 * * *'   # 8:40 AM Chicago (CDT)
+    - cron: '20 19 * * *'   # extra tries (GitHub timers are late/skipped); story_gate.py stops overbuilding
+    - cron: '20 1 * * *'
   workflow_dispatch:
     inputs:
       count:
@@ -32,6 +34,9 @@ jobs:
           COUNT: ${{ github.event.inputs.count || '3' }}
         run: |
           mkdir -p out gh-state
+          if [ -z "${{ github.event.inputs.count }}" ]; then COUNT=$(python story_gate.py mindlore 3 12 || echo 3); fi
+          echo "$COUNT" > out/count.txt
+          if [ "$COUNT" = "0" ]; then echo "Enough MindLore videos in stock: nothing to build now."; exit 0; fi
           python story_learn.py mindlore || true
           python story_short.py "$COUNT" || true
           python gh_story_short.py "$COUNT"
@@ -41,6 +46,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           shopt -s nullglob; F=(out/ml-story-*.zip)
+          [ "$(cat out/count.txt 2>/dev/null)" = "0" ] && { echo "nothing needed"; exit 0; }
           [ ${#F[@]} -eq 0 ] && { echo "Nothing built"; exit 1; }
           TAG=mindlore-story-$(date -u +%Y%m%d-%H%M)
           gh release create "$TAG" "${F[@]}" --title "MindLore story Shorts $TAG" --notes "Built automatically. Review before posting. Nothing is posted automatically."
