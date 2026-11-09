@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261107-43f84",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Is chasing every extra dollar worth it?",
+ "hook": "You chase every extra dollar you can earn.",
+ "thumbnail_headline": "MONEY VS HAPPINESS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You chase every extra dollar you can earn. Ancient philosophers warned that wealth rarely brings lasting joy. In the 1970s, psychologist Richard Easterlin studied U.S. income data and found about a 0.2 correlation between higher earnings and life satisfaction. What did the researchers find about the link between income and joy? They found that after basic needs, extra income adds only marginal joy. The result? People with more money are only a little happier than those with less. Other research, like a 2010 study by Daniel Kahneman at Princeton, shows the happiness boost caps after about $75,000 a year. That idea is called the Easterlin paradox, confirmed across cultures and decades. So why do we assume more cash always equals more smiles? Because early societies measured wealth by goods, not by inner peace, a fact modern economists still cite. That's it. So next time you spend a bonus, remember happiness isn’t bought, you chase"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about a 0.2 correlation between higher earnings and life satisfaction",
+   "who": "Richard Easterlin",
+   "year": "1970s",
+   "place": "United States"
+  },
+  {
+   "claim": "happiness boost caps after about $75,000 a year",
+   "who": "Daniel Kahneman",
+   "year": "2010",
+   "place": "Princeton University"
+  }
+ ],
+ "source_url": "",
+ "theme": "money and happiness",
+ "redo_of": "st-261107-43f84"
+}

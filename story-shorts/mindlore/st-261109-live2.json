@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261106-b5824",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your brain can't truly multitask",
+ "hook": "You try to juggle emails, texts, and meetings all day.",
+ "thumbnail_headline": "MULTITASKING MYTH",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You try to juggle emails, texts, and meetings all day. Ancient foragers actually focused on one task at a time, not the chaos you imagine. In the 1960s, anthropologist Richard Lee studied the Kalahari !Kung and recorded about 15 to 20 hours of focused work per week. Later research across modern societies shows the same pattern, called the multitasking myth. In 2009, Dr. Eyal Ophir at UC Santa Barbara measured heavy media multitaskers and saw about a 40% drop in attention test scores. The result? The brain loses efficiency each time it switches. In 2000, Dr. David Meyer at the University of Michigan quantified a task‑switching cost of roughly 40 milliseconds, which adds up to a 20‑30% productivity loss. So why do we assume we can handle several streams at once? Because we mistake rapid switching for true simultaneity, a cognitive illusion. That's it. So next time you open another tab, remember your brain works like the ancient forager: one task at a time, you try"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 15 to 20 hours of focused work per week",
+   "who": "Richard Lee",
+   "year": "1960s",
+   "place": "Kalahari !Kung"
+  },
+  {
+   "claim": "about a 40% drop in attention test scores for heavy media multitaskers",
+   "who": "Eyal Ophir",
+   "year": "2009",
+   "place": "UC Santa Barbara"
+  }
+ ],
+ "source_url": "",
+ "theme": "multitasking",
+ "redo_of": "st-261106-b5824"
+}

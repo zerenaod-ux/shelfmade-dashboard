@@ -1,0 +1,32 @@
+{
+ "book_id": "st-261105-3c4dc",
+ "title": "",
+ "author": "",
+ "story_short": true,
+ "public_title": "Why a deadline ties your stomach in knots",
+ "hook": "You feel a knot in your stomach whenever a deadline looms, but ancient hunters and modern scientists say that knot is a relic of a different fight.",
+ "thumbnail_headline": "STRESS AS PRIMAL FIGHT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a knot in your stomach whenever a deadline looms, but ancient hunters and modern scientists say that knot is a relic of a different fight. Your brain treats the deadline like a predator. Hans Selye, a Canadian physiologist in the 1930s, showed that chronic pressure spikes cortisol by about 15 to 20 percent. The result? Your body prepares to run, not to type. Later, Michael Gurven and colleagues studied the Hadza of Tanzania in 2015 and found their average cortisol about 30 percent lower than yours. Other societies, from the Inuit to the Yanomami, show the same pattern, called the stress‑response adaptation. So why do we assume modern stress is the same as ancient fear? Because we ignore the context of the threat. In the wild, fear meant immediate danger, not endless emails. That's it. So next time a deadline tightens, remember your knot is an ancient alarm. You feel a knot in your stomach whenever a deadline looms"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Chronic pressure spikes cortisol by about 15 to 20 percent",
+   "who": "Hans Selye",
+   "year": "1936",
+   "place": "Canada"
+  },
+  {
+   "claim": "Hadza average cortisol about 30 percent lower than industrial societies",
+   "who": "Michael Gurven et al.",
+   "year": "2015",
+   "place": "Tanzania"
+  }
+ ],
+ "source_url": "",
+ "theme": "stress and fear",
+ "redo_of": "st-261105-3c4dc"
+}

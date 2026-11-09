@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: System packages
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu fonts-liberation
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu fonts-liberation fonts-noto-color-emoji
       - name: Python packages
         run: pip install --quiet pillow numpy edge-tts requests
       - name: Write and build story Shorts

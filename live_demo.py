@@ -84,7 +84,7 @@ def d_chart(c, b, lt, T, bg, acc, ink):
         pts.append((x0 + q * (x1 - x0 - 20), y1 - 10 - R / 100 * (y1 - y0 - 40)))
     if len(pts) > 1: c.line(pts, 10, acc)
     if pts: c.ell(pts[-1][0], pts[-1][1], 14, 14, acc, ink, 3)
-    R = (to + (100 - to) * math.exp(-4 * p)) if sh == 'decay' else (10 + (to - 10) / (1 + math.exp(-9 * (p - .5)))); c.text(520, y0 + 70, '%d%%' % round(R), 92, acc, 'mm', 4, panel)
+    R = (to + (100 - to) * math.exp(-4 * p)) if sh == 'decay' else (10 + (to - 10) / (1 + math.exp(-9 * (p - .5)))); (None if b.get('hide') else c.text(520, y0 + 70, '%d%%' % round(R), 92, acc, 'mm', 4, panel))
 def d_slots(c, b, lt, T, bg, acc, ink):
     items = (b.get('items') or ['📝', '📞', '🔑'])[:4]; cap = len(items); SP = 128; X0 = 360 - cap * SP / 2 + SP / 2 - SP / 2 + 0; X0 = 360 - (cap - 1) * SP / 2; y = 620
     c.rr(X0 - 80, y - 100, X0 + (cap - 1) * SP + 80, y + 100, 28, mix(bg, (255, 255, 255), .25), acc, 5)
@@ -126,7 +126,7 @@ def d_meter(c, b, lt, T, bg, acc, ink):
     f, t_ = float(b.get('frm') or 0), float(b.get('to') or 1); u = ease((lt - .2) / max(.7, T * .6)); v = lerp(f, t_, u)
     c.rr(70, 600, 650, 700, 50, mix(bg, (255, 255, 255), .3), ink, 5)
     col = mix((230, 70, 60), (70, 200, 110), v); w = max(8, 560 * v); c.rr(80, 610, 80 + w, 690, 40, col, None, 0)
-    emo(c, b.get('emoji'), 80 + w, 520 - 20 * abs(math.sin(lt * 6)), 150 * back(lt / .3)); c.text(360, 780, '%d%%' % round(v * 100), 110, acc, 'mm', 5, bg)
+    emo(c, b.get('emoji'), 80 + w, 520 - 20 * abs(math.sin(lt * 6)), 150 * back(lt / .3)); (None if b.get('hide') else c.text(360, 780, '%d%%' % round(v * 100), 110, acc, 'mm', 5, bg))
     ctext(c, 360, 940, (b.get('text') or '').upper(), 48, ink, 640)
 def d_react(c, b, lt, T, bg, acc, ink):
     emo(c, b.get('emoji') or '😳', 360 + 10 * math.sin(lt * 35) * (1 - ease(lt / 1.2)), 470, 380 * back(lt / .25))
@@ -192,6 +192,25 @@ def llm_director(words, total):
     except Exception as e:
         print('llm_director failed:', str(e)[:200]); return None
 def clean(w): return B.clean(w)
+def nums_in(text):
+    s = set()
+    for m in re.findall(r'\d+(?:\.\d+)?', text.replace(',', '')): s.add(float(m))
+    for w in re.findall(r"[a-z]+", text.lower()):
+        if w in NUMW: s.add(float(NUMW[w]))
+    return s
+def ground(beats, text):
+    """L7: a number shown on screen must be in the narration; otherwise the number is hidden (or the beat becomes a plain icon)."""
+    ok = nums_in(text); fixed = 0
+    for b in beats:
+        k = b['kind']
+        if k == 'counter' and float(b.get('value') or 0) not in ok:
+            b.update({'kind': 'icon_burst', 'emoji': b.get('emoji') or '📊'}); fixed += 1
+        elif k == 'chart':
+            if b.get('shape') == 'bars':
+                if not all(float(v) in ok for v in (b.get('values') or [])): b.update({'kind': 'icon_burst', 'emoji': b.get('emoji') or '📊'}); fixed += 1
+            elif float(b.get('to') or -1) not in ok: b['hide'] = True; fixed += 1
+        elif k == 'meter' and round(float(b.get('to') or 0) * 100) not in ok: b['hide'] = True; fixed += 1
+    return fixed
 
 # ---------- render ----------
 def stages(beats, words, total):
@@ -236,6 +255,7 @@ def build(story, outp):
     for w in words: w['w'] = w['w']
     beats = llm_director(words, total); src = 'llm'
     if not beats: beats = rule_director(words); src = 'rules'
+    print('numbers hidden/replaced (not in narration):', ground(beats, text), flush=True)
     if beats[-1]['kind'] != 'title_slam': beats.append({'at': max(beats[-1]['at'] + 1, len(words) - 3), 'kind': 'title_slam', 'text': 'AGAIN?', 'emoji': '🔁'}) if words[-1]['s'] - words[beats[-1]['at']]['s'] > 2.4 else None
     last = -1; prev = -1
     for b in beats:
