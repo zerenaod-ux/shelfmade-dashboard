@@ -1,10 +1,7 @@
 name: howmade
+# PAUSED 2026-11-09: YouTube blocks GitHub IPs for captions (0 of 36 hits readable). Manual run only. See ROADMAP M1.
 on:
-  schedule:
-    - cron: '47 8 * * 3'
   workflow_dispatch:
-  push:
-    paths: ['howmade.py', '.github/workflows/howmade.yml']
 permissions:
   contents: write
 concurrency:
