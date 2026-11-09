@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-411a4",
+ "title": "Confessions",
+ "author": "Saint Augustine",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "You Guilt Unpacked",
+ "hook": "You feel guilty for small mistakes.",
+ "thumbnail_headline": "GUILT REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel guilty for small mistakes. Ancient writers like Augustine actually talked about this internal battle. In 1997, James Pennebaker studied expressive writing and found about 30% reduction in cortisol for guilt writers. The result? Augustine claimed that confession frees the heart, and modern science says talking about guilt calms the body. So why do we think guilt is always bad? Because the past showed it can trap us, but research shows it can motivate change. What did Augustine say about it? He wrote that self‑reflection turns guilt into growth, and a 2003 study by Kristin Neff found a negative correlation (r = –.34) between self‑compassion and guilt. Can modern research help us change our guilt habits? Yes, expressive writing and self‑compassion lower guilt for about 30% to 40% of people. That's it. So next time you feel a pang, remember Augustine’s confession and write or be kind to yourself. You feel guilty"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Expressive writing reduces cortisol by about 30% for guilt writers.",
+   "who": "James W. Pennebaker",
+   "year": "1997",
+   "place": "University of Texas, Austin"
+  },
+  {
+   "claim": "Self‑compassion negatively correlates with guilt (r = –.34).",
+   "who": "Kristin Neff",
+   "year": "2003",
+   "place": "University of Texas, Austin"
+  }
+ ],
+ "source_url": "",
+ "theme": "Confessions by Saint Augustine",
+ "exp": ""
+}

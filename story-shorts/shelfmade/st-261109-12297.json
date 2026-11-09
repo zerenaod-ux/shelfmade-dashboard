@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261109-12297",
+ "title": "Second Treatise of Government",
+ "author": "John Locke",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Your Government Is Over",
+ "hook": "You obey traffic lights without a second thought.",
+ "thumbnail_headline": "OBEDIENCE WAS WRONG",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You obey traffic lights without a second thought. Two centuries ago, Locke said your consent is the only legal source of power. In the 1970s, political scientist Robert Dahl studied 57 American cities. He found about 98% of citizens had almost no influence on decisions. The result? Your vote barely moves the needle. That's it. Locke wrote that government exists to protect life, liberty, and property. He got the goal right. He got the mechanism wrong. He assumed a fair marketplace of ideas. Modern research shows elite groups dominate policy. So why do we assume democracy works? Because the founders believed in a perfect system. But Dahl proved it is an oligarchy in practice. Does it still hold today? No. The book promised a partnership. Reality offers a spectator sport. So next time you obey a traffic light, remember your consent is not really consent. You obey traffic lights without a second thought."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "About 98% of citizens had almost no influence on decisions in 57 American cities",
+   "who": "Robert Dahl",
+   "year": "1970s",
+   "place": "United States"
+  },
+  {
+   "claim": "Government legitimacy comes solely from the consent of the governed",
+   "who": "John Locke",
+   "year": "1689",
+   "place": "England"
+  }
+ ],
+ "source_url": "",
+ "theme": "Second Treatise of Government by John Locke",
+ "exp": ""
+}
