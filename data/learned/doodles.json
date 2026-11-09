@@ -1,27 +1,25 @@
 {
  "short": {
   "do_more": [
-   "Start with a vivid, relatable scenario in the first 2\u20113 seconds",
-   "Focus each short on ONE clear psychology concept and name it in the title",
-   "Use the \u201cThe X \u2026\u201d title pattern with a curiosity\u2011driving twist",
-   "Keep the runtime around the standard ~42\u202fseconds, but pack the hook early",
-   "Add a visual gag or exaggeration that reinforces the concept"
+   "Use high-stakes, relatable social scenarios (like confidence or social traps) rather than abstract cognitive processes.",
+   "Prioritize visual metaphors that are instantly recognizable (jackets, clean rooms) over complex internal states.",
+   "Focus on the 'Trap' or 'Paradox' angle where the character is trapped by their own logic or habits.",
+   "Keep the pacing snappy; the top performer had a clear, singular payoff."
   ],
   "avoid": [
-   "Generic or vague titles without a specific concept",
-   "Introducing multiple ideas or a long setup before the hook",
-   "Overly abstract language that drops viewer interest",
-   "Running the video much longer than 45\u202fseconds"
+   "Avoid titles that start with 'Why' or explain the mechanism directly (e.g., 'Why Your Brain...').",
+   "Avoid abstract psychological concepts that require too much setup to understand (e.g., Sunk Cost, Rehearsal).",
+   "Do not use the 'Rehearsal' or 'Rest' topics, as they performed poorly and feel passive."
   ],
-  "title_style": "Use a concise \u201cThe\u202f[Concept]\u202f[Surprising Hook]\u201d format that promises a quick, unexpected insight",
+  "title_style": "Use 'The [Noun] Trap' or 'The [Noun] Curve' format with a specific, tangible object or social situation that implies a hidden flaw or paradox.",
   "next_tests": [
-   "A/B test 30\u2011second tight versions vs 42\u2011second standard to see retention impact",
-   "Experiment with opening questions vs bold statements as the first hook",
-   "Try titles that include a numeric hook (e.g., \u201c3 Ways\u2026\u201d) versus the simple \u201cThe\u202fX\u201d format"
+   "Test a 'Social Face' topic: 'The Smile That Doesn't Reach the Eyes' (Impression Management).",
+   "Test a 'Habit Loop' topic: 'The Coffee Cup You Can't Put Down' (Habit Formation).",
+   "Test a 'Decision Paralysis' topic: 'The Menu That Never Ends' (Paradox of Choice) using a visual loop."
   ],
-  "n": 13,
-  "best_vpd": 62.11,
+  "n": 19,
+  "best_vpd": 34.68,
   "best_title": "The Confidence Curve"
  },
- "updated": "2026-11-07"
+ "updated": "2026-11-09"
 }

@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-07",
+ "collected": "2026-11-09",
  "note": "",
  "videos": [
   {
@@ -11,11 +11,11 @@
    "published": "2026-11-03T18:04:42Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 205,
+   "views": 206,
    "likes": 3,
    "comments": 0,
    "avgSeconds": 15,
-   "avgPercent": 23.53,
+   "avgPercent": 23.63,
    "subsGained": 1
   },
   {
@@ -40,8 +40,8 @@
    "views": 10,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 42,
-   "avgPercent": 83.13,
+   "avgSeconds": 32,
+   "avgPercent": 63.06,
    "subsGained": 0
   },
   {
@@ -69,6 +69,19 @@
    "avgSeconds": 31,
    "avgPercent": 41.17,
    "subsGained": 0
+  },
+  {
+   "id": "B1Xmi2FOMmY",
+   "title": "The Price Tag Trap",
+   "published": "2026-11-02T23:02:28Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 15,
+   "avgPercent": 25.230000000000004,
+   "subsGained": 1
   },
   {
    "id": "Zc1do-DnYrE",
@@ -110,17 +123,17 @@
    "subsGained": 0
   },
   {
-   "id": "B1Xmi2FOMmY",
-   "title": "The Price Tag Trap",
-   "published": "2026-11-02T23:02:28Z",
-   "duration": "PT1M1S",
+   "id": "pWjmSxnfjV0",
+   "title": "The Pastry Paradox",
+   "published": "2026-11-03T23:02:44Z",
+   "duration": "PT1M14S",
    "privacy": "public",
-   "views": 8,
-   "likes": 1,
+   "views": 7,
+   "likes": 2,
    "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 25.230000000000004,
-   "subsGained": 1
+   "avgSeconds": 7,
+   "avgPercent": 10.07,
+   "subsGained": 0
   },
   {
    "id": "ImJ1YpyYRlM",
@@ -133,6 +146,19 @@
    "comments": 0,
    "avgSeconds": 5,
    "avgPercent": 7.139999999999999,
+   "subsGained": 0
+  },
+  {
+   "id": "QSe-RWtqWKs",
+   "title": "Why Your Brain Keeps Tabs Open",
+   "published": "2026-10-30T22:01:49Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -149,17 +175,17 @@
    "subsGained": 0
   },
   {
-   "id": "pWjmSxnfjV0",
-   "title": "The Pastry Paradox",
-   "published": "2026-11-03T23:02:44Z",
-   "duration": "PT1M14S",
+   "id": "ItInAPU8iXs",
+   "title": "The Sunday Scaries",
+   "published": "2026-11-02T20:02:10Z",
+   "duration": "PT54S",
    "privacy": "public",
    "views": 6,
-   "likes": 2,
+   "likes": 0,
    "comments": 0,
-   "avgSeconds": 8,
-   "avgPercent": 11.15,
-   "subsGained": 0
+   "avgSeconds": 10,
+   "avgPercent": 18.81,
+   "subsGained": 2
   },
   {
    "id": "UKi9L1WWhCo",
@@ -188,30 +214,34 @@
    "subsGained": 0
   },
   {
-   "id": "ItInAPU8iXs",
-   "title": "The Sunday Scaries",
-   "published": "2026-11-02T20:02:10Z",
-   "duration": "PT54S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 18.81,
-   "subsGained": 1
-  },
-  {
-   "id": "QSe-RWtqWKs",
-   "title": "Why Your Brain Keeps Tabs Open",
-   "published": "2026-10-30T22:01:49Z",
-   "duration": "PT52S",
+   "id": "Aj8TiWooNdA",
+   "title": "The Shark in the Swimming Pool",
+   "published": "2026-11-07T18:05:00Z",
+   "duration": "PT55S",
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
+  },
+  {
+   "id": "sb4WKiNkmrU",
+   "title": "The Bystander Effect",
+   "published": "2026-11-06T23:04:08Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "id": "AvrLyAUe86Y",
+   "title": "The Planning Fallacy",
+   "published": "2026-11-06T18:03:48Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 1
   },
   {
    "id": "KvC6egp-HYQ",
@@ -221,13 +251,16 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0
+   "comments": 1,
+   "avgSeconds": 68,
+   "avgPercent": 103.54,
+   "subsGained": 0
   },
   {
-   "id": "pJfbbo-cJAQ",
-   "title": "The 5 PM Slide Deck Disaster",
-   "published": "2026-11-06T00:00:23Z",
-   "duration": "PT3M58S",
+   "id": "ZBq7mV2vMZk",
+   "title": "The Nodding Trap",
+   "published": "2026-11-07T03:01:12Z",
+   "duration": "PT47S",
    "privacy": "public",
    "views": 2,
    "likes": 1,
@@ -239,9 +272,25 @@
    "published": "2026-11-07T00:00:14Z",
    "duration": "PT54S",
    "privacy": "public",
-   "views": 1,
-   "likes": 1,
-   "comments": 0
+   "views": 2,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 44,
+   "avgPercent": 81.76,
+   "subsGained": 0
+  },
+  {
+   "id": "bRr0CpAVqi4",
+   "title": "The Rehearsal Trap",
+   "published": "2026-11-06T03:01:44Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "FHoaRv9TFTc",
@@ -251,33 +300,49 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 28.46,
+   "subsGained": 0
   },
   {
-   "id": "sb4WKiNkmrU",
-   "title": "The Bystander Effect",
-   "published": "2026-11-06T23:04:08Z",
-   "duration": "PT1M7S",
+   "id": "pJfbbo-cJAQ",
+   "title": "The 5 PM Slide Deck Disaster",
+   "published": "2026-11-06T00:00:23Z",
+   "duration": "PT3M58S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 32,
+   "avgPercent": 13.489999999999998,
+   "subsGained": 0
+  },
+  {
+   "id": "tmW0ic4_Go4",
+   "title": "The Panic of 'K'",
+   "published": "2026-11-09T03:01:39Z",
+   "duration": "PT57S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0
   },
   {
-   "id": "AvrLyAUe86Y",
-   "title": "The Planning Fallacy",
-   "published": "2026-11-06T18:03:48Z",
-   "duration": "PT50S",
+   "id": "zYdejZHy3k4",
+   "title": "The Sunday Spiral",
+   "published": "2026-11-08T18:02:32Z",
+   "duration": "PT45S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0
   },
   {
-   "id": "bRr0CpAVqi4",
-   "title": "The Rehearsal Trap",
-   "published": "2026-11-06T03:01:44Z",
-   "duration": "PT47S",
+   "id": "5msto0N_8Cs",
+   "title": "The Whiteboard Nod | Leo & Mia #5",
+   "published": "2026-11-08T03:01:34Z",
+   "duration": "PT36S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

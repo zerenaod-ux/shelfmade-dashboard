@@ -1,23 +1,23 @@
 {
  "hot_themes": [
-  "Book Metaphors for Life & Destiny",
-  "Dark Academia & Human Psychology",
-  "Ancient Warrior & Stoic Mindset Lessons",
-  "Betrayal, Heartbreak & Emotional Truths",
-  "Authenticity vs. Seeking Social Acceptance"
+  "Hard truths about friendship vs betrayal",
+  "Comfort vs true inner peace (Stoicism)",
+  "Power, authority, and societal wisdom",
+  "High-impact emotional punchlines ('Hit Different')",
+  "Mindset shifts from historical figures"
  ],
  "hook_patterns": [
-  "Direct Warning/Imperative ('BE CAREFUL who you think...', 'Never change your...')",
-  "Relatable Metaphor Equating Daily Life to Books/Notebooks",
-  "High-Stakes Historical Contrast (Warriors, Philosophers, World-Changing Words)"
+  "Direct confrontation of a false comfort or bad habit ('You've mistaken X for Y')",
+  "Warning-based conditional statements ('If you see your friend with your enemy...')",
+  "High-stakes contrast between ignorance and wisdom ('When power fears wisdom...')"
  ],
  "ideas_for_us": [
-  "Marcus Aurelius on Betrayal: 3 Stoic Rules for Handling Fake Friends (Meditations)",
-  "Why Being 'Too Nice' Destroys You: Dark Psychology Lessons from Dostoyevsky's Notes from Underground",
-  "The Art of Not Caring What People Think: Sun Tzu\u2019s Strategy for Mind Games (The Art of War)",
-  "Before You Give Up on Love: Read This 100-Year-Old Warning from Seneca's Letters"
+  "Marcus Aurelius on spoting fake friends and hidden motives (Meditations)",
+  "Dostoevsky's warning to those who trade freedom for comfortable slavery (The Brothers Karamazov)",
+  "Seneca on the difference between being lazy and actually being at peace (Letters from a Stoic)",
+  "Sun Tzu's cold reality check on who you can actually trust in your inner circle (The Art of War)"
  ],
- "updated": "2026-11-07",
- "sample": 59,
- "top_vpd": 185115
+ "updated": "2026-11-09",
+ "sample": 57,
+ "top_vpd": 356299
 }

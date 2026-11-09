@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-07",
+ "collected": "2026-11-09",
  "note": "",
  "videos": [
   {
@@ -54,7 +54,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 9,
-   "avgPercent": 31.759999999999998,
+   "avgPercent": 32.05,
    "subsGained": 0
   },
   {
@@ -89,7 +89,7 @@
    "published": "2026-10-15T01:32:23Z",
    "duration": "PT23S",
    "privacy": "public",
-   "views": 74,
+   "views": 75,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 11,
@@ -175,6 +175,19 @@
    "subsGained": 0
   },
   {
+   "id": "Y-FWlbV5SYM",
+   "title": "Can truth unlock hidden peace?",
+   "published": "2026-11-06T18:06:07Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 48,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 8,
+   "avgPercent": 23.94,
+   "subsGained": 0
+  },
+  {
    "id": "7P-eD_FErv0",
    "title": "Where is your attention?",
    "published": "2026-10-18T23:44:02Z",
@@ -188,6 +201,19 @@
    "subsGained": 0
   },
   {
+   "id": "88SeG1rSwzc",
+   "title": "What secret lies in wild olive?",
+   "published": "2026-11-05T03:01:29Z",
+   "duration": "PT28S",
+   "privacy": "public",
+   "views": 46,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 14,
+   "avgPercent": 50.96000000000001,
+   "subsGained": 0
+  },
+  {
    "id": "wxefvX3oShc",
    "title": "It is for everyone's interest to let this truth sink deep into his mind",
    "published": "2026-10-25T23:20:34Z",
@@ -198,19 +224,6 @@
    "comments": 0,
    "avgSeconds": 9,
    "avgPercent": 37.41,
-   "subsGained": 0
-  },
-  {
-   "id": "88SeG1rSwzc",
-   "title": "Never mind; she can't scratch you while Florrie is holding her",
-   "published": "2026-11-05T03:01:29Z",
-   "duration": "PT28S",
-   "privacy": "public",
-   "views": 41,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 53.47,
    "subsGained": 0
   },
   {
@@ -247,9 +260,9 @@
    "privacy": "public",
    "views": 40,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 27.1,
+   "comments": 1,
+   "avgSeconds": 19,
+   "avgPercent": 37.41,
    "subsGained": 0
   },
   {
@@ -263,6 +276,19 @@
    "comments": 0,
    "avgSeconds": 8,
    "avgPercent": 33.26,
+   "subsGained": 0
+  },
+  {
+   "id": "JvIgBaYCJdU",
+   "title": "Why does pessimism feel uncomfortable?",
+   "published": "2026-11-05T18:03:48Z",
+   "duration": "PT57S",
+   "privacy": "public",
+   "views": 37,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 28,
+   "avgPercent": 50.56,
    "subsGained": 0
   },
   {
@@ -331,6 +357,19 @@
    "subsGained": 0
   },
   {
+   "id": "eFMuACpNNxI",
+   "title": "Knowledge of the enemy\u2019s dispositions can only be obtained from other men",
+   "published": "2026-11-03T01:26:37Z",
+   "duration": "PT20S",
+   "privacy": "public",
+   "views": 33,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 49.82,
+   "subsGained": 0
+  },
+  {
    "id": "hHymwJY9Yi8",
    "title": "It will facilitate our discussion if we keep all these distinctions well in mind",
    "published": "2026-10-29T02:00:44Z",
@@ -340,7 +379,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 13,
-   "avgPercent": 42.57,
+   "avgPercent": 43.62,
    "subsGained": 0
   },
   {
@@ -357,16 +396,16 @@
    "subsGained": 0
   },
   {
-   "id": "eFMuACpNNxI",
-   "title": "Knowledge of the enemy\u2019s dispositions can only be obtained from other men",
-   "published": "2026-11-03T01:26:37Z",
-   "duration": "PT20S",
+   "id": "6ekA7k96fUk",
+   "title": "Where does your mind wander?",
+   "published": "2026-11-05T23:03:00Z",
+   "duration": "PT35S",
    "privacy": "public",
-   "views": 32,
+   "views": 31,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 49.82,
+   "comments": 1,
+   "avgSeconds": 14,
+   "avgPercent": 40.05,
    "subsGained": 0
   },
   {
@@ -396,10 +435,10 @@
    "subsGained": 0
   },
   {
-   "id": "JvIgBaYCJdU",
-   "title": "This Studies in Pessimism line is uncomfortable.",
-   "published": "2026-11-05T18:03:48Z",
-   "duration": "PT57S",
+   "id": "OKEdacXsBrk",
+   "title": "Mind, I say your 'feelings,' not your 'belief.' For I cannot undertake to explain anybody's beliefs",
+   "published": "2026-11-07T18:04:23Z",
+   "duration": "PT28S",
    "privacy": "public",
    "views": 29,
    "likes": 0,
@@ -407,7 +446,7 @@
   },
   {
    "id": "DA9pXjqUXfQ",
-   "title": "William James spent his career trying to understand what happens inside a human soul \u2728",
+   "title": "What mystery does James explore?",
    "published": "2026-06-22T03:50:26Z",
    "duration": "PT38S",
    "privacy": "public",
@@ -419,6 +458,19 @@
    "subsGained": 0
   },
   {
+   "id": "8QKdl9NNi3Y",
+   "title": "Do crowds drown true wisdom?",
+   "published": "2026-11-06T03:01:57Z",
+   "duration": "PT34S",
+   "privacy": "public",
+   "views": 27,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 24,
+   "avgPercent": 70.86,
+   "subsGained": 0
+  },
+  {
    "id": "BiRfxu5fbko",
    "title": "Why is Bacon's Essays still read today?",
    "published": "2026-11-04T03:01:07Z",
@@ -427,8 +479,8 @@
    "views": 26,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 22.76,
+   "avgSeconds": 13,
+   "avgPercent": 22.19,
    "subsGained": 0
   },
   {
@@ -458,39 +510,6 @@
    "subsGained": 0
   },
   {
-   "id": "24m9dl3C6uo",
-   "title": "The sluggard and the self-indulgent can have no knowledge of Truth",
-   "published": "2026-10-19T00:37:22Z",
-   "duration": "PT26S",
-   "privacy": "public",
-   "views": 25,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 39.69,
-   "subsGained": 0
-  },
-  {
-   "id": "Y-FWlbV5SYM",
-   "title": "If so, you may enter the narrow way of Truth, and find that peace from which the world is shut out",
-   "published": "2026-11-06T18:06:07Z",
-   "duration": "PT36S",
-   "privacy": "public",
-   "views": 24,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "8QKdl9NNi3Y",
-   "title": "We avowedly follow not the truth but the will of the many (compare Republic)",
-   "published": "2026-11-06T03:01:57Z",
-   "duration": "PT34S",
-   "privacy": "public",
-   "views": 24,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "epWlk-Ra3Rs",
    "title": "Let thus much be accepted as a definition of Knowledge",
    "published": "2026-10-29T17:02:58Z",
@@ -504,14 +523,17 @@
    "subsGained": 0
   },
   {
-   "id": "6ekA7k96fUk",
-   "title": "Where is your attention?",
-   "published": "2026-11-05T23:03:00Z",
-   "duration": "PT35S",
+   "id": "24m9dl3C6uo",
+   "title": "The sluggard and the self-indulgent can have no knowledge of Truth",
+   "published": "2026-10-19T00:37:22Z",
+   "duration": "PT26S",
    "privacy": "public",
-   "views": 23,
+   "views": 24,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 50.14999999999999,
+   "subsGained": 0
   },
   {
    "id": "goI_lzWhMaw",
@@ -523,7 +545,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 4,
-   "avgPercent": 13.449999999999998,
+   "avgPercent": 13.15,
    "subsGained": 0
   },
   {
@@ -631,6 +653,19 @@
    "subsGained": 0
   },
   {
+   "id": "33wZsS1WEs4",
+   "title": "Walden \u00b7 Improved replacement",
+   "published": "2026-10-14T20:27:15Z",
+   "duration": "PT17S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 55.81,
+   "subsGained": 0
+  },
+  {
    "id": "skC7OMC7xjU",
    "title": "Why fancy that you have all the truth in your keeping?",
    "published": "2026-10-25T23:21:02Z",
@@ -670,19 +705,6 @@
    "subsGained": 0
   },
   {
-   "id": "33wZsS1WEs4",
-   "title": "Walden \u00b7 Improved replacement",
-   "published": "2026-10-14T20:27:15Z",
-   "duration": "PT17S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 55.81,
-   "subsGained": 0
-  },
-  {
    "id": "lB1khz_EYhg",
    "title": "And still we must labour on; for the work of self-culture is never finished",
    "published": "2026-11-03T01:26:46Z",
@@ -709,6 +731,19 @@
    "subsGained": 0
   },
   {
+   "id": "nw9L0WbCy1s",
+   "title": "Can mercy survive in the middle of war?",
+   "published": "2026-06-11T16:37:06Z",
+   "duration": "PT8M37S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 32,
+   "avgPercent": 6.25,
+   "subsGained": 0
+  },
+  {
    "id": "mX0Yjfx_vsM",
    "title": "You must have observed this trait of character?",
    "published": "2026-11-03T01:20:23Z",
@@ -723,7 +758,7 @@
   },
   {
    "id": "a1cQi88hrm0",
-   "title": "Question what you know",
+   "title": "Does calm create new wisdom?",
    "published": "2026-10-18T23:51:17Z",
    "duration": "PT22S",
    "privacy": "public",
@@ -732,19 +767,6 @@
    "comments": 0,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "nw9L0WbCy1s",
-   "title": "Meditations by Marcus Aurelius \u2014 The Stoic Mind That Ruled an Empire",
-   "published": "2026-06-11T16:37:06Z",
-   "duration": "PT8M37S",
-   "privacy": "public",
-   "views": 12,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 32,
-   "avgPercent": 6.25,
    "subsGained": 0
   },
   {
@@ -759,7 +781,7 @@
   },
   {
    "id": "jTyrD15cQHM",
-   "title": "Bacon S Essays",
+   "title": "Can one page change you?",
    "published": "2026-10-14T02:39:25Z",
    "duration": "PT35S",
    "privacy": "public",
@@ -793,12 +815,12 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 9,
-   "avgPercent": 2.31,
+   "avgPercent": 2.45,
    "subsGained": 1
   },
   {
    "id": "mcV0u5NRAvI",
-   "title": "If you would learn to converse, put yourself into positions where you _must_ speak",
+   "title": "Can you control your calm?",
    "published": "2026-10-23T04:05:15Z",
    "duration": "PT22S",
    "privacy": "public",
@@ -811,7 +833,7 @@
   },
   {
    "id": "1TFujFgiGXw",
-   "title": "Question what you know",
+   "title": "Do manners outweigh knowledge?",
    "published": "2026-10-19T17:46:19Z",
    "duration": "PT27S",
    "privacy": "public",
@@ -820,6 +842,19 @@
    "comments": 0,
    "avgSeconds": 16,
    "avgPercent": 59.69,
+   "subsGained": 0
+  },
+  {
+   "id": "OeEfBiHYLLc",
+   "title": "Is failure secretly a gift?",
+   "published": "2026-06-16T02:44:16Z",
+   "duration": "PT2M54S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 24,
+   "avgPercent": 13.98,
    "subsGained": 0
   },
   {
@@ -837,7 +872,7 @@
   },
   {
    "id": "rlRbKJij9Po",
-   "title": "You waste 16 of your 24 hours every day \u2014 and you don't even notice it \u23f3",
+   "title": "Are you losing sixteen hours daily?",
    "published": "2026-06-24T02:29:35Z",
    "duration": "PT49S",
    "privacy": "public",
@@ -850,7 +885,7 @@
   },
   {
    "id": "M_SmNMSpJ0w",
-   "title": "Bertrand Russell asked questions so basic they collapse everything you think you know \u2728",
+   "title": "Do you really know?",
    "published": "2026-06-16T04:45:59Z",
    "duration": "PT50S",
    "privacy": "public",
@@ -863,7 +898,7 @@
   },
   {
    "id": "-AEoyekZses",
-   "title": "The philosopher who said your boss has no right to tell you what to think \ud83d\udee3\ufe0f",
+   "title": "Can your boss force thought?",
    "published": "2026-06-16T04:44:52Z",
    "duration": "PT44S",
    "privacy": "public",
@@ -876,7 +911,7 @@
   },
   {
    "id": "hKktePcjLPM",
-   "title": "The book that inspired the American Revolution \ud83d\uddfd",
+   "title": "Can rights justify rebellion?",
    "published": "2026-06-16T02:53:15Z",
    "duration": "PT45S",
    "privacy": "public",
@@ -888,16 +923,16 @@
    "subsGained": 0
   },
   {
-   "id": "OeEfBiHYLLc",
-   "title": "Self-Help by Samuel Smiles: The 1859 Book That Changed Everything",
-   "published": "2026-06-16T02:44:16Z",
-   "duration": "PT2M54S",
+   "id": "OD2YHuJCIY4",
+   "title": "How sure are you that you are right | Nicomachean Ethics",
+   "published": "2026-10-23T05:17:30Z",
+   "duration": "PT6M25S",
    "privacy": "public",
-   "views": 7,
+   "views": 6,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 24,
-   "avgPercent": 13.98,
+   "avgSeconds": 12,
+   "avgPercent": 3.36,
    "subsGained": 0
   },
   {
@@ -915,7 +950,7 @@
   },
   {
    "id": "19NEY5x_reI",
-   "title": "Tao Te Ching: Ancient Wisdom That Changes Everything",
+   "title": "What if you flow like water?",
    "published": "2026-06-23T20:36:41Z",
    "duration": "PT2M52S",
    "privacy": "public",
@@ -925,7 +960,7 @@
   },
   {
    "id": "ZNG5ueUwq1g",
-   "title": "Thus Spake Zarathustra: Nietzsche's Blueprint for Human Greatness",
+   "title": "Do you aspire to become Superman?",
    "published": "2026-06-22T03:30:01Z",
    "duration": "PT2M50S",
    "privacy": "public",
@@ -935,7 +970,7 @@
   },
   {
    "id": "E8gvNc6Gyrw",
-   "title": "Self-Reliance by Emerson: The Essay That Changed American Thinking",
+   "title": "Can twenty words change your life?",
    "published": "2026-06-19T04:39:41Z",
    "duration": "PT3M8S",
    "privacy": "public",
@@ -970,19 +1005,6 @@
    "subsGained": 0
   },
   {
-   "id": "OD2YHuJCIY4",
-   "title": "How sure are you that you are right | Nicomachean Ethics",
-   "published": "2026-10-23T05:17:30Z",
-   "duration": "PT6M25S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 2.59,
-   "subsGained": 0
-  },
-  {
    "id": "K6npdyBg4R0",
    "title": "Where does your time go?",
    "published": "2026-10-19T19:15:42Z",
@@ -1010,7 +1032,7 @@
   },
   {
    "id": "_cPKH-hbmjA",
-   "title": "Tolstoy quit writing fiction to answer the one question he couldn't escape \ud83c\udf05",
+   "title": "What question haunted Tolstoy?",
    "published": "2026-06-18T04:23:15Z",
    "duration": "PT29S",
    "privacy": "public",
@@ -1036,15 +1058,15 @@
   },
   {
    "id": "QmvgVXfWJT8",
-   "title": "Why does Simple Life still matter?",
+   "title": "Does simplicity outweigh fancy appearances?",
    "published": "2026-11-06T00:00:06Z",
    "duration": "PT6M16S",
    "privacy": "public",
    "views": 4,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 71,
-   "avgPercent": 18.96,
+   "avgSeconds": 31,
+   "avgPercent": 8.41,
    "subsGained": 0
   },
   {
@@ -1062,7 +1084,7 @@
   },
   {
    "id": "wyjEsb-AHBI",
-   "title": "The rigorously scientific mind may, in truth, easily overshoot the mark",
+   "title": "Can science miss the truth?",
    "published": "2026-10-16T16:31:47Z",
    "duration": "PT22S",
    "privacy": "public",
@@ -1074,8 +1096,21 @@
    "subsGained": 0
   },
   {
+   "id": "UfLyrBxj34E",
+   "title": "What do men truly live by?",
+   "published": "2026-10-14T00:51:50Z",
+   "duration": "PT29S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 51.21,
+   "subsGained": 0
+  },
+  {
    "id": "PMX30vSNJ18",
-   "title": "Acres Of Diamonds",
+   "title": "Are diamonds buried in your backyard?",
    "published": "2026-10-14T00:51:43Z",
    "duration": "PT49S",
    "privacy": "public",
@@ -1088,7 +1123,7 @@
   },
   {
    "id": "EZ9BviYODGg",
-   "title": "Is it possible to believe something with zero evidence \u2014 and still be right? \u2728",
+   "title": "Can belief be right without evidence?",
    "published": "2026-06-26T02:15:36Z",
    "duration": "PT45S",
    "privacy": "public",
@@ -1101,7 +1136,7 @@
   },
   {
    "id": "1Dx-LYGQH4U",
-   "title": "The most copied book in human history \u2014 and almost no one knows it \ud83d\udd6f\ufe0f",
+   "title": "What book shaped every culture?",
    "published": "2026-06-24T02:30:08Z",
    "duration": "PT30S",
    "privacy": "public",
@@ -1114,13 +1149,16 @@
   },
   {
    "id": "Ja2LEc0t50Y",
-   "title": "The Art of War by Sun Tzu: 2,400 Years of Timeless Strategy",
+   "title": "Was the Art of War mistranslated?",
    "published": "2026-06-13T22:26:36Z",
    "duration": "PT2M56S",
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "5vbJoMcLLmo",
@@ -1159,6 +1197,16 @@
    "subsGained": 0
   },
   {
+   "id": "JlR5Qt1ALk8",
+   "title": "Is this really true?",
+   "published": "2026-11-08T03:01:43Z",
+   "duration": "PT34S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "eimcxgtfNtc",
    "title": "Nietzsche asks a radical question: why do we assume truth is better than untruth?",
    "published": "2026-10-17T15:03:20Z",
@@ -1185,8 +1233,21 @@
    "subsGained": 0
   },
   {
+   "id": "GvmQ-OHoVtE",
+   "title": "Why do we apologize?",
+   "published": "2026-10-14T01:24:29Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 12.58,
+   "subsGained": 0
+  },
+  {
    "id": "ATI1EOpt4xc",
-   "title": "Aristotle's answer to 'what is the point of being alive?' is not what you expect \ud83c\udfdb\ufe0f",
+   "title": "What is Aristotle's unexpected purpose?",
    "published": "2026-06-26T02:14:08Z",
    "duration": "PT38S",
    "privacy": "public",
@@ -1199,7 +1260,7 @@
   },
   {
    "id": "Xh4ysniFDCQ",
-   "title": "The self-help book that sold millions but almost no one reads anymore \ud83c\udfd4\ufe0f",
+   "title": "Why ignore a bestseller's wisdom?",
    "published": "2026-06-26T02:12:55Z",
    "duration": "PT54S",
    "privacy": "public",
@@ -1212,7 +1273,7 @@
   },
   {
    "id": "P8tQJnPATFU",
-   "title": "Socrates spent his last hours alive proving that death is nothing to fear \ud83c\udf05",
+   "title": "Do you fear death like Socrates?",
    "published": "2026-06-23T21:07:33Z",
    "duration": "PT36S",
    "privacy": "public",
@@ -1225,7 +1286,7 @@
   },
   {
    "id": "7_iBPB6szIw",
-   "title": "Is it better to do wrong or to have wrong done to you? Socrates had an answer \ud83c\udfdb\ufe0f",
+   "title": "What would Socrates think?",
    "published": "2026-06-22T03:49:25Z",
    "duration": "PT26S",
    "privacy": "public",
@@ -1238,7 +1299,7 @@
   },
   {
    "id": "D4eGWbl0qu4",
-   "title": "Cicero said only two things make life worth living \u2014 most people never find either \ud83c\udf07",
+   "title": "What are life\u2019s two essentials?",
    "published": "2026-06-19T04:45:11Z",
    "duration": "PT23S",
    "privacy": "public",
@@ -1251,7 +1312,7 @@
   },
   {
    "id": "dC9xQfgWRBA",
-   "title": "Condemned to death, waiting for execution \u2014 he wrote the most serene book ever \ud83e\ude9f",
+   "title": "How does death inspire serenity?",
    "published": "2026-06-18T04:24:10Z",
    "duration": "PT34S",
    "privacy": "public",
@@ -1264,7 +1325,7 @@
   },
   {
    "id": "dvqqYUoMVJ0",
-   "title": "Without laws and government, life is 'solitary, poor, nasty, brutish, and short' \ud83c\udf0a",
+   "title": "Is life truly brutish without rules?",
    "published": "2026-06-16T19:35:04Z",
    "duration": "PT37S",
    "privacy": "public",
@@ -1277,7 +1338,7 @@
   },
   {
    "id": "S7tuoQoLKFQ",
-   "title": "How Rome's greatest mind conquered the fear of death \ud83c\udf07",
+   "title": "Can you face oblivion?",
    "published": "2026-06-14T18:24:48Z",
    "duration": "PT43S",
    "privacy": "public",
@@ -1325,21 +1386,8 @@
    "subsGained": 0
   },
   {
-   "id": "GvmQ-OHoVtE",
-   "title": "Apology",
-   "published": "2026-10-14T01:24:29Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "t1nVb95pmt4",
-   "title": "Aristotle designed the ideal government 2,300 years ago \u2014 we still haven't built it \ud83c\udfdb\ufe0f",
+   "title": "What is Aristotle\u2019s perfect state?",
    "published": "2026-06-18T04:21:51Z",
    "duration": "PT28S",
    "privacy": "public",
@@ -1352,7 +1400,7 @@
   },
   {
    "id": "FbzqyOcCjVE",
-   "title": "Benjamin Franklin's Autobiography: The Blueprint for Self-Made Success",
+   "title": "Can vanity actually help you grow?",
    "published": "2026-06-16T19:26:16Z",
    "duration": "PT2M59S",
    "privacy": "public",
@@ -1378,7 +1426,7 @@
   },
   {
    "id": "wR1PTMnIblo",
-   "title": "As a Man Thinketh: The Book That Changed How Millions Think",
+   "title": "Do your thoughts create your reality?",
    "published": "2026-06-12T22:09:37Z",
    "duration": "PT8M30S",
    "privacy": "public",
@@ -1407,21 +1455,8 @@
    "comments": 0
   },
   {
-   "id": "UfLyrBxj34E",
-   "title": "What Men Live By",
-   "published": "2026-10-14T00:51:50Z",
-   "duration": "PT29S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "S52fhpBuPEU",
-   "title": "The Analects by Confucius: Ancient Wisdom That Still Governs Us",
+   "title": "Do you lead with virtue daily?",
    "published": "2026-06-24T20:34:36Z",
    "duration": "PT2M53S",
    "privacy": "public",
@@ -1434,7 +1469,7 @@
   },
   {
    "id": "A31DF-LrV10",
-   "title": "Born into slavery, whipped as a child \u2014 he ended up advising presidents \ud83c\udf05",
+   "title": "Did a slave shape leaders' advice?",
    "published": "2026-06-24T02:28:48Z",
    "duration": "PT45S",
    "privacy": "public",
@@ -1447,7 +1482,7 @@
   },
   {
    "id": "T7anxpbtrAE",
-   "title": "Plato said love is not an emotion \u2014 it is a memory of something you lost \ud83c\udf0a",
+   "title": "Is love just a lost memory?",
    "published": "2026-06-23T21:08:45Z",
    "duration": "PT26S",
    "privacy": "public",
@@ -1460,7 +1495,7 @@
   },
   {
    "id": "gtcQeCf1ohw",
-   "title": "The psychology behind every great teacher \u2014 and why most teachers never learn it \ud83d\udcda",
+   "title": "Do teachers miss essential psychology?",
    "published": "2026-06-23T20:57:11Z",
    "duration": "PT33S",
    "privacy": "public",
@@ -1473,7 +1508,7 @@
   },
   {
    "id": "yOuCdGMofqY",
-   "title": "The only question that matters: does it actually work? \ud83e\udded",
+   "title": "Does this timeless advice truly work?",
    "published": "2026-06-22T03:51:37Z",
    "duration": "PT29S",
    "privacy": "public",
@@ -1486,7 +1521,7 @@
   },
   {
    "id": "MHjUyCjOSmY",
-   "title": "The guards left his cell unlocked \u2014 Socrates refused to walk out \ud83c\udf05",
+   "title": "Why would you refuse escape?",
    "published": "2026-06-19T04:46:28Z",
    "duration": "PT29S",
    "privacy": "public",
@@ -1512,7 +1547,7 @@
   },
   {
    "id": "oA_FIauEPd8",
-   "title": "He spent his youth in chaos, addiction, and sin \u2014 then wrote the most honest book of his life \ud83d\udd6f\ufe0f",
+   "title": "What drove Augustine\u2019s confession?",
    "published": "2026-06-16T19:34:11Z",
    "duration": "PT38S",
    "privacy": "public",
@@ -1532,7 +1567,7 @@
   },
   {
    "id": "EqrFeBjG0yw",
-   "title": "His friends begged him to run \u2014 he refused and drank the poison \ud83c\udfdb\ufe0f",
+   "title": "Why did he choose death?",
    "published": "2026-06-16T04:43:40Z",
    "duration": "PT43S",
    "privacy": "public",
@@ -1542,7 +1577,7 @@
   },
   {
    "id": "5XBu73krAa4",
-   "title": "The man who invented writing honestly about yourself \ud83d\udd6f\ufe0f",
+   "title": "Can you be truly honest?",
    "published": "2026-06-16T02:54:36Z",
    "duration": "PT37S",
    "privacy": "public",
@@ -1552,7 +1587,7 @@
   },
   {
    "id": "TwfGtJZJwzk",
-   "title": "Master your mind, and nothing can touch you \u26d3\ufe0f",
+   "title": "Is suffering optional?",
    "published": "2026-06-16T02:53:55Z",
    "duration": "PT55S",
    "privacy": "public",
@@ -1562,7 +1597,7 @@
   },
   {
    "id": "drqrS9BBo8o",
-   "title": "The philosopher who said desire is the root of all suffering \ud83c\udf2b\ufe0f",
+   "title": "Does wanting cause pain?",
    "published": "2026-06-14T18:25:40Z",
    "duration": "PT46S",
    "privacy": "public",
@@ -1611,6 +1646,56 @@
    "comments": 0
   },
   {
+   "id": "WCx2ToBGPhU",
+   "title": "You see how the mind even in the straitest circumstances finds the means of generosity",
+   "published": "2026-11-09T03:01:37Z",
+   "duration": "PT32S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "xIxtLasPyV8",
+   "title": "You were taught Meditations wrong.",
+   "published": "2026-11-09T00:00:22Z",
+   "duration": "PT6M49S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "vSqKjuyAJhM",
+   "title": "Remember that you are to _grow_ into Truth by steady perseverance",
+   "published": "2026-11-08T18:03:07Z",
+   "duration": "PT31S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "nlzBtL-I8EE",
+   "title": "Listen to what Conwell warned about.",
+   "published": "2026-11-08T00:00:20Z",
+   "duration": "PT6M52S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "NZEHVdWXKhQ",
+   "title": "Moreover, nothing is good but virtue, and nothing but vice is bad",
+   "published": "2026-11-07T03:01:44Z",
+   "duration": "PT27S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "rmj2YzElBjM",
    "title": "Self-Help is not what you think.",
    "published": "2026-11-07T00:00:39Z",
@@ -1632,7 +1717,7 @@
   },
   {
    "id": "6z0IxWs-qko",
-   "title": "Why does Mental Efficiency still matter?",
+   "title": "Can you remember a page without notes?",
    "published": "2026-11-05T00:00:18Z",
    "duration": "PT7M25S",
    "privacy": "public",
@@ -1691,28 +1776,8 @@
    "comments": 0
   },
   {
-   "id": "xIxtLasPyV8",
-   "title": "You were taught Meditations wrong.",
-   "published": "2026-11-03T20:51:22Z",
-   "duration": "PT6M49S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "nlzBtL-I8EE",
-   "title": "Listen to what Conwell warned about.",
-   "published": "2026-11-03T20:51:16Z",
-   "duration": "PT6M52S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "BNa2CaE60Mc",
-   "title": "When is it rational to believe without proof? \u2728",
+   "title": "Is faith rational?",
    "published": "2026-06-14T18:22:52Z",
    "duration": "PT45S",
    "privacy": "public",

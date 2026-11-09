@@ -1,47 +1,49 @@
 {
  "short": {
   "do_more": [
-   "Focus on observable human behavior and body language (e.g., facial expressions, emotions, instinctual habits) over abstract historical trivia.",
-   "Structure videos around direct excerpt readings or structured episodic reading parts (e.g., 'Watching expression \u00b7 Reading 5') rather than high-level book summaries.",
-   "Target ultra-short video lengths (under 20-30 seconds) to maximize completion rate and push loop re-watches over 100%."
+   "Use specific references to classic psychology books or theories in the hook",
+   "Pose a direct, curiosity\u2011driven question in the title",
+   "Keep the script tight (~30\u202fs) for fast\u2011consumption or a standard ~42\u202fs for deeper dive",
+   "Start with a strong visual cue (e.g., book cover or illustration) and a clear narrative arc",
+   "Focus on surprising or counter\u2011intuitive facts that boost watch\u2011through rate"
   ],
   "avoid": [
-   "Avoid generic clickbait hooks stuffed with emojis (e.g., 'The hidden force controlling...', 'Why you buy things... \ud83d\udcb8').",
-   "Avoid academic book review framing like 'The Book That Changed Psychology' or author-centric history ('Victorian Streets', 'Galton's Classic').",
-   "Avoid publishing videos without clear audio/visual retention anchors that lead to immediate drop-off (0% retention)."
+   "Generic, emoji\u2011filled titles without a clear hook",
+   "Overly broad questions that lack a concrete answer",
+   "Videos longer than 45\u202fs that lose audience attention",
+   "Click\u2011bait phrasing without delivering substantive content"
   ],
-  "title_style": "Clean, authoritative titles using the exact classic book name paired with a specific sub-topic or reading part perform significantly better than emoji-laden clickbait questions.",
+  "title_style": "Start with a concrete hook or question, cite a classic work, and promise a surprising insight in under 8 words",
   "next_tests": [
-   "Test a 15-second loop format featuring a single fascinating Darwin observation on facial expression with bold on-screen subtitles.",
-   "Test an explicit visual command title (e.g., 'Look closely at this expression from Darwin...') against the standard book title format.",
-   "Compare retention and VPD between a 20-second tight excerpt reading and a 45-second narrated insight from 'The Principles of Psychology'."
+   "Release paired versions of the same script at 30\u202fs and 42\u202fs to compare VPD",
+   "Swap question\u2011based titles for statement\u2011based titles to see impact on avg watch %",
+   "Add a brief on\u2011screen book\u2011cover intro vs plain background to test visual hook"
   ],
-  "n": 81,
-  "best_vpd": 34.03,
+  "n": 86,
+  "best_vpd": 27.51,
   "best_title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5"
  },
  "full": {
   "do_more": [
-   "Pick specific, curiosity\u2011driving hooks (e.g., a dilemma or surprising benefit)",
-   "Mention a known thinker or concrete application in the title",
-   "Keep titles under 10 words and end with a clear series tag like \"Guided reading\"",
-   "Start the video with a 3\u2011second promise of what the viewer will learn",
-   "Use tight pacing (\u224830\u202fs per key point) to maintain momentum"
+   "Start videos with a concrete, surprising hook about a specific psychological phenomenon (e.g., \"Why crowds whisper secrets\"),",
+   "Label each episode as part of a series (e.g., \"Guided reading\" or \"Reading\u00a0X\") in the title and intro,",
+   "Mention a well\u2011known researcher or historical figure when relevant to add authority,",
+   "Keep the opening hook tight (~30\u202fs) before moving into the main content"
   ],
   "avoid": [
-   "Broad, generic topics without a clear hook (e.g., \"The Psychology Of Revolution\")",
-   "Overly academic phrasing that doesn\u2019t signal a benefit",
-   "Long, unbroken titles that list multiple sub\u2011topics without focus"
+   "Broad, generic questions without a clear angle (e.g., \"What does psychoanalysis say?\"),",
+   "Long, unfocused intros that delay the hook,",
+   "Titles that lack series tags or a specific hook phrase"
   ],
-  "title_style": "Lead with an intriguing question or promise, then name the concept and finish with a short series label (e.g., \"Why We Stumble on Decisions | John Dewey \u00b7 Guided reading\").",
+  "title_style": "Use a clear, curiosity\u2011driving hook followed by a concrete topic and series label, e.g., \"Why crowds whisper secrets | Guided reading\u00a0\u00b7\u00a0Reading\u00a02\"",
   "next_tests": [
-   "A/B test titles that start with a question vs. a statement to see which drives higher VPD",
-   "Produce two versions of the same script: one ~30\u202fs per segment (tight) and one ~42\u202fs (standard) to compare retention",
-   "Add a known psychologist\u2019s name in the hook for half the videos and measure impact on views per day"
+   "A/B test titles with and without the \"Guided reading\" tag to see impact on VPD",
+   "Create two versions of each video: one with a 30\u2011second hook and one with a 45\u2011second hook, compare performance",
+   "Add a historical figure\u2019s name to half the titles (e.g., \"Gustave\u00a0Le\u00a0Bon\") and measure view\u2011per\u2011day changes"
   ],
-  "n": 18,
-  "best_vpd": 3.96,
+  "n": 20,
+  "best_vpd": 2.73,
   "best_title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4"
  },
- "updated": "2026-11-07"
+ "updated": "2026-11-09"
 }
