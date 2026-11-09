@@ -1,0 +1,56 @@
+name: mindlore-fix1
+# One-off (2026-11-09): the first live-demo video had a misleading bar chart. Remove its scheduled posts, then build the fixed re-cut (st-261109-live4) through the normal pipeline.
+on:
+  push:
+    paths: ['publish/fix1.trigger']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publisher-mindlore
+  cancel-in-progress: false
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu fonts-liberation fonts-noto-color-emoji
+      - run: pip install --quiet pillow numpy edge-tts requests
+      - name: Pull the flawed video from Buffer
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
+          PUBLISH_BRAND: mindlore
+        run: python fix1.py
+      - name: Save state
+        run: |
+          git config user.name "publisher-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/state-mindlore.json publish/approved-mindlore.json publish/approved-mindlore-parked-oldlook.json
+          git diff --cached --quiet || git commit -qm "fix1: pulled flawed live-demo video, parked"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
+      - name: Build the fixed re-cut
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          mkdir -p out gh-state
+          python gh_story_short.py 1
+      - name: Publish release and record state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob; F=(out/ml-story-*.zip)
+          [ ${#F[@]} -eq 0 ] && { echo "Nothing built"; exit 1; }
+          TAG=mindlore-story-$(date -u +%Y%m%d-%H%M)
+          gh release create "$TAG" "${F[@]}" --title "MindLore story Shorts $TAG (fixed re-cut)" --notes "Built automatically. Goes through the normal review/auto-approve."
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add -f gh-state/built-story-shorts.json story-shorts data/story-learn-log-mindlore.json
+          git commit -m "Record fixed re-cut" || true
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push && break; sleep 8; done

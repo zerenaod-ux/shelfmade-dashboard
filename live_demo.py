@@ -174,7 +174,7 @@ def llm_director(words, total):
         usr = ('Plan a fast, funny, creative explainer video whose pictures ACT OUT the narration live, in sync with the words.\nNarration with word indexes (index:word):\n%s\n\n'
                'Toolkit (kind: params):\n%s\n\nRules: about %d beats; each beat has "at" = word index where it starts (strictly increasing, first is 0; a new visual every 1.5-3 seconds); the first beat is a title_slam hook of <=3 words. '
                'Use a VARIETY of kinds, at least 3 different besides title_slam; at least 2 reaction beats with kind, clean, funny quips (<=6 words, never mocking people). '
-               'Numbers/stats in counter/chart/meter MUST come from the narration, never invent facts. Emoji must be single emoji characters. Every beat may also have "tag" (<=3 word label) and "sticker" (one emoji popped on a key word). '
+               'Numbers/stats in counter/chart/meter MUST come from the narration and keep the SAME meaning (never put two different quantities on one chart or compare them); never invent facts. Do NOT use chart shape bars. Emoji must be single emoji characters. Every beat may also have "tag" (<=3 word label) and "sticker" (one emoji popped on a key word). '
                'Make the visuals literally show what is being said (e.g. a memory slot overflowing, a bar filling, a thing travelling from A to B, two things competing). Output {"beats":[{"at":0,"kind":"title_slam","text":"...","emoji":"..."}, ...]}'
                % (narr, '\n'.join('- %s: %s' % kv for kv in KINDS.items()), want))
         r = llm.json_call(sysm, usr, temperature=0.8, max_tokens=5000) if 'max_tokens' in llm.json_call.__code__.co_varnames or True else None
@@ -207,7 +207,7 @@ def ground(beats, text):
             b.update({'kind': 'icon_burst', 'emoji': b.get('emoji') or '📊'}); fixed += 1
         elif k == 'chart':
             if b.get('shape') == 'bars':
-                if not all(float(v) in ok for v in (b.get('values') or [])): b.update({'kind': 'icon_burst', 'emoji': b.get('emoji') or '📊'}); fixed += 1
+                b.update({'kind': 'icon_burst', 'emoji': b.get('emoji') or '📊', 'text': b.get('text') or 'DATA'}); fixed += 1   # bars compared different quantities (e.g. 15 vs 30 = a spike vs a difference): never show bars
             elif float(b.get('to') or -1) not in ok: b['hide'] = True; fixed += 1
         elif k == 'meter' and round(float(b.get('to') or 0) * 100) not in ok: b['hide'] = True; fixed += 1
     return fixed
