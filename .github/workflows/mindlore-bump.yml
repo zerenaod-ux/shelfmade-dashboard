@@ -23,7 +23,7 @@ jobs:
         env:
           BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
           PUBLISH_BRAND: mindlore
-          BUMP_N: '3'
+          BUMP_N: '0'
         run: python bump_queue.py
       - name: Save state right away (so a freed post is never forgotten)
         run: |
