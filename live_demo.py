@@ -252,8 +252,8 @@ def frame(t, beats, starts, words, total, wstarts):
         x = int(CW * K * k) if i % 2 else int(CW * K * (1 - k)); c.d.rectangle([0, 0, x, CH * K] if i % 2 else [x, 0, CW * K, CH * K], fill=bg)
     for gx in range(0, 760, 120):
         for gy in range(0, 1320, 120): c.ell(gx + (t * 14) % 120, gy, 4, 4, mix(bg, acc, .12))
-    if b.get('tag'): w_ = c.tw(b['tag'].upper(), 30) + 50; c.rr(360 - w_ / 2, 100, 360 + w_ / 2, 152, 26, acc, INK, 4); c.text(360, 126, b['tag'].upper(), 30, bg if sum(acc) > 400 else (255, 255, 255))
     DRAW[b['kind']](c, b, lt, T, bg, acc, ink)
+    if b.get('tag'): w_ = c.tw(b['tag'].upper(), 30) + 50; c.rr(360 - w_ / 2, 100, 360 + w_ / 2, 152, 26, acc, INK, 4); c.text(360, 126, b['tag'].upper(), 30, bg if sum(acc) > 400 else (255, 255, 255))
     if b.get('sticker') and lt < 1.4: k = back(lt / .25) * (1 - ease((lt - 1.1) / .3)); c.emo(b['sticker'], 620, 210, 120 * k, 1.0, int(12 * math.sin(lt * 14) * (1 - lt / 1.4)))
     im = c.im; z = 1.03 + .07 * math.exp(-lt * 9) + (.02 * math.sin(t * 2.2) if b['kind'] != 'reaction' else .0)
     sx = sy = 0
