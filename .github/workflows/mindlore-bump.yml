@@ -1,0 +1,46 @@
+name: mindlore-bump
+# One-off (owner request 2026-11-09): move the 3 live-demo videos earlier by freeing the soonest 3 scheduled MindLore posts per channel (they are re-queued, nothing is lost).
+on:
+  push:
+    paths: ['publish/bump.trigger']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: publisher-mindlore
+  cancel-in-progress: false
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Free the soonest slots
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
+          PUBLISH_BRAND: mindlore
+          BUMP_N: '3'
+        run: python bump_queue.py
+      - name: Save state right away (so a freed post is never forgotten)
+        run: |
+          git config user.name "publisher-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/state-mindlore.json
+          git diff --cached --quiet || git commit -qm "bump: freed slots, re-queued"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
+      - name: Publish (new videos take the freed slots)
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_MINDLORE }}
+          PUBLISH_LIVE: ${{ vars.PUBLISH_LIVE_MINDLORE }}
+          PUBLISH_BRAND: mindlore
+        run: python publisher.py
+      - name: Save publish state
+        if: always()
+        run: |
+          git add -f publish/state-mindlore.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "no state change"; exit 0; }
+          git commit -qm "publisher: state (bump)"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
