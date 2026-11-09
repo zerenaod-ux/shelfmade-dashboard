@@ -108,6 +108,21 @@ def main():
     ks = jl('data/doodles/kaggle-status.json', {})
     ka = age_h(ks.get('at', '') or ks.get('updated', ''))
     rec('Kaggle GPU', ks.get('ok', True) and (ka is None or ka <= 96), 'ok=%s, checked %s h ago' % (ks.get('ok'), round(ka) if ka is not None else '?'), 'ALERT: Kaggle GPU failing or silent')
+    # 4b approved-but-never-queued: an Issue closed as approved/auto-approved must have its posts in the approved files (a lost save once dropped 3 Shorts)
+    try:
+        r = sh('gh', 'issue', 'list', '--state', 'closed', '--label', 'review', '--limit', '30', '--json', 'number,title,labels,closedAt')
+        known = ''
+        for f in ('publish/approved.json', 'publish/approved-mindlore.json', 'publish/approved-mindlore-parked-oldlook.json', 'publish/approved-doodles.json', 'publish/approved-mlfull.json', 'publish/approved-shfull.json', 'publish/approved-ddfull.json', 'publish/state.json', 'publish/state-mindlore.json'):
+            try: known += open(f).read()
+            except Exception: pass
+        lost = []
+        for i in json.loads(r.stdout or '[]'):
+            lab = {l['name'] for l in i['labels']}
+            if ('auto-approved' in lab or 'approve' in lab) and 'skip' not in lab and age_h(i['closedAt']) is not None and age_h(i['closedAt']) < 96 and ('"gh%d-' % i['number']) not in known:
+                lost.append('#%d %s' % (i['number'], i['title'][:40]))
+        rec('Approved videos reach the queue', not lost, 'all approved Issues are queued' if not lost else 'approved but NOT queued: ' + '; '.join(lost[:5]), 'ALERT: approved videos missing from the posting queue')
+    except Exception as e:
+        print('queue check skipped:', str(e)[:100])
     # 5 free-tier room: any service above 80% used (deps.json) -> alert BEFORE it runs out (cleanup needs the owner's OK, never automatic)
     dp = jl('publish/deps.json', {})
     hot = ['%s %s%%' % (r['name'], r['used_percent']) for r in dp.get('rows', []) if (r.get('used_percent') or 0) >= 80]
