@@ -1,26 +1,26 @@
 {
- "at": "2026-11-08T18:52:27+00:00",
- "level": "ok",
+ "at": "2026-11-09T14:58:48+00:00",
+ "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 42 h ago"
+   "text": "updated 62 h ago"
   },
   {
    "name": "Doodles daily run",
    "ok": true,
-   "text": "last: success 2026-11-08T13:18"
+   "text": "last: success 2026-11-09T09:59"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "4 stories carry a judge note"
+   "text": "6 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
-   "ok": true,
-   "text": "ok=True, checked 1 h ago"
+   "ok": false,
+   "text": "ok=False, checked 0 h ago"
   },
   {
    "name": "Free-tier room",
@@ -30,7 +30,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-08T11:31"
+   "text": "last: success 2026-11-09T13:23"
   },
   {
    "name": "Safety guard",
@@ -55,7 +55,7 @@
   {
    "name": "Playlist flywheel",
    "ok": true,
-   "text": "ok (shelfmade: added 8 video(s); mindlore: added 12 video(s); doodles: added 6 video(s))"
+   "text": "ok (shelfmade: added 10 video(s); mindlore: added 13 video(s); doodles: added 8 video(s))"
   },
   {
    "name": "Retitle campaign",
@@ -73,9 +73,29 @@
    "text": "last: success 2026-11-08"
   },
   {
+   "name": "Posting: shelfmade",
+   "ok": true,
+   "text": "newest public video 11 h ago"
+  },
+  {
+   "name": "Posting: mindlore",
+   "ok": true,
+   "text": "newest public video 11 h ago"
+  },
+  {
+   "name": "Posting: doodles",
+   "ok": true,
+   "text": "newest public video 19 h ago"
+  },
+  {
+   "name": "Service probes",
+   "ok": true,
+   "text": "all probes fine"
+  },
+  {
    "name": "Doodles GPU budget",
    "ok": true,
-   "text": "18.6 h used in 7 days, stories/day cap 3"
+   "text": "27.9 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
