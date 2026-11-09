@@ -112,8 +112,8 @@
    "views": 67,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 47,
-   "avgPercent": 76.84,
+   "avgSeconds": 43,
+   "avgPercent": 69.94,
    "subsGained": 0
   },
   {
@@ -143,6 +143,19 @@
    "subsGained": 0
   },
   {
+   "id": "70hQFkZl71o",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 6",
+   "published": "2026-10-30T02:00:45Z",
+   "duration": "PT1M35S",
+   "privacy": "public",
+   "views": 53,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 21,
+   "avgPercent": 22.63,
+   "subsGained": 0
+  },
+  {
    "id": "j1B3iRBBZZY",
    "title": "The Theory Of The Leisure Class",
    "published": "2026-10-22T01:12:07Z",
@@ -164,19 +177,6 @@
    "views": 53,
    "likes": 0,
    "comments": 0
-  },
-  {
-   "id": "70hQFkZl71o",
-   "title": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 6",
-   "published": "2026-10-30T02:00:45Z",
-   "duration": "PT1M35S",
-   "privacy": "public",
-   "views": 52,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 21,
-   "avgPercent": 22.63,
-   "subsGained": 0
   },
   {
    "id": "4qzeT6uxt3A",
@@ -413,6 +413,26 @@
    "subsGained": 0
   },
   {
+   "id": "MTXe8IAf__g",
+   "title": "Why a deadline makes your stomach knot",
+   "published": "2026-11-09T18:02:22Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "enlkJrZ0aqc",
+   "title": "The part of Crowd nobody mentions.",
+   "published": "2026-11-09T03:01:32Z",
+   "duration": "PT55S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "vf5N9t4z-x0",
    "title": "The part of Psychology nobody mentions.",
    "published": "2026-11-05T03:01:46Z",
@@ -530,16 +550,6 @@
    "subsGained": 0
   },
   {
-   "id": "enlkJrZ0aqc",
-   "title": "The part of Crowd nobody mentions.",
-   "published": "2026-11-09T03:01:32Z",
-   "duration": "PT55S",
-   "privacy": "public",
-   "views": 23,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "GUUj1ASdeLg",
    "title": "Why does work feel heavy?",
    "published": "2026-06-19T04:29:48Z",
@@ -595,7 +605,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 18,
-   "avgPercent": 30.53,
+   "avgPercent": 29.580000000000002,
    "subsGained": 0
   },
   {
@@ -645,7 +655,10 @@
    "privacy": "public",
    "views": 20,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 17,
+   "avgPercent": 31.85,
+   "subsGained": 0
   },
   {
    "id": "xGaGRBalAvQ",
@@ -707,7 +720,10 @@
    "privacy": "public",
    "views": 18,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 7,
+   "avgPercent": 12.53,
+   "subsGained": 0
   },
   {
    "id": "yza63zQvJqI",
@@ -734,6 +750,16 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
+  },
+  {
+   "id": "BeQ1CnMVAns",
+   "title": "Are strong sensations always painful?",
+   "published": "2026-11-08T18:03:11Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "Kjx5KmP1s7w",
@@ -824,16 +850,6 @@
    "comments": 0
   },
   {
-   "id": "BeQ1CnMVAns",
-   "title": "Are strong sensations always painful?",
-   "published": "2026-11-08T18:03:11Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "UAe6oPKqTX0",
    "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
    "published": "2026-10-27T01:08:55Z",
@@ -912,6 +928,19 @@
    "subsGained": 0
   },
   {
+   "id": "s2csm1mzmRY",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Guided reading",
+   "published": "2026-10-28T23:00:19Z",
+   "duration": "PT6M4S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 177,
+   "avgPercent": 48.63,
+   "subsGained": 0
+  },
+  {
    "id": "GiSqnmTVkRo",
    "title": "Are emotions built by habit?",
    "published": "2026-10-18T23:27:41Z",
@@ -977,19 +1006,6 @@
    "subsGained": 0
   },
   {
-   "id": "s2csm1mzmRY",
-   "title": "The Expression of the Emotions in Man and Animals \u00b7 Guided reading",
-   "published": "2026-10-28T23:00:19Z",
-   "duration": "PT6M4S",
-   "privacy": "public",
-   "views": 10,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 177,
-   "avgPercent": 48.63,
-   "subsGained": 0
-  },
-  {
    "id": "n1SUdSt-YeE",
    "title": "Can your childhood streets program you?",
    "published": "2026-06-16T02:16:36Z",
@@ -1024,8 +1040,8 @@
    "views": 9,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 51.2,
+   "avgSeconds": 18,
+   "avgPercent": 37.82,
    "subsGained": 0
   },
   {
@@ -1073,8 +1089,8 @@
    "views": 7,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 29.42,
+   "avgSeconds": 12,
+   "avgPercent": 25.019999999999996,
    "subsGained": 0
   },
   {
@@ -1189,7 +1205,23 @@
    "privacy": "public",
    "views": 4,
    "likes": 2,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "0m0sHfUvubE",
+   "title": "How We Think \u00b7 Guided reading",
+   "published": "2026-10-31T23:00:07Z",
+   "duration": "PT5M44S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 4,
+   "avgPercent": 1.35,
+   "subsGained": 0
   },
   {
    "id": "YTKbRT9tkpo",
@@ -1215,19 +1247,6 @@
    "comments": 0,
    "avgSeconds": 59,
    "avgPercent": 36.28,
-   "subsGained": 0
-  },
-  {
-   "id": "0m0sHfUvubE",
-   "title": "How We Think \u00b7 Guided reading",
-   "published": "2026-10-31T23:00:07Z",
-   "duration": "PT5M44S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 1.35,
    "subsGained": 0
   },
   {
@@ -1294,7 +1313,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 3,
+   "avgPercent": 0.66,
+   "subsGained": 0
   },
   {
    "id": "9lec7AhXEP8",
@@ -1341,8 +1363,8 @@
    "views": 2,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 7,
-   "avgPercent": 14.24,
+   "avgSeconds": 10,
+   "avgPercent": 20.3,
    "subsGained": 0
   },
   {
@@ -1353,7 +1375,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "kBXKZ5Zcmow",
@@ -1405,11 +1430,11 @@
    "comments": 0
   },
   {
-   "id": "MTXe8IAf__g",
-   "title": "Why a deadline makes your stomach knot",
-   "published": "2026-11-09T18:02:22Z",
-   "duration": "PT56S",
-   "privacy": "public",
+   "id": "V8InsNplcoc",
+   "title": "Why do you dream about falling? | Sigmund Freud",
+   "published": "2026-11-09T22:23:27Z",
+   "duration": "PT8M23S",
+   "privacy": "private",
    "views": 0,
    "likes": 0,
    "comments": 0

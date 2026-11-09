@@ -1,23 +1,23 @@
 {
  "hot_themes": [
-  "Neurological mechanisms behind everyday actions",
-  "Personal identity tied to names and birth traits",
-  "Relatable social dynamics and friendship longevity",
-  "Extreme neurological states (death, prayer, learning)",
-  "Involuntary emotional reactions and weird brain glitches"
+  "Identity & Nostalgia (Name/Personality Traits)",
+  "Brain Mechanics of Abstract Concepts (Death, Prayer, Learning)",
+  "Social Dynamics & Friendship Decay",
+  "The Science Behind Emotional States (Love, Heartbreak)",
+  "Universal Mystery & Existential Questions"
  ],
  "hook_patterns": [
-  "Direct personal projection ('What your [X trait] reveals about you')",
-  "Counter-intuitive neuroscience questions ('What happens in your brain when...')",
-  "Shocking statistical social claims paired with engagement calls"
+  "Direct Personal Relevance: Addressing the viewer's specific name letter or birth month to trigger immediate self-reflection.",
+  "Visualizing the Invisible: Promising to show exactly what happens inside the brain during abstract or intense experiences.",
+  "The 'Secret' or 'Hidden' Truth: Framing common social interactions (friendship, love) as having hidden psychological rules that the viewer is likely unaware of."
  ],
  "ideas_for_us": [
-  "What Happens to Your Brain When You Hypnotize Someone? (Based on Freud's early hysteria studies)",
-  "The 19th Century Psychology Trick to Detect a Fake Smile (Based on Duchenne de Boulogne's facial muscle research)",
-  "Why Your Brain Makes You Laugh at Inappropriate Times (According to Spencer's 1860 relief theory of laughter)",
-  "The Dark Psychology of Why You Lose Friends (Explained through William James' Principles of Psychology)"
+  "Title: 'Freud Said Your Dream Is a Wish. Here\u2019s the Science Behind It.' (Explaining the public domain concept of wish fulfillment in dreams using modern visual analogies.)",
+  "Title: 'Why You Feel Empty After Success: The Hedonic Treadmill Explained.' (Using classic psychology to explain why happiness fades, framed as a 'brain glitch' rather than a character flaw.)",
+  "Title: 'Your Brain Is Lying to You About Who Likes You.' (Analyzing the 'Likeability Gap' and self-perception biases from early social psychology texts.)",
+  "Title: 'The One Sentence That Triggers Your Fight-or-Flight Response.' (Breaking down specific linguistic triggers for anxiety based on classic conditioning and response theory.)"
  ],
  "updated": "2026-11-09",
- "sample": 54,
- "top_vpd": 486340
+ "sample": 56,
+ "top_vpd": 456011
 }

@@ -1,47 +1,47 @@
 {
  "short": {
   "do_more": [
-   "Lead with direct address ('You', 'Your') in the first 3 seconds to create immediate personal relevance, as seen in top performers like 'Where is your attention?' and 'Know your enemy'.",
-   "Focus on universal, high-stakes human interests: war strategy, self-mastery, and the nature of the mind, rather than niche literary analysis or specific book summaries.",
-   "Use short, punchy titles that pose a direct question or state a bold, slightly counter-intuitive assertion (e.g., 'Do crowds drown true wisdom?') to stop the scroll.",
-   "Keep the visual and audio pacing tight; top videos maintain high average watch percentages (50-70%) suggesting the content must be dense and fast-paced, avoiding long intros."
+   "Use direct, action-oriented quotes or provocative statements as title hooks (e.g., 'Know your enemy', 'You can turn over a new leaf every hour if you choose').",
+   "Focus topics heavily on conflict, strategy, personal control, and daily mental discipline (e.g., Sun Tzu, Stoicism, pessimism, shutting off mental steam).",
+   "Keep video length strictly around standard 40-42 second mark, as top performing videos yield high retention and re-watch loops (300%+ avgPercent) with structured quote analysis.",
+   "Target specific named authors or well-known classical texts in the first 3 seconds (e.g., Plato, Sun Tzu, Bacon)."
   ],
   "avoid": [
-   "Never start with the book title or author name (e.g., 'The Prince by Machiavelli' or 'Acres of Diamonds'); this approach correlates with near-zero engagement.",
-   "Avoid abstract, philosophical questions that require context to understand (e.g., 'Is life truly brutish without rules?' or 'What is Aristotle\u2019s perfect state?'); the audience leaves if the hook isn't immediate.",
-   "Do not use generic self-help phrasing like 'in 60 seconds' or 'lessons from'; it signals low-effort content and performs poorly compared to direct, personal hooks.",
-   "Avoid topics that are too dark or existential without a clear practical takeaway, such as 'Can you face oblivion?' or 'Why did he choose death?'"
+   "Avoid generic or passive rhetorical questions as titles, such as 'Is faith rational?' or 'Can you be truly honest?'.",
+   "Stop using 'in 60 Seconds' formatting, book summary templates, or heavy emoji spam in titles which underperform across all metrics.",
+   "Avoid abstract, overly academic philosophical framing that lacks a direct personal application for the viewer."
   ],
-  "title_style": "Use direct, second-person questions or short, confrontational statements that promise immediate personal insight or a challenge to the viewer's status quo.",
+  "title_style": "Winning titles either state an intriguing, direct quote/instruction or name drop a famous historical figure with a clear warning/lesson.",
   "next_tests": [
-   "Test a 'Myth vs. Reality' format for a classic book (e.g., 'Machiavelli didn't say what you think he did') to see if debunking increases shares.",
-   "Create a 3-part series on 'War Psychology' using Sun Tzu quotes, explicitly labeling them Part 1/3 to test binge-watching behavior.",
-   "A/B test two hooks for the same content: one starting with a shocking statistic/quote and one starting with 'Stop doing this,' to see which drives higher retention."
+   "Test standard-length (~40s) shorts featuring high-aggression quotes from Marcus Aurelius using simple direct command titles vs. question titles.",
+   "Experiment with a 2-part format opening immediately with a shocking philosophical line from Nietzsche, skipping intro setup entirely."
   ],
-  "n": 117,
-  "best_vpd": 15.67,
-  "best_title": "Studies In Pessimism"
+  "n": 118,
+  "best_vpd": 15.51,
+  "best_title": "Can truth unlock hidden peace?"
  },
  "full": {
   "do_more": [
-   "Open with a sharp, contrast\u2011based question that challenges a belief",
-   "Keep the hook under 30 seconds to boost early watch %",
-   "Tie the topic to a recognizable source or concept for authority",
-   "Deliver a clear, actionable takeaway within the first minute"
+   "Open with a tight 30\u2011second hook that poses a bold, curiosity\u2011driven question",
+   "Reference a well\u2011known book, concept, or philosopher in the title or early script",
+   "Deliver a clear, single takeaway within the first minute",
+   "Use a rapid\u2011fire pacing that keeps avg watch percent above 2%",
+   "End with a provocative call\u2011to\u2011action that invites sharing"
   ],
   "avoid": [
-   "Long, vague titles or promises without a concrete hook",
-   "Slow intros that exceed 15 seconds before the main point",
-   "Overly generic philosophical statements without a specific angle"
+   "Generic statements or titles without a clear hook",
+   "Long introductory segments (>45\u202fs) that dilute curiosity",
+   "Titles that lack a question or contrast",
+   "No mention of recognizable sources or frameworks"
   ],
-  "title_style": "Use a concise, curiosity\u2011driven question that pits two clear ideas (e.g., \"Does simplicity outweigh fancy appearances?\")",
+  "title_style": "Pose a concise, curiosity\u2011punch question that challenges a common belief and often cites a known book or concept",
   "next_tests": [
-   "Compare 30\u2011second tight intros vs 45\u2011second standard intros",
-   "Add a known authority tag (\"| Aristotle\") to titles and measure VPD",
-   "Swap \"Does\" questions for \"Why\" questions to see impact on clicks"
+   "Compare a 30\u2011second tight hook vs a 45\u2011second intro on identical topics",
+   "Add a known author/book name to the title and measure VPD lift",
+   "Swap \"What if\" phrasing for direct challenge questions (e.g., \"Does simplicity outweigh fancy appearances?\")"
   ],
   "n": 13,
-  "best_vpd": 1.08,
+  "best_vpd": 1.01,
   "best_title": "Does simplicity outweigh fancy appearances?"
  },
  "updated": "2026-11-09"

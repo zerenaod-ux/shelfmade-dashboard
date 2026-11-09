@@ -79,8 +79,8 @@
    "views": 9,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 25.230000000000004,
+   "avgSeconds": 13,
+   "avgPercent": 22.79,
    "subsGained": 1
   },
   {
@@ -157,8 +157,8 @@
    "views": 7,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 19,
+   "avgPercent": 38.22,
    "subsGained": 0
   },
   {
@@ -183,8 +183,8 @@
    "views": 6,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 18.81,
+   "avgSeconds": 8,
+   "avgPercent": 16.53,
    "subsGained": 2
   },
   {
@@ -221,7 +221,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 17.19,
+   "subsGained": 0
   },
   {
    "id": "sb4WKiNkmrU",
@@ -231,7 +234,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 2,
+   "avgPercent": 3.93,
+   "subsGained": 0
   },
   {
    "id": "AvrLyAUe86Y",
@@ -241,7 +247,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 4,
+   "avgPercent": 8.98,
+   "subsGained": 0
   },
   {
    "id": "KvC6egp-HYQ",
@@ -264,7 +273,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 10.66,
+   "subsGained": 0
   },
   {
    "id": "Zoos5GbVQPU",
