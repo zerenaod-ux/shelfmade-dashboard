@@ -16,7 +16,7 @@ KINDS = {'title_slam': 'text (<=3 words), emoji', 'icon_burst': 'emoji, text (la
          'headline': 'text (newspaper headline <=8 words), emoji', 'countdown': 'text (<=3 words shown after 3-2-1), emoji', 'timeline': 'items (2-4 emoji), labels (2-4 words each, no digits unless in narration), text',
          'scale': 'a (emoji), b (emoji), la, lb, heavy (a|b), text', 'crowd': 'emoji (the crowd icon), pick (emoji of the one who stands out), text', 'checklist': 'items (2-4 short lines, <=4 words), text',
          'before_after': 'a (emoji), b (emoji), la (before label), lb (after label), text', 'notif': 'items (2-4 short notification lines <=5 words), emoji', 'zoom': 'emoji (big object), labels (2-4 callout words), text',
-         'clock': 'emoji, text (time passing / waiting / late-night type of idea)'}
+         'clock': 'emoji, text (time passing / waiting / late-night type of idea)', 'quote': 'text (a short quote or key line from the narration, <=14 words), who (author or book)'}
 OPENERS = ['search', 'headline', 'chat', 'countdown', 'notif', 'zoom', 'title_slam', 'icon_burst', 'clock']
 PALS = [((247, 240, 225), (224, 86, 60), INK), ((24, 40, 96), (255, 205, 70), (255, 255, 255)), ((18, 90, 96), (255, 150, 120), (255, 255, 255)),
         ((70, 30, 110), (255, 214, 110), (255, 255, 255)), ((255, 224, 120), (40, 60, 160), INK), ((30, 30, 40), (90, 230, 170), (255, 255, 255)), ((226, 244, 236), (200, 60, 90), INK)]
@@ -162,7 +162,7 @@ def d_meter(c, b, lt, T, bg, acc, ink):
     ctext(c, 360, 940, (b.get('text') or '').upper(), 48, ink, 640)
 def d_react(c, b, lt, T, bg, acc, ink):
     mood = MOOD.get(b.get('emoji') or '😳', 'shock')
-    mascot(c, 360 + 10 * math.sin(lt * 35) * (1 - ease(lt / 1.2)), 470, 1.25 * back(lt / .25), mood, lt)
+    (mascot_book if BRANDKEY == 'shelfmade' else mascot)(c, 360 + 10 * math.sin(lt * 35) * (1 - ease(lt / 1.2)), 470, 1.25 * back(lt / .25), mood, lt)
     if lt > .25:
         k = back((lt - .25) / .25); c.rr(360 - 300 * k, 760, 360 + 300 * k, 960, 36, (255, 255, 255), INK, 5); c.d.polygon([(330 * K, 760 * K), (400 * K, 760 * K), (350 * K, 700 * K)], fill=(255, 255, 255), outline=INK)
         c.d.rectangle([332 * K, 756 * K, 398 * K, 764 * K], fill=(255, 255, 255))
@@ -209,7 +209,7 @@ def d_chat(c, b, lt, T, bg, acc, ink):
     if lt > .15 + len(ms) * .75 and int(lt * 4) % 2 == 0: ctext(c, 360, min(y + 20, 1120), '...', 80, ink)
 def d_headline(c, b, lt, T, bg, acc, ink):
     k = back(lt / .3); P = (250, 244, 228)
-    c.rr(60, 330 + 30 * (1 - k), 660, 1050, 14, P, INK, 5); c.text(360, 405, 'THE DAILY MIND', 46 * k, INK); c.line([(90, 450), (630, 450)], 5, INK)
+    c.rr(60, 330 + 30 * (1 - k), 660, 1050, 14, P, INK, 5); c.text(360, 405, 'THE DAILY PAGE' if BRANDKEY == 'shelfmade' else 'THE DAILY MIND', 46 * k, INK); c.line([(90, 450), (630, 450)], 5, INK)
     emo(c, b.get('emoji'), 360, 590, 190 * back((lt - .1) / .3)); ctext(c, 360, 790, _s(b.get('text'), 70).upper(), 56 * back((lt - .25) / .25), INK, 520)
     for i in range(3): c.rr(100, 930 + i * 28, 620 - (i % 2) * 120, 942 + i * 28, 6, (200, 195, 185))
     s = back((lt - .6) / .25)
@@ -284,8 +284,47 @@ def d_clock(c, b, lt, T, bg, acc, ink):
     sp = ease(lt / 2.5) * 14 + lt; a = sp * 2 * math.pi
     c.line([(cx, cy), (cx + 170 * math.sin(a), cy - 170 * math.cos(a))], 9, acc); c.line([(cx, cy), (cx + 110 * math.sin(a / 12), cy - 110 * math.cos(a / 12))], 14, INK); c.ell(cx, cy, 16, 16, INK)
     emo(c, b.get('emoji') or '⏰', 360 + 190, 380 + 8 * math.sin(lt * 9), 120 * back(lt / .3), 1, int(14 * math.sin(lt * 18))); ctext(c, 360, 950, _s(b.get('text'), 50).upper(), 50, ink, 640)
+
+# ---------- brand (MindLore default; ShelfMade = classic-books look, must never look like MindLore) ----------
+BRANDKEY = os.environ.get('LIVE_BRAND', 'mindlore'); BRANDNAME = 'MINDLORE'; MASCOT = 'Brainy (a talking brain)'; CHANNEL = 'a psychology channel'
+SM_PALS = [((245, 235, 214), (140, 40, 50), (40, 30, 25)), ((28, 52, 44), (232, 190, 90), (250, 244, 230)), ((52, 32, 28), (236, 176, 96), (250, 240, 225)), ((236, 226, 208), (34, 70, 110), (40, 30, 25)),
+           ((70, 26, 38), (240, 208, 140), (252, 244, 232)), ((30, 36, 56), (214, 170, 100), (245, 240, 230)), ((222, 232, 222), (120, 50, 70), (35, 35, 30))]
+SM_QUIPS = [('😳', 'Plot twist, Plato!'), ('🤯', 'In 400 BC?! Rude.'), ('😅', 'Still true today.'), ('🙃', 'Classic. Literally.'), ('😬', 'Awkward for Aristotle.'), ('🤨', 'Sure, Socrates.'), ('😮', 'Okay WOW.'), ('💀', 'Dead author. Alive idea.')]
+def set_brand(b):
+    global BRANDKEY, BRANDNAME, MASCOT, CHANNEL, PALS, QUIPS
+    BRANDKEY = b
+    if b == 'shelfmade': BRANDNAME = 'SHELFMADE'; MASCOT = 'Bookie (a talking old book with big eyes)'; CHANNEL = 'a classic-books channel (what old books can teach you today)'; PALS = SM_PALS; QUIPS = SM_QUIPS
+if BRANDKEY == 'shelfmade': set_brand('shelfmade')
+def mascot_book(c, cx, cy, s, mood, lt):
+    """ShelfMade mascot 'Bookie': a burgundy hardcover with gold trim, big eyes and a ribbon bookmark."""
+    bob = 8 * math.sin(lt * 7); cy += bob; COV = (140, 40, 50); GOLD = (232, 190, 90); PAGE = (250, 242, 220)
+    c.rr(cx - 150 * s + 14 * s, cy - 175 * s + 14 * s, cx + 150 * s + 14 * s, cy + 175 * s + 14 * s, 22 * s, PAGE, INK, 5)
+    c.rr(cx - 150 * s, cy - 175 * s, cx + 150 * s, cy + 175 * s, 22 * s, COV, INK, 6); c.rr(cx - 128 * s, cy - 153 * s, cx + 128 * s, cy + 153 * s, 14 * s, None, GOLD, 5)
+    c.rr(cx - 150 * s, cy - 175 * s, cx - 118 * s, cy + 175 * s, 14 * s, mix(COV, (0, 0, 0), .25), INK, 5); c.line([(cx + 70 * s, cy + 175 * s), (cx + 70 * s, cy + 235 * s), (cx + 90 * s, cy + 215 * s), (cx + 110 * s, cy + 235 * s), (cx + 110 * s, cy + 175 * s)], 10 * s, GOLD)
+    ex = 55 * s; ey = cy - 40 * s; er = 40 * s
+    for sx in (-1, 1):
+        c.ell(cx + 10 * s + sx * ex, ey, er, er * (1.15 if mood in ('shock', 'blown', 'wow') else 1), (255, 255, 255), INK, 5)
+        pr = er * (.28 if mood in ('shock', 'blown') else .45); off = 9 * s * math.sin(lt * 9) if mood in ('sweat', 'shock') else 0
+        if mood == 'dead':
+            for k in (-1, 1): c.line([(cx + 10 * s + sx * ex - 18 * s, ey - 18 * s * k), (cx + 10 * s + sx * ex + 18 * s, ey + 18 * s * k)], 7 * s, INK)
+        else: c.ell(cx + 10 * s + sx * ex + off + (7 * s if mood == 'brow' else 0), ey + 5 * s, pr, pr, INK)
+    if mood in ('brow', 'smirk'): c.line([(cx + 10 * s - ex - 36 * s, ey - 58 * s), (cx + 10 * s - ex + 36 * s, ey - 70 * s)], 8 * s, GOLD)
+    my = cy + 55 * s; mx = cx + 10 * s
+    if mood in ('shock', 'wow', 'blown'): c.ell(mx, my, 26 * s, 34 * s * (1 + .15 * math.sin(lt * 12)), (60, 20, 30), INK, 5)
+    elif mood == 'laugh': c.ell(mx, my - 8 * s, 48 * s, 36 * s, (60, 20, 30), INK, 5)
+    elif mood == 'grimace': c.line([(mx - 48 * s, my), (mx - 16 * s, my + 8 * s), (mx + 16 * s, my - 8 * s), (mx + 48 * s, my)], 8 * s, GOLD)
+    elif mood == 'smirk': c.line([(mx - 36 * s, my + 8 * s), (mx + 8 * s, my + 8 * s), (mx + 44 * s, my - 12 * s)], 8 * s, GOLD)
+    elif mood == 'dead': c.line([(mx - 36 * s, my), (mx + 36 * s, my)], 8 * s, GOLD)
+    else: c.line([(mx - 40 * s, my - 5 * s), (mx, my + 12 * s), (mx + 40 * s, my - 5 * s)], 8 * s, GOLD)
+    if mood in ('sweat', 'shock', 'grimace'): drop = (lt * 160) % 90; emo(c, '💦', cx + 160 * s, cy - 120 * s + drop * .5, 64 * s)
+    if mood == 'blown': emo(c, '💥', cx, cy - 215 * s, 140 * s * back(lt / .3))
+def d_quote(c, b, lt, T, bg, acc, ink):
+    k = back(lt / .3); q = _s(b.get('text'), 140); who = _s(b.get('who') or b.get('author'), 40)
+    c.rr(50, 330, 670, 1000, 26, mix(bg, (255, 255, 255), .55 if sum(bg) > 400 else .12), acc, 6); c.text(130, 420 + 20 * (1 - k), '“', 220 * k, acc, 'mm')
+    ctext(c, 360, 690, q, 50 * back((lt - .15) / .3), ink, 520); c.line([(250, 880), (470, 880)], 5, acc); ctext(c, 360, 935, ('- ' + who) if who else '', 40, acc, 560)
+
 DRAW = {'title_slam': d_title, 'icon_burst': d_icon, 'counter': d_counter, 'chart': d_chart, 'slots': d_slots, 'flow': d_flow, 'versus': d_versus, 'meter': d_meter, 'reaction': d_react, 'brain': d_brain,
-        'search': d_search, 'chat': d_chat, 'headline': d_headline, 'countdown': d_countdown, 'timeline': d_timeline, 'scale': d_scale, 'crowd': d_crowd, 'checklist': d_checklist, 'before_after': d_before_after, 'notif': d_notif, 'zoom': d_zoom, 'clock': d_clock}
+        'search': d_search, 'chat': d_chat, 'headline': d_headline, 'countdown': d_countdown, 'timeline': d_timeline, 'scale': d_scale, 'crowd': d_crowd, 'checklist': d_checklist, 'before_after': d_before_after, 'notif': d_notif, 'zoom': d_zoom, 'clock': d_clock, 'quote': d_quote}
 
 # ---------- director ----------
 def numval(w):
@@ -319,17 +358,18 @@ def llm_director(words, total, title='', opening=True, pace=2.2, min_react=3, mo
     try:
         import llm
         if not llm.available(): return None
+        if BRANDKEY == 'shelfmade' and not mood_hint: mood_hint = 'Every beat connects an OLD BOOK idea to modern daily life (a chat, a search, notifications, a crowd, before/after); put the key line from the book on a quote card (kind quote, with who = author or book title); the mascot reacts like a witty bookworm friend. '
         narr = ' '.join('%d:%s' % (i, w['w']) for i, w in enumerate(words)); want = max(3, int(total / pace)); op = pick_open(title)
-        sysm = 'You are a viral short-video director for a psychology channel. Reply JSON only.'
+        sysm = 'You are a viral short-video director for %s. Reply JSON only.' % CHANNEL
         first = ('The first beat (at 0) is the HOOK. For THIS video open with kind "%s" (adapt the params to the topic; if it truly cannot fit, choose another opening from: search, headline, chat, countdown, notif, zoom, title_slam, clock). ' % op) if opening else 'This is a middle part of a longer video: do NOT open with a hook, just continue naturally. '
         usr = ('Plan a fast, funny, creative explainer video whose pictures ACT OUT the narration live, in sync with the words.\nNarration with word indexes (index:word):\n%s\n\n'
                'Toolkit (kind: params):\n%s\n\nRules: about %d beats; each beat has "at" = word index where it starts (strictly increasing, first is 0; a new visual every %.1f-%.1f seconds). %s'
                'Be SMART and creative: pick the kind that literally shows what the words say (a question being typed into a search bar, a text-message exchange, a newspaper headline, a balance scale for trade-offs, a crowd with one standing out, a checklist of steps, a timeline of stages, before/after, phone notifications for distraction, a clock for time, zoom with callouts for an object, flow for something travelling, slots for limits). '
-               'Use MANY different kinds (never the same kind twice in a row; at least %d different kinds besides the opening); at least %d reaction beats starring the mascot Brainy (a talking brain): relatable, self-aware, exaggerated jokes in the style of a witty friend (<=7 words, e.g. \"Me, opening my 47th tab.\"), clean, never mocking people or groups; the emoji field sets Brainy mood (😳 😅 🤯 🙃 😬 🤨 💀 😮 😂). '
+               'Use MANY different kinds (never the same kind twice in a row; at least %d different kinds besides the opening); at least %d reaction beats starring the mascot %s: relatable, self-aware, exaggerated jokes in the style of a witty friend (<=7 words, e.g. \"Me, opening my 47th tab.\"), clean, never mocking people or groups; the emoji field sets the mascot mood (😳 😅 🤯 🙃 😬 🤨 💀 😮 😂). '
                'Numbers/stats in counter/chart/meter/timeline/checklist MUST come from the narration and keep the SAME meaning (never put two different quantities together or compare them); never invent facts or statistics. Do NOT use chart shape bars. Emoji fields must be single emoji characters; text fields use plain letters only%s. Every beat may also have "tag" (<=3 word label) and "sticker" (one emoji popped on a key word). %s'
                'RETENTION CRAFT (important): open a curiosity gap in the first 3 seconds and pay it off later; every ~10 seconds add a surprise (a twist, a sudden reaction, a visual that breaks the pattern); speak to the viewer ("you") with relatable everyday moments; escalate (small to big, normal to absurd); end with a loop or a question that makes people replay. Never let two beats feel alike; never explain with a bullet-list look; show, do not tell. '
                'Output {"beats":[{"at":0,"kind":"...", ...params}, ...]}'
-               % (narr, '\n'.join('- %s: %s' % kv for kv in KINDS.items() if not kinds_ok or kv[0] in kinds_ok), want, pace * .7, pace * 1.4, first, 3 if total > 25 else 2, min_react, (' in the language of the narration (accents allowed)' if os.environ.get('LIVE_LANG') else ' (ASCII)'), mood_hint))
+               % (narr, '\n'.join('- %s: %s' % kv for kv in KINDS.items() if not kinds_ok or kv[0] in kinds_ok), want, pace * .7, pace * 1.4, first, 3 if total > 25 else 2, min_react, MASCOT, (' in the language of the narration (accents allowed)' if os.environ.get('LIVE_LANG') else ' (ASCII)'), mood_hint))
         r = llm.json_call(sysm, usr, temperature=0.85, max_tokens=7000)
         bs = (r or {}).get('beats') or []; out = []; last = -1
         for b in bs:
@@ -470,7 +510,7 @@ def frame(t, beats, starts, words, total, wstarts, land=False):
     i = max(0, bisect.bisect_right(starts, t) - 1); b = beats[i]; lt = t - starts[i]; T = (starts[i + 1] if i + 1 < len(starts) else total) - starts[i]
     c, bg, acc, ink = scene(t, b, lt, T, i, starts, beats, land); wi = max(0, bisect.bisect_right(wstarts, t) - 1)
     if land:   # full-screen wide scene; big live captions along the bottom
-        c.text(40, 40, 'MINDLORE', 28, ink, 'lm')
+        c.text(40, 40, BRANDNAME, 28, ink, 'lm')
         if t >= words[0]['s']:
             st = wi
             while st > 0 and not re.search(r'[.?!,]$', words[st - 1]['w']) and wi - st < 8: st -= 1
@@ -480,7 +520,7 @@ def frame(t, beats, starts, words, total, wstarts, land=False):
             for j, w in enumerate(seg): c.d.text((x * K, 672 * K), w['w'] + ' ', font=font(sz), fill=acc if st + j == wi else ink, anchor='lm', stroke_width=int(5 * K), stroke_fill=bg); x += c.tw(w['w'] + ' ', sz)
         c.d.rectangle([0, 712 * K, 1280 * K, 720 * K], fill=mix(bg, (150, 150, 160), .5)); c.d.rectangle([0, 712 * K, 1280 * clamp(t / total) * K, 720 * K], fill=acc)
         return c.im.resize((1280, 720), Image.LANCZOS)
-    c.text(40, 60, 'MINDLORE', 30, ink, 'lm')
+    c.text(40, 60, BRANDNAME, 30, ink, 'lm')
     if t >= words[0]['s']:
         st = wi
         while st > 0 and not re.search(r'[.?!,]$', words[st - 1]['w']) and wi - st < 5: st -= 1

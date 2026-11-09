@@ -79,7 +79,7 @@ def l_chat(c, b, lt, T, bg, acc, ink):
             emo(c, b.get('emoji') or '🙂', 150 if left else 1130, cy, 90 * u)
         y += h + 26
 def l_headline(c, b, lt, T, bg, acc, ink):
-    k = back(lt / .3); P = (250, 244, 228); c.rr(170, 100 + 30 * (1 - k), 1110, 615, 16, P, INK, 5); c.text(CX, 150, 'THE DAILY MIND', 48 * k, INK); c.line([(210, 188), (1070, 188)], 5, INK)
+    k = back(lt / .3); P = (250, 244, 228); c.rr(170, 100 + 30 * (1 - k), 1110, 615, 16, P, INK, 5); c.text(CX, 150, 'THE DAILY PAGE' if D.BRANDKEY == 'shelfmade' else 'THE DAILY MIND', 48 * k, INK); c.line([(210, 188), (1070, 188)], 5, INK)
     emo(c, b.get('emoji'), 350, 395, 250 * back((lt - .1) / .3)); ctext(c, 790, 385, _s(b.get('text'), 70).upper(), 62 * back((lt - .25) / .25), INK, 520)
     for i in range(2): c.rr(560, 535 + i * 30, 1060 - i * 140, 547 + i * 30, 6, (200, 195, 185))
     s = back((lt - .6) / .25)
