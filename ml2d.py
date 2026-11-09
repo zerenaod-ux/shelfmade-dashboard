@@ -774,6 +774,9 @@ def thumbnail(script, path):
     c.rr(80, 62, 330, 112, 14, BLUE, INK, 4); c.text((205, 87), 'MindLore', 32, WHITE, 'mm')
     c.out().save(path, quality=92)
 
+def _live_full_on():
+    try: return bool(json.loads((BASE / 'publish' / 'guard.json').read_text()).get('mindlore_live_full', True))
+    except Exception: return True
 def build(sid, out, vert=False):
     out = Path(out); out.mkdir(parents=True, exist_ok=True); work = out / '.work'; work.mkdir(exist_ok=True)
     p = Path(sid) if str(sid).endswith('.json') else BASE / 'cinematic-scripts-mindlore' / (str(sid) + '.json')
@@ -807,14 +810,26 @@ def build(sid, out, vert=False):
     else: cmd = ['ffmpeg', '-v', 'error', '-y', '-i', str(narr), '-af', 'loudnorm=I=-16:TP=-2:LRA=9', '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', str(mix)]
     subprocess.run(cmd, check=True)
     nf = int(total * FPS); final = out / ('ml2d_SHORT.mp4' if vert else 'ml2d_LONGFORM.mp4')
-    enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', '%dx%d' % ((1080, 1920) if vert else (W, H)), '-r', str(FPS), '-i', '-', '-i', str(mix), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22', '-pix_fmt', 'yuv420p', '-c:a', 'copy', '-t', '%.2f' % total, '-movflags', '+faststart', str(final)], stdin=subprocess.PIPE)
-    import multiprocessing as mp
-    with mp.get_context('fork').Pool(max(1, os.cpu_count() or 2)) as pool:
-        for k, b in enumerate(pool.imap(draw_frame, range(nf), chunksize=24)):
-            enc.stdin.write(b)
-            if k % 600 == 0: print('ml2d: frame %d/%d' % (k, nf), flush=True)
-    enc.stdin.close()
-    if enc.wait(): raise RuntimeError('video encode failed')
+    live_done = False
+    if not vert and not SM and not os.environ.get('ML2D_OLD') and _live_full_on():
+        try:   # owner decision 2026-11-09: full MindLore videos use the same LIVE DEMO look as the Shorts (landscape layout); old look is the fallback
+            import live_demo
+            lw = []
+            for w in words:
+                c_ = re.sub(r'[^\x20-\x7e]', '', str(w['w']).replace('\u2019', "'").replace('\u2018', "'")) or '.'
+                lw.append({'w': c_, 's': w['s'], 'e': w['e']})
+            live_demo.render(lw, total, str(mix), final, ' '.join(x['w'] for x in lw), script.get('public_title') or script.get('title', ''), land=True, long=True)
+            live_done = True; print('ml2d: LIVE look done', flush=True)
+        except BaseException as e: print('ml2d: live look failed, falling back to old look:', str(e)[:300], flush=True)
+    if not live_done:
+        enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', '%dx%d' % ((1080, 1920) if vert else (W, H)), '-r', str(FPS), '-i', '-', '-i', str(mix), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22', '-pix_fmt', 'yuv420p', '-c:a', 'copy', '-t', '%.2f' % total, '-movflags', '+faststart', str(final)], stdin=subprocess.PIPE)
+        import multiprocessing as mp
+        with mp.get_context('fork').Pool(max(1, os.cpu_count() or 2)) as pool:
+            for k, b in enumerate(pool.imap(draw_frame, range(nf), chunksize=24)):
+                enc.stdin.write(b)
+                if k % 600 == 0: print('ml2d: frame %d/%d' % (k, nf), flush=True)
+        enc.stdin.close()
+        if enc.wait(): raise RuntimeError('video encode failed')
     if not vert: thumbnail(script, out / 'THUMBNAIL.jpg')
     chapters = '\n'.join('%d:%02d %s' % (int(s['start']) // 60, int(s['start']) % 60, s['title']) for s in secs)
     desc = (script.get('hook', '') + '\n\nMindLore explains psychology from the original texts. Original commentary inspired by %s by %s. Modern examples are our interpretations, not author quotations.\n\nChapters:\n%s' % (script.get('title', ''), script.get('author', ''), chapters))
@@ -831,7 +846,7 @@ def build(sid, out, vert=False):
         import hashtags; desc += '\n\n' + hashtags.mindlore(script.get('hook', '') + ' ' + script.get('title', ''), 'full')
     except Exception: desc += '\n\n#psychology #MindLore'
     (out / 'POST_THIS.txt').write_text('--- TITLE ---\n' + script.get('public_title', script.get('title', '')) + '\n\n--- DESCRIPTION ---\n' + desc[:4900])
-    (out / 'ml2d-plan.json').write_text(json.dumps({'beats': [{k: v for k, v in b.items() if k != 'ws'} for b in beats], 'total': total, 'tempo': tempo, 'style': 'ml2d-v4'}, indent=1))
+    (out / 'ml2d-plan.json').write_text(json.dumps({'beats': [{k: v for k, v in b.items() if k != 'ws'} for b in beats], 'total': total, 'tempo': tempo, 'style': 'live-demo' if live_done else 'ml2d-v4'}, indent=1))
     print('ml2d: done', final, '%.0fs' % total, flush=True)
     return final
 
