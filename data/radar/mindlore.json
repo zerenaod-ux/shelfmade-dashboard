@@ -1,129 +1,129 @@
 {
  "why": [
   {
-   "title": "15 Years Of Life Lessons \ud83e\udde0. #psychology #facts #shortsviral",
-   "why": "It leverages an extreme curiosity hook by condensing a vast timeframe (15 years) into digestible, high-value micro-lessons, provoking FOMO and emotional introspection."
-  },
-  {
    "title": "What Happens in Your Brain When You Pray? The Science.",
-   "why": "It bridges modern neuroscience with a universal cultural/spiritual topic, triggering deep awe and curiosity by using scientific validation for a familiar human experience."
+   "why": "It bridges spiritual practice with objective neuroscientific authority, tapping into intense curiosity and identity validation without feeling preachy."
   },
   {
-   "title": "Do You Have Nyctophobia? \ud83c\udf19 Find Your Level",
-   "why": "It uses an interactive 'gamified self-assessment' format that compels high viewer retention and comments as people test their own limits."
+   "title": "3 MOST UNFORTUNATE LETTERS NAME || #SHORTS \u2764\ufe0f",
+   "why": "It leverages hyper-personalized curiosity and subtle fear of missing out, compelling viewers to watch to see if their own name is targeted."
   },
   {
-   "title": "The Most Dangerous Personality \ud83d\uddff | dark psychology | #shorts #viral #psychology",
-   "why": "It taps into threat-detection and self-preservation instincts using high-contrast, edgy visual archetypes that provoke immediate fear and fascination."
+   "title": "5 Secret Meanings Behind Your Everyday Habits | Psychology Facts You Didn't Know",
+   "why": "It frames mundane human behaviors as hidden clues about personality, making the viewer feel like an insider diagnosing themselves."
+  },
+  {
+   "title": "15 Years Of Life Lessons \ud83e\udde0. #psychology #facts #shortsviral",
+   "why": "It promises high-density wisdom compressed into seconds, delivering high perceived value and emotional resonance on a micro-budget channel."
   }
  ],
  "hook_patterns": [
-  "Neuro-Demystification: 'What happens to your brain when you [common human habit]'",
-  "Interactive Diagnosis: 'Test your mind level / Do you have [niche psychological trait]?'",
-  "Compressed Wisdom: '[X] years of psychological discoveries condensed into 30 seconds'"
+  "Neuro-Demystification: Framing invisible mental or spiritual states through clinical brain mechanics.",
+  "Personalized Identity Traps: Using specific letters, names, or everyday habits to force self-identification.",
+  "Condensed Wisdom Audits: Packaging years of psychological observations into rapid-fire micro-insights."
  ],
- "todays_angle": "Translate 19th-century public-domain clinical insights into modern 'brain science' self-assessments.",
+ "todays_angle": "Translate forgotten, classic 19th-century psychological observations into surprising 'neuro-diagnostic' tests for modern everyday habits.",
  "ideas": [
-  "William James' 1890 theory of 'The Split Self' adapted into a 3-step modern focus test using historic diagrams.",
-  "Freud\u2019s classic 1899 dream interpretation framework reframed as 'What your brain is doing during REM sleep'.",
-  "Gustav Fechner's early psychophysics experiments presented as a visual illusion interactive challenge for the viewer."
+  "What William James Discovered About People Who Nail-Bite (1890 Psychology Text Breakdown)",
+  "3 Subconscious Signs You Have High Emotional Intelligence, According to 1920s Clinical Studies",
+  "The 100-Year-Old Brain Trick to Instantly Stop Overthinking (From Public Domain Manuscripts)"
  ],
  "avoid": [
-  "Generic 'Dark Psychology' lists with low-effort Sigma/\ud83d\uddff edits.",
-  "Vague, uncredited '15 life lessons' text-on-screen slideshows without historical or scientific backing."
+  "Generic 'Letter Psychology' cold-reading trends that lack educational substance.",
+  "Vague 'Dark Psychology' buzzword spam without classic text grounding."
  ],
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "sample": 73,
  "spikes": [
   {
-   "title": "How does your brain come up with this stuff? \ud83d\ude02",
-   "channel": "Videos that make your day better ",
-   "views": 898545,
-   "hours": 40,
-   "vph": 22326.1,
-   "subs": 1010000,
-   "breakout": 0.9
-  },
-  {
    "title": "What Happens in Your Brain When You Pray? The Science.",
    "channel": "Brain Related",
-   "views": 448825,
-   "hours": 23,
-   "vph": 19351.3,
-   "subs": 48100,
-   "breakout": 9.3
+   "views": 500454,
+   "hours": 43,
+   "vph": 11657.6,
+   "subs": 49400,
+   "breakout": 10.1
   },
   {
-   "title": "Waking Up Thinking of Someone \ud83c\udf05 #fypviral\u30b7 #jungkook #bts #psychologyfacts #viralnow #goviral",
-   "channel": "V-HOPE",
-   "views": 54891,
-   "hours": 8,
-   "vph": 7045.7,
-   "subs": 17500,
-   "breakout": 3.1
+   "title": "7 Psychology Facts About Girls That Will Surprise Every Boy! \ud83d\ude33\u2764\ufe0f | Girls Secrets",
+   "channel": "YOUR TUTOR CORNER",
+   "views": 144807,
+   "hours": 17,
+   "vph": 8400.8,
+   "subs": 28200,
+   "breakout": 5.1
+  },
+  {
+   "title": "3 MOST UNFORTUNATE LETTERS NAME || #SHORTS \u2764\ufe0f",
+   "channel": "AMAN GAUTAM ",
+   "views": 149558,
+   "hours": 34,
+   "vph": 4401.7,
+   "subs": 1200,
+   "breakout": 124.6
+  },
+  {
+   "title": "5 Secret Meanings Behind Your Everyday Habits | Psychology Facts You Didn't Know",
+   "channel": "Why We Do It",
+   "views": 53101,
+   "hours": 12,
+   "vph": 4252.9,
+   "subs": 10500,
+   "breakout": 5.1
   },
   {
    "title": "What Does Watching An Execution Do To Your Brain?",
    "channel": "HealthyGamerGG",
-   "views": 105660,
-   "hours": 22,
-   "vph": 4748.9,
+   "views": 139658,
+   "hours": 42,
+   "vph": 3326.4,
    "subs": 3550000,
    "breakout": 0.0
   },
   {
-   "title": "The Republican Party is Dead #psychology #politics #lucasbean #trump",
-   "channel": "Lucas Bean",
-   "views": 205779,
-   "hours": 47,
-   "vph": 4379.1,
-   "subs": 105000,
-   "breakout": 2.0
-  },
-  {
-   "title": "Creierul t\u0103u nu arat\u0103 cum crezi \ud83d\ude33",
-   "channel": "AlinuTZu Decean",
-   "views": 156747,
-   "hours": 44,
-   "vph": 3561.9,
-   "subs": 336000,
-   "breakout": 0.5
+   "title": "\u0938\u092e\u0930\u094d\u092a\u0923 #mindset #motivation #successmind #psychology #growlifebuddy #facts #darkpsychology",
+   "channel": " GROWLIFEBUDDY ",
+   "views": 72104,
+   "hours": 25,
+   "vph": 2874.0,
+   "subs": 16600,
+   "breakout": 4.3
   },
   {
    "title": "\u091c\u0932\u0928 #motivation #psychology #successmind #mindset #growlifebuddy #facts",
    "channel": " GROWLIFEBUDDY ",
-   "views": 28826,
-   "hours": 9,
-   "vph": 3194.3,
-   "subs": 16500,
-   "breakout": 1.7
+   "views": 69704,
+   "hours": 29,
+   "vph": 2423.6,
+   "subs": 16600,
+   "breakout": 4.2
   },
   {
-   "title": "3 Most Unfortunate Letters name \ud83e\udec0\ud83e\udec2||",
-   "channel": "Xzendarkmind",
-   "views": 90183,
-   "hours": 31,
-   "vph": 2883.9,
-   "subs": 134000,
-   "breakout": 0.7
+   "title": "9 Psychology Facts You Won't Believe Are True!  | Amazing Facts About Human Behavior",
+   "channel": "MindFacts Daily",
+   "views": 36008,
+   "hours": 16,
+   "vph": 2242.0,
+   "subs": 621,
+   "breakout": 58.0
   },
   {
    "title": "15 Years Of Life Lessons \ud83e\udde0. #psychology #facts #shortsviral",
    "channel": "Monica CannaMiss - Emotional Refuge",
-   "views": 33458,
-   "hours": 25,
-   "vph": 1325.4,
-   "subs": 211,
-   "breakout": 158.6
+   "views": 38330,
+   "hours": 45,
+   "vph": 852.2,
+   "subs": 214,
+   "breakout": 179.1
   },
   {
    "title": "Like. Share. Subscribe #psychologyfacts #mindblowingfacts #psychology #realfacts #humanminded #viral",
    "channel": "Motivation only ",
-   "views": 46443,
-   "hours": 34,
-   "vph": 1349.7,
-   "subs": 458,
-   "breakout": 101.4
+   "views": 49804,
+   "hours": 30,
+   "vph": 1671.7,
+   "subs": 531,
+   "breakout": 93.8
   }
  ]
 }
