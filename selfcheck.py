@@ -166,6 +166,17 @@ def main():
             newest = max(pubs) if pubs else ''
             a_h = age_h(newest) if newest else None
             fresh = age_h(an['collected'] + ('T00:00:00+00:00' if len(an['collected']) == 10 else '')) if an.get('collected') else None
+            # analytics are only collected weekly, so they are usually stale: ALSO use what was handed to Buffer (publish state 'due' times already in the past = posted)
+            try:
+                _sf = {'shelfmade': 'state.json', 'mindlore': 'state-mindlore.json', 'doodles': 'state-doodles.json'}[_b]
+                _now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S')
+                _past = [v['due'] for v in jl('publish/' + _sf, {}).get('done', {}).values() if v.get('due') and v['due'][:19] <= _now]
+                if _past:
+                    _h = age_h(max(_past)[:19] + '+00:00')
+                    a_h = _h if a_h is None else min(a_h, _h)
+                    fresh = 0   # a trustworthy recent source exists: do not let stale analytics silence the alarm
+            except Exception:
+                pass
             stale_data = fresh is not None and fresh > 48
             rec('Posting: %s' % _b, stale_data or (a_h is not None and a_h <= 30), ('newest public video %.0f h ago' % a_h) if a_h is not None else 'no video found',
                 'ALERT: %s has not posted for over a day' % _b + ('' if (stale_data or (a_h is not None and a_h <= 30)) else _why_not_posting(_b)))
