@@ -553,6 +553,28 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261109-live4",
+   "look": "live-demo",
+   "title": "Why a deadline makes your stomach knot",
+   "theme": "stress and fear",
+   "acts": [
+    "brain",
+    "chart",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "slots",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
