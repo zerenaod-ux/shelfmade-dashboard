@@ -175,7 +175,8 @@ def d_brain(c, b, lt, T, bg, acc, ink):
     for r in b.get('regions') or ['front']: g[r] = ease(lt / .4) * (.7 + .3 * math.sin(lt * 6))
     B.brain_draw(c, s, g, lt); ctext(c, 360, 960, (b.get('text') or '').upper(), 46, ink, 640)
 
-def _s(v, n=40): return re.sub(r'[^\x20-\x7e]', '', str(v if v is not None else ''))[:n]
+KEEP = r'[^\x20-\x7e\u00a1-\u024f]' if os.environ.get('LIVE_LANG') else r'[^\x20-\x7e]'   # dubbed videos keep accents (Spanish, Portuguese)
+def _s(v, n=40): return re.sub(KEEP, '', str(v if v is not None else ''))[:n]
 def _l(v, n=4, m=34):
     if isinstance(v, str): v = [v]
     return [_s(x if not isinstance(x, dict) else (x.get('text') or x.get('label') or ''), m) for x in (v or []) if x][:n]
@@ -325,7 +326,7 @@ def llm_director(words, total, title='', opening=True, pace=2.2, min_react=3, mo
                'Toolkit (kind: params):\n%s\n\nRules: about %d beats; each beat has "at" = word index where it starts (strictly increasing, first is 0; a new visual every %.1f-%.1f seconds). %s'
                'Be SMART and creative: pick the kind that literally shows what the words say (a question being typed into a search bar, a text-message exchange, a newspaper headline, a balance scale for trade-offs, a crowd with one standing out, a checklist of steps, a timeline of stages, before/after, phone notifications for distraction, a clock for time, zoom with callouts for an object, flow for something travelling, slots for limits). '
                'Use MANY different kinds (never the same kind twice in a row; at least %d different kinds besides the opening); at least %d reaction beats starring the mascot Brainy (a talking brain): relatable, self-aware, exaggerated jokes in the style of a witty friend (<=7 words, e.g. \"Me, opening my 47th tab.\"), clean, never mocking people or groups; the emoji field sets Brainy mood (😳 😅 🤯 🙃 😬 🤨 💀 😮 😂). '
-               'Numbers/stats in counter/chart/meter/timeline/checklist MUST come from the narration and keep the SAME meaning (never put two different quantities together or compare them); never invent facts or statistics. Do NOT use chart shape bars. Emoji fields must be single emoji characters; text fields use plain ASCII letters only. Every beat may also have "tag" (<=3 word label) and "sticker" (one emoji popped on a key word). %s'
+               'Numbers/stats in counter/chart/meter/timeline/checklist MUST come from the narration and keep the SAME meaning (never put two different quantities together or compare them); never invent facts or statistics. Do NOT use chart shape bars. Emoji fields must be single emoji characters; text fields use plain letters only' + (' in the language of the narration (accents allowed)' if os.environ.get('LIVE_LANG') else ' (ASCII)') + '. Every beat may also have "tag" (<=3 word label) and "sticker" (one emoji popped on a key word). %s'
                'RETENTION CRAFT (important): open a curiosity gap in the first 3 seconds and pay it off later; every ~10 seconds add a surprise (a twist, a sudden reaction, a visual that breaks the pattern); speak to the viewer ("you") with relatable everyday moments; escalate (small to big, normal to absurd); end with a loop or a question that makes people replay. Never let two beats feel alike; never explain with a bullet-list look; show, do not tell. '
                'Output {"beats":[{"at":0,"kind":"...", ...params}, ...]}'
                % (narr, '\n'.join('- %s: %s' % kv for kv in KINDS.items() if not kinds_ok or kv[0] in kinds_ok), want, pace * .7, pace * 1.4, first, 3 if total > 25 else 2, min_react, mood_hint))
@@ -524,7 +525,8 @@ def render(words, total, mp3, outp, text, title='', land=False, fps=None, long=F
 
 def build(story, outp):
     d = json.load(open(story)); text = ' '.join(s['narration'] for s in d['sections'])
-    text = re.sub(r'[‐-―]', '-', text).replace('’', "'").replace('‘', "'"); text = re.sub(r'[^\x20-\x7e]', '', text); text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r'[‐-―]', '-', text).replace('’', "'").replace('‘', "'"); text = re.sub(KEEP, '', text); text = re.sub(r'\s+', ' ', text).strip()
+    if os.environ.get('LIVE_VOICE'): B.VOICE = os.environ['LIVE_VOICE']
     B.TEXT = text; words, mp3 = B.get_words(); total = words[-1]['e'] + 1.0
     render(words, total, mp3, outp, text, d.get('public_title') or d.get('title') or '', plan_out=str(outp) + '.plan.json')
 
