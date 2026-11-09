@@ -1,5 +1,7 @@
 name: analytics
 on:
+  push:
+    paths: ['publish/analytics.trigger']
   schedule:
     - cron: '30 13 * * *'   # G6: daily (was weekly Mon) so learning is days not weeks
   workflow_dispatch:
