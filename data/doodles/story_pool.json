@@ -3787,5 +3787,413 @@
    "n": 2
   },
   "variant": "standard"
+ },
+ {
+  "id": "phone-call-panic-script",
+  "title": "The Call Scripting Trap",
+  "concept": "SPOTLIGHT EFFECT",
+  "mood": "dramatic",
+  "insight": "Nobody is auditing your casual phone calls as closely as you are.",
+  "caption": "Rehearsed your phone order five times? Here is why your brain over-scripts quick calls.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo pacing the hallway looking tense while Mia drinks a cup of tea on the sofa, both facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Because the delivery guy will analyze my tone!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It\u2019s just a pizza order, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "A digital clock showing a time ticks by while Leo nervously touches his chin, facing camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Okay but hear me out, script four failed!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo sitting down typing on a laptop next to a flourishing Gerald the houseplant, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Scoreboard forty-eight, Gerald the plant is judgment-free."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "This beats my Sunday panic trap!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sitting upright holding a coffee mug with a calm expression, facing camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That's the spotlight effect making you over-rehearse."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looks up surprised as a notification message arrives on his phone, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Just hit call before you overthink it."
+     }
+    ]
+   },
+   {
+    "scene": "Leo staring at his phone texting with a slight smirk, facing camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Next time: bad texts! Wait, why am I whispering?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 1,
+   "why": "Candidate 1 lands the funniest character beats with Gerald the plant and seamlessly loops back into the opening line with the whispering punchline.",
+   "scores": {
+    "i": 1,
+    "funny": 7,
+    "hook": 7,
+    "spoken": 6,
+    "relatable": 8,
+    "loop": 8
+   },
+   "n": 3
+  },
+  "variant": "tight"
+ },
+ {
+  "id": "anticipatory-anxiety-greg-noted",
+  "title": "The Sunday Scaries Trap",
+  "concept": "ANTICIPATORY ANXIETY",
+  "mood": "dramatic",
+  "insight": "Worrying early makes you suffer twice for problems that aren't real.",
+  "caption": "Why does Sunday night feel like Monday morning already? Here is how your brain traps you early.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits upright pulling the blanket while a digital clock showing a time lights the couch. Mia holds a coffee mug with worried eyes, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "My entire Monday is already ruined!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Leo, it is literally seven PM on Sunday."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is walking / pacing the hallway typing on his phone. Mia stands upright sipping a cup of tea with a raised eyebrow, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Greg is definitely drafting a terrifying email right now."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You haven't even opened your inbox today."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is typing on a laptop when a notification / message arrives with a chime. Mia stands upright watching with a smirk, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Wait\u2014a new notification just arrived!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "It's from Greg. It literally just says 'Noted.'"
+     }
+    ]
+   },
+   {
+    "scene": "Mia holds a coffee mug facing camera with a gentle smirk. Leo sits upright on the chair with worried eyes, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "text": "That is pure anticipatory anxiety."
+     },
+     {
+      "who": "mia",
+      "feel": "dry",
+      "text": "Your brain forces you to suffer twice for hypothetical problems."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright pulling the pillow to his chest with tight lips. Mia stands upright pointing to the desk, facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "Okay but hear me out!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "That's fifty for me. Write three tasks down and close your laptop."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits upright in bed as an alarm going off flashes soft light. Mia stands by the door with raised eyebrows, facing camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Why are you hyperventilating about tomorrow?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
+ },
+ {
+  "id": "micro-avoidance-text-reply",
+  "title": "The 'K' Reply Trap",
+  "concept": "AVOIDANCE COPING",
+  "mood": "dramatic",
+  "insight": "Shrinking your text response is just dodging the mental effort.",
+  "caption": "Ever reply 'k' to a long message because typing feels like a marathon? Here is why your brain defaults to micro-replies.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia standing in a caf\u00e9 facing camera. Dev wipes counter in background. Leo typing on his phone with worried eyes. Mia holding a coffee mug.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Because Greg sent a terrifying novel!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "So you just replied 'k'?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo pacing the hallway while Greg sits typing on a laptop in background. Leo looking stressed, holding phone. Mia walking beside him with smirk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "text": "A real text takes brainpower! 'K' saves lives."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia at coffee counter facing camera. Mia holding a coffee mug labeled Lyle. Leo standing, arms crossed with closed-mouth grimace.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "He asked for five project deadlines, Lyle."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "Okay, but hear me out!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia sitting at table facing camera. A notification arrives on Leo's phone. Leo eyes wide, Mia sitting upright with raised eyebrow.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's avoidance coping. Shrinking your text just dodges the mental effort."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia standing near door facing camera. Mia typing on her phone calmly. Leo looking relieved with closed-mouth smile.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Send one quick sentence before panic sets in."
+     }
+    ]
+   },
+   {
+    "scene": "Leo and Mia standing together facing camera. An alarm going off on table. Mia looking at Leo with amused raised eyebrow.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "Wait, why did you throw your phone?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 has natural dialogue flow, a stronger punchline, and a much better loop.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 9,
+    "loop": 8
+   },
+   "n": 2
+  },
+  "variant": "tight"
+ },
+ {
+  "id": "rumination-cringe-replay",
+  "title": "The 2 AM Cringe Loop",
+  "concept": "RUMINATION",
+  "mood": "reflective",
+  "insight": "Writing down late-night cringe memories helps your brain let them go.",
+  "caption": "Ever lie awake at 2 AM cringing over something you said years ago? Here is why your brain does it and how to stop.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sitting upright in bed pulling the pillow over his head with worried eyes, while Mia sits nearby texting. Both face camera. In the background, clearly visible and drawn in the same style, stands a tired barista in a green apron (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "text": "Because I told barista Dev 'love you'!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "Wait, you said that three years ago!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo walking the hallway holding a coffee mug with panicked eyes, while Mia sits at a desk typing on a laptop with a smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "text": "He handed me tea and my brain glitched!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "My told-you-so scoreboard just hit fifty-four."
+     }
+    ]
+   },
+   {
+    "scene": "Leo lying in bed next to a digital clock showing a time of 2:14 AM with wide eyes, while Mia stands nearby facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "text": "We officially have to move to a new flat!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "text": "You want to move flat over awkward coffee?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo sitting on the couch pulling the blanket over his shoulders, while Mia sits nearby typing on his phone with a raised eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "text": "That's rumination. Your mind replays cringe scenes on endless loop."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "text": "It feels like a midnight horror movie!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia handing Leo a cup of tea while Leo sits upright texting on his phone with hopeful eyes. Both face camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "text": "Write it on paper to exit the loop."
+     },
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "text": "Wait, so don't text Dev an apology?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo lying in bed staring upward with worried eyes, next to a digital clock showing a time on the nightstand.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "tired",
+      "text": "Why are you staring at the ceiling again?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard"
  }
 ]
