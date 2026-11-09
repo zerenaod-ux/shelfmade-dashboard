@@ -137,7 +137,10 @@ def d_flow(c, b, lt, T, bg, acc, ink):
     A, Bp = (360, 360), (360, 900); u = ease((lt - .35) / max(.6, T * .55)); arr = ease((lt - .2) / .3)
     c.line([A, (A[0], A[1] + (Bp[1] - A[1]) * arr)], 8, mix(bg, acc, .5))
     emo(c, b.get('a'), A[0], A[1], 200 * back(lt / .3)); emo(c, b.get('b'), Bp[0], Bp[1], 200 * back((lt - .1) / .3) * (1 + .15 * math.exp(-max(0, lt - .35 - max(.6, T * .55)) * 7) * (u >= 1)))
-    c.text(A[0] + 150, A[1], (b.get('la') or '').upper(), 34, ink, 'lm'); c.text(Bp[0] + 150, Bp[1], (b.get('lb') or '').upper(), 34, ink, 'lm')
+    for P_, key in ((A, 'la'), (Bp, 'lb')):
+        s_ = _s(b.get(key), 24).upper(); sz = 34
+        while c.tw(s_, sz) > 700 - (P_[0] + 120) and sz > 16: sz -= 2
+        c.text(P_[0] + 120, P_[1], s_, sz, ink, 'lm')
     if .35 <= lt:
         px = 360 + 120 * math.sin(u * math.pi); py = lerp(A[1] + 100, Bp[1] - 100, u)
         for k in range(6, 0, -1):
