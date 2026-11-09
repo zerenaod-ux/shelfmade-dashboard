@@ -16,6 +16,10 @@ def load(p, d):
 def hist(): return load(HIST, {'items': []})
 def pick_theme(h):
     used = [i.get('theme') for i in h['items'][-30:]]
+    try:   # G4: a cloned winner idea goes first (MindLore)
+        wf = B / ('data/winner-ideas-%s.json' % BRAND); q = load(wf, [])
+        if q and not SM: t0 = q.pop(0); wf.write_text(json.dumps(q, indent=1)); print('winner idea theme:', t0, flush=True); return t0
+    except Exception: pass
     if SM:   # ShelfMade: "a classic book vs today"
         books = load(B / 'books.json', []); cand = [b for b in books if ('%s by %s' % (b['title'], b['author'])) not in used] or books
         b = random.choice(cand); return '%s by %s' % (b['title'], b['author'])

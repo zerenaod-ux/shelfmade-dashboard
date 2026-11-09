@@ -26,13 +26,17 @@ jobs:
           YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
           YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
           YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
         run: |
           python analytics.py
           python growth.py || true
+          python winner_clone.py || true
       - name: Save results
         run: |
           git config user.name "studio-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -f data/analytics data/growth
+          git add -f data/analytics data/growth; git add -f data/doodles/comment_ideas.json data/winner-ideas-*.json 2>/dev/null || true
           git diff --cached --quiet || { git commit -qm "weekly analytics"; for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 5; done; }
       - name: Phone alert issue
         env:
