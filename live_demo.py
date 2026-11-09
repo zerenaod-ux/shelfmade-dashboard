@@ -229,7 +229,7 @@ def d_timeline(c, b, lt, T, bg, acc, ink):
             if i < len(lb): ctext(c, 330 + 100, y, lb[i].upper(), 38 * u, ink, 380)
 def d_scale(c, b, lt, T, bg, acc, ink):
     heavy = 1 if b.get('heavy', 'b') == 'b' else -1; a = .3 * heavy * ease((lt - .5) / .7) + .03 * math.sin(lt * 5) * (1 - ease((lt - .5) / .7)); pv = (360, 560)
-    c.d.polygon([(pv[0] - 70) * K, 900 * K, (pv[0] + 70) * K, 900 * K, pv[0] * K, pv[1] * K], fill=mix(bg, ink, .5)); L = 250
+    c.d.polygon([(pv[0] - 70) * K, 900 * K, (pv[0] + 70) * K, 900 * K, pv[0] * K, pv[1] * K], fill=mix(bg, ink, .5)); L = 185
     Lp = (pv[0] - L * math.cos(a), pv[1] - L * math.sin(a)); Rp = (pv[0] + L * math.cos(a), pv[1] + L * math.sin(a)); c.line([Lp, Rp], 14, ink)
     for side, P_, key in ((0, Lp, 'a'), (1, Rp, 'b')):
         u = back((lt - side * .15) / .3); c.line([P_, (P_[0], P_[1] + 130)], 5, ink); c.ell(P_[0], P_[1] + 140, 100, 26, acc, INK, 4)
