@@ -9,7 +9,7 @@ def main(sid, lang, out):
     src = json.loads(Path('story-shorts/mindlore/%s.json' % sid).read_text()); import llm
     pay = {'title': src['public_title'], 'hook': src['hook'], 'sections': [s['narration'] for s in src['sections']]}
     r = llm.json_call('You are a professional translator and localiser for short videos. Reply JSON only.',
-                      'Translate into %s for a spoken psychology Short. Keep every fact, number and study name exactly; natural, conversational, about 15% FEWER words than the English because the target language speaks slower (the video must stay under 70 seconds); the title is 2-6 words, catchy, no emoji. '
+                      'Translate into %s for a spoken psychology Short. Keep every fact, number and study name exactly; natural, conversational, about 15 percent FEWER words than the English because the target language speaks slower (the video must stay under 70 seconds); the title is 2-6 words, catchy, no emoji. '
                       'Input JSON: %s\nReturn {"title":"...","hook":"...","sections":["...", ...]} with the same number of sections.' % (name, json.dumps(pay, ensure_ascii=False)), temperature=.3, max_tokens=6000)
     assert r and len(r.get('sections', [])) == len(src['sections']), 'translation failed'
     d = dict(src); d['public_title'] = r['title']; d['hook'] = r['hook']; d['sections'] = [dict(s, narration=r['sections'][i]) for i, s in enumerate(src['sections'])]
