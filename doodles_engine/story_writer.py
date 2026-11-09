@@ -95,7 +95,7 @@ def valid(s,taken,variant='standard'):
             for l in sh['lines']:assert l['who'] in('leo','mia') and 3<=len(l['text'].split())<=18
         alll=[l['text'] for sh in s['shots'] for l in sh['lines']]
         assert len(alll[0].split())<=8, 'hook too long'
-        lo,hi=(52,68) if variant=='tight' else (70,90)
+        lo,hi={'micro':(36,52),'tight':(52,68)}.get(variant,(70,90))
         assert lo<=sum(len(t.split()) for t in alll)<=hi, 'length'
         assert alll[-1].strip()[-1:] in ('?','—','…','-') or alll[-1].strip().endswith('...'), 'no loop'
         s['explain_shot']=int(s.get('explain_shot',3));assert 0<=s['explain_shot']<=5
@@ -158,8 +158,8 @@ def main():
         if made>=n:break
         topic=_viewer_topic() or next((t for t in TOPICS if re.sub(r'[^a-z]+','-',t.lower()).strip('-')[:20] not in ' '.join(taken)),TOPICS[attempt%len(TOPICS)])
         TOPICS.remove(topic) if topic in TOPICS else None
-        variant='tight' if len(pool)%2==0 else 'standard'   # length test: alternate ~30 s and ~42 s Shorts, the learner compares them
-        vnote=' LENGTH VARIANT (overrides the word count above): the whole video is 52 to 68 spoken words in total (about 28 to 35 seconds), every line punchy, keep the hook, the payoff and the loop.' if variant=='tight' else ''
+        variant=('micro','tight','standard')[len(pool)%3]   # length test (G1, Nov 9): ~18 s / ~30 s / ~42 s Shorts, the learner compares them
+        vnote=' LENGTH VARIANT (overrides the word count above): the whole video is 36 to 52 spoken words in total (about 15 to 22 seconds), SIX shots with ONE short line each, the joke lands in the first 2 seconds, keep the payoff and the loop.' if variant=='micro' else ' LENGTH VARIANT (overrides the word count above): the whole video is 52 to 68 spoken words in total (about 28 to 35 seconds), every line punchy, keep the hook, the payoff and the loop.' if variant=='tight' else ''
         s=pick_best(topic,taken,variant,vnote)
         if s is None:continue
         if valid(s,taken,variant):s['variant']=variant;pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])

@@ -90,6 +90,7 @@ def title(item_id, base, kind='short'):
     try:
         for e in load()['episodes']:
             if e['id'] == item_id and e.get('kind') == kind:
+                if kind == 'short': return base[:100]   # G2 (Nov 9): hook-first title only, no '| Leo & Mia #n' suffix (short titles win)
                 return ('%s | %s %s%s' % (base, load()['show'], ('#%d' % e['n']) if kind == 'short' else ('Ep. %d' % e['n']), ' \u2605 Milestone' if e.get('milestone') else ''))[:100]
     except Exception:
         pass
