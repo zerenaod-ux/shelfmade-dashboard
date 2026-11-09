@@ -602,5 +602,47 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-09"
+ },
+ "Stop reading Imitation of Christ like this.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "ace_sm_candle_02"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-09"
+ },
+ "Bennett had a warning for you.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_03"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-09"
+ },
+ "You have Up from Slavery backwards.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_05"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-09"
  }
 }
