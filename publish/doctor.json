@@ -1,7 +1,9 @@
 {
  "on": true,
  "attempts": {
-  "mindlore-live-redo": 1
+  "mindlore-live-redo": 1,
+  "review-decide": 1,
+  "sm-scripts": 1
  },
  "pending": [],
  "log": [
@@ -28,9 +30,17 @@
   {
    "t": "11-09 06:17Z",
    "msg": "mindlore-live-redo: no safe automatic fix found"
+  },
+  {
+   "t": "11-09 18:40Z",
+   "msg": "review-decide: no safe automatic fix found"
+  },
+  {
+   "t": "11-09 18:40Z",
+   "msg": "sm-scripts: no safe automatic fix found"
   }
  ],
- "at": "2026-11-09T07:08:20Z",
+ "at": "2026-11-09T18:40:18Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
