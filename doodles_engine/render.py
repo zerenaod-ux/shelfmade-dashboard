@@ -180,7 +180,7 @@ def variant_mask(base,vp,face):
 def render(work):
     work=Path(work);st,timeline,total,env,wav_path=build(work)
     imgs=[Image.open(work/f'shot_{i:02d}.png').convert('RGB') for i in range(len(timeline))]
-    lips=load_lips(work,timeline)
+    lips=load_lips(work,timeline);mflags=[]
     geo={};fc={};eg={};life={'leo':eyes.Life(11,total+3),'mia':eyes.Life(23,total+3)} if eyes else {}
     if fastlip and (__import__('os').environ.get('FASTLIP') or any(work.glob('open_*.png')) or (work/'ls_out').is_dir()):
         for si_,im_ in enumerate(imgs):
@@ -205,8 +205,12 @@ def render(work):
                             try:geo[(si_,who_)]=variant_mask(np.asarray(im_),vp_,f_)
                             except Exception as ex:print('variant unusable',vp_.name,ex,flush=True)
                         elif not fastlip.is_open(np.asarray(im_),g_):geo[(si_,who_)]=g_
+                        else:
+                            print('MOUTH-OPEN-FLAG shot',si_+1,who_,flush=True);mflags.append('shot %d %s'%(si_+1,who_))
             except Exception as ex:print('face detect failed',si_,ex,flush=True)
         print('fast mouths ready for',len(geo),'faces',flush=True)
+        try:(work/'mouth_flags.json').write_text(json.dumps(mflags))
+        except Exception:pass
     align={}
     for _p in work.glob('align_*.json'):
         try:

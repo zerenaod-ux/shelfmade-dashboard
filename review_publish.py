@@ -55,7 +55,7 @@ def cloud_upload(video, brand='shelfmade'):
     return url
 
 
-def qc(video, title, text, full=False, seen_titles=()):
+def qc(video, title, text, full=False, seen_titles=(), mouth=()):
     """Automatic quality checks shown in the Issue (advice only: a human still approves). Returns (ok, [lines])."""
     out = []
     try:
@@ -81,6 +81,7 @@ def qc(video, title, text, full=False, seen_titles=()):
     r.append(chk(0 < len(title) <= 100, 'title %d characters' % len(title), 'title empty or over 100 characters'))
     r.append(chk('_' not in re.sub(r'(?:https?://|youtube\.com/|www\.)\S+', '', text) and 'Source-supported draft' not in text, 'no leftover markup', 'caption has leftover markup (_ or draft note)'))
     r.append(chk(title not in seen_titles, 'title is new', 'same title already reviewed before'))
+    if mouth: r.append(chk(False, '', 'a mouth may stay open while not talking (%s): look closely' % ', '.join(mouth)))
     return all(r), out
 
 
@@ -250,7 +251,9 @@ def main():
                 try:
                     import engage; text = engage.add(text, brand, title)
                 except Exception as _e: print('engage skipped:', str(_e)[:80])
-                okq, ql = qc(video, title, text, False, set(seen['titles']))
+                try: _mf = json.loads(open('data/doodles/mouth_flags.json').read()).get(z.stem, [])
+                except Exception: _mf = []
+                okq, ql = qc(video, title, text, False, set(seen['titles']), _mf)
                 url = cloud_upload(video, brand)
                 data = {'book': z.stem, 'tag': tag, 'title': title, 'text': text, 'url': url, 'brand': brand}
                 body = ('## Review this video\n\n**To post it: add the label `approve`. To drop it: add the label `skip`.**\n\n**Video:** %s\n\n**Title:** %s\n\n**Caption (all platforms):**\n\n%s\n\n**Automatic checks:**\n```\n%s\n```\n---\n'

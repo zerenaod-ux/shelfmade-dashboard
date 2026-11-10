@@ -94,6 +94,11 @@ def main():
         with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as f:
             f.write(work / 'short.mp4', 'final.mp4'); f.writestr('POST_THIS.txt', post)
             if (work / 'bed.music.json').is_file(): f.write(work / 'bed.music.json', 'MUSIC.json')
+        try:
+            mf = jl(str(work / 'mouth_flags.json'), [])
+            if mf:
+                ff = ROOT / 'data/doodles/mouth_flags.json'; cur = jl(str(ff), {}) if ff.is_file() else {}; cur['doodles-' + s['id']] = mf; ff.write_text(json.dumps(cur, indent=1))
+        except Exception as ex: log('mouth flags not saved', ex)
         used = jl(USED, []); used.append(s['id']); USED.write_text(json.dumps(used))
         made.append(s['id']); log('DONE', s['id'], round(time.time() - t), 's')
         for junk in ('k1_in', 'k1_kernel', 'k1_dl', 'ls_in', 'ls_kernel', 'ls_dl', 'silent.mp4'):

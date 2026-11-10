@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name "doodles-bot"; git config user.email "bot@users.noreply.github.com"
           git add -f data/doodles/used.json data/doodles/story_pool.json data/doodles/series.json data/doodles/fails.json data/doodles/kaggle-status.json 2>/dev/null || true
-          git add -f data/doodles/comment_ideas.json 2>/dev/null || true
+          git add -f data/doodles/comment_ideas.json data/doodles/mouth_flags.json data/doodles/format_history.json 2>/dev/null || true
           git diff --cached --quiet && { echo "no state change"; exit 0; }
           git commit -qm "doodles: state"
           for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
