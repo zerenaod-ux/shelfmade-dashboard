@@ -150,6 +150,30 @@ def _viewer_topic():
         if not L:return None
         t=L.pop(0);f.write_text(json.dumps(L,indent=1));print('viewer topic:',t);return t
     except Exception:return None
+FORMATS=[("ARGUMENT","a fast silly argument where both are sure they are right and it escalates"),
+("FUNNY EXPLAINER","Mia explains ONE small everyday thing in plain words (why the phone dies at 1 percent, why waiting feels longer), Leo asks the dumb questions everyone thinks, ends on a funny twist. One real fact, said like a friend, no big words"),
+("MINI MYSTERY","Leo plays a serious detective investigating a tiny crime (who ate the leftovers, who changed the thermostat), Mia is the unimpressed suspect"),
+("PART TWO","a sequel: 'yesterday's mess is still going', refer to what happened before, end with 'to be continued'"),
+("CONFESSION","Leo finally admits a small embarrassing thing he has been hiding, Mia reacts in the funniest way"),
+("FAKE NEWS REPORT","Leo and Mia are news anchors reporting a very serious story about a tiny everyday problem"),
+("RATING GAME","they rate or rank everyday things out of ten and argue over the scores"),
+("MISUNDERSTANDING","each thinks the other said something different and the mix-up grows until the reveal"),
+("PRANK","Mia plans a harmless prank on Leo and it backfires"),
+("ADVICE FAIL","Mia gives good advice, Leo takes it completely wrong")]
+MOODS=["very excited","dry and sarcastic","sweet and warm","chaotic","tired and deadpan","overdramatic"]
+ENDS=["a sudden twist","a savage one-liner from Mia","Leo gets what he deserves","they both give up and laugh","a cliffhanger for part two","a sweet moment that gets ruined"]
+FH=ROOT/'data/doodles/format_history.json'
+def pick_format():
+    """Rotating menu with memory: never the same format as any of the last 4 videos, plus a random mood and ending. Remembered in data/doodles/format_history.json."""
+    import random
+    try:h=json.loads(FH.read_text())
+    except Exception:h=[]
+    recent=[x['format'] for x in h[-4:]]
+    f=random.choice([x for x in FORMATS if x[0] not in recent] or FORMATS)
+    m,e=random.choice(MOODS),random.choice(ENDS)
+    h.append({'format':f[0],'mood':m,'end':e});FH.parent.mkdir(parents=True,exist_ok=True);FH.write_text(json.dumps(h[-30:],indent=1))
+    note=f" FORMAT OF THIS VIDEO (owner rule: every video must feel different, never repeat a pattern): {f[0]} - {f[1]}. Mood: {m}. Ending: {e}. Make the topic fit this format; do NOT reuse the shape, jokes or opening of recent videos."
+    return f[0],note
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []
 def main():
     n=int(sys.argv[1]) if len(sys.argv)>1 else 3;pool=load();taken={s['id'] for s in stories.STORIES}|{s['id'] for s in pool};made=0
@@ -161,9 +185,10 @@ def main():
         vnote=' LENGTH VARIANT (overrides the word count above): the whole video is 36 to 52 spoken words in total (about 15 to 22 seconds), SIX shots with ONE short line each, the joke lands in the first 2 seconds, keep the payoff and the loop.' if variant=='micro' else ' LENGTH VARIANT (overrides the word count above): the whole video is 52 to 68 spoken words in total (about 28 to 35 seconds), every line punchy, keep the hook, the payoff and the loop.' if variant=='tight' else ''
         tstyle='you' if len(pool)%2==0 else 'plain'   # title test (Nov 9): half the Doodles titles start with You/Your (our data: ~4x views on the other channels)
         if tstyle=='you':vnote+=' TITLE STYLE: the title is 2 to 5 words and starts with You or Your (a statement, e.g. "You Replied K Again").'
-        s=pick_best(topic,taken,variant,vnote)
+        fmt,fnote=pick_format()
+        s=pick_best(topic,taken,variant,vnote+fnote)
         if s is None:continue
-        if valid(s,taken,variant):s['variant']=variant;s['tstyle']=tstyle;s['style']='v2';pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
+        if valid(s,taken,variant):s['variant']=variant;s['tstyle']=tstyle;s['style']='v2';s['format']=fmt;pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
         else:print('rejected a story (format)')
     print('pool size',len(pool))
 if __name__=='__main__':main()
