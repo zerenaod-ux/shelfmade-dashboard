@@ -6,7 +6,8 @@ import json, re, sys, time, urllib.parse, urllib.request, gzip, datetime
 from pathlib import Path
 B = Path(__file__).parent; OUT = B / 'data/gaps'
 PHRASES = ['I wish there was', "there's no good", "I can't find a", 'why is there no', 'does anyone know a tool', 'looking for a template', 'nobody makes', "wish someone would build"]
-SE_SITES = ['diy', 'parenting', 'pets', 'money', 'fitness', 'cooking', 'travel', 'workplace', 'gardening', 'lifehacks', 'health', 'outdoors']
+SE_SITES = ['diy', 'parenting', 'pets', 'money', 'fitness', 'cooking', 'travel', 'workplace', 'gardening', 'lifehacks', 'health', 'outdoors', 'law', 'academia', 'sustainability', 'woodworking', 'mechanics', 'beer', 'coffee', 'sports', 'hermeneutics', 'islam', 'judaism', 'rpg', 'writing', 'music', 'photo', 'crafts', 'diy.meta'][:-1]
+LEMMY = ['https://lemmy.world', 'https://lemmy.ml', 'https://sh.itjust.works']
 HEALTH = re.compile(r'\b(cancer|diagnos|medicat|prescri|dose|symptom|disease|disorder|suicid|therapy|pregnan|surgery|drug)\w*', re.I)
 def get(url):
     r = urllib.request.Request(url, headers={'User-Agent': 'gap-finder/1 (research script)', 'Accept-Encoding': 'gzip'})
@@ -40,9 +41,21 @@ def from_se(since):
             except Exception as e: print('se', site, str(e)[:80])
             time.sleep(.5)
     return out
+def from_lemmy(since):
+    out = []
+    for inst in LEMMY:
+        for ph in PHRASES[:5]:
+            try:
+                d = get('%s/api/v3/search?q=%s&type_=Comments&sort=New&limit=40' % (inst, urllib.parse.quote(ph)))
+                for c in d.get('comments', []):
+                    t = clean(c.get('comment', {}).get('content'))
+                    if ph.lower() in t.lower(): out.append({'src': 'lemmy', 'text': snippet(t, ph)})
+            except Exception as e: print('lemmy', inst, ph, str(e)[:80])
+            time.sleep(1)
+    return out
 def rank(items):
     import llm
-    sample = items[:140]; lines = '\n'.join('%d. %s' % (i, s['text']) for i, s in enumerate(sample))
+    import random; random.seed(1); sample = random.sample(items, min(len(items), 160))   # mix of sources, not just the first ones; lines = '\n'.join('%d. %s' % (i, s['text']) for i, s in enumerate(sample))
     sysm = 'You find unmet needs people would pay to have solved. Reply JSON only.'
     usr = ('Below are numbered public snippets where people say they wish something existed or cannot find it. Group them into at most 8 TOPICS (a topic = one concrete unmet need that a small faceless digital product could serve: a guide, template, tracker, tool, or video series). '
            'Prefer needs of ordinary people (home, family, money, pets, work, hobbies, health organisation) over developer or gadget talk; the who field must be a specific kind of person, never Anonymous. For each topic give: topic (max 12 words), who (the person), ids (snippet numbers), '
@@ -62,7 +75,7 @@ def rank(items):
     return sorted(res, key=lambda x: -x['score'])
 def main():
     since = int(time.time()) - 60 * 86400
-    items = from_hn(since) + from_se(since)
+    hn, se, lm = from_hn(since), from_se(since), from_lemmy(since); print('by source: hn', len(hn), 'se', len(se), 'lemmy', len(lm)); items = hn + se + lm
     seen = set(); uniq = []
     for it in items:
         k = it['text'][:60].lower()
