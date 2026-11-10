@@ -1,8 +1,7 @@
 {
  "on": true,
  "attempts": {
-  "mindlore-live-redo": 1,
-  "review-decide": 2
+  "mindlore-live-redo": 1
  },
  "pending": [],
  "log": [
@@ -45,9 +44,13 @@
   {
    "t": "11-09 20:01Z",
    "msg": "sm-scripts: no safe automatic fix found"
+  },
+  {
+   "t": "11-10 21:24Z",
+   "msg": "bio-page: API quota/rate limit: resets by itself (no change needed)"
   }
  ],
- "at": "2026-11-10T15:12:51Z",
+ "at": "2026-11-10T21:24:46Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
