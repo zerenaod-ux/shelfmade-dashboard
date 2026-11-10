@@ -625,7 +625,7 @@ def make_voice(script, work):
             toks = [{'text': t, 'start': k / 2.7, 'end': (k + 1) / 2.7} for k, t in enumerate(j['text'].split())]
             Path(j['timing']).write_text(json.dumps({'tokens': toks, 'duration': dur}))
     else:
-        sys.path.insert(0, str(BASE)); os.environ.setdefault('CE_VOICE_ENGINE', 'edge')
+        sys.path.insert(0, str(BASE)); os.environ.setdefault('CE_VOICE_ENGINE', 'edge'); os.environ.setdefault('CE_EDGE_RATE', '+12%'); os.environ.setdefault('CE_EDGE_PITCH', '+3Hz')
         import local_voice
         local_voice.edge_run(jobs)
     return jobs
@@ -785,7 +785,7 @@ def build(sid, out, vert=False):
     jobs = make_voice(script, work); secs, words, total, narr, journeys = assemble(script, jobs, work, journey=not vert)
     tempo = 1.0
     if not vert and not os.environ.get('ML2D_NOTEMPO'):   # land between 8 and 10 minutes: slow the narration a little when the script is short
-        if total < 500: tempo = max(.88, total / 515.)
+        if total < 500: tempo = max(.97, total / 515.)
         elif total > 590: tempo = min(1.06, total / 585.)
         if abs(tempo - 1) > .005:
             nt = work / 'narration_t.wav'; subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(narr), '-filter:a', 'atempo=%.4f' % tempo, str(nt)], check=True); narr = nt

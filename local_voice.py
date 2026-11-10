@@ -27,10 +27,10 @@ def qwen_run(jobs):
 def edge_run(jobs):
  """Natural American neural voice (Microsoft Jenny via the free edge-tts library). Writes 24 kHz wav and, when asked, exact word timings."""
  import asyncio,os,subprocess,tempfile,edge_tts
- voice=os.environ.get('CE_EDGE_VOICE','en-US-JennyNeural');rate=os.environ.get('CE_EDGE_RATE','+0%')
+ voice=os.environ.get('CE_EDGE_VOICE','en-US-JennyNeural');rate=os.environ.get('CE_EDGE_RATE','+0%');pitch=os.environ.get('CE_EDGE_PITCH','+0Hz')
  async def one(text):
-  try:com=edge_tts.Communicate(text,voice,rate=rate,boundary='WordBoundary')
-  except TypeError:com=edge_tts.Communicate(text,voice,rate=rate)
+  try:com=edge_tts.Communicate(text,voice,rate=rate,pitch=pitch,boundary='WordBoundary')
+  except TypeError:com=edge_tts.Communicate(text,voice,rate=rate,pitch=pitch)
   audio=bytearray();words=[]
   async for chunk in com.stream():
    if chunk['type']=='audio':audio+=chunk['data']

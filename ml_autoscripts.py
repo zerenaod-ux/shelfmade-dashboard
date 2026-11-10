@@ -48,7 +48,7 @@ def check(txt_norm, d):
         bad.append('need exactly one passage per section')
     narr = ' '.join(s.get('narration', '') for s in secs)
     words = len(narr.split())
-    lo, hi = (950, 1250) if SH else (1100, 1350)
+    lo, hi = (950, 1250) if SH else (1250, 1500)
     if not lo <= words <= hi:
         bad.append('narration has %d words; need %d-%d' % (words, lo, hi))
     nn = norm(narr)
@@ -232,7 +232,7 @@ def _grow(tn, d, lo, hi):
 
 
 def _lenfix(tn, window, d, bad):
-    lo, hi = (950, 1250) if SH else (1100, 1350)
+    lo, hi = (950, 1250) if SH else (1250, 1500)
     for _ in range(3):
         if not bad or not all(x.startswith('narration has') for x in bad): break
         if _grow(tn, d, lo, hi) == 0:
