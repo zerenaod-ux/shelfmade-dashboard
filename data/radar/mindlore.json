@@ -1,48 +1,36 @@
 {
  "why": [
   {
-   "title": "5 Secret Meanings Behind Your Everyday Habits | Psychology Facts You Didn't Know",
-   "why": "It leverages high-curiosity personal relevance (Breakout 21.6) by framing mundane daily actions as hidden reveals about the viewer's subconscious."
-  },
-  {
-   "title": "9 Psychology Facts You Won't Believe Are True! | Amazing Facts About Human Behavior",
-   "why": "Massive breakout performance (90.6) driven by a high-tempo listicle format promising extreme belief-shattering insights into human nature."
+   "title": "9 Psychology Facts You Won't Believe Are True!  | Amazing Facts About Human Behavior",
+   "why": "A shocking listicle with a bold claim triggers curiosity and high shareability, especially on a tiny channel where the breakout is massive."
   },
   {
    "title": "4 Very Dark Psychology Tricks That Reveal Human Nature | Dark Psychology Facts",
-   "why": "Taps into taboos and self-preservation emotions (Breakout 49.6) using a fast-paced, actionable list dynamic around hidden human motives."
+   "why": "The \"dark\" label taps fear and intrigue, and the concise \"4 tricks\" format promises quick, actionable insight."
+  },
+  {
+   "title": "5 Secret Meanings Behind Your Everyday Habits | Psychology Facts You Didn't Know",
+   "why": "Everyday habits are instantly relatable; promising hidden meanings creates a personal hook that viewers feel they must know."
   },
   {
    "title": "6 Signs You're a Rare and Special Person | Powerful Psychology Facts About You",
-   "why": "Drives immediate viewer engagement (Breakout 29.4) through ego-validation and positive identity reinforcement disguised as psychological analysis."
+   "why": "Appealing to self\u2011identity and uniqueness draws viewers seeking validation, driving high engagement per subscriber."
   }
  ],
  "hook_patterns": [
-  "Subconscious reveal: 'If you do [everyday action], your brain is secretly doing this...'",
-  "Ego-validation framing: '3 subtle signs your mind operates differently than 99% of people...'",
-  "Taboo warning: 'The dark reason people actually behave this way when you...'"
+  "Listicle with a bold, surprising claim that promises secret knowledge",
+  "Contrast between common belief and hidden truth to spark curiosity",
+  "Emotionally charged phrasing (e.g., \"rare\", \"dark\", \"secret\") that targets self\u2011image"
  ],
- "todays_angle": "Translate classic 19th and early 20th-century psychological texts into high-curiosity, self-diagnostic habit breakdowns.",
+ "todays_angle": "Reveal the hidden psychology behind the digital habits we perform every day",
  "ideas": [
-  {
-   "title": "3 Habits That Prove You Have High Emotional Intelligence (According to 1920s Psychology)",
-   "script_hook": "If you catch yourself doing these 3 subtle things in conversation, William James proved your brain processes emotion differently than most.",
-   "source_text": "Principles of Psychology by William James"
-  },
-  {
-   "title": "The Secret Meaning Behind How You Walk (100-Year-Old Mind Hack)",
-   "script_hook": "Early behavioral psychologists discovered that your walking speed reveals a hidden truth about your stress levels.",
-   "source_text": "The Crowd: A Study of the Popular Mind by Gustave Le Bon"
-  },
-  {
-   "title": "4 Dark Signs Someone Is Manipulating Your Attention (Classic Psychology)",
-   "script_hook": "Before modern algorithms existed, 19th-century psychologists identified these 4 subconscious traps people use to control your focus.",
-   "source_text": "Public Opinion by Walter Lippmann"
-  }
+  "\"5 Subconscious Cues Your Phone Notifications Send to Your Brain\" \u2013 quick cuts showing each cue with a voice\u2011over explanation",
+  "\"3 Ways Your Scrolling Pattern Reveals Your Personality Type\" \u2013 split\u2011screen visual of scrolling behavior and trait overlay",
+  "\"Why We Remember the First and Last Items in a List (And Forget the Middle)\" \u2013 animated diagram plus real\u2011life examples"
  ],
  "avoid": [
-  "Generic 'Sigma Male' or superficial dating advice hooks devoid of historical substance.",
-  "Off-niche health, weight-loss, or lifestyle hacks that undermine classic literature credibility."
+  "Overused \"dark psychology tricks\" compilations that are saturated across channels",
+  "Generic relationship fact lists about \"girls\" or \"boys\" that lack a unique angle"
  ],
  "updated": "2026-11-10",
  "sample": 70,
@@ -50,92 +38,92 @@
   {
    "title": "5 Secret Meanings Behind Your Everyday Habits | Psychology Facts You Didn't Know",
    "channel": "Why We Do It",
-   "views": 228947,
-   "hours": 36,
-   "vph": 6277.4,
+   "views": 253908,
+   "hours": 42,
+   "vph": 6040.1,
    "subs": 10600,
-   "breakout": 21.6
+   "breakout": 24.0
+  },
+  {
+   "title": "Don\u2019t Get Angry When They Mock You #shorts",
+   "channel": "Indentitydecode",
+   "views": 137645,
+   "hours": 28,
+   "vph": 4999.0,
+   "subs": 100000,
+   "breakout": 1.4
   },
   {
    "title": "7 Psychology Facts About Girls That Will Surprise Every Boy! \ud83d\ude33\u2764\ufe0f | Girls Secrets",
    "channel": "YOUR TUTOR CORNER",
-   "views": 215086,
-   "hours": 41,
-   "vph": 5217.6,
-   "subs": 28500,
+   "views": 216344,
+   "hours": 47,
+   "vph": 4623.9,
+   "subs": 28700,
    "breakout": 7.5
   },
   {
-   "title": "\u0917\u0932\u0924\u092b\u0939\u092e\u0940 #psychology #motivation #successmind #mindset #growlifebuddy #facts #darkpsychology",
-   "channel": " GROWLIFEBUDDY ",
-   "views": 91148,
+   "title": "Top 2 Letters That Reveal Your Personality \u26a1\ud83e\udde0 #shorts #shortsfeed",
+   "channel": "PSYVEXS",
+   "views": 116307,
    "hours": 26,
-   "vph": 3482.2,
-   "subs": 16700,
-   "breakout": 5.5
-  },
-  {
-   "title": "Psychology Facts\ud83d\udcaf#motivation #psychologyfacts #trending #viral #ytshorts #facts #ideas #lifelessons",
-   "channel": "\ud835\ude51\ud835\ude56\ud835\ude67\ud835\ude68\ud835\ude5d\ud835\ude56 \ud835\ude4e\ud835\ude6c\ud835\ude56\ud835\ude62\ud835\ude5e",
-   "views": 69933,
-   "hours": 23,
-   "vph": 2979.8,
-   "subs": 110000,
-   "breakout": 0.6
-  },
-  {
-   "title": "4 Signs You Both Have a Crush on Each Other... #shorts #psychologyfacts",
-   "channel": "HeartSync",
-   "views": 67642,
-   "hours": 23,
-   "vph": 2944.6,
-   "subs": 25300,
-   "breakout": 2.7
-  },
-  {
-   "title": "4 Sigma Rule \ud83d\udd25 I Sigma male psychology #psychology #shortsfeed",
-   "channel": "FactByte02",
-   "views": 22375,
-   "hours": 8,
-   "vph": 2642.8,
-   "subs": 126000,
-   "breakout": 0.2
+   "vph": 4467.6,
+   "subs": 89900,
+   "breakout": 1.3
   },
   {
    "title": "\u092e\u093e\u092b \u0915\u0930\u0928\u093e #motivation #successmind #psychology #growlifebuddy #mindset #facts #darkpsychology",
    "channel": " GROWLIFEBUDDY ",
-   "views": 16916,
-   "hours": 8,
-   "vph": 2054.4,
-   "subs": 16700,
-   "breakout": 1.0
+   "views": 55699,
+   "hours": 14,
+   "vph": 4036.3,
+   "subs": 16800,
+   "breakout": 3.3
   },
   {
-   "title": "Psychology Facts #shorts #facts #educational #psychologyfacts #viral #ytshorts #usashorts",
-   "channel": "Soul Motivate",
-   "views": 66640,
-   "hours": 39,
-   "vph": 1710.3,
-   "subs": 7670,
-   "breakout": 8.7
+   "title": "\u0905\u091a\u093e\u0928\u0915 \u092e\u0948\u0938\u0947\u091c \u092f\u093e \u0915\u0949\u0932 #mindset #successmind #motivation #psychology #growlifebuddy #darkpsychology",
+   "channel": " GROWLIFEBUDDY ",
+   "views": 17941,
+   "hours": 4,
+   "vph": 3989.5,
+   "subs": 16800,
+   "breakout": 1.1
   },
   {
-   "title": "\u092a\u0947\u091f \u0915\u0940 \u091a\u0930\u094d\u092c\u0940 \u0910\u0938\u0947 \u0915\u092e \u0915\u0930\u0947\u0902\ud83d\ude31\ud83d\ude31 #psychologyfacts #shorts #bodyhack #weightloss #fatloss #youtubeshorts",
-   "channel": "Rahul roy",
-   "views": 21067,
-   "hours": 45,
-   "vph": 465.8,
-   "subs": 141,
-   "breakout": 105.3
+   "title": "\ub2e4\ud06c \uc2ec\ub9ac\ud559 : \ub0a8\uc790 \ud3b8",
+   "channel": "\ub355\uc218\uc640 \ub355\uc21c",
+   "views": 120108,
+   "hours": 31,
+   "vph": 3870.2,
+   "subs": 73900,
+   "breakout": 1.6
+  },
+  {
+   "title": "\u0917\u0932\u0924\u092b\u0939\u092e\u0940 #psychology #motivation #successmind #mindset #growlifebuddy #facts #darkpsychology",
+   "channel": " GROWLIFEBUDDY ",
+   "views": 92637,
+   "hours": 32,
+   "vph": 2918.5,
+   "subs": 16800,
+   "breakout": 5.5
   },
   {
    "title": "9 Psychology Facts You Won't Believe Are True!  | Amazing Facts About Human Behavior",
    "channel": "MindFacts Daily",
-   "views": 64621,
-   "hours": 40,
-   "vph": 1613.7,
-   "subs": 713,
-   "breakout": 90.6
+   "views": 66500,
+   "hours": 46,
+   "vph": 1458.0,
+   "subs": 725,
+   "breakout": 91.7
+  },
+  {
+   "title": "4 Very Dark Psychology Tricks That Reveal Human Nature | Dark Psychology Facts",
+   "channel": "MindFacts Daily",
+   "views": 41862,
+   "hours": 33,
+   "vph": 1255.5,
+   "subs": 725,
+   "breakout": 57.7
   }
  ]
 }
