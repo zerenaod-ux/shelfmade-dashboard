@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-f14f8",
+ "title": "The World as Will and Idea",
+ "author": "Arthur Schopenhauer",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "You Crave Things You Can Never Keep",
+ "hook": "You spend your whole life chasing the next big goal.",
+ "thumbnail_headline": "DESIRE NEVER ENDS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend your whole life chasing the next big goal. Nineteenth century philosopher Arthur Schopenhauer claimed that achieving your dreams actually brings no lasting joy. In 1971, psychologists Philip Brickman and Donald Campbell studied human happiness at Northwestern University and proved this true. They coined the term hedonic treadmill. What did the researchers find? They discovered that people quickly return to a baseline level of happiness after major positive events. The result? You buy a new car or get a promotion, but the satisfaction fades fast. Schopenhauer believed life oscillates endlessly between desire and boredom. Modern neuroscience agrees with his core intuition. In 1998, neuroscientist Kent Berridge at the University of Michigan showed that brain dopamine drives wanting, not liking. So why do we assume the next goal will fix everything? Because your brain is wired for pursuit, not contentment. That's it. Schopenhauer got the trap right, even if he was too pessimistic about escaping it. So next time you reach a huge goal, remember you spend your whole life chasing the next big goal."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People return to a baseline level of happiness shortly after major life events.",
+   "who": "Philip Brickman and Donald Campbell",
+   "year": "1971",
+   "place": "Northwestern University"
+  },
+  {
+   "claim": "Dopamine circuits mediate wanting separately from the pleasure of liking.",
+   "who": "Kent Berridge",
+   "year": "1998",
+   "place": "University of Michigan"
+  }
+ ],
+ "source_url": "",
+ "theme": "The World as Will and Idea by Arthur Schopenhauer",
+ "exp": ""
+}
