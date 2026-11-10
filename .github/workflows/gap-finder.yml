@@ -3,7 +3,8 @@ on:
   push:
     paths: ['publish/gaps.trigger']
   schedule:
-    - cron: '17 14 * * 1'   # weekly Monday
+    - cron: '17 14 * * 1'   # Monday: collect + rank everything gathered during the week
+    - cron: '17 14 * * 0,2-6'   # other days: only collect
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,7 +24,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
-        run: python gap_finder.py
+        run: |
+          if [ "$(date -u +%u)" = "1" ] || [ -f publish/gaps.trigger -a "${{ github.event_name }}" = "push" ]; then python gap_finder.py both; else python gap_finder.py collect; fi
       - name: Save results
         run: |
           git config user.name "studio-bot"; git config user.email "bot@users.noreply.github.com"

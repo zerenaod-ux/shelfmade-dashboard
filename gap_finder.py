@@ -55,7 +55,7 @@ def from_lemmy(since):
     return out
 def rank(items):
     import llm
-    import random; random.seed(1); sample = random.sample(items, min(len(items), 160)); lines = '\n'.join('%d. %s' % (i, s['text']) for i, s in enumerate(sample))
+    import random; random.seed(1); sample = random.sample(items, min(len(items), 200)); lines = '\n'.join('%d. %s' % (i, s['text']) for i, s in enumerate(sample))
     sysm = 'You find unmet needs people would pay to have solved. Reply JSON only.'
     usr = ('Below are numbered public snippets where people say they wish something existed or cannot find it. Group them into at most 8 TOPICS (a topic = one concrete unmet need that a small faceless digital product could serve: a guide, template, tracker, tool, or video series). '
            'Prefer needs of ordinary people (home, family, money, pets, work, hobbies, health organisation) over developer or gadget talk; the who field must be a specific kind of person, never Anonymous. For each topic give: topic (max 12 words), who (the person), ids (snippet numbers), '
@@ -73,22 +73,28 @@ def rank(items):
                         'examples': [sample[i]['text'][:160] for i in ids[:2]], 'sources': sorted({sample[i]['src'].split(':')[0] for i in ids})})
         except Exception: continue
     return sorted(res, key=lambda x: -x['score'])
-def main():
-    since = int(time.time()) - 60 * 86400
-    hn, se, lm = from_hn(since), from_se(since), from_lemmy(since); print('by source: hn', len(hn), 'se', len(se), 'lemmy', len(lm)); items = hn + se + lm
-    # memory: never re-read a snippet already ranked in an earlier run (hash kept 90 days); repeated TOPICS are tracked below instead
-    sf = OUT / 'seen.json'
-    try: old = json.loads(sf.read_text())
-    except Exception: old = {}
-    now = int(time.time()); old = {k: v for k, v in old.items() if now - v < 90 * 86400}
-    seen = set(old); uniq = []
-    for it in items:
-        k = re.sub(r'\W+', '', it['text'][:80].lower())
-        if k not in seen: seen.add(k); uniq.append(it); old[k] = now
+def key(it): return re.sub(r'\W+', '', it['text'][:80].lower())
+def load(f, d):
+    try: return json.loads(f.read_text())
+    except Exception: return d
+def main(mode):
+    OUT.mkdir(parents=True, exist_ok=True)
+    sf, pf = OUT / 'seen.json', OUT / 'pool.json'
+    now = int(time.time()); old = {k: v for k, v in load(sf, {}).items() if now - v < 90 * 86400}; pool = load(pf, [])
+    if mode in ('collect', 'both'):   # daily: quietly add NEW snippets to the pool (only last 4 days, or 60 on the very first run)
+        since = now - (4 if old or pool else 60) * 86400
+        hn, se, lm = from_hn(since), from_se(since), from_lemmy(since); print('by source: hn', len(hn), 'se', len(se), 'lemmy', len(lm))
+        have = set(old) | {key(x) for x in pool}
+        for it in hn + se + lm:
+            if key(it) not in have: have.add(key(it)); pool.append(it)
+        pf.write_text(json.dumps(pool)); print('pool now', len(pool))
+        if mode == 'collect': return
+    uniq = pool; items = pool
     print('snippets', len(items), 'unique', len(uniq))
     if len(uniq) < 15: print('too few NEW snippets, skipping (not marked as read)'); return
     top = rank(uniq)
-    OUT.mkdir(parents=True, exist_ok=True); sf.write_text(json.dumps(old))   # mark as read only after ranking worked
+    for it in uniq: old[key(it)] = now
+    sf.write_text(json.dumps(old)); pf.write_text('[]')   # mark as read + empty the pool only after ranking worked
     try: prev = json.loads((OUT / 'ranked.json').read_text()).get('runs', [])
     except Exception: prev = []
     def words(s): return {w for w in re.findall(r'[a-z]{4,}', s.lower())}
@@ -107,5 +113,5 @@ def main():
         md.append('- **%s** (score %s, seen in %d run(s), %d mentions, solved %s/10%s) - for: %s. Test product: %s' % (t['topic'], t['score'], t['weeks_seen'], t['mentions'], t['solved'], ', HEALTH: organisation tools only' if t['health'] else '', t['who'], t['product']))
     (OUT / 'latest.md').write_text('\n'.join(md) + '\n'); print('\n'.join(md))
 if __name__ == '__main__':
-    try: main()
+    try: main(sys.argv[1] if len(sys.argv) > 1 else 'both')
     except Exception as e: print('gap_finder skipped:', str(e)[:300])
