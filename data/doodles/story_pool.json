@@ -1,1 +1,309 @@
-[]
+[
+ {
+  "id": "your-first-day-boss",
+  "title": "Your First Day Boss Fight",
+  "concept": "FIRST DAY BOSS FIGHT",
+  "mood": "dramatic",
+  "insight": "Awkward moments are just power-ups in disguise.",
+  "caption": "Leo handles first-day panic by turning every awkward wave into a total power move.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo pacing the hallway holding a coffee mug, facing forward with wide worried eyes. Mia stands next to him in her teal sweater.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "I said it with full eye contact, Mia!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia typing on her phone while looking up with a subtle closed-mouth smirk. Leo stands behind her looking sheepish in his hoodie.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "You waved at a guy waving behind you!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holding a pillow like a shield, facing camera dramatically with raised eyebrows. Mia watches him from the side.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "So I kept spinning my arm like a windmill!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia near a digital clock showing a time, smiling with closed lips. Leo sits nearby pulling a blanket tight.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Scoreboard says fifty-six for me, windmill boy."
+     }
+    ]
+   },
+   {
+    "scene": "Leo typing on a laptop with a hopeful closed-mouth expression. Mia stands behind him holding a cup of tea. In the background, clearly visible and drawn in the same style, stands a grumpy neighbour in a bathrobe (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "normal",
+      "text": "Next time: finding a flat with zero neighbours."
+     }
+    ]
+   },
+   {
+    "scene": "Mia holding a cup of tea with raised eyebrows as a notification message arrives on the desk screen beside them. In the background, clearly visible and drawn in the same style, stands a proud dad in a polo shirt (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "pause",
+      "text": "Wait, did you really call Greg Dad?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 1,
+   "why": "Candidate 1 has the strongest escalation, sharpest punchlines, and a seamless loop.",
+   "scores": {
+    "i": 1,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 8,
+    "loop": 8
+   },
+   "n": 3
+  },
+  "variant": "micro",
+  "tstyle": "you",
+  "style": "v2"
+ },
+ {
+  "id": "fast-text-panic",
+  "title": "The Instant Reply Panic",
+  "concept": "INSTANT TEXT DREAD",
+  "mood": "dramatic",
+  "insight": "Replying in zero seconds makes you feel like a social monster.",
+  "caption": "Leo replied to a text before it even hit the screen. Watch him try to act cool.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits in a bright room typing on his phone with worried eyes. Mia stands beside him holding a coffee mug with a smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "I didn't reply fast, my phone glitched!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "You replied in minus two seconds, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is pacing the hallway looking nervous. Mia sits at the dining table typing on a laptop with a calm smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "Okay but hear me out, I was typing!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo is pulling the pillow over his face on the couch. Mia stands nearby looking amused with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Scoreboard fifty-eight. You look desperate."
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "snap",
+      "text": "I'm hiding under this pillow!"
+     }
+    ]
+   },
+   {
+    "scene": "A notification arrives on a phone on the counter. Leo and Mia sit upright at the desk, looking startled.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "normal",
+      "text": "This is worse than your Sunday Scaries Trap."
+     }
+    ]
+   },
+   {
+    "scene": "A digital clock showing a time glows on the nightstand. Leo ducks under a blanket while Mia watches deadpan.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "quick",
+      "text": "Just one more minute! Next time: flat hunting!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds a blank phone facing forward. Mia holds a coffee mug, looking at him with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "pause",
+      "text": "Why are you staring at a blank screen?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "plain",
+  "style": "v2"
+ },
+ {
+  "id": "one-percent-panic",
+  "title": "Your Phone Dies Now",
+  "concept": "LOW BATTERY PANIC LOOP",
+  "mood": "dramatic",
+  "insight": "Dying batteries turn a ten-step room into an extreme survival trek.",
+  "caption": "When the phone hits one percent across the room. Good luck.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo staring at his phone screen in terror while typing on his phone. Mia sitting next to him on the couch with a coffee mug.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "It's at one percent! Move!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "You're sitting five feet from the charger."
+     }
+    ]
+   },
+   {
+    "scene": "Leo walking pacing the hallway, shielding the phone screen like it's a fragile baby bird.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Five feet is a marathon! The air is thin!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Gerald the plant looks healthier than you right now."
+     }
+    ]
+   },
+   {
+    "scene": "Leo dropping to his knees dramatically on the floor, holding the phone up to catch a signal.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "pause",
+      "text": "The screen just dimmed. It's saying goodbye."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Just plug it in, dude."
+     }
+    ]
+   },
+   {
+    "scene": "Leo diving forward in slow motion toward a wall outlet with the cord. In the background, clearly visible and drawn in the same style, stands a worried mom in a cardigan (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "I'm going in! Tell my mom I love her!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo plugging the phone in right as the screen goes black, then slumping against the wall.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Told you so score is sixty now by the way."
+     },
+     {
+      "who": "leo",
+      "feel": "tired",
+      "beat": "quick",
+      "text": "Okay but hear me out."
+     }
+    ]
+   },
+   {
+    "scene": "Leo checking a notification message arrives on the screen, looking back up at Mia.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "snap",
+      "text": "What if it dies again?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "you",
+  "style": "v2"
+ }
+]
