@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-a04a3",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Face Reacts",
+ "hook": "You freeze your face when you hear shocking news.",
+ "thumbnail_headline": "FACE REACTION REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You freeze your face when you hear shocking news. Ancient humans showed subtle micro‑expressions that revealed surprise instantly. In 1969, psychologist Paul Ekman at the University of California, San Francisco documented about 0.5‑second micro‑expressions in surprised subjects. The result? Your eyebrows lift within a blink. In 2005, researchers at the University of California, Berkeley measured that participants' pupils dilated within about 0.5 seconds of unexpected auditory stimuli. A 1970s study by Silvan Tomkins described that surprised faces raise eyebrows in about 0.2 seconds. Later research across continents confirmed the same pattern, called the universal surprise response. What does that mean for everyday conversation? It means facial signals flash before you can speak. So why do we still miss these cues? Because we focus on words, not faces. Does modern tech help? Eye‑tracking shows reactions appear before speech. That's it. Your brain registers surprise faster than you realize. So next time you hear shocking headlines, notice the flash on your face. You freeze your face when you hear shocking news."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "micro‑expressions last about 0.5 seconds in surprised subjects",
+   "who": "Paul Ekman",
+   "year": "1969",
+   "place": "University of California, San Francisco"
+  },
+  {
+   "claim": "pupils dilate within about 0.5 seconds of unexpected auditory stimuli",
+   "who": "University of California, Berkeley researchers",
+   "year": "2005",
+   "place": "University of California, Berkeley"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

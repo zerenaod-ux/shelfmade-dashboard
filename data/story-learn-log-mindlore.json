@@ -854,6 +854,83 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261110-085fc",
+   "look": "live-demo",
+   "title": "Your Play Reveals Joy",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "brain",
+    "chart",
+    "clock",
+    "counter",
+    "headline",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261110-a04a3",
+   "look": "live-demo",
+   "title": "Your Face Reacts",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "chart",
+    "checklist",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261110-e5e95",
+   "look": "live-demo",
+   "title": "Your Kids Expect Shock",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "quote",
+    "reaction",
+    "search",
+    "timeline",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

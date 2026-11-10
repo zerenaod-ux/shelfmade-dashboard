@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-e5e95",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Kids Expect Shock",
+ "hook": "You think kids love happy endings.",
+ "thumbnail_headline": "KIDS WANT CHAOS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think kids love happy endings. Actually, they often prefer surprises that break the rules. In 2014, psychologists at the University of Chicago studied children and found a surprising pattern. The result? Kids rated unexpected twists as more interesting than logical conclusions. That's it. So why do we assume children need predictability? Research suggests toddlers are driven by violation of expectation. When a story breaks their mental model, their brains stay alert. This is not just an American finding. Studies in Japan and Germany show the same trend across cultures. The idea is called prediction error. Your brain releases dopamine when it fails to predict what happens next. Ancient storytellers knew this. They used cliffhangers to keep listeners awake around fires. It was a survival tool, not just entertainment. So next time you tell a bedtime story, remember that shock beats safety. Your kids expect shock."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Children rated unexpected twists as more interesting than logical conclusions",
+   "who": "Psychologists at the University of Chicago",
+   "year": "2014",
+   "place": "University of Chicago"
+  },
+  {
+   "claim": "Toddlers are driven by violation of expectation, keeping them alert",
+   "who": "Cross-cultural researchers",
+   "year": "2010s",
+   "place": "Japan and Germany"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": ""
+}

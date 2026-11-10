@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-085fc",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Play Reveals Joy",
+ "hook": "You think play is just child's fun.",
+ "thumbnail_headline": "PLAY TRIGGERS JOY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think play is just child's fun. Ancient hunters actually used play to bond and reduce stress. In 1978, Jaak Panksepp at Michigan observed rats emit about 50‑kHz chirps when tickled. The result? Those chirps are linked to pleasure, a primitive joy signal. Later, in 2012, Frans de Waal at Emory documented chimpanzees playing about 20% of daylight hours. Those primates laugh, grin, and even exchange playful tears. Other field studies on dolphins in the 1990s reported similar playful squeaks during surfacing. Even wolves engage in chase games that release endorphins, scientists measured in the 2000s. So why do we assume only humans can feel joy? Research shows play‑induced laughter appears across mammals, from rats to apes. Why does play trigger such a universal brain response? Because the brain's reward circuitry evolved to reinforce social bonding through fun. What does this mean for your daily routine? Adding brief play breaks can boost dopamine, similar to ancient joy rituals. That's it. So next time you feel stressed, remember a quick game lifts you, You think"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Rats emit about 50‑kHz ultrasonic chirps when tickled, indicating pleasure",
+   "who": "Jaak Panksepp",
+   "year": "1978",
+   "place": "University of Michigan"
+  },
+  {
+   "claim": "Chimpanzees engage in play for about 20% of daylight hours",
+   "who": "Frans de Waal",
+   "year": "2012",
+   "place": "Emory University"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}
