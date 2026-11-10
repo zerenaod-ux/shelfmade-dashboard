@@ -754,5 +754,47 @@
   "brand": "shelfmade",
   "kind": "short",
   "date": "2026-11-10"
+ },
+ "You have Discourses of Epictetus backwards.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_02"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-10"
+ },
+ "What did Apology see that we miss?": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "sm_candle_03"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-10"
+ },
+ "Stop reading Essays of Montaigne like this.": {
+  "styles": [
+   "sm_candle"
+  ],
+  "tracks": [
+   "ace_sm_candle_02"
+  ],
+  "mood": "calm",
+  "pace": null,
+  "exp": {},
+  "brand": "shelfmade",
+  "kind": "short",
+  "date": "2026-11-10"
  }
 }
