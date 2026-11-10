@@ -1,11 +1,11 @@
 {
- "at": "2026-11-10T19:45:33+00:00",
+ "at": "2026-11-10T20:53:27+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 1 h ago"
+   "text": "updated 0 h ago"
   },
   {
    "name": "Doodles daily run",
@@ -15,17 +15,17 @@
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "no judged story yet (no run since it went live)"
+   "text": "1 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 7 h ago"
+   "text": "ok=True, checked 0 h ago"
   },
   {
    "name": "Approved videos reach the queue",
-   "ok": false,
-   "text": "approved but NOT queued: #156 Review DOODLES: The Robot Replacement Pa"
+   "ok": true,
+   "text": "all approved Issues are queued"
   },
   {
    "name": "Free-tier room",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 2 h ago"
+   "text": "newest public video 3 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 2 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 2 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Service probes",
