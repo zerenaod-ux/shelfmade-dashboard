@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-656f6",
+ "title": "The Human Machine",
+ "author": "Arnold Bennett",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Your Energy Myth",
+ "hook": "You feel exhausted after a nine‑hour workday.",
+ "thumbnail_headline": "ENERGY VS EFFICIENCY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel exhausted after a nine‑hour workday. Ancient thinkers believed humans could sustain far longer effort. In the 1960s, anthropologist Richard Lee studied the Kalahari !Kung and counted about 15 to 20 hours of food‑related work each week. Arnold Bennett wrote in 1913 that the mind is a human machine that can double output with proper rhythm. He argued that a steady routine could double output. He called this the \"efficiency principle.\" The result? Modern research shows most office workers stay truly productive only about three hours a day. In 1999, psychologist Roy Baumeister at the University of Queensland measured willpower loss after two hours of self‑control tasks and found about a 15 % drop. So why do we still glorify endless overtime? Because corporate culture rewards visible hours, not hidden output. Other studies from the 2000s on Scandinavian workplaces report similar three‑hour productivity peaks, a pattern called the \"focus window.\" That's it. So next time you schedule a marathon meeting, remember you can’t out‑work your brain. You feel exhausted"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 15 to 20 hours of food‑related work each week",
+   "who": "Richard Lee",
+   "year": "1960s",
+   "place": "Kalahari !Kung"
+  },
+  {
+   "claim": "about a 15 % drop in willpower after two hours of self‑control tasks",
+   "who": "Roy Baumeister",
+   "year": "1999",
+   "place": "University of Queensland"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Human Machine by Arnold Bennett",
+ "exp": ""
+}

@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-6b8d6",
+ "title": "Acres of Diamonds",
+ "author": "Russell Conwell",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Your Potential Is Hidden",
+ "hook": "You think success requires luck.",
+ "thumbnail_headline": "HIDDEN DIAMONDS AROUND YOU",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think success requires luck. A century ago, Russell Conwell said otherwise. In 1890, he told 4,000 students at Temple University that wealth was buried in their own backyards. He argued that character, not capital, creates value. That is it. Modern research agrees with his core insight. In 2004, psychologist Angela Duckworth studied West Point cadets and top-tier contest participants. She found that grit, not talent, predicted success. She counted specific hours of sustained effort. The result? Persistence outperformed IQ scores by a wide margin. This is not just one group. Studies across universities and corporations confirm that consistent focus beats raw intelligence. So why do we assume hard work is pointless? Because we focus on failure, not progress. Conwell was right about the source, but modern science clarifies the method. It is not just about digging. It is about knowing where to dig. So next time you think success requires luck, remember: the diamond is in your backyard."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Grit predicts success better than talent or IQ",
+   "who": "Angela Duckworth",
+   "year": "2004",
+   "place": "West Point and National Spelling Bee"
+  },
+  {
+   "claim": "Character and effort create more value than inherited wealth",
+   "who": "Russell Conwell",
+   "year": "1890",
+   "place": "Temple University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Acres of Diamonds by Russell Conwell",
+ "exp": ""
+}
