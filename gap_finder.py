@@ -76,14 +76,26 @@ def rank(items):
 def main():
     since = int(time.time()) - 60 * 86400
     hn, se, lm = from_hn(since), from_se(since), from_lemmy(since); print('by source: hn', len(hn), 'se', len(se), 'lemmy', len(lm)); items = hn + se + lm
-    seen = set(); uniq = []
+    # memory: never re-read a snippet already ranked in an earlier run (hash kept 90 days); repeated TOPICS are tracked below instead
+    sf = OUT / 'seen.json'
+    try: old = json.loads(sf.read_text())
+    except Exception: old = {}
+    now = int(time.time()); old = {k: v for k, v in old.items() if now - v < 90 * 86400}
+    seen = set(old); uniq = []
     for it in items:
-        k = it['text'][:60].lower()
-        if k not in seen: seen.add(k); uniq.append(it)
+        k = re.sub(r'\W+', '', it['text'][:80].lower())
+        if k not in seen: seen.add(k); uniq.append(it); old[k] = now
     print('snippets', len(items), 'unique', len(uniq))
-    if len(uniq) < 15: print('too few snippets, skipping'); return
+    if len(uniq) < 15: print('too few NEW snippets, skipping (not marked as read)'); return
     top = rank(uniq)
-    OUT.mkdir(parents=True, exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True); sf.write_text(json.dumps(old))   # mark as read only after ranking worked
+    try: prev = json.loads((OUT / 'ranked.json').read_text()).get('runs', [])
+    except Exception: prev = []
+    def words(s): return {w for w in re.findall(r'[a-z]{4,}', s.lower())}
+    for t_ in top:   # recurrence: how many earlier runs had a similar topic (>=2 shared words) = the strong signal
+        w = words(t_['topic']); t_['weeks_seen'] = 1 + sum(1 for r in prev if any(len(w & words(o['topic'])) >= 2 for o in r.get('topics', [])))
+        t_['score'] = round(t_['score'] + 2 * (t_['weeks_seen'] - 1), 1)
+    top.sort(key=lambda x: -x['score'])
     today = datetime.date.today().isoformat()
     f = OUT / 'ranked.json'
     try: hist = json.loads(f.read_text())
@@ -92,7 +104,7 @@ def main():
     f.write_text(json.dumps(hist, indent=1))
     md = ['# Gap-finder, %s (%d snippets)' % (today, len(uniq)), '']
     for t in top[:6]:
-        md.append('- **%s** (score %s, %d mentions, solved %s/10%s) - for: %s. Test product: %s' % (t['topic'], t['score'], t['mentions'], t['solved'], ', HEALTH: organisation tools only' if t['health'] else '', t['who'], t['product']))
+        md.append('- **%s** (score %s, seen in %d run(s), %d mentions, solved %s/10%s) - for: %s. Test product: %s' % (t['topic'], t['score'], t['weeks_seen'], t['mentions'], t['solved'], ', HEALTH: organisation tools only' if t['health'] else '', t['who'], t['product']))
     (OUT / 'latest.md').write_text('\n'.join(md) + '\n'); print('\n'.join(md))
 if __name__ == '__main__':
     try: main()
