@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-51f8e",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Play Boosts Joy",
+ "hook": "You think play is just for fun.",
+ "thumbnail_headline": "PLAY TRIGGERS JOY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think play is just for fun. Ancient hunters actually used play to bond and reduce stress. In 1982, primatologist Frans de Waal observed chimpanzees at a sanctuary and recorded about 30% of their daily activity as play. The result? Play boosted group cohesion and lowered aggression. Later, in 2004, neuroscientist Jaak Panksepp found about 70% of rats emitted laughter‑like chirps when tickled. That shows joy isn’t human‑only, it’s a shared brain response. Other researchers, from the University of Oxford in 2014, saw dolphins surf for pleasure, confirming the play‑joy link. This pattern is called the play signaling hypothesis. So why do we assume animals only act out of survival? Because early science ignored vocal cues, yet modern data prove emotional expression. What does this mean for you today? It means taking play breaks can lift your mood naturally. So next time you feel stressed, remember to play like our ancestors did. You think play is just for fun."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 30% of daily activity was play",
+   "who": "Frans de Waal",
+   "year": "1982",
+   "place": "chimpanzee sanctuary"
+  },
+  {
+   "claim": "about 70% of rats emitted laughter‑like chirps when tickled",
+   "who": "Jaak Panksepp",
+   "year": "2004",
+   "place": "University of Michigan"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

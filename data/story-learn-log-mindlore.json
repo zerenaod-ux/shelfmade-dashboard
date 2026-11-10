@@ -822,6 +822,38 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261110-51f8e",
+   "look": "live-demo",
+   "title": "Your Play Boosts Joy",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "chat",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "notif",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
