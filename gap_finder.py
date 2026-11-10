@@ -22,7 +22,7 @@ def from_hn(since):
     out = []
     for ph in PHRASES:
         try:
-            d = get('https://hn.algolia.com/api/v1/search_by_date?query=%s&tags=comment&hitsPerPage=40&numericFilters=created_at_i>%d' % (urllib.parse.quote('"%s"' % ph), since))
+            d = get('https://hn.algolia.com/api/v1/search_by_date?query=%s&tags=comment&hitsPerPage=100&numericFilters=created_at_i>%d' % (urllib.parse.quote('"%s"' % ph), since))
             for h in d.get('hits', []):
                 t = clean(h.get('comment_text'))
                 if ph.lower() in t.lower(): out.append({'src': 'hn', 'text': snippet(t, ph)})
@@ -34,7 +34,7 @@ def from_se(since):
     for site in SE_SITES:
         for ph in ("is there a", "no good way to"):
             try:
-                d = get('https://api.stackexchange.com/2.3/search/excerpts?order=desc&sort=creation&q=%s&site=%s&pagesize=15&fromdate=%d' % (urllib.parse.quote(ph), site, since))
+                d = get('https://api.stackexchange.com/2.3/search/excerpts?order=desc&sort=creation&q=%s&site=%s&pagesize=25&fromdate=%d' % (urllib.parse.quote(ph), site, since))
                 for it in d.get('items', []):
                     if it.get('item_type') == 'question' and it.get('answer_count', 1) <= 1: out.append({'src': 'se:' + site, 'text': clean(it.get('title'))[:200]})
             except Exception as e: print('se', site, str(e)[:80])
@@ -45,7 +45,7 @@ def rank(items):
     sample = items[:140]; lines = '\n'.join('%d. %s' % (i, s['text']) for i, s in enumerate(sample))
     sysm = 'You find unmet needs people would pay to have solved. Reply JSON only.'
     usr = ('Below are numbered public snippets where people say they wish something existed or cannot find it. Group them into at most 8 TOPICS (a topic = one concrete unmet need that a small faceless digital product could serve: a guide, template, tracker, tool, or video series). '
-           'Ignore pure software-developer chatter unless a non-developer would pay. For each topic give: topic (max 12 words), who (the person), ids (snippet numbers), '
+           'Prefer needs of ordinary people (home, family, money, pets, work, hobbies, health organisation) over developer or gadget talk; the who field must be a specific kind of person, never Anonymous. For each topic give: topic (max 12 words), who (the person), ids (snippet numbers), '
            'demand 1-10 (how many/how strongly), solved 1-10 (10 = good solutions already exist), product (cheapest test product, one line), health true/false (medical topic). '
            'JSON: {"topics":[{"topic":"","who":"","ids":[1],"demand":5,"solved":3,"product":"","health":false}]}\n\n' + lines)
     r = llm.json_call(sysm, usr)
@@ -61,7 +61,7 @@ def rank(items):
         except Exception: continue
     return sorted(res, key=lambda x: -x['score'])
 def main():
-    since = int(time.time()) - 21 * 86400
+    since = int(time.time()) - 60 * 86400
     items = from_hn(since) + from_se(since)
     seen = set(); uniq = []
     for it in items:
