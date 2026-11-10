@@ -1,8 +1,8 @@
-# Gap-finder, 2026-11-10 (59 snippets)
+# Gap-finder, 2026-11-10 (158 snippets)
 
-- **AI‑free app store filter and per‑site media opt‑in extension** (score 14.9, 3 mentions, solved 2.0/10) - for: Anonymous. Test product: Chrome/Firefox extension that hides AI‑tagged apps and adds per‑site audio/video opt‑in toggles
-- **Design templates for niche physical products (watch, cup, pry bar)** (score 13.9, 3 mentions, solved 2.0/10) - for: Anonymous. Test product: CAD files and component sourcing guide for a minimal HR watch, non‑fade glass measuring cup, and rock‑digging pry bar with foot peg
-- **DIY home maintenance and safety troubleshooting guide** (score 13.3, 3 mentions, solved 4.0/10) - for: Anonymous. Test product: PDF/website with step‑by‑step fixes for ceiling sockets, Garmin marker bugs, and scaffolding brace tightening
-- **Quick health self‑care guides for common issues** (score 12.3, 3 mentions, solved 4.0/10, HEALTH: organisation tools only) - for: Anonymous. Test product: Short video series + ebook covering plantar fasciitis relief, post‑screw wound care, and opossum deterrent tips
-- **Career transition templates and reference outreach emails** (score 11.6, 2 mentions, solved 3.0/10) - for: Anonymous. Test product: Template pack with CV tweaks, interview prep, and polite reference‑request email scripts
-- **GPU marketplace platform for price arbitrage** (score 10.9, 1 mentions, solved 2.0/10) - for: Anonymous. Test product: Simple marketplace website that lists GPU resale prices and sends arbitrage alerts to users
+- **Curated educational video platform** (score 13.1, 3 mentions, solved 3.0/10) - for: Adult lifelong learner. Test product: Web app that filters YouTube to education‑only content, free tier
+- **Affordable home media streaming kit** (score 10.8, 2 mentions, solved 4.0/10) - for: Family TV viewer. Test product: DIY Android TV box kit using Raspberry Pi, $35
+- **Marketplace for durable, timeless clothing** (score 10.8, 2 mentions, solved 4.0/10) - for: Eco‑conscious shopper. Test product: Online marketplace for quality fabrics, $0 listing fee
+- **Home electrical & lightning safety checklist** (score 10.8, 2 mentions, solved 4.0/10) - for: DIY homeowner. Test product: Free mobile checklist app for ceiling sockets and lightning protector maintenance
+- **Practical cooking hacks and tools guide** (score 10.7, 3 mentions, solved 6.0/10) - for: Home cook. Test product: E‑book "Kitchen Hacks" covering measuring cups, tiny dough balls, coating tricks, $7
+- **Minimal heart‑rate‑only smartwatch** (score 10.1, 1 mentions, solved 3.0/10, HEALTH: organisation tools only) - for: Fitness enthusiast. Test product: Low‑cost wristband with HR sensor only, $20

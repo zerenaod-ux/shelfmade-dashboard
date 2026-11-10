@@ -139,6 +139,145 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "snippets": 158,
+   "topics": [
+    {
+     "topic": "Curated educational video platform",
+     "who": "Adult lifelong learner",
+     "mentions": 3,
+     "demand": 6.0,
+     "solved": 3.0,
+     "score": 13.1,
+     "product": "Web app that filters YouTube to education\u2011only content, free tier",
+     "health": false,
+     "examples": [
+      "I wish there was a way to sort by recency, if i m mainly interested in finding obscure gems from like last 6 to 12 months of ai and tech updates",
+      "I wish there was a way I could get educational-only youtube as an adult. It would really help to remove the irrelevant suggestions and keep me from listening to"
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Affordable home media streaming kit",
+     "who": "Family TV viewer",
+     "mentions": 2,
+     "demand": 5.0,
+     "solved": 4.0,
+     "score": 10.8,
+     "product": "DIY Android TV box kit using Raspberry\u202fPi, $35",
+     "health": false,
+     "examples": [
+      "Oh how I wish there was an Apple TV app for this. I do all my YouTube browsing on an Apple TV.",
+      "I wish there was a reasonably cheap, sufficiently powerful TV box compatible with a free distribution Android TV. Something like Graphene Lineage for TVs. Linea"
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Marketplace for durable, timeless clothing",
+     "who": "Eco\u2011conscious shopper",
+     "mentions": 2,
+     "demand": 5.0,
+     "solved": 4.0,
+     "score": 10.8,
+     "product": "Online marketplace for quality fabrics, $0 listing fee",
+     "health": false,
+     "examples": [
+      "I wish there was a line of brands and even better shops that focused on quality fabrics and sewing processes for clothing that lasts for ages as it used to. The",
+      "h closets filled of junk that they look terrible in anyway. I wish there was a line of brands and even better shops that focused on quality fabrics and sewing p"
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Home electrical & lightning safety checklist",
+     "who": "DIY homeowner",
+     "mentions": 2,
+     "demand": 5.0,
+     "solved": 4.0,
+     "score": 10.8,
+     "product": "Free mobile checklist app for ceiling sockets and lightning protector maintenance",
+     "health": false,
+     "examples": [
+      "Bad socket in ceiling light fixture: unsafe?",
+      "Operation and reuse of AL-D4W-DP lightning protector"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "Practical cooking hacks and tools guide",
+     "who": "Home cook",
+     "mentions": 3,
+     "demand": 6.0,
+     "solved": 6.0,
+     "score": 10.7,
+     "product": "E\u2011book \"Kitchen Hacks\" covering measuring cups, tiny dough balls, coating tricks, $7",
+     "health": false,
+     "examples": [
+      "Glass measuring cups with lines that don t fade",
+      "How do I make very, very small dough balls?"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "Minimal heart\u2011rate\u2011only smartwatch",
+     "who": "Fitness enthusiast",
+     "mentions": 1,
+     "demand": 4.0,
+     "solved": 3.0,
+     "score": 10.1,
+     "product": "Low\u2011cost wristband with HR sensor only, $20",
+     "health": true,
+     "examples": [
+      "I wish there was a minimal Casio watch which only had heart rate tracking (with high frequency polling too)."
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Interactive manager\u2011career decision quiz",
+     "who": "Mid\u2011level professional",
+     "mentions": 1,
+     "demand": 4.0,
+     "solved": 3.0,
+     "score": 10.1,
+     "product": "Web\u2011based quiz \"Should I be a manager?\" with ranked reasons, $3",
+     "health": false,
+     "examples": [
+      "I wish there was a Reasons I didn t become a manager, ranked to help my career decisions."
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Cat aggression troubleshooting guide",
+     "who": "Cat owner",
+     "mentions": 1,
+     "demand": 4.0,
+     "solved": 5.0,
+     "score": 8.5,
+     "product": "PDF guide \"Calm Your Cat\" with behavior tips, $5",
+     "health": false,
+     "examples": [
+      "My cat becomes aggressive towards me after an argument with my girlfriend"
+     ],
+     "sources": [
+      "se"
+     ]
+    }
+   ]
   }
  ]
 }
