@@ -34,11 +34,12 @@ jobs:
         run: |
           python analytics.py
           python growth.py || true
+          python daily_report.py || true
           python winner_clone.py || true
       - name: Save results
         run: |
           git config user.name "studio-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -f data/analytics data/growth; git add -f data/doodles/comment_ideas.json data/winner-ideas-*.json 2>/dev/null || true
+          git add -f data/analytics data/growth data/daily; git add -f data/doodles/comment_ideas.json data/winner-ideas-*.json 2>/dev/null || true
           git diff --cached --quiet || { git commit -qm "weekly analytics"; for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 5; done; }
       - name: Phone alert issue
         env:
