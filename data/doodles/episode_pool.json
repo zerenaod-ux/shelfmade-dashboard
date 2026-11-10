@@ -1655,5 +1655,408 @@
     }
    }
   ]
+ },
+ {
+  "id": "mias-surprise-blunder",
+  "title": "The Secret Birthday Catastrophe",
+  "theme": "Mia's surprise birthday: Leo has to keep a secret and plan it in one day",
+  "premise": "Leo has exactly twelve hours to plan a surprise birthday party for Mia without blowing his cover or losing his mind. The absolute stake is his survival, because Mia's told-you-so scoreboard is currently sitting at 55 and she smells fear like a bloodhound.",
+  "running_gag": "Mia's phone battery is stuck at 3% for the entire day, yet she still manages to text Leo passive-aggressive reminders from across the room.",
+  "payoff": "Leo proudly unveils a meticulously planned party in the living room, only to find out Mia knew about it since 7 AM and had already eaten the entire cake while waiting for him to finish.",
+  "description": "Leo attempts to plan a massive surprise birthday party for Mia in a single day, but his overthinking destroys every single plan. Mia watches him spiral while keeping score of every blunder. Watch until the end to see the absolute worst way to celebrate.",
+  "scenes": [
+   {
+    "time": "08:15 AM",
+    "setting": "Leo and Mia's cramped kitchen, littered with half-empty cereal boxes and Gerald the houseplant looking distinctly stressed in the background.",
+    "concept": "SPOTLIGHT EFFECT",
+    "beat": "Leo is typing on his phone with sweaty thumbs, convinced the entire world and Dev the barista can tell he is hiding a secret birthday. Mia takes a slow sip from a coffee mug, deadpans that nobody cares enough about him to notice, and points out her dead phone battery.",
+    "story": {
+     "id": "mias-surprise-blunder-01",
+     "title": "The Secret Birthday Catastrophe",
+     "concept": "SPOTLIGHT EFFECT",
+     "mood": "dramatic",
+     "insight": "We assume everyone notices our tiny flaws, but they barely see us.",
+     "caption": "When you try to plan a surprise party and convince yourself the barista knows your deepest secrets.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "A cramped kitchen at 08:15 AM with half-empty cereal boxes and Gerald the houseplant looking stressed. Leo is typing on his phone with sweaty thumbs while pacing the hallway, facing the camera with wide anxious eyes.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Dev stared at my forehead for four whole minutes!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo is typing on his phone frantically near the counter. Mia sits across from him holding a coffee mug, staring blankly with her dead phone showing a 3 percent battery icon.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "He makes twelve dollars an hour, Leo. He is legally dead."
+        },
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "He read my entire credit score through my aura!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo drops his head into his hands while walking the hallway. Mia takes a slow sip from a coffee mug, smirking at her dead phone screen.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "My phone has been at three percent since the Jurassic period."
+        },
+        {
+         "who": "leo",
+         "feel": "defensive",
+         "text": "Okay but hear me out, my panic is completely justified!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia points a coffee mug at Leo with a flat stare. Gerald the houseplant droops further in the background next to a digital clock showing 08:16.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "It's the spotlight effect. You are not that interesting."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Wait, nobody noticed I put my sweater on backwards?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo stops typing on his phone and stares directly at Mia. Mia takes another slow sip from a coffee mug, raising one eyebrow.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Anyway. Scoreboard is fifty-six. You lose again today."
+        }
+       ]
+      },
+      {
+       "scene": "Leo starts typing on his phone again with a frantic expression. Mia scrolls her dead phone with a blank stare, facing the camera.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Next time: Brenda's clipboard discovers our tax fraud."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "01:30 PM",
+    "setting": "The narrow apartment hallway where Brenda the nosy neighbour with a clipboard watches Leo pacing the hallway while whispering suspiciously into his jacket.",
+    "concept": "CONFIRMATION BIAS",
+    "beat": "Leo starts scrolling through party rental sites, misinterpreting every neutral glance from Brenda as an FBI-level interrogation about the balloons. Mia walks past eating toast, casually remarks that his scoreboard penalty is now 56, and drops a notification / message arrives from Kyle who says just wing it, bro.",
+    "story": {
+     "id": "mias-surprise-blunder-02",
+     "title": "The Secret Birthday Catastrophe",
+     "concept": "CONFIRMATION BIAS",
+     "mood": "dramatic",
+     "insight": "We see only what confirms our panic",
+     "caption": "When you think the whole world knows your secret",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Narrow apartment hallway with scuffed wallpaper. Brenda the nosy neighbour with a clipboard watches Leo pacing the hallway while whispering suspiciously into his jacket.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Brenda literally knows about the surprise party balloons!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "She is just logging your heavy breathing for science."
+        }
+       ]
+      },
+      {
+       "scene": "Leo scrolling through party rental sites on his phone with sweaty thumbs while Brenda glares from behind her yellow clipboard.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Look at that clipboard! It is a federal threat matrix."
+        }
+       ]
+      },
+      {
+       "scene": "Leo walking up and down the narrow hallway, pacing fast, while Brenda taps her clipboard angrily. Mia walks past eating toast.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Scoreboard penalty is now fifty-six for sweating through cotton."
+        }
+       ]
+      },
+      {
+       "scene": "Mia holding her dead phone that somehow displays a 3% battery icon while typing on his phone with one hand.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "That is confirmation bias, weaponized by your total lack of chill."
+        }
+       ]
+      },
+      {
+       "scene": "Leo staring blankly at a notification / message arrives on his phone screen. Brenda taps her clipboard in the background.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "text": "Kyle just texted: 'Bro, just wing it like my crypto portfolio.'"
+        }
+       ]
+      },
+      {
+       "scene": "Leo dropping his phone in utter horror while Brenda raises her pen. Mia sips her tea calmly.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Brenda just wrote down my exact social security number and blood type!"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "06:45 PM",
+    "setting": "The messy living room featuring a deflated banner, a lopsided table, and Greg the boss visible through the window accidentally holding a party hat.",
+    "concept": "DUNNING-KRUGER EFFECT",
+    "beat": "Leo is typing on a laptop, fully convinced he is an elite event coordinator despite having zero balloons and a melting ice cream cake. Mia walks in, pulls the blanket over her head on the couch, and dryly asks if he needs help failing more efficiently.",
+    "story": {
+     "id": "mias-surprise-blunder-03",
+     "title": "The Secret Birthday Catastrophe",
+     "concept": "DUNNING-KRUGER EFFECT",
+     "mood": "dramatic",
+     "insight": "Incompetence breeds supreme confidence until the ice cream melts.",
+     "caption": "Leo tries to plan a surprise party with zero skills. What could possibly go wrong?",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo furiously typing on a laptop in the messy living room with a melting cake. Mia stands behind him, holding her phone at 3% battery.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "I'm three seconds away from absolute event perfection!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Scoreboard is fifty-five, and your cake is soup."
+        }
+       ]
+      },
+      {
+       "scene": "Leo typing on his phone while pacing the hallway past a window where Greg the boss holds a party hat.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "defensive",
+         "text": "Greg emailed 'Noted,' so he loves my vision!"
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "He typed that while crying into his coffee."
+        }
+       ]
+      },
+      {
+       "scene": "Mia pulls the blanket over her head on the couch, while a notification message arrives on her phone at 3% battery.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "excited",
+         "text": "This is way smoother than the robot panic!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Kyle says: just wing it bro, instructions blow."
+        }
+       ]
+      },
+      {
+       "scene": "Leo drops his coffee mug in shock as Mia sits upright on the couch staring blankly.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "That delusion is called the Dunning-Kruger effect."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "Okay but hear me out, burning smells fancy!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo typing on a laptop again as a digital clock showing a time flashes red on the wall.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "Hide behind Gerald before Brenda sees this mess!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia standing by the window scrolling on her phone with a dead battery icon.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Anyway. Next time: Leo fixes Brenda's sink disaster!"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "09:00 PM",
+    "setting": "The living room floor where a digital clock showing a time of 09:00 blinks red in the dark next to an empty cake box.",
+    "concept": "COGNITIVE DISSONANCE",
+    "beat": "Leo turns on the lights and gasps as someone knocking on the door turns out to be nobody because it was just his own panic. Mia sits calmly beside the empty crumbs, checks her phone at 3% battery, and whispers, Next time: we just text Greg instead.",
+    "story": {
+     "id": "mias-surprise-blunder-04",
+     "title": "The Secret Birthday Catastrophe",
+     "concept": "COGNITIVE DISSONANCE",
+     "mood": "dramatic",
+     "insight": "Believing you are calm while sweating through your hoodie is elite denial.",
+     "caption": "When your surprise party planning goes up in melting ice cream.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "The living room floor where a digital clock showing a time of 09:00 blinks red in the dark next to an empty cake box, while Leo is typing on his phone.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "text": "Why am I sweating mayonnaise over a five-person party?"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Scoreboard is fifty-six because you forgot the actual cake."
+        }
+       ]
+      },
+      {
+       "scene": "Walking pacing the hallway past Greg the boss in the background looking at a clipboard, while Mia checks her dying phone.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "defensive",
+         "text": "I am an elite event coordinator, Kyle said so!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "text": "Kyle says just wing it while his own life burns."
+        }
+       ]
+      },
+      {
+       "scene": "Someone knocking on the door echoes loudly while Leo jumps and drops a coffee mug on the rug.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "text": "That's Brenda with her clipboard coming to arrest me!"
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "text": "Nobody is there, Leo. It's just your severe panic."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits calmly beside the empty crumbs, checking her phone at 3% battery while Leo glares at the wall.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "text": "This is cognitive dissonance: screaming internally while smiling."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "text": "I am completely fine and also aggressively melting inside."
+        }
+       ]
+      },
+      {
+       "scene": "Leo frantically typing on a laptop with a fake smile while Mia pulls the blanket over her head.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "text": "Okay but hear me out, let's pretend tomorrow happens."
+        }
+       ]
+      },
+      {
+       "scene": "The living room floor where a digital clock showing a time of 09:00 blinks red in the dark next to an empty cake box.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "text": "Next time: we just text Greg three crying emojis."
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]

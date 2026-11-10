@@ -23,8 +23,8 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 4,
-   "last": 19
+   "uses": 5,
+   "last": 25
   },
   {
    "id": "minute",
@@ -333,6 +333,18 @@
    "milestone": false,
    "season": 3,
    "date": "2026-11-09"
+  },
+  {
+   "n": 4,
+   "kind": "full",
+   "id": "mias-surprise-blunder",
+   "title": "The Secret Birthday Catastrophe",
+   "concept": "Mia's surprise birthday: Leo has to keep a secret and plan it in one day",
+   "gag": "battery",
+   "callback": true,
+   "milestone": false,
+   "season": 1,
+   "date": "2026-11-10"
   }
  ]
 }
