@@ -1,7 +1,7 @@
 name: tokencheck
 on:
   push:
-    paths: ['publish/tokencheck.trigger']
+    paths: ['publish/gcheck.trigger']
   schedule:
     - cron: '20 14 * * 1'
   workflow_dispatch:
