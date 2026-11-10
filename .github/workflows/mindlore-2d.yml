@@ -38,6 +38,7 @@ jobs:
           ML2D_ONLY: ${{ github.event.inputs.script || '' }}
         run: |
           mkdir -p out gh-state
+          if [ -z "$ML2D_ONLY" ] && [ -f publish/ml2d.trigger ]; then S=$(grep -o "script=[^ ]*" publish/ml2d.trigger | head -1 | cut -d= -f2); [ -n "$S" ] && export ML2D_ONLY="$S"; fi   # rebuild a specific script by pushing "ml2d script=<id> <time>"
           python gh_ml2d_build.py "$COUNT"
           ls -lh out/*.zip || true
       - name: Publish to GitHub Release and save state

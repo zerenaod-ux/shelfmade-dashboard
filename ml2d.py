@@ -811,14 +811,14 @@ def build(sid, out, vert=False):
     subprocess.run(cmd, check=True)
     nf = int(total * FPS); final = out / ('ml2d_SHORT.mp4' if vert else 'ml2d_LONGFORM.mp4')
     live_done = False
-    if not vert and not SM and not os.environ.get('ML2D_OLD') and _live_full_on():
+    if not SM and not os.environ.get('ML2D_OLD') and _live_full_on():   # vertical Shorts cut from a full video use the live look too (owner 2026-11-10: old stick-figure look is not wanted)
         try:   # owner decision 2026-11-09: full MindLore videos use the same LIVE DEMO look as the Shorts (landscape layout); old look is the fallback
             import live_demo
             lw = []
             for w in words:
                 c_ = re.sub(r'[^\x20-\x7e]', '', str(w['w']).replace('\u2019', "'").replace('\u2018', "'")) or '.'
                 lw.append({'w': c_, 's': w['s'], 'e': w['e']})
-            live_demo.render(lw, total, str(mix), final, ' '.join(x['w'] for x in lw), script.get('public_title') or script.get('title', ''), land=True, long=True)
+            live_demo.render(lw, total, str(mix), final, ' '.join(x['w'] for x in lw), script.get('public_title') or script.get('title', ''), land=not vert, long=not vert)
             live_done = True; print('ml2d: LIVE look done', flush=True)
         except BaseException as e: print('ml2d: live look failed, falling back to old look:', str(e)[:300], flush=True)
     if not live_done:
