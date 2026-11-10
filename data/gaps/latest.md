@@ -1,8 +1,8 @@
-# Gap-finder, 2026-11-10 (158 snippets)
+# Gap-finder, 2026-11-10 (240 snippets)
 
-- **Curated educational video platform** (score 13.1, 3 mentions, solved 3.0/10) - for: Adult lifelong learner. Test product: Web app that filters YouTube to education‑only content, free tier
-- **Affordable home media streaming kit** (score 10.8, 2 mentions, solved 4.0/10) - for: Family TV viewer. Test product: DIY Android TV box kit using Raspberry Pi, $35
-- **Marketplace for durable, timeless clothing** (score 10.8, 2 mentions, solved 4.0/10) - for: Eco‑conscious shopper. Test product: Online marketplace for quality fabrics, $0 listing fee
-- **Home electrical & lightning safety checklist** (score 10.8, 2 mentions, solved 4.0/10) - for: DIY homeowner. Test product: Free mobile checklist app for ceiling sockets and lightning protector maintenance
-- **Practical cooking hacks and tools guide** (score 10.7, 3 mentions, solved 6.0/10) - for: Home cook. Test product: E‑book "Kitchen Hacks" covering measuring cups, tiny dough balls, coating tricks, $7
-- **Minimal heart‑rate‑only smartwatch** (score 10.1, 1 mentions, solved 3.0/10, HEALTH: organisation tools only) - for: Fitness enthusiast. Test product: Low‑cost wristband with HR sensor only, $20
+- **CustomDomainAliasManager for unlimited email aliases** (score 13.1, 1 mentions, solved 3.0/10) - for: Small business owner. Test product: Free web app to create and filter unlimited aliases with custom domain
+- **ReconnectGuide for re‑engaging old contacts** (score 13.1, 1 mentions, solved 3.0/10) - for: Recent graduate. Test product: Step‑by‑step email templates to reconnect with long‑time contacts
+- **SignalContactsPro for iOS contact organization** (score 11.3, 1 mentions, solved 4.0/10) - for: Signal user on iOS. Test product: iOS app to tag, sort, and backup Signal contacts
+- **CalmCat video series on cat aggression** (score 11.3, 1 mentions, solved 4.0/10) - for: Cat owner dealing with aggression. Test product: Short videos teaching calming techniques for post‑argument cat aggression
+- **AndroidTVBoxStarter low‑cost Android TV box** (score 11.3, 1 mentions, solved 4.0/10) - for: Budget tech enthusiast. Test product: Affordable Android TV hardware with free distribution support
+- **InterrailHelper guide for Madrid cercan usage** (score 10.5, 1 mentions, solved 5.0/10) - for: European traveler. Test product: Guide and map for using Interrail tickets on Madrid cercan trains

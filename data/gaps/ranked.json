@@ -278,6 +278,140 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "snippets": 240,
+   "topics": [
+    {
+     "topic": "CustomDomainAliasManager for unlimited email aliases",
+     "who": "Small business owner",
+     "mentions": 1,
+     "demand": 7.0,
+     "solved": 3.0,
+     "score": 13.1,
+     "product": "Free web app to create and filter unlimited aliases with custom domain",
+     "health": false,
+     "examples": [
+      "I wish there was a good one with custom domain support, unlimited aliases and good filter for tagging/moving to folder so I can move from same sender based on t"
+     ],
+     "sources": [
+      "lemmy"
+     ]
+    },
+    {
+     "topic": "ReconnectGuide for re\u2011engaging old contacts",
+     "who": "Recent graduate",
+     "mentions": 1,
+     "demand": 7.0,
+     "solved": 3.0,
+     "score": 13.1,
+     "product": "Step\u2011by\u2011step email templates to reconnect with long\u2011time contacts",
+     "health": false,
+     "examples": [
+      "Need several references for new job. How should I check in with those I haven t talked to in a long time?"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "SignalContactsPro for iOS contact organization",
+     "who": "Signal user on iOS",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 4.0,
+     "score": 11.3,
+     "product": "iOS app to tag, sort, and backup Signal contacts",
+     "health": false,
+     "examples": [
+      " separate address book and all. Works very well for Signal. I wish there was something similar for iOS. There are some tools available to make management even m"
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "CalmCat video series on cat aggression",
+     "who": "Cat owner dealing with aggression",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 4.0,
+     "score": 11.3,
+     "product": "Short videos teaching calming techniques for post\u2011argument cat aggression",
+     "health": false,
+     "examples": [
+      "My cat becomes aggressive towards me after an argument with my girlfriend"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "AndroidTVBoxStarter low\u2011cost Android TV box",
+     "who": "Budget tech enthusiast",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 4.0,
+     "score": 11.3,
+     "product": "Affordable Android TV hardware with free distribution support",
+     "health": false,
+     "examples": [
+      "I wish there was a reasonably cheap, sufficiently powerful TV box compatible with a free distribution Android TV. Something like Graphene Lineage for TVs. Linea"
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "InterrailHelper guide for Madrid cercan usage",
+     "who": "European traveler",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 5.0,
+     "score": 10.5,
+     "product": "Guide and map for using Interrail tickets on Madrid cercan trains",
+     "health": false,
+     "examples": [
+      "How am I supposed to use my Interrail ticket on the Madrid cercan as (suburban trains)?"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "FacultyPrepKit for application dossier letters",
+     "who": "PhD student applying to faculty",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 4.0,
+     "score": 10.3,
+     "product": "Guide and templates for required recommendation letters and dossiers",
+     "health": false,
+     "examples": [
+      "What is the purpose of requesting a full application dossier and recommendation letters, even before a faculty position has even been approved?"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "OpossumSafe cat food deterrent spray",
+     "who": "Cat owner",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 4.0,
+     "score": 10.3,
+     "product": "Natural ingredient spray to keep opossums away from cat food",
+     "health": false,
+     "examples": [
+      "How to discourage opossums from eating cat food"
+     ],
+     "sources": [
+      "se"
+     ]
+    }
+   ]
   }
  ]
 }
