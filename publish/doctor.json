@@ -2,8 +2,7 @@
  "on": true,
  "attempts": {
   "mindlore-live-redo": 1,
-  "review-decide": 2,
-  "sm-scripts": 2
+  "review-decide": 2
  },
  "pending": [],
  "log": [
@@ -48,7 +47,7 @@
    "msg": "sm-scripts: no safe automatic fix found"
   }
  ],
- "at": "2026-11-09T22:17:34Z",
+ "at": "2026-11-10T03:47:42Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
