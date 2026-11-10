@@ -55,7 +55,7 @@ def from_lemmy(since):
     return out
 def rank(items):
     import llm
-    import random; random.seed(1); sample = random.sample(items, min(len(items), 160))   # mix of sources, not just the first ones; lines = '\n'.join('%d. %s' % (i, s['text']) for i, s in enumerate(sample))
+    import random; random.seed(1); sample = random.sample(items, min(len(items), 160)); lines = '\n'.join('%d. %s' % (i, s['text']) for i, s in enumerate(sample))
     sysm = 'You find unmet needs people would pay to have solved. Reply JSON only.'
     usr = ('Below are numbered public snippets where people say they wish something existed or cannot find it. Group them into at most 8 TOPICS (a topic = one concrete unmet need that a small faceless digital product could serve: a guide, template, tracker, tool, or video series). '
            'Prefer needs of ordinary people (home, family, money, pets, work, hobbies, health organisation) over developer or gadget talk; the who field must be a specific kind of person, never Anonymous. For each topic give: topic (max 12 words), who (the person), ids (snippet numbers), '
