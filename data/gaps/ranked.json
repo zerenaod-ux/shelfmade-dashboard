@@ -412,6 +412,131 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "snippets": 240,
+   "topics": [
+    {
+     "topic": "Custom domain email aliases with tagging",
+     "who": "Small business owners",
+     "mentions": 1,
+     "demand": 7.0,
+     "solved": 3.0,
+     "score": 15.1,
+     "product": "AliasFlow: web app for unlimited custom domain aliases and folder tagging",
+     "health": false,
+     "examples": [
+      "I wish there was a good one with custom domain support, unlimited aliases and good filter for tagging/moving to folder so I can move from same sender based on t"
+     ],
+     "sources": [
+      "lemmy"
+     ],
+     "weeks_seen": 2
+    },
+    {
+     "topic": "Phrase\u2011blocking filter for online content",
+     "who": "Parents moderating children",
+     "mentions": 1,
+     "demand": 7.0,
+     "solved": 2.0,
+     "score": 13.9,
+     "product": "SafePhrase: browser extension that blocks posts containing banned phrases",
+     "health": false,
+     "examples": [
+      "I wish there was a way to auto block anyone who uses certain phrases. Some of the shit stains proudly self identify themselves with their language and no matter"
+     ],
+     "sources": [
+      "lemmy"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Integrated address book for Signal on iOS",
+     "who": "Signal iOS users",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 2.0,
+     "score": 12.9,
+     "product": "SignalSync: iOS app that syncs contacts and imports to Signal",
+     "health": false,
+     "examples": [
+      " separate address book and all. Works very well for Signal. I wish there was something similar for iOS. There are some tools available to make management even m"
+     ],
+     "sources": [
+      "hn"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Self\u2011delete website service",
+     "who": "Individuals wanting to erase online presence",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 1.0,
+     "score": 12.7,
+     "product": "EraseMe: service that permanently removes a website from the internet",
+     "health": false,
+     "examples": [
+      "I wish there was I way I could forget this site existed so I would never go back here."
+     ],
+     "sources": [
+      "hn"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Retro Amiga emulator with modern UI",
+     "who": "Retro computer enthusiasts",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 3.0,
+     "score": 12.1,
+     "product": "AmigaReborn: cross\u2011platform emulator with modern UI and plug\u2011in support",
+     "health": false,
+     "examples": [
+      "I wish there was a way to recapture the feeling of magic produced by using the Amiga. From usability to programmability, everything seemed exciting, new, and wi"
+     ],
+     "sources": [
+      "hn"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Reconnecting old professional contacts",
+     "who": "Career professionals",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 4.0,
+     "score": 11.3,
+     "product": "Recontact: AI assistant that drafts outreach emails to old contacts",
+     "health": false,
+     "examples": [
+      "Need several references for new job. How should I check in with those I haven t talked to in a long time?"
+     ],
+     "sources": [
+      "se"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Java governance guide",
+     "who": "Java developers",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 3.0,
+     "score": 11.1,
+     "product": "JavaGovernance: one\u2011page PDF summarizing Java\u2019s governance history",
+     "health": false,
+     "examples": [
+      "I wish there was a canonical write up on the governance of java and its history, it has changed a lot over the years (not just once I guess) and has a lot of fi"
+     ],
+     "sources": [
+      "hn"
+     ],
+     "weeks_seen": 1
+    }
+   ]
   }
  ]
 }
