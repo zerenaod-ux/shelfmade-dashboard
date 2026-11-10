@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261110-9cfd1",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Brain Plays",
+ "hook": "You think you only laugh when you're happy.",
+ "thumbnail_headline": "PLAY JOY RESEARCH",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think you only laugh when you're happy. Ancient hunters actually used playful chases to bond. In 1978, psychologist Jaak Panksepp studied rats, noting about 30% chirped. At University of Massachusetts, he recorded ultrasonic chirps during play. Later studies found similar joy signals across species, supporting the social play theory. Researchers call this the play contagion effect. In 2015, ethologist Frans de Waal observed bonobos. At the Lola ya Bonobo sanctuary, they played about 20 minutes daily. Their vocalizations resembled human laughter. These sounds even attract other group members. So why do we assume play is just idle behavior? Because play triggers dopamine release, a real reward signal. The result? Play strengthens social bonds and reduces stress. Humans still mimic these patterns when you joke with friends. Play also improves problem‑solving skills later on. That's it. So next time you laugh while playing, remember your brain plays, You"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 30% of rat play bouts produced ultrasonic chirps",
+   "who": "Jaak Panksepp",
+   "year": "1978",
+   "place": "University of Massachusetts"
+  },
+  {
+   "claim": "bonobos played about 20 minutes daily and produced laughter-like vocalizations",
+   "who": "Frans de Waal",
+   "year": "2015",
+   "place": "Lola ya Bonobo sanctuary"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

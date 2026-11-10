@@ -797,6 +797,31 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261110-9cfd1",
+   "look": "live-demo",
+   "title": "Your Brain Plays",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "chart",
+    "chat",
+    "checklist",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
