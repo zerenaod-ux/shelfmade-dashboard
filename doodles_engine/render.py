@@ -17,7 +17,8 @@ from PIL import Image,ImageDraw,ImageFont,ImageFilter
 LAND=os.environ.get('DOODLES_LANDSCAPE')=='1'   # full videos: 16:9 pictures, 1920x1080
 W,H,FPS=(1920,1080,30) if LAND else (1080,1920,30)
 CAPW=1500 if LAND else 900;CAPY=830 if LAND else 1330;CHIPY=40 if LAND else 150;CAPSZ=64 if LAND else 74;CAPLH=80 if LAND else 92
-GAP=0.24;LEAD=0.35;SHOT_TAIL=0.30;END=0.0;SR=24000
+GAP=0.10;LEAD=0.35;SHOT_TAIL=0.20;END=0.0;SR=24000   # owner 2026-11-10: replies must come fast like real friends (was GAP .24, TAIL .30)
+BEAT_GAP={'snap':0.02,'quick':0.07,'normal':0.14,'pause':0.55}   # per-line 'beat' written by the story writer: gap BEFORE this line
 FONTS=['/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf','/System/Library/Fonts/Supplemental/Arial Bold.ttf','/System/Library/Fonts/Helvetica.ttc',
        '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']
 def font(size):
@@ -61,6 +62,13 @@ def read_wav(p):
         if w.getnchannels()>1:a=a.reshape(-1,w.getnchannels()).mean(1)
     if sr!=SR:a=np.interp(np.linspace(0,len(a)-1,int(len(a)*SR/sr)),np.arange(len(a)),a).astype('float32')
     return a
+def trim_tail(a,keep=0.06):
+    """Cut the silence the voice model leaves after each line (keeps `keep` seconds) so the next person can answer at once. The start is NOT trimmed (mouth video is synced to sample 0)."""
+    try:
+        loud=np.where(np.abs(a)>0.012)[0]
+        if len(loud)==0:return a
+        return a[:min(len(a),int(loud[-1])+int(keep*SR))]
+    except Exception:return a
 def weight(w):return max(1,len(re.findall(r'[aeiouy]+',w.lower())))+(0.6 if re.search(r'[,;:]$',w) else 0)+(0.9 if re.search(r'[.!?…]$',w) else 0)
 def wrap(draw,words,fnt,maxw):
     lines=[[]]
@@ -96,7 +104,8 @@ def build(work):
     for si,sh in enumerate(shots):
         s0=t;lines=[]
         for li,ln in enumerate(sh['lines']):
-            a=read_wav(work/f'line_{si:02d}_{li:02d}.wav');d=len(a)/SR
+            a=trim_tail(read_wav(work/f'line_{si:02d}_{li:02d}.wav'));d=len(a)/SR
+            if li>0 or si>0:t+=BEAT_GAP.get(ln.get('beat'),GAP)-GAP if li>0 else 0   # shots: SHOT_TAIL already; inside a shot: the beat decides the gap (a 'pause' stretches it)
             lines.append({'who':ln['who'],'text':ln['text'],'start':t,'end':t+d,'audio':a,'si':si,'li':li});t+=d+GAP
         t+=SHOT_TAIL-GAP;timeline.append({'start':s0,'end':t,'lines':lines});
     total=t+END

@@ -1,5 +1,7 @@
 name: doodles
 on:
+  push:
+    paths: ['publish/doodles.trigger']   # on-demand run from a cloud session (count = 2)
   schedule:
     - cron: '37 7 * * *'   # 1:30 AM Chicago (CST)
   workflow_dispatch:

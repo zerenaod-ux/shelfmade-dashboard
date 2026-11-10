@@ -13,7 +13,7 @@ def jl(p, d):
     try: return json.loads(Path(p).read_text())
     except (OSError, ValueError): return d
 def unused():
-    used = set(jl(USED, [])); return [s for s in list(stories.STORIES) + jl(POOL, []) if s['id'] not in used]
+    used = set(jl(USED, [])); return [s for s in jl(POOL, []) if s.get('style') == 'v2' and s['id'] not in used]   # owner 2026-11-10: only the new simple/funny style is produced (old stories archived in story_pool_old.json)
 FAILS = DATA / 'fails.json'; KSTAT = DATA / 'kaggle-status.json'
 
 
