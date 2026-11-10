@@ -106,6 +106,29 @@ def auto_approve(issue_url, brand, d):
 
 
 
+def auto_approve_full(issue_url, data, d, ml_full):
+    """Owner decision 2026-11-10: full videos of ShelfMade and MindLore that pass EVERY automatic check are approved without a label (like the Shorts).
+    Safety: a MindLore full whose plan is not the live-demo look (old split-screen look) is NOT auto-approved. Switch off: gh variable set AUTO_APPROVE_FULL --body 0 (Doodles are never auto-approved)."""
+    num = int(issue_url.rstrip('/').split('/')[-1])
+    if ml_full:
+        try: style = json.loads((Path(d) / 'ml2d-plan.json').read_text()).get('style')
+        except Exception: style = None
+        if style != 'live-demo':
+            sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'NOT auto-approved: this MindLore full video is not in the new live look (plan style: %s). Skip it or approve by hand.' % style, check=False); print('full not auto-approved (old look)', num); return
+    suf = data['kind']
+    out = Path('publish') / ('approved-%s.json' % suf)
+    cur = json.loads(out.read_text()) if out.is_file() else {'items': []}
+    iid = 'gh%d-%s' % (num, suf)
+    if iid not in {i['id'] for i in cur['items']}:
+        cur['items'].append({'id': iid, 'tag': data['tag'], 'zip': data['zip'], 'title': data['title'], 'description': data['description']})
+    out.parent.mkdir(exist_ok=True); out.write_text(json.dumps(cur, indent=1))
+    sh('gh', 'label', 'create', 'auto-approved', '--repo', REPO, '--color', '0E8A16', '--force', check=False)
+    sh('gh', 'issue', 'edit', str(num), '--repo', REPO, '--add-label', 'auto-approved', check=False)
+    sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Auto-approved: every automatic check passed (owner setting). Uploaded to YouTube and scheduled for the next free 18:00 slot. Stop auto-approval: gh variable set AUTO_APPROVE_FULL --body 0', check=False)
+    sh('gh', 'issue', 'close', str(num), '--repo', REPO, check=False)
+    print('auto-approved full', num)
+
+
 STYLE_WORDS = {'sm_candle': 'soft candlelit piano', 'sm_library': 'quiet library ambience', 'sm_gothic': 'dark gothic drone', 'sm_adventure': 'light adventurous strings', 'sm_tender': 'tender sad piano',
                'ml_lofi': 'lo-fi beat', 'ml_pulse': 'thinking pulse', 'ml_deep': 'deep mysterious drone', 'ml_wonder': 'airy wonder bells', 'ml_tension': 'tense electronic pulse',
                'dd_bounce': 'bouncy comedy', 'dd_quirky': 'quirky pizzicato comedy', 'dd_sneak': 'sneaky tiptoe comedy', 'dd_chill': 'chill feel-good', 'dd_hype': 'hype upbeat'}
@@ -213,6 +236,9 @@ def main():
                     seen['issues'].append(out.strip())
                     seen['titles'].append(title)
                     made += 1
+                    if okq and os.environ.get('AUTO_APPROVE_FULL', '1') != '0':
+                        try: auto_approve_full(out.strip(), data, d, ml_full)
+                        except Exception as e: print('auto-approve full skipped:', str(e)[:120])
                     continue
                 if not video.is_file() or not post.is_file():
                     continue
