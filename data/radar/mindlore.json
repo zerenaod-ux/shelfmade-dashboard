@@ -1,129 +1,141 @@
 {
  "why": [
   {
-   "title": "3 MOST UNFORTUNATE LETTERS NAME || #SHORTS \u2764\ufe0f",
-   "why": "Uses a mysterious, curiosity\u2011driving premise and bold emojis to instantly hook viewers seeking quirky psychology tidbits."
+   "title": "5 Secret Meanings Behind Your Everyday Habits | Psychology Facts You Didn't Know",
+   "why": "It leverages high-curiosity personal relevance (Breakout 21.6) by framing mundane daily actions as hidden reveals about the viewer's subconscious."
   },
   {
-   "title": "Like. Share. Subscribe #psychologyfacts #mindblowingfacts #psychology #realfacts #humanminded #viral",
-   "why": "Combines a direct call\u2011to\u2011action with trending hashtag clusters, creating high shareability and emotional FOMO."
+   "title": "9 Psychology Facts You Won't Believe Are True! | Amazing Facts About Human Behavior",
+   "why": "Massive breakout performance (90.6) driven by a high-tempo listicle format promising extreme belief-shattering insights into human nature."
   },
   {
-   "title": "M_#psychology #facts Letter Psychology",
-   "why": "Leverages a cryptic title that sparks intrigue and promises insider knowledge, delivered in rapid\u2011fire short format."
+   "title": "4 Very Dark Psychology Tricks That Reveal Human Nature | Dark Psychology Facts",
+   "why": "Taps into taboos and self-preservation emotions (Breakout 49.6) using a fast-paced, actionable list dynamic around hidden human motives."
   },
   {
-   "title": "9 Psychology Facts You Won't Believe Are True!  | Amazing Facts About Human Behavior",
-   "why": "Employs a numbered list and disbelief hook, tapping curiosity and surprise while delivering bite\u2011sized facts."
+   "title": "6 Signs You're a Rare and Special Person | Powerful Psychology Facts About You",
+   "why": "Drives immediate viewer engagement (Breakout 29.4) through ego-validation and positive identity reinforcement disguised as psychological analysis."
   }
  ],
  "hook_patterns": [
-  "Curiosity\u2011driven questions or contradictions that promise surprising answers",
-  "Bold, emoji\u2011rich titles with numbers or \u2018shocking\u2019 phrasing for instant attention",
-  "Strategic hashtag clusters and concise phrasing optimized for Shorts algorithm"
+  "Subconscious reveal: 'If you do [everyday action], your brain is secretly doing this...'",
+  "Ego-validation framing: '3 subtle signs your mind operates differently than 99% of people...'",
+  "Taboo warning: 'The dark reason people actually behave this way when you...'"
  ],
- "todays_angle": "Present a single counterintuitive psychology myth and debunk it in a rapid\u2011fire 45\u2011second short",
+ "todays_angle": "Translate classic 19th and early 20th-century psychological texts into high-curiosity, self-diagnostic habit breakdowns.",
  "ideas": [
-  "The \u201810\u2011Second Rule\u2019 myth: why waiting after dropping food isn\u2019t scientific \u2013 3 quick points",
-  "Freud\u2019s \u2018talk therapy\u2019 myth: the real origin of modern counseling \u2013 illustrated with vintage sketches",
-  "Maslow\u2019s hierarchy myth: the pyramid is a modern reinterpretation \u2013 4 surprising facts"
+  {
+   "title": "3 Habits That Prove You Have High Emotional Intelligence (According to 1920s Psychology)",
+   "script_hook": "If you catch yourself doing these 3 subtle things in conversation, William James proved your brain processes emotion differently than most.",
+   "source_text": "Principles of Psychology by William James"
+  },
+  {
+   "title": "The Secret Meaning Behind How You Walk (100-Year-Old Mind Hack)",
+   "script_hook": "Early behavioral psychologists discovered that your walking speed reveals a hidden truth about your stress levels.",
+   "source_text": "The Crowd: A Study of the Popular Mind by Gustave Le Bon"
+  },
+  {
+   "title": "4 Dark Signs Someone Is Manipulating Your Attention (Classic Psychology)",
+   "script_hook": "Before modern algorithms existed, 19th-century psychologists identified these 4 subconscious traps people use to control your focus.",
+   "source_text": "Public Opinion by Walter Lippmann"
+  }
  ],
  "avoid": [
-  "Generic \u2018Top 10 Psychology Facts\u2019 list without a unique hook",
-  "Overused \u2018Like, Share, Subscribe\u2019 call\u2011to\u2011action as the primary hook"
+  "Generic 'Sigma Male' or superficial dating advice hooks devoid of historical substance.",
+  "Off-niche health, weight-loss, or lifestyle hacks that undermine classic literature credibility."
  ],
- "updated": "2026-11-09",
- "sample": 71,
+ "updated": "2026-11-10",
+ "sample": 70,
  "spikes": [
+  {
+   "title": "5 Secret Meanings Behind Your Everyday Habits | Psychology Facts You Didn't Know",
+   "channel": "Why We Do It",
+   "views": 228947,
+   "hours": 36,
+   "vph": 6277.4,
+   "subs": 10600,
+   "breakout": 21.6
+  },
   {
    "title": "7 Psychology Facts About Girls That Will Surprise Every Boy! \ud83d\ude33\u2764\ufe0f | Girls Secrets",
    "channel": "YOUR TUTOR CORNER",
-   "views": 205036,
-   "hours": 25,
-   "vph": 8321.5,
-   "subs": 28300,
-   "breakout": 7.2
-  },
-  {
-   "title": "3 MOST UNFORTUNATE LETTERS NAME || #SHORTS \u2764\ufe0f",
-   "channel": "AMAN GAUTAM ",
-   "views": 279944,
+   "views": 215086,
    "hours": 41,
-   "vph": 6765.3,
-   "subs": 1670,
-   "breakout": 167.6
-  },
-  {
-   "title": "\ub2e4\ud06c \uc2ec\ub9ac\ud559 : \ub0a8\uc790 \ud3b8",
-   "channel": "\ub355\uc218\uc640 \ub355\uc21c",
-   "views": 50063,
-   "hours": 9,
-   "vph": 5634.6,
-   "subs": 73800,
-   "breakout": 0.7
-  },
-  {
-   "title": "Psychology Facts\ud83d\udcaf#motivation #psychologyfacts #trending #viral #ytshorts #facts #ideas #lifelessons",
-   "channel": "\ud835\ude51\ud835\ude56\ud835\ude67\ud835\ude68\ud835\ude5d\ud835\ude56 \ud835\ude4e\ud835\ude6c\ud835\ude56\ud835\ude62\ud835\ude5e",
-   "views": 33879,
-   "hours": 7,
-   "vph": 4920.5,
-   "subs": 110000,
-   "breakout": 0.3
+   "vph": 5217.6,
+   "subs": 28500,
+   "breakout": 7.5
   },
   {
    "title": "\u0917\u0932\u0924\u092b\u0939\u092e\u0940 #psychology #motivation #successmind #mindset #growlifebuddy #facts #darkpsychology",
    "channel": " GROWLIFEBUDDY ",
-   "views": 38599,
-   "hours": 10,
-   "vph": 4024.1,
-   "subs": 16600,
-   "breakout": 2.3
+   "views": 91148,
+   "hours": 26,
+   "vph": 3482.2,
+   "subs": 16700,
+   "breakout": 5.5
   },
   {
-   "title": "\u0938\u092e\u0930\u094d\u092a\u0923 #mindset #motivation #successmind #psychology #growlifebuddy #facts #darkpsychology",
+   "title": "Psychology Facts\ud83d\udcaf#motivation #psychologyfacts #trending #viral #ytshorts #facts #ideas #lifelessons",
+   "channel": "\ud835\ude51\ud835\ude56\ud835\ude67\ud835\ude68\ud835\ude5d\ud835\ude56 \ud835\ude4e\ud835\ude6c\ud835\ude56\ud835\ude62\ud835\ude5e",
+   "views": 69933,
+   "hours": 23,
+   "vph": 2979.8,
+   "subs": 110000,
+   "breakout": 0.6
+  },
+  {
+   "title": "4 Signs You Both Have a Crush on Each Other... #shorts #psychologyfacts",
+   "channel": "HeartSync",
+   "views": 67642,
+   "hours": 23,
+   "vph": 2944.6,
+   "subs": 25300,
+   "breakout": 2.7
+  },
+  {
+   "title": "4 Sigma Rule \ud83d\udd25 I Sigma male psychology #psychology #shortsfeed",
+   "channel": "FactByte02",
+   "views": 22375,
+   "hours": 8,
+   "vph": 2642.8,
+   "subs": 126000,
+   "breakout": 0.2
+  },
+  {
+   "title": "\u092e\u093e\u092b \u0915\u0930\u0928\u093e #motivation #successmind #psychology #growlifebuddy #mindset #facts #darkpsychology",
    "channel": " GROWLIFEBUDDY ",
-   "views": 78036,
-   "hours": 32,
-   "vph": 2401.8,
-   "subs": 16600,
-   "breakout": 4.7
+   "views": 16916,
+   "hours": 8,
+   "vph": 2054.4,
+   "subs": 16700,
+   "breakout": 1.0
+  },
+  {
+   "title": "Psychology Facts #shorts #facts #educational #psychologyfacts #viral #ytshorts #usashorts",
+   "channel": "Soul Motivate",
+   "views": 66640,
+   "hours": 39,
+   "vph": 1710.3,
+   "subs": 7670,
+   "breakout": 8.7
+  },
+  {
+   "title": "\u092a\u0947\u091f \u0915\u0940 \u091a\u0930\u094d\u092c\u0940 \u0910\u0938\u0947 \u0915\u092e \u0915\u0930\u0947\u0902\ud83d\ude31\ud83d\ude31 #psychologyfacts #shorts #bodyhack #weightloss #fatloss #youtubeshorts",
+   "channel": "Rahul roy",
+   "views": 21067,
+   "hours": 45,
+   "vph": 465.8,
+   "subs": 141,
+   "breakout": 105.3
   },
   {
    "title": "9 Psychology Facts You Won't Believe Are True!  | Amazing Facts About Human Behavior",
    "channel": "MindFacts Daily",
-   "views": 52707,
-   "hours": 23,
-   "vph": 2246.4,
-   "subs": 662,
-   "breakout": 79.6
-  },
-  {
-   "title": "\u091c\u0932\u0928 #motivation #psychology #successmind #mindset #growlifebuddy #facts",
-   "channel": " GROWLIFEBUDDY ",
-   "views": 71369,
-   "hours": 36,
-   "vph": 1973.6,
-   "subs": 16600,
-   "breakout": 4.3
-  },
-  {
-   "title": "Like. Share. Subscribe #psychologyfacts #mindblowingfacts #psychology #realfacts #humanminded #viral",
-   "channel": "Motivation only ",
-   "views": 54595,
-   "hours": 37,
-   "vph": 1466.0,
-   "subs": 536,
-   "breakout": 101.9
-  },
-  {
-   "title": "Like. Share. Subscribe #psychologyfacts #mindblowingfacts #psychology #realfacts #humanminded #viral",
-   "channel": "Motivation only ",
-   "views": 53483,
-   "hours": 37,
-   "vph": 1437.9,
-   "subs": 536,
-   "breakout": 99.8
+   "views": 64621,
+   "hours": 40,
+   "vph": 1613.7,
+   "subs": 713,
+   "breakout": 90.6
   }
  ]
 }
