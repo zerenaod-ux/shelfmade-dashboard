@@ -1,0 +1,31 @@
+name: gap-finder
+on:
+  push:
+    paths: ['publish/gaps.trigger']
+  schedule:
+    - cron: '17 14 * * 1'   # weekly Monday
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: gap-finder
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Scan public sources and rank unmet needs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+        run: python gap_finder.py
+      - name: Save results
+        run: |
+          git config user.name "studio-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f data/gaps
+          git diff --cached --quiet || { git commit -qm "gap-finder weekly"; for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 5; done; }
