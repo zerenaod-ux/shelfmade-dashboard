@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-09",
+ "collected": "2026-11-10",
  "note": "",
  "videos": [
   {
@@ -214,6 +214,16 @@
    "subsGained": 0
   },
   {
+   "id": "m-mdceIZnsg",
+   "title": "The Silent Nod",
+   "published": "2026-11-09T18:05:11Z",
+   "duration": "PT46S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "Aj8TiWooNdA",
    "title": "The Shark in the Swimming Pool",
    "published": "2026-11-07T18:05:00Z",
@@ -266,6 +276,26 @@
    "subsGained": 0
   },
   {
+   "id": "hzKTBT9qysw",
+   "title": "The Midnight Replay",
+   "published": "2026-11-10T03:02:02Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "5msto0N_8Cs",
+   "title": "The Whiteboard Nod | Leo & Mia #5",
+   "published": "2026-11-08T03:01:34Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "ZBq7mV2vMZk",
    "title": "The Nodding Trap",
    "published": "2026-11-07T03:01:12Z",
@@ -305,14 +335,14 @@
    "subsGained": 0
   },
   {
-   "id": "5msto0N_8Cs",
-   "title": "The Whiteboard Nod | Leo & Mia #5",
-   "published": "2026-11-08T03:01:34Z",
-   "duration": "PT36S",
+   "id": "tmW0ic4_Go4",
+   "title": "The Panic of 'K'",
+   "published": "2026-11-09T03:01:39Z",
+   "duration": "PT57S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "FHoaRv9TFTc",
@@ -341,20 +371,10 @@
    "subsGained": 0
   },
   {
-   "id": "m-mdceIZnsg",
-   "title": "The Silent Nod",
-   "published": "2026-11-09T18:05:11Z",
-   "duration": "PT46S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "tmW0ic4_Go4",
-   "title": "The Panic of 'K'",
-   "published": "2026-11-09T03:01:39Z",
-   "duration": "PT57S",
+   "id": "EWhebXioXqQ",
+   "title": "The Sleep Effort Trap",
+   "published": "2026-11-10T18:04:30Z",
+   "duration": "PT1M37S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
@@ -368,7 +388,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   }
  ]
 }

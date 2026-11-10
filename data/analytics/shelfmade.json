@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-09",
+ "collected": "2026-11-10",
  "note": "",
  "videos": [
   {
@@ -209,8 +209,8 @@
    "views": 46,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 50.96000000000001,
+   "avgSeconds": 17,
+   "avgPercent": 61.88,
    "subsGained": 0
   },
   {
@@ -292,6 +292,19 @@
    "subsGained": 0
   },
   {
+   "id": "sGfMrVc9aVQ",
+   "title": "Your moral character must be not only pure, but, like Caesar\u2019s wife, unsuspected",
+   "published": "2026-11-03T03:00:44Z",
+   "duration": "PT33S",
+   "privacy": "public",
+   "views": 36,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 11,
+   "avgPercent": 34.34,
+   "subsGained": 0
+  },
+  {
    "id": "umzrnh-AmiA",
    "title": "But take whichever you please to be true; what will this knowledge profit us?",
    "published": "2026-10-19T19:20:57Z",
@@ -315,19 +328,6 @@
    "comments": 0,
    "avgSeconds": 14,
    "avgPercent": 53.11,
-   "subsGained": 0
-  },
-  {
-   "id": "sGfMrVc9aVQ",
-   "title": "Your moral character must be not only pure, but, like Caesar\u2019s wife, unsuspected",
-   "published": "2026-11-03T03:00:44Z",
-   "duration": "PT33S",
-   "privacy": "public",
-   "views": 35,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 11,
-   "avgPercent": 34.34,
    "subsGained": 0
   },
   {
@@ -835,6 +835,19 @@
    "subsGained": 0
   },
   {
+   "id": "-JBCZpJJaj8",
+   "title": "But it is the same with the physical type of wisdom, gold",
+   "published": "2026-10-22T00:23:57Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 15,
+   "avgPercent": 65.22,
+   "subsGained": 0
+  },
+  {
    "id": "1TFujFgiGXw",
    "title": "Do manners outweigh knowledge?",
    "published": "2026-10-19T17:46:19Z",
@@ -858,19 +871,6 @@
    "comments": 0,
    "avgSeconds": 24,
    "avgPercent": 13.98,
-   "subsGained": 0
-  },
-  {
-   "id": "-JBCZpJJaj8",
-   "title": "But it is the same with the physical type of wisdom, gold",
-   "published": "2026-10-22T00:23:57Z",
-   "duration": "PT23S",
-   "privacy": "public",
-   "views": 7,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 65.22,
    "subsGained": 0
   },
   {
@@ -1350,10 +1350,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 57,
-   "avgPercent": 133.51,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "1ViIE80FGEc",
@@ -1377,6 +1374,16 @@
    "views": 3,
    "likes": 1,
    "comments": 0
+  },
+  {
+   "id": "vSqKjuyAJhM",
+   "title": "Can love turn desire into gold?",
+   "published": "2026-11-08T18:03:07Z",
+   "duration": "PT31S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "bIeNOgFWT_I",
@@ -1461,6 +1468,26 @@
    "comments": 0
   },
   {
+   "id": "L8fBZiNE9xA",
+   "title": "Nobody warns you about Analects.",
+   "published": "2026-11-10T03:02:03Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "lX71jEZ8QNg",
+   "title": "Allen would hate how you live.",
+   "published": "2026-11-10T00:00:16Z",
+   "duration": "PT6M45S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "WCx2ToBGPhU",
    "title": "Can generosity survive hardship?",
    "published": "2026-11-09T03:01:37Z",
@@ -1468,7 +1495,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "S52fhpBuPEU",
@@ -1662,6 +1689,16 @@
    "comments": 0
   },
   {
+   "id": "qreV4UF_HS4",
+   "title": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday",
+   "published": "2026-11-10T18:04:55Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "g8hW1uT4Eg8",
    "title": "For in those things that properly belong unto the mind, she cannot be hindered by any man",
    "published": "2026-11-09T18:04:33Z",
@@ -1669,23 +1706,13 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "xIxtLasPyV8",
    "title": "You were taught Meditations wrong.",
    "published": "2026-11-09T00:00:22Z",
    "duration": "PT6M49S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "vSqKjuyAJhM",
-   "title": "Can love turn desire into gold?",
-   "published": "2026-11-08T18:03:07Z",
-   "duration": "PT31S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
@@ -1776,16 +1803,6 @@
    "title": "Think before you fight | The Art of War",
    "published": "2026-11-03T20:51:36Z",
    "duration": "PT6M43S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "lX71jEZ8QNg",
-   "title": "Allen would hate how you live.",
-   "published": "2026-11-03T20:51:29Z",
-   "duration": "PT6M45S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
