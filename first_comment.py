@@ -8,13 +8,19 @@ from pathlib import Path
 NOW = datetime.datetime.now(datetime.timezone.utc)
 DONE_F, STATUS_F = Path('data/replies/commented.json'), Path('data/replies/first-comment-status.json')
 LIVE = os.environ.get('FIRST_COMMENT_LIVE') == '1'
-MAX_PER_RUN, MAX_AGE_DAYS, MIN_AGE_H = 3, 7, 1
+MAX_PER_RUN, MAX_AGE_DAYS, MIN_AGE_H = 5, 14, 1
 CID, SEC = os.environ.get('YT_CLIENT_ID', ''), os.environ.get('YT_CLIENT_SECRET', '')
 TEMPLATES = {
     'shelfmade': ['Want the whole lesson? Watch the full video here: {u}', 'There is a longer version of this idea. Full video: {u}', 'Liked this one? The full video goes deeper: {u}'],
     'mindlore': ['Want the full explanation? Watch the full video: {u}', 'There is a longer, deeper version of this. Full video: {u}', 'If this made you curious, the full video goes further: {u}'],
     'doodles': ['Want more of Leo and Mia? Watch the full episode: {u}', 'The full episode has even more chaos. Watch it here: {u}', 'Liked this skit? The full episode is here: {u}'],
 }
+FULL_TEMPLATES = {
+    'shelfmade': ['Did this book idea make you think? Tell us in the comments which part hit home.', 'Found this interesting? Comment which line you would remember, and what book should we do next?'],
+    'mindlore': ['Did this change how you see your own mind? Tell us in the comments which part surprised you.', 'Found this interesting? Comment your own example, and what should we explain next?'],
+    'doodles': ['Did this feel like your life? Tell us in the comments who you are, Leo or Mia.', 'Found this funny? Comment the argument you have had the most, and we may turn it into an episode.'],
+}
+ASK = {'shelfmade': ' Which line stayed with you? Tell us below.', 'mindlore': ' Found it interesting? Tell us in the comments what surprised you.', 'doodles': ' Which one are you, Leo or Mia? Tell us below.'}
 
 
 def is_full(dur):
@@ -29,21 +35,24 @@ def plan(brand, videos, done):
     """-> (link, [video dicts to comment on]). Pure function, no network."""
     pub = [v for v in videos if v.get('privacy', 'public') == 'public' and v.get('id') and v.get('published')]
     fulls = sorted([v for v in pub if is_full(v.get('duration'))], key=when, reverse=True)
-    if not fulls:
-        return None, []
-    link = 'https://youtu.be/' + fulls[0]['id']
+    link = ('https://youtu.be/' + fulls[0]['id']) if fulls else None
     out = []
     for v in sorted(pub, key=when, reverse=True):
         age = NOW - when(v)
-        if is_full(v.get('duration')) or v['id'] in done or age > datetime.timedelta(days=MAX_AGE_DAYS) or age < datetime.timedelta(hours=MIN_AGE_H):
+        if v['id'] in done or age > datetime.timedelta(days=MAX_AGE_DAYS) or age < datetime.timedelta(hours=MIN_AGE_H):
             continue
+        if not is_full(v.get('duration')) and not link:
+            continue   # a Short needs a full video to point to
         out.append(v)
     return link, out[:MAX_PER_RUN]
 
 
-def text(brand, vid, link):
+def text(brand, vid, link, full=False):
+    h = int(hashlib.md5(vid.encode()).hexdigest(), 16)
+    if full:
+        t = FULL_TEMPLATES[brand]; return t[h % len(t)]
     t = TEMPLATES[brand]
-    return t[int(hashlib.md5(vid.encode()).hexdigest(), 16) % len(t)].format(u=link)
+    return t[h % len(t)].format(u=link) + ASK[brand]
 
 
 def access(rt):
@@ -65,12 +74,10 @@ def main():
         try:
             d = json.loads(Path('data/analytics/%s.json' % brand).read_text())
             link, todo = plan(brand, d.get('videos', []), done.get(brand, {}))
-            if not link:
-                status['brands'][brand] = 'no public full video yet: nothing to point to'; print(brand, status['brands'][brand]); continue
             rt = os.environ.get('YT_REFRESH_TOKEN_' + brand.upper(), '')
             n = 0
             for v in todo:
-                msg = text(brand, v['id'], link)
+                msg = text(brand, v['id'], link, is_full(v.get('duration')))
                 if not LIVE:
                     print('DRY', brand, v['id'], v.get('title', '')[:40], '->', msg); n += 1; continue
                 if not rt:
