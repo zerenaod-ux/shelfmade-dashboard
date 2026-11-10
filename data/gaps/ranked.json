@@ -1,0 +1,144 @@
+{
+ "runs": [
+  {
+   "date": "2026-11-10",
+   "snippets": 59,
+   "topics": [
+    {
+     "topic": "AI\u2011free app store filter and per\u2011site media opt\u2011in extension",
+     "who": "Anonymous",
+     "mentions": 3,
+     "demand": 7.0,
+     "solved": 2.0,
+     "score": 14.9,
+     "product": "Chrome/Firefox extension that hides AI\u2011tagged apps and adds per\u2011site audio/video opt\u2011in toggles",
+     "health": false,
+     "examples": [
+      "I wish there was a filter in the app store to filter and only show apps that having nothing to do with AI. It s become increasingly hard to find a decent, non-A",
+      "I wish there was a setting to make audio and video opt in per site. Most random sites have no business using anything but text and the occasional image plus wha"
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Design templates for niche physical products (watch, cup, pry bar)",
+     "who": "Anonymous",
+     "mentions": 3,
+     "demand": 6.0,
+     "solved": 2.0,
+     "score": 13.9,
+     "product": "CAD files and component sourcing guide for a minimal HR watch, non\u2011fade glass measuring cup, and rock\u2011digging pry bar with foot peg",
+     "health": false,
+     "examples": [
+      "I wish there was a minimal Casio watch which only had heart rate tracking (with high frequency polling too).",
+      "Glass measuring cups with lines that don t fade"
+     ],
+     "sources": [
+      "hn",
+      "se"
+     ]
+    },
+    {
+     "topic": "DIY home maintenance and safety troubleshooting guide",
+     "who": "Anonymous",
+     "mentions": 3,
+     "demand": 7.0,
+     "solved": 4.0,
+     "score": 13.3,
+     "product": "PDF/website with step\u2011by\u2011step fixes for ceiling sockets, Garmin marker bugs, and scaffolding brace tightening",
+     "health": false,
+     "examples": [
+      "Bad socket in ceiling light fixture: unsafe?",
+      "Is it possible to fix the lap/km markers in Garmin Connect web application?"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "Quick health self\u2011care guides for common issues",
+     "who": "Anonymous",
+     "mentions": 3,
+     "demand": 6.0,
+     "solved": 4.0,
+     "score": 12.3,
+     "product": "Short video series + ebook covering plantar fasciitis relief, post\u2011screw wound care, and opossum deterrent tips",
+     "health": true,
+     "examples": [
+      "Why does rolling your foot help with plantar fasciitis?",
+      "Wound care after an ankle fixation screw emerged through the skin and was manually removed by patient"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "Career transition templates and reference outreach emails",
+     "who": "Anonymous",
+     "mentions": 2,
+     "demand": 5.0,
+     "solved": 3.0,
+     "score": 11.6,
+     "product": "Template pack with CV tweaks, interview prep, and polite reference\u2011request email scripts",
+     "health": false,
+     "examples": [
+      "Career advice: Software Engineer transitioning into RF, Microwave Engineering and Photonics",
+      "Need several references for new job. How should I check in with those I haven t talked to in a long time?"
+     ],
+     "sources": [
+      "se"
+     ]
+    },
+    {
+     "topic": "GPU marketplace platform for price arbitrage",
+     "who": "Anonymous",
+     "mentions": 1,
+     "demand": 4.0,
+     "solved": 2.0,
+     "score": 10.9,
+     "product": "Simple marketplace website that lists GPU resale prices and sends arbitrage alerts to users",
+     "health": false,
+     "examples": [
+      "I wish there was some kind of GPU marketplace so one could just arb this opportunity."
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Educational\u2011only YouTube feed generator with recency sorting",
+     "who": "Anonymous",
+     "mentions": 1,
+     "demand": 4.0,
+     "solved": 3.0,
+     "score": 10.1,
+     "product": "Web app that builds a YouTube playlist of only educational videos, sorted by upload date",
+     "health": false,
+     "examples": [
+      "I wish there was a way I could get educational-only youtube as an adult. It would really help to remove the irrelevant suggestions and keep me from listening to"
+     ],
+     "sources": [
+      "hn"
+     ]
+    },
+    {
+     "topic": "Web archive diff and change explorer tool",
+     "who": "Anonymous",
+     "mentions": 1,
+     "demand": 3.0,
+     "solved": 2.0,
+     "score": 9.9,
+     "product": "Web service to upload two WARC/WACZ files and visualize file\u2011level differences",
+     "health": false,
+     "examples": [
+      "e about archival while I was adding it to my own thing [1]. I wish there was more of an existing toolset for diffing archivals as well - what changed is just as"
+     ],
+     "sources": [
+      "hn"
+     ]
+    }
+   ]
+  }
+ ]
+}
