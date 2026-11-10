@@ -174,6 +174,29 @@ def pick_format():
     h.append({'format':f[0],'mood':m,'end':e});FH.parent.mkdir(parents=True,exist_ok=True);FH.write_text(json.dumps(h[-30:],indent=1))
     note=f" FORMAT OF THIS VIDEO (owner rule: every video must feel different, never repeat a pattern): {f[0]} - {f[1]}. Mood: {m}. Ending: {e}. Make the topic fit this format; do NOT reuse the shape, jokes or opening of recent videos."
     return f[0],note
+LEO_A=("You are LEO, a goofy, dramatic 20-something with a yellow hoodie. You are in a REAL back-and-forth with your best friend MIA (quick, teasing, kind). Nobody wrote a script. ")
+MIA_A=("You are MIA, a quick-witted 20-something in a teal sweater, best friend of LEO (goofy, dramatic). You are in a REAL back-and-forth with him. Nobody wrote a script. ")
+ACT=("Reply with ONLY your next spoken line, 1 to 12 words, simple everyday words, contractions, slang ok. React to EXACTLY what the other person just said, like real talk: interrupt, be wrong, deny, trail off with '...', answer a question with a question, say 'wait', 'no', 'okay but'. Never explain, never narrate, no stage directions, no quotes, no names before the line. Be funny the way real friends are funny, by being specific and a little exaggerated. ")
+def improv(topic,fmt,turns=12):
+    """Improvised real conversation: two free-LLM 'actors' play Leo and Mia turn by turn, each seeing only the chat so far (no script). The writer then edits it. Any failure -> '' and the normal writer runs alone."""
+    try:
+        sys.path.insert(0,str(HERE.parent));import llm
+        if not llm.available():return ''
+        sit=f"Situation: {topic}. Style of this scene: {fmt}. "
+        chat=[];who='leo'
+        for i in range(turns):
+            sysm=(LEO_A if who=='leo' else MIA_A)+sit+ACT
+            hist='\n'.join(f"{n.upper()}: {t}" for n,t in chat) or '(nothing said yet, you speak first and open the scene)'
+            t=llm.text(sysm,'Conversation so far:\n'+hist+'\n\nYour next line:',False,1.0,60).strip().split('\n')[0]
+            t=re.sub(r'^(leo|mia)\s*[:\-]\s*','',t,flags=re.I).strip(' "\'')
+            if not t:break
+            chat.append((who,t));who='mia' if who=='leo' else 'leo'
+        if len(chat)<6:return ''
+        raw='\n'.join(f"{n.upper()}: {t}" for n,t in chat)
+        print('improv:',len(chat),'turns')
+        return (" RAW IMPROV: two actors really talked this out with no script. This is the natural flow you must keep. Build the final episode FROM it: keep their best lines, words and rhythm in their natural order (trim, merge or cut the weak ones to fit the length, add one punch ending that loops). Do not replace their human phrasing with polished writing. "+"\nRAW IMPROV TRANSCRIPT:\n"+raw)
+    except BaseException as e:
+        print('improv skipped:',str(e)[:100]);return ''
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []
 def main():
     n=int(sys.argv[1]) if len(sys.argv)>1 else 3;pool=load();taken={s['id'] for s in stories.STORIES}|{s['id'] for s in pool};made=0
@@ -186,9 +209,10 @@ def main():
         tstyle='you' if len(pool)%2==0 else 'plain'   # title test (Nov 9): half the Doodles titles start with You/Your (our data: ~4x views on the other channels)
         if tstyle=='you':vnote+=' TITLE STYLE: the title is 2 to 5 words and starts with You or Your (a statement, e.g. "You Replied K Again").'
         fmt,fnote=pick_format()
-        s=pick_best(topic,taken,variant,vnote+fnote)
+        raw=improv(topic,fmt)
+        s=pick_best(topic,taken,variant,vnote+fnote+raw)
         if s is None:continue
-        if valid(s,taken,variant):s['variant']=variant;s['tstyle']=tstyle;s['style']='v2';s['format']=fmt;pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
+        if valid(s,taken,variant):s['variant']=variant;s['tstyle']=tstyle;s['style']='v2';s['format']=fmt;s['improv']=bool(raw);pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
         else:print('rejected a story (format)')
     print('pool size',len(pool))
 if __name__=='__main__':main()
