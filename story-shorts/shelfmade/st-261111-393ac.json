@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-393ac",
+ "title": "The World as Will and Idea",
+ "author": "Arthur Schopenhauer",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "You Pick Favorites Without Knowing Part 3",
+ "hook": "You feel an instant gut warmth when meeting a stranger who shares your accent.",
+ "thumbnail_headline": "YOUR HIDDEN BIAS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel an instant gut warmth when meeting a stranger who shares your accent. Centuries ago, philosopher Arthur Schopenhauer argued that your unconscious desire drives your choices long before your logic kicks in. In 1970, social psychologist Henri Tajfel studied schoolboys in Bristol to test how deep this instinct runs. He showed that division requires almost nothing. The result? Boys favored total strangers based on fake coin flips, giving them more points for no reason. Later brain studies by neuroscientist Tania Singer in 2006 showed that your brain releases real empathy signals faster for people in your own group. That is not just one study in a lab. Psychologists call this the minimal group paradigm, and it shows up in modern offices and online forums alike. So why do we assume our preferences are pure logic? Because your conscious mind invents reasons to justify feelings that were already created deep down. Schopenhauer got the blind drive right, even if modern brain science proved it is rooted in biology. So next time you like someone instantly, remember how easily you feel an instant gut warmth when meeting a stranger who shares your accent."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People show automatic favoritism to total strangers assigned to arbitrary groups through coin flips.",
+   "who": "Henri Tajfel",
+   "year": "1970",
+   "place": "Bristol"
+  },
+  {
+   "claim": "Brain imaging reveals faster empathic neural responses toward members of one's identified in-group.",
+   "who": "Tania Singer",
+   "year": "2006",
+   "place": "London"
+  }
+ ],
+ "source_url": "",
+ "theme": "The World as Will and Idea by Arthur Schopenhauer",
+ "exp": ""
+}

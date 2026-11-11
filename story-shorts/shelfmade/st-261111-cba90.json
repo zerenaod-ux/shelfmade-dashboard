@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-cba90",
+ "title": "The World as Will and Idea",
+ "author": "Arthur Schopenhauer",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Your Craving Starts In Your Brain Part 2",
+ "hook": "You reach for your phone the moment you feel a quiet moment.",
+ "thumbnail_headline": "WHY YOU CRAVE IT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You reach for your phone the moment you feel a quiet moment. In 1818, philosopher Arthur Schopenhauer argued that your conscious mind does not drive your daily habits. He claimed an unconscious force controls your actions before you even think. Was he right about your hidden drives? In 2008, neuroscientist John-Dylan Haynes studied brain scans at the Bernstein Center in Berlin. He discovered that the brain prepares a decision about 7 seconds before a person consciously feels they chose it. The result? Your subconscious mind acts first, while your conscious brain invents a reason later. What did Schopenhauer get wrong? He believed this hidden drive was purely blind chaos. But cognitive psychologist John Bargh at Yale University showed in 2001 that unconscious habits actually automate about 40 percent of daily life to save mental energy. That's it. So why do we assume we are always in control? Because our conscious mind builds a story to hide the automatic impulse. In Part 3, we reveal how this hidden drive shapes your romantic choices. Next time you grab your device, remember that you reach for your phone the moment you feel a quiet moment."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The brain prepares a simple conscious choice up to several seconds before the subject becomes aware of it.",
+   "who": "John-Dylan Haynes",
+   "year": "2008",
+   "place": "Bernstein Center for Computational Neuroscience Berlin"
+  },
+  {
+   "claim": "Automatic, non-conscious processes control roughly 40 percent of daily human behavior.",
+   "who": "John Bargh",
+   "year": "2001",
+   "place": "Yale University"
+  }
+ ],
+ "source_url": "",
+ "theme": "The World as Will and Idea by Arthur Schopenhauer",
+ "exp": ""
+}
