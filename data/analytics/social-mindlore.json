@@ -1,8 +1,236 @@
 {
  "brand": "mindlore",
- "collected": "2026-11-10T18:54:03Z",
+ "collected": "2026-11-11T18:53:57Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Play Reveals Joy\n\nYou think play is just child's fun.\n\nEvidence: Jaak Panksepp (1978, University of Michi",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T07:13:41.849Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Play Boosts Joy\n\nYou think play is just for fun.\n\nEvidence: Frans de Waal (1982, chimpanzee sanctuary): a",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T03:06:06.014Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Play Reveals Joy\n\nYou think play is just child's fun.\n\nEvidence: Jaak Panksepp (1978, University of Michi",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-11T03:06:05.565Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Face Reacts\n\nYou freeze your face when you hear shocking news.\n\nEvidence: Paul Ekman (1969, University of",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T03:06:04.295Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Kids Expect Shock\n\nYou think kids love happy endings.\n\nEvidence: Psychologists at the University of Chica",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T03:06:04.943Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=CKZhAbMI7Ek",
+   "sent": "2026-11-11T00:00:15.000Z",
+   "text": "What if the habits that run your day were built by choices you barely noticed?\n\nLessons and original commentar",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T03:47:26.759Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=o3yiUpFfU8c",
+   "sent": "2026-11-11T00:00:30.000Z",
+   "text": "You notice your opinions shift in a group, but why does that happen?\n\nMindLore explains psychology from the or",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T03:47:26.759Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Play Boosts Joy\n\nYou think play is just for fun.\n\nEvidence: Frans de Waal (1982, chimpanzee sanctuary): a",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-10T23:45:11.362Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Play Reveals Joy\n\nYou think play is just child's fun.\n\nEvidence: Jaak Panksepp (1978, University of Michi",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-10T23:45:10.692Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-10T21:04:32.267Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Play Boosts Joy\n\nYou think play is just for fun.\n\nEvidence: Frans de Waal (1982, chimpanzee sanctuary): a",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-10T21:04:31.325Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-10T21:04:31.832Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-10T21:04:30.684Z"
+  },
   {
    "platform": "tiktok",
    "status": "scheduled",
@@ -111,11 +339,11 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7706697389800721677",
+   "sent": "2026-11-11T00:03:42.148Z",
    "text": "Crowds trigger ancient survival alarms\n\nYou feel anxious walking through a crowded city square.\n\nEvidence: Max",
-   "views": 0,
+   "views": 8,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -129,7 +357,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T02:38:40.456Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "tiktok",
@@ -179,15 +407,26 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Dfk7p15Eopw/",
+   "sent": "2026-11-10T22:02:31.147Z",
    "text": "Why Animals Play Games\n\nYou think play is just a childish waste of time.\n\nEvidence: Gordon Burghardt (2015, Un",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-10T02:38:39.000Z"
+   "views": 8,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T01:16:24.397Z"
   },
   {
    "platform": "youtube",
@@ -209,11 +448,11 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/2uytrhv7SeI",
+   "sent": "2026-11-10T23:01:15.571Z",
    "text": "Why Animals Play Games\n\nYou think play is just a childish waste of time.\n\nEvidence: Gordon Burghardt (2015, Un",
-   "views": 0,
+   "views": 64,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -223,7 +462,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:38:37.876Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -231,9 +470,9 @@
    "url": "https://www.youtube.com/watch?v=V8InsNplcoc",
    "sent": "2026-11-10T00:00:03.000Z",
    "text": "You wake up gasping from a dream about falling, but is your fear actually grounded in the dream itself?\n\nMindL",
-   "views": 2,
+   "views": 11,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -241,7 +480,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -251,7 +490,7 @@
    "text": "Are children's dreams really simpler than the dreams of adults?\n\nLessons and original commentary inspired by D",
    "views": 0,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -259,7 +498,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "tiktok",
@@ -307,9 +546,9 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7706751083426614541",
+   "sent": "2026-11-11T03:31:08.303Z",
    "text": "Pain of Isolation\n\nYou feel physical pain when your friends leave you out.\n\nEvidence: Naomi Eisenberger (2003,",
    "views": 0,
    "likes": 0,
@@ -377,9 +616,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfnFWOrD-aD/",
+   "sent": "2026-11-11T18:05:40.402Z",
    "text": "First Impression Myth\n\nYou judge a stranger in seconds.\n\nEvidence: Janine Willis and Alexander Todorov (2006, ",
    "views": null,
    "likes": null,
@@ -389,9 +628,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DflXFrnnLUm/",
+   "sent": "2026-11-11T02:02:23.617Z",
    "text": "Pain of Isolation\n\nYou feel physical pain when your friends leave you out.\n\nEvidence: Naomi Eisenberger (2003,",
    "views": null,
    "likes": null,
@@ -437,9 +676,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/xlBpcfuR69U",
+   "sent": "2026-11-11T18:04:47.831Z",
    "text": "Crowds trigger ancient survival alarms\n\nYou feel anxious walking through a crowded city square.\n\nEvidence: Max",
    "views": 0,
    "likes": 0,
@@ -451,15 +690,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-09T20:31:58.372Z"
+   "updated": "2026-11-11T18:07:15.651Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/X9Z1e8QV6PQ",
+   "sent": "2026-11-11T03:01:32.580Z",
    "text": "Why Silence Heals Your Brain\n\nYou live in a world of constant background noise.\n\nEvidence: Luciano Bernardi (2",
-   "views": 0,
+   "views": 24,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -469,15 +708,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-09T16:42:34.910Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/GPPdglOKqFc",
+   "sent": "2026-11-11T00:02:00.162Z",
    "text": "First Impression Myth\n\nYou judge a stranger in seconds.\n\nEvidence: Janine Willis and Alexander Todorov (2006, ",
-   "views": 0,
+   "views": 24,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -487,15 +726,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-09T16:42:34.101Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/lMXaBBTZsps",
+   "sent": "2026-11-10T21:01:31.178Z",
    "text": "Pain of Isolation\n\nYou feel physical pain when your friends leave you out.\n\nEvidence: Naomi Eisenberger (2003,",
-   "views": 0,
+   "views": 16,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -505,7 +744,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-09T16:42:33.314Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "tiktok",
@@ -513,8 +752,8 @@
    "url": "https://tiktok.com/@mindlore.daily/video/7706264389841603854",
    "sent": "2026-11-09T20:02:55.628Z",
    "text": "Why a deadline makes your stomach knot\n\nYou feel a knot in your stomach whenever a deadline looms, but ancient",
-   "views": 40,
-   "likes": 0,
+   "views": 83,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -527,7 +766,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "instagram",
@@ -535,7 +774,115 @@
    "url": "https://www.instagram.com/reel/Dfh7h2ZDfON/",
    "sent": "2026-11-09T18:04:21.607Z",
    "text": "Why a deadline makes your stomach knot\n\nYou feel a knot in your stomach whenever a deadline looms, but ancient",
-   "views": 34,
+   "views": 53,
+   "likes": 5,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T01:16:24.413Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/MTXe8IAf__g",
+   "sent": "2026-11-09T18:02:05.002Z",
+   "text": "Why a deadline makes your stomach knot\n\nYou feel a knot in your stomach whenever a deadline looms, but ancient",
+   "views": 43,
+   "likes": 1,
+   "comments": 1,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T03:47:26.759Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7706379912285850894",
+   "sent": "2026-11-10T03:31:54.945Z",
+   "text": "Your brain can't truly multitask\n\nYou try to juggle emails, texts, and meetings all day.\n\nEvidence: Richard Le",
+   "views": 79,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T00:44:45.797Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7706635615923735822",
+   "sent": "2026-11-10T20:03:28.577Z",
+   "text": "Is chasing every extra dollar worth it?\n\nYou chase every extra dollar you can earn.\n\nEvidence: Richard Easterl",
+   "views": 77,
+   "likes": 2,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T00:44:45.797Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfkgZu_EdxG/",
+   "sent": "2026-11-10T18:04:56.004Z",
+   "text": "Is chasing every extra dollar worth it?\n\nYou chase every extra dollar you can earn.\n\nEvidence: Richard Easterl",
+   "views": 7,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T01:16:24.409Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfiyO3xE6Q8/",
+   "sent": "2026-11-10T02:02:06.608Z",
+   "text": "Your brain can't truly multitask\n\nYou try to juggle emails, texts, and meetings all day.\n\nEvidence: Richard Le",
+   "views": 19,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -550,15 +897,15 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.411Z"
   },
   {
    "platform": "youtube",
    "status": "sent",
-   "url": "https://www.youtube.com/shorts/MTXe8IAf__g",
-   "sent": "2026-11-09T18:02:05.002Z",
-   "text": "Why a deadline makes your stomach knot\n\nYou feel a knot in your stomach whenever a deadline looms, but ancient",
-   "views": 38,
+   "url": "https://www.youtube.com/shorts/3CRX1T8eE7Q",
+   "sent": "2026-11-10T18:03:17.921Z",
+   "text": "Is chasing every extra dollar worth it?\n\nYou chase every extra dollar you can earn.\n\nEvidence: Richard Easterl",
+   "views": 42,
    "likes": 1,
    "comments": 1,
    "metrics": [
@@ -568,93 +915,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://tiktok.com/@mindlore.daily/video/7706379912285850894",
-   "sent": "2026-11-10T03:31:54.945Z",
-   "text": "Your brain can't truly multitask\n\nYou try to juggle emails, texts, and meetings all day.\n\nEvidence: Richard Le",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-09T05:58:30.114Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "Is chasing every extra dollar worth it?\n\nYou chase every extra dollar you can earn.\n\nEvidence: Richard Easterl",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-09T05:58:30.516Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfkgZu_EdxG/",
-   "sent": "2026-11-10T18:04:56.004Z",
-   "text": "Is chasing every extra dollar worth it?\n\nYou chase every extra dollar you can earn.\n\nEvidence: Richard Easterl",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-09T05:58:28.905Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfiyO3xE6Q8/",
-   "sent": "2026-11-10T02:02:06.608Z",
-   "text": "Your brain can't truly multitask\n\nYou try to juggle emails, texts, and meetings all day.\n\nEvidence: Richard Le",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-09T05:58:28.497Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/3CRX1T8eE7Q",
-   "sent": "2026-11-10T18:03:17.921Z",
-   "text": "Is chasing every extra dollar worth it?\n\nYou chase every extra dollar you can earn.\n\nEvidence: Richard Easterl",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T18:04:48.267Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -662,9 +923,9 @@
    "url": "https://www.youtube.com/shorts/ufT1qz-t0TI",
    "sent": "2026-11-10T03:00:44.011Z",
    "text": "Your brain can't truly multitask\n\nYou try to juggle emails, texts, and meetings all day.\n\nEvidence: Richard Le",
-   "views": 12,
+   "views": 16,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -672,7 +933,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -680,9 +941,9 @@
    "url": "https://www.youtube.com/watch?v=4lZoI4B4VbE",
    "sent": "2026-11-09T00:00:28.000Z",
    "text": "Is a slip of the tongue just a random error, or does it mean something?\n\nLessons and original commentary inspi",
-   "views": 0,
+   "views": 1,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -690,7 +951,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -708,7 +969,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -726,7 +987,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -744,7 +1005,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "tiktok",
@@ -752,8 +1013,8 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7706008902059740430?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-09T03:31:10.678Z",
    "text": "The part of Crowd nobody mentions. The Crowd by Gustave Le Bon Follow MindLore for a new psychology lesson eve",
-   "views": 20,
-   "likes": 0,
+   "views": 22,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -766,7 +1027,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "instagram",
@@ -789,7 +1050,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.461Z"
   },
   {
    "platform": "youtube",
@@ -797,7 +1058,7 @@
    "url": "https://www.youtube.com/shorts/enlkJrZ0aqc",
    "sent": "2026-11-09T03:01:07.376Z",
    "text": "The part of Crowd nobody mentions.\n\nThe Crowd by Gustave Le Bon\n\nFollow MindLore for a new psychology lesson e",
-   "views": 27,
+   "views": 30,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -807,7 +1068,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -830,7 +1091,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.463Z"
   },
   {
    "platform": "instagram",
@@ -838,8 +1099,8 @@
    "url": "https://www.instagram.com/reel/DffXFnaFARc/",
    "sent": "2026-11-08T18:07:15.173Z",
    "text": "Why does Crowd still matter?\n\nThe Crowd by Gustave Le Bon\n\nFollow MindLore for a new psychology lesson every d",
-   "views": 11,
-   "likes": 0,
+   "views": 12,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -853,7 +1114,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.420Z"
   },
   {
    "platform": "tiktok",
@@ -861,7 +1122,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7705893390910639373?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-08T20:03:01.251Z",
    "text": "Why does Crowd still matter? The Crowd by Gustave Le Bon Follow MindLore for a new psychology lesson every day",
-   "views": 86,
+   "views": 87,
    "likes": 2,
    "comments": 0,
    "metrics": [
@@ -875,7 +1136,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "instagram",
@@ -883,7 +1144,7 @@
    "url": "https://www.instagram.com/reel/Dfdos5ogKib/",
    "sent": "2026-11-08T02:02:14.492Z",
    "text": "James had a warning for you.\n\nPsychology: Briefer Course by William James\n\nFollow MindLore for a new psycholog",
-   "views": 59,
+   "views": 60,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -898,7 +1159,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.425Z"
   },
   {
    "platform": "tiktok",
@@ -906,7 +1167,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7705637848686382349?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-08T03:31:03.972Z",
    "text": "James had a warning for you. Psychology: Briefer Course by William James Follow MindLore for a new psychology ",
-   "views": 96,
+   "views": 97,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -920,7 +1181,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -928,7 +1189,7 @@
    "url": "https://www.youtube.com/shorts/BeQ1CnMVAns",
    "sent": "2026-11-08T18:02:49.829Z",
    "text": "James had a warning for you.\n\nPsychology: Briefer Course by William James\n\nFollow MindLore for a new psycholog",
-   "views": 21,
+   "views": 22,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -938,7 +1199,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -961,7 +1222,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.459Z"
   },
   {
    "platform": "tiktok",
@@ -983,7 +1244,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1001,7 +1262,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1024,7 +1285,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.401Z"
   },
   {
    "platform": "tiktok",
@@ -1046,7 +1307,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1064,7 +1325,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1087,7 +1348,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.466Z"
   },
   {
    "platform": "tiktok",
@@ -1109,7 +1370,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1127,7 +1388,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1150,7 +1411,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.766Z"
+   "updated": "2026-11-11T01:16:24.453Z"
   },
   {
    "platform": "tiktok",
@@ -1158,7 +1419,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7704895665154936077?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-06T03:32:18.644Z",
    "text": "Darwin had a warning for you. The Expression of the Emotions in Man and Animals by Charles Darwin Follow MindL",
-   "views": 56,
+   "views": 58,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1172,7 +1433,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1190,7 +1451,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -1208,7 +1469,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -1226,7 +1487,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "tiktok",
@@ -1248,7 +1509,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "instagram",
@@ -1271,7 +1532,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.767Z"
+   "updated": "2026-11-11T01:16:24.415Z"
   },
   {
    "platform": "tiktok",
@@ -1293,7 +1554,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1311,7 +1572,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1334,7 +1595,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.767Z"
+   "updated": "2026-11-11T01:16:24.427Z"
   },
   {
    "platform": "tiktok",
@@ -1356,7 +1617,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1374,7 +1635,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1397,7 +1658,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.767Z"
+   "updated": "2026-11-11T01:16:24.451Z"
   },
   {
    "platform": "tiktok",
@@ -1419,7 +1680,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1437,7 +1698,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1460,7 +1721,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.767Z"
+   "updated": "2026-11-11T01:16:24.469Z"
   },
   {
    "platform": "tiktok",
@@ -1482,7 +1743,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1500,7 +1761,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1523,7 +1784,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.767Z"
+   "updated": "2026-11-11T01:16:24.471Z"
   },
   {
    "platform": "tiktok",
@@ -1545,7 +1806,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1563,7 +1824,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -1581,7 +1842,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -1599,7 +1860,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "youtube",
@@ -1617,7 +1878,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.866Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   },
   {
    "platform": "instagram",
@@ -1640,7 +1901,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:16:14.767Z"
+   "updated": "2026-11-11T01:16:24.447Z"
   },
   {
    "platform": "tiktok",
@@ -1662,7 +1923,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T01:43:50.269Z"
+   "updated": "2026-11-11T00:44:45.797Z"
   },
   {
    "platform": "youtube",
@@ -1680,277 +1941,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T04:25:36.865Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfP6GmuiCRU/",
-   "sent": "2026-11-02T18:05:00.291Z",
-   "text": "Why can fixing one small thing feel more satisfying than collecting another?\n\nA MindLore reflection on The Ins",
-   "views": 73,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:16:14.767Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7703666871928737037?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-02T20:03:25.501Z",
-   "text": "Why can fixing one small thing feel more satisfying than collecting another? A MindLore reflection on The Inst",
-   "views": 47,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:43:50.269Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/Z5ifzR5nOV0",
-   "sent": "2026-11-02T23:01:36.366Z",
-   "text": "Why can fixing one small thing feel more satisfying than collecting another?\n\nA MindLore reflection on The Ins",
-   "views": 13,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T04:25:36.865Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfOL3-Jgv7z/",
-   "sent": "2026-11-02T02:01:34.929Z",
-   "text": "Is your plan so impressive that you never begin it?\n\nA MindLore reflection on Mental Efficiency.\nSource: https",
-   "views": 42,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:16:14.767Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7703411266152451342?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-02T03:32:00.908Z",
-   "text": "Is your plan so impressive that you never begin it? A MindLore reflection on Mental Efficiency. Source: https:",
-   "views": 83,
-   "likes": 3,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:43:50.269Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/EzKs0ef9QYY",
-   "sent": "2026-11-02T18:04:03.138Z",
-   "text": "Is your plan so impressive that you never begin it?\n\nA MindLore reflection on Mental Efficiency.\nSource: https",
-   "views": 26,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T04:25:36.865Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfN3UiHAIoD/",
-   "sent": "2026-11-01T23:02:42.623Z",
-   "text": "When a book calls an idea a law, what makes it a law?\n\nA MindLore reflection on The Law Of The New Thought.\nSo",
-   "views": 49,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:16:14.767Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7703357482319629582?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-02T00:02:37.811Z",
-   "text": "When a book calls an idea a law, what makes it a law? A MindLore reflection on The Law Of The New Thought. Sou",
-   "views": 62,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:43:50.269Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/sAcQkvFxvt4",
-   "sent": "2026-11-02T03:00:58.466Z",
-   "text": "When a book calls an idea a law, what makes it a law?\n\nA MindLore reflection on The Law Of The New Thought.\nSo",
-   "views": 30,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T04:25:36.865Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfNVDaUH1Tb/",
-   "sent": "2026-11-01T18:02:31.517Z",
-   "text": "What happens when you give one ordinary task your full attention?\n\nA MindLore reflection on The Power Of Conce",
-   "views": 5,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:16:14.767Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7703295704189685006?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-01T20:03:00.801Z",
-   "text": "What happens when you give one ordinary task your full attention? A MindLore reflection on The Power Of Concen",
-   "views": 31,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T01:43:50.269Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/awhOFsaSkXA",
-   "sent": "2026-11-01T23:01:27.454Z",
-   "text": "What happens when you give one ordinary task your full attention?\n\nA MindLore reflection on The Power Of Conce",
-   "views": 24,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T04:25:36.865Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=EMQX3FI6-Lk",
-   "sent": "2026-10-30T23:00:10.000Z",
-   "text": "What happens when measuring people becomes a claim about their worth?\n\nA guided primary-text reading with orig",
-   "views": 5,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T04:25:36.866Z"
+   "updated": "2026-11-11T03:47:26.759Z"
   }
  ]
 }

@@ -1,8 +1,148 @@
 {
  "brand": "shelfmade",
- "collected": "2026-11-10T18:54:02Z",
+ "collected": "2026-11-11T18:53:57Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Allen would hate how you live.\n\nOut from the Heart by James Allen\n\nFollow ShelfMade for a new classic-book les",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T11:26:49.738Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Read this before you open Self-Reliance.\n\nSelf-Reliance (Essays) by Ralph Waldo Emerson\n\nRead this before you ",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-11T11:26:49.197Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "You were taught Tao Te Ching wrong.\n\nTao Te Ching by Lao Tzu\n\nFollow ShelfMade for a new classic-book lesson e",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T11:26:48.668Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=XU8c9iqTGlI",
+   "sent": "2026-11-11T00:00:40.000Z",
+   "text": "What if the smartest victory begins before the fight?\n\nLessons and original commentary inspired by The Art of ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T02:09:37.962Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=yw-m_m8OYiE",
+   "sent": "2026-11-11T00:00:16.000Z",
+   "text": "Ruskin wrote this for you.\n\nLessons and original commentary inspired by The Crown of Wild Olive by John Ruskin",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-11T02:09:37.962Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Read this before you open Self-Reliance.\n\nSelf-Reliance (Essays) by Ralph Waldo Emerson\n\nRead this before you ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-10T21:25:29.466Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why does Thus Spake Zarathustra still matter?\n\nThus Spake Zarathustra by Friedrich Nietzsche\n\nWhy does Thus Sp",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-10T19:03:06.201Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Confucius had a warning for you.\n\nThe Analects by Confucius\n\nFollow ShelfMade for a new classic-book lesson ev",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-10T19:03:05.528Z"
+  },
   {
    "platform": "tiktok",
    "status": "scheduled",
@@ -61,9 +201,9 @@
    "url": "https://www.youtube.com/watch?v=lX71jEZ8QNg",
    "sent": "2026-11-10T00:00:16.000Z",
    "text": "Allen would hate how you live.\n\nLessons and original commentary inspired by As a Man Thinketh by James Allen. ",
-   "views": 0,
+   "views": 1,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -71,7 +211,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -185,7 +325,7 @@
    "text": "You were taught Meditations wrong.\n\nLessons and original commentary inspired by Meditations by Marcus Aurelius",
    "views": 0,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -193,7 +333,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -315,7 +455,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "instagram",
@@ -455,7 +595,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -481,9 +621,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfnFkwKlqr7/",
+   "sent": "2026-11-11T18:07:50.917Z",
    "text": "Plato had a warning for you.\n\nPhaedrus by Plato\n\nPlato had a warning for you.\n\nPHAEDRUS: You shall hear, if yo",
    "views": null,
    "likes": null,
@@ -493,9 +633,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/SAQ1Y0wN0zI",
+   "sent": "2026-11-11T18:06:16.014Z",
    "text": "Nobody warns you about Tao Te Ching.\n\nTao Te Ching by Lao Tzu\n\nNobody warns you about Tao Te Ching.\n\nMusic and",
    "views": 0,
    "likes": 0,
@@ -507,7 +647,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-06T18:17:05.567Z"
+   "updated": "2026-11-11T18:07:47.759Z"
   },
   {
    "platform": "tiktok",
@@ -515,7 +655,7 @@
    "url": "https://www.tiktok.com/@shelfmade.daily/video/7706380011124641038?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-10T03:32:09.192Z",
    "text": "Plato had a warning for you. Phaedrus by Plato Plato had a warning for you. PHAEDRUS: You shall hear, if you c",
-   "views": 73,
+   "views": 88,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -529,7 +669,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.387Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "youtube",
@@ -537,9 +677,9 @@
    "url": "https://www.youtube.com/shorts/L8fBZiNE9xA",
    "sent": "2026-11-10T03:01:31.305Z",
    "text": "Nobody warns you about Analects.\n\nThe Analects by Confucius\n\nNobody warns you about Analects.\n\nHow can a man c",
-   "views": 0,
+   "views": 1,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -547,7 +687,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T03:04:08.195Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "instagram",
@@ -555,11 +695,22 @@
    "url": "https://www.instagram.com/reel/DfiyYoPirEJ/",
    "sent": "2026-11-10T02:03:23.189Z",
    "text": "Why is Bacon's Essays still read today?\n\nBacon's Essays by Francis Bacon\n\nWhy is Bacon's Essays still read tod",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-06T05:33:36.960Z"
+   "views": 9,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T00:17:53.852Z"
   },
   {
    "platform": "tiktok",
@@ -567,7 +718,7 @@
    "url": "https://www.tiktok.com/@shelfmade.daily/video/7706264731056672014?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-09T20:04:10.640Z",
    "text": "Why is Bacon's Essays still read today? Bacon's Essays by Francis Bacon Why is Bacon's Essays still read today",
-   "views": 92,
+   "views": 93,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -581,7 +732,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.375Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "youtube",
@@ -599,7 +750,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -617,7 +768,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "instagram",
@@ -625,7 +776,7 @@
    "url": "https://www.instagram.com/reel/Dfh7z0NAs8c/",
    "sent": "2026-11-09T18:07:31.160Z",
    "text": "Is this really true?\n\nOut from the Heart by James Allen\n\nWithout the right performance of duty, the higher vir",
-   "views": 5,
+   "views": 6,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -640,7 +791,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.243Z"
+   "updated": "2026-11-11T00:17:53.887Z"
   },
   {
    "platform": "tiktok",
@@ -662,7 +813,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.525Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -685,7 +836,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.247Z"
+   "updated": "2026-11-11T00:17:53.819Z"
   },
   {
    "platform": "youtube",
@@ -703,7 +854,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -725,7 +876,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.371Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -748,7 +899,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.262Z"
+   "updated": "2026-11-11T00:17:53.890Z"
   },
   {
    "platform": "youtube",
@@ -756,7 +907,7 @@
    "url": "https://www.youtube.com/shorts/vSqKjuyAJhM",
    "sent": "2026-11-08T18:02:48.930Z",
    "text": "Remember that you are to _grow_ into Truth by steady perseverance\n\nThe Way of Peace by James Allen\n\nRemember t",
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -766,7 +917,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "youtube",
@@ -774,7 +925,7 @@
    "url": "https://www.youtube.com/watch?v=6z0IxWs-qko",
    "sent": "2026-11-05T00:00:18.000Z",
    "text": "Why does Mental Efficiency still matter?\n\nLessons and original commentary inspired by Mental Efficiency, and O",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -784,7 +935,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "tiktok",
@@ -806,7 +957,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.290Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -829,7 +980,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.269Z"
+   "updated": "2026-11-11T00:17:53.818Z"
   },
   {
    "platform": "youtube",
@@ -839,7 +990,7 @@
    "text": "Is this really true?\n\nOut from the Heart by James Allen\n\nWithout the right performance of duty, the higher vir",
    "views": 3,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -847,7 +998,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -869,7 +1020,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.397Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "youtube",
@@ -887,7 +1038,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -909,7 +1060,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.313Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -932,7 +1083,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.298Z"
+   "updated": "2026-11-11T00:17:53.893Z"
   },
   {
    "platform": "youtube",
@@ -950,7 +1101,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -972,7 +1123,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.317Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -995,7 +1146,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.244Z"
+   "updated": "2026-11-11T00:17:53.878Z"
   },
   {
    "platform": "tiktok",
@@ -1017,7 +1168,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.366Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -1040,7 +1191,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.267Z"
+   "updated": "2026-11-11T00:17:53.825Z"
   },
   {
    "platform": "tiktok",
@@ -1062,7 +1213,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.307Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -1085,7 +1236,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.287Z"
+   "updated": "2026-11-11T00:17:53.824Z"
   },
   {
    "platform": "youtube",
@@ -1103,7 +1254,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -1121,7 +1272,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -1139,7 +1290,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -1157,7 +1308,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -1175,7 +1326,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -1193,7 +1344,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -1211,7 +1362,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "youtube",
@@ -1229,7 +1380,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "tiktok",
@@ -1251,7 +1402,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.293Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -1274,7 +1425,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.294Z"
+   "updated": "2026-11-11T00:17:53.843Z"
   },
   {
    "platform": "youtube",
@@ -1292,7 +1443,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "tiktok",
@@ -1314,7 +1465,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.287Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "tiktok",
@@ -1336,7 +1487,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.321Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -1359,7 +1510,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.296Z"
+   "updated": "2026-11-11T00:17:53.868Z"
   },
   {
    "platform": "youtube",
@@ -1377,7 +1528,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "tiktok",
@@ -1399,7 +1550,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.329Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -1422,7 +1573,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.278Z"
+   "updated": "2026-11-11T00:17:53.846Z"
   },
   {
    "platform": "youtube",
@@ -1440,7 +1591,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "instagram",
@@ -1463,7 +1614,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.329Z"
+   "updated": "2026-11-11T00:17:53.822Z"
   },
   {
    "platform": "youtube",
@@ -1471,7 +1622,7 @@
    "url": "https://www.youtube.com/shorts/sGfMrVc9aVQ",
    "sent": "2026-11-03T03:00:28.920Z",
    "text": "Your moral character must be not only pure, but, like Caesar\u2019s wife, unsuspected\n\nLetters to His Son, Complete",
-   "views": 35,
+   "views": 36,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1481,13 +1632,13 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@shelfmade.daily/video/7706751168659098893",
+   "sent": "2026-11-11T03:31:18.555Z",
    "text": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!\n\nThe Condu",
    "views": 0,
    "likes": 0,
@@ -1507,9 +1658,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DflXKlRCqDy/",
+   "sent": "2026-11-11T02:02:48.372Z",
    "text": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!\n\nThe Condu",
    "views": null,
    "likes": null,
@@ -1519,9 +1670,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/v5GPz22mgbU",
+   "sent": "2026-11-11T03:01:48.462Z",
    "text": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!\n\nThe Condu",
    "views": 0,
    "likes": 0,
@@ -1533,16 +1684,16 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-03T00:41:11.856Z"
+   "updated": "2026-11-11T03:03:22.077Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@shelfmade.daily/video/7706635888155020558",
+   "sent": "2026-11-10T20:05:22.274Z",
    "text": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday\n\nThe Majesty of Calmnes",
-   "views": 0,
-   "likes": 0,
+   "views": 37,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -1555,7 +1706,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-03T00:40:59.586Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -1563,11 +1714,22 @@
    "url": "https://www.instagram.com/reel/Dfkgxazjgxe/",
    "sent": "2026-11-10T18:08:07.695Z",
    "text": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday\n\nThe Majesty of Calmnes",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-03T00:40:57.468Z"
+   "views": 5,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-11T00:17:53.882Z"
   },
   {
    "platform": "youtube",
@@ -1575,9 +1737,9 @@
    "url": "https://www.youtube.com/shorts/qreV4UF_HS4",
    "sent": "2026-11-10T18:04:36.522Z",
    "text": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday\n\nThe Majesty of Calmnes",
-   "views": 0,
+   "views": 1,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -1585,7 +1747,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T18:07:16.045Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "tiktok",
@@ -1607,7 +1769,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.390Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "instagram",
@@ -1630,7 +1792,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.280Z"
+   "updated": "2026-11-11T00:17:53.885Z"
   },
   {
    "platform": "youtube",
@@ -1638,7 +1800,7 @@
    "url": "https://www.youtube.com/shorts/Y-FWlbV5SYM",
    "sent": "2026-11-06T18:05:39.692Z",
    "text": "If so, you may enter the narrow way of Truth, and find that peace from which the world is shut out\n\nThe Way of",
-   "views": 51,
+   "views": 50,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1648,7 +1810,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "instagram",
@@ -1656,7 +1818,7 @@
    "url": "https://www.instagram.com/reel/DfYfINcjKVR/",
    "sent": "2026-11-06T02:02:11.687Z",
    "text": "We avowedly follow not the truth but the will of the many (compare Republic)\n\nPhaedrus by Plato\n\nWe avowedly f",
-   "views": 5,
+   "views": 6,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1671,7 +1833,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.249Z"
+   "updated": "2026-11-11T00:17:53.844Z"
   },
   {
    "platform": "tiktok",
@@ -1693,7 +1855,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.373Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "youtube",
@@ -1711,7 +1873,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
+   "updated": "2026-11-11T02:09:37.962Z"
   },
   {
    "platform": "instagram",
@@ -1734,7 +1896,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T00:17:44.291Z"
+   "updated": "2026-11-11T00:17:53.889Z"
   },
   {
    "platform": "tiktok",
@@ -1742,7 +1904,7 @@
    "url": "https://www.tiktok.com/@shelfmade.daily/video/7704842308864183566?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-06T00:04:11.410Z",
    "text": "Where is your attention? Out from the Heart by James Allen And can a man fashion his mind in accordance with T",
-   "views": 92,
+   "views": 93,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1756,7 +1918,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T09:17:02.357Z"
+   "updated": "2026-11-10T22:45:42.231Z"
   },
   {
    "platform": "youtube",
@@ -1774,173 +1936,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T02:47:33.202Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7704524525546818830?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-05T03:32:04.227Z",
-   "text": "Never mind; she can't scratch you while Florrie is holding her The Crown of Wild Olive by John Ruskin Never mi",
-   "views": 111,
-   "likes": 3,
-   "comments": 1,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T09:17:02.362Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfV6X1PmQSF/",
-   "sent": "2026-11-05T02:03:05.503Z",
-   "text": "Never mind; she can't scratch you while Florrie is holding her\n\nThe Crown of Wild Olive by John Ruskin\n\nNever ",
-   "views": 4,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T00:17:44.242Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/88SeG1rSwzc",
-   "sent": "2026-11-05T03:01:13.233Z",
-   "text": "Never mind; she can't scratch you while Florrie is holding her\n\nThe Crown of Wild Olive by John Ruskin\n\nNever ",
-   "views": 46,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T02:47:33.202Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=X3V948qB6Ng",
-   "sent": "2026-10-29T23:00:17.000Z",
-   "text": "Epictetus taught that humans are 'sprung from God' and share kinship with the divine through our reason and in",
-   "views": 8,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T02:47:33.203Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7703357495854615821?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-02T00:02:40.407Z",
-   "text": "Now a prig is a pert fellow who gives himself airs of superior wisdom How to Live on 24 Hours a Day by Arnold ",
-   "views": 96,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T09:17:02.500Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfN3XyKDcrT/",
-   "sent": "2026-11-01T23:02:45.836Z",
-   "text": "Now a prig is a pert fellow who gives himself airs of superior wisdom\n\nHow to Live on 24 Hours a Day by Arnold",
-   "views": 9,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T00:17:44.272Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/QHacncwEVO4",
-   "sent": "2026-11-01T23:01:44.653Z",
-   "text": "Now a prig is a pert fellow who gives himself airs of superior wisdom\n\nHow to Live on 24 Hours a Day by Arnold",
-   "views": 17,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-10T02:47:33.202Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7703295734761721101?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-01T20:03:21.917Z",
-   "text": "You can turn over a new leaf every hour if you choose How to Live on 24 Hours a Day by Arnold Bennett You can ",
-   "views": 93,
-   "likes": 2,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T09:17:02.369Z"
+   "updated": "2026-11-11T02:09:37.963Z"
   }
  ]
 }
