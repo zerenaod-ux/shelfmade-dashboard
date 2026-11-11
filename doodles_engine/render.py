@@ -207,7 +207,7 @@ def render(work):
                         elif not fastlip.is_open(np.asarray(im_),g_):geo[(si_,who_)]=g_
                         else:
                             try:   # drawn mouth already open: close it ourselves, then the speaking animation can run on it
-                                if __import__('os').environ.get('DOODLES_AUTOCLOSE')=='0':raise ValueError('auto-close off')
+                                if __import__('os').environ.get('DOODLES_AUTOCLOSE')!='1':raise ValueError('auto-close off (opt-in only)')
                                 _c=fastlip.close_mouth(np.asarray(imgs[si_]),g_)
                                 if not fastlip.is_open(_c,g_):
                                     imgs[si_]=Image.fromarray(_c);geo[(si_,who_)]=g_;print('MOUTH-CLOSED shot',si_+1,who_,flush=True);mflags.append('shot %d %s (closed automatically)'%(si_+1,who_))
