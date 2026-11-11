@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T19:58:48+00:00",
+ "at": "2026-11-11T19:50:09+00:00",
  "ready": "bad",
  "checks": [
   {
@@ -10,22 +10,22 @@
   {
    "name": "Jobs",
    "level": "warn",
-   "text": "last run failed: mindlore-live-redo"
+   "text": "last run failed: bio-page, doodles, mindlore-live-redo"
   },
   {
    "name": "Alerts",
    "level": "bad",
-   "text": "4 open: ALERT: Doodles daily run not succeeding; ALERT: Kaggle GPU failing (Doodles pause; ALERT: Doodles using too much free GPU"
+   "text": "3 open: ALERT: Doodles daily run not succeeding; ALERT: Kaggle GPU failing (Doodles pause; ALERT: Doodles using too much free GPU"
   },
   {
    "name": "Keys",
    "level": "ok",
-   "text": "weekly key test success, 0 days ago"
+   "text": "weekly key test success, 1 days ago"
   },
   {
    "name": "Doodles stories",
    "level": "ok",
-   "text": "0 unused saved (more are written automatically)"
+   "text": "2 unused saved (more are written automatically)"
   },
   {
    "name": "ShelfMade posts waiting",
@@ -35,7 +35,7 @@
   {
    "name": "Waiting for review",
    "level": "ok",
-   "text": "0 videos open (autopilot clears them when ON)"
+   "text": "3 videos open (autopilot clears them when ON)"
   }
  ]
 }
