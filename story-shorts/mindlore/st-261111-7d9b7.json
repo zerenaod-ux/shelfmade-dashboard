@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-7d9b7",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Joy Is Wild",
+ "hook": "You think play is just silly entertainment.",
+ "thumbnail_headline": "ANIMALS FEEL JOY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think play is just silly entertainment. Ancient instincts actually treat joyful play as pure survival. In the 1990s, neuroscientist Jaak Panksepp studied laboratory rats and recorded ultrasonic chirps at about 50 kilohertz whenever they wrestled. The result? Animals literally laugh when they have fun. Why do wild creatures risk wasted energy on games? Panksepp discovered that rough play activates an ancient subcortical brain network called the play system, releasing dopamine. This is not just one creature. In 2004, biologist Marc Bekoff tracked wild canines and documented a distinct bow signal used about 100 percent of the time to declare honest fun before a mock attack. Biologists call this social play signaling. So why do we assume joy is uniquely human? Modern life tricked us into separating hard work from happiness. Ancient hunters and wild beasts knew play builds trust and sharpens reflexes. That's it. So next time you watch a dog romp, remember that you think play is just silly entertainment."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Rats emit 50-kHz ultrasonic vocalizations (laughter) during rough-and-tumble play mediated by a subcortical play system.",
+   "who": "Jaak Panksepp",
+   "year": "1990s",
+   "place": "Bowling Green State University"
+  },
+  {
+   "claim": "Wild canines use specific play bows as an honest communicative signal to negotiate social play and avoid real fighting.",
+   "who": "Marc Bekoff",
+   "year": "2004",
+   "place": "University of Colorado"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

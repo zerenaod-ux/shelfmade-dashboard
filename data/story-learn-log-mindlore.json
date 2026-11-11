@@ -960,6 +960,37 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261111-7d9b7",
+   "look": "live-demo",
+   "title": "Your Joy Is Wild",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
