@@ -6,7 +6,7 @@ GRACE = 100   # minutes: GitHub delays of ~2.5 h were observed; after that we st
 MAXLATE = 10 * 60
 JOBS = [  # workflow file, hour UTC, minute, weekdays (Mon=0..Sun=6) or None=daily
     ('radar.yml', 7, 7, None), ('doodles.yml', 7, 37, None), ('doodles-full.yml', 6, 40, (1, 4)),
-    ('full-video.yml', 9, 10, (0, 3)), ('daily-shorts.yml', 11, 7, None), ('mindlore-2d.yml', 11, 20, (2, 5)),   # KICK2D: MindLore full video is 2D only
+    ('full-video.yml', 9, 10, (0, 2, 4, 6)), ('mindlore-2d.yml', 11, 20, (2, 5)),   # KICK2D: MindLore full video is 2D only
     ('mindlore-story-short.yml', 13, 40, None), ('shelfmade-story-short.yml', 14, 10, None), ('learn.yml', 14, 12, (0, 3)),
 ]
 def sh(*a):

@@ -1,7 +1,6 @@
 name: daily-shorts
 on:
-  schedule:
-    - cron: '7 11 * * *'   # 6 AM Chicago (CDT) every day
+  # schedule OFF 2026-11-11 (owner): ShelfMade posts ONE Short a day (shelfmade-story-short.yml), the same on YouTube, TikTok, Instagram
   workflow_dispatch:
     inputs:
       count:
