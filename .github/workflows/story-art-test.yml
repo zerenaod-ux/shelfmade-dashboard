@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu
-      - run: pip install --quiet pillow numpy edge-tts requests kaggle
+      - run: pip install --quiet pillow numpy edge-tts requests six python-slugify python-dateutil tqdm urllib3 certifi bleach protobuf text-unidecode kaggle
       - name: Build samples
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
