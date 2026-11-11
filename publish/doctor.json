@@ -2,8 +2,7 @@
  "on": true,
  "attempts": {
   "mindlore-live-redo": 1,
-  "mindlore-story-short": 1,
-  "doodles": 1
+  "doodles": 2
  },
  "pending": [],
  "log": [
@@ -66,9 +65,13 @@
   {
    "t": "11-11 16:57Z",
    "msg": "doodles: no safe automatic fix found"
+  },
+  {
+   "t": "11-11 19:50Z",
+   "msg": "doodles: no safe automatic fix found"
   }
  ],
- "at": "2026-11-11T16:57:16Z",
+ "at": "2026-11-11T19:50:39Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
