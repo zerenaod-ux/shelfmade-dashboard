@@ -1,0 +1,32 @@
+name: blender-test
+# TEST ONLY: scripted 3D scene (Blender on the free Kaggle GPU). Nothing is posted.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['publish/blender-test.trigger']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --quiet six python-slugify python-dateutil requests tqdm urllib3 certifi bleach protobuf text-unidecode kaggle
+      - name: Render on the free GPU
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          K_NAME: shelf-blender
+          K_FILE: blender_test_kernel.py
+          K_PFX: blender-
+        run: python shelf_cmp.py
+      - name: Attach to release
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete blendertest -y --cleanup-tag || true
+          gh release create blendertest out/* --title "Blender 3D test (not posted)" --notes "test only" --prerelease
