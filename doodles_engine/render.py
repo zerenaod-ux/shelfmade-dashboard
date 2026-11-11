@@ -180,7 +180,7 @@ def variant_mask(base,vp,face):
 def render(work):
     work=Path(work);st,timeline,total,env,wav_path=build(work)
     imgs=[Image.open(work/f'shot_{i:02d}.png').convert('RGB') for i in range(len(timeline))]
-    lips=load_lips(work,timeline);mflags=[]
+    lips=load_lips(work,timeline);mflags=[];mgeo={}
     geo={};fc={};eg={};life={'leo':eyes.Life(11,total+3),'mia':eyes.Life(23,total+3)} if eyes else {}
     if fastlip and (__import__('os').environ.get('FASTLIP') or any(work.glob('open_*.png')) or (work/'ls_out').is_dir()):
         for si_,im_ in enumerate(imgs):
@@ -190,6 +190,8 @@ def render(work):
                     f_=fastlip.pick(fs_,who_,im_.size[0])
                     if f_ and f_['w']>40:
                         g_=fastlip.mouth_geom(f_)
+                        try:mgeo[(si_,who_)]=(float(g_['cx']),float(g_['cy']),float(g_['mw']))   # diagnostics only
+                        except Exception:pass
                         if eyes:
                             try:eg[(si_,who_)]=eyes.geom(np.asarray(im_),f_)
                             except Exception as ex:print('eye geom failed',ex,flush=True)
@@ -248,6 +250,10 @@ def render(work):
                 _mk=np.zeros((_wh,_ww),'float32');_cv.ellipse(_mk,(_ww//2,_wh//2),(int(_ww*0.48),int(_wh*0.48)),0,0,360,1.0,-1)
                 _mk=_cv.GaussianBlur(_mk,(0,0),max(1.5,0.16*_j['mw']))
                 ls_clips[(_j['si'],_j['li'])]={'fr':_fr,'mask':_mk,'xy':(_wx0,_wy0)}
+                try:   # diagnostics only (no effect on the picture): where the cloud mouth window sits versus where our own face finder puts the mouth
+                    _g=mgeo.get((_j['si'],_j['who']))
+                    if _g:print('LSWIN shot',_j['si']+1,_j['who'],'window centre y=%.0f x=%.0f | finder mouth y=%.0f x=%.0f mw=%.0f | dy=%.2f mw'%((_wy0+_wy1)/2,(_wx0+_wx1)/2,_g[1],_g[0],_g[2],((_wy0+_wy1)/2-_g[1])/max(1.0,_g[2])),flush=True)
+                except Exception:pass
             except Exception as ex:print('lip-sync clip unusable',_p.name,ex,flush=True)
     if MOVE and _lj.is_file():
         for _j in json.loads(_lj.read_text())['jobs']:facegeo.setdefault(_j['si'],{})[_j['who']]=(_j['x0']+_j['side']/2,_j['y0']+_j['side']/2,float(_j['side']))
