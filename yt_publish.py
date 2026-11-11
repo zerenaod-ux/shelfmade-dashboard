@@ -44,13 +44,17 @@ def taken_days(access):
     if ids != [CHANNEL]:
         raise RuntimeError('Token is not for the expected %s channel: %s' % (KIND, ids))
     pl = 'UU' + CHANNEL[2:]
-    with http('https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=25&playlistId=' + pl, headers=h) as r:
+    with http('https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId=' + pl, headers=h) as r:
         vids = [i['contentDetails']['videoId'] for i in json.load(r).get('items', [])]
     days = set()
     if vids:
-        with http('https://www.googleapis.com/youtube/v3/videos?part=status&id=' + ','.join(vids), headers=h) as r:
+        with http('https://www.googleapis.com/youtube/v3/videos?part=status,snippet,contentDetails&id=' + ','.join(vids), headers=h) as r:
             for v in json.load(r).get('items', []):
                 pa = v.get('status', {}).get('publishAt')
+                if not pa and v.get('status', {}).get('privacyStatus') == 'public':   # a full video already live holds its day too (2026-11-11: two fulls went out on one day)
+                    m = re.match(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', v['contentDetails']['duration']); h_, m_, s_ = [int(x or 0) for x in m.groups()]
+                    if h_ * 3600 + m_ * 60 + s_ >= 120:
+                        pa = v['snippet']['publishedAt']
                 if pa:
                     days.add(datetime.datetime.fromisoformat(pa.replace('Z', '+00:00')).astimezone(TZ).date())
     return days
