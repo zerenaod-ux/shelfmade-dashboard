@@ -104,5 +104,57 @@
   "created": "2026-11-07",
   "status": "proposed",
   "issue": "85"
+ },
+ {
+  "id": "NZEHVdWXKhQ",
+  "brand": "shelfmade",
+  "old": "Is virtue the only good?",
+  "options": [
+   "Can you discover if virtue is the only true good?",
+   "What does virtue mean for you: is it the only good?"
+  ],
+  "vpd": 0.0,
+  "created": "2026-11-11",
+  "status": "proposed",
+  "issue": "210"
+ },
+ {
+  "id": "zYdejZHy3k4",
+  "brand": "doodles",
+  "old": "The Sunday Spiral",
+  "options": [
+   "Why Sundays Feel Like a Spiral?",
+   "When Sunday Turns Into a Spiral?"
+  ],
+  "vpd": 0.0,
+  "created": "2026-11-11",
+  "status": "proposed",
+  "issue": "211"
+ },
+ {
+  "id": "FHoaRv9TFTc",
+  "brand": "doodles",
+  "old": "The Rest Trap",
+  "options": [
+   "Are You Stuck in the Rest Trap?",
+   "How Does Rest Become a Trap?"
+  ],
+  "vpd": 0.17,
+  "created": "2026-11-11",
+  "status": "proposed",
+  "issue": "211"
+ },
+ {
+  "id": "bRr0CpAVqi4",
+  "brand": "doodles",
+  "old": "The Rehearsal Trap",
+  "options": [
+   "Is Rehearsal Holding You Back?",
+   "When Practice Becomes a Trap?"
+  ],
+  "vpd": 0.35,
+  "created": "2026-11-11",
+  "status": "proposed",
+  "issue": "211"
  }
 ]
