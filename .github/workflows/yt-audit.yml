@@ -1,0 +1,29 @@
+name: yt-audit
+# Owner request 2026-11-11: MindLore posts only NEW-look full videos, one a day. Audit (and optionally unschedule old-look) YouTube full uploads.
+on:
+  push:
+    paths: ['publish/yt-audit.trigger']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: yt-publish-mindlore
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit MindLore full videos on YouTube
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          KEEP: o3yiUpFfU8c
+        run: |
+          if grep -q "unschedule" publish/yt-audit.trigger 2>/dev/null; then export UNSCHEDULE=1; fi
+          python yt_audit.py
