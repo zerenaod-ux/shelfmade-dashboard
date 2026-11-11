@@ -6,14 +6,14 @@ import json, os, sys, subprocess, urllib.request, urllib.parse, time, random, ha
 from pathlib import Path
 import llm, local_voice
 W, H, FPS, XF = 720, 1280, 30, 0.45
-STYLE = ', cinematic 3D render, soft warm studio light, miniature diorama look, clean composition, shallow depth of field, rich colors, no text, no letters, no people faces close-up'
+STYLE = ', wide establishing shot of the whole scene from a high angle, cinematic 3D render, miniature diorama, bright soft light, sharp focus everywhere, rich colors, no text, no letters, no watermark'
 
 def plan(book, author):
     sysm = 'You write viral educational Shorts. Return ONLY JSON.'
     p = ('Book: %s by %s (public domain). Pick the ONE most useful, surprising idea a modern viewer can use today and explain it as a visual story told in exactly 6 beats, '
          'like "How to Invent a Dam": a single physical SCENE that changes step by step so the picture itself explains the idea.\n'
          'Return JSON: {"title":"2-5 words, You/Your or Why statement, no yes/no question","scene":"one sentence: the single setting/object that all beats share (concrete, physical, no people close-ups)",'
-         '"beats":[{"line":"1-2 short spoken sentences (10-22 words), plain words, beat 1 speaks to the viewer with you/your","image":"what the SAME scene looks like at this step, concrete visual, 20 words max"}]}\n'
+         '"beats":[{"line":"1-2 short spoken sentences (10-22 words), plain words, beat 1 speaks to the viewer with you/your","image":"the WHOLE scene again (restate the same setting and objects) plus what has CHANGED at this step so the change is obvious and big, concrete visual, 25-30 words"}]}\n'
          'Rules: 6 beats, total narration 90-120 words, last beat ties the idea to the viewer\'s day today, no quotes longer than 8 words, do not invent facts about the author, say "the book argues" for claims.')
     d = llm.json_call(sysm, p, temperature=0.8)
     assert len(d['beats']) >= 5, 'too few beats'
@@ -59,7 +59,7 @@ def build(book, author, out):
         z = "min(zoom+0.0008,1.18)" if i % 2 == 0 else "if(eq(on,1),1.18,max(zoom-0.0008,1.0))"
         x = "iw/2-(iw/zoom/2)+((on/%d)-0.5)*40" % frames
         sh('ffmpeg', '-v', 'error', '-y', '-loop', '1', '-i', str(work / ('i%d.jpg' % i)), '-vf',
-           "scale=%d:%d:force_original_aspect_ratio=increase,crop=%d:%d,scale=2160:-1,zoompan=z='%s':x='%s':y='ih/2-(ih/zoom/2)':d=%d:s=%dx%d:fps=%d,format=yuv420p" % (W, H, W, H, z, x, frames, W, H, FPS),
+           "scale=%d:%d:force_original_aspect_ratio=increase,crop=iw:ih*0.93:0:0,scale=%d:%d:force_original_aspect_ratio=increase,crop=%d:%d,scale=2160:-1,zoompan=z='%s':x='%s':y='ih/2-(ih/zoom/2)':d=%d:s=%dx%d:fps=%d,format=yuv420p" % (W, H, W, H, W, H, z, x, frames, W, H, FPS),
            '-t', '%.2f' % dur, '-an', str(work / ('c%d.mp4' % i)))
         clips.append(work / ('c%d.mp4' % i))
     ins = []; [ins.extend(['-i', str(c)]) for c in clips]
@@ -81,7 +81,7 @@ def build(book, author, out):
         for k, w in enumerate(toks):
             s = starts[i] + w['start']; e = starts[i] + (toks[k + 1]['start'] if k + 1 < len(toks) else w['end'] + 0.1)
             txt = w['text'].strip().upper().replace('{', '').replace('}', '')
-            ev.append('Dialogue: 0,%s,%s,W,,0,0,0,,%s' % (ass_time(s), ass_time(e), txt))
+            ev.append('Dialogue: 0,%s,%s,W,,,%s' % (ass_time(s), ass_time(e), txt))
     hdr = ('[Script Info]\nScriptType: v4.00+\nPlayResX: %d\nPlayResY: %d\n[V4+ Styles]\nFormat: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding\n'
            'Style: W,DejaVu Sans,86,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,7,2,5,40,40,0,1\n[Events]\nFormat: Layer,Start,End,Style,Name,Effect,Text\n' % (W, H))
     (work / 'cap.ass').write_text(hdr + '\n'.join(ev) + '\n')
