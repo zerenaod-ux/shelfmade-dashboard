@@ -305,5 +305,336 @@
   "variant": "standard",
   "tstyle": "you",
   "style": "v2"
+ },
+ {
+  "id": "first-day-nerves",
+  "title": "The Pre-Sweat Protocol",
+  "concept": "FIRST DAY PANIC",
+  "mood": "dramatic",
+  "insight": "Your brain treats new jobs like bear attacks.",
+  "caption": "When first-day nerves make you pre-sweat before entering the building. Next time: Leo faces the moving budget.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo pacing the hallway outside an office door in his yellow hoodie with worried eyes, facing camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "I can literally taste the fear right now!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia standing nearby holding a coffee mug, giving a deadpan raised eyebrow, facing camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Your brain thinks a bear is chasing you."
+     }
+    ]
+   },
+   {
+    "scene": "Leo typing on his phone with wide hopeful eyes while standing upright, facing camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "normal",
+      "text": "So pre-sweating makes me taste bad to bears?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia standing near a digital clock showing a time on the hallway wall, smirking at camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "No, you are just leaking anxiety water, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo scrolling on his phone dramatically with a proud smirk, standing tall, facing camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Okay but hear me out, it is survival!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia walking toward the door, turning back with tired eyes and closed lips, facing camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "tired",
+      "beat": "pause",
+      "text": "Why are you throwing up in your mouth?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 2,
+   "why": "Candidate 2 has the punchiest roasts with 'anxiety water' and loops seamlessly from throw-up back to tasting fear.",
+   "scores": {
+    "i": 2,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 7,
+    "loop": 8
+   },
+   "n": 3
+  },
+  "variant": "micro",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "FUNNY EXPLAINER",
+  "improv": true
+ },
+ {
+  "id": "your-fake-award",
+  "title": "Your Fake Award",
+  "concept": "IMPOSTOR SYNDROME PRANK",
+  "mood": "warm",
+  "insight": "Even a tiny fake win can make you feel like a genius.",
+  "caption": "Leo turned Mia's prank into an absolute career victory. Part two incoming!",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo typing on a laptop at the table while Mia drinks from a coffee mug, both facing forward with calm faces.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "quick",
+      "text": "Wait, did I actually finish that project?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "You literally just sent it, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo staring nervously at his hands while Mia is texting on her phone with a subtle smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "quick",
+      "text": "Then why do I feel like a fraud?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "I made you a fake award!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo proudly holding a printed paper while Mia raises an eyebrow, as a notification arrives on her phone.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "World's Best Genius? I knew it!"
+     },
+     {
+      "who": "mia",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Wait, it was a joke!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holding Gerald the plant gently while Mia looks at her phone screen with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Gerald the plant, I'm promoted!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "pause",
+      "text": "Greg just emailed Noted."
+     }
+    ]
+   },
+   {
+    "scene": "Mia pacing the hallway holding her mug while Leo smiles quietly, facing the camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Scoreboard sixty! Next time, part two!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia typing on a laptop next to Leo, looking over with curious eyes, both upright facing forward.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "hopeful",
+      "beat": "quick",
+      "text": "Wait, what did you just submit?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "PRANK",
+  "improv": true
+ },
+ {
+  "id": "criticism-crime-scene",
+  "title": "The Soup Detective",
+  "concept": "CRITICISM AS CRIME",
+  "mood": "warm",
+  "insight": "Feedback feels like an attack until you realize it helps.",
+  "caption": "Leo treats honest feedback like a full crime investigation. Mia reminds him that growing means listening.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is pacing the hallway while Mia sits upright drinking a cup of tea, watching him with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Someone committed a crime against my soup today."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "You mean my feedback that it needed salt?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo is typing on a laptop with worried eyes while Mia sits nearby with a tiny smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "It was constructive critique, not a personal attack!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Then why are you wearing a plastic badge?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo is scrolling on his phone with a puzzled look while Mia smiles warmly at him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "normal",
+      "text": "A detective must investigate every cruel rumor."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "It's called growth, Leo. I want you to win."
+     }
+    ]
+   },
+   {
+    "scene": "A notification message arrives on Leo's phone while Mia leans forward with an amused expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Wait, Greg just emailed back!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Did he give you five stars?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds a coffee mug with wide eyes while Mia smiles teasingly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "beat": "normal",
+      "text": "He said 'Noted.' That means he loved it!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "pause",
+      "text": "Scoreboard stands at sixty-two for my honest advice."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is typing on his phone looking around with curious eyes while Mia shakes her head gently.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "quick",
+      "text": "Wait, who left that other review?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
  }
 ]
