@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-f102c",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Sudden Laughter Reveals Ancient Survival",
+ "hook": "You laugh out loud when someone tickles your ribs.",
+ "thumbnail_headline": "WHY WE LAUGH",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You laugh out loud when someone tickles your ribs. Ancient mammals actually used tickle responses as a safe play signal millions of years ago. In 2000, neuroscientist Jaak Panksepp at Bowling Green State University tested this by tickling young laboratory rats. The result? The tickled rats made high frequency ultrasonic chirps at about 50 kilohertz. Panksepp proved these chirps were an ancient form of joyful laughter. Was this joy unique to just one species? Further animal studies across the world showed primates and dogs use similar panting sounds during rough play. Biologists call this the play vocalization hypothesis. So why do we assume animals only act on survival instincts? Science shows play builds brain connections and lowers stress hormones across species. Next time you burst into laughter from a quick tickle, remember that your body is repeating an ancient animal play signal. That's it. You laugh out loud when someone tickles your ribs."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Rats emit 50 kilohertz ultrasonic chirps that function as laughter during play and tickling",
+   "who": "Jaak Panksepp",
+   "year": "2000",
+   "place": "Bowling Green State University"
+  },
+  {
+   "claim": "Play vocalizations like panting and chirping serve as non-aggressive play signals across multiple mammal species",
+   "who": "Comparative neuroscientists and biologists",
+   "year": "2000s",
+   "place": "Worldwide research labs"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

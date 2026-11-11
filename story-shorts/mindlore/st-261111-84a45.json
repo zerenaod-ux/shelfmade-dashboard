@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-84a45",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Face Freezes On Sudden News",
+ "hook": "You widen your eyes when hearing unexpected news.",
+ "thumbnail_headline": "WHY FACES FREEZE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You widen your eyes when hearing unexpected news. Ancient humans needed this instant reflex to scan for nearby danger. In 2014, neuroscientist Adam Anderson at Cornell University measured this facial change. He found that open eyes increase your visual field and speed up eye movements. The result? You process environmental threats much faster. It is not just one facial muscle acting alone. Researchers call this facial effurence, a shared survival trait seen across many human cultures. So why do we widen our eyes before we even think? Because your nervous system prioritizes immediate visual input over slow conscious thought. Later studies in 2017 confirmed that gasping also increases oxygen intake to prepare your body for action. That's it. Your body physically prepares for fight or flight before your brain processes the actual words. So next time you hear surprising news, remember why you widen your eyes when hearing unexpected news."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Widening eyes increases visual field and eye movement speed to detect visual information.",
+   "who": "Adam Anderson",
+   "year": "2014",
+   "place": "Cornell University"
+  },
+  {
+   "claim": "Gasping and facial expressions linked to fear increase nasal capacity and air intake.",
+   "who": "Adam Anderson",
+   "year": "2017",
+   "place": "Cornell University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

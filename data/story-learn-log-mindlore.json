@@ -991,6 +991,94 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261111-21a51",
+   "look": "live-demo",
+   "title": "Your Eyes Blink During Story Turns",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "notif",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261111-84a45",
+   "look": "live-demo",
+   "title": "Your Face Freezes On Sudden News",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261111-f102c",
+   "look": "live-demo",
+   "title": "Your Sudden Laughter Reveals Ancient Survival",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-21a51",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Your Eyes Blink During Story Turns",
+ "hook": "You blink your eyes right when a story takes an unexpected turn.",
+ "thumbnail_headline": "WHY YOUR EYES BLINK",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You blink your eyes right when a story takes an unexpected turn. Ancient storytellers actually relied on this physical pause to let big plot twists sink in. In 2012, neuroscientist Tamami Nakano at Osaka University tracked brain scans during videos and found that people micro-blink about 15 to 20 times every minute at narrative breaks. Why do your eyelids drop at the exact moment of surprise? Your brain briefly cuts off visual input to process new information. The result? It is a involuntary reset button for your focus. Other lab trials show children do the exact same thing when listening to sudden story endings. Psychologists call this cognitive visual gating. So why do we assume blinks are just for wetting our eyes? We assume that because it happens without our conscious choice. That's it. Next time you catch your eyelids fluttering during a movie shocker, remember that you blink your eyes right when a story takes an unexpected turn."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People automatically blink at narrative breaks and video scene cuts to reset brain attention networks.",
+   "who": "Tamami Nakano",
+   "year": "2012",
+   "place": "Osaka University"
+  },
+  {
+   "claim": "Blinking operates as a cognitive reset button during auditory and visual story transitions in both adults and children.",
+   "who": "Cognitive Neuroscience Researchers",
+   "year": "2010s",
+   "place": "Japan"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": ""
+}
