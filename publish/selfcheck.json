@@ -1,26 +1,26 @@
 {
- "at": "2026-11-10T20:53:27+00:00",
+ "at": "2026-11-11T16:57:02+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 0 h ago"
+   "text": "updated 20 h ago"
   },
   {
    "name": "Doodles daily run",
    "ok": false,
-   "text": "last: cancelled 2026-11-10T15:44"
+   "text": "last: failure 2026-11-11T15:34"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "1 stories carry a judge note"
+   "text": "2 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 0 h ago"
+   "text": "ok=True, checked 5 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -35,7 +35,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-10T12:59"
+   "text": "last: success 2026-11-11T12:11"
   },
   {
    "name": "Safety guard",
@@ -60,7 +60,7 @@
   {
    "name": "Playlist flywheel",
    "ok": true,
-   "text": "ok (shelfmade: added 10 video(s); mindlore: added 10 video(s); doodles: added 9 video(s))"
+   "text": "ok (shelfmade: added 8 video(s); mindlore: added 9 video(s); doodles: added 3 video(s))"
   },
   {
    "name": "Retitle campaign",
@@ -75,22 +75,22 @@
   {
    "name": "Viral DNA study",
    "ok": true,
-   "text": "last: success 2026-11-08"
+   "text": "last: success 2026-11-11"
   },
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 3 h ago"
+   "text": "newest public video 23 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 13 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 13 h ago"
   },
   {
    "name": "Service probes",
@@ -100,7 +100,7 @@
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "33.3 h used in 7 days, stories/day cap 2"
+   "text": "40.9 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
