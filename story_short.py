@@ -7,7 +7,7 @@ B = Path(__file__).resolve().parent
 BRAND = os.environ.get('BRAND', 'mindlore'); SM = BRAND == 'shelfmade'
 OUT = B / 'story-shorts' / BRAND; HIST = B / ('data/mindlore/story-shorts.json' if BRAND == 'mindlore' else 'data/story-shorts-%s.json' % BRAND)
 THEMES = ['working hours and rest', 'sleep', 'attention and distraction', 'memory', 'stress and fear', 'friendship and group size', 'music and emotion', 'food and mood', 'loneliness', 'boredom', 'habits',
-          'crowds and strangers', 'time in nature', 'laughter and play', 'anger', 'curiosity', 'gratitude', 'multitasking', 'social media comparison', 'decision fatigue', 'creativity', 'dreams', 'community and belonging',
+          'crowds and strangers', 'a deadline and the knot in your stomach', 'why your heart pounds before you speak', 'why your hands sweat when you are nervous', 'why a song gives you chills', 'why you cannot fall asleep when you are tired', 'why bad news makes your chest tight', 'why you blush when someone looks at you', 'why waiting makes your skin crawl', 'why you yawn when others yawn', 'why you get hungry when you are stressed', 'time in nature', 'laughter and play', 'anger', 'curiosity', 'gratitude', 'multitasking', 'social media comparison', 'decision fatigue', 'creativity', 'dreams', 'community and belonging',
           'storytelling', 'morning light and body clock', 'silence and noise', 'learning a language', 'walking and thinking', 'money and happiness', 'touch and hugs', 'smiling and mood', 'procrastination',
           'first impressions', 'jealousy', 'trust', 'kindness', 'nostalgia', 'risk and thrill', 'sharing food', 'handwriting vs typing']
 def load(p, d):
@@ -53,6 +53,7 @@ def one(llm_call):
             'Titles already used, do not repeat: %s.\n' % (chan, theme, radar, recent) + (story_rules.rules('shelfmade' if SM else 'mindlore', short=True).replace('ONE narration of 150-190 words (about 60-70 seconds)', 'ONE narration of 70-90 words (about 30 seconds, ONE idea only, hook in the first 5 words)') if exp else story_rules.rules('shelfmade' if SM else 'mindlore', short=True)) +
             'Return JSON: {"public_title": "2 to 5 words, no emoji, a STATEMENT that starts with You or Your (our data: You/Your titles get about 4x the views of question titles), e.g. Your Brain Lies, You Forget Fast; never a yes/no question", "hook": "the exact first sentence of the narration", "thumb": "2-5 WORD CAPS HEADLINE", '
             '"narration": "'+("70-90" if exp else "150-190")+' words, first sentence EXACTLY the hook", "claims": [{"claim":"...","who":"...","year":"...","place":"..."}]}.')
+    base += '\nOWNER-APPROVED WINNING STYLE (our best MindLore Short, 2026-11-09, "Why a deadline makes your stomach knot"): start from an everyday BODY FEELING the viewer has had (knot in the stomach, racing heart, sweaty hands, chills), speak straight to them ("You feel..."), give a surprising reason from real research with TWO real numbers, and keep it about 55 seconds. When the theme allows, a title like "Why a deadline makes your stomach knot" (Why + everyday thing + makes your + body feeling) is welcome; it is a statement about the viewer, not a yes/no question.\n'
     prompt = base; bad = ['no usable answer']; d = None
     for attempt in range(4):
         try: d = llm_call(prompt)
