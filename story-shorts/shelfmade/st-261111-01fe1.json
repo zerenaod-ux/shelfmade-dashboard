@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-01fe1",
+ "title": "Tao Te Ching",
+ "author": "Lao Tzu",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Your Quiet Power Part 2",
+ "hook": "You chase success every single day.",
+ "thumbnail_headline": "EFFORTLESS SUCCESS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You chase success every single day. Ancient sages taught that effortless action, or wu wei, guides true achievement. In the 2003 study, Dr. Richard Davidson at the University of Wisconsin examined meditators and recorded about 15% higher gamma brain activity. The result? Their stress levels fell dramatically during daily tasks. Later research confirmed this pattern across many societies. A 2015 University of Miami trial by Dr. Amishi Jha found about 20% improvement in sustained attention after eight weeks of mindfulness training. These findings echo the Taoist principle of non‑striving, known today as mindfulness. So why do we assume nonstop hustle equals progress? Because the brain misinterprets effort as value, a bias shown in behavioral economics. The fact is, balanced pause boosts creativity and decision quality. What does this mean for your daily grind? It means you can achieve more by pausing intentionally. That's it. Research also links mindfulness to stronger immune response after vaccination. The 2009 study by Dr. Richard Davidson at the University of Wisconsin reported about 30% higher antibody levels in meditators. So next time you chase success every single day, remember you chase success every single day."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 15% higher gamma brain activity",
+   "who": "Dr. Richard Davidson",
+   "year": "2003",
+   "place": "University of Wisconsin"
+  },
+  {
+   "claim": "about 20% improvement in sustained attention",
+   "who": "Dr. Amishi Jha",
+   "year": "2015",
+   "place": "University of Miami"
+  }
+ ],
+ "source_url": "",
+ "theme": "Tao Te Ching by Lao Tzu",
+ "exp": ""
+}

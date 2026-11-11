@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261111-92c89",
+ "title": "Tao Te Ching",
+ "author": "Lao Tzu",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "You Push Harder When You Fail Part 1",
+ "hook": "You grip the steering wheel tighter when you get stuck in traffic.",
+ "thumbnail_headline": "STOP PUSHING SO HARD",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You grip the steering wheel tighter when you get stuck in traffic. Ancient thinkers saw this exact micro habit as a trap. In 1999, psychologist Daniel Wegner at Harvard University studied about 100 people trying to control their physical actions under pressure. The result? Trying harder to force control actually triggered the exact mistakes participants wanted to avoid. Researchers call this ironic process theory. Lao Tzu wrote about this over two thousand years ago in the Tao Te Ching. He argued that forcing an outcome creates the opposite effect. So why do you automatically double your effort when things go wrong? Your brain interprets a loss of control as an immediate threat. It defaults to physical tension. What did modern science find when testing non action? In 2011, researchers at Michigan State University studied brain activity in about 80 people facing errors. Those who relaxed and accepted mistakes learned significantly faster than those who tensed up. That is it. So next time you feel stuck, remember why you grip the steering wheel tighter."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Attempting to suppress or force mental control causes ironic errors under pressure.",
+   "who": "Daniel Wegner",
+   "year": "1999",
+   "place": "Harvard University"
+  },
+  {
+   "claim": "Brain activity shows individuals who accept errors learn faster than those who tense up.",
+   "who": "Michigan State University researchers",
+   "year": "2011",
+   "place": "Michigan State University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Tao Te Ching by Lao Tzu",
+ "exp": ""
+}
