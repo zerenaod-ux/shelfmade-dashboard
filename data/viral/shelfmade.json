@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "Age\u2011specific direct address that tells viewers what to stop or start doing, often paired with a strong emoji",
-  "Bold promise of a single, counter\u2011intuitive lesson framed as a \u201cwhy/what\u201d question",
-  "Use of a short, punchy hook (\u22646 words) that hints at a payoff and triggers curiosity",
-  "Fast\u2011paced opening that cites a vivid quote or stark fact within the first 3 seconds",
-  "Emotional blend of practicality and spiritual/faith reassurance that resonates with older audiences"
+  "Age-anchored wisdom: Framing classic philosophy specifically for older demographics (after 60/70) creates intense personal relevance and high watch time.",
+  "Defensive boundaries: Content focusing on protecting inner peace, home, and energy from toxic people drives massive engagement and comment agreement.",
+  "Extended length storytelling: Longer short-form content (60 to 110 seconds) outperforms ultra-short clips when delivering structured, list-based life rules.",
+  "Reframing nature and animal metaphors: Translating natural behavior (like wolves or wildlife) into Stoic principles offers a fresh, evocative hook.",
+  "Pop culture and creator crossover: Pairing classic quotes with unexpected modern figures or pop-culture moments generates extreme breakout viral reach."
  ],
  "title_formulas": [
-  "#\ufe0f\u20e3 X Ways to ___ After ___ \ud83d\udd25",
-  "Why ___ Like a ___ | Powerful ___ Lesson",
-  "After ___, You Must ___ \u2013 ___ Tips in ___ Seconds"
+  "X Classic Life Lessons to Protect Your Peace After [Age]",
+  "Why [Ancient Author/Philosopher] Warned You Never to [Action]",
+  "[Number] Rules of [Public Domain Book] That Will Keep You [Desired State]"
  ],
  "opening_3s": [
-  "Show a striking line from a classic text while a bold on\u2011screen graphic flashes \u201cSTOP DOING THIS!\u201d",
-  "Cut to a close\u2011up of a ticking clock and say \u201cYou\u2019ve only got ___ seconds to change ___ forever.\u201d",
-  "Begin with a quick personal anecdote: \u201cAt ___ years old I learned this one truth\u2026\u201d"
+  "A direct bold statement warning the viewer about a common boundary violation before revealing the classic text source.",
+  "A striking quote reading that directly addresses the viewer's current age or stage in life.",
+  "A high-contrast visual statement posing a simple question about rest versus productivity according to ancient wisdom."
  ],
  "comment_themes": [
-  "Viewers love age\u2011related validation and practical wisdom they can apply now",
-  "Requests for more specific book titles or deeper philosophical context",
-  "Appreciation for spiritual/faith references that reinforce the lesson",
-  "Calls for clearer thumbnails and on\u2011screen text so the key message sticks"
+  "Resonating deeply with advice on rest, self-preservation, and setting firm personal boundaries.",
+  "Connecting philosophical wisdom directly to personal faith, gratitude, and daily spirituality.",
+  "Expressing relief and validation over relief from toxic family members or uninvited guests.",
+  "Debating the practical application of extreme philosophical quotes regarding marriage and suffering."
  ],
  "avoid": [
-  "Generic, vague titles without a numeric or age hook",
-  "Videos longer than 60 seconds without a clear, fast\u2011moving structure",
-  "Overusing jargon or obscure references that alienate casual viewers"
+  "Fabricating age-specific medical, financial, or lifestyle claims not backed by public domain literature.",
+  "Relying on generic ultra-short quote videos without giving the audience a clear narrative payoff.",
+  "Using copyrighted modern book summaries or copying existing YouTube compilations."
  ],
  "try_next": [
-  "Launch a \"Decade\u2011by\u2011Decade Stoic Hacks\" series, each 30\u2011second clip targeting a specific age range",
-  "Combine split\u2011screen of original public\u2011domain text with modern animation, ending with a one\u2011sentence actionable tip",
-  "Add a pinned comment summarizing the lesson and prompting viewers to share their own experience in the comments"
+  "A 90-second deep dive into Marcus Aurelius's Meditations focusing on protecting mental energy after 50.",
+  "A dynamic breakdown of Seneca's 'On the Shortness of Life' structured around 5 things to stop prioritizing immediately.",
+  "An intriguing story-driven clip applying Epictetus's rules on hospitality and personal boundaries to modern home life."
  ],
- "updated": "2026-11-08",
+ "updated": "2026-11-11",
  "n_hits": 30,
  "shares": {
-  "question title": 7,
-  "speaks to \"you\"": 53,
-  "number in title": 37,
-  "has emoji": 23,
+  "question title": 10,
+  "speaks to \"you\"": 47,
+  "number in title": 40,
+  "has emoji": 27,
   "ALL-CAPS word": 3,
-  "title <= 6 words": 3,
-  "video <= 30s": 43,
+  "title <= 6 words": 10,
+  "video <= 30s": 40,
   "video 30-60s": 13,
-  "video > 60s": 43
+  "video > 60s": 47
  },
- "median_hit_views": 260089
+ "median_hit_views": 260103
 }

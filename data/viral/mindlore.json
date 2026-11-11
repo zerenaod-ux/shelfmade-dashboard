@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "High-concept optical and neurological glitches: Visualizing how the brain creates illusions, fake vision, or misinterprets reality.",
-  "Bizarre physical properties and extreme edge cases: Showing unexpected brain conditions, savants, or unusual physical sensations.",
-  "Anthropomorphized brain reactions: Using cute 3D character animation of a brain reacting emotionally to external inputs like food or stress.",
-  "Everyday chemical and cognitive hacks: Explaining commonplace experiences like caffeine, learning, or dark psychology tricks using simple analogies.",
-  "Active viewer self-testing: Posing interactive challenges where the audience feels their own brain reacting or falling for an illusion in real-time."
+  "Personifying the brain as a relational character (e.g., cute, stressed, or tricked) rather than just an anatomical organ",
+  "Visually proving an immediate optical or cognitive illusion that the viewer tests on themselves in real time",
+  "Action-oriented 'mind reading' and practical handwriting/body language profiling tips",
+  "Direct second-person addressing ('Your Brain', 'You') framed around everyday sensory experiences like coffee, sleeping, or seeing",
+  "Explaining bizarre brain mechanics using relatable analogies, like car parts or daily electronics"
  ],
  "title_formulas": [
-  "Why Your Brain Can't [Counterintuitive Physical Action] [Emoji]",
-  "This Is What Happens To Your Brain When You [Common Daily Action] [Emoji]",
-  "How Your Brain Hacks [Perceptual Phenomenon or Sensation]"
+  "How Your Brain Secrets [Specific Sensory Trick or Habit] [Emoji]",
+  "This Classic Psychology Trick Shows How Your [Mind/Brain] Works [Emoji]",
+  "What [Everyday Substance or Habit] Really Does To Your Mind [Emoji]"
  ],
  "opening_3s": [
-  "A striking 3D visual of a brain reacting instantly to a jarring stimulus accompanied by a direct question.",
-  "A bizarre physical mystery demonstrated immediately on screen before explaining the underlying neural cause.",
-  "An interactive visual prompt asking the viewer to stare at a specific point to trigger an immediate cognitive sensation."
+  "Ask the viewer to stare at a static classic illusion while promising their perception will warp in 5 seconds",
+  "Show a historical 19th-century diagram of a brain performing an everyday modern chore",
+  "State a surprising historical psychological premise about how we process hand gestures while demonstrating it visually"
  ],
  "comment_themes": [
-  "Relatable self-testing comments where viewers confirm feeling the exact mental effect described in the video.",
-  "Affection for charming visual metaphors, especially cute or personified representations of organs.",
-  "Dark humor and pop-culture references sparked by unusual medical facts or mind-control concepts.",
-  "Requests for explanations of everyday physical phenomena like post-meal sleepiness or sensory oddities."
+  "Deep affection for animated or personified visual depictions of cognitive processes",
+  "A desire to test psychological concepts immediately on friends, family, or themselves",
+  "Debating the accuracy of everyday analogies used to explain complex mental phenomena",
+  "Humorous reactions to realization of their own subconscious habits and mood shifts"
  ],
  "avoid": [
-  "Overly clinical medical explanations without clear, relatable visual metaphors.",
-  "Audio tracks or music that clash with the visual tone and make informative content feel unnerving.",
-  "Generic tip listicles that lack an immediate visual demonstration or high-stakes hook."
+  "Direct medical advice, clinical diagnoses, or promising cures for neurological conditions",
+  "Gory or graphic visual depictions of biological trauma and brain injuries",
+  "Sensationalized claims about unlocking 100% brain power or instant mind control"
  ],
  "try_next": [
-  "A 35-second breakdown of phantom limb sensations using historical cases from classic neurology texts with stylized 3D visualization.",
-  "A 28-second interactive video demonstrating how auditory visual illusions trick perception, asking viewers to test it with headphones.",
-  "A 40-second animated story of a historical psychological experiment illustrating how muscle memory forms while sleeping."
+  "A 40-second breakdown of William James' theory of habit formation, using a simple stream-of-water animation",
+  "A 30-second interactive visual trick explaining the 'size-weight illusion' from early experimental psychology",
+  "A 45-second video examining what classical psychology says about why music alters our perception of time"
  ],
- "updated": "2026-11-08",
+ "updated": "2026-11-11",
  "n_hits": 30,
  "shares": {
-  "question title": 33,
-  "speaks to \"you\"": 60,
-  "number in title": 13,
-  "has emoji": 60,
+  "question title": 43,
+  "speaks to \"you\"": 70,
+  "number in title": 7,
+  "has emoji": 63,
   "ALL-CAPS word": 3,
-  "title <= 6 words": 23,
-  "video <= 30s": 33,
+  "title <= 6 words": 17,
+  "video <= 30s": 27,
   "video 30-60s": 53,
-  "video > 60s": 13
+  "video > 60s": 20
  },
- "median_hit_views": 9415892
+ "median_hit_views": 9442114
 }

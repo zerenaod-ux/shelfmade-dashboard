@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "Ultra-short 6-15s clips focusing on hyper-specific daily overthinking moments (e.g., cringing at 5-year-old memories)",
-  "Relatable social conflict skits depicting exaggerated internal monologues vs. external reality",
-  "High-contrast dynamic animation styles (smooth hair movements, fluid facial expressions) that viewers rewatch to admire",
-  "Dark humor combined with absurdity (e.g., asserting dominance through bizarre actions) to handle social anxiety",
-  "Conversational banter between two distinct characters acting out inner dialogue vs. vocal reality"
+  "Ultra-short runtime (5 to 20 seconds) focusing on one hyper-specific daily psychological habit",
+  "Self-deprecating humor framing overthinking or social awkwardness as a shared experience",
+  "High visual polish or expressive character animation during mundane internal monologues",
+  "Contrasting absurd worst-case scenario thinking with completely normal external reality",
+  "Direct validation of intrusive 3 AM thoughts, late-night cringe memories, or boundary issues"
  ],
  "title_formulas": [
-  "That [Adjective] Moment When [Psychology Concept/Relatable Trigger]",
-  "How to Handle [Awkward Social Situation] Like a Pro",
-  "Only [Trait, e.g., Overthinkers/Introverts] Will Understand This..."
+  "When Your Brain [Absurd Action] At [Time/Situation] [Emoji]",
+  "POV: You Tried To Stop [Psychological Habit] [Emoji]",
+  "Only [Personality Type] Will Understand This [Emoji]"
  ],
  "opening_3s": [
-  "Mia starts spiraling out loud over a tiny interaction while Leo stares in complete disbelief",
-  "Leo freezes mid-sentence as a giant, visual 'overthinking node' explodes behind his head",
-  "A rapid-fire zoom onto Mia's eyes showing a 3-second animated flashback of an embarrassing memory"
+  "Mia freezes mid-sentence while Leo's internal thought bubble explodes into chaotic spirals",
+  "Leo makes eye contact with a random object while his brain plays an embarrassing memory from 2018",
+  "Mia gives an overly serious step-by-step warning for a completely minor social interaction"
  ],
  "comment_themes": [
-  "Appreciation for smooth, fluid animation details and unique art styles",
-  "Resonating deeply with nighttime overthinking and nostalgia triggers",
-  "Humorous reactions to dark/absurd advice for social anxiety",
-  "Relating to childhood experiences translating into adult introversion or quietness"
+  "Appreciation for smooth, fluid character animation and expressive art styles",
+  "Relief at realizing they are not the only ones experiencing niche mental loops",
+  "Nostalgia triggered by relatable sound bites or early-2000s life references",
+  "Requests for tactics on how to actually quiet their mind during overthinking spirals"
  ],
  "avoid": [
-  "Videos longer than 60 seconds without fast-paced visual gags or heavy editing",
-  "Generic motivational advice without an exaggerated humorous skit",
-  "Static scenes lacking expressive character movement or fluid animation flexes"
+  "Long-form lectures over 30 seconds that lack a quick comedic punchline",
+  "Generic motivational quotes that ignore the realistic frustration of mental loops",
+  "Abstract advice without visual cues of Leo and Mia physically reacting"
  ],
  "try_next": [
-  "A 12-second clip where Leo tries to explain 'The Spotlight Effect' while Mia thinks everyone in the coffee shop is judging her shoe untying technique",
-  "A 7-second snappy animation of Mia going to bed, where her brain presents a slideshow of every wrong name she called someone this year",
-  "A 20-second skit showing Leo using 'Cognitive Reframing' to handle a rude comment, while Mia visualizes the absurd, extreme alternative response"
+  "A 7-second skit where Mia tries to fall asleep, but Leo acts out a cringe memory from middle school inside her thought bubble.",
+  "A 12-second skit on 'Social Battery Drain,' showing Leo's energy meter dropping from 100% to 0% after one small talk greeting.",
+  "A 15-second visual breakdown of 'Decision Paralysis' as Mia overanalyzes picking a single menu item while Leo waits in horror."
  ],
- "updated": "2026-11-08",
- "n_hits": 30,
+ "updated": "2026-11-11",
+ "n_hits": 29,
  "shares": {
-  "question title": 7,
-  "speaks to \"you\"": 17,
-  "number in title": 17,
-  "has emoji": 83,
+  "question title": 3,
+  "speaks to \"you\"": 14,
+  "number in title": 14,
+  "has emoji": 76,
   "ALL-CAPS word": 10,
   "title <= 6 words": 10,
-  "video <= 30s": 77,
-  "video 30-60s": 13,
+  "video <= 30s": 79,
+  "video 30-60s": 10,
   "video > 60s": 10
  },
- "median_hit_views": 102416
+ "median_hit_views": 45263
 }
