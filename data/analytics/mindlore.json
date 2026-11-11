@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-10",
+ "collected": "2026-11-11",
  "note": "",
  "videos": [
   {
@@ -24,7 +24,7 @@
    "published": "2026-10-20T19:44:13Z",
    "duration": "PT48S",
    "privacy": "public",
-   "views": 305,
+   "views": 306,
    "likes": 5,
    "comments": 0,
    "avgSeconds": 31,
@@ -96,12 +96,22 @@
    "published": "2026-06-16T19:46:38Z",
    "duration": "PT37S",
    "privacy": "public",
-   "views": 75,
+   "views": 77,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 29.45,
+   "avgSeconds": 13,
+   "avgPercent": 35.85,
    "subsGained": 0
+  },
+  {
+   "id": "2uytrhv7SeI",
+   "title": "Why Animals Play Games",
+   "published": "2026-11-10T23:01:33Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 72,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "qfwKKgBIkvI",
@@ -148,7 +158,7 @@
    "published": "2026-10-30T02:00:45Z",
    "duration": "PT1M35S",
    "privacy": "public",
-   "views": 53,
+   "views": 54,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 21,
@@ -179,6 +189,32 @@
    "comments": 0
   },
   {
+   "id": "8BNtkyQFi9Q",
+   "title": "A General Introduction to Psychoanalysis \u00b7 Small mistakes and large meanings \u00b7 Reading 1",
+   "published": "2026-10-19T16:12:09Z",
+   "duration": "PT1M31S",
+   "privacy": "public",
+   "views": 50,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 65,
+   "avgPercent": 71.48,
+   "subsGained": 0
+  },
+  {
+   "id": "V8InsNplcoc",
+   "title": "Why do you dream about falling? | Sigmund Freud",
+   "published": "2026-11-10T00:00:03Z",
+   "duration": "PT8M23S",
+   "privacy": "public",
+   "views": 49,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 261,
+   "avgPercent": 51.92,
+   "subsGained": 0
+  },
+  {
    "id": "4qzeT6uxt3A",
    "title": "Memory: How to Develop, Train, and Use It",
    "published": "2026-10-23T04:10:17Z",
@@ -192,17 +228,14 @@
    "subsGained": 0
   },
   {
-   "id": "8BNtkyQFi9Q",
-   "title": "A General Introduction to Psychoanalysis \u00b7 Small mistakes and large meanings \u00b7 Reading 1",
-   "published": "2026-10-19T16:12:09Z",
-   "duration": "PT1M31S",
+   "id": "3CRX1T8eE7Q",
+   "title": "Is chasing every extra dollar worth it?",
+   "published": "2026-11-10T18:03:38Z",
+   "duration": "PT58S",
    "privacy": "public",
-   "views": 49,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 65,
-   "avgPercent": 71.48,
-   "subsGained": 0
+   "views": 45,
+   "likes": 1,
+   "comments": 1
   },
   {
    "id": "sdpifdp9fdw",
@@ -215,6 +248,19 @@
    "comments": 0,
    "avgSeconds": 15,
    "avgPercent": 32.09,
+   "subsGained": 0
+  },
+  {
+   "id": "MTXe8IAf__g",
+   "title": "Why a deadline makes your stomach knot",
+   "published": "2026-11-09T18:02:22Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 43,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 63,
+   "avgPercent": 112.89,
    "subsGained": 0
   },
   {
@@ -231,16 +277,6 @@
    "subsGained": 0
   },
   {
-   "id": "MTXe8IAf__g",
-   "title": "Why a deadline makes your stomach knot",
-   "published": "2026-11-09T18:02:22Z",
-   "duration": "PT56S",
-   "privacy": "public",
-   "views": 42,
-   "likes": 1,
-   "comments": 1
-  },
-  {
    "id": "0toRAe_otrI",
    "title": "The Expression of the Emotions in Man and Animals \u00b7 Opposite postures \u00b7 Reading 2",
    "published": "2026-10-20T19:36:17Z",
@@ -254,17 +290,24 @@
    "subsGained": 0
   },
   {
-   "id": "V5cZxesdo6w",
-   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 6",
-   "published": "2026-10-30T22:01:13Z",
-   "duration": "PT1M34S",
+   "id": "GPPdglOKqFc",
+   "title": "First Impression Myth",
+   "published": "2026-11-11T00:02:24Z",
+   "duration": "PT53S",
    "privacy": "public",
-   "views": 35,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 13.4,
-   "subsGained": 0
+   "views": 38,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "X9Z1e8QV6PQ",
+   "title": "Why Silence Heals Your Brain",
+   "published": "2026-11-11T03:02:00Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 36,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "NIb4cEtDf24",
@@ -340,8 +383,8 @@
    "views": 30,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 33,
-   "avgPercent": 61.39,
+   "avgSeconds": 28,
+   "avgPercent": 52.27,
    "subsGained": 0
   },
   {
@@ -501,6 +544,19 @@
    "subsGained": 0
   },
   {
+   "id": "jcbv6oWRsSk",
+   "title": "The Psychology Of Revolution",
+   "published": "2026-10-29T18:03:26Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 25,
+   "avgPercent": 49.54,
+   "subsGained": 0
+  },
+  {
    "id": "QgbUl7uQ00I",
    "title": "Mind Power",
    "published": "2026-10-22T01:05:55Z",
@@ -558,8 +614,8 @@
    "views": 22,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 20,
-   "avgPercent": 35.67,
+   "avgSeconds": 17,
+   "avgPercent": 30.36,
    "subsGained": 0
   },
   {
@@ -638,6 +694,19 @@
    "subsGained": 2
   },
   {
+   "id": "YG8unHg5xWw",
+   "title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4",
+   "published": "2026-11-02T00:00:18Z",
+   "duration": "PT5M29S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 4.33,
+   "subsGained": 2
+  },
+  {
    "id": "mC-icbk8HVo",
    "title": "Psychology and Industrial Efficiency \u00b7 Guided reading",
    "published": "2026-10-20T20:00:21Z",
@@ -687,19 +756,6 @@
    "comments": 0,
    "avgSeconds": 19,
    "avgPercent": 40.78,
-   "subsGained": 1
-  },
-  {
-   "id": "---QS4XG_IY",
-   "title": "Psychology and Industrial Efficiency \u00b7 A task has conditions \u00b7 Reading 6",
-   "published": "2026-10-30T17:02:28Z",
-   "duration": "PT1M27S",
-   "privacy": "public",
-   "views": 19,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 26,
-   "avgPercent": 30.84,
    "subsGained": 1
   },
   {
@@ -755,16 +811,16 @@
    "subsGained": 0
   },
   {
-   "id": "Kjx5KmP1s7w",
-   "title": "The Interpretation Of Dreams",
-   "published": "2026-10-31T02:01:01Z",
-   "duration": "PT52S",
+   "id": "ufT1qz-t0TI",
+   "title": "Your brain can't truly multitask",
+   "published": "2026-11-10T03:01:09Z",
+   "duration": "PT1M2S",
    "privacy": "public",
    "views": 17,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 16,
-   "avgPercent": 32.16,
+   "avgPercent": 27.310000000000002,
    "subsGained": 0
   },
   {
@@ -807,6 +863,16 @@
    "subsGained": 0
   },
   {
+   "id": "lMXaBBTZsps",
+   "title": "Pain of Isolation",
+   "published": "2026-11-10T21:02:09Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 16,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "EPBe9hIGqbc",
    "title": "Self-consciousness \u00b7 An original reflection",
    "published": "2026-10-28T05:18:42Z",
@@ -840,16 +906,6 @@
    "privacy": "public",
    "views": 16,
    "likes": 2,
-   "comments": 0
-  },
-  {
-   "id": "ufT1qz-t0TI",
-   "title": "Your brain can't truly multitask",
-   "published": "2026-11-10T03:01:09Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 0,
    "comments": 0
   },
   {
@@ -957,16 +1013,6 @@
    "subsGained": 0
   },
   {
-   "id": "3CRX1T8eE7Q",
-   "title": "Is chasing every extra dollar worth it?",
-   "published": "2026-11-10T18:03:38Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 11,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "D2NH7kCZ1ac",
    "title": "Psychology And Industrial Efficiency",
    "published": "2026-10-28T18:02:03Z",
@@ -1024,7 +1070,7 @@
    "published": "2026-06-16T02:16:36Z",
    "duration": "PT2M29S",
    "privacy": "public",
-   "views": 10,
+   "views": 11,
    "likes": 1,
    "comments": 1,
    "avgSeconds": 12,
@@ -1115,21 +1161,8 @@
    "views": 7,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 1.17,
-   "subsGained": 0
-  },
-  {
-   "id": "EMQX3FI6-Lk",
-   "title": "Inquiries into Human Faculty and Its Development \u00b7 Guided reading",
-   "published": "2026-10-30T23:00:10Z",
-   "duration": "PT5M55S",
-   "privacy": "public",
-   "views": 7,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 1.17,
+   "avgSeconds": 5,
+   "avgPercent": 1.6099999999999999,
    "subsGained": 0
   },
   {
@@ -1170,16 +1203,6 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
-  },
-  {
-   "id": "V8InsNplcoc",
-   "title": "Why do you dream about falling? | Sigmund Freud",
-   "published": "2026-11-10T00:00:03Z",
-   "duration": "PT8M23S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 1,
-   "comments": 0
   },
   {
    "id": "3sMZ0_phVOA",
@@ -1260,6 +1283,19 @@
    "subsGained": 0
   },
   {
+   "id": "0m0sHfUvubE",
+   "title": "How We Think \u00b7 Guided reading",
+   "published": "2026-10-31T23:00:07Z",
+   "duration": "PT5M44S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 4,
+   "avgPercent": 1.35,
+   "subsGained": 0
+  },
+  {
    "id": "YTKbRT9tkpo",
    "title": "The Crowd \u00b7 Guided reading",
    "published": "2026-10-26T00:15:58Z",
@@ -1283,6 +1319,19 @@
    "comments": 0,
    "avgSeconds": 59,
    "avgPercent": 36.28,
+   "subsGained": 0
+  },
+  {
+   "id": "9lec7AhXEP8",
+   "title": "Why dreams feel meaningful and strange at the same time | Freud",
+   "published": "2026-11-05T00:00:17Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 3,
+   "avgPercent": 0.8699999999999999,
    "subsGained": 0
   },
   {
@@ -1342,6 +1391,36 @@
    "comments": 0
   },
   {
+   "id": "xlBpcfuR69U",
+   "title": "Crowds trigger ancient survival alarms",
+   "published": "2026-11-11T18:05:09Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "o3yiUpFfU8c",
+   "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
+   "published": "2026-11-11T00:00:30Z",
+   "duration": "PT9M14S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "CKZhAbMI7Ek",
+   "title": "What your daily habits were really built from | William James",
+   "published": "2026-11-11T00:00:15Z",
+   "duration": "PT7M7S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "lzNbwJLpncg",
    "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
    "published": "2026-11-06T00:00:34Z",
@@ -1352,19 +1431,6 @@
    "comments": 0,
    "avgSeconds": 3,
    "avgPercent": 0.66,
-   "subsGained": 0
-  },
-  {
-   "id": "9lec7AhXEP8",
-   "title": "Why dreams feel meaningful and strange at the same time | Freud",
-   "published": "2026-11-05T00:00:17Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 3,
-   "avgPercent": 0.8699999999999999,
    "subsGained": 0
   },
   {
@@ -1405,6 +1471,16 @@
    "avgSeconds": 10,
    "avgPercent": 20.3,
    "subsGained": 0
+  },
+  {
+   "id": "4lZoI4B4VbE",
+   "title": "What if every slip carried a secret?",
+   "published": "2026-11-09T00:00:28Z",
+   "duration": "PT7M26S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "MN_liz83nkU",
@@ -1469,16 +1545,6 @@
    "comments": 0
   },
   {
-   "id": "o3yiUpFfU8c",
-   "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
-   "published": "2026-11-10T19:44:42Z",
-   "duration": "PT9M14S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "Nl1SAPaJEuY",
    "title": "Are children's dreams really simpler than ours? | Freud",
    "published": "2026-11-10T00:00:05Z",
@@ -1486,17 +1552,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "4lZoI4B4VbE",
-   "title": "What if every slip carried a secret?",
-   "published": "2026-11-09T00:00:28Z",
-   "duration": "PT7M26S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "P8P40XX9vbk",
@@ -1589,11 +1645,11 @@
    "comments": 0
   },
   {
-   "id": "CKZhAbMI7Ek",
-   "title": "What your daily habits were really built from | William James",
-   "published": "2026-11-03T15:49:19Z",
-   "duration": "PT7M7S",
-   "privacy": "private",
+   "id": "23BZecAP85c",
+   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
+   "published": "2026-11-03T00:00:22Z",
+   "duration": "PT5M55S",
+   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0

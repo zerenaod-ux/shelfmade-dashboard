@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-10",
+ "collected": "2026-11-11",
  "note": "",
  "videos": [
   {
@@ -110,6 +110,16 @@
    "subsGained": 0
   },
   {
+   "id": "EWhebXioXqQ",
+   "title": "The Sleep Effort Trap",
+   "published": "2026-11-10T18:04:30Z",
+   "duration": "PT1M37S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "j9gyJISpFX0",
    "title": "The Dinner Spiral",
    "published": "2026-11-03T03:01:54Z",
@@ -120,6 +130,19 @@
    "comments": 0,
    "avgSeconds": 28,
    "avgPercent": 41.12,
+   "subsGained": 0
+  },
+  {
+   "id": "SEbuuZbI--8",
+   "title": "The Doomscroll Trap",
+   "published": "2026-11-05T03:01:48Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 20.27,
    "subsGained": 0
   },
   {
@@ -201,19 +224,6 @@
    "subsGained": 0
   },
   {
-   "id": "SEbuuZbI--8",
-   "title": "The Doomscroll Trap",
-   "published": "2026-11-05T03:01:48Z",
-   "duration": "PT49S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 20.27,
-   "subsGained": 0
-  },
-  {
    "id": "m-mdceIZnsg",
    "title": "The Silent Nod",
    "published": "2026-11-09T18:05:11Z",
@@ -221,7 +231,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 90,
+   "avgPercent": 197.52,
+   "subsGained": 0
   },
   {
    "id": "Aj8TiWooNdA",
@@ -231,7 +244,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 9,
    "avgPercent": 17.19,
    "subsGained": 0
@@ -247,6 +260,29 @@
    "comments": 1,
    "avgSeconds": 2,
    "avgPercent": 3.93,
+   "subsGained": 0
+  },
+  {
+   "id": "hzKTBT9qysw",
+   "title": "The Midnight Replay",
+   "published": "2026-11-10T03:02:02Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "id": "Zoos5GbVQPU",
+   "title": "Leo vs. The Inbox Snare | Leo & Mia Ep. 3",
+   "published": "2026-11-07T00:00:14Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 44,
+   "avgPercent": 81.76,
    "subsGained": 0
   },
   {
@@ -276,16 +312,6 @@
    "subsGained": 0
   },
   {
-   "id": "hzKTBT9qysw",
-   "title": "The Midnight Replay",
-   "published": "2026-11-10T03:02:02Z",
-   "duration": "PT47S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 0
-  },
-  {
    "id": "5msto0N_8Cs",
    "title": "The Whiteboard Nod | Leo & Mia #5",
    "published": "2026-11-08T03:01:34Z",
@@ -293,7 +319,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "ZBq7mV2vMZk",
@@ -303,22 +332,9 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 5,
    "avgPercent": 10.66,
-   "subsGained": 0
-  },
-  {
-   "id": "Zoos5GbVQPU",
-   "title": "Leo vs. The Inbox Snare | Leo & Mia Ep. 3",
-   "published": "2026-11-07T00:00:14Z",
-   "duration": "PT54S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 44,
-   "avgPercent": 81.76,
    "subsGained": 0
   },
   {
@@ -335,6 +351,19 @@
    "subsGained": 0
   },
   {
+   "id": "pJfbbo-cJAQ",
+   "title": "The 5 PM Slide Deck Disaster",
+   "published": "2026-11-06T00:00:23Z",
+   "duration": "PT3M58S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 32,
+   "avgPercent": 13.489999999999998,
+   "subsGained": 0
+  },
+  {
    "id": "tmW0ic4_Go4",
    "title": "The Panic of 'K'",
    "published": "2026-11-09T03:01:39Z",
@@ -342,7 +371,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 7,
+   "avgPercent": 13.19,
+   "subsGained": 0
   },
   {
    "id": "FHoaRv9TFTc",
@@ -358,23 +390,20 @@
    "subsGained": 0
   },
   {
-   "id": "pJfbbo-cJAQ",
-   "title": "The 5 PM Slide Deck Disaster",
-   "published": "2026-11-06T00:00:23Z",
-   "duration": "PT3M58S",
+   "id": "F7XDCfj-9Uk",
+   "title": "The Feather Duster Detour | Leo & Mia #6",
+   "published": "2026-11-11T18:06:42Z",
+   "duration": "PT52S",
    "privacy": "public",
-   "views": 1,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 32,
-   "avgPercent": 13.489999999999998,
-   "subsGained": 0
+   "views": 0,
+   "likes": 0,
+   "comments": 0
   },
   {
-   "id": "EWhebXioXqQ",
-   "title": "The Sleep Effort Trap",
-   "published": "2026-11-10T18:04:30Z",
-   "duration": "PT1M37S",
+   "id": "vthdpujWnPY",
+   "title": "The Infinite Refresh | Leo & Mia #7",
+   "published": "2026-11-11T03:02:01Z",
+   "duration": "PT39S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
@@ -388,7 +417,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   }
  ]
 }

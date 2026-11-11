@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-10",
+ "collected": "2026-11-11",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-10-14T20:26:14Z",
    "duration": "PT26S",
    "privacy": "public",
-   "views": 405,
+   "views": 406,
    "likes": 9,
    "comments": 0,
    "avgSeconds": 15,
@@ -206,7 +206,7 @@
    "published": "2026-11-05T03:01:29Z",
    "duration": "PT28S",
    "privacy": "public",
-   "views": 46,
+   "views": 47,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 17,
@@ -287,8 +287,8 @@
    "views": 38,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 23,
-   "avgPercent": 42.08,
+   "avgSeconds": 22,
+   "avgPercent": 39.29,
    "subsGained": 0
   },
   {
@@ -809,6 +809,32 @@
    "subsGained": 0
   },
   {
+   "id": "mcV0u5NRAvI",
+   "title": "Can you control your calm?",
+   "published": "2026-10-23T04:05:15Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 25,
+   "avgPercent": 116.04999999999998,
+   "subsGained": 0
+  },
+  {
+   "id": "1TFujFgiGXw",
+   "title": "Do manners outweigh knowledge?",
+   "published": "2026-10-19T17:46:19Z",
+   "duration": "PT27S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 16,
+   "avgPercent": 59.69,
+   "subsGained": 0
+  },
+  {
    "id": "X3V948qB6Ng",
    "title": "Question what you know",
    "published": "2026-10-29T23:00:17Z",
@@ -822,19 +848,6 @@
    "subsGained": 1
   },
   {
-   "id": "mcV0u5NRAvI",
-   "title": "Can you control your calm?",
-   "published": "2026-10-23T04:05:15Z",
-   "duration": "PT22S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 116.04999999999998,
-   "subsGained": 0
-  },
-  {
    "id": "-JBCZpJJaj8",
    "title": "But it is the same with the physical type of wisdom, gold",
    "published": "2026-10-22T00:23:57Z",
@@ -845,19 +858,6 @@
    "comments": 0,
    "avgSeconds": 15,
    "avgPercent": 65.22,
-   "subsGained": 0
-  },
-  {
-   "id": "1TFujFgiGXw",
-   "title": "Do manners outweigh knowledge?",
-   "published": "2026-10-19T17:46:19Z",
-   "duration": "PT27S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 16,
-   "avgPercent": 59.69,
    "subsGained": 0
   },
   {
@@ -1200,6 +1200,16 @@
    "subsGained": 0
   },
   {
+   "id": "SAQ1Y0wN0zI",
+   "title": "Nobody warns you about Tao Te Ching.",
+   "published": "2026-11-11T18:06:41Z",
+   "duration": "PT1M11S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "JlR5Qt1ALk8",
    "title": "Do duties unlock higher virtues?",
    "published": "2026-11-08T03:01:43Z",
@@ -1207,7 +1217,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
@@ -1376,6 +1386,32 @@
    "comments": 0
   },
   {
+   "id": "L8fBZiNE9xA",
+   "title": "Nobody warns you about Analects.",
+   "published": "2026-11-10T03:02:03Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 8,
+   "avgPercent": 14.04,
+   "subsGained": 0
+  },
+  {
+   "id": "WCx2ToBGPhU",
+   "title": "Can generosity survive hardship?",
+   "published": "2026-11-09T03:01:37Z",
+   "duration": "PT32S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
    "id": "vSqKjuyAJhM",
    "title": "Can love turn desire into gold?",
    "published": "2026-11-08T18:03:07Z",
@@ -1383,7 +1419,20 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "rmj2YzElBjM",
+   "title": "Self-Help is not what you think.",
+   "published": "2026-11-07T00:00:39Z",
+   "duration": "PT6M35S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "bIeNOgFWT_I",
@@ -1468,14 +1517,24 @@
    "comments": 0
   },
   {
-   "id": "L8fBZiNE9xA",
-   "title": "Nobody warns you about Analects.",
-   "published": "2026-11-10T03:02:03Z",
-   "duration": "PT1M4S",
+   "id": "v5GPz22mgbU",
+   "title": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!",
+   "published": "2026-11-11T03:02:15Z",
+   "duration": "PT39S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
    "comments": 0
+  },
+  {
+   "id": "qreV4UF_HS4",
+   "title": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday",
+   "published": "2026-11-10T18:04:55Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "lX71jEZ8QNg",
@@ -1485,17 +1544,27 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
-   "id": "WCx2ToBGPhU",
-   "title": "Can generosity survive hardship?",
-   "published": "2026-11-09T03:01:37Z",
-   "duration": "PT32S",
+   "id": "nlzBtL-I8EE",
+   "title": "Are your diamonds hidden where you stand?",
+   "published": "2026-11-08T00:00:20Z",
+   "duration": "PT6M52S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 0
+  },
+  {
+   "id": "6z0IxWs-qko",
+   "title": "Can you remember a page without notes?",
+   "published": "2026-11-05T00:00:18Z",
+   "duration": "PT7M25S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "S52fhpBuPEU",
@@ -1689,20 +1758,30 @@
    "comments": 0
   },
   {
-   "id": "yw-m_m8OYiE",
-   "title": "Ruskin wrote this for you.",
-   "published": "2026-11-10T19:55:52Z",
-   "duration": "PT6M57S",
+   "id": "7HnIeRjpoGg",
+   "title": "Listen to what Seneca warned about.",
+   "published": "2026-11-11T02:05:54Z",
+   "duration": "PT6M42S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
    "comments": 0
   },
   {
-   "id": "qreV4UF_HS4",
-   "title": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday",
-   "published": "2026-11-10T18:04:55Z",
-   "duration": "PT43S",
+   "id": "XU8c9iqTGlI",
+   "title": "Think before you fight | The Art of War",
+   "published": "2026-11-11T00:00:40Z",
+   "duration": "PT6M43S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "yw-m_m8OYiE",
+   "title": "Ruskin wrote this for you.",
+   "published": "2026-11-11T00:00:16Z",
+   "duration": "PT6M57S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
@@ -1716,7 +1795,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "xIxtLasPyV8",
@@ -1726,17 +1808,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "nlzBtL-I8EE",
-   "title": "Are your diamonds hidden where you stand?",
-   "published": "2026-11-08T00:00:20Z",
-   "duration": "PT6M52S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "NZEHVdWXKhQ",
@@ -1749,31 +1821,11 @@
    "comments": 0
   },
   {
-   "id": "rmj2YzElBjM",
-   "title": "Self-Help is not what you think.",
-   "published": "2026-11-07T00:00:39Z",
-   "duration": "PT6M35S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "pLirzW1d_Og",
    "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
    "published": "2026-11-06T06:33:58Z",
    "duration": "PT8M42S",
    "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "6z0IxWs-qko",
-   "title": "Can you remember a page without notes?",
-   "published": "2026-11-05T00:00:18Z",
-   "duration": "PT7M25S",
-   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0
@@ -1803,16 +1855,6 @@
    "title": "Franklin had a warning for you.",
    "published": "2026-11-03T20:51:44Z",
    "duration": "PT6M53S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "XU8c9iqTGlI",
-   "title": "Think before you fight | The Art of War",
-   "published": "2026-11-03T20:51:36Z",
-   "duration": "PT6M43S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
