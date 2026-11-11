@@ -21,6 +21,8 @@ def pick_theme(h):
         if q and not SM: t0 = q.pop(0); wf.write_text(json.dumps(q, indent=1)); print('winner idea theme:', t0, flush=True); return t0
     except Exception: pass
     if SM:   # ShelfMade: "a classic book vs today"
+        if len(h['items']) >= 1 and h['items'][-1].get('theme') and h['items'][-1].get('part', 1) < 3 and h['items'][-1].get('date', '') >= (datetime.date.today() - datetime.timedelta(days=3)).isoformat():
+            return h['items'][-1]['theme']   # SERIES (owner OK 2026-11-11): the same book for 3 Shorts in a row, "Part 1/2/3"
         books = load(B / 'books.json', []); cand = [b for b in books if ('%s by %s' % (b['title'], b['author'])) not in used] or books
         b = random.choice(cand); return '%s by %s' % (b['title'], b['author'])
     cand = [t for t in THEMES if t not in used] or THEMES
@@ -31,7 +33,9 @@ def pick_theme(h):
     return random.choice(cand)
 def one(llm_call):
     import story_rules
-    h = hist(); theme = pick_theme(h); recent = [i['title'] for i in h['items'][-15:]]
+    h = hist(); theme = pick_theme(h)
+    part = (h['items'][-1].get('part', 1) + 1) if (SM and h['items'] and h['items'][-1].get('theme') == theme) else 1
+    recent = [i['title'] for i in h['items'][-15:]]
     # H1b TEST: our data says <=30s Shorts win ~7x; make the first 3 of every 14 days short (~30s), measured later by the scoreboard
     _lo, _hi, exp = 140, 200, ''
     try:
@@ -53,6 +57,7 @@ def one(llm_call):
             'Titles already used, do not repeat: %s.\n' % (chan, theme, radar, recent) + (story_rules.rules('shelfmade' if SM else 'mindlore', short=True).replace('ONE narration of 150-190 words (about 60-70 seconds)', 'ONE narration of 70-90 words (about 30 seconds, ONE idea only, hook in the first 5 words)') if exp else story_rules.rules('shelfmade' if SM else 'mindlore', short=True)) +
             'Return JSON: {"public_title": "2 to 5 words, no emoji, a STATEMENT that starts with You or Your (our data: You/Your titles get about 4x the views of question titles), e.g. Your Brain Lies, You Forget Fast; never a yes/no question", "hook": "the exact first sentence of the narration", "thumb": "2-5 WORD CAPS HEADLINE", '
             '"narration": "'+("70-90" if exp else "150-190")+' words, first sentence EXACTLY the hook", "claims": [{"claim":"...","who":"...","year":"...","place":"..."}]}.')
+    if SM: base += '\nSERIES: this is Part %d of 3 about the same book. %s Put "Part %d" at the end of public_title. Use a different famous line or idea than the earlier parts (titles so far: %s).\n' % (part, 'Start with the most famous idea of the book.' if part == 1 else 'End with a hook that makes the viewer want Part %d.' % min(part + 1, 3) if part < 3 else 'Close the series with the takeaway.', part, recent[-3:])
     base += '\nOWNER-APPROVED WINNING STYLE (our best MindLore Short, 2026-11-09, "Why a deadline makes your stomach knot"): start from an everyday BODY FEELING the viewer has had (knot in the stomach, racing heart, sweaty hands, chills), speak straight to them ("You feel..."), give a surprising reason from real research with TWO real numbers, and keep it about 55 seconds. When the theme allows, a title like "Why a deadline makes your stomach knot" (Why + everyday thing + makes your + body feeling) is welcome; it is a statement about the viewer, not a yes/no question.\n'
     prompt = base; bad = ['no usable answer']; d = None
     for attempt in range(4):
@@ -78,7 +83,7 @@ def one(llm_call):
     out = {'book_id': sid, 'title': bk[0], 'author': bk[-1] if SM else '', 'brand': BRAND, 'story_short': True, 'public_title': str(d.get('public_title') or d['hook'])[:95], 'hook': d['hook'], 'thumbnail_headline': str(d.get('thumb', ''))[:40].upper(),
            'sections': d['sections'], 'claims': d.get('claims', []), 'source_url': '', 'theme': theme, 'exp': exp}
     OUT.mkdir(parents=True, exist_ok=True); (OUT / (sid + '.json')).write_text(json.dumps(out, indent=1, ensure_ascii=False))
-    h['items'].append({'id': sid, 'title': out['public_title'], 'theme': theme, 'exp': exp, 'date': datetime.date.today().isoformat()}); h['items'] = h['items'][-200:]
+    h['items'].append({'id': sid, 'title': out['public_title'], 'theme': theme, 'part': part, 'exp': exp, 'date': datetime.date.today().isoformat()}); h['items'] = h['items'][-200:]
     HIST.parent.mkdir(parents=True, exist_ok=True); HIST.write_text(json.dumps(h, indent=1))
     print('story_short: wrote', sid, '-', out['public_title'], flush=True)
     return sid
