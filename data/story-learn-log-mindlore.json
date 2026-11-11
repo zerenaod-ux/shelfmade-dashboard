@@ -931,6 +931,35 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261111-bf24f",
+   "look": "live-demo",
+   "title": "Your Joy Triggers Ancient Brain Networks",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

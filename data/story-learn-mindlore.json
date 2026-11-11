@@ -1,9 +1,26 @@
 {
  "brand": "mindlore",
- "n": 1,
- "updated": "2026-11-10",
- "theme": {},
- "act": {},
- "bg": {},
+ "n": 3,
+ "updated": "2026-11-11",
+ "theme": {
+  "multitasking": 0.357,
+  "money and happiness": 0.262,
+  "stress and fear": 1.0
+ },
+ "act": {
+  "brain": 0.795,
+  "chart": 0.795,
+  "counter": 0.795,
+  "flow": 0.795,
+  "icon_burst": 0.795,
+  "meter": 1.0,
+  "reaction": 0.795,
+  "slots": 0.795,
+  "title_slam": 0.795,
+  "versus": 0.795
+ },
+ "bg": {
+  "live": 1.0
+ },
  "prop": {}
 }
