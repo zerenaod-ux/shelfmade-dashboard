@@ -206,7 +206,14 @@ def render(work):
                             except Exception as ex:print('variant unusable',vp_.name,ex,flush=True)
                         elif not fastlip.is_open(np.asarray(im_),g_):geo[(si_,who_)]=g_
                         else:
-                            print('MOUTH-OPEN-FLAG shot',si_+1,who_,flush=True);mflags.append('shot %d %s'%(si_+1,who_))
+                            try:   # drawn mouth already open: close it ourselves, then the speaking animation can run on it
+                                if __import__('os').environ.get('DOODLES_AUTOCLOSE')=='0':raise ValueError('auto-close off')
+                                _c=fastlip.close_mouth(np.asarray(imgs[si_]),g_)
+                                if not fastlip.is_open(_c,g_):
+                                    imgs[si_]=Image.fromarray(_c);geo[(si_,who_)]=g_;print('MOUTH-CLOSED shot',si_+1,who_,flush=True);mflags.append('shot %d %s (closed automatically)'%(si_+1,who_))
+                                else:raise ValueError('still open')
+                            except Exception as ex:
+                                print('MOUTH-OPEN-FLAG shot',si_+1,who_,ex,flush=True);mflags.append('shot %d %s'%(si_+1,who_))
             except Exception as ex:print('face detect failed',si_,ex,flush=True)
         print('fast mouths ready for',len(geo),'faces',flush=True)
         try:(work/'mouth_flags.json').write_text(json.dumps(mflags))

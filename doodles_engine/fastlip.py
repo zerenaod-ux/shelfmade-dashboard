@@ -60,3 +60,21 @@ def apply(rgb,g,o):
     col=col*(1-tg)+np.array([170,66,78],'float32')*tg
     res=base*(1-inner)+col*inner
     full=rgb.copy();full[y0:y1,x0:x1]=np.clip(res,0,255).astype('uint8');return full
+
+
+def close_mouth(rgb,g):
+    """Last resort for a picture whose drawn mouth is already open (the picture model ignored 'mouths always closed'): paint the mouth interior with the surrounding skin tone and draw a small closed-lip smile, so the speaking animation can run on a closed mouth."""
+    H,W=rgb.shape[:2];cx,cy,mw=float(g['cx']),float(g['cy']),float(g['mw'])
+    yy,xx=np.mgrid[0:H,0:W].astype('float32')
+    def ell(ax,ay,dy=0.0):return (((xx-cx)/(ax*mw))**2+((yy-(cy+dy*mw))/(ay*mw))**2)<=1
+    ring=ell(1.0,0.75,0.05)&~ell(0.78,0.56,0.05)
+    L=cv2.cvtColor(rgb,cv2.COLOR_RGB2GRAY)
+    ok=ring&(L>110)&(L<235)
+    if int(ok.sum())<20:return rgb
+    skin=np.median(rgb[ok],axis=0)
+    core=ell(0.72,0.52,0.04).astype('float32');core=cv2.GaussianBlur(core,(0,0),max(1.0,0.07*mw))[...,None]
+    out=rgb.astype('float32')*(1-core)+skin[None,None,:]*core
+    out=np.clip(out,0,255).astype('uint8').copy()
+    t=max(2,int(0.05*mw));col=(70,35,35)
+    cv2.ellipse(out,(int(cx),int(cy-0.04*mw)),(int(0.27*mw),int(0.11*mw)),0,15,165,col,t,cv2.LINE_AA)
+    return out

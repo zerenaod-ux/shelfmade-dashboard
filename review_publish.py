@@ -81,7 +81,7 @@ def qc(video, title, text, full=False, seen_titles=(), mouth=()):
     r.append(chk(0 < len(title) <= 100, 'title %d characters' % len(title), 'title empty or over 100 characters'))
     r.append(chk('_' not in re.sub(r'(?:https?://|youtube\.com/|www\.)\S+', '', text) and 'Source-supported draft' not in text, 'no leftover markup', 'caption has leftover markup (_ or draft note)'))
     r.append(chk(title not in seen_titles, 'title is new', 'same title already reviewed before'))
-    if mouth: r.append(chk(False, '', 'a mouth may stay open while not talking (%s): look closely' % ', '.join(mouth)))
+    if mouth: r.append(chk(False, '', 'mouth check, look closely at: %s' % ', '.join(mouth)))
     return all(r), out
 
 
