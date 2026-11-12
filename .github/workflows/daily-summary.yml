@@ -1,0 +1,24 @@
+name: daily-summary
+# ONE plain-words daily summary for the owner (GitHub app push). Owner request 2026-11-11.
+on:
+  schedule:
+    - cron: '25 14 * * *'   # about 8:25 AM Chicago (CST), after the morning analytics
+  workflow_dispatch:
+  push:
+    paths: ['publish/daily-summary.trigger']
+permissions:
+  issues: write
+  contents: read
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Post the daily summary
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python daily_summary.py
