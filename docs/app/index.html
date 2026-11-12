@@ -17,144 +17,409 @@
 @media (prefers-color-scheme:dark){:root{--bg:#0e1714;--card:#16221d;--ink:#e9f0ec;--mut:#8fa399;--line:#24342d;--forest:#0b1713;--gold:#d2b15d;--okbg:#133a24;--warnbg:#3a2c0b;--badbg:#401a17;--ok:#5ed18d;--warn:#f0b24d;--bad:#ff8a80;--sh:#52c49b;--ml:#a695ff;--dd:#ffa05a;--shadow:0 1px 2px #0006}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;padding-bottom:max(28px,env(safe-area-inset-bottom))}
-header{background:linear-gradient(160deg,var(--forest),#245444);color:#fff;padding:max(18px,env(safe-area-inset-top)) 18px 26px;border-radius:0 0 26px 26px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;min-height:100vh}
+header{background:linear-gradient(160deg,var(--forest),#245444);color:#fff;padding:max(16px,env(safe-area-inset-top)) 18px 22px;border-radius:0 0 26px 26px}
 .top{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .brand{font:700 20px Georgia,serif;letter-spacing:-.3px}.brand i{color:#d6b96d;font-style:normal}
-.btn{appearance:none;border:0;border-radius:12px;padding:9px 14px;font:600 14px inherit;background:#ffffff22;color:#fff}
-h1{margin:18px 0 2px;font-size:26px;letter-spacing:-.4px}
+.ibtn{appearance:none;border:0;border-radius:12px;padding:9px 13px;font:600 14px -apple-system,system-ui,sans-serif;background:#ffffff22;color:#fff;cursor:pointer}
+h1{margin:14px 0 2px;font-size:26px;letter-spacing:-.4px}
 .sub{margin:0;color:#bfd3c9;font-size:14px}
-main{padding:0 14px;margin-top:-14px;max-width:680px;margin-inline:auto}
+main{max-width:680px;margin:-12px auto 0;padding:0 14px calc(104px + env(safe-area-inset-bottom))}
+section.tab{display:none}section.tab.on{display:block}
 .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;margin:12px 0;box-shadow:var(--shadow)}
 .lab{font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--mut);margin:0 0 8px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .big{font-size:34px;font-weight:800;letter-spacing:-1px;line-height:1}
-.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--line);color:var(--mut);vertical-align:middle;margin-left:6px}
-.pill.up{background:var(--okbg);color:var(--ok)}.pill.dn{background:var(--badbg);color:var(--bad)}.pill.na{background:var(--line);color:var(--mut)}
+.tiles{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 10px;box-shadow:var(--shadow);text-align:left}
+.tile b{display:block;font-size:24px;letter-spacing:-.5px}.tile span{font-size:12px;color:var(--mut);font-weight:600}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--line);color:var(--mut);margin-left:6px;vertical-align:middle}
+.pill.up,.tag.ok,.ic.ok{background:var(--okbg);color:var(--ok)}
+.pill.dn,.tag.bad{background:var(--badbg);color:var(--bad)}
+.tag.warn,.ic.bad{background:var(--warnbg);color:var(--warn)}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--line);color:var(--mut);margin:0 6px 4px 0}
 .chan{border-left:6px solid var(--c)}
-.chan h3{margin:0 0 10px;font-size:18px;display:flex;justify-content:space-between;align-items:center}
+.chan h3{margin:0 0 6px;font-size:18px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .dot{width:10px;height:10px;border-radius:50%;background:var(--c);display:inline-block;margin-right:8px}
 .plat{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 4px}
 .plat div{background:var(--bg);border-radius:12px;padding:9px 10px}
 .plat small{display:block;color:var(--mut);font-size:11px;font-weight:600}
 .plat b{font-size:17px}.plat em{display:block;font-style:normal;font-size:11px;color:var(--mut)}
-.best{margin-top:10px;font-size:14px;color:var(--mut)}.best b{color:var(--ink)}
-.need .head{display:flex;align-items:center;justify-content:space-between}
-.count{font-size:13px;font-weight:700;padding:4px 10px;border-radius:99px}
-.count.zero{background:var(--okbg);color:var(--ok)}.count.some{background:var(--warnbg);color:var(--warn)}
-.rev{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
-.rev video{width:100%;max-height:52vh;border-radius:14px;background:#000;display:block;margin-bottom:10px}
-.rev h4{margin:0 0 6px;font-size:16px}.tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--line);color:var(--mut);margin-right:6px}
-.tag.warn{background:var(--warnbg);color:var(--warn)}.tag.ok{background:var(--okbg);color:var(--ok)}
-.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-.btns button{min-height:54px;border-radius:15px;border:2px solid var(--line);font:700 17px inherit;background:var(--card);color:var(--ink)}
-.btns .go{background:var(--ok);border-color:var(--ok);color:#fff}.btns .arm{outline:3px solid var(--gold)}
+.muted{font-size:13px;color:var(--mut);margin:8px 0 0}
+.muted b{color:var(--ink)}
+.rv{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+.rv:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.rv video{width:100%;max-height:52vh;border-radius:14px;background:#000;display:block;margin-bottom:10px}
+.rv h4{margin:8px 0 6px;font-size:17px;line-height:1.3}
+.cap{white-space:pre-wrap;font-size:14px;color:var(--ink);opacity:.9;margin:6px 0}
+details{margin:8px 0;font-size:14px;color:var(--mut)}details pre{white-space:pre-wrap;margin:6px 0 0;font:13px/1.4 ui-monospace,Menlo,monospace}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.btns button{min-height:54px;border-radius:15px;border:2px solid var(--line);font:700 17px -apple-system,system-ui,sans-serif;background:var(--card);color:var(--ink);cursor:pointer}
+.btns .go{background:var(--ok);border-color:var(--ok);color:#fff}
+.btns .arm{outline:3px solid var(--gold)}
 .btns button:disabled{opacity:.45}
-.prob{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px solid var(--line);font-size:14px}.prob:first-of-type{border-top:0}
+.btnline{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px 14px;font:600 14px -apple-system,system-ui,sans-serif;cursor:pointer;margin-top:8px}
+.btnline.pri{background:var(--forest);border-color:var(--forest);color:#fff}
+.prob{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+.prob:first-of-type{border-top:0}
 .ic{flex:0 0 22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800}
-.ic.ok{background:var(--okbg);color:var(--ok)}.ic.bad{background:var(--warnbg);color:var(--warn)}
-.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}.links a{display:block;text-align:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 8px;font-weight:600;font-size:14px}
-.note{font-size:12px;color:var(--mut);text-align:center;margin:14px 8px}
+.job{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+.job:first-of-type{border-top:0}
+.job span:last-child{color:var(--mut);white-space:nowrap}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:8px 0 2px}
+.bar i{display:block;height:100%;background:var(--ok);border-radius:99px}
+.vid{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+.vid:first-of-type{border-top:0}.vid span:last-child{color:var(--mut);white-space:nowrap}
+.note{font-size:12px;color:var(--mut);text-align:center;margin:16px 8px}
 .msg{color:var(--mut);text-align:center;padding:18px}
-.skel{height:84px;border-radius:20px;background:linear-gradient(90deg,var(--line),var(--card),var(--line));background-size:200% 100%;animation:sk 1.2s infinite;margin:12px 0}@keyframes sk{to{background-position:-200% 0}}
+.skel{height:84px;border-radius:20px;background:linear-gradient(90deg,var(--line),var(--card),var(--line));background-size:200% 100%;animation:sk 1.2s infinite;margin:12px 0}
+@keyframes sk{to{background-position:-200% 0}}
+.banner{border-radius:16px;padding:12px 14px;margin:12px 0;font-size:14px;border:2px solid var(--c,#888)}
+.banner b{display:block;margin-bottom:4px}
 .install{display:none;background:var(--warnbg);color:var(--warn);border-radius:14px;padding:11px 14px;font-size:13px;margin:12px 0}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:8px 6px calc(8px + env(safe-area-inset-bottom));z-index:10}
+nav button{appearance:none;border:0;background:none;color:var(--mut);font:600 11px -apple-system,system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 10px;border-radius:12px;cursor:pointer;position:relative;min-width:72px}
+nav button svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+nav button.on{color:var(--forest)}
+@media (prefers-color-scheme:dark){nav button.on{color:var(--ok)}}
+nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;font-size:10px;font-weight:800;border-radius:99px;padding:1px 6px;min-width:18px;text-align:center}
+.sheet{position:fixed;inset:0;background:#0008;display:none;align-items:flex-end;justify-content:center;z-index:20}
+.sheet.on{display:flex}
+.sheet .panel{background:var(--card);color:var(--ink);width:100%;max-width:680px;border-radius:24px 24px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom));max-height:88vh;overflow:auto}
+.sheet h2{margin:0 0 6px;font-size:20px}
+.sheet input{width:100%;font:15px ui-monospace,Menlo,monospace;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);margin:8px 0}
+.sheet a{display:block;color:var(--ink);text-decoration:none;padding:12px 0;border-top:1px solid var(--line);font-weight:600}
+.sheet a span{display:block;font-weight:400;color:var(--mut);font-size:13px;margin-top:2px}
 </style>
 </head>
 <body>
 <header>
-  <div class="top"><div class="brand">Shelf<i>Made</i> Studio</div><button class="btn" id="rf" type="button">Refresh</button></div>
-  <h1 id="hello">Good day</h1>
-  <p class="sub" id="when">Loading your numbers…</p>
+  <div class="top">
+    <div class="brand">Shelf<i>Made</i> Studio</div>
+    <div style="display:flex;gap:8px">
+      <button class="ibtn" id="rf" type="button">Refresh</button>
+      <button class="ibtn" id="setbtn" type="button">Settings</button>
+    </div>
+  </div>
+  <h1 id="ttl">Home</h1>
+  <p class="sub" id="sub">Loading your numbers…</p>
 </header>
+
 <main>
   <div class="install" id="install">Install it: tap Share, then <b>Add to Home Screen</b>. It opens like a real app.</div>
-  <section class="card need" id="need"><div class="skel"></div></section>
-  <div id="chans"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
-  <section class="card" id="probs"></section>
-  <div class="links">
-    <a href="../review/" target="_blank" rel="noopener">Full review page</a>
-    <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/issues/213" target="_blank" rel="noopener">Daily summary</a>
-    <a href="../health/" target="_blank" rel="noopener">System health</a>
-    <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/actions" target="_blank" rel="noopener">Runs</a>
-  </div>
-  <p class="note">Numbers are real data from YouTube and Buffer. A number the source does not give shows n/a. Alerts also reach you in the GitHub app.</p>
+
+  <!-- HOME -->
+  <section class="tab on" id="t-home">
+    <div class="tiles">
+      <div class="tile"><b id="k-wait">–</b><span>Waiting for you</span></div>
+      <div class="tile"><b id="k-views">–</b><span>Views (all 3)</span></div>
+      <div class="tile"><b id="k-health">–</b><span>Health</span></div>
+    </div>
+    <div id="h-ap"></div>
+    <div id="h-chans"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+    <div class="card"><p class="lab">Quick links</p>
+      <button class="btnline pri" data-go="review" type="button">Review and approve ›</button>
+      <button class="btnline" data-go="health" type="button">Health and jobs ›</button>
+      <button class="btnline" data-go="channels" type="button">Channel numbers ›</button>
+    </div>
+    <p class="note" id="home-note">Numbers are real data from YouTube and Buffer. n/a means the source does not give that number.</p>
+  </section>
+
+  <!-- REVIEW -->
+  <section class="tab" id="t-review">
+    <div id="r-ap"></div>
+    <div id="r-key"></div>
+    <div id="r-list"><div class="skel"></div></div>
+  </section>
+
+  <!-- HEALTH -->
+  <section class="tab" id="t-health">
+    <div id="x-pre"></div>
+    <div id="x-dep"></div>
+    <div id="x-self"></div>
+    <div id="x-brands"></div>
+    <div class="card" id="x-jobs"><p class="lab">Automatic jobs</p><div class="skel"></div></div>
+  </section>
+
+  <!-- CHANNELS -->
+  <section class="tab" id="t-channels">
+    <div id="c-list"><div class="skel"></div><div class="skel"></div></div>
+    <div class="card" id="c-growth"></div>
+  </section>
 </main>
+
+<nav id="nav">
+  <button type="button" data-tab="home" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</button>
+  <button type="button" data-tab="review"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg>Review<span class="cnt" id="n-wait" hidden>0</span></button>
+  <button type="button" data-tab="health"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>Health</button>
+  <button type="button" data-tab="channels"><svg viewBox="0 0 24 24"><path d="M4 20V10h4v10zM10 20V4h4v16zM16 20v-7h4v7z"/></svg>Channels</button>
+</nav>
+
+<div class="sheet" id="sheet">
+  <div class="panel">
+    <h2>Settings</h2>
+    <p class="muted" id="key-state"></p>
+    <p class="lab" style="margin-top:14px">Key for the buttons</p>
+    <p class="muted">Paste your GitHub key (fine-grained, this repo only, Issues: read and write). It stays on this phone only.</p>
+    <input id="key-in" type="password" placeholder="github_pat_…" autocomplete="off">
+    <div class="row"><button class="btnline pri" id="key-save" type="button">Save key</button><button class="btnline" id="key-forget" type="button">Forget key</button><button class="btnline" id="key-close" type="button">Close</button></div>
+    <p class="lab" style="margin-top:20px">Open on the computer or web</p>
+    <a href="https://zerenaod-ux.github.io/shelfmade-dashboard/review/" target="_blank" rel="noopener">Full review page<span>The same queue as this app, in a browser</span></a>
+    <a href="https://zerenaod-ux.github.io/shelfmade-dashboard/health/" target="_blank" rel="noopener">Health page<span>Plain health page</span></a>
+    <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/issues/213" target="_blank" rel="noopener">Daily summary<span>One plain-words message a day</span></a>
+    <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/actions" target="_blank" rel="noopener">Runs on GitHub<span>Every automatic job and its log</span></a>
+    <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/actions/workflows/autopilot.yml" target="_blank" rel="noopener">Autopilot switch<span>Turn the automatic approve/skip on or off</span></a>
+    <button class="btnline" id="sheet-close" type="button" style="width:100%;margin-top:16px">Done</button>
+  </div>
+</div>
+
 <script>
 (function(){
 'use strict';
 var REPO='zerenaod-ux/shelfmade-dashboard',RAW='https://raw.githubusercontent.com/'+REPO+'/master/',API='https://api.github.com/repos/'+REPO;
-var BR=[['shelfmade','ShelfMade','var(--sh)'],['mindlore','MindLore','var(--ml)'],['doodles','AnimationDoodles','var(--dd)']];
+var BR=[{k:'shelfmade',n:'ShelfMade',c:'var(--sh)',s:['state.json','state-shfull.json'],a:['approved.json','approved-shfull.json']},
+        {k:'mindlore',n:'MindLore',c:'var(--ml)',s:['state-mindlore.json','state-mlfull.json'],a:['approved-mindlore.json','approved-mlfull.json']},
+        {k:'doodles',n:'AnimationDoodles',c:'var(--dd)',s:['state-doodles.json','state-ddfull.json'],a:['approved-doodles.json','approved-ddfull.json']}];
 var PL=[['youtube','YouTube'],['tiktok','TikTok'],['instagram','Instagram']];
+var KEYJOBS=['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'];
 var $=function(i){return document.getElementById(i)};
 var TOK='';try{TOK=localStorage.getItem('ghtok')||''}catch(e){}
+var cache={};
+
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
 function nf(n){return n==null?'n/a':Number(n).toLocaleString('en-US')}
-function jget(p){return fetch(RAW+p+'?t='+Date.now()).then(function(r){if(!r.ok)throw new Error(p+' '+r.status);return r.json()})}
+function ago(ms){var h=ms/36e5;return h<1?Math.max(1,Math.round(ms/6e4))+' min':h<48?(Math.round(h*10)/10)+' h':Math.round(h/24)+' days'}
 function hdr(){var h={'Accept':'application/vnd.github+json'};if(TOK)h.Authorization='Bearer '+TOK;return h}
-function delta(d){var s=el('span','pill',null);if(d==null){s.className='pill na';s.textContent='n/a';return s}
-  if(d<0){s.className='pill na';s.textContent='source changed';return s}s.className='pill '+(d>0?'up':'');s.textContent=(d>0?'+':'')+nf(d);return s}
+function jget(u){return fetch(u+(u.indexOf('?')<0?'?':'&')+'t='+Date.now()).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).catch(function(){return null})}
 function hello(){var h=new Date().getHours();return h<12?'Good morning':h<18?'Good afternoon':'Good evening'}
+function safeVideo(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
+function clean(b){return (b||'').replace(/<!--DATA[\s\S]*?DATA-->/g,'').replace(/\*\*/g,'').replace(/`/g,'').trim()}
+function parse(b){
+  var t=clean(b),v=(t.match(/https:\/\/[^\s)]+\.mp4/)||[])[0]||'',cap='',chk='';
+  var m=t.match(/Caption \(all platforms\):\s*([\s\S]*?)\s*Automatic checks:/);if(m)cap=m[1].trim();
+  var d=t.match(/Description:\s*([\s\S]*?)\s*---/);if(!cap&&d)cap=d[1].trim();
+  var ch=t.match(/Post text with chapters:\s*([\s\S]*?)\s*(Music:|---)/);if(!cap&&ch)cap=ch[1].trim();
+  var c=t.match(/Automatic checks:\s*([\s\S]*?)\s*(Music:|---|To publish|To schedule|$)/);if(c)chk=c[1].trim();
+  return {video:v,cap:cap,checks:chk}}
+function labels(it){return (it.labels||[]).map(function(l){return l.name})}
+function kindOf(t){return (t.match(/^(DOODLES FULL|DOODLES|ML|FULL|SHORT|MINDLORE)/i)||[''])[0]}
+function stripKind(t){return t.replace(/^Review\s*/i,'').replace(/^(DOODLES FULL|DOODLES|ML|FULL|SHORT|MINDLORE)\s*:?\s*/i,'')}
 
-function channels(hist,an){
-  var days=Object.keys(hist).sort(),now=hist[days[days.length-1]]||{},old=hist[days[days.length-2]]||{},box=$('chans');box.textContent='';
-  $('when').textContent=days.length?('Numbers from '+days[days.length-1]+(days.length>1?' · change since '+days[days.length-2]:'')):'No numbers yet';
-  BR.forEach(function(b){
-    var c=el('section','card chan');c.style.setProperty('--c',b[2]);
-    var tot=0,have=false,rows=el('div','plat'),subs=null,subsD=null,pos=0;
-    PL.forEach(function(p){var k=b[0]+'/'+p[0],n=now[k],o=old[k],d=null;
-      if(n&&n.views!=null){have=true;if(o&&o.views!=null){d=n.views-o.views;if(d>=0)pos+=d}}
-      var cell=el('div');cell.appendChild(el('small','',p[1]));cell.appendChild(el('b','',n?nf(n.views):'n/a'));
-      cell.appendChild(el('em','',d==null?'':(d<0?'list changed':(d>0?'+':'')+nf(d)+' today')));rows.appendChild(cell);
-      if(p[0]==='youtube'&&n&&n.subs!=null){subs=n.subs;if(o&&o.subs!=null)subsD=n.subs-o.subs}});
-    tot=PL.reduce(function(a,p){var n=now[b[0]+'/'+p[0]];return a+((n&&n.views)||0)},0);
-    var h=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode(b[1]));h.appendChild(l);
-    var big=el('div');big.appendChild(el('span','big',have?nf(tot):'n/a'));big.appendChild(delta(have&&days.length>1?pos:null));
-    c.appendChild(h);c.appendChild(big);c.appendChild(el('div','best','total views across all 3 platforms'+(subs!=null?' · '+nf(subs)+' YouTube subscribers'+(subsD?(' ('+(subsD>0?'+':'')+subsD+')'):''):'')));
-    c.appendChild(rows);
-    var vids=((an[b[0]]||{}).videos||[]).filter(function(v){return v.privacy==='public'&&v.published&&(Date.now()-Date.parse(v.published))<5*864e5});
-    if(vids.length){vids.sort(function(x,y){return (y.views||0)-(x.views||0)});var v=vids[0],bd=el('div','best');bd.appendChild(document.createTextNode('Best this week: '));bd.appendChild(el('b','','“'+v.title.slice(0,64)+'” '));bd.appendChild(document.createTextNode('('+nf(v.views)+' views)'));c.appendChild(bd)}
-    box.appendChild(c)})}
+function setTab(name){
+  document.querySelectorAll('section.tab').forEach(function(s){s.classList.toggle('on',s.id==='t-'+name)});
+  document.querySelectorAll('nav button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-tab')===name)});
+  var titles={home:'Home',review:'Review',health:'Health',channels:'Channels'};$('ttl').textContent=titles[name];
+  window.scrollTo(0,0);
+  try{history.replaceState(null,'','#'+name)}catch(e){}
+  if(!cache[name]) loadTab(name);
+}
+document.querySelectorAll('nav button').forEach(function(b){b.onclick=function(){setTab(b.getAttribute('data-tab'))}});
+document.querySelectorAll('[data-go]').forEach(function(b){b.onclick=function(){setTab(b.getAttribute('data-go'))}});
 
-function parse(b){var t=(b||'').replace(/<!--DATA[\s\S]*?DATA-->/g,'').replace(/\*\*/g,'').replace(/`/g,'');var v=(t.match(/https:\/\/[^\s)]+\.mp4/)||[])[0]||'';return v}
-function safe(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
+/* ---------- Settings sheet (key) ---------- */
+function keyState(){
+  $('key-state').textContent=TOK?'Key saved on this phone. Approve and Skip are on.':'No key yet. You can watch, but Approve and Skip need the key.';
+  var kr=$('r-key');kr.textContent='';
+  if(!TOK){var b=el('div','banner');b.style.setProperty('--c','var(--warn)');b.appendChild(el('b','','Add your key to press Approve or Skip'));b.appendChild(el('span','','Tap Settings (top right), then paste your key once.'));kr.appendChild(b)}
+}
+function openSheet(){keyState();$('sheet').classList.add('on');$('key-in').value=''}
+function closeSheet(){$('sheet').classList.remove('on')}
+$('setbtn').onclick=openSheet;$('sheet-close').onclick=closeSheet;$('key-close').onclick=closeSheet;
+$('sheet').onclick=function(e){if(e.target===$('sheet'))closeSheet()};
+$('key-save').onclick=function(){
+  var v=$('key-in').value.trim();
+  if(!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(v)){alert('That does not look like a GitHub key. It starts with github_pat_');return}
+  try{localStorage.setItem('ghtok',v)}catch(e){}
+  TOK=v;closeSheet();cache={};setTab(currentTab());
+};
+$('key-forget').onclick=function(){try{localStorage.removeItem('ghtok')}catch(e){}TOK='';closeSheet();cache={};setTab(currentTab())};
+function currentTab(){var s=document.querySelector('section.tab.on');return s?s.id.slice(2):'home'}
+
+/* ---------- Autopilot banner ---------- */
+function apBanner(host){
+  host.textContent='';
+  jget(RAW+'publish/autopilot.json').then(function(c){
+    c=c||{on:false};
+    var b=el('div','banner');b.style.setProperty('--c',c.on?'#2a9d4b':'#888');
+    b.appendChild(el('b','',c.on?'Autopilot ON: the system approves and skips by itself':'Autopilot OFF: you approve and skip'));
+    b.appendChild(el('span','muted',c.on?('Last pass '+(c.last_run||'-').replace('T',' ').slice(0,16)+' UTC'):'Turn it on before you go away (Settings › Autopilot switch).'));
+    host.appendChild(b)});
+}
+
+/* ---------- Home ---------- */
+function brandCard(b,hist,an){
+  var days=Object.keys(hist).sort(),now=hist[days[days.length-1]]||{},old=hist[days[days.length-2]]||{};
+  var c=el('section','card chan');c.style.setProperty('--c',b.c);
+  var tot=0,have=false,pos=0,rows=el('div','plat'),subs=null,subsD=null;
+  PL.forEach(function(p){var k=b.k+'/'+p[0],n=now[k],o=old[k],d=null;
+    if(n&&n.views!=null){have=true;tot+=n.views;if(o&&o.views!=null){d=n.views-o.views;if(d>=0)pos+=d}}
+    var cell=el('div');cell.appendChild(el('small','',p[1]));cell.appendChild(el('b','',n?nf(n.views):'n/a'));
+    cell.appendChild(el('em','',d==null?'':(d<0?'list changed':(d>0?'+':'')+nf(d)+' today')));rows.appendChild(cell);
+    if(p[0]==='youtube'&&n&&n.subs!=null){subs=n.subs;if(o&&o.subs!=null)subsD=n.subs-o.subs}});
+  var h=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode(b.n));h.appendChild(l);c.appendChild(h);
+  var big=el('div','row');big.appendChild(el('span','big',have?nf(tot):'n/a'));
+  var pl=el('span','pill',days.length>1&&have?(pos>0?'+'+nf(pos)+' today':'no change'):'');big.appendChild(pl);c.appendChild(big);
+  c.appendChild(el('p','muted','total views on all 3 platforms'+(subs!=null?' · '+nf(subs)+' YouTube subscribers'+(subsD!=null&&subsD>=0?' (+'+subsD+')':''):'')));
+  c.appendChild(rows);
+  var vids=((an[b.k]||{}).videos||[]).filter(function(v){return v.privacy==='public'&&v.published&&(Date.now()-Date.parse(v.published))<7*864e5});
+  if(vids.length){vids.sort(function(x,y){return (y.views||0)-(x.views||0)});var v=vids[0];c.appendChild(el('p','muted','Best this week: “'+(v.title||'').slice(0,60)+'” ('+nf(v.views)+' views)'))}
+  return c}
+
+function loadHome(){
+  var box=$('h-chans');box.textContent='';box.appendChild(el('div','skel'));
+  var an={};
+  Promise.all(BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json').then(function(d){an[b.k]=d||{}})}))
+   .then(function(){return jget(RAW+'data/daily/history.json')}).then(function(h){
+     h=h||{};var days=Object.keys(h).sort(),now=h[days[days.length-1]]||{};
+     var views=0;Object.keys(now).forEach(function(k){if(now[k]&&now[k].views)views+=now[k].views});
+     $('k-views').textContent=days.length?nf(views):'n/a';
+     $('sub').textContent=days.length?('Numbers from '+days[days.length-1]):'No numbers yet';
+     box.textContent='';BR.forEach(function(b){box.appendChild(brandCard(b,h,an))});cache.home=1})
+   .catch(function(){box.textContent='';box.appendChild(el('p','msg','Could not load the numbers. Pull down or tap Refresh.'))});
+  apBanner($('h-ap'));
+  fetch(API+'/issues?state=open&labels=review&per_page=30',{headers:hdr()}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
+   .then(function(a){var n=a.filter(function(x){return !x.pull_request}).length;$('k-wait').textContent=n;var nb=$('n-wait');nb.textContent=n;nb.hidden=!n})
+   .catch(function(){$('k-wait').textContent='?'});
+  jget(RAW+'publish/selfcheck.json').then(function(c){$('k-health').textContent=c?(c.level==='ok'?'OK':'Check'):'?'});
+}
+
+/* ---------- Review ---------- */
 function decide(it,card,what,b1,b2){
   if(card.__arm!==what){card.__arm=what;b1.classList.remove('arm');b2.classList.remove('arm');var b=what==='approve'?b1:b2;b.classList.add('arm');b.textContent='Tap again to confirm';
     setTimeout(function(){if(card.__arm===what){card.__arm=null;b1.textContent='Approve';b2.textContent='Skip';b1.classList.remove('arm');b2.classList.remove('arm')}},4000);return}
+  if(!TOK){alert('Add your key in Settings first.');return}
   b1.disabled=b2.disabled=true;
   fetch(API+'/issues/'+it.number+'/labels',{method:'POST',headers:Object.assign({'Content-Type':'application/json'},hdr()),body:JSON.stringify({labels:[what]})})
-   .then(function(r){if(!r.ok)throw new Error(r.status===401||r.status===403||r.status===404?'Your key was refused. Open the Full review page and add the key there once.':'GitHub said '+r.status);
-     b1.hidden=b2.hidden=true;card.appendChild(el('p','best',what==='approve'?'Approved ✓ It will be booked shortly.':'Skipped ✓'))})
+   .then(function(r){if(!r.ok)throw new Error(r.status===401||r.status===403||r.status===404?'Your key was refused. Check it in Settings.':'GitHub said '+r.status);
+     card.classList.add('done');b1.hidden=b2.hidden=true;card.appendChild(el('p','muted',what==='approve'?'Approved ✓ It will be booked shortly.':'Skipped ✓'))})
    .catch(function(e){b1.disabled=b2.disabled=false;card.__arm=null;b1.textContent='Approve';b2.textContent='Skip';b1.classList.remove('arm');b2.classList.remove('arm');alert(e.message)})}
-function review(list){
-  var box=$('need');box.textContent='';var head=el('div','head');head.appendChild(el('p','lab','Needs you'));
-  var n=list.length,ct=el('span','count '+(n?'some':'zero'),n?(n+' waiting'):'All clear');head.appendChild(ct);box.appendChild(head);
-  if(!n){box.appendChild(el('div','best','Nothing is waiting. You only ever need to watch a video and approve or skip.'));return}
-  list.slice(0,5).forEach(function(it){var r=el('div','rev'),v=parse(it.body);
-    if(v&&safe(v)){var vd=el('video');vd.controls=true;vd.playsInline=true;vd.preload='metadata';vd.src=v;r.appendChild(vd)}
-    var ttl=it.title.replace(/^Review\s*/i,''),h=el('h4');var m=ttl.match(/^(DOODLES FULL|DOODLES|ML|FULL|SHORT|MINDLORE)/i);if(m)h.appendChild(el('span','tag',m[0].toUpperCase()));
-    var ls=it.labels.map(function(l){return l.name});if(ls.indexOf('checks-warn')>=0)h.appendChild(el('span','tag warn','check warning'));else if(ls.indexOf('checks-ok')>=0)h.appendChild(el('span','tag ok','checks OK'));
-    h.appendChild(document.createTextNode(ttl.replace(/^(DOODLES FULL|DOODLES|ML|FULL|SHORT|MINDLORE)\s*:?\s*/i,'')||ttl));r.appendChild(h);
-    if(!v){var a=el('a','best','Open to watch (full video) ›');a.href=it.html_url;a.target='_blank';a.rel='noopener';r.appendChild(a)}
-    var bt=el('div','btns'),ok=el('button','go','Approve'),no=el('button','','Skip');ok.type=no.type='button';
-    if(!TOK){ok.disabled=no.disabled=true;var kk=el('p','best','To use the buttons, add your key once on the Full review page (Key button).');r.appendChild(kk)}
-    ok.onclick=function(){decide(it,r,'approve',ok,no)};no.onclick=function(){decide(it,r,'skip',ok,no)};bt.appendChild(ok);bt.appendChild(no);r.appendChild(bt);box.appendChild(r)});
-  if(n>5){var a2=el('a','best','+ '+(n-5)+' more on the Full review page ›');a2.href='../review/';box.appendChild(a2)}}
 
-function problems(sc){
-  var box=$('probs');box.textContent='';box.appendChild(el('p','lab','Health'));
-  var bad=(sc.checks||[]).filter(function(c){return !c.ok});
-  if(!bad.length){var r=el('div','prob');r.appendChild(el('span','ic ok','✓'));r.appendChild(el('div','','All automatic checks are fine.'));box.appendChild(r);return}
-  bad.forEach(function(c){var r=el('div','prob');r.appendChild(el('span','ic bad','!'));var d=el('div');d.appendChild(el('b','',c.name));d.appendChild(el('div','best',c.text));r.appendChild(d);box.appendChild(r)});
-  box.appendChild(el('div','best','Checked '+(sc.at||'').replace('T',' ').slice(0,16)+' UTC. The system fixes many of these by itself.'))}
+function reviewCard(it){
+  var p=parse(it.body),ls=labels(it),card=el('div','rv');
+  if(p.video&&safeVideo(p.video)){var v=el('video');v.controls=true;v.playsInline=true;v.preload='metadata';v.src=p.video;card.appendChild(v)}
+  var ttl=it.title.replace(/^Review\s*/i,''),kind=kindOf(ttl);
+  if(kind)card.appendChild(el('span','tag',kind.toUpperCase()));
+  if(ls.indexOf('checks-warn')>=0)card.appendChild(el('span','tag warn','Check warning'));else if(ls.indexOf('checks-ok')>=0)card.appendChild(el('span','tag ok','Checks OK'));
+  card.appendChild(el('span','tag','#'+it.number));
+  card.appendChild(el('h4','',stripKind(ttl)||ttl));
+  var cap=p.cap,shown=stripKind(ttl)||ttl;
+  if(cap&&cap.split('\n')[0].trim()===shown.trim())cap=cap.split('\n').slice(1).join('\n').trim();
+  if(cap)card.appendChild(el('div','cap',cap.slice(0,600)));
+  if(p.checks){var d=el('details');d.appendChild(el('summary','','Automatic checks'));d.appendChild(el('pre','',p.checks));card.appendChild(d)}
+  if(!p.video){var a=el('a','muted','Open the issue to watch (full video) ›');a.href=it.html_url;a.target='_blank';a.rel='noopener';card.appendChild(a)}
+  var bt=el('div','btns'),ok=el('button','go','Approve'),no=el('button','','Skip');ok.type=no.type='button';
+  if(!TOK){ok.disabled=no.disabled=true;var kb=el('button','btnline','Add key to enable');kb.type='button';kb.onclick=openSheet;card.appendChild(kb)}
+  ok.onclick=function(){decide(it,card,'approve',ok,no)};no.onclick=function(){decide(it,card,'skip',ok,no)};
+  bt.appendChild(ok);bt.appendChild(no);card.appendChild(bt);return card}
 
-function load(){
-  $('hello').textContent=hello();
+function loadReview(){
+  var box=$('r-list');box.textContent='';box.appendChild(el('div','skel'));
+  apBanner($('r-ap'));keyState();
+  fetch(API+'/issues?state=open&labels=review&per_page=50',{headers:hdr()}).then(function(r){
+    if(r.status===403)throw new Error('GitHub is limiting this phone for a few minutes. Add your key in Settings or wait.');
+    if(!r.ok)throw new Error('GitHub said '+r.status);return r.json()})
+   .then(function(a){a=a.filter(function(x){return !x.pull_request});
+     $('n-wait').textContent=a.length;$('n-wait').hidden=!a.length;$('k-wait').textContent=a.length;
+     box.textContent='';
+     if(!a.length){box.appendChild(el('div','card','Nothing waiting. All reviewed ✓'));cache.review=1;return}
+     var head=el('div','row');head.appendChild(el('p','lab',a.length+' waiting'));head.appendChild(el('span','muted','Watch, then approve or skip'));box.appendChild(head);
+     a.forEach(function(it){var c=el('div','card');c.appendChild(reviewCard(it));box.appendChild(c)});
+     cache.review=1})
+   .catch(function(e){box.textContent='';box.appendChild(el('p','msg',e.message))});
+}
+
+/* ---------- Health ---------- */
+function brandHealth(b,S,A,AN,now){
+  var pub=0,sch=0,last=null,until=null,known={},waiting={};
+  S.forEach(function(s){var d=(s&&s.done)||{};Object.keys(d).forEach(function(id){known[id]=1;var t=Date.parse(d[id]&&d[id].due);if(!t)return;if(t<=now){pub++;if(!last||t>last)last=t}else{sch++}if(!until||t>until)until=t})});
+  A.forEach(function(a){((a&&a.items)||[]).forEach(function(i){if(i.id&&!known[i.id])waiting[i.id]=1})});
+  var w=Object.keys(waiting).length,notes=[],lvl='ok';
+  if(!S.some(Boolean)){lvl='bad';notes.push('Cannot read the booking list from GitHub.')}
+  if(last&&now-last>30*36e5){lvl='warn';notes.push('Last post was '+ago(now-last)+' ago.')}
+  if(!until||until<now+36e5*6){if(lvl!=='bad')lvl='warn';notes.push('Nothing booked more than a few hours ahead.')}
+  var c=el('div','card'),t=el('div','row');t.appendChild(el('b','',b.n));
+  t.appendChild(el('span','tag '+(lvl==='ok'?'ok':lvl==='warn'?'warn':'bad'),lvl==='ok'?'All good':lvl==='warn'?'Needs a look':'Problem'));c.appendChild(t);
+  var g=el('div','plat');[['Published',pub],['Scheduled',sch],['Waiting',w]].forEach(function(p){var d=el('div');d.appendChild(el('b','',nf(p[1])));d.appendChild(el('small','',p[0]));g.appendChild(d)});c.appendChild(g);
+  if(until&&until>now)c.appendChild(el('p','muted','Booked until '+new Date(until).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})));
+  if(last)c.appendChild(el('p','muted','Last post '+ago(now-last)+' ago.'));
+  notes.forEach(function(x){c.appendChild(el('p','muted',x))});
+  return c}
+
+function loadHealth(){
+  var pre=$('x-pre'),dep=$('x-dep'),self=$('x-self'),br=$('x-brands'),jobs=$('x-jobs');
+  pre.textContent='';dep.textContent='';self.textContent='';br.textContent='';
+  var now=Date.now();
+  jget(RAW+'publish/preflight.json').then(function(c){if(!c)return;
+    var col={ok:'#2a9d4b',warn:'#d98e04',bad:'#c0392b'}[c.ready]||'#888';
+    var d=el('div','banner');d.style.setProperty('--c',col);d.appendChild(el('b','','Ready to leave? '+({ok:'YES',warn:'ALMOST',bad:'NO'}[c.ready]||'?')));
+    (c.checks||[]).forEach(function(k){d.appendChild(el('div','muted',({ok:'OK ',warn:'CHECK ',bad:'FIX '}[k.level]||'')+k.name+': '+k.text))});
+    d.appendChild(el('div','muted','Checked '+(c.at||'').replace('T',' ').slice(0,16)+' UTC'));pre.appendChild(d)});
+  jget(RAW+'publish/deps.json').then(function(c){if(!c)return;
+    var col={ok:'#2a9d4b',warn:'#d98e04',bad:'#c0392b'}[c.level]||'#888';
+    var d=el('div','banner');d.style.setProperty('--c',col);d.appendChild(el('b','','Free services and Plan B: '+({ok:'all up',warn:'watch',bad:'one is down'}[c.level]||'?')));
+    (c.rows||[]).forEach(function(r){var s=({up:'UP ',busy:'BUSY ',down:'DOWN '}[r.status]||'')+r.name+(r.used_percent!=null?' ('+r.used_percent+'% used'+(r.days_to_80!=null?', ~'+r.days_to_80+' days to 80%':'')+')':'')+((r.status!=='up'||/GAP/.test(r.planb||''))?' - '+(r.planb||''):'');d.appendChild(el('div','muted',s))});
+    d.appendChild(el('div','muted','Checked '+(c.at||'').replace('T',' ').slice(0,16)+' UTC, daily'));dep.appendChild(d)});
+  jget(RAW+'publish/selfcheck.json').then(function(c){if(!c)return;
+    var card=el('div','card');var row=el('div','row');row.appendChild(el('b','','Self-check'));row.appendChild(el('span','tag '+(c.level==='ok'?'ok':'warn'),c.level==='ok'?'Everything verified':'Needs a look'));card.appendChild(row);
+    (c.checks||[]).forEach(function(r){var p=el('div','prob');p.appendChild(el('span','ic '+(r.ok?'ok':'bad'),r.ok?'✓':'!'));var d=el('div');d.appendChild(el('b','',r.name));d.appendChild(el('div','muted',r.text));p.appendChild(d);card.appendChild(p)});
+    self.appendChild(card);$('k-health').textContent=c.level==='ok'?'OK':'Check'});
+  Promise.all([].concat(BR.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),
+                        BR.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))})))
+   .then(function(r){BR.forEach(function(b,i){br.appendChild(brandHealth(b,r[i],r[3+i],null,now))})});
+  fetch(API+'/actions/runs?per_page=100').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).then(function(d){
+    var seen={},rows=[],bad=0;(d.workflow_runs||[]).forEach(function(x){if(seen[x.name]||KEYJOBS.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
+    rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});
+    rows.forEach(function(x){if(x.conclusion==='failure')bad++});
+    jobs.textContent='';var t=el('div','row');t.appendChild(el('p','lab','Automatic jobs'));t.appendChild(el('span','tag '+(bad?'bad':'ok'),bad?bad+' failed':'All ran fine'));jobs.appendChild(t);
+    if(!rows.length)jobs.appendChild(el('p','muted','Cannot read the job list right now (GitHub limit). Try again in a few minutes.'));
+    rows.forEach(function(x){var s=x.status!=='completed'?'running':x.conclusion==='success'?'ok':(x.conclusion||'?');var j=el('div','job');j.appendChild(el('span','',x.name));j.appendChild(el('span','',s+' · '+ago(now-Date.parse(x.updated_at||x.created_at))+' ago'));jobs.appendChild(j)});
+    jobs.appendChild(el('p','muted','Stuck “queued” runs are restarted automatically.'));
+    cache.health=1}).catch(function(){jobs.textContent='';jobs.appendChild(el('p','msg','Could not read the job list.'))});
+}
+
+/* ---------- Channels ---------- */
+function loadChannels(){
+  var list=$('c-list');list.textContent='';list.appendChild(el('div','skel'));
   var an={};
-  Promise.all(BR.map(function(b){return jget('data/analytics/'+b[0]+'.json').then(function(d){an[b[0]]=d}).catch(function(){})}))
-   .then(function(){return jget('data/daily/history.json')}).then(function(h){channels(h,an)}).catch(function(e){$('chans').textContent='';$('chans').appendChild(el('p','msg','Could not load the numbers ('+e.message+'). Pull down to retry.'))});
-  fetch(API+'/issues?state=open&labels=review&per_page=30',{headers:hdr()}).then(function(r){if(!r.ok)throw new Error('GitHub '+r.status+(r.status===403?' (rate limit, add the key on the Full review page)':''));return r.json()})
-   .then(function(a){review(a.filter(function(x){return !x.pull_request}))}).catch(function(e){var b=$('need');b.textContent='';b.appendChild(el('p','lab','Needs you'));b.appendChild(el('p','msg','Could not check the queue: '+e.message))});
-  jget('publish/selfcheck.json').then(problems).catch(function(){var b=$('probs');b.textContent='';b.appendChild(el('p','lab','Health'));b.appendChild(el('p','msg','Health data not available right now.'))})}
-$('rf').onclick=load;load();
+  Promise.all(BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json').then(function(d){an[b.k]=d||{}})}))
+   .then(function(){return jget(RAW+'data/daily/history.json')}).then(function(h){
+     h=h||{};var days=Object.keys(h).sort(),now=h[days[days.length-1]]||{};list.textContent='';
+     BR.forEach(function(b){
+       var a=an[b.k]||{},vids=(a.videos||[]).filter(function(v){return (v.privacy||'public')==='public'}),tot=vids.reduce(function(s,v){return s+(v.views||0)},0);
+       var c=el('section','card chan');c.style.setProperty('--c',b.c);
+       var h3=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode(b.n));h3.appendChild(l);c.appendChild(h3);
+       c.appendChild(el('p','muted',nf(a.subscribers)+' subscribers · '+nf(vids.length)+' public videos · '+nf(tot)+' views (YouTube)'));
+       var top=vids.slice().sort(function(x,y){return (y.views||0)-(x.views||0)}).slice(0,5);
+       if(top.length){c.appendChild(el('p','lab','Top videos'));top.forEach(function(v){var r=el('div','vid');r.appendChild(el('span','',(v.title||'').slice(0,58)));r.appendChild(el('span','',nf(v.views)));c.appendChild(r)})}
+       var rows=el('div','plat');PL.forEach(function(p){var n=now[b.k+'/'+p[0]];var cell=el('div');cell.appendChild(el('small','',p[1]));cell.appendChild(el('b','',n?nf(n.views):'n/a'));cell.appendChild(el('em','',n&&n.videos!=null?nf(n.videos)+' posts':''));rows.appendChild(cell)});
+       c.appendChild(el('p','lab','Today on each platform'));c.appendChild(rows);
+       list.appendChild(c)});
+     cache.channels=1}).catch(function(){list.textContent='';list.appendChild(el('p','msg','Could not load channel numbers. Tap Refresh.'))});
+  jget(RAW+'data/growth/scoreboard.json').then(function(c){
+    var box=$('c-growth');box.textContent='';
+    if(!c||!c.brands){box.appendChild(el('p','lab','Growth scoreboard'));box.appendChild(el('p','muted','Not ready yet (needs a few days of numbers).'));return}
+    box.appendChild(el('p','lab','Growth scoreboard'));
+    Object.keys(c.brands).forEach(function(k){var b=c.brands[k],t=b.totals||{},ch=b.change_7d||b.change_3d;
+      box.appendChild(el('p','muted',k+': '+nf(t.views)+' views, '+nf(t.subs)+' subs'+(ch?' · last days +'+nf(ch.views)+' views, +'+nf(ch.subs)+' subs':' · change shows after a few days')));
+      var mo=b.monetization;if(mo)box.appendChild(el('p','muted','Pay threshold: '+mo.subs_now+'/1000 subs ('+mo.subs_pct+'%), ~'+mo.est_watch_hours+'/4000 watch hours'));
+      var top=(b.top||[])[0];if(top)box.appendChild(el('p','muted','Best: '+top.title+' ('+top.vpd+'/day)'));
+      (b.feature_lifts||[]).slice(0,2).forEach(function(x){box.appendChild(el('p','muted',x.feature+' = '+x.value+': '+x.lift+'x ('+x.n+' videos)'))})});
+    box.appendChild(el('p','muted','Updated '+(c.updated||'').replace('T',' ').slice(0,16)+' UTC'));
+  });
+}
+
+function loadTab(name){
+  if(name==='home')loadHome();
+  else if(name==='review')loadReview();
+  else if(name==='health')loadHealth();
+  else if(name==='channels')loadChannels();
+}
+$('rf').onclick=function(){cache={};loadTab(currentTab())};
+
+/* ---------- Start ---------- */
+$('sub').textContent=hello();
+var start=(location.hash||'#home').slice(1);if(['home','review','health','channels'].indexOf(start)<0)start='home';
+setTab(start);
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js').catch(function(){});
 var ios=/iphone|ipad/i.test(navigator.userAgent),standalone=window.navigator.standalone||matchMedia('(display-mode: standalone)').matches;
 if(ios&&!standalone)$('install').style.display='block';
