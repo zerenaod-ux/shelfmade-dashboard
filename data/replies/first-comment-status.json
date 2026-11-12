@@ -1,9 +1,9 @@
 {
- "when": "2026-11-12T18:03",
- "live": false,
+ "when": "2026-11-12T22:16",
+ "live": true,
  "brands": {
-  "shelfmade": "would post 5 comment(s)",
-  "mindlore": "would post 5 comment(s)",
-  "doodles": "would post 5 comment(s)"
+  "shelfmade": "posted 5 comment(s)",
+  "mindlore": "posted 5 comment(s)",
+  "doodles": "posted 5 comment(s)"
  }
 }
