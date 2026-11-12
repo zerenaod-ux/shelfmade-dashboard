@@ -1187,5 +1187,552 @@
   "style": "v2",
   "format": "MISUNDERSTANDING",
   "improv": true
+ },
+ {
+  "id": "first-day-detective-panic",
+  "title": "How Detective Leo Handled First Day Nerves \ud83d\udd75\ufe0f\u200d\u2642\ufe0f",
+  "concept": "FIRST DAY INVESTIGATION",
+  "mood": "dramatic",
+  "insight": "No one notices your first day panic when you act mysterious.",
+  "caption": "Leo turned his first day jitters into a full crime scene. Next time: Leo tries negotiating flat rent with Brenda! \ud83c\udfe0",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo pacing the hallway in his yellow hoodie with worried eyes. Mia stands near him holding a coffee mug with a deadpan look.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Why is my soul leaving my body?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Because it's your first day, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sitting upright typing on a laptop with intense eyes. Mia stands next to him holding a cup of tea with a small smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "normal",
+      "text": "Someone stole my confidence! I'm detective Leo."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "You're shaking like a leaf, detective."
+     }
+    ]
+   },
+   {
+    "scene": "Leo looking at a notification message arrives on his phone with anxious eyes. Mia sits upright holding a pillow with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Leaves don't get Sunday scaries, Mia!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Give me just one more minute to care."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pulling the blanket around his shoulders while sitting upright. Mia stands beside him holding a coffee mug with a tight smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "pause",
+      "text": "My soul literally punched me in the face!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Scoreboard update: fifty-eight for me."
+     }
+    ]
+   },
+   {
+    "scene": "Leo walking the hallway nervously with hands tucked in sleeves. Mia stands typing on her phone with a slight smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "I'm suing my own hands for shaking!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Good luck, your hands are completely broke."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sitting upright near a digital clock showing a time with a pale face. Mia stands beside him holding a cup of tea.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "pause",
+      "text": "Are you panicking about work again?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Script 0 delivers the sharpest roasts, fast-paced realistic banter, and the strongest immediate hook.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 9,
+    "spoken": 8,
+    "relatable": 8,
+    "loop": 7
+   },
+   "n": 3
+  },
+  "variant": "standard",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
+ },
+ {
+  "id": "stapler-rage-war",
+  "title": "Your Stapler Hates You \ud83d\udd87\ufe0f",
+  "concept": "STAPLER RAGE WAR",
+  "mood": "dramatic",
+  "insight": "Objects that attack back are definitely a sign to quit your job.",
+  "caption": "Leo and Mia settle the score on the office supply uprising. Next time: Gerald the plant fights back too.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is staring at his laptop, typing on his phone.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "You hated it, I watched you toss it."
+     }
+    ]
+   },
+   {
+    "scene": "Mia is sitting upright, holding a coffee mug, looking annoyed.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "I don't hate it, Leo!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo is holding a stapler, inspecting it, scrolling through his phone.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "quick",
+      "text": "You literally threw a metal stapler."
+     }
+    ]
+   },
+   {
+    "scene": "Mia is pacing the hallway, waving her hands, looking intense.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "Because the stapler fought back!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo is holding the stapler up to his ear, listening intently.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Wait, a stapler with a mouth?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia is glaring at the stapler in Leo's hand, looking offended.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "And it called me stupid, so tell me..."
+     }
+    ]
+   }
+  ],
+  "shots_metadata": {
+   "explain_shot": 3
+  },
+  "variant": "micro",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "ARGUMENT",
+  "improv": true
+ },
+ {
+  "id": "instant-reply-demon",
+  "title": "Why Fast Texting Makes You A Demon \ud83d\udc7b",
+  "concept": "INSTANT REPLY PANIC",
+  "mood": "dramatic",
+  "insight": "Replying instantly is proof you have no life left.",
+  "caption": "When you reply so fast the phone burns your fingers.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo in a bright yellow hoodie pacing the hallway and typing on his phone with frantic thumbs.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Wait, I didn't just text you back instantly."
+     }
+    ]
+   },
+   {
+    "scene": "Mia in a teal sweater holding a coffee mug, looking deadpan at her phone screen.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Okay, but it literally says 1:02 AM."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pointing at his head with a wide-eyed dramatic expression.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "I was born at 1:02 AM."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "pause",
+      "text": "That's the worst excuse ever."
+     }
+    ]
+   },
+   {
+    "scene": "Leo crossing his arms defensively while Mia sips her tea.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "quick",
+      "text": "No, it's a spiritual thing."
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "snap",
+      "text": "So your birth chart finally worked?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo rubbing his eyes tiredly while holding his phone up to the light.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "tired",
+      "beat": "quick",
+      "text": "Okay I am definitely zombified by something weird."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Zombified? That's not even a word."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leaning back in panic and staring right at the camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Wait, did I just text you back instantly?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "ADVICE FAIL",
+  "improv": true
+ },
+ {
+  "id": "dinner-dilemma",
+  "title": "How Dinner Turns Crazy \ud83c\udf72",
+  "concept": "DINNER DRAMA",
+  "mood": "warm",
+  "insight": "Choosing dinner can be a wild ride.",
+  "caption": "When \u201canything\u201d turns into a food debate in seconds.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Kitchen counter, Leo typing on his phone, Mia holding a coffee mug, both facing camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "What do you want for dinner tonight?"
+     },
+     {
+      "who": "leo",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Anything, I\u2019m not picky at all."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pacing the hallway, Mia scrolling on a tablet, kitchen lights on.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "quick",
+      "text": "The chicken looks bored, maybe try the fish instead."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "You're naming the food like it\u2019s a person?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo pulling a blanket over his chair, a coffee mug steams on table, both stare at camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Actually, I just want a simple bowl of soup."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Soup is the new fish? That\u2019s weird."
+     }
+    ]
+   },
+   {
+    "scene": "Greg knocks on the kitchen door, holding a briefcase, Leo and Mia look surprised.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "quick",
+      "text": "Okay but hear me out, I\u2019m craving pizza now."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Pizza gets fired, so maybe we settle on pasta?"
+     }
+    ]
+   },
+   {
+    "scene": "Barista in background holds a cup with misspelled name, Leo typing on a laptop, Mia sipping tea.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "quick",
+      "text": "Fine, I\u2019ll just have nothing, that\u2019s it."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "snap",
+      "text": "Anyway, I\u2019ll just order something we both can eat."
+     }
+    ]
+   },
+   {
+    "scene": "Digital clock on the wall shows 7:45, Leo and Mia smile at camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "Anything?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "FUNNY EXPLAINER",
+  "improv": true
+ },
+ {
+  "id": "pizza-shield-war",
+  "title": "Why Leo Is My Living Pizza Shield \ud83c\udf55",
+  "concept": "PIZZA SHIELD WAR",
+  "mood": "very excited",
+  "insight": "Your best friend views you purely as a food bodyguard.",
+  "caption": "When you use your best friend as human armor for the last slice.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo standing in the kitchen, typing on his phone while staring at an empty box.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Okay, but why have I held it?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sitting at the kitchen table, scrolling on her phone with a smug grin.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Because I was about to take it."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leaning against the counter, glaring at her in the yellow hoodie.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "normal",
+      "text": "So I protected your dinner?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia leaning forward, pointing a finger with a wide smirk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Nah, you're strictly a pizza shield."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holding his head in pure shock, standing upright.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "pause",
+      "text": "I'm billing you for emotional damages."
+     }
+    ]
+   },
+   {
+    "scene": "Mia waving her hand dismissively, phone in the other.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Okay, but why have I held it?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 has a better punchline with the emotional damages bit and a tighter loop.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 6,
+    "loop": 7
+   },
+   "n": 2
+  },
+  "variant": "micro",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "MISUNDERSTANDING",
+  "improv": true
  }
 ]
