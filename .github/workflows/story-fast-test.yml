@@ -27,7 +27,7 @@ jobs:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
         run: |
           mkdir -p out
-          python story_fast.py "As a Man Thinketh" "James Allen" out/fast-manthinketh.mp4 || echo "FAILED 1"
+          python story_fast.py "As a Man Thinketh" "James Allen" out/fast-manthinketh.mp4 2>&1 | tee out/build-log.txt; echo "exit ${PIPESTATUS[0]}"
 
           ls -l out
       - name: Attach to release
@@ -37,4 +37,4 @@ jobs:
         run: |
           cp out/*.work/log.txt out/kaggle-log.txt 2>/dev/null || true; cp out/*.work/plan.json out/plan.json 2>/dev/null || true; cp out/*.work/pic_0[0-5].png out/ 2>/dev/null || true
           gh release delete storyfast -y --cleanup-tag || true
-          gh release create storyfast out/*.mp4 out/*.txt out/*.json out/*.png --title "ShelfMade story-art FAST-CUT TEST (not posted)" --notes "test only" --prerelease
+          gh release create storyfast out/*.mp4 out/*.txt out/*.json out/*.png out/build-log.txt --title "ShelfMade story-art FAST-CUT TEST (not posted)" --notes "test only" --prerelease
