@@ -11,7 +11,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 378,
+   "views": 379,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 103,
@@ -24,7 +24,7 @@
    "published": "2026-10-20T19:44:13Z",
    "duration": "PT48S",
    "privacy": "public",
-   "views": 306,
+   "views": 307,
    "likes": 5,
    "comments": 0,
    "avgSeconds": 31,
@@ -68,6 +68,19 @@
    "subsGained": 0
   },
   {
+   "id": "V8InsNplcoc",
+   "title": "Why do you dream about falling? | Sigmund Freud",
+   "published": "2026-11-10T00:00:03Z",
+   "duration": "PT8M23S",
+   "privacy": "public",
+   "views": 80,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 166,
+   "avgPercent": 33.05,
+   "subsGained": 0
+  },
+  {
    "id": "leCHsYO2yWM",
    "title": "What triggers mob rage?",
    "published": "2026-06-14T19:36:44Z",
@@ -78,19 +91,6 @@
    "comments": 0,
    "avgSeconds": 21,
    "avgPercent": 42.86,
-   "subsGained": 0
-  },
-  {
-   "id": "V8InsNplcoc",
-   "title": "Why do you dream about falling? | Sigmund Freud",
-   "published": "2026-11-10T00:00:03Z",
-   "duration": "PT8M23S",
-   "privacy": "public",
-   "views": 77,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 261,
-   "avgPercent": 51.92,
    "subsGained": 0
   },
   {
@@ -124,7 +124,10 @@
    "privacy": "public",
    "views": 75,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 22,
+   "avgPercent": 37.11,
+   "subsGained": 0
   },
   {
    "id": "qfwKKgBIkvI",
@@ -151,6 +154,16 @@
    "avgSeconds": 20,
    "avgPercent": 41.58,
    "subsGained": 1
+  },
+  {
+   "id": "HwKLVKQylv8",
+   "title": "Your brain is wired to stop wanting things",
+   "published": "2026-11-12T03:01:54Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 55,
+   "likes": 1,
+   "comments": 0
   },
   {
    "id": "70hQFkZl71o",
@@ -210,19 +223,9 @@
    "views": 51,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 65,
-   "avgPercent": 71.48,
+   "avgSeconds": 60,
+   "avgPercent": 66.06,
    "subsGained": 0
-  },
-  {
-   "id": "HwKLVKQylv8",
-   "title": "Your brain is wired to stop wanting things",
-   "published": "2026-11-12T03:01:54Z",
-   "duration": "PT54S",
-   "privacy": "public",
-   "views": 50,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "hCqfKz63Fug",
@@ -255,7 +258,10 @@
    "privacy": "public",
    "views": 46,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 26,
+   "avgPercent": 45.8,
+   "subsGained": 0
   },
   {
    "id": "X9Z1e8QV6PQ",
@@ -263,9 +269,12 @@
    "published": "2026-11-11T03:02:00Z",
    "duration": "PT1M6S",
    "privacy": "public",
-   "views": 44,
+   "views": 45,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 25,
+   "avgPercent": 38.63,
+   "subsGained": 0
   },
   {
    "id": "sdpifdp9fdw",
@@ -289,8 +298,8 @@
    "views": 43,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 63,
-   "avgPercent": 112.89,
+   "avgSeconds": 60,
+   "avgPercent": 108.72999999999999,
    "subsGained": 0
   },
   {
@@ -312,9 +321,12 @@
    "published": "2026-11-11T00:02:24Z",
    "duration": "PT53S",
    "privacy": "public",
-   "views": 41,
+   "views": 42,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 23,
+   "avgPercent": 44.81,
+   "subsGained": 0
   },
   {
    "id": "0toRAe_otrI",
@@ -698,6 +710,19 @@
    "subsGained": 0
   },
   {
+   "id": "ufT1qz-t0TI",
+   "title": "Your brain can't truly multitask",
+   "published": "2026-11-10T03:01:09Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 26.07,
+   "subsGained": 0
+  },
+  {
    "id": "LFZ1UKXf86A",
    "title": "Listen to what M\u00fcnsterberg warned about.",
    "published": "2026-11-07T03:01:33Z",
@@ -760,19 +785,6 @@
    "comments": 0,
    "avgSeconds": 80,
    "avgPercent": 21.9,
-   "subsGained": 0
-  },
-  {
-   "id": "ufT1qz-t0TI",
-   "title": "Your brain can't truly multitask",
-   "published": "2026-11-10T03:01:09Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 20,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 27.310000000000002,
    "subsGained": 0
   },
   {
@@ -867,6 +879,19 @@
    "subsGained": 0
   },
   {
+   "id": "Kjx5KmP1s7w",
+   "title": "The Interpretation Of Dreams",
+   "published": "2026-10-31T02:01:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 16,
+   "avgPercent": 32.16,
+   "subsGained": 0
+  },
+  {
    "id": "oP6N_ffOukE",
    "title": "The Analysis Of Mind",
    "published": "2026-10-28T05:19:32Z",
@@ -936,7 +961,10 @@
    "privacy": "public",
    "views": 15,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 21,
+   "avgPercent": 35.78,
+   "subsGained": 0
   },
   {
    "id": "UAe6oPKqTX0",
@@ -1002,6 +1030,16 @@
    "avgSeconds": 10,
    "avgPercent": 20.72,
    "subsGained": 1
+  },
+  {
+   "id": "BzovLB6Cwok",
+   "title": "Your desk job steals ancient movement",
+   "published": "2026-11-12T18:04:41Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "VsvMwBHBL_Q",
@@ -1242,7 +1280,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 19,
+   "avgPercent": 4.53,
+   "subsGained": 0
   },
   {
    "id": "v9w9gRnfbOQ",
@@ -1323,19 +1364,6 @@
    "subsGained": 0
   },
   {
-   "id": "0m0sHfUvubE",
-   "title": "How We Think \u00b7 Guided reading",
-   "published": "2026-10-31T23:00:07Z",
-   "duration": "PT5M44S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 1.35,
-   "subsGained": 0
-  },
-  {
    "id": "YTKbRT9tkpo",
    "title": "The Crowd \u00b7 Guided reading",
    "published": "2026-10-26T00:15:58Z",
@@ -1369,7 +1397,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "9lec7AhXEP8",
@@ -1500,7 +1531,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "4lZoI4B4VbE",
@@ -1510,7 +1544,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "MN_liz83nkU",

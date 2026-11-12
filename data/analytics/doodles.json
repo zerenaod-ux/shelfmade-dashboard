@@ -39,7 +39,10 @@
    "privacy": "public",
    "views": 13,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 20,
+   "avgPercent": 21.13,
+   "subsGained": 0
   },
   {
    "id": "Rqbov1l-rYw",
@@ -206,8 +209,8 @@
    "views": 6,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 90,
-   "avgPercent": 197.52,
+   "avgSeconds": 47,
+   "avgPercent": 103.22,
    "subsGained": 0
   },
   {
@@ -254,7 +257,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 13.87,
+   "subsGained": 0
   },
   {
    "id": "vthdpujWnPY",
@@ -431,6 +437,16 @@
    "avgSeconds": 10,
    "avgPercent": 28.46,
    "subsGained": 0
+  },
+  {
+   "id": "5Czrci00ZPQ",
+   "title": "The 40-Minute Pizza Call | Leo & Mia #9",
+   "published": "2026-11-12T18:05:09Z",
+   "duration": "PT48S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
   }
  ]
 }
