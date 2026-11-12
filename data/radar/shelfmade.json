@@ -1,129 +1,129 @@
 {
  "why": [
   {
-   "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
-   "why": "Massive breakout performance driven by tapping into deep visceral pain points around interpersonal betrayal using classic literary quotes."
+   "title": "#philosophy #quotes #stoicism #marcusaurelius #mindset",
+   "why": "Achieved a massive 91.3x breakout by pairing extreme psychological pain points (internal suffering) with iconic, highly searchable classic figures like Marcus Aurelius."
   },
   {
    "title": "The cost of staying is often greater than the cost of leaving. #philosophy #quotes",
-   "why": "High-performing hook that frames a classic psychological dilemma as an urgent life-choice balance, leveraging fear of wasted time."
+   "why": "Uses a high-friction, relational framing hook that triggers immediate cognitive dissonance and emotional urgency around personal boundaries."
   },
   {
-   "title": "Mark Twain\u2019s Sharpest Observation\ud83d\udcac #shortsfeed #shorts #philosophy",
-   "why": "Uses high-curiosity framing around a single household-name public-domain author to promise quick, high-value observational wit."
+   "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
+   "why": "Capitalizes on visceral emotional topics like betrayal and heartbreak using poetic, classic literary excerpts to drive high comment-section engagement."
   },
   {
    "title": "Your perspective isn't necessarily the truth. #shorts #quotes #psychology #philosophy #ytshorts",
-   "why": "Challenges the viewer's ego immediately, driving high retention through self-reflective curiosity rooted in philosophical truth."
+   "why": "Drives retention through a disruptive identity-challenging premise that forces the viewer to pause and re-evaluate their own perception."
   }
  ],
  "hook_patterns": [
-  "Cost-of-inaction framing (e.g., 'The hidden price of staying where you aren't valued...')",
-  "Author-curiosity provocative claim (e.g., '[Author]'s most brutal warning about human nature...')",
-  "Perception vs reality challenge (e.g., 'What you think is loyalty is actually...') "
+  "High-friction life decisions framed as comparative costs (e.g., staying vs. leaving)",
+  "Direct identity/perception challenges that provoke immediate self-reflection",
+  "Curated value-lists promising a mindset shift (e.g., 'X lines that change how you see life')"
  ],
- "todays_angle": "Contrast historical public-domain literary wisdom against modern emotional traps like burnout, self-deception, and toxic loyalty.",
+ "todays_angle": "Reframe modern relationship burn-out and boundary-setting through cold, pragmatic wisdom from 19th-century public domain literature.",
  "ideas": [
-  "3 Classic Novels That Predicted Modern Loneliness (and how Tolstoy said to break free)",
-  "Dostoevsky\u2019s 1-Sentence Cure for Overthinking Every Social Interaction",
-  "The 100-Year-Old Book That Explains Why You Stay in Bad Situations (Charlotte Bront\u00eb)"
+  "The 100-Year-Old Rule for Walking Away: What Arthur Schopenhauer taught about ending toxic attachments before they destroy your peace.",
+  "Why your mind exaggerates betrayal: Leo Tolstoy's sharp observation on why we hurt our own feelings long after the conflict ends.",
+  "3 lines from Fyodor Dostoevsky that will permanently change how you respond to disrespect."
  ],
  "avoid": [
-  "Generic 'Stoic quotes with AI statues' formatted videos lacking specific book context",
-  "Overused Marcus Aurelius quotes on basic mind control without a unique literary perspective"
+  "Generic aesthetic compilations of famous quotes with random tag stacks and no distinct narrative narrative frame.",
+  "Over-used surface-level Marcus Aurelius 'overcoming overthinking' tropes without a unique or provocative thesis."
  ],
  "updated": "2026-11-12",
- "sample": 53,
+ "sample": 55,
  "spikes": [
-  {
-   "title": "moral : this is One Of the reason you should know about the hidden knowledge #shorts#quotes#Bernad",
-   "channel": "stoic physiology ",
-   "views": 46302,
-   "hours": 27,
-   "vph": 1730.7,
-   "subs": 18300,
-   "breakout": 2.5
-  },
   {
    "title": "Five lines from the greatest minds that will change how you see your life. \ud83e\udde0",
    "channel": "intrepidreads ",
-   "views": 9768,
-   "hours": 8,
-   "vph": 1196.6,
-   "subs": 11500,
-   "breakout": 0.8
+   "views": 25184,
+   "hours": 12,
+   "vph": 2050.5,
+   "subs": 11600,
+   "breakout": 2.2
   },
   {
-   "title": "moral - the hard truth about Neighbours explained for you #shortd#quotes#zweig#stoicism#philosophy",
+   "title": "moral : this is One Of the reason you should know about the hidden knowledge #shorts#quotes#Bernad",
    "channel": "stoic physiology ",
-   "views": 31734,
-   "hours": 30,
-   "vph": 1063.1,
+   "views": 50427,
+   "hours": 31,
+   "vph": 1633.4,
    "subs": 18300,
-   "breakout": 1.7
+   "breakout": 2.8
+  },
+  {
+   "title": "#philosophy #quotes #stoicism #marcusaurelius #mindset",
+   "channel": "The Philosopher's Bible",
+   "views": 22642,
+   "hours": 21,
+   "vph": 1090.8,
+   "subs": 248,
+   "breakout": 91.3
   },
   {
    "title": "The cost of staying is often greater than the cost of leaving. #philosophy #quotes",
    "channel": "ORSELION",
-   "views": 22524,
-   "hours": 22,
-   "vph": 1010.3,
-   "subs": 1030,
-   "breakout": 21.9
+   "views": 27189,
+   "hours": 26,
+   "vph": 1029.4,
+   "subs": 1040,
+   "breakout": 26.1
+  },
+  {
+   "title": "moral - the hard truth about Neighbours explained for you #shortd#quotes#zweig#stoicism#philosophy",
+   "channel": "stoic physiology ",
+   "views": 32656,
+   "hours": 34,
+   "vph": 961.3,
+   "subs": 18300,
+   "breakout": 1.8
   },
   {
    "title": "Mark Twain\u2019s Sharpest Observation\ud83d\udcad #shortsfeed #shorts #philosophy",
    "channel": "Still Mind Society ",
-   "views": 33650,
-   "hours": 34,
-   "vph": 995.2,
-   "subs": 4710,
-   "breakout": 7.1
+   "views": 34674,
+   "hours": 38,
+   "vph": 914.1,
+   "subs": 4740,
+   "breakout": 7.3
   },
   {
-   "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
-   "channel": "Letters to Nobody",
-   "views": 16222,
-   "hours": 20,
-   "vph": 795.5,
-   "subs": 689,
-   "breakout": 23.5
+   "title": "The Most Savage Philosopher in History\ud83d\udcad #shortsfeed #shorts #philosophy #society",
+   "channel": "Still Mind Society ",
+   "views": 14025,
+   "hours": 16,
+   "vph": 894.0,
+   "subs": 4740,
+   "breakout": 3.0
   },
   {
    "title": "Your perspective isn't necessarily the truth. #shorts #quotes #psychology #philosophy #ytshorts",
    "channel": "Meaning Room",
-   "views": 17909,
-   "hours": 23,
-   "vph": 775.6,
-   "subs": 1510,
-   "breakout": 11.9
+   "views": 23007,
+   "hours": 27,
+   "vph": 845.5,
+   "subs": 1550,
+   "breakout": 14.8
   },
   {
-   "title": "moral : this is The unspoken truth about men and life #shorts#dostoevsky#philosophy#fyp",
-   "channel": "stoic physiology ",
-   "views": 21462,
-   "hours": 29,
-   "vph": 736.2,
-   "subs": 18300,
-   "breakout": 1.2
-  },
-  {
-   "title": "Nothing Destroys You More Than Your Own Mind | Marcus Aurelius #shorts",
-   "channel": "Daily life quotes",
-   "views": 9799,
-   "hours": 38,
-   "vph": 260.9,
-   "subs": 611,
-   "breakout": 16.0
+   "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
+   "channel": "Letters to Nobody",
+   "views": 20714,
+   "hours": 25,
+   "vph": 845.1,
+   "subs": 697,
+   "breakout": 29.7
   },
   {
    "title": "Subscribe for more #secret #psychology #books #english #quotes #love #relationship #couple #trending",
    "channel": "Myndverse",
-   "views": 3198,
-   "hours": 31,
-   "vph": 103.3,
-   "subs": 196,
-   "breakout": 16.0
+   "views": 5439,
+   "hours": 35,
+   "vph": 155.0,
+   "subs": 197,
+   "breakout": 27.2
   }
  ]
 }
