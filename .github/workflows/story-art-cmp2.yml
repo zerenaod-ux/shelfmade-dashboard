@@ -1,0 +1,32 @@
+name: story-art-cmp2
+# TEST ONLY: round 2 free image-to-video models (Wan2.2, HunyuanVideo 1.5). Nothing is posted.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['publish/story-art-cmp2.trigger']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --quiet six python-slugify python-dateutil requests tqdm urllib3 certifi bleach protobuf text-unidecode kaggle
+      - name: Render on the free GPU
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          K_NAME: shelf-cmp2
+          K_FILE: shelf_cmp2_kernel.py
+          K_PFX: cmp2-
+        run: python shelf_cmp.py
+      - name: Attach to release
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete storycmp2 -y --cleanup-tag || true
+          gh release create storycmp2 out/* --title "free video models round 2 (not posted)" --notes "test only" --prerelease
