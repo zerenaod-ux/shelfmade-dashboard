@@ -11,7 +11,7 @@
    "published": "2026-10-14T20:26:14Z",
    "duration": "PT26S",
    "privacy": "public",
-   "views": 409,
+   "views": 410,
    "likes": 9,
    "comments": 0,
    "avgSeconds": 15,
@@ -1230,16 +1230,6 @@
    "subsGained": 0
   },
   {
-   "id": "YBzvMjEOTFE",
-   "title": "Franklin had a warning for you.",
-   "published": "2026-11-12T00:00:23Z",
-   "duration": "PT6M53S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 0
-  },
-  {
    "id": "L8fBZiNE9xA",
    "title": "Nobody warns you about Analects.",
    "published": "2026-11-10T03:02:03Z",
@@ -1425,6 +1415,16 @@
    "duration": "PT38S",
    "privacy": "public",
    "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "YBzvMjEOTFE",
+   "title": "Franklin had a warning for you.",
+   "published": "2026-11-12T00:00:23Z",
+   "duration": "PT6M53S",
+   "privacy": "public",
+   "views": 2,
    "likes": 1,
    "comments": 0
   },

@@ -3,12 +3,12 @@
  "styles": {
   "dd_chill": {
    "n": 1,
-   "vpd": 0.44,
+   "vpd": 0.42,
    "bias": 0.0
   },
   "dd_sneak": {
    "n": 2,
-   "vpd": 0.31,
+   "vpd": 0.29,
    "bias": 0.0
   }
  }

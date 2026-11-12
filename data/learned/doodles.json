@@ -1,22 +1,24 @@
 {
  "short": {
   "do_more": [
-   "Lean into 'The Confidence Curve' energy: use titles that promise a specific, relatable psychological shift rather than a generic concept.",
-   "Use concrete, slightly absurd physical objects or scenarios (like a jacket or a clean room) as the visual anchor for the psychological idea.",
-   "Keep the average watch time high (aim for >50% retention) by ensuring the first 3 seconds show a distinct, funny visual action, not just a title card."
+   "Use a quirky, metaphorical hook that hints at a psychological concept, e.g. \u201cThe Confidence Curve\u201d or \u201cThe Panic of \u2018K\u2019.\u201d",
+   "Add a punchy visual pun or wordplay in the title to spark instant curiosity.",
+   "Begin the first 5\u202fseconds with a bold animated visual that immediately signals the core joke or concept.",
+   "Wrap the humor and the psychology punchline within the first 30\u202fseconds to keep viewers hooked."
   ],
   "avoid": [
-   "Do not use the word 'Trap' or 'Spiral' in titles; this pattern correlates with the lowest performance and was explicitly rejected by the owner.",
-   "Avoid abstract, high-level academic concepts without a immediate, tangible visual gag (e.g., 'The IKEA Effect' underperformed compared to 'The Jacket He Never Wears').",
-   "Do not repeat the 'Leo & Mia #X' numbering in titles; the top performers did not use this format."
+   "Steer clear of generic or literal titles like \u201cThe Planning Fallacy\u201d or \u201cThe Whiteboard Nod.\u201d",
+   "Don\u2019t start with a slow, explanatory narrative; keep the opening punchy and fast\u2011paced.",
+   "Avoid jokes that need too many setup beats; keep the twist simple and immediate."
   ],
-  "title_style": "Use 'The [Specific Object/Situation] [Noun]' structure that implies a hidden behavioral quirk, avoiding generic psychology terms.",
+  "title_style": "Use a punchy, unexpected twist or visual pun in the title to hook viewers instantly.",
   "next_tests": [
-   "Test a 'Redundancy' hook: Start the video with Leo saying something obvious, then Mia physically demonstrates why it's wrong (visual-first).",
-   "Test a 'Time-Lapse' angle: Show Leo trying to do a simple task (like tying shoes) but the animation slows down to show the internal panic/confidence curve in real-time."
+   "Produce a 30\u2011second variant of the top format to test completion and shareability.",
+   "Experiment with a question\u2011hook opening such as \u201cDid you know why you always\u2026\u201d to increase curiosity.",
+   "Add a subtle meme reference or trending sound clip in the first few seconds to boost shareability."
   ],
-  "n": 27,
-  "best_vpd": 23.46,
+  "n": 28,
+  "best_vpd": 22.96,
   "best_title": "The Confidence Curve"
  },
  "updated": "2026-11-12"

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T20:59:11+00:00",
+ "updated": "2026-11-12T21:34:31+00:00",
  "brands": {
   "shelfmade": {
    "totals": {
@@ -15,8 +15,8 @@
     {
      "id": "318wFWISd8c",
      "title": "Studies In Pessimism",
-     "views": 409,
-     "vpd": 14.09,
+     "views": 410,
+     "vpd": 14.11,
      "age_days": 29.0,
      "avg_percent": 59.53000000000001,
      "subs": 3
@@ -25,7 +25,7 @@
      "id": "bXvLqJ5TB1I",
      "title": "You can turn over a new leaf every hour if you choose",
      "views": 98,
-     "vpd": 8.81,
+     "vpd": 8.79,
      "age_days": 11.1,
      "avg_percent": 32.05,
      "subs": 0
@@ -34,7 +34,7 @@
      "id": "BMne6TFjLpk",
      "title": "Know your enemy",
      "views": 138,
-     "vpd": 8.25,
+     "vpd": 8.24,
      "age_days": 16.7,
      "avg_percent": 70.3,
      "subs": 1
@@ -43,7 +43,7 @@
      "id": "Y-FWlbV5SYM",
      "title": "Can truth unlock hidden peace?",
      "views": 50,
-     "vpd": 8.17,
+     "vpd": 8.14,
      "age_days": 6.1,
      "avg_percent": 23.36,
      "subs": 0
@@ -52,8 +52,8 @@
      "id": "88SeG1rSwzc",
      "title": "What secret lies in wild olive?",
      "views": 47,
-     "vpd": 6.07,
-     "age_days": 7.7,
+     "vpd": 6.05,
+     "age_days": 7.8,
      "avg_percent": 61.88,
      "subs": 0
     }
@@ -64,7 +64,7 @@
      "title": "The Prince by Machiavelli in 60 Seconds \ud83d\udc51 #shorts",
      "views": 1,
      "vpd": 0.01,
-     "age_days": 155.7,
+     "age_days": 155.8,
      "avg_percent": null,
      "subs": 0
     },
@@ -91,7 +91,7 @@
      "title": "Is virtue the only good?",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 5.7,
+     "age_days": 5.8,
      "avg_percent": null,
      "subs": 0
     },
@@ -111,8 +111,8 @@
      "feature": "title length",
      "value": "long title (9+ words)",
      "n": 38,
-     "median_vpd": 1.51,
-     "lift": 3.55,
+     "median_vpd": 1.5,
+     "lift": 3.54,
      "rest_median_vpd": 0.12
     },
     {
@@ -156,8 +156,8 @@
      "feature": "emoji",
      "value": "no emoji",
      "n": 97,
-     "median_vpd": 0.76,
-     "lift": 1.79,
+     "median_vpd": 0.75,
+     "lift": 1.76,
      "rest_median_vpd": 0.02
     },
     {
@@ -183,8 +183,8 @@
      "feature": "command/hook opener",
      "value": "opens with a direct word (know, stop, why, how, your...)",
      "n": 43,
-     "median_vpd": 0.58,
-     "lift": 1.36,
+     "median_vpd": 0.57,
+     "lift": 1.34,
      "rest_median_vpd": 0.37
     },
     {
@@ -194,7 +194,7 @@
      "n": 51,
      "median_vpd": 0.37,
      "lift": 0.87,
-     "rest_median_vpd": 0.58
+     "rest_median_vpd": 0.57
     },
     {
      "metric": "vpd",
@@ -203,7 +203,7 @@
      "n": 73,
      "median_vpd": 0.37,
      "lift": 0.87,
-     "rest_median_vpd": 0.58
+     "rest_median_vpd": 0.57
     },
     {
      "metric": "vpd",
@@ -212,7 +212,7 @@
      "n": 78,
      "median_vpd": 0.37,
      "lift": 0.87,
-     "rest_median_vpd": 0.54
+     "rest_median_vpd": 0.53
     },
     {
      "metric": "vpd",
@@ -293,7 +293,7 @@
      "n": 19,
      "median_vpd": 0.02,
      "lift": 0.05,
-     "rest_median_vpd": 0.76
+     "rest_median_vpd": 0.75
     }
    ],
    "retention_lifts": [
@@ -474,7 +474,7 @@
      "id": "uOqGecmhSTs",
      "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
      "views": 379,
-     "vpd": 22.54,
+     "vpd": 22.51,
      "age_days": 16.8,
      "avg_percent": 131.07,
      "subs": 0
@@ -483,7 +483,7 @@
      "id": "MTXe8IAf__g",
      "title": "Why a deadline makes your stomach knot",
      "views": 43,
-     "vpd": 13.77,
+     "vpd": 13.66,
      "age_days": 3.1,
      "avg_percent": 108.72999999999999,
      "subs": 0
@@ -492,7 +492,7 @@
      "id": "TbWW3mHgwVQ",
      "title": "The Principles Of Psychology",
      "views": 307,
-     "vpd": 13.32,
+     "vpd": 13.3,
      "age_days": 23.1,
      "avg_percent": 65.26,
      "subs": 0
@@ -501,7 +501,7 @@
      "id": "qfwKKgBIkvI",
      "title": "What warning did Darwin give?",
      "views": 67,
-     "vpd": 10.95,
+     "vpd": 10.9,
      "age_days": 6.1,
      "avg_percent": 68.02,
      "subs": 0
@@ -510,8 +510,8 @@
      "id": "enlkJrZ0aqc",
      "title": "The part of Crowd nobody mentions.",
      "views": 30,
-     "vpd": 8.0,
-     "age_days": 3.7,
+     "vpd": 7.95,
+     "age_days": 3.8,
      "avg_percent": 52.27,
      "subs": 0
     }
@@ -569,8 +569,8 @@
      "feature": "title length",
      "value": "medium title (6-8 words)",
      "n": 16,
-     "median_vpd": 2.61,
-     "lift": 3.68,
+     "median_vpd": 2.6,
+     "lift": 3.67,
      "rest_median_vpd": 0.35
     },
     {
@@ -605,8 +605,8 @@
      "feature": "emoji",
      "value": "no emoji",
      "n": 58,
-     "median_vpd": 1.06,
-     "lift": 1.49,
+     "median_vpd": 1.05,
+     "lift": 1.48,
      "rest_median_vpd": 0.2
     },
     {
@@ -643,7 +643,7 @@
      "n": 45,
      "median_vpd": 0.53,
      "lift": 0.75,
-     "rest_median_vpd": 1.19
+     "rest_median_vpd": 1.18
     },
     {
      "metric": "vpd",
@@ -706,7 +706,7 @@
      "n": 11,
      "median_vpd": 0.2,
      "lift": 0.28,
-     "rest_median_vpd": 1.06
+     "rest_median_vpd": 1.05
     },
     {
      "metric": "vpd",
@@ -878,7 +878,7 @@
      "id": "vz_gR7GgfU0",
      "title": "The Confidence Curve",
      "views": 210,
-     "vpd": 23.02,
+     "vpd": 22.96,
      "age_days": 9.1,
      "avg_percent": 23.63,
      "subs": 1
@@ -887,7 +887,7 @@
      "id": "m-mdceIZnsg",
      "title": "The Silent Nod",
      "views": 6,
-     "vpd": 1.92,
+     "vpd": 1.91,
      "age_days": 3.1,
      "avg_percent": 103.22,
      "subs": 0
@@ -906,7 +906,7 @@
      "title": "The Jacket He Never Wears",
      "views": 10,
      "vpd": 1.14,
-     "age_days": 8.7,
+     "age_days": 8.8,
      "avg_percent": 160.61,
      "subs": 0
     },
@@ -914,8 +914,8 @@
      "id": "tmW0ic4_Go4",
      "title": "The Panic of 'K'",
      "views": 4,
-     "vpd": 1.07,
-     "age_days": 3.7,
+     "vpd": 1.06,
+     "age_days": 3.8,
      "avg_percent": 13.19,
      "subs": 0
     }
@@ -926,7 +926,7 @@
      "title": "The Nodding Trap",
      "views": 2,
      "vpd": 0.35,
-     "age_days": 5.7,
+     "age_days": 5.8,
      "avg_percent": 10.66,
      "subs": 0
     },
@@ -935,7 +935,7 @@
      "title": "The Rehearsal Trap",
      "views": 2,
      "vpd": 0.3,
-     "age_days": 6.7,
+     "age_days": 6.8,
      "avg_percent": null,
      "subs": 0
     },
@@ -962,7 +962,7 @@
      "title": "The Rest Trap",
      "views": 1,
      "vpd": 0.15,
-     "age_days": 6.7,
+     "age_days": 6.8,
      "avg_percent": 28.46,
      "subs": 0
     }

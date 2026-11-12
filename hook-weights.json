@@ -1,27 +1,27 @@
 {
- "updated": 1794502582,
- "measured_posts": 15,
- "avg_views": 8.8,
+ "updated": 1794518800,
+ "measured_posts": 16,
+ "avg_views": 9.2,
  "per_type": {
   "author": {
    "posts": 5,
-   "avg": 8.6
+   "avg": 9.0
   },
   "contrarian": {
    "posts": 3,
    "avg": 10.0
   },
   "curiosity": {
-   "posts": 3,
-   "avg": 8.7
+   "posts": 4,
+   "avg": 9.2
   },
   "myth": {
    "posts": 2,
-   "avg": 10.5
+   "avg": 11.5
   },
   "warning": {
    "posts": 2,
-   "avg": 6.0
+   "avg": 6.5
   }
  },
  "active": false,

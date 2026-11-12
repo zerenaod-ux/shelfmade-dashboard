@@ -1,23 +1,23 @@
 {
  "hot_themes": [
-  "Cold reading & fictional detective mentalism tactics",
-  "Personalized validation via name letters or birth months",
-  "Extreme neuro-explanations of boundary states (death, prayer)",
-  "Stoic emotion control & non-reaction to mocking",
-  "Listing subtle personality traits of sensitive/emotional people"
+  "personal traits hidden in names",
+  "birth month personality myths",
+  "brain reactions to death or prayer",
+  "secret psychological tricks",
+  "unlucky/heartbreak letters"
  ],
  "hook_patterns": [
-  "High-stakes neurological questions asking 'What happens to your brain when...'",
-  "Curiosity-gap listicles targeting specific identity traits or initial letters",
-  "Deconstructing popular fictional characters to reveal real-world manipulation tricks"
+  "What does X reveal about you?",
+  "3 surprising facts about Y that change everything",
+  "The shocking truth behind Z that nobody expects"
  ],
  "ideas_for_us": [
-  "The 19th-Century Cold Reading Trick Behind Sherlock Holmes (Based on William James' Principles of Psychology)",
-  "What Happens to Your Brain During Deep Meditation, According to 1910 Neuroscience Classics",
-  "3 Subtle Signs of High Emotional Sensitivity (Extracted from Carl Jung's Psychological Types)",
-  "How to Remain Unshakable When Insulted: Seneca's Stoic Rules for Brain Control"
+  "The hidden meaning of the first letter of your name: a 19th\u2011century psychology experiment (based on early personality theory)",
+  "Why your birth month may shape your habits: Jungian insights from classic astrology\u2011psychology texts",
+  "What happens in the brain when you pray: a concise look at early neurological studies",
+  "3 ancient psychological tricks from 'The Art of War' that still work on modern minds"
  ],
  "updated": "2026-11-12",
  "sample": 59,
- "top_vpd": 749800
+ "top_vpd": 727450
 }
