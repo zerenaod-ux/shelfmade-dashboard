@@ -3,11 +3,11 @@ For each daily job: if its scheduled time + GRACE has passed today and NO run of
 Never retries failures (a failed run still counts as 'ran'). Fails soft. Needs GH_TOKEN and permissions: actions: write."""
 import json, subprocess, datetime, sys
 GRACE = 100   # minutes: GitHub delays of ~2.5 h were observed; after that we start it ourselves
-MAXLATE = 10 * 60
+MAXLATE = 14 * 60
 JOBS = [  # workflow file, hour UTC, minute, weekdays (Mon=0..Sun=6) or None=daily
     ('radar.yml', 7, 7, None), ('doodles.yml', 7, 37, None), ('doodles-full.yml', 6, 40, (1, 4)),
     ('full-video.yml', 9, 10, (0, 2, 4, 6)), ('mindlore-2d.yml', 11, 20, (2, 5)),   # KICK2D: MindLore full video is 2D only
-    ('mindlore-story-short.yml', 13, 40, None), ('shelfmade-story-short.yml', 14, 10, None), ('learn.yml', 14, 12, (0, 3)),
+    ('analytics.yml', 13, 30, None), ('first-comment.yml', 16, 17, None), ('daily-summary.yml', 14, 25, None), ('mindlore-story-short.yml', 13, 40, None), ('shelfmade-story-short.yml', 14, 10, None), ('learn.yml', 14, 12, (0, 3)),
 ]
 def sh(*a):
     return subprocess.run(a, capture_output=True, text=True, timeout=60)
@@ -23,6 +23,11 @@ def main():
             runs = json.loads(r.stdout or '[]')
             since = due - datetime.timedelta(minutes=5)
             rs = [x for x in runs if datetime.datetime.fromisoformat(x['createdAt'].replace('Z', '+00:00')) >= since]
+            def age(x): return (now - datetime.datetime.fromisoformat(x['createdAt'].replace('Z', '+00:00'))).total_seconds() / 60
+            stuck = [x for x in rs if x['status'] == 'queued' and age(x) > 75]   # STUCK_QUEUE: GitHub sometimes leaves a run 'queued' for hours (seen 2026-11-11); start a fresh one
+            alive = [x for x in rs if x['status'] == 'in_progress' or (x['status'] == 'queued' and age(x) <= 75) or x.get('conclusion') == 'success']
+            if stuck and not alive:
+                d = sh('gh', 'workflow', 'run', wf); print('RESTARTED stuck-queued', wf, (d.stdout + d.stderr).strip()[:120], flush=True); continue
             if rs:   # RETRY_ONCE: self-repair - if every run today failed and there is only one, try once more (never a third time)
                 if len(rs) == 1 and rs[0]['status'] == 'completed' and rs[0]['conclusion'] == 'failure' and late >= 20:
                     d = sh('gh', 'workflow', 'run', wf)
