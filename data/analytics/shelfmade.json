@@ -2,8 +2,8 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-11",
- "note": "",
+ "collected": "2026-11-12",
+ "note": "analytics API unavailable (HTTP 500): enable YouTube Analytics API in the Google Cloud project",
  "videos": [
   {
    "id": "318wFWISd8c",
@@ -11,12 +11,9 @@
    "published": "2026-10-14T20:26:14Z",
    "duration": "PT26S",
    "privacy": "public",
-   "views": 406,
+   "views": 407,
    "likes": 9,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 59.53000000000001,
-   "subsGained": 3
+   "comments": 0
   },
   {
    "id": "BMne6TFjLpk",
@@ -26,10 +23,7 @@
    "privacy": "public",
    "views": 138,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 16,
-   "avgPercent": 70.3,
-   "subsGained": 1
+   "comments": 0
   },
   {
    "id": "VIzfsOTiXG0",
@@ -37,12 +31,9 @@
    "published": "2026-10-13T02:37:47Z",
    "duration": "PT19S",
    "privacy": "public",
-   "views": 103,
+   "views": 104,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 67.32,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "bXvLqJ5TB1I",
@@ -52,10 +43,7 @@
    "privacy": "public",
    "views": 97,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 32.05,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "YBEF_RwIYLc",
@@ -65,10 +53,7 @@
    "privacy": "public",
    "views": 86,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 62.53999999999999,
-   "subsGained": 1
+   "comments": 0
   },
   {
    "id": "xgYwXfv-9Gg",
@@ -78,10 +63,7 @@
    "privacy": "public",
    "views": 75,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 16,
-   "avgPercent": 55.42,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ny9cec0KpdY",
@@ -91,10 +73,7 @@
    "privacy": "public",
    "views": 75,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 11,
-   "avgPercent": 49.25,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "x3YArPfqBjg",
@@ -104,10 +83,7 @@
    "privacy": "public",
    "views": 65,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 265,
-   "avgPercent": 1062.92,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ZVUS3mUbOaQ",
@@ -117,10 +93,7 @@
    "privacy": "public",
    "views": 63,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 36.87,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "LApY3ii5G4Y",
@@ -130,10 +103,7 @@
    "privacy": "public",
    "views": 60,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 11,
-   "avgPercent": 58.77,
-   "subsGained": 1
+   "comments": 0
   },
   {
    "id": "pWVzUeSbav0",
@@ -143,10 +113,7 @@
    "privacy": "public",
    "views": 55,
    "likes": 3,
-   "comments": 0,
-   "avgSeconds": 48,
-   "avgPercent": 168.72,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "rhV-RVacC7s",
@@ -156,10 +123,7 @@
    "privacy": "public",
    "views": 53,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 11,
-   "avgPercent": 29.37,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "NdyYlv5koBQ",
@@ -169,10 +133,7 @@
    "privacy": "public",
    "views": 51,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 66.5,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "Y-FWlbV5SYM",
@@ -182,10 +143,7 @@
    "privacy": "public",
    "views": 50,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 23.36,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "7P-eD_FErv0",
@@ -195,10 +153,7 @@
    "privacy": "public",
    "views": 48,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 57.19,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "88SeG1rSwzc",
@@ -208,10 +163,7 @@
    "privacy": "public",
    "views": 47,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 61.88,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "wxefvX3oShc",
@@ -221,10 +173,17 @@
    "privacy": "public",
    "views": 43,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 37.41,
-   "subsGained": 0
+   "comments": 0
+  },
+  {
+   "id": "nuQLBWcyPzQ",
+   "title": "Plato had a warning for you.",
+   "published": "2026-11-04T18:02:59Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 41,
+   "likes": 2,
+   "comments": 1
   },
   {
    "id": "f4QurVhXoMc",
@@ -234,10 +193,7 @@
    "privacy": "public",
    "views": 41,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 23,
-   "avgPercent": 115.8,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ACA6qTf08r8",
@@ -247,23 +203,7 @@
    "privacy": "public",
    "views": 41,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 6,
-   "avgPercent": 35.24,
-   "subsGained": 0
-  },
-  {
-   "id": "nuQLBWcyPzQ",
-   "title": "Plato had a warning for you.",
-   "published": "2026-11-04T18:02:59Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 40,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 19,
-   "avgPercent": 37.41,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "0OxyEvY3YvU",
@@ -273,10 +213,7 @@
    "privacy": "public",
    "views": 39,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 8,
-   "avgPercent": 33.26,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "JvIgBaYCJdU",
@@ -286,10 +223,7 @@
    "privacy": "public",
    "views": 38,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 39.29,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "sGfMrVc9aVQ",
@@ -299,10 +233,7 @@
    "privacy": "public",
    "views": 36,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 11,
-   "avgPercent": 34.34,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "umzrnh-AmiA",
@@ -312,10 +243,7 @@
    "privacy": "public",
    "views": 36,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 5,
-   "avgPercent": 23.68,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "zgDUyrNpGOY",
@@ -325,10 +253,7 @@
    "privacy": "public",
    "views": 36,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 53.11,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "nQlibcVN19o",
@@ -338,10 +263,7 @@
    "privacy": "public",
    "views": 35,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 24.99,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "G4c2nrTsFNc",
@@ -351,10 +273,7 @@
    "privacy": "public",
    "views": 35,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 67.2,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "eFMuACpNNxI",
@@ -364,10 +283,7 @@
    "privacy": "public",
    "views": 33,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 49.82,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "hHymwJY9Yi8",
@@ -377,10 +293,7 @@
    "privacy": "public",
    "views": 33,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 43.62,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "jwCDi7yBZQA",
@@ -390,10 +303,7 @@
    "privacy": "public",
    "views": 33,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 33,
-   "avgPercent": 98.53,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "6ekA7k96fUk",
@@ -403,10 +313,7 @@
    "privacy": "public",
    "views": 31,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 12,
-   "avgPercent": 36.86,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "b50yfXR5djU",
@@ -416,10 +323,7 @@
    "privacy": "public",
    "views": 30,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 26,
-   "avgPercent": 102.15,
-   "subsGained": 1
+   "comments": 0
   },
   {
    "id": "hzAmyueIWyQ",
@@ -429,10 +333,7 @@
    "privacy": "public",
    "views": 30,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 19,
-   "avgPercent": 36.54,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "OKEdacXsBrk",
@@ -442,10 +343,7 @@
    "privacy": "public",
    "views": 29,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 6,
-   "avgPercent": 24.55,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "DA9pXjqUXfQ",
@@ -455,10 +353,7 @@
    "privacy": "public",
    "views": 29,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 22,
-   "avgPercent": 59.58,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "8QKdl9NNi3Y",
@@ -468,10 +363,7 @@
    "privacy": "public",
    "views": 27,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 65.1,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "BiRfxu5fbko",
@@ -481,10 +373,7 @@
    "privacy": "public",
    "views": 26,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 22.19,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "I0Q6d7pqqEE",
@@ -494,10 +383,7 @@
    "privacy": "public",
    "views": 26,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 11,
-   "avgPercent": 49.38,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "usfd7CGMtGA",
@@ -507,10 +393,7 @@
    "privacy": "public",
    "views": 25,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 61.6,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "epWlk-Ra3Rs",
@@ -520,10 +403,7 @@
    "privacy": "public",
    "views": 24,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 47.74,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "24m9dl3C6uo",
@@ -533,10 +413,7 @@
    "privacy": "public",
    "views": 24,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 50.14999999999999,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "goI_lzWhMaw",
@@ -546,10 +423,7 @@
    "privacy": "public",
    "views": 23,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 13.15,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "qcKc4yxs1xQ",
@@ -559,10 +433,7 @@
    "privacy": "public",
    "views": 22,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 7,
-   "avgPercent": 20.16,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ElOI_lM9VtE",
@@ -572,10 +443,7 @@
    "privacy": "public",
    "views": 21,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 5,
-   "avgPercent": 20.33,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "hl6yAlc682w",
@@ -585,10 +453,7 @@
    "privacy": "public",
    "views": 20,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 37.39,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "PqOXPgtpPVY",
@@ -598,10 +463,7 @@
    "privacy": "public",
    "views": 19,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 7,
-   "avgPercent": 43.49,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "sNiieAkdNpg",
@@ -611,10 +473,17 @@
    "privacy": "public",
    "views": 19,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 97,
-   "avgPercent": 64.3,
-   "subsGained": 0
+   "comments": 0
+  },
+  {
+   "id": "WEAr0dGdw2M",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-12T03:02:25Z",
+   "duration": "PT1M22S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "ysH8vGfZpVA",
@@ -624,10 +493,7 @@
    "privacy": "public",
    "views": 18,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 38.69,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "QHacncwEVO4",
@@ -637,10 +503,7 @@
    "privacy": "public",
    "views": 17,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 18,
-   "avgPercent": 79.89,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "F8l3ipKPjVU",
@@ -650,10 +513,7 @@
    "privacy": "public",
    "views": 17,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 20.61,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "33wZsS1WEs4",
@@ -663,10 +523,7 @@
    "privacy": "public",
    "views": 17,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 55.81,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "skC7OMC7xjU",
@@ -676,10 +533,7 @@
    "privacy": "public",
    "views": 16,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 8,
-   "avgPercent": 39.65,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "FZIiZwUDOCw",
@@ -689,10 +543,7 @@
    "privacy": "public",
    "views": 16,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 61.07,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "8_WBSGQzzUs",
@@ -702,10 +553,7 @@
    "privacy": "public",
    "views": 16,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 11,
-   "avgPercent": 54.08,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "lB1khz_EYhg",
@@ -715,10 +563,7 @@
    "privacy": "public",
    "views": 15,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 7,
-   "avgPercent": 30.510000000000005,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "O_1dpa8rPxM",
@@ -728,10 +573,7 @@
    "privacy": "public",
    "views": 15,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 56.330000000000005,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "nw9L0WbCy1s",
@@ -741,10 +583,7 @@
    "privacy": "public",
    "views": 13,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 32,
-   "avgPercent": 6.25,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -754,10 +593,7 @@
    "privacy": "public",
    "views": 12,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 24.39,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "a1cQi88hrm0",
@@ -767,10 +603,7 @@
    "privacy": "public",
    "views": 12,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "qXGDCd5Zme8",
@@ -790,10 +623,7 @@
    "privacy": "public",
    "views": 11,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 45.5,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "QETj1OyodGA",
@@ -803,10 +633,7 @@
    "privacy": "public",
    "views": 10,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 30,
-   "avgPercent": 56.39999999999999,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "mcV0u5NRAvI",
@@ -816,10 +643,7 @@
    "privacy": "public",
    "views": 9,
    "likes": 2,
-   "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 116.04999999999998,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "1TFujFgiGXw",
@@ -829,10 +653,7 @@
    "privacy": "public",
    "views": 9,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 16,
-   "avgPercent": 59.69,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "X3V948qB6Ng",
@@ -842,10 +663,7 @@
    "privacy": "public",
    "views": 8,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 2.45,
-   "subsGained": 1
+   "comments": 0
   },
   {
    "id": "-JBCZpJJaj8",
@@ -855,10 +673,7 @@
    "privacy": "public",
    "views": 8,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 15,
-   "avgPercent": 65.22,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "OeEfBiHYLLc",
@@ -868,10 +683,17 @@
    "privacy": "public",
    "views": 8,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 24,
-   "avgPercent": 13.98,
-   "subsGained": 0
+   "comments": 0
+  },
+  {
+   "id": "SAQ1Y0wN0zI",
+   "title": "Nobody warns you about Tao Te Ching.",
+   "published": "2026-11-11T18:06:41Z",
+   "duration": "PT1M11S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "SuYd4PbqjtI",
@@ -881,10 +703,7 @@
    "privacy": "public",
    "views": 7,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 47,
-   "avgPercent": 7.44,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "rlRbKJij9Po",
@@ -894,10 +713,7 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "M_SmNMSpJ0w",
@@ -907,10 +723,7 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "-AEoyekZses",
@@ -920,10 +733,7 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "hKktePcjLPM",
@@ -933,10 +743,7 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 21,
-   "avgPercent": 46.89,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "OD2YHuJCIY4",
@@ -946,10 +753,7 @@
    "privacy": "public",
    "views": 6,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 3.36,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "19NEY5x_reI",
@@ -989,10 +793,7 @@
    "privacy": "public",
    "views": 6,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "__rojRBMTyk",
@@ -1002,10 +803,7 @@
    "privacy": "public",
    "views": 6,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 40.6,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "K6npdyBg4R0",
@@ -1015,10 +813,7 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 6.21,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "GUENFhxiucg",
@@ -1028,10 +823,7 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 135,
-   "avgPercent": 35.44,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "_cPKH-hbmjA",
@@ -1041,10 +833,7 @@
    "privacy": "public",
    "views": 5,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "g2G4OwxG8dY",
@@ -1054,10 +843,7 @@
    "privacy": "public",
    "views": 5,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "QmvgVXfWJT8",
@@ -1067,10 +853,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 31,
-   "avgPercent": 8.41,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "KG74aA9UEFo",
@@ -1080,10 +863,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 9,
-   "avgPercent": 45.36,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "wyjEsb-AHBI",
@@ -1093,10 +873,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 5,
-   "avgPercent": 25.319999999999997,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "UfLyrBxj34E",
@@ -1106,10 +883,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 51.21,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "PMX30vSNJ18",
@@ -1119,10 +893,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 3,
-   "avgPercent": 7.960000000000001,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "EZ9BviYODGg",
@@ -1132,10 +903,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 31,
-   "avgPercent": 70.7,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "1Dx-LYGQH4U",
@@ -1145,10 +913,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 1,
-   "avgPercent": 4.27,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "Ja2LEc0t50Y",
@@ -1158,10 +923,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "5vbJoMcLLmo",
@@ -1181,10 +943,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "8Q5tVQ3L3_Y",
@@ -1194,20 +953,17 @@
    "privacy": "public",
    "views": 4,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
-   "id": "SAQ1Y0wN0zI",
-   "title": "Nobody warns you about Tao Te Ching.",
-   "published": "2026-11-11T18:06:41Z",
-   "duration": "PT1M11S",
+   "id": "L8fBZiNE9xA",
+   "title": "Nobody warns you about Analects.",
+   "published": "2026-11-10T03:02:03Z",
+   "duration": "PT1M4S",
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "JlR5Qt1ALk8",
@@ -1217,10 +973,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "eimcxgtfNtc",
@@ -1230,10 +983,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 42,
-   "avgPercent": 11.07,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ln4lkoTdlEY",
@@ -1243,10 +993,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 269,
-   "avgPercent": 73.82,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "GvmQ-OHoVtE",
@@ -1256,10 +1003,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 5,
-   "avgPercent": 12.58,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ATI1EOpt4xc",
@@ -1269,10 +1013,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "Xh4ysniFDCQ",
@@ -1282,10 +1023,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "P8tQJnPATFU",
@@ -1295,10 +1033,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 45,
-   "avgPercent": 127.22,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "7_iBPB6szIw",
@@ -1308,10 +1043,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 99.41,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "D4eGWbl0qu4",
@@ -1321,10 +1053,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "dC9xQfgWRBA",
@@ -1334,10 +1063,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "dvqqYUoMVJ0",
@@ -1347,10 +1073,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "S7tuoQoLKFQ",
@@ -1370,10 +1093,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ia_HHb2Evgc",
@@ -1386,17 +1106,14 @@
    "comments": 0
   },
   {
-   "id": "L8fBZiNE9xA",
-   "title": "Nobody warns you about Analects.",
-   "published": "2026-11-10T03:02:03Z",
-   "duration": "PT1M4S",
+   "id": "v5GPz22mgbU",
+   "title": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!",
+   "published": "2026-11-11T03:02:15Z",
+   "duration": "PT39S",
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 14.04,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "WCx2ToBGPhU",
@@ -1406,10 +1123,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "vSqKjuyAJhM",
@@ -1419,10 +1133,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "rmj2YzElBjM",
@@ -1442,10 +1153,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 6,
-   "avgPercent": 1.5700000000000003,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "t1nVb95pmt4",
@@ -1455,10 +1163,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "FbzqyOcCjVE",
@@ -1468,10 +1173,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 65,
-   "avgPercent": 36.48,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "L8hFPW6Xcb4",
@@ -1481,10 +1183,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 34.47,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "wR1PTMnIblo",
@@ -1517,14 +1216,14 @@
    "comments": 0
   },
   {
-   "id": "v5GPz22mgbU",
-   "title": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!",
-   "published": "2026-11-11T03:02:15Z",
-   "duration": "PT39S",
+   "id": "yw-m_m8OYiE",
+   "title": "Ruskin wrote this for you.",
+   "published": "2026-11-11T00:00:16Z",
+   "duration": "PT6M57S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "qreV4UF_HS4",
@@ -1554,7 +1253,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "6z0IxWs-qko",
@@ -1574,10 +1273,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 6,
-   "avgPercent": 3.6799999999999997,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "A31DF-LrV10",
@@ -1587,10 +1283,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "T7anxpbtrAE",
@@ -1600,10 +1293,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "gtcQeCf1ohw",
@@ -1613,10 +1303,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "yOuCdGMofqY",
@@ -1626,10 +1313,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "MHjUyCjOSmY",
@@ -1639,10 +1323,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "hZZC3IwYDPw",
@@ -1652,10 +1333,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 55,
-   "avgPercent": 32.13,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "oA_FIauEPd8",
@@ -1758,11 +1436,31 @@
    "comments": 0
   },
   {
+   "id": "p079-FpO7QE",
+   "title": "Almost everyone gets Prince wrong.",
+   "published": "2026-11-12T03:43:12Z",
+   "duration": "PT7M23S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "7HnIeRjpoGg",
    "title": "Listen to what Seneca warned about.",
-   "published": "2026-11-11T02:05:54Z",
+   "published": "2026-11-12T00:00:29Z",
    "duration": "PT6M42S",
-   "privacy": "private",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "YBzvMjEOTFE",
+   "title": "Franklin had a warning for you.",
+   "published": "2026-11-12T00:00:23Z",
+   "duration": "PT6M53S",
+   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0
@@ -1775,17 +1473,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "yw-m_m8OYiE",
-   "title": "Ruskin wrote this for you.",
-   "published": "2026-11-11T00:00:16Z",
-   "duration": "PT6M57S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "g8hW1uT4Eg8",
@@ -1795,10 +1483,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 1
   },
   {
    "id": "xIxtLasPyV8",
@@ -1845,16 +1530,6 @@
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-04T22:18:02Z",
    "duration": "PT6M56S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "YBzvMjEOTFE",
-   "title": "Franklin had a warning for you.",
-   "published": "2026-11-03T20:51:44Z",
-   "duration": "PT6M53S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

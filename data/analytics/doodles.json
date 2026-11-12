@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-11",
+ "collected": "2026-11-12",
  "note": "",
  "videos": [
   {
@@ -11,12 +11,22 @@
    "published": "2026-11-03T18:04:42Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 206,
+   "views": 209,
    "likes": 3,
    "comments": 0,
    "avgSeconds": 15,
    "avgPercent": 23.63,
    "subsGained": 1
+  },
+  {
+   "id": "EWhebXioXqQ",
+   "title": "The Sleep Effort Trap",
+   "published": "2026-11-10T18:04:30Z",
+   "duration": "PT1M37S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "EB1TXPXl1FI",
@@ -39,7 +49,7 @@
    "privacy": "public",
    "views": 10,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 32,
    "avgPercent": 63.06,
    "subsGained": 0
@@ -110,16 +120,6 @@
    "subsGained": 0
   },
   {
-   "id": "EWhebXioXqQ",
-   "title": "The Sleep Effort Trap",
-   "published": "2026-11-10T18:04:30Z",
-   "duration": "PT1M37S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "j9gyJISpFX0",
    "title": "The Dinner Spiral",
    "published": "2026-11-03T03:01:54Z",
@@ -140,7 +140,7 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 9,
    "avgPercent": 20.27,
    "subsGained": 0
@@ -198,6 +198,19 @@
    "subsGained": 0
   },
   {
+   "id": "m-mdceIZnsg",
+   "title": "The Silent Nod",
+   "published": "2026-11-09T18:05:11Z",
+   "duration": "PT46S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 90,
+   "avgPercent": 197.52,
+   "subsGained": 0
+  },
+  {
    "id": "ItInAPU8iXs",
    "title": "The Sunday Scaries",
    "published": "2026-11-02T20:02:10Z",
@@ -224,16 +237,46 @@
    "subsGained": 0
   },
   {
-   "id": "m-mdceIZnsg",
-   "title": "The Silent Nod",
-   "published": "2026-11-09T18:05:11Z",
-   "duration": "PT46S",
+   "id": "F7XDCfj-9Uk",
+   "title": "The Feather Duster Detour | Leo & Mia #6",
+   "published": "2026-11-11T18:06:42Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1
+  },
+  {
+   "id": "hzKTBT9qysw",
+   "title": "The Midnight Replay",
+   "published": "2026-11-10T03:02:02Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "id": "vthdpujWnPY",
+   "title": "The Infinite Refresh | Leo & Mia #7",
+   "published": "2026-11-11T03:02:01Z",
+   "duration": "PT39S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1
+  },
+  {
+   "id": "tmW0ic4_Go4",
+   "title": "The Panic of 'K'",
+   "published": "2026-11-09T03:01:39Z",
+   "duration": "PT57S",
    "privacy": "public",
    "views": 4,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 90,
-   "avgPercent": 197.52,
+   "avgSeconds": 7,
+   "avgPercent": 13.19,
    "subsGained": 0
   },
   {
@@ -261,16 +304,6 @@
    "avgSeconds": 2,
    "avgPercent": 3.93,
    "subsGained": 0
-  },
-  {
-   "id": "hzKTBT9qysw",
-   "title": "The Midnight Replay",
-   "published": "2026-11-10T03:02:02Z",
-   "duration": "PT47S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 1
   },
   {
    "id": "Zoos5GbVQPU",
@@ -358,22 +391,32 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 32,
    "avgPercent": 13.489999999999998,
    "subsGained": 0
   },
   {
-   "id": "tmW0ic4_Go4",
-   "title": "The Panic of 'K'",
-   "published": "2026-11-09T03:01:39Z",
-   "duration": "PT57S",
+   "id": "j9yPaC1a9eQ",
+   "title": "The Scripting Spiral",
+   "published": "2026-11-12T03:02:36Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "zYdejZHy3k4",
+   "title": "The Sunday Spiral",
+   "published": "2026-11-08T18:02:32Z",
+   "duration": "PT45S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 7,
-   "avgPercent": 13.19,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -387,39 +430,6 @@
    "comments": 1,
    "avgSeconds": 10,
    "avgPercent": 28.46,
-   "subsGained": 0
-  },
-  {
-   "id": "F7XDCfj-9Uk",
-   "title": "The Feather Duster Detour | Leo & Mia #6",
-   "published": "2026-11-11T18:06:42Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "vthdpujWnPY",
-   "title": "The Infinite Refresh | Leo & Mia #7",
-   "published": "2026-11-11T03:02:01Z",
-   "duration": "PT39S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "zYdejZHy3k4",
-   "title": "The Sunday Spiral",
-   "published": "2026-11-08T18:02:32Z",
-   "duration": "PT45S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
    "subsGained": 0
   }
  ]

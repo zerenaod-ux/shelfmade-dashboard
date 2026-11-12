@@ -1,11 +1,11 @@
 {
- "collected": "2026-11-11",
+ "collected": "2026-11-12",
  "top": {
   "mindlore": [
    {
     "id": "uOqGecmhSTs",
     "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
-    "views": 375,
+    "views": 377,
     "likes": 2,
     "avgPercent": 131.07
    },
@@ -41,46 +41,47 @@
    {
     "id": "318wFWISd8c",
     "title": "Studies In Pessimism",
-    "views": 406,
-    "likes": 9,
-    "avgPercent": 59.53000000000001
+    "views": 407,
+    "likes": 9
    },
    {
     "id": "BMne6TFjLpk",
     "title": "Know your enemy",
     "views": 138,
-    "likes": 2,
-    "avgPercent": 70.3
+    "likes": 2
    },
    {
     "id": "VIzfsOTiXG0",
     "title": "The Art of War: 3 Lessons from Sun Tzu #Shorts",
-    "views": 103,
-    "likes": 1,
-    "avgPercent": 67.32
+    "views": 104,
+    "likes": 1
    },
    {
     "id": "bXvLqJ5TB1I",
     "title": "You can turn over a new leaf every hour if you choose",
     "views": 97,
-    "likes": 1,
-    "avgPercent": 32.05
+    "likes": 1
    },
    {
     "id": "YBEF_RwIYLc",
     "title": "Bring war material with you from home, but forage on the enemy",
     "views": 86,
-    "likes": 1,
-    "avgPercent": 62.53999999999999
+    "likes": 1
    }
   ],
   "doodles": [
    {
     "id": "vz_gR7GgfU0",
     "title": "The Confidence Curve",
-    "views": 206,
+    "views": 209,
     "likes": 3,
     "avgPercent": 23.63
+   },
+   {
+    "id": "EWhebXioXqQ",
+    "title": "The Sleep Effort Trap",
+    "views": 13,
+    "likes": 0
    },
    {
     "id": "EB1TXPXl1FI",
@@ -102,13 +103,6 @@
     "views": 10,
     "likes": 2,
     "avgPercent": 160.61
-   },
-   {
-    "id": "5AVFE-hB5Bo",
-    "title": "The Mug Paradox",
-    "views": 10,
-    "likes": 1,
-    "avgPercent": 41.17
    }
   ]
  }

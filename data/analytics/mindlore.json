@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-11",
+ "collected": "2026-11-12",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 375,
+   "views": 377,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 103,
@@ -109,9 +109,22 @@
    "published": "2026-11-10T23:01:33Z",
    "duration": "PT1M",
    "privacy": "public",
-   "views": 72,
+   "views": 75,
    "likes": 0,
    "comments": 0
+  },
+  {
+   "id": "V8InsNplcoc",
+   "title": "Why do you dream about falling? | Sigmund Freud",
+   "published": "2026-11-10T00:00:03Z",
+   "duration": "PT8M23S",
+   "privacy": "public",
+   "views": 75,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 261,
+   "avgPercent": 51.92,
+   "subsGained": 0
   },
   {
    "id": "qfwKKgBIkvI",
@@ -140,6 +153,19 @@
    "subsGained": 1
   },
   {
+   "id": "70hQFkZl71o",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 6",
+   "published": "2026-10-30T02:00:45Z",
+   "duration": "PT1M35S",
+   "privacy": "public",
+   "views": 55,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 21,
+   "avgPercent": 23.09,
+   "subsGained": 0
+  },
+  {
    "id": "_l6TVDbYKnE",
    "title": "Can intelligence vanish in groups?",
    "published": "2026-06-12T22:32:31Z",
@@ -150,19 +176,6 @@
    "comments": 0,
    "avgSeconds": 6,
    "avgPercent": 18.75,
-   "subsGained": 0
-  },
-  {
-   "id": "70hQFkZl71o",
-   "title": "The Expression of the Emotions in Man and Animals \u00b7 Habits and history \u00b7 Reading 6",
-   "published": "2026-10-30T02:00:45Z",
-   "duration": "PT1M35S",
-   "privacy": "public",
-   "views": 54,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 21,
-   "avgPercent": 23.09,
    "subsGained": 0
   },
   {
@@ -194,7 +207,7 @@
    "published": "2026-10-19T16:12:09Z",
    "duration": "PT1M31S",
    "privacy": "public",
-   "views": 50,
+   "views": 51,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 65,
@@ -202,17 +215,24 @@
    "subsGained": 0
   },
   {
-   "id": "V8InsNplcoc",
-   "title": "Why do you dream about falling? | Sigmund Freud",
-   "published": "2026-11-10T00:00:03Z",
-   "duration": "PT8M23S",
+   "id": "HwKLVKQylv8",
+   "title": "Your brain is wired to stop wanting things",
+   "published": "2026-11-12T03:01:54Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 50,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "hCqfKz63Fug",
+   "title": "Your Screen Hours",
+   "published": "2026-11-11T23:03:07Z",
+   "duration": "PT54S",
    "privacy": "public",
    "views": 49,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 261,
-   "avgPercent": 51.92,
-   "subsGained": 0
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "4qzeT6uxt3A",
@@ -233,8 +253,18 @@
    "published": "2026-11-10T18:03:38Z",
    "duration": "PT58S",
    "privacy": "public",
-   "views": 45,
+   "views": 46,
    "likes": 1,
+   "comments": 1
+  },
+  {
+   "id": "X9Z1e8QV6PQ",
+   "title": "Why Silence Heals Your Brain",
+   "published": "2026-11-11T03:02:00Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 44,
+   "likes": 0,
    "comments": 1
   },
   {
@@ -277,6 +307,16 @@
    "subsGained": 0
   },
   {
+   "id": "GPPdglOKqFc",
+   "title": "First Impression Myth",
+   "published": "2026-11-11T00:02:24Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 41,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "0toRAe_otrI",
    "title": "The Expression of the Emotions in Man and Animals \u00b7 Opposite postures \u00b7 Reading 2",
    "published": "2026-10-20T19:36:17Z",
@@ -290,36 +330,29 @@
    "subsGained": 0
   },
   {
-   "id": "GPPdglOKqFc",
-   "title": "First Impression Myth",
-   "published": "2026-11-11T00:02:24Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 38,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "X9Z1e8QV6PQ",
-   "title": "Why Silence Heals Your Brain",
-   "published": "2026-11-11T03:02:00Z",
-   "duration": "PT1M6S",
-   "privacy": "public",
-   "views": 36,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "NIb4cEtDf24",
    "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
    "published": "2026-06-18T04:47:26Z",
    "duration": "PT2M45S",
    "privacy": "public",
-   "views": 35,
+   "views": 38,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 62,
    "avgPercent": 38.16,
+   "subsGained": 0
+  },
+  {
+   "id": "V5cZxesdo6w",
+   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 6",
+   "published": "2026-10-30T22:01:13Z",
+   "duration": "PT1M34S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 12,
+   "avgPercent": 13.4,
    "subsGained": 0
   },
   {
@@ -360,6 +393,16 @@
    "avgSeconds": 14,
    "avgPercent": 25.28,
    "subsGained": 0
+  },
+  {
+   "id": "xlBpcfuR69U",
+   "title": "Crowds trigger ancient survival alarms",
+   "published": "2026-11-11T18:05:09Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 31,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "GzQK0sKMEEs",
@@ -746,17 +789,30 @@
    "subsGained": 0
   },
   {
-   "id": "-FD8LOO2XG4",
-   "title": "The Psychology Of Suggestion",
-   "published": "2026-10-31T22:01:42Z",
-   "duration": "PT49S",
+   "id": "---QS4XG_IY",
+   "title": "Psychology and Industrial Efficiency \u00b7 A task has conditions \u00b7 Reading 6",
+   "published": "2026-10-30T17:02:28Z",
+   "duration": "PT1M27S",
    "privacy": "public",
    "views": 20,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 19,
-   "avgPercent": 40.78,
+   "avgSeconds": 26,
+   "avgPercent": 30.84,
    "subsGained": 1
+  },
+  {
+   "id": "ufT1qz-t0TI",
+   "title": "Your brain can't truly multitask",
+   "published": "2026-11-10T03:01:09Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 27.310000000000002,
+   "subsGained": 0
   },
   {
    "id": "UbddSXgqSCk",
@@ -785,16 +841,16 @@
    "subsGained": 0
   },
   {
-   "id": "yza63zQvJqI",
-   "title": "How We Think",
-   "published": "2026-10-31T17:02:59Z",
-   "duration": "PT49S",
+   "id": "qQLRo3ZcWG8",
+   "title": "Can you train focus?",
+   "published": "2026-06-16T02:28:33Z",
+   "duration": "PT48S",
    "privacy": "public",
    "views": 18,
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
-   "avgSeconds": 10,
-   "avgPercent": 21.65,
+   "avgSeconds": 1374,
+   "avgPercent": 2862.61,
    "subsGained": 0
   },
   {
@@ -808,19 +864,6 @@
    "comments": 0,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "ufT1qz-t0TI",
-   "title": "Your brain can't truly multitask",
-   "published": "2026-11-10T03:01:09Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 17,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 27.310000000000002,
    "subsGained": 0
   },
   {
@@ -848,29 +891,6 @@
    "avgSeconds": 11,
    "avgPercent": 23.41,
    "subsGained": 0
-  },
-  {
-   "id": "qQLRo3ZcWG8",
-   "title": "Can you train focus?",
-   "published": "2026-06-16T02:28:33Z",
-   "duration": "PT48S",
-   "privacy": "public",
-   "views": 17,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 1374,
-   "avgPercent": 2862.61,
-   "subsGained": 0
-  },
-  {
-   "id": "lMXaBBTZsps",
-   "title": "Pain of Isolation",
-   "published": "2026-11-10T21:02:09Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "EPBe9hIGqbc",
@@ -906,6 +926,16 @@
    "privacy": "public",
    "views": 16,
    "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "lMXaBBTZsps",
+   "title": "Pain of Isolation",
+   "published": "2026-11-10T21:02:09Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
    "comments": 0
   },
   {
@@ -1205,6 +1235,16 @@
    "subsGained": 0
   },
   {
+   "id": "CKZhAbMI7Ek",
+   "title": "What your daily habits were really built from | William James",
+   "published": "2026-11-11T00:00:15Z",
+   "duration": "PT7M7S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "3sMZ0_phVOA",
    "title": "How do I influence others?",
    "published": "2026-10-28T05:26:10Z",
@@ -1322,6 +1362,16 @@
    "subsGained": 0
   },
   {
+   "id": "o3yiUpFfU8c",
+   "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
+   "published": "2026-11-11T00:00:30Z",
+   "duration": "PT9M14S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 1
+  },
+  {
    "id": "9lec7AhXEP8",
    "title": "Why dreams feel meaningful and strange at the same time | Freud",
    "published": "2026-11-05T00:00:17Z",
@@ -1391,36 +1441,6 @@
    "comments": 0
   },
   {
-   "id": "xlBpcfuR69U",
-   "title": "Crowds trigger ancient survival alarms",
-   "published": "2026-11-11T18:05:09Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "o3yiUpFfU8c",
-   "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
-   "published": "2026-11-11T00:00:30Z",
-   "duration": "PT9M14S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "CKZhAbMI7Ek",
-   "title": "What your daily habits were really built from | William James",
-   "published": "2026-11-11T00:00:15Z",
-   "duration": "PT7M7S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "lzNbwJLpncg",
    "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
    "published": "2026-11-06T00:00:34Z",
@@ -1471,6 +1491,16 @@
    "avgSeconds": 10,
    "avgPercent": 20.3,
    "subsGained": 0
+  },
+  {
+   "id": "Nl1SAPaJEuY",
+   "title": "Are children's dreams really simpler than ours? | Freud",
+   "published": "2026-11-10T00:00:05Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "4lZoI4B4VbE",
@@ -1543,16 +1573,6 @@
    "views": 1,
    "likes": 0,
    "comments": 0
-  },
-  {
-   "id": "Nl1SAPaJEuY",
-   "title": "Are children's dreams really simpler than ours? | Freud",
-   "published": "2026-11-10T00:00:05Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "P8P40XX9vbk",
