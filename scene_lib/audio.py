@@ -58,6 +58,19 @@ def splash(dur=0.5):
 def rumble(dur=1.0):
     t = _t(dur); return norm(noise(dur, 40, 180) * np.sin(np.pi * t / dur))
 
+def hum(dur=2.0, f=92):
+    t = _t(dur); x = sum(np.sin(2 * np.pi * f * k * t) / k for k in (1, 2, 3, 4, 6)) * (0.8 + 0.2 * np.sin(2 * np.pi * 23 * t))
+    return norm(x * np.minimum(1, t * 4) * np.minimum(1, (dur - t) * 3))
+def flow(dur=2.0):
+    t = _t(dur); return norm(noise(dur, 500, 5200) * (0.75 + 0.25 * np.sin(2 * np.pi * 3.1 * t) * np.sin(2 * np.pi * 0.7 * t + 1)) * np.minimum(1, t * 5) * np.minimum(1, (dur - t) * 4))
+def spray(dur=2.0):
+    t = _t(dur); return norm(noise(dur, 2500, 10000) * (0.8 + 0.2 * np.sin(2 * np.pi * 9 * t)) * np.minimum(1, t * 6) * np.minimum(1, (dur - t) * 4))
+def powerdown(dur=1.1):
+    t = _t(dur); f = 420 * np.exp(-t * 3.2) + 40; return norm(np.sign(np.sin(2 * np.pi * np.cumsum(f) / SR)) * 0.4 * np.exp(-t * 1.5) + np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 1.5))
+
+SFX = {'slice': slice_, 'whump': whump, 'tick': tick, 'pop': pop, 'zip': zip_, 'thunk': thunk, 'click': click, 'snip': snip, 'whoosh': whoosh, 'chime': chime, 'sparkle': sparkle,
+       'splash': splash, 'rumble': rumble, 'hum': hum, 'flow': flow, 'spray': spray, 'powerdown': powerdown}
+
 class Track:
     def __init__(self, T): self.T = T; self.buf = np.zeros(int(T * SR))
     def add(self, t, x, gain=1.0):
