@@ -1,0 +1,27 @@
+name: ntfy-alert
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+permissions:
+  contents: write
+  issues: read
+concurrency:
+  group: ntfy-alert
+  cancel-in-progress: false
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for new videos waiting and ping the phone
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python3 ntfy_alert.py
+      - name: Save what has been seen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add publish/ntfy-seen.json || true
+          git diff --cached --quiet || (git commit -m "ntfy: seen review queue" && git push)
