@@ -29,32 +29,32 @@
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 4,
-   "last": 20
+   "uses": 5,
+   "last": 26
   },
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 4,
-   "last": 21
+   "uses": 5,
+   "last": 27
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 4,
-   "last": 22
+   "uses": 5,
+   "last": 28
   },
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 4,
-   "last": 23
+   "uses": 5,
+   "last": 29
   },
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 4,
-   "last": 24
+   "uses": 5,
+   "last": 30
   }
  ],
  "catch": {
@@ -345,6 +345,66 @@
    "milestone": false,
    "season": 1,
    "date": "2026-11-10"
+  },
+  {
+   "n": 22,
+   "kind": "short",
+   "id": "first-day-detective-panic",
+   "title": "How Detective Leo Handled First Day Nerves \ud83d\udd75\ufe0f\u200d\u2642\ufe0f",
+   "concept": "FIRST DAY INVESTIGATION",
+   "gag": "minute",
+   "callback": true,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-12"
+  },
+  {
+   "n": 23,
+   "kind": "short",
+   "id": "stapler-rage-war",
+   "title": "Your Stapler Hates You \ud83d\udd87\ufe0f",
+   "concept": "STAPLER RAGE WAR",
+   "gag": "gerald",
+   "callback": false,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-12"
+  },
+  {
+   "n": 24,
+   "kind": "short",
+   "id": "instant-reply-demon",
+   "title": "Why Fast Texting Makes You A Demon \ud83d\udc7b",
+   "concept": "INSTANT REPLY PANIC",
+   "gag": "greg",
+   "callback": false,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-12"
+  },
+  {
+   "n": 25,
+   "kind": "short",
+   "id": "dinner-dilemma",
+   "title": "How Dinner Turns Crazy \ud83c\udf72",
+   "concept": "DINNER DRAMA",
+   "gag": "dev",
+   "callback": true,
+   "milestone": true,
+   "season": 3,
+   "date": "2026-11-12"
+  },
+  {
+   "n": 26,
+   "kind": "short",
+   "id": "pizza-shield-war",
+   "title": "Why Leo Is My Living Pizza Shield \ud83c\udf55",
+   "concept": "PIZZA SHIELD WAR",
+   "gag": "scoreboard",
+   "callback": true,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-12"
   }
  ]
 }
