@@ -35,6 +35,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          cp out/*.work/log.txt out/kaggle-log.txt 2>/dev/null || true; cp out/*.work/plan.json out/plan.json 2>/dev/null || true; cp out/*.work/pic_0[0-5].png out/ 2>/dev/null || true
+          mkdir -p out; cp out/*.work/log.txt out/kaggle-log.txt 2>/dev/null || true
+          files=(); for f in out/*; do [ -f "$f" ] && files+=("$f"); done
+          echo "attaching: ${files[*]}"
           gh release delete storyfast -y --cleanup-tag || true
-          gh release create storyfast out/*.mp4 out/*.txt out/*.json out/*.png out/build-log.txt --title "ShelfMade story-art FAST-CUT TEST (not posted)" --notes "test only" --prerelease
+          gh release create storyfast "${files[@]}" --title "ShelfMade FAST-CUT TEST (not posted)" --notes "test only, build log attached" --prerelease
