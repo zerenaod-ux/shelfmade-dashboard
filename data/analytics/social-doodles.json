@@ -1,6 +1,6 @@
 {
  "brand": "doodles",
- "collected": "2026-11-12T13:44:31Z",
+ "collected": "2026-11-12T19:12:51Z",
  "more": true,
  "posts": [
   {
@@ -443,9 +443,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/5Czrci00ZPQ",
+   "sent": "2026-11-12T18:04:45.499Z",
    "text": "The 40-Minute Pizza Call | Leo & Mia #9\n\nEver rehearse a five-second phone call five times in your head? Here ",
    "views": 0,
    "likes": 0,
@@ -457,13 +457,13 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-08T13:18:31.119Z"
+   "updated": "2026-11-12T18:07:12.731Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfpqZOjih9z/",
+   "sent": "2026-11-12T18:09:17.427Z",
    "text": "The 40-Minute Pizza Call | Leo & Mia #9\n\nEver rehearse a five-second phone call five times in your head? Here ",
    "views": null,
    "likes": null,

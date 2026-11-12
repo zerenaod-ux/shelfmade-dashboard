@@ -1,6 +1,6 @@
 {
  "brand": "mindlore",
- "collected": "2026-11-12T13:44:30Z",
+ "collected": "2026-11-12T19:12:51Z",
  "more": true,
  "posts": [
   {
@@ -759,9 +759,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfpqTWPmTP8/",
+   "sent": "2026-11-12T18:08:03.421Z",
    "text": "Crowds trigger ancient survival alarms\n\nYou feel anxious walking through a crowded city square.\n\nEvidence: Max",
    "views": null,
    "likes": null,
@@ -829,9 +829,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/BzovLB6Cwok",
+   "sent": "2026-11-12T18:04:12.458Z",
    "text": "Your desk job steals ancient movement\n\nYou spend most of your day sitting at a desk.\n\nEvidence: Richard Lee (1",
    "views": 0,
    "likes": 0,
@@ -843,7 +843,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-09T20:31:59.597Z"
+   "updated": "2026-11-12T18:06:45.975Z"
   },
   {
    "platform": "youtube",

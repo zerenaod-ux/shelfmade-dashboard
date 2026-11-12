@@ -1,6 +1,6 @@
 {
  "brand": "shelfmade",
- "collected": "2026-11-12T13:44:29Z",
+ "collected": "2026-11-12T19:12:50Z",
  "more": true,
  "posts": [
   {
@@ -577,9 +577,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfpqPL_lYyf/",
+   "sent": "2026-11-12T18:08:25.378Z",
    "text": "Nobody warns you about Analects.\n\nThe Analects by Confucius\n\nNobody warns you about Analects.\n\nHow can a man c",
    "views": null,
    "likes": null,
@@ -611,9 +611,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/GdWx5nz-ltU",
+   "sent": "2026-11-12T18:04:51.747Z",
    "text": "Why does Meditations still matter?\n\nMeditations by Marcus Aurelius\n\nWhy does Meditations still matter?\n\nNature",
    "views": 0,
    "likes": 0,
@@ -625,7 +625,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-07T22:16:33.182Z"
+   "updated": "2026-11-12T18:07:12.227Z"
   },
   {
    "platform": "youtube",
