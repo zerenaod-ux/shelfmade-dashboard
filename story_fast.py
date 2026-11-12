@@ -22,17 +22,19 @@ def plan(book, author):
     return d
 
 def fetch_image(prompt, seed, path):
-    url = 'https://image.pollinations.ai/prompt/%s?width=%d&height=%d&nologo=true&seed=%d&model=flux' % (urllib.parse.quote(prompt), W, H, seed)
+    # free image service can be busy (503); try two models and more waits
+    models = ['flux', 'turbo', 'flux']
     last = ''
-    for k in range(5):
+    for k in range(7):
+        url = 'https://image.pollinations.ai/prompt/%s?width=%d&height=%d&nologo=true&seed=%d&model=%s' % (urllib.parse.quote(prompt), W, H, seed + k, models[k % 3])
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=120) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=150) as r:
                 data = r.read()
             if len(data) > 5000:
                 Path(path).write_bytes(data); return True
         except Exception as e:
             last = str(e)[:100]
-        time.sleep(6 + 6 * k)
+        time.sleep(10 + 8 * k)
     print('image failed:', last, flush=True); return False
 
 def sh(*a):
