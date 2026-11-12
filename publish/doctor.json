@@ -2,7 +2,8 @@
  "on": true,
  "attempts": {
   "mindlore-live-redo": 1,
-  "doodles": 2
+  "doodles": 2,
+  "blender-test": 1
  },
  "pending": [],
  "log": [
@@ -69,9 +70,13 @@
   {
    "t": "11-11 19:50Z",
    "msg": "doodles: no safe automatic fix found"
+  },
+  {
+   "t": "11-12 02:30Z",
+   "msg": "blender-test: no safe automatic fix found"
   }
  ],
- "at": "2026-11-12T00:37:43Z",
+ "at": "2026-11-12T02:30:09Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
