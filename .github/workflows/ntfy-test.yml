@@ -1,0 +1,19 @@
+name: ntfy-test
+on:
+  workflow_dispatch:
+  push:
+    paths: ['publish/ntfy-test.trigger']
+permissions:
+  contents: read
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test push
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then echo "NTFY_TOPIC secret is missing"; exit 1; fi
+          curl -fsS -H "Title: Content Engine" -H "Tags: white_check_mark" \
+            -d "Test: alerts are working. You will get a ping here when a video waits for you." \
+            "https://ntfy.sh/$NTFY_TOPIC" > /dev/null && echo "test push sent"
