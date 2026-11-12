@@ -1,0 +1,40 @@
+name: story-fast-test
+# TEST ONLY: builds a ShelfMade FAST-CUT sample Short (one picture per line) and attaches them to a prerelease. Nothing is posted.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['publish/story-fast.trigger']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu
+      - run: pip install --quiet pillow numpy edge-tts requests six python-slugify python-dateutil tqdm urllib3 certifi bleach protobuf text-unidecode kaggle
+      - name: Build samples
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          mkdir -p out
+          python story_fast.py "As a Man Thinketh" "James Allen" out/fast-manthinketh.mp4 || echo "FAILED 1"
+
+          ls -l out
+      - name: Attach to release
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp out/*.work/log.txt out/kaggle-log.txt 2>/dev/null || true; cp out/*.work/plan.json out/plan.json 2>/dev/null || true; cp out/*.work/pic_0[0-5].png out/ 2>/dev/null || true
+          gh release delete storyfast -y --cleanup-tag || true
+          gh release create storyfast out/*.mp4 out/*.txt out/*.json out/*.png --title "ShelfMade story-art FAST-CUT TEST (not posted)" --notes "test only" --prerelease
