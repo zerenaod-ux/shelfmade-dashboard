@@ -18,8 +18,8 @@ function camAt(t){let a=CAM[0],b=CAM[CAM.length-1];for(let k=0;k<CAM.length-1;k+
 const P=(x,y,z)=>[360+((x+KX*y)-cam.x)*cam.s,SCY-((z+KZ*y)-cam.z)*cam.s];
 function poly(pts){ctx.beginPath();pts.forEach((p,i)=>{const q=P(p[0],p[1],p[2]);i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])})}
 const STEPS=[[0.3,4.2,'1 · THE CUT'],[4.4,8.6,'2 · THE GAP'],[8.8,13.8,'3 · THE NEEDLE'],[14.0,18.6,'4 · THE KNOT'],[18.8,22.6,'5 · CLOSED'],[22.8,27.8,'6 · HEALING'],[28.0,33.4,'7 · STITCHES OUT']];
-const CAPS=[[0.3,4.2,['A deep cut splits','your skin wide open.']],[4.4,8.6,['The edges are too far apart','to heal by themselves.']],[8.8,13.8,['So a curved needle carries','a thread down one side','and up the other.']],
- [14.0,18.6,['Pull it tight, tie a knot,','and the edges press together.']],[18.8,22.6,['Stitch by stitch,','the wound is held shut.']],[22.8,27.8,['Now your body builds','new tissue across the gap.']],[28.0,33.4,['After a week or two,','the stitches come out.']]];
+const CAPS=[[0.3,4.2,['A deep cut splits','your skin wide open!']],[4.4,8.6,['The edges are too far apart','to heal by themselves.']],[8.8,13.8,['So a curved needle dives in','one side, and pops out','the other!']],
+ [14.0,18.6,['Pull it tight, tie a knot,','and snap! The edges','lock together.']],[18.8,22.6,['Stitch, by stitch, by stitch.','The wound is sealed shut!']],[22.8,27.8,['Now your body goes to work,','building new tissue','across the gap.']],[28.0,33.4,['A week or two later, snip!','The stitches come out.']]];
 
 /* ---- precomputed art ---- */
 const lob=[];for(let k=0;k<150;k++)lob.push({u:R(),v:R(),r:9+R()*10,sh:R()});
