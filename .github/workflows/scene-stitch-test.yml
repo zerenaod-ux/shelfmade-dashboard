@@ -1,0 +1,37 @@
+name: scene-stitch-test
+# TEST ONLY: renders the stitches scene (our own drawing and script, one continuous shot, natural voice) and attaches it to a prerelease. Nothing is posted.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['publish/scene-stitch.trigger']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --quiet numpy imageio-ffmpeg edge-tts
+      - name: Render the scene
+        working-directory: scene_stitch
+        run: |
+          npm init -y > /dev/null
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm install --silent playwright@1.49.1
+          CHROME_CHANNEL=chrome node render.js stitch.html 1005 || (npx playwright install chromium && node render.js stitch.html 1005)
+          python3 assemble.py
+      - name: Attach to release
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          files=(); for f in scene_stitch/*.mp4 scene_stitch/voice-log.txt; do [ -f "$f" ] && files+=("$f"); done
+          echo "attaching: ${files[*]}"
+          gh release delete scenestitch -y --cleanup-tag || true
+          gh release create scenestitch "${files[@]}" --title "Stitches scene TEST (not posted)" --notes "test only" --prerelease

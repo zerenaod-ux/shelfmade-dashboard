@@ -1,0 +1,113 @@
+<!doctype html><html><body style="margin:0;background:#000"><canvas id="c" width="720" height="1280"></canvas>
+<script>
+'use strict';
+/* ORIGINAL scene (our own drawing and script): how stitches close a cut. One continuous shot of a block of skin. Test only. */
+const W=720,H=1280,FPS=30,SCY=790,TOTAL=33.5;
+const cv=document.getElementById('c'),ctx=cv.getContext('2d');
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+let R=rng(5);
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),lerp=(a,b,k)=>a+(b-a)*k,sm=k=>{k=clamp(k,0,1);return k*k*(3-2*k)},D2=Math.PI/180;
+const XW=170,YD=320,ZB=250,KX=0.42,KZ=0.36,ZE=-14,ZD=-112,VD=70,WMAX=20,CUTL=262;
+const YS=[0,58,116,174,228],RN=30,ZC=-8,E=Math.sqrt(RN*RN-ZC*ZC),A_IN=180-Math.asin(-ZC/RN)/D2,A_OUT=360+Math.asin(-ZC/RN)/D2;
+// stitch timing: [pass0,pass1,pull0,pull1,knot0,knot1,remove]
+const ST=[[9.4,13.4,14.2,15.2,15.2,15.9,28.7]];for(let k=1;k<5;k++){const a=17.6+(k-1)*1.15;ST.push([a,a+0.65,a+0.65,a+0.95,a+0.95,a+1.15,28.7+k*0.62])}
+const HEAL0=23.0,HEAL1=27.6;
+let cam={x:67,z:-67,s:1.35};
+const CAM=[[0,67,-67,1.35],[1.0,67,-67,1.4],[4.2,45,-30,1.9],[8.4,12,-22,2.6],[9.3,0,-24,3.0],[16.4,0,-22,3.0],[18.3,46,12,2.0],[22.4,52,16,2.0],[23.7,0,-36,3.4],[27.5,0,-36,3.4],[29.0,48,10,1.9],[33.5,62,-34,1.5]];
+function camAt(t){let a=CAM[0],b=CAM[CAM.length-1];for(let k=0;k<CAM.length-1;k++)if(t>=CAM[k][0]&&t<=CAM[k+1][0]){a=CAM[k];b=CAM[k+1];break}const k=sm((t-a[0])/Math.max(1e-6,b[0]-a[0]));return {x:lerp(a[1],b[1],k),z:lerp(a[2],b[2],k),s:lerp(a[3],b[3],k)}}
+const P=(x,y,z)=>[360+((x+KX*y)-cam.x)*cam.s,SCY-((z+KZ*y)-cam.z)*cam.s];
+function poly(pts){ctx.beginPath();pts.forEach((p,i)=>{const q=P(p[0],p[1],p[2]);i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])})}
+const STEPS=[[0.3,4.2,'1 · THE CUT'],[4.4,8.6,'2 · THE GAP'],[8.8,13.8,'3 · THE NEEDLE'],[14.0,18.6,'4 · THE KNOT'],[18.8,22.6,'5 · CLOSED'],[22.8,27.8,'6 · HEALING'],[28.0,33.4,'7 · STITCHES OUT']];
+const CAPS=[[0.3,4.2,['A deep cut splits','your skin wide open.']],[4.4,8.6,['The edges are too far apart','to heal by themselves.']],[8.8,13.8,['So a curved needle carries','a thread down one side','and up the other.']],
+ [14.0,18.6,['Pull it tight, tie a knot,','and the edges press together.']],[18.8,22.6,['Stitch by stitch,','the wound is held shut.']],[22.8,27.8,['Now your body builds','new tissue across the gap.']],[28.0,33.4,['After a week or two,','the stitches come out.']]];
+
+/* ---- precomputed art ---- */
+const lob=[];for(let k=0;k<150;k++)lob.push({u:R(),v:R(),r:9+R()*10,sh:R()});
+const crease=[];for(let k=0;k<120;k++){const x=-XW+R()*2*XW,y=R()*YD;crease.push({x,y,dx:8+R()*16,dy:(R()-.5)*14})}
+const hairs=[];for(let k=0;k<30;k++){const x=-XW+12+R()*(2*XW-24),y=14+R()*(YD-28);if(Math.abs(x)<52&&y<CUTL+20)continue;hairs.push({x,y,l:9+R()*9,b:(R()-.5)*8})}
+const cells=[];for(let k=0;k<22;k++)cells.push({side:k%2?1:-1,z:-4-R()*62,d:26+R()*46,ph:R()});
+const bok=[];for(let k=0;k<14;k++)bok.push({x:R()*W,y:R()*H,r:40+R()*110,a:0.05+R()*0.07,sp:R()*6});
+
+/* ---- wound state ---- */
+function wopen(t){const k=clamp((t-1.6)/1.5,0,1);if(k<=0)return 0;const c1=1.70158,c3=c1+1,x=k-1;return WMAX*(1+c3*x*x*x+c1*x*x)}
+function pullK(k,t){return sm((t-ST[k][2])/(ST[k][3]-ST[k][2]))}
+function healP(t){return clamp((t-HEAL0)/(HEAL1-HEAL0),0,1)}
+function wAt(y,t){if(y>CUTL)return 0;let w=wopen(t)*Math.sqrt(Math.max(0,1-(y/CUTL)*(y/CUTL)));for(let k=0;k<5;k++){const c=pullK(k,t);if(c>0)w*=1-0.985*c*Math.exp(-Math.pow((y-YS[k])/48,2))}
+  const all=pullK(4,t);return w*(1-0.9*all)}
+function wLocalOpen(y){return WMAX*Math.sqrt(Math.max(0,1-(y/CUTL)*(y/CUTL)))}
+
+/* ---- drawing ---- */
+function drawBg(t){let g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#1f6f8f');g.addColorStop(0.3,'#7fc3cf');g.addColorStop(0.62,'#e4f3f1');g.addColorStop(1,'#bfe0e4');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  for(const b of bok){ctx.fillStyle='rgba(255,255,255,'+b.a+')';ctx.beginPath();ctx.arc(b.x+18*Math.sin(t*0.3+b.sp),b.y+14*Math.cos(t*0.25+b.sp),b.r,0,7);ctx.fill()}
+  const c=P(KX*YD/2,YD/2,-ZB);g=ctx.createRadialGradient(c[0],c[1]+30*cam.s,10,c[0],c[1]+30*cam.s,330*cam.s);g.addColorStop(0,'rgba(20,60,70,0.28)');g.addColorStop(1,'rgba(20,60,70,0)');ctx.fillStyle=g;ctx.save();ctx.translate(0,c[1]+30*cam.s);ctx.scale(1,0.32);ctx.translate(0,-(c[1]+30*cam.s));ctx.fillRect(0,0,W,H*3);ctx.restore()}
+function rightFace(){const x=XW;const lay=[[0,ZE,'#e2a988'],[ZE,ZD,'#d9776f'],[ZD,-ZB,'#e3bb58']];for(const [z1,z0,col] of lay){poly([[x,0,z1],[x,YD,z1],[x,YD,z0],[x,0,z0]]);ctx.fillStyle=col;ctx.fill()}
+  ctx.save();poly([[x,0,ZD],[x,YD,ZD],[x,YD,-ZB],[x,0,-ZB]]);ctx.clip();for(const l of lob){const q=P(x,l.u*YD,ZD-l.v*(ZB+ZD)*1);ctx.fillStyle='rgba(240,205,105,0.55)';ctx.beginPath();ctx.ellipse(q[0],q[1],l.r*0.55*cam.s,l.r*cam.s,0,0,7);ctx.fill()}ctx.restore()}
+function frontFace(t){
+  const N=40,top=[],ep=[],de=[];for(let i=0;i<=N;i++){const x=-XW+2*XW*i/N;top.push([x,0,0]);ep.push([x,0,ZE+2.5*Math.sin(x*0.33)]);de.push([x,0,ZD+5*Math.sin(x*0.07)+3*Math.sin(x*0.19)])}
+  poly(de.concat([[XW,0,-ZB],[-XW,0,-ZB]]));ctx.fillStyle='#f5d472';ctx.fill();
+  ctx.save();ctx.clip();for(const l of lob){const q=P(-XW+l.u*2*XW,0,ZD-8-l.v*(ZB+ZD-10));const g=ctx.createRadialGradient(q[0]-l.r*0.3*cam.s,q[1]-l.r*0.3*cam.s,1,q[0],q[1],l.r*cam.s);g.addColorStop(0,'#fff0b0');g.addColorStop(1,'#eebf55');ctx.fillStyle=g;ctx.beginPath();ctx.arc(q[0],q[1],l.r*cam.s,0,7);ctx.fill();ctx.strokeStyle='rgba(190,140,40,0.35)';ctx.lineWidth=1;ctx.stroke()}ctx.restore();
+  poly(ep.concat(de.slice().reverse()));let a=P(0,0,ZE),b=P(0,0,ZD);let g=ctx.createLinearGradient(0,a[1],0,b[1]);g.addColorStop(0,'#f3a096');g.addColorStop(1,'#e27f78');ctx.fillStyle=g;ctx.fill();
+  for(const [zz,col,ph] of [[-84,'#c9302c',0],[-96,'#3b6fc4',1.7]]){ctx.beginPath();for(let i=0;i<=N;i++){const x=-XW+2*XW*i/N,q=P(x,0,zz+5*Math.sin(x*0.05+ph)+2*Math.sin(x*0.17+ph));i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])}ctx.strokeStyle=col;ctx.lineWidth=2.6*cam.s/1.6;ctx.stroke()}
+  poly(top.concat(ep.slice().reverse()));ctx.fillStyle='#f6c7a6';ctx.fill();
+  // the cut (V) on the front face
+  const wf=wAt(0,t),hp=healP(t);
+  if(wopen(t)>0){if(wf>0.6){poly([[-wf,0,0.5],[0,0,-VD],[wf,0,0.5]]);a=P(0,0,0);b=P(0,0,-VD);g=ctx.createLinearGradient(0,a[1],0,b[1]);g.addColorStop(0,'#8a1a1e');g.addColorStop(1,'#5a0d12');ctx.fillStyle=g;ctx.fill();ctx.strokeStyle='rgba(255,170,160,0.55)';ctx.lineWidth=1.4;ctx.stroke()}
+    else{const z1=-VD,zh=lerp(-VD,0,hp);a=P(0,0,0);b=P(0,0,z1);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.strokeStyle='#8a1a1e';ctx.lineWidth=Math.max(1.2,2.2*cam.s/2);ctx.stroke();
+      if(hp>0){const c=P(0,0,zh);ctx.beginPath();ctx.moveTo(b[0],b[1]);ctx.lineTo(c[0],c[1]);ctx.strokeStyle='#ffd3c4';ctx.lineWidth=Math.max(2,3.4*cam.s/2);ctx.stroke();
+        for(const ce of cells){const arrive=clamp((hp*1.25-(-ce.z/VD)*0.75)/0.3,0,1);if(arrive<=0)continue;const x=ce.side*lerp(ce.d,2.5,sm(arrive)),q=P(x,0,ce.z+1.5*Math.sin(t*6+ce.ph*9));
+          if(arrive<1){ctx.fillStyle='#fff3da';ctx.strokeStyle='rgba(150,90,60,0.7)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(q[0],q[1],2.1*cam.s,0,7);ctx.fill();ctx.stroke()}
+          else{const l=P(-4.5,0,ce.z),r=P(4.5,0,ce.z);ctx.beginPath();ctx.moveTo(l[0],l[1]);ctx.lineTo(r[0],r[1]);ctx.strokeStyle='rgba(255,236,224,0.95)';ctx.lineWidth=1.3*cam.s/2;ctx.stroke()}}}}}
+  poly([[-XW,0,0],[XW,0,0],[XW,0,-ZB],[-XW,0,-ZB]]);ctx.strokeStyle='rgba(90,40,30,0.35)';ctx.lineWidth=1.5;ctx.stroke()}
+function topFace(t){
+  poly([[-XW,0,0],[XW,0,0],[XW,YD,0],[-XW,YD,0]]);const a=P(0,0,0),b=P(0,YD,0);const g=ctx.createLinearGradient(a[0],a[1],b[0],b[1]);g.addColorStop(0,'#f9d3b6');g.addColorStop(1,'#f1bf9d');ctx.fillStyle=g;ctx.fill();
+  ctx.save();ctx.clip();ctx.strokeStyle='rgba(176,110,80,0.20)';ctx.lineWidth=1.2;for(const c of crease){const p=P(c.x,c.y,0),q=P(c.x+c.dx,c.y+c.dy,0);ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);ctx.stroke()}
+  const hp=healP(t),wo=wopen(t);
+  if(wo>0){const red=(1-0.85*hp);const L=[],Rr=[],C=[];for(let y=0;y<=CUTL;y+=6){const w=wAt(y,t);L.push([-w,y,0]);Rr.push([w,y,0]);C.push([0,y,0])}
+    ctx.beginPath();C.forEach((p,i)=>{const q=P(p[0],p[1],p[2]);i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])});ctx.strokeStyle='rgba(225,70,60,'+0.20*red+')';ctx.lineWidth=46*cam.s/1.6;ctx.lineCap='round';ctx.stroke();ctx.strokeStyle='rgba(225,60,50,'+0.22*red+')';ctx.lineWidth=20*cam.s/1.6;ctx.stroke();
+    poly(L.concat(Rr.slice().reverse()));ctx.fillStyle='#74141a';ctx.fill();
+    poly(L);ctx.strokeStyle=hp>0.95?'#fbe6da':'rgba(150,40,40,'+(0.9-0.5*hp)+')';ctx.lineWidth=1.8;ctx.stroke();poly(Rr);ctx.stroke();
+    if(hp>0){poly(C);ctx.strokeStyle='rgba(255,226,212,'+hp+')';ctx.lineWidth=2.4*cam.s/1.6;ctx.stroke()}}
+  if(t>1.1&&t<1.75){const k=(t-1.1)/0.65,y=lerp(CUTL,0,k),p=P(0,y,1),q=P(0,Math.min(CUTL,y+46),1);ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);ctx.strokeStyle='rgba(255,255,255,0.95)';ctx.lineWidth=4;ctx.stroke();const s=P(0,y,1);ctx.fillStyle='rgba(255,255,255,0.9)';ctx.beginPath();ctx.arc(s[0],s[1],6,0,7);ctx.fill()}
+  ctx.restore();
+  ctx.strokeStyle='rgba(70,45,35,0.75)';ctx.lineWidth=1.3;for(const hr of hairs){const p=P(hr.x,hr.y,0),q=P(hr.x+hr.b,hr.y,hr.l);ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.quadraticCurveTo(p[0],(p[1]+q[1])/2,q[0],q[1]);ctx.stroke()}
+  poly([[-XW,0,0],[XW,0,0],[XW,YD,0],[-XW,YD,0]]);ctx.strokeStyle='rgba(90,40,30,0.35)';ctx.lineWidth=1.5;ctx.closePath();ctx.stroke()}
+function strokeThread(pts,alpha){if(pts.length<2)return;ctx.lineJoin='round';ctx.lineCap='round';ctx.beginPath();pts.forEach((p,i)=>{const q=P(p[0],p[1],p[2]);i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])});
+  ctx.strokeStyle='rgba(10,25,70,'+0.55*alpha+')';ctx.lineWidth=3.2*cam.s/2;ctx.stroke();ctx.strokeStyle='rgba(45,95,200,'+alpha+')';ctx.lineWidth=1.9*cam.s/2;ctx.stroke()}
+function arcPts(y,rx,a0,a1,n){const o=[];for(let i=0;i<=n;i++){const a=lerp(a0,a1,i/n)*D2;o.push([rx*Math.cos(a),y,ZC+RN*Math.sin(a)])}return o}
+function curve(p,q,sag,n){const o=[];for(let i=0;i<=n;i++){const k=i/n;o.push([lerp(p[0],q[0],k),lerp(p[1],q[1],k),lerp(p[2],q[2],k)-sag*Math.sin(Math.PI*k)])}return o}
+function drawStitch(k,t){const s=ST[k],y=YS[k];if(t<s[0]-0.25)return;const front=k===0;
+  const out=sm((t-s[6])/0.55);if(out>=1)return;const al=1-out,off=[20*out,0,34*out];
+  const c=pullK(k,t),xe=E-wLocalOpen(y)*c*0.985,rx=RN*xe/E;const kn=sm((t-s[4])/(s[5]-s[4]));
+  const sh=p=>[p[0]+off[0],p[1],p[2]+off[2]];
+  if(t<s[1]){ // needle passing
+    const kp=clamp((t-s[0])/(s[1]-s[0]),0,1),ke=kp<0.5?2*kp*kp:1-Math.pow(-2*kp+2,2)/2,tip=lerp(128,548,ke),tail=tip-150,away=sm((ke-0.6)/0.4);
+    const F=[-74,y,50];let th=[];
+    if(tail<=A_IN){const tp=arcPts(y,RN,tail,tail,0)[0];th=curve(F,tp,-10,10)}
+    else{const ent=arcPts(y,RN,A_IN,A_IN,0)[0];th=curve(F,ent,-12,10);const upto=Math.min(tail,A_OUT);const under=arcPts(y,RN,A_IN,upto,18);if(front)th=th.concat(under);else{strokeThread(th,1);th=[]}
+      if(tail>A_OUT){const ex=arcPts(y,RN,A_OUT,A_OUT,0)[0],tp=arcPts(y,RN,tail,tail,0)[0];const seg=[ex,[tp[0]+away*40,y,tp[2]+away*46]];if(front)th=th.concat(seg);else strokeThread(seg,1)}}
+    strokeThread(th,1);
+    // the needle (only the part above the skin shows for stitches further back)
+    const np=[];for(let i=0;i<=24;i++){const a=lerp(tail,tip,i/24)*D2;np.push([RN*Math.cos(a)+away*40,y,ZC+RN*Math.sin(a)+away*46])}
+    ctx.lineCap='round';ctx.lineJoin='round';let seg=[];const flush=()=>{if(seg.length>1){ctx.beginPath();seg.forEach((p,i)=>{const q=P(p[0],p[1],p[2]);i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])});ctx.globalAlpha=1-away*0.9;ctx.strokeStyle='#39424c';ctx.lineWidth=5.6*cam.s/2;ctx.stroke();ctx.strokeStyle='#e8eef3';ctx.lineWidth=2.8*cam.s/2;ctx.stroke();ctx.globalAlpha=1}seg=[]};
+    for(const p of np){if(front||p[2]>=-0.5)seg.push(p);else flush()}flush();
+    return}
+  // after the pass: thread stays; pull tight; knot
+  const under=arcPts(y,rx,A_IN,A_OUT,22).map(sh),ent=sh([-xe,y,0]),ex=sh([xe,y,0]);
+  if(front)strokeThread(under,al);
+  if(kn<1){const F=[lerp(-74,-xe-12,c),y,lerp(50,13,c)],Hd=[lerp(70,58,c),y,lerp(60,66,c)];strokeThread(curve(F,ent,-8*(1-c),8),al*(1-kn));strokeThread(curve(ex,Hd,6*(1-c),8),al*(1-kn))}
+  if(kn>0){const over=[];for(let i=0;i<=10;i++){const q=i/10;over.push(sh([lerp(-xe,xe,q),y,2.2*Math.sin(Math.PI*q)+0.6]))}strokeThread(over,al*kn);
+    const kx=xe*0.55,kp=P(kx+off[0],y,3+off[2]);ctx.globalAlpha=al*kn;ctx.fillStyle='#2d5fc8';ctx.strokeStyle='#0a1946';ctx.lineWidth=1;ctx.beginPath();ctx.arc(kp[0],kp[1],2.5*cam.s/2*1.3,0,7);ctx.fill();ctx.stroke();ctx.globalAlpha=1;
+    strokeThread([sh([kx,y,3]),sh([kx+7,y,10])],al*kn);strokeThread([sh([kx,y,3]),sh([kx+9,y,5])],al*kn)}
+  if(t>=s[6]&&t<s[6]+0.22){const q=P(-xe*0.3,y,4);ctx.fillStyle='rgba(255,255,255,'+(1-(t-s[6])/0.22)+')';ctx.beginPath();for(let i=0;i<8;i++){const a=i/8*Math.PI*2,r=i%2?5:14;ctx.lineTo(q[0]+Math.cos(a)*r*cam.s/2,q[1]+Math.sin(a)*r*cam.s/2)}ctx.fill()}
+}
+function overlay(t){
+  let g=ctx.createLinearGradient(0,0,0,430);g.addColorStop(0,'rgba(8,36,60,0.50)');g.addColorStop(1,'rgba(8,36,60,0)');ctx.fillStyle=g;ctx.fillRect(0,0,W,430);
+  g=ctx.createRadialGradient(360,640,430,360,640,880);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,20,30,0.30)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  const hp=healP(t);if(t>HEAL0-0.3&&t<HEAL1+0.5){const al=Math.min(sm((t-HEAL0+0.3)/0.3),sm((HEAL1+0.5-t)/0.3)),day=1+Math.floor(hp*9.99);ctx.globalAlpha=al;ctx.fillStyle='rgba(8,36,60,0.78)';ctx.beginPath();ctx.roundRect(250,1090,220,70,35);ctx.fill();ctx.fillStyle='#fff';ctx.font='800 38px "DejaVu Sans",Arial,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('DAY '+day,360,1127);ctx.globalAlpha=1}
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  for(const [a,b,lab] of STEPS){if(t<a||t>b)continue;const al=Math.min(sm((t-a)/0.3),sm((b-t)/0.25));ctx.globalAlpha=al;ctx.font='800 25px "DejaVu Sans",Arial,sans-serif';const tw=ctx.measureText(lab).width+44;ctx.fillStyle='rgba(255,255,255,0.22)';ctx.beginPath();ctx.roundRect(360-tw/2,104,tw,44,22);ctx.fill();ctx.strokeStyle='rgba(255,255,255,0.7)';ctx.lineWidth=2;ctx.stroke();ctx.fillStyle='#fff';ctx.fillText(lab,360,127);ctx.globalAlpha=1}
+  for(const [a,b,lines] of CAPS){if(t<a||t>b)continue;const kin=sm((t-a)/0.28),kout=sm((b-t)/0.22);ctx.globalAlpha=Math.min(kin,kout);let fs=54;ctx.font=`800 ${fs}px "DejaVu Sans",Arial,sans-serif`;const wm=Math.max(...lines.map(l=>ctx.measureText(l).width));if(wm>660){fs=Math.floor(fs*660/wm);ctx.font=`800 ${fs}px "DejaVu Sans",Arial,sans-serif`}
+    const y0=188+(1-kin)*16;lines.forEach((l,i)=>{const y=y0+i*fs*1.24+fs*0.5;ctx.lineJoin='round';ctx.strokeStyle='rgba(6,28,52,0.94)';ctx.lineWidth=11;ctx.strokeText(l,360,y);ctx.fillStyle='#fff';ctx.fillText(l,360,y)});ctx.globalAlpha=1}}
+function draw(t){cam=camAt(t);ctx.setTransform(1,0,0,1,0,0);drawBg(t);rightFace();frontFace(t);topFace(t);for(let k=4;k>=0;k--)drawStitch(k,t);overlay(t)}
+window.frame=function(f){draw(f/FPS);return cv.toDataURL('image/jpeg',0.93)};
+</script></body></html>
