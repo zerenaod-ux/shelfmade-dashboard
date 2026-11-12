@@ -1,24 +1,23 @@
 {
  "hot_themes": [
-  "Gen Z workplace burnout",
-  "The psychology of money and love",
-  "Overthinking and anxiety loops",
-  "The pain of being undervalued",
-  "Relatable friendship/social awkwardness",
-  "Hobbies vs. careers (the hedonic treadmill)"
+  "Overthinking and anxiety in everyday situations",
+  "Gen Z workplace struggles and remote work dynamics",
+  "Psychological value, status, and wealth perception",
+  "Bizarre real-world psychology experiments",
+  "Relatable relationship miscommunications"
  ],
  "hook_patterns": [
-  "Direct address calling out a specific modern identity (e.g., 'You are a Gen Z working 9-5')",
-  "Contrarian or provocative statement challenging a common belief (e.g., 'Money can't buy love')",
-  "Hyper-specific relatable scenario with an exaggerated emotional reaction"
+  "Direct POV addressing: 'You are a Gen Z working 9 to 5...'",
+  "Extreme exaggerations of universal cognitive flaws (e.g., overthinking taken to absurd levels)",
+  "Counter-intuitive facts/tricks: 'The secret trick X doesn't want you to know'"
  ],
  "ideas_for_us": [
-  "Best Friend 1 thinks they are indispensable at work; Best Friend 2 explains the 'Dunning-Kruger effect' and why they are actually easily replaceable, using a humorous 'cloning' animation.",
-  "A skit where Best Friend 1 tries to impress a date with expensive gifts; Best Friend 2 explains 'Limerence' and why the date only likes the gifts, not the person, using visual metaphors of receipt holders.",
-  "Best Friend 1 is spiraling over a minor text message delay; Best Friend 2 explains 'Cognitive Distortion' and 'Mind Reading' by visualizing the brain as a toxic overthinker character.",
-  "Best Friend 1 quits their passion project to make money but feels empty; Best Friend 2 explains the 'Endowment Effect' and 'Intrinsic vs. Extrinsic Motivation' by showing the hobby literally turning into a grey, boring robot."
+  "Friend A spiraling into an existential crisis over a 'k' text message, while Friend B uses cognitive behavioral therapy tricks to map out his absurd overthinking.",
+  "Friend A tries to act 'mysterious and high-value' at a house party based on a psychology article, but Friend B keeps exposing the pathetic reality behind his tactics.",
+  "Friend A complains about working from home in his pajamas, so Friend B explains the 'Enclothed Cognition' effect by forcing him into a hilarious mock-corporate routine.",
+  "Friend B explains the famous Baker-Baker Paradox to explain why Friend A can remember useless video game lore perfectly but constantly forgets his own girlfriend's name."
  ],
- "updated": "2026-11-09",
- "sample": 45,
- "top_vpd": 1697119
+ "updated": "2026-11-12",
+ "sample": 46,
+ "top_vpd": 753926
 }

@@ -1,43 +1,48 @@
 {
  "short": {
   "do_more": [
-   "Anchor titles directly in famous figures or famous foundational book names (e.g., Darwin, Freud/Psychoanalysis, William James) rather than generic self-help tropes.",
-   "Frame hooks around observable physical behaviors, body language, and non-verbal cues (e.g., facial expressions, blushing) that viewers can instantly visualize.",
-   "Use standard length (~42 seconds) content that allows enough runway to deliver actual book excerpts or intellectual substance, which correlates with high retention (>100% avgPercent).",
-   "Focus on intrigue and 'hidden knowledge' framing (e.g., 'The part of Psychology nobody mentions') to provoke curiosity."
+   "Focus hooks on universally relatable physical or emotional phenomena (e.g., blushing, facial expressions, feeling pain vs. sensation) rather than abstract philosophical theories.",
+   "Use authority-driven curiosity hooks naming specific historical figures, such as 'What warning did Darwin give?' or 'Listen to what M\u00fcnsterberg warned about.'",
+   "Keep Short durations tight (around 30 seconds) to drive completion rate and achieve over 100% average percentage viewed.",
+   "Use high-curiosity framing like 'The part of [Topic] nobody mentions' to trigger FOMO."
   ],
   "avoid": [
-   "Vague, generic open-ended question titles (e.g., 'Can thoughts shape reality?', 'Is charisma just a habit?'), which perform poorly across the board.",
-   "Overused self-help or pop-psychology clich\u00e9s (e.g., 'buy things you don't need to impress people'), which lead to 0% retention.",
-   "Emoji-heavy or overly modern text styling on historical psychology topics, as it fails to signal authentic substance."
+   "Avoid overly generic, passive questions that sound like textbook prompts (e.g., 'Can thoughts shape reality?' or 'Can the mind be measured?').",
+   "Avoid dry, plain book title uploads without a specific hook or intriguing angle.",
+   "Avoid abstract sociological concepts like eugenics or class consciousness that lack an immediate personal connection for the viewer."
   ],
-  "title_style": "Name-drop iconic historical figures or exact book titles while pairing them with a concrete physical phenomenon or a bold provocative claim.",
+  "title_style": "Winning titles frame public-domain psychology as an urgent warning, an overlooked secret, or a direct physical phenomenon using specific names (e.g., Darwin, M\u00fcnsterberg) or strong statements rather than weak, open-ended questions.",
   "next_tests": [
-   "Test standard length (~42s) vs tight length (~30s) while keeping the exact same Darwin/Emotions topic to isolate ideal duration.",
-   "Compare a direct authority hook ('What Darwin Discovered About Blushing') against a mystery hook ('The Hidden Reason We Blush') using identical audio voiceovers."
+   "Test 30-second vs. 45-second versions using the exact same 'warning/secret' hook template to verify if ultra-tight pacing consistently pushes retention past 100%.",
+   "Run a 3-part series titled 'The part of [Famous Psychologist] nobody mentions' covering Freud, James, and Le Bon to test format repeatability."
   ],
-  "n": 87,
-  "best_vpd": 26.95,
+  "n": 89,
+  "best_vpd": 22.71,
   "best_title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5"
  },
  "full": {
   "do_more": [
-   "Use author-centric and book-titled formats like 'Guided reading' or naming specific classic authors (e.g., Gustave Le Bon, Darwin, James) to establish clear context.",
-   "Focus topics on explicit observable behavior, physical emotional expression, and group dynamics rather than abstract conceptual questions.",
-   "Structure long-form content around structured readings or explicit chapter concepts that promise guided learning."
+   "Begin with a clear, curiosity\u2011driving question or bold claim within the first 5\u201110 seconds",
+   "Mention a recognizable figure, classic experiment, or everyday example to anchor the topic",
+   "Keep the hook segment tight \u2013 aim for ~30\u202fseconds of high\u2011energy intro before deep dive",
+   "Focus each script on one concrete psychological principle rather than multiple abstract ideas",
+   "Use vivid, emotionally resonant language that promises a practical insight"
   ],
   "avoid": [
-   "Vague, open-ended question titles that sound like generic blog posts (e.g., 'Do symbols drive social change?').",
-   "Serialized episode numbering without a strong standalone topic hook (e.g., 'Reading 6' without clear subject value)."
+   "Opening with vague philosophical musings or generic \u201cwhy\u201d questions that lack a hook",
+   "Long, wordy titles (>12 words) or titles without a clear benefit or recognizable name",
+   "Delaying the main hook beyond the first 30\u202fseconds",
+   "Heavy academic jargon without relatable examples"
   ],
-  "title_style": "Winning titles explicitly state the source book or classic author alongside a clear subject, using formats like 'Book Title \u00b7 Topic' or direct behavioral hooks mentioning specific thinkers.",
+  "title_style": "Start with a punchy, curiosity\u2011triggering question or bold claim, then add a recognizable name or concrete concept to signal the payoff",
   "next_tests": [
-   "Test framing a video around a famous named psychologist/author vs. framing the exact same topic as a general question.",
-   "Test adding structural subtitles (e.g., 'Guided Reading: [Topic]') to all long-form uploads to set explicit viewer expectations."
+   "A/B test titles that include a known thinker (e.g., \"Charles Darwin\") versus titles without a name",
+   "Create two script versions: one with a 30\u2011second tight hook and one with a 45\u2011second intro, compare VPD",
+   "Add a personal anecdote or vivid story in the first 20 seconds of the video and measure audience retention"
   ],
-  "n": 20,
-  "best_vpd": 2.63,
+  "n": 26,
+  "best_vpd": 1.96,
   "best_title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4"
  },
- "updated": "2026-11-09"
+ "updated": "2026-11-12"
 }

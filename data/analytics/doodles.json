@@ -11,12 +11,25 @@
    "published": "2026-11-03T18:04:42Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 209,
+   "views": 210,
    "likes": 3,
    "comments": 0,
    "avgSeconds": 15,
    "avgPercent": 23.63,
    "subsGained": 1
+  },
+  {
+   "id": "EB1TXPXl1FI",
+   "title": "The Planning Fallacy",
+   "published": "2026-10-29T22:01:42Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 35,
+   "avgPercent": 66.18,
+   "subsGained": 0
   },
   {
    "id": "EWhebXioXqQ",
@@ -27,19 +40,6 @@
    "views": 13,
    "likes": 0,
    "comments": 1
-  },
-  {
-   "id": "EB1TXPXl1FI",
-   "title": "The Planning Fallacy",
-   "published": "2026-10-29T22:01:42Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 13,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 35,
-   "avgPercent": 66.18,
-   "subsGained": 0
   },
   {
    "id": "Rqbov1l-rYw",

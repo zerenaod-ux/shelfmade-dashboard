@@ -1,48 +1,51 @@
 {
  "short": {
   "do_more": [
-   "Use direct, action-oriented quotes or provocative statements as title hooks (e.g., 'Know your enemy', 'You can turn over a new leaf every hour if you choose').",
-   "Focus topics heavily on conflict, strategy, personal control, and daily mental discipline (e.g., Sun Tzu, Stoicism, pessimism, shutting off mental steam).",
-   "Keep video length strictly around standard 40-42 second mark, as top performing videos yield high retention and re-watch loops (300%+ avgPercent) with structured quote analysis.",
-   "Target specific named authors or well-known classical texts in the first 3 seconds (e.g., Plato, Sun Tzu, Bacon)."
+   "Begin with a provocative question or bold claim in the first 3 seconds",
+   "Keep the runtime around 30\u202fseconds for maximum watch\u2011through",
+   "Use concise titles (\u22648 words) that hint at a secret or paradox",
+   "Deliver one clear takeaway backed by a public\u2011domain quote",
+   "Add a visual/text hook that mirrors the title\u2019s curiosity"
   ],
   "avoid": [
-   "Avoid generic or passive rhetorical questions as titles, such as 'Is faith rational?' or 'Can you be truly honest?'.",
-   "Stop using 'in 60 Seconds' formatting, book summary templates, or heavy emoji spam in titles which underperform across all metrics.",
-   "Avoid abstract, overly academic philosophical framing that lacks a direct personal application for the viewer."
+   "Long titles with emojis or \u201cin 60 seconds\u201d phrasing",
+   "Obscure references without an immediate hook",
+   "Videos longer than ~45\u202fseconds that drop watch percent",
+   "Overly generic statements that don\u2019t promise a specific insight"
   ],
-  "title_style": "Winning titles either state an intriguing, direct quote/instruction or name drop a famous historical figure with a clear warning/lesson.",
+  "title_style": "A short, curiosity\u2011driven question or bold claim that promises a surprising insight in seconds",
   "next_tests": [
-   "Test standard-length (~40s) shorts featuring high-aggression quotes from Marcus Aurelius using simple direct command titles vs. question titles.",
-   "Experiment with a 2-part format opening immediately with a shocking philosophical line from Nietzsche, skipping intro setup entirely."
+   "A/B test 30\u2011second vs 45\u2011second video lengths",
+   "Compare titles phrased as questions versus statements",
+   "Run two versions: one with emojis in the title and one without to measure impact"
   ],
-  "n": 118,
-  "best_vpd": 15.51,
-  "best_title": "Can truth unlock hidden peace?"
+  "n": 123,
+  "best_vpd": 14.17,
+  "best_title": "Studies In Pessimism"
  },
  "full": {
   "do_more": [
-   "Open with a tight 30\u2011second hook that poses a bold, curiosity\u2011driven question",
-   "Reference a well\u2011known book, concept, or philosopher in the title or early script",
-   "Deliver a clear, single takeaway within the first minute",
-   "Use a rapid\u2011fire pacing that keeps avg watch percent above 2%",
-   "End with a provocative call\u2011to\u2011action that invites sharing"
+   "Start with a curiosity\u2011driven question that flips a familiar belief",
+   "Keep the core hook under 30 seconds (tight) and expand to ~42 seconds for the full segment",
+   "Mention a recognizable concept or book title early to signal authority",
+   "Use concise, punchy titles (8 words or fewer) that pose a direct challenge",
+   "Maintain a fast\u2011paced, energetic delivery in the first minute"
   ],
   "avoid": [
-   "Generic statements or titles without a clear hook",
-   "Long introductory segments (>45\u202fs) that dilute curiosity",
-   "Titles that lack a question or contrast",
-   "No mention of recognizable sources or frameworks"
+   "Long, vague titles or intros that delay the hook",
+   "Overly broad or generic topics without a clear angle",
+   "Lengthy background before the main question",
+   "Using obscure references that don\u2019t instantly resonate"
   ],
-  "title_style": "Pose a concise, curiosity\u2011punch question that challenges a common belief and often cites a known book or concept",
+  "title_style": "Pose a bold, curiosity\u2011sparking question or contradiction that flips a familiar idea in under eight words",
   "next_tests": [
-   "Compare a 30\u2011second tight hook vs a 45\u2011second intro on identical topics",
-   "Add a known author/book name to the title and measure VPD lift",
-   "Swap \"What if\" phrasing for direct challenge questions (e.g., \"Does simplicity outweigh fancy appearances?\")"
+   "Compare performance of 30\u2011second tight intros vs 42\u2011second standard intros across the same topic",
+   "Add a known book or concept name in the title (e.g., \"| Nicomachean Ethics\") and measure VPD",
+   "Experiment with two hook phrasing styles: \"What if...\" vs \"Why...\" in otherwise identical videos"
   ],
-  "n": 13,
-  "best_vpd": 1.01,
+  "n": 16,
+  "best_vpd": 0.6,
   "best_title": "Does simplicity outweigh fancy appearances?"
  },
- "updated": "2026-11-09"
+ "updated": "2026-11-12"
 }

@@ -1,26 +1,23 @@
 {
  "short": {
   "do_more": [
-   "Lead with universal, high-stakes social anxiety (e.g., imposter syndrome, rejection fear) rather than niche economic or household concepts.",
-   "Use a 'dread/crash' opening hook: Start with the character in the peak moment of panic or failure, then rewind to explain the psychology.",
-   "Focus on 'internal state' psychology (how it feels) rather than 'external behavior' psychology (what to do), as emotional resonance drives shares.",
-   "Keep the narrative arc tight: Setup (anxiety) -> Twist (psychological insight) -> Punchline (relatable acceptance), ensuring the insight is the punchline."
+   "Lean into 'The Confidence Curve' energy: use titles that promise a specific, relatable psychological shift rather than a generic concept.",
+   "Use concrete, slightly absurd physical objects or scenarios (like a jacket or a clean room) as the visual anchor for the psychological idea.",
+   "Keep the average watch time high (aim for >50% retention) by ensuring the first 3 seconds show a distinct, funny visual action, not just a title card."
   ],
   "avoid": [
-   "Do not use titles that sound like self-help advice or listicles (e.g., 'Why Your Brain...', 'The Trap'); use noun-based, mysterious, or story-driven titles.",
-   "Avoid topics that require complex explanation or have low 'relatability factor' (e.g., IKEA assembly, soup, rest); stick to social and identity fears.",
-   "Do not repeat the 'Feather Duster Detour' style: avoid mundane, low-stakes physical props as the central metaphor for abstract concepts.",
-   "Avoid slow-burn openings where the psychological concept is named in the first 5 seconds; save the term for the reveal."
+   "Do not use the word 'Trap' or 'Spiral' in titles; this pattern correlates with the lowest performance and was explicitly rejected by the owner.",
+   "Avoid abstract, high-level academic concepts without a immediate, tangible visual gag (e.g., 'The IKEA Effect' underperformed compared to 'The Jacket He Never Wears').",
+   "Do not repeat the 'Leo & Mia #X' numbering in titles; the top performers did not use this format."
   ],
-  "title_style": "Use short, evocative noun phrases that imply a secret or hidden mechanism (e.g., 'The Confidence Curve') rather than descriptive sentences or 'How to' formats.",
+  "title_style": "Use 'The [Specific Object/Situation] [Noun]' structure that implies a hidden behavioral quirk, avoiding generic psychology terms.",
   "next_tests": [
-   "Test a 'POV' style title: 'POV: You Forgot Your Name in a Meeting' to target specific anxiety triggers.",
-   "Test a 'Villain' angle: Frame the psychological concept as an antagonist (e.g., 'The Brain\u2019s Saboteur') to increase narrative tension.",
-   "Test a 'Comparison' hook: Start with two characters making the same choice but having opposite psychological outcomes to highlight the concept."
+   "Test a 'Redundancy' hook: Start the video with Leo saying something obvious, then Mia physically demonstrates why it's wrong (visual-first).",
+   "Test a 'Time-Lapse' angle: Show Leo trying to do a simple task (like tying shoes) but the animation slows down to show the internal panic/confidence curve in real-time."
   ],
-  "n": 21,
-  "best_vpd": 33.09,
+  "n": 27,
+  "best_vpd": 23.46,
   "best_title": "The Confidence Curve"
  },
- "updated": "2026-11-09"
+ "updated": "2026-11-12"
 }
