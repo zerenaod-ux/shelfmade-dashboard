@@ -1,5 +1,7 @@
 name: social-stats
 on:
+  push:
+    paths: ['publish/social-stats.trigger']
   schedule:
     - cron: '50 11 * * *'
   workflow_dispatch:
