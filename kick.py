@@ -7,7 +7,7 @@ MAXLATE = 14 * 60
 JOBS = [  # workflow file, hour UTC, minute, weekdays (Mon=0..Sun=6) or None=daily
     ('radar.yml', 7, 7, None), ('doodles.yml', 7, 37, None), ('doodles-full.yml', 6, 40, (1, 4)),
     ('full-video.yml', 9, 10, (0, 2, 4, 6)), ('mindlore-2d.yml', 11, 20, (2, 5)),   # KICK2D: MindLore full video is 2D only
-    ('analytics.yml', 13, 30, None), ('first-comment.yml', 16, 17, None), ('daily-summary.yml', 14, 25, None), ('mindlore-story-short.yml', 13, 40, None), ('shelfmade-story-short.yml', 14, 10, None), ('learn.yml', 14, 12, (0, 3)),
+    ('analytics.yml', 13, 30, None), ('ml-scripts.yml', 7, 30, None), ('ml-scripts.yml', 13, 30, None), ('ml-scripts.yml', 19, 30, None), ('sm-scripts.yml', 8, 50, None), ('sm-scripts.yml', 14, 50, None), ('sm-scripts.yml', 20, 50, None), ('first-comment.yml', 16, 17, None), ('daily-summary.yml', 14, 25, None), ('mindlore-story-short.yml', 13, 40, None), ('shelfmade-story-short.yml', 14, 10, None), ('learn.yml', 14, 12, (0, 3)),
 ]
 def sh(*a):
     return subprocess.run(a, capture_output=True, text=True, timeout=60)
