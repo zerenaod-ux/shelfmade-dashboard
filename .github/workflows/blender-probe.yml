@@ -19,7 +19,7 @@ jobs:
       - name: Render on the free GPU
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-          K_NAME: shelf-probe
+          K_NAME: shelf-probe2
           K_FILE: blender_probe_kernel.py
           K_PFX: probe-
         run: python shelf_cmp.py

@@ -8,8 +8,8 @@ def sh(c):
     r = subprocess.run(c, shell=True, capture_output=True, text=True); return (r.stdout + r.stderr)
 t0 = time.time()
 log(sh('nvidia-smi -L')[:200])
-log(sh('cd /kaggle/working && wget -q https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender-4.2.3-linux-x64.tar.xz && ls')[-300:])
-BL = '/kaggle/working/blender-4.2.3-linux-x64/blender'
+log(sh('mkdir -p /tmp/bl && cd /tmp/bl && wget -q https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender-4.2.3-linux-x64.tar.xz && ls')[-300:])
+BL = '/tmp/bl/blender-4.2.3-linux-x64/blender'
 SCENE = r'''
 import bpy, math, random, time
 random.seed(4)
