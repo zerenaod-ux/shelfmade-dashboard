@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T21:27:37+00:00",
+ "at": "2026-11-12T18:04:02+00:00",
  "level": "warn",
  "checks": [
   {
@@ -9,18 +9,18 @@
   },
   {
    "name": "Doodles daily run",
-   "ok": false,
-   "text": "last: failure 2026-11-11T15:34"
+   "ok": true,
+   "text": "last: success 2026-11-12T16:10"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "2 stories carry a judge note"
+   "text": "7 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 10 h ago"
+   "text": "ok=True, checked 0 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -35,7 +35,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-11T12:11"
+   "text": "last: success 2026-11-12T13:16"
   },
   {
    "name": "Safety guard",
@@ -50,12 +50,12 @@
   {
    "name": "Title proposals",
    "ok": true,
-   "text": "last: success 2026-11-07"
+   "text": "last: success 2026-11-11"
   },
   {
    "name": "Learning + scoreboard",
    "ok": true,
-   "text": "last: success 2026-11-09"
+   "text": "last: success 2026-11-12"
   },
   {
    "name": "Playlist flywheel",
@@ -65,12 +65,12 @@
   {
    "name": "Retitle campaign",
    "ok": true,
-   "text": "last: success 2026-11-11"
+   "text": "last: success 2026-11-12"
   },
   {
    "name": "Access check (logins)",
    "ok": true,
-   "text": "last: success 2026-11-10"
+   "text": "last: success 2026-11-12"
   },
   {
    "name": "Viral DNA study",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 0 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 0 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 0 h ago"
   },
   {
    "name": "Service probes",
@@ -100,7 +100,7 @@
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "40.9 h used in 7 days, stories/day cap 2"
+   "text": "42.1 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
