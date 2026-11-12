@@ -636,5 +636,556 @@
   "style": "v2",
   "format": "MINI MYSTERY",
   "improv": true
+ },
+ {
+  "id": "your-first-day-shake",
+  "title": "Your First Day Shakes \ud83d\ude2c",
+  "concept": "FIRST DAY PANIC",
+  "mood": "dramatic",
+  "insight": "Nerves make every sentence sound like a total crisis.",
+  "caption": "First day nerves hit different when your brain mishears literally everything. Next time: Leo tries flat hunting!",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo pacing the hallway holding a coffee mug while Mia sits near him.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Why are you sweating on your first day?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia typing on a laptop while looking over at Leo with raised eyebrows.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "I wasn't trembling, I was vibrating!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo typing on his phone with wide worried eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "I heard you got stabbed by a pigeon!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia holding a cup of tea while giving Leo a flat look. In the background, clearly visible and drawn in the same style, stands a stern boss in a grey suit holding a coffee mug (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "I said my boss gave me a ribbon!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo pointing at Mia as a notification arrives on his phone.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Okay but your hoodie has a heartbeat!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia texting on her phone while looking straight ahead.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "normal",
+      "text": "Are you going to keep staring?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 2,
+   "why": "Candidate 2 features the best screenshot-worthy line with 'your hoodie has a heartbeat' and delivers the snappiest natural banter.",
+   "scores": {
+    "i": 2,
+    "funny": 8,
+    "hook": 7,
+    "spoken": 8,
+    "relatable": 8,
+    "loop": 6
+   },
+   "n": 3
+  },
+  "variant": "micro",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "MISUNDERSTANDING",
+  "improv": true
+ },
+ {
+  "id": "unironed-genius-peak",
+  "title": "How I Peaked In Third Grade \ud83c\udf93",
+  "concept": "IMPOSTER SYNDROME REALITY",
+  "mood": "warm",
+  "insight": "We feel like fakes, but we are just unironed.",
+  "caption": "I swear, it was all downhill after my third-grade gold star.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is pacing the hallway, pulling at his yellow hoodie strings.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "snap",
+      "text": "I peaked in third grade, Mia."
+     }
+    ]
+   },
+   {
+    "scene": "Mia is scrolling on her phone, looking at a digital clock showing 3 PM.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "No, you peaked in kindergarten."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is typing on his phone, then stops to look at Gerald the plant.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "quick",
+      "text": "Kindergarten was just a universe dream."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "So I am a hallucination?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia is holding a coffee mug, looking at Leo.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Baby, you are the only real thing."
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "beat": "snap",
+      "text": "You are lying to me again."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is pulling the hood over his face.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "pause",
+      "text": "I'm crying in my hoodie."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Take it off, you are just unironed."
+     }
+    ]
+   },
+   {
+    "scene": "A notification arrives on Mia's phone, she ignores it to stare at Leo.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "pause",
+      "text": "Wait, does that mean I'm failing because..."
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 cuts the awkward rambling at the end and flows much better into the loop.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 6,
+    "loop": 6
+   },
+   "n": 2
+  },
+  "variant": "tight",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "CONFESSION",
+  "improv": true
+ },
+ {
+  "id": "your-dinner-excuse-factory",
+  "title": "Your Endless Dinner Rejections \ud83c\udf55",
+  "concept": "CHOICE OVERLOAD CHAOS",
+  "mood": "dramatic",
+  "insight": "Choosing dinner takes more energy than working all day.",
+  "caption": "When you ask what they want for food and they say literally anything.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Living room. Leo typing on his phone while sitting upright on the sofa. Mia standing next to him holding a coffee mug. In the background, clearly visible and drawn in the same style, stands a sleepy roommate in pyjamas (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "So what do you actually want for dinner?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Pizza obviously you are literally my roommate."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo drops his phone on the cushion with a dramatic head shake. Mia crossing her arms, staring at him.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "normal",
+      "text": "No I hate pizza."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Wait I thought you loved pepperoni."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen hallway. Mia leaning against the wall, holding a cup of tea. Leo walking past her, pacing nervously.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "pause",
+      "text": "Pepperoni is a crime against humanity Mia."
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "beat": "quick",
+      "text": "Then eat a salad you weirdo."
+     }
+    ]
+   },
+   {
+    "scene": "Kitchen. Leo holding a notification message on his phone screen. Mia typing on her laptop on the table.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Salad are you trying to kill me?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Fine we are ordering sushi shut up."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo holding his head in his hands. Mia standing over him looking exhausted.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "snap",
+      "text": "No I am allergic to fish."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "pause",
+      "text": "You do not have an allergy you have excuses."
+     }
+    ]
+   },
+   {
+    "scene": "Living room. Leo staring directly at the camera with wide eyes. Mia walking out of frame.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "So what do you actually want for dinner?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "ADVICE FAIL",
+  "improv": true
+ },
+ {
+  "id": "group-chat-ghost-town",
+  "title": "Why Group Chats Become Ghost Towns \ud83d\udcac",
+  "concept": "MUTUAL GROUP CHAT MUTE",
+  "mood": "dramatic",
+  "insight": "Muting a chat means missing the pizza.",
+  "caption": "When you mute the group chat and miss the only good thing.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo typing on his phone in a yellow hoodie, staring with wide panicked eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Mia, why are there ninety-nine unread messages?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia in a teal sweater scrolling on her phone, looking completely calm.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Because I mute entire personalities at this point."
+     }
+    ]
+   },
+   {
+    "scene": "Leo dropping his phone in shock while sitting on the couch.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "So I am currently invisible to you?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia crossing her arms with a tiny smirk, facing the camera.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "No, I just can't hear you screaming."
+     }
+    ]
+   },
+   {
+    "scene": "Leo waving his arms in total despair, looking at Mia.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "pause",
+      "text": "But I was screaming about the pizza!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia stopping her scroll and staring back at Leo in sudden horror.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "anxious",
+      "beat": "quick",
+      "text": "Wait, why are there ninety-nine unread messages?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 1,
+   "why": "Candidate 1 actually loops the premise back into itself cleanly while landing a better punchline about screaming for pizza.",
+   "scores": {
+    "i": 1,
+    "funny": 7,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 8,
+    "loop": 8
+   },
+   "n": 2
+  },
+  "variant": "micro",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "CONFESSION",
+  "improv": true
+ },
+ {
+  "id": "wrong-chat-grandma",
+  "title": "Your Grandma Text Panic \ud83d\udc75",
+  "concept": "TEXTING MISTAKE CHAOS",
+  "mood": "dramatic",
+  "insight": "Nothing beats texting your boss like a relative.",
+  "caption": "When a simple typo turns into a family reunion at work.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is pacing the hallway while frantically typing on his phone. Mia sits nearby holding a coffee mug and staring straight ahead. In the background, clearly visible and drawn in the same style, stands a smiling grandma with a knitted scarf (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Wait, did I just call you grandma?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sips her coffee, keeping a deadpan expression while looking at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Actually yeah we did that."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "No I did not."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stops pacing, pointing his phone dramatically at Mia. Mia raises one eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Yes you did. Hello my dear."
+     },
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "pause",
+      "text": "That was a professional greeting."
+     }
+    ]
+   },
+   {
+    "scene": "Mia shakes her head slowly, leaning back against the wall with her coffee mug.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Professional? You talk like that to the secretary."
+     },
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "The secretary speaks in haikus."
+     }
+    ]
+   },
+   {
+    "scene": "Mia covers her face with one hand while holding the mug with the other. In the background, clearly visible and drawn in the same style, stands a smiling grandma with a knitted scarf (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "tired",
+      "beat": "quick",
+      "text": "My grandma speaks in baby talk."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Hold on, haiku secretary?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares at his phone again while Mia looks right at the camera with a smirk. In the background, clearly visible and drawn in the same style, stands a smiling grandma with a knitted scarf (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Wait, did I just call you grandma?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "MISUNDERSTANDING",
+  "improv": true
  }
 ]
