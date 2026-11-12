@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261112-d951d",
+ "title": "Tao Te Ching",
+ "author": "Lao Tzu",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Too Many Choices Cloud Your Mind 📚 Part 3",
+ "hook": "You feel like you have too many choices.",
+ "thumbnail_headline": "CHOICE OVERLOAD",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel like you have too many choices. Ancient sages warned that endless desire clouds the mind. In 2000, psychologist Sheena Iyengar studied about 1,000 shoppers and found about 70% felt overwhelmed after choosing among 24 jam flavors. The Tao Te Ching says desire is the root of suffering. It teaches wu wei, letting go of excess wants. The result? Less desire leads to calmer thoughts, the text claims. Later research confirms fewer options improve satisfaction. In 2004, psychologist Barry Schwartz reported that when options exceed about 12, satisfaction drops by roughly 20%. That's it. So why do we assume more choices mean better freedom? Because marketing tells us variety equals value, not science. What does this mean for your daily decisions? Pick a limited set and notice less stress and clearer focus. So next time you face a menu, remember the ancient advice and modern findings. Your mind thanks you. You feel"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 70% felt overwhelmed after choosing among 24 jam flavors",
+   "who": "Sheena Iyengar",
+   "year": "2000",
+   "place": "United States"
+  },
+  {
+   "claim": "satisfaction drops by roughly 20% when options exceed about 12",
+   "who": "Barry Schwartz",
+   "year": "2004",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Tao Te Ching by Lao Tzu",
+ "exp": ""
+}
