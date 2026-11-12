@@ -1,6 +1,8 @@
 name: ntfy-alert
 on:
   workflow_dispatch:
+  push:
+    paths: ['publish/ntfy-alert.trigger', '.github/workflows/ntfy-alert.yml']
   schedule:
     - cron: '*/30 * * * *'
 permissions:
