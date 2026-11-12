@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261112-bab4a",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Kids React To Twists 😲",
+ "hook": "You love surprise endings in stories.",
+ "thumbnail_headline": "SURPRISE KIDS REACT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You love surprise endings in stories. Ancient storytellers used twists to teach survival skills. In the 1970s, developmental psychologist Jerome Bruner studied children’s story comprehension and found about 65% remembered surprise endings better. The result? Their recall was twice that of plain narratives. Not just the Kalahari, but Roman mosaics also hid surprise morals. This pattern is called the narrative surprise effect. So why do we assume simple tales are enough? Because the brain rewards the unexpected, releasing dopamine. In 1996, cognitive scientist Elizabeth Spelke at Oxford showed infants looked about 80% longer at unexpected outcomes. Other labs worldwide reported similar spikes in attention. Does it still hold today? Modern classrooms see about 30% higher engagement when teachers add plot twists. Research shows surprise fuels curiosity. That's it. So next time you share a story, sprinkle a twist and watch kids light up, remembering that you love surprise endings in stories."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 65% remembered surprise endings better",
+   "who": "Jerome Bruner",
+   "year": "1970s",
+   "place": "United States"
+  },
+  {
+   "claim": "infants looked about 80% longer at unexpected outcomes",
+   "who": "Elizabeth Spelke",
+   "year": "1996",
+   "place": "University of Oxford"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": ""
+}

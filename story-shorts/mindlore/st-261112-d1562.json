@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261112-d1562",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "What Your Sudden Laughter Reveals About Brain 🧠",
+ "hook": "You laugh when a silly puppy tumbles over.",
+ "thumbnail_headline": "WHY ANIMALS PLAY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You laugh when a silly puppy tumbles over. Ancient thinkers actually saw this play as a deep signal of joy across all living things. In 2014, neuroscientist Jaak Panksepp at Washington State University measured rat vocalizations during play at 50 kilohertz. He discovered these high sounds were mammal laughter. Animals do not just play for survival practice. Biologists observed similar joyful play in crows, dolphins, and even bumblebees. Researchers call this the mammalian play circuit. So why do we assume animals only act on cold instinct? Science shows their brains trigger social joy just like ours. Rats even seek out tickles from human handlers. The result? Joy is an ancient evolutionary drive, not a human invention. Play releases dopamine and lowers stress across species. That's it. Animals feel pure fun. So next time you watch a pet chase a ball, remember why you laugh when a silly puppy tumbles over."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Rats emit 50 kilohertz ultrasonic vocalizations during play that function as mammalian laughter",
+   "who": "Jaak Panksepp",
+   "year": "2014",
+   "place": "Washington State University"
+  },
+  {
+   "claim": "Bumblebees engage in play behavior by rolling wooden balls without any food reward",
+   "who": "Lars Chittka and Samadi Galpayage",
+   "year": "2022",
+   "place": "Queen Mary University of London"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

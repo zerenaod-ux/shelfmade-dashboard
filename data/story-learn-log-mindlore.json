@@ -1079,6 +1079,95 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261112-bab4a",
+   "look": "live-demo",
+   "title": "Why Kids React To Twists \ud83d\ude32",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261112-bc77b",
+   "look": "live-demo",
+   "title": "Why Your Face Freezes on Bad News \ud83d\ude32",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261112-d1562",
+   "look": "live-demo",
+   "title": "What Your Sudden Laughter Reveals About Brain \ud83e\udde0",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

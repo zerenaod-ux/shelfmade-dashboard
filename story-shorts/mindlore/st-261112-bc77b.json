@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261112-bc77b",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Face Freezes on Bad News 😲",
+ "hook": "You feel your face tense when you hear shocking news.",
+ "thumbnail_headline": "FEAR SIGNALS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel your face tense when you hear shocking news. Ancient hunter‑gatherers actually used facial cues to signal danger. In 1978, psychologist Paul Ekman studied 200 adults and found about 70% of facial expressions were universal. Later, in 1872, Charles Darwin described six basic facial expressions in his book. The result? Modern neuroscience confirms the brain still triggers facial muscles within 200 milliseconds of surprise. That’s it. So why do we think our faces always match what we feel? Because our amygdala rapidly activates when something unexpected arrives. What does research say about the speed of facial reactions? Studies show eyebrows lift in under 300 milliseconds for most people. Does this mean we still use ancient cues today? Yes—our facial system evolved to warn others of danger, and it still works when we read a headline. So next time you hear a shock, remember that your face is a living alarm. You feel"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 70% of facial expressions were universal",
+   "who": "Paul Ekman",
+   "year": "1978",
+   "place": "University of Chicago"
+  },
+  {
+   "claim": "six basic facial expressions described",
+   "who": "Charles Darwin",
+   "year": "1872",
+   "place": "London"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}
