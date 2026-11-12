@@ -8,10 +8,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Studio">
+<meta name="apple-mobile-web-app-title" content="Engine">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<title>Studio</title>
+<title>Content Engine</title>
 <style>
 :root{--bg:#f3f1ea;--card:#fff;--ink:#17261f;--mut:#677970;--line:#e3e6dd;--forest:#183c32;--gold:#b8963f;--ok:#1f8a4c;--okbg:#e4f4ea;--warn:#a5670a;--warnbg:#fff0d0;--bad:#b3261e;--badbg:#fde7e4;--sh:#2f7d5f;--ml:#6a55c9;--dd:#d9772b;--shadow:0 1px 2px #0001,0 8px 24px -12px #0002}
 @media (prefers-color-scheme:dark){:root{--bg:#0e1714;--card:#16221d;--ink:#e9f0ec;--mut:#8fa399;--line:#24342d;--forest:#0b1713;--gold:#d2b15d;--okbg:#133a24;--warnbg:#3a2c0b;--badbg:#401a17;--ok:#5ed18d;--warn:#f0b24d;--bad:#ff8a80;--sh:#52c49b;--ml:#a695ff;--dd:#ffa05a;--shadow:0 1px 2px #0006}}
@@ -69,7 +69,12 @@ details{margin:8px 0;font-size:14px;color:var(--mut)}details pre{white-space:pre
 .ic{flex:0 0 22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800}
 .job{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
 .job:first-of-type{border-top:0}
-.job span:last-child{color:var(--mut);white-space:nowrap}
+.job{text-decoration:none;color:var(--ink)}.job:active{opacity:.6}
+.job span:last-child{color:var(--mut);white-space:nowrap}.job span.bad{color:var(--bad);font-weight:700}
+.linkrow{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 2px}
+.chip{display:inline-block;text-decoration:none;font-size:13px;font-weight:700;padding:7px 12px;border-radius:99px;background:var(--bg);color:var(--ink);border:1px solid var(--line)}
+.vid{text-decoration:none;color:var(--ink)}a.tag{text-decoration:none;color:var(--ink)}
+.bcard{cursor:pointer}.bcard:active{transform:scale(.99)}
 .bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:8px 0 2px}
 .bar i{display:block;height:100%;background:var(--ok);border-radius:99px}
 .vid{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
@@ -99,7 +104,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
 <body>
 <header>
   <div class="top">
-    <div class="brand">Shelf<i>Made</i> Studio</div>
+    <div class="brand" id="brand">Content <i>Engine</i></div>
     <div class="acts">
       <button class="ibtn" id="rf" type="button" aria-label="Refresh"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg></button>
       <button class="ibtn" id="setbtn" type="button" aria-label="Settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
@@ -185,7 +190,14 @@ var BR=[{k:'shelfmade',n:'ShelfMade',c:'var(--sh)',s:['state.json','state-shfull
         {k:'doodles',n:'AnimationDoodles',c:'var(--dd)',s:['state-doodles.json','state-ddfull.json'],a:['approved-doodles.json','approved-ddfull.json']}];
 var PL=[['youtube','YouTube'],['tiktok','TikTok'],['instagram','Instagram']];
 var KEYJOBS=['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'];
+/* Name and links. Change BRAND_NAME in one place. Fill a channel link to show it. */
+var BRAND_NAME='Content Engine';
+var LINKS={shelfmade:{youtube:'',tiktok:'',instagram:''},mindlore:{youtube:'',tiktok:'',instagram:''},doodles:{youtube:'',tiktok:'',instagram:''}};
+var REPO_URL='https://github.com/zerenaod-ux/shelfmade-dashboard';
 var $=function(i){return document.getElementById(i)};
+$('brand').innerHTML='';$('brand').appendChild(document.createTextNode(BRAND_NAME.split(' ')[0]+' '));var bi=el0('i',BRAND_NAME.split(' ').slice(1).join(' ')||'');$('brand').appendChild(bi);
+document.title=BRAND_NAME;
+function el0(t,x){var e=document.createElement(t);e.textContent=x;return e}
 var TOK='';try{TOK=localStorage.getItem('ghtok')||''}catch(e){}
 var cache={};
 
@@ -252,7 +264,7 @@ function apBanner(host){
 /* ---------- Home ---------- */
 function brandCard(b,hist,an){
   var days=Object.keys(hist).sort(),now=hist[days[days.length-1]]||{},old=hist[days[days.length-2]]||{};
-  var c=el('section','card chan');c.style.setProperty('--c',b.c);
+  var c=el('section','card chan bcard');c.style.setProperty('--c',b.c);c.onclick=function(){setTab('channels')};
   var tot=0,have=false,pos=0,rows=el('div','plat'),subs=null,subsD=null;
   PL.forEach(function(p){var k=b.k+'/'+p[0],n=now[k],o=old[k],d=null;
     if(n&&n.views!=null){have=true;tot+=n.views;if(o&&o.views!=null){d=n.views-o.views;if(d>=0)pos+=d}}
@@ -303,7 +315,7 @@ function reviewCard(it){
   var ttl=it.title.replace(/^Review\s*/i,''),kind=kindOf(ttl);
   if(kind)card.appendChild(el('span','tag',kind.toUpperCase()));
   if(ls.indexOf('checks-warn')>=0)card.appendChild(el('span','tag warn','Check warning'));else if(ls.indexOf('checks-ok')>=0)card.appendChild(el('span','tag ok','Checks OK'));
-  card.appendChild(el('span','tag','#'+it.number));
+  var ia=el('a','tag','Issue #'+it.number+' ↗');ia.href=it.html_url;ia.target='_blank';ia.rel='noopener';card.appendChild(ia);
   card.appendChild(el('h4','',stripKind(ttl)||ttl));
   var cap=p.cap,shown=stripKind(ttl)||ttl;
   if(cap&&cap.split('\n')[0].trim()===shown.trim())cap=cap.split('\n').slice(1).join('\n').trim();
@@ -375,7 +387,7 @@ function loadHealth(){
     rows.forEach(function(x){if(x.conclusion==='failure')bad++});
     jobs.textContent='';var t=el('div','row');t.appendChild(el('p','lab','Automatic jobs'));t.appendChild(el('span','tag '+(bad?'bad':'ok'),bad?bad+' failed':'All ran fine'));jobs.appendChild(t);
     if(!rows.length)jobs.appendChild(el('p','muted','Cannot read the job list right now (GitHub limit). Try again in a few minutes.'));
-    rows.forEach(function(x){var s=x.status!=='completed'?'running':x.conclusion==='success'?'ok':(x.conclusion||'?');var j=el('div','job');j.appendChild(el('span','',x.name));j.appendChild(el('span','',s+' · '+ago(now-Date.parse(x.updated_at||x.created_at))+' ago'));jobs.appendChild(j)});
+    rows.forEach(function(x){var s=x.status!=='completed'?'running':x.conclusion==='success'?'ok':(x.conclusion||'?');var j=el('a','job');j.href=x.html_url||REPO_URL+'/actions';j.target='_blank';j.rel='noopener';j.appendChild(el('span','',x.name));j.appendChild(el('span',s==='failure'||s==='failed'?'bad':'',s+' · '+ago(now-Date.parse(x.updated_at||x.created_at))+' ago ↗'));jobs.appendChild(j)});
     jobs.appendChild(el('p','muted','Stuck “queued” runs are restarted automatically.'));
     cache.health=1}).catch(function(){jobs.textContent='';jobs.appendChild(el('p','msg','Could not read the job list.'))});
 }
@@ -392,8 +404,11 @@ function loadChannels(){
        var c=el('section','card chan');c.style.setProperty('--c',b.c);
        var h3=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode(b.n));h3.appendChild(l);c.appendChild(h3);
        c.appendChild(el('p','muted',nf(a.subscribers)+' subscribers · '+nf(vids.length)+' public videos · '+nf(tot)+' views (YouTube)'));
+       var lk=LINKS[b.k]||{};var lr=el('div','linkrow');
+       PL.forEach(function(p){if(!lk[p[0]])return;var a=el('a','chip',p[1]+' channel ↗');a.href=lk[p[0]];a.target='_blank';a.rel='noopener';lr.appendChild(a)});
+       if(lr.childNodes.length)c.appendChild(lr);
        var top=vids.slice().sort(function(x,y){return (y.views||0)-(x.views||0)}).slice(0,5);
-       if(top.length){c.appendChild(el('p','lab','Top videos'));top.forEach(function(v){var r=el('div','vid');r.appendChild(el('span','',(v.title||'').slice(0,58)));r.appendChild(el('span','',nf(v.views)));c.appendChild(r)})}
+       if(top.length){c.appendChild(el('p','lab','Top videos'));top.forEach(function(v){var r=el('a','vid');r.href='https://www.youtube.com/watch?v='+encodeURIComponent(v.id||'');r.target='_blank';r.rel='noopener';r.appendChild(el('span','',(v.title||'').slice(0,58)));r.appendChild(el('span','',nf(v.views)+' ↗'));c.appendChild(r)})}
        var rows=el('div','plat');PL.forEach(function(p){var n=now[b.k+'/'+p[0]];var cell=el('div');cell.appendChild(el('small','',p[1]));cell.appendChild(el('b','',n?nf(n.views):'n/a'));cell.appendChild(el('em','',n&&n.videos!=null?nf(n.videos)+' posts':''));rows.appendChild(cell)});
        c.appendChild(el('p','lab','Today on each platform'));c.appendChild(rows);
        list.appendChild(c)});
