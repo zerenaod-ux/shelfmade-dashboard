@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T18:04:02+00:00",
+ "at": "2026-11-12T21:29:35+00:00",
  "level": "warn",
  "checks": [
   {
@@ -20,7 +20,7 @@
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 0 h ago"
+   "text": "ok=True, checked 4 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 0 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 0 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 0 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Service probes",
