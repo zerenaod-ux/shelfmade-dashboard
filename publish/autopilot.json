@@ -3,10 +3,20 @@
  "cap": 3,
  "hold_hours": 3,
  "skip_after_hours": 72,
- "day": "",
- "counts": {},
+ "day": "2026-11-13",
+ "counts": {
+  "doodles": 1
+ },
  "changed": "2026-11-13T14:30:00+00:00",
- "last_run": "2026-11-13T11:16:47+00:00",
- "log": [],
+ "last_run": "2026-11-13T19:54:38+00:00",
+ "log": [
+  {
+   "t": "2026-11-13T19:54:38+00:00",
+   "issue": 233,
+   "act": "approve",
+   "why": "checks ok",
+   "ok": true
+  }
+ ],
  "note": "Owner decision 2026-11-13: autopilot stays ON. Videos with checks OK are approved by themselves; flagged videos wait for the owner (phone alert)."
 }
