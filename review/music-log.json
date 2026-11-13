@@ -890,5 +890,31 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-13"
+ },
+ "Nietzsche had a warning for you.": {
+  "styles": [
+   "sm_adventure",
+   "sm_adventure",
+   "sm_library",
+   "sm_adventure",
+   "sm_candle",
+   "sm_library"
+  ],
+  "tracks": [
+   "sm_adventure_02",
+   "ace_sm_adventure_01",
+   "sm_library_04",
+   "sm_adventure_01",
+   "ace_sm_candle_02",
+   "ace_sm_library_01"
+  ],
+  "mood": "curious",
+  "pace": 2.42,
+  "exp": {
+   "music_energy": "calm"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-13"
  }
 }
