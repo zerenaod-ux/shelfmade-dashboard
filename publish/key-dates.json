@@ -1,0 +1,5 @@
+{"note": "Dates when a key or account needs renewing. Names only, never the key itself. The weekly health report warns 45 days ahead.",
+ "items": [
+  {"name": "GitLab backup token (mirror job)", "expires": "2027-11-01", "how": "GitLab > Preferences > Access tokens: make a new one, then GitHub > Settings > Secrets > update the mirror secret"},
+  {"name": "Owner's GitHub key in the phone app (Approve/Skip)", "expires": "2027-11-12", "how": "github.com > Settings > Developer settings > Fine-grained tokens: regenerate, then paste in the app's Settings"}
+ ]}

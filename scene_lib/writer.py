@@ -123,6 +123,11 @@ DESIGN RULES (a checker enforces every one):
 10. The star of each step must be BIG: at least 110 px on screen (an emoji of size 120 at zoom 1.0, or size 70 at zoom 1.7), near the centre, and in the middle of the screen height (not under the caption at the top).
 11. No clutter: objects never sit on top of each other; scenery (trees) stays away from the action. 22 to 34 parts in total. Write compact JSON.
 12. Motion words: to make something jiggle or shake give it "bob" (3 to 10); to turn give "rot" keyframes (degrees); to travel give x and y keyframes; to grow give "size" or "scale" keyframes. Only wheel and pump have "spin".
+14. COMMON MISTAKES that make the checker reject a scene (seen in real runs; avoid them the first time):
+   - colours ("fill", "stroke", "color") are text like "#7fb2d9", never numbers or keyframes; "lw" is a plain number.
+   - the part named in "shows" must have keyframes that CHANGE inside that step's own time, in every step including the last one.
+   - fields that a part type does not list do nothing (an emoji has no "spin": use "rot" keyframes or "bob").
+   - two objects must not sit on top of each other unless one has "inside": "<container id>".
 13. Emoji must show EXACTLY the thing meant. A whole corn cob is not a kernel; a pan with an egg is not an empty pan. If no emoji is exact, draw the thing yourself with path, ellipse, circle, rect and poly (for example a kernel = a yellow ellipse; a cut-away = an outline with the inside drawn in). Things that travel get x and y keyframes (or an orbit). Use particles for fire, smoke, steam, sparks, bubbles, dust.
 
 Return JSON with keys: "title", "principle", "duration": {DURATION}, "music": {{"bpm": 118}}, "flows", "steps", "camera", "sfx", "parts".

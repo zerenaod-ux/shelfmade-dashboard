@@ -1,0 +1,22 @@
+name: weekly-health
+# One phone message every Monday: the week's numbers, stuck posts, Content Engine videos, failed jobs, keys that expire soon. Start by hand: push publish/weekly-health.trigger.
+on:
+  schedule:
+    - cron: '43 14 * * 1'
+  workflow_dispatch:
+  push:
+    paths: ['publish/weekly-health.trigger']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send the weekly health report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python3 weekly_health.py
