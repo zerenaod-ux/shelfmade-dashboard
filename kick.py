@@ -1,7 +1,7 @@
 """SELF-KICK: GitHub often delays or drops scheduled runs (seen: 2h25m late, whole hours skipped). review-publish runs every 30 min and does fire, so it calls this.
 For each daily job: if its scheduled time + GRACE has passed today and NO run of that workflow exists since then (any event, any result), start it with workflow_dispatch.
 Never retries failures (a failed run still counts as 'ran'). Fails soft. Needs GH_TOKEN and permissions: actions: write."""
-import json, subprocess, datetime, sys
+import json, subprocess, datetime, sys, time, random
 GRACE = 100   # minutes: GitHub delays of ~2.5 h were observed; after that we start it ourselves
 MAXLATE = 14 * 60
 JOBS = [  # workflow file, hour UTC, minute, weekdays (Mon=0..Sun=6) or None=daily
@@ -11,6 +11,17 @@ JOBS = [  # workflow file, hour UTC, minute, weekdays (Mon=0..Sun=6) or None=dai
 ]
 def sh(*a):
     return subprocess.run(a, capture_output=True, text=True, timeout=60)
+def start(wf, since, why):
+    """NO_DOUBLE_START: four jobs run this kick at the same moment, and twice they all started the same workflow (doodles 2026-11-13 10:10, one copy got cancelled).
+    So wait a random moment, look again, and only start it if nobody else has in the meantime."""
+    time.sleep(random.uniform(5, 50))
+    r = sh('gh', 'run', 'list', '--workflow', wf, '--limit', '10', '--json', 'createdAt,status')
+    new = [x for x in json.loads(r.stdout or '[]') if datetime.datetime.fromisoformat(x['createdAt'].replace('Z', '+00:00')) >= since and x['status'] in ('queued', 'in_progress', 'waiting', 'pending', 'requested')]
+    if new and why != 'stuck': print('skip', wf, '- another kick already started it', flush=True); return
+    if why == 'stuck' and [x for x in new if (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(x['createdAt'].replace('Z', '+00:00'))).total_seconds() < 600]:
+        print('skip', wf, '- a fresh run was just started', flush=True); return
+    d = sh('gh', 'workflow', 'run', wf); print(why.upper(), wf, (d.stdout + d.stderr).strip()[:120], flush=True)
+
 def main():
     now = datetime.datetime.now(datetime.timezone.utc)
     for wf, h, m, days in JOBS:
@@ -27,14 +38,12 @@ def main():
             stuck = [x for x in rs if x['status'] == 'queued' and age(x) > 75]   # STUCK_QUEUE: GitHub sometimes leaves a run 'queued' for hours (seen 2026-11-11); start a fresh one
             alive = [x for x in rs if x['status'] == 'in_progress' or (x['status'] == 'queued' and age(x) <= 75) or x.get('conclusion') == 'success']
             if stuck and not alive:
-                d = sh('gh', 'workflow', 'run', wf); print('RESTARTED stuck-queued', wf, (d.stdout + d.stderr).strip()[:120], flush=True); continue
+                start(wf, since, 'stuck'); continue
             if rs:   # RETRY_ONCE: self-repair - if every run today failed and there is only one, try once more (never a third time)
                 if len(rs) == 1 and rs[0]['status'] == 'completed' and rs[0]['conclusion'] == 'failure' and late >= 20:
-                    d = sh('gh', 'workflow', 'run', wf)
-                    print('RETRIED once', wf, (d.stdout + d.stderr).strip()[:120], flush=True)
+                    start(wf, since, 'retried once')
                 continue
-            d = sh('gh', 'workflow', 'run', wf)
-            print('KICKED', wf, 'late by %d min' % late, (d.stdout + d.stderr).strip()[:120], flush=True)
+            start(wf, since, 'kicked (late by %d min)' % late)
         except Exception as e:
             print('kick skipped', wf, str(e)[:100], flush=True)
 if __name__ == '__main__':
