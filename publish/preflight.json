@@ -1,11 +1,11 @@
 {
- "at": "2026-11-12T20:24:04+00:00",
+ "at": "2026-11-13T19:59:29+00:00",
  "ready": "bad",
  "checks": [
   {
    "name": "Autopilot",
-   "level": "warn",
-   "text": "OFF - turn it ON on the Review page before you leave"
+   "level": "ok",
+   "text": "ON"
   },
   {
    "name": "Jobs",
@@ -15,17 +15,17 @@
   {
    "name": "Alerts",
    "level": "bad",
-   "text": "2 open: ALERT: Kaggle GPU failing (Doodles pause; ALERT: Doodles using too much free GPU"
+   "text": "3 open: ALERT: Doodles daily run not succeeding; ALERT: Kaggle GPU failing (Doodles pause; ALERT: Doodles using too much free GPU"
   },
   {
    "name": "Keys",
    "level": "ok",
-   "text": "weekly key test success, 0 days ago"
+   "text": "weekly key test success, 1 days ago"
   },
   {
    "name": "Doodles stories",
    "level": "ok",
-   "text": "6 unused saved (more are written automatically)"
+   "text": "2 unused saved (more are written automatically)"
   },
   {
    "name": "ShelfMade posts waiting",
@@ -35,7 +35,7 @@
   {
    "name": "Waiting for review",
    "level": "ok",
-   "text": "0 videos open (autopilot clears them when ON)"
+   "text": "1 videos open (autopilot clears them when ON)"
   }
  ]
 }
