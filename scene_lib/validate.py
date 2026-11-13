@@ -1,9 +1,10 @@
 """Checks a scene description before any video is made. Returns a list of plain-language problems (empty list = good).
   python3 scene_lib/validate.py scenes/<name>.json"""
-import json, sys
+import json, math, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from scene_lib.catalog import CATALOG, ANIM, POINT_LISTS, POINTS, SOUNDS, SOUNDS_DUR, SOUNDS_FREQ
+import re
+from scene_lib.catalog import CATALOG, ANIM, POINT_LISTS, POINTS, SOUNDS, SOUNDS_DUR, SOUNDS_FREQ, PRESETS, GROUNDS, PARTICLES
 
 def _num(v): return isinstance(v, (int, float)) and not isinstance(v, bool)
 def _kfs(v): return isinstance(v, list) and len(v) > 0 and all(isinstance(k, list) and len(k) == 2 and _num(k[0]) and _num(k[1]) for k in v)
@@ -45,6 +46,19 @@ def _box(p):
     if t == 'spray': return x - 20, x + 260, p.get('floor', 0), y + 120
     return _where(p)
 
+def _box_at(p, t):
+    """Where a part is at time t (for parts that travel)."""
+    ty = p.get('type')
+    if ty in ('emoji', 'path', 'ellipse', 'circle', 'particles', 'text', 'glow'):
+        o = p.get('orbit')
+        if isinstance(o, dict) and all(_num(o.get(k)) for k in ('cx', 'cy', 'rx')):
+            a = (t / max(1, o.get('period', 6)) + o.get('phase', 0)) * 2 * math.pi; x = o['cx'] + o['rx'] * math.cos(a); y = o['cy'] + o.get('ry', o['rx']) * math.sin(a)
+        else: x = _at(p.get('x'), t, 0); y = _at(p.get('y'), t, 0)
+        h = {'emoji': _at(p.get('size'), t, 80) / 2, 'path': 55 * _at(p.get('scale'), t, 1), 'ellipse': max(_at(p.get('rx'), t, 40), _at(p.get('ry'), t, 20)), 'circle': _at(p.get('r'), t, 10), 'particles': 45, 'text': 40, 'glow': p.get('r', 60)}[ty]
+        return x - h, x + h, y - h, y + h
+    if ty == 'bar': return p.get('x', 0), p.get('x', 0) + p.get('w', 26), p.get('y', 0), p.get('y', 0) + p.get('h', 160)
+    return _box(p)
+
 def _near(pt, box, tol):
     return box[0] - tol <= pt[0] <= box[1] + tol and box[2] - tol <= pt[1] <= box[3] + tol
 
@@ -60,6 +74,7 @@ def design_rules(spec, D, steps, cam, parts):
     gy = next((_at(p.get('y'), 0, 0) for p in good if p['type'] == 'ground'), None)
     waters = [p for p in good if p['type'] == 'water']
     def changes_in(p, a, b):
+        if isinstance(p.get('orbit'), dict): return True
         for f, v in p.items():
             if f in ANIM and _kfs(v) and len({k[1] for k in v}) > 1:
                 for k0, k1 in zip(v, v[1:]):
@@ -78,7 +93,7 @@ def design_rules(spec, D, steps, cam, parts):
         if cam and p['type'] not in ('night', 'sky', 'ground'):
             hit = False; big = False
             for tt in (s['start'] + 0.35 * (s['end'] - s['start']), s['start'] + 0.7 * (s['end'] - s['start'])):
-                vx0, vx1, vy0, vy1, z = view(tt); bx = _box(p)
+                vx0, vx1, vy0, vy1, z = view(tt); bx = _box_at(p, tt)
                 if bx[1] >= vx0 + 20 / z and bx[0] <= vx1 - 20 / z and bx[3] >= vy0 and bx[2] <= vy1: hit = True
                 if max(bx[1] - bx[0], bx[3] - bx[2]) * z >= 45: big = True
             if not hit: E.append('step %d: the camera is not looking at "%s"; move the camera to it for this step' % (i, sh))
@@ -189,9 +204,19 @@ def check(spec):
                     if ts[0] < -0.01 or ts[-1] > D + 0.6: E.append('%s: "%s" has a time outside the video' % (tag, f))
                     if len({k[1] for k in v}) > 1: moving = True; anim_times += ts
                 else: E.append('%s: "%s" must be a number or keyframes [[time, value], ...]' % (tag, f))
-            elif f in ('x0', 'x1', 'legH', 'lw', 'size', 'teeth', 'dir', 'head', 'floor') and not _num(v): E.append('%s: "%s" must be a number' % (tag, f))
-            elif f in ('fill', 'stroke', 'color', 'bg', 'text', 'preset', 'kind', 'wall', 'roof', 'rgb') and not isinstance(v, str): E.append('%s: "%s" must be text' % (tag, f))
+            elif f in ('x0', 'x1', 'legH', 'lw', 'teeth', 'dir', 'head', 'floor', 'bob', 'speed', 'count') and not _num(v): E.append('%s: "%s" must be a number' % (tag, f))
+            elif f in ('fill', 'stroke', 'color', 'bg', 'text', 'preset', 'kind', 'wall', 'roof', 'rgb', 'outline', 'char', 'd') and not isinstance(v, str): E.append('%s: "%s" must be text' % (tag, f))
+            elif f == 'char' and (not 1 <= len(v) <= 8 or all(ord(ch) < 128 for ch in v)): E.append('%s: "char" must be ONE emoji character' % tag)
+            elif f == 'd' and (not 5 <= len(v) <= 1800 or not re.fullmatch(r'[MmLlHhVvCcSsQqTtAaZz0-9eE\s,.+-]+', v)): E.append('%s: "d" must be a plain SVG path string (letters MLHVCSQTAZ and numbers only, under 1800 characters)' % tag)
+            elif f == 'preset' and v not in PRESETS: E.append('%s: unknown preset %r (allowed: %s)' % (tag, v, ', '.join(sorted(PRESETS))))
+            elif f == 'kind' and p['type'] == 'particles' and v not in PARTICLES: E.append('%s: unknown particles kind %r (allowed: %s)' % (tag, v, ', '.join(sorted(PARTICLES))))
+            elif f == 'kind' and p['type'] == 'ground' and v not in GROUNDS: E.append('%s: unknown ground kind %r (allowed: %s)' % (tag, v, ', '.join(sorted(GROUNDS))))
+            elif f == 'orbit':
+                if not (isinstance(v, dict) and all(_num(v.get(k)) for k in ('cx', 'cy', 'rx')) and all(_num(x) for x in v.values()) and v.get('period', 6) >= 1): E.append('%s: "orbit" must be {"cx","cy","rx","ry","period","phase"} with numbers' % tag)
+                else: moving = True
+            elif f == 'dash' and not (isinstance(v, list) and len(v) == 2 and all(_num(x) and x > 0 for x in v)): E.append('%s: "dash" must be two numbers like [10,10]' % tag)
         if p['type'] == 'label' and isinstance(p.get('text'), str) and len(p['text']) > 18: E.append('%s: label text is too long (max 16 letters)' % tag)
+        if p['type'] == 'text' and isinstance(p.get('text'), str) and len(p['text']) > 14: E.append('%s: text is too long (max 12 letters)' % tag)
         for f in ('x', 'y'):
             v = p.get(f)
             for val in ([v] if _num(v) else [k[1] for k in v] if _kfs(v) else []):

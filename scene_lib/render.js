@@ -8,6 +8,18 @@ const fs = require('fs'), path = require('path');
   let bad = 0; p.on('pageerror', e => { bad++; console.log('PAGEERR', e.message); });
   await p.goto('file://' + path.join(__dirname, 'scene.html'));
   const total = await p.evaluate(s => window.loadSpec(s), spec);
+  // emoji pictures: use the machine's emoji font, or the bundled free one (Noto Color Emoji) if the machine has none
+  const chars = [...new Set(spec.parts.filter(q => q.type === 'emoji').map(q => q.char))];
+  if (chars.length) {
+    let badE = await p.evaluate(c => window.emojiOK(c), chars);
+    const css = path.resolve('node_modules/@fontsource/noto-color-emoji/index.css');
+    if (badE.length && fs.existsSync(css)) {
+      await p.addStyleTag({ url: 'file://' + css });
+      await p.evaluate(async c => { await Promise.all(c.map(ch => document.fonts.load('48px "Noto Color Emoji"', ch))); }, chars);
+      badE = await p.evaluate(c => window.emojiOK(c), chars);
+    }
+    if (badE.length) { console.log('EMOJI NOT DRAWABLE: ' + badE.join(' ')); await b.close(); process.exit(3); }
+  }
   fs.mkdirSync('fr', { recursive: true });
   for (let f = 0; f < total; f++) {
     if (only && !only.has(f)) continue;

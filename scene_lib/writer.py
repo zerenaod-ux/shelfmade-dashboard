@@ -14,7 +14,7 @@ from scene_lib.validate import check
 TIMES = [(0.3, 4.5), (4.7, 9.2), (9.4, 13.6), (13.8, 18.6), (18.8, 23.4), (23.6, 28.4), (28.6, 33.5)]
 DURATION = 33.6
 SYS = 'You are a brilliant science animator and scene designer. You answer with ONE JSON object and nothing else.'
-STAGE_TEXT = 'x goes right, y goes up, the ground is y=0. Keep everything between x=-380 and x=700 and between y=-220 (deep underground) and y=420 (high in the air). Objects are about 80 to 300 units big.'
+STAGE_TEXT = 'x goes right, y goes up. If there is ground, its surface is y=0 and things below 0 are underground. Keep everything between x=-380 and x=700 and between y=-220 and y=420. Objects are about 60 to 300 units big.'
 
 def _num(v): return isinstance(v, (int, float)) and not isinstance(v, bool)
 
@@ -26,7 +26,8 @@ Work like a careful designer. Think in this order:
 
 1. PRINCIPLE: the real cause. Why does it work? One or two true sentences.
 2. CHAIN: 5 to 7 links of cause and effect, in the order they happen ("because A, B happens").
-3. CAST: 4 to 8 objects the viewer must see. Each one must be drawable from these part types: {', '.join(CATALOG)}.
+3. CAST: 4 to 8 objects the viewer must see. ANY topic can be drawn: "emoji" gives any recognisable object (animal, organ, planet, vehicle, tool, food, person, building), "path" draws any custom shape, and there are ready parts for water, pipes, wires, wheels, particles (fire, smoke, steam, sparks, bubbles, snow), meters and more. All part types: {', '.join(CATALOG)}.
+   Also choose the SETTING: where it happens (outdoors, underground, underwater, in space, inside a body, in a lab) and whether there is ground.
 4. LAYOUT: give every cast member a box on the stage: x0, x1, y0, y1. Stage: {STAGE_TEXT}
    - The layout must SHOW the principle. If gravity matters, the source is physically higher than where the water ends up. If something is underground, it is below y=0.
    - Put the objects in the order of the chain, left to right, so the camera travels one way.
@@ -39,6 +40,8 @@ Work like a careful designer. Think in this order:
 Return JSON:
 {{"title": "starts with How or Why, 4-8 words, ends with ONE emoji",
  "principle": "...",
+ "style": "flow" (mostly water, pipes, machines) or "icons" (living things, body, space, objects, ideas),
+ "setting": {{"preset": "day|dusk|night|desert|snow|space|ocean|body|lab|clean", "ground": "grass|sand|snow|rock|seabed|floor|none"}},
  "chain": ["...", "..."],
  "cast": [{{"id": "shortname", "what": "what it is", "built_from": "part types", "x0": 0, "x1": 0, "y0": 0, "y1": 0}}],
  "steps": [{{"label": "2-16 letters", "say": "...", "shows": "cast id", "change": "what visibly changes"}}]}}"""
@@ -47,6 +50,7 @@ def check_plan(pl):
     E = []
     if not isinstance(pl, dict): return ['the plan must be one JSON object']
     if not isinstance(pl.get('principle'), str) or len(pl['principle'].split()) < 8: E.append('principle must be one or two full sentences')
+    if pl.get('style') not in ('flow', 'icons'): E.append('style must be "flow" or "icons"')
     if not isinstance(pl.get('chain'), list) or not 4 <= len(pl['chain']) <= 8: E.append('chain must have 5 to 7 links')
     cast = pl.get('cast'); ids = {}
     if not isinstance(cast, list) or not 4 <= len(cast) <= 9: E.append('cast must have 4 to 8 objects'); cast = []
@@ -75,16 +79,16 @@ def check_plan(pl):
     return E
 
 def stage_prompt(topic, plan, with_example=True):
-    ex = (ROOT / 'scene_lib' / 'example.json').read_text() if with_example else ''
+    ex = (ROOT / 'scene_lib' / ('example_icons.json' if plan.get('style') == 'icons' else 'example_flow.json')).read_text() if with_example else ''
     return f"""TOPIC: {topic}
 
 Here is the approved PLAN. Now build the exact scene description from it.
 {json.dumps(plan, ensure_ascii=False)}
 
-STAGE: {STAGE_TEXT} Things at y below 0 are underground (shown as a cut-away).
-Parts are drawn in list order (later parts cover earlier ones): sky first, then trees, ground, underground things, the main objects, labels last.
+STAGE: {STAGE_TEXT}
+Parts are drawn in list order (later parts cover earlier ones): sky first (with the preset from the plan's setting), then scenery, ground (if any), the main objects, labels last.
 
-PARTS YOU MAY USE (only these; build anything else from rect, circle and poly):
+PARTS YOU MAY USE (only these). Use "emoji" for any recognisable object and "path" to draw custom shapes; never leave a main subject as a plain box:
 {catalog_text()}
 Any part may have an "id". Give every cast member's main part the same id as in the plan.
 
@@ -104,7 +108,8 @@ DESIGN RULES (a checker enforces every one):
 8. Sounds: "sfx" is a list of [time, name, loudness 0.3-1.0, optional value], at least 10, at least one in every step, timed to the action.
    With an optional length in seconds: {', '.join(sorted(SOUNDS_DUR))}. With an optional pitch: {', '.join(sorted(SOUNDS_FREQ))}. Plain: {', '.join(sorted(SOUNDS_PLAIN))}.
 9. Make it alive: at least 8 parts that change over time; water levels, pipe progress and flow, spinning wheels, growing plants, lights, arrows.
-10. Make it beautiful: a few trees for depth, clear colours, 22 to 34 parts in total. Write compact JSON.
+10. Make it beautiful: scenery for depth, clear colours, the main subject large, 22 to 34 parts in total. Write compact JSON.
+11. Emoji: one common emoji per "char". Things that travel get x and y keyframes (or an orbit). Use particles for fire, smoke, steam, sparks, bubbles, dust.
 
 Return JSON with keys: "title", "principle", "duration": {DURATION}, "music": {{"bpm": 118}}, "flows", "steps", "camera", "sfx", "parts".
 

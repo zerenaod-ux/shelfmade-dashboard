@@ -1,2 +1,2 @@
-how a well pump brings water up from deep underground
-rerun 02:38:11
+auto
+run 2026-11-13T02:49:11Z
