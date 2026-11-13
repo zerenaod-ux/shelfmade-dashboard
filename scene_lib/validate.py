@@ -26,6 +26,117 @@ def _where(p):
     if p.get('type') == 'tower': return x - 90, x + 90, y, y + p.get('legH', 240) + p.get('h', 130)
     return x, x + (_at(p.get('w'), 0, 0) if p.get('type') in ('rect', 'house') else 0), y, y + (_at(p.get('h'), 0, 0) if p.get('type') in ('rect', 'house') else 0)
 
+SOLID = ('wheel', 'pump', 'house', 'tower')
+SCENERY = ('sky', 'ground', 'label', 'arrow', 'night', 'glow', 'tree', 'plant')
+
+def _box(p):
+    """Bounding box (x0, x1, y0, y1) of a part at its largest."""
+    t = p.get('type'); x = _at(p.get('x'), 1e9, 0); y = _at(p.get('y'), 1e9, 0)
+    if t in ('wheel', 'pump', 'circle', 'glow'): r = _at(p.get('r'), 1e9, 40 if t == 'wheel' else 20 if t == 'pump' else 60 if t == 'glow' else 10); return x - r, x + r, y - r, y + r
+    if t == 'house': return x, x + p.get('w', 170), y, y + p.get('h', 140) + 70
+    if t == 'tower': return x - p.get('w', 170) / 2, x + p.get('w', 170) / 2, y, y + p.get('legH', 240) + p.get('h', 130) + 46
+    if t == 'rect':
+        ys = [k[1] for k in p['y']] if _kfs(p.get('y')) else [y]; xs = [k[1] for k in p['x']] if _kfs(p.get('x')) else [x]
+        return min(xs), max(xs) + _at(p.get('w'), 1e9, 10), min(ys), max(ys) + _at(p.get('h'), 1e9, 10)
+    if t == 'water':
+        lv = [k[1] for k in p['level']] if _kfs(p.get('level')) else [p.get('level', p.get('y0', 0))]; return p.get('x0', 0), p.get('x1', 0), p.get('y0', 0), max(lv)
+    if t in ('tree', 'plant'): s_ = p.get('s', 1); return x - 30 * s_, x + 30 * s_, y, y + (110 if t == 'tree' else 50) * s_
+    if t in ('stream',): return x - 6, x + 6, min(_at(p.get('y0'), 0, 0), p.get('y1', 0)), p.get('y1', 0)
+    if t == 'spray': return x - 20, x + 260, p.get('floor', 0), y + 120
+    return _where(p)
+
+def _near(pt, box, tol):
+    return box[0] - tol <= pt[0] <= box[1] + tol and box[2] - tol <= pt[1] <= box[3] + tol
+
+def design_rules(spec, D, steps, cam, parts):
+    """The design logic a careful human follows, written as checks: the picture must make physical sense and must prove each sentence."""
+    E = []; good = [p for p in parts if isinstance(p, dict) and p.get('type') in CATALOG]
+    ids = {}
+    for p in good:
+        if 'id' in p:
+            if not isinstance(p['id'], str) or p['id'] in ids: E.append('part ids must be unique short names (problem with %r)' % (p.get('id'),))
+            else: ids[p['id']] = p
+    if not isinstance(spec.get('principle'), str) or len(spec['principle'].split()) < 8: E.append('add "principle": one or two sentences saying WHY it works (the cause), before designing anything')
+    gy = next((_at(p.get('y'), 0, 0) for p in good if p['type'] == 'ground'), None)
+    waters = [p for p in good if p['type'] == 'water']
+    def changes_in(p, a, b):
+        for f, v in p.items():
+            if f in ANIM and _kfs(v) and len({k[1] for k in v}) > 1:
+                for k0, k1 in zip(v, v[1:]):
+                    if k0[1] != k1[1] and k0[0] < b and k1[0] > a: return True
+        return False
+    def view(t):
+        cx = _at([[c[0], c[1]] for c in cam], t); cy = _at([[c[0], c[2]] for c in cam], t); z = _at([[c[0], c[3]] for c in cam], t)
+        return cx - 360 / z, cx + 360 / z, cy - 520 / z, cy + 500 / z, z
+    # rule: every sentence is proved by one named part that visibly changes while the camera looks at it
+    for i, s in enumerate(steps, 1):
+        if not (isinstance(s, dict) and _num(s.get('start')) and _num(s.get('end'))): continue
+        sh = s.get('shows')
+        if sh not in ids: E.append('step %d: "shows" must be the id of the part that proves this sentence on screen' % i); continue
+        p = ids[sh]; a, b = s['start'] - 0.3, s['end']
+        if i > 1 and not changes_in(p, a, b): E.append('step %d: part "%s" does not change during %.1f-%.1f; give it keyframes inside this step so the viewer sees the sentence happen' % (i, sh, s['start'], s['end']))
+        if cam and p['type'] not in ('night', 'sky', 'ground'):
+            hit = False; big = False
+            for tt in (s['start'] + 0.35 * (s['end'] - s['start']), s['start'] + 0.7 * (s['end'] - s['start'])):
+                vx0, vx1, vy0, vy1, z = view(tt); bx = _box(p)
+                if bx[1] >= vx0 + 20 / z and bx[0] <= vx1 - 20 / z and bx[3] >= vy0 and bx[2] <= vy1: hit = True
+                if max(bx[1] - bx[0], bx[3] - bx[2]) * z >= 45: big = True
+            if not hit: E.append('step %d: the camera is not looking at "%s"; move the camera to it for this step' % (i, sh))
+            elif not big: E.append('step %d: "%s" is too small on screen; zoom the camera in on it' % (i, sh))
+    # rule: solid machines and buildings are never drawn under water
+    for p in good:
+        if p['type'] not in SOLID: continue
+        bx = _box(p); cx, cy = (bx[0] + bx[1]) / 2, (bx[2] + bx[3]) / 2
+        for w in waters:
+            wb = _box(w)
+            if wb[0] < cx < wb[1] and wb[2] < cy < wb[3] - 4 and (wb[1] - wb[0]) > (bx[1] - bx[0]) * 1.3:
+                E.append('the %s%s is drawn inside the water (x %d-%d); put machines and buildings on dry ground beside or below the water, joined by a pipe' % (p['type'], ' "%s"' % p['id'] if p.get('id') else '', wb[0], wb[1])); break
+    # rule: water does not float in the air
+    holders = [p for p in good if p['type'] in ('rect', 'poly', 'house', 'tower')]
+    for w in waters:
+        wb = _box(w)
+        if wb[2] > (gy if gy is not None else 0) + 70 and not any(_box(h)[0] <= wb[0] + 14 and _box(h)[1] >= wb[1] - 14 and _box(h)[2] <= wb[2] + 14 for h in holders):
+            E.append('the water at x %d-%d floats in the air; give it a container or raised ground under it' % (wb[0], wb[1]))
+    # rule: pipes and wires join things
+    others = lambda me: [_box(q) for q in good if q is not me and q['type'] not in SCENERY]
+    for p in good:
+        if p['type'] not in ('pipe', 'wire') or not (isinstance(p.get('pts'), list) and len(p['pts']) >= 2 and all(_pt(q) for q in p['pts'])): continue
+        for end, name in ((p['pts'][0], 'start'), (p['pts'][-1], 'end')):
+            if not any(_near(end, bx, 48) for bx in others(p)): E.append('the %s %s at %s is not joined to anything; start and end it at the things it connects' % (p['type'], name, end))
+    # rule: flows obey physics
+    fl = spec.get('flows')
+    if any(p['type'] in ('pipe', 'stream') for p in good):
+        if not isinstance(fl, list) or not fl: E.append('add "flows": for each pipe say where the water goes and why: [{"from":[x,y],"to":[x,y],"by":"gravity" or "pump" or "pressure"}]')
+        else:
+            for n, f in enumerate(fl, 1):
+                if not (isinstance(f, dict) and _pt(f.get('from')) and _pt(f.get('to')) and f.get('by') in ('gravity', 'pump', 'pressure')): E.append('flow %d must have from, to and by (gravity, pump or pressure)' % n); continue
+                if f['by'] == 'gravity' and f['to'][1] > f['from'][1] - 15: E.append('flow %d is marked gravity but does not go down (from height %d to %d); water only falls downhill, so raise the source or lower the outlet' % (n, f['from'][1], f['to'][1]))
+                if f['by'] == 'pump' and not any(p['type'] == 'pump' for p in good): E.append('flow %d needs a pump part' % n)
+                if f['by'] == 'pressure':
+                    top = max([g['from'][1] for g in fl if isinstance(g, dict) and g.get('by') == 'gravity' and _pt(g.get('from'))] or [-1e9])
+                    if f['to'][1] > top - 15: E.append('flow %d: pressure can only push water up to below its source height (%d)' % (n, top))
+    # rule: things stand on the ground or on something
+    if gy is not None:
+        tops = [_box(h)[3] for h in holders]
+        for p in good:
+            if p['type'] in ('house', 'tower', 'tree', 'plant'):
+                y = _at(p.get('y'), 0, 0)
+                if abs(y - gy) > 8 and not any(abs(y - tp) <= 8 for tp in tops): E.append('the %s at x=%d floats (y=%d); stand it on the ground (y=%d) or on top of a shape' % (p['type'], _at(p.get('x'), 0, 0), y, gy))
+    # rule: labels come and go with their step, never a wall of tags
+    labs = [p for p in good if p['type'] == 'label']
+    for p in labs:
+        if not _kfs(p.get('show')): E.append('label "%s" is always on; give it "show" keyframes so it appears only during its own step' % p.get('text'))
+    t = 0.5
+    while t < D:
+        on = [p.get('text') for p in labs if _kfs(p.get('show')) and _at(p['show'], t) > 0.5]
+        if len(on) > 2: E.append('%d labels are on screen together at %.1fs (%s); show at most 2 at a time' % (len(on), t, ', '.join(map(str, on[:4])))); break
+        t += 0.5
+    # rule: every step has its own sound
+    sf = [c for c in (spec.get('sfx') or []) if isinstance(c, list) and c and _num(c[0])]
+    for i, s in enumerate(steps, 1):
+        if isinstance(s, dict) and _num(s.get('start')) and _num(s.get('end')) and not any(s['start'] - 0.3 <= c[0] <= s['end'] for c in sf): E.append('step %d has no sound; add one timed to its action' % i)
+    return E
+
 def check(spec):
     E = []
     if not isinstance(spec, dict): return ['the description must be one JSON object']
@@ -63,7 +174,7 @@ def check(spec):
             if f not in p: E.append('%s is missing "%s"' % (tag, f))
         moving = False
         for f, v in p.items():
-            if f == 'type': continue
+            if f in ('type', 'id'): continue
             if f not in req and f not in opt: E.append('%s has a field the engine does not know: "%s"' % (tag, f)); continue
             if f in POINT_LISTS:
                 if not (isinstance(v, list) and len(v) >= 2 and all(_pt(q) for q in v)): E.append('%s: "%s" must be a list of [x,y] points' % (tag, f))
@@ -102,6 +213,7 @@ def check(spec):
                 if x1 >= vx0 and x0 <= vx1 and y1 >= vy0 and y0 <= vy1: seen = True; break
             if not seen and any(any(a <= k[0] <= b for f, v in p.items() if f in ANIM and _kfs(v) for k in v) for p in movers):
                 E.append('step %d: the camera (centre %d,%d zoom %.2f) is not pointing at the thing that moves in this step' % (i, cx, cy, z))
+    E += design_rules(spec, D, steps, cam, parts)
     for n, c in enumerate(spec.get('sfx', []) or [], 1):
         if not (isinstance(c, list) and len(c) >= 2 and _num(c[0]) and isinstance(c[1], str)): E.append('sound %d must be [time, name, loudness]' % n); continue
         if c[1] not in SOUNDS: E.append('sound %d: unknown sound %r (allowed: %s)' % (n, c[1], ', '.join(sorted(SOUNDS))))

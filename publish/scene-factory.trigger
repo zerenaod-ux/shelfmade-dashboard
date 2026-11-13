@@ -1,1 +1,1 @@
-how a hydroelectric dam turns falling water into electricity
+how a well pump brings water up from deep underground

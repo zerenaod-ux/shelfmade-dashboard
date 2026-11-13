@@ -8,6 +8,7 @@ CATALOG = {
  'poly':   (['pts'], ['fill', 'stroke', 'lw', 'close', 'alpha'], 'Any shape from points [[x,y],...]. close:false with only a stroke draws a line (wire, rope, ramp).'),
  'water':  (['x0', 'x1', 'y0', 'level'], [], 'Body of water between x0 and x1 with its bottom at y0; level = height (y) of the surface. Animate level to fill or drain.'),
  'pipe':   (['pts'], ['w', 'progress', 'flow', 'color'], 'Pipe along points. progress 0..1 = how far water has filled it from the first point; flow 0..1 shows moving water.'),
+ 'wire':   (['pts'], ['w', 'progress', 'pulse', 'color'], 'Electric wire or cable along points. progress 0..1 = how far the power has travelled from the first point; pulse 0..1 shows it moving.'),
  'tower':  (['x'], ['y', 'legH', 'w', 'h', 'level', 'roof'], 'Water tank on legs, centred at x, standing on y. level 0..1 = how full.'),
  'pump':   (['x', 'y'], ['r', 'spin'], 'Pump with a spinning rotor. spin = turns speed (0 = stopped, 9 = fast).'),
  'house':  (['x'], ['y', 'w', 'h', 'lit', 'wall', 'roof', 'cut'], 'House with its bottom-left at x,y; cut-away so you see inside. lit 0..1 = window light.'),
@@ -22,7 +23,7 @@ CATALOG = {
  'glow':   (['x', 'y'], ['r', 'alpha', 'rgb'], 'Soft light at x,y (lamp, spark, heat). rgb like "255,225,120". Put it after night to shine in the dark.'),
 }
 # fields that may be a fixed number OR keyframes [[time, value], ...]
-ANIM = {'x', 'y', 'w', 'h', 'r', 'alpha', 'level', 'progress', 'flow', 'spin', 'lit', 'on', 'power', 'grow', 'show', 'amount', 'y0'}
+ANIM = {'x', 'y', 'w', 'h', 'r', 'alpha', 'level', 'progress', 'flow', 'spin', 'lit', 'on', 'power', 'grow', 'show', 'amount', 'y0', 'pulse'}
 POINT_LISTS = {'pts'}; POINTS = {'from', 'to'}
 SOUNDS_DUR = {'hum', 'flow', 'spray', 'sparkle', 'whoosh', 'zip', 'rumble', 'splash'}      # optional 4th value = seconds
 SOUNDS_FREQ = {'chime', 'tick'}                                                           # optional 4th value = pitch in Hz
