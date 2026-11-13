@@ -4,7 +4,7 @@
   3. CHECK - the checker applies the design logic (physics, connections, camera, labels, proof for every sentence). Problems go back to the writer to fix.
 A description that still fails after the tries is rejected: no video is made from it.
   python3 scene_lib/writer.py --topic-file topic.txt out.json        (needs the free LLM keys in the environment)"""
-import json, re, sys
+import json, os, re, sys, time
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -74,8 +74,8 @@ def check_plan(pl):
     if st and isinstance(st[0], dict) and '?' not in str(st[0].get('say', '')): E.append('step 1 must be a hook question')
     return E
 
-def stage_prompt(topic, plan):
-    ex = [json.dumps(json.loads((ROOT / 'scenes' / n).read_text()), separators=(',', ':'), ensure_ascii=False) for n in ('water-tower.json', 'hydro-dam.json')]
+def stage_prompt(topic, plan, with_example=True):
+    ex = (ROOT / 'scene_lib' / 'example.json').read_text() if with_example else ''
     return f"""TOPIC: {topic}
 
 Here is the approved PLAN. Now build the exact scene description from it.
@@ -104,13 +104,11 @@ DESIGN RULES (a checker enforces every one):
 8. Sounds: "sfx" is a list of [time, name, loudness 0.3-1.0, optional value], at least 10, at least one in every step, timed to the action.
    With an optional length in seconds: {', '.join(sorted(SOUNDS_DUR))}. With an optional pitch: {', '.join(sorted(SOUNDS_FREQ))}. Plain: {', '.join(sorted(SOUNDS_PLAIN))}.
 9. Make it alive: at least 8 parts that change over time; water levels, pipe progress and flow, spinning wheels, growing plants, lights, arrows.
-10. Make it beautiful: a few trees for depth, clear colours, 25 to 45 parts in total.
+10. Make it beautiful: a few trees for depth, clear colours, 22 to 34 parts in total. Write compact JSON.
 
 Return JSON with keys: "title", "principle", "duration": {DURATION}, "music": {{"bpm": 118}}, "flows", "steps", "camera", "sfx", "parts".
 
-Two finished examples for DIFFERENT topics show the format and the level of care. Do not copy their layout or sentences:
-EXAMPLE 1: {ex[0]}
-EXAMPLE 2: {ex[1]}"""
+{('One finished example for a DIFFERENT topic shows the format and the level of care. Do not copy its layout or sentences: ' + ex) if with_example else ''}"""
 
 def tidy(spec, plan=None):
     """Small safe repairs that do not change the idea: exact step times, duration, music, and the plan's own sentences."""
@@ -129,13 +127,28 @@ def tidy(spec, plan=None):
             if isinstance(plan.get(k), str): spec.setdefault(k, plan[k])
     return spec
 
-def _ask(llm, prompt, checker, tries, temp, log, name, post=lambda x: x):
-    out = None; errs = None
+def _call(llm, prompt, temp, turn, log):
+    """Ask the free LLM services one at a time, starting with a different one each turn, and report why each one failed."""
+    provs = [p for p in llm.PROVIDERS if os.environ.get(p[0], '').strip()]; saved = llm.PROVIDERS; why = []
+    if not provs: raise ValueError('no free LLM key is configured')
+    try:
+        for p in provs[turn % len(provs):] + provs[:turn % len(provs)]:
+            llm.PROVIDERS = [p]
+            try: return llm.json_call(SYS, prompt, temperature=temp, max_tokens=5200)
+            except Exception as e: why.append(str(e)[:110].replace('llm.py: ', ''))
+    finally: llm.PROVIDERS = saved
+    raise ValueError(' ; '.join(why))
+
+def _ask(llm, prompt, checker, tries, temp, log, name, post=lambda x: x, repair_prompt=None):
+    out = None; errs = None; turn = 0
     for k in range(1, tries + 1):
-        p = prompt if not errs else prompt + '\n\nYOUR LAST ANSWER HAD THESE PROBLEMS. Fix every one, keep what was good, and return the full corrected JSON:\n' + '\n'.join('- ' + e for e in errs[:30]) + '\n\nYour last answer was:\n' + json.dumps(out, separators=(',', ':'), ensure_ascii=False)[:16000]
-        try: out = post(llm.json_call(SYS, p, temperature=temp if k == 1 else 0.35, max_tokens=8000))
+        base = prompt if (not errs or out is None or not repair_prompt) else repair_prompt
+        p = base if (not errs or out is None) else base + '\n\nYOUR LAST ANSWER HAD THESE PROBLEMS. Fix every one, keep what was good, and return the full corrected JSON:\n' + '\n'.join('- ' + e for e in errs[:30]) + '\n\nYour last answer was:\n' + json.dumps(out, separators=(',', ':'), ensure_ascii=False)[:13000]
+        try: got = _call(llm, p, temp if k == 1 else 0.35, turn, log)
         except Exception as e:
-            log('%s try %d: no usable JSON came back (%s)' % (name, k, str(e)[:160])); errs = errs or ['the answer was not valid JSON']; continue
+            log('%s try %d: no free LLM answered (%s); waiting 40 s' % (name, k, str(e)[:330])); turn += 1; time.sleep(40); continue
+        try: out = post(got)
+        except Exception as e: log('%s try %d: unusable answer (%s)' % (name, k, str(e)[:120])); errs = ['the answer was not a valid scene object']; continue
         errs = checker(out)
         log('%s try %d: %s' % (name, k, 'PASSED' if not errs else '%d problems: %s' % (len(errs), ' | '.join(errs[:8]))))
         if not errs: return out
@@ -143,9 +156,9 @@ def _ask(llm, prompt, checker, tries, temp, log, name, post=lambda x: x):
 
 def write_scene(topic, log=print):
     import llm
-    plan = _ask(llm, plan_prompt(topic), check_plan, 4, 0.9, log, 'plan')
+    plan = _ask(llm, plan_prompt(topic), check_plan, 5, 0.9, log, 'plan')
     log('principle: ' + plan['principle']); log('cast: ' + ', '.join('%s (%s)' % (c['id'], c.get('what', '')) for c in plan['cast']))
-    spec = _ask(llm, stage_prompt(topic, plan), check, 6, 0.5, log, 'scene', post=lambda s: tidy(s, plan))
+    spec = _ask(llm, stage_prompt(topic, plan), check, 8, 0.5, log, 'scene', post=lambda s: tidy(s, plan), repair_prompt=stage_prompt(topic, plan, with_example=False))
     return plan, spec
 
 if __name__ == '__main__':
