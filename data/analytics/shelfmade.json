@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-12",
+ "collected": "2026-11-13",
  "note": "",
  "videos": [
   {
@@ -199,6 +199,16 @@
    "avgSeconds": 13,
    "avgPercent": 57.19,
    "subsGained": 0
+  },
+  {
+   "id": "Mkc1Mjjf_kY",
+   "title": "Machiavelli would hate how you live.",
+   "published": "2026-11-13T03:01:24Z",
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "views": 47,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "88SeG1rSwzc",
@@ -435,6 +445,16 @@
    "subsGained": 0
   },
   {
+   "id": "WEAr0dGdw2M",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-12T03:02:25Z",
+   "duration": "PT1M22S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "OKEdacXsBrk",
    "title": "Do feelings outweigh beliefs?",
    "published": "2026-11-07T18:04:23Z",
@@ -442,7 +462,7 @@
    "privacy": "public",
    "views": 29,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 6,
    "avgPercent": 24.55,
    "subsGained": 0
@@ -563,16 +583,6 @@
    "avgSeconds": 7,
    "avgPercent": 20.16,
    "subsGained": 0
-  },
-  {
-   "id": "WEAr0dGdw2M",
-   "title": "You have Art of War backwards.",
-   "published": "2026-11-12T03:02:25Z",
-   "duration": "PT1M22S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "ElOI_lM9VtE",
@@ -744,6 +754,16 @@
    "subsGained": 0
   },
   {
+   "id": "GdWx5nz-ltU",
+   "title": "Why does Meditations still matter?",
+   "published": "2026-11-12T18:05:08Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "nw9L0WbCy1s",
    "title": "Can mercy survive in the middle of war?",
    "published": "2026-06-11T16:37:06Z",
@@ -790,16 +810,6 @@
    "privacy": "public",
    "views": 12,
    "likes": 1,
-   "comments": 0
-  },
-  {
-   "id": "GdWx5nz-ltU",
-   "title": "Why does Meditations still matter?",
-   "published": "2026-11-12T18:05:08Z",
-   "duration": "PT1M7S",
-   "privacy": "public",
-   "views": 11,
-   "likes": 0,
    "comments": 0
   },
   {
@@ -1230,6 +1240,16 @@
    "subsGained": 0
   },
   {
+   "id": "YBzvMjEOTFE",
+   "title": "Franklin had a warning for you.",
+   "published": "2026-11-12T00:00:23Z",
+   "duration": "PT6M53S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 1
+  },
+  {
    "id": "L8fBZiNE9xA",
    "title": "Nobody warns you about Analects.",
    "published": "2026-11-10T03:02:03Z",
@@ -1415,16 +1435,6 @@
    "duration": "PT38S",
    "privacy": "public",
    "views": 3,
-   "likes": 1,
-   "comments": 0
-  },
-  {
-   "id": "YBzvMjEOTFE",
-   "title": "Franklin had a warning for you.",
-   "published": "2026-11-12T00:00:23Z",
-   "duration": "PT6M53S",
-   "privacy": "public",
-   "views": 2,
    "likes": 1,
    "comments": 0
   },
@@ -1810,6 +1820,16 @@
    "comments": 0
   },
   {
+   "id": "cPmS7p3wuaY",
+   "title": "What is Ambition and Success really about?",
+   "published": "2026-11-13T00:00:09Z",
+   "duration": "PT6M56S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "p079-FpO7QE",
    "title": "Almost everyone gets Prince wrong.",
    "published": "2026-11-12T03:43:12Z",
@@ -1827,7 +1847,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "XU8c9iqTGlI",
@@ -1889,16 +1909,6 @@
    "id": "nrt78mj2OJQ",
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-04T22:29:10Z",
-   "duration": "PT6M56S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "cPmS7p3wuaY",
-   "title": "What is Ambition and Success really about?",
-   "published": "2026-11-04T22:18:02Z",
    "duration": "PT6M56S",
    "privacy": "private",
    "views": 0,

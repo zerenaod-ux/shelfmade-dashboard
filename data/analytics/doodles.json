@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-12",
+ "collected": "2026-11-13",
  "note": "",
  "videos": [
   {
@@ -13,7 +13,7 @@
    "privacy": "public",
    "views": 210,
    "likes": 3,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 15,
    "avgPercent": 23.63,
    "subsGained": 1
@@ -65,7 +65,7 @@
    "privacy": "public",
    "views": 10,
    "likes": 2,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 117,
    "avgPercent": 160.61,
    "subsGained": 0
@@ -156,7 +156,7 @@
    "privacy": "public",
    "views": 7,
    "likes": 2,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 7,
    "avgPercent": 10.07,
    "subsGained": 0
@@ -410,7 +410,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "zYdejZHy3k4",
@@ -439,6 +439,16 @@
    "subsGained": 0
   },
   {
+   "id": "5bvrVUR8iek",
+   "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
+   "published": "2026-11-13T03:01:26Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "5Czrci00ZPQ",
    "title": "The 40-Minute Pizza Call | Leo & Mia #9",
    "published": "2026-11-12T18:05:09Z",
@@ -446,7 +456,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   }
  ]
 }
