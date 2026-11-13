@@ -2,7 +2,8 @@
  "on": true,
  "attempts": {
   "mindlore-live-redo": 1,
-  "blender-test": 2
+  "blender-test": 2,
+  "scene-factory": 1
  },
  "pending": [],
  "log": [
@@ -77,9 +78,13 @@
   {
    "t": "11-12 11:47Z",
    "msg": "blender-test: no safe automatic fix found"
+  },
+  {
+   "t": "11-13 11:29Z",
+   "msg": "scene-factory: no safe automatic fix found"
   }
  ],
- "at": "2026-11-13T02:06:19Z",
+ "at": "2026-11-13T11:29:35Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
