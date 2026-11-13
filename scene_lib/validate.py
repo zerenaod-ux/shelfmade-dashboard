@@ -29,6 +29,8 @@ def _where(p):
 
 SOLID = ('wheel', 'pump', 'house', 'tower')
 SCENERY = ('sky', 'ground', 'label', 'arrow', 'night', 'glow', 'tree', 'plant')
+THIN = ('pipe', 'wire', 'line', 'stream', 'spray', 'particles', 'arrow', 'label', 'text', 'circle', 'glow', 'bar', 'plant')
+OBJECTS = ('emoji', 'house', 'tower', 'wheel', 'pump', 'tree')
 
 def _box(p):
     """Bounding box (x0, x1, y0, y1) of a part at its largest."""
@@ -91,13 +93,19 @@ def design_rules(spec, D, steps, cam, parts):
         p = ids[sh]; a, b = s['start'] - 0.3, s['end']
         if i > 1 and not changes_in(p, a, b): E.append('step %d: part "%s" does not change during %.1f-%.1f; give it keyframes inside this step so the viewer sees the sentence happen' % (i, sh, s['start'], s['end']))
         if cam and p['type'] not in ('night', 'sky', 'ground'):
-            hit = False; big = False
+            need = 45 if p['type'] in THIN else 110; hit = big = mid = clear = False
             for tt in (s['start'] + 0.35 * (s['end'] - s['start']), s['start'] + 0.7 * (s['end'] - s['start'])):
-                vx0, vx1, vy0, vy1, z = view(tt); bx = _box_at(p, tt)
+                vx0, vx1, vy0, vy1, z = view(tt); bx = _box_at(p, tt); cx = (bx[0] + bx[1]) / 2; cy = (bx[2] + bx[3]) / 2
                 if bx[1] >= vx0 + 20 / z and bx[0] <= vx1 - 20 / z and bx[3] >= vy0 and bx[2] <= vy1: hit = True
-                if max(bx[1] - bx[0], bx[3] - bx[2]) * z >= 45: big = True
+                else: continue
+                if max(bx[1] - bx[0], bx[3] - bx[2]) * z >= need: big = True
+                span = (bx[1] - bx[0]) / 2
+                if vx0 + 0.18 * (vx1 - vx0) - span <= cx <= vx1 - 0.18 * (vx1 - vx0) + span: mid = True
+                if 760 - (min(cy, bx[3] - 20 / z) - _at([[c[0], c[2]] for c in cam], tt)) * z >= 440: clear = True
             if not hit: E.append('step %d: the camera is not looking at "%s"; move the camera to it for this step' % (i, sh))
-            elif not big: E.append('step %d: "%s" is too small on screen; zoom the camera in on it' % (i, sh))
+            elif not big: E.append('step %d: "%s" is too small on screen (it must be the star of the step); make it bigger or zoom the camera in until it is at least %d px' % (i, sh, need))
+            elif not mid: E.append('step %d: "%s" sits at the edge of the picture; centre the camera x on it' % (i, sh))
+            elif not clear: E.append('step %d: "%s" is hidden behind the caption at the top; aim the camera higher (bigger camera y) so it sits in the middle of the screen' % (i, sh))
     # rule: solid machines and buildings are never drawn under water
     for p in good:
         if p['type'] not in SOLID: continue
@@ -146,6 +154,23 @@ def design_rules(spec, D, steps, cam, parts):
         on = [p.get('text') for p in labs if _kfs(p.get('show')) and _at(p['show'], t) > 0.5]
         if len(on) > 2: E.append('%d labels are on screen together at %.1fs (%s); show at most 2 at a time' % (len(on), t, ', '.join(map(str, on[:4])))); break
         t += 0.5
+    # rule: no clutter - recognisable objects do not sit on top of each other
+    def visible(p, t):
+        if p['type'] == 'emoji' and _at(p.get('size'), t, 80) < 12: return False
+        if p['type'] == 'tree' and _at(p.get('grow'), t, 1) < 0.2: return False
+        return _at(p.get('alpha'), t, 1) > 0.3
+    objs = [p for p in good if p['type'] in OBJECTS]; told = set()
+    for s_ in steps:
+        if not (isinstance(s_, dict) and _num(s_.get('start')) and _num(s_.get('end'))): continue
+        tt = (s_['start'] + s_['end']) / 2
+        for i_, a_ in enumerate(objs):
+            for b_ in objs[i_ + 1:]:
+                if (id(a_), id(b_)) in told or not (visible(a_, tt) and visible(b_, tt)): continue
+                A, B = _box_at(a_, tt), _box_at(b_, tt); ox = min(A[1], B[1]) - max(A[0], B[0]); oy = min(A[3], B[3]) - max(A[2], B[2])
+                small = min((A[1] - A[0]) * (A[3] - A[2]), (B[1] - B[0]) * (B[3] - B[2]))
+                if ox > 0 and oy > 0 and small > 0 and ox * oy / small > 0.4:
+                    told.add((id(a_), id(b_))); nm = lambda q: '%s%s' % (q['type'], ' ' + q['char'] if q.get('char') else (' "%s"' % q['id'] if q.get('id') else ''))
+                    E.append('clutter: %s and %s are drawn on top of each other around %.0fs (x=%d); move one of them so every object is clearly seen' % (nm(a_), nm(b_), tt, (A[0] + A[1]) / 2))
     # rule: every step has its own sound
     sf = [c for c in (spec.get('sfx') or []) if isinstance(c, list) and c and _num(c[0])]
     for i, s in enumerate(steps, 1):
@@ -172,6 +197,8 @@ def check(spec):
         w = len(say.split())
         if not 4 <= w <= 18: E.append('step %d: "say" must be 4 to 18 words (it has %d)' % (i, w))
         if w / 3.3 > (s['end'] - s['start']) + 0.4: E.append('step %d: the sentence is too long to speak in %.1f seconds; cut it to about %d words' % (i, s['end'] - s['start'], int((s['end'] - s['start']) * 3.3)))
+    says = [str(s.get('say', '')) for s in steps if isinstance(s, dict)]
+    if len(says) >= 5 and sum(1 for x in says if x.strip().endswith(('!', '?'))) < 4: E.append('the script is flat: at least 4 sentences must end with ! or ? and use strong action verbs')
     cam = spec.get('camera')
     if not isinstance(cam, list) or len(cam) < 3 or not all(isinstance(c, list) and len(c) == 4 and all(_num(v) for v in c) for c in cam): E.append('camera must be a list of at least 3 [time, x, y, zoom] entries'); cam = []
     else:
