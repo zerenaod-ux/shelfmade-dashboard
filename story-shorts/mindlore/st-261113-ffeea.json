@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261113-ffeea",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Animals Play Shows Joy 😄",
+ "hook": "You spend most of your day scrolling on your phone.",
+ "thumbnail_headline": "ANIMAL PLAY JOY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your day scrolling on your phone. Centuries ago, scientists saw animals show joy while playing, not just hunting. In 2001, Jaak Panksepp at Penn found about 70% of rats chirped at 50 kHz. The result? The chirps signal a feeling similar to human laughter. That's it. Later, in 2012, primatologist Frans de Waal observed bonobos at the Yerkes Center. He reported about 30% of their daytime interactions were playful, showing joy across species. Elephants also engage in playful water splashes, releasing endorphins. In 2016, Zurich researchers found calves played about 20 minutes daily, raising heart‑rate variability. So why do we assume only humans laugh? Because researchers once missed subtle animal vocalizations, not because animals lack joy. What did the researchers find about play's benefits? Play boosts dopamine, strengthens social bonds, and improves problem‑solving later. Does this playful joy affect our brains today? Neuroscience shows that watching play releases oxytocin, enhancing mood. So next time you pause scrolling, notice a pet’s wag or a bird’s frolic. Remember, joy is a shared instinct you spend"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 70% of rats chirped at 50 kHz when tickled",
+   "who": "Jaak Panksepp",
+   "year": "2001",
+   "place": "University of Pennsylvania"
+  },
+  {
+   "claim": "about 30% of bonobo daytime interactions were playful",
+   "who": "Frans de Waal",
+   "year": "2012",
+   "place": "Yerkes Primate Center"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261113-a04a3",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Face Freezes On Surprise 😲",
+ "hook": "You freeze your face when you hear shocking news.",
+ "thumbnail_headline": "FACE FREEZE REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You freeze your face when you hear shocking news. Ancient hunters actually used the same freeze to signal danger to the tribe. In 1972, psychologist Paul Ekman studied about 30 participants and recorded that brief facial stillness followed unexpected statements. The result? Their brow lowered and mouth tightened in a universal pattern. Later studies showed it wasn't limited to one culture. In 2018, Dr. Robert Levenson at UC San Francisco measured about 25 people and found the amygdala triggered a micro‑snap of facial muscles. That's called the “surprise freeze” in affective neuroscience. So why do we assume we can hide our reaction? Because the freeze is involuntary, driven by a fast limbic circuit, not conscious control. What did the researchers actually observe? They saw a 200‑millisecond pause before any smile or frown. Does it still hold today? Modern EEG studies show the same brief inhibition when news breaks. So next time you feel that stillness, remember your brain echoes ancient warning signals. That's it. You freeze your face when you hear shocking news."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "brief facial stillness followed unexpected statements",
+   "who": "Paul Ekman",
+   "year": "1972",
+   "place": "United States"
+  },
+  {
+   "claim": "amygdala triggered a micro‑snap of facial muscles across all ages",
+   "who": "Robert Levenson",
+   "year": "2018",
+   "place": "University of California, San Francisco"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

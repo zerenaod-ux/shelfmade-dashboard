@@ -1168,6 +1168,93 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261113-68eee",
+   "look": "live-demo",
+   "title": "Why Kids Love Surprising Endings \ud83d\ude32",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261113-a04a3",
+   "look": "live-demo",
+   "title": "Why Your Face Freezes On Surprise \ud83d\ude32",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "chat",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261113-ffeea",
+   "look": "live-demo",
+   "title": "Why Animals Play Shows Joy \ud83d\ude04",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "brain",
+    "chart",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
