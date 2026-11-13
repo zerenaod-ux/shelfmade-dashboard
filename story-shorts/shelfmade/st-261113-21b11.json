@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261113-21b11",
+ "title": "The Pleasures of Life",
+ "author": "Sir John Lubbock",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Less Work Boosts Joy Part 2 🤔",
+ "hook": "You spend most of your waking hours at a desk.",
+ "thumbnail_headline": "WORK LESS LIVE MORE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your waking hours at a desk. Centuries ago thinkers said true pleasure comes from less work. In 2019 the OECD measured average work weeks at about 40 hours. The result? Longer hours linked to lower life‑satisfaction scores. In 2020 the U.S. BLS reported Americans spend about 7.5 hours daily on work. They also track household chores in that same time. That's it. So why do we still glorify endless hustle? Because cultural myths, not data, drive our habits. What did Sir John Lubbock argue? He wrote that leisure should be the cornerstone of a good life. A 2022 Swedish trial found a six‑hour work week improved sleep and cut stress. That matches Lubbock’s call for balanced pleasure. So next time you log another overtime hour, remember the ancient advice and modern proof. You spend most of your waking hours at a desk."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Average work weeks about 40 hours",
+   "who": "OECD",
+   "year": "2019",
+   "place": "OECD member countries"
+  },
+  {
+   "claim": "Americans spend about 7.5 hours daily on work",
+   "who": "U.S. Bureau of Labor Statistics",
+   "year": "2020",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Pleasures of Life by Sir John Lubbock",
+ "exp": ""
+}

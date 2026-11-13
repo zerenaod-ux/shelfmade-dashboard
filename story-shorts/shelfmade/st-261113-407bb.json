@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261113-407bb",
+ "title": "The Pleasures of Life",
+ "author": "Sir John Lubbock",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Work Hours Kill Joy Part 1 🤔",
+ "hook": "You spend most of your day at a desk.",
+ "thumbnail_headline": "WORK HOURS KILL JOY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your day at a desk. Ancient philosophers warned that too much sitting steals your pleasure. In 2012, the UK Office for Statistics found work time about 37 hours weekly. The Pleasures of Life praised balanced work and varied leisure. Lubbock argued that pleasure arises when work is purposeful, not endless. He also claimed that varied hobbies sustain long‑term happiness. The result? Modern studies link long hours to health decline. A 2015 European study showed workers over 55 hours faced higher risk. The risk of heart disease rose about 33%. That's it. Later research across many cultures confirmed the same pattern, known as the work‑life balance paradox. Psychologists call this the diminishing returns of effort principle. So why do we assume more work equals more success? Because the 19th‑century work ethic glorified long hours, but happiness peaks near 35 weekly hours. Take short breaks, walk, and stretch to reset your mood. So next time you sit long, remember you spend"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "average work time about 37 hours weekly",
+   "who": "UK Office for Statistics",
+   "year": "2012",
+   "place": "United Kingdom"
+  },
+  {
+   "claim": "workers over 55 hours faced about 33% higher heart disease risk",
+   "who": "European researchers",
+   "year": "2015",
+   "place": "Europe"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Pleasures of Life by Sir John Lubbock",
+ "exp": ""
+}
