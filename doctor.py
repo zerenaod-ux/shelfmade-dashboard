@@ -12,7 +12,9 @@ from datetime import datetime, timezone
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'zerenaod-ux/shelfmade-dashboard')
 STATE = Path('publish/doctor.json')
-SKIP = {'watchdog', 'doctor', 'selfcheck', 'pages build and deployment', 'mindlore-live-redo', 'mindlore-fix1', 'mindlore-bump', 'mindlore-purge-old', 'livedemo-test', 'wordcaps-test', 'braintest'}   # one-off / test workflows never need healing
+SKIP = {'watchdog', 'doctor', 'selfcheck', 'pages build and deployment', 'mindlore-live-redo', 'mindlore-fix1', 'mindlore-bump', 'mindlore-purge-old', 'livedemo-test', 'wordcaps-test', 'braintest',
+        # Content Engine and test jobs: they fix themselves next run; the doctor must never patch the channels' code because of them (2026-11-13)
+        'scene-factory', 'scene-test', 'scene-dam-test', 'scene-stitch-test', 'story-art-test', 'story-art-cmp', 'story-art-cmp2', 'story-fast-test', 'blender-test', 'blender-probe', 'ntfy-test'}   # one-off / test workflows never need healing
 MAX_ATTEMPTS = 2
 PLAYBOOK = [  # (regex, why) -> nothing to change in code; it heals itself
     (r'quotaExceeded|exceeded your (daily )?quota|rate.?limit|429', 'API quota/rate limit: resets by itself'),
