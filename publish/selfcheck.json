@@ -1,16 +1,16 @@
 {
- "at": "2026-11-13T17:46:09+00:00",
+ "at": "2026-11-13T20:55:33+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 3 h ago"
+   "text": "updated 0 h ago"
   },
   {
    "name": "Doodles daily run",
-   "ok": false,
-   "text": "last: cancelled 2026-11-13T10:10"
+   "ok": true,
+   "text": "last: success 2026-11-13T15:39"
   },
   {
    "name": "Best-of-3 judge",
@@ -20,7 +20,7 @@
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 7 h ago"
+   "text": "ok=True, checked 3 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 14 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 14 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 14 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Service probes",
@@ -100,7 +100,7 @@
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "35.8 h used in 7 days, stories/day cap 2"
+   "text": "38.3 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
