@@ -61,12 +61,14 @@ Return JSON: {{"ideas": [{{"topic": "how ... / why ... (6 to 14 words, plain)", 
         log('category "%s": no new idea survived the rules; trying the next category' % cat)
     raise SystemExit('REJECTED: no new idea passed the no-repeat rules')
 
-def record(spec_path, idea_path='idea.json'):
-    hist = load(); spec = json.loads(Path(spec_path).read_text())
+def record(spec_path, idea_path='idea.json', failed=False):
+    hist = load()
+    try: spec = json.loads(Path(spec_path).read_text())
+    except Exception: spec = {}
     try: idea = json.loads(Path(idea_path).read_text())
     except Exception: idea = {}
     hist.append({'date': datetime.date.today().isoformat(), 'topic': idea.get('topic') or spec.get('title', ''), 'title': spec.get('title', ''), 'subject': idea.get('subject', ''),
-                 'keywords': idea.get('keywords', []), 'category': idea.get('category', '')})
+                 'keywords': idea.get('keywords', []), 'category': idea.get('category', ''), **({'failed': True} if failed else {})})
     HIST.parent.mkdir(parents=True, exist_ok=True); HIST.write_text(json.dumps(hist, indent=1, ensure_ascii=False) + '\n'); print('recorded; %d scenes in the history' % len(hist))
 
 if __name__ == '__main__':
@@ -76,4 +78,4 @@ if __name__ == '__main__':
         try:
             idea = pick(log); Path(sys.argv[2]).write_text(idea['topic'] + '\n'); Path('idea.json').write_text(json.dumps(idea, ensure_ascii=False))
         finally: Path('idea-log.txt').write_text('\n'.join(lines) + '\n')
-    elif sys.argv[1] == 'record': record(sys.argv[2])
+    elif sys.argv[1] == 'record': record(sys.argv[2], failed=len(sys.argv) > 3 and sys.argv[3] == 'failed')

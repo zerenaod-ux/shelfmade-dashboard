@@ -47,7 +47,19 @@ def main():
         st = check_broken(token, topic, st)
     except Exception as e:
         print("broken check skipped:", e)
+    try: auto = json.load(open("publish/autopilot.json")).get("on", False)
+    except Exception: auto = False
     items = [i for i in api("/issues?state=open&labels=review&per_page=100", token) if "pull_request" not in i]
+    if auto:   # autopilot approves videos whose checks are OK; only the flagged ones need the owner
+        items = [i for i in items if "checks-ok" not in [l["name"] for l in i.get("labels", [])]]
+    try:
+        scenes = [i for i in api("/issues?state=open&labels=scene-review&per_page=50", token) if "pull_request" not in i]
+        sseen = set(st.get("scene_seen", [])); snew = [i for i in scenes if str(i["number"]) not in sseen]
+        if snew and "scene_seen" in st:
+            send(topic, "Content Engine: new video", "New Content Engine video ready to watch (not posted):\n- " + "\n- ".join(i["title"].replace("Content Engine:", "").strip()[:60] for i in snew[:3]))
+        st["scene_seen"] = sorted({str(i["number"]) for i in scenes} | sseen, key=int)[-100:]
+    except Exception as e:
+        print("scene check skipped:", e)
     now = {str(i["number"]): i["title"] for i in items}
     try:
         seen = set(st.get("seen", []))
@@ -57,8 +69,8 @@ def main():
     new = [n for n in now if n not in seen]
     if new and not first_run:
         titles = [now[n].replace("Review", "").strip()[:60] for n in new[:3]]
-        body = f"{len(new)} video(s) waiting for your approval:\n- " + "\n- ".join(titles)
-        send(topic, "Content Engine: review", body)
+        body = (f"{len(new)} video(s) were flagged by the checks and wait for you:\n- " if auto else f"{len(new)} video(s) waiting for your approval:\n- ") + "\n- ".join(titles)
+        send(topic, "Content Engine: needs you" if auto else "Content Engine: review", body)
         print("sent", len(new))
     else:
         print("nothing new", len(now), "waiting")

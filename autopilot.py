@@ -1,6 +1,6 @@
 """AUTOPILOT: owner-away mode. publish/autopilot.json is the single switch (phone page, Health page and laptop Studio all read it).
 python autopilot.py on|off  -> flip the switch;  python autopilot.py run  -> (every 3h) decide open review Issues when ON.
-Rules when ON: checks-ok -> approve (after hold_hours, max cap per channel per day); duplicate title -> skip now; checks-warn -> skip after 24h;
+Rules when ON: checks-ok -> approve (after hold_hours, max cap per channel per day); duplicate title -> skip now; checks-warn -> waits for the owner;
 anything unreviewed > skip_after_hours -> skip. Decisions go through review_decide.py (same path as a manual label)."""
 import json, os, subprocess, sys, tempfile, datetime, re
 from pathlib import Path
@@ -109,8 +109,8 @@ def main():
                 act, why = 'approve', 'checks ok'
             elif age >= c['skip_after_hours']:
                 act, why = 'skip', 'waited too long (daily cap)'
-        elif age >= 24:
-            act, why = 'skip', 'checks warn/failed'
+        # FLAGGED_WAITS (owner 2026-11-13): a video whose checks flagged a problem is never approved by autopilot; it waits for the owner
+        # (ntfy phone alert) and is only skipped after skip_after_hours if nobody looks at it.
         if not act and age >= c['skip_after_hours']:
             act, why = 'skip', 'unreviewed too long'
         if not act:
