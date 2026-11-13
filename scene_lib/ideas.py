@@ -10,7 +10,7 @@ HIST = ROOT / 'data' / 'scenes' / 'history.json'
 CATEGORIES = ['the human body', 'animals', 'insects and tiny creatures', 'space and planets', 'weather and the sky', 'earth, volcanoes and oceans', 'plants and farming', 'machines and engines',
               'everyday objects at home', 'food and the kitchen', 'buildings, bridges and cities', 'electricity and energy', 'vehicles and travel', 'atoms, germs and tiny things',
               'giant things and extremes', 'inventions that changed the world', 'sports and games', 'sound, light and colour']
-BANNED = re.compile(r'\b(dose|dosage|medicine|drug|pill|cure|treat(ment)?|diagnos|surgery|vaccin|weapon|gun|bomb|explosive|war|kill|suicide|sex|porn|gambl|casino|invest|stock market|crypto|bitcoin|loan|election|politic|religio|god|abortion|alcohol|cigarette|vape|diet|weight loss)', re.I)
+BANNED = re.compile(r'\b(dose|dosage|medicines?|drugs?|pills?|cures?|treat(ment|ments|s|ing)?|diagnos\w*|surger\w*|vaccin\w*|weapons?|guns?|bombs?|explosives?|wars?|kill\w*|suicide|sex\w*|porn\w*|gambl\w*|casinos?|invest\w*|stock market|crypto\w*|bitcoin|loans?|elections?|politic\w*|religio\w*|gods?|abortion|alcohol|cigarettes?|vap(e|es|ing)|diets?|weight loss)\b', re.I)
 STOP = set('a an the how why what does do is are of in on to from with and or for its it your you that this into up down out by at as be can make makes work works so than when where which who'.split())
 def words(s): return {w[:-1] if len(w) > 4 and w.endswith('s') else w for w in re.findall(r'[a-z]+', str(s).lower()) if w not in STOP and len(w) > 2}
 def jac(a, b): return len(a & b) / max(1, len(a | b))
