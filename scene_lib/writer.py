@@ -34,6 +34,7 @@ Work like a careful designer. Think in this order:
    - The layout must SHOW the principle. If gravity matters, the source is physically higher than where the water ends up. If something is underground, it is below y=0.
    - Put the objects in the order of the chain, left to right, so the camera travels one way.
    - Solid machines and buildings stand on dry ground, never inside water. Boxes of different objects must not overlap (a pipe or wire joins them).
+   - EXCEPT things that truly sit inside another thing (clothes in a drum, a seed in a fruit, a piston in a cylinder): give them "inside": "<id of the container>" and place their box inside the container's box. Draw the container as a cut-away so the inside is seen.
 5. STEPS: exactly 7. Each step = one spoken sentence + the ONE cast member that visibly changes to prove it (fills, drains, flows, spins, grows, lights up, appears).
    - "say": ONE energetic sentence, 8 to 13 plain words, spoken like an excited friend. Strong action verbs (slams, rockets, squeezes, bursts, snaps), never dull ones (is, has, creates, forms, allows). At least 5 sentences end with "!". Step 1 is a hook question. Step 7 is the payoff that ties it to the viewer's life.
    - True, general facts only. No numbers you are not sure of. No medical or money advice.
@@ -45,7 +46,7 @@ Return JSON:
  "style": "flow" (mostly water, pipes, machines) or "icons" (living things, body, space, objects, ideas),
  "setting": {{"preset": "day|dusk|night|desert|snow|space|ocean|body|lab|clean", "ground": "grass|sand|snow|rock|seabed|floor|none"}},
  "chain": ["...", "..."],
- "cast": [{{"id": "shortname", "what": "what it is", "built_from": "part types", "x0": 0, "x1": 0, "y0": 0, "y1": 0}}],
+ "cast": [{{"id": "shortname", "what": "what it is", "built_from": "part types", "x0": 0, "x1": 0, "y0": 0, "y1": 0, "inside": "optional container id"}}],
  "steps": [{{"label": "2-16 letters", "say": "...", "shows": "cast id", "change": "what visibly changes"}}]}}"""
 
 def check_plan(pl):
@@ -66,9 +67,14 @@ def check_plan(pl):
         if c['x1'] <= c['x0'] or c['y1'] <= c['y0']: E.append('cast "%s": x1 must be greater than x0 and y1 greater than y0' % c['id'])
         if c['x0'] < -420 or c['x1'] > 760 or c['y0'] < -260 or c['y1'] > 460: E.append('cast "%s" is outside the stage' % c['id'])
     cs = list(ids.values())
+    def anc(c):
+        out = set(); cur = c.get('inside'); n = 0
+        while isinstance(cur, str) and cur in ids and cur not in out and n < 8: out.add(cur); cur = ids[cur].get('inside'); n += 1
+        return out
     for i, a in enumerate(cs):
         for b in cs[i + 1:]:
             ox = min(a['x1'], b['x1']) - max(a['x0'], b['x0']); oy = min(a['y1'], b['y1']) - max(a['y0'], b['y0'])
+            if b['id'] in anc(a) or a['id'] in anc(b) or (anc(a) & anc(b)): continue   # one sits inside the other, or both sit inside the same container
             if ox > 0 and oy > 0:
                 small = min((a['x1'] - a['x0']) * (a['y1'] - a['y0']), (b['x1'] - b['x0']) * (b['y1'] - b['y0']))
                 if small > 0 and ox * oy / small > 0.35: E.append('cast "%s" and "%s" overlap; give each its own place and join them with a pipe or wire' % (a['id'], b['id']))
@@ -96,7 +102,7 @@ Parts are drawn in list order (later parts cover earlier ones): sky first (with 
 
 PARTS YOU MAY USE (only these). Use "emoji" for any recognisable object and "path" to draw custom shapes; never leave a main subject as a plain box:
 {catalog_text()}
-Any part may have an "id". Give every cast member's main part the same id as in the plan.
+Any part may have an "id". Give every cast member's main part the same id as in the plan. A part that sits inside another gets "inside": "<container id>".
 
 ANIMATION: any number field can be a fixed number or keyframes [[time, value], ...]. The value holds before the first and after the last keyframe and moves smoothly between.
 
@@ -107,7 +113,7 @@ DESIGN RULES (a checker enforces every one):
 2. Camera: a list of [time, x, y, zoom]. x is the centre of the picture, y is the height shown a little below the middle. zoom 0.62 shows about 1160 units across, 1.0 shows 720, 1.6 shows 450.
    Start wide at time 0 (show the whole stage), move to each step's "shows" part and zoom in so it is large (1.1 to 2.0), end wide at {DURATION}.
 3. Physics: add "flows": [{{"from":[x,y],"to":[x,y],"by":"gravity"|"pump"|"pressure"}}] for every pipe or stream. Gravity flows must go DOWN. A pump flow needs a pump part. Pressure can only lift water to below its source height.
-4. Connections: every pipe and wire must start and end touching the things it joins.
+4. Connections: every pipe and wire must start and end touching the things it joins, or run off the edge of the stage (x=-360 or x=680) if it comes from outside. Mains water is "pressure", not gravity.
 5. Machines, wheels, pumps and houses stand on dry ground, never inside a body of water. Water never floats: it sits in a container, behind a wall, or in the ground.
 6. Houses, towers, trees and plants stand on the ground (y=0) or on top of a shape.
 7. Labels: CAPITALS, at most 16 letters, each with "show" keyframes so it fades in during its own step and out again. Never more than 2 labels at once. No labels in step 1.
@@ -147,6 +153,10 @@ def tidy(spec, plan=None):
             if isinstance(q, dict) and q.get('type') == 'tree' and indoors: continue      # no trees in a kitchen, in space or inside a body
             keep.append(q)
         spec['parts'] = keep
+    for q in spec.get('parts', []) if isinstance(spec.get('parts'), list) else []:
+        if isinstance(q, dict) and q.get('type') in CATALOG:
+            req, opt, _ = CATALOG[q['type']]
+            for k in [k for k in q if k not in req and k not in opt and k not in ('type', 'id', 'inside')]: q.pop(k)
     if plan:
         for k in ('title', 'principle'):
             if isinstance(plan.get(k), str): spec.setdefault(k, plan[k])
@@ -165,13 +175,16 @@ def _call(llm, prompt, temp, turn, log):
     raise ValueError(' ; '.join(why))
 
 def _ask(llm, prompt, checker, tries, temp, log, name, post=lambda x: x, repair_prompt=None):
-    out = None; errs = None; turn = 0
-    for k in range(1, tries + 1):
+    out = None; errs = None; turn = 0; k = 0; waits = 0
+    while k < tries:
         base = prompt if (not errs or out is None or not repair_prompt) else repair_prompt
         p = base if (not errs or out is None) else base + '\n\nYOUR LAST ANSWER HAD THESE PROBLEMS. Fix every one, keep what was good, and return the full corrected JSON:\n' + '\n'.join('- ' + e for e in errs[:30]) + '\n\nYour last answer was:\n' + json.dumps(out, separators=(',', ':'), ensure_ascii=False)[:13000]
-        try: got = _call(llm, p, temp if k == 1 else 0.35, turn, log)
+        try: got = _call(llm, p, temp if k == 0 else 0.35, turn, log)
         except Exception as e:
-            log('%s try %d: no free LLM answered (%s); waiting 40 s' % (name, k, str(e)[:330])); turn += 1; time.sleep(40); continue
+            waits += 1; turn += 1
+            if waits > 10: raise SystemExit('REJECTED: the free LLM services kept refusing (%s). No video was made.' % str(e)[:200])
+            log('%s: no free LLM answered (%s); waiting 60 s (wait %d of 10, does not use up a try)' % (name, str(e)[:260], waits)); time.sleep(60); continue
+        k += 1
         try: out = post(got)
         except Exception as e: log('%s try %d: unusable answer (%s)' % (name, k, str(e)[:120])); errs = ['the answer was not a valid scene object']; continue
         errs = checker(out)

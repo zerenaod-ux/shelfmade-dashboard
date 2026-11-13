@@ -69,6 +69,7 @@ def design_rules(spec, D, steps, cam, parts):
     E = []; good = [p for p in parts if isinstance(p, dict) and p.get('type') in CATALOG]
     ids = {}
     for p in good:
+        if 'inside' in p and not isinstance(p['inside'], str): E.append('"inside" must be the id of the container part')
         if 'id' in p:
             if not isinstance(p['id'], str) or p['id'] in ids: E.append('part ids must be unique short names (problem with %r)' % (p.get('id'),))
             else: ids[p['id']] = p
@@ -108,12 +109,12 @@ def design_rules(spec, D, steps, cam, parts):
             elif not clear: E.append('step %d: "%s" is hidden behind the caption at the top; aim the camera higher (bigger camera y) so it sits in the middle of the screen' % (i, sh))
     # rule: solid machines and buildings are never drawn under water
     for p in good:
-        if p['type'] not in SOLID: continue
+        if p['type'] not in SOLID or p.get('inside'): continue
         bx = _box(p); cx, cy = (bx[0] + bx[1]) / 2, (bx[2] + bx[3]) / 2
         for w in waters:
             wb = _box(w)
             if wb[0] < cx < wb[1] and wb[2] < cy < wb[3] - 4 and (wb[1] - wb[0]) > (bx[1] - bx[0]) * 1.3:
-                E.append('the %s%s is drawn inside the water (x %d-%d); put machines and buildings on dry ground beside or below the water, joined by a pipe' % (p['type'], ' "%s"' % p['id'] if p.get('id') else '', wb[0], wb[1])); break
+                E.append('the %s%s is drawn inside the water (x %d-%d); put machines and buildings on dry ground beside or below the water, joined by a pipe (or, if it truly belongs in the water, give it "inside": "<id of its container>")' % (p['type'], ' "%s"' % p['id'] if p.get('id') else '', wb[0], wb[1])); break
     # rule: water does not float in the air
     holders = [p for p in good if p['type'] in ('rect', 'poly', 'house', 'tower')]
     for w in waters:
@@ -125,7 +126,8 @@ def design_rules(spec, D, steps, cam, parts):
     for p in good:
         if p['type'] not in ('pipe', 'wire') or not (isinstance(p.get('pts'), list) and len(p['pts']) >= 2 and all(_pt(q) for q in p['pts'])): continue
         for end, name in ((p['pts'][0], 'start'), (p['pts'][-1], 'end')):
-            if not any(_near(end, bx, 48) for bx in others(p)): E.append('the %s %s at %s is not joined to anything; start and end it at the things it connects' % (p['type'], name, end))
+            if end[0] <= -330 or end[0] >= 650 or end[1] <= -180 or end[1] >= 400: continue   # it leaves the picture (supply from outside, drain away)
+            if not any(_near(end, bx, 48) for bx in others(p)): E.append('the %s %s at %s is not joined to anything; start and end it touching the things it connects (or run it off the edge of the stage, x=-360 or x=680, if it comes from outside)' % (p['type'], name, end))
     # rule: flows obey physics
     fl = spec.get('flows')
     if any(p['type'] in ('pipe', 'stream') for p in good):
@@ -133,11 +135,11 @@ def design_rules(spec, D, steps, cam, parts):
         else:
             for n, f in enumerate(fl, 1):
                 if not (isinstance(f, dict) and _pt(f.get('from')) and _pt(f.get('to')) and f.get('by') in ('gravity', 'pump', 'pressure')): E.append('flow %d must have from, to and by (gravity, pump or pressure)' % n); continue
-                if f['by'] == 'gravity' and f['to'][1] > f['from'][1] - 15: E.append('flow %d is marked gravity but does not go down (from height %d to %d); water only falls downhill, so raise the source or lower the outlet' % (n, f['from'][1], f['to'][1]))
+                if f['by'] == 'gravity' and f['to'][1] > f['from'][1] - 15: E.append('flow %d is marked gravity but does not go down (from height %d to %d); water only falls downhill: raise the source, lower the outlet, or mark it "pressure" (mains water) or "pump" if something pushes it' % (n, f['from'][1], f['to'][1]))
                 if f['by'] == 'pump' and not any(p['type'] == 'pump' for p in good): E.append('flow %d needs a pump part' % n)
                 if f['by'] == 'pressure':
-                    top = max([g['from'][1] for g in fl if isinstance(g, dict) and g.get('by') == 'gravity' and _pt(g.get('from'))] or [-1e9])
-                    if f['to'][1] > top - 15: E.append('flow %d: pressure can only push water up to below its source height (%d)' % (n, top))
+                    top = max([g['from'][1] for g in fl if isinstance(g, dict) and g.get('by') == 'gravity' and _pt(g.get('from'))] or [None], key=lambda v: -1e9 if v is None else v)
+                    if top is not None and f['from'][1] < top and f['to'][1] > top - 15: E.append('flow %d: pressure can only push water up to below its source height (%d)' % (n, top))
     # rule: things stand on the ground or on something
     if gy is not None:
         tops = [_box(h)[3] for h in holders]
@@ -168,9 +170,10 @@ def design_rules(spec, D, steps, cam, parts):
                 if (id(a_), id(b_)) in told or not (visible(a_, tt) and visible(b_, tt)): continue
                 A, B = _box_at(a_, tt), _box_at(b_, tt); ox = min(A[1], B[1]) - max(A[0], B[0]); oy = min(A[3], B[3]) - max(A[2], B[2])
                 small = min((A[1] - A[0]) * (A[3] - A[2]), (B[1] - B[0]) * (B[3] - B[2]))
-                if ox > 0 and oy > 0 and small > 0 and ox * oy / small > 0.4:
+                inside = a_.get('inside') or b_.get('inside')   # only a declared container excuses an overlap
+                if not inside and ox > 0 and oy > 0 and small > 0 and ox * oy / small > 0.4:
                     told.add((id(a_), id(b_))); nm = lambda q: '%s%s' % (q['type'], ' ' + q['char'] if q.get('char') else (' "%s"' % q['id'] if q.get('id') else ''))
-                    E.append('clutter: %s and %s are drawn on top of each other around %.0fs (x=%d); move one of them so every object is clearly seen' % (nm(a_), nm(b_), tt, (A[0] + A[1]) / 2))
+                    E.append('clutter: %s and %s are drawn on top of each other around %.0fs (x=%d); move one of them so every object is clearly seen (if one truly sits inside the other, give it "inside": "<id>")' % (nm(a_), nm(b_), tt, (A[0] + A[1]) / 2))
     # rule: every step has its own sound
     sf = [c for c in (spec.get('sfx') or []) if isinstance(c, list) and c and _num(c[0])]
     for i, s in enumerate(steps, 1):
@@ -216,7 +219,7 @@ def check(spec):
             if f not in p: E.append('%s is missing "%s"' % (tag, f))
         moving = False
         for f, v in p.items():
-            if f in ('type', 'id'): continue
+            if f in ('type', 'id', 'inside'): continue
             if f not in req and f not in opt: E.append('%s has a field the engine does not know: "%s"' % (tag, f)); continue
             if f in POINT_LISTS:
                 if not (isinstance(v, list) and len(v) >= 2 and all(_pt(q) for q in v)): E.append('%s: "%s" must be a list of [x,y] points' % (tag, f))
