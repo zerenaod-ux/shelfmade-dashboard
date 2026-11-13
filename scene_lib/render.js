@@ -27,6 +27,8 @@ const fs = require('fs'), path = require('path');
     fs.writeFileSync(path.join('fr', String(f).padStart(4, '0') + '.jpg'), Buffer.from(d.split(',')[1], 'base64'));
     if (f % 200 === 0) console.log('frame', f, '/', total);
   }
+  const pe = await p.evaluate(() => [window.partErrors || 0, window.partErrorMsg || '']);
+  if (pe[0]) console.log('PART SKIPPED ' + pe[0] + ' times (first: ' + pe[1] + ')');
   await b.close();
   if (bad) process.exit(1);
 })();
