@@ -122,7 +122,8 @@ DESIGN RULES (a checker enforces every one):
 9. Make it alive: at least 8 parts that change over time; water levels, pipe progress and flow, spinning wheels, growing plants, lights, arrows.
 10. The star of each step must be BIG: at least 110 px on screen (an emoji of size 120 at zoom 1.0, or size 70 at zoom 1.7), near the centre, and in the middle of the screen height (not under the caption at the top).
 11. No clutter: objects never sit on top of each other; scenery (trees) stays away from the action. 22 to 34 parts in total. Write compact JSON.
-12. Emoji must show EXACTLY the thing meant. A whole corn cob is not a kernel; a pan with an egg is not an empty pan. If no emoji is exact, draw the thing yourself with path, ellipse, circle, rect and poly (for example a kernel = a yellow ellipse; a cut-away = an outline with the inside drawn in). Things that travel get x and y keyframes (or an orbit). Use particles for fire, smoke, steam, sparks, bubbles, dust.
+12. Motion words: to make something jiggle or shake give it "bob" (3 to 10); to turn give "rot" keyframes (degrees); to travel give x and y keyframes; to grow give "size" or "scale" keyframes. Only wheel and pump have "spin".
+13. Emoji must show EXACTLY the thing meant. A whole corn cob is not a kernel; a pan with an egg is not an empty pan. If no emoji is exact, draw the thing yourself with path, ellipse, circle, rect and poly (for example a kernel = a yellow ellipse; a cut-away = an outline with the inside drawn in). Things that travel get x and y keyframes (or an orbit). Use particles for fire, smoke, steam, sparks, bubbles, dust.
 
 Return JSON with keys: "title", "principle", "duration": {DURATION}, "music": {{"bpm": 118}}, "flows", "steps", "camera", "sfx", "parts".
 
@@ -156,15 +157,22 @@ def tidy(spec, plan=None):
     for q in spec.get('parts', []) if isinstance(spec.get('parts'), list) else []:
         if isinstance(q, dict) and q.get('type') in CATALOG:
             req, opt, _ = CATALOG[q['type']]
-            for k in [k for k in q if k not in req and k not in opt and k not in ('type', 'id', 'inside')]: q.pop(k)
+            sp = q.get('spin')
+            if 'spin' not in req and 'spin' not in opt and sp is not None and 'rot' in opt and 'rot' not in q:   # e.g. a spinning emoji: make it really turn
+                speed = sp if isinstance(sp, (int, float)) else max([k[1] for k in sp if isinstance(k, list) and len(k) == 2] or [0])
+                if speed: q['rot'] = [[0, 0], [DURATION, round(min(abs(speed), 9) * 240)]]
+            for k in [k for k in q if k not in req and k not in opt and k not in ('type', 'id', 'inside')]:
+                q.pop(k); spec.setdefault('_dropped', []).append('a %s part%s had "%s", which %s parts do not have, so it did nothing; allowed fields: %s' % (q['type'], ' "%s"' % q['id'] if q.get('id') else '', k, q['type'], ', '.join(req + opt)))
     if plan:
         for k in ('title', 'principle'):
             if isinstance(plan.get(k), str): spec.setdefault(k, plan[k])
     return spec
 
+EXTRA = [('GEMINI_API_KEY', 'https://generativelanguage.googleapis.com/v1beta/openai', ('gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-flash', 'gemini'))]
+
 def _call(llm, prompt, temp, turn, log):
     """Ask the free LLM services one at a time, starting with a different one each turn, and report why each one failed."""
-    provs = [p for p in llm.PROVIDERS if os.environ.get(p[0], '').strip()]; saved = llm.PROVIDERS; why = []
+    provs = [p for p in llm.PROVIDERS + EXTRA if os.environ.get(p[0], '').strip()]; saved = llm.PROVIDERS; why = []
     if not provs: raise ValueError('no free LLM key is configured')
     try:
         for p in provs[turn % len(provs):] + provs[:turn % len(provs)]:
@@ -188,6 +196,8 @@ def _ask(llm, prompt, checker, tries, temp, log, name, post=lambda x: x, repair_
         try: out = post(got)
         except Exception as e: log('%s try %d: unusable answer (%s)' % (name, k, str(e)[:120])); errs = ['the answer was not a valid scene object']; continue
         errs = checker(out)
+        if errs and isinstance(out, dict) and out.get('_dropped'): errs = errs + sorted(set(out['_dropped']))[:6]
+        if isinstance(out, dict): out.pop('_dropped', None)
         log('%s try %d: %s' % (name, k, 'PASSED' if not errs else '%d problems: %s' % (len(errs), ' | '.join(errs[:8]))))
         if not errs: return out
     raise SystemExit('REJECTED: the %s could not pass the checker after %d tries. No video was made.' % (name, tries))

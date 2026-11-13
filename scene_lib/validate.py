@@ -78,6 +78,8 @@ def design_rules(spec, D, steps, cam, parts):
     waters = [p for p in good if p['type'] == 'water']
     def changes_in(p, a, b):
         if isinstance(p.get('orbit'), dict): return True
+        if _num(p.get('bob')) and p['bob'] >= 2: return True          # keeps jiggling the whole time
+        if p.get('type') in ('wheel', 'pump') and _num(p.get('spin')) and p['spin'] > 0: return True
         for f, v in p.items():
             if f in ANIM and _kfs(v) and len({k[1] for k in v}) > 1:
                 for k0, k1 in zip(v, v[1:]):
