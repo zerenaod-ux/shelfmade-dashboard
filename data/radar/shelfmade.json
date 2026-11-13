@@ -2,128 +2,128 @@
  "why": [
   {
    "title": "#philosophy #quotes #stoicism #marcusaurelius #mindset",
-   "why": "Achieved a massive 91.3x breakout by pairing extreme psychological pain points (internal suffering) with iconic, highly searchable classic figures like Marcus Aurelius."
-  },
-  {
-   "title": "The cost of staying is often greater than the cost of leaving. #philosophy #quotes",
-   "why": "Uses a high-friction, relational framing hook that triggers immediate cognitive dissonance and emotional urgency around personal boundaries."
+   "why": "Achieved a massive 122.5 breakout ratio by capitalizing on extreme curiosity around Marcus Aurelius's internal monologues, delivering high-potency micro-quotes over cinematic ambient backgrounds."
   },
   {
    "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
-   "why": "Capitalizes on visceral emotional topics like betrayal and heartbreak using poetic, classic literary excerpts to drive high comment-section engagement."
+   "why": "Drives high retention by tapping into deep emotional pain points like betrayal using stark, text-overlay storytelling sourced directly from classic literature."
   },
   {
-   "title": "Your perspective isn't necessarily the truth. #shorts #quotes #psychology #philosophy #ytshorts",
-   "why": "Drives retention through a disruptive identity-challenging premise that forces the viewer to pause and re-evaluate their own perception."
+   "title": "The cost of staying is often greater than the cost of leaving. #philosophy #quotes",
+   "why": "Leverages a powerful sunk-cost dilemma as a psychological hook, making viewers pause to re-evaluate their personal relationships and career choices."
+  },
+  {
+   "title": "Five lines from the greatest minds that will change how you see your life. \ud83e\udde0",
+   "why": "Uses a highly effective listicle framework coupled with strong prospective value, promising an immediate mindset shift in under 60 seconds."
   }
  ],
  "hook_patterns": [
-  "High-friction life decisions framed as comparative costs (e.g., staying vs. leaving)",
-  "Direct identity/perception challenges that provoke immediate self-reflection",
-  "Curated value-lists promising a mindset shift (e.g., 'X lines that change how you see life')"
+  "The harsh relational boundary hook (e.g., how people react when control is lost)",
+  "The psychological paradox hook (e.g., hidden costs of staying vs. leaving)",
+  "The curated value-promise listicle (e.g., 5 lines from historic minds that reframe reality)"
  ],
- "todays_angle": "Reframe modern relationship burn-out and boundary-setting through cold, pragmatic wisdom from 19th-century public domain literature.",
+ "todays_angle": "Extract brutal, counter-intuitive boundary wisdom from public domain texts to challenge modern codependency and personal sacrifice.",
  "ideas": [
-  "The 100-Year-Old Rule for Walking Away: What Arthur Schopenhauer taught about ending toxic attachments before they destroy your peace.",
-  "Why your mind exaggerates betrayal: Leo Tolstoy's sharp observation on why we hurt our own feelings long after the conflict ends.",
-  "3 lines from Fyodor Dostoevsky that will permanently change how you respond to disrespect."
+  "3 Lines from Seneca on why cutting off toxic friends is an act of self-preservation, paired with fast-paced moody statues aesthetic.",
+  "Dostoevsky's warning on the secret danger of over-explaining yourself to people who want to misunderstand you.",
+  "The Art of Leaving: What Marcus Aurelius wrote in his private journal when walking away from impossible situations."
  ],
  "avoid": [
-  "Generic aesthetic compilations of famous quotes with random tag stacks and no distinct narrative narrative frame.",
-  "Over-used surface-level Marcus Aurelius 'overcoming overthinking' tropes without a unique or provocative thesis."
+  "Generic tag-cloud titles with zero narrative hook (e.g., just spamming #philosophy #quotes #mindset).",
+  "Vague self-help platitudes that lack the sharp edge of classic public-domain literature."
  ],
- "updated": "2026-11-12",
- "sample": 55,
+ "updated": "2026-11-13",
+ "sample": 56,
  "spikes": [
+  {
+   "title": "this is what people will do to you when they're no longer can control you#shorts",
+   "channel": "stoic physiology ",
+   "views": 65566,
+   "hours": 30,
+   "vph": 2213.8,
+   "subs": 18400,
+   "breakout": 3.6
+  },
   {
    "title": "Five lines from the greatest minds that will change how you see your life. \ud83e\udde0",
    "channel": "intrepidreads ",
-   "views": 25184,
-   "hours": 12,
-   "vph": 2050.5,
-   "subs": 11600,
-   "breakout": 2.2
+   "views": 55872,
+   "hours": 31,
+   "vph": 1830.9,
+   "subs": 11700,
+   "breakout": 4.8
   },
   {
-   "title": "moral : this is One Of the reason you should know about the hidden knowledge #shorts#quotes#Bernad",
-   "channel": "stoic physiology ",
-   "views": 50427,
-   "hours": 31,
-   "vph": 1633.4,
-   "subs": 18300,
-   "breakout": 2.8
+   "title": "#CriticalMind #CriticalThinking #DeepThoughts #Philosophy #DeepQuotes #LifeQuotes #Poetry #Human",
+   "channel": "CRITICAL MIND ",
+   "views": 32174,
+   "hours": 34,
+   "vph": 950.3,
+   "subs": 2890,
+   "breakout": 11.1
   },
   {
    "title": "#philosophy #quotes #stoicism #marcusaurelius #mindset",
    "channel": "The Philosopher's Bible",
-   "views": 22642,
-   "hours": 21,
-   "vph": 1090.8,
-   "subs": 248,
-   "breakout": 91.3
-  },
-  {
-   "title": "The cost of staying is often greater than the cost of leaving. #philosophy #quotes",
-   "channel": "ORSELION",
-   "views": 27189,
-   "hours": 26,
-   "vph": 1029.4,
-   "subs": 1040,
-   "breakout": 26.1
-  },
-  {
-   "title": "moral - the hard truth about Neighbours explained for you #shortd#quotes#zweig#stoicism#philosophy",
-   "channel": "stoic physiology ",
-   "views": 32656,
-   "hours": 34,
-   "vph": 961.3,
-   "subs": 18300,
-   "breakout": 1.8
-  },
-  {
-   "title": "Mark Twain\u2019s Sharpest Observation\ud83d\udcad #shortsfeed #shorts #philosophy",
-   "channel": "Still Mind Society ",
-   "views": 34674,
-   "hours": 38,
-   "vph": 914.1,
-   "subs": 4740,
-   "breakout": 7.3
+   "views": 32230,
+   "hours": 39,
+   "vph": 826.6,
+   "subs": 263,
+   "breakout": 122.5
   },
   {
    "title": "The Most Savage Philosopher in History\ud83d\udcad #shortsfeed #shorts #philosophy #society",
    "channel": "Still Mind Society ",
-   "views": 14025,
-   "hours": 16,
-   "vph": 894.0,
-   "subs": 4740,
-   "breakout": 3.0
+   "views": 27480,
+   "hours": 34,
+   "vph": 810.1,
+   "subs": 4800,
+   "breakout": 5.7
   },
   {
-   "title": "Your perspective isn't necessarily the truth. #shorts #quotes #psychology #philosophy #ytshorts",
-   "channel": "Meaning Room",
-   "views": 23007,
-   "hours": 27,
-   "vph": 845.5,
-   "subs": 1550,
-   "breakout": 14.8
+   "title": "this is what men should do the most i they face these challenges #shorts#quotes",
+   "channel": "stoic physiology ",
+   "views": 12205,
+   "hours": 15,
+   "vph": 806.5,
+   "subs": 18400,
+   "breakout": 0.7
+  },
+  {
+   "title": "Moral : the unspoken truth about why man are insane #shorts#quotes#philosophy#reeves#fyp#stoicism",
+   "channel": "stoic physiology ",
+   "views": 33898,
+   "hours": 47,
+   "vph": 719.9,
+   "subs": 18400,
+   "breakout": 1.8
+  },
+  {
+   "title": "The cost of staying is often greater than the cost of leaving. #philosophy #quotes",
+   "channel": "ORSELION",
+   "views": 31118,
+   "hours": 45,
+   "vph": 697.0,
+   "subs": 1060,
+   "breakout": 29.4
   },
   {
    "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
    "channel": "Letters to Nobody",
-   "views": 20714,
-   "hours": 25,
-   "vph": 845.1,
-   "subs": 697,
-   "breakout": 29.7
+   "views": 23777,
+   "hours": 43,
+   "vph": 556.2,
+   "subs": 716,
+   "breakout": 33.2
   },
   {
-   "title": "Subscribe for more #secret #psychology #books #english #quotes #love #relationship #couple #trending",
-   "channel": "Myndverse",
-   "views": 5439,
-   "hours": 35,
-   "vph": 155.0,
-   "subs": 197,
-   "breakout": 27.2
+   "title": "\ud83c\udf3f Life Teaches Us Something Every Day | Deep Urdu Quotes \u2764\ufe0f",
+   "channel": "Dekho Aur Jano",
+   "views": 4328,
+   "hours": 31,
+   "vph": 139.1,
+   "subs": 15,
+   "breakout": 21.6
   }
  ]
 }
