@@ -194,6 +194,7 @@ var KEYJOBS=['daily-shorts','full-video','mindlore-2d','mindlore-story-short','s
 var BRAND_NAME='Content Engine';
 var LINKS={shelfmade:{youtube:'https://www.youtube.com/@shelfmadedaily',tiktok:'https://www.tiktok.com/@shelfmade.daily',instagram:'https://www.instagram.com/shelfmade.daily/'},mindlore:{youtube:'https://www.youtube.com/@mindloredaily',tiktok:'https://www.tiktok.com/@mindlore.daily',instagram:'https://www.instagram.com/mindlore.daily_/reels/'},doodles:{youtube:'https://www.youtube.com/@AnimationDoodles-h8e',tiktok:'https://www.tiktok.com/@animationdoodleshq',instagram:'https://www.instagram.com/animationdoodleshq/'}};
 var REPO_URL='https://github.com/zerenaod-ux/shelfmade-dashboard';
+var CE_API='https://api.github.com/repos/zerenaod-ux/content-engine';   // Content Engine lives in its own repo since 2026-11-13
 var $=function(i){return document.getElementById(i)};
 $('brand').innerHTML='';$('brand').appendChild(document.createTextNode(BRAND_NAME.split(' ')[0]+' '));var bi=el0('i',BRAND_NAME.split(' ').slice(1).join(' ')||'');$('brand').appendChild(bi);
 document.title=BRAND_NAME;
@@ -347,16 +348,16 @@ function loadReview(){
 /* ---------- Content Engine videos (4th system, not posted): watch, then Done closes the card. Videos stay saved in their release folder. ---------- */
 function loadScenes(){
   var host=$('r-scenes');if(!host){host=el('div');host.id='r-scenes';$('t-review').appendChild(host)}host.textContent='';
-  fetch(API+'/issues?state=open&labels=scene-review&per_page=20',{headers:hdr()}).then(function(r){return r.ok?r.json():[]}).then(function(a){
+  fetch(CE_API+'/issues?state=open&labels=scene-review&per_page=20',{headers:hdr()}).then(function(r){return r.ok?r.json():[]}).then(function(a){
     a=(a||[]).filter(function(x){return !x.pull_request});
     var head=el('div','row');head.appendChild(el('p','lab','Content Engine · '+(a.length?a.length+' new':'nothing new')));
-    var lk=el('a','chip','All videos ↗');lk.href=REPO_URL+'/releases';lk.target='_blank';lk.rel='noopener';head.appendChild(lk);host.appendChild(head);
+    var lk=el('a','chip','All videos ↗');lk.href='https://github.com/zerenaod-ux/content-engine/releases';lk.target='_blank';lk.rel='noopener';head.appendChild(lk);host.appendChild(head);
     if(!a.length){host.appendChild(el('div','card','No new Content Engine video. It makes 2 a day by itself (not posted).'));return}
     a.forEach(function(it){var c=el('div','card'),v=parse(it.body);
       if(v.video&&safeVideo(v.video)){var vd=el('video');vd.controls=true;vd.playsInline=true;vd.preload='metadata';vd.src=v.video;vd.style.cssText='width:100%;max-height:52vh;border-radius:14px;background:#000;display:block;margin-bottom:10px';c.appendChild(vd)}
       c.appendChild(el('span','tag','NOT POSTED'));c.appendChild(el('h4','',it.title.replace(/^Content Engine:\s*/,'')));
       var b=el('button','btnline pri','Done ✓');b.type='button';
-      b.onclick=function(){if(!TOK){openSheet();return}b.disabled=true;fetch(API+'/issues/'+it.number,{method:'PATCH',headers:Object.assign({'Content-Type':'application/json'},hdr()),body:JSON.stringify({state:'closed'})})
+      b.onclick=function(){if(!TOK){openSheet();return}b.disabled=true;fetch(CE_API+'/issues/'+it.number,{method:'PATCH',headers:Object.assign({'Content-Type':'application/json'},hdr()),body:JSON.stringify({state:'closed'})})
         .then(function(r){if(!r.ok)throw new Error('GitHub said '+r.status);c.style.opacity='.5';b.textContent='Seen ✓ (still saved)'}).catch(function(e){b.disabled=false;alert(e.message)})};
       c.appendChild(b);host.appendChild(c)})}).catch(function(){})}
 
