@@ -2058,5 +2058,468 @@
     }
    }
   ]
+ },
+ {
+  "id": "leos-5am-club-disaster",
+  "title": "The 4:30 AM Panic",
+  "theme": "Leo tries to become a morning person for exactly one day",
+  "premise": "Leo tries to fix his life by joining the famous 5 AM Club for one day to prove he is a real adult. Mia comes along to track every single meltdown as his plan crumbles before breakfast.",
+  "running_gag": "Mia's phone battery keeps dropping to 3% right when she tries to record Leo's embarrassments",
+  "payoff": "Leo passes out asleep by 8:00 AM, having accomplished nothing except getting a misspelled coffee, while Mia gives him a warm pop-tart and updates her scoreboard.",
+  "description": "Leo tries to join the elite 5 AM Club to finally become a person who has his life together. Mia tags along with her phone at 3% battery to document the glorious trainwreck. Can Leo survive until breakfast or will morning routines destroy him forever?",
+  "scenes": [
+   {
+    "time": "4:30 AM",
+    "setting": "Leo's Bedroom",
+    "concept": "PLANNING FALLACY",
+    "beat": "With an alarm going off at 4:30 AM, Leo starts pulling the blanket over his head while complaining about his 14-step routine. Mia sits on his desk chair sipping a cup of tea, deadpanning that spending 40 minutes choosing rain sounds defeated the whole point of waking up early.",
+    "story": {
+     "id": "leos-5am-club-disaster-01",
+     "title": "Why Leo Woke Up At 4:30 AM \u23f0",
+     "concept": "THE 5 AM DELUSION",
+     "mood": "dramatic",
+     "insight": "You can't fit an 8-hour morning routine into 20 sleepy minutes.",
+     "caption": "Leo tries the 5 AM Club to become a real adult, but his 14-step routine hits a wall fast.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "In a messy bedroom, a digital clock showing a time of 4:30 AM glows while Leo is lying in bed pulling the blanket over his face.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "I am five minutes away from being totally functional!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo sits up clutching a pillow while an alarm going off buzzes on the table. Mia sits nearby with a cup of tea.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You spent thirty minutes picking warm rain sounds."
+        },
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "normal",
+         "text": "Soft thunder triggers my ultimate success mode!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits in a desk chair holding a cup of tea. Leo is frantically typing on his phone. Outside the window, Brenda holds a clipboard.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "It is four thirty-five. Your routine ends at noon."
+        },
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Okay but hear me out, I color-coded it!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo is walking pacing the hallway outside his room while Mia follows behind texting on her phone.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle texted: just wing it bro, sleep is free energy."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Kyle does not own three journals and ice bath dreams!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia raises her phone as a notification message arrives on screen while Leo grumps on the bed frame.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "I would film this, but my phone is at three percent."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "normal",
+         "text": "That puts your scoreboard at sixty-eight."
+        }
+       ]
+      },
+      {
+       "scene": "Leo is lying in bed pulling the pillow over his head again with tired eyes while Mia smirks.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "So are you successful now or just cozy?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "5:15 AM",
+    "setting": "Outside Dev's Coffee Shop",
+    "concept": "ILLUSION OF CONTROL",
+    "beat": "Leo is walking / pacing the hallway outside the locked caf\u00e9 holding a cold coffee mug that barista Dev labeled 'Lyle' in the window background. Mia pulls out her phone to take a photo of his suffering, but a notification / message arrives showing her screen is at 3% battery and it shuts off instantly.",
+    "story": {
+     "id": "leos-5am-club-disaster-02",
+     "title": "How Leo Lost Control Before Breakfast \u2615",
+     "concept": "ILLUSION OF CONTROL",
+     "mood": "dramatic",
+     "insight": "Pushing locked doors harder won't make morning come any quicker.",
+     "caption": "Leo tried to conquer the 5 AM club, but a locked coffee shop had other plans. Watch his morning routine fall apart!",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Outside a dark cafe, Leo is walking / pacing the hallway holding a coffee mug / a cup of tea while Mia watches.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "The door is locked! My whole morning routine is officially dead!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo is someone knocking on the door while Mia is typing on his phone / texting / scrolling near the street lamp.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "It's five fifteen in the morning, Lyle. Nobody is alive."
+        },
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "Okay but hear me out, pressing buttons hard makes humans hurry!"
+        }
+       ]
+      },
+      {
+       "scene": "Dev points through the glass to a digital clock showing a time of five sixteen AM inside.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "normal",
+         "text": "Kyle texted: winners force the world to open by aggressive tapping."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Kyle gets stuck in sleeping bags and eats plain bread crusts."
+        }
+       ]
+      },
+      {
+       "scene": "Mia tries to take a photo, but a notification / message arrives on her screen which goes black.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "tired",
+         "beat": "quick",
+         "text": "Hold on, taking a picture of this breakdown for Brenda."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "No! My phone hit three percent and died. Classic."
+        }
+       ]
+      },
+      {
+       "scene": "Leo winces as an alarm going off blares loudly from his digital watch.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "quick",
+         "text": "See? The light clicked! I am literally controlling time!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "That button belongs to the pedestrian crossing three blocks away."
+        }
+       ]
+      },
+      {
+       "scene": "Mia shivers, pulling the blanket / pillow / lying in bed scarf tighter around her neck outside.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Scoreboard says sixty-eight for Mia. Anyway, buy me pancakes."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "6:30 AM",
+    "setting": "The Office Bullpen",
+    "concept": "SOCIAL FACILITATION",
+    "beat": "Leo is aggressively typing on a laptop trying to look like a hyper-focused CEO while boss Greg stands in the background drinking water. Mia starts texting on her phone using a wall plug, telling Leo that Greg only ever emails the word 'Noted' no matter what time he arrives, adding point 68 to her scoreboard.",
+    "story": {
+     "id": "leos-5am-club-disaster-03",
+     "title": "Why Typing Fast Makes You A CEO \ud83d\udda5\ufe0f",
+     "concept": "SOCIAL FACILITATION",
+     "mood": "dramatic",
+     "insight": "Performing for an audience turns simple tasks into high-stakes theater.",
+     "caption": "Leo tries to prove he is a corporate titan while Greg drinks water in the background.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "The messy office bullpen with scattered papers. Leo in his yellow hoodie is aggressively typing on a laptop. Boss Greg stands in the background drinking water in a grey suit.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Look at these fingers blur. Pure corporate speed."
+        }
+       ]
+      },
+      {
+       "scene": "Leo keeps typing on a laptop furiously while glaring at the screen. Mia in her teal sweater sits next to him texting on her phone using a wall plug.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You literally backspaced the word 'the' fourteen times."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Okay but hear me out, it's strategic editing!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo leans closer to the screen pretending to read complex charts. Greg in the background wipes his mouth with a napkin and stares blankly.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "normal",
+         "text": "Greg emailed you 'Noted' forty times this week."
+        },
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "quick",
+         "text": "Today I get an exclamation point!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo stops typing on a laptop and holds his breath staring at the inbox. A notification / message arrives on Mia's phone plugged into the wall.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "beat": "pause",
+         "text": "Wait, a new email just dropped."
+        },
+        {
+         "who": "leo",
+         "feel": "tired",
+         "beat": "quick",
+         "text": "Is it the legendary exclamation point?"
+        }
+       ]
+      },
+      {
+       "scene": "Mia looks at her phone screen while holding the charging cable. Leo slumps his shoulders against the back of his chair in defeat.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Nope. Just 'Noted.' Phone's at three percent. Point sixty-eight."
+        }
+       ]
+      },
+      {
+       "scene": "Leo starts typing on his phone instead of the laptop while Greg walks away in the background. Mia smiles smugly.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "snap",
+         "text": "Kyle says text back a thumbs-up rocket ship emoji."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "8:00 AM",
+    "setting": "Leo's Bedroom",
+    "concept": "FALSE CONSENSUS EFFECT",
+    "beat": "Leo is lying in bed completely defeated while a digital clock showing a time of 8:00 AM blinks red next to his wilted plant Gerald. Mia hands him a toasted pastry, sits on the floor next to him, and says that being a successful morning person is a lie made up by people who go to sleep at 7:00 PM.",
+    "story": {
+     "id": "leos-5am-club-disaster-04",
+     "title": "Why Joining The Five AM Club Ruined My Life \u23f0",
+     "concept": "FALSE CONSENSUS EFFECT",
+     "mood": "dramatic",
+     "insight": "We think everyone loves our crazy habits until breakfast arrives.",
+     "caption": "Leo tries the 5 AM club and immediately regrets every life choice.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo lying in bed under a heavy blanket in a messy bedroom. A digital clock showing a time of 8:00 AM blinks red next to a wilted houseplant Gerald. Boss Greg stands outside the open door holding a coffee mug.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Eight? But I conquered the dawn!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You conquered three hours of aggressive snoring."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sitting on the floor next to the bed, handing Leo a warm cup of tea. Brenda the neighbour watches through the window holding a clipboard with a judgmental look.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "normal",
+         "text": "Scoreboard is sixty-eight. Morning people just sleep at seven."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "quick",
+         "text": "I thought the whole planet was jogging right now."
+        }
+       ]
+      },
+      {
+       "scene": "Leo pulling the blanket over his head while Mia looks at her phone as a notification message arrives. Gerald the plant drops a dry leaf onto the pillow.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "pause",
+         "text": "Everyone online said waking up early cures everything."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Kyle says just wing it, bro."
+        }
+       ]
+      },
+      {
+       "scene": "Leo sitting up abruptly, typing on his phone with frantic fingers while Mia sips her tea. A digital clock showing a time of 8:01 AM glows bright red in the background.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "I am starting a nap club at noon."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Zero people will join."
+        }
+       ]
+      },
+      {
+       "scene": "Mia standing up and walking pacing the hallway toward the exit while holding her phone. Boss Greg in the background drinks water and silently points at his watch.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "normal",
+         "text": "Greg looks impressed by my sheer grit."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Greg just emailed me one word: Noted."
+        }
+       ]
+      },
+      {
+       "scene": "Leo lying back down on the pillow staring at the ceiling while Mia stands by the doorway.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "tired",
+         "beat": "pause",
+         "text": "Should we try again tomorrow?"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]

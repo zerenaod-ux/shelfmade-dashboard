@@ -23,8 +23,8 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 5,
-   "last": 25
+   "uses": 6,
+   "last": 31
   },
   {
    "id": "minute",
@@ -405,6 +405,18 @@
    "milestone": false,
    "season": 3,
    "date": "2026-11-12"
+  },
+  {
+   "n": 5,
+   "kind": "full",
+   "id": "leos-5am-club-disaster",
+   "title": "The 4:30 AM Panic",
+   "concept": "Leo tries to become a morning person for exactly one day",
+   "gag": "battery",
+   "callback": false,
+   "milestone": true,
+   "season": 1,
+   "date": "2026-11-13"
   }
  ]
 }
