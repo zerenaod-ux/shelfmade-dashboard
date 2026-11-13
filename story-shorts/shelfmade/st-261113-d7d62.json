@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261113-d7d62",
+ "title": "The Pleasures of Life",
+ "author": "Sir John Lubbock",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Your Brain Chases Restless Happiness Part 3",
+ "hook": "You feel a restless itch whenever you sit completely still.",
+ "thumbnail_headline": "CHASING RESTLESS HAPPINESS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a restless itch whenever you sit completely still. Victorian writer John Lubbock argued in 1887 that true rest was an active duty for your mind. In 2014, psychologist Timothy Wilson at the University of Virginia tested this by placing people alone in a quiet room for 15 minutes. The result? About 67 percent of men and 25 percent of women chose to give themselves mild electric shocks rather than sit alone with their thoughts. That's it. It was not just one American lab showing this pattern. Further studies across eleven different countries revealed the exact same human dread of doing nothing, a effect researchers call the action bias. So why do we assume sitting still brings us instant peace? Because your brain naturally craves mild external stimuli to stay regulated. Lubbock got it right when he wrote that resting requires deliberate focus, not just silence. So next time you try to relax, remember why you feel a restless itch."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People prefer negative stimulation like mild electric shocks over sitting alone in a room with their thoughts for 15 minutes",
+   "who": "Timothy Wilson",
+   "year": "2014",
+   "place": "University of Virginia"
+  },
+  {
+   "claim": "The aversion to quiet thinking and the preference for mundane external activity occurs consistently across multiple nations",
+   "who": "Timothy Wilson and colleagues",
+   "year": "2014",
+   "place": "11 different countries"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Pleasures of Life by Sir John Lubbock",
+ "exp": ""
+}

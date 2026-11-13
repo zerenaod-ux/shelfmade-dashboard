@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261113-baa7f",
+ "title": "Walden",
+ "author": "Henry David Thoreau",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Buying Stuff Tightens Your Chest Part 1 😣",
+ "hook": "You feel a sudden chest tightness after buying expensive things you thought you needed.",
+ "thumbnail_headline": "STOP BUYING TRASH",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a sudden chest tightness after buying expensive things you thought you needed. A century and a half ago, Henry David Thoreau actually warned that men become tools of their tools. In 1854, he spent two years at Walden Pond spending about twenty-eight dollars total to build his entire shelter. What did modern science find when we chase more possessions? In 2014, psychologist Marsha Richins studied over five hundred consumers in the United States and measured their emotional spikes before and after shopping. The result? People felt short bursts of excitement before a transaction, but their negative emotions spiked immediately after paying. That's it. It is not just one study. Research across thousands of adults confirms this pattern, known as the hedonic treadmill. So why do we assume buying more relieves our daily stress? Brain scans reveal dopamine peaks during anticipation, not ownership. Thoreau was right that clutter costs life energy, though modern humans need more than a dirt hut. So next time you shop, remember how you feel a sudden chest tightness."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Thoreau built his Walden cabin for a total cost of about twenty-eight dollars.",
+   "who": "Henry David Thoreau",
+   "year": "1854",
+   "place": "Walden Pond, Massachusetts"
+  },
+  {
+   "claim": "Anticipating a purchase produces higher positive emotion than the actual acquisition, followed by a surge in negative feelings.",
+   "who": "Marsha Richins",
+   "year": "2014",
+   "place": "University of Missouri, United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Walden by Henry David Thoreau",
+ "exp": ""
+}
