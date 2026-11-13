@@ -15,7 +15,7 @@
    "likes": 9,
    "comments": 0,
    "avgSeconds": 15,
-   "avgPercent": 59.53000000000001,
+   "avgPercent": 59.37,
    "subsGained": 3
   },
   {
@@ -41,7 +41,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 12,
-   "avgPercent": 67.32,
+   "avgPercent": 65.6,
    "subsGained": 0
   },
   {
@@ -188,6 +188,16 @@
    "subsGained": 0
   },
   {
+   "id": "Mkc1Mjjf_kY",
+   "title": "Machiavelli would hate how you live.",
+   "published": "2026-11-13T03:01:24Z",
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "views": 49,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "7P-eD_FErv0",
    "title": "Where is your attention?",
    "published": "2026-10-18T23:44:02Z",
@@ -199,16 +209,6 @@
    "avgSeconds": 13,
    "avgPercent": 57.19,
    "subsGained": 0
-  },
-  {
-   "id": "Mkc1Mjjf_kY",
-   "title": "Machiavelli would hate how you live.",
-   "published": "2026-11-13T03:01:24Z",
-   "duration": "PT1M12S",
-   "privacy": "public",
-   "views": 47,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "88SeG1rSwzc",
@@ -452,7 +452,10 @@
    "privacy": "public",
    "views": 29,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 37,
+   "avgPercent": 46.12,
+   "subsGained": 0
   },
   {
    "id": "OKEdacXsBrk",
@@ -813,6 +816,19 @@
    "comments": 0
   },
   {
+   "id": "SAQ1Y0wN0zI",
+   "title": "Nobody warns you about Tao Te Ching.",
+   "published": "2026-11-11T18:06:41Z",
+   "duration": "PT1M11S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 14.580000000000002,
+   "subsGained": 0
+  },
+  {
    "id": "jTyrD15cQHM",
    "title": "Can one page change you?",
    "published": "2026-10-14T02:39:25Z",
@@ -826,16 +842,6 @@
    "subsGained": 0
   },
   {
-   "id": "SAQ1Y0wN0zI",
-   "title": "Nobody warns you about Tao Te Ching.",
-   "published": "2026-11-11T18:06:41Z",
-   "duration": "PT1M11S",
-   "privacy": "public",
-   "views": 10,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "mcV0u5NRAvI",
    "title": "Can you control your calm?",
    "published": "2026-10-23T04:05:15Z",
@@ -844,8 +850,8 @@
    "views": 10,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 116.04999999999998,
+   "avgSeconds": 20,
+   "avgPercent": 91.81,
    "subsGained": 0
   },
   {
@@ -1258,8 +1264,8 @@
    "views": 3,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 14.04,
+   "avgSeconds": 20,
+   "avgPercent": 31.730000000000004,
    "subsGained": 0
   },
   {
@@ -1439,6 +1445,16 @@
    "comments": 0
   },
   {
+   "id": "D3aLO1j24s8",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-13T18:04:35Z",
+   "duration": "PT1M19S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "v5GPz22mgbU",
    "title": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!",
    "published": "2026-11-11T03:02:15Z",
@@ -1485,7 +1501,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "bIeNOgFWT_I",
@@ -1577,7 +1596,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 2,
+   "avgPercent": 0.54,
+   "subsGained": 0
   },
   {
    "id": "qreV4UF_HS4",
@@ -1613,7 +1635,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 2.62,
+   "subsGained": 0
   },
   {
    "id": "6z0IxWs-qko",
@@ -1820,6 +1845,26 @@
    "comments": 0
   },
   {
+   "id": "sWMRO2gaXS8",
+   "title": "Nietzsche had a warning for you.",
+   "published": "2026-11-13T19:57:35Z",
+   "duration": "PT6M52S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "ArV4A7SljL8",
+   "title": "Forget what you know about Self-Reliance.",
+   "published": "2026-11-13T19:14:51Z",
+   "duration": "PT7M18S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "cPmS7p3wuaY",
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-13T00:00:09Z",
@@ -1857,7 +1902,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "g8hW1uT4Eg8",

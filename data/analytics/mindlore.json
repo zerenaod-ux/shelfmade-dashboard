@@ -14,8 +14,8 @@
    "views": 379,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 103,
-   "avgPercent": 131.07,
+   "avgSeconds": 101,
+   "avgPercent": 129.03,
    "subsGained": 0
   },
   {
@@ -28,7 +28,7 @@
    "likes": 5,
    "comments": 0,
    "avgSeconds": 31,
-   "avgPercent": 65.26,
+   "avgPercent": 64.7,
    "subsGained": 0
   },
   {
@@ -63,8 +63,8 @@
    "views": 92,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 166,
-   "avgPercent": 33.05,
+   "avgSeconds": 129,
+   "avgPercent": 25.78,
    "subsGained": 0
   },
   {
@@ -117,6 +117,16 @@
    "subsGained": 0
   },
   {
+   "id": "Nw9hdA-AyGs",
+   "title": "Why Faces Freeze On Sudden News",
+   "published": "2026-11-12T23:02:23Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 75,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "2uytrhv7SeI",
    "title": "Why Animals Play Games",
    "published": "2026-11-10T23:01:33Z",
@@ -128,16 +138,6 @@
    "avgSeconds": 22,
    "avgPercent": 37.11,
    "subsGained": 0
-  },
-  {
-   "id": "Nw9hdA-AyGs",
-   "title": "Why Faces Freeze On Sudden News",
-   "published": "2026-11-12T23:02:23Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 74,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "qfwKKgBIkvI",
@@ -173,7 +173,10 @@
    "privacy": "public",
    "views": 57,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 32.03,
+   "subsGained": 0
   },
   {
    "id": "70hQFkZl71o",
@@ -245,7 +248,10 @@
    "privacy": "public",
    "views": 49,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 40,
+   "avgPercent": 74.95,
+   "subsGained": 0
   },
   {
    "id": "4qzeT6uxt3A",
@@ -269,8 +275,8 @@
    "views": 46,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 25,
-   "avgPercent": 38.63,
+   "avgSeconds": 28,
+   "avgPercent": 42.74,
    "subsGained": 0
   },
   {
@@ -300,6 +306,19 @@
    "subsGained": 0
   },
   {
+   "id": "GPPdglOKqFc",
+   "title": "First Impression Myth",
+   "published": "2026-11-11T00:02:24Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 43,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 26,
+   "avgPercent": 49.65,
+   "subsGained": 0
+  },
+  {
    "id": "MTXe8IAf__g",
    "title": "Why a deadline makes your stomach knot",
    "published": "2026-11-09T18:02:22Z",
@@ -326,19 +345,6 @@
    "subsGained": 0
   },
   {
-   "id": "GPPdglOKqFc",
-   "title": "First Impression Myth",
-   "published": "2026-11-11T00:02:24Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 42,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 23,
-   "avgPercent": 44.81,
-   "subsGained": 0
-  },
-  {
    "id": "0toRAe_otrI",
    "title": "The Expression of the Emotions in Man and Animals \u00b7 Opposite postures \u00b7 Reading 2",
    "published": "2026-10-20T19:36:17Z",
@@ -352,16 +358,29 @@
    "subsGained": 0
   },
   {
+   "id": "xlBpcfuR69U",
+   "title": "Crowds trigger ancient survival alarms",
+   "published": "2026-11-11T18:05:09Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 38,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 29,
+   "avgPercent": 49.83,
+   "subsGained": 0
+  },
+  {
    "id": "NIb4cEtDf24",
    "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
    "published": "2026-06-18T04:47:26Z",
    "duration": "PT2M45S",
    "privacy": "public",
    "views": 38,
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
-   "avgSeconds": 62,
-   "avgPercent": 38.16,
+   "avgSeconds": 59,
+   "avgPercent": 35.93,
    "subsGained": 0
   },
   {
@@ -391,14 +410,14 @@
    "subsGained": 0
   },
   {
-   "id": "xlBpcfuR69U",
-   "title": "Crowds trigger ancient survival alarms",
-   "published": "2026-11-11T18:05:09Z",
+   "id": "S0Ee2i5ao7o",
+   "title": "Your Brain Plays",
+   "published": "2026-11-13T03:01:12Z",
    "duration": "PT1M",
    "privacy": "public",
    "views": 34,
    "likes": 0,
-   "comments": 1
+   "comments": 0
   },
   {
    "id": "YT26hcYPqPA",
@@ -412,16 +431,6 @@
    "avgSeconds": 38,
    "avgPercent": 71.11,
    "subsGained": 0
-  },
-  {
-   "id": "S0Ee2i5ao7o",
-   "title": "Your Brain Plays",
-   "published": "2026-11-13T03:01:12Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 32,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "Y2dnDEONRD0",
@@ -593,6 +602,19 @@
    "subsGained": 0
   },
   {
+   "id": "ZGePr4OW-pk",
+   "title": "Applied Psychology",
+   "published": "2026-11-01T02:00:58Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 105,
+   "avgPercent": 223.53,
+   "subsGained": 0
+  },
+  {
    "id": "jcbv6oWRsSk",
    "title": "The Psychology Of Revolution",
    "published": "2026-10-29T18:03:26Z",
@@ -699,8 +721,8 @@
    "views": 21,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 26.07,
+   "avgSeconds": 14,
+   "avgPercent": 23.87,
    "subsGained": 0
   },
   {
@@ -741,19 +763,6 @@
    "avgSeconds": 12,
    "avgPercent": 17.3,
    "subsGained": 0
-  },
-  {
-   "id": "YG8unHg5xWw",
-   "title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4",
-   "published": "2026-11-02T00:00:18Z",
-   "duration": "PT5M29S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 4.33,
-   "subsGained": 2
   },
   {
    "id": "YG8unHg5xWw",
@@ -1161,8 +1170,8 @@
    "views": 11,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 12,
-   "avgPercent": 8.15,
+   "avgSeconds": 27,
+   "avgPercent": 18.63,
    "subsGained": 0
   },
   {
@@ -1301,8 +1310,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 19,
-   "avgPercent": 4.53,
+   "avgSeconds": 172,
+   "avgPercent": 40.4,
    "subsGained": 0
   },
   {
@@ -1542,6 +1551,16 @@
    "avgSeconds": 10,
    "avgPercent": 20.3,
    "subsGained": 0
+  },
+  {
+   "id": "T85YWZMCbDc",
+   "title": "Your Play Boosts Joy",
+   "published": "2026-11-13T18:03:48Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "Nl1SAPaJEuY",
