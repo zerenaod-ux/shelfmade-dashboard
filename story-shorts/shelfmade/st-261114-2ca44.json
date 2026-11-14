@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261114-2ca44",
+ "title": "Walden",
+ "author": "Henry David Thoreau",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Buying Stuff Tightens Your Chest Part 2",
+ "hook": "You work long hours to buy things you think will set you free.",
+ "thumbnail_headline": "TRAPPED BY STUFF",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You work long hours to buy things you think will set you free. In 1854, Henry David Thoreau wrote Walden to show that modern life traps you in a quiet desperation. He claimed that the cost of an item is the amount of life you trade for it. Was he right? In 1998, psychologist Tim Kasser studied adults in Knox County, Illinois. He found that people focused on acquiring material things reported significantly lower life satisfaction and higher anxiety. The result? Chasing possessions actively drains your peace of mind. Later global research confirmed this was not just one group. Scientists call this the Materialistic Value Orientation trap. So why do we assume buying more makes us happy? Because society constantly confuses comfort with freedom. Thoreau got the warning right, but science shows the trap is even deeper than he thought. That's it. Next time you trade your hours for a new gadget, remember that you work long hours to buy things."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People with strong materialistic values experience lower life satisfaction and higher anxiety",
+   "who": "Tim Kasser and Richard M. Ryan",
+   "year": "1998",
+   "place": "Knox County, Illinois"
+  },
+  {
+   "claim": "Materialistic orientation consistently links to lower psychological well-being across diverse populations",
+   "who": "Tim Kasser",
+   "year": "2002",
+   "place": "Knox College"
+  }
+ ],
+ "source_url": "",
+ "theme": "Walden by Henry David Thoreau",
+ "exp": ""
+}

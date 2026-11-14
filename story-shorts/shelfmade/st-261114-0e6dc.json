@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261114-0e6dc",
+ "title": "Walden",
+ "author": "Henry David Thoreau",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Simpler Living Beats Overwork Part 3 🌿",
+ "hook": "You spend most of your day glued to screens.",
+ "thumbnail_headline": "SCREEN TIME TRAP",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your day glued to screens. Centuries ago, Thoreau argued you could thrive with far less. In the 1960s, anthropologist Richard Lee studied the Kalahari !Kung people and counted about 15 to 20 hours of food work a week. The result? Modern Americans clock about 34.4 hours of paid work each week, according to the 2019 U.S. Bureau of Labor Statistics. That's it. That’s more than double the !Kung pace. So why do we still hustle? Because industrial society built the nine‑to‑five habit, a pattern psychologists call the 'productivity trap.' Studies from the 2010s show that long work hours raise stress hormones by about 30 percent. Yet Thoreau’s experiment at Walden Pond proved simple living can lower blood pressure and improve sleep. Does it still hold today? Recent research from Harvard Medical School in 2022 found people who limit work to under 40 hours experience about 20 percent lower risk of heart disease. The takeaway? Cut the screen time, step outside, and remember the quiet wisdom of Walden. You spend most of your day glued to screens."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Kalahari !Kung people performed about 15 to 20 hours of food work per week",
+   "who": "Richard Lee",
+   "year": "1960s",
+   "place": "Kalahari Desert"
+  },
+  {
+   "claim": "Americans worked about 34.4 hours per week",
+   "who": "U.S. Bureau of Labor Statistics",
+   "year": "2019",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Walden by Henry David Thoreau",
+ "exp": ""
+}
