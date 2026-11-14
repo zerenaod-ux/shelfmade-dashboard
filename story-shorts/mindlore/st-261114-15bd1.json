@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261114-15bd1",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "How Unexpected News Freezes Facial Muscles 😲",
+ "hook": "You widen your eyes during sudden news.",
+ "thumbnail_headline": "FACIAL SHOCK SYSTEM",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You widen your eyes during sudden news. Ancient survival tactics forced human faces to absorb maximum information instantly. In 1965, psychologist Paul Ekman tested remote isolated tribes in Papua New Guinea to measure primitive facial reactions. He proved that micro expressions happen globally in less than one fifth of a second. Later research expanded this beyond single isolated cultures. In 2008, scientist David Matsumoto analyzed thousands of Olympic athletes in Beijing right after winning or losing. Blind athletes who never saw a face made the exact same rapid facial shifts. The result? Facial shock is a universal nervous system reflex, not a learned cultural habit. So why do we assume we can hide our real reactions? Micro expressions fire faster than conscious brain control can block them. That is it. So next time you hear a wild twist, remember how you widen your eyes during sudden news."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Universal micro expressions occur globally within fractions of a second across isolated cultures",
+   "who": "Paul Ekman",
+   "year": "1965",
+   "place": "Papua New Guinea"
+  },
+  {
+   "claim": "Spontaneously produced facial expressions after unexpected triumph or defeat are identical in sighted and congenitally blind individuals",
+   "who": "David Matsumoto",
+   "year": "2008",
+   "place": "Beijing"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

@@ -1255,6 +1255,105 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261114-15bd1",
+   "look": "live-demo",
+   "title": "How Unexpected News Freezes Facial Muscles \ud83d\ude32",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "chat",
+    "checklist",
+    "clock",
+    "countdown",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261114-94076",
+   "look": "live-demo",
+   "title": "Why Unexpected Story Endings Freeze Brains \ud83e\udd2f",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261114-cef25",
+   "look": "old",
+   "title": "How Mammal Play Signals Pure Joy \ud83d\udc12",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "cheer",
+    "explain",
+    "laugh",
+    "lookup",
+    "point",
+    "shrug",
+    "surprised",
+    "think"
+   ],
+   "bgs": [
+    "brain",
+    "desert",
+    "forest",
+    "park",
+    "school"
+   ],
+   "props": [
+    "ball",
+    "battery",
+    "chart",
+    "clock",
+    "crowd",
+    "dog",
+    "eye",
+    "heart",
+    "num",
+    "question",
+    "scroll"
+   ]
   }
  ]
 }
