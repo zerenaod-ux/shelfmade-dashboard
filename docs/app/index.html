@@ -358,10 +358,17 @@ function decideScene(it,card,what,b1,b2,retry){
   var wanted='ce-'+what,opposite='ce-'+(what==='approve'?'skip':'approve');
   var headers=Object.assign({'Content-Type':'application/json'},hdr());
   // The existing phone key only needs Issues write. Folder commits happen in Content Engine.
-  function remove(label){return fetch(CE_API+'/issues/'+it.number+'/labels/'+label,{method:'DELETE',headers:headers}).then(function(r){if(!r.ok&&r.status!==404)throw new Error('GitHub said '+r.status)})}
+  function requestError(r){return r.json().catch(function(){return {}}).then(function(data){
+    var message=data.message||'';
+    if(r.status===403&&(r.headers.get('x-ratelimit-remaining')==='0'||/rate limit/i.test(message)))throw new Error('GitHub is temporarily limiting requests. Wait a few minutes, then try again. Your choice was not saved.');
+    if(r.status===401||r.status===403||r.status===404)throw new Error('Your saved key cannot change Content Engine reviews. In GitHub, give that key access to the content-engine repository with Issues: Read and write, then retry. Do not share your key.');
+    throw new Error('GitHub could not save your choice ('+r.status+'). Please retry.');
+  })}
+  var existing=labels(it);
+  function remove(label){if(existing.indexOf(label)<0)return Promise.resolve();return fetch(CE_API+'/issues/'+it.number+'/labels/'+label,{method:'DELETE',headers:headers}).then(function(r){if(!r.ok&&r.status!==404)return requestError(r)})}
   remove(opposite).then(function(){return retry?remove(wanted):null})
     .then(function(){return fetch(CE_API+'/issues/'+it.number+'/labels',{method:'POST',headers:headers,body:JSON.stringify({labels:[wanted]})})})
-    .then(function(r){if(!r.ok)throw new Error(r.status===401||r.status===403||r.status===404?'Your key was refused. Check it in Settings.':'GitHub said '+r.status);
+    .then(function(r){if(!r.ok)return requestError(r);
       card.classList.add('done');b1.hidden=b2.hidden=true;
       card.appendChild(el('p','muted',what==='approve'?'Approved ✓ Saving to Saved. Nothing is posted.':'Skipped ✓ Saving to Delete. Nothing is deleted.'));})
     .catch(function(e){b1.disabled=b2.disabled=false;card.__arm=null;b1.textContent='Approve';b2.textContent='Skip';b1.classList.remove('arm');b2.classList.remove('arm');alert(e.message)})
