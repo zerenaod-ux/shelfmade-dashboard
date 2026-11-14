@@ -208,7 +208,7 @@ function ago(ms){var h=ms/36e5;return h<1?Math.max(1,Math.round(ms/6e4))+' min':
 function hdr(){var h={'Accept':'application/vnd.github+json'};if(TOK)h.Authorization='Bearer '+TOK;return h}
 function jget(u){return fetch(u+(u.indexOf('?')<0?'?':'&')+'t='+Date.now()).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).catch(function(){return null})}
 function hello(){var h=new Date().getHours();return h<12?'Good morning':h<18?'Good afternoon':'Good evening'}
-function safeVideo(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
+function safeVideo(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname==='cdn.jsdelivr.net'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
 function clean(b){return (b||'').replace(/<!--DATA[\s\S]*?DATA-->/g,'').replace(/\*\*/g,'').replace(/`/g,'').trim()}
 function parse(b){
   var t=clean(b),v=(t.match(/https:\/\/[^\s)]+\.mp4/)||[])[0]||'',cap='',chk='';
@@ -353,7 +353,7 @@ function loadScenes(){
     var head=el('div','row');head.appendChild(el('p','lab','Content Engine · '+(a.length?a.length+' new':'nothing new')));
     var lk=el('a','chip','All videos ↗');lk.href='https://github.com/zerenaod-ux/content-engine/releases';lk.target='_blank';lk.rel='noopener';head.appendChild(lk);host.appendChild(head);
     if(!a.length){host.appendChild(el('div','card','No new Content Engine video. It makes 2 a day by itself (not posted).'));return}
-    a.forEach(function(it){var c=el('div','card'),v=parse(it.body);
+    a.forEach(function(it){var c=el('div','card'),v=parse(it.body);v.video=(v.video||'').replace(/^https:\/\/github\.com\/zerenaod-ux\/content-engine\/releases\/download\/[^/]+\/(ce-[\w-]+\.mp4)$/,'https://cdn.jsdelivr.net/gh/zerenaod-ux/content-engine@gh-pages/videos/$1');/* PLAYABLE_ON_PHONE */
       if(v.video&&safeVideo(v.video)){var vd=el('video');vd.controls=true;vd.playsInline=true;vd.preload='metadata';vd.src=v.video;vd.style.cssText='width:100%;max-height:52vh;border-radius:14px;background:#000;display:block;margin-bottom:10px';c.appendChild(vd)}
       c.appendChild(el('span','tag','NOT POSTED'));c.appendChild(el('h4','',it.title.replace(/^Content Engine:\s*/,'')));
       var b=el('button','btnline pri','Done ✓');b.type='button';
