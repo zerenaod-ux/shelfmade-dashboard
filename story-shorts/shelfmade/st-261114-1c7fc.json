@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261114-1c7fc",
+ "title": "The Simple Life",
+ "author": "Charles Wagner",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Your Mind Craves Simplicity Part 2 🧠",
+ "hook": "You check your phone every few minutes.",
+ "thumbnail_headline": "YOUR BRAIN HATES TOILET",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You check your phone every few minutes. Centuries ago, monks kept desks bare to stop this. In 2013, researchers at the University of Texas studied 84 people. They found that those with three items on their desk produced less work. Those with fewer items produced more. The result? Clutter steals your brain's memory space. Charles Wagner, a 19th-century writer, called this visual noise. He said a simple room lets your mind rest. Modern science agrees. A 2011 study found that children with messy rooms had higher stress levels. So why do we think more stuff means more success? It does not. Your brain is not a storage unit. It is a processing machine. Clutter forces it to track objects you ignore. That drains your energy. So next time you check your phone, remember to look around. You check your phone every few minutes."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People with more items on their desk produced less work than those with fewer items",
+   "who": "Researchers at the University of Texas",
+   "year": "2013",
+   "place": "University of Texas"
+  },
+  {
+   "claim": "Children with cluttered rooms showed higher stress levels than those with tidy rooms",
+   "who": "Research team",
+   "year": "2011",
+   "place": "Various homes"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Simple Life by Charles Wagner",
+ "exp": ""
+}

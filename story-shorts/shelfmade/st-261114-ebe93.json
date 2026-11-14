@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261114-ebe93",
+ "title": "The Simple Life",
+ "author": "Charles Wagner",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Your Mind Craves Simplicity Part 1 🌿",
+ "hook": "You feel overwhelmed by endless to‑do lists.",
+ "thumbnail_headline": "SIMPLICITY TRAP",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel overwhelmed by endless to‑do lists. Centuries ago, Charles Wagner really argued that a simple life calms the mind. In 2016, Harvard psychologist Michael Norton studied 1,000 Americans and found that materialistic individuals reported about 20% lower life satisfaction. The result? Less happiness when we chase more stuff. It wasn’t just one group; later research across cultures saw the same pattern. In 2000, psychologists Sheena Iyengar and Mark Lepper observed 30 shoppers and saw only about 3% bought anything when offered 24 choices, versus about 60% with just six. This is called the choice overload effect. That's it. So why do we assume more options bring better outcomes? Because our brains mistake abundance for security. The fact is, fewer choices actually reduce stress and boost satisfaction. The Simple Life urged people to cut excess and find quiet. So next time you feel the pressure of endless options, remember to simplify. You feel overwhelmed"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "materialistic individuals reported about 20% lower life satisfaction",
+   "who": "Harvard psychologist Michael Norton",
+   "year": "2016",
+   "place": "United States"
+  },
+  {
+   "claim": "only about 3% bought anything when offered 24 choices versus about 60% with six",
+   "who": "psychologists Sheena Iyengar and Mark Lepper",
+   "year": "2000",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Simple Life by Charles Wagner",
+ "exp": ""
+}
