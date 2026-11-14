@@ -29,32 +29,32 @@
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 5,
-   "last": 26
+   "uses": 6,
+   "last": 32
   },
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 5,
-   "last": 27
+   "uses": 6,
+   "last": 33
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 5,
-   "last": 28
+   "uses": 6,
+   "last": 34
   },
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 5,
-   "last": 29
+   "uses": 6,
+   "last": 35
   },
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 5,
-   "last": 30
+   "uses": 6,
+   "last": 36
   }
  ],
  "catch": {
@@ -417,6 +417,66 @@
    "milestone": true,
    "season": 1,
    "date": "2026-11-13"
+  },
+  {
+   "n": 27,
+   "kind": "short",
+   "id": "your-speed-demon-text",
+   "title": "Your Speed Demon Text \ud83d\udcf1",
+   "concept": "TEXTING SPEED RUN",
+   "gag": "minute",
+   "callback": true,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-14"
+  },
+  {
+   "n": 28,
+   "kind": "short",
+   "id": "dinner-trap-part-two",
+   "title": "How 'Anything' Means Nothing For Dinner \ud83c\udf55",
+   "concept": "THE DINNER PARADOX",
+   "gag": "gerald",
+   "callback": true,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-14"
+  },
+  {
+   "n": 29,
+   "kind": "short",
+   "id": "polite-pizza-crime",
+   "title": "Your Polite Pizza Crime \ud83c\udf55",
+   "concept": "POLITE PIZZA CRIME",
+   "gag": "greg",
+   "callback": false,
+   "milestone": false,
+   "season": 3,
+   "date": "2026-11-14"
+  },
+  {
+   "n": 30,
+   "kind": "short",
+   "id": "snooze-stage-master",
+   "title": "Why Snoozing Five Times Is Science \u23f0",
+   "concept": "SNOOZE STAGE SCIENTIST",
+   "gag": "dev",
+   "callback": true,
+   "milestone": true,
+   "season": 3,
+   "date": "2026-11-14"
+  },
+  {
+   "n": 31,
+   "kind": "short",
+   "id": "your-ninety-nine-message-trap",
+   "title": "Your Group Chat Exploded \ud83d\udcf1",
+   "concept": "NOTIFICATION VIBE CHECK",
+   "gag": "scoreboard",
+   "callback": true,
+   "milestone": false,
+   "season": 4,
+   "date": "2026-11-14"
   }
  ]
 }

@@ -28,5 +28,30 @@
   "format": "MISUNDERSTANDING",
   "mood": "very excited",
   "end": "Leo gets what he deserves"
+ },
+ {
+  "format": "ARGUMENT",
+  "mood": "dry and sarcastic",
+  "end": "Leo gets what he deserves"
+ },
+ {
+  "format": "PART TWO",
+  "mood": "chaotic",
+  "end": "a cliffhanger for part two"
+ },
+ {
+  "format": "MINI MYSTERY",
+  "mood": "sweet and warm",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "ADVICE FAIL",
+  "mood": "dry and sarcastic",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "PRANK",
+  "mood": "very excited",
+  "end": "a sudden twist"
  }
 ]
