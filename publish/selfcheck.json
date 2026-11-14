@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:55:33+00:00",
+ "at": "2026-11-14T17:39:48+00:00",
  "level": "warn",
  "checks": [
   {
@@ -10,12 +10,12 @@
   {
    "name": "Doodles daily run",
    "ok": true,
-   "text": "last: success 2026-11-13T15:39"
+   "text": "last: success 2026-11-14T10:55"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "7 stories carry a judge note"
+   "text": "12 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
@@ -35,7 +35,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-13T12:38"
+   "text": "last: success 2026-11-14T11:45"
   },
   {
    "name": "Safety guard",
@@ -60,12 +60,12 @@
   {
    "name": "Playlist flywheel",
    "ok": true,
-   "text": "ok (shelfmade: added 8 video(s); mindlore: added 8 video(s); doodles: added 4 video(s))"
+   "text": "ok (shelfmade: added 7 video(s); mindlore: added 8 video(s); doodles: added 4 video(s))"
   },
   {
    "name": "Retitle campaign",
    "ok": true,
-   "text": "last: success 2026-11-13"
+   "text": "last: success 2026-11-14"
   },
   {
    "name": "Access check (logins)",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 14 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 14 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 1 h ago"
+   "text": "newest public video 14 h ago"
   },
   {
    "name": "Service probes",
@@ -100,7 +100,7 @@
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "38.3 h used in 7 days, stories/day cap 2"
+   "text": "40.5 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
