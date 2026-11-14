@@ -50,3 +50,5 @@ runtime/
 
 remote.json
 *.bak*
+
+/content-engine-review-preview.png

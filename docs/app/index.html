@@ -345,21 +345,58 @@ function loadReview(){
    .then(loadScenes);
 }
 
-/* ---------- Content Engine videos (4th system, not posted): watch, then Done closes the card. Videos stay saved in their release folder. ---------- */
+/* ---------- Content Engine review and retained folders (posting remains off) ---------- */
+var sceneView='review';
+function sceneVideo(card,url){
+  url=(url||'').replace(/^https:\/\/github\.com\/zerenaod-ux\/content-engine\/releases\/download\/[^/]+\/(ce-[\w-]+\.mp4)$/,'https://cdn.jsdelivr.net/gh/zerenaod-ux/content-engine@gh-pages/videos/$1');
+  if(url&&safeVideo(url)){var v=el('video');v.controls=true;v.playsInline=true;v.preload='metadata';v.src=url;card.appendChild(v)}
+}
+function decideScene(it,card,what,b1,b2,retry){
+  if(!retry&&card.__arm!==what){card.__arm=what;b1.classList.remove('arm');b2.classList.remove('arm');var b=what==='approve'?b1:b2;b.classList.add('arm');b.textContent='Tap again to confirm';
+    setTimeout(function(){if(card.__arm===what){card.__arm=null;b1.textContent='Approve';b2.textContent='Skip';b1.classList.remove('arm');b2.classList.remove('arm')}},4000);return}
+  if(!TOK){openSheet();return}b1.disabled=b2.disabled=true;
+  var wanted='ce-'+what,opposite='ce-'+(what==='approve'?'skip':'approve');
+  var headers=Object.assign({'Content-Type':'application/json'},hdr());
+  // The existing phone key only needs Issues write. Folder commits happen in Content Engine.
+  function remove(label){return fetch(CE_API+'/issues/'+it.number+'/labels/'+label,{method:'DELETE',headers:headers}).then(function(r){if(!r.ok&&r.status!==404)throw new Error('GitHub said '+r.status)})}
+  remove(opposite).then(function(){return retry?remove(wanted):null})
+    .then(function(){return fetch(CE_API+'/issues/'+it.number+'/labels',{method:'POST',headers:headers,body:JSON.stringify({labels:[wanted]})})})
+    .then(function(r){if(!r.ok)throw new Error(r.status===401||r.status===403||r.status===404?'Your key was refused. Check it in Settings.':'GitHub said '+r.status);
+      card.classList.add('done');b1.hidden=b2.hidden=true;
+      card.appendChild(el('p','muted',what==='approve'?'Approved ✓ Saving to Saved. Nothing is posted.':'Skipped ✓ Saving to Delete. Nothing is deleted.'));})
+    .catch(function(e){b1.disabled=b2.disabled=false;card.__arm=null;b1.textContent='Approve';b2.textContent='Skip';b1.classList.remove('arm');b2.classList.remove('arm');alert(e.message)})
+}
+function sceneCard(it){
+  var card=el('div','rv');sceneVideo(card,parse(it.body).video);
+  card.appendChild(el('span','tag','NOT POSTED'));card.appendChild(el('h4','',it.title.replace(/^Content Engine:\s*/,'')));
+  var bt=el('div','btns'),ok=el('button','go','Approve'),no=el('button','','Skip');ok.type=no.type='button';
+  if(!TOK){ok.disabled=no.disabled=true;var kb=el('button','btnline','Add key to enable');kb.type='button';kb.onclick=openSheet;card.appendChild(kb)}
+  ok.onclick=function(){decideScene(it,card,'approve',ok,no)};no.onclick=function(){decideScene(it,card,'skip',ok,no)};
+  var ls=labels(it),pending=ls.indexOf('ce-approve')>=0?'approve':ls.indexOf('ce-skip')>=0?'skip':null;
+  if(pending){card.appendChild(el('p','muted',pending==='approve'?'Saving to Saved…':'Saving to Delete…'));var again=el('button','btnline','Retry saving');again.type='button';again.disabled=!TOK;again.onclick=function(){again.disabled=true;decideScene(it,card,pending,ok,no,true)};card.appendChild(again)}
+  bt.appendChild(ok);bt.appendChild(no);card.appendChild(bt);return card;
+}
 function loadScenes(){
   var host=$('r-scenes');if(!host){host=el('div');host.id='r-scenes';$('t-review').appendChild(host)}host.textContent='';
-  fetch(CE_API+'/issues?state=open&labels=scene-review&per_page=20',{headers:hdr()}).then(function(r){return r.ok?r.json():[]}).then(function(a){
-    a=(a||[]).filter(function(x){return !x.pull_request});
-    var head=el('div','row');head.appendChild(el('p','lab','Content Engine · '+(a.length?a.length+' new':'nothing new')));
-    var lk=el('a','chip','All videos ↗');lk.href='https://github.com/zerenaod-ux/content-engine/releases';lk.target='_blank';lk.rel='noopener';head.appendChild(lk);host.appendChild(head);
-    if(!a.length){host.appendChild(el('div','card','No new Content Engine video. It makes 2 a day by itself (not posted).'));return}
-    a.forEach(function(it){var c=el('div','card'),v=parse(it.body);v.video=(v.video||'').replace(/^https:\/\/github\.com\/zerenaod-ux\/content-engine\/releases\/download\/[^/]+\/(ce-[\w-]+\.mp4)$/,'https://cdn.jsdelivr.net/gh/zerenaod-ux/content-engine@gh-pages/videos/$1');/* PLAYABLE_ON_PHONE */
-      if(v.video&&safeVideo(v.video)){var vd=el('video');vd.controls=true;vd.playsInline=true;vd.preload='metadata';vd.src=v.video;vd.style.cssText='width:100%;max-height:52vh;border-radius:14px;background:#000;display:block;margin-bottom:10px';c.appendChild(vd)}
-      c.appendChild(el('span','tag','NOT POSTED'));c.appendChild(el('h4','',it.title.replace(/^Content Engine:\s*/,'')));
-      var b=el('button','btnline pri','Done ✓');b.type='button';
-      b.onclick=function(){if(!TOK){openSheet();return}b.disabled=true;fetch(CE_API+'/issues/'+it.number,{method:'PATCH',headers:Object.assign({'Content-Type':'application/json'},hdr()),body:JSON.stringify({state:'closed'})})
-        .then(function(r){if(!r.ok)throw new Error('GitHub said '+r.status);c.style.opacity='.5';b.textContent='Seen ✓ (still saved)'}).catch(function(e){b.disabled=false;alert(e.message)})};
-      c.appendChild(b);host.appendChild(c)})}).catch(function(){})}
+  var head=el('div','row');head.appendChild(el('p','lab','Content Engine'));
+  var all=el('a','chip','All videos ↗');all.href='https://github.com/zerenaod-ux/content-engine/releases';all.target='_blank';all.rel='noopener';head.appendChild(all);host.appendChild(head);
+  var tabs=el('div','btns');[['review','Review'],['saved','Saved'],['delete','Delete']].forEach(function(pair){var b=el('button',sceneView===pair[0]?'go':'',pair[1]);b.type='button';b.onclick=function(){sceneView=pair[0];loadScenes()};tabs.appendChild(b)});host.appendChild(tabs);
+  var refresh=el('button','btnline','Refresh folders');refresh.type='button';refresh.onclick=loadScenes;host.appendChild(refresh);
+  var box=el('div');host.appendChild(box);
+  if(sceneView==='review'){
+    fetch(CE_API+'/issues?state=open&labels=scene-review&per_page=100',{headers:hdr()}).then(function(r){if(!r.ok)throw new Error('Cannot load Content Engine review cards ('+r.status+').');return r.json()}).then(function(rows){
+      rows=rows.filter(function(x){return !x.pull_request});
+      if(!rows.length)box.appendChild(el('div','card','No Content Engine videos waiting for review.'));
+      rows.forEach(function(it){var card=el('div','card');card.appendChild(sceneCard(it));box.appendChild(card)});
+    }).catch(function(e){box.appendChild(el('p','msg',e.message))});return;
+  }
+  box.appendChild(el('p','muted',sceneView==='saved'?'Approved and saved for future publishing. Nothing is posted.':'Skipped videos held here. Nothing is deleted.'));
+  fetch(CE_API+'/contents/data/scenes/review/index.json?ref=main&t='+Date.now(),{headers:Object.assign({},hdr(),{'Accept':'application/vnd.github.raw+json'})}).then(function(r){if(!r.ok)throw new Error('Folders are not available yet ('+r.status+').');return r.json()}).then(function(index){
+    var rows=(index.items||[]).filter(function(x){return x.folder===sceneView});
+    if(!rows.length)box.appendChild(el('div','card',sceneView==='saved'?'No approved Content Engine videos saved yet.':'No skipped Content Engine videos held here yet.'));
+    rows.forEach(function(it){var outer=el('div','card'),card=el('div','rv');sceneVideo(card,it.video);card.appendChild(el('span','tag',sceneView==='saved'?'SAVED · NOT POSTED':'DELETE · HELD'));card.appendChild(el('h4','',it.title));outer.appendChild(card);box.appendChild(outer)});
+  }).catch(function(e){box.appendChild(el('p','msg',e.message))});
+}
 
 /* ---------- Health ---------- */
 function brandHealth(b,S,A,AN,now){
