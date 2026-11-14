@@ -8,7 +8,7 @@ const fs=require('fs'),path=require('path'),http=require('http'),assert=require(
  try{
   const page=await browser.newPage({viewport:{width:390,height:844}});
   await page.addInitScript(()=>localStorage.setItem('ghtok','mock-test-token'));
-  page.on('dialog',d=>d.accept());
+  const errors=[];page.on('dialog',d=>{errors.push(d.message());return d.accept()});
   await page.route('**/*',async route=>{
    const req=route.request(),u=new URL(req.url());if(u.hostname==='127.0.0.1')return route.continue();
    const p=u.pathname;let data={};
@@ -31,16 +31,16 @@ const fs=require('fs'),path=require('path'),http=require('http'),assert=require(
   await buttons.nth(0).click();assert.equal(calls.filter(x=>x.method==='POST').length,0);
   await buttons.nth(0).click();await page.locator('#r-scenes .done').waitFor();
   assert.deepEqual(JSON.parse(calls.find(x=>x.method==='POST').body).labels,['ce-approve']);
-  assert(calls.every(x=>x.url.includes('/content-engine/')));assert(!calls.some(x=>x.method==='PATCH'));
+  assert(calls.every(x=>x.url.includes('/content-engine/')));assert(!calls.some(x=>x.method==='DELETE'),'First decision must not try to remove a nonexistent opposite label');assert(!calls.some(x=>x.method==='PATCH'));
   await fresh();await buttons.nth(1).click();await buttons.nth(1).click();await page.locator('#r-scenes .done').waitFor();
-  assert.deepEqual(JSON.parse(calls.find(x=>x.method==='POST').body).labels,['ce-skip']);
+  assert.deepEqual(JSON.parse(calls.find(x=>x.method==='POST').body).labels,['ce-skip']);assert(!calls.some(x=>x.method==='DELETE'));
   await page.locator('#r-scenes').getByRole('button',{name:'Saved',exact:true}).click();await page.getByText('Approved example',{exact:true}).waitFor();
   assert.equal(await page.getByText('Skipped example',{exact:true}).count(),0);
   await page.locator('#r-scenes').getByRole('button',{name:'Delete',exact:true}).click();await page.getByText('Skipped example',{exact:true}).waitFor();
   assert.equal(await page.getByText('Approved example',{exact:true}).count(),0);
   deny=true;await fresh();await buttons.nth(0).click();await buttons.nth(0).click();
   await page.waitForFunction(()=>{const b=document.querySelector('#r-scenes .rv .btns button');return b&&!b.disabled&&b.textContent==='Approve'});
-  assert.equal(await page.locator('#r-scenes .done').count(),0);
+  assert.equal(await page.locator('#r-scenes .done').count(),0);assert(errors.some(x=>x.includes('content-engine repository with Issues: Read and write')));
   await page.screenshot({path:'content-engine-review-preview.png',fullPage:true});
   console.log('PASS: matching layout, confirmation, approve, skip, folder separation, API failure recovery; other channels untouched.');
  }finally{await browser.close();server.close()}
