@@ -168,7 +168,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
     <h2>Settings</h2>
     <p class="muted" id="key-state"></p>
     <p class="lab" style="margin-top:14px">Key for the buttons</p>
-    <p class="muted">Paste your GitHub key (fine-grained, this repo only, Issues: read and write). It stays on this phone only.</p>
+    <p class="muted">Your GitHub key needs access to both shelfmade-dashboard and content-engine, with Issues: Read and write. It stays on this phone only. Never share the key.</p>
     <input id="key-in" type="password" placeholder="github_pat_…" autocomplete="off">
     <div class="row"><button class="btnline pri" id="key-save" type="button">Save key</button><button class="btnline" id="key-forget" type="button">Forget key</button><button class="btnline" id="key-close" type="button">Close</button></div>
     <p class="lab" style="margin-top:20px">Open on the computer or web</p>
@@ -234,7 +234,7 @@ document.querySelectorAll('[data-go]').forEach(function(b){b.onclick=function(){
 
 /* ---------- Settings sheet (key) ---------- */
 function keyState(){
-  $('key-state').textContent=TOK?'Key saved on this phone. Approve and Skip are on.':'No key yet. You can watch, but Approve and Skip need the key.';
+  $('key-state').textContent=TOK?'Key saved on this phone.':'No key yet. You can watch, but Approve and Skip need the key.';
   var kr=$('r-key');kr.textContent='';
   if(!TOK){var b=el('div','banner');b.style.setProperty('--c','var(--warn)');b.appendChild(el('b','','Add your key to press Approve or Skip'));b.appendChild(el('span','','Tap Settings (top right), then paste your key once.'));kr.appendChild(b)}
 }
