@@ -1,8 +1,134 @@
 {
  "brand": "mindlore",
- "collected": "2026-11-13T18:48:20Z",
+ "collected": "2026-11-14T17:20:03Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Your Face Freezes on Bad News\n\nYou feel your face tense when you hear shocking news.\n\nEvidence: Paul Ekman",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-14T10:58:55.091Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Your Face Freezes on Bad News\n\nYou feel your face tense when you hear shocking news.\n\nEvidence: Paul Ekman",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-14T10:58:54.594Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Kids Love Surprising Endings\n\nYou think kids always guess the ending.\n\nEvidence: James Stigler (1970s, Afr",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-14T10:58:54.049Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Kids React To Twists\n\nYou love surprise endings in stories.\n\nEvidence: Jerome Bruner (1970s, United States",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-14T01:51:54.970Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Kids React To Twists\n\nYou love surprise endings in stories.\n\nEvidence: Jerome Bruner (1970s, United States",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-13T23:17:01.473Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "What Your Sudden Laughter Reveals About Brain\n\nYou laugh when a silly puppy tumbles over.\n\nEvidence: Jaak Pank",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-13T23:17:00.830Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Sudden Laughter Reveals Ancient Survival\n\nYou laugh out loud when someone tickles your ribs.\n\nEvidence: J",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-13T20:05:42.522Z"
+  },
   {
    "platform": "youtube",
    "status": "scheduled",
@@ -369,9 +495,9 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7707864255147691278",
+   "sent": "2026-11-14T03:31:02.670Z",
    "text": "Your Play Boosts Joy\n\nYou think play is just for fun.\n\nEvidence: Frans de Waal (1982, chimpanzee sanctuary): a",
    "views": 0,
    "likes": 0,
@@ -403,9 +529,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/esyld-j420I",
+   "sent": "2026-11-14T03:01:26.137Z",
    "text": "Your Face Reacts\n\nYou freeze your face when you hear shocking news.\n\nEvidence: Paul Ekman (1969, University of",
    "views": 0,
    "likes": 0,
@@ -417,7 +543,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-11T03:06:04.295Z"
+   "updated": "2026-11-14T03:03:52.160Z"
   },
   {
    "platform": "youtube",
@@ -453,7 +579,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -471,13 +597,13 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DftFfR9kUm_/",
+   "sent": "2026-11-14T02:02:37.120Z",
    "text": "Your Play Boosts Joy\n\nYou think play is just for fun.\n\nEvidence: Frans de Waal (1982, chimpanzee sanctuary): a",
    "views": null,
    "likes": null,
@@ -487,11 +613,11 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/ThvouohPNSU",
+   "sent": "2026-11-13T23:01:41.100Z",
    "text": "Your Play Reveals Joy\n\nYou think play is just child's fun.\n\nEvidence: Jaak Panksepp (1978, University of Michi",
-   "views": 0,
+   "views": 55,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -501,13 +627,13 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T23:45:10.692Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7707810851121564941",
+   "sent": "2026-11-14T00:03:55.945Z",
    "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
    "views": 0,
    "likes": 0,
@@ -531,9 +657,9 @@
    "url": "https://www.youtube.com/shorts/T85YWZMCbDc",
    "sent": "2026-11-13T18:03:21.175Z",
    "text": "Your Play Boosts Joy\n\nYou think play is just for fun.\n\nEvidence: Frans de Waal (1982, chimpanzee sanctuary): a",
-   "views": 0,
+   "views": 20,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -541,19 +667,30 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T18:05:55.044Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfsqI-kj7_m/",
+   "sent": "2026-11-13T22:04:10.055Z",
    "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-10T21:04:31.832Z"
+   "views": 4,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-14T01:16:55.660Z"
   },
   {
    "platform": "youtube",
@@ -561,9 +698,9 @@
    "url": "https://www.youtube.com/shorts/S0Ee2i5ao7o",
    "sent": "2026-11-13T03:00:47.237Z",
    "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
-   "views": 0,
+   "views": 34,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -571,99 +708,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7707749060496674062",
+   "sent": "2026-11-13T20:04:00.740Z",
    "text": "Why Faces Freeze On Sudden News\n\nYou raise your eyebrows when bad news hits.\n\nEvidence: Joshua Susskind (2008,",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T07:47:57.351Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/Nw9hdA-AyGs",
-   "sent": "2026-11-12T23:02:04.314Z",
-   "text": "Why Faces Freeze On Sudden News\n\nYou raise your eyebrows when bad news hits.\n\nEvidence: Joshua Susskind (2008,",
-   "views": 45,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-13T03:06:54.874Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://tiktok.com/@mindlore.daily/video/7707493217834470670",
-   "sent": "2026-11-13T03:31:21.903Z",
-   "text": "Your Screen Hours\n\nYou spend most of your day glued to a screen.\n\nEvidence: Richard Lee (1960s, Kalahari !Kung",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T02:38:42.469Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://tiktok.com/@mindlore.daily/video/7707439731474320654",
-   "sent": "2026-11-13T00:03:41.433Z",
-   "text": "Why Animals Play Games\n\nYou think play is just a childish waste of time.\n\nEvidence: Gordon Burghardt (2015, Un",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-10T02:38:42.029Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7707377943424732430?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-12T20:04:11.367Z",
-   "text": "Your desk job steals ancient movement You spend most of your day sitting at a desk. Evidence: Richard Lee (196",
-   "views": 10,
+   "views": 11,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -677,7 +730,91 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.934Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/Nw9hdA-AyGs",
+   "sent": "2026-11-12T23:02:04.314Z",
+   "text": "Why Faces Freeze On Sudden News\n\nYou raise your eyebrows when bad news hits.\n\nEvidence: Joshua Susskind (2008,",
+   "views": 75,
+   "likes": 0,
+   "comments": 1,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-14T02:08:55.824Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7707493217834470670",
+   "sent": "2026-11-13T03:31:21.903Z",
+   "text": "Your Screen Hours\n\nYou spend most of your day glued to a screen.\n\nEvidence: Richard Lee (1960s, Kalahari !Kung",
+   "views": 64,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-13T21:47:57.935Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7707439731474320654",
+   "sent": "2026-11-13T00:03:41.433Z",
+   "text": "Why Animals Play Games\n\nYou think play is just a childish waste of time.\n\nEvidence: Gordon Burghardt (2015, Un",
+   "views": 83,
+   "likes": 2,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-13T21:47:57.935Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://www.tiktok.com/@mindlore.daily/video/7707377943424732430?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+   "sent": "2026-11-12T20:04:11.367Z",
+   "text": "Your desk job steals ancient movement You spend most of your day sitting at a desk. Evidence: Richard Lee (196",
+   "views": 84,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "tiktok",
@@ -699,7 +836,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "tiktok",
@@ -707,7 +844,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7707068750087916814?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-12T00:05:09.641Z",
    "text": "Your brain is wired to stop wanting things You always want more. Evidence: Richard Lee (1966, Kalahari): Hunte",
-   "views": 49,
+   "views": 57,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -721,7 +858,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "instagram",
@@ -744,7 +881,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.461Z"
+   "updated": "2026-11-14T01:16:55.730Z"
   },
   {
    "platform": "instagram",
@@ -752,7 +889,7 @@
    "url": "https://www.instagram.com/reel/DfqFUl7GXP7/",
    "sent": "2026-11-12T22:03:53.932Z",
    "text": "Why Faces Freeze On Sudden News\n\nYou raise your eyebrows when bad news hits.\n\nEvidence: Joshua Susskind (2008,",
-   "views": 10,
+   "views": 133,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -767,7 +904,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.407Z"
+   "updated": "2026-11-14T01:16:55.681Z"
   },
   {
    "platform": "instagram",
@@ -790,7 +927,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.434Z"
+   "updated": "2026-11-14T01:16:55.629Z"
   },
   {
    "platform": "youtube",
@@ -808,7 +945,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -826,7 +963,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -834,7 +971,7 @@
    "url": "https://www.youtube.com/watch?v=V8InsNplcoc",
    "sent": "2026-11-10T00:00:03.000Z",
    "text": "You wake up gasping from a dream about falling, but is your fear actually grounded in the dream itself?\n\nMindL",
-   "views": 90,
+   "views": 92,
    "likes": 2,
    "comments": 1,
    "metrics": [
@@ -844,7 +981,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -862,7 +999,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "tiktok",
@@ -870,7 +1007,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7707122046987291918?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-12T03:30:51.526Z",
    "text": "Why Silence Heals Your Brain You live in a world of constant background noise. Evidence: Luciano Bernardi (200",
-   "views": 28,
+   "views": 42,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -884,7 +1021,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "tiktok",
@@ -906,7 +1043,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "tiktok",
@@ -928,7 +1065,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "instagram",
@@ -936,31 +1073,7 @@
    "url": "https://www.instagram.com/reel/DfsO4elld5p/",
    "sent": "2026-11-13T18:06:23.278Z",
    "text": "Your desk job steals ancient movement\n\nYou spend most of your day sitting at a desk.\n\nEvidence: Richard Lee (1",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-09T20:32:03.394Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfqgqRGjOKy/",
-   "sent": "2026-11-13T02:02:42.458Z",
-   "text": "Your brain is wired to stop wanting things\n\nYou always want more.\n\nEvidence: Richard Lee (1966, Kalahari): Hun",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-09T20:32:02.651Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfpqTWPmTP8/",
-   "sent": "2026-11-12T18:08:03.421Z",
-   "text": "Crowds trigger ancient survival alarms\n\nYou feel anxious walking through a crowded city square.\n\nEvidence: Max",
-   "views": 1,
+   "views": 4,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -975,7 +1088,53 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.438Z"
+   "updated": "2026-11-14T01:16:55.615Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfqgqRGjOKy/",
+   "sent": "2026-11-13T02:02:42.458Z",
+   "text": "Your brain is wired to stop wanting things\n\nYou always want more.\n\nEvidence: Richard Lee (1966, Kalahari): Hun",
+   "views": 8,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-14T01:16:55.625Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfpqTWPmTP8/",
+   "sent": "2026-11-12T18:08:03.421Z",
+   "text": "Crowds trigger ancient survival alarms\n\nYou feel anxious walking through a crowded city square.\n\nEvidence: Max",
+   "views": 5,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-14T01:16:55.646Z"
   },
   {
    "platform": "instagram",
@@ -998,7 +1157,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.431Z"
+   "updated": "2026-11-14T01:16:55.608Z"
   },
   {
    "platform": "instagram",
@@ -1021,7 +1180,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.433Z"
+   "updated": "2026-11-14T01:16:55.662Z"
   },
   {
    "platform": "instagram",
@@ -1044,7 +1203,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.455Z"
+   "updated": "2026-11-14T01:16:55.665Z"
   },
   {
    "platform": "youtube",
@@ -1062,7 +1221,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1070,7 +1229,7 @@
    "url": "https://www.youtube.com/shorts/HwKLVKQylv8",
    "sent": "2026-11-12T03:01:34.258Z",
    "text": "Your brain is wired to stop wanting things\n\nYou always want more.\n\nEvidence: Richard Lee (1966, Kalahari): Hun",
-   "views": 56,
+   "views": 57,
    "likes": 1,
    "comments": 1,
    "metrics": [
@@ -1080,7 +1239,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1088,7 +1247,7 @@
    "url": "https://www.youtube.com/shorts/xlBpcfuR69U",
    "sent": "2026-11-11T18:04:47.831Z",
    "text": "Crowds trigger ancient survival alarms\n\nYou feel anxious walking through a crowded city square.\n\nEvidence: Max",
-   "views": 31,
+   "views": 38,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1098,7 +1257,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1106,7 +1265,7 @@
    "url": "https://www.youtube.com/shorts/X9Z1e8QV6PQ",
    "sent": "2026-11-11T03:01:32.580Z",
    "text": "Why Silence Heals Your Brain\n\nYou live in a world of constant background noise.\n\nEvidence: Luciano Bernardi (2",
-   "views": 45,
+   "views": 48,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1116,7 +1275,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1124,7 +1283,7 @@
    "url": "https://www.youtube.com/shorts/GPPdglOKqFc",
    "sent": "2026-11-11T00:02:00.162Z",
    "text": "First Impression Myth\n\nYou judge a stranger in seconds.\n\nEvidence: Janine Willis and Alexander Todorov (2006, ",
-   "views": 42,
+   "views": 43,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1134,7 +1293,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1152,7 +1311,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "tiktok",
@@ -1174,7 +1333,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "instagram",
@@ -1197,7 +1356,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.428Z"
+   "updated": "2026-11-14T01:16:55.734Z"
   },
   {
    "platform": "youtube",
@@ -1215,7 +1374,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "tiktok",
@@ -1237,7 +1396,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "tiktok",
@@ -1259,7 +1418,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "instagram",
@@ -1282,7 +1441,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.399Z"
+   "updated": "2026-11-14T01:16:55.606Z"
   },
   {
    "platform": "instagram",
@@ -1305,7 +1464,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.414Z"
+   "updated": "2026-11-14T01:16:55.601Z"
   },
   {
    "platform": "youtube",
@@ -1323,7 +1482,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1341,7 +1500,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1359,7 +1518,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1369,7 +1528,7 @@
    "text": "Do you choose your facial expressions, or do they choose you?\n\nLessons and original commentary inspired by The",
    "views": 5,
    "likes": 2,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -1377,7 +1536,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1395,7 +1554,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "youtube",
@@ -1413,7 +1572,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "tiktok",
@@ -1435,7 +1594,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "instagram",
@@ -1458,7 +1617,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.458Z"
+   "updated": "2026-11-14T01:16:55.603Z"
   },
   {
    "platform": "youtube",
@@ -1466,7 +1625,7 @@
    "url": "https://www.youtube.com/shorts/enlkJrZ0aqc",
    "sent": "2026-11-09T03:01:07.376Z",
    "text": "The part of Crowd nobody mentions.\n\nThe Crowd by Gustave Le Bon\n\nFollow MindLore for a new psychology lesson e",
-   "views": 30,
+   "views": 31,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1476,7 +1635,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "instagram",
@@ -1499,7 +1658,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.430Z"
+   "updated": "2026-11-14T01:16:55.610Z"
   },
   {
    "platform": "instagram",
@@ -1522,7 +1681,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.401Z"
+   "updated": "2026-11-14T01:16:55.627Z"
   },
   {
    "platform": "tiktok",
@@ -1544,7 +1703,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "instagram",
@@ -1567,7 +1726,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.424Z"
+   "updated": "2026-11-14T01:16:55.672Z"
   },
   {
    "platform": "tiktok",
@@ -1589,7 +1748,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "youtube",
@@ -1597,7 +1756,7 @@
    "url": "https://www.youtube.com/shorts/BeQ1CnMVAns",
    "sent": "2026-11-08T18:02:49.829Z",
    "text": "James had a warning for you.\n\nPsychology: Briefer Course by William James\n\nFollow MindLore for a new psycholog",
-   "views": 22,
+   "views": 21,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1607,7 +1766,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "instagram",
@@ -1630,7 +1789,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.472Z"
+   "updated": "2026-11-14T01:16:55.651Z"
   },
   {
    "platform": "tiktok",
@@ -1652,7 +1811,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "youtube",
@@ -1662,7 +1821,7 @@
    "text": "Dream Psychology is not what you think.\n\nDream Psychology by Sigmund Freud\n\nFollow MindLore for a new psycholo",
    "views": 20,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -1670,7 +1829,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "instagram",
@@ -1693,7 +1852,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.411Z"
+   "updated": "2026-11-14T01:16:55.674Z"
   },
   {
    "platform": "tiktok",
@@ -1715,7 +1874,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "youtube",
@@ -1733,7 +1892,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   },
   {
    "platform": "instagram",
@@ -1756,7 +1915,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-13T01:16:44.421Z"
+   "updated": "2026-11-14T01:16:55.641Z"
   },
   {
    "platform": "tiktok",
@@ -1778,7 +1937,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T22:46:43.650Z"
+   "updated": "2026-11-13T21:47:57.935Z"
   },
   {
    "platform": "youtube",
@@ -1796,151 +1955,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T03:06:54.874Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfYfDkfiNcw/",
-   "sent": "2026-11-06T02:02:18.538Z",
-   "text": "Darwin had a warning for you.\n\nThe Expression of the Emotions in Man and Animals by Charles Darwin\n\nFollow Min",
-   "views": 6,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-13T01:16:44.427Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7704895665154936077?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-06T03:32:18.644Z",
-   "text": "Darwin had a warning for you. The Expression of the Emotions in Man and Animals by Charles Darwin Follow MindL",
-   "views": 58,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-12T22:46:43.650Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/qfwKKgBIkvI",
-   "sent": "2026-11-06T18:04:02.159Z",
-   "text": "Darwin had a warning for you.\n\nThe Expression of the Emotions in Man and Animals by Charles Darwin\n\nFollow Min",
-   "views": 67,
-   "likes": 2,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-13T03:06:54.874Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=8lmhT2wqPj8",
-   "sent": "2026-11-04T00:00:13.000Z",
-   "text": "What do you do when you cannot tell which road is right?\n\nLessons and original commentary inspired by How We T",
-   "views": 2,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-13T03:06:54.874Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/Y2dnDEONRD0",
-   "sent": "2026-11-06T03:01:06.870Z",
-   "text": "Listen to what Darwin warned about.\n\nThe Expression of the Emotions in Man and Animals by Charles Darwin\n\nList",
-   "views": 32,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-13T03:06:54.874Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7704780377264573710?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-05T20:04:25.729Z",
-   "text": "Listen to what Darwin warned about. The Expression of the Emotions in Man and Animals by Charles Darwin Listen",
-   "views": 95,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-12T22:46:43.650Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfV6St9gMj2/",
-   "sent": "2026-11-05T02:03:01.910Z",
-   "text": "M\u00fcnsterberg would hate how you live.\n\nPsychology and Industrial Efficiency by Hugo M\u00fcnsterberg\n\nM\u00fcnsterberg wo",
-   "views": 66,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-13T01:16:44.406Z"
+   "updated": "2026-11-14T02:08:55.824Z"
   }
  ]
 }
