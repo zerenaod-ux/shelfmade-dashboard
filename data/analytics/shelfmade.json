@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-13",
+ "collected": "2026-11-14",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-10-14T20:26:14Z",
    "duration": "PT26S",
    "privacy": "public",
-   "views": 410,
+   "views": 411,
    "likes": 9,
    "comments": 0,
    "avgSeconds": 15,
@@ -136,6 +136,16 @@
    "subsGained": 1
   },
   {
+   "id": "Mkc1Mjjf_kY",
+   "title": "Machiavelli would hate how you live.",
+   "published": "2026-11-13T03:01:24Z",
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "views": 59,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "pWVzUeSbav0",
    "title": "That which is necessary in order to learn something else is an Axiom",
    "published": "2026-10-16T16:28:52Z",
@@ -162,6 +172,19 @@
    "subsGained": 0
   },
   {
+   "id": "Y-FWlbV5SYM",
+   "title": "Can truth unlock hidden peace?",
+   "published": "2026-11-06T18:06:07Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 51,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 8,
+   "avgPercent": 23.36,
+   "subsGained": 0
+  },
+  {
    "id": "NdyYlv5koBQ",
    "title": "You must learn to shut off mental steam when you quit work",
    "published": "2026-10-28T22:00:41Z",
@@ -173,29 +196,6 @@
    "avgSeconds": 13,
    "avgPercent": 66.5,
    "subsGained": 0
-  },
-  {
-   "id": "Y-FWlbV5SYM",
-   "title": "Can truth unlock hidden peace?",
-   "published": "2026-11-06T18:06:07Z",
-   "duration": "PT36S",
-   "privacy": "public",
-   "views": 50,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 23.36,
-   "subsGained": 0
-  },
-  {
-   "id": "Mkc1Mjjf_kY",
-   "title": "Machiavelli would hate how you live.",
-   "published": "2026-11-13T03:01:24Z",
-   "duration": "PT1M12S",
-   "privacy": "public",
-   "views": 49,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "7P-eD_FErv0",
@@ -406,6 +406,19 @@
    "subsGained": 0
   },
   {
+   "id": "WEAr0dGdw2M",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-12T03:02:25Z",
+   "duration": "PT1M22S",
+   "privacy": "public",
+   "views": 32,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 37,
+   "avgPercent": 46.12,
+   "subsGained": 0
+  },
+  {
    "id": "6ekA7k96fUk",
    "title": "Where does your mind wander?",
    "published": "2026-11-05T23:03:00Z",
@@ -442,19 +455,6 @@
    "comments": 0,
    "avgSeconds": 19,
    "avgPercent": 36.54,
-   "subsGained": 0
-  },
-  {
-   "id": "WEAr0dGdw2M",
-   "title": "You have Art of War backwards.",
-   "published": "2026-11-12T03:02:25Z",
-   "duration": "PT1M22S",
-   "privacy": "public",
-   "views": 29,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 37,
-   "avgPercent": 46.12,
    "subsGained": 0
   },
   {
@@ -593,7 +593,7 @@
    "published": "2026-10-16T01:29:22Z",
    "duration": "PT25S",
    "privacy": "public",
-   "views": 21,
+   "views": 22,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 5,
@@ -653,6 +653,16 @@
    "subsGained": 0
   },
   {
+   "id": "D3aLO1j24s8",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-13T18:04:35Z",
+   "duration": "PT1M19S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "QHacncwEVO4",
    "title": "Now a prig is a pert fellow who gives himself airs of superior wisdom",
    "published": "2026-11-01T23:02:04Z",
@@ -663,6 +673,19 @@
    "comments": 0,
    "avgSeconds": 18,
    "avgPercent": 79.89,
+   "subsGained": 0
+  },
+  {
+   "id": "FZIiZwUDOCw",
+   "title": "Growth in knowledge and wisdom should be the only indication of our added years",
+   "published": "2026-10-23T04:02:55Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 61.07,
    "subsGained": 0
   },
   {
@@ -705,19 +728,6 @@
    "subsGained": 0
   },
   {
-   "id": "FZIiZwUDOCw",
-   "title": "Growth in knowledge and wisdom should be the only indication of our added years",
-   "published": "2026-10-23T04:02:55Z",
-   "duration": "PT22S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 61.07,
-   "subsGained": 0
-  },
-  {
    "id": "8_WBSGQzzUs",
    "title": "How to Live on 24 Hours a Day",
    "published": "2026-10-16T01:32:24Z",
@@ -757,6 +767,19 @@
    "subsGained": 0
   },
   {
+   "id": "nw9L0WbCy1s",
+   "title": "Can mercy survive in the middle of war?",
+   "published": "2026-06-11T16:37:06Z",
+   "duration": "PT8M37S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 32,
+   "avgPercent": 6.25,
+   "subsGained": 0
+  },
+  {
    "id": "GdWx5nz-ltU",
    "title": "Why does Meditations still matter?",
    "published": "2026-11-12T18:05:08Z",
@@ -765,19 +788,6 @@
    "views": 13,
    "likes": 0,
    "comments": 1
-  },
-  {
-   "id": "nw9L0WbCy1s",
-   "title": "Can mercy survive in the middle of war?",
-   "published": "2026-06-11T16:37:06Z",
-   "duration": "PT8M37S",
-   "privacy": "public",
-   "views": 13,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 32,
-   "avgPercent": 6.25,
-   "subsGained": 0
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -1054,6 +1064,19 @@
    "subsGained": 0
   },
   {
+   "id": "QmvgVXfWJT8",
+   "title": "Does simplicity outweigh fancy appearances?",
+   "published": "2026-11-06T00:00:06Z",
+   "duration": "PT6M16S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 31,
+   "avgPercent": 8.41,
+   "subsGained": 0
+  },
+  {
    "id": "K6npdyBg4R0",
    "title": "Where does your time go?",
    "published": "2026-10-19T19:15:42Z",
@@ -1103,19 +1126,6 @@
    "comments": 0,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "QmvgVXfWJT8",
-   "title": "Does simplicity outweigh fancy appearances?",
-   "published": "2026-11-06T00:00:06Z",
-   "duration": "PT6M16S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 31,
-   "avgPercent": 8.41,
    "subsGained": 0
   },
   {
@@ -1254,6 +1264,19 @@
    "views": 3,
    "likes": 1,
    "comments": 1
+  },
+  {
+   "id": "v5GPz22mgbU",
+   "title": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!",
+   "published": "2026-11-11T03:02:15Z",
+   "duration": "PT39S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "L8fBZiNE9xA",
@@ -1445,39 +1468,16 @@
    "comments": 0
   },
   {
-   "id": "D3aLO1j24s8",
-   "title": "Nobody warns you about Acres of Diamonds.",
-   "published": "2026-11-13T18:04:35Z",
-   "duration": "PT1M19S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "v5GPz22mgbU",
-   "title": "How it comes to us in silent hours, that truth is our only armor in all passages of life and death!",
-   "published": "2026-11-11T03:02:15Z",
-   "duration": "PT39S",
+   "id": "yw-m_m8OYiE",
+   "title": "Ruskin wrote this for you.",
+   "published": "2026-11-11T00:00:16Z",
+   "duration": "PT6M57S",
    "privacy": "public",
    "views": 2,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "WCx2ToBGPhU",
-   "title": "Can generosity survive hardship?",
-   "published": "2026-11-09T03:01:37Z",
-   "duration": "PT32S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 2,
+   "avgPercent": 0.54,
    "subsGained": 0
   },
   {
@@ -1501,7 +1501,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
@@ -1589,17 +1589,14 @@
    "comments": 0
   },
   {
-   "id": "yw-m_m8OYiE",
-   "title": "Ruskin wrote this for you.",
-   "published": "2026-11-11T00:00:16Z",
-   "duration": "PT6M57S",
+   "id": "GlwLgzeUZsg",
+   "title": "Why does Thus Spake Zarathustra still matter?",
+   "published": "2026-11-14T03:02:32Z",
+   "duration": "PT1M12S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 2,
-   "avgPercent": 0.54,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "qreV4UF_HS4",
@@ -1619,6 +1616,19 @@
    "title": "Allen would hate how you live.",
    "published": "2026-11-10T00:00:16Z",
    "duration": "PT6M45S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "WCx2ToBGPhU",
+   "title": "Can generosity survive hardship?",
+   "published": "2026-11-09T03:01:37Z",
+   "duration": "PT32S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
@@ -1845,6 +1855,16 @@
    "comments": 0
   },
   {
+   "id": "nrt78mj2OJQ",
+   "title": "What is Ambition and Success really about?",
+   "published": "2026-11-14T00:00:29Z",
+   "duration": "PT6M56S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "sWMRO2gaXS8",
    "title": "Nietzsche had a warning for you.",
    "published": "2026-11-13T19:57:35Z",
@@ -1872,7 +1892,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "p079-FpO7QE",
@@ -1941,23 +1961,13 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "pLirzW1d_Og",
    "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
    "published": "2026-11-06T06:33:58Z",
    "duration": "PT8M42S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "nrt78mj2OJQ",
-   "title": "What is Ambition and Success really about?",
-   "published": "2026-11-04T22:29:10Z",
-   "duration": "PT6M56S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

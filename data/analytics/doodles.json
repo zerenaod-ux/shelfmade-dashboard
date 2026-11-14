@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-13",
+ "collected": "2026-11-14",
  "note": "",
  "videos": [
   {
@@ -91,7 +91,7 @@
    "privacy": "public",
    "views": 9,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 13,
    "avgPercent": 22.79,
    "subsGained": 1
@@ -130,7 +130,7 @@
    "privacy": "public",
    "views": 8,
    "likes": 2,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 28,
    "avgPercent": 41.12,
    "subsGained": 0
@@ -201,6 +201,19 @@
    "subsGained": 0
   },
   {
+   "id": "F7XDCfj-9Uk",
+   "title": "The Feather Duster Detour | Leo & Mia #6",
+   "published": "2026-11-11T18:06:42Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 25,
+   "avgPercent": 48.42,
+   "subsGained": 0
+  },
+  {
    "id": "m-mdceIZnsg",
    "title": "The Silent Nod",
    "published": "2026-11-09T18:05:11Z",
@@ -221,7 +234,7 @@
    "privacy": "public",
    "views": 6,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 8,
    "avgPercent": 16.53,
    "subsGained": 2
@@ -240,19 +253,6 @@
    "subsGained": 0
   },
   {
-   "id": "F7XDCfj-9Uk",
-   "title": "The Feather Duster Detour | Leo & Mia #6",
-   "published": "2026-11-11T18:06:42Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 25,
-   "avgPercent": 48.42,
-   "subsGained": 0
-  },
-  {
    "id": "hzKTBT9qysw",
    "title": "The Midnight Replay",
    "published": "2026-11-10T03:02:02Z",
@@ -264,6 +264,16 @@
    "avgSeconds": 35,
    "avgPercent": 75.48,
    "subsGained": 0
+  },
+  {
+   "id": "oJkJkxlRaLE",
+   "title": "The Phantom Ping Trap | Leo & Mia #13",
+   "published": "2026-11-13T18:04:42Z",
+   "duration": "PT44S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "vthdpujWnPY",
@@ -357,6 +367,26 @@
    "subsGained": 0
   },
   {
+   "id": "RSv00j81ONc",
+   "title": "The Secret Birthday Catastrophe | Leo & Mia Ep. 4",
+   "published": "2026-11-14T00:00:24Z",
+   "duration": "PT2M49S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "5bvrVUR8iek",
+   "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
+   "published": "2026-11-13T03:01:26Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "5msto0N_8Cs",
    "title": "The Whiteboard Nod | Leo & Mia #5",
    "published": "2026-11-08T03:01:34Z",
@@ -409,6 +439,26 @@
    "subsGained": 0
   },
   {
+   "id": "1cmRYRGsBTY",
+   "title": "The Phone Call Script | Leo & Mia #14",
+   "published": "2026-11-14T03:02:05Z",
+   "duration": "PT35S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "aItrG7-6LX8",
+   "title": "The 4:30 AM Panic | Leo & Mia Ep. 5 \u2605 Milestone",
+   "published": "2026-11-14T02:19:23Z",
+   "duration": "PT3M15S",
+   "privacy": "private",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "j9yPaC1a9eQ",
    "title": "The Scripting Spiral",
    "published": "2026-11-12T03:02:36Z",
@@ -443,36 +493,6 @@
    "avgSeconds": 10,
    "avgPercent": 28.46,
    "subsGained": 0
-  },
-  {
-   "id": "RSv00j81ONc",
-   "title": "The Secret Birthday Catastrophe | Leo & Mia Ep. 4",
-   "published": "2026-11-13T19:57:11Z",
-   "duration": "PT2M49S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "oJkJkxlRaLE",
-   "title": "The Phantom Ping Trap | Leo & Mia #13",
-   "published": "2026-11-13T18:04:42Z",
-   "duration": "PT44S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "5bvrVUR8iek",
-   "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
-   "published": "2026-11-13T03:01:26Z",
-   "duration": "PT38S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "5Czrci00ZPQ",

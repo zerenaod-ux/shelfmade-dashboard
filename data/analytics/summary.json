@@ -1,5 +1,5 @@
 {
- "collected": "2026-11-13",
+ "collected": "2026-11-14",
  "top": {
   "mindlore": [
    {
@@ -17,6 +17,12 @@
     "avgPercent": 64.7
    },
    {
+    "id": "esyld-j420I",
+    "title": "Your Face Reacts",
+    "views": 229,
+    "likes": 2
+   },
+   {
     "id": "mDO-wdlrW9Q",
     "title": "What IS a thought? The answer will shake you \ud83c\udf0c",
     "views": 159,
@@ -28,20 +34,13 @@
     "title": "Your dreams are sending you coded messages every night \ud83d\udcad",
     "views": 109,
     "likes": 3
-   },
-   {
-    "id": "V8InsNplcoc",
-    "title": "Why do you dream about falling? | Sigmund Freud",
-    "views": 92,
-    "likes": 2,
-    "avgPercent": 25.78
    }
   ],
   "shelfmade": [
    {
     "id": "318wFWISd8c",
     "title": "Studies In Pessimism",
-    "views": 410,
+    "views": 411,
     "likes": 9,
     "avgPercent": 59.37
    },

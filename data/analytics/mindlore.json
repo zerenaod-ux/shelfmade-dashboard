@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-13",
+ "collected": "2026-11-14",
  "note": "",
  "videos": [
   {
@@ -30,6 +30,16 @@
    "avgSeconds": 31,
    "avgPercent": 64.7,
    "subsGained": 0
+  },
+  {
+   "id": "esyld-j420I",
+   "title": "Your Face Reacts",
+   "published": "2026-11-14T03:01:48Z",
+   "duration": "PT1M11S",
+   "privacy": "public",
+   "views": 229,
+   "likes": 2,
+   "comments": 0
   },
   {
    "id": "mDO-wdlrW9Q",
@@ -60,7 +70,7 @@
    "published": "2026-11-10T00:00:03Z",
    "duration": "PT8M23S",
    "privacy": "public",
-   "views": 92,
+   "views": 94,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 129,
@@ -81,17 +91,37 @@
    "subsGained": 0
   },
   {
+   "id": "ThvouohPNSU",
+   "title": "Your Play Reveals Joy",
+   "published": "2026-11-13T23:02:13Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 81,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "leCHsYO2yWM",
    "title": "What triggers mob rage?",
    "published": "2026-06-14T19:36:44Z",
    "duration": "PT49S",
    "privacy": "public",
-   "views": 80,
+   "views": 81,
    "likes": 1,
    "comments": 0,
    "avgSeconds": 21,
    "avgPercent": 42.86,
    "subsGained": 0
+  },
+  {
+   "id": "Nw9hdA-AyGs",
+   "title": "Why Faces Freeze On Sudden News",
+   "published": "2026-11-12T23:02:23Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 78,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "8j6NBqbneQ8",
@@ -117,22 +147,12 @@
    "subsGained": 0
   },
   {
-   "id": "Nw9hdA-AyGs",
-   "title": "Why Faces Freeze On Sudden News",
-   "published": "2026-11-12T23:02:23Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 75,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "2uytrhv7SeI",
    "title": "Why Animals Play Games",
    "published": "2026-11-10T23:01:33Z",
    "duration": "PT1M",
    "privacy": "public",
-   "views": 75,
+   "views": 74,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 22,
@@ -145,7 +165,7 @@
    "published": "2026-11-06T18:04:24Z",
    "duration": "PT1M2S",
    "privacy": "public",
-   "views": 67,
+   "views": 68,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 42,
@@ -272,7 +292,7 @@
    "published": "2026-11-11T03:02:00Z",
    "duration": "PT1M6S",
    "privacy": "public",
-   "views": 46,
+   "views": 48,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 28,
@@ -358,6 +378,19 @@
    "subsGained": 0
   },
   {
+   "id": "NIb4cEtDf24",
+   "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
+   "published": "2026-06-18T04:47:26Z",
+   "duration": "PT2M45S",
+   "privacy": "public",
+   "views": 39,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 59,
+   "avgPercent": 35.93,
+   "subsGained": 0
+  },
+  {
    "id": "xlBpcfuR69U",
    "title": "Crowds trigger ancient survival alarms",
    "published": "2026-11-11T18:05:09Z",
@@ -368,19 +401,6 @@
    "comments": 1,
    "avgSeconds": 29,
    "avgPercent": 49.83,
-   "subsGained": 0
-  },
-  {
-   "id": "NIb4cEtDf24",
-   "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
-   "published": "2026-06-18T04:47:26Z",
-   "duration": "PT2M45S",
-   "privacy": "public",
-   "views": 38,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 59,
-   "avgPercent": 35.93,
    "subsGained": 0
   },
   {
@@ -410,6 +430,16 @@
    "subsGained": 0
   },
   {
+   "id": "T85YWZMCbDc",
+   "title": "Your Play Boosts Joy",
+   "published": "2026-11-13T18:03:48Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 34,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "S0Ee2i5ao7o",
    "title": "Your Brain Plays",
    "published": "2026-11-13T03:01:12Z",
@@ -417,7 +447,7 @@
    "privacy": "public",
    "views": 34,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "YT26hcYPqPA",
@@ -550,19 +580,6 @@
    "subsGained": 0
   },
   {
-   "id": "EzKs0ef9QYY",
-   "title": "Mental Efficiency",
-   "published": "2026-11-02T18:04:23Z",
-   "duration": "PT50S",
-   "privacy": "public",
-   "views": 26,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 25.4,
-   "subsGained": 0
-  },
-  {
    "id": "vf5N9t4z-x0",
    "title": "The part of Psychology nobody mentions.",
    "published": "2026-11-05T03:01:46Z",
@@ -599,6 +616,19 @@
    "comments": 0,
    "avgSeconds": 37,
    "avgPercent": 75.04,
+   "subsGained": 0
+  },
+  {
+   "id": "awhOFsaSkXA",
+   "title": "The Power Of Concentration",
+   "published": "2026-11-01T23:01:50Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 25.22,
    "subsGained": 0
   },
   {
@@ -677,6 +707,19 @@
    "comments": 0
   },
   {
+   "id": "ufT1qz-t0TI",
+   "title": "Your brain can't truly multitask",
+   "published": "2026-11-10T03:01:09Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 14,
+   "avgPercent": 23.87,
+   "subsGained": 0
+  },
+  {
    "id": "oKVOydsLxa4",
    "title": "What if your mind works consecutively, not randomly?",
    "published": "2026-06-23T20:40:26Z",
@@ -710,19 +753,6 @@
    "comments": 0,
    "avgSeconds": 335,
    "avgPercent": 68.21,
-   "subsGained": 0
-  },
-  {
-   "id": "ufT1qz-t0TI",
-   "title": "Your brain can't truly multitask",
-   "published": "2026-11-10T03:01:09Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 23.87,
    "subsGained": 0
   },
   {
@@ -778,6 +808,19 @@
    "subsGained": 2
   },
   {
+   "id": "-FD8LOO2XG4",
+   "title": "The Psychology Of Suggestion",
+   "published": "2026-10-31T22:01:42Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 19,
+   "avgPercent": 40.78,
+   "subsGained": 1
+  },
+  {
    "id": "mC-icbk8HVo",
    "title": "Psychology and Industrial Efficiency \u00b7 Guided reading",
    "published": "2026-10-20T20:00:21Z",
@@ -808,7 +851,7 @@
    "privacy": "public",
    "views": 20,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 18,
    "avgPercent": 33.53,
    "subsGained": 0
@@ -825,19 +868,6 @@
    "avgSeconds": 72,
    "avgPercent": 118.09,
    "subsGained": 0
-  },
-  {
-   "id": "-FD8LOO2XG4",
-   "title": "The Psychology Of Suggestion",
-   "published": "2026-10-31T22:01:42Z",
-   "duration": "PT49S",
-   "privacy": "public",
-   "views": 20,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 19,
-   "avgPercent": 40.78,
-   "subsGained": 1
   },
   {
    "id": "---QS4XG_IY",
@@ -1276,6 +1306,19 @@
    "subsGained": 0
   },
   {
+   "id": "3sMZ0_phVOA",
+   "title": "How do I influence others?",
+   "published": "2026-10-28T05:26:10Z",
+   "duration": "PT5M38S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 126,
+   "avgPercent": 37.29,
+   "subsGained": 0
+  },
+  {
    "id": "oe3Y1OmzJik",
    "title": "Are skeptics wrong about dream science?",
    "published": "2026-10-17T16:17:31Z",
@@ -1322,22 +1365,22 @@
    "privacy": "public",
    "views": 5,
    "likes": 2,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 104,
    "avgPercent": 23.58,
    "subsGained": 0
   },
   {
-   "id": "3sMZ0_phVOA",
-   "title": "How do I influence others?",
-   "published": "2026-10-28T05:26:10Z",
-   "duration": "PT5M38S",
+   "id": "0m0sHfUvubE",
+   "title": "How We Think \u00b7 Guided reading",
+   "published": "2026-10-31T23:00:07Z",
+   "duration": "PT5M44S",
    "privacy": "public",
    "views": 5,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 126,
-   "avgPercent": 37.29,
+   "avgSeconds": 4,
+   "avgPercent": 1.35,
    "subsGained": 0
   },
   {
@@ -1380,16 +1423,29 @@
    "subsGained": 0
   },
   {
-   "id": "0m0sHfUvubE",
-   "title": "How We Think \u00b7 Guided reading",
-   "published": "2026-10-31T23:00:07Z",
-   "duration": "PT5M44S",
+   "id": "o3yiUpFfU8c",
+   "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
+   "published": "2026-11-11T00:00:30Z",
+   "duration": "PT9M14S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "cOkUIin-TGA",
+   "title": "Psychology: Briefer Course \u00b7 Guided reading",
+   "published": "2026-10-29T23:00:29Z",
+   "duration": "PT5M38S",
    "privacy": "public",
    "views": 4,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 1.35,
+   "avgSeconds": 8,
+   "avgPercent": 2.62,
    "subsGained": 0
   },
   {
@@ -1419,19 +1475,6 @@
    "subsGained": 0
   },
   {
-   "id": "o3yiUpFfU8c",
-   "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
-   "published": "2026-11-11T00:00:30Z",
-   "duration": "PT9M14S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "9lec7AhXEP8",
    "title": "Why dreams feel meaningful and strange at the same time | Freud",
    "published": "2026-11-05T00:00:17Z",
@@ -1442,19 +1485,6 @@
    "comments": 0,
    "avgSeconds": 3,
    "avgPercent": 0.8699999999999999,
-   "subsGained": 0
-  },
-  {
-   "id": "cOkUIin-TGA",
-   "title": "Psychology: Briefer Course \u00b7 Guided reading",
-   "published": "2026-10-29T23:00:29Z",
-   "duration": "PT5M38S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 8,
-   "avgPercent": 2.62,
    "subsGained": 0
   },
   {
@@ -1551,16 +1581,6 @@
    "avgSeconds": 10,
    "avgPercent": 20.3,
    "subsGained": 0
-  },
-  {
-   "id": "T85YWZMCbDc",
-   "title": "Your Play Boosts Joy",
-   "published": "2026-11-13T18:03:48Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "Nl1SAPaJEuY",

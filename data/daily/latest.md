@@ -1,15 +1,15 @@
-# Daily numbers 2026-11-13
+# Daily numbers 2026-11-14
 
-Real data only (YouTube API and Buffer). n/a = the platform does not give that number. In brackets = change since 2026-11-12.
+Real data only (YouTube API and Buffer). n/a = the platform does not give that number. In brackets = change since 2026-11-13.
 
 | Channel | Platform | Views | Likes | Comments | Subscribers | Posts | Data from |
 |---|---|---|---|---|---|---|---|
-| doodles | instagram | 4,038 (+323) | 31 (+2) | 0 (0) | n/a | 25 | 2026-11-13 |
-| doodles | tiktok | 1,658 (+64) | 35 (-3) | 1 (0) | n/a | 23 | 2026-11-13 |
-| doodles | youtube | 403 (+2) | 30 (0) | 24 (+5) | 2 (0) | 38 | 2026-11-13 |
-| mindlore | instagram | 537 (-65) | 14 (0) | 0 (0) | n/a | 21 | 2026-11-13 |
-| mindlore | tiktok | 1,174 (-240) | 18 (-1) | 0 (0) | n/a | 19 | 2026-11-13 |
-| mindlore | youtube | 3,911 (+135) | 87 (+1) | 25 (+5) | 10 (0) | 143 | 2026-11-13 |
-| shelfmade | instagram | 104 (-2) | 3 (0) | 0 (0) | n/a | 19 | 2026-11-13 |
-| shelfmade | tiktok | 1,664 (+22) | 15 (-1) | 1 (0) | n/a | 19 | 2026-11-13 |
-| shelfmade | youtube | 3,014 (+63) | 117 (0) | 24 (+5) | 9 (0) | 159 | 2026-11-13 |
+| doodles | instagram | 4,059 (+21) | 25 (-6) | 0 (0) | n/a | 23 | 2026-11-14 |
+| doodles | tiktok | 1,662 (+4) | 34 (-1) | 1 (0) | n/a | 23 | 2026-11-14 |
+| doodles | youtube | 414 (+11) | 31 (+1) | 29 (+5) | 2 (0) | 40 | 2026-11-14 |
+| mindlore | instagram | 608 (+71) | 12 (-2) | 0 (0) | n/a | 21 | 2026-11-14 |
+| mindlore | tiktok | 1,275 (+101) | 21 (+3) | 0 (0) | n/a | 20 | 2026-11-14 |
+| mindlore | youtube | 4,267 (+356) | 90 (+3) | 30 (+5) | 10 (0) | 145 | 2026-11-14 |
+| shelfmade | instagram | 105 (+1) | 3 (0) | 0 (0) | n/a | 18 | 2026-11-14 |
+| shelfmade | tiktok | 1,748 (+84) | 16 (+1) | 1 (0) | n/a | 20 | 2026-11-14 |
+| shelfmade | youtube | 3,050 (+36) | 117 (0) | 29 (+5) | 9 (0) | 160 | 2026-11-14 |
