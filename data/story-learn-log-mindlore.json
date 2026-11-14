@@ -1354,6 +1354,37 @@
     "question",
     "scroll"
    ]
+  },
+  {
+   "id": "st-261114-2c5fb",
+   "look": "live-demo",
+   "title": "How Play Circuits Trigger Animal Joy \ud83d\udc12",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "chat",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

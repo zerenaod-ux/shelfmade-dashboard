@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261114-2c5fb",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "How Play Circuits Trigger Animal Joy 🐒",
+ "hook": "You think play is just a foolish pastime for young animals.",
+ "thumbnail_headline": "ANIMAL JOY REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You think play is just a foolish pastime for young animals. Ancient thinkers actually believed play was a core emotional drive across nature. In 1998, neuroscientist Jaak Panksepp at Bowling Green State University recorded thousands of ultrasonic laughter sounds from rats during play fight sessions. His team found that tickled rats emitted 50 kilohertz vocalizations, directly triggering ancient brain joy circuits. Was this limited to just one species? Further research across mammals showed that play behavior exists in nearly all warm-blooded creatures. Scientists call this primitive neurobiological network the SEEKING and PLAY system. So why do we assume animals only act on basic survival instincts? Because we often mistake non-verbal joy for simple mechanical reflex. The result? Animals actively seek out fun just to experience raw pleasure. In 2014, researchers studied wild bumblebees and found they voluntarily rolled wooden balls around without any food reward. That's it. Animals play simply because it feels good. So next time you watch a pet chase a ball, remember: you think play is just a foolish pastime."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Tickling rats produces 50 kHz ultrasonic vocalizations linked to joy and social play circuits in the mammalian brain.",
+   "who": "Jaak Panksepp",
+   "year": "1998",
+   "place": "Bowling Green State University"
+  },
+  {
+   "claim": "Bumblebees spontaneously manipulate and roll wooden balls without any external food reward or training.",
+   "who": "Queen Mary University of London researchers",
+   "year": "2014",
+   "place": "London, UK"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}
