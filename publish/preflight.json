@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T18:27:32+00:00",
+ "at": "2026-11-15T19:04:47+00:00",
  "ready": "bad",
  "checks": [
   {
@@ -10,7 +10,7 @@
   {
    "name": "Jobs",
    "level": "warn",
-   "text": "last run failed: blender-test, mindlore-live-redo"
+   "text": "last run failed: blender-test, deps, mindlore-live-redo"
   },
   {
    "name": "Alerts",
@@ -20,12 +20,12 @@
   {
    "name": "Keys",
    "level": "ok",
-   "text": "weekly key test success, 2 days ago"
+   "text": "weekly key test success, 3 days ago"
   },
   {
    "name": "Doodles stories",
    "level": "ok",
-   "text": "5 unused saved (more are written automatically)"
+   "text": "3 unused saved (more are written automatically)"
   },
   {
    "name": "ShelfMade posts waiting",
@@ -35,7 +35,7 @@
   {
    "name": "Waiting for review",
    "level": "ok",
-   "text": "2 videos open (autopilot clears them when ON)"
+   "text": "3 videos open (autopilot clears them when ON)"
   }
  ]
 }
