@@ -23,8 +23,8 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 7,
-   "last": 37
+   "uses": 8,
+   "last": 43
   },
   {
    "id": "minute",
@@ -53,8 +53,8 @@
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 6,
-   "last": 36
+   "uses": 7,
+   "last": 42
   }
  ],
  "catch": {
@@ -534,6 +534,30 @@
    "concept": "APPLIANCE DUET TRAP",
    "gag": "dev",
    "callback": false,
+   "milestone": false,
+   "season": 4,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 37,
+   "kind": "short",
+   "id": "hoodie-breakup-crime",
+   "title": "Why A Hoodie Ghosted Leo \ud83e\udde5",
+   "concept": "DRAMATIC BREAKUP INVESTIGATION",
+   "gag": "scoreboard",
+   "callback": false,
+   "milestone": false,
+   "season": 4,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 38,
+   "kind": "short",
+   "id": "your-dramatic-sigh-trophy",
+   "title": "Your Dramatic Sigh Trophy \ud83c\udfc6",
+   "concept": "MOST DRAMATIC SIGH",
+   "gag": "battery",
+   "callback": true,
    "milestone": false,
    "season": 4,
    "date": "2026-11-15"
