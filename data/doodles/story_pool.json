@@ -639,7 +639,7 @@
  },
  {
   "id": "your-first-day-shake",
-  "title": "Your First Day Shakes \ud83d\ude2c",
+  "title": "Your First Day Shakes 😬",
   "concept": "FIRST DAY PANIC",
   "mood": "dramatic",
   "insight": "Nerves make every sentence sound like a total crisis.",
@@ -740,7 +740,7 @@
  },
  {
   "id": "unironed-genius-peak",
-  "title": "How I Peaked In Third Grade \ud83c\udf93",
+  "title": "How I Peaked In Third Grade 🎓",
   "concept": "IMPOSTER SYNDROME REALITY",
   "mood": "warm",
   "insight": "We feel like fakes, but we are just unironed.",
@@ -859,7 +859,7 @@
  },
  {
   "id": "your-dinner-excuse-factory",
-  "title": "Your Endless Dinner Rejections \ud83c\udf55",
+  "title": "Your Endless Dinner Rejections 🍕",
   "concept": "CHOICE OVERLOAD CHAOS",
   "mood": "dramatic",
   "insight": "Choosing dinner takes more energy than working all day.",
@@ -977,7 +977,7 @@
  },
  {
   "id": "group-chat-ghost-town",
-  "title": "Why Group Chats Become Ghost Towns \ud83d\udcac",
+  "title": "Why Group Chats Become Ghost Towns 💬",
   "concept": "MUTUAL GROUP CHAT MUTE",
   "mood": "dramatic",
   "insight": "Muting a chat means missing the pizza.",
@@ -1078,7 +1078,7 @@
  },
  {
   "id": "wrong-chat-grandma",
-  "title": "Your Grandma Text Panic \ud83d\udc75",
+  "title": "Your Grandma Text Panic 👵",
   "concept": "TEXTING MISTAKE CHAOS",
   "mood": "dramatic",
   "insight": "Nothing beats texting your boss like a relative.",
@@ -1190,11 +1190,11 @@
  },
  {
   "id": "first-day-detective-panic",
-  "title": "How Detective Leo Handled First Day Nerves \ud83d\udd75\ufe0f\u200d\u2642\ufe0f",
+  "title": "How Detective Leo Handled First Day Nerves 🕵️‍♂️",
   "concept": "FIRST DAY INVESTIGATION",
   "mood": "dramatic",
   "insight": "No one notices your first day panic when you act mysterious.",
-  "caption": "Leo turned his first day jitters into a full crime scene. Next time: Leo tries negotiating flat rent with Brenda! \ud83c\udfe0",
+  "caption": "Leo turned his first day jitters into a full crime scene. Next time: Leo tries negotiating flat rent with Brenda! 🏠",
   "explain_shot": 3,
   "shots": [
    {
@@ -1321,7 +1321,7 @@
  },
  {
   "id": "stapler-rage-war",
-  "title": "Your Stapler Hates You \ud83d\udd87\ufe0f",
+  "title": "Your Stapler Hates You 🖇️",
   "concept": "STAPLER RAGE WAR",
   "mood": "dramatic",
   "insight": "Objects that attack back are definitely a sign to quit your job.",
@@ -1412,7 +1412,7 @@
  },
  {
   "id": "instant-reply-demon",
-  "title": "Why Fast Texting Makes You A Demon \ud83d\udc7b",
+  "title": "Why Fast Texting Makes You A Demon 👻",
   "concept": "INSTANT REPLY PANIC",
   "mood": "dramatic",
   "insight": "Replying instantly is proof you have no life left.",
@@ -1518,11 +1518,11 @@
  },
  {
   "id": "dinner-dilemma",
-  "title": "How Dinner Turns Crazy \ud83c\udf72",
+  "title": "How Dinner Turns Crazy 🍲",
   "concept": "DINNER DRAMA",
   "mood": "warm",
   "insight": "Choosing dinner can be a wild ride.",
-  "caption": "When \u201canything\u201d turns into a food debate in seconds.",
+  "caption": "When “anything” turns into a food debate in seconds.",
   "explain_shot": 3,
   "shots": [
    {
@@ -1539,7 +1539,7 @@
       "who": "leo",
       "feel": "deadpan",
       "beat": "snap",
-      "text": "Anything, I\u2019m not picky at all."
+      "text": "Anything, I’m not picky at all."
      }
     ]
    },
@@ -1557,7 +1557,7 @@
       "who": "mia",
       "feel": "amused",
       "beat": "snap",
-      "text": "You're naming the food like it\u2019s a person?"
+      "text": "You're naming the food like it’s a person?"
      }
     ]
    },
@@ -1575,7 +1575,7 @@
       "who": "mia",
       "feel": "amused",
       "beat": "snap",
-      "text": "Soup is the new fish? That\u2019s weird."
+      "text": "Soup is the new fish? That’s weird."
      }
     ]
    },
@@ -1587,7 +1587,7 @@
       "who": "leo",
       "feel": "excited",
       "beat": "quick",
-      "text": "Okay but hear me out, I\u2019m craving pizza now."
+      "text": "Okay but hear me out, I’m craving pizza now."
      },
      {
       "who": "mia",
@@ -1605,13 +1605,13 @@
       "who": "leo",
       "feel": "sheepish",
       "beat": "quick",
-      "text": "Fine, I\u2019ll just have nothing, that\u2019s it."
+      "text": "Fine, I’ll just have nothing, that’s it."
      },
      {
       "who": "mia",
       "feel": "warm",
       "beat": "snap",
-      "text": "Anyway, I\u2019ll just order something we both can eat."
+      "text": "Anyway, I’ll just order something we both can eat."
      }
     ]
    },
@@ -1636,7 +1636,7 @@
  },
  {
   "id": "pizza-shield-war",
-  "title": "Why Leo Is My Living Pizza Shield \ud83c\udf55",
+  "title": "Why Leo Is My Living Pizza Shield 🍕",
   "concept": "PIZZA SHIELD WAR",
   "mood": "very excited",
   "insight": "Your best friend views you purely as a food bodyguard.",
@@ -1737,7 +1737,7 @@
  },
  {
   "id": "your-speed-demon-text",
-  "title": "Your Speed Demon Text \ud83d\udcf1",
+  "title": "Your Speed Demon Text 📱",
   "concept": "TEXTING SPEED RUN",
   "mood": "dramatic",
   "insight": "Replying in zero seconds is not speed, it is a call for help.",
@@ -1868,7 +1868,7 @@
  },
  {
   "id": "dinner-trap-part-two",
-  "title": "How 'Anything' Means Nothing For Dinner \ud83c\udf55",
+  "title": "How 'Anything' Means Nothing For Dinner 🍕",
   "concept": "THE DINNER PARADOX",
   "mood": "dramatic",
   "insight": "Saying 'anything' actually means rejecting every food on earth.",
@@ -1995,363 +1995,6 @@
   "tstyle": "plain",
   "style": "v2",
   "format": "PART TWO",
-  "improv": true
- },
- {
-  "id": "polite-pizza-crime",
-  "title": "Your Polite Pizza Crime \ud83c\udf55",
-  "concept": "POLITE PIZZA CRIME",
-  "mood": "warm",
-  "insight": "Investigative licking is a valid crime scene technique.",
-  "caption": "Leo turns the last slice of pizza into a full crime investigation. Who actually ate the evidence?",
-  "explain_shot": 3,
-  "shots": [
-   {
-    "scene": "Leo is pacing the hallway wearing a yellow hoodie, holding a cup of tea with a worried expression, while Mia sits in a teal sweater.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "panicked",
-      "beat": "snap",
-      "text": "Mia, did you inhale the last pizza slice?"
-     }
-    ]
-   },
-   {
-    "scene": "Mia is typing on a laptop at the kitchen table with a deadpan expression while someone knocking on the door echoes in the room.",
-    "focus": "mia",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "beat": "snap",
-      "text": "You were literally licking the empty box."
-     }
-    ]
-   },
-   {
-    "scene": "Leo holds his cup of tea with raised eyebrows as a notification / message arrives on his phone screen.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "confident",
-      "beat": "quick",
-      "text": "That was investigative licking, okay?"
-     }
-    ]
-   },
-   {
-    "scene": "Mia is scrolling on her phone with a subtle smirk while sitting upright facing the camera.",
-    "focus": "mia",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "amused",
-      "beat": "snap",
-      "text": "Investigative? You just ate the evidence, bro."
-     }
-    ]
-   },
-   {
-    "scene": "Leo is texting on his phone, looking sheepish with closed lips while sitting beside Mia.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "sheepish",
-      "beat": "pause",
-      "text": "Does that make me a polite criminal?"
-     }
-    ]
-   },
-   {
-    "scene": "Mia sits upright with a digital clock showing a time beside her, looking at Leo with a slight smirk.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "beat": "quick",
-      "text": "Only if you explain why..."
-     }
-    ]
-   }
-  ],
-  "judge": {
-   "best": 1,
-   "why": "Candidate 1 has the snappiest back-and-forth dialogue and funniest punchlines, even though all candidates suffer from incomplete trailing ending lines.",
-   "scores": {
-    "i": 1,
-    "funny": 7,
-    "hook": 7,
-    "spoken": 8,
-    "relatable": 7,
-    "loop": 4
-   },
-   "n": 3
-  },
-  "variant": "micro",
-  "tstyle": "you",
-  "style": "v2",
-  "format": "MINI MYSTERY",
-  "improv": true
- },
- {
-  "id": "snooze-stage-master",
-  "title": "Why Snoozing Five Times Is Science \u23f0",
-  "concept": "SNOOZE STAGE SCIENTIST",
-  "mood": "dramatic",
-  "insight": "Calling five snoozes a ritual won't get you a new flat.",
-  "caption": "Leo insists hitting snooze five times is a structured sleeping method. Mia isn't buying it.",
-  "explain_shot": 3,
-  "shots": [
-   {
-    "scene": "Bright apartment bedroom. Leo holds a coffee mug, facing camera. Mia stands nearby checking her phone with a smirk.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "excited",
-      "beat": "snap",
-      "text": "Five stages of sleep, baby!"
-     },
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "beat": "quick",
-      "text": "That's just five snoozes, genius."
-     }
-    ]
-   },
-   {
-    "scene": "Hallway near boxes. Mia is pacing the hallway. Leo sits upright on a stool holding his cup.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "tired",
-      "beat": "snap",
-      "text": "Just put the phone across the room."
-     },
-     {
-      "who": "leo",
-      "feel": "confident",
-      "beat": "quick",
-      "text": "Okay but hear me out, that ruins the ritual!"
-     }
-    ]
-   },
-   {
-    "scene": "Sunlit messy room with flat brochures on the table. Mia points at a digital clock showing a time while Leo pulls a blanket over his shoulders.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "amused",
-      "beat": "snap",
-      "text": "A ritual that missed our flat viewing?"
-     },
-     {
-      "who": "leo",
-      "feel": "dramatic",
-      "beat": "quick",
-      "text": "First alarm is denial! Fifth is pure acceptance!"
-     }
-    ]
-   },
-   {
-    "scene": "Kitchen counter. Mia typing on a laptop with barista coffee cups in background. Dev and Brenda pass outside the window.",
-    "focus": "mia",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "beat": "quick",
-      "text": "Scoreboard seventy-six. Dev wrote 'Lyle' on your cup."
-     }
-    ]
-   },
-   {
-    "scene": "Living room. A notification message arrives on Leo's phone with a loud chime. Leo looks shocked, Mia smirks. In the background, clearly visible and drawn in the same style, stands a suspicious landlord with a clipboard (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "panicked",
-      "beat": "quick",
-      "text": "Wait, the landlord called already?"
-     },
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "beat": "quick",
-      "text": "Yep. He loves punctual people."
-     }
-    ]
-   },
-   {
-    "scene": "Bedroom. Leo sitting upright on bed, typing on his phone setting alarms. Mia stands by the door frame.",
-    "focus": "mia",
-    "lines": [
-     {
-      "who": "mia",
-      "feel": "amused",
-      "beat": "snap",
-      "text": "Why are you setting your phone alarm right now?"
-     }
-    ]
-   }
-  ],
-  "judge": {
-   "best": 0,
-   "why": "Candidate 0 delivers actual screenshot-worthy banter with the denial-to-acceptance line and keeps a tight, natural pace.",
-   "scores": {
-    "i": 0,
-    "funny": 8,
-    "hook": 7,
-    "spoken": 8,
-    "relatable": 8,
-    "loop": 8
-   },
-   "n": 2
-  },
-  "variant": "tight",
-  "tstyle": "plain",
-  "style": "v2",
-  "format": "ADVICE FAIL",
-  "improv": true
- },
- {
-  "id": "your-ninety-nine-message-trap",
-  "title": "Your Group Chat Exploded \ud83d\udcf1",
-  "concept": "NOTIFICATION VIBE CHECK",
-  "mood": "dramatic",
-  "insight": "Why read ninety-nine texts when notifications give the vibe?",
-  "caption": "Mia tried to prank Leo with ninety-nine fake messages, but goat Crocs ruined her plan. \ud83d\udcf1",
-  "explain_shot": 3,
-  "shots": [
-   {
-    "scene": "Leo and Mia sit on the living room sofa. Leo is typing on his phone while Mia watches with raised eyebrows.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "panicked",
-      "beat": "snap",
-      "text": "You read all ninety-nine group messages, right?"
-     },
-     {
-      "who": "mia",
-      "feel": "deadpan",
-      "beat": "quick",
-      "text": "I only read the notifications, Leo."
-     }
-    ]
-   },
-   {
-    "scene": "Mia is typing on a laptop at the kitchen table, smirking playfully while Leo stands beside her.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "anxious",
-      "beat": "snap",
-      "text": "Wait, so it's just vibes now?"
-     },
-     {
-      "who": "mia",
-      "feel": "excited",
-      "beat": "quick",
-      "text": "Scoreboard seventy-eight! I spammed those to panic you!"
-     }
-    ]
-   },
-   {
-    "scene": "Leo is scrolling on his phone near the counter with wide eyes while Mia leans over to look.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "confident",
-      "beat": "snap",
-      "text": "Okay but hear me out, I saw the goat."
-     },
-     {
-      "who": "mia",
-      "feel": "amused",
-      "beat": "quick",
-      "text": "Did the goat have shoes on?"
-     }
-    ]
-   },
-   {
-    "scene": "Mia holds a coffee mug with a stunned smirk, looking right at Leo who leans back proudly.",
-    "focus": "mia",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "excited",
-      "beat": "snap",
-      "text": "They were Crocs. Red Crocs."
-     },
-     {
-      "who": "mia",
-      "feel": "hopeful",
-      "beat": "pause",
-      "text": "No way. Goat Crocs?"
-     }
-    ]
-   },
-   {
-    "scene": "Mia is pacing the hallway while Leo leans against the wall with a relaxed smirk.",
-    "focus": "both",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "amused",
-      "beat": "quick",
-      "text": "Better than being your pizza shield! Next time: Trent buys our cafe."
-     },
-     {
-      "who": "mia",
-      "feel": "tired",
-      "beat": "snap",
-      "text": "Anyway, who spammed the chat next?"
-     }
-    ]
-   },
-   {
-    "scene": "Leo looks up as a notification / message arrives on his phone screen.",
-    "focus": "leo",
-    "lines": [
-     {
-      "who": "leo",
-      "feel": "hopeful",
-      "beat": "quick",
-      "text": "Did someone send ninety-nine more goats?"
-     }
-    ]
-   }
-  ],
-  "judge": {
-   "best": 2,
-   "why": "Candidate 2 has the strongest dialogue flow, best punchlines, and a seamless loop.",
-   "scores": {
-    "i": 2,
-    "funny": 8,
-    "hook": 8,
-    "spoken": 9,
-    "relatable": 8,
-    "loop": 8
-   },
-   "n": 3
-  },
-  "variant": "standard",
-  "tstyle": "you",
-  "style": "v2",
-  "format": "PRANK",
   "improv": true
  }
 ]

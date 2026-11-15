@@ -32,8 +32,8 @@ def models():
     print('story models:',_MODELS[:5],flush=True);return _MODELS
 KIND='short'   # episode_writer switches this to 'full' while it writes an episode
 ACTION = ("ACTION AND SOUND: in EVERY shot's 'scene' text describe one clear physical action in plain words, so the animation moves and real sounds can be added from the words. "
-          "Use these everyday actions and these exact words: typing on his phone / texting / scrolling, typing on a laptop, someone knocking on the door, walking / pacing the hallway, "
-          "a coffee mug / a cup of tea, pulling the blanket / pillow / lying in bed, an alarm going off, a notification / message arrives, a digital clock showing a time. "
+          "Use these everyday actions and these exact words: someone knocking on the door, walking / pacing the hallway, "
+          "a coffee mug / a cup of tea, pulling the blanket / pillow / lying in bed, an alarm going off, a digital clock showing a time. "
           "Vary the action from shot to shot (never the same twice in a row), at most two actions per shot, and keep Leo and Mia large in frame and visibly moving, not standing still.")
 
 
@@ -43,7 +43,7 @@ DRAMA = ("DRAMA RULES (owner 2026-11-14, very important): the skit must be funny
 SPICE = ("VOICE OF THE SCRIPT (owner rule 2026-11-10, overrides any other tone instruction above): these are two real friends being funny, NOT professional, NOT serious, NOT explaining anything. "
          "SIMPLE ENGLISH ONLY: words a ten-year-old knows, short sentences, contractions (don't, it's, I'm), slang is fine (bro, dude, okay but, literally, no way, wait what). Never use words like 'bias', 'cognitive', 'anxiety', 'productivity', 'rumination', 'perspective', 'tendency', 'psychology'. "
          "Real talk rhythm: people interrupt ('wait-', 'no no no', 'excuse me?'), answer fast, finish each other's thoughts, repeat a word for a joke, say 'um', 'uh', 'okay so'. Some lines are just one or two words ('What?', 'Seriously?', 'No.'). Nobody speaks in perfect paragraphs. "
-         "Funny = a situation everyone has lived (texts, food, sleep, phones, roommates, dates, family, money, being late), exaggerated a little, with one running joke, a rule of three with a twist, and one line a viewer would send to a friend with 'this is us'. "
+         "Funny = a situation everyone has lived (food, sleep, roommates, dates, family, money, being late), exaggerated a little, with one running joke, a rule of three with a twist, and one line a viewer would send to a friend with 'this is us'. "
          "Mia teases Leo with exact little details; Leo defends himself badly and loses; they stay friends underneath. No slurs, no hate, nothing mean about bodies. "
          "Make it feel like part of a series ('to be continued', 'tomorrow part two') only when the topic says part two. Return the 'beat' of every line honestly: most lines snap or quick, because real friends answer in milliseconds, and use pause only where silence is funny. "
          "EXAMPLE of the rhythm (do not copy): Leo: 'Did you eat my fries?' (snap) / Mia: 'What fries?' (snap) / Leo: 'My fries. Fridge. Blue box.' (quick) / Mia: 'Oh... those fries.' (pause) / Leo: 'Mia.' (snap) / Mia: 'They were lonely.' (quick)")
@@ -109,7 +109,7 @@ def valid(s,taken,variant='standard'):
         assert alll[-1].strip()[-1:] in ('?','—','…','-') or alll[-1].strip().endswith('...'), 'no loop'
         s['explain_shot']=int(s.get('explain_shot',3));assert 0<=s['explain_shot']<=5
         _all=' '.join([s.get('title','')]+[sh['scene'] for sh in s['shots']]+alll).lower()
-        assert len(re.findall(r'\b(text(ed|ing|s)?|e-?mails?|group chat|chat|notification|dms?|messages?|phone|video call|typing)\b',_all))<=1, 'boring phone/text plot'   # DRAMA rule
+        assert len(re.findall(r'\b(text(ed|ing|s)?|e-?mails?|group chat|chat|notification|dms?|messages?|phone|video call|typing)\b',_all))==0, 'boring phone/text plot'   # DRAMA rule
         _w=set(re.findall(r'[a-z]{4,}',' '.join([s.get('title','')]+[sh['scene'] for sh in s['shots']]).lower()))
         for _o in _recent_scripts():   # NO_REPEAT: too close to a recent skit
             assert len(_w & _o)/max(1,len(_w)) < 0.45, 'too similar to a recent skit'
