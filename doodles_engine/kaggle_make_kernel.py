@@ -36,9 +36,31 @@ from diffusers import Flux2KleinPipeline
 from PIL import Image
 p = Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-4B', torch_dtype=torch.float16); p.enable_model_cpu_offload()
 ref = Image.open(IN + '/ref.png').convert('RGB')
+import cv2, numpy as np
+try: FD = cv2.FaceDetectorYN.create(IN + '/yunet.onnx', '', (320, 320), 0.5, 0.3, 10)
+except Exception as _e: FD = None; print('no face checker', _e, flush=True)
+def faults(img):
+    """PICTURE_GATE (owner 2026-11-15): exactly two faces (Leo left, Mia right), both large and fully inside the frame, no third person. Returns the number of faults (0 = good)."""
+    if FD is None: return 0
+    a = cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR); H, W = a.shape[:2]; FD.setInputSize((W, H)); _, f = FD.detect(a)
+    f = [] if f is None else [r for r in f if r[14] > 0.6]
+    n = 0
+    if len(f) != 2: return 3 + abs(len(f) - 2)
+    f = sorted(f, key=lambda r: r[0] + r[2] / 2)
+    for r in f:
+        if r[0] < 2 or r[0] + r[2] > W - 2 or r[1] < 2: n += 2
+        if r[2] < 0.16 * W: n += 1
+    if not (f[0][0] + f[0][2] / 2 < 0.5 * W < f[1][0] + f[1][2] / 2): n += 2
+    if not (0.55 < f[0][2] / f[1][2] < 1.8): n += 1
+    return n
 for k, jb in enumerate(J['prompts']):
-    img = p(image=[ref], prompt=jb['prompt'], width=int(jb.get('w',576)), height=int(jb.get('h',1024)), num_inference_steps=4, guidance_scale=1.0, generator=torch.Generator('cpu').manual_seed(int(jb['seed']))).images[0]
-    img.save(OUT + '/' + jb['out']); print('picture', jb['out'], flush=True)
+    best = None
+    for att in range(5):
+        img = p(image=[ref], prompt=jb['prompt'], width=int(jb.get('w',576)), height=int(jb.get('h',1024)), num_inference_steps=4, guidance_scale=1.0, generator=torch.Generator('cpu').manual_seed(int(jb['seed']) + 1000 * att)).images[0]
+        n = faults(img); print('picture', jb['out'], 'try', att + 1, 'faults', n, flush=True)
+        if best is None or n < best[0]: best = (n, img)
+        if n == 0: break
+    best[1].save(OUT + '/' + jb['out']); print('picture', jb['out'], 'kept with faults', best[0], flush=True)
 del p; gc.collect(); torch.cuda.empty_cache()
 shutil.copy(IN + '/align.py', '/kaggle/working/align.py')
 r = subprocess.run([sys.executable, '/kaggle/working/align.py', OUT], capture_output=True, text=True); print((r.stdout + r.stderr)[-800:], flush=True)

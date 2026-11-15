@@ -19,9 +19,9 @@ def main(work):
     if (work / 'kaggle_stage1.DONE').exists(): log('stage 1 already done'); return
     vj = [{'who': l['who'], 'text': l['text'], 'feel': l['feel'], 'wav': f'line_{si:02d}_{li:02d}.wav'} for si, sh in enumerate(st['shots']) for li, l in enumerate(sh['lines'])]
     wide = bool(st.get('landscape'))
-    pj = [{'prompt': stories.LOOK + sh['scene'] + FRONT + (WIDE if wide else ''), 'out': f'shot_{i:02d}.png', 'seed': 100 + i, **({'w': 1024, 'h': 576} if wide else {})} for i, sh in enumerate(st['shots'])]
+    pj = [{'prompt': stories.look_for(st.get('id') or st.get('title')) + sh['scene'] + FRONT + (WIDE if wide else ''), 'out': f'shot_{i:02d}.png', 'seed': 100 + i, **({'w': 1024, 'h': 576} if wide else {})} for i, sh in enumerate(st['shots'])]
     ins = work / 'k1_in'; shutil.rmtree(ins, ignore_errors=True); ins.mkdir()
-    shutil.copy(ROOT / 'data/production/reference-v1/Opening-frame.png', ins / 'ref.png'); shutil.copy(HERE / 'voices.py', ins / 'voices.py'); shutil.copy(HERE / 'align.py', ins / 'align.py')
+    shutil.copy(ROOT / 'data/production/reference-v1/Opening-frame.png', ins / 'ref.png'); shutil.copy(HERE / 'voices.py', ins / 'voices.py'); shutil.copy(ROOT / 'data/engines/yunet/face_detection_yunet_2023mar.onnx', ins / 'yunet.onnx'); shutil.copy(HERE / 'align.py', ins / 'align.py')
     (ins / 'jobs.json').write_text(json.dumps({'story': st, 'prompts': pj, 'voice_jobs': vj}))
     slug = 'doodles-make-' + time.strftime('%d%H%M%S'); (ins / 'dataset-metadata.json').write_text(json.dumps({'title': slug.replace('-', ' '), 'id': f'{USER}/{slug}', 'licenses': [{'name': 'CC0-1.0'}]}))
     for attempt in range(5):

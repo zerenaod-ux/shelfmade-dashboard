@@ -1,10 +1,20 @@
 import re
 """Original AnimationDoodles Shorts: Leo (overthinker) and Mia (dry, kind, blunt) explain one pop-psychology idea.
 Each story is 6 shots / ~35-45 s. Keep claims soft ('can', 'often'); no invented statistics. Props only, no text in pictures."""
-LOOK=("Same two characters and the same polished Pixar-style 3D animated look as the reference picture. "
-      "PODCAST SET (owner 2026-11-14): Leo and Mia sit side by side at a cozy podcast desk with big studio microphones on arms and headphones around their necks, warm studio lights and a soft background. "
-      "Leo (curly dark hair, mustard-yellow hoodie, young man) sits on the LEFT. "
-      "Mia (short dark bob, teal sweater, young woman) is on the RIGHT. Warm cinematic lighting, expressive faces, no text, no letters, no logos. ")
+OUTFITS=[("mustard-yellow hoodie","teal sweater"),("navy crewneck sweater","cream cable-knit cardigan"),("olive-green flannel shirt","burgundy turtleneck"),
+         ("grey zip-up hoodie","lavender knit sweater"),("white t-shirt under a denim jacket","coral sweatshirt"),("maroon polo shirt","denim jacket over a white t-shirt"),
+         ("black turtleneck","emerald-green blouse"),("light-blue button-up shirt with rolled sleeves","mustard-yellow cardigan")]
+_LOOK=("Same two characters (same faces and hairstyles) and the same polished Pixar-style 3D animated look as the reference picture, but wearing NEW outfits: "
+      "Leo (curly dark hair, young man) wears a %s, Mia (short dark bob, young woman) wears a %s. "
+      "PODCAST SET (owner 2026-11-14): Leo and Mia sit side by side at a cozy podcast desk, warm studio lights and a soft background. "
+      "MICROPHONES (owner 2026-11-15): both wear over-ear headphones and EACH has exactly ONE studio microphone on a boom arm in front of their OWN chin: exactly two microphones in the whole picture, one for Leo and one for Mia, Mia's microphone always visible, no extra or spare microphones, no microphone on the desk. "
+      "ONLY Leo and Mia are in the picture: no third person anywhere, not in the background, not in a doorway, not in a reflection. "
+      "Leo sits on the LEFT third of the frame and Mia on the RIGHT third, both faces fully inside the picture and large, neither cut off by the edge. Warm cinematic lighting, expressive faces, no text, no letters, no logos. ")
+def look_for(key=''):
+    """OUTFIT_ROTATION (owner 2026-11-15): new clothes in every video (same faces). The outfit is chosen from the story id so a story always keeps its own outfit."""
+    import zlib
+    return _LOOK%OUTFITS[zlib.crc32(str(key).encode())%len(OUTFITS)]
+LOOK=look_for('')
 def S(scene,*lines,focus='both',mood=None):
     return {'scene':scene,'lines':[{'who':w,'text':t,'feel':f} for w,f,t in lines],'focus':focus}
 STORIES=[

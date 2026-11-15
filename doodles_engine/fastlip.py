@@ -4,20 +4,50 @@ import numpy as np
 from pathlib import Path
 import cv2
 YUNET=Path('/tmp/yunet.onnx') if Path('/tmp/yunet.onnx').exists() else Path(__file__).resolve().parent.parent/'data/engines/yunet/face_detection_yunet_2023mar.onnx'
+def _refine_mouth(rgb,r):
+    """MOUTH_FIX (owner 2026-11-15): on turned or stylised faces the detector's two mouth corners can sit on the cheek, so the mouth animation landed beside the real mouth.
+    The detector's HEIGHT is reliable, its sideways position is not: look for the real lips (pink/red and dark pixels) in a band at that height and recentre sideways. Returns corrected corners or None."""
+    H,W=rgb.shape[:2];fx,fy,fw,fh=[float(v) for v in r[:4]];nx=float(r[8]);ny0=float(r[9])
+    (ax,ay),(bx,by)=(float(r[10]),float(r[11])),(float(r[12]),float(r[13]))
+    if ax>bx:ax,ay,bx,by=bx,by,ax,ay
+    cy0=(ay+by)/2
+    x0=int(max(0,nx-0.55*fw));x1=int(min(W,nx+0.55*fw));y0=int(max(0,ny0+0.05*fh,cy0-0.08*fh));y1=int(min(H,cy0+0.17*fh,fy+fh))
+    if x1-x0<12 or y1-y0<6:return None
+    b=rgb[y0:y1,x0:x1].astype('float32');R,G,B=b[...,0],b[...,1],b[...,2]
+    L=0.3*R+0.59*G+0.11*B
+    red=(R-G)-np.median(R-G);dark=np.maximum(0,np.median(L)-L)*0.35
+    sc=red+dark;sc[sc<0]=0
+    m=sc>=max(np.percentile(sc,85),6.0)
+    if int(m.sum())<12:return None
+    ys,xs=np.nonzero(m);w=sc[m]
+    cx=float((xs*w).sum()/w.sum())+x0;cy=float(np.clip((ys*w).sum()/w.sum()+y0,cy0-0.05*fh,cy0+0.10*fh));cy=min(max(cy,ny0+0.14*fh),fy+0.93*fh)   # the mouth is never up at the nose
+    lo,hi=np.percentile(xs,[6,94]);half=float(np.clip(0.5*(hi-lo)*1.05,0.10*fw,0.30*fw))
+    tilt=float(np.clip(np.arctan2(by-ay,bx-ax),-0.5,0.5))*0.6
+    return ((cx-half*np.cos(tilt),cy-half*np.sin(tilt)),(cx+half*np.cos(tilt),cy+half*np.sin(tilt)))
 def detect(rgb):
     """All faces in an RGB uint8 image -> list of dict(x,y,w,h,score,corners=((x1,y1),(x2,y2)))."""
     bgr=cv2.cvtColor(rgb,cv2.COLOR_RGB2BGR);h,w=bgr.shape[:2]
     d=cv2.FaceDetectorYN.create(str(YUNET),'',(w,h),0.25,0.3,10);d.setInputSize((w,h));_,f=d.detect(bgr)
     out=[]
     for r in ([] if f is None else f):
+        c=((float(r[10]),float(r[11])),(float(r[12]),float(r[13])))
+        try:
+            rc=_refine_mouth(rgb,r)
+            if rc:c=rc
+        except Exception:pass
         out.append({'x':float(r[0]),'y':float(r[1]),'w':float(r[2]),'h':float(r[3]),'score':float(r[14]),
-                    'corners':((float(r[10]),float(r[11])),(float(r[12]),float(r[13]))),
-                    'eyes':((float(r[4]),float(r[5])),(float(r[6]),float(r[7])))})
+                    'corners':c,'raw_corners':((float(r[10]),float(r[11])),(float(r[12]),float(r[13]))),
+                    'nose':(float(r[8]),float(r[9])),'eyes':((float(r[4]),float(r[5])),(float(r[6]),float(r[7])))})
     return out
 def pick(faces,who,width):
+    """RIGHT_FACE: only the two big foreground faces count (a small face in the background, e.g. a third person, is never Leo or Mia); Leo is the left one, Mia the right one."""
     if not faces:return None
-    want=0.30*width if who=='leo' else 0.70*width
-    return min(faces,key=lambda f:abs((f['x']+f['w']/2)-want)-30*f['score'])
+    big=max(f['w'] for f in faces)
+    fg=[f for f in faces if f['w']>=0.5*big]
+    if len(fg)>=2:
+        fg=sorted(fg,key=lambda f:f['x']+f['w']/2);return fg[0] if who=='leo' else fg[-1]
+    f=fg[0];c=(f['x']+f['w']/2)/width
+    return f if (c<0.5)==(who=='leo') else None   # a lone face is only used for the side it is really on
 def mouth_geom(face):
     (ax,ay),(bx,by)=face['corners']
     if ax>bx:(ax,ay),(bx,by)=(bx,by),(ax,ay)
