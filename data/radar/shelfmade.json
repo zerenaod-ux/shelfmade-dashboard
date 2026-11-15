@@ -2,128 +2,128 @@
  "why": [
   {
    "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
-   "why": "This extreme breakout (17.6x) relies on intense emotional resonance around raw human pain, using visceral themes like betrayal and heartbreak to hook viewers looking for deep emotional validation."
+   "why": "Massive breakout (157.8x) driven by hyper-relatable negative emotional triggers (betrayal and hurt) paired with fast-paced minimalist typography."
+  },
+  {
+   "title": "It Is Better to Know the Worst Than Live in a Fool's Paradise \ud83d\udda4 | Dostoevsky",
+   "why": "High-performing namedrop (Dostoevsky) featuring a strong provocative hook that challenges comfortable ignorance with dark existential truth."
+  },
+  {
+   "title": "this is what Rumi and everyone believes about God#shorts#quotes#rumi#god",
+   "why": "Uses curiosity-gap framing ('this is what X reveals/believes') to transform abstract classic poetry into an urgent spiritual lesson."
   },
   {
    "title": "Best quotes of all time#motivation #stoicism #mindset#discipline #motivationalquotes#gymmotivation \ufffc",
-   "why": "A massive breakout (34.2x) driven by aggressive framing around 'all-time best' authority coupled with fast-paced, high-utility mindset advice aimed at self-improvement seekers."
-  },
-  {
-   "title": "Stop Believing Everything You See \ud83e\udde0 #marcusaurelius #stoicism #shorts",
-   "why": "Works through a direct, confrontational imperative hook ('Stop Believing') that creates immediate pattern-interrupt and taps into the viewer's fear of being manipulated or naive."
-  },
-  {
-   "title": "this is what Franz Kafka reveals everyone should learn explained #kafka#shorts#quotes",
-   "why": "Uses named-author authority paired with an 'insider secret' curiosity gap ('reveals everyone should learn') to make classic literature feel urgent and practically useful."
+   "why": "High breakout performance on a tiny channel by bridging classical stoic text with the high-intent modern 'discipline/gym mindset' niche."
   }
  ],
  "hook_patterns": [
-  "Confrontational negative commands ('Stop doing X') that disrupt mindless scrolling",
-  "Authoritative curated lists ('The single most important lesson from [Author]')",
-  "High-emotion vulnerability triggers focusing on betrayal, resilience, or unseen hurt"
+  "The harsh reality formula: 'It is better to [painful truth] than [comfortable lie]'",
+  "The curiosity gap formula: 'This is what [Classic Author] revealed about [uncomfortable emotion]'",
+  "The identity callout formula: 'The price of a [person/man/woman] who chooses to [modern bad habit]'"
  ],
- "todays_angle": "Extract deeply personal, hard-hitting emotional wisdom from classic literary figures framed as urgent modern survival advice.",
+ "todays_angle": "Pivot public domain existentialism toward modern relationship anxiety and emotional resilience.",
  "ideas": [
-  "Dostoevsky on Why Good People Get Betrayed: A 30-second breakdown of psychological boundary-setting using classic public domain text.",
-  "The Dark Truth About Overthinking (From Seneca's Letters): Highlighting one powerful quote about imagined suffering versus reality.",
-  "Mary Shelley's Warning to Lonely Hearts: Converting a classic passage from Frankenstein into a striking lesson on self-worth and isolation."
+  "Text-overlay Short featuring Leo Tolstoy's analysis of why people destroy their own happiness, paired with slow atmospheric classical art.",
+  "A 30-second narration of Mary Shelley's Frankenstein quote on isolation, framed as a lesson on modern social burnout.",
+  "Fast-paced slideshow of Friedrich Nietzsche's top 3 rules for dealing with betrayal, tagged for the self-improvement audience."
  ],
  "avoid": [
-  "Generic, low-effort hashtag spam without a clear, text-on-screen narrative hook",
-  "Overused, surface-level Marcus Aurelius gym-motivation quotes with no unique commentary"
+  "Generic tag-soup titles with zero text on thumbnail or hook (e.g., '#quotes #motivation #stoicism')",
+  "Overused basic Marcus Aurelius quotes without a specific, novel emotional angle"
  ],
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "sample": 55,
  "spikes": [
   {
    "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
    "channel": "Letters to Nobody",
-   "views": 13030,
-   "hours": 8,
-   "vph": 1702.2,
-   "subs": 742,
-   "breakout": 17.6
+   "views": 125633,
+   "hours": 27,
+   "vph": 4607.3,
+   "subs": 796,
+   "breakout": 157.8
   },
   {
-   "title": "this is what men should do the most i they face these challenges #shorts#quotes",
+   "title": "u n me it's complicated\ud83e\udd40 #hurtquotes #love #bookstagram #booktok #bookquotes #ytshorts #explore#fyp",
+   "channel": "mausthoughts_",
+   "views": 21017,
+   "hours": 6,
+   "vph": 3307.1,
+   "subs": 38300,
+   "breakout": 0.5
+  },
+  {
+   "title": "It Is Better to Know the Worst Than Live in a Fool's Paradise \ud83d\udda4 | Dostoevsky",
+   "channel": "Midnight Quotes",
+   "views": 50194,
+   "hours": 22,
+   "vph": 2314.2,
+   "subs": 893,
+   "breakout": 56.2
+  },
+  {
+   "title": "some wise words from a wise man explained #quotes#fyp",
    "channel": "stoic physiology ",
-   "views": 34714,
-   "hours": 43,
-   "vph": 806.6,
-   "subs": 18400,
-   "breakout": 1.9
+   "views": 34010,
+   "hours": 16,
+   "vph": 2115.6,
+   "subs": 18600,
+   "breakout": 1.8
   },
   {
-   "title": "this is what Franz Kafka reveals everyone should learn explained #kafka#shorts#quotes",
+   "title": "this is what Rumi and everyone believes about God#shorts#quotes#rumi#god",
    "channel": "stoic physiology ",
-   "views": 11190,
-   "hours": 14,
-   "vph": 799.9,
-   "subs": 18400,
-   "breakout": 0.6
+   "views": 23435,
+   "hours": 17,
+   "vph": 1384.7,
+   "subs": 18600,
+   "breakout": 1.3
   },
   {
-   "title": "Stop Believing Everything You See \ud83e\udde0 #marcusaurelius #stoicism #shorts",
-   "channel": "Quotenza",
-   "views": 20311,
-   "hours": 33,
-   "vph": 611.1,
-   "subs": 4770,
-   "breakout": 4.3
-  },
-  {
-   "title": "moral : this is what most people should learn explained Rumi #shorts#quotes",
+   "title": "moral this is the price of a man to be ruled #shorts#epictetus#stoicism",
    "channel": "stoic physiology ",
-   "views": 13969,
-   "hours": 25,
-   "vph": 553.2,
-   "subs": 18400,
-   "breakout": 0.8
+   "views": 17887,
+   "hours": 17,
+   "vph": 1041.3,
+   "subs": 18600,
+   "breakout": 1.0
   },
   {
    "title": "#quotes #wiseadvise #inspirationalquotes #stoicism #motivationstatus #stoicmindset #motivational",
    "channel": "The Mental Health Space",
-   "views": 7804,
-   "hours": 16,
-   "vph": 496.3,
-   "subs": 6010,
+   "views": 14459,
+   "hours": 19,
+   "vph": 776.4,
+   "subs": 6030,
+   "breakout": 2.4
+  },
+  {
+   "title": "this is what Franz Kafka reveals everyone should learn explained #kafka#shorts#quotes",
+   "channel": "stoic physiology ",
+   "views": 24264,
+   "hours": 34,
+   "vph": 722.1,
+   "subs": 18600,
    "breakout": 1.3
-  },
-  {
-   "title": "Life Teaches More Than Books \ud83d\udcda | Reality of Life | Deep Life Lessons #Shorts #importantlessons #fyp",
-   "channel": "Wise rider",
-   "views": 6122,
-   "hours": 14,
-   "vph": 447.4,
-   "subs": 2350,
-   "breakout": 2.6
-  },
-  {
-   "title": "i don't love u anymore \ud83e\udd40 #hurtquotes #love #bookstagram #booktok #heartbreak #poetrybook #bookquotes",
-   "channel": "mausthoughts_",
-   "views": 1204,
-   "hours": 3,
-   "vph": 401.3,
-   "subs": 38100,
-   "breakout": 0.0
   },
   {
    "title": "Best quotes of all time#motivation #stoicism #mindset#discipline #motivationalquotes#gymmotivation \ufffc",
    "channel": "Hitanshu Desai",
-   "views": 6842,
-   "hours": 26,
-   "vph": 263.9,
-   "subs": 95,
-   "breakout": 34.2
+   "views": 10611,
+   "hours": 46,
+   "vph": 233.0,
+   "subs": 118,
+   "breakout": 53.1
   },
   {
-   "title": "#philosophy #quotes #stoicism #marcusaurelius #mindset",
-   "channel": "The Philosopher's Bible",
-   "views": 5213,
+   "title": "#shorts #philosophy #stoicism #inspire #quotes",
+   "channel": "LumenXtian",
+   "views": 8741,
    "hours": 44,
-   "vph": 118.1,
-   "subs": 274,
-   "breakout": 19.0
+   "vph": 197.8,
+   "subs": 146,
+   "breakout": 43.7
   }
  ]
 }
