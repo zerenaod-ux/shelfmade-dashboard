@@ -2,20 +2,30 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-14",
+ "collected": "2026-11-15",
  "note": "",
  "videos": [
+  {
+   "id": "6tz6Hvcipk0",
+   "title": "Your Kids Expect Shock",
+   "published": "2026-11-14T18:03:04Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 967,
+   "likes": 18,
+   "comments": 1
+  },
   {
    "id": "uOqGecmhSTs",
    "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 379,
+   "views": 378,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 101,
-   "avgPercent": 129.03,
+   "avgSeconds": 100,
+   "avgPercent": 127.12999999999998,
    "subsGained": 0
   },
   {
@@ -37,8 +47,18 @@
    "published": "2026-11-14T03:01:48Z",
    "duration": "PT1M11S",
    "privacy": "public",
-   "views": 229,
+   "views": 243,
    "likes": 2,
+   "comments": 1
+  },
+  {
+   "id": "UUoVjHCcU24",
+   "title": "Your Joy Is Wild",
+   "published": "2026-11-15T03:01:32Z",
+   "duration": "PT1M3S",
+   "privacy": "public",
+   "views": 161,
+   "likes": 4,
    "comments": 0
   },
   {
@@ -53,6 +73,16 @@
    "avgSeconds": 70,
    "avgPercent": 149.47,
    "subsGained": 0
+  },
+  {
+   "id": "9WzReCi_1lc",
+   "title": "Your Joy Triggers Ancient Brain Networks",
+   "published": "2026-11-14T23:01:41Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 117,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "NOrxJfIaNfE",
@@ -70,11 +100,11 @@
    "published": "2026-11-10T00:00:03Z",
    "duration": "PT8M23S",
    "privacy": "public",
-   "views": 94,
+   "views": 93,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 129,
-   "avgPercent": 25.78,
+   "avgSeconds": 135,
+   "avgPercent": 26.890000000000004,
    "subsGained": 0
   },
   {
@@ -96,9 +126,9 @@
    "published": "2026-11-13T23:02:13Z",
    "duration": "PT1M9S",
    "privacy": "public",
-   "views": 81,
+   "views": 83,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "leCHsYO2yWM",
@@ -121,7 +151,10 @@
    "privacy": "public",
    "views": 78,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 27.26,
+   "subsGained": 0
   },
   {
    "id": "8j6NBqbneQ8",
@@ -191,11 +224,11 @@
    "published": "2026-11-12T03:01:54Z",
    "duration": "PT54S",
    "privacy": "public",
-   "views": 57,
+   "views": 56,
    "likes": 1,
    "comments": 1,
    "avgSeconds": 17,
-   "avgPercent": 32.03,
+   "avgPercent": 31.929999999999996,
    "subsGained": 0
   },
   {
@@ -204,7 +237,7 @@
    "published": "2026-10-30T02:00:45Z",
    "duration": "PT1M35S",
    "privacy": "public",
-   "views": 55,
+   "views": 56,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 21,
@@ -261,19 +294,6 @@
    "subsGained": 0
   },
   {
-   "id": "hCqfKz63Fug",
-   "title": "Your Screen Hours",
-   "published": "2026-11-11T23:03:07Z",
-   "duration": "PT54S",
-   "privacy": "public",
-   "views": 49,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 40,
-   "avgPercent": 74.95,
-   "subsGained": 0
-  },
-  {
    "id": "4qzeT6uxt3A",
    "title": "Memory: How to Develop, Train, and Use It",
    "published": "2026-10-23T04:10:17Z",
@@ -287,6 +307,19 @@
    "subsGained": 0
   },
   {
+   "id": "hCqfKz63Fug",
+   "title": "Your Screen Hours",
+   "published": "2026-11-11T23:03:07Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 48,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 40,
+   "avgPercent": 74.95,
+   "subsGained": 0
+  },
+  {
    "id": "X9Z1e8QV6PQ",
    "title": "Why Silence Heals Your Brain",
    "published": "2026-11-11T03:02:00Z",
@@ -295,8 +328,8 @@
    "views": 48,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 28,
-   "avgPercent": 42.74,
+   "avgSeconds": 27,
+   "avgPercent": 41.47,
    "subsGained": 0
   },
   {
@@ -311,6 +344,16 @@
    "avgSeconds": 26,
    "avgPercent": 45.8,
    "subsGained": 0
+  },
+  {
+   "id": "T85YWZMCbDc",
+   "title": "Your Play Boosts Joy",
+   "published": "2026-11-13T18:03:48Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 45,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "sdpifdp9fdw",
@@ -396,11 +439,24 @@
    "published": "2026-11-11T18:05:09Z",
    "duration": "PT1M",
    "privacy": "public",
-   "views": 38,
+   "views": 36,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 29,
    "avgPercent": 49.83,
+   "subsGained": 0
+  },
+  {
+   "id": "S0Ee2i5ao7o",
+   "title": "Your Brain Plays",
+   "published": "2026-11-13T03:01:12Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 35,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 22,
+   "avgPercent": 37.7,
    "subsGained": 0
   },
   {
@@ -428,26 +484,6 @@
    "avgSeconds": 53,
    "avgPercent": 96.25,
    "subsGained": 0
-  },
-  {
-   "id": "T85YWZMCbDc",
-   "title": "Your Play Boosts Joy",
-   "published": "2026-11-13T18:03:48Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 34,
-   "likes": 0,
-   "comments": 1
-  },
-  {
-   "id": "S0Ee2i5ao7o",
-   "title": "Your Brain Plays",
-   "published": "2026-11-13T03:01:12Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 34,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "YT26hcYPqPA",
@@ -769,16 +805,6 @@
    "subsGained": 0
   },
   {
-   "id": "6tz6Hvcipk0",
-   "title": "Your Kids Expect Shock",
-   "published": "2026-11-14T18:03:04Z",
-   "duration": "PT56S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 1,
-   "comments": 0
-  },
-  {
    "id": "BeQ1CnMVAns",
    "title": "Are strong sensations always painful?",
    "published": "2026-11-08T18:03:11Z",
@@ -799,7 +825,7 @@
    "privacy": "public",
    "views": 21,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 17,
    "avgPercent": 27.91,
    "subsGained": 0
@@ -864,7 +890,10 @@
    "privacy": "public",
    "views": 20,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 22,
+   "avgPercent": 37.58,
+   "subsGained": 0
   },
   {
    "id": "7QFo4yYN-tM",
@@ -926,7 +955,7 @@
    "privacy": "public",
    "views": 18,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 8,
    "avgPercent": 12.94,
    "subsGained": 0
@@ -1111,6 +1140,32 @@
    "subsGained": 0
   },
   {
+   "id": "Z5ifzR5nOV0",
+   "title": "The Instinct Of Workmanship",
+   "published": "2026-11-02T23:01:53Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 10,
+   "avgPercent": 20.72,
+   "subsGained": 1
+  },
+  {
+   "id": "GiSqnmTVkRo",
+   "title": "Are emotions built by habit?",
+   "published": "2026-10-18T23:27:41Z",
+   "duration": "PT1M34S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 5.87,
+   "subsGained": 0
+  },
+  {
    "id": "VsvMwBHBL_Q",
    "title": "Read this line from Crowd twice.",
    "published": "2026-11-03T18:03:06Z",
@@ -1134,19 +1189,6 @@
    "comments": 0,
    "avgSeconds": 177,
    "avgPercent": 48.63,
-   "subsGained": 0
-  },
-  {
-   "id": "GiSqnmTVkRo",
-   "title": "Are emotions built by habit?",
-   "published": "2026-10-18T23:27:41Z",
-   "duration": "PT1M34S",
-   "privacy": "public",
-   "views": 12,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 5,
-   "avgPercent": 5.87,
    "subsGained": 0
   },
   {
@@ -1766,16 +1808,6 @@
    "published": "2026-11-03T15:49:25Z",
    "duration": "PT7M24S",
    "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "23BZecAP85c",
-   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
-   "published": "2026-11-03T00:00:22Z",
-   "duration": "PT5M55S",
-   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0

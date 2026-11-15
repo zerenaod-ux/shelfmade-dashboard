@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-14",
+ "collected": "2026-11-15",
  "note": "",
  "videos": [
   {
@@ -15,7 +15,7 @@
    "likes": 9,
    "comments": 0,
    "avgSeconds": 15,
-   "avgPercent": 59.37,
+   "avgPercent": 59.61,
    "subsGained": 3
   },
   {
@@ -54,7 +54,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 9,
-   "avgPercent": 32.05,
+   "avgPercent": 30.86,
    "subsGained": 0
   },
   {
@@ -110,6 +110,19 @@
    "subsGained": 0
   },
   {
+   "id": "Mkc1Mjjf_kY",
+   "title": "Machiavelli would hate how you live.",
+   "published": "2026-11-13T03:01:24Z",
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "views": 63,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 19,
+   "avgPercent": 26.43,
+   "subsGained": 0
+  },
+  {
    "id": "ZVUS3mUbOaQ",
    "title": "Up from Slavery",
    "published": "2026-10-16T01:26:27Z",
@@ -136,22 +149,12 @@
    "subsGained": 1
   },
   {
-   "id": "Mkc1Mjjf_kY",
-   "title": "Machiavelli would hate how you live.",
-   "published": "2026-11-13T03:01:24Z",
-   "duration": "PT1M12S",
-   "privacy": "public",
-   "views": 59,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "pWVzUeSbav0",
    "title": "That which is necessary in order to learn something else is an Axiom",
    "published": "2026-10-16T16:28:52Z",
    "duration": "PT29S",
    "privacy": "public",
-   "views": 55,
+   "views": 56,
    "likes": 3,
    "comments": 0,
    "avgSeconds": 48,
@@ -224,6 +227,16 @@
    "subsGained": 0
   },
   {
+   "id": "DqPkTxpybRQ",
+   "title": "Read this before you open Self-Reliance.",
+   "published": "2026-11-14T18:03:43Z",
+   "duration": "PT1M5S",
+   "privacy": "public",
+   "views": 44,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "wxefvX3oShc",
    "title": "It is for everyone's interest to let this truth sink deep into his mind",
    "published": "2026-10-25T23:20:34Z",
@@ -233,19 +246,6 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 9,
-   "avgPercent": 37.41,
-   "subsGained": 0
-  },
-  {
-   "id": "nuQLBWcyPzQ",
-   "title": "Plato had a warning for you.",
-   "published": "2026-11-04T18:02:59Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 41,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 19,
    "avgPercent": 37.41,
    "subsGained": 0
   },
@@ -273,6 +273,19 @@
    "comments": 0,
    "avgSeconds": 6,
    "avgPercent": 35.24,
+   "subsGained": 0
+  },
+  {
+   "id": "nuQLBWcyPzQ",
+   "title": "Plato had a warning for you.",
+   "published": "2026-11-04T18:02:59Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 40,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 19,
+   "avgPercent": 37.41,
    "subsGained": 0
   },
   {
@@ -414,8 +427,8 @@
    "views": 32,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 37,
-   "avgPercent": 46.12,
+   "avgSeconds": 28,
+   "avgPercent": 34.71,
    "subsGained": 0
   },
   {
@@ -536,6 +549,16 @@
    "subsGained": 0
   },
   {
+   "id": "K1uoKKalsZo",
+   "title": "Allen would hate how you live.",
+   "published": "2026-11-15T03:01:37Z",
+   "duration": "PT44S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "epWlk-Ra3Rs",
    "title": "Let thus much be accepted as a definition of Knowledge",
    "published": "2026-10-29T17:02:58Z",
@@ -559,6 +582,19 @@
    "comments": 0,
    "avgSeconds": 13,
    "avgPercent": 50.14999999999999,
+   "subsGained": 0
+  },
+  {
+   "id": "ElOI_lM9VtE",
+   "title": "Pushing to the Front",
+   "published": "2026-10-16T01:29:22Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 5,
+   "avgPercent": 20.33,
    "subsGained": 0
   },
   {
@@ -588,17 +624,14 @@
    "subsGained": 0
   },
   {
-   "id": "ElOI_lM9VtE",
-   "title": "Pushing to the Front",
-   "published": "2026-10-16T01:29:22Z",
-   "duration": "PT25S",
+   "id": "D3aLO1j24s8",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-13T18:04:35Z",
+   "duration": "PT1M19S",
    "privacy": "public",
-   "views": 22,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 5,
-   "avgPercent": 20.33,
-   "subsGained": 0
+   "views": 21,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "hl6yAlc682w",
@@ -651,16 +684,6 @@
    "avgSeconds": 9,
    "avgPercent": 38.69,
    "subsGained": 0
-  },
-  {
-   "id": "D3aLO1j24s8",
-   "title": "Nobody warns you about Acres of Diamonds.",
-   "published": "2026-11-13T18:04:35Z",
-   "duration": "PT1M19S",
-   "privacy": "public",
-   "views": 17,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "QHacncwEVO4",
@@ -787,7 +810,10 @@
    "privacy": "public",
    "views": 13,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 26.669999999999998,
+   "subsGained": 0
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -835,7 +861,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 10,
-   "avgPercent": 14.580000000000002,
+   "avgPercent": 14.499999999999998,
    "subsGained": 0
   },
   {
@@ -878,6 +904,19 @@
    "subsGained": 0
   },
   {
+   "id": "-JBCZpJJaj8",
+   "title": "But it is the same with the physical type of wisdom, gold",
+   "published": "2026-10-22T00:23:57Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 12,
+   "avgPercent": 53.92,
+   "subsGained": 0
+  },
+  {
    "id": "1TFujFgiGXw",
    "title": "Do manners outweigh knowledge?",
    "published": "2026-10-19T17:46:19Z",
@@ -902,19 +941,6 @@
    "avgSeconds": 9,
    "avgPercent": 2.45,
    "subsGained": 1
-  },
-  {
-   "id": "-JBCZpJJaj8",
-   "title": "But it is the same with the physical type of wisdom, gold",
-   "published": "2026-10-22T00:23:57Z",
-   "duration": "PT23S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 53.92,
-   "subsGained": 0
   },
   {
    "id": "OeEfBiHYLLc",
@@ -995,6 +1021,19 @@
    "subsGained": 0
   },
   {
+   "id": "QmvgVXfWJT8",
+   "title": "Does simplicity outweigh fancy appearances?",
+   "published": "2026-11-06T00:00:06Z",
+   "duration": "PT6M16S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 31,
+   "avgPercent": 8.41,
+   "subsGained": 0
+  },
+  {
    "id": "OD2YHuJCIY4",
    "title": "How sure are you that you are right | Nicomachean Ethics",
    "published": "2026-10-23T05:17:30Z",
@@ -1064,17 +1103,14 @@
    "subsGained": 0
   },
   {
-   "id": "QmvgVXfWJT8",
-   "title": "Does simplicity outweigh fancy appearances?",
-   "published": "2026-11-06T00:00:06Z",
-   "duration": "PT6M16S",
+   "id": "GlwLgzeUZsg",
+   "title": "Why does Thus Spake Zarathustra still matter?",
+   "published": "2026-11-14T03:02:32Z",
+   "duration": "PT1M12S",
    "privacy": "public",
    "views": 5,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 31,
-   "avgPercent": 8.41,
-   "subsGained": 0
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "K6npdyBg4R0",
@@ -1129,6 +1165,19 @@
    "subsGained": 0
   },
   {
+   "id": "YBzvMjEOTFE",
+   "title": "Franklin had a warning for you.",
+   "published": "2026-11-12T00:00:23Z",
+   "duration": "PT6M53S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 12,
+   "avgPercent": 2.96,
+   "subsGained": 0
+  },
+  {
    "id": "KG74aA9UEFo",
    "title": "Where is your attention?",
    "published": "2026-10-19T19:18:21Z",
@@ -1168,16 +1217,16 @@
    "subsGained": 0
   },
   {
-   "id": "UfLyrBxj34E",
-   "title": "What do men truly live by?",
-   "published": "2026-10-14T00:51:50Z",
-   "duration": "PT29S",
+   "id": "PMX30vSNJ18",
+   "title": "Are diamonds buried in your backyard?",
+   "published": "2026-10-14T00:51:43Z",
+   "duration": "PT49S",
    "privacy": "public",
    "views": 4,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 51.21,
+   "avgSeconds": 3,
+   "avgPercent": 7.960000000000001,
    "subsGained": 0
   },
   {
@@ -1254,26 +1303,6 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
-  },
-  {
-   "id": "DqPkTxpybRQ",
-   "title": "Read this before you open Self-Reliance.",
-   "published": "2026-11-14T18:03:43Z",
-   "duration": "PT1M5S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "YBzvMjEOTFE",
-   "title": "Franklin had a warning for you.",
-   "published": "2026-11-12T00:00:23Z",
-   "duration": "PT6M53S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 1
   },
   {
    "id": "v5GPz22mgbU",
@@ -1491,6 +1520,19 @@
    "subsGained": 0
   },
   {
+   "id": "lX71jEZ8QNg",
+   "title": "Allen would hate how you live.",
+   "published": "2026-11-10T00:00:16Z",
+   "duration": "PT6M45S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
    "id": "vSqKjuyAJhM",
    "title": "Can love turn desire into gold?",
    "published": "2026-11-08T18:03:07Z",
@@ -1599,33 +1641,10 @@
    "comments": 0
   },
   {
-   "id": "GlwLgzeUZsg",
-   "title": "Why does Thus Spake Zarathustra still matter?",
-   "published": "2026-11-14T03:02:32Z",
-   "duration": "PT1M12S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "qreV4UF_HS4",
    "title": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday",
    "published": "2026-11-10T18:04:55Z",
    "duration": "PT43S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "lX71jEZ8QNg",
-   "title": "Allen would hate how you live.",
-   "published": "2026-11-10T00:00:16Z",
-   "duration": "PT6M45S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
@@ -1668,7 +1687,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
@@ -1759,10 +1778,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0,
-   "avgSeconds": 55,
-   "avgPercent": 32.13,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "oA_FIauEPd8",
@@ -1865,6 +1881,16 @@
    "comments": 0
   },
   {
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "nrt78mj2OJQ",
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-14T00:00:29Z",
@@ -1872,7 +1898,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "sWMRO2gaXS8",
@@ -1922,7 +1948,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "XU8c9iqTGlI",
@@ -1972,16 +2001,6 @@
    "views": 0,
    "likes": 0,
    "comments": 1
-  },
-  {
-   "id": "pLirzW1d_Og",
-   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
-   "published": "2026-11-06T06:33:58Z",
-   "duration": "PT8M42S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "BNa2CaE60Mc",

@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-14",
+ "collected": "2026-11-15",
  "note": "",
  "videos": [
   {
@@ -15,7 +15,7 @@
    "likes": 3,
    "comments": 1,
    "avgSeconds": 16,
-   "avgPercent": 24.12,
+   "avgPercent": 24.14,
    "subsGained": 1
   },
   {
@@ -40,8 +40,8 @@
    "views": 14,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 35,
-   "avgPercent": 66.18,
+   "avgSeconds": 30,
+   "avgPercent": 56.89999999999999,
    "subsGained": 0
   },
   {
@@ -104,7 +104,7 @@
    "privacy": "public",
    "views": 9,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 10,
    "avgPercent": 24.03,
    "subsGained": 0
@@ -247,9 +247,22 @@
    "privacy": "public",
    "views": 6,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 28,
    "avgPercent": 56.11999999999999,
+   "subsGained": 0
+  },
+  {
+   "id": "vthdpujWnPY",
+   "title": "The Infinite Refresh | Leo & Mia #7",
+   "published": "2026-11-11T03:02:01Z",
+   "duration": "PT39S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 40,
+   "avgPercent": 104.76999999999998,
    "subsGained": 0
   },
   {
@@ -266,6 +279,19 @@
    "subsGained": 0
   },
   {
+   "id": "Aj8TiWooNdA",
+   "title": "The Shark in the Swimming Pool",
+   "published": "2026-11-07T18:05:00Z",
+   "duration": "PT55S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 17.19,
+   "subsGained": 0
+  },
+  {
    "id": "oJkJkxlRaLE",
    "title": "The Phantom Ping Trap | Leo & Mia #13",
    "published": "2026-11-13T18:04:42Z",
@@ -274,19 +300,6 @@
    "views": 4,
    "likes": 0,
    "comments": 1
-  },
-  {
-   "id": "vthdpujWnPY",
-   "title": "The Infinite Refresh | Leo & Mia #7",
-   "published": "2026-11-11T03:02:01Z",
-   "duration": "PT39S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 40,
-   "avgPercent": 104.76999999999998,
-   "subsGained": 0
   },
   {
    "id": "tmW0ic4_Go4",
@@ -302,19 +315,6 @@
    "subsGained": 0
   },
   {
-   "id": "Aj8TiWooNdA",
-   "title": "The Shark in the Swimming Pool",
-   "published": "2026-11-07T18:05:00Z",
-   "duration": "PT55S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 17.19,
-   "subsGained": 0
-  },
-  {
    "id": "sb4WKiNkmrU",
    "title": "The Bystander Effect",
    "published": "2026-11-06T23:04:08Z",
@@ -326,6 +326,16 @@
    "avgSeconds": 2,
    "avgPercent": 3.93,
    "subsGained": 0
+  },
+  {
+   "id": "C0CTlw4ue8A",
+   "title": "The 'K' Text Trap | Leo & Mia #11",
+   "published": "2026-11-15T03:01:30Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "Zoos5GbVQPU",
@@ -367,6 +377,36 @@
    "subsGained": 0
   },
   {
+   "id": "aItrG7-6LX8",
+   "title": "The 4:30 AM Panic | Leo & Mia Ep. 5 \u2605 Milestone",
+   "published": "2026-11-15T00:00:35Z",
+   "duration": "PT3M15S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "1k5nUK42dIE",
+   "title": "The Silent Meeting Nod | Leo & Mia #12",
+   "published": "2026-11-14T18:03:20Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1
+  },
+  {
+   "id": "1cmRYRGsBTY",
+   "title": "The Phone Call Script | Leo & Mia #14",
+   "published": "2026-11-14T03:02:05Z",
+   "duration": "PT35S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "RSv00j81ONc",
    "title": "The Secret Birthday Catastrophe | Leo & Mia Ep. 4",
    "published": "2026-11-14T00:00:24Z",
@@ -374,7 +414,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "5bvrVUR8iek",
@@ -439,30 +479,10 @@
    "subsGained": 0
   },
   {
-   "id": "aItrG7-6LX8",
-   "title": "The 4:30 AM Panic | Leo & Mia Ep. 5 \u2605 Milestone",
-   "published": "2026-11-14T02:19:23Z",
-   "duration": "PT3M15S",
-   "privacy": "private",
-   "views": 1,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "j9yPaC1a9eQ",
    "title": "The Scripting Spiral",
    "published": "2026-11-12T03:02:36Z",
    "duration": "PT58S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1
-  },
-  {
-   "id": "zYdejZHy3k4",
-   "title": "The Sunday Spiral",
-   "published": "2026-11-08T18:02:32Z",
-   "duration": "PT45S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
@@ -485,26 +505,6 @@
    "subsGained": 0
   },
   {
-   "id": "1k5nUK42dIE",
-   "title": "The Silent Meeting Nod | Leo & Mia #12",
-   "published": "2026-11-14T18:03:20Z",
-   "duration": "PT38S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "1cmRYRGsBTY",
-   "title": "The Phone Call Script | Leo & Mia #14",
-   "published": "2026-11-14T03:02:05Z",
-   "duration": "PT35S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "5Czrci00ZPQ",
    "title": "The 40-Minute Pizza Call | Leo & Mia #9",
    "published": "2026-11-12T18:05:09Z",
@@ -512,7 +512,23 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "zYdejZHy3k4",
+   "title": "The Sunday Spiral",
+   "published": "2026-11-08T18:02:32Z",
+   "duration": "PT45S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   }
  ]
 }

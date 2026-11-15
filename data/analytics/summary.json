@@ -1,13 +1,19 @@
 {
- "collected": "2026-11-14",
+ "collected": "2026-11-15",
  "top": {
   "mindlore": [
    {
+    "id": "6tz6Hvcipk0",
+    "title": "Your Kids Expect Shock",
+    "views": 967,
+    "likes": 18
+   },
+   {
     "id": "uOqGecmhSTs",
     "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
-    "views": 379,
+    "views": 378,
     "likes": 2,
-    "avgPercent": 129.03
+    "avgPercent": 127.12999999999998
    },
    {
     "id": "TbWW3mHgwVQ",
@@ -19,21 +25,14 @@
    {
     "id": "esyld-j420I",
     "title": "Your Face Reacts",
-    "views": 229,
+    "views": 243,
     "likes": 2
    },
    {
-    "id": "mDO-wdlrW9Q",
-    "title": "What IS a thought? The answer will shake you \ud83c\udf0c",
-    "views": 159,
-    "likes": 2,
-    "avgPercent": 149.47
-   },
-   {
-    "id": "NOrxJfIaNfE",
-    "title": "Your dreams are sending you coded messages every night \ud83d\udcad",
-    "views": 109,
-    "likes": 3
+    "id": "UUoVjHCcU24",
+    "title": "Your Joy Is Wild",
+    "views": 161,
+    "likes": 4
    }
   ],
   "shelfmade": [
@@ -42,7 +41,7 @@
     "title": "Studies In Pessimism",
     "views": 411,
     "likes": 9,
-    "avgPercent": 59.37
+    "avgPercent": 59.61
    },
    {
     "id": "BMne6TFjLpk",
@@ -63,7 +62,7 @@
     "title": "You can turn over a new leaf every hour if you choose",
     "views": 98,
     "likes": 1,
-    "avgPercent": 32.05
+    "avgPercent": 30.86
    },
    {
     "id": "YBEF_RwIYLc",
@@ -79,7 +78,7 @@
     "title": "The Confidence Curve",
     "views": 210,
     "likes": 3,
-    "avgPercent": 24.12
+    "avgPercent": 24.14
    },
    {
     "id": "EWhebXioXqQ",
@@ -93,7 +92,7 @@
     "title": "The Planning Fallacy",
     "views": 14,
     "likes": 2,
-    "avgPercent": 66.18
+    "avgPercent": 56.89999999999999
    },
    {
     "id": "Rqbov1l-rYw",
