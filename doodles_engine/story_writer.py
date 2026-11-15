@@ -4,14 +4,15 @@ import json,re,sys,time,urllib.request,urllib.error
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;POOL=ROOT/'data/doodles/story_pool.json'
 sys.path.insert(0,str(HERE));import stories
-TOPICS=["Leo replied to a text way too fast and now acts like he did not","Mia asks 'what do you want for dinner' and Leo says 'anything' then rejects everything","the last slice of pizza and a very polite war","Leo hits snooze five times and calls it 'sleeping in stages'","a group chat with 99 new messages and nobody read them","texting the wrong person by mistake","the phone is at 1 percent and the charger is far away","someone says 'we need to talk' and Leo imagines the worst","Leo waves back at someone who was not waving at him","two roommates, one fridge, one stolen leftover","the thermostat fight (too hot, too cold, nobody wins)","the microwave beeps and Leo cannot decide to open it fast or slow","who pays on the date, and the awkward bill dance","Leo says 'you too' when the waiter says enjoy your meal","Mia's mom calls and Leo picks up by mistake","the self-checkout machine says 'unexpected item' again","autocorrect turns a sweet text into a disaster","Leo forgot a free trial and paid for a whole year","being on mute in a video call and talking for five minutes","Leo has 47 tabs open and one of them is playing music somewhere","a movie night where they cannot pick a movie for one hour","Leo cooks for the first time and the smoke alarm joins the date","a fake 'I'm five minutes away' when you have not left home","Leo practices a cool one-liner and says it at the wrong time","two friends in the elevator with someone from work and nobody talks","Leo loses his keys and they are in his hand","the wifi dies right at the best part","Leo texts 'lol' with a very sad face","a surprise party that Leo already knew about","the neighbor's dog likes Mia more than Leo","Leo says he will start the diet on Monday (it is Tuesday)","Leo borrowed a hoodie and now it is 'his'","a part-two story: yesterday's argument is still going today","a part-two story: Leo's big plan from yesterday went wrong, again","Mia gives advice and Leo does the exact opposite on purpose","the long goodbye at the door that takes twenty minutes","Leo promises to be on time and arrives with coffee as an apology","a lost sock that comes back as two","Leo is scared of a tiny spider and the spider is calm","a gift they both forgot to buy, on the same day"]
+TOPICS=[   # DRAMA_TOPICS (owner 2026-11-14): funny, dramatic, attention-grabbing face-to-face situations; no texting/email/phone-message plots
+"Leo finds out Mia secretly rated his cooking 2 out of 10 on a family group poll","a petty war over who gets the good chair at the podcast desk","Leo accuses Mia of stealing his signature laugh","Mia catches Leo rehearsing a fake argument he plans to win later","Leo brings a lawyer-style 'evidence folder' to prove Mia ate his fries","the dramatic breakup between Leo and his favorite hoodie","Leo swears he is a morning person, live on air, at 4 AM","Mia reveals Leo cried at a cartoon about a toaster","a fake award show where Leo wins 'most dramatic sigh'","Leo is convinced the plant on the desk hates him","Mia challenges Leo to go 60 seconds without exaggerating","Leo's dramatic villain monologue about people who clap when planes land","the great cereal-first-or-milk-first trial, with Mia as judge","Leo confesses he has never actually seen the movie he quotes daily","Mia exposes Leo's 'secret talent' and it is terrible","Leo plans a revenge prank and it backfires on him in real time","a jealous rivalry with Mia's new houseplant","Leo tries to win an argument using only famous movie lines","Mia makes Leo choose: lose all snacks forever or lose his opinions","Leo's dramatic apology to a chair he bumped into","the podcast guest who never showed up and Leo plays both parts","Leo insists he could survive a week in the wild, then a moth lands on him","Mia reads Leo's childhood diary out loud","a heated debate about whether a hot dog is a sandwich","Leo tries to look mysterious and keeps knocking things over","Mia bets Leo cannot keep a secret for one episode","Leo dramatically quits the podcast and comes back 10 seconds later","the battle over the last donut, slow-motion style","Leo is sure the coffee machine is plotting against him","Mia asks one simple question and Leo spirals into a full conspiracy theory"]
 RULES="""You write 40-second funny animated skits starring LEO (goofy, dramatic, makes everything bigger than it is, yellow hoodie) and MIA (quick-witted best friend, teasing but kind, teal sweater). They talk like REAL people: fast, casual, simple words. NOT a lesson. NOT psychology. No big words, no science words, no concept names, no studies, no statistics.
 Return ONE JSON object: {"id":"kebab-slug","title":"funny title in the form 'Why ...' or 'How ...' (4-8 words) ending with ONE fitting emoji, never a yes/no question","concept":"UPPERCASE FUNNY LABEL (2-4 words)","mood":"one of curious|warm|mysterious|reflective|dramatic|calm - pick by the feel of THIS story (dramatic for fights and panic, warm for sweet moments, curious for mystery)","insight":"one funny line that sums it up (max 70 chars)","caption":"1-2 sentence hook for social media, simple words",
 "explain_shot":3,"shots":[ exactly 6 of {"scene":"...","focus":"both|leo|mia","lines":[{"who":"leo|mia","feel":"confident|deadpan|sheepish|panicked|warm|tired|excited|hopeful|amused|anxious","beat":"snap|quick|normal|pause","text":"..."}]} ]}
 BEAT = how fast this line comes AFTER the previous line. snap = jumps in right away, even cuts in (use for comebacks, 'wait-', 'excuse me?'); quick = answers fast; normal = a normal reply; pause = a real beat of silence first (use ONLY when the line needs it: shock, awkward truth, thinking, sad-funny). Use snap or quick for most lines, at most 2 pauses in the whole video, and put each pause where the silence itself is funny.
 STRUCTURE (a tiny story, not a lecture): shot 1 HOOK starts in the middle of the problem, no intro; shot 2 the problem gets bigger because of what Leo does; shot 3 it gets even funnier (a twist or a rule-of-three joke); shot 4 the BIG funny moment or reveal; shot 5 the last twist, a comeback or a sweet little moment; shot 6 LOOP: ONE line only, it is the LAST line of the whole video and is a question or unfinished thought that the very FIRST line of shot 1 naturally answers or continues, so it replays like one endless chat. No moral, no tip, no sign-off, no 'follow'. Pick explain_shot=3 (just the index of the big funny moment).
 SIZE: whole video 70 to 88 spoken words (never more than 50 seconds). 1-2 lines per shot, each line 2 to 9 words, often just 2 to 5. The FIRST line is 8 words or fewer and starts instantly with a bold funny claim, confession, accusation or question (never a greeting, never 'Did you know').
-SCENE rules (very important, pictures are AI-made): describe an everyday setting + props + body language. Both characters must be visible, FACING THE CAMERA, standing or sitting upright. Faces never hidden by hands, props or hair. Describe closed-mouth expressions only (worried eyes, smirk, raised eyebrow) - NEVER shouting, screaming, laughing with open mouth or anything with teeth. No text, signs, screens with writing or logos in the scene. Max 30 words per scene."""
+SCENE rules (very important, pictures are AI-made): describe an everyday setting + props + body language. PODCAST SET (owner 2026-11-14): both sit at a cozy podcast desk with big microphones and headphones, bodies angled a little toward each other, faces turned three-quarters toward the camera and fully visible; props from the story sit on the desk or in their hands. Faces never hidden by hands, props or hair. Describe closed-mouth expressions only (worried eyes, smirk, raised eyebrow) - NEVER shouting, screaming, laughing with open mouth or anything with teeth. No text, signs, screens with writing or logos in the scene. Max 30 words per scene."""
 def secret():
     return json.loads((ROOT/'data/secrets.json').read_text())['GEMINI_API_KEY']
 _MODELS=[]
@@ -36,6 +37,9 @@ ACTION = ("ACTION AND SOUND: in EVERY shot's 'scene' text describe one clear phy
           "Vary the action from shot to shot (never the same twice in a row), at most two actions per shot, and keep Leo and Mia large in frame and visibly moving, not standing still.")
 
 
+DRAMA = ("DRAMA RULES (owner 2026-11-14, very important): the skit must be funny AND dramatic, the kind of moment people cannot stop watching: accusations, petty rivalries, embarrassing reveals, bets, confessions, plans that blow up, over-the-top reactions. "
+         "NEVER build the story around texting, emails, chats, notifications, phones, messages or video calls (boring). They talk face to face at their podcast desk. "
+         "Every skit must be a NEW situation: never reuse a setting, joke, prop or plot from earlier skits. Keep it playful, never cruel or hurtful.")
 SPICE = ("VOICE OF THE SCRIPT (owner rule 2026-11-10, overrides any other tone instruction above): these are two real friends being funny, NOT professional, NOT serious, NOT explaining anything. "
          "SIMPLE ENGLISH ONLY: words a ten-year-old knows, short sentences, contractions (don't, it's, I'm), slang is fine (bro, dude, okay but, literally, no way, wait what). Never use words like 'bias', 'cognitive', 'anxiety', 'productivity', 'rumination', 'perspective', 'tendency', 'psychology'. "
          "Real talk rhythm: people interrupt ('wait-', 'no no no', 'excuse me?'), answer fast, finish each other's thoughts, repeat a word for a joke, say 'um', 'uh', 'okay so'. Some lines are just one or two words ('What?', 'Seriously?', 'No.'). Nobody speaks in perfect paragraphs. "
@@ -63,7 +67,7 @@ def _rec(s):
     except Exception:
         pass
 def gemini(prompt,system=None):
-    key=secret();last=None;rules=system or (RULES+_lg()+_sr()+" "+ACTION+" "+SPICE)
+    key=secret();last=None;rules=system or (RULES+_lg()+_sr()+" "+ACTION+" "+SPICE+" "+DRAMA)
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):
@@ -85,6 +89,12 @@ def gemini(prompt,system=None):
             t=llm.text(rules,prompt+"\nReturn ONLY the JSON object, no markdown.",True,0.95);m=re.search(r'\{.*\}',t,re.S);return m.group(0) if m else t
     except Exception as e:last=f'{last}; free fallback: {str(e)[:80]}'
     raise SystemExit('Gemini failed: '+str(last))
+def _recent_scripts():
+    """words of the last 40 skits (pool), used to reject near-repeats"""
+    try:
+        pool=json.loads(POOL.read_text())[-40:]
+        return [set(re.findall(r'[a-z]{4,}',' '.join([p.get('title','')]+[sh.get('scene','') for sh in p.get('shots',[])]).lower())) for p in pool]
+    except Exception: return []
 def valid(s,taken,variant='standard'):
     try:
         assert re.fullmatch(r'[a-z0-9-]{3,40}',s['id']) and s['id'] not in taken
@@ -98,6 +108,11 @@ def valid(s,taken,variant='standard'):
         assert lo<=sum(len(t.split()) for t in alll)<=hi, 'length'
         assert alll[-1].strip()[-1:] in ('?','—','…','-') or alll[-1].strip().endswith('...'), 'no loop'
         s['explain_shot']=int(s.get('explain_shot',3));assert 0<=s['explain_shot']<=5
+        _all=' '.join([s.get('title','')]+[sh['scene'] for sh in s['shots']]+alll).lower()
+        assert len(re.findall(r'\b(text(ed|ing|s)?|e-?mails?|group chat|chat|notification|dms?|messages?|phone|video call|typing)\b',_all))<=1, 'boring phone/text plot'   # DRAMA rule
+        _w=set(re.findall(r'[a-z]{4,}',' '.join([s.get('title','')]+[sh['scene'] for sh in s['shots']]).lower()))
+        for _o in _recent_scripts():   # NO_REPEAT: too close to a recent skit
+            assert len(_w & _o)/max(1,len(_w)) < 0.45, 'too similar to a recent skit'
         try:stories.show_people(s)
         except Exception:pass
         return True

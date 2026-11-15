@@ -249,6 +249,9 @@ def main():
                 text = __import__('re').sub(r'(?<![\w/])_([^_\n]+?)_(?![\w/])', r'\1', captions.clean(raw))  # book titles come as _Italic_ from Gutenberg
                 brand = 'mindlore' if tag.startswith('mindlore-') else ('doodles' if tag.startswith('doodles-') else 'shelfmade')
                 try:
+                    import title_rule; title = title_rule.enforce(title, text, brand)   # TITLE_RULE: How/Why + one emoji on every channel
+                except Exception as _e: print('title rule skipped:', str(_e)[:80])
+                try:
                     import engage; text = engage.add(text, brand, title)
                 except Exception as _e: print('engage skipped:', str(_e)[:80])
                 try: _mf = json.loads(open('data/doodles/mouth_flags.json').read()).get(z.stem, [])

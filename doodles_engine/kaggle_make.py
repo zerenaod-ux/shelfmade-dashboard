@@ -10,7 +10,7 @@ def log(*a): print(time.strftime('%H:%M:%S'), *a, flush=True)
 def kg(*a):
     code = 'import sys;from kaggle.cli import main;sys.argv=["kaggle"]+sys.argv[1:];main()'
     r = subprocess.run([sys.executable, '-c', code, *a], capture_output=True, text=True, env=E); return (r.stdout + r.stderr).strip()
-FRONT = (" IMPORTANT FRAMING: both characters look straight toward the camera (front view, face fully visible, head upright and level, not tilted or turned away), "
+FRONT = (" IMPORTANT FRAMING: both characters sit at the podcast desk, bodies angled slightly toward each other, faces turned three-quarters toward the camera (face fully visible, head upright and level, microphone below the mouth, never covering it), "
          "faces large and well lit, mouths ALWAYS CLOSED (lips together, no open mouth, no teeth showing, even when shouting or explaining), hands and props never covering the faces.")
 WIDE = (" WIDE CINEMATIC 16:9 COMPOSITION: the two characters stand close together in the centre-left and centre-right of the frame, filling about half the height, in a realistic, detailed, lived-in location with depth, specific props and everyday clutter (not an empty room). "
         "Any other person mentioned in the scene (boss, barista, neighbour, ex) is visible in the background or at the edge, smaller, never in front of the two faces.")

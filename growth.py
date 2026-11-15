@@ -130,6 +130,7 @@ def main():
 
 def guidance(brand):
     """Plain lines for the writers: only clear, repeated patterns (see module note)."""
+    return title   # TITLE_RULE (owner 2026-11-14): titles always end with ONE emoji; the data engine no longer removes it
     try:
         bd = json.loads((OUT / 'scoreboard.json').read_text())['brands'][brand]
     except Exception:

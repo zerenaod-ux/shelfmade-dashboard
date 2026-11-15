@@ -2,7 +2,8 @@ import re
 """Original AnimationDoodles Shorts: Leo (overthinker) and Mia (dry, kind, blunt) explain one pop-psychology idea.
 Each story is 6 shots / ~35-45 s. Keep claims soft ('can', 'often'); no invented statistics. Props only, no text in pictures."""
 LOOK=("Same two characters and the same polished Pixar-style 3D animated look as the reference picture. "
-      "Leo (curly dark hair, mustard-yellow hoodie, young man) stands or sits on the LEFT. "
+      "PODCAST SET (owner 2026-11-14): Leo and Mia sit side by side at a cozy podcast desk with big studio microphones on arms and headphones around their necks, warm studio lights and a soft background. "
+      "Leo (curly dark hair, mustard-yellow hoodie, young man) sits on the LEFT. "
       "Mia (short dark bob, teal sweater, young woman) is on the RIGHT. Warm cinematic lighting, expressive faces, no text, no letters, no logos. ")
 def S(scene,*lines,focus='both',mood=None):
     return {'scene':scene,'lines':[{'who':w,'text':t,'feel':f} for w,f,t in lines],'focus':focus}
