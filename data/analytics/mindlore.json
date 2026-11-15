@@ -11,7 +11,7 @@
    "published": "2026-11-14T18:03:04Z",
    "duration": "PT56S",
    "privacy": "public",
-   "views": 967,
+   "views": 969,
    "likes": 18,
    "comments": 1
   },
@@ -57,7 +57,7 @@
    "published": "2026-11-15T03:01:32Z",
    "duration": "PT1M3S",
    "privacy": "public",
-   "views": 161,
+   "views": 163,
    "likes": 4,
    "comments": 0
   },
@@ -1488,6 +1488,19 @@
    "subsGained": 0
   },
   {
+   "id": "9lec7AhXEP8",
+   "title": "Why dreams feel meaningful and strange at the same time | Freud",
+   "published": "2026-11-05T00:00:17Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 3,
+   "avgPercent": 0.8699999999999999,
+   "subsGained": 0
+  },
+  {
    "id": "cOkUIin-TGA",
    "title": "Psychology: Briefer Course \u00b7 Guided reading",
    "published": "2026-10-29T23:00:29Z",
@@ -1524,19 +1537,6 @@
    "comments": 0,
    "avgSeconds": 59,
    "avgPercent": 36.28,
-   "subsGained": 0
-  },
-  {
-   "id": "9lec7AhXEP8",
-   "title": "Why dreams feel meaningful and strange at the same time | Freud",
-   "published": "2026-11-05T00:00:17Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 3,
-   "avgPercent": 0.8699999999999999,
    "subsGained": 0
   },
   {
@@ -1583,6 +1583,19 @@
    "comments": 0
   },
   {
+   "id": "Nl1SAPaJEuY",
+   "title": "Are children's dreams really simpler than ours? | Freud",
+   "published": "2026-11-10T00:00:05Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
    "id": "lzNbwJLpncg",
    "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
    "published": "2026-11-06T00:00:34Z",
@@ -1593,6 +1606,19 @@
    "comments": 0,
    "avgSeconds": 3,
    "avgPercent": 0.66,
+   "subsGained": 0
+  },
+  {
+   "id": "8lmhT2wqPj8",
+   "title": "What to do when you cannot tell which road is right | John Dewey",
+   "published": "2026-11-04T00:00:13Z",
+   "duration": "PT7M39S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 18,
+   "avgPercent": 4.13,
    "subsGained": 0
   },
   {
@@ -1632,19 +1658,6 @@
    "comments": 0,
    "avgSeconds": 10,
    "avgPercent": 20.3,
-   "subsGained": 0
-  },
-  {
-   "id": "Nl1SAPaJEuY",
-   "title": "Are children's dreams really simpler than ours? | Freud",
-   "published": "2026-11-10T00:00:05Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -1723,6 +1736,16 @@
    "comments": 0
   },
   {
+   "id": "Au2YzEYnkr0",
+   "title": "Your Eyes Blink During Story Turns",
+   "published": "2026-11-15T18:03:29Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "P8P40XX9vbk",
    "title": "Why do you jump to conclusions so quickly? | John Dewey",
    "published": "2026-11-07T21:51:56Z",
@@ -1797,16 +1820,6 @@
    "title": "Why we believe what impressive people say | Gustave Le Bon",
    "published": "2026-11-03T20:41:05Z",
    "duration": "PT7M22S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "EPGy8t4XRkI",
-   "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
-   "published": "2026-11-03T15:49:25Z",
-   "duration": "PT7M24S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
