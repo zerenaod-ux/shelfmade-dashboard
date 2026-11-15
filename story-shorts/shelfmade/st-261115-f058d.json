@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261115-f058d",
+ "title": "Apology",
+ "author": "Plato (Socrates)",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Confidence Makes Your Chest Tight Part 1 🤔",
+ "hook": "You feel a sudden knot in your chest when someone proves you wrong.",
+ "thumbnail_headline": "WHY CERTAINTY FAILS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a sudden knot in your chest when someone proves you wrong. Ancient thinkers actually claimed admitting ignorance is the highest form of wisdom. In 399 BC, Socrates argued in Plato's Apology that he was wise only because he knew he knew nothing. Modern science tested this exact mindset. In 1999, psychologists David Dunning and Justin Kruger tested Cornell undergraduates on logic and grammar. The result? People scoring in the bottom twelve percent estimated their own skill at about sixty-two percent. That's it. It became known as the Dunning-Kruger effect, and dozens of later studies confirmed it across medicine, driving, and finance. So why do we assume we know best? Your brain uses certainty to protect your social status. Socrates got the danger of fake wisdom right, but modern research shows a twist: real experts sometimes doubt themselves too much, underestimating their rank by about ten percent. So next time an argument heats up, remember wisdom begins the exact moment you feel a sudden knot in your chest."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People scoring in the bottom quartile severely overestimate their ability, rating themselves in the 62nd percentile.",
+   "who": "David Dunning and Justin Kruger",
+   "year": "1999",
+   "place": "Cornell University"
+  },
+  {
+   "claim": "Top performers slightly underestimate their relative percentile score compared to peers.",
+   "who": "David Dunning and Justin Kruger",
+   "year": "1999",
+   "place": "Cornell University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Apology by Plato (Socrates)",
+ "exp": ""
+}
