@@ -2303,5 +2303,224 @@
   "style": "v2",
   "format": "ARGUMENT",
   "improv": true
+ },
+ {
+  "id": "hoodie-breakup-crime",
+  "title": "Why A Hoodie Ghosted Leo \ud83e\udde5",
+  "concept": "DRAMATIC BREAKUP INVESTIGATION",
+  "mood": "dramatic",
+  "insight": "Nothing hurts quite like a betrayal from laundry.",
+  "caption": "Leo calls the cops over laundry. Mia is unimpressed.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits at the podcast desk hugging an empty yellow hoodie sleeve, staring intensely into space with worried eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "She finally left me. The hoodie."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits opposite Leo at the desk, swirling a coffee mug and raising an eyebrow at him.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "She had the audacity to run off?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds up a dry cleaning ticket like a piece of crime evidence, leaning across the desk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "Dropped me in the dry cleaner."
+     }
+    ]
+   },
+   {
+    "scene": "Mia takes a slow sip from her coffee mug, staring dead at Leo with a smirk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "pause",
+      "text": "Do the dry cleaners have a hotline?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo slams his hand on the desk, pointing a finger dramatically toward the camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Wait, I'm calling the police."
+     }
+    ]
+   },
+   {
+    "scene": "Mia rests her chin on her hand, looking completely unimpressed as Leo glares.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Next time: Arrest the hoodie?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 sounds much more like natural, panicked friend banter.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 8,
+    "loop": 6
+   },
+   "n": 2
+  },
+  "variant": "micro",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
+ },
+ {
+  "id": "your-dramatic-sigh-trophy",
+  "title": "Your Dramatic Sigh Trophy \ud83c\udfc6",
+  "concept": "MOST DRAMATIC SIGH",
+  "mood": "warm",
+  "insight": "winning the wrong award at breakfast hits different",
+  "caption": "When a simple breakfast pastry turns into a full emotional breakdown.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at the cozy podcast desk. Leo dramatically clutches a golden plastic trophy, wearing his yellow hoodie, while a half-eaten croissant sits on a small white plate between them.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Bro, I need you to gasp for me."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "You're literally awake? That's not a gasp."
+     }
+    ]
+   },
+   {
+    "scene": "Leo clutches the trophy tighter to his chest, eyes wide and watery, while Mia points a finger at the croissant on the desk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "snap",
+      "text": "This is what the judges want."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Gasping at being alive? That's the award."
+     }
+    ]
+   },
+   {
+    "scene": "Leo tilts his head back in slow motion, letting out a massive breath, while Mia leans in close to inspect him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Wait, is that ironic?"
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "beat": "quick",
+      "text": "Wait, are you actually crying?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo dabs his dry eyes with his sleeve, sniffing loudly, while Mia crosses her arms and glares at the pastry.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "snap",
+      "text": "No, it's the dramatic sigh."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Stop performing grief, it's nine am."
+     }
+    ]
+   },
+   {
+    "scene": "Leo points an accusing finger at Mia, leaning across the desk, while Mia calmly taps the croissant with a pen.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "But you're the one who broke me."
+     },
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "I broke you with the croissant."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares blankly at the croissant on the plate while Mia raises an eyebrow.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "From the buttery destruction?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": true
  }
 ]
