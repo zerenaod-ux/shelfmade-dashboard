@@ -2522,5 +2522,211 @@
   "style": "v2",
   "format": "RATING GAME",
   "improv": true
+ },
+ {
+  "id": "nasal-confetti-theft-trial",
+  "title": "Why Your Sneezes Belong To Everyone Except You \ud83e\udd27",
+  "concept": "UNAUTHORIZED NOISE THEFT",
+  "mood": "warm",
+  "insight": "Sneezes are public domain whether you like it or not",
+  "caption": "Yesterday's sneeze mess is still going strong. Leo thinks his laughs are patented.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Cozy podcast desk. Leo points an accusing finger while holding a wet paper towel.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "You stole my laugh, I know it."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "My throat is literally a closed shop, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Same desk. Mia sips tea suspiciously, eyes narrowed at Leo.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "normal",
+      "text": "Then how did my sound get in there?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "You sneezed in mine at Dunkin on Tuesday."
+     }
+    ]
+   },
+   {
+    "scene": "Leo gestures wildly with the wet paper towel, defending his honor.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "That... that was a tactical deployment."
+     },
+     {
+      "who": "mia",
+      "feel": "disgusted",
+      "beat": "quick",
+      "text": "Tactical deployment of snot? Gross."
+     }
+    ]
+   },
+   {
+    "scene": "Mia leans back, holding her tea mug with both hands, shaking her head.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "normal",
+      "text": "It was high-yield nasal ammunition."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "You have a whole vocabulary for boogers now?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans forward over the desk, dead serious about his weird terms.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Wait, boogers? I call them... nasal confetti."
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "beat": "pause",
+      "text": "Nasal confetti that gave me a stutter."
+     }
+    ]
+   },
+   {
+    "scene": "Mia crosses her arms and glares at Leo while he opens his mouth to argue.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "snap",
+      "text": "A stutter is just vocal confetti?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "PART TWO",
+  "improv": true
+ },
+ {
+  "id": "your-four-am-alibi",
+  "title": "Your Four AM Alibi \u23f0",
+  "concept": "THE FOUR AM DETECTIVE",
+  "mood": "warm",
+  "insight": "Claiming you love mornings at four am is pure fiction",
+  "caption": "Leo tries to prove he is a real morning person at four am.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Podcast desk at 4 AM, Leo holding a cold coffee mug, pacing the hallway in his yellow hoodie.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "I am officially a morning person!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits at the desk drinking tea, pointing a suspicious finger at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "It is four in the morning."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans in dramatically with his coffee mug, eyes wide open.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "My mind is totally sharp right now."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sips her tea and points at the desk clock showing four o'clock.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "pause",
+      "text": "You are staring at a wall."
+     }
+    ]
+   },
+   {
+    "scene": "Leo freezes, looking very confused at the wall.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "quick",
+      "text": "The wall started this argument."
+     }
+    ]
+   },
+   {
+    "scene": "Mia smiles, shaking her head at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Shall I call you a cab home?"
+     }
+    ]
+   }
+  ],
+  "variant": "micro",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": false
  }
 ]
