@@ -14,6 +14,15 @@ def look_for(key=''):
     """OUTFIT_ROTATION (owner 2026-11-15): new clothes in every video (same faces). The outfit is chosen from the story id so a story always keeps its own outfit."""
     import zlib
     return _LOOK%OUTFITS[zlib.crc32(str(key).encode())%len(OUTFITS)]
+SETS=["a cozy living-room podcast corner with warm lamps, bookshelves and green plants",
+      "a professional recording studio with acoustic foam panels, soft purple and teal lights and a window with city lights at night",
+      "a brick-wall loft studio with hanging bulbs, a record shelf and a big plant",
+      "a bright modern studio with pale wood panels, a large window with soft daylight and a few books",
+      "a retro basement studio with wood paneling, a warm orange lamp, vinyl records and a comfy armchair behind them"]
+def set_for(key=''):
+    """ONE_SET (owner 2026-11-15): one podcast room per video (different from video to video); the camera, not the background, changes."""
+    import zlib
+    return SETS[zlib.crc32(('set' + str(key)).encode()) % len(SETS)]
 LOOK=look_for('')
 def S(scene,*lines,focus='both',mood=None):
     return {'scene':scene,'lines':[{'who':w,'text':t,'feel':f} for w,f,t in lines],'focus':focus}

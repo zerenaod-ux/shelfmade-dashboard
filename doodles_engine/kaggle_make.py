@@ -19,7 +19,14 @@ def main(work):
     if (work / 'kaggle_stage1.DONE').exists(): log('stage 1 already done'); return
     vj = [{'who': l['who'], 'text': l['text'], 'feel': l['feel'], 'wav': f'line_{si:02d}_{li:02d}.wav'} for si, sh in enumerate(st['shots']) for li, l in enumerate(sh['lines'])]
     wide = bool(st.get('landscape'))
-    pj = [{'prompt': stories.look_for(st.get('id') or st.get('title')) + sh['scene'] + FRONT + (WIDE if wide else ''), 'out': f'shot_{i:02d}.png', 'seed': 100 + i, **({'w': 1024, 'h': 576} if wide else {})} for i, sh in enumerate(st['shots'])]
+    SINGLE = os.environ.get('DOODLES_SINGLE_SET', '1') == '1' and not wide
+    if SINGLE:   # ONE_SET (owner 2026-11-15): one picture for the whole video; the render camera moves between Leo and Mia instead of changing the background
+        sc = (stories.look_for(st.get('id') or st.get('title')) + 'SETTING: ' + stories.set_for(st.get('id') or st.get('title')) + '. '
+              "COMPOSITION: both characters sit at one long podcast desk, Leo near the LEFT edge and Mia near the RIGHT edge with a clear gap of about one shoulder-width of desk between them, bodies angled slightly toward the centre, faces turned three-quarters toward the camera, "
+              "chest-up framing, equal size, each head fully inside the picture, both listening calmly with closed mouths and friendly neutral faces, hands resting on the desk, one microphone for each below the mouth, the whole scene tidy with no props that hide faces.")
+        pj = [{'prompt': sc, 'out': 'shot_00.png', 'seed': 100, 'w': 768, 'h': 1366}]
+    else:
+        pj = [{'prompt': stories.look_for(st.get('id') or st.get('title')) + sh['scene'] + FRONT + (WIDE if wide else ''), 'out': f'shot_{i:02d}.png', 'seed': 100 + i, **({'w': 1024, 'h': 576} if wide else {})} for i, sh in enumerate(st['shots'])]
     ins = work / 'k1_in'; shutil.rmtree(ins, ignore_errors=True); ins.mkdir()
     shutil.copy(ROOT / 'data/production/reference-v1/Opening-frame.png', ins / 'ref.png'); shutil.copy(HERE / 'voices.py', ins / 'voices.py'); shutil.copy(ROOT / 'data/engines/yunet/face_detection_yunet_2023mar.onnx', ins / 'yunet.onnx'); shutil.copy(HERE / 'align.py', ins / 'align.py')
     (ins / 'jobs.json').write_text(json.dumps({'story': st, 'prompts': pj, 'voice_jobs': vj}))
@@ -49,5 +56,7 @@ def main(work):
     for f in list(tmp.rglob('shot_*.png')) + list(tmp.rglob('line_*.wav')) + list(tmp.rglob('align_*.json')):
         shutil.copy(f, work / f.name); got += 1
     if not list(tmp.rglob('DONE')) or got < len(vj) + len(pj): raise SystemExit('Kaggle output incomplete (%d files); log: %s' % (got, [str(x) for x in tmp.glob('*.log')]))
+    if SINGLE:   # the same picture for every shot (the shots only decide who speaks and where the camera looks)
+        for i in range(1, len(st['shots'])): shutil.copy(work / 'shot_00.png', work / f'shot_{i:02d}.png')
     (work / 'kaggle_stage1.DONE').write_text('ok'); shutil.rmtree(tmp, ignore_errors=True); log('stage 1 done:', got, 'files')
 if __name__ == '__main__': main(sys.argv[1])

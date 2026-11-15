@@ -268,7 +268,12 @@ def render(work):
     cap=Caption();explain=int(st.get('explain_shot',4));chip_img=chip(st.get('concept',''));
     silent=work/'silent.mp4'
     ff=subprocess.Popen(['ffmpeg','-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-c:v','libx264','-preset','veryfast','-crf','19','-pix_fmt','yuv420p',str(silent)],stdin=subprocess.PIPE)
-    mouth={};cam={'z':1.12,'pulse':0.0,'aw':-1,'li':None};fx=0.5;nf=int(total*FPS);end_t=total-END;endfont=font(92);smallfont=font(52)
+    # ONE_SET (owner 2026-11-15): when every shot is the same picture, the camera does the editing: wide on both at the start, in on whoever talks, out between speakers
+    try:SINGLE=len(imgs)>1 and (work/'shot_00.png').read_bytes()==(work/'shot_01.png').read_bytes()
+    except Exception:SINGLE=False
+    first_start=timeline[0]['lines'][0]['start'] if timeline and timeline[0]['lines'] else 0.0
+    print('single-set camera:',SINGLE,flush=True)
+    mouth={};cam={'z':1.0 if SINGLE else 1.12,'pulse':0.0,'aw':-1,'li':None};fx=0.5;nf=int(total*FPS);end_t=total-END;endfont=font(92);smallfont=font(52)
     for f in range(nf):
         tt=f/FPS
         si=0
@@ -281,7 +286,8 @@ def render(work):
             if ln['start']-0.02<=tt<=ln['end']+0.12:active=ln
         tgt=FOCUS.get(active['who'] if active else st['shots'][si].get('focus','both'),0.5);_fy=None
         if active and (si,active['who']) in fc:tgt,_fy=fc[(si,active['who'])]
-        fx+=(tgt-fx)*0.07
+        if SINGLE and not active:tgt=0.5
+        fx+=(tgt-fx)*(0.05 if SINGLE else 0.07)
         e=float(env[min(f+1,len(env)-1)]) if active else 0.0
         # talk-driven camera: wide when quiet, push toward the speaker while talking, punch-in at each line start, pulse on key words
         if active:
@@ -297,7 +303,8 @@ def render(work):
                 if len(_w[_aw].strip('.,!?;:'))>=6 or re.search(r'[!?]$',_w[_aw]):cam['pulse']=1.0
         else:
             u2=min(1,max(0,(tt-sh['start'])/max(sh['end']-sh['start'],0.01)));zt=1.12+(0.0 if STEADY else 0.04*u2);pun=0.0;cam['aw']=-1;cam['li']=None
-        cam['z']+=(zt-cam['z'])*0.10;cam['pulse']*=0.86
+        if SINGLE:zt=1.55 if active else (1.0 if (tt<first_start or tt>=end_t-0.25) else 1.2)
+        cam['z']+=(zt-cam['z'])*(0.06 if SINGLE else 0.10);cam['pulse']*=0.86
         if STEADY:   # DOODLES_STEADY: no punch-in, no word pulse, no voice-driven zoom or wobble; fixed framing per shot
             z=cam['z']
             fy=((_fy-0.02) if _fy is not None else 0.43-(0.03 if active else 0))
