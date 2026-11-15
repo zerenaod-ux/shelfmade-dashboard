@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T15:42:54+00:00",
+ "at": "2026-11-15T19:50:12+00:00",
  "level": "warn",
  "checks": [
   {
@@ -20,7 +20,7 @@
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 0 h ago"
+   "text": "ok=True, checked 4 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -65,7 +65,7 @@
   {
    "name": "Retitle campaign",
    "ok": true,
-   "text": "last: success 2026-11-14"
+   "text": "last: success 2026-11-15"
   },
   {
    "name": "Access check (logins)",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 12 h ago"
+   "text": "newest public video 2 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 12 h ago"
+   "text": "newest public video 2 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 12 h ago"
+   "text": "newest public video 2 h ago"
   },
   {
    "name": "Service probes",
