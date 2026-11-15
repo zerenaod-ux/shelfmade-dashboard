@@ -1,8 +1,130 @@
 {
  "brand": "doodles",
- "collected": "2026-11-14T17:20:04Z",
+ "collected": "2026-11-15T18:00:22Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How I Peaked In Third Grade \ud83c\udf93\n\nI swear, it was all downhill after my third-grade gold star.\n\n#psychology #mind",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-15T05:29:25.625Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How I Peaked In Third Grade \ud83c\udf93\n\nI swear, it was all downhill after my third-grade gold star.\n\n#psychology #mind",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-15T05:29:25.134Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How I Peaked In Third Grade \ud83c\udf93\n\nI swear, it was all downhill after my third-grade gold star.\n\n#psychology #mind",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-15T05:29:24.542Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=aItrG7-6LX8",
+   "sent": "2026-11-15T00:00:35.000Z",
+   "text": "Leo tries to join the elite 5 AM Club to finally become a person who has his life together. Mia tags along wit",
+   "views": 2,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-15T11:39:20.366Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your First Day Shakes \ud83d\ude2c\n\nFirst day nerves hit different when your brain mishears literally everything. Next ti",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-14T22:46:07.938Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your First Day Shakes \ud83d\ude2c\n\nFirst day nerves hit different when your brain mishears literally everything. Next ti",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-14T18:32:28.122Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your First Day Shakes \ud83d\ude2c\n\nFirst day nerves hit different when your brain mishears literally everything. Next ti",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-14T18:32:27.654Z"
+  },
   {
    "platform": "instagram",
    "status": "scheduled",
@@ -61,7 +183,7 @@
    "url": "https://www.instagram.com/reel/DftFf3fEcR9/",
    "sent": "2026-11-14T02:02:51.000Z",
    "text": "The Phone Call Script | Leo & Mia #14\n\nEver rehearse a ten-second phone call five times? Here is why your brai",
-   "views": 161,
+   "views": 167,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -76,7 +198,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.175Z"
   },
   {
    "platform": "youtube",
@@ -86,7 +208,7 @@
    "text": "Leo attempts to plan a massive surprise birthday party for Mia in a single day, but his overthinking destroys ",
    "views": 2,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -94,7 +216,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -410,11 +532,11 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@animationdoodleshq/video/7708235318519958798",
+   "sent": "2026-11-15T03:30:49.267Z",
    "text": "The 'K' Text Trap | Leo & Mia #11\n\nEver send a one-letter text because a long reply felt overwhelming? Here is",
-   "views": 0,
+   "views": 38,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -428,27 +550,38 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T23:47:00.539Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfvqPOanBwg/",
+   "sent": "2026-11-15T02:02:09.018Z",
    "text": "The 'K' Text Trap | Leo & Mia #11\n\nEver send a one-letter text because a long reply felt overwhelming? Here is",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-10T23:46:59.994Z"
+   "views": 208,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-15T06:44:43.175Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/C0CTlw4ue8A",
+   "sent": "2026-11-15T03:01:13.122Z",
    "text": "The 'K' Text Trap | Leo & Mia #11\n\nEver send a one-letter text because a long reply felt overwhelming? Here is",
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -458,15 +591,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T23:46:59.378Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@animationdoodleshq/video/7708119934961732877",
+   "sent": "2026-11-14T20:03:20.928Z",
    "text": "The Silent Meeting Nod | Leo & Mia #12\n\nEver nodded through a meeting when you had no clue what was happening?",
-   "views": 0,
+   "views": 67,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -480,29 +613,40 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-10T07:48:40.198Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfuznvWj_lC/",
+   "sent": "2026-11-14T18:05:17.928Z",
    "text": "The Silent Meeting Nod | Leo & Mia #12\n\nEver nodded through a meeting when you had no clue what was happening?",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-10T07:48:39.734Z"
+   "views": 133,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-15T06:44:43.175Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/1k5nUK42dIE",
+   "sent": "2026-11-14T18:02:59.544Z",
    "text": "The Silent Meeting Nod | Leo & Mia #12\n\nEver nodded through a meeting when you had no clue what was happening?",
-   "views": 0,
+   "views": 1,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -510,7 +654,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-10T07:48:39.250Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -518,7 +662,7 @@
    "url": "https://tiktok.com/@animationdoodleshq/video/7707864308574719245",
    "sent": "2026-11-14T03:31:13.643Z",
    "text": "The Phone Call Script | Leo & Mia #14\n\nEver rehearse a ten-second phone call five times? Here is why your brai",
-   "views": 44,
+   "views": 87,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -532,7 +676,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.131Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -552,9 +696,9 @@
    "url": "https://www.youtube.com/shorts/1cmRYRGsBTY",
    "sent": "2026-11-14T03:01:47.321Z",
    "text": "The Phone Call Script | Leo & Mia #14\n\nEver rehearse a ten-second phone call five times? Here is why your brai",
-   "views": 0,
+   "views": 2,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -562,7 +706,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -570,7 +714,7 @@
    "url": "https://tiktok.com/@animationdoodleshq/video/7707749048542842126",
    "sent": "2026-11-13T20:04:00.160Z",
    "text": "The Phantom Ping Trap | Leo & Mia #13\n\nWhy you just opened your phone for the fourth empty minute in a row.\n\n#",
-   "views": 64,
+   "views": 72,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -584,7 +728,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.131Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -592,7 +736,7 @@
    "url": "https://www.instagram.com/reel/DfsO8X1gqRc/",
    "sent": "2026-11-13T18:06:55.647Z",
    "text": "The Phantom Ping Trap | Leo & Mia #13\n\nWhy you just opened your phone for the fourth empty minute in a row.\n\n#",
-   "views": 181,
+   "views": 200,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -607,7 +751,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.175Z"
   },
   {
    "platform": "youtube",
@@ -615,7 +759,7 @@
    "url": "https://www.youtube.com/shorts/oJkJkxlRaLE",
    "sent": "2026-11-13T18:04:18.491Z",
    "text": "The Phantom Ping Trap | Leo & Mia #13\n\nWhy you just opened your phone for the fourth empty minute in a row.\n\n#",
-   "views": 2,
+   "views": 4,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -625,7 +769,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -647,7 +791,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.131Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -670,7 +814,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.175Z"
   },
   {
    "platform": "youtube",
@@ -688,7 +832,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -710,7 +854,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.131Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "youtube",
@@ -728,7 +872,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "instagram",
@@ -751,7 +895,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.175Z"
   },
   {
    "platform": "instagram",
@@ -774,7 +918,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "tiktok",
@@ -796,7 +940,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.131Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "youtube",
@@ -814,7 +958,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -836,7 +980,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.131Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -844,7 +988,7 @@
    "url": "https://www.instagram.com/reel/DfnFgwVFXRU/",
    "sent": "2026-11-11T18:07:03.375Z",
    "text": "The Feather Duster Detour | Leo & Mia #6\n\nEver scrubbed your entire kitchen to avoid opening one scary email? ",
-   "views": 391,
+   "views": 396,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -859,7 +1003,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -877,7 +1021,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -899,7 +1043,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "tiktok",
@@ -921,7 +1065,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -944,7 +1088,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -952,7 +1096,7 @@
    "url": "https://www.youtube.com/shorts/vthdpujWnPY",
    "sent": "2026-11-11T03:01:43.361Z",
    "text": "The Infinite Refresh | Leo & Mia #7\n\nWhy we keep refreshing apps for absolutely nothing.\n\n#psychology #mindset",
-   "views": 4,
+   "views": 5,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -962,7 +1106,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "youtube",
@@ -980,7 +1124,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "instagram",
@@ -1003,7 +1147,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1021,7 +1165,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1043,7 +1187,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "tiktok",
@@ -1065,7 +1209,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1088,7 +1232,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "instagram",
@@ -1111,7 +1255,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1119,7 +1263,7 @@
    "url": "https://www.youtube.com/shorts/zYdejZHy3k4",
    "sent": "2026-11-08T18:02:15.483Z",
    "text": "The Sunday Spiral\n\nEver spend your Sunday worrying about a Monday that hasn't happened yet? Here is why your b",
-   "views": 1,
+   "views": 0,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1129,7 +1273,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "youtube",
@@ -1147,7 +1291,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "instagram",
@@ -1181,7 +1325,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "youtube",
@@ -1199,7 +1343,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "youtube",
@@ -1217,7 +1361,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1239,7 +1383,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1262,7 +1406,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1280,7 +1424,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1302,7 +1446,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1325,7 +1469,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1343,7 +1487,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1365,7 +1509,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1388,7 +1532,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1406,7 +1550,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1428,7 +1572,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1451,7 +1595,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1469,7 +1613,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1491,7 +1635,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1514,7 +1658,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1532,7 +1676,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1554,7 +1698,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1562,7 +1706,7 @@
    "url": "https://www.instagram.com/reel/DfiyYKtAvGB/",
    "sent": "2026-11-10T02:03:47.123Z",
    "text": "Ever replay a tiny awkward moment at 2 AM? Here is why your brain traps you in the cringe loop.\n\n#psychology #",
-   "views": 321,
+   "views": 322,
    "likes": 3,
    "comments": 0,
    "metrics": [
@@ -1577,7 +1721,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1595,7 +1739,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1617,7 +1761,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1640,7 +1784,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1658,7 +1802,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "tiktok",
@@ -1680,7 +1824,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1703,7 +1847,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1721,7 +1865,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.366Z"
   },
   {
    "platform": "instagram",
@@ -1744,7 +1888,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   },
   {
    "platform": "youtube",
@@ -1762,7 +1906,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T12:05:07.320Z"
+   "updated": "2026-11-15T11:39:20.367Z"
   },
   {
    "platform": "tiktok",
@@ -1784,7 +1928,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "tiktok",
@@ -1806,7 +1950,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T07:01:38.147Z"
   },
   {
    "platform": "instagram",
@@ -1814,7 +1958,7 @@
    "url": "https://www.instagram.com/reel/DfP6A4HCmKc/",
    "sent": "2026-11-02T18:05:11.944Z",
    "text": "Why do we practice a thirty-second phone call for three hours?\n\n#psychology #mindset #animation #relatable #An",
-   "views": 163,
+   "views": 164,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1829,151 +1973,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-14T07:44:32.549Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/Zc1do-DnYrE",
-   "sent": "2026-11-02T18:03:05.280Z",
-   "text": "Why do we practice a thirty-second phone call for three hours?\n\n#psychology #mindset #animation #relatable #An",
-   "views": 9,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-14T12:05:07.320Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@animationdoodleshq/video/7705522393451744526?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-07T20:04:21.521Z",
-   "text": "Why do we panic about rare threats while ignoring normal ones? Meet the brain's favorite shortcut. #psychology",
-   "views": 74,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-14T08:00:44.132Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfcyOVnDFQG/",
-   "sent": "2026-11-07T18:07:04.025Z",
-   "text": "Why do we panic about rare threats while ignoring normal ones? Meet the brain's favorite shortcut.\n\n#psycholog",
-   "views": 138,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-14T07:44:32.549Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/Aj8TiWooNdA",
-   "sent": "2026-11-07T18:04:41.121Z",
-   "text": "Why do we panic about rare threats while ignoring normal ones? Meet the brain's favorite shortcut.\n\n#psycholog",
-   "views": 4,
-   "likes": 1,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-14T12:05:07.320Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/5AVFE-hB5Bo",
-   "sent": "2026-11-02T01:00:25.008Z",
-   "text": "Why parting with your old mug feels like actual heartbreak.\n\n#psychology #mindset #animation #relatable #Anima",
-   "views": 10,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-14T12:05:07.320Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfOBhZRiuSx/",
-   "sent": "2026-11-02T00:33:24.758Z",
-   "text": "Why parting with your old mug feels like actual heartbreak.\n\n#psychology #mindset #animation #relatable #Anima",
-   "views": 208,
-   "likes": 4,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-14T07:44:32.549Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@animationdoodleshq/video/7703357148176092430?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-02T00:02:19.729Z",
-   "text": "Why parting with your old mug feels like actual heartbreak. #psychology #mindset #animation #relatable #Animat",
-   "views": 31,
-   "likes": 2,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-14T08:00:44.132Z"
+   "updated": "2026-11-15T06:44:43.176Z"
   }
  ]
 }
