@@ -67,6 +67,11 @@ def main():
     if not m:
         sh('gh', 'issue', 'comment', str(num), '--repo', REPO, '--body', 'Could not read this video data. Nothing queued.'); return
     d = json.loads(m.group(1))
+    try:   # TITLE_RULE (owner 2026-11-15): fix the title at approval time on every channel
+        import title_rule
+        _b = {'ddfull': 'doodles', 'mlfull': 'mindlore', 'shfull': 'shelfmade'}.get(d.get('kind')) or d.get('brand') or 'shelfmade'
+        d['title'] = title_rule.enforce(d.get('title', ''), d.get('description') or d.get('text', ''), _b)
+    except Exception as _e: print('title rule skipped:', str(_e)[:80])
     if d.get('kind') == 'ddfull':
         out = B / 'publish' / 'approved-ddfull.json'
         cur = json.loads(out.read_text()) if out.is_file() else {'items': []}

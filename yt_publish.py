@@ -127,7 +127,11 @@ def main():
             names = [n for n in f.namelist() if not n.startswith('/') and '..' not in Path(n).parts]
             f.extractall(tmp, members=names)
         vid = (sorted(Path(tmp).glob('*_LONGFORM.mp4')) or sorted(Path(tmp).glob('final.mp4')))[0]
-        res = upload(access, vid, item['title'], item['description'], when)
+        _title = item['title']
+        try:   # TITLE_RULE (owner 2026-11-15): full videos too - How/Why + one emoji, rewritten just before upload (also covers videos approved earlier)
+            import title_rule; _title = title_rule.enforce(_title, item.get('description', ''), {'mlfull': 'mindlore', 'shfull': 'shelfmade', 'ddfull': 'doodles'}.get(KIND, ''))
+        except Exception as _e: print('title rule skipped:', str(_e)[:80])
+        res = upload(access, vid, _title, item['description'], when)
         state['done'][item['id']] = {'video': res.get('id'), 'at': when, 'day': day.isoformat()}
         STATE.write_text(json.dumps(state, indent=1))     # remember at once: never upload twice
         print('uploaded', res.get('id'), 'scheduled', when)
