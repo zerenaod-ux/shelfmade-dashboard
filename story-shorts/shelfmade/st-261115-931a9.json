@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261115-931a9",
+ "title": "Apology",
+ "author": "Plato (Socrates)",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Certainty Makes Your Mind Blind Part 2 🧠",
+ "hook": "You feel completely sure about your opinions during a heated debate.",
+ "thumbnail_headline": "OVERCONFIDENCE BLINDS YOU",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel completely sure about your opinions during a heated debate. Ancient Greek philosopher Socrates argued in the Apology that true wisdom is knowing you know nothing. In 1999, psychologists David Dunning and Justin Kruger tested this at Cornell University across 4 studies. They found that people scoring in the bottom 12th percentile ranked their own skills in the 68th percentile. The result? Unskilled people wildly overestimate their own knowledge. That's it. This bias is not just in one group. Research across hundreds of cognitive studies confirms the Dunning-Kruger effect everywhere. So why do we assume our first instincts are always right? Our brains use quick mental shortcuts to protect our self esteem. Socrates was right that absolute certainty is a trap. But modern science shows we cannot just think our way out of it without active feedback. Next time you feel completely sure about your opinions, remember the trap of certainty. You feel completely sure about your opinions."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People in the lowest performance percentiles significantly overestimate their abilities.",
+   "who": "David Dunning and Justin Kruger",
+   "year": "1999",
+   "place": "Cornell University"
+  },
+  {
+   "claim": "Participants scoring in the bottom 12th percentile estimated their competence to be in the 68th percentile.",
+   "who": "David Dunning and Justin Kruger",
+   "year": "1999",
+   "place": "Cornell University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Apology by Plato (Socrates)",
+ "exp": ""
+}
