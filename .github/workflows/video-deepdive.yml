@@ -1,0 +1,31 @@
+name: video-deepdive
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: 'YouTube video id'
+        default: '6tz6Hvcipk0'
+      brand:
+        description: 'mindlore / shelfmade / doodles'
+        default: 'mindlore'
+permissions:
+  contents: read
+jobs:
+  dive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Read the video's statistics (read only)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_MINDLORE: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN_SHELFMADE: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
+          YT_REFRESH_TOKEN_DOODLES: ${{ secrets.YT_REFRESH_TOKEN_DOODLES }}
+          VIDEO_ID: ${{ inputs.video }}
+          BRAND: ${{ inputs.brand }}
+        run: python video_deepdive.py
