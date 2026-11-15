@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261115-a04a3",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Face Pauses On Shock 😲",
+ "hook": "You freeze your face when you hear shocking news.",
+ "thumbnail_headline": "FACIAL FREEZE DETECTED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You freeze your face when you hear shocking news. Ancient peoples actually showed the same reaction centuries ago. In 1972, psychologist Paul Ekman studied seven cultures and found about 96% showed the surprise expression with raised eyebrows and widened eyes. The result? Later work showed it wasn’t a single group; the 1990s fight‑flight‑freeze model confirms the same pause across mammals. So why do we assume we’re unique in our facial freeze? Because the amygdala triggers a brief pause, and a 2002 University of Wisconsin study measured about 30% of participants freezing for 0.4 seconds. What does the freeze actually mean? It means the brain buys time to decide fight, flight, or freeze, a fact confirmed by modern EEG. Does it still hold today? Yes, recent scans repeat the pattern. The result? Your face gives you a quick diagnostic test. That's it. So next time you hear unexpected news, notice that freeze and remember you freeze your face when you hear shocking news."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 96% showed the surprise expression with raised eyebrows and widened eyes",
+   "who": "Paul Ekman",
+   "year": "1972",
+   "place": "seven cultures (cross‑cultural study)"
+  },
+  {
+   "claim": "about 30% of participants freezing for 0.4 seconds",
+   "who": "University of Wisconsin researchers",
+   "year": "2002",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

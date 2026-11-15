@@ -1385,6 +1385,92 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261115-10c71",
+   "look": "live-demo",
+   "title": "Why Play Shows Your Joy \ud83d\udc3e",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "brain",
+    "checklist",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261115-a04a3",
+   "look": "live-demo",
+   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "chart",
+    "chat",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261115-f58e9",
+   "look": "live-demo",
+   "title": "Why Kids Laugh at Story Twists \ud83e\udde0",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "crowd",
+    "headline",
+    "icon_burst",
+    "quote",
+    "reaction",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

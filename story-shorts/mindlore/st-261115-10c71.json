@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261115-10c71",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Play Shows Your Joy 🐾",
+ "hook": "You laugh when a dog chases a ball.",
+ "thumbnail_headline": "PLAY TRIGGERS JOY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You laugh when a dog chases a ball. Ancient hunters saw wild canids enjoying play too. In 1998, Jaak Panksepp saw rats chirp 50‑kHz after tickling, about 70 % of time. What did the rats actually produce? They emitted 50‑kHz ultrasonic calls linked to pleasure. The result? Play triggers brain circuits linked to reward. Other researchers observed similar joy signals in primates. In the 1970s, Frans de Waal saw bonobos play 20 minutes, showing play grins. This pattern is called the social play hypothesis. So why do we assume animals only act on instinct? Because early observers missed the vocal and facial cues that signal pleasure. Do we share the same reward circuit? Neuroimaging shows humans activate the same nucleus accumbens when watching animal play. The result? Your brain lights up watching playful animals, just like theirs. That's it. So next time you smile at a puppy, remember your brain shares that ancient joy. You laugh when a dog chases a ball."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "rats chirp 50‑kHz after tickling about 70 % of time",
+   "who": "Jaak Panksepp",
+   "year": "1998",
+   "place": "University of Michigan"
+  },
+  {
+   "claim": "bonobos play 20 minutes, showing play grins",
+   "who": "Frans de Waal",
+   "year": "1970s",
+   "place": "Yerkes National Primate Research Center"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}
