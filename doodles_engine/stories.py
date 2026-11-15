@@ -7,9 +7,9 @@ OUTFITS=[("mustard-yellow hoodie","teal sweater"),("navy crewneck sweater","crea
 _LOOK=("Same two characters (same faces and hairstyles) and the same polished Pixar-style 3D animated look as the reference picture, but wearing NEW outfits: "
       "Leo (curly dark hair, young man) wears a %s, Mia (short dark bob, young woman) wears a %s. "
       "PODCAST SET (owner 2026-11-14): Leo and Mia sit side by side at a cozy podcast desk, warm studio lights and a soft background. "
-      "MICROPHONES (owner 2026-11-15): both wear over-ear headphones and EACH has exactly ONE studio microphone on a boom arm in front of their OWN chin: exactly two microphones in the whole picture, one for Leo and one for Mia, Mia's microphone always visible, no extra or spare microphones, no microphone on the desk. "
+      "MICROPHONES (owner 2026-11-15): both wear over-ear headphones and EACH has exactly ONE studio microphone on a boom arm, held at chin level BELOW the mouth and angled from the side, never in front of the lips or covering any part of the face: exactly two microphones in the whole picture, one for Leo and one for Mia, Mia's microphone always visible, no extra or spare microphones, no microphone on the desk. "
       "ONLY Leo and Mia are in the picture: no third person anywhere, not in the background, not in a doorway, not in a reflection. "
-      "Leo sits on the LEFT third of the frame and Mia on the RIGHT third, both faces fully inside the picture and large, neither cut off by the edge. Warm cinematic lighting, expressive faces, no text, no letters, no logos. ")
+      "MEDIUM TWO-SHOT from the chest up: Leo sits on the LEFT and Mia on the RIGHT, side by side, EQUAL size, each head fully inside the picture with clear space around it and the gap between them in the centre; never a close-up of one character and never cut off by the edge of the picture. Warm cinematic lighting, expressive faces, no text, no letters, no logos. ")
 def look_for(key=''):
     """OUTFIT_ROTATION (owner 2026-11-15): new clothes in every video (same faces). The outfit is chosen from the story id so a story always keeps its own outfit."""
     import zlib
