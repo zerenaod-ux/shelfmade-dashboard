@@ -916,5 +916,57 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-13"
+ },
+ "Lao Tzu would hate how you live.": {
+  "styles": [
+   "sm_adventure",
+   "sm_candle",
+   "sm_adventure",
+   "sm_adventure",
+   "sm_adventure",
+   "sm_tender"
+  ],
+  "tracks": [
+   "ace_sm_adventure_02",
+   "sm_candle_01",
+   "sm_adventure_02",
+   "sm_adventure_05",
+   "sm_adventure_04",
+   "ace_sm_tender_02"
+  ],
+  "mood": "curious",
+  "pace": 2.35,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-15"
+ },
+ "Can men refuse to be pleased with words of gentle advice?": {
+  "styles": [
+   "sm_candle",
+   "sm_adventure",
+   "sm_adventure",
+   "sm_candle",
+   "sm_adventure",
+   "sm_adventure"
+  ],
+  "tracks": [
+   "sm_candle_02",
+   "sm_adventure_05",
+   "sm_adventure_04",
+   "sm_candle_01",
+   "sm_adventure_01",
+   "ace_sm_adventure_02"
+  ],
+  "mood": "curious",
+  "pace": 2.38,
+  "exp": {
+   "music_energy": "calm"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-15"
  }
 }
