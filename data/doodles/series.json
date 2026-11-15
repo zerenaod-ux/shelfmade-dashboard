@@ -23,32 +23,32 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 6,
-   "last": 31
+   "uses": 7,
+   "last": 37
   },
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 6,
-   "last": 32
+   "uses": 7,
+   "last": 38
   },
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 6,
-   "last": 33
+   "uses": 7,
+   "last": 39
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 6,
-   "last": 34
+   "uses": 7,
+   "last": 40
   },
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 6,
-   "last": 35
+   "uses": 7,
+   "last": 41
   },
   {
    "id": "scoreboard",
@@ -477,6 +477,66 @@
    "milestone": false,
    "season": 4,
    "date": "2026-11-14"
+  },
+  {
+   "n": 32,
+   "kind": "short",
+   "id": "your-lasagna-two-out-of-ten",
+   "title": "Your Lasagna Score Is Violent \ud83c\udf5d",
+   "concept": "BRUTAL GOURMET CRITIQUE",
+   "gag": "battery",
+   "callback": true,
+   "milestone": false,
+   "season": 4,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 33,
+   "kind": "short",
+   "id": "petty-throne-war",
+   "title": "How One Word Started A Studio War \ud83e\ude91",
+   "concept": "THE MISHEARD THRONE WAR",
+   "gag": "minute",
+   "callback": false,
+   "milestone": false,
+   "season": 4,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 34,
+   "kind": "short",
+   "id": "your-hoodie-tragedy",
+   "title": "Your Hoodie Deserved Better \ud83d\udc94",
+   "concept": "HOODIE MOURNING PROTOCOL",
+   "gag": "gerald",
+   "callback": true,
+   "milestone": false,
+   "season": 4,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 35,
+   "kind": "short",
+   "id": "drama-dumpster-fire",
+   "title": "Why Your Acceptance Speech Needs Fire \ud83d\udd25",
+   "concept": "MOST DRAMATIC SIGH",
+   "gag": "greg",
+   "callback": false,
+   "milestone": true,
+   "season": 4,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 36,
+   "kind": "short",
+   "id": "your-secret-talent-ruined",
+   "title": "Your Secret Talent Is Ruined \ud83c\udfa4",
+   "concept": "APPLIANCE DUET TRAP",
+   "gag": "dev",
+   "callback": false,
+   "milestone": false,
+   "season": 4,
+   "date": "2026-11-15"
   }
  ]
 }
