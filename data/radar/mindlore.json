@@ -1,129 +1,133 @@
 {
  "why": [
   {
-   "title": "The Dark Psychology of the Divide Trap\ud83e\udd14",
-   "why": "High breakout (347.9) driven by an intriguing, named manipulation tactic that triggers paranoia and curiosity about social dynamics."
-  },
-  {
-   "title": "These Buttons Do Nothing \ud83e\udd2f",
-   "why": "Capitalizes on counter-intuitive everyday psychological phenomena (placebo buttons), sparking immediate cognitive dissonance and shareability."
-  },
-  {
    "title": "10 Psychology Facts About Sleep That Will Blow Your Mind! \ud83d\ude34\ud83e\udde0",
-   "why": "Taps into a universally relatable personal state (sleep) using a fast-paced listicle format that promises high-density insight."
+   "subtitle": "Peak_Mindset_ (Breakout: 23.8x)",
+   "why": "It leverages ultra-relatable daily human behavior (sleep) paired with high curiosity, driving instant retention through universal intrigue."
   },
   {
    "title": "7 Reasons People Ignore You | Psychology Facts About Human Behaviour \ud83e\udde0#shorts",
-   "why": "Evokes social anxiety and self-consciousness, compelling viewers to watch to diagnose their own social standing."
+   "subtitle": "MUKESH SHARMA (Breakout: 14.5x)",
+   "why": "It triggers deep social anxiety and insecurity, making viewers stay to learn how to fix or avoid social rejection."
+  },
+  {
+   "title": "The Dark Psychology of the Divide Trap\ud83e\udde0",
+   "subtitle": "Uncover World (Breakout: 348.5x)",
+   "why": "It taps into the fascination with covert manipulation tactics, packaging complex social dynamics into an intriguing named concept."
+  },
+  {
+   "title": "7 Psychology Facts That Feel Too Real \ud83e\udde0 #lifelessons #shorts",
+   "subtitle": "THE LIFE CODE (Breakout: 165.2x)",
+   "why": "It promises validation of the viewer's unspoken internal experiences, driving high engagement through emotional resonance."
   }
  ],
  "hook_patterns": [
-  "Highlighting invisible illusions or fake control mechanics in daily life",
-  "Naming a secret manipulative tactic that the viewer might be a victim of",
-  "Revealing harsh psychological reasons for social rejection or being ignored"
+  "The 'Self-Diagnostic' Hook: Framing public domain insights as personal tests (e.g., 'If you experience X, your brain is doing Y').",
+  "The 'Hidden Manipulation' Hook: Exposing historic psychological tactics that people unknowingly fall for in daily life.",
+  "The 'Relatable Flaw' Hook: Highlighting an annoying human behavior and offering an ancient psychological explanation for it."
  ],
- "todays_angle": "Translate classic 19th-century public-domain observations on crowd behavior and social illusion into actionable self-defense tips for modern life.",
+ "todays_angle": "Translate classic 19th and early 20th-century psychological principles into actionable 'modern self-defense' against everyday mental traps.",
  "ideas": [
-  "The Illusion of Choice: How 1890s Crowd Psychology Explains Modern 'Placebo' Buttons",
-  "Why People Ignore You: 3 Rules of Social Fatigue from Early Behavioral Texts",
-  "The 'Divide Trap': How Classic Manipulation Literature Predicted Modern Social Media Feeds"
+  "Idea 1 (Based on William James): 'The 1890 Trick to Instantly Stop Overthinking' \u2013 Focus on James's Habit Theory and how physical movement overrides mental loops.",
+  "Idea 2 (Based on Gustave Le Bon): 'How Dark Psychology Makes You Agree With the Crowd' \u2013 Use *The Crowd: A Study of the Popular Mind* to explain modern peer pressure and herd behavior.",
+  "Idea 3 (Based on Sigmund Freud): '3 Signs You Are Unconsciously Projecting' \u2013 Explain Freud's defense mechanisms using classic text references to highlight why we get irritated by others."
  ],
  "avoid": [
-  "Generic name-letter psychology ('What your initial says about you')",
-  "Vague 'move in silence' dark psychology quote compilations with no substance"
+  "Low-effort generic listicles (e.g., 'First Letter of Your Name' psychology).",
+  "Overused 'Top 1% Sigma' dark psychology tropes that lack actual educational or historical depth."
  ],
  "updated": "2026-11-15",
- "sample": 75,
+ "sample": 74,
  "spikes": [
   {
-   "title": "3 Most Unfortunate Letters name \ud83e\udec0\ud83e\udec2||#shorts\u200b #shortvideo\u200b #shortsfeed\u200b#shorts\u200b",
-   "channel": "SATYAM PAL",
-   "views": 22043,
-   "hours": 3,
-   "vph": 6460.7,
-   "subs": 150000,
-   "breakout": 0.1
-  },
-  {
-   "title": "\u09aa\u09dc\u09a4\u09c7 \u09ac\u09b8\u09b2\u09c7 \u09ac\u09cd\u09b0\u09c7\u0987\u09a8 \u09af\u09be \u0995\u09b0\u09c7 !",
-   "channel": "DAKO KENO",
-   "views": 277576,
-   "hours": 44,
-   "vph": 6370.7,
-   "subs": 456000,
-   "breakout": 0.6
-  },
-  {
-   "title": "Be Unpredictable\ud83d\ude43#motivation #viral #storytelling #trending #lifelessons #mindset #psychology #facts",
-   "channel": "Keerthana_pov",
-   "views": 222489,
-   "hours": 44,
-   "vph": 5052.9,
-   "subs": 69000,
-   "breakout": 3.2
+   "title": "Are You in the Top 1%? (Sign #3 is Rare) #Mindset #DarkPsychology",
+   "channel": "Chatting Mindset ",
+   "views": 24701,
+   "hours": 5,
+   "vph": 5333.5,
+   "subs": 88700,
+   "breakout": 0.3
   },
   {
    "title": "7 Secret Signs to Understand a Girl's Feelings! \u2764\ufe0f Psychology Facts",
    "channel": "YOUR TUTOR CORNER",
-   "views": 67009,
-   "hours": 17,
-   "vph": 3956.9,
-   "subs": 31400,
-   "breakout": 2.1
+   "views": 99225,
+   "hours": 22,
+   "vph": 4524.1,
+   "subs": 31600,
+   "breakout": 3.1
+  },
+  {
+   "title": "3 Most Unfortunate Letters name \ud83e\udec0\ud83e\udec2||#shorts\u200b #shortvideo\u200b #shortsfeed\u200b#shorts\u200b",
+   "channel": "SATYAM PAL",
+   "views": 36341,
+   "hours": 8,
+   "vph": 4321.2,
+   "subs": 151000,
+   "breakout": 0.2
   },
   {
    "title": "A Letter Psychology \ud83e\udde0 | What Does Your First Letter Say About You? #shorts #psychology #letter",
    "channel": "DarkPsyche-X",
-   "views": 73095,
-   "hours": 22,
-   "vph": 3295.0,
-   "subs": 33400,
-   "breakout": 2.2
-  },
-  {
-   "title": "7 Reasons People Ignore You | Psychology Facts About Human Behaviour \ud83e\udde0#shorts",
-   "channel": "MUKESH SHARMA ",
-   "views": 65146,
-   "hours": 22,
-   "vph": 3025.5,
-   "subs": 5010,
-   "breakout": 13.0
+   "views": 98428,
+   "hours": 27,
+   "vph": 3621.1,
+   "subs": 33500,
+   "breakout": 2.9
   },
   {
    "title": "10 Psychology Facts About Sleep That Will Blow Your Mind! \ud83d\ude34\ud83e\udde0",
    "channel": "Peak_Mindset_",
-   "views": 61632,
-   "hours": 21,
-   "vph": 2906.1,
-   "subs": 3250,
-   "breakout": 19.0
+   "views": 77873,
+   "hours": 26,
+   "vph": 2971.6,
+   "subs": 3270,
+   "breakout": 23.8
+  },
+  {
+   "title": "\u0c24\u0c15\u0c4d\u0c15\u0c41\u0c35 \u0c2e\u0c3e\u0c1f\u0c4d\u0c32\u0c3e\u0c21\u0c3f\u0c24\u0c47 \u0c35\u0c1a\u0c4d\u0c1a\u0c47 \u0c2a\u0c35\u0c30\u0c4d \u0c07\u0c26\u0c47! \ud83e\udd2b | Power Of Silence | Dark Psychology Telugu #shorts",
+   "channel": "Legendary Motivation Telugu",
+   "views": 73553,
+   "hours": 26,
+   "vph": 2809.2,
+   "subs": 21100,
+   "breakout": 3.5
+  },
+  {
+   "title": "7 Reasons People Ignore You | Psychology Facts About Human Behaviour \ud83e\udde0#shorts",
+   "channel": "MUKESH SHARMA ",
+   "views": 73136,
+   "hours": 27,
+   "vph": 2756.7,
+   "subs": 5030,
+   "breakout": 14.5
   },
   {
    "title": "Dark psychology move in silence#motivation #quotes #psychology #selfimprovement #viral #life #shorts",
    "channel": "RK Motivation ",
-   "views": 83486,
-   "hours": 29,
-   "vph": 2895.4,
+   "views": 84969,
+   "hours": 34,
+   "vph": 2511.5,
    "subs": 22300,
-   "breakout": 3.7
+   "breakout": 3.8
   },
   {
    "title": "The Dark Psychology of the Divide Trap\ud83e\udd14",
    "channel": "Uncover World",
-   "views": 69570,
-   "hours": 43,
-   "vph": 1629.9,
-   "subs": 69,
-   "breakout": 347.9
+   "views": 69699,
+   "hours": 48,
+   "vph": 1461.7,
+   "subs": 70,
+   "breakout": 348.5
   },
   {
-   "title": "\u0d06 '\u0d35\u0d32\u0d3f\u0d2f \u0d35\u0d40\u0d1f\u0d4d\u0d1f\u0d3f\u0d7d' \u0d30\u0d3e\u0d35\u0d3f\u0d32\u0d46 \u0d24\u0d28\u0d4d\u0d28\u0d46 \u0d21\u0d3e\u0d7b\u0d38\u0d4d \u0d15\u0d33\u0d3f\u0d2a\u0d4d\u0d2a\u0d3f\u0d15\u0d4d\u0d15\u0d41\u0d28\u0d4d\u0d28\u0d24\u0d3f\u0d28\u0d4d \u0d2a\u0d3f\u0d28\u0d4d\u0d28\u0d3f\u0d7d? | Reality Show Psychology",
-   "channel": "MANASSU CODE",
-   "views": 33924,
-   "hours": 26,
-   "vph": 1311.6,
-   "subs": 186,
-   "breakout": 169.6
+   "title": "7 Psychology Facts That Feel Too Real \ud83e\udde0 #lifelessons  #shorts",
+   "channel": "THE LIFE CODE",
+   "views": 33037,
+   "hours": 27,
+   "vph": 1230.1,
+   "subs": 89,
+   "breakout": 165.2
   }
  ]
 }
