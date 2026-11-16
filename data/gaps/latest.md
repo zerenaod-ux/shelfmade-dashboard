@@ -1,8 +1,8 @@
-# Gap-finder, 2026-11-10 (240 snippets)
+# Gap-finder, 2026-11-16 (99 snippets)
 
-- **Custom domain email aliases with tagging** (score 15.1, seen in 2 run(s), 1 mentions, solved 3.0/10) - for: Small business owners. Test product: AliasFlow: web app for unlimited custom domain aliases and folder tagging
-- **Phrase‑blocking filter for online content** (score 13.9, seen in 1 run(s), 1 mentions, solved 2.0/10) - for: Parents moderating children. Test product: SafePhrase: browser extension that blocks posts containing banned phrases
-- **Integrated address book for Signal on iOS** (score 12.9, seen in 1 run(s), 1 mentions, solved 2.0/10) - for: Signal iOS users. Test product: SignalSync: iOS app that syncs contacts and imports to Signal
-- **Self‑delete website service** (score 12.7, seen in 1 run(s), 1 mentions, solved 1.0/10) - for: Individuals wanting to erase online presence. Test product: EraseMe: service that permanently removes a website from the internet
-- **Retro Amiga emulator with modern UI** (score 12.1, seen in 1 run(s), 1 mentions, solved 3.0/10) - for: Retro computer enthusiasts. Test product: AmigaReborn: cross‑platform emulator with modern UI and plug‑in support
-- **Reconnecting old professional contacts** (score 11.3, seen in 1 run(s), 1 mentions, solved 4.0/10) - for: Career professionals. Test product: Recontact: AI assistant that drafts outreach emails to old contacts
+- **Filter to show only AI‑assisted content** (score 13.9, seen in 2 run(s), 1 mentions, solved 2.0/10) - for: Content reader who prefers AI‑generated material. Test product: Browser extension that tags and filters articles identified as AI‑generated
+- **Unified smart home app for all devices** (score 12.9, seen in 1 run(s), 1 mentions, solved 2.0/10) - for: Homeowner with multiple smart gadgets. Test product: Web app that aggregates all smart device APIs into a single dashboard
+- **Plain‑language political infographics for low‑info voters** (score 12.9, seen in 1 run(s), 1 mentions, solved 2.0/10) - for: Civic activist targeting low‑education electorate. Test product: One‑page printable infographics that explain key policies in 3rd‑grade reading level
+- **Vocal tessitura determination guide** (score 12.1, seen in 1 run(s), 1 mentions, solved 3.0/10) - for: Amateur singer seeking vocal range clarity. Test product: Interactive questionnaire that calculates vocal range and suggests optimal tessitura
+- **In‑store navigation for hardware stores** (score 11.9, seen in 1 run(s), 1 mentions, solved 2.0/10) - for: DIY homeowner looking for items quickly. Test product: Mobile map app showing indoor layout and item locations for local hardware stores
+- **Niche forum for car jokes community** (score 11.9, seen in 1 run(s), 1 mentions, solved 2.0/10) - for: Car‑enthusiast hobbyist. Test product: Ready‑made forum template with voting, meme sharing, and moderation tools for car jokes

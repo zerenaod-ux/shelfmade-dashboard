@@ -537,6 +537,148 @@
      "weeks_seen": 1
     }
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "snippets": 99,
+   "topics": [
+    {
+     "topic": "Filter to show only AI\u2011assisted content",
+     "who": "Content reader who prefers AI\u2011generated material",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 2.0,
+     "score": 13.9,
+     "product": "Browser extension that tags and filters articles identified as AI\u2011generated",
+     "health": false,
+     "examples": [
+      "I wish there was a filter where I could show *only* AI-assisted, since those will be the best ones."
+     ],
+     "sources": [
+      "lemmy"
+     ],
+     "weeks_seen": 2
+    },
+    {
+     "topic": "Unified smart home app for all devices",
+     "who": "Homeowner with multiple smart gadgets",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 2.0,
+     "score": 12.9,
+     "product": "Web app that aggregates all smart device APIs into a single dashboard",
+     "health": false,
+     "examples": [
+      " installing a dozen apps for every smart bulb or fan I get. I wish there was just one app (and unfortunately, now I have to decide to stick to one brand) I have"
+     ],
+     "sources": [
+      "hn"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Plain\u2011language political infographics for low\u2011info voters",
+     "who": "Civic activist targeting low\u2011education electorate",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 2.0,
+     "score": 12.9,
+     "product": "One\u2011page printable infographics that explain key policies in 3rd\u2011grade reading level",
+     "health": false,
+     "examples": [
+      "it. I've heard El Sayed and Bernie have said something, but I can't find any infographics or anything written at a 3rd grade reading level that I could share wi"
+     ],
+     "sources": [
+      "lemmy"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Vocal tessitura determination guide",
+     "who": "Amateur singer seeking vocal range clarity",
+     "mentions": 1,
+     "demand": 6.0,
+     "solved": 3.0,
+     "score": 12.1,
+     "product": "Interactive questionnaire that calculates vocal range and suggests optimal tessitura",
+     "health": false,
+     "examples": [
+      "I cannot for the life of me understand what my tessitura potentially is, and my vocal coach is making it worse"
+     ],
+     "sources": [
+      "se"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "In\u2011store navigation for hardware stores",
+     "who": "DIY homeowner looking for items quickly",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 2.0,
+     "score": 11.9,
+     "product": "Mobile map app showing indoor layout and item locations for local hardware stores",
+     "health": false,
+     "examples": [
+      "loud even when they are empty and the layouts are so weird. I can't find anything unless I use the phone app to tell me where it is and even then it will take m"
+     ],
+     "sources": [
+      "lemmy"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Niche forum for car jokes community",
+     "who": "Car\u2011enthusiast hobbyist",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 2.0,
+     "score": 11.9,
+     "product": "Ready\u2011made forum template with voting, meme sharing, and moderation tools for car jokes",
+     "health": false,
+     "examples": [
+      "I wish there was enough material and people for a carjokes community"
+     ],
+     "sources": [
+      "lemmy"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Simple, non\u2011ecosystem email service guide",
+     "who": "Privacy\u2011concerned individual",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 3.0,
+     "score": 11.1,
+     "product": "Curated list of free, independent email providers with privacy scores",
+     "health": false,
+     "examples": [
+      "Me hoping for a free version. It's amazing how I can't find an email service that it's not a whole ecosystem or under subscription."
+     ],
+     "sources": [
+      "lemmy"
+     ],
+     "weeks_seen": 1
+    },
+    {
+     "topic": "Early transmission fluid change cost\u2011benefit guide",
+     "who": "Car owner of a 2012 Cruze",
+     "mentions": 1,
+     "demand": 5.0,
+     "solved": 3.0,
+     "score": 11.1,
+     "product": "Checklist and calculator estimating mileage, cost, and benefits of early fluid changes",
+     "health": false,
+     "examples": [
+      "Is there an advantage to changing transmission fluid early for a 2012 Cruze?"
+     ],
+     "sources": [
+      "se"
+     ],
+     "weeks_seen": 1
+    }
+   ]
   }
  ]
 }
