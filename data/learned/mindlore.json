@@ -1,59 +1,48 @@
 {
  "short": {
   "do_more": [
-   "Open with a concrete curiosity\u2011gap question or surprising fact tied to a classic psychology work",
-   "Keep the script tight (~30\u202fs) focusing on one clear point; avoid extra tangents",
-   "Mention a known author or title early (e.g., \u201cDarwin warned\u2026\u201d, \u201cJames \u2026\u201d) to add authority",
-   "Use visual cues that match the hook (quick text overlay of the question, relevant historic image)",
-   "End with a prompt that encourages sharing (e.g., \u201cDid you know this? Share if it surprised you\u201d)]",
-   "avoid",
-   ":",
-   [
-    "Vague \u201cwhat if\u201d or generic philosophical musings without a hook",
-    "Emojis or click\u2011bait symbols that don\u2019t add meaning",
-    "Overly long explanations that push runtime beyond ~40\u202fs",
-    "Titles that lack a question or intrigue word"
-   ],
-   "title_style",
-   ":",
-   "Start with a question or a surprising claim that references a known thinker or concept",
-   "then add a short tease (e.g.",
-   "Why Darwin warned us about\u2026?",
-   ").",
-   "next_tests",
-   ":",
-   [
-    "Test 30\u2011second \u201ctight\u201d scripts vs 45\u2011second \u201cstandard\u201d scripts on the same hook to see retention",
-    "Compare titles that include a famous name (e.g., \u201cDarwin\u201d) versus titles without any name but same question",
-    "Add a quick on\u2011screen text hook (e.g., \u201cDid you know?\u201d) in the first 3 seconds and measure impact on average watch percent"
-   ]
+   "Focus topics around visceral human actions like 'play', physical body reactions (faces freezing, stomach knots, desk job movement), and immediate sensory responses.",
+   "Frame public-domain psychology concepts using direct 'Your' addressing ('Your Play', 'Your Brain', 'Your Screen Hours') to make historical texts immediately relatable.",
+   "Write short, punchy titles under 5 words that promise a simple personal benefit or state a startling observation.",
+   "Target tight video lengths (~30s) where average retention easily crosses 50-100% to push the video higher into the Shorts feed algorithm."
   ],
-  "n": 91,
-  "best_vpd": 22.51,
-  "best_title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5"
+  "avoid": [
+   "Abstract academic questions (e.g., 'Can thoughts shape reality?', 'Does your brain follow steps?') which feel theoretical and dry.",
+   "Academic citation titles or academic-sounding book titles (e.g., 'Psychology and Industrial Efficiency', 'The Analysis of Mind').",
+   "Overly broad historical or socio-economic angles like class consciousness, eugenics, or 19th-century blueprints."
+  ],
+  "title_style": "High-performing titles are short, present-tense, ultra-direct statements starting with 'Your' or 'Why' that target an everyday physical or mental experience.",
+  "next_tests": [
+   "Test 'Your Body Knows' frame: Pair classic Darwin emotional expressions with modern bodily experiences (e.g., 'Why your heart races when ignored').",
+   "Compare tight (~30s) vs standard (~42s) lengths using identical audio scripts on 'Your Play' or 'Your Screen Time' hooks to see which drives higher relative retention."
+  ],
+  "n": 106,
+  "best_vpd": 27.84,
+  "best_title": "Your Play Reveals Joy"
  },
  "full": {
   "do_more": [
-   "Start with a personal or paradoxical question that flips expectations",
-   "Feature a well\u2011known name or concept (e.g., Darwin, industrial efficiency) early in the hook",
-   "Keep the core script tight \u2013 aim for ~30\u202fseconds of pure content before any filler",
-   "Tie the topic to everyday experience or a vivid visual (e.g., \u201cyour face choosing you\u201d)",
-   "End with a single, punchy takeaway that viewers can instantly share"
+   "Start each script with a 30\u2011second hook that poses a vivid, curiosity\u2011driving question (e.g., \"Why do you dream about falling?\")",
+   "Feature a well\u2011known historical psychologist or thinker in the title and opening to leverage name recognition",
+   "Frame the topic as a personal, everyday dilemma that viewers can relate to (habits, dreams, choices)",
+   "Keep the overall video concise (just over 3\u202fminutes) but ensure the core explanation is delivered clearly within the first minute",
+   "Use emotionally charged language (why, how, what if) to spark intrigue"
   ],
   "avoid": [
-   "Long, abstract introductions without a clear hook",
-   "Overly academic wording that hides the curiosity factor",
-   "Titles that are purely descriptive without a question or surprise element"
+   "Long, abstract titles without a clear question or hook",
+   "Overly academic or dense introductions that exceed 45\u202fseconds",
+   "Repeating the same series format or phrasing that has been rejected",
+   "Neglecting to mention a recognizable figure or concrete example"
   ],
-  "title_style": "Use a provocative, personal\u2011question format that names a recognizable figure or concept and hints at a surprising answer (e.g., \u201cDo you choose your face, or does it choose you?\u202f|\u202fCharles\u202fDarwin\u201d).",
+  "title_style": "Use a direct question or surprising statement that includes a famous psychologist's name, e.g., \"Why do you dream about falling? | Sigmund Freud\"",
   "next_tests": [
-   "Compare a 30\u2011second \u201ctight\u201d version vs a 42\u2011second \u201cstandard\u201d version of the same hook to see which lifts VPD",
-   "Run two title styles side\u2011by\u2011side: a direct question vs a statement\u2011only title for the same video",
-   "Add a visual cue of a famous person (photo or illustration) in the first 3 seconds and measure impact on watch\u2011through rate"
+   "Compare a 30\u2011second tight hook vs. a 42\u2011second standard hook on the same topic to measure watch\u2011through rate",
+   "Create two versions of a script: one featuring a famous figure in the title, another with a generic title, and track VPD",
+   "Experiment with adding a personal anecdote in the first 15 seconds to see if avgPercent improves"
   ],
-  "n": 25,
-  "best_vpd": 1.93,
-  "best_title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4"
+  "n": 31,
+  "best_vpd": 13.19,
+  "best_title": "Why do you dream about falling? | Sigmund Freud"
  },
- "updated": "2026-11-12"
+ "updated": "2026-11-16"
 }

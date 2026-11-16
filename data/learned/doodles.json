@@ -1,25 +1,27 @@
 {
  "short": {
   "do_more": [
-   "Use a quirky, metaphorical hook that hints at a psychological concept, e.g. \u201cThe Confidence Curve\u201d or \u201cThe Panic of \u2018K\u2019.\u201d",
-   "Add a punchy visual pun or wordplay in the title to spark instant curiosity.",
-   "Begin the first 5\u202fseconds with a bold animated visual that immediately signals the core joke or concept.",
-   "Wrap the humor and the psychology punchline within the first 30\u202fseconds to keep viewers hooked."
+   "Start with a concrete, everyday scenario that viewers instantly recognize",
+   "Use a single, punchy hook word (Trap, Curve, Dilemma, Paradox) to frame the psychology concept",
+   "Keep the script to the standard length (~42\u202fseconds) to allow a clear setup, conflict, and payoff",
+   "Inject a surprise or twist midway to boost re\u2011watchability",
+   "End with a memorable, actionable takeaway that ties back to the opening hook"
   ],
   "avoid": [
-   "Steer clear of generic or literal titles like \u201cThe Planning Fallacy\u201d or \u201cThe Whiteboard Nod.\u201d",
-   "Don\u2019t start with a slow, explanatory narrative; keep the opening punchy and fast\u2011paced.",
-   "Avoid jokes that need too many setup beats; keep the twist simple and immediate."
+   "Generic titles without a hook (e.g., \u201cHow to\u2026\u201d)",
+   "Repeating the same hook word across multiple episodes",
+   "Over\u2011loading the short with too many facts \u2013 stay on one core idea",
+   "Using emojis or overly cute phrasing that dilutes the curiosity factor"
   ],
-  "title_style": "Use a punchy, unexpected twist or visual pun in the title to hook viewers instantly.",
+  "title_style": "Use the pattern \u2018The [Unexpected Situation] [Hook Word]\u2019 \u2013 a concise, curiosity\u2011driving phrase that signals a relatable dilemma and a psychological twist",
   "next_tests": [
-   "Produce a 30\u2011second variant of the top format to test completion and shareability.",
-   "Experiment with a question\u2011hook opening such as \u201cDid you know why you always\u2026\u201d to increase curiosity.",
-   "Add a subtle meme reference or trending sound clip in the first few seconds to boost shareability."
+   "Film a 45\u2011second \u2018standard\u2019 episode that opens with a question title like \u2018Why Does Your Brain Freeze at 3\u202fAM?\u2019 and compare VPD",
+   "Swap the hook word \u2018Trap\u2019 for alternatives such as \u2018Paradox\u2019, \u2018Dilemma\u2019, or \u2018Loop\u2019 across three videos to see which drives higher avg\u2011watch %",
+   "Add a visual metaphor (e.g., a bouncing ball) that appears only at the 20\u2011second mark and measure its impact on re\u2011watch rates"
   ],
-  "n": 28,
-  "best_vpd": 22.96,
+  "n": 36,
+  "best_vpd": 15.96,
   "best_title": "The Confidence Curve"
  },
- "updated": "2026-11-12"
+ "updated": "2026-11-16"
 }

@@ -1,23 +1,43 @@
 {
  "hot_themes": [
-  "personal traits hidden in names",
-  "birth month personality myths",
-  "brain reactions to death or prayer",
-  "secret psychological tricks",
-  "unlucky/heartbreak letters"
+  "Neurological breakdowns of everyday mental states and survival instincts",
+  "Decoding hidden personality traits through micro-behaviors and habits",
+  "Self-identity validation via personalized psychological triggers",
+  "Emotional protection strategies against manipulation and social conflict",
+  "The physical reality of extreme experiences like death and spirituality"
  ],
  "hook_patterns": [
-  "What does X reveal about you?",
-  "3 surprising facts about Y that change everything",
-  "The shocking truth behind Z that nobody expects"
+  "Biological 'What If' framing (e.g., explaining what the brain physically does during extreme scenarios)",
+  "Listicles promising to uncover hidden or 'insane' dark personality traits",
+  "Validation hooks targeting universal emotional vulnerabilities like heartbreak, anger, and rejection"
  ],
  "ideas_for_us": [
-  "The hidden meaning of the first letter of your name: a 19th\u2011century psychology experiment (based on early personality theory)",
-  "Why your birth month may shape your habits: Jungian insights from classic astrology\u2011psychology texts",
-  "What happens in the brain when you pray: a concise look at early neurological studies",
-  "3 ancient psychological tricks from 'The Art of War' that still work on modern minds"
+  {
+   "title": "Why Your Brain Remembers Embarrassing Moments at 3 AM",
+   "public_domain_source": "The Principles of Psychology by William James (1890)",
+   "hook": "Ever wonder why your brain forces you to relive cringey memories right before you sleep? Science explained it back in 1890.",
+   "angle": "Explaining the survival brain's hyper-fixation on negative memories using early functional psychology."
+  },
+  {
+   "title": "3 Body Language Signs Someone Is Secretly Jealous of You",
+   "public_domain_source": "The Expression of the Emotions in Man and Animals by Charles Darwin (1872)",
+   "hook": "People try to hide envy, but their faces instantly betray them. Here is the 150-year-old psychological trick to spot it.",
+   "angle": "Revealing micro-expressions of envy and hostility through classic evolutionary observation."
+  },
+  {
+   "title": "How to Turn Off Anger Instantly (According to 19th-Century Science)",
+   "public_domain_source": "Outlines of Psychology by Wilhelm Wundt (1897)",
+   "hook": "When someone mocks you, your brain undergoes a rapid physical shift. Here is how to stop it cold.",
+   "angle": "Using foundational experimental psychology to teach emotional mastery and impulse control when insulted."
+  },
+  {
+   "title": "What Happens to Your Mind During a Trance or Deep Prayer",
+   "public_domain_source": "The Varieties of Religious Experience by William James (1902)",
+   "hook": "What actually happens to your consciousness when you close your eyes and pray? The founder of American psychology investigated.",
+   "angle": "Deconstructing spiritual and meditative brain states using early neuro-psychological theories."
+  }
  ],
- "updated": "2026-11-12",
- "sample": 59,
- "top_vpd": 727450
+ "updated": "2026-11-16",
+ "sample": 56,
+ "top_vpd": 1707537
 }

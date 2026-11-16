@@ -162,6 +162,16 @@
    "subsGained": 0
   },
   {
+   "id": "szjjCFDtsFA",
+   "title": "You were taught Tao Te Ching wrong.",
+   "published": "2026-11-16T03:01:25Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 53,
+   "likes": 1,
+   "comments": 0
+  },
+  {
    "id": "rhV-RVacC7s",
    "title": "I think you may like to know something of his person and character",
    "published": "2026-11-03T01:26:49Z",
@@ -199,16 +209,6 @@
    "avgSeconds": 13,
    "avgPercent": 66.5,
    "subsGained": 0
-  },
-  {
-   "id": "szjjCFDtsFA",
-   "title": "You were taught Tao Te Ching wrong.",
-   "published": "2026-11-16T03:01:25Z",
-   "duration": "PT1M7S",
-   "privacy": "public",
-   "views": 49,
-   "likes": 1,
-   "comments": 0
   },
   {
    "id": "DqPkTxpybRQ",
@@ -1050,6 +1050,16 @@
    "subsGained": 0
   },
   {
+   "id": "PTdWAeBmCG8",
+   "title": "Nietzsche wrote this for you.",
+   "published": "2026-11-16T18:07:08Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "QmvgVXfWJT8",
    "title": "Does simplicity outweigh fancy appearances?",
    "published": "2026-11-06T00:00:06Z",
@@ -1130,16 +1140,6 @@
    "avgSeconds": 25,
    "avgPercent": 40.6,
    "subsGained": 0
-  },
-  {
-   "id": "PTdWAeBmCG8",
-   "title": "Nietzsche wrote this for you.",
-   "published": "2026-11-16T18:07:08Z",
-   "duration": "PT59S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "YBzvMjEOTFE",

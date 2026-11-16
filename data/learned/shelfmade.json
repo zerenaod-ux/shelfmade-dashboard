@@ -1,42 +1,51 @@
 {
  "short": {
   "do_more": [
-   "Lead with universal, high-stakes questions or psychological hooks (e.g., 'Do feelings outweigh beliefs?') rather than historical book titles or author names.",
-   "Prioritize topics related to modern pain points: anxiety, attention span, work-life balance, and interpersonal dynamics, as these drive the highest VPD.",
-   "Use direct, conversational phrasing in titles that speaks to 'you' ('You can turn over a new leaf...') to create immediate personal relevance.",
-   "Focus on specific, actionable lessons (e.g., 'shut off mental steam') rather than broad philosophical concepts (e.g., 'What is justice?')."
+   "Start with a bold, provocative hook in the first 3 seconds (e.g., \"Machiavelli would hate how you live.\")",
+   "Reference a well\u2011known classic work or concept and promise a specific insight or secret",
+   "Keep the runtime tight \u2013 aim for ~30\u202fs for high\u2011engagement shorts",
+   "Use a clear benefit or actionable takeaway in the title and script",
+   "Pose a direct question or challenge that sparks curiosity"
   ],
   "avoid": [
-   "Do not use 'in 60 seconds' or 'summary' formats in titles; they signal low effort and perform poorly compared to narrative hooks.",
-   "Avoid starting titles with book or author names (e.g., 'Studies in Pessimism', 'The Republic') unless paired with a compelling, modern problem.",
-   "Do not rely on abstract philosophical questions that lack immediate emotional stakes or relatable context (e.g., 'Is faith rational?', 'What is Aristotle's perfect state?')."
+   "Vague or generic titles without a hook",
+   "Longer runtimes (~>45\u202fs) that reduce average watch percent",
+   "Opening with slow exposition instead of an immediate hook",
+   "Titles that lack reference to a recognizable book or idea"
   ],
-  "title_style": "Use direct, second-person questions or statements that address a specific modern psychological struggle or behavior, avoiding academic or historical labeling.",
-  "n": 124,
-  "best_vpd": 14.12,
-  "best_title": "Studies In Pessimism"
+  "title_style": "Use a punchy, curiosity\u2011driving statement that references a classic work and promises a surprising insight or action",
+  "next_tests": [
+   "A/B test 30\u2011second vs 42\u2011second versions of the same script to see which keeps higher avg watch %",
+   "Create two title styles: one bold claim (\"Machiavelli would hate\u2026\") vs. a question (\"Why does pessimism feel uncomfortable?\") and compare VPD",
+   "Add a clear CTA or promise of a single actionable tip in the first 5\u202fseconds and measure impact on likes and shares"
+  ],
+  "n": 130,
+  "best_vpd": 16.88,
+  "best_title": "Machiavelli would hate how you live."
  },
  "full": {
   "do_more": [
-   "Lead with direct challenges to the viewer's current beliefs or habits (e.g., 'Self-Help is not what you think', 'Question what you know') rather than abstract philosophical concepts.",
-   "Use titles that imply a correction or a hidden truth ('You were taught...', 'Does simplicity... outweigh...') to create curiosity gaps without needing clickbait.",
-   "Focus on universal, low-barrier topics like simplicity, certainty, and self-improvement myths instead of niche historical or war-specific ethics.",
-   "Keep the core argument tight and punchy; the highest VPD videos have shorter 'days' and lower total views, suggesting recent, fresh content on relatable topics is outperforming older, niche content."
+   "Write scripts that fit the tight ~30\u2011second format",
+   "Open with a direct hook: a question, warning, or surprising fact",
+   "Use personal pronouns (\u201cyou\u201d) and name\u2011drops of known figures",
+   "Keep the narrative focused on one concrete takeaway",
+   "End with a clear, actionable prompt or challenge"
   ],
   "avoid": [
-   "Do not use titles that ask yes/no questions about complex, abstract scenarios (e.g., 'Can mercy survive in war?') as they underperform significantly.",
-   "Avoid titles that promise life-changing results with minimal effort or word counts (e.g., 'Can twenty words change your life?'); this feels like low-value self-help and repels the audience.",
-   "Steer clear of topics that feel overly academic or distant from daily life (e.g., specific interpretations of 'Meditations' or 'Nicomachean Ethics' without a modern hook)."
+   "Long, generic titles without a clear hook",
+   "Videos longer than ~40 seconds that dilute the core point",
+   "Overly broad topics without a specific angle",
+   "Passive voice or lack of direct address"
   ],
-  "title_style": "Winning titles use direct, declarative statements or challenging questions that position the viewer's current understanding as flawed or incomplete, rather than neutral philosophical inquiries.",
+  "title_style": "Use a short, curiosity\u2011driven question or warning that promises a specific insight and addresses the viewer directly",
   "next_tests": [
-   "Test a 'Myth vs. Reality' format for a popular public domain book (e.g., 'What Stoicism Actually Says About Anger') to see if correcting misconceptions boosts VPD.",
-   "Create a 3-minute video titled 'Stop Reading for Wisdom' to test the 'negative constraint' angle against the 'positive promise' angle.",
-   "Repackage the 'Simplicity' concept with a visual hook of removing items from a desk or life to test if visual minimalism pairs better with the text-based hook."
+   "Test 30\u2011second tight videos vs 45\u2011second standard on the same topic",
+   "Compare titles phrased as questions vs statements for similar content",
+   "Add a known historical figure\u2019s name in the hook to see impact on VPD"
   ],
-  "n": 16,
-  "best_vpd": 0.58,
-  "best_title": "Does simplicity outweigh fancy appearances?"
+  "n": 24,
+  "best_vpd": 1.0,
+  "best_title": "Franklin had a warning for you."
  },
- "updated": "2026-11-12"
+ "updated": "2026-11-16"
 }

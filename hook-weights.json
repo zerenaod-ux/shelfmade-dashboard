@@ -1,27 +1,27 @@
 {
- "updated": 1794518800,
- "measured_posts": 16,
- "avg_views": 9.2,
+ "updated": 1794871312,
+ "measured_posts": 27,
+ "avg_views": 15.9,
  "per_type": {
   "author": {
-   "posts": 5,
-   "avg": 9.0
+   "posts": 10,
+   "avg": 17.9
   },
   "contrarian": {
-   "posts": 3,
-   "avg": 10.0
-  },
-  "curiosity": {
    "posts": 4,
-   "avg": 9.2
-  },
-  "myth": {
-   "posts": 2,
-   "avg": 11.5
+   "avg": 21.2
   },
   "warning": {
-   "posts": 2,
-   "avg": 6.5
+   "posts": 4,
+   "avg": 21.5
+  },
+  "myth": {
+   "posts": 3,
+   "avg": 11.3
+  },
+  "curiosity": {
+   "posts": 6,
+   "avg": 7.7
   }
  },
  "active": false,

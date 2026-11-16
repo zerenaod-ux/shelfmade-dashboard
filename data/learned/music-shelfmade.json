@@ -1,0 +1,25 @@
+{
+ "updated": "2026-11-16",
+ "styles": {
+  "sm_adventure": {
+   "n": 2,
+   "vpd": 0.17,
+   "bias": 0.0
+  },
+  "sm_tender": {
+   "n": 1,
+   "vpd": 0.33,
+   "bias": 0.0
+  },
+  "sm_gothic": {
+   "n": 1,
+   "vpd": 0.33,
+   "bias": 0.0
+  },
+  "sm_candle": {
+   "n": 1,
+   "vpd": 0.0,
+   "bias": 0.0
+  }
+ }
+}
