@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261116-3fe95",
+ "title": "The Will to Believe",
+ "author": "William James",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Taking Action Creates Your Belief Part 1 🧠",
+ "hook": "You hesitate before making a life-changing decision.",
+ "thumbnail_headline": "BELIEF CREATES FACT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You hesitate before making a life-changing decision. You wait for absolute proof before taking the leap. In 1896, philosopher William James argued that waiting for proof keeps you trapped. He claimed that taking action first actually creates the reality you want. Did science back him up? Decades later, psychologists tested this exact idea. In 1957, researcher Leon Festinger at Stanford University studied how behavior shapes our beliefs. He proved that when people act on a choice, their minds align their conviction to match that action. The result? Action creates certainty, not the other way around. Other studies in social psychology show the exact same pattern. It is called cognitive dissonance theory. So why do we assume we need total confidence before starting? Because our brains want to protect us from immediate failure. But waiting for certainty often guarantees you stay stuck. What did James get right? He knew that some truths only become real after you jump. So next time you hesitate, remember you hesitate before making a life-changing decision."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People alter their beliefs to match actions they have already taken.",
+   "who": "Leon Festinger",
+   "year": "1957",
+   "place": "Stanford University"
+  },
+  {
+   "claim": "Believing in a facts existence before proof can cause that fact to come true.",
+   "who": "William James",
+   "year": "1896",
+   "place": "Harvard University"
+  }
+ ],
+ "source_url": "",
+ "theme": "The Will to Believe by William James",
+ "exp": ""
+}

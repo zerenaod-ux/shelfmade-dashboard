@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261116-3f781",
+ "title": "Studies in Pessimism",
+ "author": "Arthur Schopenhauer",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Pain Hits Harder Than Pleasure Part 3 🧠",
+ "hook": "You feel a tiny toothache ruin your entire weekend.",
+ "thumbnail_headline": "PAIN OVER PLEASURE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a tiny toothache ruin your entire weekend. Bad feelings actually weigh far more heavily on your brain than good ones. In 2001, psychologist Roy Baumeister analyzed decades of data showing negative events impact human emotions significantly more than equal positive ones. In 1851, philosopher Arthur Schopenhauer wrote that we feel pain, but not the absence of pain. Was he right about our brain? Modern science says yes. In 1998, researchers at Ohio State University measured brain waves showing stronger electrical activity when viewing negative images compared to pleasant ones. The result? Our minds are built to treat danger as urgent. So why do we expect life to be mostly pleasant? Because we confuse modern comfort with evolutionary safety. That's it. It is not just one study. Evolutionary biology confirms this loss aversion kept our ancestors alive. So next time a small frustration ruins your day, remember how you feel a tiny toothache ruin your entire weekend."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Negative events have a stronger impact on psychological processing than neutral or positive events of equal intensity.",
+   "who": "Roy Baumeister",
+   "year": "2001",
+   "place": "Case Western Reserve University"
+  },
+  {
+   "claim": "Brain event-related potentials show greater electrical activity in response to negative stimuli than positive stimuli.",
+   "who": "John Cacioppo and colleagues",
+   "year": "1998",
+   "place": "Ohio State University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Studies in Pessimism by Arthur Schopenhauer",
+ "exp": ""
+}
