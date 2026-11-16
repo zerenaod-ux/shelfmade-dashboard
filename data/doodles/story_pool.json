@@ -2728,5 +2728,343 @@
   "style": "v2",
   "format": "MINI MYSTERY",
   "improv": false
+ },
+ {
+  "id": "kebab-slug",
+  "title": "Why Counting Your Feelings Is Hard \ud83d\udcc9",
+  "concept": "EMOTIONAL TAX AUDIT",
+  "mood": "curious",
+  "insight": "Counting your feelings is basically just emotional tax fraud.",
+  "caption": "Leo\u2019s trying to prep for a fake argument, but his math is failing him.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is pacing the hallway while holding a stapler.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "normal",
+      "text": "I am definitely not practicing getting fired."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits at the podcast desk with a cup of tea.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Because it has zero emotional range."
+     }
+    ]
+   },
+   {
+    "scene": "Leo walks to the desk and slams the stapler down.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "quick",
+      "text": "Zero is the perfect amount of emotion."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "So I\u2019m supposed to believe that?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans in, staring intensely at Mia.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "I was a robot. An angry stapler."
+     },
+     {
+      "who": "mia",
+      "feel": "tired",
+      "beat": "snap",
+      "text": "Staplers don't have feelings, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds up fingers, looking lost.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "normal",
+      "text": "Bullshit, I got nine feelings."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Which ones?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo sighs as a digital clock shows 4:00 PM.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "pause",
+      "text": "Are you sure you want to know?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "FUNNY EXPLAINER",
+  "improv": true
+ },
+ {
+  "id": "four-am-dawn-shake",
+  "title": "Your Four AM Dawn Shake \ud83c\udf05",
+  "concept": "MORNING PERSON MYTH",
+  "mood": "dramatic",
+  "insight": "Being a morning person is just being a zombie with a better PR team.",
+  "caption": "Leo claims 4 AM is the new 8 AM. Mia is not buying it.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sitting at the podcast desk, pitch black outside the window, Leo looking wide-eyed and jittery holding a coffee mug.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "I am up and fully ready to go."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "It's four."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leaning forward, hands animated, Mia staring at him with a smirk while walking his fingers across the desk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Four is just an early eight."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Do you even have a sky here?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo looking out an invisible window, pointing dramatically at the darkness.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "normal",
+      "text": "Yeah, it's gray, but it's my gray."
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "snap",
+      "text": "You can't colonize a cloud, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stands up slightly, shaking his own hand in the air with intense focus, Mia looking concerned.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "pause",
+      "text": "Wait, I just shook hands with the dawn."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "The dawn is asleep, you're just waking it up."
+     }
+    ]
+   },
+   {
+    "scene": "Leo sits back down, looking a bit confused, scratching his head.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "pause",
+      "text": "Wait, does that mean I'm waking up?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Which part specifically?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo freezes, his eyes widening as he realizes his mistake, Mia smirking at the camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "snap",
+      "text": "Every single cell. Are you awake yet?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Candidate 0 cuts the meta-commentary and stays in character with a better looping setup.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 6,
+    "loop": 6
+   },
+   "n": 2
+  },
+  "variant": "standard",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "ADVICE FAIL",
+  "improv": true
+ },
+ {
+  "id": "plane-landing-panic",
+  "title": "Why Landing Applause Is Pure Terror \u2708\ufe0f",
+  "concept": "FLIGHT PANIC",
+  "mood": "chaotic",
+  "insight": "Clapping when a plane lands is just synchronized terror.",
+  "caption": "Leo investigates the real reason people clap when wheels hit the ground.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at the podcast desk holding a coffee mug while walking through the hallway.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Why do you clap when the plane lands?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia grips a cup of tea on the desk, looking intensely at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "I don't clap. I just panic."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans forward over the desk with wide eyes, gesturing wildly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Wait. You call it what?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia crosses her arms tightly on the desk, staring down Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Actually? Yes. It is terror."
+     }
+    ]
+   },
+   {
+    "scene": "Leo hides his hands behind his back while leaning away.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "pause",
+      "text": "I literally have no hands right now."
+     }
+    ]
+   },
+   {
+    "scene": "Mia points a finger at the desk as Leo stares at his own fingers.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Why do you clap when the plane lands?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 1,
+   "why": "Candidate 1 has a funnier visual line about having no hands during mid-air panic.",
+   "scores": {
+    "i": 1,
+    "funny": 5,
+    "hook": 8,
+    "spoken": 7,
+    "relatable": 8,
+    "loop": 5
+   },
+   "n": 2
+  },
+  "variant": "micro",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
  }
 ]
