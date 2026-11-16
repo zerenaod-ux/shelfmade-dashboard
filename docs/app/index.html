@@ -212,7 +212,7 @@ function ago(ms){var h=ms/36e5;return h<1?Math.max(1,Math.round(ms/6e4))+' min':
 function hdr(){var h={'Accept':'application/vnd.github+json'};if(TOK)h.Authorization='Bearer '+TOK;return h}
 function jget(u){return fetch(u+(u.indexOf('?')<0?'?':'&')+'t='+Date.now()).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).catch(function(){return null})}
 function hello(){var h=new Date().getHours();return h<12?'Good morning':h<18?'Good afternoon':'Good evening'}
-function safeVideo(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname==='cdn.jsdelivr.net'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
+function safeVideo(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname==='cdn.jsdelivr.net'||p.hostname==='zerenaod-ux.github.io'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
 function clean(b){return (b||'').replace(/<!--DATA[\s\S]*?DATA-->/g,'').replace(/\*\*/g,'').replace(/`/g,'').trim()}
 function parse(b){
   var t=clean(b),v=(t.match(/https:\/\/[^\s)]+\.mp4/)||[])[0]||'',cap='',chk='';
@@ -353,8 +353,11 @@ function loadReview(){
 /* ---------- Content Engine review and retained folders (posting remains off) ---------- */
 var sceneView='review';
 function sceneVideo(card,url){
-  url=(url||'').replace(/^https:\/\/github\.com\/zerenaod-ux\/content-engine\/releases\/download\/[^/]+\/(ce-[\w-]+\.mp4)$/,'https://cdn.jsdelivr.net/gh/zerenaod-ux/content-engine@gh-pages/videos/$1');
-  if(url&&safeVideo(url)){var v=el('video');v.controls=true;v.playsInline=true;v.preload='metadata';v.src=url;card.appendChild(v)}
+  // IPHONE_PLAY (owner 2026-11-16: video not tappable on iPhone): serve the phone copy from GitHub Pages (same site as this app, plain file server) instead of the CDN; keep a plain link as a second way in.
+  var m=(url||'').match(/(ce-[\w-]+\.mp4)$/);
+  if(m&&/zerenaod-ux\/content-engine/.test(url))url='https://zerenaod-ux.github.io/content-engine/videos/'+m[1];
+  if(url&&safeVideo(url)){var v=el('video');v.controls=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.preload='metadata';v.src=url+'#t=0.1';card.appendChild(v);
+    var a=el('a','muted','Video not playing? Tap here to open it ›');a.href=url;a.target='_blank';a.rel='noopener';a.style.display='block';a.style.margin='0 0 10px';card.appendChild(a)}
 }
 function decideScene(it,card,what,b1,b2,retry){
   if(!retry&&card.__arm!==what){card.__arm=what;b1.classList.remove('arm');b2.classList.remove('arm');var b=what==='approve'?b1:b2;b.classList.add('arm');b.textContent='Tap again to confirm';
