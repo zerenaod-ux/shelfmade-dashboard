@@ -106,7 +106,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 17,
-   "avgPercent": 23.73,
+   "avgPercent": 24.67,
    "subsGained": 0
   },
   {
@@ -206,7 +206,7 @@
    "published": "2026-11-16T03:01:25Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 48,
+   "views": 49,
    "likes": 1,
    "comments": 0
   },
@@ -218,7 +218,10 @@
    "privacy": "public",
    "views": 48,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 13,
+   "avgPercent": 20.7,
+   "subsGained": 0
   },
   {
    "id": "7P-eD_FErv0",
@@ -364,6 +367,19 @@
    "subsGained": 0
   },
   {
+   "id": "nQlibcVN19o",
+   "title": "Victories after all never",
+   "published": "2026-11-03T01:26:20Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 15,
+   "avgPercent": 24.99,
+   "subsGained": 0
+  },
+  {
    "id": "G4c2nrTsFNc",
    "title": "But of what use is his knowledge, if he may not communicate it?",
    "published": "2026-10-20T19:33:34Z",
@@ -377,16 +393,16 @@
    "subsGained": 0
   },
   {
-   "id": "eFMuACpNNxI",
-   "title": "Knowledge of the enemy\u2019s dispositions can only be obtained from other men",
-   "published": "2026-11-03T01:26:37Z",
-   "duration": "PT20S",
+   "id": "K1uoKKalsZo",
+   "title": "Allen would hate how you live.",
+   "published": "2026-11-15T03:01:37Z",
+   "duration": "PT44S",
    "privacy": "public",
-   "views": 33,
+   "views": 34,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 9,
-   "avgPercent": 49.82,
+   "avgPercent": 21.44,
    "subsGained": 0
   },
   {
@@ -414,16 +430,6 @@
    "avgSeconds": 33,
    "avgPercent": 98.53,
    "subsGained": 0
-  },
-  {
-   "id": "K1uoKKalsZo",
-   "title": "Allen would hate how you live.",
-   "published": "2026-11-15T03:01:37Z",
-   "duration": "PT44S",
-   "privacy": "public",
-   "views": 32,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "WEAr0dGdw2M",
@@ -600,8 +606,8 @@
    "views": 24,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 5,
-   "avgPercent": 20.33,
+   "avgSeconds": 4,
+   "avgPercent": 16.94,
    "subsGained": 0
   },
   {
@@ -613,8 +619,8 @@
    "views": 23,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 10,
-   "avgPercent": 13.100000000000001,
+   "avgSeconds": 11,
+   "avgPercent": 14.37,
    "subsGained": 0
   },
   {
@@ -657,6 +663,19 @@
    "subsGained": 0
   },
   {
+   "id": "sNiieAkdNpg",
+   "title": "Acres of Diamonds: The Fortune You're Standing On | Russell Conwell",
+   "published": "2026-06-14T18:53:21Z",
+   "duration": "PT2M31S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 97,
+   "avgPercent": 64.3,
+   "subsGained": 0
+  },
+  {
    "id": "PqOXPgtpPVY",
    "title": "The Republic \u00b7 Improved replacement",
    "published": "2026-10-14T20:14:26Z",
@@ -667,19 +686,6 @@
    "comments": 0,
    "avgSeconds": 7,
    "avgPercent": 43.49,
-   "subsGained": 0
-  },
-  {
-   "id": "sNiieAkdNpg",
-   "title": "Acres of Diamonds: The Fortune You're Standing On | Russell Conwell",
-   "published": "2026-06-14T18:53:21Z",
-   "duration": "PT2M31S",
-   "privacy": "public",
-   "views": 19,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 97,
-   "avgPercent": 64.3,
    "subsGained": 0
   },
   {
@@ -774,19 +780,6 @@
    "subsGained": 0
   },
   {
-   "id": "lB1khz_EYhg",
-   "title": "And still we must labour on; for the work of self-culture is never finished",
-   "published": "2026-11-03T01:26:46Z",
-   "duration": "PT23S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 7,
-   "avgPercent": 30.510000000000005,
-   "subsGained": 0
-  },
-  {
    "id": "O_1dpa8rPxM",
    "title": "Question what you know",
    "published": "2026-10-22T00:31:00Z",
@@ -823,6 +816,19 @@
    "comments": 1,
    "avgSeconds": 10,
    "avgPercent": 14.499999999999998,
+   "subsGained": 0
+  },
+  {
+   "id": "mX0Yjfx_vsM",
+   "title": "You must have observed this trait of character?",
+   "published": "2026-11-03T01:20:23Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 12,
+   "avgPercent": 24.39,
    "subsGained": 0
   },
   {
@@ -960,7 +966,10 @@
    "privacy": "public",
    "views": 7,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 26,
+   "avgPercent": 37.48,
+   "subsGained": 0
   },
   {
    "id": "OD2YHuJCIY4",
@@ -1121,6 +1130,16 @@
    "avgSeconds": 25,
    "avgPercent": 40.6,
    "subsGained": 0
+  },
+  {
+   "id": "PTdWAeBmCG8",
+   "title": "Nietzsche wrote this for you.",
+   "published": "2026-11-16T18:07:08Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "YBzvMjEOTFE",
@@ -1577,8 +1596,8 @@
    "views": 2,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 58,
+   "avgPercent": 14.32,
    "subsGained": 0
   },
   {
@@ -1950,6 +1969,26 @@
    "comments": 0
   },
   {
+   "id": "TXgCTuFvgYA",
+   "title": "Why does Conduct of Life still matter?",
+   "published": "2026-11-16T22:26:54Z",
+   "duration": "PT6M56S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "XHMYjrKWahc",
+   "title": "How Chesterfield Judges Your Posture \ud83e\udd28",
+   "published": "2026-11-16T19:46:33Z",
+   "duration": "PT7M18S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "5GsR3rzr4ks",
    "title": "Can men refuse to be pleased with words of gentle advice?",
    "published": "2026-11-16T02:00:21Z",
@@ -1977,7 +2016,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "sWMRO2gaXS8",

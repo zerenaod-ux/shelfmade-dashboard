@@ -11,9 +11,12 @@
    "published": "2026-11-14T18:03:04Z",
    "duration": "PT56S",
    "privacy": "public",
-   "views": 1018,
+   "views": 1022,
    "likes": 18,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 23,
+   "avgPercent": 42.02,
+   "subsGained": 0
   },
   {
    "id": "uOqGecmhSTs",
@@ -47,11 +50,11 @@
    "published": "2026-11-14T03:01:48Z",
    "duration": "PT1M11S",
    "privacy": "public",
-   "views": 249,
+   "views": 251,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 21,
-   "avgPercent": 30.519999999999996,
+   "avgSeconds": 22,
+   "avgPercent": 31.240000000000002,
    "subsGained": 0
   },
   {
@@ -60,9 +63,12 @@
    "published": "2026-11-15T03:01:32Z",
    "duration": "PT1M3S",
    "privacy": "public",
-   "views": 168,
+   "views": 170,
    "likes": 4,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 18,
+   "avgPercent": 29.12,
+   "subsGained": 0
   },
   {
    "id": "mDO-wdlrW9Q",
@@ -85,7 +91,10 @@
    "privacy": "public",
    "views": 123,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 20,
+   "avgPercent": 39.82,
+   "subsGained": 0
   },
   {
    "id": "NOrxJfIaNfE",
@@ -103,11 +112,11 @@
    "published": "2026-11-10T00:00:03Z",
    "duration": "PT8M23S",
    "privacy": "public",
-   "views": 91,
+   "views": 92,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 135,
-   "avgPercent": 26.890000000000004,
+   "avgSeconds": 124,
+   "avgPercent": 24.71,
    "subsGained": 0
   },
   {
@@ -347,8 +356,8 @@
    "views": 46,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 21,
-   "avgPercent": 35.62,
+   "avgSeconds": 26,
+   "avgPercent": 43.92,
    "subsGained": 0
   },
   {
@@ -1084,6 +1093,16 @@
    "comments": 0
   },
   {
+   "id": "2GlYD2z2jJY",
+   "title": "Your Face Freezes On Sudden News",
+   "published": "2026-11-15T23:02:24Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "lMXaBBTZsps",
    "title": "Pain of Isolation",
    "published": "2026-11-10T21:02:09Z",
@@ -1123,6 +1142,26 @@
    "subsGained": 0
   },
   {
+   "id": "KhfyoHiwyYc",
+   "title": "Your Sudden Laughter Reveals Ancient Survival",
+   "published": "2026-11-16T03:01:20Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Au2YzEYnkr0",
+   "title": "Your Eyes Blink During Story Turns",
+   "published": "2026-11-15T18:03:29Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 1,
+   "comments": 1
+  },
+  {
    "id": "u-bjxB9PmgY",
    "title": "Why you buy things you don't need to impress people you don't like \ud83d\udcb8",
    "published": "2026-06-26T02:27:52Z",
@@ -1147,26 +1186,6 @@
    "avgSeconds": 13,
    "avgPercent": 29.469999999999995,
    "subsGained": 0
-  },
-  {
-   "id": "2GlYD2z2jJY",
-   "title": "Your Face Freezes On Sudden News",
-   "published": "2026-11-15T23:02:24Z",
-   "duration": "PT59S",
-   "privacy": "public",
-   "views": 13,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "Au2YzEYnkr0",
-   "title": "Your Eyes Blink During Story Turns",
-   "published": "2026-11-15T18:03:29Z",
-   "duration": "PT56S",
-   "privacy": "public",
-   "views": 13,
-   "likes": 1,
-   "comments": 1
   },
   {
    "id": "Z5ifzR5nOV0",
@@ -1273,6 +1292,16 @@
    "subsGained": 0
   },
   {
+   "id": "ldlmq9sPVl0",
+   "title": "Why Kids React To Twists",
+   "published": "2026-11-16T18:05:47Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "3wxpN733RQ8",
    "title": "Why do we laugh?",
    "published": "2026-10-29T02:00:46Z",
@@ -1346,16 +1375,6 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
-  },
-  {
-   "id": "KhfyoHiwyYc",
-   "title": "Your Sudden Laughter Reveals Ancient Survival",
-   "published": "2026-11-16T03:01:20Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 7,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "EMQX3FI6-Lk",
@@ -1457,8 +1476,8 @@
    "views": 5,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 1.35,
+   "avgSeconds": 15,
+   "avgPercent": 4.55,
    "subsGained": 0
   },
   {
@@ -1509,8 +1528,8 @@
    "views": 4,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 3,
+   "avgPercent": 0.64,
    "subsGained": 0
   },
   {
@@ -1579,6 +1598,32 @@
    "subsGained": 0
   },
   {
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-06T00:00:34Z",
+   "duration": "PT7M47S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 3,
+   "avgPercent": 0.66,
+   "subsGained": 0
+  },
+  {
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-06T00:00:34Z",
+   "duration": "PT7M47S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 3,
+   "avgPercent": 0.66,
+   "subsGained": 0
+  },
+  {
    "id": "wEEbLtq5Ap0",
    "title": "Why does attention choose focus?",
    "published": "2026-10-19T16:31:14Z",
@@ -1635,19 +1680,6 @@
    "subsGained": 0
   },
   {
-   "id": "lzNbwJLpncg",
-   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
-   "published": "2026-11-06T00:00:34Z",
-   "duration": "PT7M47S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.66,
-   "subsGained": 0
-  },
-  {
    "id": "8lmhT2wqPj8",
    "title": "What to do when you cannot tell which road is right | John Dewey",
    "published": "2026-11-04T00:00:13Z",
@@ -1658,19 +1690,6 @@
    "comments": 0,
    "avgSeconds": 18,
    "avgPercent": 4.13,
-   "subsGained": 0
-  },
-  {
-   "id": "lzNbwJLpncg",
-   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
-   "published": "2026-11-06T00:00:34Z",
-   "duration": "PT7M47S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.66,
    "subsGained": 0
   },
   {
@@ -1720,6 +1739,19 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "MN_liz83nkU",
+   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
+   "published": "2026-11-07T00:00:20Z",
+   "duration": "PT7M24S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
    "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
@@ -1842,16 +1874,6 @@
    "title": "Can a crowd be better than the people in it? | Gustave Le Bon",
    "published": "2026-11-04T20:45:23Z",
    "duration": "PT7M45S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "4qWHmBcx-I4",
-   "title": "How many explanations do you try before you choose one? | John Dewey",
-   "published": "2026-11-03T20:41:14Z",
-   "duration": "PT7M22S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

@@ -11,7 +11,7 @@
    "published": "2026-11-03T18:04:42Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 210,
+   "views": 211,
    "likes": 3,
    "comments": 1,
    "avgSeconds": 16,
@@ -91,7 +91,10 @@
    "privacy": "public",
    "views": 9,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 1,
+   "avgPercent": 3.95,
+   "subsGained": 0
   },
   {
    "id": "B1Xmi2FOMmY",
@@ -271,8 +274,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 40,
-   "avgPercent": 104.76999999999998,
+   "avgSeconds": 20,
+   "avgPercent": 52.39,
    "subsGained": 0
   },
   {
@@ -300,6 +303,16 @@
    "avgSeconds": 9,
    "avgPercent": 17.19,
    "subsGained": 0
+  },
+  {
+   "id": "ucEbj1x_lJw",
+   "title": "The Unearned Rest | Leo & Mia #16",
+   "published": "2026-11-16T03:01:32Z",
+   "duration": "PT30S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "oJkJkxlRaLE",
@@ -358,7 +371,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 4,
+   "avgPercent": 12,
+   "subsGained": 0
   },
   {
    "id": "RSv00j81ONc",
@@ -420,7 +436,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 99,
+   "avgPercent": 51.22,
+   "subsGained": 0
   },
   {
    "id": "1k5nUK42dIE",
@@ -430,7 +449,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 8,
+   "avgPercent": 21.63,
+   "subsGained": 0
   },
   {
    "id": "5bvrVUR8iek",
@@ -524,10 +546,10 @@
    "subsGained": 0
   },
   {
-   "id": "ucEbj1x_lJw",
-   "title": "The Unearned Rest | Leo & Mia #16",
-   "published": "2026-11-16T03:01:32Z",
-   "duration": "PT30S",
+   "id": "tmixnQsBjPc",
+   "title": "The Call Scripting Trap",
+   "published": "2026-11-16T18:10:17Z",
+   "duration": "PT36S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
