@@ -1471,6 +1471,91 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261116-a71c6",
+   "look": "live-demo",
+   "title": "Why Your Jaw Drops on News \ud83e\udd10",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261116-fa332",
+   "look": "live-demo",
+   "title": "Why Your Brain Predicts Plots \ud83e\udde0",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "chat",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "icon_burst",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261116-fa482",
+   "look": "live-demo",
+   "title": "Why Dolphins Flip When Happy \ud83d\udc2c",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

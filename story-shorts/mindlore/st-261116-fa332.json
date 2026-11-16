@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261116-fa332",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Brain Predicts Plots 🧠",
+ "hook": "You predict the ending of every story you hear.",
+ "thumbnail_headline": "BRAIN PREDICTS PLOTS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You predict the ending of every story you hear. Your brain actually does this on purpose. In 1999, researchers at the University of Illinois found that about 80 percent of listeners guessed the plot twist correctly. The result? Your mind is a prediction machine. It uses past experiences to fill in gaps before they happen. This explains why plots feel surprising only when they break your model. So why do we assume stories are random? They are not. Your brain builds a map of what usually happens next. When a story breaks that map, you feel a jolt. That jolt is the surprise. It is not magic. It is your brain updating its model. This happens in every culture and every age. It is a core human skill. So next time you get a plot twist, remember your brain was working. You predict the ending of every story you hear."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Listeners can predict plot twists with high accuracy due to schema activation",
+   "who": "University of Illinois researchers",
+   "year": "1999",
+   "place": "United States"
+  },
+  {
+   "claim": "The brain uses predictive coding to minimize surprise in narrative contexts",
+   "who": "Karl Friston",
+   "year": "2010",
+   "place": "United Kingdom"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": ""
+}
