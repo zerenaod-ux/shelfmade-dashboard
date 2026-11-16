@@ -994,5 +994,31 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-16"
+ },
+ "Why does Conduct of Life still matter?": {
+  "styles": [
+   "sm_adventure",
+   "sm_adventure",
+   "sm_adventure",
+   "sm_tender",
+   "sm_adventure",
+   "sm_adventure"
+  ],
+  "tracks": [
+   "sm_adventure_02",
+   "ace_sm_adventure_02",
+   "sm_adventure_01",
+   "sm_tender_04",
+   "ace_sm_adventure_01",
+   "sm_adventure_03"
+  ],
+  "mood": "curious",
+  "pace": 2.33,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-16"
  }
 }
