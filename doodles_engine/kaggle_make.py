@@ -55,7 +55,8 @@ def main(work):
     got = 0
     for f in list(tmp.rglob('shot_*.png')) + list(tmp.rglob('line_*.wav')) + list(tmp.rglob('align_*.json')):
         shutil.copy(f, work / f.name); got += 1
-    if not list(tmp.rglob('DONE')) or got < len(vj) + len(pj): raise SystemExit('Kaggle output incomplete (%d files); log: %s' % (got, [str(x) for x in tmp.glob('*.log')]))
+    _miss = [v['wav'] for v in vj if not (work / v['wav']).is_file()] + [j['out'] for j in pj if not (work / j['out']).is_file()]   # every voice line and picture must really be there
+    if not list(tmp.rglob('DONE')) or got < len(vj) + len(pj) or _miss: raise SystemExit('Kaggle output incomplete (%d files, missing %s); log: %s' % (got, _miss, [str(x) for x in tmp.glob('*.log')]))
     if SINGLE:   # the same picture for every shot (the shots only decide who speaks and where the camera looks)
         for i in range(1, len(st['shots'])): shutil.copy(work / 'shot_00.png', work / f'shot_{i:02d}.png')
     (work / 'kaggle_stage1.DONE').write_text('ok'); shutil.rmtree(tmp, ignore_errors=True); log('stage 1 done:', got, 'files')
