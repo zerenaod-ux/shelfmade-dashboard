@@ -1,26 +1,26 @@
 {
- "at": "2026-11-16T17:48:50+00:00",
+ "at": "2026-11-16T23:25:33+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 2 h ago"
+   "text": "updated 0 h ago"
   },
   {
    "name": "Doodles daily run",
-   "ok": false,
-   "text": "last: cancelled 2026-11-16T11:43"
+   "ok": true,
+   "text": "last: success 2026-11-16T17:22"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "11 stories carry a judge note"
+   "text": "13 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 3 h ago"
+   "text": "ok=True, checked 4 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -45,7 +45,7 @@
   {
    "name": "Weekly report",
    "ok": true,
-   "text": "last: success 2026-11-09"
+   "text": "last: success 2026-11-16"
   },
   {
    "name": "Title proposals",
@@ -54,8 +54,8 @@
   },
   {
    "name": "Learning + scoreboard",
-   "ok": true,
-   "text": "last: success 2026-11-12"
+   "ok": false,
+   "text": "last: cancelled 2026-11-16 | auto-fix started"
   },
   {
    "name": "Playlist flywheel",
@@ -65,12 +65,12 @@
   {
    "name": "Retitle campaign",
    "ok": true,
-   "text": "last: success 2026-11-15"
+   "text": "last: success 2026-11-16"
   },
   {
    "name": "Access check (logins)",
    "ok": true,
-   "text": "last: success 2026-11-12"
+   "text": "last: success 2026-11-16"
   },
   {
    "name": "Viral DNA study",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 14 h ago"
+   "text": "newest public video 3 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 14 h ago"
+   "text": "newest public video 0 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 14 h ago"
+   "text": "newest public video 3 h ago"
   },
   {
    "name": "Service probes",
@@ -100,7 +100,7 @@
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "39.2 h used in 7 days, stories/day cap 2"
+   "text": "41.6 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
