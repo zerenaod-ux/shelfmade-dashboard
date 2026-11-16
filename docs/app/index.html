@@ -196,6 +196,7 @@ var BRAND_NAME='Content Engine';
 var LINKS={shelfmade:{youtube:'https://www.youtube.com/@shelfmadedaily',tiktok:'https://www.tiktok.com/@shelfmade.daily',instagram:'https://www.instagram.com/shelfmade.daily/'},mindlore:{youtube:'https://www.youtube.com/@mindloredaily',tiktok:'https://www.tiktok.com/@mindlore.daily',instagram:'https://www.instagram.com/mindlore.daily_/reels/'},doodles:{youtube:'https://www.youtube.com/@AnimationDoodles-h8e',tiktok:'https://www.tiktok.com/@animationdoodleshq',instagram:'https://www.instagram.com/animationdoodleshq/'},howitticks:{youtube:'https://www.youtube.com/@HowItTicks-p2v',tiktok:'https://www.tiktok.com/@howitticks.official',instagram:'https://www.instagram.com/howitticks.co/'}};
 var REPO_URL='https://github.com/zerenaod-ux/shelfmade-dashboard';
 var CE_API='https://api.github.com/repos/zerenaod-ux/content-engine';   // Content Engine lives in its own repo since 2026-11-13
+var CE_RAW='https://raw.githubusercontent.com/zerenaod-ux/content-engine/main/';
 var $=function(i){return document.getElementById(i)};
 $('brand').innerHTML='';$('brand').appendChild(document.createTextNode(BRAND_NAME.split(' ')[0]+' '));var bi=el0('i',BRAND_NAME.split(' ').slice(1).join(' ')||'');$('brand').appendChild(bi);
 document.title=BRAND_NAME;
@@ -408,6 +409,22 @@ function loadScenes(){
 }
 
 /* ---------- Health ---------- */
+function ceHealth(host){
+  var c=el('section','card chan');c.style.setProperty('--c','var(--hi)');
+  var h3=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode('How It Ticks'));h3.appendChild(l);c.appendChild(h3);host.appendChild(c);
+  Promise.all([jget(CE_RAW+'data/scenes/videos.json'),jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json'),fetch(CE_API+'/actions/runs?per_page=30').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).catch(function(){return {workflow_runs:[]}})]).then(function(r){
+    var vids=r[0]||[],idx=(r[1]||{}).items||[],st=(r[2]||{}).done||{},runs=r[3].workflow_runs||[];
+    var saved=idx.filter(function(x){return x.folder==='saved'}).length,posted=Object.keys(st).length;
+    var last=vids.length?vids[vids.length-1]:null;
+    var build=runs.filter(function(x){return x.name==='scene-factory'})[0],pub=runs.filter(function(x){return x.name==='how-it-ticks-publisher'})[0];
+    function row(t,v,ok){var d=el('div','prob');d.appendChild(el('span','ic '+(ok?'ok':'bad'),ok?'✓':'!'));var b=el('div');b.appendChild(el('b','',t));b.appendChild(el('div','muted',v));d.appendChild(b);c.appendChild(d)}
+    row('Videos built',nf(vids.length)+' total'+(last?' · last: '+(last.title||'').slice(0,40):''),vids.length>0);
+    row('Last build run',build?(build.conclusion||build.status)+' · '+(build.created_at||'').replace('T',' ').slice(0,16)+' UTC':'none found',!build||build.conclusion!=='failure');
+    row('Approved by you',nf(saved)+' saved · '+nf(posted)+' handed to Buffer',true);
+    row('Publisher',pub?(pub.conclusion||pub.status)+' · posting is OFF until you approve the look':'not run yet (posting OFF)',!pub||pub.conclusion!=='failure');
+    row('Channels','YouTube, TikTok, Instagram connected in Buffer',true);
+  }).catch(function(){c.appendChild(el('p','muted','Could not load How It Ticks status.'))});
+}
 function brandHealth(b,S,A,AN,now){
   var pub=0,sch=0,last=null,until=null,known={},waiting={};
   S.forEach(function(s){var d=(s&&s.done)||{};Object.keys(d).forEach(function(id){known[id]=1;var t=Date.parse(d[id]&&d[id].due);if(!t)return;if(t<=now){pub++;if(!last||t>last)last=t}else{sch++}if(!until||t>until)until=t})});
@@ -445,7 +462,7 @@ function loadHealth(){
   var BRH=BR.filter(function(b){return !b.ce});
   Promise.all([].concat(BRH.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),
                         BRH.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))})))
-   .then(function(r){BRH.forEach(function(b,i){br.appendChild(brandHealth(b,r[i],r[BRH.length+i],null,now))})});
+   .then(function(r){BRH.forEach(function(b,i){br.appendChild(brandHealth(b,r[i],r[BRH.length+i],null,now))});ceHealth(br)});
   fetch(API+'/actions/runs?per_page=100').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).then(function(d){
     var seen={},rows=[],bad=0;(d.workflow_runs||[]).forEach(function(x){if(seen[x.name]||KEYJOBS.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
     rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});
