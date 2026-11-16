@@ -36,6 +36,7 @@ def one(llm_call):
     h = hist(); theme = pick_theme(h)
     part = (h['items'][-1].get('part', 1) + 1) if (SM and h['items'] and h['items'][-1].get('theme') == theme) else 1
     recent = [i['title'] for i in h['items'][-15:]]
+    _recent_words = set(w for t in recent[-10:] for w in re.findall(r'[a-z]{4,}', t.lower()))   # DIVERSITY (owner 2026-11-15: topics and openings repeated)
     # H1b TEST: our data says <=30s Shorts win ~7x; make the first 3 of every 14 days short (~30s), measured later by the scoreboard
     _lo, _hi, exp = 140, 200, ''
     try:
@@ -54,11 +55,11 @@ def one(llm_call):
     except Exception: pass
     chan = ('ShelfMade, a channel that explains classic books for modern readers: the Short is "a classic book vs today", what this old book said and what later research found. THEME BOOK' if SM else 'MindLore, a psychology channel about how your mind works, explained with real research and how people lived long ago. THEME')
     base = ('You write a 60-70 second vertical Short for %s: %s.%s\n'
-            'Titles already used, do not repeat: %s.\n' % (chan, theme, radar, recent) + (story_rules.rules('shelfmade' if SM else 'mindlore', short=True).replace('ONE narration of 150-190 words (about 60-70 seconds)', 'ONE narration of 70-90 words (about 30 seconds, ONE idea only, hook in the first 5 words)') if exp else story_rules.rules('shelfmade' if SM else 'mindlore', short=True)) +
+            'Titles already used, do not repeat: %s.\nDIVERSITY (STRICT): the subject must be clearly DIFFERENT from every one of the last 10 titles above (different body part, animal, event or habit; no repeated key words such as face, shock, surprise, play, joy, kids if they appear above). Also vary the opening angle: study, history fact or everyday habit.\n' % (chan, theme, radar, recent) + (story_rules.rules('shelfmade' if SM else 'mindlore', short=True).replace('ONE narration of 150-190 words (about 60-70 seconds)', 'ONE narration of 70-90 words (about 30 seconds, ONE idea only, hook in the first 5 words)') if exp else story_rules.rules('shelfmade' if SM else 'mindlore', short=True)) +
             'Return JSON: {"public_title": "a \"How X works\" or \"Why X ...\" title, 4-8 words, plain words, ending with ONE fitting emoji (for example How Habits Really Form 🤔, Why Your Stomach Knots Up 😬); owner decision 2026-11-11: this style is what people want to hear; never a yes/no question, no hashtags", "hook": "the exact first sentence of the narration", "thumb": "2-5 WORD CAPS HEADLINE", '
             '"narration": "'+("70-90" if exp else "150-190")+' words, first sentence EXACTLY the hook", "claims": [{"claim":"...","who":"...","year":"...","place":"..."}]}.')
     if SM: base += '\nSERIES: this is Part %d of 3 about the same book. %s Put "Part %d" at the end of public_title. Use a different famous line or idea than the earlier parts (titles so far: %s).\n' % (part, 'Start with the most famous idea of the book.' if part == 1 else 'End with a hook that makes the viewer want Part %d.' % min(part + 1, 3) if part < 3 else 'Close the series with the takeaway.', part, recent[-3:])
-    base += '\nOWNER-APPROVED WINNING STYLE (our best MindLore Short, 2026-11-09, "Why a deadline makes your stomach knot"): start from an everyday BODY FEELING the viewer has had (knot in the stomach, racing heart, sweaty hands, chills), speak straight to them ("You feel..."), give a surprising reason from real research with TWO real numbers, and keep it about 55 seconds. When the theme allows, a title like "Why a deadline makes your stomach knot" (Why + everyday thing + makes your + body feeling) is welcome; it is a statement about the viewer, not a yes/no question.\n'
+    base += '\nONE OPTIONAL STYLE (use it ONLY if none of the last 5 titles used a body feeling; our best MindLore Short, 2026-11-09, "Why a deadline makes your stomach knot"): start from an everyday BODY FEELING the viewer has had (knot in the stomach, racing heart, sweaty hands, chills), speak straight to them ("You feel..."), give a surprising reason from real research with TWO real numbers, and keep it about 55 seconds. When the theme allows, a title like "Why a deadline makes your stomach knot" (Why + everyday thing + makes your + body feeling) is welcome; it is a statement about the viewer, not a yes/no question.\n'
     prompt = base; bad = ['no usable answer']; d = None
     for attempt in range(4):
         try: d = llm_call(prompt)
@@ -70,6 +71,9 @@ def one(llm_call):
         if not (_lo <= n <= _hi): bad.append('narration must be %s words (now %d)' % ('70-90' if exp else '150-190', n))
         if d['hook'] and not nar.startswith(d['hook']): bad.append('the narration must start with exactly the hook sentence')
         if re.search(r'[_#*]', nar): bad.append('no underscores, hashtags or stage directions')
+        _tw = set(re.findall(r'[a-z]{4,}', str(d.get('public_title', '')).lower())) - {'your', 'why', 'how', 'what', 'that', 'this', 'with', 'from', 'when'}
+        _hit = sorted(_tw & _recent_words)
+        if not SM and len(_hit) >= 2: bad.append('the title repeats key words from recent videos (%s); choose a clearly different subject' % ', '.join(_hit[:4]))
         if not bad: bad = story_rules.check(d, 'shelfmade' if SM else 'mindlore', short=True)
         if not bad:
             v, rep = story_rules.verify_claims(d); bad = v; print('story_short: fact check:', '; '.join(rep), flush=True)

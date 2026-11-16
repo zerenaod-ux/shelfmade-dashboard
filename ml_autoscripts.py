@@ -400,7 +400,7 @@ def _sectionwise(c, tn, window, prior, extra, fix=''):
     for i in range(len(secs), 7):
         role = ''
         if i == 0:
-            role = ('Begin EXACTLY with this sentence: "%s" Then sentence 2 = what ancient people / the past / real research actually found (use a word like ancient, years ago, century, actually). '
+            role = ('Begin EXACTLY with this sentence: "%s" Then sentence 2 = the surprise from ONE angle: a real study, a history fact (with a year) or an everyday habit explained by research (use a word like actually, years ago, century, history; the word ancient at most once). '
                     'Sentence 3 = who studied it and in which year, with a number. Then the pivot line "The result?" and a short answer. ' % hook)
         elif i in (1, 3, 5):
             role = 'Include one question the viewer is thinking (one sentence ending with a question mark) and answer it right after with a fact. '
