@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-title" content="Engine">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<title>Content Engine</title>
+<title>How It Ticks</title>
 <style>
 :root{--bg:#f3f1ea;--card:#fff;--ink:#17261f;--mut:#677970;--line:#e3e6dd;--forest:#183c32;--gold:#b8963f;--ok:#1f8a4c;--okbg:#e4f4ea;--warn:#a5670a;--warnbg:#fff0d0;--bad:#b3261e;--badbg:#fde7e4;--sh:#2f7d5f;--ml:#6a55c9;--dd:#d9772b;--hi:#2a7fb8;--shadow:0 1px 2px #0001,0 8px 24px -12px #0002}
 @media (prefers-color-scheme:dark){:root{--bg:#0e1714;--card:#16221d;--ink:#e9f0ec;--mut:#8fa399;--line:#24342d;--forest:#0b1713;--gold:#d2b15d;--okbg:#133a24;--warnbg:#3a2c0b;--badbg:#401a17;--ok:#5ed18d;--warn:#f0b24d;--bad:#ff8a80;--sh:#52c49b;--ml:#a695ff;--dd:#ffa05a;--hi:#6cb6f0;--shadow:0 1px 2px #0006}}
@@ -192,7 +192,7 @@ var BR=[{k:'shelfmade',n:'ShelfMade',c:'var(--sh)',s:['state.json','state-shfull
 var PL=[['youtube','YouTube'],['tiktok','TikTok'],['instagram','Instagram']];
 var KEYJOBS=['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'];
 /* Name and links. Change BRAND_NAME in one place. Fill a channel link to show it. */
-var BRAND_NAME='Content Engine';
+var BRAND_NAME='How It Ticks';
 var LINKS={shelfmade:{youtube:'https://www.youtube.com/@shelfmadedaily',tiktok:'https://www.tiktok.com/@shelfmade.daily',instagram:'https://www.instagram.com/shelfmade.daily/'},mindlore:{youtube:'https://www.youtube.com/@mindloredaily',tiktok:'https://www.tiktok.com/@mindlore.daily',instagram:'https://www.instagram.com/mindlore.daily_/reels/'},doodles:{youtube:'https://www.youtube.com/@AnimationDoodles-h8e',tiktok:'https://www.tiktok.com/@animationdoodleshq',instagram:'https://www.instagram.com/animationdoodleshq/'},howitticks:{youtube:'https://www.youtube.com/@HowItTicks-p2v',tiktok:'https://www.tiktok.com/@howitticks.official',instagram:'https://www.instagram.com/howitticks.co/'}};
 var REPO_URL='https://github.com/zerenaod-ux/shelfmade-dashboard';
 var CE_API='https://api.github.com/repos/zerenaod-ux/content-engine';   // Content Engine lives in its own repo since 2026-11-13
@@ -364,7 +364,7 @@ function decideScene(it,card,what,b1,b2,retry){
   function requestError(r){return r.json().catch(function(){return {}}).then(function(data){
     var message=data.message||'';
     if(r.status===403&&(r.headers.get('x-ratelimit-remaining')==='0'||/rate limit/i.test(message)))throw new Error('GitHub is temporarily limiting requests. Wait a few minutes, then try again. Your choice was not saved.');
-    if(r.status===401||r.status===403||r.status===404)throw new Error('Your saved key cannot change Content Engine reviews. In GitHub, give that key access to the content-engine repository with Issues: Read and write, then retry. Do not share your key.');
+    if(r.status===401||r.status===403||r.status===404)throw new Error('Your saved key cannot change How It Ticks reviews. In GitHub, give that key access to the content-engine repository with Issues: Read and write, then retry. Do not share your key.');
     throw new Error('GitHub could not save your choice ('+r.status+'). Please retry.');
   })}
   var existing=labels(it);
