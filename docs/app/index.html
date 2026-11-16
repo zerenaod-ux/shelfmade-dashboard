@@ -176,6 +176,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
     <a href="https://zerenaod-ux.github.io/shelfmade-dashboard/health/" target="_blank" rel="noopener">Health page<span>Plain health page</span></a>
     <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/issues/213" target="_blank" rel="noopener">Daily summary<span>One plain-words message a day</span></a>
     <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/actions" target="_blank" rel="noopener">Runs on GitHub<span>Every automatic job and its log</span></a>
+    <a href="https://github.com/zerenaod-ux/content-engine/actions/workflows/ce-posting-switch.yml" target="_blank" rel="noopener">How It Ticks posting switch<span>Tap Run workflow, choose on or off: starts or stops posting approved videos</span></a>
     <a href="https://github.com/zerenaod-ux/shelfmade-dashboard/actions/workflows/autopilot.yml" target="_blank" rel="noopener">Autopilot switch<span>Turn the automatic approve/skip on or off</span></a>
     <button class="btnline" id="sheet-close" type="button" style="width:100%;margin-top:16px">Done</button>
   </div>
@@ -412,7 +413,8 @@ function loadScenes(){
 function ceHealth(host){
   var c=el('section','card chan');c.style.setProperty('--c','var(--hi)');
   var h3=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode('How It Ticks'));h3.appendChild(l);c.appendChild(h3);host.appendChild(c);
-  Promise.all([jget(CE_RAW+'data/scenes/videos.json'),jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json'),fetch(CE_API+'/actions/runs?per_page=30').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).catch(function(){return {workflow_runs:[]}})]).then(function(r){
+  Promise.all([jget(CE_RAW+'data/scenes/videos.json'),jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json'),jget(CE_RAW+'publish/live.json'),fetch(CE_API+'/actions/runs?per_page=30').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).catch(function(){return {workflow_runs:[]}})]).then(function(r){
+    var liveOn=!!(r[3]&&r[3].on);r[3]=r[4];
     var vids=r[0]||[],idx=(r[1]||{}).items||[],st=(r[2]||{}).done||{},runs=r[3].workflow_runs||[];
     var saved=idx.filter(function(x){return x.folder==='saved'}).length,posted=Object.keys(st).length;
     var last=vids.length?vids[vids.length-1]:null;
@@ -421,7 +423,7 @@ function ceHealth(host){
     row('Videos built',nf(vids.length)+' total'+(last?' · last: '+(last.title||'').slice(0,40):''),vids.length>0);
     row('Last build run',build?(build.conclusion||build.status)+' · '+(build.created_at||'').replace('T',' ').slice(0,16)+' UTC':'none found',!build||build.conclusion!=='failure');
     row('Approved by you',nf(saved)+' saved · '+nf(posted)+' handed to Buffer',true);
-    row('Publisher',pub?(pub.conclusion||pub.status)+' · posting is OFF until you approve the look':'not run yet (posting OFF)',!pub||pub.conclusion!=='failure');
+    row('Publisher',pub?(pub.conclusion||pub.status)+' · posting is '+(liveOn?'ON':'OFF (Settings › How It Ticks posting switch)'):'not run yet · posting '+(liveOn?'ON':'OFF'),!pub||pub.conclusion!=='failure');
     row('Channels','YouTube, TikTok, Instagram connected in Buffer',true);
   }).catch(function(){c.appendChild(el('p','muted','Could not load How It Ticks status.'))});
 }
