@@ -30,6 +30,11 @@ jobs:
       - name: Open review issues for new videos
         env:
           GH_TOKEN: ${{ github.token }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           CLOUDINARY_JSON: ${{ secrets.CLOUDINARY_JSON }}
           CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
           AUTO_APPROVE_SHORTS: ${{ vars.AUTO_APPROVE_SHORTS }}

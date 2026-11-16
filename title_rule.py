@@ -23,9 +23,23 @@ def ok(title, brand=''):
             and '?' not in t and not re.search(r'#|https?:|@', t) and len(t) <= 70)
 
 
+EMO = [(r'sleep|dream|night|tired', '😴'), (r'brain|mind|think|memory|focus', '🧠'), (r'fear|panic|stress|anxi|nerv', '😬'), (r'joy|play|happy|laugh|fun', '😄'), (r'shock|surpris|freez|sudden|twist', '😲'),
+       (r'love|heart|friend|lonel', '❤️'), (r'money|rich|pay|spend|work|job', '💼'), (r'book|read|wrote|write', '📖'), (r'habit|routine|morning', '🔁'), (r'phone|text|chat|screen', '📱'), (r'eat|food|hungry|pizza', '🍕')]
+def add_emoji(title, brand=''):
+    """NO_WRITER_NEEDED (2026-11-16): a How/Why title that only lacks its emoji gets a fitting one without any AI (the review jobs had no AI keys, so such titles went out bare)."""
+    t = _core(title, brand)
+    if EMOJI.search(t) or not re.match(r'^(How|Why)\b', t): return title
+    e = next((em for rx, em in EMO if re.search(rx, t, re.I)), '🤔')
+    t2 = t.rstrip(' .!') + ' ' + e + (SERIES if brand == 'doodles' else '')
+    return t2 if ok(t2, brand) else title
+
+
 def enforce(title, text, brand):
     """Returns a title that follows the rule (the same title if it already does)."""
     if ok(title, brand): return title
+    t2 = add_emoji(title, brand)
+    if ok(t2, brand):
+        print('title rule: %r -> %r (emoji added)' % (title, t2), flush=True); return t2
     try:
         import llm
         j = llm.json_call('You are a sharp YouTube Shorts title editor. Reply with JSON only.',
