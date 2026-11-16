@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-15",
+ "collected": "2026-11-16",
  "note": "",
  "videos": [
   {
@@ -27,8 +27,8 @@
    "views": 15,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 42,
-   "avgPercent": 44,
+   "avgSeconds": 39,
+   "avgPercent": 40.53,
    "subsGained": 0
   },
   {
@@ -78,10 +78,20 @@
    "privacy": "public",
    "views": 10,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 31,
    "avgPercent": 41.17,
    "subsGained": 0
+  },
+  {
+   "id": "C0CTlw4ue8A",
+   "title": "The 'K' Text Trap | Leo & Mia #11",
+   "published": "2026-11-15T03:01:30Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 1,
+   "comments": 1
   },
   {
    "id": "B1Xmi2FOMmY",
@@ -292,16 +302,6 @@
    "subsGained": 0
   },
   {
-   "id": "C0CTlw4ue8A",
-   "title": "The 'K' Text Trap | Leo & Mia #11",
-   "published": "2026-11-15T03:01:30Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "oJkJkxlRaLE",
    "title": "The Phantom Ping Trap | Leo & Mia #13",
    "published": "2026-11-13T18:04:42Z",
@@ -309,7 +309,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "tmW0ic4_Go4",
@@ -335,6 +338,39 @@
    "comments": 1,
    "avgSeconds": 2,
    "avgPercent": 3.93,
+   "subsGained": 0
+  },
+  {
+   "id": "0Bx46Pe0lMQ",
+   "title": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone",
+   "published": "2026-11-15T18:03:50Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1
+  },
+  {
+   "id": "1cmRYRGsBTY",
+   "title": "The Phone Call Script | Leo & Mia #14",
+   "published": "2026-11-14T03:02:05Z",
+   "duration": "PT35S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1
+  },
+  {
+   "id": "RSv00j81ONc",
+   "title": "The Secret Birthday Catastrophe | Leo & Mia Ep. 4",
+   "published": "2026-11-14T00:00:24Z",
+   "duration": "PT2M49S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 87,
+   "avgPercent": 51.73,
    "subsGained": 0
   },
   {
@@ -384,7 +420,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "1k5nUK42dIE",
@@ -397,26 +433,6 @@
    "comments": 1
   },
   {
-   "id": "1cmRYRGsBTY",
-   "title": "The Phone Call Script | Leo & Mia #14",
-   "published": "2026-11-14T03:02:05Z",
-   "duration": "PT35S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1
-  },
-  {
-   "id": "RSv00j81ONc",
-   "title": "The Secret Birthday Catastrophe | Leo & Mia Ep. 4",
-   "published": "2026-11-14T00:00:24Z",
-   "duration": "PT2M49S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 1
-  },
-  {
    "id": "5bvrVUR8iek",
    "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
    "published": "2026-11-13T03:01:26Z",
@@ -424,7 +440,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "5msto0N_8Cs",
@@ -505,10 +524,10 @@
    "subsGained": 0
   },
   {
-   "id": "0Bx46Pe0lMQ",
-   "title": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone",
-   "published": "2026-11-15T18:03:50Z",
-   "duration": "PT56S",
+   "id": "ucEbj1x_lJw",
+   "title": "The Unearned Rest | Leo & Mia #16",
+   "published": "2026-11-16T03:01:32Z",
+   "duration": "PT30S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-15",
+ "collected": "2026-11-16",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-11-14T18:03:04Z",
    "duration": "PT56S",
    "privacy": "public",
-   "views": 969,
+   "views": 1018,
    "likes": 18,
    "comments": 1
   },
@@ -21,7 +21,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 378,
+   "views": 380,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 100,
@@ -34,7 +34,7 @@
    "published": "2026-10-20T19:44:13Z",
    "duration": "PT48S",
    "privacy": "public",
-   "views": 307,
+   "views": 308,
    "likes": 5,
    "comments": 0,
    "avgSeconds": 31,
@@ -47,9 +47,12 @@
    "published": "2026-11-14T03:01:48Z",
    "duration": "PT1M11S",
    "privacy": "public",
-   "views": 243,
+   "views": 249,
    "likes": 2,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 21,
+   "avgPercent": 30.519999999999996,
+   "subsGained": 0
   },
   {
    "id": "UUoVjHCcU24",
@@ -57,9 +60,9 @@
    "published": "2026-11-15T03:01:32Z",
    "duration": "PT1M3S",
    "privacy": "public",
-   "views": 163,
+   "views": 168,
    "likes": 4,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "mDO-wdlrW9Q",
@@ -67,7 +70,7 @@
    "published": "2026-06-14T19:35:25Z",
    "duration": "PT47S",
    "privacy": "public",
-   "views": 159,
+   "views": 160,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 70,
@@ -80,9 +83,9 @@
    "published": "2026-11-14T23:01:41Z",
    "duration": "PT51S",
    "privacy": "public",
-   "views": 117,
+   "views": 123,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "NOrxJfIaNfE",
@@ -90,7 +93,7 @@
    "published": "2026-06-12T04:32:57Z",
    "duration": "PT40S",
    "privacy": "public",
-   "views": 109,
+   "views": 110,
    "likes": 3,
    "comments": 0
   },
@@ -100,7 +103,7 @@
    "published": "2026-11-10T00:00:03Z",
    "duration": "PT8M23S",
    "privacy": "public",
-   "views": 93,
+   "views": 91,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 135,
@@ -113,7 +116,7 @@
    "published": "2026-10-25T23:04:23Z",
    "duration": "PT48S",
    "privacy": "public",
-   "views": 86,
+   "views": 87,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 16,
@@ -126,9 +129,12 @@
    "published": "2026-11-13T23:02:13Z",
    "duration": "PT1M9S",
    "privacy": "public",
-   "views": 83,
+   "views": 84,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 32,
+   "avgPercent": 47.8,
+   "subsGained": 0
   },
   {
    "id": "leCHsYO2yWM",
@@ -141,19 +147,6 @@
    "comments": 0,
    "avgSeconds": 21,
    "avgPercent": 42.86,
-   "subsGained": 0
-  },
-  {
-   "id": "Nw9hdA-AyGs",
-   "title": "Why Faces Freeze On Sudden News",
-   "published": "2026-11-12T23:02:23Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 78,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 27.26,
    "subsGained": 0
   },
   {
@@ -190,6 +183,19 @@
    "comments": 1,
    "avgSeconds": 22,
    "avgPercent": 37.11,
+   "subsGained": 0
+  },
+  {
+   "id": "Nw9hdA-AyGs",
+   "title": "Why Faces Freeze On Sudden News",
+   "published": "2026-11-12T23:02:23Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 73,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 26.85,
    "subsGained": 0
   },
   {
@@ -286,7 +292,7 @@
    "published": "2026-10-19T16:12:09Z",
    "duration": "PT1M31S",
    "privacy": "public",
-   "views": 51,
+   "views": 52,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 60,
@@ -329,7 +335,20 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 27,
-   "avgPercent": 41.47,
+   "avgPercent": 41.22,
+   "subsGained": 0
+  },
+  {
+   "id": "T85YWZMCbDc",
+   "title": "Your Play Boosts Joy",
+   "published": "2026-11-13T18:03:48Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 46,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 21,
+   "avgPercent": 35.62,
    "subsGained": 0
   },
   {
@@ -344,16 +363,6 @@
    "avgSeconds": 26,
    "avgPercent": 45.8,
    "subsGained": 0
-  },
-  {
-   "id": "T85YWZMCbDc",
-   "title": "Your Play Boosts Joy",
-   "published": "2026-11-13T18:03:48Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 45,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "sdpifdp9fdw",
@@ -429,8 +438,8 @@
    "views": 39,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 59,
-   "avgPercent": 35.93,
+   "avgSeconds": 60,
+   "avgPercent": 36.67,
    "subsGained": 0
   },
   {
@@ -442,8 +451,8 @@
    "views": 36,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 29,
-   "avgPercent": 49.83,
+   "avgSeconds": 28,
+   "avgPercent": 47.88,
    "subsGained": 0
   },
   {
@@ -455,8 +464,8 @@
    "views": 35,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 37.7,
+   "avgSeconds": 24,
+   "avgPercent": 40.1,
    "subsGained": 0
   },
   {
@@ -655,6 +664,19 @@
    "subsGained": 0
   },
   {
+   "id": "jcbv6oWRsSk",
+   "title": "The Psychology Of Revolution",
+   "published": "2026-10-29T18:03:26Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 25,
+   "avgPercent": 49.54,
+   "subsGained": 0
+  },
+  {
    "id": "uDTf6cqlUUI",
    "title": "Are emotions your survival edge?",
    "published": "2026-06-12T22:34:27Z",
@@ -691,19 +713,6 @@
    "comments": 0,
    "avgSeconds": 105,
    "avgPercent": 223.53,
-   "subsGained": 0
-  },
-  {
-   "id": "jcbv6oWRsSk",
-   "title": "The Psychology Of Revolution",
-   "published": "2026-10-29T18:03:26Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 24,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 25,
-   "avgPercent": 49.54,
    "subsGained": 0
   },
   {
@@ -805,6 +814,19 @@
    "subsGained": 0
   },
   {
+   "id": "BzovLB6Cwok",
+   "title": "Your desk job steals ancient movement",
+   "published": "2026-11-12T18:04:41Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 22,
+   "avgPercent": 37.58,
+   "subsGained": 0
+  },
+  {
    "id": "BeQ1CnMVAns",
    "title": "Are strong sensations always painful?",
    "published": "2026-11-08T18:03:11Z",
@@ -883,19 +905,6 @@
    "subsGained": 0
   },
   {
-   "id": "BzovLB6Cwok",
-   "title": "Your desk job steals ancient movement",
-   "published": "2026-11-12T18:04:41Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 20,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 37.58,
-   "subsGained": 0
-  },
-  {
    "id": "7QFo4yYN-tM",
    "title": "Do dreams reveal the future?",
    "published": "2026-11-08T03:01:50Z",
@@ -935,6 +944,19 @@
    "subsGained": 1
   },
   {
+   "id": "ivGIglijofs",
+   "title": "Can a collective mind spark revolutions?",
+   "published": "2026-11-07T18:04:02Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 8,
+   "avgPercent": 12.94,
+   "subsGained": 0
+  },
+  {
    "id": "UbddSXgqSCk",
    "title": "Does your subconscious drive choices?",
    "published": "2026-06-12T04:36:00Z",
@@ -945,19 +967,6 @@
    "comments": 0,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "ivGIglijofs",
-   "title": "Can a collective mind spark revolutions?",
-   "published": "2026-11-07T18:04:02Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 18,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 12.94,
    "subsGained": 0
   },
   {
@@ -1140,6 +1149,26 @@
    "subsGained": 0
   },
   {
+   "id": "2GlYD2z2jJY",
+   "title": "Your Face Freezes On Sudden News",
+   "published": "2026-11-15T23:02:24Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Au2YzEYnkr0",
+   "title": "Your Eyes Blink During Story Turns",
+   "published": "2026-11-15T18:03:29Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 1,
+   "comments": 1
+  },
+  {
    "id": "Z5ifzR5nOV0",
    "title": "The Instinct Of Workmanship",
    "published": "2026-11-02T23:01:53Z",
@@ -1163,19 +1192,6 @@
    "comments": 0,
    "avgSeconds": 5,
    "avgPercent": 5.87,
-   "subsGained": 0
-  },
-  {
-   "id": "VsvMwBHBL_Q",
-   "title": "Read this line from Crowd twice.",
-   "published": "2026-11-03T18:03:06Z",
-   "duration": "PT1M6S",
-   "privacy": "public",
-   "views": 12,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 21.38,
    "subsGained": 0
   },
   {
@@ -1332,6 +1348,16 @@
    "subsGained": 0
   },
   {
+   "id": "KhfyoHiwyYc",
+   "title": "Your Sudden Laughter Reveals Ancient Survival",
+   "published": "2026-11-16T03:01:20Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "EMQX3FI6-Lk",
    "title": "Inquiries into Human Faculty and Its Development \u00b7 Guided reading",
    "published": "2026-10-30T23:00:10Z",
@@ -1366,8 +1392,8 @@
    "views": 6,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 126,
-   "avgPercent": 37.29,
+   "avgSeconds": 105,
+   "avgPercent": 31.11,
    "subsGained": 0
   },
   {
@@ -1501,6 +1527,19 @@
    "subsGained": 0
   },
   {
+   "id": "9lec7AhXEP8",
+   "title": "Why dreams feel meaningful and strange at the same time | Freud",
+   "published": "2026-11-05T00:00:17Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 3,
+   "avgPercent": 0.8699999999999999,
+   "subsGained": 0
+  },
+  {
    "id": "cOkUIin-TGA",
    "title": "Psychology: Briefer Course \u00b7 Guided reading",
    "published": "2026-10-29T23:00:29Z",
@@ -1510,7 +1549,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 8,
-   "avgPercent": 2.62,
+   "avgPercent": 2.52,
    "subsGained": 0
   },
   {
@@ -1603,7 +1642,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 3,
    "avgPercent": 0.66,
    "subsGained": 0
@@ -1619,6 +1658,19 @@
    "comments": 0,
    "avgSeconds": 18,
    "avgPercent": 4.13,
+   "subsGained": 0
+  },
+  {
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-06T00:00:34Z",
+   "duration": "PT7M47S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 3,
+   "avgPercent": 0.66,
    "subsGained": 0
   },
   {
@@ -1681,7 +1733,7 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
@@ -1732,16 +1784,6 @@
    "duration": "PT2M56S",
    "privacy": "public",
    "views": 1,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "Au2YzEYnkr0",
-   "title": "Your Eyes Blink During Story Turns",
-   "published": "2026-11-15T18:03:29Z",
-   "duration": "PT56S",
-   "privacy": "public",
-   "views": 0,
    "likes": 0,
    "comments": 0
   },
@@ -1809,16 +1851,6 @@
    "id": "4qWHmBcx-I4",
    "title": "How many explanations do you try before you choose one? | John Dewey",
    "published": "2026-11-03T20:41:14Z",
-   "duration": "PT7M22S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "RwXYKd7gBCE",
-   "title": "Why we believe what impressive people say | Gustave Le Bon",
-   "published": "2026-11-03T20:41:05Z",
    "duration": "PT7M22S",
    "privacy": "private",
    "views": 0,
