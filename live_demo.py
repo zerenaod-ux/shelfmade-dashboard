@@ -334,8 +334,31 @@ def numval(w):
     w = w.lower().strip('.,;:!?'); m = re.fullmatch(r'\$?(\d+(?:\.\d+)?)(%?)', w)
     if m: return float(m.group(1)), ('%' if m.group(2) else '')
     return (NUMW[w], '') if w in NUMW else None
+# LOOK_MEMORY (owner 2026-11-15: videos opened and looked alike): data/look-log-<brand>.json remembers the opener + first colour of the last videos.
+# A new video never reuses an opener from the last 3 videos, a first colour from the last 2, or the same opener+colour pair from the last 5.
+def _look_file(): return Path(__file__).resolve().parent / 'data' / ('look-log-%s.json' % BRANDKEY)
+def _look_log():
+    try: return json.loads(_look_file().read_text())[-30:]
+    except Exception: return []
 def pick_open(title):
-    return OPENERS[sum(ord(ch) for ch in (title or 'x')) % len(OPENERS)]
+    i = sum(ord(ch) for ch in (title or 'x')) % len(OPENERS); log = [x for x in _look_log() if x.get('title') != title]
+    recent = [x.get('opener') for x in log[-3:]]
+    for k in range(len(OPENERS)):
+        if OPENERS[(i + k) % len(OPENERS)] not in recent: return OPENERS[(i + k) % len(OPENERS)]
+    return OPENERS[i]
+def _fresh_pal(p, opener, title):
+    log = [x for x in _look_log() if x.get('title') != title]
+    recent = [x.get('pal') for x in log[-2:]]; pairs = [(x.get('opener'), x.get('pal')) for x in log[-5:]]
+    for k in range(len(PALS)):
+        q = (p + k) % len(PALS)
+        if q not in recent and (opener, q) not in pairs: return q
+    return p
+def _look_save(title, opener, pal):
+    try:
+        log = [x for x in _look_log() if x.get('title') != title] + [{'title': title, 'opener': opener, 'pal': pal}]
+        _look_file().parent.mkdir(parents=True, exist_ok=True); _look_file().write_text(json.dumps(log[-30:], indent=1, ensure_ascii=False))
+        print('look memory: opener %s, colour %s (differs from recent videos)' % (opener, pal), flush=True)
+    except Exception as e: print('look memory not saved:', str(e)[:80], flush=True)
 def rule_director(words, title='', opening=True, pace=9):
     n = len(words); beats = []; i = 0; k = 0; rnd = random.Random(7 + len(title)); op = pick_open(title)
     while i < n:
@@ -422,6 +445,7 @@ def topic_pal(title, text):
 TRANS = ['wipe', 'wipe_v', 'iris', 'flash', 'slide', 'wipe']; CAMS = ['punch', 'drift', 'tilt', 'punch', 'push']
 def assign_style(beats, title, text):
     prev = topic_pal(title, text) if beats else 0
+    if beats and title: prev = _fresh_pal(prev, beats[0].get('kind'), title); _look_save(title, beats[0].get('kind'), prev)
     for n_, b in enumerate(beats):
         rr_ = random.Random(b['at'] * 7 + len(title))
         if n_ == 0: p = prev
