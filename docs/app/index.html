@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-title" content="Engine">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<title>How It Ticks</title>
+<title>Studio</title>
 <style>
 :root{--bg:#f3f1ea;--card:#fff;--ink:#17261f;--mut:#677970;--line:#e3e6dd;--forest:#183c32;--gold:#b8963f;--ok:#1f8a4c;--okbg:#e4f4ea;--warn:#a5670a;--warnbg:#fff0d0;--bad:#b3261e;--badbg:#fde7e4;--sh:#2f7d5f;--ml:#6a55c9;--dd:#d9772b;--hi:#2a7fb8;--shadow:0 1px 2px #0001,0 8px 24px -12px #0002}
 @media (prefers-color-scheme:dark){:root{--bg:#0e1714;--card:#16221d;--ink:#e9f0ec;--mut:#8fa399;--line:#24342d;--forest:#0b1713;--gold:#d2b15d;--okbg:#133a24;--warnbg:#3a2c0b;--badbg:#401a17;--ok:#5ed18d;--warn:#f0b24d;--bad:#ff8a80;--sh:#52c49b;--ml:#a695ff;--dd:#ffa05a;--hi:#6cb6f0;--shadow:0 1px 2px #0006}}
@@ -28,7 +28,7 @@ header{position:sticky;top:0;z-index:6;background:var(--forest);color:#fff;paddi
 .ttl{max-width:680px;margin:14px auto 0;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 h1{margin:0;font-size:28px;letter-spacing:-.6px;line-height:1.1}
 .sub{margin:0;color:#c9ddd3;font-size:13px;font-weight:500;white-space:nowrap}
-main{max-width:680px;margin:0 auto;padding:14px 14px calc(104px + env(safe-area-inset-bottom))}
+main{max-width:1040px;margin:0 auto;padding:14px 14px calc(104px + env(safe-area-inset-bottom))}
 section.tab{display:none}section.tab.on{display:block}
 .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;margin:12px 0;box-shadow:var(--shadow)}
 .lab{font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--mut);margin:0 0 8px}
@@ -113,12 +113,15 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
 .pub-entry a{display:inline-block;margin:6px 12px 0 0;font-size:12px;color:var(--hi);font-weight:650}
 .pub-notice{padding:10px 12px;border-radius:12px;background:var(--bg);font-size:13px;line-height:1.5;margin:12px 0}
 .pub-update{max-width:680px;margin:8px auto;padding:10px 14px;border-radius:12px;background:var(--card);color:var(--ink);font-size:13px;display:none}.pub-update button{margin-left:8px;cursor:pointer}
+
+#h-chans{display:grid;grid-template-columns:minmax(0,1fr);gap:0 14px}.home-ops{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.home-ops button{min-height:44px;margin:0}.home-queue{font-size:12px;color:var(--mut);margin:9px 0}.bcard .plat>div{min-width:0}.bcard .plat b{font-size:15px}.job span:first-child,.vid span:first-child{min-width:0;overflow-wrap:anywhere}.job{flex-wrap:wrap}.home-head{font-size:12px;color:var(--mut);margin:8px 0}
+@media(min-width:900px){#h-chans{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
 <body>
 <header>
   <div class="top">
-    <div class="brand" id="brand">How <i>It Ticks</i></div>
+    <div class="brand" id="brand">Studio</div>
     <div class="acts">
       <button class="ibtn" id="rf" type="button" aria-label="Refresh"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg></button>
       <button class="ibtn" id="setbtn" type="button" aria-label="Settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
@@ -135,8 +138,8 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
   <section class="tab on" id="t-home">
     <div class="tiles">
       <div class="tile"><b id="k-wait">–</b><span>Waiting for you</span></div>
-      <div class="tile"><b id="k-views">–</b><span>Views (all 3)</span></div>
-      <div class="tile"><b id="k-health">–</b><span>Health</span></div>
+      <div class="tile"><b id="k-views">–</b><span>Reported views</span></div>
+      <div class="tile"><b id="k-health">–</b><span>Status</span></div>
     </div>
     <button class="btnline pri" data-go="health" type="button">Publishing status · YouTube, TikTok, Instagram ›</button>
     <div id="h-ap"></div>
@@ -198,7 +201,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
   </div>
 </div>
 
-<script src="publishing.js?v=20261117"></script>
+<script src="publishing.js?v=20261117-home"></script>
 <script>
 (function(){
 'use strict';
@@ -210,7 +213,7 @@ var BR=[{k:'shelfmade',n:'ShelfMade',c:'var(--sh)',s:['state.json','state-shfull
 var PL=[['youtube','YouTube'],['tiktok','TikTok'],['instagram','Instagram']];
 var KEYJOBS=['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'];
 /* Name and links. Change BRAND_NAME in one place. Fill a channel link to show it. */
-var BRAND_NAME='How It Ticks';
+var BRAND_NAME='Studio';
 var LINKS={shelfmade:{youtube:'https://www.youtube.com/@shelfmadedaily',tiktok:'https://www.tiktok.com/@shelfmade.daily',instagram:'https://www.instagram.com/shelfmade.daily/'},mindlore:{youtube:'https://www.youtube.com/@mindloredaily',tiktok:'https://www.tiktok.com/@mindlore.daily',instagram:'https://www.instagram.com/mindlore.daily_/reels/'},doodles:{youtube:'https://www.youtube.com/@AnimationDoodles-h8e',tiktok:'https://www.tiktok.com/@animationdoodleshq',instagram:'https://www.instagram.com/animationdoodleshq/'},howitticks:{youtube:'https://www.youtube.com/@HowItTicks-p2v',tiktok:'https://www.tiktok.com/@howitticks.official',instagram:'https://www.instagram.com/howitticks.co/'}};
 var REPO_URL='https://github.com/zerenaod-ux/shelfmade-dashboard';
 var CE_API='https://api.github.com/repos/zerenaod-ux/content-engine';   // Content Engine lives in its own repo since 2026-11-13
@@ -277,13 +280,15 @@ function apBanner(host){
   jget(RAW+'publish/autopilot.json').then(function(c){
     c=c||{on:false};
     var b=el('div','banner');b.style.setProperty('--c',c.on?'#2a9d4b':'#888');
-    b.appendChild(el('b','',c.on?'Autopilot ON: the system approves and skips by itself':'Autopilot OFF: you approve and skip'));
+    b.appendChild(el('b','',c.on?'ShelfMade, MindLore & Doodles: automatic review ON':'ShelfMade, MindLore & Doodles: manual review'));
+    b.appendChild(el('p','muted','How It Ticks has a separate review setting. See its Status card.'));
     b.appendChild(el('span','muted',c.on?('Last pass '+(c.last_run||'-').replace('T',' ').slice(0,16)+' UTC'):'Turn it on before you go away (Settings › Autopilot switch).'));
     host.appendChild(b)});
 }
 
 /* ---------- Home ---------- */
 function brandCard(b,hist,an){
+  if(b.ce)return ceHomeCard(b);
   var days=Object.keys(hist).sort(),now=hist[days[days.length-1]]||{},old=hist[days[days.length-2]]||{};
   var c=el('section','card chan bcard');c.style.setProperty('--c',b.c);c.onclick=function(){setTab('channels')};
   var tot=0,have=false,pos=0,rows=el('div','plat'),subs=null,subsD=null;
@@ -295,28 +300,69 @@ function brandCard(b,hist,an){
   var h=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode(b.n));h.appendChild(l);c.appendChild(h);
   var big=el('div','row');big.appendChild(el('span','big',have?nf(tot):'n/a'));
   var pl=el('span','pill',days.length>1&&have?(pos>0?'+'+nf(pos)+' today':'no change'):'');big.appendChild(pl);c.appendChild(big);
-  c.appendChild(el('p','muted','total views on all 3 platforms'+(subs!=null?' · '+nf(subs)+' YouTube subscribers'+(subsD!=null&&subsD>=0?' (+'+subsD+')':''):'')));
+  c.appendChild(el('p','muted','views reported by connected sources'+(subs!=null?' · '+nf(subs)+' YouTube subscribers'+(subsD!=null&&subsD>=0?' (+'+subsD+')':''):'')));
   c.appendChild(rows);
-  if(b.ce)c.appendChild(el('p','muted','Status: accounts created, NOT posting yet. Videos are still being tuned (motion, sharpness). Posting stays off until you approve the look.'));
+  addHomeActions(c,b);
+  loadNextBooking(c,b);
   var vids=((an[b.k]||{}).videos||[]).filter(function(v){return v.privacy==='public'&&v.published&&(Date.now()-Date.parse(v.published))<7*864e5});
   if(vids.length){vids.sort(function(x,y){return (y.views||0)-(x.views||0)});var v=vids[0];c.appendChild(el('p','muted','Best this week: “'+(v.title||'').slice(0,60)+'” ('+nf(v.views)+' views)'))}
   return c}
 
+var reviewCoreRows=null,reviewCeRows=null;
+function addHomeActions(card,b){
+  var line=el('p','home-queue','Checking review queue…');line.setAttribute('data-review-brand',b.k);card.appendChild(line);
+  var actions=el('div','home-ops');[['review','Review videos'],['health','Publishing status']].forEach(function(pair){var button=el('button','btnline',pair[1]);button.type='button';button.onclick=function(e){e.stopPropagation();setTab(pair[0])};actions.appendChild(button)});card.appendChild(actions);
+}
+function loadNextBooking(card,b){
+  Promise.all(b.s.map(function(file){return jget(RAW+'publish/'+file)})).then(function(states){
+    if(!states.some(Boolean)){card.appendChild(el('p','home-head','Booking data unavailable. Open Status to check.'));return;}
+    var future=[];states.forEach(function(state){Object.keys((state&&state.done)||{}).forEach(function(key){var item=state.done[key];if(item&&item.due&&Date.parse(item.due)>Date.now()&&!/^SKIPPED/.test(item.remote||''))future.push(item.due)})});future.sort();
+    card.appendChild(el('p','home-head',future.length?'Next booked post: '+ceDate(future[0])+' Chicago':'No future booking is recorded.'));
+  });
+}
+function ceHomeCard(b){
+  var card=el('section','card chan');card.style.setProperty('--c',b.c);card.appendChild(el('h3','',b.n));var body=el('div');body.appendChild(el('div','skel'));card.appendChild(body);addHomeActions(card,b);
+  Promise.all([jget(CE_RAW+'data/scenes/publishing-status.json'),jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json')]).then(function(data){
+    body.textContent='';var report=data[0],valid=!!(report&&report.complete);
+    if(!valid){body.appendChild(el('p','muted','Publishing verification is unavailable. Open Status for details.'));return;}
+    var total=0;PL.forEach(function(platform){var statuses=(report.platforms[platform[0]]||{}).statuses||{};total+=Number(statuses.sent||0)});
+    var headline=el('div','row');headline.appendChild(el('span','big',nf(total)));headline.appendChild(el('span','pill','confirmed published posts'));body.appendChild(headline);
+    var grid=el('div','plat');PL.forEach(function(platform){
+      var key=platform[0],statuses=(report.platforms[key]||{}).statuses||{},sent=Number(statuses.sent||0),scheduled=Number(statuses.scheduled||0)+Number(statuses.sending||0),metrics=((report.metrics||{}).platforms||{})[key]||{};
+      var cell=el('div');cell.appendChild(el('small','',platform[1]));cell.appendChild(el('b','',sent?sent+' published':scheduled?scheduled+' scheduled':'No posts yet'));
+      cell.appendChild(el('em','',metrics.views!=null?'Last report: '+nf(metrics.views)+' views':sent?'Views not supplied yet':'Not published yet'));
+      if(metrics.source_updated_at)cell.appendChild(el('em','',ceDate(metrics.source_updated_at)+' Chicago'));
+      grid.appendChild(cell);
+    });body.appendChild(grid);
+    body.appendChild(el('p','muted','Publishing checked '+ceDate(report.checked_at)+' Chicago.'));
+    body.appendChild(el('p','home-head','Views cover recent published posts. Buffer may update them about a day after the channel. Publishing is checked every 15 minutes; refresh loads the latest saved result.'));
+    if(StudioPublishing.freshness(report,Date.now())==='stale')body.appendChild(el('p','home-head','Publishing snapshot is older than 30 minutes.'));
+  });return card;
+}
+function applyReviewCounts(){
+  var summary=StudioPublishing.reviewSummary(reviewCoreRows,reviewCeRows);
+  $('k-wait').textContent=summary.total==null?'n/a':nf(summary.total);$('n-wait').textContent=summary.total==null?'?':summary.total;$('n-wait').hidden=summary.total===0;
+  BR.forEach(function(b){var n=summary[b.k];document.querySelectorAll('[data-review-brand='+b.k+']').forEach(function(target){target.textContent=n==null?'Review count unavailable':n===0?'No decision waiting for you':n+' waiting for your review'})});
+}
+function reviewRows(base,label){
+  function page(n,rows){return fetch(base+'/issues?state=open&labels='+encodeURIComponent(label)+'&per_page=100&page='+n,{headers:hdr()}).then(function(r){if(!r.ok)throw new Error('Review count unavailable');return r.json()}).then(function(batch){if(batch.length<100)return rows.concat(batch);if(n>=5)throw new Error('Review queue too large to count completely');return page(n+1,rows.concat(batch))})}
+  return page(1,[]).catch(function(){return null});
+}
+function updateReviewCounts(){return Promise.all([reviewRows(API,'review'),reviewRows(CE_API,'scene-review')]).then(function(data){reviewCoreRows=data[0];reviewCeRows=data[1];applyReviewCounts()})}
+
 function loadHome(){
   var box=$('h-chans');box.textContent='';box.appendChild(el('div','skel'));
   var an={};
-  Promise.all(BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json').then(function(d){an[b.k]=d||{}})}))
+  Promise.all(BR.filter(function(b){return !b.ce}).map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json').then(function(d){an[b.k]=d||{}})}))
    .then(function(){return jget(RAW+'data/daily/history.json')}).then(function(h){
      h=h||{};var days=Object.keys(h).sort(),now=h[days[days.length-1]]||{};
      var views=0;Object.keys(now).forEach(function(k){if(now[k]&&now[k].views)views+=now[k].views});
      $('k-views').textContent=days.length?nf(views):'n/a';
      $('sub').textContent=days.length?('Numbers from '+days[days.length-1]):'No numbers yet';
-     box.textContent='';BR.forEach(function(b){box.appendChild(brandCard(b,h,an))});cache.home=1})
+     box.textContent='';BR.forEach(function(b){box.appendChild(brandCard(b,h,an))});applyReviewCounts();cache.home=1})
    .catch(function(){box.textContent='';box.appendChild(el('p','msg','Could not load the numbers. Pull down or tap Refresh.'))});
   apBanner($('h-ap'));
-  fetch(API+'/issues?state=open&labels=review&per_page=30',{headers:hdr()}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
-   .then(function(a){var n=a.filter(function(x){return !x.pull_request}).length;$('k-wait').textContent=n;var nb=$('n-wait');nb.textContent=n;nb.hidden=!n})
-   .catch(function(){$('k-wait').textContent='?'});
+  updateReviewCounts();
   jget(RAW+'publish/selfcheck.json').then(function(c){$('k-health').textContent=c?(c.level==='ok'?'OK':'Check'):'?'});
 }
 
@@ -356,7 +402,7 @@ function loadReview(){
     if(r.status===403)throw new Error('GitHub is limiting this phone for a few minutes. Add your key in Settings or wait.');
     if(!r.ok)throw new Error('GitHub said '+r.status);return r.json()})
    .then(function(a){a=a.filter(function(x){return !x.pull_request});
-     $('n-wait').textContent=a.length;$('n-wait').hidden=!a.length;$('k-wait').textContent=a.length;
+     reviewCoreRows=a;applyReviewCounts();
      box.textContent='';
      if(!a.length){box.appendChild(el('div','card','Nothing waiting. All reviewed ✓'));cache.review=1;return}
      var head=el('div','row');head.appendChild(el('p','lab',a.length+' waiting'));head.appendChild(el('span','muted','Watch, then approve or skip'));box.appendChild(head);
@@ -416,7 +462,7 @@ function loadScenes(){
   var box=el('div');host.appendChild(box);
   if(sceneView==='review'){
     fetch(CE_API+'/issues?state=open&labels=scene-review&per_page=100',{headers:hdr()}).then(function(r){if(!r.ok)throw new Error('Cannot load How It Ticks review cards ('+r.status+').');return r.json()}).then(function(rows){
-      rows=rows.filter(function(x){return !x.pull_request});
+      rows=rows.filter(function(x){return !x.pull_request});reviewCeRows=rows;applyReviewCounts();
       if(!rows.length)box.appendChild(el('div','card','No How It Ticks videos waiting for review.'));
       rows.forEach(function(it){var card=el('div','card');card.appendChild(sceneCard(it));box.appendChild(card)});
     }).catch(function(e){box.appendChild(el('p','msg',e.message))});return;
@@ -476,9 +522,9 @@ function brandHealth(b,S,A,AN,now){
   if(!until||until<now+36e5*6){if(lvl!=='bad')lvl='warn';notes.push('Nothing booked more than a few hours ahead.')}
   var c=el('div','card'),t=el('div','row');t.appendChild(el('b','',b.n));
   t.appendChild(el('span','tag '+(lvl==='ok'?'ok':lvl==='warn'?'warn':'bad'),lvl==='ok'?'All good':lvl==='warn'?'Needs a look':'Problem'));c.appendChild(t);
-  var g=el('div','plat');[['Published',pub],['Scheduled',sch],['Waiting',w]].forEach(function(p){var d=el('div');d.appendChild(el('b','',nf(p[1])));d.appendChild(el('small','',p[0]));g.appendChild(d)});c.appendChild(g);
+  var g=el('div','plat');[['Past slots',pub],['Scheduled',sch],['Waiting',w]].forEach(function(p){var d=el('div');d.appendChild(el('b','',nf(p[1])));d.appendChild(el('small','',p[0]));g.appendChild(d)});c.appendChild(g);
   if(until&&until>now)c.appendChild(el('p','muted','Booked until '+new Date(until).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})));
-  if(last)c.appendChild(el('p','muted','Last post '+ago(now-last)+' ago.'));
+  if(last)c.appendChild(el('p','muted','Last scheduled time '+ago(now-last)+' ago. Past slots are not confirmation of publication.'));
   notes.forEach(function(x){c.appendChild(el('p','muted',x))});
   return c}
 
@@ -518,13 +564,15 @@ function loadHealth(){
 
 /* ---------- Channels ---------- */
 function loadChannels(){
+  updateReviewCounts();
   var list=$('c-list');list.textContent='';list.appendChild(el('div','skel'));
   var an={};
-  Promise.all(BR.map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json').then(function(d){an[b.k]=d||{}})}))
+  Promise.all(BR.filter(function(b){return !b.ce}).map(function(b){return jget(RAW+'data/analytics/'+b.k+'.json').then(function(d){an[b.k]=d||{}})}))
    .then(function(){return jget(RAW+'data/daily/history.json')}).then(function(h){
      h=h||{};var days=Object.keys(h).sort(),now=h[days[days.length-1]]||{};list.textContent='';
      BR.forEach(function(b){
-       var a=an[b.k]||{},vids=(a.videos||[]).filter(function(v){return (v.privacy||'public')==='public'}),tot=vids.reduce(function(s,v){return s+(v.views||0)},0);
+       if(b.ce){list.appendChild(ceHomeCard(b));return;}
+       var a=an[b.k]||{},vids=(a.videos||[]).filter(function(v){return (v.privacy||'public')==='public'}),tot=Array.isArray(a.videos)?vids.reduce(function(s,v){return s+(v.views||0)},0):null;
        var c=el('section','card chan');c.style.setProperty('--c',b.c);
        var h3=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode(b.n));h3.appendChild(l);c.appendChild(h3);
        c.appendChild(el('p','muted',nf(a.subscribers)+' subscribers · '+nf(vids.length)+' public videos · '+nf(tot)+' views (YouTube)'));
@@ -537,7 +585,7 @@ function loadChannels(){
        if(b.ce)c.appendChild(el('p','muted','Not posting yet: accounts created, videos still being tuned.'));
        c.appendChild(el('p','lab','Today on each platform'));c.appendChild(rows);
        list.appendChild(c)});
-     cache.channels=1}).catch(function(){list.textContent='';list.appendChild(el('p','msg','Could not load channel numbers. Tap Refresh.'))});
+     applyReviewCounts();cache.channels=1}).catch(function(){list.textContent='';list.appendChild(el('p','msg','Could not load channel numbers. Tap Refresh.'))});
   jget(RAW+'data/growth/scoreboard.json').then(function(c){
     var box=$('c-growth');box.textContent='';
     if(!c||!c.brands){box.appendChild(el('p','lab','Growth scoreboard'));box.appendChild(el('p','muted','Not ready yet (needs a few days of numbers).'));return}

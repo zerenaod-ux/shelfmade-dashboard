@@ -28,6 +28,14 @@ function counts(rows){
   rows.forEach(function(x){if(x.status==='ready')c.ready++;else if(x.status==='scheduled'||x.status==='sending'){if(c.scheduled!==null)c.scheduled++;}else if(x.status==='published'){if(c.published!==null)c.published++;}else if(x.status==='held')c.held++;else c.attention++;});return c;
 }
 function freshness(report,now){var checked=Date.parse(report&&report.checked_at||'');return !Number.isFinite(checked)?'unavailable':now-checked>30*60*1000?'stale':'fresh';}
-var api={platformRows:platformRows,counts:counts,freshness:freshness};
+function reviewSummary(core,ce){
+  var counts={shelfmade:Array.isArray(core)?0:null,mindlore:Array.isArray(core)?0:null,doodles:Array.isArray(core)?0:null,howitticks:Array.isArray(ce)?0:null,unassigned:0,total:null};
+  function pending(item,isCe){if(item.pull_request)return false;var labels=(item.labels||[]).map(function(x){return typeof x==='string'?x:x.name});var yes=labels.indexOf(isCe?'ce-approve':'approve')>=0,no=labels.indexOf(isCe?'ce-skip':'skip')>=0;return yes===no;}
+  (core||[]).filter(function(x){return pending(x,false)}).forEach(function(item){var title=String(item.title||'').replace(/^Review\s*/i,'');var brand=/^DOODLES/i.test(title)?'doodles':/^(ML|MINDLORE)/i.test(title)?'mindlore':/^(SHORT|FULL|SM|SHELFMADE)/i.test(title)?'shelfmade':'unassigned';counts[brand]++;});
+  if(Array.isArray(ce))counts.howitticks=ce.filter(function(x){return pending(x,true)}).length;
+  if(Array.isArray(core)&&Array.isArray(ce))counts.total=counts.shelfmade+counts.mindlore+counts.doodles+counts.howitticks+counts.unassigned;
+  return counts;
+}
+var api={platformRows:platformRows,counts:counts,freshness:freshness,reviewSummary:reviewSummary};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.StudioPublishing=api;
 })(typeof window!=='undefined'?window:this);
