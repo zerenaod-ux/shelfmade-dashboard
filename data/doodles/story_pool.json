@@ -3409,5 +3409,105 @@
   "style": "v2",
   "format": "MINI MYSTERY",
   "improv": true
+ },
+ {
+  "id": "laugh-heist-drama",
+  "title": "Why Mia stole my signature giggle \ud83c\udfad",
+  "concept": "SOUL THRIFTING DILEMMA",
+  "mood": "dramatic",
+  "insight": "My personality is now on sale for half off.",
+  "caption": "Leo thinks his laugh is a commodity. Mia thinks it's a bargain bin find.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo leans over the podcast desk, pointing at Mia who is holding a cup of tea.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "snap",
+      "text": "Mia, did you literally steal my laugh?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "No, I just bought it at a thrift store."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stands up, pacing the hallway in his yellow hoodie behind the desk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "normal",
+      "text": "What thrift store has a rack of soul?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia calmly sips her tea while Leo stares at her, disbelief on his face.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Plaid, on the corner. It's clearance season."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pulls his hoodie strings tight, staring intensely at the camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "normal",
+      "text": "Does that place have a soul clearance section?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia shrugs and checks her nails, completely unbothered by Leo's intensity.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Only on weekends, but you're overthinking it."
+     },
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "pause",
+      "text": "So, wait, is that why my laughter sounds..."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares at Mia, waiting for the final truth as he taps the desk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Next time: can I trade your personality for store credit?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "ADVICE FAIL",
+  "improv": true
  }
 ]
