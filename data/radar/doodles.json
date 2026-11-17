@@ -2,128 +2,128 @@
  "why": [
   {
    "title": "Bahaya Tidur Bangun Maghrib? Sleep Inertia! #relatable",
-   "why": "It pairs a universally relatable physical struggle (waking up groggy) with a specific, unintuitive scientific term (Sleep Inertia), creating an 'aha' moment that validates the viewer's experience."
-  },
-  {
-   "title": "Same promise. Two parents. \ud83d\udc80 vs \ud83e\udd2d Why you struggle to trust anyone's word \ud83d\udc95",
-   "why": "It visualizes abstract attachment theory through a concrete, high-stakes childhood scenario (broken promises), making complex psychological concepts about trust instantly emotional and understandable."
-  },
-  {
-   "title": "if your parents compare you with other people\ud83e\udd6b #shorts #psychology",
-   "why": "It taps into a deep-seated, shared generational trauma (sibling comparison) using a simple, reactive visual format that allows viewers to project their own painful memories onto the animation."
+   "why": "A high breakout shows sleep inertia is a relatable, visceral feeling; the hook of a sudden wake\u2011up plus a quick explainer taps anxiety and curiosity."
   },
   {
    "title": "Why the Medium Popcorn Exists #explained #popcorn #psychology",
-   "why": "It explains a mundane, high-frequency consumer behavior (buying the middle option) through the lens of psychological biases, turning a daily habit into a fascinating insight about decision-making."
+   "why": "Uses a quirky everyday object to reveal a hidden psychological principle, hooking viewers with surprise and humor while delivering a concise explanation."
+  },
+  {
+   "title": "If a snitch reminds the teacher about homework\ud83e\udd2b #psychology #shorts",
+   "why": "Leverages a familiar school scenario to illustrate social conformity, creating immediate emotional resonance and fast pacing that suits short\u2011form."
+  },
+  {
+   "title": "Same closed door. Two parents. \ud83d\ude21 vs \ud83e\udd1d Why you panic even when you did nothing wrong \ud83d\udc9b",
+   "why": "Combines high panic emotion with a clear question, delivering a rapid narrative that reveals anxiety triggers, keeping viewers glued."
   }
  ],
  "hook_patterns": [
-  "Pairing a mundane daily annoyance with a specific, obscure psychological term to make the viewer feel 'seen' and educated simultaneously.",
-  "Visualizing abstract internal emotional states (trust, rejection, anxiety) through simple, contrasting actions between two characters.",
-  "Using a 'you vs. your brain' or 'you vs. society' dynamic to externalize internal conflict in a humorous, low-stakes skit."
+  "Start with a relatable, absurd situation that flips expectations",
+  "Introduce a visual metaphor that instantly illustrates the concept",
+  "Pose a direct, curiosity\u2011driving question within the first 3 seconds"
  ],
- "todays_angle": "Externalize the internal monologue of social anxiety or decision fatigue by having Leo and Mia physically act out their conflicting brain voices in a chaotic, fast-paced skit.",
+ "todays_angle": "Show Leo and Mia debating why we procrastinate, turning the classic \u201cdeadline panic\u201d into a bite\u2011size psychology lesson.",
  "ideas": [
-  "Leo tries to order coffee while Mia physically pulls him back and forth between 'healthy option' and 'sugar rush' options, representing the Zeigarnik effect of unfinished decisions.",
-  "Mia forgets a word in the middle of a sentence, and Leo becomes a literal 'buffering' icon, illustrating the cognitive load of language processing under stress.",
-  "Leo sees someone he knows across the street; Mia physically drags him away from the greeting (avoidance) while a ghostly version of Leo waves hello (social expectation), demonstrating the fight-or-flight response in social settings."
+  "Leo promises to finish a project but keeps getting distracted; Mia breaks down the \u201ctemporal discounting\u201d brain hack in a fast\u2011paced chase scene.",
+  "Mia sets an alarm for a morning run, but Leo\u2019s snooze button triggers a comedic sleep\u2011in; the duo explain sleep inertia and how the brain recovers from grogginess.",
+  "The friends get stuck in a \u201cscroll loop\u201d on their phones; they illustrate the dopamine feedback loop of social media with exaggerated reactions and a clear takeaway."
  ],
  "avoid": [
-  "Generic '5 signs you're depressed' listicles, which are over-saturated and lack the narrative punch of a skit.",
-  "Over-explaining the scientific jargon in the first 3 seconds; the animation must do the heavy lifting before the explanation lands."
+  "Overused relationship\u2011drama tropes without a fresh psychological twist",
+  "Generic list\u2011style titles like \u201cTop 5 Ways\u2026\u201d that dilute the unique animated\u2011skit brand"
  ],
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "sample": 75,
  "spikes": [
   {
-   "title": "Kinda feels like Tiktok now | #art #digitalart #fyp #foryou #foryoupage #artist #relatable #idk #fyp",
-   "channel": "HeyitsMey",
-   "views": 491248,
-   "hours": 45,
-   "vph": 10929.4,
-   "subs": 25600,
-   "breakout": 19.2
-  },
-  {
    "title": "One is GONE and the other has super hearing\ud83d\udc80. #animation #skit #relatable #parents #sleep",
    "channel": "RefCantDraw ",
-   "views": 15473,
-   "hours": 3,
-   "vph": 5157.7,
-   "subs": 164000,
-   "breakout": 0.1
+   "views": 461853,
+   "hours": 18,
+   "vph": 25964.2,
+   "subs": 165000,
+   "breakout": 2.8
+  },
+  {
+   "title": "Mimo Policia - CheeseParade - Doblaje Fan Espa\u00f1ol",
+   "channel": "JoRa",
+   "views": 178766,
+   "hours": 35,
+   "vph": 5060.1,
+   "subs": 491000,
+   "breakout": 0.4
+  },
+  {
+   "title": "Same closed door. Two parents. \ud83d\ude21 vs \ud83e\udd1d Why you panic even when you did nothing wrong \ud83d\udc9b",
+   "channel": "Same Moment Twice",
+   "views": 96683,
+   "hours": 32,
+   "vph": 2991.2,
+   "subs": 3930,
+   "breakout": 24.6
   },
   {
    "title": "You grew up too fast | #shorts #shortvideo #psychology #money #finance",
    "channel": "Learn With Rafid ",
-   "views": 109903,
-   "hours": 29,
-   "vph": 3732.6,
-   "subs": 30200,
-   "breakout": 3.6
-  },
-  {
-   "title": "The 40-Cent Toy That Sold Billions of Burgers",
-   "channel": "Quiet Wolf",
-   "views": 133612,
+   "views": 129551,
    "hours": 46,
-   "vph": 2878.5,
-   "subs": 183000,
-   "breakout": 0.7
-  },
-  {
-   "title": "Artist core \ud83d\ude2d it's relatable ???#edit#drawing#anime#sketch#fyp\u30b7#artistcore",
-   "channel": "RealartX7",
-   "views": 9376,
-   "hours": 4,
-   "vph": 2315.9,
-   "subs": 8410,
-   "breakout": 1.1
+   "vph": 2827.3,
+   "subs": 30600,
+   "breakout": 4.2
   },
   {
    "title": "\u09eb\u09e6 \u09b9\u09be\u099c\u09be\u09b0 \u0995\u09be\u09ae\u09be\u0987\ud83e\udd11, \u09a4\u09ac\u09c1 \u09b8\u0982\u09b8\u09be\u09b0 \u099a\u09be\u09b2\u09be\u09af\u09bc \u09ac\u0989! The Psychology Of Money Explained in Bangla #animation",
    "channel": "Psychology in Story",
-   "views": 31093,
-   "hours": 14,
-   "vph": 2229.9,
-   "subs": 3940,
-   "breakout": 7.9
+   "views": 76379,
+   "hours": 30,
+   "vph": 2519.0,
+   "subs": 4140,
+   "breakout": 18.4
   },
   {
-   "title": "Same promise. Two parents. \ud83d\ude21 vs \ud83e\udd1d Why you struggle to trust anyone's word \ud83d\udc9b",
-   "channel": "Same Moment Twice",
-   "views": 45298,
-   "hours": 28,
-   "vph": 1620.7,
-   "subs": 3690,
-   "breakout": 12.3
+   "title": "Overthinkers When They Get a \"Whatever\" \ud83d\udc80\ud83d\udcf1#roblox #shorts #animation",
+   "channel": "VOXIT",
+   "views": 29772,
+   "hours": 18,
+   "vph": 1609.7,
+   "subs": 20900,
+   "breakout": 1.4
+  },
+  {
+   "title": "Two Best Friends Wanted Each Other\u2019s Girlfriend",
+   "channel": "DatingGlow",
+   "views": 39379,
+   "hours": 25,
+   "vph": 1586.4,
+   "subs": 693,
+   "breakout": 56.8
+  },
+  {
+   "title": "Artist core \ud83d\ude2d it's relatable ???#edit#drawing#anime#sketch#fyp\u30b7#artistcore",
+   "channel": "RealartX7",
+   "views": 32135,
+   "hours": 20,
+   "vph": 1573.2,
+   "subs": 8420,
+   "breakout": 3.8
   },
   {
    "title": "Bahaya Tidur Bangun Maghrib? Sleep Inertia! #relatable",
    "channel": "El-Logika",
-   "views": 30252,
-   "hours": 31,
-   "vph": 983.9,
-   "subs": 194,
-   "breakout": 151.3
+   "views": 30315,
+   "hours": 47,
+   "vph": 643.3,
+   "subs": 198,
+   "breakout": 151.6
   },
   {
    "title": "Why the Medium Popcorn Exists #explained #popcorn #psychology",
    "channel": "BodyDotExe",
-   "views": 23930,
-   "hours": 30,
-   "vph": 809.9,
+   "views": 27112,
+   "hours": 46,
+   "vph": 590.4,
    "subs": 25,
-   "breakout": 119.7
-  },
-  {
-   "title": "if your parents compare you with other people\ud83e\udd2b #shorts #psychology",
-   "channel": "Andre Smith",
-   "views": 37321,
-   "hours": 40,
-   "vph": 936.3,
-   "subs": 339,
-   "breakout": 110.1
+   "breakout": 135.6
   }
  ]
 }
