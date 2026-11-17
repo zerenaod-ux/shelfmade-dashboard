@@ -3066,5 +3066,348 @@
   "style": "v2",
   "format": "MINI MYSTERY",
   "improv": true
+ },
+ {
+  "id": "your-wet-dog-cologne",
+  "title": "Your Hoodie Crime Scene \ud83e\udde5",
+  "concept": "HOODIE BREAKUP RATING",
+  "mood": "warm",
+  "insight": "Rating your old clothes always ends in heartbreak",
+  "caption": "Never ask your best friend to rate your smelly favorite clothes.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo holds a very old yellow hoodie up near a coffee mug on the desk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "normal",
+      "text": "Mia, rate this hoodie, be honest."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "It smells like a wet dog."
+     }
+    ]
+   },
+   {
+    "scene": "Leo pulls the yellow hoodie tighter around his shoulders while pacing the hallway.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Wait, that is just my natural cologne."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Who is the dog, Leo?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia taps a coffee mug on the desk and points at the hoodie.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "It is a compliment to the dog."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "No, it is a crime scene."
+     }
+    ]
+   },
+   {
+    "scene": "Leo drops the hoodie onto a chair while walking past the hallway.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "Is that a one or a ten?"
+     },
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "A zero, you absolute disaster."
+     }
+    ]
+   },
+   {
+    "scene": "Mia picks up a cup of tea on the desk and sips slowly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "quick",
+      "text": "A zero? That is illegal."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "You made up that law."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds a coffee mug with both hands and looks down.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "snap",
+      "text": "Mia, rate this hoodie, be honest?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": true
+ },
+ {
+  "id": "toaster-soggy-disaster",
+  "title": "Why The Toaster Cartoon Destroyed Us \ud83c\udf5e",
+  "concept": "CARTOON TRAUMA OVERLOAD",
+  "mood": "dramatic",
+  "insight": "Nothing unites best friends like sobbing over animated appliances.",
+  "caption": "When you accidentally cry at a cartoon toaster and your best friend exposes you on the podcast.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Podcast desk with a small burnt piece of toast on a tiny plate; Leo slumps in his yellow hoodie, looking miserable, while Mia glares at him with raised eyebrows.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Did you actually sniffle for Britney Spears?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "It was a toaster, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo throws his hands up in disbelief, knocking the tiny plate slightly; Mia points a finger at him with a smug smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "You made it up."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "You didn't even see me cry."
+     }
+    ]
+   },
+   {
+    "scene": "Leo puts his face in his hands dramatically, whimpering; Mia leans in closer, squinting at him in pure confusion.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "That is literally why I'm crying."
+     },
+     {
+      "who": "mia",
+      "feel": "surprised",
+      "beat": "pause",
+      "text": "Wait, you're crying about my crying?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo wipes a fake tear from his eye while glaring at the burnt toast; Mia crosses her arms and shakes her head.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "I'm crying about the toaster."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "The toaster? You're gaslighting me."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares intensely at the burnt toast with wide, terrified eyes; Mia taps the desk rhythmically with one finger.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "No, but did the toaster get soggy?"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Yeah. It was a soggy disaster."
+     }
+    ]
+   },
+   {
+    "scene": "Leo starts weeping over the burnt toast again; Mia points straight at the camera with a big grin.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Now I'm crying for the bread."
+     },
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "Next time: Did you actually sniffle for Britney Spears?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "MISUNDERSTANDING",
+  "improv": true
+ },
+ {
+  "id": "your-fern-detective",
+  "title": "Your Fern Is Judging You \ud83c\udf3f",
+  "concept": "FERN JUDGMENT CASE",
+  "mood": "warm",
+  "insight": "Plants have zero time for your daily drama.",
+  "caption": "Leo launches a full detective case against a fern.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo points at a potted fern on the podcast desk with a little magnifying glass.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Mia, the fern is judging me."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sips tea while resting her chin on her hand, looking entirely unimpressed.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Bro, it's literally a clump of leaves."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans in close to the leaves, shielding his eyes like a detective in the rain.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "normal",
+      "text": "It followed me into the break room."
+     }
+    ]
+   },
+   {
+    "scene": "Mia rolls her eyes and gestures wildly at the potted plant.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "It's a plant, not a stalker."
+     }
+    ]
+   },
+   {
+    "scene": "Leo taps the ceramic pot with his pinky finger as if interrogating a suspect.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "pause",
+      "text": "Whatever, it's definitely plotting something."
+     }
+    ]
+   },
+   {
+    "scene": "Mia laughs softly and looks straight into the camera lens.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Plotting what, a leaf avalanche?"
+     }
+    ]
+   }
+  ],
+  "judge": {
+   "best": 0,
+   "why": "Both candidate scripts are identical duplicates with mediocre banter and weak loop potential.",
+   "scores": {
+    "i": 0,
+    "funny": 5,
+    "hook": 6,
+    "spoken": 7,
+    "relatable": 4,
+    "loop": 5
+   },
+   "n": 2
+  },
+  "variant": "micro",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
  }
 ]
