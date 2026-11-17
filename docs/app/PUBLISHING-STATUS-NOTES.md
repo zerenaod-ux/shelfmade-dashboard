@@ -26,3 +26,8 @@ Seven model/actual-source tests pass, including pagination failure and request s
 ## November 17 — production documentation continuity
 
 Added PRODUCTION-UI-DESIGN.md to record current deployed screens versus pending original-full-video presentation. Main Content Engine README, SYSTEM-STATUS and PRODUCTION-PLANNER now record the 40–70-second shorts rule, original 2–5-minute landscape requirement, full-history system-selected topic proof, completed filing/narration recovery and remaining mechanism-detail work. The existing long generator is explicitly identified as a compilation, not the replacement. This documentation commit does not change UI runtime or publishing settings.
+
+
+## November 17 — overlapping playback prevention
+
+The shared Studio app now pauses other audio/video when one review player starts. Supported browsers coordinate other Studio tabs using BroadcastChannel; single-document enforcement still works without it. Leaving the page pauses playback. This prevents a source of overlapping old and new narration; it does not claim the demonstrated overlap was proven to originate from the encoded media. Two unit tests cover active-player preservation, other-tab messages and page exit. No approvals, video files, generation or publishing settings change.
