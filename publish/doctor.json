@@ -3,8 +3,7 @@
  "attempts": {
   "mindlore-live-redo": 1,
   "blender-test": 2,
-  "scene-factory": 1,
-  "deps": 1
+  "scene-factory": 1
  },
  "pending": [],
  "log": [
@@ -89,7 +88,7 @@
    "msg": "deps: no safe automatic fix found"
   }
  ],
- "at": "2026-11-16T19:49:10Z",
+ "at": "2026-11-17T04:10:02Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
