@@ -41,8 +41,8 @@
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 7,
-   "last": 40
+   "uses": 8,
+   "last": 46
   },
   {
    "id": "dev",
@@ -585,6 +585,18 @@
    "milestone": true,
    "season": 4,
    "date": "2026-11-15"
+  },
+  {
+   "n": 6,
+   "kind": "full",
+   "id": "the-interview-paradox",
+   "title": "The Interview Paradox",
+   "concept": "Leo's job interview day, from the night before to the callback",
+   "gag": "greg",
+   "callback": true,
+   "milestone": false,
+   "season": 1,
+   "date": "2026-11-17"
   }
  ]
 }

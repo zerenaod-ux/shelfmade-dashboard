@@ -2521,5 +2521,486 @@
     }
    }
   ]
+ },
+ {
+  "id": "the-interview-paradox",
+  "title": "The Interview Paradox",
+  "theme": "Leo's job interview day, from the night before to the callback",
+  "premise": "Leo wants to nail a final-round dream job interview so he can finally stop working for Greg and prove he is a real adult. If he messes up, he owes Mia fifty bucks and has to stay Greg's underling forever.",
+  "running_gag": "Greg sends a one-word email reading 'Noted.' at the absolute worst second.",
+  "payoff": "Leo lands the job purely because his chaotic exit made the CEO laugh, right as Greg sends his final 'Noted.' to Leo's resignation email.",
+  "description": "Leo has twelve hours to prepare for the biggest job interview of his life, and his brain is choosing chaos. Can Mia keep him from sabotaging his career before Greg can send another one-word email? Watch Leo discover why overthinking makes every simple doorway impossible.",
+  "scenes": [
+   {
+    "time": "11:42 PM",
+    "setting": "Leo's messy bedroom, covered in three identical yellow ties",
+    "concept": "SLEEP PROCRASTINATION TRAP",
+    "beat": "A digital clock showing a time of 11:42 PM glares while an alarm going off at dawn sits ready. Leo is aggressively pulling the blanket and punching his pillow because going to sleep means tomorrow morning arrives faster, while Mia sips a cup of tea and reminds him this panic is worse than his Four AM Alibi disaster.",
+    "story": {
+     "id": "the-interview-paradox-01",
+     "title": "Why You Refuse To Go To Bed \u23f0",
+     "concept": "BEDTIME REVENGE TRAP",
+     "mood": "dramatic",
+     "insight": "Sleeping only makes tomorrow's panic arrive faster.",
+     "caption": "Leo refuses to sleep before his dream interview because morning comes too fast. Will Greg's one-word email break him first?",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo sits at the desk pulling the blanket up to his chin with worried eyes while three yellow ties lie across his pillow.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "quick",
+         "text": "If I sleep, morning attacks in two seconds!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Leo, that's sleep. Not a time machine."
+        }
+       ]
+      },
+      {
+       "scene": "Mia points at a digital clock showing a time of 11:42 PM on the desk while giving Leo a judging side-eye.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Tomorrow Greg judges my resume and my soul."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Scoreboard ninety-eight. You're officially spiraling over silk."
+        }
+       ]
+      },
+      {
+       "scene": "Mia calmly sips a cup of tea, smirk on her lips, while Greg stares blankly through the background doorway.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Worse than your four AM alibi with Gerald."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "snap",
+         "text": "Okay but hear me out, that cactus lied!"
+        }
+       ]
+      },
+      {
+       "scene": "Someone knocking on the door echoes outside as Leo clutches three identical ties with wide, panicked eyes.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Wait. Greg just emailed one word. Just: Noted."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle says: wear dark sunglasses and assert dominance."
+        }
+       ]
+      },
+      {
+       "scene": "Leo is walking / pacing the hallway behind the desk, clutching his head while Mia watches with raised eyebrows.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "quick",
+         "text": "Do I wear butter yellow, panic yellow, or mustard?"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Panic yellow matches your sweating. Anyway."
+        }
+       ]
+      },
+      {
+       "scene": "An alarm going off flashes brightly on the desk between them as Leo freezes with worried eyes.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "hopeful",
+         "beat": "normal",
+         "text": "Next time: how to pretend you have it together."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "8:15 AM",
+    "setting": "Apartment hallway, Brenda watching from behind her clipboard",
+    "concept": "SPOTLIGHT EFFECT",
+    "beat": "Leo is pacing the hallway convinced everyone is staring at an invisible speck on his collar, almost dropping his coffee mug when barista Dev walks past with a cup marked 'Leon'. Mia reads her phone deadpan: 'Kyle says: just wear sunglasses inside, bro, it asserts dominance.' Leo yells 'Okay but hear me out!' as Mia clicks her told-you-so scoreboard from 97 to 98.",
+    "story": {
+     "id": "the-interview-paradox-02",
+     "title": "Why Everyone Is Watching Your Collar \ud83d\udc54",
+     "concept": "SPOTLIGHT TRAP",
+     "mood": "dramatic",
+     "insight": "Nobody is looking at you, they are panicking about themselves.",
+     "caption": "Leo thinks the whole apartment building is judging his collar. Next time: the elevator ride from hell.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo is pacing the hallway with worried eyes and tense shoulders. Mia stands nearby watching him calmly while neighbour Brenda watches quietly behind a clipboard in the background.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "normal",
+         "text": "Everyone is staring! My collar is bent, Mia!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Dude, relax. You are not Harry Styles."
+        }
+       ]
+      },
+      {
+       "scene": "Leo nearly spills a coffee mug as barista Dev walks past holding a cup marked Leon. Mia raises an eyebrow with a slight smirk.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "quick",
+         "text": "Dev wrote my shame on a cup! Look!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "It says Leon, bro. He thinks you're French."
+        }
+       ]
+      },
+      {
+       "scene": "Down the hall someone knocking on the door echoes loudly. Leo freezes in place with worried eyes while Mia glances down at her phone.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "normal",
+         "text": "Kyle says: pop the collar and hiss loudly."
+        },
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "Okay but hear me out, that shows dominance!"
+        }
+       ]
+      },
+      {
+       "scene": "A digital clock showing a time of 8:15 AM glows on the corridor wall. Mia glances at her phone while Leo keeps his lips pressed tight.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "Greg just emailed back one word: Noted."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Noted?! He's firing me before nine AM!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo winces like an alarm going off right behind his ears. Mia clicks a handheld tally counter while Brenda glares coldly from down the hall.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "That makes ninety-eight on my board. Anyway."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "quick",
+         "text": "This is worse than our four AM alibi!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo slumps against the wall, shrinking back like someone pulling the blanket over their head. Mia tilts her head with a closed-mouth smirk.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "Next time: good luck in the elevator, bro."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "9:55 AM",
+    "setting": "Apex Corp lobby, sterile marble floors with a frowning receptionist",
+    "concept": "OVERTHINKER'S PARADOX",
+    "beat": "Leo rehearses a casual greeting forty times until someone knocking on the door makes him jump and accidentally bow to an umbrella stand. Right as the boss opens the door, Leo's phone buzzes with Greg's email saying 'Noted.' and Mia just sighs, 'Anyway.'",
+    "story": {
+     "id": "the-interview-paradox-03",
+     "title": "Why Overthinking Ruins Your Big Moment \ud83d\udeaa",
+     "concept": "OVERTHINKER'S PARADOX",
+     "mood": "dramatic",
+     "insight": "Practicing being casual is the least casual thing ever.",
+     "caption": "Leo tried so hard to look relaxed for his big interview that he bowed to an umbrella. Greg's email did not help.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo points at a digital clock showing a time of 9:55 AM on the desk with worried eyes. In the background, clearly visible and drawn in the same style, stands a stern boss in a grey suit holding a coffee mug (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "I'm practicing looking totally relaxed and casual, Mia!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You've stared blankly at your thumb for twenty minutes."
+        }
+       ]
+      },
+      {
+       "scene": "Mia takes a slow sip from a cup of tea, eyeing Leo with a raised eyebrow.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "normal",
+         "text": "Okay but hear me out, chill guys rehearse being spontaneous!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Right, like your four AM alibi drill for Greg?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo gets up, briefly walking / pacing the hallway area behind his chair with tense, tight lips.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "quick",
+         "text": "Different! Kyle says real leaders never blink, and I'm crying!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo jerks around at the sound of someone knocking on the door, bowing stiffly toward a tall corner umbrella.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "You just bowed deeply to an umbrella stand, dude."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "quick",
+         "text": "It had Greg's exact terrifying posture, okay?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo freezes as an alarm going off chimes from his vibrating desk phone, showing a tiny text popup.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Wait\u2014Greg just emailed one word: 'Noted.' I'm doomed!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "Anyway. Scoreboard just hit ninety-eight for me."
+        }
+       ]
+      },
+      {
+       "scene": "Mia smirks quietly while pulling the pillow behind her back into place on the chair.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Next time: Leo tries outsmarting Brenda's terrifying clipboard."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "4:30 PM",
+    "setting": "Leo's kitchen counter next to a very limp Gerald the houseplant",
+    "concept": "PEAK-END RULE",
+    "beat": "Leo is dramatically lying in bed on the kitchen floor convinced he ruined his life, until the phone rings offering him the role because tripping over the trash can made the board smile. He sends Greg his two-week notice and within four seconds Greg replies: 'Noted.' Next time: Mia forces Leo into a brutal weekend yard sale war.",
+    "story": {
+     "id": "the-interview-paradox-04",
+     "title": "Why Messing Up Got Him Hired \ud83d\uddd1\ufe0f",
+     "concept": "PEAK END RULE",
+     "mood": "dramatic",
+     "insight": "People only remember how you finish, even if you trip.",
+     "caption": "Leo thought he ruined his big interview by crashing into a trash can. Turns out, ending on a laugh changes everything.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo slumps at the podcast desk pulling the blanket over his face beside a limp potted plant with worried eyes.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "I drop-kicked their trash can and got hired."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle texted: 'Assert dominance.' You actually did?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo taps a digital clock showing a time of four thirty while Mia reviews her notepad with a smirk.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "normal",
+         "text": "Okay but hear me out, Gerald and I panicked."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Scoreboard ninety-eight. Pay up, you giant fraud."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sets down a cup of tea on the desk, tilting her head with a raised eyebrow toward Leo.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "They forgave total nonsense just because you bowed?"
+        },
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "I crashed into coat racks! It showed raw passion!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo jumps slightly as an alarm going off startles him, his eyes wide with sheepish excitement.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "quick",
+         "text": "I sent Greg a huge two-page quitting letter."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "And three seconds later: 'Noted.'"
+        }
+       ]
+      },
+      {
+       "scene": "Mia takes a sip from a coffee mug while Leo leans across the desk with hopeful eyes.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "quick",
+         "text": "Still smoother than my four AM alibi, right?"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Anyway. You survived Greg, but Brenda has questions."
+        }
+       ]
+      },
+      {
+       "scene": "Leo freezes as sound of someone knocking on the door echoes outside, raising his eyebrow in curiosity.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Next time: Brenda's savage yard sale showdown begins!"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]
