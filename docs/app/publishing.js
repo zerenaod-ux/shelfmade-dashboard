@@ -36,6 +36,9 @@ function reviewSummary(core,ce){
   if(Array.isArray(core)&&Array.isArray(ce))counts.total=counts.shelfmade+counts.mindlore+counts.doodles+counts.howitticks+counts.unassigned;
   return counts;
 }
-var api={platformRows:platformRows,counts:counts,freshness:freshness,reviewSummary:reviewSummary};
+function latestJobs(runs,allowed){
+  var seen={};return runs.slice().sort(function(a,b){return Date.parse(b.created_at)-Date.parse(a.created_at)||Number(b.run_number||0)-Number(a.run_number||0)}).filter(function(run){if(!Object.prototype.hasOwnProperty.call(allowed,run.name)||seen[run.name])return false;seen[run.name]=true;return true});
+}
+var api={platformRows:platformRows,counts:counts,freshness:freshness,reviewSummary:reviewSummary,latestJobs:latestJobs};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.StudioPublishing=api;
 })(typeof window!=='undefined'?window:this);

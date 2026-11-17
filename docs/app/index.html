@@ -138,7 +138,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
   <section class="tab on" id="t-home">
     <div class="tiles">
       <div class="tile"><b id="k-wait">–</b><span>Waiting for you</span></div>
-      <div class="tile"><b id="k-views">–</b><span>Reported views</span></div>
+      <div class="tile"><b id="k-views">–</b><span>First 3 · reported views</span></div>
       <div class="tile"><b id="k-health">–</b><span>Status</span></div>
     </div>
     <button class="btnline pri" data-go="health" type="button">Publishing status · YouTube, TikTok, Instagram ›</button>
@@ -201,7 +201,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
   </div>
 </div>
 
-<script src="publishing.js?v=20261117-home"></script>
+<script src="publishing.js?v=20261117-jobs"></script>
 <script>
 (function(){
 'use strict';
@@ -209,9 +209,10 @@ var REPO='zerenaod-ux/shelfmade-dashboard',RAW='https://raw.githubusercontent.co
 var BR=[{k:'shelfmade',n:'ShelfMade',c:'var(--sh)',s:['state.json','state-shfull.json'],a:['approved.json','approved-shfull.json']},
         {k:'mindlore',n:'MindLore',c:'var(--ml)',s:['state-mindlore.json','state-mlfull.json'],a:['approved-mindlore.json','approved-mlfull.json']},
         {k:'doodles',n:'AnimationDoodles',c:'var(--dd)',s:['state-doodles.json','state-ddfull.json'],a:['approved-doodles.json','approved-ddfull.json']},
-        {k:'howitticks',n:'How It Ticks',c:'var(--hi)',s:[],a:[],ce:true}];   // 4th channel: not posting yet (2026-11-15)
+        {k:'howitticks',n:'How It Ticks',c:'var(--hi)',s:[],a:[],ce:true}];   // Fourth independent channel; verified publishing is read from its own repository.
 var PL=[['youtube','YouTube'],['tiktok','TikTok'],['instagram','Instagram']];
-var KEYJOBS=['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'];
+var CORE_JOBS={};['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'].forEach(function(name){CORE_JOBS[name]=name});
+var CE_JOBS={'scene-factory':'Daily video creation','how-it-ticks-publisher':'Approved-video publisher','content-engine-review-folders':'Approve / Skip filing','Verify How It Ticks publishing status (read only)':'Publishing and views check','how-it-ticks-long':'Long-video assembly','How It Ticks autopilot run':'Approval setting check','Cinematic system comparison (not posted)':'Experimental cinematic video','Deliver cinematic comparison to Studio Review':'Experimental video delivery','offline-regression-checks':'Engineering checks'};
 /* Name and links. Change BRAND_NAME in one place. Fill a channel link to show it. */
 var BRAND_NAME='Studio';
 var LINKS={shelfmade:{youtube:'https://www.youtube.com/@shelfmadedaily',tiktok:'https://www.tiktok.com/@shelfmade.daily',instagram:'https://www.instagram.com/shelfmade.daily/'},mindlore:{youtube:'https://www.youtube.com/@mindloredaily',tiktok:'https://www.tiktok.com/@mindlore.daily',instagram:'https://www.instagram.com/mindlore.daily_/reels/'},doodles:{youtube:'https://www.youtube.com/@AnimationDoodles-h8e',tiktok:'https://www.tiktok.com/@animationdoodleshq',instagram:'https://www.instagram.com/animationdoodleshq/'},howitticks:{youtube:'https://www.youtube.com/@HowItTicks-p2v',tiktok:'https://www.tiktok.com/@howitticks.official',instagram:'https://www.instagram.com/howitticks.co/'}};
@@ -229,7 +230,12 @@ function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null
 function nf(n){return n==null?'n/a':Number(n).toLocaleString('en-US')}
 function ago(ms){var h=ms/36e5;return h<1?Math.max(1,Math.round(ms/6e4))+' min':h<48?(Math.round(h*10)/10)+' h':Math.round(h/24)+' days'}
 function hdr(){var h={'Accept':'application/vnd.github+json'};if(TOK)h.Authorization='Bearer '+TOK;return h}
-function jget(u){return fetch(u+(u.indexOf('?')<0?'?':'&')+'t='+Date.now()).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).catch(function(){return null})}
+var pendingReads={};
+function jget(u){
+  if(pendingReads[u])return pendingReads[u];
+  pendingReads[u]=fetch(u+(u.indexOf('?')<0?'?':'&')+'t='+Date.now()).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).catch(function(){return null}).then(function(data){delete pendingReads[u];return data});
+  return pendingReads[u];
+}
 function hello(){var h=new Date().getHours();return h<12?'Good morning':h<18?'Good afternoon':'Good evening'}
 function safeVideo(u){try{var p=new URL(u);return p.protocol==='https:'&&(p.hostname==='res.cloudinary.com'||p.hostname==='github.com'||p.hostname==='cdn.jsdelivr.net'||p.hostname==='zerenaod-ux.github.io'||p.hostname.endsWith('.githubusercontent.com'))}catch(e){return false}}
 function clean(b){return (b||'').replace(/<!--DATA[\s\S]*?DATA-->/g,'').replace(/\*\*/g,'').replace(/`/g,'').trim()}
@@ -321,7 +327,7 @@ function loadNextBooking(card,b){
   });
 }
 function ceHomeCard(b){
-  var card=el('section','card chan');card.style.setProperty('--c',b.c);card.appendChild(el('h3','',b.n));var body=el('div');body.appendChild(el('div','skel'));card.appendChild(body);addHomeActions(card,b);
+  var card=el('section','card chan');card.style.setProperty('--c',b.c);card.appendChild(el('h3','',b.n));var links=el('div','linkrow');PL.forEach(function(p){var a=el('a','chip',p[1]+' ↗');a.href=LINKS[b.k][p[0]];a.target='_blank';a.rel='noopener';links.appendChild(a)});card.appendChild(links);var body=el('div');body.appendChild(el('div','skel'));card.appendChild(body);addHomeActions(card,b);
   Promise.all([jget(CE_RAW+'data/scenes/publishing-status.json'),jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json')]).then(function(data){
     body.textContent='';var report=data[0],valid=!!(report&&report.complete);
     if(!valid){body.appendChild(el('p','muted','Publishing verification is unavailable. Open Status for details.'));return;}
@@ -398,9 +404,7 @@ function reviewCard(it){
 function loadReview(){
   var box=$('r-list');box.textContent='';box.appendChild(el('div','skel'));
   apBanner($('r-ap'));keyState();
-  fetch(API+'/issues?state=open&labels=review&per_page=50',{headers:hdr()}).then(function(r){
-    if(r.status===403)throw new Error('GitHub is limiting this phone for a few minutes. Add your key in Settings or wait.');
-    if(!r.ok)throw new Error('GitHub said '+r.status);return r.json()})
+  reviewRows(API,'review').then(function(rows){if(rows===null)throw new Error('Review list unavailable or incomplete. Refresh or check your key in Settings.');return rows})
    .then(function(a){a=a.filter(function(x){return !x.pull_request});
      reviewCoreRows=a;applyReviewCounts();
      box.textContent='';
@@ -412,7 +416,7 @@ function loadReview(){
    .then(loadScenes);
 }
 
-/* ---------- Content Engine review and retained folders (posting remains off) ---------- */
+/* ---------- How It Ticks review and retained folders ---------- */
 var sceneView='review';
 function sceneVideo(card,url){
   // IPHONE_PLAY (owner 2026-11-16: video not tappable on iPhone): serve the phone copy from GitHub Pages (same site as this app, plain file server) instead of the CDN; keep a plain link as a second way in.
@@ -461,7 +465,7 @@ function loadScenes(){
   var refresh=el('button','btnline','Refresh folders');refresh.type='button';refresh.onclick=loadScenes;host.appendChild(refresh);
   var box=el('div');host.appendChild(box);
   if(sceneView==='review'){
-    fetch(CE_API+'/issues?state=open&labels=scene-review&per_page=100',{headers:hdr()}).then(function(r){if(!r.ok)throw new Error('Cannot load How It Ticks review cards ('+r.status+').');return r.json()}).then(function(rows){
+    reviewRows(CE_API,'scene-review').then(function(rows){if(rows===null)throw new Error('How It Ticks review list unavailable or incomplete. Refresh to try again.');
       rows=rows.filter(function(x){return !x.pull_request});reviewCeRows=rows;applyReviewCounts();
       if(!rows.length)box.appendChild(el('div','card','No How It Ticks videos waiting for review.'));
       rows.forEach(function(it){var card=el('div','card');card.appendChild(sceneCard(it));box.appendChild(card)});
@@ -551,15 +555,27 @@ function loadHealth(){
   Promise.all([].concat(BRH.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),
                         BRH.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))})))
    .then(function(r){BRH.forEach(function(b,i){br.appendChild(brandHealth(b,r[i],r[BRH.length+i],null,now))})});
-  fetch(API+'/actions/runs?per_page=100').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).then(function(d){
-    var seen={},rows=[],bad=0;(d.workflow_runs||[]).forEach(function(x){if(seen[x.name]||KEYJOBS.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
-    rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});
-    rows.forEach(function(x){if(x.conclusion==='failure')bad++});
-    jobs.textContent='';var t=el('div','row');t.appendChild(el('p','lab','Automatic jobs'));t.appendChild(el('span','tag '+(bad?'bad':'ok'),bad?bad+' failed':'All ran fine'));jobs.appendChild(t);
-    if(!rows.length)jobs.appendChild(el('p','muted','Cannot read the job list right now (GitHub limit). Try again in a few minutes.'));
-    rows.forEach(function(x){var s=x.status!=='completed'?'running':x.conclusion==='success'?'ok':(x.conclusion||'?');var j=el('a','job');j.href=x.html_url||REPO_URL+'/actions';j.target='_blank';j.rel='noopener';j.appendChild(el('span','',x.name));j.appendChild(el('span',s==='failure'||s==='failed'?'bad':'',s+' · '+ago(now-Date.parse(x.updated_at||x.created_at))+' ago ↗'));jobs.appendChild(j)});
-    jobs.appendChild(el('p','muted','Stuck “queued” runs are restarted automatically.'));
-    cache.health=1}).catch(function(){jobs.textContent='';jobs.appendChild(el('p','msg','Could not read the job list.'))});
+  loadJobs(jobs,now);
+}
+
+
+function loadJobs(host,now){
+  host.textContent='';host.appendChild(el('div','skel'));
+  var sources=[{name:'ShelfMade, MindLore & Doodles',api:API,ce:false},{name:'How It Ticks',api:CE_API,ce:true}];
+  Promise.all(sources.map(function(source){return fetch(source.api+'/actions/runs?per_page=100',{headers:hdr()}).then(function(r){if(!r.ok)throw Error('unavailable');return r.json()}).catch(function(){return null})})).then(function(results){
+    host.textContent='';host.appendChild(el('p','lab','Automatic jobs · all four systems'));
+    sources.forEach(function(source,i){
+      host.appendChild(el('h4','',source.name));
+      var data=results[i];if(!data){host.appendChild(el('p','pub-notice','Job status unavailable. Refresh to try again.'));return;}
+      var rows=StudioPublishing.latestJobs(data.workflow_runs||[],source.ce?CE_JOBS:CORE_JOBS);
+      if(!rows.length){host.appendChild(el('p','muted','No recent matching jobs were returned.'));return;}
+      rows.forEach(function(x){
+        var status=x.status!=='completed'?x.status:(x.conclusion||'Unknown'),label=status==='success'?'Passed':status==='failure'?'Failed':status==='in_progress'?'Running':status==='queued'?'Queued':status==='skipped'?'Skipped':status==='cancelled'?'Cancelled':status;
+        var link=el('a','job');link.href=x.html_url;link.target='_blank';link.rel='noopener';link.appendChild(el('span','',(source.ce?CE_JOBS:CORE_JOBS)[x.name]||x.name));link.appendChild(el('span',status==='failure'?'bad':'',label+' · '+ago(now-Date.parse(x.updated_at||x.created_at))+' ago ↗'));host.appendChild(link);
+      });
+      if(source.ce)host.appendChild(el('p','muted','Daily production and experimental comparisons are separate. A passing job is not a video quality approval.'));
+    });cache.health=1;
+  });
 }
 
 /* ---------- Channels ---------- */
