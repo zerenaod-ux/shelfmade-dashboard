@@ -99,12 +99,26 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
 .sheet input{width:100%;font:15px ui-monospace,Menlo,monospace;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);margin:8px 0}
 .sheet a{display:block;color:var(--ink);text-decoration:none;padding:12px 0;border-top:1px solid var(--line);font-weight:600}
 .sheet a span{display:block;font-weight:400;color:var(--mut);font-size:13px;margin-top:2px}
+
+.pub-head{margin:16px 0 6px;font-size:20px;letter-spacing:-.4px}
+.pub-meta{font-size:12px;color:var(--mut);line-height:1.5;margin:6px 0 16px}
+.pub-platform{border:1px solid var(--line);border-radius:18px;margin:12px 0;overflow:hidden;background:var(--bg)}
+.pub-platform>h4{margin:0;padding:14px 16px 8px;font-size:17px}
+.pub-counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:4px 12px 14px}
+.pub-counts>div{text-align:center;min-width:0}.pub-counts b{display:block;font-size:23px;line-height:1.3}.pub-counts small{display:block;font-size:11px;color:var(--mut);overflow-wrap:anywhere}
+.pub-platform details{border-top:1px solid var(--line)}.pub-platform summary{padding:12px 16px;cursor:pointer;font-weight:650;font-size:13px}
+.pub-entry{padding:13px 16px;border-top:1px solid var(--line);min-width:0}.pub-entry strong{display:block;font-size:14px;line-height:1.4;overflow-wrap:anywhere;margin:6px 0}.pub-entry p{margin:5px 0;font-size:12px;color:var(--mut)}
+.pub-pill{display:inline-block;padding:4px 8px;border-radius:99px;font-size:11px;font-weight:750;background:var(--line);color:var(--ink)}
+.pub-pill.published{background:#d9f1e7;color:#165b40}.pub-pill.scheduled,.pub-pill.sending{background:#dcecfb;color:#215779}.pub-pill.ready{background:#fff0cd;color:#795214}.pub-pill.failed{background:#fde1df;color:#94352d}
+.pub-entry a{display:inline-block;margin:6px 12px 0 0;font-size:12px;color:var(--hi);font-weight:650}
+.pub-notice{padding:10px 12px;border-radius:12px;background:var(--bg);font-size:13px;line-height:1.5;margin:12px 0}
+.pub-update{max-width:680px;margin:8px auto;padding:10px 14px;border-radius:12px;background:var(--card);color:var(--ink);font-size:13px;display:none}.pub-update button{margin-left:8px;cursor:pointer}
 </style>
 </head>
 <body>
 <header>
   <div class="top">
-    <div class="brand" id="brand">Content <i>Engine</i></div>
+    <div class="brand" id="brand">How <i>It Ticks</i></div>
     <div class="acts">
       <button class="ibtn" id="rf" type="button" aria-label="Refresh"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg></button>
       <button class="ibtn" id="setbtn" type="button" aria-label="Settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
@@ -113,6 +127,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
   <div class="ttl"><h1 id="ttl">Home</h1><p class="sub" id="sub">Loading…</p></div>
 </header>
 
+<div class="pub-update" id="studio-update">A Studio update is available.<button type="button" id="studio-reload">Reload</button></div>
 <main>
   <div class="install" id="install">Install it: tap Share, then <b>Add to Home Screen</b>. It opens like a real app.</div>
 
@@ -123,11 +138,11 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
       <div class="tile"><b id="k-views">–</b><span>Views (all 3)</span></div>
       <div class="tile"><b id="k-health">–</b><span>Health</span></div>
     </div>
+    <button class="btnline pri" data-go="health" type="button">Publishing status · YouTube, TikTok, Instagram ›</button>
     <div id="h-ap"></div>
     <div id="h-chans"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
     <div class="card"><p class="lab">Quick links</p>
       <button class="btnline pri" data-go="review" type="button">Review and approve ›</button>
-      <button class="btnline" data-go="health" type="button">Health and jobs ›</button>
       <button class="btnline" data-go="channels" type="button">Channel numbers ›</button>
     </div>
     <p class="note" id="home-note">Numbers are real data from YouTube and Buffer. n/a means the source does not give that number.</p>
@@ -142,10 +157,10 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
 
   <!-- HEALTH -->
   <section class="tab" id="t-health">
+    <div id="x-brands"></div>
     <div id="x-pre"></div>
     <div id="x-dep"></div>
     <div id="x-self"></div>
-    <div id="x-brands"></div>
     <div class="card" id="x-jobs"><p class="lab">Automatic jobs</p><div class="skel"></div></div>
   </section>
 
@@ -159,7 +174,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
 <nav id="nav">
   <button type="button" data-tab="home" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</button>
   <button type="button" data-tab="review"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg>Review<span class="cnt" id="n-wait" hidden>0</span></button>
-  <button type="button" data-tab="health"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>Health</button>
+  <button type="button" data-tab="health"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>Status</button>
   <button type="button" data-tab="channels"><svg viewBox="0 0 24 24"><path d="M4 20V10h4v10zM10 20V4h4v16zM16 20v-7h4v7z"/></svg>Channels</button>
 </nav>
 
@@ -183,6 +198,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
   </div>
 </div>
 
+<script src="publishing.js?v=20261117"></script>
 <script>
 (function(){
 'use strict';
@@ -228,7 +244,7 @@ function stripKind(t){return t.replace(/^Review\s*/i,'').replace(/^(DOODLES FULL
 function setTab(name){
   document.querySelectorAll('section.tab').forEach(function(s){s.classList.toggle('on',s.id==='t-'+name)});
   document.querySelectorAll('nav button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-tab')===name)});
-  var titles={home:'Home',review:'Review',health:'Health',channels:'Channels'};$('ttl').textContent=titles[name];
+  var titles={home:'Home',review:'Review',health:'Status',channels:'Channels'};$('ttl').textContent=titles[name];
   window.scrollTo(0,0);
   try{history.replaceState(null,'','#'+name)}catch(e){}
   if(!cache[name]) loadTab(name);
@@ -405,32 +421,50 @@ function loadScenes(){
       rows.forEach(function(it){var card=el('div','card');card.appendChild(sceneCard(it));box.appendChild(card)});
     }).catch(function(e){box.appendChild(el('p','msg',e.message))});return;
   }
-  box.appendChild(el('p','muted',sceneView==='saved'?'Approved and saved for future publishing. Nothing is posted.':'Skipped videos held here. Nothing is deleted.'));
+  box.appendChild(el('p','muted',sceneView==='saved'?'Approved videos stay in Saved. See Status for each platform’s scheduled and published videos.':'Skipped videos held here. Nothing is deleted.'));
   fetch(CE_API+'/contents/data/scenes/review/index.json?ref=main&t='+Date.now(),{headers:Object.assign({},hdr(),{'Accept':'application/vnd.github.raw+json'})}).then(function(r){if(!r.ok)throw new Error('Folders are not available yet ('+r.status+').');return r.json()}).then(function(index){
     var rows=(index.items||[]).filter(function(x){return x.folder===sceneView});
     if(!rows.length)box.appendChild(el('div','card',sceneView==='saved'?'No approved How It Ticks videos saved yet.':'No skipped How It Ticks videos held here yet.'));
-    rows.forEach(function(it){var outer=el('div','card'),card=el('div','rv');sceneVideo(card,it.video);card.appendChild(el('span','tag',sceneView==='saved'?'SAVED · NOT POSTED':'DELETE · HELD'));card.appendChild(el('h4','',it.title));outer.appendChild(card);box.appendChild(outer)});
+    rows.forEach(function(it){var outer=el('div','card'),card=el('div','rv');sceneVideo(card,it.video);card.appendChild(el('span','tag',sceneView==='saved'?'APPROVED · SEE STATUS':'DELETE · HELD'));card.appendChild(el('h4','',it.title));outer.appendChild(card);box.appendChild(outer)});
   }).catch(function(e){box.appendChild(el('p','msg',e.message))});
 }
 
 /* ---------- Health ---------- */
+function ceDate(value){
+  var d=new Date(value);return Number.isNaN(d.getTime())?'Time not available':d.toLocaleString('en-US',{timeZone:'America/Chicago',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+}
 function ceHealth(host){
-  var c=el('section','card chan');c.style.setProperty('--c','var(--hi)');
-  var h3=el('h3');var l=el('span');l.appendChild(el('span','dot'));l.appendChild(document.createTextNode('How It Ticks'));h3.appendChild(l);c.appendChild(h3);host.appendChild(c);
-  Promise.all([jget(CE_RAW+'data/scenes/videos.json'),jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json'),jget(CE_RAW+'publish/live.json'),jget(CE_RAW+'publish/ce-autopilot.json'),fetch(CE_API+'/actions/runs?per_page=30').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).catch(function(){return {workflow_runs:[]}})]).then(function(r){
-    var liveOn=!!(r[3]&&r[3].on),apOn=!!(r[4]&&r[4].on);r[3]=r[5];
-    var vids=r[0]||[],idx=(r[1]||{}).items||[],st=(r[2]||{}).done||{},runs=r[3].workflow_runs||[];
-    var saved=idx.filter(function(x){return x.folder==='saved'}).length,posted=Object.keys(st).length;
-    var last=vids.length?vids[vids.length-1]:null;
-    var build=runs.filter(function(x){return x.name==='scene-factory'})[0],pub=runs.filter(function(x){return x.name==='how-it-ticks-publisher'})[0];
-    function row(t,v,ok){var d=el('div','prob');d.appendChild(el('span','ic '+(ok?'ok':'bad'),ok?'✓':'!'));var b=el('div');b.appendChild(el('b','',t));b.appendChild(el('div','muted',v));d.appendChild(b);c.appendChild(d)}
-    row('Videos built',nf(vids.length)+' total'+(last?' · last: '+(last.title||'').slice(0,40):''),vids.length>0);
-    row('Last build run',build?(build.conclusion||build.status)+' · '+(build.created_at||'').replace('T',' ').slice(0,16)+' UTC':'none found',!build||build.conclusion!=='failure');
-    row('Approval','Autopilot is '+(apOn?'ON: good videos approve themselves':'OFF: you approve every video by hand'),true);
-    row('Approved by you',nf(saved)+' saved · '+nf(posted)+' handed to Buffer',true);
-    row('Publisher',pub?(pub.conclusion||pub.status)+' · posting is '+(liveOn?'ON':'OFF (Settings › How It Ticks posting switch)'):'not run yet · posting '+(liveOn?'ON':'OFF'),!pub||pub.conclusion!=='failure');
-    row('Channels','YouTube, TikTok, Instagram connected in Buffer',true);
-  }).catch(function(){c.appendChild(el('p','muted','Could not load How It Ticks status.'))});
+  var c=el('section','card chan');c.id='howitticks-publishing';c.style.setProperty('--c','var(--hi)');
+  c.appendChild(el('h3','','How It Ticks · Publishing'));c.appendChild(el('p','pub-meta','Approved videos, separated by platform. Times are Chicago time.'));host.appendChild(c);
+  c.appendChild(el('div','skel'));
+  Promise.all([jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json'),jget(CE_RAW+'data/scenes/publishing-status.json'),jget(CE_RAW+'publish/live.json'),jget(CE_RAW+'publish/ce-autopilot.json')]).then(function(r){
+    c.querySelectorAll('.skel').forEach(function(x){x.remove()});
+    var report=r[2],fresh=StudioPublishing.freshness(report,Date.now());
+    var when=report&&report.checked_at?'Last checked '+ceDate(report.checked_at)+' Chicago':'Live publishing verification is not available yet.';
+    c.appendChild(el('p','pub-meta',when+(fresh==='stale'?' · This snapshot is older than 30 minutes.':'')));
+    if(!r[0]||!r[1]){c.appendChild(el('p','pub-notice','Could not load the approval or publishing list. Counts are unavailable; refresh to try again.'));return;}
+    if(fresh==='unavailable'||!report.complete)c.appendChild(el('p','pub-notice','Some platform status is unavailable. A scheduled time passing does not confirm publication.'));
+    var settings=r[3]&&r[4]?'Publishing '+(r[3].on?'on':'off')+' · '+(r[4].on?'Automatic approval on':'Your approval required'):'Publishing settings unavailable';
+    c.appendChild(el('p','pub-notice',settings+'. Goal: 3 new videos and 2 posts per platform daily, with enough approved videos.'));
+    PL.forEach(function(platform){
+      var key=platform[0],rows=StudioPublishing.platformRows(r[0],r[1],report,key),totals=StudioPublishing.counts(rows);
+      var section=el('section','pub-platform');section.appendChild(el('h4','',platform[1]));
+      var numbers=el('div','pub-counts');[['ready','Ready'],['scheduled','Scheduled'],['published','Published'],['attention','To check']].forEach(function(pair){var cell=el('div');cell.appendChild(el('b','',totals?nf(totals[pair[0]]):'n/a'));cell.appendChild(el('small','',pair[1]));numbers.appendChild(cell)});section.appendChild(numbers);
+      var detail=el('details');var visible=(rows||[]).filter(function(x){return x.status!=='held'});detail.appendChild(el('summary','',visible.length?'View '+visible.length+' videos':'No videos in this queue'));if(key==='youtube')detail.open=true;
+      visible.forEach(function(item){
+        var entry=el('div','pub-entry');entry.appendChild(el('span','pub-pill '+item.status,item.label));entry.appendChild(el('strong','',item.title));
+        if(item.due)entry.appendChild(el('p','',item.status==='published'?'Scheduled for '+ceDate(item.due)+' · publication confirmed':ceDate(item.due)+' Chicago'));
+        else if(item.status==='ready')entry.appendChild(el('p','','Approved and waiting for the publisher to assign a slot.'));
+        else if(item.status==='failed')entry.appendChild(el('p','','The platform reported a publishing problem.'));
+        if(item.video&&safeVideo(item.video)){var watch=el('a','','Watch video ↗');watch.href=item.video;watch.target='_blank';watch.rel='noopener';entry.appendChild(watch)}
+        detail.appendChild(entry);
+      });
+      if(totals&&totals.held)detail.appendChild(el('p','pub-meta',totals.held+' older video held by a previous publishing decision.'));
+      section.appendChild(detail);var channel=el('a','btnline','Open '+platform[1]+' channel ↗');channel.href=LINKS.howitticks[key];channel.target='_blank';channel.rel='noopener';section.appendChild(channel);c.appendChild(section);
+    });
+    c.appendChild(el('p','pub-meta','Ready means approved, not yet scheduled. Published means the platform confirmed it at the last check.'));
+    var refresh=el('button','btnline','Refresh publishing status');refresh.type='button';refresh.onclick=function(){loadHealth()};c.appendChild(refresh);
+  }).catch(function(){c.querySelectorAll('.skel').forEach(function(x){x.remove()});c.appendChild(el('p','pub-notice','Publishing status could not be loaded. Tap Refresh to try again.'))});
 }
 function brandHealth(b,S,A,AN,now){
   var pub=0,sch=0,last=null,until=null,known={},waiting={};
@@ -466,10 +500,11 @@ function loadHealth(){
     var card=el('div','card');var row=el('div','row');row.appendChild(el('b','','Self-check'));row.appendChild(el('span','tag '+(c.level==='ok'?'ok':'warn'),c.level==='ok'?'Everything verified':'Needs a look'));card.appendChild(row);
     (c.checks||[]).forEach(function(r){var p=el('div','prob');p.appendChild(el('span','ic '+(r.ok?'ok':'bad'),r.ok?'✓':'!'));var d=el('div');d.appendChild(el('b','',r.name));d.appendChild(el('div','muted',r.text));p.appendChild(d);card.appendChild(p)});
     self.appendChild(card);$('k-health').textContent=c.level==='ok'?'OK':'Check'});
+  ceHealth(br);
   var BRH=BR.filter(function(b){return !b.ce});
   Promise.all([].concat(BRH.map(function(b){return Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)}))}),
                         BRH.map(function(b){return Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))})))
-   .then(function(r){BRH.forEach(function(b,i){br.appendChild(brandHealth(b,r[i],r[BRH.length+i],null,now))});ceHealth(br)});
+   .then(function(r){BRH.forEach(function(b,i){br.appendChild(brandHealth(b,r[i],r[BRH.length+i],null,now))})});
   fetch(API+'/actions/runs?per_page=100').then(function(r){return r.ok?r.json():{workflow_runs:[]}}).then(function(d){
     var seen={},rows=[],bad=0;(d.workflow_runs||[]).forEach(function(x){if(seen[x.name]||KEYJOBS.indexOf(x.name)<0)return;seen[x.name]=1;rows.push(x)});
     rows.sort(function(a,b){var fa=a.conclusion==='failure',fb=b.conclusion==='failure';return fa===fb?(a.name<b.name?-1:1):fa?-1:1});
@@ -528,10 +563,19 @@ $('rf').onclick=function(){cache={};loadTab(currentTab())};
 $('sub').textContent=hello();
 var start=(location.hash||'#home').slice(1);if(['home','review','health','channels'].indexOf(start)<0)start='home';
 setTab(start);
-if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js').catch(function(){});
+if('serviceWorker' in navigator&&location.protocol==='https:'){
+  var hadController=!!navigator.serviceWorker.controller;
+  navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(function(reg){
+    reg.update().catch(function(){});
+    document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update().catch(function(){});cache.health=0;if(currentTab()==='health')loadHealth()}});
+  }).catch(function(){});
+  navigator.serviceWorker.addEventListener('controllerchange',function(){if(hadController)$('studio-update').style.display='block'});
+}
+$('studio-reload').onclick=function(){location.reload()};
 var ios=/iphone|ipad/i.test(navigator.userAgent),standalone=window.navigator.standalone||matchMedia('(display-mode: standalone)').matches;
 if(ios&&!standalone)$('install').style.display='block';
 })();
 </script>
 </body>
 </html>
+
