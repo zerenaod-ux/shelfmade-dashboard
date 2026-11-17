@@ -37,11 +37,11 @@
    "published": "2026-10-13T02:37:47Z",
    "duration": "PT19S",
    "privacy": "public",
-   "views": 105,
+   "views": 106,
    "likes": 1,
    "comments": 0,
    "avgSeconds": 12,
-   "avgPercent": 65.6,
+   "avgPercent": 63.51,
    "subsGained": 0
   },
   {
@@ -123,6 +123,19 @@
    "subsGained": 0
   },
   {
+   "id": "szjjCFDtsFA",
+   "title": "You were taught Tao Te Ching wrong.",
+   "published": "2026-11-16T03:01:25Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 63,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 20,
+   "avgPercent": 30.260000000000005,
+   "subsGained": 0
+  },
+  {
    "id": "ZVUS3mUbOaQ",
    "title": "Up from Slavery",
    "published": "2026-10-16T01:26:27Z",
@@ -147,16 +160,6 @@
    "avgSeconds": 11,
    "avgPercent": 58.77,
    "subsGained": 1
-  },
-  {
-   "id": "szjjCFDtsFA",
-   "title": "You were taught Tao Te Ching wrong.",
-   "published": "2026-11-16T03:01:25Z",
-   "duration": "PT1M7S",
-   "privacy": "public",
-   "views": 58,
-   "likes": 2,
-   "comments": 1
   },
   {
    "id": "pWVzUeSbav0",
@@ -190,7 +193,7 @@
    "published": "2026-11-06T18:06:07Z",
    "duration": "PT36S",
    "privacy": "public",
-   "views": 51,
+   "views": 52,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 8,
@@ -216,11 +219,11 @@
    "published": "2026-11-14T18:03:43Z",
    "duration": "PT1M5S",
    "privacy": "public",
-   "views": 49,
+   "views": 50,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 13,
-   "avgPercent": 20.7,
+   "avgPercent": 21.19,
    "subsGained": 0
   },
   {
@@ -302,19 +305,6 @@
    "subsGained": 0
   },
   {
-   "id": "0OxyEvY3YvU",
-   "title": "Moreover, nothing is good but virtue, and nothing but vice is bad",
-   "published": "2026-11-03T01:26:52Z",
-   "duration": "PT27S",
-   "privacy": "public",
-   "views": 39,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 33.26,
-   "subsGained": 0
-  },
-  {
    "id": "JvIgBaYCJdU",
    "title": "Why does pessimism feel uncomfortable?",
    "published": "2026-11-05T18:03:48Z",
@@ -375,8 +365,8 @@
    "views": 35,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 21.44,
+   "avgSeconds": 8,
+   "avgPercent": 19.95,
    "subsGained": 0
   },
   {
@@ -406,6 +396,32 @@
    "subsGained": 0
   },
   {
+   "id": "jwCDi7yBZQA",
+   "title": "Neon Dreams: Futuristic Journey #shorts",
+   "published": "2025-01-22T05:45:02Z",
+   "duration": "PT34S",
+   "privacy": "public",
+   "views": 34,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 33,
+   "avgPercent": 98.53,
+   "subsGained": 0
+  },
+  {
+   "id": "eFMuACpNNxI",
+   "title": "Knowledge of the enemy\u2019s dispositions can only be obtained from other men",
+   "published": "2026-11-03T01:26:37Z",
+   "duration": "PT20S",
+   "privacy": "public",
+   "views": 33,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 9,
+   "avgPercent": 49.82,
+   "subsGained": 0
+  },
+  {
    "id": "hHymwJY9Yi8",
    "title": "It will facilitate our discussion if we keep all these distinctions well in mind",
    "published": "2026-10-29T02:00:44Z",
@@ -416,19 +432,6 @@
    "comments": 0,
    "avgSeconds": 13,
    "avgPercent": 43.62,
-   "subsGained": 0
-  },
-  {
-   "id": "jwCDi7yBZQA",
-   "title": "Neon Dreams: Futuristic Journey #shorts",
-   "published": "2025-01-22T05:45:02Z",
-   "duration": "PT34S",
-   "privacy": "public",
-   "views": 33,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 33,
-   "avgPercent": 98.53,
    "subsGained": 0
   },
   {
@@ -463,7 +466,7 @@
    "published": "2026-11-03T01:26:53Z",
    "duration": "PT26S",
    "privacy": "public",
-   "views": 30,
+   "views": 31,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 26,
@@ -556,7 +559,10 @@
    "privacy": "public",
    "views": 25,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 24,
+   "avgPercent": 32.45,
+   "subsGained": 0
   },
   {
    "id": "usfd7CGMtGA",
@@ -606,8 +612,8 @@
    "views": 24,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 4,
-   "avgPercent": 16.94,
+   "avgSeconds": 9,
+   "avgPercent": 39.5,
    "subsGained": 0
   },
   {
@@ -620,7 +626,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 11,
-   "avgPercent": 14.37,
+   "avgPercent": 14.77,
    "subsGained": 0
   },
   {
@@ -855,6 +861,16 @@
    "comments": 0
   },
   {
+   "id": "PTdWAeBmCG8",
+   "title": "Nietzsche wrote this for you.",
+   "published": "2026-11-16T18:07:08Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "GdWx5nz-ltU",
    "title": "Why does Meditations still matter?",
    "published": "2026-11-12T18:05:08Z",
@@ -879,16 +895,6 @@
    "avgSeconds": 15,
    "avgPercent": 45.5,
    "subsGained": 0
-  },
-  {
-   "id": "PTdWAeBmCG8",
-   "title": "Nietzsche wrote this for you.",
-   "published": "2026-11-16T18:07:08Z",
-   "duration": "PT59S",
-   "privacy": "public",
-   "views": 10,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "mcV0u5NRAvI",
@@ -977,8 +983,8 @@
    "views": 7,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 26,
-   "avgPercent": 37.48,
+   "avgSeconds": 28,
+   "avgPercent": 39.99,
    "subsGained": 0
   },
   {
@@ -990,8 +996,8 @@
    "views": 7,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 3.36,
+   "avgSeconds": 10,
+   "avgPercent": 2.73,
    "subsGained": 0
   },
   {
@@ -1060,6 +1066,16 @@
    "subsGained": 0
   },
   {
+   "id": "2W3cnCLXxQo",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-17T18:05:57Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "QmvgVXfWJT8",
    "title": "Does simplicity outweigh fancy appearances?",
    "published": "2026-11-06T00:00:06Z",
@@ -1068,8 +1084,8 @@
    "views": 6,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 27,
-   "avgPercent": 7.35,
+   "avgSeconds": 22,
+   "avgPercent": 5.88,
    "subsGained": 0
   },
   {
@@ -1081,8 +1097,8 @@
    "views": 6,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 27,
-   "avgPercent": 7.35,
+   "avgSeconds": 22,
+   "avgPercent": 5.88,
    "subsGained": 0
   },
   {
@@ -1150,8 +1166,21 @@
    "views": 5,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 12,
-   "avgPercent": 2.96,
+   "avgSeconds": 8,
+   "avgPercent": 1.97,
+   "subsGained": 0
+  },
+  {
+   "id": "6z0IxWs-qko",
+   "title": "Can you remember a page without notes?",
+   "published": "2026-11-05T00:00:18Z",
+   "duration": "PT7M25S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 14,
+   "avgPercent": 3.34,
    "subsGained": 0
   },
   {
@@ -1215,21 +1244,8 @@
    "views": 4,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "6z0IxWs-qko",
-   "title": "Can you remember a page without notes?",
-   "published": "2026-11-05T00:00:18Z",
-   "duration": "PT7M25S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 14,
+   "avgPercent": 3.34,
    "subsGained": 0
   },
   {
@@ -1723,7 +1739,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 3,
+   "avgPercent": 0.69,
+   "subsGained": 0
   },
   {
    "id": "qreV4UF_HS4",
@@ -1760,8 +1779,8 @@
    "views": 1,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 6,
+   "avgPercent": 1.52,
    "subsGained": 0
   },
   {

@@ -4,12 +4,12 @@ Real data only (YouTube API and Buffer). n/a = the platform does not give that n
 
 | Channel | Platform | Views | Likes | Comments | Subscribers | Posts | Data from |
 |---|---|---|---|---|---|---|---|
-| doodles | instagram | 3,977 (0) | 21 (0) | 0 (0) | n/a | 23 | 2026-11-16 |
-| doodles | tiktok | 1,722 (0) | 25 (0) | 1 (0) | n/a | 23 | 2026-11-16 |
-| doodles | youtube | 450 (+12) | 32 (0) | 40 (+2) | 2 (0) | 47 | 2026-11-17 |
-| mindlore | instagram | 514 (0) | 10 (0) | 0 (0) | n/a | 21 | 2026-11-16 |
-| mindlore | tiktok | 1,471 (0) | 17 (0) | 0 (0) | n/a | 21 | 2026-11-16 |
-| mindlore | youtube | 5,788 (+89) | 115 (0) | 49 (+7) | 10 (0) | 154 | 2026-11-17 |
-| shelfmade | instagram | 243 (0) | 1 (0) | 0 (0) | n/a | 20 | 2026-11-16 |
-| shelfmade | tiktok | 1,886 (0) | 13 (0) | 1 (0) | n/a | 21 | 2026-11-16 |
-| shelfmade | youtube | 3,225 (+16) | 120 (+1) | 46 (+5) | 9 (0) | 169 | 2026-11-17 |
+| doodles | instagram | 4,117 (+140) | 19 (-2) | 0 (0) | n/a | 24 | 2026-11-17 |
+| doodles | tiktok | 1,772 (+50) | 26 (+1) | 1 (0) | n/a | 23 | 2026-11-17 |
+| doodles | youtube | 453 (+15) | 32 (0) | 40 (+2) | 2 (0) | 48 | 2026-11-17 |
+| mindlore | instagram | 501 (-13) | 7 (-3) | 0 (0) | n/a | 22 | 2026-11-17 |
+| mindlore | tiktok | 1,487 (+16) | 14 (-3) | 0 (0) | n/a | 21 | 2026-11-17 |
+| mindlore | youtube | 5,772 (+73) | 115 (0) | 49 (+7) | 10 (0) | 155 | 2026-11-17 |
+| shelfmade | instagram | 246 (+3) | 1 (0) | 0 (0) | n/a | 21 | 2026-11-17 |
+| shelfmade | tiktok | 1,980 (+94) | 13 (0) | 1 (0) | n/a | 21 | 2026-11-17 |
+| shelfmade | youtube | 3,237 (+28) | 118 (-1) | 45 (+4) | 9 (0) | 170 | 2026-11-17 |

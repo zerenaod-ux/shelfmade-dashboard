@@ -53,8 +53,21 @@
    "views": 11,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 1,
-   "avgPercent": 3.95,
+   "avgSeconds": 6,
+   "avgPercent": 14.82,
+   "subsGained": 0
+  },
+  {
+   "id": "Zc1do-DnYrE",
+   "title": "The Rehearsal Trap",
+   "published": "2026-11-02T18:03:22Z",
+   "duration": "PT44S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 24.03,
    "subsGained": 0
   },
   {
@@ -108,19 +121,6 @@
    "avgSeconds": 13,
    "avgPercent": 22.79,
    "subsGained": 1
-  },
-  {
-   "id": "Zc1do-DnYrE",
-   "title": "The Rehearsal Trap",
-   "published": "2026-11-02T18:03:22Z",
-   "duration": "PT44S",
-   "privacy": "public",
-   "views": 9,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 10,
-   "avgPercent": 24.03,
-   "subsGained": 0
   },
   {
    "id": "YtiYnC--Tew",
@@ -384,7 +384,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 10.96,
+   "subsGained": 0
   },
   {
    "id": "RSv00j81ONc",
@@ -395,8 +398,8 @@
    "views": 3,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 87,
-   "avgPercent": 51.73,
+   "avgSeconds": 61,
+   "avgPercent": 36.39,
    "subsGained": 0
   },
   {
@@ -528,6 +531,16 @@
    "avgSeconds": 133,
    "avgPercent": 56.13,
    "subsGained": 0
+  },
+  {
+   "id": "4aqmr5TjqWY",
+   "title": "Your First Day Boss Fight",
+   "published": "2026-11-17T18:05:11Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "j9yPaC1a9eQ",

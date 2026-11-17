@@ -15,7 +15,7 @@
    "likes": 18,
    "comments": 1,
    "avgSeconds": 23,
-   "avgPercent": 42.02,
+   "avgPercent": 42.15,
    "subsGained": 0
   },
   {
@@ -27,8 +27,8 @@
    "views": 380,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 100,
-   "avgPercent": 127.12999999999998,
+   "avgSeconds": 99,
+   "avgPercent": 125.77000000000001,
    "subsGained": 0
   },
   {
@@ -54,7 +54,7 @@
    "likes": 2,
    "comments": 1,
    "avgSeconds": 22,
-   "avgPercent": 31.240000000000002,
+   "avgPercent": 31.03,
    "subsGained": 0
   },
   {
@@ -66,8 +66,8 @@
    "views": 171,
    "likes": 4,
    "comments": 1,
-   "avgSeconds": 18,
-   "avgPercent": 29.12,
+   "avgSeconds": 17,
+   "avgPercent": 28.309999999999995,
    "subsGained": 0
   },
   {
@@ -92,8 +92,8 @@
    "views": 123,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 20,
-   "avgPercent": 39.82,
+   "avgSeconds": 19,
+   "avgPercent": 39.19,
    "subsGained": 0
   },
   {
@@ -104,7 +104,10 @@
    "privacy": "public",
    "views": 110,
    "likes": 3,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "V8InsNplcoc",
@@ -129,7 +132,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 16,
-   "avgPercent": 34.16,
+   "avgPercent": 33.82,
    "subsGained": 0
   },
   {
@@ -208,6 +211,16 @@
    "subsGained": 0
   },
   {
+   "id": "OrtltBFglF8",
+   "title": "Why Your Face Freezes on Bad News",
+   "published": "2026-11-16T23:02:34Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 69,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "qfwKKgBIkvI",
    "title": "What warning did Darwin give?",
    "published": "2026-11-06T18:04:24Z",
@@ -219,16 +232,6 @@
    "avgSeconds": 42,
    "avgPercent": 68.02,
    "subsGained": 0
-  },
-  {
-   "id": "OrtltBFglF8",
-   "title": "Why Your Face Freezes on Bad News",
-   "published": "2026-11-16T23:02:34Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 67,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "xPmE_Y7DFjI",
@@ -314,8 +317,8 @@
    "views": 52,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 60,
-   "avgPercent": 66.06,
+   "avgSeconds": 55,
+   "avgPercent": 61.419999999999995,
    "subsGained": 0
   },
   {
@@ -670,19 +673,6 @@
    "subsGained": 0
   },
   {
-   "id": "xBaiLW-oBrs",
-   "title": "What psychology fuels revolutions?",
-   "published": "2026-11-04T18:04:07Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 25,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 15.54,
-   "subsGained": 0
-  },
-  {
    "id": "jcbv6oWRsSk",
    "title": "The Psychology Of Revolution",
    "published": "2026-10-29T18:03:26Z",
@@ -969,7 +959,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 8,
-   "avgPercent": 12.94,
+   "avgPercent": 13.36,
    "subsGained": 0
   },
   {
@@ -1071,7 +1061,10 @@
    "privacy": "public",
    "views": 16,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 12,
+   "avgPercent": 21.57,
+   "subsGained": 0
   },
   {
    "id": "EPBe9hIGqbc",
@@ -1117,7 +1110,10 @@
    "privacy": "public",
    "views": 15,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 33,
+   "avgPercent": 56.89999999999999,
+   "subsGained": 0
   },
   {
    "id": "Au2YzEYnkr0",
@@ -1127,7 +1123,10 @@
    "privacy": "public",
    "views": 15,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 53,
+   "avgPercent": 94.77,
+   "subsGained": 0
   },
   {
    "id": "lMXaBBTZsps",
@@ -1193,6 +1192,16 @@
    "avgSeconds": 13,
    "avgPercent": 29.469999999999995,
    "subsGained": 0
+  },
+  {
+   "id": "0-d5ZC_tONQ",
+   "title": "What Your Sudden Laughter Reveals About Brain",
+   "published": "2026-11-17T03:01:31Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "Z5ifzR5nOV0",
@@ -1297,16 +1306,6 @@
    "avgSeconds": 27,
    "avgPercent": 18.63,
    "subsGained": 0
-  },
-  {
-   "id": "0-d5ZC_tONQ",
-   "title": "What Your Sudden Laughter Reveals About Brain",
-   "published": "2026-11-17T03:01:31Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 10,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "3wxpN733RQ8",
@@ -1561,8 +1560,8 @@
    "views": 4,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.8699999999999999,
+   "avgSeconds": 1,
+   "avgPercent": 0.43,
    "subsGained": 0
   },
   {
@@ -1574,8 +1573,8 @@
    "views": 4,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.8699999999999999,
+   "avgSeconds": 1,
+   "avgPercent": 0.43,
    "subsGained": 0
   },
   {
@@ -1618,6 +1617,19 @@
    "subsGained": 0
   },
   {
+   "id": "4lZoI4B4VbE",
+   "title": "What if every slip carried a secret?",
+   "published": "2026-11-09T00:00:28Z",
+   "duration": "PT7M26S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
    "id": "lzNbwJLpncg",
    "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
    "published": "2026-11-06T00:00:34Z",
@@ -1628,6 +1640,19 @@
    "comments": 1,
    "avgSeconds": 3,
    "avgPercent": 0.66,
+   "subsGained": 0
+  },
+  {
+   "id": "4lZoI4B4VbE",
+   "title": "What if every slip carried a secret?",
+   "published": "2026-11-09T00:00:28Z",
+   "duration": "PT7M26S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -1726,23 +1751,10 @@
    "subsGained": 0
   },
   {
-   "id": "4lZoI4B4VbE",
-   "title": "What if every slip carried a secret?",
-   "published": "2026-11-09T00:00:28Z",
-   "duration": "PT7M26S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "4lZoI4B4VbE",
-   "title": "What if every slip carried a secret?",
-   "published": "2026-11-09T00:00:28Z",
-   "duration": "PT7M26S",
+   "id": "Nl1SAPaJEuY",
+   "title": "Are children's dreams really simpler than ours? | Freud",
+   "published": "2026-11-10T00:00:05Z",
+   "duration": "PT7M31S",
    "privacy": "public",
    "views": 2,
    "likes": 0,
@@ -1846,6 +1858,16 @@
    "duration": "PT2M56S",
    "privacy": "public",
    "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "vcqR_YZVpvg",
+   "title": "Why Kids Love Surprising Endings",
+   "published": "2026-11-17T18:05:09Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 0,
    "likes": 0,
    "comments": 0
   },
