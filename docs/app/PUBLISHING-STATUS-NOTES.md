@@ -31,3 +31,8 @@ Added PRODUCTION-UI-DESIGN.md to record current deployed screens versus pending 
 ## November 17 — overlapping playback prevention
 
 The shared Studio app now pauses other audio/video when one review player starts. Supported browsers coordinate other Studio tabs using BroadcastChannel; single-document enforcement still works without it. Leaving the page pauses playback. This prevents a source of overlapping old and new narration; it does not claim the demonstrated overlap was proven to originate from the encoded media. Two unit tests cover active-player preservation, other-tab messages and page exit. No approvals, video files, generation or publishing settings change.
+
+
+## November 17 — production stages and automatic recovery
+
+The existing How It Ticks Status card now shows tracked daily shorts, experimental shorts and original full-video stages, attempt, source update time, recoverable service holds, retry eligibility time and content/configuration errors requiring attention. No duplicate dashboard. Source is the engine's persisted data/operations/latest.json, without credentials or raw logs. The no-media automatic recovery test passed live on attempt 2 after the coordinator resumed its intentionally failed first attempt. This proves the recovery path, not arbitrary video quality. Phone/laptop preview checks passed with one How It Ticks card and no overflow. The job list distinguishes original full production from the legacy compilation and includes recovery verification. How It Ticks manual approval remains unchanged.

@@ -213,7 +213,7 @@ var BR=[{k:'shelfmade',n:'ShelfMade',c:'var(--sh)',s:['state.json','state-shfull
         {k:'howitticks',n:'How It Ticks',c:'var(--hi)',s:[],a:[],ce:true}];   // Fourth independent channel; verified publishing is read from its own repository.
 var PL=[['youtube','YouTube'],['tiktok','TikTok'],['instagram','Instagram']];
 var CORE_JOBS={};['daily-shorts','full-video','mindlore-2d','mindlore-story-short','shelfmade-story-short','doodles','doodles-full','sm-scripts','ml-scripts','review-publish','review-decide','publisher','publisher-mindlore','publisher-doodles','yt-publish-shelfmade','yt-publish-mindlore','yt-publish-doodles','learn','analytics','social-stats','watchdog','first-comment','reply-helper'].forEach(function(name){CORE_JOBS[name]=name});
-var CE_JOBS={'scene-factory':'Daily video creation','how-it-ticks-publisher':'Approved-video publisher','content-engine-review-folders':'Approve / Skip filing','Verify How It Ticks publishing status (read only)':'Publishing and views check','how-it-ticks-long':'Long-video assembly','How It Ticks autopilot run':'Approval setting check','Cinematic system comparison (not posted)':'Experimental cinematic video','Deliver cinematic comparison to Studio Review':'Experimental video delivery','offline-regression-checks':'Engineering checks'};
+var CE_JOBS={'scene-factory':'Daily video creation','how-it-ticks-publisher':'Approved-video publisher','content-engine-review-folders':'Approve / Skip filing','Verify How It Ticks publishing status (read only)':'Publishing and views check','how-it-ticks-long':'Legacy long-video compilation','Original How It Ticks full video':'Original full-video generation','How It Ticks automatic recovery':'Automatic failure recovery','Recovery self-test':'Recovery verification','How It Ticks autopilot run':'Approval setting check','Cinematic system comparison (not posted)':'Experimental cinematic video','Deliver cinematic comparison to Studio Review':'Experimental video delivery','offline-regression-checks':'Engineering checks'};
 /* Name and links. Change BRAND_NAME in one place. Fill a channel link to show it. */
 var BRAND_NAME='Studio';
 var LINKS={shelfmade:{youtube:'https://www.youtube.com/@shelfmadedaily',tiktok:'https://www.tiktok.com/@shelfmade.daily',instagram:'https://www.instagram.com/shelfmade.daily/'},mindlore:{youtube:'https://www.youtube.com/@mindloredaily',tiktok:'https://www.tiktok.com/@mindlore.daily',instagram:'https://www.instagram.com/mindlore.daily_/reels/'},doodles:{youtube:'https://www.youtube.com/@AnimationDoodles-h8e',tiktok:'https://www.tiktok.com/@animationdoodleshq',instagram:'https://www.instagram.com/animationdoodleshq/'},howitticks:{youtube:'https://www.youtube.com/@HowItTicks-p2v',tiktok:'https://www.tiktok.com/@howitticks.official',instagram:'https://www.instagram.com/howitticks.co/'}};
@@ -484,9 +484,33 @@ function loadScenes(){
 function ceDate(value){
   var d=new Date(value);return Number.isNaN(d.getTime())?'Time not available':d.toLocaleString('en-US',{timeZone:'America/Chicago',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
 }
+
+function productionStatus(host){
+  jget(CE_RAW+'data/operations/latest.json').then(function(report){
+    host.textContent='';host.appendChild(el('h4','','Video production'));
+    if(!report||!report.jobs){host.appendChild(el('p','pub-meta','No tracked production stage is available yet. The job list below shows current GitHub activity.'));return;}
+    var labels={'daily-short':'Daily short','short':'Experimental short','full':'Original full video'},shown=0;
+    Object.keys(labels).forEach(function(key){
+      var job=report.jobs[key];if(!job)return;shown++;
+      var row=el('div','pub-entry');row.appendChild(el('strong','',labels[key]));row.appendChild(el('p','',job.label||'Stage unavailable'));
+      if(job.reason)row.appendChild(el('p','pub-meta',job.reason));
+      if(job.retryable&&job.next_retry_at)row.appendChild(el('p','pub-meta','Automatic retry eligible after '+ceDate(new Date(job.next_retry_at*1000).toISOString())+' Chicago.'));
+      if(job.state==='needs_attention')row.appendChild(el('p','pub-notice','Automatic retries stopped. A content or configuration correction is needed.'));
+      row.appendChild(el('p','pub-meta','Reported '+ceDate(job.updated_at)+' Chicago · attempt '+nf(job.attempt)));
+      if(Date.now()-Date.parse(job.updated_at)>60*60*1000)row.appendChild(el('p','pub-meta','This stage report is over an hour old. Check Automatic jobs below for the latest run outcome.'));
+      host.appendChild(row);
+    });
+    var proof=report.jobs['self-test'];
+    if(proof&&proof.attempt>=2&&proof.state==='rendered')host.appendChild(el('p','pub-meta','Automatic recovery self-test passed after a simulated outage. No media or publishing was involved.'));
+    if(!shown)host.appendChild(el('p','pub-meta','Production stage tracking is enabled; the next tracked run will appear here.'));
+    host.appendChild(el('p','pub-meta','Service failures can resume from saved work. Content errors are held for correction. Your approval is still required.'));
+  });
+}
+
 function ceHealth(host){
   var c=el('section','card chan');c.id='howitticks-publishing';c.style.setProperty('--c','var(--hi)');
   c.appendChild(el('h3','','How It Ticks · Publishing'));c.appendChild(el('p','pub-meta','Approved videos, separated by platform. Times are Chicago time.'));host.appendChild(c);
+  var progress=el('section','pub-production');c.appendChild(progress);productionStatus(progress);
   c.appendChild(el('div','skel'));
   Promise.all([jget(CE_RAW+'data/scenes/review/index.json'),jget(CE_RAW+'publish/state.json'),jget(CE_RAW+'data/scenes/publishing-status.json'),jget(CE_RAW+'publish/live.json'),jget(CE_RAW+'publish/ce-autopilot.json')]).then(function(r){
     c.querySelectorAll('.skel').forEach(function(x){x.remove()});
