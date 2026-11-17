@@ -15,3 +15,8 @@ In existing cards show title, actual duration, format, source-check time and hon
 [Verified status and evidence](https://github.com/zerenaod-ux/content-engine/blob/main/docs/SYSTEM-STATUS.md)
 
 These are design requirements, not a claim that the new full-video generator or every badge is deployed. Existing two long releases are legacy compilations. No owner decision, existing media or publishing setting is changed by this record.
+
+
+## November 17 — latest verified handover
+
+The live Status card now reads tracked short/full production stages and explicit retry/attention states. The recovery self-test passed automatically on its second attempt; it generated no media. The new hydraulic short technically completed and was delivered, but inspection rejected it as a novelty proof because a plural-title bug let an already covered subject through. Its card and operational status are marked accordingly. Do not label this output a new-topic success. Targeted full-narration repair and plural-aware coverage are saved in the test branch; new cloud proofs still need inspection. No original full video is yet verified. Complete ongoing reference: https://github.com/zerenaod-ux/content-engine/blob/main/docs/RECOVERY-AND-QUALITY-HANDOVER.md . Existing owner decisions and publishing switches remain unchanged.
