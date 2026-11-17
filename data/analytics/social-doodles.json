@@ -1,8 +1,82 @@
 {
  "brand": "doodles",
- "collected": "2026-11-16T21:17:09Z",
+ "collected": "2026-11-17T20:05:03Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Group Chats Become Ghost Towns \ud83d\udcac\n\nWhen you mute the group chat and miss the only good thing.\n\n#psychology ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-17T04:12:46.708Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Group Chats Become Ghost Towns \ud83d\udcac\n\nWhen you mute the group chat and miss the only good thing.\n\n#psychology ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-17T04:12:46.280Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How to Fake Meeting Nods \ud83e\udd25 | Leo & Mia\n\nEver nodded through a meeting when you had no clue what was happening?",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-17T02:29:48.713Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Group Chats Become Ghost Towns \ud83d\udcac\n\nWhen you mute the group chat and miss the only good thing.\n\n#psychology ",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-17T02:29:48.169Z"
+  },
   {
    "platform": "instagram",
    "status": "scheduled",
@@ -205,7 +279,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
@@ -332,7 +406,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -350,7 +424,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
@@ -406,7 +480,7 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
+   "status": "sending",
    "url": null,
    "sent": null,
    "text": "Your First Day Boss Fight\n\nLeo handles first-day panic by turning every awkward wave into a total power move.\n",
@@ -428,9 +502,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/4aqmr5TjqWY",
+   "sent": "2026-11-17T18:04:53.936Z",
    "text": "Your First Day Boss Fight\n\nLeo handles first-day panic by turning every awkward wave into a total power move.\n",
    "views": 0,
    "likes": 0,
@@ -442,13 +516,13 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-13T10:10:21.823Z"
+   "updated": "2026-11-17T18:07:15.909Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Df2iLPukg0S/",
+   "sent": "2026-11-17T18:06:51.195Z",
    "text": "Your First Day Boss Fight\n\nLeo handles first-day panic by turning every awkward wave into a total power move.\n",
    "views": null,
    "likes": null,
@@ -458,11 +532,11 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "The Robot Replacement Panic | Leo & Mia #17\n\nWhen a simple software update makes you plan your early retiremen",
-   "views": 0,
+   "status": "sent",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7708977622671199501?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+   "sent": "2026-11-17T03:31:03.652Z",
+   "text": "The Robot Replacement Panic | Leo & Mia #17 When a simple software update makes you plan your early retirement",
+   "views": 2,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -476,119 +550,15 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-12T20:29:48.158Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Df0z4h0FUkv/",
+   "sent": "2026-11-17T02:02:18.425Z",
    "text": "The Robot Replacement Panic | Leo & Mia #17\n\nWhen a simple software update makes you plan your early retiremen",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-12T20:29:47.556Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "The Robot Replacement Panic | Leo & Mia #17\n\nWhen a simple software update makes you plan your early retiremen",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-12T20:29:46.989Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/Dfz9jwBGCT1/",
-   "sent": "2026-11-16T18:07:45.492Z",
-   "text": "The Call Scripting Trap\n\nRehearsed your phone order five times? Here is why your brain over-scripts quick call",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-12T11:55:11.119Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7708862677392706829",
-   "sent": "2026-11-16T20:05:27.556Z",
-   "text": "The Call Scripting Trap\n\nRehearsed your phone order five times? Here is why your brain over-scripts quick call",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-12T11:55:11.569Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/tmixnQsBjPc",
-   "sent": "2026-11-16T18:09:47.941Z",
-   "text": "The Call Scripting Trap\n\nRehearsed your phone order five times? Here is why your brain over-scripts quick call",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-16T18:11:21.837Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7708606427530677518",
-   "sent": "2026-11-16T03:32:00.250Z",
-   "text": "The Unearned Rest | Leo & Mia #16\n\nDo you feel like you aren't allowed to stop? Mia has some thoughts.\n\n#psych",
-   "views": 23,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-16T06:02:51.676Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfyPDzIDQfe/",
-   "sent": "2026-11-16T02:02:24.213Z",
-   "text": "The Unearned Rest | Leo & Mia #16\n\nDo you feel like you aren't allowed to stop? Mia has some thoughts.\n\n#psych",
-   "views": 181,
+   "views": 140,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -603,14 +573,14 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
    "status": "sent",
-   "url": "https://www.youtube.com/shorts/ucEbj1x_lJw",
-   "sent": "2026-11-16T03:01:07.954Z",
-   "text": "The Unearned Rest | Leo & Mia #16\n\nDo you feel like you aren't allowed to stop? Mia has some thoughts.\n\n#psych",
+   "url": "https://www.youtube.com/shorts/vG5WGpjUpdc",
+   "sent": "2026-11-17T03:01:47.744Z",
+   "text": "The Robot Replacement Panic | Leo & Mia #17\n\nWhen a simple software update makes you plan your early retiremen",
    "views": 0,
    "likes": 0,
    "comments": 0,
@@ -621,7 +591,133 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.883Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Dfz9jwBGCT1/",
+   "sent": "2026-11-16T18:07:45.492Z",
+   "text": "The Call Scripting Trap\n\nRehearsed your phone order five times? Here is why your brain over-scripts quick call",
+   "views": 199,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-17T04:45:03.364Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7708862677392706829?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+   "sent": "2026-11-16T20:05:27.556Z",
+   "text": "The Call Scripting Trap Rehearsed your phone order five times? Here is why your brain over-scripts quick calls",
+   "views": 67,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-17T05:03:35.869Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/tmixnQsBjPc",
+   "sent": "2026-11-16T18:09:47.941Z",
+   "text": "The Call Scripting Trap\n\nRehearsed your phone order five times? Here is why your brain over-scripts quick call",
+   "views": 1,
+   "likes": 0,
+   "comments": 1,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-17T12:00:28.884Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "sent",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7708606427530677518?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+   "sent": "2026-11-16T03:32:00.250Z",
+   "text": "The Unearned Rest | Leo & Mia #16 Do you feel like you aren't allowed to stop? Mia has some thoughts. #psychol",
+   "views": 68,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-17T05:03:35.869Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DfyPDzIDQfe/",
+   "sent": "2026-11-16T02:02:24.213Z",
+   "text": "The Unearned Rest | Leo & Mia #16\n\nDo you feel like you aren't allowed to stop? Mia has some thoughts.\n\n#psych",
+   "views": 207,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-17T04:45:03.364Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/ucEbj1x_lJw",
+   "sent": "2026-11-16T03:01:07.954Z",
+   "text": "The Unearned Rest | Leo & Mia #16\n\nDo you feel like you aren't allowed to stop? Mia has some thoughts.\n\n#psych",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "youtube",
@@ -639,15 +735,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7708490961743138061",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7708490961743138061?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-15T20:03:16.405Z",
-   "text": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone\n\nWhy does Sunday evening feel like a high-stakes exam you di",
-   "views": 69,
+   "text": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone Why does Sunday evening feel like a high-stakes exam you did",
+   "views": 76,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -661,7 +757,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -669,7 +765,7 @@
    "url": "https://www.instagram.com/reel/DfxYd5hgJRe/",
    "sent": "2026-11-15T18:05:25.515Z",
    "text": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone\n\nWhy does Sunday evening feel like a high-stakes exam you di",
-   "views": 135,
+   "views": 136,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -684,15 +780,15 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7708235318519958798",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7708235318519958798?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-15T03:30:49.267Z",
-   "text": "The 'K' Text Trap | Leo & Mia #11\n\nEver send a one-letter text because a long reply felt overwhelming? Here is",
-   "views": 92,
+   "text": "The 'K' Text Trap | Leo & Mia #11 Ever send a one-letter text because a long reply felt overwhelming? Here is ",
+   "views": 93,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -706,7 +802,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -729,7 +825,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -737,7 +833,7 @@
    "url": "https://www.youtube.com/shorts/C0CTlw4ue8A",
    "sent": "2026-11-15T03:01:13.122Z",
    "text": "The 'K' Text Trap | Leo & Mia #11\n\nEver send a one-letter text because a long reply felt overwhelming? Here is",
-   "views": 9,
+   "views": 11,
    "likes": 1,
    "comments": 1,
    "metrics": [
@@ -747,14 +843,14 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7708119934961732877",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7708119934961732877?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-14T20:03:20.928Z",
-   "text": "The Silent Meeting Nod | Leo & Mia #12\n\nEver nodded through a meeting when you had no clue what was happening?",
+   "text": "The Silent Meeting Nod | Leo & Mia #12 Ever nodded through a meeting when you had no clue what was happening? ",
    "views": 73,
    "likes": 0,
    "comments": 0,
@@ -769,7 +865,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -792,7 +888,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -810,14 +906,14 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7707864308574719245",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7707864308574719245?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-14T03:31:13.643Z",
-   "text": "The Phone Call Script | Leo & Mia #14\n\nEver rehearse a ten-second phone call five times? Here is why your brai",
+   "text": "The Phone Call Script | Leo & Mia #14 Ever rehearse a ten-second phone call five times? Here is why your brain",
    "views": 87,
    "likes": 0,
    "comments": 0,
@@ -832,7 +928,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -852,7 +948,7 @@
    "url": "https://www.youtube.com/shorts/1cmRYRGsBTY",
    "sent": "2026-11-14T03:01:47.321Z",
    "text": "The Phone Call Script | Leo & Mia #14\n\nEver rehearse a ten-second phone call five times? Here is why your brai",
-   "views": 2,
+   "views": 5,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -862,14 +958,14 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@animationdoodleshq/video/7707749048542842126",
+   "url": "https://www.tiktok.com/@animationdoodleshq/video/7707749048542842126?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-13T20:04:00.160Z",
-   "text": "The Phantom Ping Trap | Leo & Mia #13\n\nWhy you just opened your phone for the fourth empty minute in a row.\n\n#",
+   "text": "The Phantom Ping Trap | Leo & Mia #13 Why you just opened your phone for the fourth empty minute in a row. #ps",
    "views": 72,
    "likes": 1,
    "comments": 0,
@@ -884,7 +980,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -907,7 +1003,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -925,7 +1021,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
@@ -947,7 +1043,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -970,7 +1066,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -978,7 +1074,7 @@
    "url": "https://www.youtube.com/shorts/5bvrVUR8iek",
    "sent": "2026-11-13T03:01:00.098Z",
    "text": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone\n\nWhy does Sunday afternoon feel scarier than Monday mornin",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -988,7 +1084,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
@@ -1010,7 +1106,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "youtube",
@@ -1028,7 +1124,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "instagram",
@@ -1051,7 +1147,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "instagram",
@@ -1074,7 +1170,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "tiktok",
@@ -1096,7 +1192,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "youtube",
@@ -1114,7 +1210,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
@@ -1136,7 +1232,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -1159,7 +1255,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -1177,7 +1273,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
@@ -1199,7 +1295,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "tiktok",
@@ -1221,7 +1317,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -1244,7 +1340,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -1262,7 +1358,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "youtube",
@@ -1280,7 +1376,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "instagram",
@@ -1303,7 +1399,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -1311,7 +1407,7 @@
    "url": "https://www.youtube.com/shorts/EWhebXioXqQ",
    "sent": "2026-11-10T18:03:58.124Z",
    "text": "The Sleep Effort Trap\n\nCan't sleep? Trying harder might be the reason. Leo and Mia explain the sleep effort tr",
-   "views": 15,
+   "views": 16,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1321,7 +1417,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "tiktok",
@@ -1343,7 +1439,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "tiktok",
@@ -1351,7 +1447,7 @@
    "url": "https://www.tiktok.com/@animationdoodleshq/video/7705637759288872206?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-08T03:31:54.150Z",
    "text": "The Whiteboard Nod | Leo & Mia #5 Ever nodded along in a meeting while completely lost? Here is why everyone e",
-   "views": 74,
+   "views": 75,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -1365,7 +1461,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "instagram",
@@ -1388,7 +1484,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "instagram",
@@ -1411,7 +1507,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -1429,7 +1525,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "youtube",
@@ -1447,7 +1543,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "instagram",
@@ -1481,7 +1577,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "youtube",
@@ -1499,7 +1595,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.884Z"
   },
   {
    "platform": "youtube",
@@ -1517,7 +1613,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.885Z"
   },
   {
    "platform": "tiktok",
@@ -1539,7 +1635,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "instagram",
@@ -1562,7 +1658,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -1580,7 +1676,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.885Z"
   },
   {
    "platform": "tiktok",
@@ -1602,7 +1698,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "instagram",
@@ -1625,7 +1721,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -1643,7 +1739,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.885Z"
   },
   {
    "platform": "tiktok",
@@ -1665,7 +1761,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "instagram",
@@ -1688,7 +1784,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   },
   {
    "platform": "youtube",
@@ -1706,7 +1802,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.885Z"
   },
   {
    "platform": "tiktok",
@@ -1728,7 +1824,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "instagram",
@@ -1751,7 +1847,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.365Z"
   },
   {
    "platform": "youtube",
@@ -1769,7 +1865,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.885Z"
   },
   {
    "platform": "tiktok",
@@ -1791,7 +1887,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.870Z"
   },
   {
    "platform": "instagram",
@@ -1814,7 +1910,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
+   "updated": "2026-11-17T04:45:03.365Z"
   },
   {
    "platform": "youtube",
@@ -1832,7 +1928,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T12:00:28.885Z"
   },
   {
    "platform": "tiktok",
@@ -1854,7 +1950,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T06:02:51.676Z"
+   "updated": "2026-11-17T05:03:35.869Z"
   },
   {
    "platform": "instagram",
@@ -1877,88 +1973,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-16T05:44:53.918Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/hzKTBT9qysw",
-   "sent": "2026-11-10T03:01:39.394Z",
-   "text": "Ever replay a tiny awkward moment at 2 AM? Here is why your brain traps you in the cringe loop.\n\n#psychology #",
-   "views": 5,
-   "likes": 1,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-16T11:17:13.790Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@animationdoodleshq/video/7706264686550961422?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-09T20:04:03.015Z",
-   "text": "Ever nod along in a meeting you didn't understand because everyone else seemed confident? You fell for this tr",
-   "views": 73,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-16T06:02:51.676Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/Dfh7wepj9D2/",
-   "sent": "2026-11-09T18:05:54.605Z",
-   "text": "Ever nod along in a meeting you didn't understand because everyone else seemed confident? You fell for this tr",
-   "views": 226,
-   "likes": 3,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-16T05:44:53.918Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/m-mdceIZnsg",
-   "sent": "2026-11-09T18:04:34.515Z",
-   "text": "Ever nod along in a meeting you didn't understand because everyone else seemed confident? You fell for this tr",
-   "views": 6,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-16T11:17:13.790Z"
+   "updated": "2026-11-17T04:45:03.364Z"
   }
  ]
 }
