@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "9",
- "collected": "2026-11-16",
+ "collected": "2026-11-17",
  "note": "",
  "videos": [
   {
@@ -97,19 +97,6 @@
    "subsGained": 0
   },
   {
-   "id": "Mkc1Mjjf_kY",
-   "title": "Machiavelli would hate how you live.",
-   "published": "2026-11-13T03:01:24Z",
-   "duration": "PT1M12S",
-   "privacy": "public",
-   "views": 65,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 24.67,
-   "subsGained": 0
-  },
-  {
    "id": "x3YArPfqBjg",
    "title": "There are of course some books which we must read, mark, learn, and inwardly digest",
    "published": "2026-10-20T19:36:24Z",
@@ -120,6 +107,19 @@
    "comments": 0,
    "avgSeconds": 265,
    "avgPercent": 1062.92,
+   "subsGained": 0
+  },
+  {
+   "id": "Mkc1Mjjf_kY",
+   "title": "Machiavelli would hate how you live.",
+   "published": "2026-11-13T03:01:24Z",
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "views": 64,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 24.67,
    "subsGained": 0
   },
   {
@@ -149,6 +149,16 @@
    "subsGained": 1
   },
   {
+   "id": "szjjCFDtsFA",
+   "title": "You were taught Tao Te Ching wrong.",
+   "published": "2026-11-16T03:01:25Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 58,
+   "likes": 2,
+   "comments": 1
+  },
+  {
    "id": "pWVzUeSbav0",
    "title": "That which is necessary in order to learn something else is an Axiom",
    "published": "2026-10-16T16:28:52Z",
@@ -160,16 +170,6 @@
    "avgSeconds": 48,
    "avgPercent": 168.72,
    "subsGained": 0
-  },
-  {
-   "id": "szjjCFDtsFA",
-   "title": "You were taught Tao Te Ching wrong.",
-   "published": "2026-11-16T03:01:25Z",
-   "duration": "PT1M7S",
-   "privacy": "public",
-   "views": 53,
-   "likes": 1,
-   "comments": 0
   },
   {
    "id": "rhV-RVacC7s",
@@ -216,7 +216,7 @@
    "published": "2026-11-14T18:03:43Z",
    "duration": "PT1M5S",
    "privacy": "public",
-   "views": 48,
+   "views": 49,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 13,
@@ -309,7 +309,7 @@
    "privacy": "public",
    "views": 39,
    "likes": 2,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 8,
    "avgPercent": 33.26,
    "subsGained": 0
@@ -367,6 +367,19 @@
    "subsGained": 0
   },
   {
+   "id": "K1uoKKalsZo",
+   "title": "Allen would hate how you live.",
+   "published": "2026-11-15T03:01:37Z",
+   "duration": "PT44S",
+   "privacy": "public",
+   "views": 35,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 21.44,
+   "subsGained": 0
+  },
+  {
    "id": "nQlibcVN19o",
    "title": "Victories after all never",
    "published": "2026-11-03T01:26:20Z",
@@ -390,19 +403,6 @@
    "comments": 0,
    "avgSeconds": 14,
    "avgPercent": 67.2,
-   "subsGained": 0
-  },
-  {
-   "id": "K1uoKKalsZo",
-   "title": "Allen would hate how you live.",
-   "published": "2026-11-15T03:01:37Z",
-   "duration": "PT44S",
-   "privacy": "public",
-   "views": 34,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 21.44,
    "subsGained": 0
   },
   {
@@ -465,7 +465,7 @@
    "privacy": "public",
    "views": 30,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 26,
    "avgPercent": 102.15,
    "subsGained": 1
@@ -881,6 +881,16 @@
    "subsGained": 0
   },
   {
+   "id": "PTdWAeBmCG8",
+   "title": "Nietzsche wrote this for you.",
+   "published": "2026-11-16T18:07:08Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "mcV0u5NRAvI",
    "title": "Can you control your calm?",
    "published": "2026-10-23T04:05:15Z",
@@ -1048,16 +1058,6 @@
    "avgSeconds": 1,
    "avgPercent": 2.22,
    "subsGained": 0
-  },
-  {
-   "id": "PTdWAeBmCG8",
-   "title": "Nietzsche wrote this for you.",
-   "published": "2026-11-16T18:07:08Z",
-   "duration": "PT59S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "QmvgVXfWJT8",
@@ -1546,10 +1546,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "ia_HHb2Evgc",
@@ -1560,6 +1557,16 @@
    "views": 3,
    "likes": 1,
    "comments": 0
+  },
+  {
+   "id": "p079-FpO7QE",
+   "title": "Almost everyone gets Prince wrong.",
+   "published": "2026-11-16T00:00:29Z",
+   "duration": "PT7M23S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "cPmS7p3wuaY",
@@ -1706,16 +1713,6 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0
-  },
-  {
-   "id": "p079-FpO7QE",
-   "title": "Almost everyone gets Prince wrong.",
-   "published": "2026-11-16T00:00:29Z",
-   "duration": "PT7M23S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
    "comments": 0
   },
   {
@@ -1969,6 +1966,16 @@
    "comments": 0
   },
   {
+   "id": "ArV4A7SljL8",
+   "title": "Forget what you know about Self-Reliance.",
+   "published": "2026-11-17T00:00:23Z",
+   "duration": "PT7M18S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "TXgCTuFvgYA",
    "title": "Why does Conduct of Life still matter?",
    "published": "2026-11-16T22:26:54Z",
@@ -2026,16 +2033,6 @@
    "title": "Nietzsche had a warning for you.",
    "published": "2026-11-13T19:57:35Z",
    "duration": "PT6M52S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "ArV4A7SljL8",
-   "title": "Forget what you know about Self-Reliance.",
-   "published": "2026-11-13T19:14:51Z",
-   "duration": "PT7M18S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

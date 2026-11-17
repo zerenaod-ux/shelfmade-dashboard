@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-16",
+ "collected": "2026-11-17",
  "note": "",
  "videos": [
   {
@@ -24,7 +24,7 @@
    "published": "2026-11-10T18:04:30Z",
    "duration": "PT1M37S",
    "privacy": "public",
-   "views": 15,
+   "views": 16,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 39,
@@ -42,6 +42,19 @@
    "comments": 0,
    "avgSeconds": 30,
    "avgPercent": 56.89999999999999,
+   "subsGained": 0
+  },
+  {
+   "id": "C0CTlw4ue8A",
+   "title": "The 'K' Text Trap | Leo & Mia #11",
+   "published": "2026-11-15T03:01:30Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 1,
+   "avgPercent": 3.95,
    "subsGained": 0
   },
   {
@@ -81,19 +94,6 @@
    "comments": 1,
    "avgSeconds": 31,
    "avgPercent": 41.17,
-   "subsGained": 0
-  },
-  {
-   "id": "C0CTlw4ue8A",
-   "title": "The 'K' Text Trap | Leo & Mia #11",
-   "published": "2026-11-15T03:01:30Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 9,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 1,
-   "avgPercent": 3.95,
    "subsGained": 0
   },
   {
@@ -214,6 +214,16 @@
    "subsGained": 0
   },
   {
+   "id": "ucEbj1x_lJw",
+   "title": "The Unearned Rest | Leo & Mia #16",
+   "published": "2026-11-16T03:01:32Z",
+   "duration": "PT30S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "F7XDCfj-9Uk",
    "title": "The Feather Duster Detour | Leo & Mia #6",
    "published": "2026-11-11T18:06:42Z",
@@ -237,6 +247,19 @@
    "comments": 1,
    "avgSeconds": 47,
    "avgPercent": 102.8,
+   "subsGained": 0
+  },
+  {
+   "id": "Aj8TiWooNdA",
+   "title": "The Shark in the Swimming Pool",
+   "published": "2026-11-07T18:05:00Z",
+   "duration": "PT55S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 17.19,
    "subsGained": 0
   },
   {
@@ -266,6 +289,19 @@
    "subsGained": 0
   },
   {
+   "id": "1cmRYRGsBTY",
+   "title": "The Phone Call Script | Leo & Mia #14",
+   "published": "2026-11-14T03:02:05Z",
+   "duration": "PT35S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 4,
+   "avgPercent": 12,
+   "subsGained": 0
+  },
+  {
    "id": "vthdpujWnPY",
    "title": "The Infinite Refresh | Leo & Mia #7",
    "published": "2026-11-11T03:02:01Z",
@@ -289,42 +325,6 @@
    "comments": 1,
    "avgSeconds": 35,
    "avgPercent": 75.48,
-   "subsGained": 0
-  },
-  {
-   "id": "Aj8TiWooNdA",
-   "title": "The Shark in the Swimming Pool",
-   "published": "2026-11-07T18:05:00Z",
-   "duration": "PT55S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 17.19,
-   "subsGained": 0
-  },
-  {
-   "id": "ucEbj1x_lJw",
-   "title": "The Unearned Rest | Leo & Mia #16",
-   "published": "2026-11-16T03:01:32Z",
-   "duration": "PT30S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "1cmRYRGsBTY",
-   "title": "The Phone Call Script | Leo & Mia #14",
-   "published": "2026-11-14T03:02:05Z",
-   "duration": "PT35S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 4,
-   "avgPercent": 12,
    "subsGained": 0
   },
   {
@@ -367,6 +367,16 @@
    "subsGained": 0
   },
   {
+   "id": "tmixnQsBjPc",
+   "title": "The Call Scripting Trap",
+   "published": "2026-11-16T18:10:17Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "0Bx46Pe0lMQ",
    "title": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone",
    "published": "2026-11-15T18:03:50Z",
@@ -387,6 +397,19 @@
    "comments": 1,
    "avgSeconds": 87,
    "avgPercent": 51.73,
+   "subsGained": 0
+  },
+  {
+   "id": "5bvrVUR8iek",
+   "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
+   "published": "2026-11-13T03:01:26Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -452,19 +475,6 @@
    "comments": 1,
    "avgSeconds": 8,
    "avgPercent": 21.63,
-   "subsGained": 0
-  },
-  {
-   "id": "5bvrVUR8iek",
-   "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
-   "published": "2026-11-13T03:01:26Z",
-   "duration": "PT38S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -546,10 +556,20 @@
    "subsGained": 0
   },
   {
-   "id": "tmixnQsBjPc",
-   "title": "The Call Scripting Trap",
-   "published": "2026-11-16T18:10:17Z",
-   "duration": "PT36S",
+   "id": "FXhd_ptBx6o",
+   "title": "How Overthinking Messes Up Interviews \ud83d\ude30 | Leo & Mia",
+   "published": "2026-11-17T15:02:20Z",
+   "duration": "PT3M38S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "vG5WGpjUpdc",
+   "title": "The Robot Replacement Panic | Leo & Mia #17",
+   "published": "2026-11-17T03:02:07Z",
+   "duration": "PT47S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

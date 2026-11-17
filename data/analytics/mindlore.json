@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-16",
+ "collected": "2026-11-17",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-11-14T18:03:04Z",
    "duration": "PT56S",
    "privacy": "public",
-   "views": 1022,
+   "views": 1024,
    "likes": 18,
    "comments": 1,
    "avgSeconds": 23,
@@ -63,7 +63,7 @@
    "published": "2026-11-15T03:01:32Z",
    "duration": "PT1M3S",
    "privacy": "public",
-   "views": 170,
+   "views": 171,
    "likes": 4,
    "comments": 1,
    "avgSeconds": 18,
@@ -112,7 +112,7 @@
    "published": "2026-11-10T00:00:03Z",
    "duration": "PT8M23S",
    "privacy": "public",
-   "views": 92,
+   "views": 93,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 124,
@@ -182,6 +182,19 @@
    "subsGained": 0
   },
   {
+   "id": "Nw9hdA-AyGs",
+   "title": "Why Faces Freeze On Sudden News",
+   "published": "2026-11-12T23:02:23Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 74,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 26.85,
+   "subsGained": 0
+  },
+  {
    "id": "2uytrhv7SeI",
    "title": "Why Animals Play Games",
    "published": "2026-11-10T23:01:33Z",
@@ -192,19 +205,6 @@
    "comments": 1,
    "avgSeconds": 22,
    "avgPercent": 37.11,
-   "subsGained": 0
-  },
-  {
-   "id": "Nw9hdA-AyGs",
-   "title": "Why Faces Freeze On Sudden News",
-   "published": "2026-11-12T23:02:23Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 73,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 26.85,
    "subsGained": 0
   },
   {
@@ -219,6 +219,16 @@
    "avgSeconds": 42,
    "avgPercent": 68.02,
    "subsGained": 0
+  },
+  {
+   "id": "OrtltBFglF8",
+   "title": "Why Your Face Freezes on Bad News",
+   "published": "2026-11-16T23:02:34Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 67,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "xPmE_Y7DFjI",
@@ -348,19 +358,6 @@
    "subsGained": 0
   },
   {
-   "id": "T85YWZMCbDc",
-   "title": "Your Play Boosts Joy",
-   "published": "2026-11-13T18:03:48Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 46,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 26,
-   "avgPercent": 43.92,
-   "subsGained": 0
-  },
-  {
    "id": "3CRX1T8eE7Q",
    "title": "Is chasing every extra dollar worth it?",
    "published": "2026-11-10T18:03:38Z",
@@ -371,6 +368,19 @@
    "comments": 1,
    "avgSeconds": 26,
    "avgPercent": 45.8,
+   "subsGained": 0
+  },
+  {
+   "id": "T85YWZMCbDc",
+   "title": "Your Play Boosts Joy",
+   "published": "2026-11-13T18:03:48Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 45,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 26,
+   "avgPercent": 43.92,
    "subsGained": 0
   },
   {
@@ -764,6 +774,19 @@
    "subsGained": 0
   },
   {
+   "id": "YG8unHg5xWw",
+   "title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4",
+   "published": "2026-11-02T00:00:18Z",
+   "duration": "PT5M29S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 4.33,
+   "subsGained": 2
+  },
+  {
    "id": "GUUj1ASdeLg",
    "title": "Why does work feel heavy?",
    "published": "2026-06-19T04:29:48Z",
@@ -784,6 +807,32 @@
    "comments": 1,
    "avgSeconds": 14,
    "avgPercent": 23.87,
+   "subsGained": 0
+  },
+  {
+   "id": "BeQ1CnMVAns",
+   "title": "Are strong sensations always painful?",
+   "published": "2026-11-08T18:03:11Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 30.36,
+   "subsGained": 0
+  },
+  {
+   "id": "LFZ1UKXf86A",
+   "title": "Listen to what M\u00fcnsterberg warned about.",
+   "published": "2026-11-07T03:01:33Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 27.91,
    "subsGained": 0
   },
   {
@@ -823,6 +872,16 @@
    "subsGained": 0
   },
   {
+   "id": "ldlmq9sPVl0",
+   "title": "Why Kids React To Twists",
+   "published": "2026-11-16T18:05:47Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "BzovLB6Cwok",
    "title": "Your desk job steals ancient movement",
    "published": "2026-11-12T18:04:41Z",
@@ -834,58 +893,6 @@
    "avgSeconds": 22,
    "avgPercent": 37.58,
    "subsGained": 0
-  },
-  {
-   "id": "BeQ1CnMVAns",
-   "title": "Are strong sensations always painful?",
-   "published": "2026-11-08T18:03:11Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 30.36,
-   "subsGained": 0
-  },
-  {
-   "id": "LFZ1UKXf86A",
-   "title": "Listen to what M\u00fcnsterberg warned about.",
-   "published": "2026-11-07T03:01:33Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 27.91,
-   "subsGained": 0
-  },
-  {
-   "id": "XzN7lxh73iM",
-   "title": "Almost everyone gets How We Think wrong.",
-   "published": "2026-11-04T03:01:51Z",
-   "duration": "PT1M10S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 12,
-   "avgPercent": 17.3,
-   "subsGained": 0
-  },
-  {
-   "id": "YG8unHg5xWw",
-   "title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4",
-   "published": "2026-11-02T00:00:18Z",
-   "duration": "PT5M29S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 4.33,
-   "subsGained": 2
   },
   {
    "id": "-FD8LOO2XG4",
@@ -1057,6 +1064,16 @@
    "subsGained": 0
   },
   {
+   "id": "2GlYD2z2jJY",
+   "title": "Your Face Freezes On Sudden News",
+   "published": "2026-11-15T23:02:24Z",
+   "duration": "PT59S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "EPBe9hIGqbc",
    "title": "Self-consciousness \u00b7 An original reflection",
    "published": "2026-10-28T05:18:42Z",
@@ -1093,14 +1110,24 @@
    "comments": 0
   },
   {
-   "id": "2GlYD2z2jJY",
-   "title": "Your Face Freezes On Sudden News",
-   "published": "2026-11-15T23:02:24Z",
-   "duration": "PT59S",
+   "id": "KhfyoHiwyYc",
+   "title": "Your Sudden Laughter Reveals Ancient Survival",
+   "published": "2026-11-16T03:01:20Z",
+   "duration": "PT58S",
    "privacy": "public",
    "views": 15,
    "likes": 0,
-   "comments": 0
+   "comments": 1
+  },
+  {
+   "id": "Au2YzEYnkr0",
+   "title": "Your Eyes Blink During Story Turns",
+   "published": "2026-11-15T18:03:29Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 1,
+   "comments": 1
   },
   {
    "id": "lMXaBBTZsps",
@@ -1140,26 +1167,6 @@
    "avgSeconds": 20,
    "avgPercent": 41.98,
    "subsGained": 0
-  },
-  {
-   "id": "KhfyoHiwyYc",
-   "title": "Your Sudden Laughter Reveals Ancient Survival",
-   "published": "2026-11-16T03:01:20Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 14,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "Au2YzEYnkr0",
-   "title": "Your Eyes Blink During Story Turns",
-   "published": "2026-11-15T18:03:29Z",
-   "duration": "PT56S",
-   "privacy": "public",
-   "views": 14,
-   "likes": 1,
-   "comments": 1
   },
   {
    "id": "u-bjxB9PmgY",
@@ -1212,16 +1219,6 @@
    "avgSeconds": 5,
    "avgPercent": 5.87,
    "subsGained": 0
-  },
-  {
-   "id": "OrtltBFglF8",
-   "title": "Why Your Face Freezes on Bad News",
-   "published": "2026-11-16T23:02:34Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 12,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "s2csm1mzmRY",
@@ -1302,10 +1299,10 @@
    "subsGained": 0
   },
   {
-   "id": "ldlmq9sPVl0",
-   "title": "Why Kids React To Twists",
-   "published": "2026-11-16T18:05:47Z",
-   "duration": "PT1M2S",
+   "id": "0-d5ZC_tONQ",
+   "title": "What Your Sudden Laughter Reveals About Brain",
+   "published": "2026-11-17T03:01:31Z",
+   "duration": "PT58S",
    "privacy": "public",
    "views": 10,
    "likes": 0,
@@ -1563,7 +1560,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 3,
    "avgPercent": 0.8699999999999999,
    "subsGained": 0
@@ -1576,7 +1573,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 3,
    "avgPercent": 0.8699999999999999,
    "subsGained": 0
@@ -1647,6 +1644,19 @@
    "subsGained": 0
   },
   {
+   "id": "8lmhT2wqPj8",
+   "title": "What to do when you cannot tell which road is right | John Dewey",
+   "published": "2026-11-04T00:00:13Z",
+   "duration": "PT7M39S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 18,
+   "avgPercent": 4.13,
+   "subsGained": 0
+  },
+  {
    "id": "wEEbLtq5Ap0",
    "title": "Why does attention choose focus?",
    "published": "2026-10-19T16:31:14Z",
@@ -1657,6 +1667,19 @@
    "comments": 0,
    "avgSeconds": 80,
    "avgPercent": 21.43,
+   "subsGained": 0
+  },
+  {
+   "id": "uQcS30Co6Rs",
+   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 1",
+   "published": "2026-10-18T23:35:32Z",
+   "duration": "PT5M50S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 349,
+   "avgPercent": 99.73,
    "subsGained": 0
   },
   {
@@ -1703,16 +1726,29 @@
    "subsGained": 0
   },
   {
-   "id": "8lmhT2wqPj8",
-   "title": "What to do when you cannot tell which road is right | John Dewey",
-   "published": "2026-11-04T00:00:13Z",
-   "duration": "PT7M39S",
+   "id": "4lZoI4B4VbE",
+   "title": "What if every slip carried a secret?",
+   "published": "2026-11-09T00:00:28Z",
+   "duration": "PT7M26S",
    "privacy": "public",
    "views": 2,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 18,
-   "avgPercent": 4.13,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "4lZoI4B4VbE",
+   "title": "What if every slip carried a secret?",
+   "published": "2026-11-09T00:00:28Z",
+   "duration": "PT7M26S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -1742,43 +1778,40 @@
    "subsGained": 0
   },
   {
-   "id": "4lZoI4B4VbE",
-   "title": "What if every slip carried a secret?",
-   "published": "2026-11-09T00:00:28Z",
-   "duration": "PT7M26S",
+   "id": "MN_liz83nkU",
+   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
+   "published": "2026-11-07T00:00:20Z",
+   "duration": "PT7M24S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "MN_liz83nkU",
+   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
+   "published": "2026-11-07T00:00:20Z",
+   "duration": "PT7M24S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "23BZecAP85c",
+   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
+   "published": "2026-11-03T00:00:22Z",
+   "duration": "PT5M55S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "MN_liz83nkU",
-   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
-   "published": "2026-11-07T00:00:20Z",
-   "duration": "PT7M24S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "MN_liz83nkU",
-   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
-   "published": "2026-11-07T00:00:20Z",
-   "duration": "PT7M24S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
+   "comments": 0
   },
   {
    "id": "kBXKZ5Zcmow",
@@ -1804,19 +1837,6 @@
    "comments": 0,
    "avgSeconds": 7,
    "avgPercent": 2.11,
-   "subsGained": 0
-  },
-  {
-   "id": "uQcS30Co6Rs",
-   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 1",
-   "published": "2026-10-18T23:35:32Z",
-   "duration": "PT5M50S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 349,
-   "avgPercent": 99.73,
    "subsGained": 0
   },
   {
@@ -1885,16 +1905,6 @@
    "published": "2026-11-04T20:45:23Z",
    "duration": "PT7M45S",
    "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "23BZecAP85c",
-   "title": "How We Think \u00b7 A question worth keeping \u00b7 Reading 6",
-   "published": "2026-11-03T00:00:22Z",
-   "duration": "PT5M55S",
-   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0
