@@ -1,31 +1,31 @@
 {
- "at": "2026-11-16T23:25:33+00:00",
+ "at": "2026-11-17T19:29:10+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 0 h ago"
+   "text": "updated 3 h ago"
   },
   {
    "name": "Doodles daily run",
    "ok": true,
-   "text": "last: success 2026-11-16T17:22"
+   "text": "last: success 2026-11-17T09:19"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "13 stories carry a judge note"
+   "text": "14 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 4 h ago"
+   "text": "ok=True, checked 1 h ago"
   },
   {
    "name": "Approved videos reach the queue",
-   "ok": false,
-   "text": "approved but NOT queued: #262 Review DOODLES: Your Speed Demon Text \ud83d\udcf1"
+   "ok": true,
+   "text": "all approved Issues are queued"
   },
   {
    "name": "Free-tier room",
@@ -35,7 +35,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-16T13:09"
+   "text": "last: success 2026-11-17T13:51"
   },
   {
    "name": "Safety guard",
@@ -54,18 +54,18 @@
   },
   {
    "name": "Learning + scoreboard",
-   "ok": false,
-   "text": "last: cancelled 2026-11-16 | auto-fix started"
+   "ok": true,
+   "text": "last: success 2026-11-16"
   },
   {
    "name": "Playlist flywheel",
    "ok": true,
-   "text": "ok (shelfmade: added 8 video(s); mindlore: added 8 video(s); doodles: added 3 video(s))"
+   "text": "ok (shelfmade: added 9 video(s); mindlore: added 9 video(s); doodles: added 3 video(s))"
   },
   {
    "name": "Retitle campaign",
    "ok": true,
-   "text": "last: success 2026-11-16"
+   "text": "last: success 2026-11-17"
   },
   {
    "name": "Access check (logins)",
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 3 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 0 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 3 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Service probes",
@@ -100,7 +100,7 @@
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "41.6 h used in 7 days, stories/day cap 2"
+   "text": "41.4 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
