@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261117-90853",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Eyes Dilate On News 😲",
+ "hook": "You notice your eyes widen when you hear unexpected news.",
+ "thumbnail_headline": "EYES WIDEN ON NEWS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You notice your eyes widen when you hear unexpected news. Actually, that widening is a universal cue linked to sudden information. In 1972, Paul Ekman reported about 90 percent eye dilation. Later cross‑cultural work confirmed the same pattern, called universality of expressions. Researchers at the University of Glasgow observed similar eye responses in older adults. In 2016, they measured about 80 percent dilation during unexpected alerts. The result? Even neutral statements trigger dilation when they are unexpected. The result? The brain's amygdala fires, causing pupils to open. So why do we assume only strong emotions move the eyes? Because research shows unexpected information activates the sympathetic nervous system, widening pupils. Does it still hold today? Yes, a 2009 study by Michael Matsumoto found about 85 percent across ten cultures. That's it. This reflex helps you quickly assess potential threats in your environment. So next time you hear breaking headlines, notice your eyes widen, and remember you notice"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 90 percent eye dilation in response to unexpected news",
+   "who": "Paul Ekman",
+   "year": "1972",
+   "place": "United States"
+  },
+  {
+   "claim": "about 85 percent dilation across ten cultures",
+   "who": "Michael Matsumoto",
+   "year": "2009",
+   "place": "University of California"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

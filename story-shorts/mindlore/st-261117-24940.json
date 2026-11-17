@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261117-24940",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Wolves Chase Each Other 🐾",
+ "hook": "Ever notice how your dog suddenly pounces during a slow afternoon walk?",
+ "thumbnail_headline": "WHY ANIMALS CHASE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "Ever notice how your dog suddenly pounces during a slow afternoon walk? Wild canine chasing is actually a deliberate signal of emotional health. In 1996, scientist Marc Bekoff observed wild canines in Colorado. He logged about 200 distinct bow movements. The animals perform a bow to show friendly intent before running. The result? Partners know the chase is not a real attack. Is this behavior limited to just wolves? Ethologists tested other species and found the exact same play signals across mammals. Scientists call this dedicated brain network the mammalian play circuit. So why do wild predators waste vital energy on games? Rough chasing releases endorphins that lower stress levels. That's it. Playing builds strong social bonds while keeping brains sharp. So next time you watch a pet leap around, remember how your dog suddenly pounces during a slow afternoon walk."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Wild canines use specific bow signals to communicate playful intent before chasing",
+   "who": "Marc Bekoff",
+   "year": "1996",
+   "place": "Colorado"
+  },
+  {
+   "claim": "Mammals rely on shared neural play circuits that trigger positive emotional signals during social games",
+   "who": "Ethologists",
+   "year": "1990s",
+   "place": "University of Colorado Boulder"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}
