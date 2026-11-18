@@ -29,8 +29,8 @@
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 8,
-   "last": 44
+   "uses": 9,
+   "last": 50
   },
   {
    "id": "gerald",
@@ -629,6 +629,18 @@
    "title": "Your Caffeine Math Sucks \u2615",
    "concept": "AGGRESSIVE MATH",
    "gag": "battery",
+   "callback": false,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-18"
+  },
+  {
+   "n": 44,
+   "kind": "short",
+   "id": "your-chili-two-out-of-ten",
+   "title": "Why Leo Turned Dinner Into A Crime \ud83d\udd75\ufe0f",
+   "concept": "SECRET FAMILY POLL REVEAL",
+   "gag": "minute",
    "callback": false,
    "milestone": false,
    "season": 5,
