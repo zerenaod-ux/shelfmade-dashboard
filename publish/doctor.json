@@ -4,7 +4,7 @@
   "mindlore-live-redo": 1,
   "blender-test": 2,
   "scene-factory": 1,
-  "Doodles expression proof": 1
+  "Doodles expression proof": 2
  },
  "pending": [],
  "log": [
@@ -115,9 +115,17 @@
   {
    "t": "11-18 20:26Z",
    "msg": "shelfmade-story-short: API quota/rate limit: resets by itself (no change needed)"
+  },
+  {
+   "t": "11-18 20:52Z",
+   "msg": "Doodles expression proof: no safe automatic fix found"
+  },
+  {
+   "t": "11-18 20:52Z",
+   "msg": "shelfmade-story-short: API quota/rate limit: resets by itself (no change needed)"
   }
  ],
- "at": "2026-11-18T20:26:57Z",
+ "at": "2026-11-18T20:52:37Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
