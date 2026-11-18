@@ -15,7 +15,7 @@
    "likes": 18,
    "comments": 1,
    "avgSeconds": 23,
-   "avgPercent": 42.15,
+   "avgPercent": 41.95,
    "subsGained": 0
   },
   {
@@ -54,7 +54,7 @@
    "likes": 2,
    "comments": 1,
    "avgSeconds": 22,
-   "avgPercent": 31.03,
+   "avgPercent": 31.480000000000004,
    "subsGained": 0
   },
   {
@@ -67,7 +67,7 @@
    "likes": 4,
    "comments": 1,
    "avgSeconds": 17,
-   "avgPercent": 28.309999999999995,
+   "avgPercent": 28.09,
    "subsGained": 0
   },
   {
@@ -118,8 +118,8 @@
    "views": 93,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 124,
-   "avgPercent": 24.71,
+   "avgSeconds": 120,
+   "avgPercent": 23.9,
    "subsGained": 0
   },
   {
@@ -218,7 +218,10 @@
    "privacy": "public",
    "views": 69,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 27.88,
+   "subsGained": 0
   },
   {
    "id": "qfwKKgBIkvI",
@@ -322,6 +325,19 @@
    "comments": 0
   },
   {
+   "id": "X9Z1e8QV6PQ",
+   "title": "Why Silence Heals Your Brain",
+   "published": "2026-11-11T03:02:00Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 49,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 27,
+   "avgPercent": 41.22,
+   "subsGained": 0
+  },
+  {
    "id": "4qzeT6uxt3A",
    "title": "Memory: How to Develop, Train, and Use It",
    "published": "2026-10-23T04:10:17Z",
@@ -345,19 +361,6 @@
    "comments": 1,
    "avgSeconds": 40,
    "avgPercent": 74.95,
-   "subsGained": 0
-  },
-  {
-   "id": "X9Z1e8QV6PQ",
-   "title": "Why Silence Heals Your Brain",
-   "published": "2026-11-11T03:02:00Z",
-   "duration": "PT1M6S",
-   "privacy": "public",
-   "views": 48,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 27,
-   "avgPercent": 41.22,
    "subsGained": 0
   },
   {
@@ -457,7 +460,7 @@
    "published": "2026-06-18T04:47:26Z",
    "duration": "PT2M45S",
    "privacy": "public",
-   "views": 39,
+   "views": 40,
    "likes": 1,
    "comments": 0,
    "avgSeconds": 57,
@@ -660,16 +663,16 @@
    "subsGained": 0
   },
   {
-   "id": "vf5N9t4z-x0",
-   "title": "The part of Psychology nobody mentions.",
-   "published": "2026-11-05T03:01:46Z",
-   "duration": "PT1M4S",
+   "id": "uDTf6cqlUUI",
+   "title": "Are emotions your survival edge?",
+   "published": "2026-06-12T22:34:27Z",
+   "duration": "PT50S",
    "privacy": "public",
-   "views": 25,
+   "views": 26,
    "likes": 1,
-   "comments": 1,
-   "avgSeconds": 20,
-   "avgPercent": 32.74,
+   "comments": 0,
+   "avgSeconds": 37,
+   "avgPercent": 75.04,
    "subsGained": 0
   },
   {
@@ -683,19 +686,6 @@
    "comments": 0,
    "avgSeconds": 25,
    "avgPercent": 49.54,
-   "subsGained": 0
-  },
-  {
-   "id": "uDTf6cqlUUI",
-   "title": "Are emotions your survival edge?",
-   "published": "2026-06-12T22:34:27Z",
-   "duration": "PT50S",
-   "privacy": "public",
-   "views": 25,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 37,
-   "avgPercent": 75.04,
    "subsGained": 0
   },
   {
@@ -772,8 +762,8 @@
    "views": 23,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 14,
-   "avgPercent": 4.33,
+   "avgSeconds": 13,
+   "avgPercent": 4.14,
    "subsGained": 2
   },
   {
@@ -869,7 +859,10 @@
    "privacy": "public",
    "views": 21,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 18.55,
+   "subsGained": 0
   },
   {
    "id": "BzovLB6Cwok",
@@ -1075,8 +1068,8 @@
    "views": 16,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 53,
-   "avgPercent": 94.77,
+   "avgSeconds": 37,
+   "avgPercent": 66.3,
    "subsGained": 0
   },
   {
@@ -1123,7 +1116,10 @@
    "privacy": "public",
    "views": 15,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 19,
+   "avgPercent": 33.12,
+   "subsGained": 0
   },
   {
    "id": "KhfyoHiwyYc",
@@ -1134,8 +1130,8 @@
    "views": 15,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 33,
-   "avgPercent": 56.89999999999999,
+   "avgSeconds": 16,
+   "avgPercent": 27.9,
    "subsGained": 0
   },
   {
@@ -1237,6 +1233,19 @@
    "comments": 0,
    "avgSeconds": 5,
    "avgPercent": 5.87,
+   "subsGained": 0
+  },
+  {
+   "id": "VsvMwBHBL_Q",
+   "title": "Read this line from Crowd twice.",
+   "published": "2026-11-03T18:03:06Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 14,
+   "avgPercent": 21.38,
    "subsGained": 0
   },
   {
@@ -1733,8 +1742,8 @@
    "views": 3,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 349,
-   "avgPercent": 99.73,
+   "avgSeconds": 133,
+   "avgPercent": 38.16,
    "subsGained": 0
   },
   {
@@ -1853,7 +1862,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 11,
+   "avgPercent": 3.2099999999999995,
+   "subsGained": 0
   },
   {
    "id": "kBXKZ5Zcmow",
@@ -1888,6 +1900,16 @@
    "duration": "PT2M56S",
    "privacy": "public",
    "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "h4yc9t1OdDs",
+   "title": "How Unexpected News Freezes Facial Muscles",
+   "published": "2026-11-18T18:05:16Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 0,
    "likes": 0,
    "comments": 0
   },

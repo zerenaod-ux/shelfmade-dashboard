@@ -1,7 +1,7 @@
 {
  "brand": "shelfmade",
  "channel": "ShelfMade",
- "subscribers": "9",
+ "subscribers": "10",
  "collected": "2026-11-18",
  "note": "",
  "videos": [
@@ -105,8 +105,8 @@
    "views": 66,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 20,
-   "avgPercent": 30.260000000000005,
+   "avgSeconds": 17,
+   "avgPercent": 25.679999999999996,
    "subsGained": 0
   },
   {
@@ -180,7 +180,7 @@
    "published": "2026-11-14T18:03:43Z",
    "duration": "PT1M5S",
    "privacy": "public",
-   "views": 53,
+   "views": 55,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 13,
@@ -318,19 +318,6 @@
    "subsGained": 0
   },
   {
-   "id": "sGfMrVc9aVQ",
-   "title": "Your moral character must be not only pure, but, like Caesar\u2019s wife, unsuspected",
-   "published": "2026-11-03T03:00:44Z",
-   "duration": "PT33S",
-   "privacy": "public",
-   "views": 36,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 34.34,
-   "subsGained": 0
-  },
-  {
    "id": "umzrnh-AmiA",
    "title": "But take whichever you please to be true; what will this knowledge profit us?",
    "published": "2026-10-19T19:20:57Z",
@@ -391,8 +378,8 @@
    "views": 34,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 19.95,
+   "avgSeconds": 10,
+   "avgPercent": 23.69,
    "subsGained": 0
   },
   {
@@ -534,8 +521,8 @@
    "views": 26,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 24,
-   "avgPercent": 32.45,
+   "avgSeconds": 22,
+   "avgPercent": 30.81,
    "subsGained": 0
   },
   {
@@ -786,6 +773,19 @@
    "subsGained": 0
   },
   {
+   "id": "lB1khz_EYhg",
+   "title": "And still we must labour on; for the work of self-culture is never finished",
+   "published": "2026-11-03T01:26:46Z",
+   "duration": "PT23S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 7,
+   "avgPercent": 30.510000000000005,
+   "subsGained": 0
+  },
+  {
    "id": "O_1dpa8rPxM",
    "title": "Question what you know",
    "published": "2026-10-22T00:31:00Z",
@@ -797,6 +797,16 @@
    "avgSeconds": 15,
    "avgPercent": 56.330000000000005,
    "subsGained": 0
+  },
+  {
+   "id": "2W3cnCLXxQo",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-17T18:05:57Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "SAQ1Y0wN0zI",
@@ -823,16 +833,6 @@
    "avgSeconds": 32,
    "avgPercent": 6.25,
    "subsGained": 0
-  },
-  {
-   "id": "2W3cnCLXxQo",
-   "title": "You have Art of War backwards.",
-   "published": "2026-11-17T18:05:57Z",
-   "duration": "PT1M9S",
-   "privacy": "public",
-   "views": 12,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -878,7 +878,10 @@
    "privacy": "public",
    "views": 11,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 19.92,
+   "subsGained": 0
   },
   {
    "id": "GdWx5nz-ltU",
@@ -1076,6 +1079,16 @@
    "subsGained": 0
   },
   {
+   "id": "NGMGp1KlKt4",
+   "title": "Aurelius had a warning for you.",
+   "published": "2026-11-18T18:06:32Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "QmvgVXfWJT8",
    "title": "Does simplicity outweigh fancy appearances?",
    "published": "2026-11-06T00:00:06Z",
@@ -1166,8 +1179,8 @@
    "views": 5,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 1.97,
+   "avgSeconds": 57,
+   "avgPercent": 13.970000000000002,
    "subsGained": 0
   },
   {
@@ -1179,8 +1192,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 3.34,
+   "avgSeconds": 119,
+   "avgPercent": 26.950000000000003,
    "subsGained": 0
   },
   {
@@ -1192,8 +1205,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 3.34,
+   "avgSeconds": 119,
+   "avgPercent": 26.950000000000003,
    "subsGained": 0
   },
   {
@@ -1595,7 +1608,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 113,
+   "avgPercent": 25.71,
+   "subsGained": 0
   },
   {
    "id": "cPmS7p3wuaY",
@@ -1995,6 +2011,16 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "6VO8a_iBrsU",
+   "title": "Why does Young Man's Guide still matter?",
+   "published": "2026-11-18T20:49:52Z",
+   "duration": "PT7M3S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
    "comments": 0
   },
   {
