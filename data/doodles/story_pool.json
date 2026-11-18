@@ -3509,5 +3509,329 @@
   "style": "v2",
   "format": "ADVICE FAIL",
   "improv": true
+ },
+ {
+  "id": "your-chair-rating-stinks",
+  "title": "Your Chair Rating Stinks \ud83e\ude91",
+  "concept": "PETTY CHAIR WARS",
+  "mood": "dramatic",
+  "insight": "A good desk chair turns any best friend into your worst rival.",
+  "caption": "Leo ranked the studio chairs and started an immediate turf war.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits tall in the plush podcast chair gripping a coffee mug with a smug smirk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "Rating my desk chair: ten out of ten."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "You're vibrating. Go away."
+     }
+    ]
+   },
+   {
+    "scene": "Mia frowns at the wooden stool, walking / pacing the hallway behind the podcast desk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Your wooden stool is minus four."
+     },
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "That's just my aura, you peasant."
+     }
+    ]
+   },
+   {
+    "scene": "Leo taps a cup of tea labeled Lyle by Dev, raising one defensive eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Aura doesn't pay rent, Lyle."
+     },
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "My aura bought this swivel chair."
+     }
+    ]
+   },
+   {
+    "scene": "An alarm going off buzzes beside Mia while Leo spins with wide eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Wait, you bought the chair?"
+     },
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "pause",
+      "text": "Okay but hear me out... chair bought me."
+     }
+    ]
+   },
+   {
+    "scene": "Mia adjusts her seat by pulling the pillow straight with narrowed eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Scoreboard hits one hundred. You're a side quest."
+     },
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "It has two cards! Next time: couch war."
+     }
+    ]
+   },
+   {
+    "scene": "Mia crosses her arms, glaring up at a digital clock showing a time.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "curious",
+      "beat": "quick",
+      "text": "So why are you sitting like a king?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": true
+ },
+ {
+  "id": "toaster-tears-argument",
+  "title": "Why Leo Cried Over A Toaster \ud83c\udf5e",
+  "concept": "CARTOON TOASTER TEARS",
+  "mood": "dramatic",
+  "insight": "Never let your best friend catch you crying over animated kitchenware.",
+  "caption": "Leo swears the animated toaster had real feelings. Mia added another point to her scoreboard. Next time: Leo rates office chairs again.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Mia holds a coffee mug at the podcast desk, smirking playfully at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "You literally wept over a cartoon toaster!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo grips a cup of tea at the podcast desk, looking dramatically aggrieved.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "He lost his bread plug, Mia! Pure tragedy!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia taps a digital clock showing a time at the podcast desk, snickering.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "It's a fake metal box, you dramatic baby!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo points at a pillow placed on the podcast desk, wide-eyed and earnest.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "Okay, but hear me out, he had dreams!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia imitates knocking on the door behind the podcast desk, grinning wide.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Scoreboard hit one hundred two! You lost, bro!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo slumps at the podcast desk while pulling the blanket over his arms, shrugging.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "pause",
+      "text": "Wait, who cries over kitchen appliances anyway?"
+     }
+    ]
+   }
+  ],
+  "variant": "micro",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "ARGUMENT",
+  "improv": true
+ },
+ {
+  "id": "your-caffeine-math",
+  "title": "Your Caffeine Math Sucks \u2615",
+  "concept": "AGGRESSIVE MATH",
+  "mood": "dry",
+  "insight": "Five cups of coffee is totally a typo",
+  "caption": "Leo tries to survive sixty seconds without exaggerating one single number.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit close at the wooden desk, tapping an alarm going off on the table.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "Okay, one. No hyperbole for sixty seconds."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "You\u2019re literally impossible to live with."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sips from a coffee mug, glaring sideways at Leo under her desk lamp.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "normal",
+      "text": "That\u2019s just the truth."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Wait, is caffeine even a lie?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo waves his hands dramatically over a stack of empty paper cups.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "No. Caffeine is just liquid anxiety."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "pause",
+      "text": "Says the guy who drinks four."
+     }
+    ]
+   },
+   {
+    "scene": "Leo counts on his fingers, pulling a goofy face of deep concentration.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "Five. One was a typo."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Five? I counted six."
+     }
+    ]
+   },
+   {
+    "scene": "Mia points an accusing finger while Leo shrinks back in his chair.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "sheepish",
+      "beat": "quick",
+      "text": "That was clearly a hallucination."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "You\u2019re literally hallucinating again."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares blankly at the digital clock showing a time, blinking fast.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "pause",
+      "text": "Okay, one. No hyperbole for sixty seconds?"
+     }
+    ]
+   }
+  ],
+  "variant": "tight",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "FUNNY EXPLAINER",
+  "improv": true
  }
 ]
