@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "Age-anchored wisdom: Framing classic philosophy specifically for older demographics (after 60/70) creates intense personal relevance and high watch time.",
-  "Defensive boundaries: Content focusing on protecting inner peace, home, and energy from toxic people drives massive engagement and comment agreement.",
-  "Extended length storytelling: Longer short-form content (60 to 110 seconds) outperforms ultra-short clips when delivering structured, list-based life rules.",
-  "Reframing nature and animal metaphors: Translating natural behavior (like wolves or wildlife) into Stoic principles offers a fresh, evocative hook.",
-  "Pop culture and creator crossover: Pairing classic quotes with unexpected modern figures or pop-culture moments generates extreme breakout viral reach."
+  "Short-form videos (under 30s) dominate reach, while longer videos (60s+) drive higher watch time and deeper emotional connection.",
+  "Titles addressing the viewer directly ('you') and using specific numbers create the highest click-through and engagement rates.",
+  "Viewers respond strongly to themes of self-preservation, boundaries, and emotional detachment, often framing them as 'wisdom' or 'gravity'.",
+  "High breakout scores correlate with metaphorical or nature-based analogies (e.g., wolves, gravity) rather than direct didactic instruction.",
+  "Comment sections show a strong preference for validation of personal experiences, especially regarding aging, loneliness, and setting limits."
  ],
  "title_formulas": [
-  "X Classic Life Lessons to Protect Your Peace After [Age]",
-  "Why [Ancient Author/Philosopher] Warned You Never to [Action]",
-  "[Number] Rules of [Public Domain Book] That Will Keep You [Desired State]"
+  "[Number] [Unexpected Truth] About [Life Stage/Concept] That [Action]",
+  "Stop [Common Behavior] If You Want [Desired Outcome]",
+  "The [Metaphor] Approach to [Life Problem]"
  ],
  "opening_3s": [
-  "A direct bold statement warning the viewer about a common boundary violation before revealing the classic text source.",
-  "A striking quote reading that directly addresses the viewer's current age or stage in life.",
-  "A high-contrast visual statement posing a simple question about rest versus productivity according to ancient wisdom."
+  "Start with a stark, counter-intuitive statement about human nature or social dynamics.",
+  "Pose a direct question that challenges the viewer's current behavior or belief.",
+  "Show a brief, evocative visual of a nature element or classic statue to set a contemplative tone."
  ],
  "comment_themes": [
-  "Resonating deeply with advice on rest, self-preservation, and setting firm personal boundaries.",
-  "Connecting philosophical wisdom directly to personal faith, gratitude, and daily spirituality.",
-  "Expressing relief and validation over relief from toxic family members or uninvited guests.",
-  "Debating the practical application of extreme philosophical quotes regarding marriage and suffering."
+  "Viewers seek validation for their own struggles with aging, health, and social isolation.",
+  "Many users express gratitude for reminders to prioritize peace and self-care over external validation.",
+  "There is a recurring request for more practical, actionable advice on setting boundaries with family or friends.",
+  "Users often share personal anecdotes that align with the video's core lesson, creating a community of shared experience."
  ],
  "avoid": [
-  "Fabricating age-specific medical, financial, or lifestyle claims not backed by public domain literature.",
-  "Relying on generic ultra-short quote videos without giving the audience a clear narrative payoff.",
-  "Using copyrighted modern book summaries or copying existing YouTube compilations."
+  "Do not make specific medical, financial, or legal promises or advice.",
+  "Avoid using copyrighted quotes or compilations from modern authors or creators.",
+  "Steer clear of overly generic motivational phrases that lack specific, actionable insight."
  ],
  "try_next": [
-  "A 90-second deep dive into Marcus Aurelius's Meditations focusing on protecting mental energy after 50.",
-  "A dynamic breakdown of Seneca's 'On the Shortness of Life' structured around 5 things to stop prioritizing immediately.",
-  "An intriguing story-driven clip applying Epictetus's rules on hospitality and personal boundaries to modern home life."
+  "Create a 20-second video on 'The Art of Saying No' using a public-domain quote from a classical philosopher.",
+  "Develop a 45-second piece on 'Why Solitude is Strength' using a nature metaphor and a direct address to the viewer.",
+  "Produce a 15-second clip on 'The Price of Approval' that challenges the viewer's need for external validation."
  ],
- "updated": "2026-11-11",
+ "updated": "2026-11-18",
  "n_hits": 30,
  "shares": {
-  "question title": 10,
+  "question title": 7,
   "speaks to \"you\"": 47,
   "number in title": 40,
   "has emoji": 27,
-  "ALL-CAPS word": 3,
+  "ALL-CAPS word": 7,
   "title <= 6 words": 10,
-  "video <= 30s": 40,
+  "video <= 30s": 43,
   "video 30-60s": 13,
-  "video > 60s": 47
+  "video > 60s": 43
  },
- "median_hit_views": 260103
+ "median_hit_views": 301653
 }

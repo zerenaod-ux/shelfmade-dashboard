@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "Ultra-short runtime (5 to 20 seconds) focusing on one hyper-specific daily psychological habit",
-  "Self-deprecating humor framing overthinking or social awkwardness as a shared experience",
-  "High visual polish or expressive character animation during mundane internal monologues",
-  "Contrasting absurd worst-case scenario thinking with completely normal external reality",
-  "Direct validation of intrusive 3 AM thoughts, late-night cringe memories, or boundary issues"
+  "Quick relatable hook with absurd exaggeration",
+  "Question-based explanation of common thought patterns",
+  "Minimal dialogue, exaggerated 2D expressions",
+  "Short, emoji-laden titles that invite self-identification",
+  "Countdown/list format for punchy points"
  ],
  "title_formulas": [
-  "When Your Brain [Absurd Action] At [Time/Situation] [Emoji]",
-  "POV: You Tried To Stop [Psychological Habit] [Emoji]",
-  "Only [Personality Type] Will Understand This [Emoji]"
+  "Why ___ is actually ___",
+  "When ___ happens, you should ___",
+  "The ___ way to stop ___"
  ],
  "opening_3s": [
-  "Mia freezes mid-sentence while Leo's internal thought bubble explodes into chaotic spirals",
-  "Leo makes eye contact with a random object while his brain plays an embarrassing memory from 2018",
-  "Mia gives an overly serious step-by-step warning for a completely minor social interaction"
+  "Leo says, \u2018Ever notice how your brain turns a simple question into a whole drama?\u2019 with a quick brain animation",
+  "Mia holds a sticky note that reads \u2018I\u2019m overthinking\u2019 and flips it to a silly scenario",
+  "A rapid montage of Leo and Mia in a silly situation with bold text: \u2018We all overthink.\u2019"
  ],
  "comment_themes": [
-  "Appreciation for smooth, fluid character animation and expressive art styles",
-  "Relief at realizing they are not the only ones experiencing niche mental loops",
-  "Nostalgia triggered by relatable sound bites or early-2000s life references",
-  "Requests for tactics on how to actually quiet their mind during overthinking spirals"
+  "Praise for relatable humor",
+  "Requests for deeper psychology explanations",
+  "Appreciation for clean, simple animation",
+  "Suggestions for new topics like anxiety and procrastination"
  ],
  "avoid": [
-  "Long-form lectures over 30 seconds that lack a quick comedic punchline",
-  "Generic motivational quotes that ignore the realistic frustration of mental loops",
-  "Abstract advice without visual cues of Leo and Mia physically reacting"
+  "Copying other channels\u2019 catchphrases",
+  "Using copyrighted music",
+  "Overly complex animation that distracts from humor"
  ],
  "try_next": [
-  "A 7-second skit where Mia tries to fall asleep, but Leo acts out a cringe memory from middle school inside her thought bubble.",
-  "A 12-second skit on 'Social Battery Drain,' showing Leo's energy meter dropping from 100% to 0% after one small talk greeting.",
-  "A 15-second visual breakdown of 'Decision Paralysis' as Mia overanalyzes picking a single menu item while Leo waits in horror."
+  "Animated short on turning overthinking into productive planning",
+  "Sketch comparing Leo and Mia\u2019s overthinking to a cat chasing a laser pointer",
+  "Micro-episode series busting common mental\u2011health myths with quick jokes"
  ],
- "updated": "2026-11-11",
- "n_hits": 29,
+ "updated": "2026-11-18",
+ "n_hits": 30,
  "shares": {
   "question title": 3,
-  "speaks to \"you\"": 14,
-  "number in title": 14,
-  "has emoji": 76,
+  "speaks to \"you\"": 20,
+  "number in title": 17,
+  "has emoji": 77,
   "ALL-CAPS word": 10,
   "title <= 6 words": 10,
-  "video <= 30s": 79,
+  "video <= 30s": 77,
   "video 30-60s": 10,
-  "video > 60s": 10
+  "video > 60s": 13
  },
- "median_hit_views": 45263
+ "median_hit_views": 45278
 }
