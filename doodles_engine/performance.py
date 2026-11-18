@@ -70,6 +70,12 @@ def rig(rgb,face,who):
  seed=components[min(hh-1,max(0,int(cy-y0))),min(ww-1,max(0,int(cx-x0)))]
  if seed==0:raise ValueError('No reliable character foreground at face centre')
  foreground=(components==seed)
+ # Moving shoulders may include clothing, never a black microphone or desk prop.
+ hsv=cv2.cvtColor(roi,cv2.COLOR_RGB2HSV)
+ hue=hsv[...,0];sat=hsv[...,1];value=hsv[...,2]
+ garment=((hue>=12)&(hue<=42) if who=='leo' else (hue>=65)&(hue<=115))&(sat>55)&(value>45)
+ head_support=head&(Y<y+1.10*h)
+ foreground&=head_support|(torso&garment)
  if foreground.sum()<.25*w*h:raise ValueError('Character segmentation is incomplete')
  # Erosion and a distance ramp keep silhouette/background pixels untouched.
  distance=cv2.distanceTransform(foreground.astype('uint8'),cv2.DIST_L2,3)

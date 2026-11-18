@@ -44,6 +44,10 @@ class PerformanceTests(unittest.TestCase):
   s.update(tilt=0,nod=0,shrug=0)
   out=p.apply(a,r,s)
   self.assertTrue(np.array_equal(a[170:195,115:180],out[170:195,115:180]))
+ def test_dark_desk_microphone_is_excluded_from_shoulder_motion(self):
+  a,f=fixture();a[270:305,130:160]=(20,20,20)
+  r=p.rig(a,f,'leo');out=p.apply(a,r,p.state(2,'leo',self.timeline()))
+  self.assertTrue(np.array_equal(a[275:300,135:155],out[275:300,135:155]))
  def test_neutral_frame_is_exact_identity(self):
   a,f=fixture();r=p.rig(a,f,'leo');out=p.apply(a,r,p.state(0,'leo',[]))
   self.assertTrue(np.array_equal(a,out))

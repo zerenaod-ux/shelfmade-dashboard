@@ -417,7 +417,7 @@ def render(work):
     ff.stdin.close()
     if ff.wait():raise RuntimeError('Doodles frame encoding failed')
     if PERFORMANCE:
-        report={'policy':performance.POLICY,'source':'dialogue feel and listener reaction','frames':nf,'samples':performance_samples,'outside_masks_max_delta':outside_delta,'human_visual_review_completed':False}
+        report={'policy':performance.POLICY,'performance_source_sha256':__import__('hashlib').sha256(Path(performance.__file__).read_bytes()).hexdigest(),'source':'dialogue feel and listener reaction','frames':nf,'samples':performance_samples,'outside_masks_max_delta':outside_delta,'human_visual_review_completed':False}
         (work/'performance-report.json').write_text(json.dumps(report,indent=2))
         if outside_delta:raise ValueError('Performance moved pixels outside character masks')
     return silent,wav_path,total
