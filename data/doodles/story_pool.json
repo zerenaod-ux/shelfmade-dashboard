@@ -3833,5 +3833,123 @@
   "style": "v2",
   "format": "FUNNY EXPLAINER",
   "improv": true
+ },
+ {
+  "id": "your-chili-two-out-of-ten",
+  "title": "Why Leo Turned Dinner Into A Crime \ud83d\udd75\ufe0f",
+  "concept": "SECRET FAMILY POLL REVEAL",
+  "mood": "mysterious",
+  "insight": "Never host a poll if you can't swallow the rating.",
+  "caption": "Leo put his dinner on trial after Mia voted 2 out of 10. The evidence is brutal.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo is knocking on the podcast desk with a wooden spoon, eye narrowed. Mia rests her head on her hand with raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "Who voted my chili two out of ten?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Detective Leo, the case is already closed."
+     }
+    ]
+   },
+   {
+    "scene": "Mia is sipping a coffee mug slowly. Leo points dramatically with his spoon across the desk, looking scandalized.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "You ruined my culinary legacy, suspect Mia!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Two was generous, I'm not lying."
+     }
+    ]
+   },
+   {
+    "scene": "Leo is pacing the hallway behind the desk with a dramatic march. Mia watches him with a tiny smirk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Okay but hear me out, I have evidence."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Scoreboard update: hundred and six for me."
+     }
+    ]
+   },
+   {
+    "scene": "Leo taps a digital clock showing a time on the desk. Mia leans on her hand, looking unimpressed.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "hopeful",
+      "beat": "snap",
+      "text": "Give me just one more minute to plead!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "pause",
+      "text": "Your yellow hoodie is your entire legacy."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sets down her coffee mug with a light tap. Leo leans forward, arms flat on the desk, looking shocked.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "anxious",
+      "beat": "quick",
+      "text": "Wait, so my legacy is a hoodie?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "pause",
+      "text": "Only if you clean the chili out first."
+     }
+    ]
+   },
+   {
+    "scene": "Mia tilts her head with a subtle smirk while Leo nervously spins his spoon on the podcast desk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Are you still investigating that family poll?"
+     }
+    ]
+   }
+  ],
+  "variant": "standard",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
  }
 ]
