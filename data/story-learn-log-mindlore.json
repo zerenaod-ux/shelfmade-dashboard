@@ -1631,6 +1631,85 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261118-4477a",
+   "look": "live-demo",
+   "title": "Why Unexpected News Gives You Goosebumps \ud83d\udc3e",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "counter",
+    "icon_burst",
+    "reaction",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261118-76ec2",
+   "look": "live-demo",
+   "title": "How Animals Show Happiness \ud83d\udc3e",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "chat",
+    "checklist",
+    "clock",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261118-a84d4",
+   "look": "live-demo",
+   "title": "Why Your Breathing Changes \ud83e\udd14",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "chart",
+    "chat",
+    "checklist",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "scale",
+    "search",
+    "timeline",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

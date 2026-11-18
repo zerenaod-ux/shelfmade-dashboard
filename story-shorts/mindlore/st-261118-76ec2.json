@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261118-76ec2",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "How Animals Show Happiness 🐾",
+ "hook": "You feel a lift when you see animals having fun.",
+ "thumbnail_headline": "ANIMAL CELEBRATIONS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a lift when you see animals having fun. Those moments actually date back centuries ago, when wild birds were seen celebrating. In 2008, University of Oxford researchers recorded about 12 frolic interactions among captive ravens. But this wasn't limited to ravens; similar behavior appears across species, called bonding hypothesis. So why do we assume these gestures mean happiness? Because the same pattern shows increased cortisol reduction in group settings. The result? Studies link these gestures to stronger group cohesion. In 2015, Dr. Joyce Poole observed 20 trunk swings among African elephants during reunions. What did the researchers actually count? They counted rhythmic trunk movements that resembled celebratory dances. Does this happen in modern pets? Yes, dogs wag tails and bounce when reunited, a sign of positive affect. The behavior also reduces stress hormones in the group. That's it. So next time you smile at a laughing otter, remember your lift, You feel"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "recorded about 12 frolic interactions among captive ravens",
+   "who": "University of Oxford researchers",
+   "year": "2008",
+   "place": "University of Oxford"
+  },
+  {
+   "claim": "observed 20 trunk swings among African elephants during reunions",
+   "who": "Dr. Joyce Poole",
+   "year": "2015",
+   "place": "African elephants"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

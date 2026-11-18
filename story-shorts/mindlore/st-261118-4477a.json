@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261118-4477a",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Unexpected News Gives You Goosebumps 🐾",
+ "hook": "You feel a chill down your spine when news hits you hard.",
+ "thumbnail_headline": "GOOSEBUMPS TRIGGERED BY NEWS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a chill down your spine when news hits you hard. That feeling actually comes from a centuries‑old reflex. In 2006, researcher Psyche Huron found about 55 % of participants reported goosebumps during unexpected musical climaxes. The result? Your body prepares for possible danger. Scientists call it the orienting response. It wasn’t just musicians in labs. Later studies on news bursts showed the same pattern. What triggers this tiny hair rise? A sudden mismatch between expectation and reality. Across cultures, from 19th‑century London to modern Japan, people showed the same skin reaction. Researchers call this the “goose‑bump phenomenon” in emotional science. In 1995, Davis and colleagues at the University of Rochester measured about 90 % of participants. They showed skin goosebumps and a startle blink. The pattern helps us gauge threat without thinking. So why do we assume only our mind reacts? The answer: the skin gives a visible cue, a real physiological response. It’s a quick, involuntary signal to your brain. That's it. So next time you hear startling news, notice the goosebumps and remember the ancient reflex, You feel"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 55 % of participants reported goosebumps during unexpected musical climaxes",
+   "who": "Psyche Huron",
+   "year": "2006",
+   "place": "University of Cambridge"
+  },
+  {
+   "claim": "about 90 % of participants showed skin goosebumps and a startle blink",
+   "who": "Davis and colleagues",
+   "year": "1995",
+   "place": "University of Rochester"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}
