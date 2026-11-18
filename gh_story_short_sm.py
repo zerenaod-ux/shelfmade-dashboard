@@ -59,8 +59,15 @@ def main(n):
         script, evidence = make_script(s, book); sj = Path('story_script_%s.json' % sid); sj.write_text(json.dumps([script, evidence]))
         env = dict(os.environ, STORY_SCRIPT=str(sj.resolve()), SHELFMADE_MUSIC_DIR=str(folder.resolve() / '.render'), BRAND='shelfmade')
         r = subprocess.run([sys.executable, 'worker.py', json.dumps(book), '1', str(folder)], capture_output=True, text=True, timeout=1800, env=env)
-        print((r.stdout + r.stderr)[-900:], flush=True); sj.unlink(missing_ok=True)
-        if r.returncode or not (folder / 'final.mp4').is_file(): print('FAILED', sid); _fail(built, state, sid); continue
+        log=r.stdout+r.stderr
+        print(log[-900:], flush=True); sj.unlink(missing_ok=True)
+        if r.returncode or not (folder / 'final.mp4').is_file():
+            from story_failure import record
+            print('FAILED',sid)
+            if record('story-diagnostics',sid,log):
+                print('WAITING',sid,'(temporary outage; retained for a later scheduled attempt)',flush=True)
+            else:_fail(built,state,sid)
+            continue
         import story_rules, hashtags
         ev = story_rules.evidence_lines(s); tags = hashtags.shelfmade(s.get('hook', ''), 'short')
         text = _ft(s['public_title']) + '\n\n' + s['hook'] + '\n\n' + ('Evidence: ' + '; '.join(ev) + '\n\n' if ev else '') + 'Book: %s by %s. Classic books, explained on ShelfMade.\n\n' % (book['title'], book['author']) + tags
