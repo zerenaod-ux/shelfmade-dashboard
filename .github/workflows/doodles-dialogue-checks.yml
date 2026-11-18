@@ -1,0 +1,17 @@
+name: Verify Doodles complete dialogue
+on:
+  push:
+    paths: ['doodles_engine/dialogue_quality.py', 'doodles_engine/story_writer.py', 'doodles_engine/render.py', 'doodles_engine/gh_doodles.py', 'doodles_engine/gh_doodles_episode.py', 'tests/test_doodles_dialogue_quality.py', '.github/workflows/doodles-dialogue-checks.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --quiet numpy pillow
+      - run: python -m unittest discover -s tests -p test_doodles_dialogue_quality.py -v
+      - run: python -m py_compile doodles_engine/dialogue_quality.py doodles_engine/story_writer.py doodles_engine/render.py doodles_engine/gh_doodles.py doodles_engine/gh_doodles_episode.py

@@ -10,6 +10,7 @@ HERE = Path(__file__).resolve().parent; ROOT = HERE.parent; DATA = ROOT / 'data/
 sys.path.insert(0, str(HERE))
 POOL = DATA / 'episode_pool.json'; USED = DATA / 'episodes_used.json'; OUT = ROOT / 'out'; OUT.mkdir(exist_ok=True)
 W, H, FPS = 1920, 1080, 30
+os.environ['DOODLES_EPISODE_SCENE']='1'   # Full-episode scenes keep their own duration/story contract.
 LAND = os.environ.get('EPISODE_LANDSCAPE') == '1'   # true 16:9 pictures (set by the workflow input)
 if LAND: os.environ['DOODLES_LANDSCAPE'] = '1'
 os.environ.setdefault('DOODLES_MOVE', os.environ.get('EPISODE_MOVE', '0'))   # head/shoulder warp moved the background too: OFF by default (owner feedback 2026-11-06); EPISODE_MOVE=1 turns it on

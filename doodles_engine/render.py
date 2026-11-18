@@ -15,9 +15,10 @@ except Exception as _e:
     fastlip=None;print('fast mouth unavailable:',_e,flush=True)
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
 LAND=os.environ.get('DOODLES_LANDSCAPE')=='1'   # full videos: 16:9 pictures, 1920x1080
+SHORT=not LAND and os.environ.get('DOODLES_EPISODE_SCENE')!='1'
 W,H,FPS=(1920,1080,30) if LAND else (1080,1920,30)
 CAPW=1500 if LAND else 900;CAPY=830 if LAND else 1330;CHIPY=40 if LAND else 150;CAPSZ=64 if LAND else 74;CAPLH=80 if LAND else 92
-GAP=0.10;LEAD=0.35;SHOT_TAIL=0.20;END=0.0;SR=24000   # owner 2026-11-10: replies must come fast like real friends (was GAP .24, TAIL .30)
+GAP=0.10;LEAD=0.35;SHOT_TAIL=0.20;END=(0.9 if SHORT else 0.0);SR=24000   # owner 2026-11-10: replies must come fast like real friends (was GAP .24, TAIL .30)
 BEAT_GAP={'snap':0.02,'quick':0.07,'normal':0.14,'pause':0.55}   # per-line 'beat' written by the story writer: gap BEFORE this line
 FONTS=['/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf','/System/Library/Fonts/Supplemental/Arial Bold.ttf','/System/Library/Fonts/Helvetica.ttc',
        '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf']
@@ -100,16 +101,24 @@ def chip(text):
     dd.text((35,20),text,font=f,fill=(255,236,190));return img
 def build(work):
     work=Path(work);st=json.loads((work/'story.json').read_text())
+    if SHORT:
+        from dialogue_quality import require_story
+        require_story(st)
     shots=st['shots'];t=LEAD;timeline=[];voice=[];seg=[]
     for si,sh in enumerate(shots):
         s0=t;lines=[]
         for li,ln in enumerate(sh['lines']):
-            a=trim_tail(read_wav(work/f'line_{si:02d}_{li:02d}.wav'));d=len(a)/SR
+            raw=read_wav(work/f'line_{si:02d}_{li:02d}.wav')
+            final_line=si==len(shots)-1 and li==len(sh['lines'])-1
+            a=raw if final_line else trim_tail(raw,keep=0.12);d=len(a)/SR
             if li>0 or si>0:t+=BEAT_GAP.get(ln.get('beat'),GAP)-GAP if li>0 else 0   # shots: SHOT_TAIL already; inside a shot: the beat decides the gap (a 'pause' stretches it)
             lines.append({'who':ln['who'],'text':ln['text'],'start':t,'end':t+d,'audio':a,'si':si,'li':li});t+=d+GAP
         t+=SHOT_TAIL-GAP;timeline.append({'start':s0,'end':t,'lines':lines});
     total=t+END
-    n=int(total*SR);track=np.zeros(n,dtype='float32')
+    if SHORT:
+        from dialogue_quality import require_duration
+        require_duration(total,timeline[-1]['lines'][-1]['end'])
+    n=int(math.ceil(total*SR));track=np.zeros(n,dtype='float32')
     for sh in timeline:
         for ln in sh['lines']:
             i=int(ln['start']*SR);track[i:i+len(ln['audio'])]+=ln['audio']
@@ -129,6 +138,8 @@ def build(work):
     wav_path=work/'voice.wav'
     with wave.open(str(wav_path),'wb') as w:
         w.setnchannels(1);w.setsampwidth(2);w.setframerate(SR);w.writeframes((np.clip(track,-1,1)*32767).astype('<i2').tobytes())
+    if SHORT:
+        (work/'dialogue-timing.json').write_text(json.dumps({'total':total,'last_line_end':timeline[-1]['lines'][-1]['end'],'reaction_seconds':total-timeline[-1]['lines'][-1]['end']},indent=2))
     return st,timeline,total,env,wav_path
 def load_lips(work,timeline):
     lips={}
@@ -359,7 +370,7 @@ def render(work):
         iw,ih=img.size;bw,bh=iw/z,ih/z
         cx=min(max(fx*iw,bw/2),iw-bw/2);cy=min(max(fy*ih,bh/2),ih-bh/2)
         frame=img.resize((W,H),Image.BICUBIC,box=(cx-bw/2,cy-bh/2,cx+bw/2,cy+bh/2)).convert('RGBA')
-        if tt>=end_t:
+        if LAND and tt>=end_t:
             a=min(1,(tt-end_t)/0.45);dark=Image.new('RGBA',(W,H),(10,12,16,int(190*a)));frame=Image.alpha_composite(frame,dark)
             d=ImageDraw.Draw(frame);c=st.get('concept','');ins=st.get('insight','')
             def center(text,y,fnt,fill,wmax=900):
@@ -411,6 +422,11 @@ def mix(work,silent,wav_path,total,mood):
     else:
         cmd=['ffmpeg','-v','error','-y','-i',str(silent),'-i',str(wav_path),'-map','0:v','-map','1:a']
     cmd+=['-t',f'{total:.3f}','-c:v','copy','-c:a','aac','-b:a','192k','-movflags','+faststart',str(out)]
-    subprocess.run(cmd,check=True);return out
+    subprocess.run(cmd,check=True)
+    if SHORT:
+        from dialogue_quality import verify_encoded
+        timing=json.loads((work/'dialogue-timing.json').read_text())
+        verify_encoded(work,total,timing['last_line_end'])
+    return out
 if __name__=='__main__':
     wd=Path(sys.argv[1]);silent,wav,total=render(wd);o=mix(wd,silent,wav,total,json.loads((wd/'story.json').read_text()).get('mood','curious'));print('RENDERED',o,round(total,1),'s')

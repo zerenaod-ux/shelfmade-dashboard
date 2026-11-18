@@ -13,6 +13,15 @@ BEAT = how fast this line comes AFTER the previous line. snap = jumps in right a
 STRUCTURE (a tiny story, not a lecture): shot 1 HOOK starts in the middle of the problem, no intro; shot 2 the problem gets bigger because of what Leo does; shot 3 it gets even funnier (a twist or a rule-of-three joke); shot 4 the BIG funny moment or reveal; shot 5 the last twist, a comeback or a sweet little moment; shot 6 LOOP: ONE line only, it is the LAST line of the whole video and is a question or unfinished thought that the very FIRST line of shot 1 naturally answers or continues, so it replays like one endless chat. No moral, no tip, no sign-off, no 'follow'. Pick explain_shot=3 (just the index of the big funny moment).
 SIZE: whole video 70 to 88 spoken words (never more than 50 seconds). 1-2 lines per shot, each line 2 to 9 words, often just 2 to 5. The FIRST line is 8 words or fewer and starts instantly with a bold funny claim, confession, accusation or question (never a greeting, never 'Did you know').
 SCENE rules (very important, pictures are AI-made): describe an everyday setting + props + body language. PODCAST SET (owner 2026-11-14): both sit at a cozy podcast desk with big microphones and headphones, bodies angled a little toward each other, faces turned three-quarters toward the camera and fully visible; props from the story sit on the desk or in their hands. Faces never hidden by hands, props or hair. Describe closed-mouth expressions only (worried eyes, smirk, raised eyebrow) - NEVER shouting, screaming, laughing with open mouth or anything with teeth. No text, signs, screens with writing or logos in the scene. ONLY Leo and Mia appear: never put any other person (boss, neighbour, roommate, waiter) in a scene; they are only talked about. Do not describe microphones or clothes (the look is added automatically). Max 30 words per scene."""
+BASE_RULES=RULES
+SHORT_RULES="""Write a complete 50–60-second animated conversation between best friends Leo and Mia, with 125–165 spoken words across exactly six shots. Actual finished media must be 40–70 seconds. Keep the existing characters, podcast setting and picture safety rules.
+Use the same JSON shape: id, title, concept, insight, caption, explain_shot, shots with scene, focus and lines (who, feel, beat, text). Each shot has one to three turns; each turn is one to sixteen words. First line is at most eight words.
+Story progression: immediate everyday problem, believable response, escalation, revealing twist, consequences, final resolved comeback or warm payoff. The LAST spoken line is a complete sentence ending with a period or exclamation. No dangling question, unfinished sentence, mandatory replay loop, cliffhanger, part-two promise, lecture, moral or follow request.
+Naturalness: react specifically to what the friend just said; use contractions, varied sentence lengths, brief acknowledgements, occasional hesitation or interruption only where meaningful. Give each character their own motive and viewpoint. Let jokes arise from specific everyday details and reactions. Avoid polished speeches, random absurdity, forced slang, filler, repetitive roasts and identical comeback patterns. Teasing can be sharp but remains playful; cruelty and insults are not required. Do not pad time with repeated lines or long silence.
+Use snap, quick, normal and occasional pause naturally. Most replies are quick without overlapping or cutting off the final words. Preserve the existing visual style and the original scene safety rules below.
+"""
+SHORT_RULES+=BASE_RULES[BASE_RULES.index('SCENE rules'):]
+
 def secret():
     return json.loads((ROOT/'data/secrets.json').read_text())['GEMINI_API_KEY']
 _MODELS=[]
@@ -67,7 +76,7 @@ def _rec(s):
     except Exception:
         pass
 def gemini(prompt,system=None):
-    key=secret();last=None;rules=system or (RULES+_lg()+_sr()+" "+ACTION+" "+SPICE+" "+DRAMA)
+    key=secret();last=None;rules=system or ((SHORT_RULES if KIND=='short' and RULES==BASE_RULES else RULES)+_lg()+_sr()+" "+ACTION+" "+SPICE+" "+DRAMA)
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):
@@ -100,13 +109,14 @@ def valid(s,taken,variant='standard'):
         assert re.fullmatch(r'[a-z0-9-]{3,40}',s['id']) and s['id'] not in taken
         assert len(s['shots'])==6
         for sh in s['shots']:
-            assert 1<=len(sh['lines'])<=2 and sh['scene']
+            assert 1<=len(sh['lines'])<=3 and sh['scene']
             for l in sh['lines']:assert l['who'] in('leo','mia') and 1<=len(l['text'].split())<=16; l['beat']=l.get('beat') if l.get('beat') in ('snap','quick','normal','pause') else 'quick'
         alll=[l['text'] for sh in s['shots'] for l in sh['lines']]
         assert len(alll[0].split())<=8, 'hook too long'
-        lo,hi={'micro':(36,52),'tight':(52,68)}.get(variant,(70,90))
+        lo,hi=125,165
         assert lo<=sum(len(t.split()) for t in alll)<=hi, 'length'
-        assert alll[-1].strip()[-1:] in ('?','—','…','-') or alll[-1].strip().endswith('...'), 'no loop'
+        from dialogue_quality import story_errors
+        assert not story_errors(s), 'incomplete short dialogue'
         s['explain_shot']=int(s.get('explain_shot',3));assert 0<=s['explain_shot']<=5
         _all=' '.join([s.get('title','')]+[sh['scene'] for sh in s['shots']]+alll).lower()
         assert len(re.findall(r'\b(text(ed|ing|s)?|e-?mails?|group chat|chat|notification|dms?|messages?|phone|video call|typing)\b',_all))==0, 'boring phone/text plot'   # DRAMA rule
@@ -118,10 +128,10 @@ def valid(s,taken,variant='standard'):
         except Exception:pass
         return True
     except Exception:return False
-JUDGE = ("You are a ruthless comedy editor for viral 40-second animated skits starring best friends Leo (anxious, dramatic) and Mia (dry, savage, loving). "
+JUDGE = ("You are a dialogue editor for complete 50–60-second animated conversations starring best friends Leo (anxious, dramatic) and Mia (dry, savage, loving). "
          "Score each candidate script 1-10 on: FUNNY (specific roast, surprise, a line worth screenshotting), HOOK (the first line grabs in two seconds), "
-         "SPOKEN (sounds like real fast friends talking in simple everyday words, NOT professional, NOT a lesson, replies snap back fast), RELATABLE (a viewer thinks 'this is literally me'), LOOP (last line sets up the first). "
-         "Be harsh and honest; do not give everyone the same score. Return ONLY JSON: {\"scores\":[{\"i\":0,\"funny\":7,\"hook\":6,\"spoken\":8,\"relatable\":7,\"loop\":5}],\"best\":0,\"why\":\"one short sentence\"}")
+         "SPOKEN (sounds like real fast friends talking in simple everyday words, NOT professional, NOT a lesson, replies snap back fast), RELATABLE (a viewer thinks 'this is literally me'), ENDING (the original problem resolves and the final complete reply lands). "
+         "Check complete=true only when the opening problem resolves and the final reply is complete. Check natural=true only when the friends react coherently in everyday speech. Do not invent passing scores; an unavailable or failed review cannot pass. Return ONLY JSON: {\"scores\":[{\"i\":0,\"funny\":7,\"hook\":6,\"spoken\":8,\"relatable\":7,\"ending\":8,\"complete\":true,\"natural\":true}],\"best\":0,\"why\":\"one short sentence\"}")
 BESTOF = int(__import__('os').environ.get('DOODLES_BESTOF', '3'))
 
 
@@ -131,15 +141,18 @@ def _text(c):
 
 def judge(cands):
     """Pick the strongest candidate. ANY problem -> the first candidate (never blocks the pipeline). Returns (index, scores_dict_or_None)."""
-    if len(cands) < 2: return 0, None
+    if not cands:return None, None
     try:
         prompt = 'Candidates:\n' + '\n\n'.join('### %d (%s)\n%s' % (i, c.get('title', ''), _text(c)) for i, c in enumerate(cands)) + '\n\nScore them and choose the best.'
         r = json.loads(gemini(prompt, JUDGE)); best = int(r.get('best'))
         sc = {int(x['i']): x for x in r.get('scores', []) if 'i' in x}
         assert 0 <= best < len(cands)
+        score=sc.get(best,{})
+        assert score.get('complete') is True and score.get('natural') is True
+        assert float(score.get('spoken',0))>=7 and float(score.get('ending',0))>=7
         return best, {'best': best, 'why': str(r.get('why', ''))[:160], 'scores': sc.get(best), 'n': len(cands)}
-    except BaseException as e:   # SystemExit from gemini() included
-        print('judge skipped:', str(e)[:80]); return 0, None
+    except BaseException as e:   # Unavailable review is held, never treated as a quality pass.
+        print('dialogue review unavailable:', str(e)[:80]); return None, None
 
 
 def pick_best(topic, taken, variant, vnote):
@@ -153,7 +166,12 @@ def pick_best(topic, taken, variant, vnote):
         else: print('candidate rejected (format)')
     if not cands: return None
     i, info = judge(cands)
+    if i is None:return None
     best = cands[i]
+    best['dialogue_policy']='complete-conversation-v1'
+    best['dialogue_review']=info['scores']
+    from dialogue_quality import story_errors
+    if story_errors(best,True):return None
     if info: best['judge'] = info
     print('best-of-%d: kept %s%s' % (len(cands), best['id'], (' (' + info['why'] + ')') if info else ''))
     return best
@@ -169,7 +187,7 @@ def _viewer_topic():
 FORMATS=[("ARGUMENT","a fast silly argument where both are sure they are right and it escalates"),
 ("FUNNY EXPLAINER","Mia explains ONE small everyday thing in plain words (why the phone dies at 1 percent, why waiting feels longer), Leo asks the dumb questions everyone thinks, ends on a funny twist. One real fact, said like a friend, no big words"),
 ("MINI MYSTERY","Leo plays a serious detective investigating a tiny crime (who ate the leftovers, who changed the thermostat), Mia is the unimpressed suspect"),
-("PART TWO","a sequel: 'yesterday's mess is still going', refer to what happened before, end with 'to be continued'"),
+("CALLBACK","a fresh everyday situation with a callback that resolves within this short"),
 ("CONFESSION","Leo finally admits a small embarrassing thing he has been hiding, Mia reacts in the funniest way"),
 ("FAKE NEWS REPORT","Leo and Mia are news anchors reporting a very serious story about a tiny everyday problem"),
 ("RATING GAME","they rate or rank everyday things out of ten and argue over the scores"),
@@ -177,7 +195,7 @@ FORMATS=[("ARGUMENT","a fast silly argument where both are sure they are right a
 ("PRANK","Mia plans a harmless prank on Leo and it backfires"),
 ("ADVICE FAIL","Mia gives good advice, Leo takes it completely wrong")]
 MOODS=["very excited","dry and sarcastic","sweet and warm","chaotic","tired and deadpan","overdramatic"]
-ENDS=["a sudden twist","a savage one-liner from Mia","Leo gets what he deserves","they both give up and laugh","a cliffhanger for part two","a sweet moment that gets ruined"]
+ENDS=["a sudden twist","a savage one-liner from Mia","Leo gets what he deserves","they both give up and laugh","a resolved callback to the opening problem","a sweet moment that gets ruined"]
 FH=ROOT/'data/doodles/format_history.json'
 def pick_format():
     """Rotating menu with memory: never the same format as any of the last 4 videos, plus a random mood and ending. Remembered in data/doodles/format_history.json."""
@@ -210,7 +228,7 @@ def improv(topic,fmt,turns=12):
         if len(chat)<6:return ''
         raw='\n'.join(f"{n.upper()}: {t}" for n,t in chat)
         print('improv:',len(chat),'turns')
-        return (" RAW IMPROV: two actors really talked this out with no script. This is the natural flow you must keep. Build the final episode FROM it: keep their best lines, words and rhythm in their natural order (trim, merge or cut the weak ones to fit the length, add one punch ending that loops). Do not replace their human phrasing with polished writing. "+"\nRAW IMPROV TRANSCRIPT:\n"+raw)
+        return (" RAW IMPROV: two actors really talked this out with no script. This is the natural flow you must keep. Build the final episode FROM it: keep their best lines, words and rhythm in their natural order (trim, merge or cut the weak ones to fit the length, add one complete payoff that resolves the original situation). Do not replace their human phrasing with polished writing. "+"\nRAW IMPROV TRANSCRIPT:\n"+raw)
     except BaseException as e:
         print('improv skipped:',str(e)[:100]);return ''
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []
@@ -220,8 +238,8 @@ def main():
         if made>=n:break
         topic=_viewer_topic() or next((t for t in TOPICS if re.sub(r'[^a-z]+','-',t.lower()).strip('-')[:20] not in ' '.join(taken)),TOPICS[attempt%len(TOPICS)])
         TOPICS.remove(topic) if topic in TOPICS else None
-        variant=('micro','tight','standard')[len(pool)%3]   # length test (G1, Nov 9): ~18 s / ~30 s / ~42 s Shorts, the learner compares them
-        vnote=' LENGTH VARIANT (overrides the word count above): the whole video is 36 to 52 spoken words in total (about 15 to 22 seconds), SIX shots with ONE short line each, the joke lands in the first 2 seconds, keep the payoff and the loop.' if variant=='micro' else ' LENGTH VARIANT (overrides the word count above): the whole video is 52 to 68 spoken words in total (about 28 to 35 seconds), every line punchy, keep the hook, the payoff and the loop.' if variant=='tight' else ''
+        variant='complete'
+        vnote=' COMPLETE SHORT: 125–165 spoken words; target 50–60 seconds, complete final reply and resolved situation. Never use micro/tight length variants or a dangling replay loop.'
         tstyle='you' if len(pool)%2==0 else 'plain'   # title test (Nov 9): half the Doodles titles start with You/Your (our data: ~4x views on the other channels)
         if tstyle=='you':vnote+=' TITLE STYLE: the title is 2 to 5 words and starts with You or Your (a statement, e.g. "You Replied K Again").'
         fmt,fnote=pick_format()

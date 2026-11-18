@@ -13,7 +13,7 @@ def jl(p, d):
     try: return json.loads(Path(p).read_text())
     except (OSError, ValueError): return d
 def unused():
-    used = set(jl(USED, [])); return [s for s in jl(POOL, []) if s.get('style') == 'v2' and s['id'] not in used]   # owner 2026-11-10: only the new simple/funny style is produced (old stories archived in story_pool_old.json)
+    used = set(jl(USED, [])); return [s for s in jl(POOL, []) if s.get('style') == 'v2' and s.get('dialogue_policy') == 'complete-conversation-v1' and s['id'] not in used]   # owner 2026-11-10: only the new simple/funny style is produced (old stories archived in story_pool_old.json)
 FAILS = DATA / 'fails.json'; KSTAT = DATA / 'kaggle-status.json'
 
 
@@ -75,6 +75,8 @@ def main():
         log('writing new stories...'); run(HERE / 'story_writer.py', n + 3)
     made = []
     for s in unused()[:n]:
+        from dialogue_quality import require_story
+        require_story(s)
         if s['id'] in set(jl(USED, [])): log('already used, skip', s['id']); continue
         day = datetime.date.today().isoformat(); work = DATA / f"{day}-{s['id']}"; work.mkdir(exist_ok=True)
         st = dict(s); st['explain_shot'] = s.get('explain_shot', EXPLAIN.get(s['id'], 4)); (work / 'story.json').write_text(json.dumps(st, indent=1))
@@ -83,6 +85,11 @@ def main():
         if run(HERE / 'kaggle_make.py', work).returncode:
             log('Kaggle stage 1 failed for', s['id'], '- OUTAGE MODE: story given back, stopping this run so the GPU quota is not burned'); kstatus(False); release_used(s['id'], 'kaggle failed'); break
         kstatus(True)
+        try:
+            from render import build as measure_dialogue
+            measure_dialogue(work)
+        except Exception as error:
+            log('dialogue duration held before lip-sync:',str(error));release_used(s['id'],'dialogue duration');continue
         if run(HERE / 'ls_cloud.py', work).returncode: log('cloud lip-sync incomplete; render falls back to fast mouths'); os.environ['FASTLIP'] = '1'
         if run(HERE / 'render.py', work).returncode or not (work / 'short.mp4').is_file(): log('render failed for', s['id']); release_used(s['id'], 'render failed'); continue
         try:
@@ -93,6 +100,7 @@ def main():
         z = OUT / f"doodles-{s['id']}.zip"
         with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as f:
             f.write(work / 'short.mp4', 'final.mp4'); f.writestr('POST_THIS.txt', post)
+            f.write(work / 'dialogue-quality.json','DIALOGUE-QUALITY.json')
             if (work / 'bed.music.json').is_file(): f.write(work / 'bed.music.json', 'MUSIC.json')
         try:
             mf = jl(str(work / 'mouth_flags.json'), [])
@@ -104,4 +112,5 @@ def main():
         for junk in ('k1_in', 'k1_kernel', 'k1_dl', 'ls_in', 'ls_kernel', 'ls_dl', 'silent.mp4'):
             p = work / junk; shutil.rmtree(p, ignore_errors=True) if p.is_dir() else (p.unlink() if p.exists() else None)
     (OUT / 'made.txt').write_text('\n'.join(made)); log('made', made)
+    if n>0 and not made:raise SystemExit('No compliant Doodles shorts were produced; inspect retained dialogue and service diagnostics')
 if __name__ == '__main__': main()
