@@ -1020,5 +1020,57 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-16"
+ },
+ "Why does Young Man's Guide still matter?": {
+  "styles": [
+   "sm_adventure",
+   "sm_adventure",
+   "sm_tender",
+   "sm_tender",
+   "sm_adventure",
+   "sm_tender"
+  ],
+  "tracks": [
+   "sm_adventure_05",
+   "sm_adventure_01",
+   "sm_tender_01",
+   "sm_tender_03",
+   "sm_adventure_02",
+   "ace_sm_tender_02"
+  ],
+  "mood": "curious",
+  "pace": 2.36,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-18"
+ },
+ "This Young Man's Guide line is uncomfortable.": {
+  "styles": [
+   "sm_adventure",
+   "sm_adventure",
+   "sm_tender",
+   "sm_tender",
+   "sm_adventure",
+   "sm_tender"
+  ],
+  "tracks": [
+   "sm_adventure_05",
+   "sm_adventure_01",
+   "sm_tender_01",
+   "sm_tender_03",
+   "sm_adventure_02",
+   "ace_sm_tender_02"
+  ],
+  "mood": "curious",
+  "pace": 2.36,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-18"
  }
 }
