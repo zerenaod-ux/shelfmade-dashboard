@@ -20,3 +20,7 @@ Keep the current visual style and characters. Future shorts should sound like ev
 Seven local regression tests pass with authored fixtures and synthetic PCM only: complete versus dangling endings, old short scripts, missing/failed editor evidence, finite score checks, measured duration boundaries, missing/truncated encoded tracks, final quiet phoneme preservation and single-candidate review. No model request or finished production video was generated in these tests. Dedicated GitHub verification is pending at this commit. The next actual automatic short still requires inspection for conversational quality, performance and a satisfying ending; tests cannot guarantee human-like dialogue or subjective humor.
 
 The existing GPU/voice/image/lip-sync services and Studio review/publishing decisions remain in place. The fifteen-minute Codex monitor stays deleted at the owner's request.
+
+## Cloud verification completed
+
+GitHub run 44369743790 (Verify Doodles complete dialogue) passed all seven regression tests and compiled all five changed production modules. The rules are deployed on master for subsequent runs. No external generation or voice requests were made by this verification workflow. The next actual short still needs subjective dialogue/performance review; no new rendered-video quality pass is claimed.
