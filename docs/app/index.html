@@ -202,7 +202,7 @@ nav .cnt{position:absolute;top:0;right:12px;background:var(--bad);color:#fff;fon
 </div>
 
 <script src="playback.js?v=20261117"></script>
-<script src="publishing.js?v=20261117-jobs"></script>
+<script src="publishing.js?v=20261118-stages"></script>
 <script>
 (function(){
 'use strict';
@@ -492,12 +492,12 @@ function productionStatus(host){
     var labels={'daily-short':'Daily short','short':'Experimental short','full':'Original full video'},shown=0;
     Object.keys(labels).forEach(function(key){
       var job=report.jobs[key];if(!job)return;shown++;
-      var row=el('div','pub-entry');row.appendChild(el('strong','',labels[key]));row.appendChild(el('p','',job.label||'Stage unavailable'));
+      var view=StudioPublishing.stageView(job,Date.now());var row=el('div','pub-entry');row.appendChild(el('strong','',labels[key]));row.appendChild(el('p','',view.label));
       if(job.reason)row.appendChild(el('p','pub-meta',job.reason));
       if(job.retryable&&job.next_retry_at)row.appendChild(el('p','pub-meta','Automatic retry eligible after '+ceDate(new Date(job.next_retry_at*1000).toISOString())+' Chicago.'));
       if(job.state==='needs_attention')row.appendChild(el('p','pub-notice','Automatic retries stopped. A content or configuration correction is needed.'));
       row.appendChild(el('p','pub-meta','Reported '+ceDate(job.updated_at)+' Chicago · attempt '+nf(job.attempt)));
-      if(Date.now()-Date.parse(job.updated_at)>60*60*1000)row.appendChild(el('p','pub-meta','This stage report is over an hour old. Check Automatic jobs below for the latest run outcome.'));
+      if(view.stale)row.appendChild(el('p','pub-meta','No recent stage update. This is last-known information; check Automatic jobs below for the current run outcome.'));
       host.appendChild(row);
     });
     var proof=report.jobs['self-test'];

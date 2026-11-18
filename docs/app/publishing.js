@@ -39,6 +39,12 @@ function reviewSummary(core,ce){
 function latestJobs(runs,allowed){
   var seen={};return runs.slice().sort(function(a,b){return Date.parse(b.created_at)-Date.parse(a.created_at)||Number(b.run_number||0)-Number(a.run_number||0)}).filter(function(run){if(!Object.prototype.hasOwnProperty.call(allowed,run.name)||seen[run.name])return false;seen[run.name]=true;return true});
 }
-var api={platformRows:platformRows,counts:counts,freshness:freshness,reviewSummary:reviewSummary,latestJobs:latestJobs};
+function stageView(job,now){
+  var updated=Date.parse(job&&job.updated_at||'');
+  if(!job||!Number.isFinite(updated))return {label:'Production stage unavailable',stale:true};
+  var stale=now-updated>15*60*1000;
+  return {label:(stale?'Last reported: ':'')+(job.label||'Stage unavailable'),stale:stale};
+}
+var api={platformRows:platformRows,counts:counts,freshness:freshness,reviewSummary:reviewSummary,latestJobs:latestJobs,stageView:stageView};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.StudioPublishing=api;
 })(typeof window!=='undefined'?window:this);

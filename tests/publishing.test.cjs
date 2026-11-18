@@ -43,3 +43,9 @@ test('simultaneous reads share a request but later refreshes make a new request'
  const first=scope.jget('https://example.test/data'),second=scope.jget('https://example.test/data');assert.equal(calls,1);release({ok:true,json:async()=>({value:1})});await Promise.all([first,second]);
  const refresh=scope.jget('https://example.test/data');assert.equal(calls,2);release({ok:true,json:async()=>({value:2})});assert.equal((await refresh).value,2);
 });
+
+test('old production stages are reported as last-known information, never current success',()=>{
+ const old=model.stageView({label:'Rendering animation',updated_at:'2020-01-01'},Date.now());assert.equal(old.stale,true);assert.match(old.label,/Last reported/);
+ assert.equal(model.stageView(null,Date.now()).label,'Production stage unavailable');
+ const current=model.stageView({label:'Writing narration',updated_at:new Date().toISOString()},Date.now());assert.equal(current.stale,false);
+});
