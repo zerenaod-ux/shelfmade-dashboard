@@ -26,6 +26,10 @@ class PerformanceTests(unittest.TestCase):
  def test_explicit_listener_direction_is_used(self):
   tl=self.timeline();tl[0]['lines'][0]['listener_feel']='amused'
   self.assertEqual(p.state(2,'mia',tl)['feel'],'amused')
+ def test_existing_voice_emotions_have_visual_profiles(self):
+  for feel in ('dramatic','smug','surprised','realizing','grim','determined','strained','relieved','happy','sleepy','serious','curious '):
+   tl=self.timeline();tl[0]['lines'][0]['feel']=feel
+   self.assertNotEqual(p.state(2,'leo',tl)['feel'],'neutral',feel)
  def test_expression_releases_smoothly_and_returns_to_rest(self):
   a=p.state(4,'leo',self.timeline());b=p.state(4.01,'leo',self.timeline())
   self.assertLess(abs(a['brow']-b['brow']),.02)

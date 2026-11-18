@@ -15,6 +15,11 @@ PROFILES={
  'skeptical':(.15,-.2,-.13,.85,.05,.15), 'curious':(.55,.1,.1,.7,.15,.05)}
 LISTENER={'panicked':'concerned','excited':'amused','confident':'skeptical',
  'deadpan':'amused','sheepish':'warm','tired':'concerned','hopeful':'warm','anxious':'concerned'}
+ALIASES={'dramatic':'excited','smug':'confident','surprised':'excited',
+ 'realizing':'curious','grim':'deadpan','determined':'confident','strained':'anxious',
+ 'relieved':'warm','happy':'amused','sleepy':'tired','serious':'deadpan',
+ 'annoyed':'skeptical','angry':'anxious','sarcastic':'deadpan',
+ 'embarrassed':'sheepish','confused':'curious'}
 
 def smooth(x):
  x=max(0.,min(1.,x));return x*x*(3-2*x)
@@ -30,6 +35,7 @@ def state(t,who,timeline):
    w=onset*release
    speaking=line['who']==who
    tone=line.get('feel','neutral') if speaking else (line.get('listener_feel') or LISTENER.get(line.get('feel'),'curious'))
+   tone=str(tone or 'neutral').strip().lower();tone=ALIASES.get(tone,tone)
    if tone not in PROFILES:tone='neutral'
    amount=1. if speaking else .72
    result+=np.array(PROFILES[tone])*w*amount;weight+=w
