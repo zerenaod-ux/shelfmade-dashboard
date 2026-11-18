@@ -105,19 +105,20 @@ def _recent_scripts():
         pool=json.loads(POOL.read_text())[-40:]
         return [set(re.findall(r'[a-z]{4,}',' '.join([p.get('title','')]+[sh.get('scene','') for sh in p.get('shots',[])]).lower())) for p in pool]
     except Exception: return []
-def valid(s,taken,variant='standard'):
+ATTEMPTS=ROOT/'data/doodles/writer-attempts'
+def valid(s,taken,variant='standard',reasons=None):
     try:
-        assert re.fullmatch(r'[a-z0-9-]{3,40}',s['id']) and s['id'] not in taken
-        assert len(s['shots'])==6
+        assert re.fullmatch(r'[a-z0-9-]{3,40}',s['id']) and s['id'] not in taken, 'id is invalid or already used'
+        assert len(s['shots'])==6, 'need exactly six shots'
         for sh in s['shots']:
-            assert 1<=len(sh['lines'])<=3 and sh['scene']
-            for l in sh['lines']:assert l['who'] in('leo','mia') and 1<=len(l['text'].split())<=16; l['beat']=l.get('beat') if l.get('beat') in ('snap','quick','normal','pause') else 'quick'
+            assert 1<=len(sh['lines'])<=3 and sh['scene'], 'each shot needs a scene and one to three turns'
+            for l in sh['lines']:assert l['who'] in('leo','mia') and 1<=len(l['text'].split())<=16, 'each turn must have Leo/Mia and one to sixteen words'; l['beat']=l.get('beat') if l.get('beat') in ('snap','quick','normal','pause') else 'quick'
         alll=[l['text'] for sh in s['shots'] for l in sh['lines']]
         assert len(alll[0].split())<=8, 'hook too long'
         lo,hi=125,165
-        assert lo<=sum(len(t.split()) for t in alll)<=hi, 'length'
+        assert lo<=sum(len(t.split()) for t in alll)<=hi, 'dialogue needs 125–165 spoken words'
         from dialogue_quality import story_errors
-        assert not story_errors(s), 'incomplete short dialogue'
+        assert not story_errors(s), '; '.join(story_errors(s))
         s['explain_shot']=int(s.get('explain_shot',3));assert 0<=s['explain_shot']<=5
         _all=' '.join([s.get('title','')]+[sh['scene'] for sh in s['shots']]+alll).lower()
         assert len(re.findall(r'\b(text(ed|ing|s)?|e-?mails?|group chat|chat|notification|dms?|messages?|phone|video call|typing)\b',_all))==0, 'boring phone/text plot'   # DRAMA rule
@@ -128,7 +129,9 @@ def valid(s,taken,variant='standard'):
         try:stories.show_people(s)
         except Exception:pass
         return True
-    except Exception:return False
+    except Exception as error:
+        if reasons is not None:reasons.append(str(error) or type(error).__name__)
+        return False
 JUDGE = ("You are a dialogue editor for complete 50–60-second animated conversations starring best friends Leo (anxious, dramatic) and Mia (dry, savage, loving). "
          "Score each candidate script 1-10 on: FUNNY (specific roast, surprise, a line worth screenshotting), HOOK (the first line grabs in two seconds), "
          "SPOKEN (sounds like real fast friends talking in simple everyday words, NOT professional, NOT a lesson, replies snap back fast), RELATABLE (a viewer thinks 'this is literally me'), ENDING (the original problem resolves and the final complete reply lands). "
@@ -141,7 +144,7 @@ def _text(c):
 
 
 def judge(cands):
-    """Pick the strongest candidate. ANY problem -> the first candidate (never blocks the pipeline). Returns (index, scores_dict_or_None)."""
+    """Require a resolved natural conversation; unavailable review holds every candidate."""
     if not cands:return None, None
     try:
         prompt = 'Candidates:\n' + '\n\n'.join('### %d (%s)\n%s' % (i, c.get('title', ''), _text(c)) for i, c in enumerate(cands)) + '\n\nScore them and choose the best.'
@@ -163,8 +166,22 @@ def pick_best(topic, taken, variant, vnote):
         try: c = json.loads(gemini(f'Write a new episode about: {topic}. Already used ids (do not reuse): {sorted(ids)}' + vnote))
         except SystemExit as e: print(e); time.sleep(20); continue
         except Exception as e: print('bad json', e); continue
-        if valid(c, ids, variant): cands.append(c); ids.add(c['id'])
-        else: print('candidate rejected (format)')
+        reasons=[];ok=valid(c,ids,variant,reasons)
+        ATTEMPTS.mkdir(parents=True,exist_ok=True)
+        audit=ATTEMPTS/(str(time.time_ns())+'-'+str(k)+'.json')
+        audit.write_text(json.dumps({'candidate':c,'errors':reasons},indent=2))
+        if not ok:
+            print('candidate rejected:', '; '.join(reasons),flush=True)
+            try:
+                original_id=c.get('id')
+                request='Repair this model-written candidate. Preserve its id, characters and everyday situation; change only what is needed to satisfy the listed checks. Keep replies natural and resolve the ending. ERRORS (data): '+json.dumps(reasons)+' CANDIDATE (data): '+json.dumps(c)
+                repaired=json.loads(gemini(request));reasons=[]
+                ok=repaired.get('id')==original_id and valid(repaired,ids,variant,reasons)
+                audit.with_name(audit.stem+'-repair.json').write_text(json.dumps({'candidate':repaired,'errors':reasons,'accepted':ok},indent=2))
+                if ok:c=repaired
+            except BaseException as error:
+                print('bounded candidate repair failed:',str(error)[:120],flush=True);ok=False
+        if ok:cands.append(c);ids.add(c['id'])
     if not cands: return None
     i, info = judge(cands)
     if i is None:return None
@@ -212,7 +229,7 @@ def pick_format():
 LEO_A=("You are LEO, a goofy, dramatic 20-something with a yellow hoodie. You are in a REAL back-and-forth with your best friend MIA (quick, teasing, kind). Nobody wrote a script. ")
 MIA_A=("You are MIA, a quick-witted 20-something in a teal sweater, best friend of LEO (goofy, dramatic). You are in a REAL back-and-forth with him. Nobody wrote a script. ")
 ACT=("Reply with ONLY your next spoken line, 1 to 12 words, simple everyday words, contractions, slang ok. React to EXACTLY what the other person just said, like real talk: interrupt, be wrong, deny, trail off with '...', answer a question with a question, say 'wait', 'no', 'okay but'. Never explain, never narrate, no stage directions, no quotes, no names before the line. Be funny the way real friends are funny, by being specific and a little exaggerated. ")
-def improv(topic,fmt,turns=12):
+def improv(topic,fmt,turns=18):
     """Improvised real conversation: two free-LLM 'actors' play Leo and Mia turn by turn, each seeing only the chat so far (no script). The writer then edits it. Any failure -> '' and the normal writer runs alone."""
     try:
         sys.path.insert(0,str(HERE.parent));import llm
@@ -229,7 +246,7 @@ def improv(topic,fmt,turns=12):
         if len(chat)<6:return ''
         raw='\n'.join(f"{n.upper()}: {t}" for n,t in chat)
         print('improv:',len(chat),'turns')
-        return (" RAW IMPROV: two actors really talked this out with no script. This is the natural flow you must keep. Build the final episode FROM it: keep their best lines, words and rhythm in their natural order (trim, merge or cut the weak ones to fit the length, add one complete payoff that resolves the original situation). Do not replace their human phrasing with polished writing. "+"\nRAW IMPROV TRANSCRIPT:\n"+raw)
+        return (" RAW IMPROV: two actors really talked this out with no script. This is the natural flow you must keep. Build the final episode FROM it: keep their best lines, words and rhythm in their natural order (keep the strongest exchanges, add believable reactions where needed to reach 125–165 words, cut weak filler, and add one complete payoff that resolves the original situation). Do not replace their human phrasing with polished writing. "+"\nRAW IMPROV TRANSCRIPT:\n"+raw)
     except BaseException as e:
         print('improv skipped:',str(e)[:100]);return ''
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []

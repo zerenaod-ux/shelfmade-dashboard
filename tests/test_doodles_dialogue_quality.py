@@ -49,6 +49,18 @@ class DialogueTests(unittest.TestCase):
     s=story();s['shots'][0]['lines'][0]['text']='I moved your chair. You left snacks.'
     with patch.object(writer,'_recent_scripts',return_value=[]):
      self.assertTrue(writer.valid(s,set(),'complete'))
+ def test_writer_repairs_rejected_candidate_and_retains_diagnostics(self):
+    import types
+    spec=importlib.util.spec_from_file_location('dialogue_repair_under_test',ROOT/'doodles_engine/story_writer.py')
+    writer=importlib.util.module_from_spec(spec)
+    with patch.dict(sys.modules,{'stories':types.SimpleNamespace(STORIES=[])}):spec.loader.exec_module(writer)
+    good=story();good['shots'][0]['lines'][0]['text']='I moved your chair. You left snacks.'
+    bad=json.loads(json.dumps(good));bad['shots'][-1]['lines'][-1]['text']='But what if I...'
+    score={'scores':[{'i':0,'spoken':8,'ending':8,'complete':True,'natural':True}],'best':0,'why':'Complete conversation'}
+    with tempfile.TemporaryDirectory() as folder,patch.object(writer,'ATTEMPTS',Path(folder)),patch.object(writer,'BESTOF',1),patch.object(writer,'_recent_scripts',return_value=[]),patch.object(writer,'gemini',side_effect=[json.dumps(bad),json.dumps(good),json.dumps(score)]) as call:
+     result=writer.pick_best('a chair disagreement',set(),'complete','')
+     self.assertEqual(result['id'],good['id']);self.assertEqual(call.call_count,3)
+     self.assertEqual(len(list(Path(folder).glob('*.json'))),2)
  def test_final_quiet_audio_is_preserved_without_padding_to_target(self):
     import render as renderer
     with tempfile.TemporaryDirectory() as p,patch.dict(os.environ,{'DOODLES_SFX':'0'}),patch.object(renderer,'LAND',False):

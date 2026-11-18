@@ -61,6 +61,11 @@ jobs:
           path: |
             out/doodles-*.zip
             out/made.txt
+            data/doodles/writer-attempts/
+            data/doodles/*/line_*.wav
+            data/doodles/*/shot_*.png
+            data/doodles/*/align_*.json
+            data/doodles/*/kaggle_stage1.DONE
             data/doodles/*/story.json
             data/doodles/*/dialogue-*.json
             data/doodles/*/performance*.json

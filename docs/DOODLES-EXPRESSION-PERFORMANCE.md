@@ -9,3 +9,9 @@ The production default remains opt-in until actual visual verification. A dedica
 ## Cloud proof started
 
 Code verification 44371986635 passed. Owner-authorized test 44372099957 is active; its first observed stage was dependency setup. It will run the same fourteen checks before generating media. No rendered result, final visual inspection or Studio approval is claimed yet. Normal shorts still default to DOODLES_PERFORMANCE=0. Preview artifacts are retained separately so the new performance cannot silently enter publishing.
+
+## First proof failed before media; retry correction
+
+Run 44372099957 failed script validation; it produced no expression video. Its wrapper reported only generic format rejections and did not retain rejected candidates. The 36-second chair clip released by the older daily run is unrelated and does not prove either the new duration rule or expression engine. A spoken claim that a one-minute expression sample was ready was incorrect.
+
+The writer now records each rejected model response and its validation reason, asks for one bounded model-written correction of that candidate, and revalidates it before the unchanged naturalness/resolution review. Valid candidates are not discarded merely because another candidate fails. The raw dialogue seed has eighteen turns to support the longer conversational format without expanding a few short replies into monologues. Proof artifacts now retain writer diagnostics and available source voice/image assets, not only the final MP4. Seventeen local regression tests pass, including bounded repair and diagnostic retention. A new real proof is still required; normal expression default remains off.
