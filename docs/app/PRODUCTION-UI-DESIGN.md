@@ -20,3 +20,10 @@ These are design requirements, not a claim that the new full-video generator or 
 ## November 17 — latest verified handover
 
 The live Status card now reads tracked short/full production stages and explicit retry/attention states. The recovery self-test passed automatically on its second attempt; it generated no media. The new hydraulic short technically completed and was delivered, but inspection rejected it as a novelty proof because a plural-title bug let an already covered subject through. Its card and operational status are marked accordingly. Do not label this output a new-topic success. Targeted full-narration repair and plural-aware coverage are saved in the test branch; new cloud proofs still need inspection. No original full video is yet verified. Complete ongoing reference: https://github.com/zerenaod-ux/content-engine/blob/main/docs/RECOVERY-AND-QUALITY-HANDOVER.md . Existing owner decisions and publishing switches remain unchanged.
+
+
+## Original full-video production — November 18
+
+How It Ticks original full production now creates one system-selected 2–5-minute native landscape explanation instead of joining shorts. The corrected rack-and-pinion output is in Studio awaiting owner review. The preceding direction-error preview was withdrawn with a technical quality hold, without inventing an owner decision. Existing shared Review and Status screens remain the entry points on phone and laptop; no duplicate page is added. Production stage reporting is last-known job state, not owner approval or proof of publication. Auto-approval remains off. Richer daily-short rollout remains unfinished.
+
+The review-filing display polls durable closure and disables repeated decisions after a save is accepted. A standing fifteen-minute Codex health heartbeat is scheduled separately from GitHub recovery. Its unattended operation still needs verification; display it as scheduled, not as an unconditional cloud wake-up guarantee.
