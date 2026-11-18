@@ -23,8 +23,8 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 8,
-   "last": 43
+   "uses": 9,
+   "last": 49
   },
   {
    "id": "minute",
@@ -47,14 +47,14 @@
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 7,
-   "last": 41
+   "uses": 8,
+   "last": 47
   },
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 7,
-   "last": 42
+   "uses": 8,
+   "last": 48
   }
  ],
  "catch": {
@@ -597,6 +597,42 @@
    "milestone": false,
    "season": 1,
    "date": "2026-11-17"
+  },
+  {
+   "n": 41,
+   "kind": "short",
+   "id": "your-chair-rating-stinks",
+   "title": "Your Chair Rating Stinks \ud83e\ude91",
+   "concept": "PETTY CHAIR WARS",
+   "gag": "dev",
+   "callback": false,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-18"
+  },
+  {
+   "n": 42,
+   "kind": "short",
+   "id": "toaster-tears-argument",
+   "title": "Why Leo Cried Over A Toaster \ud83c\udf5e",
+   "concept": "CARTOON TOASTER TEARS",
+   "gag": "scoreboard",
+   "callback": true,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-18"
+  },
+  {
+   "n": 43,
+   "kind": "short",
+   "id": "your-caffeine-math",
+   "title": "Your Caffeine Math Sucks \u2615",
+   "concept": "AGGRESSIVE MATH",
+   "gag": "battery",
+   "callback": false,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-18"
   }
  ]
 }

@@ -1,80 +1,5 @@
 [
  {
-  "format": "ARGUMENT",
-  "mood": "chaotic",
-  "end": "Leo gets what he deserves"
- },
- {
-  "format": "FAKE NEWS REPORT",
-  "mood": "sweet and warm",
-  "end": "they both give up and laugh"
- },
- {
-  "format": "PRANK",
-  "mood": "very excited",
-  "end": "Leo gets what he deserves"
- },
- {
-  "format": "CONFESSION",
-  "mood": "very excited",
-  "end": "a sweet moment that gets ruined"
- },
- {
-  "format": "RATING GAME",
-  "mood": "sweet and warm",
-  "end": "a cliffhanger for part two"
- },
- {
-  "format": "PART TWO",
-  "mood": "sweet and warm",
-  "end": "a cliffhanger for part two"
- },
- {
-  "format": "ADVICE FAIL",
-  "mood": "overdramatic",
-  "end": "a sudden twist"
- },
- {
-  "format": "FUNNY EXPLAINER",
-  "mood": "chaotic",
-  "end": "a sweet moment that gets ruined"
- },
- {
-  "format": "PRANK",
-  "mood": "overdramatic",
-  "end": "they both give up and laugh"
- },
- {
-  "format": "MINI MYSTERY",
-  "mood": "sweet and warm",
-  "end": "a sudden twist"
- },
- {
-  "format": "ARGUMENT",
-  "mood": "tired and deadpan",
-  "end": "a sudden twist"
- },
- {
-  "format": "RATING GAME",
-  "mood": "chaotic",
-  "end": "Leo gets what he deserves"
- },
- {
-  "format": "FAKE NEWS REPORT",
-  "mood": "sweet and warm",
-  "end": "a cliffhanger for part two"
- },
- {
-  "format": "CONFESSION",
-  "mood": "very excited",
-  "end": "a savage one-liner from Mia"
- },
- {
-  "format": "PART TWO",
-  "mood": "chaotic",
-  "end": "a cliffhanger for part two"
- },
- {
   "format": "ADVICE FAIL",
   "mood": "dry and sarcastic",
   "end": "a sudden twist"
@@ -148,5 +73,80 @@
   "format": "ARGUMENT",
   "mood": "overdramatic",
   "end": "Leo gets what he deserves"
+ },
+ {
+  "format": "PRANK",
+  "mood": "chaotic",
+  "end": "Leo gets what he deserves"
+ },
+ {
+  "format": "RATING GAME",
+  "mood": "overdramatic",
+  "end": "a cliffhanger for part two"
+ },
+ {
+  "format": "ADVICE FAIL",
+  "mood": "dry and sarcastic",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "CONFESSION",
+  "mood": "very excited",
+  "end": "they both give up and laugh"
+ },
+ {
+  "format": "MISUNDERSTANDING",
+  "mood": "sweet and warm",
+  "end": "they both give up and laugh"
+ },
+ {
+  "format": "FUNNY EXPLAINER",
+  "mood": "overdramatic",
+  "end": "a savage one-liner from Mia"
+ },
+ {
+  "format": "FAKE NEWS REPORT",
+  "mood": "overdramatic",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "ARGUMENT",
+  "mood": "very excited",
+  "end": "they both give up and laugh"
+ },
+ {
+  "format": "RATING GAME",
+  "mood": "dry and sarcastic",
+  "end": "they both give up and laugh"
+ },
+ {
+  "format": "MINI MYSTERY",
+  "mood": "dry and sarcastic",
+  "end": "a cliffhanger for part two"
+ },
+ {
+  "format": "FUNNY EXPLAINER",
+  "mood": "dry and sarcastic",
+  "end": "Leo gets what he deserves"
+ },
+ {
+  "format": "MISUNDERSTANDING",
+  "mood": "very excited",
+  "end": "a cliffhanger for part two"
+ },
+ {
+  "format": "FAKE NEWS REPORT",
+  "mood": "very excited",
+  "end": "a cliffhanger for part two"
+ },
+ {
+  "format": "RATING GAME",
+  "mood": "overdramatic",
+  "end": "they both give up and laugh"
+ },
+ {
+  "format": "CONFESSION",
+  "mood": "tired and deadpan",
+  "end": "a cliffhanger for part two"
  }
 ]
