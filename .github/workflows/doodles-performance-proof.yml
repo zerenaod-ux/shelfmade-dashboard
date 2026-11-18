@@ -1,0 +1,70 @@
+name: Doodles expression proof
+on:
+  push:
+    paths: ['publish/doodles-performance.trigger']
+permissions:
+  contents: write
+concurrency:
+  group: doodles
+  cancel-in-progress: false
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      DOODLES_PERFORMANCE: '1'
+      DOODLES_STORY_RESERVE: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test and production dependencies
+        run: |
+          pip install --quiet numpy scipy pillow opencv-python-headless six python-slugify python-dateutil requests tqdm urllib3 certifi bleach protobuf text-unidecode kaggle
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            timeout 180 sudo apt-get update -qq
+            timeout 180 sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          fi
+      - name: Verify dialogue and character-mask invariants
+        run: |
+          python -m unittest discover -s tests -p test_doodles_dialogue_quality.py -v
+          python -m unittest discover -s tests -p test_doodles_performance.py -v
+      - name: System selects and generates one complete short
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          python doodles_engine/gh_doodles.py 1
+          python - <<'PY'
+          import zipfile,json
+          from pathlib import Path
+          packages=list(Path('out').glob('doodles-*.zip'))
+          assert len(packages)==1,'One complete expression proof is required'
+          with zipfile.ZipFile(packages[0]) as z:
+              report=json.loads(z.read('PERFORMANCE.json'))
+              assert report['outside_masks_max_delta']==0
+              quality=json.loads(z.read('DIALOGUE-QUALITY.json'))
+              assert 40<=quality['duration']<=70
+          PY
+      - name: Retain owner preview and inspection evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: doodles-expression-proof-${{ github.run_id }}
+          path: |
+            out/doodles-*.zip
+            out/made.txt
+            data/doodles/*/story.json
+            data/doodles/*/dialogue-*.json
+            data/doodles/*/performance*.json
+            data/doodles/*/performance*.png
+            data/doodles/*/short.mp4
+          retention-days: 14
+          if-no-files-found: warn

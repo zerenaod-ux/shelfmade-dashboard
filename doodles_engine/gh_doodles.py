@@ -72,7 +72,7 @@ def main():
     (ROOT / 'data').mkdir(exist_ok=True)
     (ROOT / 'data/secrets.json').write_text(json.dumps({'GEMINI_API_KEY': os.environ.get('GEMINI_API_KEY', '')}))
     if len(unused()) < n + 2:
-        log('writing new stories...'); run(HERE / 'story_writer.py', n + 3)
+        log('writing new stories...'); run(HERE / 'story_writer.py', n + int(os.environ.get('DOODLES_STORY_RESERVE','3')))
     made = []
     for s in unused()[:n]:
         from dialogue_quality import require_story
@@ -101,6 +101,7 @@ def main():
         with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as f:
             f.write(work / 'short.mp4', 'final.mp4'); f.writestr('POST_THIS.txt', post)
             f.write(work / 'dialogue-quality.json','DIALOGUE-QUALITY.json')
+            if os.environ.get('DOODLES_PERFORMANCE')=='1':f.write(work/'performance-report.json','PERFORMANCE.json')
             if (work / 'bed.music.json').is_file(): f.write(work / 'bed.music.json', 'MUSIC.json')
         try:
             mf = jl(str(work / 'mouth_flags.json'), [])

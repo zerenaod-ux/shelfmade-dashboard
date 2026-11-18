@@ -16,6 +16,7 @@ except Exception as _e:
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
 LAND=os.environ.get('DOODLES_LANDSCAPE')=='1'   # full videos: 16:9 pictures, 1920x1080
 SHORT=not LAND and os.environ.get('DOODLES_EPISODE_SCENE')!='1'
+PERFORMANCE=SHORT and os.environ.get('DOODLES_PERFORMANCE','0')=='1'
 W,H,FPS=(1920,1080,30) if LAND else (1080,1920,30)
 CAPW=1500 if LAND else 900;CAPY=830 if LAND else 1330;CHIPY=40 if LAND else 150;CAPSZ=64 if LAND else 74;CAPLH=80 if LAND else 92
 GAP=0.10;LEAD=0.35;SHOT_TAIL=0.20;END=(0.9 if SHORT else 0.0);SR=24000   # owner 2026-11-10: replies must come fast like real friends (was GAP .24, TAIL .30)
@@ -112,7 +113,7 @@ def build(work):
             final_line=si==len(shots)-1 and li==len(sh['lines'])-1
             a=raw if final_line else trim_tail(raw,keep=0.12);d=len(a)/SR
             if li>0 or si>0:t+=BEAT_GAP.get(ln.get('beat'),GAP)-GAP if li>0 else 0   # shots: SHOT_TAIL already; inside a shot: the beat decides the gap (a 'pause' stretches it)
-            lines.append({'who':ln['who'],'text':ln['text'],'start':t,'end':t+d,'audio':a,'si':si,'li':li});t+=d+GAP
+            lines.append({'who':ln['who'],'text':ln['text'],'start':t,'end':t+d,'audio':a,'si':si,'li':li,'feel':ln.get('feel','neutral'),'listener_feel':ln.get('listener_feel')});t+=d+GAP
         t+=SHOT_TAIL-GAP;timeline.append({'start':s0,'end':t,'lines':lines});
     total=t+END
     if SHORT:
@@ -191,15 +192,17 @@ def variant_mask(base,vp,face):
 def render(work):
     work=Path(work);st,timeline,total,env,wav_path=build(work)
     imgs=[Image.open(work/f'shot_{i:02d}.png').convert('RGB') for i in range(len(timeline))]
-    lips=load_lips(work,timeline);mflags=[];mgeo={}
+    lips=load_lips(work,timeline);mflags=[];mgeo={};rigs={};performance_samples=[];outside_delta=0
+    if PERFORMANCE:import performance
     geo={};fc={};eg={};life={'leo':eyes.Life(11,total+3),'mia':eyes.Life(23,total+3)} if eyes else {}
-    if fastlip and (__import__('os').environ.get('FASTLIP') or any(work.glob('open_*.png')) or (work/'ls_out').is_dir()):
+    if fastlip and (__import__('os').environ.get('FASTLIP') or any(work.glob('open_*.png')) or (work/'ls_out').is_dir() or PERFORMANCE):
         for si_,im_ in enumerate(imgs):
             try:
                 fs_=fastlip.detect(np.asarray(im_))
                 for who_ in ('leo','mia'):
                     f_=fastlip.pick(fs_,who_,im_.size[0])
                     if f_ and f_['w']>40:
+                        if PERFORMANCE:rigs[(si_,who_)]=performance.rig(np.asarray(im_),f_,who_)
                         g_=fastlip.mouth_geom(f_)
                         try:mgeo[(si_,who_)]=(float(g_['cx']),float(g_['cy']),float(g_['mw']))   # diagnostics only
                         except Exception:pass
@@ -231,6 +234,9 @@ def render(work):
         print('fast mouths ready for',len(geo),'faces',flush=True)
         try:(work/'mouth_flags.json').write_text(json.dumps(mflags))
         except Exception:pass
+    if PERFORMANCE:
+        missing=[(i,who) for i in range(len(imgs)) for who in ('leo','mia') if (i,who) not in rigs]
+        if missing:raise ValueError('Expression performance requires reliable foreground masks for both characters: '+str(missing))
     align={}
     for _p in work.glob('align_*.json'):
         try:
@@ -366,7 +372,23 @@ def render(work):
                 _gz=life[_who].gaze(tt,_tw,away=(not active and u>0.6))
                 eyes.apply(_arr,_E,_bl,_gz)
             if _arr is not None:img=Image.fromarray(_arr)
-        if MOVE and facegeo.get(si):img=head_move(img,tt,e,facegeo[si],active['who'] if active else None)
+        if PERFORMANCE:
+            before=np.asarray(img);after=before;states={}
+            for who in ('leo','mia'):
+                states[who]=performance.state(tt,who,timeline)
+                after=performance.apply(after,rigs[(si,who)],states[who])
+            if f%FPS==0:
+                mask=np.zeros(before.shape[:2],dtype=bool)
+                for who in ('leo','mia'):
+                    R=rigs[(si,who)];x0,y0,x1,y1=R['box'];mask[y0:y1,x0:x1]|=R['alpha']>0
+                delta=int(np.abs(after.astype('int16')-before.astype('int16'))[~mask].max()) if (~mask).any() else 0
+                outside_delta=max(outside_delta,delta)
+                performance_samples.append({'time':tt,'shot':si,'states':states,'outside_mask_delta':delta})
+                if f%(FPS*5)==0:
+                    Image.fromarray(before).save(work/f'performance-before-{f//FPS:03d}.png')
+                    Image.fromarray(after).save(work/f'performance-after-{f//FPS:03d}.png')
+            img=Image.fromarray(after)
+        elif MOVE and facegeo.get(si):img=head_move(img,tt,e,facegeo[si],active['who'] if active else None)
         iw,ih=img.size;bw,bh=iw/z,ih/z
         cx=min(max(fx*iw,bw/2),iw-bw/2);cy=min(max(fy*ih,bh/2),ih-bh/2)
         frame=img.resize((W,H),Image.BICUBIC,box=(cx-bw/2,cy-bh/2,cx+bw/2,cy+bh/2)).convert('RGBA')
@@ -392,7 +414,12 @@ def render(work):
                 frame.alpha_composite(ci,(0,CAPY))
             if si>=explain and st.get('concept'):frame.alpha_composite(chip_img,((W-chip_img.size[0])//2,CHIPY))
         ff.stdin.write(frame.convert('RGB').tobytes())
-    ff.stdin.close();ff.wait()
+    ff.stdin.close()
+    if ff.wait():raise RuntimeError('Doodles frame encoding failed')
+    if PERFORMANCE:
+        report={'policy':performance.POLICY,'source':'dialogue feel and listener reaction','frames':nf,'samples':performance_samples,'outside_masks_max_delta':outside_delta,'human_visual_review_completed':False}
+        (work/'performance-report.json').write_text(json.dumps(report,indent=2))
+        if outside_delta:raise ValueError('Performance moved pixels outside character masks')
     return silent,wav_path,total
 def mix(work,silent,wav_path,total,mood):
     work=Path(work);out=work/'short.mp4'
