@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-17",
+ "collected": "2026-11-18",
  "note": "",
  "videos": [
   {
@@ -45,16 +45,16 @@
    "subsGained": 0
   },
   {
-   "id": "C0CTlw4ue8A",
-   "title": "The 'K' Text Trap | Leo & Mia #11",
-   "published": "2026-11-15T03:01:30Z",
-   "duration": "PT43S",
+   "id": "NzrDNYTxgjE",
+   "title": "The Jacket He Never Wears",
+   "published": "2026-11-04T03:02:07Z",
+   "duration": "PT1M13S",
    "privacy": "public",
-   "views": 11,
-   "likes": 1,
+   "views": 12,
+   "likes": 2,
    "comments": 1,
-   "avgSeconds": 6,
-   "avgPercent": 14.82,
+   "avgSeconds": 117,
+   "avgPercent": 160.61,
    "subsGained": 0
   },
   {
@@ -71,6 +71,19 @@
    "subsGained": 0
   },
   {
+   "id": "C0CTlw4ue8A",
+   "title": "The 'K' Text Trap | Leo & Mia #11",
+   "published": "2026-11-15T03:01:30Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 14.82,
+   "subsGained": 0
+  },
+  {
    "id": "Rqbov1l-rYw",
    "title": "The Clean Room Trap",
    "published": "2026-11-04T18:03:01Z",
@@ -81,19 +94,6 @@
    "comments": 1,
    "avgSeconds": 32,
    "avgPercent": 63.06,
-   "subsGained": 0
-  },
-  {
-   "id": "NzrDNYTxgjE",
-   "title": "The Jacket He Never Wears",
-   "published": "2026-11-04T03:02:07Z",
-   "duration": "PT1M13S",
-   "privacy": "public",
-   "views": 10,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 117,
-   "avgPercent": 160.61,
    "subsGained": 0
   },
   {
@@ -455,6 +455,16 @@
    "subsGained": 0
   },
   {
+   "id": "4aqmr5TjqWY",
+   "title": "Your First Day Boss Fight",
+   "published": "2026-11-17T18:05:11Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "aItrG7-6LX8",
    "title": "The 4:30 AM Panic | Leo & Mia Ep. 5 \u2605 Milestone",
    "published": "2026-11-15T00:00:35Z",
@@ -533,14 +543,24 @@
    "subsGained": 0
   },
   {
-   "id": "4aqmr5TjqWY",
-   "title": "Your First Day Boss Fight",
-   "published": "2026-11-17T18:05:11Z",
-   "duration": "PT22S",
+   "id": "FXhd_ptBx6o",
+   "title": "How Overthinking Messes Up Interviews \ud83d\ude30 | Leo & Mia",
+   "published": "2026-11-18T00:00:08Z",
+   "duration": "PT3M38S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
    "comments": 0
+  },
+  {
+   "id": "vG5WGpjUpdc",
+   "title": "The Robot Replacement Panic | Leo & Mia #17",
+   "published": "2026-11-17T03:02:07Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "j9yPaC1a9eQ",
@@ -569,20 +589,10 @@
    "subsGained": 0
   },
   {
-   "id": "FXhd_ptBx6o",
-   "title": "How Overthinking Messes Up Interviews \ud83d\ude30 | Leo & Mia",
-   "published": "2026-11-17T15:02:20Z",
-   "duration": "PT3M38S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "vG5WGpjUpdc",
-   "title": "The Robot Replacement Panic | Leo & Mia #17",
-   "published": "2026-11-17T03:02:07Z",
-   "duration": "PT47S",
+   "id": "8R1vxqsCRKg",
+   "title": "Your Phone Dies Now",
+   "published": "2026-11-18T03:02:10Z",
+   "duration": "PT30S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-17",
+ "collected": "2026-11-18",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-11-14T18:03:04Z",
    "duration": "PT56S",
    "privacy": "public",
-   "views": 1024,
+   "views": 1021,
    "likes": 18,
    "comments": 1,
    "avgSeconds": 23,
@@ -24,7 +24,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 380,
+   "views": 383,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 99,
@@ -63,7 +63,7 @@
    "published": "2026-11-15T03:01:32Z",
    "duration": "PT1M3S",
    "privacy": "public",
-   "views": 171,
+   "views": 168,
    "likes": 4,
    "comments": 1,
    "avgSeconds": 17,
@@ -89,7 +89,7 @@
    "published": "2026-11-14T23:01:41Z",
    "duration": "PT51S",
    "privacy": "public",
-   "views": 123,
+   "views": 120,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 19,
@@ -291,12 +291,25 @@
    "published": "2026-10-22T01:12:07Z",
    "duration": "PT46S",
    "privacy": "public",
-   "views": 53,
+   "views": 54,
    "likes": 1,
    "comments": 0,
    "avgSeconds": 23,
    "avgPercent": 50.81,
    "subsGained": 1
+  },
+  {
+   "id": "8BNtkyQFi9Q",
+   "title": "A General Introduction to Psychoanalysis \u00b7 Small mistakes and large meanings \u00b7 Reading 1",
+   "published": "2026-10-19T16:12:09Z",
+   "duration": "PT1M31S",
+   "privacy": "public",
+   "views": 53,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 55,
+   "avgPercent": 61.419999999999995,
+   "subsGained": 0
   },
   {
    "id": "8p2wahKgCLE",
@@ -307,19 +320,6 @@
    "views": 53,
    "likes": 0,
    "comments": 0
-  },
-  {
-   "id": "8BNtkyQFi9Q",
-   "title": "A General Introduction to Psychoanalysis \u00b7 Small mistakes and large meanings \u00b7 Reading 1",
-   "published": "2026-10-19T16:12:09Z",
-   "duration": "PT1M31S",
-   "privacy": "public",
-   "views": 52,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 55,
-   "avgPercent": 61.419999999999995,
-   "subsGained": 0
   },
   {
    "id": "4qzeT6uxt3A",
@@ -460,8 +460,8 @@
    "views": 39,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 60,
-   "avgPercent": 36.67,
+   "avgSeconds": 57,
+   "avgPercent": 34.57,
    "subsGained": 0
   },
   {
@@ -834,8 +834,8 @@
    "views": 22,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 121,
-   "avgPercent": 70.58,
+   "avgSeconds": 116,
+   "avgPercent": 67.95,
    "subsGained": 0
   },
   {
@@ -885,6 +885,19 @@
    "subsGained": 0
   },
   {
+   "id": "xGaGRBalAvQ",
+   "title": "Can psychology boost industry efficiency?",
+   "published": "2026-11-05T18:04:28Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 72,
+   "avgPercent": 118.09,
+   "subsGained": 0
+  },
+  {
    "id": "-FD8LOO2XG4",
    "title": "The Psychology Of Suggestion",
    "published": "2026-10-31T22:01:42Z",
@@ -921,19 +934,6 @@
    "comments": 1,
    "avgSeconds": 18,
    "avgPercent": 33.53,
-   "subsGained": 0
-  },
-  {
-   "id": "xGaGRBalAvQ",
-   "title": "Can psychology boost industry efficiency?",
-   "published": "2026-11-05T18:04:28Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 20,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 72,
-   "avgPercent": 118.09,
    "subsGained": 0
   },
   {
@@ -1067,6 +1067,19 @@
    "subsGained": 0
   },
   {
+   "id": "Au2YzEYnkr0",
+   "title": "Your Eyes Blink During Story Turns",
+   "published": "2026-11-15T18:03:29Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 53,
+   "avgPercent": 94.77,
+   "subsGained": 0
+  },
+  {
    "id": "EPBe9hIGqbc",
    "title": "Self-consciousness \u00b7 An original reflection",
    "published": "2026-10-28T05:18:42Z",
@@ -1103,6 +1116,16 @@
    "comments": 0
   },
   {
+   "id": "0-d5ZC_tONQ",
+   "title": "What Your Sudden Laughter Reveals About Brain",
+   "published": "2026-11-17T03:01:31Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "KhfyoHiwyYc",
    "title": "Your Sudden Laughter Reveals Ancient Survival",
    "published": "2026-11-16T03:01:20Z",
@@ -1113,19 +1136,6 @@
    "comments": 1,
    "avgSeconds": 33,
    "avgPercent": 56.89999999999999,
-   "subsGained": 0
-  },
-  {
-   "id": "Au2YzEYnkr0",
-   "title": "Your Eyes Blink During Story Turns",
-   "published": "2026-11-15T18:03:29Z",
-   "duration": "PT56S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 53,
-   "avgPercent": 94.77,
    "subsGained": 0
   },
   {
@@ -1194,10 +1204,10 @@
    "subsGained": 0
   },
   {
-   "id": "0-d5ZC_tONQ",
-   "title": "What Your Sudden Laughter Reveals About Brain",
-   "published": "2026-11-17T03:01:31Z",
-   "duration": "PT58S",
+   "id": "zqBNuIFyTpU",
+   "title": "Why Your Face Freezes On Surprise",
+   "published": "2026-11-17T23:04:12Z",
+   "duration": "PT1M7S",
    "privacy": "public",
    "views": 13,
    "likes": 0,
@@ -1474,6 +1484,19 @@
    "subsGained": 0
   },
   {
+   "id": "CKZhAbMI7Ek",
+   "title": "What your daily habits were really built from | William James",
+   "published": "2026-11-11T00:00:15Z",
+   "duration": "PT7M7S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 172,
+   "avgPercent": 40.4,
+   "subsGained": 0
+  },
+  {
    "id": "v9w9gRnfbOQ",
    "title": "Do you choose your face, or does it choose you? | Charles Darwin",
    "published": "2026-11-08T00:00:27Z",
@@ -1484,6 +1507,19 @@
    "comments": 1,
    "avgSeconds": 104,
    "avgPercent": 23.58,
+   "subsGained": 0
+  },
+  {
+   "id": "9lec7AhXEP8",
+   "title": "Why dreams feel meaningful and strange at the same time | Freud",
+   "published": "2026-11-05T00:00:17Z",
+   "duration": "PT7M31S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 1,
+   "avgPercent": 0.43,
    "subsGained": 0
   },
   {
@@ -1539,6 +1575,16 @@
    "subsGained": 0
   },
   {
+   "id": "vcqR_YZVpvg",
+   "title": "Why Kids Love Surprising Endings",
+   "published": "2026-11-17T18:05:09Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "o3yiUpFfU8c",
    "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
    "published": "2026-11-11T00:00:30Z",
@@ -1549,32 +1595,6 @@
    "comments": 1,
    "avgSeconds": 3,
    "avgPercent": 0.64,
-   "subsGained": 0
-  },
-  {
-   "id": "9lec7AhXEP8",
-   "title": "Why dreams feel meaningful and strange at the same time | Freud",
-   "published": "2026-11-05T00:00:17Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 1,
-   "avgPercent": 0.43,
-   "subsGained": 0
-  },
-  {
-   "id": "9lec7AhXEP8",
-   "title": "Why dreams feel meaningful and strange at the same time | Freud",
-   "published": "2026-11-05T00:00:17Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 1,
-   "avgPercent": 0.43,
    "subsGained": 0
   },
   {
@@ -1615,6 +1635,16 @@
    "avgSeconds": 59,
    "avgPercent": 36.28,
    "subsGained": 0
+  },
+  {
+   "id": "5_T6g4xWs-4",
+   "title": "Why Animals Play Shows Joy",
+   "published": "2026-11-18T03:02:16Z",
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "4lZoI4B4VbE",
@@ -1676,7 +1706,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "avgSeconds": 18,
    "avgPercent": 4.13,
    "subsGained": 0
@@ -1862,16 +1892,6 @@
    "comments": 0
   },
   {
-   "id": "vcqR_YZVpvg",
-   "title": "Why Kids Love Surprising Endings",
-   "published": "2026-11-17T18:05:09Z",
-   "duration": "PT1M6S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "P8P40XX9vbk",
    "title": "Why do you jump to conclusions so quickly? | John Dewey",
    "published": "2026-11-07T21:51:56Z",
@@ -1922,10 +1942,10 @@
    "comments": 0
   },
   {
-   "id": "D2VOAPsZqKw",
-   "title": "Can a crowd be better than the people in it? | Gustave Le Bon",
-   "published": "2026-11-04T20:45:23Z",
-   "duration": "PT7M45S",
+   "id": "EPGy8t4XRkI",
+   "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
+   "published": "2026-11-03T15:49:25Z",
+   "duration": "PT7M24S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
