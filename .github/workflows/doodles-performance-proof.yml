@@ -13,6 +13,7 @@ jobs:
     timeout-minutes: 340
     env:
       DOODLES_PERFORMANCE: '1'
+      DOODLES_FAST_WRITER: '1'
       DOODLES_STORY_RESERVE: '0'
     steps:
       - uses: actions/checkout@v4
