@@ -393,6 +393,9 @@ def render(work):
                     Image.fromarray(after).save(work/f'performance-after-{f//FPS:03d}.png')
             img=Image.fromarray(after)
         elif MOVE and facegeo.get(si):img=head_move(img,tt,e,facegeo[si],active['who'] if active else None)
+        if PERFORMANCE:
+            # Keep both faces on screen so the listener's acting can be judged.
+            z=1.12;fx=.5;fy=.5
         iw,ih=img.size;bw,bh=iw/z,ih/z
         cx=min(max(fx*iw,bw/2),iw-bw/2);cy=min(max(fy*ih,bh/2),ih-bh/2)
         frame=img.resize((W,H),Image.BICUBIC,box=(cx-bw/2,cy-bh/2,cx+bw/2,cy+bh/2)).convert('RGBA')
