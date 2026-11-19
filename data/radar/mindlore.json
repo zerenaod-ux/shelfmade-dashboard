@@ -1,129 +1,138 @@
 {
  "why": [
   {
-   "title": "9 Psychology Facts About Sleep That Will Surprise You! \ud83e\udde0\ud83d\ude34",
-   "why": "A numbered list of surprising, relatable facts about a universal need (sleep) creates instant curiosity and easy-to\u2011digest pacing."
+   "title": "Why You Can\u2019t Quit Even When You Should #psychology",
+   "why": "This video demonstrates that a specific, personal pain point (behavioral addiction/stubbornness) paired with a tiny subscriber base (162) creates a massive breakout (228.7), proving the algorithm prioritizes high-retention niche concepts over channel authority."
   },
   {
-   "title": "7 Disturbing Brain Facts That Will Blow Your Mind! \ud83e\udde0\ud83d\ude33",
-   "why": "The \"disturbing\" hook triggers fear/ awe, while rapid-fire facts keep viewers hooked and encourage repeat watches."
+   "title": "Tw\u00f3j M\u00d3ZG b\u0142\u0105ga, \u017ceby\u015b to odstawi\u0142",
+   "why": "The aggressive, direct-address hook ('Your brain is begging you to quit this') targets a visceral fear of self-sabotage, driving a high VPH (2,871) by leveraging the 'urgent warning' psychological lever."
   },
   {
-   "title": "Like. Share. Subscribe #psychologyfacts #mindblowingfacts #psychology #realfacts #humanminded #viral",
-   "why": "A direct call\u2011to\u2011action paired with trending hashtags leverages algorithmic boost and taps into viewers\u2019 desire for shareable knowledge."
+   "title": "Body Signals That Warn You Of Burnout Early #early #warn",
+   "why": "It works by reframing burnout not as a vague state but as a set of specific, detectable 'signals,' providing viewers with a practical mental checklist that increases watch time and shareability."
   },
   {
-   "title": "Psychology of the Crab Mentality \ud83e\udd2b #reels #psychology #psychologyfacts",
-   "why": "The quirky \"crab mentality\" metaphor instantly visualizes a social concept, using humor and a concise format that drives engagement."
+   "title": "The Moon Isn\u2019t Getting Bigger. Your Brain Is Tricking You.",
+   "why": "This leverages the 'perceptual illusion' hook, a classic public-domain psychology trope, to immediately validate the viewer's curiosity and provide a quick, satisfying 'aha' moment that encourages completion."
   }
  ],
  "hook_patterns": [
-  "Numbered surprising fact list with bold visual cues",
-  "Provocative adjective (disturbing, mind\u2011blowing) + rapid fact delivery",
-  "Direct CTA + trending hashtags to ride algorithmic trends"
+  "Direct physiological warning: 'Your body is screaming for you to stop...'",
+  "The invisible enemy: 'You have a cognitive bias that is costing you money/time.'",
+  "The perceptual lie: 'The object you are looking at is not what it seems.'"
  ],
- "todays_angle": "Translate a timeless psychology principle into a bite\u2011sized, curiosity\u2011driven hook that feels like a secret you\u2019re about to uncover",
+ "todays_angle": "Focus on 'Invisible Self-Sabotage' by using public-domain concepts (like William James' 'Habit' or Maslow's 'Deficit') to explain why the viewer's brain actively resists their own goals.",
  "ideas": [
-  "\"5 Cognitive Biases from 'Thinking, Fast and Slow' that hijack your daily decisions\" \u2013 quick animated scenarios showing each bias in action",
-  "\"The Stanford Prison Experiment in 30 seconds: what it reveals about authority and conformity\" \u2013 dramatized reenactment with voice\u2011over narration",
-  "\"Freud\u2019s 'The Uncanny' explained with everyday eerie moments\" \u2013 side\u2011by\u2011side clips of common oddities with concise analysis"
+  {
+   "title": "The 'Habit' Trap (1908)",
+   "concept": "Explain William James' concept that habits are the 'flywheel of society.' Show how a 10-second neural loop creates a 'groove' that makes quitting feel physically painful, not just mentally difficult."
+  },
+  {
+   "title": "The Maslow Deficit",
+   "concept": "Use Maslow's Hierarchy to show why someone can't focus on 'growth' (top of pyramid) when their 'safety' or 'belonging' needs are quietly unmet. Frame it as 'Why your brain prioritizes survival over success.'"
+  },
+  {
+   "title": "The Illusion of Choice",
+   "concept": "Reference classic public-domain studies on priming or framing. Show how a subtle change in question wording changes the brain's 'default' answer, proving that 'choice' is often just a perception."
+  }
  ],
  "avoid": [
-  "Overused generic \"life hack\" titles that lack genuine psychological depth",
-  "Clickbait promises without delivering real, sourced psychology content"
+  "Generic '7 Brain Facts' listicles that lack a specific emotional hook or narrative arc.",
+  "Clickbaity 'Hungry Animal' or 'Mystery Object' hooks that have no direct relevance to human psychological mechanics."
  ],
  "updated": "2026-11-19",
- "sample": 71,
+ "sample": 72,
  "spikes": [
   {
    "title": "Why This Hungry Fish Refused to Eat! \ud83d\ude31\ud83d\udc1f",
    "channel": "Mr mogloo",
-   "views": 480180,
-   "hours": 26,
-   "vph": 18807.5,
+   "views": 530622,
+   "hours": 33,
+   "vph": 16056.1,
    "subs": 229000,
-   "breakout": 2.1
-  },
-  {
-   "title": "9 Psychology Facts About Sleep That Will Surprise You! \ud83e\udde0\ud83d\ude34",
-   "channel": "Mind Decode",
-   "views": 295913,
-   "hours": 42,
-   "vph": 7033.1,
-   "subs": 7100,
-   "breakout": 41.7
+   "breakout": 2.3
   },
   {
    "title": "Shoot one of the X's and your brain will create a movement that does not exist. \ud83d\udc40\u2764\ufe0f",
    "channel": "Endless Love",
-   "views": 89270,
-   "hours": 14,
-   "vph": 6165.0,
+   "views": 112501,
+   "hours": 22,
+   "vph": 5114.4,
    "subs": 11800000,
    "breakout": 0.0
   },
   {
    "title": "Like. Share. Subscribe #psychologyfacts #mindblowingfacts #psychology #realfacts #humanminded #viral",
    "channel": "Motivation Only ",
-   "views": 95335,
-   "hours": 22,
-   "vph": 4363.4,
-   "subs": 1390,
-   "breakout": 68.6
+   "views": 144184,
+   "hours": 29,
+   "vph": 4910.0,
+   "subs": 1480,
+   "breakout": 97.4
   },
   {
-   "title": "Sapne Mere The... Faisle Kisi Aur Ke \ud83e\udd40\u201d #darkpsychology #emotional #nostalgia",
-   "channel": "Mindora Factz ",
-   "views": 140704,
-   "hours": 48,
-   "vph": 2932.4,
-   "subs": 48000,
-   "breakout": 2.9
-  },
-  {
-   "title": "7 Disturbing Brain Facts That Will Blow Your Mind! \ud83e\udde0\ud83d\ude33",
-   "channel": "Mind Decode",
-   "views": 62796,
-   "hours": 25,
-   "vph": 2491.4,
-   "subs": 7100,
-   "breakout": 8.8
+   "title": "Tw\u00f3j M\u00d3ZG b\u0142aga, \u017ceby\u015b to odstawi\u0142",
+   "channel": "Marek Skoczylas",
+   "views": 26541,
+   "hours": 9,
+   "vph": 2871.1,
+   "subs": 1280000,
+   "breakout": 0.0
   },
   {
    "title": "\u0907\u092e\u094b\u0936\u0928\u0932 \u0932\u0921\u093c\u0915\u0940\ud83d\ude22 #psychology #successmind #mindset #growlifebuddy #darkpsychology #motivation",
    "channel": " GROWLIFEBUDDY ",
-   "views": 33867,
-   "hours": 19,
-   "vph": 1746.0,
+   "views": 60882,
+   "hours": 27,
+   "vph": 2262.2,
    "subs": 17400,
-   "breakout": 1.9
+   "breakout": 3.5
   },
   {
-   "title": "6 Dark Psychology Facts That Reveal More About Human Behavior \ud83e\udde0\ud83d\udc40",
+   "title": "Body Signals That Warn You Of Burnout Early #early #warn   #Quotes #Shorts #Foryou #Success #Facts",
+   "channel": "Mind Psychology Valentin",
+   "views": 63258,
+   "hours": 28,
+   "vph": 2219.9,
+   "subs": 23900,
+   "breakout": 2.6
+  },
+  {
+   "title": "Why You Can\u2019t Quit Even When You Should #psychology",
+   "channel": "The inner shift",
+   "views": 45736,
+   "hours": 22,
+   "vph": 2055.9,
+   "subs": 162,
+   "breakout": 228.7
+  },
+  {
+   "title": "7 Disturbing Brain Facts That Will Blow Your Mind! \ud83e\udde0\ud83d\ude33",
    "channel": "Mind Decode",
-   "views": 29110,
-   "hours": 17,
-   "vph": 1688.1,
-   "subs": 7100,
-   "breakout": 4.1
+   "views": 66468,
+   "hours": 33,
+   "vph": 2031.3,
+   "subs": 7130,
+   "breakout": 9.3
   },
   {
-   "title": "They Gave Her a Fake Scar, Then Secretly Removed It",
-   "channel": "Unfoldery",
-   "views": 19374,
-   "hours": 47,
-   "vph": 413.9,
-   "subs": 21,
-   "breakout": 96.9
+   "title": "7 Facts About Love That Hit Different #FactsAboutLove #PsychologyFacts #LovePsychology",
+   "channel": "Harris Wisdom",
+   "views": 18854,
+   "hours": 44,
+   "vph": 423.8,
+   "subs": 38,
+   "breakout": 94.3
   },
   {
-   "title": "Psychology of the Crab Mentality \ud83e\udd2b #reels #psychology #psychologyfacts",
-   "channel": "Life Toons",
-   "views": 8680,
-   "hours": 43,
-   "vph": 199.6,
-   "subs": 77,
-   "breakout": 43.4
+   "title": "5 Psychological Facts You Should Know! #psychologyfacts",
+   "channel": "MedToon 3D",
+   "views": 14298,
+   "hours": 37,
+   "vph": 381.3,
+   "subs": 33,
+   "breakout": 71.5
   }
  ]
 }
