@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-18",
+ "collected": "2026-11-19",
  "note": "",
  "videos": [
   {
@@ -17,6 +17,16 @@
    "avgSeconds": 16,
    "avgPercent": 24.06,
    "subsGained": 1
+  },
+  {
+   "id": "a9y0zHRRqKM",
+   "title": "Your First Day Shakes \ud83d\ude2c",
+   "published": "2026-11-19T03:01:47Z",
+   "duration": "PT19S",
+   "privacy": "public",
+   "views": 54,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "EWhebXioXqQ",
@@ -149,6 +159,19 @@
    "subsGained": 0
   },
   {
+   "id": "m-mdceIZnsg",
+   "title": "The Silent Nod",
+   "published": "2026-11-09T18:05:11Z",
+   "duration": "PT46S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 47,
+   "avgPercent": 102.8,
+   "subsGained": 0
+  },
+  {
    "id": "SEbuuZbI--8",
    "title": "The Doomscroll Trap",
    "published": "2026-11-05T03:01:48Z",
@@ -214,6 +237,16 @@
    "subsGained": 0
   },
   {
+   "id": "4aqmr5TjqWY",
+   "title": "Your First Day Boss Fight",
+   "published": "2026-11-17T18:05:11Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "ucEbj1x_lJw",
    "title": "The Unearned Rest | Leo & Mia #16",
    "published": "2026-11-16T03:01:32Z",
@@ -237,19 +270,6 @@
    "comments": 1,
    "avgSeconds": 25,
    "avgPercent": 48.42,
-   "subsGained": 0
-  },
-  {
-   "id": "m-mdceIZnsg",
-   "title": "The Silent Nod",
-   "published": "2026-11-09T18:05:11Z",
-   "duration": "PT46S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 47,
-   "avgPercent": 102.8,
    "subsGained": 0
   },
   {
@@ -468,13 +488,13 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
-   "id": "4aqmr5TjqWY",
-   "title": "Your First Day Boss Fight",
-   "published": "2026-11-17T18:05:11Z",
-   "duration": "PT22S",
+   "id": "vG5WGpjUpdc",
+   "title": "The Robot Replacement Panic | Leo & Mia #17",
+   "published": "2026-11-17T03:02:07Z",
+   "duration": "PT47S",
    "privacy": "public",
    "views": 2,
    "likes": 0,
@@ -566,23 +586,13 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "8R1vxqsCRKg",
    "title": "Your Phone Dies Now",
    "published": "2026-11-18T03:02:10Z",
    "duration": "PT30S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "vG5WGpjUpdc",
-   "title": "The Robot Replacement Panic | Leo & Mia #17",
-   "published": "2026-11-17T03:02:07Z",
-   "duration": "PT47S",
    "privacy": "public",
    "views": 1,
    "likes": 0,

@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-18",
+ "collected": "2026-11-19",
  "note": "",
  "videos": [
   {
@@ -24,7 +24,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 383,
+   "views": 384,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 99,
@@ -250,6 +250,19 @@
    "subsGained": 1
   },
   {
+   "id": "8BNtkyQFi9Q",
+   "title": "A General Introduction to Psychoanalysis \u00b7 Small mistakes and large meanings \u00b7 Reading 1",
+   "published": "2026-10-19T16:12:09Z",
+   "duration": "PT1M31S",
+   "privacy": "public",
+   "views": 57,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 55,
+   "avgPercent": 61.419999999999995,
+   "subsGained": 0
+  },
+  {
    "id": "HwKLVKQylv8",
    "title": "Your brain is wired to stop wanting things",
    "published": "2026-11-12T03:01:54Z",
@@ -300,19 +313,6 @@
    "avgSeconds": 23,
    "avgPercent": 50.81,
    "subsGained": 1
-  },
-  {
-   "id": "8BNtkyQFi9Q",
-   "title": "A General Introduction to Psychoanalysis \u00b7 Small mistakes and large meanings \u00b7 Reading 1",
-   "published": "2026-10-19T16:12:09Z",
-   "duration": "PT1M31S",
-   "privacy": "public",
-   "views": 53,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 55,
-   "avgPercent": 61.419999999999995,
-   "subsGained": 0
   },
   {
    "id": "8p2wahKgCLE",
@@ -676,6 +676,19 @@
    "subsGained": 0
   },
   {
+   "id": "YG8unHg5xWw",
+   "title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4",
+   "published": "2026-11-02T00:00:18Z",
+   "duration": "PT5M29S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 4.14,
+   "subsGained": 2
+  },
+  {
    "id": "jcbv6oWRsSk",
    "title": "The Psychology Of Revolution",
    "published": "2026-10-29T18:03:26Z",
@@ -752,19 +765,6 @@
    "avgSeconds": 10,
    "avgPercent": 21.22,
    "subsGained": 0
-  },
-  {
-   "id": "YG8unHg5xWw",
-   "title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4",
-   "published": "2026-11-02T00:00:18Z",
-   "duration": "PT5M29S",
-   "privacy": "public",
-   "views": 23,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 4.14,
-   "subsGained": 2
   },
   {
    "id": "GUUj1ASdeLg",
@@ -875,19 +875,6 @@
    "comments": 1,
    "avgSeconds": 22,
    "avgPercent": 37.58,
-   "subsGained": 0
-  },
-  {
-   "id": "xGaGRBalAvQ",
-   "title": "Can psychology boost industry efficiency?",
-   "published": "2026-11-05T18:04:28Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 72,
-   "avgPercent": 118.09,
    "subsGained": 0
   },
   {
@@ -1008,6 +995,19 @@
    "subsGained": 0
   },
   {
+   "id": "0-d5ZC_tONQ",
+   "title": "What Your Sudden Laughter Reveals About Brain",
+   "published": "2026-11-17T03:01:31Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 19,
+   "avgPercent": 33.12,
+   "subsGained": 0
+  },
+  {
    "id": "Kjx5KmP1s7w",
    "title": "The Interpretation Of Dreams",
    "published": "2026-10-31T02:01:01Z",
@@ -1109,19 +1109,6 @@
    "comments": 0
   },
   {
-   "id": "0-d5ZC_tONQ",
-   "title": "What Your Sudden Laughter Reveals About Brain",
-   "published": "2026-11-17T03:01:31Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 19,
-   "avgPercent": 33.12,
-   "subsGained": 0
-  },
-  {
    "id": "KhfyoHiwyYc",
    "title": "Your Sudden Laughter Reveals Ancient Survival",
    "published": "2026-11-16T03:01:20Z",
@@ -1174,6 +1161,16 @@
    "subsGained": 0
   },
   {
+   "id": "5_T6g4xWs-4",
+   "title": "Why Animals Play Shows Joy",
+   "published": "2026-11-18T03:02:16Z",
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "u-bjxB9PmgY",
    "title": "Why you buy things you don't need to impress people you don't like \ud83d\udcb8",
    "published": "2026-06-26T02:27:52Z",
@@ -1207,7 +1204,7 @@
    "privacy": "public",
    "views": 13,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "Z5ifzR5nOV0",
@@ -1340,6 +1337,19 @@
    "subsGained": 0
   },
   {
+   "id": "84PQTiIIbHU",
+   "title": "How does thought-force shape business?",
+   "published": "2026-10-20T19:51:29Z",
+   "duration": "PT51S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 12,
+   "avgPercent": 25.019999999999996,
+   "subsGained": 0
+  },
+  {
    "id": "gVJLfRlF6aM",
    "title": "The Art Of Public Speaking",
    "published": "2026-10-17T22:28:30Z",
@@ -1361,19 +1371,6 @@
    "views": 9,
    "likes": 0,
    "comments": 0
-  },
-  {
-   "id": "84PQTiIIbHU",
-   "title": "How does thought-force shape business?",
-   "published": "2026-10-20T19:51:29Z",
-   "duration": "PT51S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 25.019999999999996,
-   "subsGained": 0
   },
   {
    "id": "ZPz6PwOcS4M",
@@ -1465,6 +1462,26 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
+  },
+  {
+   "id": "16na_INxwnI",
+   "title": "How Mammal Play Signals Pure Joy",
+   "published": "2026-11-19T03:02:00Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "h4yc9t1OdDs",
+   "title": "How Unexpected News Freezes Facial Muscles",
+   "published": "2026-11-18T18:05:16Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "CKZhAbMI7Ek",
@@ -1584,6 +1601,16 @@
    "subsGained": 0
   },
   {
+   "id": "gq3Q2B0bnQg",
+   "title": "Why Unexpected Story Endings Freeze Brains",
+   "published": "2026-11-18T23:03:35Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "vcqR_YZVpvg",
    "title": "Why Kids Love Surprising Endings",
    "published": "2026-11-17T18:05:09Z",
@@ -1646,16 +1673,6 @@
    "subsGained": 0
   },
   {
-   "id": "5_T6g4xWs-4",
-   "title": "Why Animals Play Shows Joy",
-   "published": "2026-11-18T03:02:16Z",
-   "duration": "PT1M13S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "4lZoI4B4VbE",
    "title": "What if every slip carried a secret?",
    "published": "2026-11-09T00:00:28Z",
@@ -1669,19 +1686,6 @@
    "subsGained": 0
   },
   {
-   "id": "lzNbwJLpncg",
-   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
-   "published": "2026-11-06T00:00:34Z",
-   "duration": "PT7M47S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.66,
-   "subsGained": 0
-  },
-  {
    "id": "4lZoI4B4VbE",
    "title": "What if every slip carried a secret?",
    "published": "2026-11-09T00:00:28Z",
@@ -1692,19 +1696,6 @@
    "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "lzNbwJLpncg",
-   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
-   "published": "2026-11-06T00:00:34Z",
-   "duration": "PT7M47S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.66,
    "subsGained": 0
   },
   {
@@ -1790,6 +1781,19 @@
    "subsGained": 0
   },
   {
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-06T00:00:34Z",
+   "duration": "PT7M47S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 3,
+   "avgPercent": 0.66,
+   "subsGained": 0
+  },
+  {
    "id": "Nl1SAPaJEuY",
    "title": "Are children's dreams really simpler than ours? | Freud",
    "published": "2026-11-10T00:00:05Z",
@@ -1800,6 +1804,19 @@
    "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-06T00:00:34Z",
+   "duration": "PT7M47S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 3,
+   "avgPercent": 0.66,
    "subsGained": 0
   },
   {
@@ -1904,16 +1921,6 @@
    "comments": 0
   },
   {
-   "id": "h4yc9t1OdDs",
-   "title": "How Unexpected News Freezes Facial Muscles",
-   "published": "2026-11-18T18:05:16Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "P8P40XX9vbk",
    "title": "Why do you jump to conclusions so quickly? | John Dewey",
    "published": "2026-11-07T21:51:56Z",
@@ -1954,10 +1961,20 @@
    "comments": 0
   },
   {
-   "id": "QNTiEqKvMFM",
-   "title": "Do you choose your face, or does it choose you? | Charles Darwin",
-   "published": "2026-11-05T23:39:10Z",
-   "duration": "PT7M23S",
+   "id": "4qWHmBcx-I4",
+   "title": "How many explanations do you try before you choose one? | John Dewey",
+   "published": "2026-11-03T20:41:14Z",
+   "duration": "PT7M22S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "RwXYKd7gBCE",
+   "title": "Why we believe what impressive people say | Gustave Le Bon",
+   "published": "2026-11-03T20:41:05Z",
+   "duration": "PT7M22S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

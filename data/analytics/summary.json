@@ -1,5 +1,5 @@
 {
- "collected": "2026-11-18",
+ "collected": "2026-11-19",
  "top": {
   "mindlore": [
    {
@@ -12,7 +12,7 @@
    {
     "id": "uOqGecmhSTs",
     "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
-    "views": 383,
+    "views": 384,
     "likes": 2,
     "avgPercent": 125.77000000000001
    },
@@ -84,6 +84,12 @@
     "avgPercent": 24.06
    },
    {
+    "id": "a9y0zHRRqKM",
+    "title": "Your First Day Shakes \ud83d\ude2c",
+    "views": 54,
+    "likes": 0
+   },
+   {
     "id": "EWhebXioXqQ",
     "title": "The Sleep Effort Trap",
     "views": 17,
@@ -103,13 +109,6 @@
     "views": 12,
     "likes": 2,
     "avgPercent": 160.61
-   },
-   {
-    "id": "Zc1do-DnYrE",
-    "title": "The Rehearsal Trap",
-    "views": 11,
-    "likes": 0,
-    "avgPercent": 24.03
    }
   ]
  }
