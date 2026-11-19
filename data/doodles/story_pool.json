@@ -4166,5 +4166,363 @@
   "style": "v2",
   "format": "MINI MYSTERY",
   "improv": false
+ },
+ {
+  "id": "laugh-copycat-dilemma",
+  "title": "The Laugh Thief Paradox",
+  "concept": "Why we subconsciously steal our best friend's laughs and weird vocal habits.",
+  "insight": "Social mirroring makes us naturally absorb the sounds and quirks of people we spend time with.",
+  "caption": "When your best friend steals your laugh and claims it as self-defense. #shorts",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at a cozy podcast desk, Leo holding a coffee mug with a smirking closed-mouth expression.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "You stole my signature laugh, Mia!",
+      "listener_feel": "skeptical"
+     },
+     {
+      "who": "mia",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "My lungs are unionized, Leo! I laugh how I want.",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Mia rests her chin on her hand with raised eyebrows and closed lips near the desk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "insistent",
+      "beat": "quick",
+      "text": "Okay but hear me out, you stole my dramatic snort.",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "mia",
+      "feel": "know-it-all",
+      "beat": "normal",
+      "text": "It is brain copying! When you hang out, your brain steals funny noises people make.",
+      "listener_feel": "surprised"
+     }
+    ]
+   },
+   {
+    "scene": "Both sit at the podcast desk while Mia gestures dramatically with a tight closed-mouth smile.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "smug",
+      "beat": "snap",
+      "text": "Wait, so you copy me because you like me?",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "mia",
+      "feel": "sarcastic",
+      "beat": "quick",
+      "text": "Don't get dramatic. Your brain just gets lazy and steals sounds you hear daily.",
+      "listener_feel": "skeptical"
+     }
+    ]
+   },
+   {
+    "scene": "Leo crosses his arms with worried eyes and closed lips while Mia watches him angled toward camera.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "proud",
+      "beat": "quick",
+      "text": "My kettle snort is legendary, just like Gerald the plant!",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "normal",
+      "text": "Right. Dev the barista called you Lyle today because of that snort.",
+      "listener_feel": "concerned"
+     }
+    ]
+   },
+   {
+    "scene": "Mia holds a cup of tea at the desk, leaning back with a playful smirk and closed-mouth expression as Leo turns toward her.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "snap",
+      "text": "That was a callback to the Interview Paradox mess!",
+      "listener_feel": "neutral"
+     },
+     {
+      "who": "mia",
+      "feel": "triumphant",
+      "beat": "quick",
+      "text": "Anyway, scoreboard says point one hundred eight for me. You copy Greg's heavy sigh every Monday.",
+      "listener_feel": "surprised"
+     }
+    ]
+   },
+   {
+    "scene": "Both lean over the podcast desk, exchanging warm closed-mouth smirks three-quarters toward camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "resigned",
+      "beat": "normal",
+      "text": "Okay fine, keep the laugh as long as we get paid.",
+      "listener_feel": "warm"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Deal, we are both total weirdos anyway.",
+      "listener_feel": "warm"
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 8,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It has sharp banter, great natural pacing, and a satisfying comedic resolution between the friends.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 8,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "FUNNY EXPLAINER",
+  "improv": true
+ },
+ {
+  "id": "your-tiny-potato-crown",
+  "title": "Your Tiny Potato Crown",
+  "concept": "Leo investigates a missing fry mystery with wild exaggerations.",
+  "insight": "Exaggerating trivial details turns everyday snacks into absurd detective cases.",
+  "caption": "When your best friend investigates a missing fry crime scene.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Cozy podcast desk with a coffee mug; Leo leans in with worried eyes, pointing a pencil like a detective.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Wait, did you just steal my fries?"
+     },
+     {
+      "who": "mia",
+      "feel": "smirk",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "I ate them. That's not stealing, bro."
+     },
+     {
+      "who": "leo",
+      "feel": "annoyed",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "It is when there were forty of them!"
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a coffee mug; Mia sips tea while Leo gestures wildly with both hands.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "exaggerated",
+      "beat": "snap",
+      "text": "Literally forty golden fries just sitting there waiting."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "surprised",
+      "beat": "quick",
+      "text": "Forty? You are totally lying right now."
+     },
+     {
+      "who": "leo",
+      "feel": "stubborn",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "Forty-two. I counted every single one of them."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a coffee mug; Leo folds his arms with a raised eyebrow, looking very proud.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "beat": "pause",
+      "text": "You actually numbered them? That's sad."
+     },
+     {
+      "who": "leo",
+      "feel": "casual",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Okay but hear me out, I have a system."
+     },
+     {
+      "who": "mia",
+      "feel": "smirk",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "No, you definitely did not."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a coffee mug; Leo leans back smiling while Mia shakes her head slowly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "playful",
+      "beat": "quick",
+      "text": "Nope, just pure vibes and math."
+     },
+     {
+      "who": "mia",
+      "feel": "curious",
+      "listener_feel": "curious",
+      "beat": "snap",
+      "text": "You're pretending, right? What is the real mystery here?"
+     },
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "listener_feel": "surprised",
+      "beat": "quick",
+      "text": "They were actually forty-three before you showed up."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a coffee mug; Leo points down at the desk with wide, serious eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "surprised",
+      "beat": "snap",
+      "text": "Forty-three? You're completely insane."
+     },
+     {
+      "who": "leo",
+      "feel": "triumphant",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Wait, make that forty-four! I found one under the table."
+     },
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "listener_feel": "curious",
+      "beat": "pause",
+      "text": "Under the table?"
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a coffee mug; Mia points across the desk with a warm smile, ending the debate.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "pause",
+      "text": "Leo, that was just a potato wearing a tiny crown."
+     },
+     {
+      "who": "leo",
+      "feel": "proud",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "He's the king of potatoes and he deserved justice."
+     },
+     {
+      "who": "mia",
+      "feel": "smirk",
+      "listener_feel": "warm",
+      "beat": "snap",
+      "text": "Next time: leave the king alone."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 8,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It has a strong, fast-paced opening and a delightfully unhinged twist about a potato wearing a tiny crown.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 8,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
  }
 ]
