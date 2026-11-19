@@ -50,3 +50,8 @@ Final finishing run 44474170227 succeeded; artifact 14506072047 contains the act
 ## Owner-authorized scheduled rollout — 2026-11-19
 
 After viewing the finished test, the owner requested expressions on the regular automatic schedule. The regular doodles workflow now sets DOODLES_PERFORMANCE=1 at job level, inherited by automatic generation and its renderer subprocess. Readback verified the setting. This supersedes the earlier test-only default for scheduled/on-demand regular shorts; full episodes remain separate. The existing daily 07:37 UTC start is unchanged (1:37 a.m. Chicago in standard time, 2:37 a.m. in daylight time); a stale workflow comment is not the authoritative clock. No extra generation was triggered and no approval or publishing setting changed. Future scheduled output still has to demonstrate unattended success; enabling this flag is not proof that service outages or new content failures cannot happen.
+
+
+## Regular-path unattended proof started
+
+The owner requested an immediate test through the regular scheduled pipeline. Run 44517918059 started successfully with expressions enabled. Push-triggered checks now request one short; the scheduled default remains three and manual-dispatch count remains selectable. This is an active run, not a completion claim. The system writes/selects the story and generates its media; no generated dialogue or video is hand edited. Final output and delivery must be checked after completion.
