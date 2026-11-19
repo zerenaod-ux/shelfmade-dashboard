@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261119-e9a05",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Teasing Makes Rats Giggle 🐭",
+ "hook": "You tickle your pet to see them squirm.",
+ "thumbnail_headline": "RATS ACTUALLY GIGGLE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You tickle your pet to see them squirm. That gentle poke actually triggers an ancient pleasure network. In 1999, neuroscientist Jaak Panksepp recorded about 50 kilohertz vocalizations when gently tickling juvenile laboratory rats. That is ultrasonic rat laughter. Fact one: rats actively chased the scientist's hand for more rough-and-tumble contact. Fact two: their brains release dopamine during these gentle wrestling matches, just like human toddlers do. The result? They chirp continuously with pleasure. Fact three: if rats feel anxious or threatened, the chirping stops instantly. So why do we assume humans are the only ones laughing? Because human ears cannot hear sounds above 20 kilohertz without special audio detectors. Panksepp proved that mammalian roughhousing is hardwired social bonding, known widely as affective neuroscience. Other researchers across Europe found identical ultrasonic calls in wild field mice too. That's it. So next time you see a creature frolic, remember this when you tickle your pet."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Rats emit 50-kHz ultrasonic chirps during rough-and-tumble play and when tickled by human hands",
+   "who": "Jaak Panksepp and Jeffrey Burgdorf",
+   "year": "1999",
+   "place": "Bowling Green State University"
+  },
+  {
+   "claim": "Juvenile rats exhibit conditioned place preference and chase experimenters' hands to seek tickling",
+   "who": "Jaak Panksepp",
+   "year": "2000",
+   "place": "Bowling Green State University"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

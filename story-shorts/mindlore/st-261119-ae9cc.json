@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261119-ae9cc",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Brain Hums Before Plot Twists 🎵",
+ "hook": "You feel a low hum before a surprise.",
+ "thumbnail_headline": "BRAIN HUMS BEFORE TWIST",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a low hum before a surprise. That sensation is actually a prediction failure. In 2012, researchers at MIT measured about 150 milliseconds of brain activity before a twist. The result? Your mind calculates odds constantly. Edward Gibson at MIT found this in 2012. He studied how listeners process sentences. The data showed spikes in the theta band. That is a sign of confusion. But it is not random. It is a specific error signal. So why do we assume we are passive listeners? We are not. Your brain builds a model of the story. It checks every word against that model. When the model breaks, you feel that hum. It is a structural alarm. Many studies confirm this. It is called prediction error. It happens in music too. So next time you feel that low hum, remember it is your brain working. You feel a low hum before a surprise."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Brain activity in the theta band spikes about 150 milliseconds before a surprising plot twist, indicating a prediction error.",
+   "who": "Edward Gibson at MIT",
+   "year": "2012",
+   "place": "MIT"
+  },
+  {
+   "claim": "Listeners process language by building predictive models, and deviations from these models trigger specific neural responses.",
+   "who": "MIT researchers",
+   "year": "2010s",
+   "place": "Cambridge, MA"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": ""
+}

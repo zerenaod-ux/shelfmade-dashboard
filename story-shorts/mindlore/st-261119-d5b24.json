@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261119-d5b24",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Mouth Twitches On News 😮",
+ "hook": "You notice a quick twitch when news hits you.",
+ "thumbnail_headline": "MOUTH TWITCH REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You notice a quick twitch when news hits you. That reaction is actually a universal cue studied by researchers. In 1990, Paul Ekman and Wallace Friesen recorded about 7 percent microexpressions. The result? Later studies in Japan and the US showed the same mouth-twitch across cultures, supporting the universality of human expressions. Researchers label this the microexpression response. So why do we think we can hide our reaction? Because the brief twitch happens before conscious control, a fact confirmed by University of Tokyo researchers in 2005. The concept is called the universality hypothesis. What does the mouth twitch actually mean? It signals the brain’s rapid appraisal of unexpected information. Does it appear with any unexpected sound? Yes, studies show the mouth twitch follows sudden auditory cues too. That's it. So next time you hear unexpected news, notice your subtle mouth twitch, and remember you notice"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 7 percent of participants showed microexpressions lasting less than half a second",
+   "who": "Paul Ekman and Wallace Friesen",
+   "year": "1990",
+   "place": "University of California, San Francisco"
+  },
+  {
+   "claim": "Japanese and American participants displayed similar mouth-twitch responses to unexpected news",
+   "who": "University of Tokyo researchers",
+   "year": "2005",
+   "place": "Japan"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}
