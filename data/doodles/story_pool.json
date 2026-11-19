@@ -3951,5 +3951,220 @@
   "style": "v2",
   "format": "MINI MYSTERY",
   "improv": true
+ },
+ {
+  "id": "chair-throne-mystery",
+  "title": "Your Chair Stole My Crown",
+  "concept": "A detective investigates which friend snatched the ergonomic throne.",
+  "insight": "Territorial instincts over minor comforts.",
+  "caption": "Leo plays detective on the podcast desk. #podcast #friends",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "id": 1,
+    "title": "The Missing Throne",
+    "concept": "Leo arrives to find his spot taken.",
+    "insight": "Immediate conflict establishment.",
+    "caption": "Leo finds the good chair occupied.",
+    "scene": "Leo slams a coffee mug on the desk, eyes wide with shock. Mia sits comfortably in the good chair, holding a cup of tea.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "shocked",
+      "beat": "snap",
+      "text": "Did you just sit in my throne?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "It's just a chair, Leo."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Seriously, I was just cooling my feet."
+     }
+    ]
+   },
+   {
+    "id": 2,
+    "title": "The Detective's Case",
+    "concept": "Leo treats the chair theft like a crime.",
+    "insight": "Escalation through absurdity.",
+    "caption": "Leo acts like a serious detective.",
+    "scene": "Leo paces the hallway behind the desk, pointing a pen at Mia like a suspect. Mia rolls her eyes while sipping tea.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "serious",
+      "beat": "quick",
+      "text": "Okay but hear me out. This is a crime."
+     },
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "beat": "quick",
+      "text": "You're being dramatic about lumbar support."
+     },
+     {
+      "who": "leo",
+      "feel": "determined",
+      "beat": "quick",
+      "text": "If I don't solve it, I'll lose my vibe."
+     }
+    ]
+   },
+   {
+    "id": 3,
+    "title": "The Evidence",
+    "concept": "Leo presents ridiculous evidence.",
+    "insight": "Revealing the petty nature of the war.",
+    "caption": "Leo presents a crumpled receipt as evidence.",
+    "scene": "Leo points at a digital clock showing 3:15, squinting. Mia leans back, arms crossed, smirking slightly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "accusatory",
+      "beat": "quick",
+      "text": "I saw you eyeing it at the store."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "I looked at it. You bought it."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "But I reserved it with my soul!"
+     }
+    ]
+   },
+   {
+    "id": 4,
+    "title": "The Twist",
+    "concept": "Mia reveals she swapped the chairs.",
+    "insight": "The twist that changes the dynamic.",
+    "caption": "Mia reveals the chairs were swapped.",
+    "scene": "Mia gestures to the other chair as a soft knock sounds on the studio door. Leo looks down at his seat in disbelief.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "proud",
+      "beat": "quick",
+      "text": "I swapped them. Yours is actually better now."
+     },
+     {
+      "who": "leo",
+      "feel": "confused",
+      "beat": "quick",
+      "text": "So you pulled a prank on my spine?"
+     },
+     {
+      "who": "leo",
+      "feel": "confused",
+      "beat": "pause",
+      "text": "Wait... this cushion is softer. How?"
+     }
+    ]
+   },
+   {
+    "id": 5,
+    "title": "The Consequence",
+    "concept": "Leo realizes he lost the war.",
+    "insight": "Acceptance of the outcome.",
+    "caption": "Leo accepts his defeat gracefully.",
+    "scene": "Leo sits back in his new chair, a cup of tea steaming beside him, looking disappointed but comfortable. Mia smirks and updates her mental scoreboard.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "resigned",
+      "beat": "quick",
+      "text": "Fine. You win the throne war."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Told you so score is now one oh eight."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Next time I'll hide the remote too."
+     }
+    ]
+   },
+   {
+    "id": 6,
+    "title": "The Payoff",
+    "concept": "They agree to share the comfort.",
+    "insight": "Resolution and warmth.",
+    "caption": "They agree to share the good chairs.",
+    "scene": "Leo and Mia both lean forward, pulling the desk blanket aside as they shift, a small plant on the desk wiggles slightly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "playful",
+      "beat": "quick",
+      "text": "But I get first pick tomorrow."
+     },
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "quick",
+      "text": "And Gerald gets extra sunlight, thanks!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Deal. Gerald looks happy with the new breeze."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 7,
+   "hook": 8,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 8,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It captures their dynamic well with fast banter about a petty chair dispute that resolves naturally.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 8,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": false
  }
 ]
