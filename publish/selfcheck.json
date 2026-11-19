@@ -1,11 +1,11 @@
 {
- "at": "2026-11-19T20:01:33+00:00",
+ "at": "2026-11-19T22:15:07+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 4 h ago"
+   "text": "updated 1 h ago"
   },
   {
    "name": "Doodles daily run",
@@ -20,7 +20,7 @@
   {
    "name": "Kaggle GPU",
    "ok": true,
-   "text": "ok=True, checked 1 h ago"
+   "text": "ok=True, checked 3 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -80,7 +80,7 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 0 h ago"
+   "text": "newest public video 2 h ago"
   },
   {
    "name": "Posting: mindlore",
@@ -90,7 +90,7 @@
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 0 h ago"
+   "text": "newest public video 2 h ago"
   },
   {
    "name": "Service probes",
