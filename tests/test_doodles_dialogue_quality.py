@@ -61,6 +61,20 @@ class DialogueTests(unittest.TestCase):
      result=writer.pick_best('a chair disagreement',set(),'complete','')
      self.assertEqual(result['id'],good['id']);self.assertEqual(call.call_count,3)
      self.assertEqual(len(list(Path(folder).glob('*.json'))),2)
+ def test_cast_case_normalization_preserves_dialogue_and_rejects_unknown_people(self):
+    import types
+    spec=importlib.util.spec_from_file_location('cast_normalization_test',ROOT/'doodles_engine/story_writer.py')
+    writer=importlib.util.module_from_spec(spec)
+    with patch.dict(sys.modules,{'stories':types.SimpleNamespace(STORIES=[])}):spec.loader.exec_module(writer)
+    s=story();s['shots'][0]['lines'][0]['text']='I moved your chair. You left snacks.'
+    for sh in s['shots']:
+     for line in sh['lines']:line['who']=line['who'].title()
+    spoken=[line['text'] for sh in s['shots'] for line in sh['lines']]
+    with patch.object(writer,'_recent_scripts',return_value=[]):self.assertTrue(writer.valid(s,set(),'complete'))
+    self.assertEqual(spoken,[line['text'] for sh in s['shots'] for line in sh['lines']])
+    self.assertEqual(s['shots'][0]['lines'][0]['who'],'leo')
+    s['shots'][0]['lines'][0]['who']='Guest'
+    with patch.object(writer,'_recent_scripts',return_value=[]):self.assertFalse(writer.valid(s,set(),'complete'))
  def test_final_quiet_audio_is_preserved_without_padding_to_target(self):
     import render as renderer
     with tempfile.TemporaryDirectory() as p,patch.dict(os.environ,{'DOODLES_SFX':'0'}),patch.object(renderer,'LAND',False):
