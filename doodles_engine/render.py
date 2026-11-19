@@ -416,7 +416,7 @@ def render(work):
                     if p<acc:aw=i;break
                 ci=cap.get(active['text'],active['who'],aw)
                 frame.alpha_composite(ci,(0,CAPY))
-            if si>=explain and st.get('concept'):frame.alpha_composite(chip_img,((W-chip_img.size[0])//2,CHIPY))
+            if not SHORT and si>=explain and st.get('concept'):frame.alpha_composite(chip_img,((W-chip_img.size[0])//2,CHIPY))
         ff.stdin.write(frame.convert('RGB').tobytes())
     ff.stdin.close()
     if ff.wait():raise RuntimeError('Doodles frame encoding failed')
