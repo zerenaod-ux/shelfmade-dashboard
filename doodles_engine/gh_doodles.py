@@ -71,7 +71,8 @@ def main():
     except Exception: pass
     (ROOT / 'data').mkdir(exist_ok=True)
     (ROOT / 'data/secrets.json').write_text(json.dumps({'GEMINI_API_KEY': os.environ.get('GEMINI_API_KEY', '')}))
-    if len(unused()) < n + 2:
+    reserve=int(os.environ.get('DOODLES_STORY_RESERVE','3'))
+    if len(unused()) < n + (2 if reserve else 0):
         log('writing new stories...'); run(HERE / 'story_writer.py', n + int(os.environ.get('DOODLES_STORY_RESERVE','3')))
     made = []
     for s in unused()[:n]:
