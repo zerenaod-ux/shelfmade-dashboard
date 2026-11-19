@@ -1,129 +1,129 @@
 {
  "why": [
   {
+   "title": "You don't give out tips| #shorts #shortvideo #psychology #finance",
+   "why": "Combines a relatable finance dilemma with a psychology tag, prompting curiosity about the mental bias behind tipping."
+  },
+  {
+   "title": "You think you still have time  | #shorts #shortvideo #psychology",
+   "why": "Uses a urgent\u2011time illusion hook that taps into procrastination anxiety, driving viewers to learn the underlying psychology."
+  },
+  {
    "title": "Nobody in the group chat will help you #psychology #shorts",
-   "why": "Leverages a universally relatable modern social failure (isolation in digital groups) to demonstrate social loafing or the bystander effect without jargon."
+   "why": "Leverages the common group\u2011chat frustration and frames it as a social\u2011psychology case, making the topic instantly relatable."
   },
   {
-   "title": "Why She Sold a $50 Lemonade #shorts #animation #psychology #business #storytime",
-   "why": "Uses a concrete, absurd business scenario to explain anchoring bias through narrative cause-and-effect rather than abstract definitions."
-  },
-  {
-   "title": "You think you still have time | #shorts #shortvideo #psychology",
-   "why": "Triggers immediate anxiety and self-reflection by addressing procrastination directly, creating a 'pause' moment for the viewer."
-  },
-  {
-   "title": "The Best Hiding Spot Is The One Already Searched \ud83d\ude0f",
-   "why": "Applies the 'normalization bias' or 'camouflage' concept to a high-stakes game scenario, making the psychological principle feel like a cheat code."
+   "title": "Why Helmets Filled the Hospital With Head Wounds",
+   "why": "A shocking, high\u2011curiosity statement creates a click\u2011bait hook that can be repurposed to discuss risk perception in a funny way."
   }
  ],
  "hook_patterns": [
-  "Direct address to a specific behavioral flaw (e.g., 'You think...')",
-  "Absurd scenario framing a real economic or social rule",
-  "A mundane situation that secretly reveals a dangerous cognitive bias"
+  "Contradictory or surprising claim followed by an emoji to spark curiosity",
+  "Everyday relatable scenario paired with a #psychology tag for instant relevance",
+  "Urgent\u2011time or fear\u2011of\u2011missing\u2011out phrasing that triggers emotional engagement"
  ],
- "todays_angle": "Frame a common social media or gaming frustration as a predictable cognitive trap that Leo and Mia accidentally walk into.",
+ "todays_angle": "Show Leo and Mia debating the Planning Fallacy while racing to finish a school project.",
  "ideas": [
-  "Leo tries to use a 'limited time' offer to pressure Mia into buying something, but Mia explains scarcity bias is just a trick, then Leo's cart empties because he actually believed it.",
-  "Mia hesitates to post a video because she thinks no one is watching, while Leo is already having 1000 people watch it, illustrating the spotlight effect in reverse.",
-  "Leo tries to hide his bad grades by putting them in a drawer, while Mia points out that by acknowledging the fear, he's actually reducing the anxiety (exposure therapy) but Leo is stuck in avoidance."
+  "Leo claims the project will only take an hour; Mia shows a montage of inevitable delays, ending with a quick explainer of the Planning Fallfalline.",
+  "Mia tries to procrastinate by scrolling social media; Leo interrupts with a comedic \u201ctime\u2011budget\u201d chart, illustrating how we underestimate task duration.",
+  "Both friends set a timer for a 5\u2011minute study session, then humorously explode over how it feels like an eternity, highlighting the psychological perception of time under pressure."
  ],
  "avoid": [
-  "Generic '5 signs you are narcissist' listicles with static text overlays",
-  "Using the same 'shock face' reaction shots that are overused in 2023-2024 content"
+  "Generic life\u2011hack titles without a clear psychology hook",
+  "Overused TikTok audio trends that don\u2019t add original comedic or educational value"
  ],
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "sample": 75,
  "spikes": [
   {
    "title": "This statistically could happen\ud83d\ude2d. #animation #skit #relatable #gta6 #gaming",
    "channel": "RefCantDraw ",
-   "views": 38272,
-   "hours": 4,
-   "vph": 10192.7,
+   "views": 285439,
+   "hours": 20,
+   "vph": 14024.8,
    "subs": 165000,
-   "breakout": 0.2
+   "breakout": 1.7
+  },
+  {
+   "title": "You don't give out tips| #shorts #shortvideo #psychology #finance",
+   "channel": "Learn With Rafid ",
+   "views": 124204,
+   "hours": 21,
+   "vph": 5781.6,
+   "subs": 32300,
+   "breakout": 3.8
   },
   {
    "title": "You think you still have time  | #shorts #shortvideo #psychology",
    "channel": "Learn With Rafid ",
-   "views": 68877,
-   "hours": 17,
-   "vph": 4081.3,
-   "subs": 31700,
-   "breakout": 2.2
+   "views": 100430,
+   "hours": 33,
+   "vph": 3000.3,
+   "subs": 32300,
+   "breakout": 3.1
+  },
+  {
+   "title": "Writing an essay against your own beliefs... #relatable #animatic #animation #sketch #sketchbook",
+   "channel": "Cloudy Art ",
+   "views": 32604,
+   "hours": 14,
+   "vph": 2406.7,
+   "subs": 30200,
+   "breakout": 1.1
+  },
+  {
+   "title": "Why Helmets Filled the Hospital With Head Wounds",
+   "channel": "Tiny True Tales",
+   "views": 26002,
+   "hours": 12,
+   "vph": 2170.4,
+   "subs": 65,
+   "breakout": 130.0
+  },
+  {
+   "title": "Who\u2019s seriously trying that #jjk #jujutsukaisen #anime #skit #comedy #relatable #fyp",
+   "channel": "Vinyung",
+   "views": 34208,
+   "hours": 16,
+   "vph": 2098.0,
+   "subs": 119,
+   "breakout": 171.0
+  },
+  {
+   "title": "what she really busy",
+   "channel": "Gabbookshelves",
+   "views": 57171,
+   "hours": 39,
+   "vph": 1451.5,
+   "subs": 775,
+   "breakout": 73.8
+  },
+  {
+   "title": "Why Train Drivers Point at Nothing",
+   "channel": "WhyToons",
+   "views": 20748,
+   "hours": 20,
+   "vph": 1037.6,
+   "subs": 165,
+   "breakout": 103.7
   },
   {
    "title": "Nobody in the group chat will help you #psychology #shorts",
    "channel": "Vox Clips ",
-   "views": 32939,
-   "hours": 26,
-   "vph": 1245.5,
-   "subs": 48,
-   "breakout": 164.7
-  },
-  {
-   "title": "Why She Sold a $50 Lemonade #shorts  #animation  #psychology  #business  #storytime",
-   "channel": "Marks Clips",
-   "views": 20513,
-   "hours": 18,
-   "vph": 1169.0,
-   "subs": 8,
-   "breakout": 102.6
-  },
-  {
-   "title": "You love staying at home  | #shorts #shortvideo #finance #money #psychology",
-   "channel": "Learn With Rafid ",
-   "views": 45115,
-   "hours": 48,
-   "vph": 942.2,
-   "subs": 31700,
-   "breakout": 1.4
-  },
-  {
-   "title": "Why Does Everyone Hit This Tree?",
-   "channel": "Samulation",
-   "views": 12291,
-   "hours": 14,
-   "vph": 887.1,
-   "subs": 34,
-   "breakout": 61.5
+   "views": 33433,
+   "hours": 43,
+   "vph": 776.7,
+   "subs": 46,
+   "breakout": 167.2
   },
   {
    "title": "The Best Hiding Spot Is The One Already Searched \ud83d\ude0f",
    "channel": "yeber",
-   "views": 24615,
-   "hours": 28,
-   "vph": 882.9,
-   "subs": 96,
-   "breakout": 123.1
-  },
-  {
-   "title": "The Psychology Behind THE INCREDIBLES\u2019 Powers\u2026",
-   "channel": "ZIGGY TRIVIA",
-   "views": 27844,
+   "views": 27117,
    "hours": 44,
-   "vph": 627.3,
-   "subs": 13400,
-   "breakout": 2.1
-  },
-  {
-   "title": "He Thought Lemon Juice Made Him Invisible",
-   "channel": "THE UNSEEN CIRCUIT",
-   "views": 15986,
-   "hours": 27,
-   "vph": 585.4,
-   "subs": 210,
-   "breakout": 76.1
-  },
-  {
-   "title": "Brain-Melting Snacks #money #marketing #psychology",
-   "channel": "Ink&Profit",
-   "views": 12281,
-   "hours": 28,
-   "vph": 440.5,
-   "subs": 27,
-   "breakout": 61.4
+   "vph": 609.7,
+   "subs": 96,
+   "breakout": 135.6
   }
  ]
 }
