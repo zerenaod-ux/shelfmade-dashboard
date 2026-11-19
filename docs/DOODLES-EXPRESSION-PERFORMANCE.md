@@ -33,3 +33,10 @@ The isolated proof can now use the existing configured free provider first, avoi
 ## Accepted automatic story and media phase
 
 Retry 44454524965 has saved original system-selected story chair-throne-mystery, “Your Chair Stole My Crown”: 129 spoken words, dialogue editor spoken/ending scores 8, explicit complete/natural findings. It passed repeated final validation after removal of the legacy scene-mutation helper. This proves the writer stop is cleared for this candidate, not that its final timing or expressions pass. Cloud voice/image/lip-sync/render and actual media inspection remain pending. No hand-written story, manual approval, publishing change or normal expression rollout.
+
+
+## Duration recovery and final visual finishing — 2026-11-19
+
+The accepted 129-word automatic chair story initially measured 70.644 seconds. The shared pacing step now preserves original WAVs and uses bounded pitch-preserving time adjustment before lip-sync; this sample measures 65.211 seconds without removing words. Proof 44457109517 completed all 18 lip-sync lines on Kaggle kernel version 91 and rendered the expression sample. Inspection found a clipped internal concept banner and framing that hid the listener. The short renderer now omits that internal banner, and the opt-in performance view keeps both characters visible.
+
+Final CPU-only finishing run 44474170227 restores that same accepted story, paced voice and pinned completed lip-sync output. It does not write new dialogue or launch another GPU job. It is still in render/independent audio inspection as of this update; no final visual pass is claimed. Regular expression default remains off. No recurring Codex monitor, approval, or publishing action was added.
