@@ -86,6 +86,8 @@ def main():
             log('Kaggle stage 1 failed for', s['id'], '- OUTAGE MODE: story given back, stopping this run so the GPU quota is not burned'); kstatus(False); release_used(s['id'], 'kaggle failed'); break
         kstatus(True)
         try:
+            from dialogue_pacing import prepare as prepare_pacing
+            log('dialogue pacing:',prepare_pacing(work))
             from render import build as measure_dialogue
             measure_dialogue(work)
         except Exception as error:

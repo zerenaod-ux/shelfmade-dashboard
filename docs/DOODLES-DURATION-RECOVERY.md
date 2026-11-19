@@ -1,0 +1,7 @@
+# Doodles measured-duration recovery
+
+The accepted 129-word story in proof 44454524965 generated all voice/image assets but exceeded 70 seconds at the measured dialogue gate. Raw voice files total 73.12 seconds; no lip-sync or final expression render was made. The guard held correctly. Artifacts retain the original audio, image and alignment.
+
+A shared pacing step now allows only bounded pitch-preserving atempo (0.88–1.20) before lip-sync, never speech clipping or silence padding. It targets 65 seconds for modest overrun and 44 for modest underrun, then remeasures against the unchanged 40–70-second final gate. Original WAV/alignment files are retained; phoneme timestamps follow the actual new duration. Existing lip-sync prevents retiming. Larger errors are held for script/voice repair. This is automatic finishing code, not hand editing the generated story.
+
+Three real-encoder fixture tests cover bounded correction and idempotence, untouched originals and timestamp adjustment, extreme-length refusal, and refusing changes after lip-sync. All 25 local dialogue/performance/audit/pacing checks pass. A cloud correction restores the same trusted failed proof assets, skips completed Kaggle stage one and continues through lip-sync/render/inspection. No new story, owner approval, publishing action or normal expression rollout is introduced. Actual recovered video still requires inspection.

@@ -100,7 +100,7 @@ def chip(text):
     img=Image.new('RGBA',(w,92),(0,0,0,0));dd=ImageDraw.Draw(img)
     dd.rounded_rectangle((0,0,w-1,91),radius=46,fill=(18,32,30,215),outline=(224,189,118,255),width=3)
     dd.text((35,20),text,font=f,fill=(255,236,190));return img
-def build(work):
+def dialogue_timeline(work):
     work=Path(work);st=json.loads((work/'story.json').read_text())
     if SHORT:
         from dialogue_quality import require_story
@@ -116,6 +116,10 @@ def build(work):
             lines.append({'who':ln['who'],'text':ln['text'],'start':t,'end':t+d,'audio':a,'si':si,'li':li,'feel':ln.get('feel','neutral'),'listener_feel':ln.get('listener_feel')});t+=d+GAP
         t+=SHOT_TAIL-GAP;timeline.append({'start':s0,'end':t,'lines':lines});
     total=t+END
+    return st,timeline,total
+
+def build(work):
+    work=Path(work);st,timeline,total=dialogue_timeline(work)
     if SHORT:
         from dialogue_quality import require_duration
         require_duration(total,timeline[-1]['lines'][-1]['end'])

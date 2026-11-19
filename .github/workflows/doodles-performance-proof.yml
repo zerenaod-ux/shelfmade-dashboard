@@ -4,6 +4,7 @@ on:
     paths: ['publish/doodles-performance.trigger']
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: doodles
   cancel-in-progress: false
@@ -33,6 +34,20 @@ jobs:
         run: |
           python -m unittest discover -s tests -p test_doodles_dialogue_quality.py -v
           python -m unittest discover -s tests -p test_doodles_performance.py -v
+      - name: Restore saved automatic story media for this correction
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          config=Path('publish/doodles-resume.json')
+          if config.exists():
+              source=str(json.loads(config.read_text())['source_run'])
+              report=json.loads(subprocess.check_output(['gh','api','repos/'+__import__('os').environ['GITHUB_REPOSITORY']+'/actions/runs/'+source]))
+              assert report['name']=='Doodles expression proof' and report['head_branch']=='master' and report['conclusion']=='failure','Untrusted saved-media source'
+              subprocess.run(['gh','run','download',source,'--name','doodles-expression-proof-'+source,'--dir','.'],check=True)
+          PY
       - name: System selects and generates one complete short
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -66,6 +81,8 @@ jobs:
             data/doodles/*/line_*.wav
             data/doodles/*/shot_*.png
             data/doodles/*/align_*.json
+            data/doodles/*/voice-originals/
+            data/doodles/*/pacing-report.json
             data/doodles/*/kaggle_stage1.DONE
             data/doodles/*/story.json
             data/doodles/*/dialogue-*.json
