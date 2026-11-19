@@ -19,7 +19,11 @@ ALIASES={'dramatic':'excited','smug':'confident','surprised':'excited',
  'realizing':'curious','grim':'deadpan','determined':'confident','strained':'anxious',
  'relieved':'warm','happy':'amused','sleepy':'tired','serious':'deadpan',
  'annoyed':'skeptical','angry':'anxious','sarcastic':'deadpan',
- 'embarrassed':'sheepish','confused':'curious'}
+ 'embarrassed':'sheepish','confused':'curious','shocked':'excited',
+ 'accusatory':'skeptical','defensive':'sheepish','proud':'confident',
+ 'resigned':'tired','playful':'amused','indignant':'anxious','calm':'warm',
+ 'patient':'warm','exasperated':'skeptical','melodramatic':'excited','dry':'deadpan',
+ 'defeated':'tired','teasing':'amused','pouting':'sheepish','affectionate':'warm'}
 
 def smooth(x):
  x=max(0.,min(1.,x));return x*x*(3-2*x)
