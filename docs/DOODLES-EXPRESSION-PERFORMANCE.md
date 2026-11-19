@@ -23,3 +23,9 @@ Cloud code verification 44374586165 passed all seventeen dialogue/performance ch
 ## Exact rejected-draft cause and current retry
 
 Inspection of retained drafts from 44374678352 found capitalized speaker identifiers Leo/Mia rejected by the lowercase enum, even when line lengths were valid. The previous combined error message was misleading. The writer now canonicalizes only recognized machine identifiers to lowercase; spoken text is unchanged and unknown speakers remain rejected. The prompt states exact speaker/focus/explain_shot types. Twenty-one local checks pass including normalization preserving every spoken word. Retry 44450922817 is active and has passed setup; no expression video is verified yet. Regular expression default remains off; no recurring monitor was restored.
+
+## Follow-through: accepted-story mutation fixed
+
+Run 44450922817 failed before media. Retained evidence proves a 127-word candidate passed structural checks and the dialogue judge, but legacy stories.show_people then added a mentioned mother into the last scene. The main loop revalidated that mutated scene and rejected it under the two-character rule. Short validation no longer invokes this full-scene helper. Cast canonicalization remains; no spoken line was hand edited. A regression checks repeated validation with a mentioned parent, preserving the original scene and never calling the injection helper. Twenty-two local dialogue/performance/audit tests pass.
+
+The isolated proof can now use the existing configured free provider first, avoiding repeated slow primary-provider attempts; regular provider defaults remain unchanged. A new retry is submitted. No expression video exists yet, and regular expression default remains off. How It Ticks' separate inspected correction is 48 seconds; see its own repository's DAILY-COUNTERWEIGHT-QUALITY note for exact evidence and listening limits.
