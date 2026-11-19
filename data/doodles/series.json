@@ -35,14 +35,14 @@
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 8,
-   "last": 45
+   "uses": 9,
+   "last": 51
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 8,
-   "last": 46
+   "uses": 9,
+   "last": 52
   },
   {
    "id": "dev",
@@ -645,6 +645,30 @@
    "milestone": false,
    "season": 5,
    "date": "2026-11-18"
+  },
+  {
+   "n": 45,
+   "kind": "short",
+   "id": "laugh-copycat-dilemma",
+   "title": "The Laugh Thief Paradox",
+   "concept": "Why we subconsciously steal our best friend's laughs and weird vocal habits.",
+   "gag": "gerald",
+   "callback": true,
+   "milestone": true,
+   "season": 5,
+   "date": "2026-11-19"
+  },
+  {
+   "n": 46,
+   "kind": "short",
+   "id": "your-tiny-potato-crown",
+   "title": "Your Tiny Potato Crown",
+   "concept": "Leo investigates a missing fry mystery with wild exaggerations.",
+   "gag": "greg",
+   "callback": false,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-19"
   }
  ]
 }
