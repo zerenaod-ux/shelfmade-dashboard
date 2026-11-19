@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-19",
  "styles": {
-  "sm_library": {
-   "n": 1,
-   "vpd": 2.41,
-   "bias": 0.0
-  },
   "sm_candle": {
    "n": 3,
-   "vpd": 1.47,
-   "bias": 0.21
+   "vpd": 1.08,
+   "bias": 0.19
+  },
+  "sm_library": {
+   "n": 1,
+   "vpd": 1.9,
+   "bias": 0.0
   },
   "dd_chill": {
    "n": 1,
-   "vpd": 0.23,
+   "vpd": 0.17,
    "bias": 0.0
   },
   "dd_sneak": {
    "n": 2,
-   "vpd": 0.1,
+   "vpd": 0.08,
    "bias": 0.0
   }
  }

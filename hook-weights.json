@@ -1,38 +1,42 @@
 {
- "updated": 1794871312,
- "measured_posts": 27,
- "avg_views": 15.9,
+ "updated": 1795105538,
+ "measured_posts": 30,
+ "avg_views": 14.3,
  "per_type": {
-  "author": {
-   "posts": 10,
-   "avg": 17.9
-  },
   "contrarian": {
    "posts": 4,
-   "avg": 21.2
+   "avg": 25.8
+  },
+  "author": {
+   "posts": 10,
+   "avg": 15.9
   },
   "warning": {
    "posts": 4,
-   "avg": 21.5
+   "avg": 24.2
   },
   "myth": {
-   "posts": 3,
-   "avg": 11.3
+   "posts": 4,
+   "avg": 12.5
   },
   "curiosity": {
    "posts": 6,
-   "avg": 7.7
+   "avg": 3.3
+  },
+  "sting": {
+   "posts": 2,
+   "avg": 0.0
   }
  },
- "active": false,
+ "active": true,
  "weights": {
   "quote": 1.0,
   "contrarian": 1.0,
   "warning": 1.0,
   "myth": 1.0,
   "sting": 1.0,
-  "curiosity": 1.0,
-  "author": 1.0
+  "curiosity": 0.7,
+  "author": 1.056
  },
  "source": "github youtube analytics"
 }

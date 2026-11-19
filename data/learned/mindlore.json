@@ -1,48 +1,49 @@
 {
  "short": {
   "do_more": [
-   "Focus topics around visceral human actions like 'play', physical body reactions (faces freezing, stomach knots, desk job movement), and immediate sensory responses.",
-   "Frame public-domain psychology concepts using direct 'Your' addressing ('Your Play', 'Your Brain', 'Your Screen Hours') to make historical texts immediately relatable.",
-   "Write short, punchy titles under 5 words that promise a simple personal benefit or state a startling observation.",
-   "Target tight video lengths (~30s) where average retention easily crosses 50-100% to push the video higher into the Shorts feed algorithm."
+   "Start titles with second\u2011person \u201cYour \u2026\u201d phrasing",
+   "Tie the hook to a surprising brain or behavior fact",
+   "Keep videos tight (~30\u202fs) focusing on one clear insight",
+   "Show a vivid visual cue (e.g., face reaction) in the first 3\u202fs",
+   "Use curiosity\u2011driven questions that promise an immediate payoff"
   ],
   "avoid": [
-   "Abstract academic questions (e.g., 'Can thoughts shape reality?', 'Does your brain follow steps?') which feel theoretical and dry.",
-   "Academic citation titles or academic-sounding book titles (e.g., 'Psychology and Industrial Efficiency', 'The Analysis of Mind').",
-   "Overly broad historical or socio-economic angles like class consciousness, eugenics, or 19th-century blueprints."
+   "Generic \u201cWhat if\u2026\u201d or emoji\u2011heavy titles",
+   "Long explanatory titles over 6\u202fwords",
+   "Run times above 45\u202fs",
+   "Abstract concepts without personal relevance"
   ],
-  "title_style": "High-performing titles are short, present-tense, ultra-direct statements starting with 'Your' or 'Why' that target an everyday physical or mental experience.",
+  "title_style": "Use a concise \u201cYour\u202f[behavior]\u202freveals\u202f[surprising/beneficial insight]\u201d hook",
   "next_tests": [
-   "Test 'Your Body Knows' frame: Pair classic Darwin emotional expressions with modern bodily experiences (e.g., 'Why your heart races when ignored').",
-   "Compare tight (~30s) vs standard (~42s) lengths using identical audio scripts on 'Your Play' or 'Your Screen Time' hooks to see which drives higher relative retention."
+   "Compare 30\u2011second tight edits vs 45\u2011second standard edits for the same script",
+   "Swap \u201cYour\u201d\u2011lead titles with \u201cWhy\u201d\u2011lead titles and measure VPD",
+   "Add a shocking visual cue in the first 2\u202fseconds and track avg watch percent"
   ],
-  "n": 106,
-  "best_vpd": 27.84,
-  "best_title": "Your Play Reveals Joy"
+  "n": 110,
+  "best_vpd": 206.91,
+  "best_title": "Your Kids Expect Shock"
  },
  "full": {
   "do_more": [
-   "Start each script with a 30\u2011second hook that poses a vivid, curiosity\u2011driving question (e.g., \"Why do you dream about falling?\")",
-   "Feature a well\u2011known historical psychologist or thinker in the title and opening to leverage name recognition",
-   "Frame the topic as a personal, everyday dilemma that viewers can relate to (habits, dreams, choices)",
-   "Keep the overall video concise (just over 3\u202fminutes) but ensure the core explanation is delivered clearly within the first minute",
-   "Use emotionally charged language (why, how, what if) to spark intrigue"
+   "Lead with visceral, universal bodily sensations or actions (e.g., 'dreaming about falling', 'daily habits', 'facial expressions') rather than abstract cognitive concepts like 'attention' or 'symbols'.",
+   "Use the 'X, or Y?' or 'What X is really Y' title structure to create immediate personal relevance and curiosity gaps about self-perception.",
+   "Prioritize topics where the viewer feels the phenomenon happening to them in real-time (dreams, habits, facial reactions) over theoretical frameworks like industrial efficiency or psychoanalysis basics.",
+   "Keep the hook under 5 seconds and directly address a specific, relatable moment of confusion or instinct before introducing the historical figure."
   ],
   "avoid": [
-   "Long, abstract titles without a clear question or hook",
-   "Overly academic or dense introductions that exceed 45\u202fseconds",
-   "Repeating the same series format or phrasing that has been rejected",
-   "Neglecting to mention a recognizable figure or concrete example"
+   "Do not use passive or observational titles like 'How We Think' or 'Why does attention choose focus?' which lack personal stakes.",
+   "Avoid overly academic or broad topics like 'What does psychoanalysis say about your mind?' that feel like lectures rather than insights.",
+   "Stop using the 'You notice [action], but why?' opening pattern; it is too passive and was explicitly rejected by the owner."
   ],
-  "title_style": "Use a direct question or surprising statement that includes a famous psychologist's name, e.g., \"Why do you dream about falling? | Sigmund Freud\"",
+  "title_style": "Use direct, second-person questions or statements that name a specific, universal human experience (dreams, habits, faces) to create an immediate 'this is about me' connection.",
   "next_tests": [
-   "Compare a 30\u2011second tight hook vs. a 42\u2011second standard hook on the same topic to measure watch\u2011through rate",
-   "Create two versions of a script: one featuring a famous figure in the title, another with a generic title, and track VPD",
-   "Experiment with adding a personal anecdote in the first 15 seconds to see if avgPercent improves"
+   "Create a script on 'Why do you stare into space?' focusing on daydreaming and William James, using a sensory opening about the feeling of 'zoning out'.",
+   "Test a video on 'Why your stomach feels tight before speaking' using Charles Darwin's work on emotion, focusing on the physical sensation of anxiety.",
+   "Try a title variant: 'You don't control your face; it controls you' to test the strength of the 'control/agency' hook vs. the 'choice' hook."
   ],
-  "n": 31,
-  "best_vpd": 13.19,
+  "n": 33,
+  "best_vpd": 9.6,
   "best_title": "Why do you dream about falling? | Sigmund Freud"
  },
- "updated": "2026-11-16"
+ "updated": "2026-11-19"
 }

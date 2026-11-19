@@ -1,24 +1,29 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-19",
  "styles": {
+  "sm_gothic": {
+   "n": 2,
+   "vpd": 0.44,
+   "bias": 0.0
+  },
   "sm_adventure": {
+   "n": 4,
+   "vpd": 0.31,
+   "bias": -0.02
+  },
+  "sm_tender": {
+   "n": 2,
+   "vpd": 0.44,
+   "bias": 0.0
+  },
+  "sm_candle": {
    "n": 2,
    "vpd": 0.17,
    "bias": 0.0
   },
-  "sm_tender": {
+  "sm_library": {
    "n": 1,
-   "vpd": 0.33,
-   "bias": 0.0
-  },
-  "sm_gothic": {
-   "n": 1,
-   "vpd": 0.33,
-   "bias": 0.0
-  },
-  "sm_candle": {
-   "n": 1,
-   "vpd": 0.0,
+   "vpd": 0.21,
    "bias": 0.0
   }
  }

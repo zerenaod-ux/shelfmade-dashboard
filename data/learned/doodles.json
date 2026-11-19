@@ -1,27 +1,27 @@
 {
  "short": {
   "do_more": [
-   "Start with a concrete, everyday scenario that viewers instantly recognize",
-   "Use a single, punchy hook word (Trap, Curve, Dilemma, Paradox) to frame the psychology concept",
-   "Keep the script to the standard length (~42\u202fseconds) to allow a clear setup, conflict, and payoff",
-   "Inject a surprise or twist midway to boost re\u2011watchability",
-   "End with a memorable, actionable takeaway that ties back to the opening hook"
+   "Use clear, single-phrase hooks that hint at a twist (e.g., 'Trap', 'Curve', or quirky noun)",
+   "Keep titles concise (<4 words) and avoid vague descriptors like 'detour' or 'panic' unless paired with a unique angle",
+   "Focus on relatable, everyday psychology concepts that can be visualized in 42\u202fs",
+   "Use humor and doodle animation to illustrate the concept in a punchy, memorable way",
+   "Highlight an emotional payoff (confidence, relief, curiosity) early in the first 5\u202fs"
   ],
   "avoid": [
-   "Generic titles without a hook (e.g., \u201cHow to\u2026\u201d)",
-   "Repeating the same hook word across multiple episodes",
-   "Over\u2011loading the short with too many facts \u2013 stay on one core idea",
-   "Using emojis or overly cute phrasing that dilutes the curiosity factor"
+   "Avoid generic or overly broad titles that lack a hook word",
+   "Don\u2019t use the 'detour' or 'panic' style that has been rejected",
+   "Keep videos longer than 45\u202fs; stick to the standard 42\u2011s length",
+   "Skip over\u2011explanation or slow pacing\u2014maintain a brisk narrative"
   ],
-  "title_style": "Use the pattern \u2018The [Unexpected Situation] [Hook Word]\u2019 \u2013 a concise, curiosity\u2011driving phrase that signals a relatable dilemma and a psychological twist",
+  "title_style": "Short, hook\u2011first titles that pair a single, intriguing word with a clear concept\u2014e.g., \u2018The Confidence Curve\u2019 or \u2018The Sunday Panic Trap\u2019\u2014capture curiosity and promise a twist in a single glance.",
   "next_tests": [
-   "Film a 45\u2011second \u2018standard\u2019 episode that opens with a question title like \u2018Why Does Your Brain Freeze at 3\u202fAM?\u2019 and compare VPD",
-   "Swap the hook word \u2018Trap\u2019 for alternatives such as \u2018Paradox\u2019, \u2018Dilemma\u2019, or \u2018Loop\u2019 across three videos to see which drives higher avg\u2011watch %",
-   "Add a visual metaphor (e.g., a bouncing ball) that appears only at the 20\u2011second mark and measure its impact on re\u2011watch rates"
+   "Experiment with a 30\u2011s tight version of a hit concept to test retention vs. 42\u2011s standard",
+   "Create a new series titled \u2018The X Effect\u2019 (e.g., \u2018The Mirror Effect\u2019) to gauge if a fresh hook drives shares",
+   "Run A/B on adding a playful emoji to the title (e.g., \u2018The Confidence Curve \ud83d\ude80\u2019) to see if visual cues boost clicks"
   ],
-  "n": 36,
-  "best_vpd": 15.96,
+  "n": 42,
+  "best_vpd": 13.24,
   "best_title": "The Confidence Curve"
  },
- "updated": "2026-11-16"
+ "updated": "2026-11-19"
 }
