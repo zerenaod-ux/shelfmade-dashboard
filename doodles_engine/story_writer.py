@@ -15,7 +15,7 @@ SIZE: whole video 70 to 88 spoken words (never more than 50 seconds). 1-2 lines 
 SCENE rules (very important, pictures are AI-made): describe an everyday setting + props + body language. PODCAST SET (owner 2026-11-14): both sit at a cozy podcast desk with big microphones and headphones, bodies angled a little toward each other, faces turned three-quarters toward the camera and fully visible; props from the story sit on the desk or in their hands. Faces never hidden by hands, props or hair. Describe closed-mouth expressions only (worried eyes, smirk, raised eyebrow) - NEVER shouting, screaming, laughing with open mouth or anything with teeth. No text, signs, screens with writing or logos in the scene. ONLY Leo and Mia appear: never put any other person (boss, neighbour, roommate, waiter) in a scene; they are only talked about. Do not describe microphones or clothes (the look is added automatically). Max 30 words per scene."""
 BASE_RULES=RULES
 SHORT_RULES="""Write a complete 50–60-second animated conversation between best friends Leo and Mia, with 125–165 spoken words across exactly six shots. Actual finished media must be 40–70 seconds. Keep the existing characters, podcast setting and picture safety rules.
-Use the same JSON shape: id, title, concept, insight, caption, explain_shot, shots with scene, focus and lines (who, feel, beat, text). Each shot has one to three turns; each turn is one to sixteen words. First line is at most eight words.
+Use exactly these machine values: who is lowercase leo or mia; focus is both, leo or mia; explain_shot is integer 3. Use the same JSON shape: id, title, concept (short everyday topic, no lecture), insight, caption, explain_shot, shots with scene, focus and lines (who, feel, beat, text). Each shot has one to three turns; each turn is one to sixteen words. First line is at most eight words.
 Story progression: immediate everyday problem, believable response, escalation, revealing twist, consequences, final resolved comeback or warm payoff. The LAST spoken line is a complete sentence ending with a period or exclamation. No dangling question, unfinished sentence, mandatory replay loop, cliffhanger, part-two promise, lecture, moral or follow request.
 Performance cues: each line's feel must match its intended delivery and expression. Optionally add listener_feel for the other friend: neutral, curious, skeptical, concerned, warm, amused or surprised (use excited for surprise). Give the listener a believable reaction to that exact line; do not make both characters mirror the speaker. Do not speak these directions aloud.
 Naturalness: react specifically to what the friend just said; use contractions, varied sentence lengths, brief acknowledgements, occasional hesitation or interruption only where meaningful. Give each character their own motive and viewpoint. Let jokes arise from specific everyday details and reactions. Avoid polished speeches, random absurdity, forced slang, filler, repetitive roasts and identical comeback patterns. Teasing can be sharp but remains playful; cruelty and insults are not required. Do not pad time with repeated lines or long silence.
@@ -106,7 +106,22 @@ def _recent_scripts():
         return [set(re.findall(r'[a-z]{4,}',' '.join([p.get('title','')]+[sh.get('scene','') for sh in p.get('shots',[])]).lower())) for p in pool]
     except Exception: return []
 ATTEMPTS=ROOT/'data/doodles/writer-attempts'
+def normalize_cast(story):
+    """Canonicalize only machine identifiers, never the generated spoken words."""
+    if not isinstance(story,dict):return story
+    for shot in story.get('shots',[]):
+        if not isinstance(shot,dict):continue
+        focus=shot.get('focus')
+        if isinstance(focus,str) and focus.strip().lower() in ('leo','mia','both'):
+            shot['focus']=focus.strip().lower()
+        for line in shot.get('lines',[]):
+            if isinstance(line,dict) and isinstance(line.get('who'),str):
+                name=line['who'].strip().lower()
+                if name in ('leo','mia'):line['who']=name
+    return story
+
 def valid(s,taken,variant='standard',reasons=None):
+    s=normalize_cast(s)
     try:
         assert re.fullmatch(r'[a-z0-9-]{3,40}',s['id']) and s['id'] not in taken, 'id is invalid or already used'
         assert len(s['shots'])==6, 'need exactly six shots'
