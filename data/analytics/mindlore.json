@@ -27,8 +27,8 @@
    "views": 384,
    "likes": 2,
    "comments": 0,
-   "avgSeconds": 99,
-   "avgPercent": 125.77000000000001,
+   "avgSeconds": 98,
+   "avgPercent": 124.17,
    "subsGained": 0
   },
   {
@@ -89,7 +89,7 @@
    "published": "2026-11-14T23:01:41Z",
    "duration": "PT51S",
    "privacy": "public",
-   "views": 120,
+   "views": 121,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 19,
@@ -216,11 +216,11 @@
    "published": "2026-11-16T23:02:34Z",
    "duration": "PT58S",
    "privacy": "public",
-   "views": 69,
+   "views": 70,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 27.88,
+   "avgSeconds": 15,
+   "avgPercent": 27.54,
    "subsGained": 0
   },
   {
@@ -684,8 +684,8 @@
    "views": 25,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 4.14,
+   "avgSeconds": 12,
+   "avgPercent": 3.71,
    "subsGained": 2
   },
   {
@@ -995,19 +995,6 @@
    "subsGained": 0
   },
   {
-   "id": "0-d5ZC_tONQ",
-   "title": "What Your Sudden Laughter Reveals About Brain",
-   "published": "2026-11-17T03:01:31Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 17,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 19,
-   "avgPercent": 33.12,
-   "subsGained": 0
-  },
-  {
    "id": "Kjx5KmP1s7w",
    "title": "The Interpretation Of Dreams",
    "published": "2026-10-31T02:01:01Z",
@@ -1044,6 +1031,32 @@
    "comments": 0,
    "avgSeconds": 11,
    "avgPercent": 23.41,
+   "subsGained": 0
+  },
+  {
+   "id": "zqBNuIFyTpU",
+   "title": "Why Your Face Freezes On Surprise",
+   "published": "2026-11-17T23:04:12Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 23,
+   "avgPercent": 35.48,
+   "subsGained": 0
+  },
+  {
+   "id": "0-d5ZC_tONQ",
+   "title": "What Your Sudden Laughter Reveals About Brain",
+   "published": "2026-11-17T03:01:31Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 13,
+   "avgPercent": 23.65,
    "subsGained": 0
   },
   {
@@ -1197,16 +1210,6 @@
    "subsGained": 0
   },
   {
-   "id": "zqBNuIFyTpU",
-   "title": "Why Your Face Freezes On Surprise",
-   "published": "2026-11-17T23:04:12Z",
-   "duration": "PT1M7S",
-   "privacy": "public",
-   "views": 13,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "Z5ifzR5nOV0",
    "title": "The Instinct Of Workmanship",
    "published": "2026-11-02T23:01:53Z",
@@ -1329,7 +1332,7 @@
    "published": "2026-10-29T02:00:46Z",
    "duration": "PT50S",
    "privacy": "public",
-   "views": 9,
+   "views": 10,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 23,
@@ -1371,6 +1374,16 @@
    "views": 9,
    "likes": 0,
    "comments": 0
+  },
+  {
+   "id": "h4yc9t1OdDs",
+   "title": "How Unexpected News Freezes Facial Muscles",
+   "published": "2026-11-18T18:05:16Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "ZPz6PwOcS4M",
@@ -1481,7 +1494,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 22,
+   "avgPercent": 33.57,
+   "subsGained": 0
   },
   {
    "id": "CKZhAbMI7Ek",
@@ -1611,16 +1627,6 @@
    "comments": 0
   },
   {
-   "id": "h4yc9t1OdDs",
-   "title": "How Unexpected News Freezes Facial Muscles",
-   "published": "2026-11-18T18:05:16Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "o3yiUpFfU8c",
    "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
    "published": "2026-11-11T00:00:30Z",
@@ -1681,8 +1687,8 @@
    "views": 3,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 9,
+   "avgPercent": 2.22,
    "subsGained": 0
   },
   {
@@ -1694,8 +1700,8 @@
    "views": 3,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 9,
+   "avgPercent": 2.22,
    "subsGained": 0
   },
   {
@@ -1707,8 +1713,8 @@
    "views": 3,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 18,
-   "avgPercent": 4.13,
+   "avgSeconds": 43,
+   "avgPercent": 9.44,
    "subsGained": 0
   },
   {

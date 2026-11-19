@@ -41,7 +41,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 12,
-   "avgPercent": 63.51,
+   "avgPercent": 63.49,
    "subsGained": 0
   },
   {
@@ -105,8 +105,8 @@
    "views": 70,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 25.679999999999996,
+   "avgSeconds": 18,
+   "avgPercent": 27.169999999999998,
    "subsGained": 0
   },
   {
@@ -184,7 +184,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 13,
-   "avgPercent": 21.19,
+   "avgPercent": 21.24,
    "subsGained": 0
   },
   {
@@ -535,7 +535,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 22,
-   "avgPercent": 30.81,
+   "avgPercent": 31.019999999999996,
    "subsGained": 0
   },
   {
@@ -552,6 +552,19 @@
    "subsGained": 0
   },
   {
+   "id": "D3aLO1j24s8",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-13T18:04:35Z",
+   "duration": "PT1M19S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 14.77,
+   "subsGained": 0
+  },
+  {
    "id": "usfd7CGMtGA",
    "title": "Where is your attention?",
    "published": "2026-10-23T03:58:25Z",
@@ -562,19 +575,6 @@
    "comments": 0,
    "avgSeconds": 13,
    "avgPercent": 61.6,
-   "subsGained": 0
-  },
-  {
-   "id": "D3aLO1j24s8",
-   "title": "Nobody warns you about Acres of Diamonds.",
-   "published": "2026-11-13T18:04:35Z",
-   "duration": "PT1M19S",
-   "privacy": "public",
-   "views": 24,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 14.77,
    "subsGained": 0
   },
   {
@@ -754,7 +754,10 @@
    "privacy": "public",
    "views": 16,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 27,
+   "avgPercent": 39.36,
+   "subsGained": 0
   },
   {
    "id": "skC7OMC7xjU",
@@ -781,6 +784,16 @@
    "avgSeconds": 11,
    "avgPercent": 54.08,
    "subsGained": 0
+  },
+  {
+   "id": "NGMGp1KlKt4",
+   "title": "Aurelius had a warning for you.",
+   "published": "2026-11-18T18:06:32Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "SAQ1Y0wN0zI",
@@ -833,16 +846,6 @@
    "avgSeconds": 32,
    "avgPercent": 6.25,
    "subsGained": 0
-  },
-  {
-   "id": "NGMGp1KlKt4",
-   "title": "Aurelius had a warning for you.",
-   "published": "2026-11-18T18:06:32Z",
-   "duration": "PT1M9S",
-   "privacy": "public",
-   "views": 14,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -972,6 +975,16 @@
    "subsGained": 0
   },
   {
+   "id": "j-8zUPTf8LU",
+   "title": "One line in Prince hits hard.",
+   "published": "2026-11-19T18:06:35Z",
+   "duration": "PT1M26S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "X3V948qB6Ng",
    "title": "Question what you know",
    "published": "2026-10-29T23:00:17Z",
@@ -1011,16 +1024,29 @@
    "subsGained": 0
   },
   {
-   "id": "6z0IxWs-qko",
-   "title": "Can you remember a page without notes?",
-   "published": "2026-11-05T00:00:18Z",
-   "duration": "PT7M25S",
+   "id": "QmvgVXfWJT8",
+   "title": "Does simplicity outweigh fancy appearances?",
+   "published": "2026-11-06T00:00:06Z",
+   "duration": "PT6M16S",
    "privacy": "public",
    "views": 7,
-   "likes": 0,
+   "likes": 1,
    "comments": 1,
-   "avgSeconds": 119,
-   "avgPercent": 26.950000000000003,
+   "avgSeconds": 22,
+   "avgPercent": 5.88,
+   "subsGained": 0
+  },
+  {
+   "id": "QmvgVXfWJT8",
+   "title": "Does simplicity outweigh fancy appearances?",
+   "published": "2026-11-06T00:00:06Z",
+   "duration": "PT6M16S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 22,
+   "avgPercent": 5.88,
    "subsGained": 0
   },
   {
@@ -1112,32 +1138,6 @@
    "comments": 0,
    "avgSeconds": 1,
    "avgPercent": 2.22,
-   "subsGained": 0
-  },
-  {
-   "id": "QmvgVXfWJT8",
-   "title": "Does simplicity outweigh fancy appearances?",
-   "published": "2026-11-06T00:00:06Z",
-   "duration": "PT6M16S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 5.88,
-   "subsGained": 0
-  },
-  {
-   "id": "QmvgVXfWJT8",
-   "title": "Does simplicity outweigh fancy appearances?",
-   "published": "2026-11-06T00:00:06Z",
-   "duration": "PT6M16S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 5.88,
    "subsGained": 0
   },
   {
@@ -1666,6 +1666,19 @@
    "subsGained": 0
   },
   {
+   "id": "rmj2YzElBjM",
+   "title": "Self-Help is not what you think.",
+   "published": "2026-11-07T00:00:39Z",
+   "duration": "PT6M35S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
    "id": "bIeNOgFWT_I",
    "title": "Put effort into practice",
    "published": "2026-10-25T23:26:05Z",
@@ -1746,6 +1759,19 @@
    "views": 2,
    "likes": 1,
    "comments": 0
+  },
+  {
+   "id": "ArV4A7SljL8",
+   "title": "Forget what you know about Self-Reliance.",
+   "published": "2026-11-17T00:00:23Z",
+   "duration": "PT7M18S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "pLirzW1d_Og",
@@ -2058,16 +2084,6 @@
    "title": "Nietzsche had a warning for you.",
    "published": "2026-11-18T00:00:05Z",
    "duration": "PT6M52S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1
-  },
-  {
-   "id": "ArV4A7SljL8",
-   "title": "Forget what you know about Self-Reliance.",
-   "published": "2026-11-17T00:00:23Z",
-   "duration": "PT7M18S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

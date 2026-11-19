@@ -13,13 +13,13 @@
  "mindlore": {
   "n": {
    "s30": 0,
-   "normal": 19
+   "normal": 20
   },
   "median_vpd": {
    "s30": null,
-   "normal": 6.212
+   "normal": 6.354
   },
   "verdict": "collecting"
  },
- "at": "2026-11-19T16:29Z"
+ "at": "2026-11-19T21:42Z"
 }
