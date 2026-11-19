@@ -1,26 +1,26 @@
 {
  "short": {
   "do_more": [
-   "Use clear, single-phrase hooks that hint at a twist (e.g., 'Trap', 'Curve', or quirky noun)",
-   "Keep titles concise (<4 words) and avoid vague descriptors like 'detour' or 'panic' unless paired with a unique angle",
-   "Focus on relatable, everyday psychology concepts that can be visualized in 42\u202fs",
-   "Use humor and doodle animation to illustrate the concept in a punchy, memorable way",
-   "Highlight an emotional payoff (confidence, relief, curiosity) early in the first 5\u202fs"
+   "Focus on a single, well\u2011known psychological bias or principle (e.g., a \u2018trap\u2019, \u2018curve\u2019, or \u2018effect\u2019) and build the skit around it.",
+   "Start with a punchy hook that names the bias in a \u2018The X \u2026\u2019 format to signal the lesson instantly.",
+   "Keep the scenario relatable and universal (calls, emails, everyday decisions) rather than niche personal anecdotes.",
+   "Use concise storytelling that fits the 30\u201142\u202fs standard length, maximizing the first 5\u202fseconds for curiosity.",
+   "Add a clear visual metaphor that reinforces the bias (e.g., a literal trap, curve, or scale)."
   ],
   "avoid": [
-   "Avoid generic or overly broad titles that lack a hook word",
-   "Don\u2019t use the 'detour' or 'panic' style that has been rejected",
-   "Keep videos longer than 45\u202fs; stick to the standard 42\u2011s length",
-   "Skip over\u2011explanation or slow pacing\u2014maintain a brisk narrative"
+   "Overusing emojis or overly casual phrasing in titles.",
+   "Choosing overly specific or obscure situations that don\u2019t resonate broadly.",
+   "Long intros that delay the hook beyond the first few seconds.",
+   "Repeating the same hook pattern from rejected videos."
   ],
-  "title_style": "Short, hook\u2011first titles that pair a single, intriguing word with a clear concept\u2014e.g., \u2018The Confidence Curve\u2019 or \u2018The Sunday Panic Trap\u2019\u2014capture curiosity and promise a twist in a single glance.",
+  "title_style": "Use a concise \u2018The\u202f[Psychology Term]\u202f[Trap/Curve/Effect]\u2019 headline that names the bias and hints at the dilemma.",
   "next_tests": [
-   "Experiment with a 30\u2011s tight version of a hit concept to test retention vs. 42\u2011s standard",
-   "Create a new series titled \u2018The X Effect\u2019 (e.g., \u2018The Mirror Effect\u2019) to gauge if a fresh hook drives shares",
-   "Run A/B on adding a playful emoji to the title (e.g., \u2018The Confidence Curve \ud83d\ude80\u2019) to see if visual cues boost clicks"
+   "Create a \u2018The\u202f[Bias]\u202fTrap\u2019 short with a completely new everyday scenario (e.g., grocery checkout) and compare VPD.",
+   "Try a 30\u2011second \u2018tight\u2019 version of a high\u2011performing concept to see if shorter length boosts completion.",
+   "A/B test titles with and without emojis for the same script to measure click\u2011through impact."
   ],
-  "n": 42,
-  "best_vpd": 13.24,
+  "n": 43,
+  "best_vpd": 13.05,
   "best_title": "The Confidence Curve"
  },
  "updated": "2026-11-19"

@@ -1,23 +1,35 @@
 {
  "hot_themes": [
-  "empowerment through iconic characters",
-  "fear vs courage contrasts",
-  "imperative promises for peace",
-  "emotional love/hurt quotes",
-  "high\u2011energy hashtag combos"
+  "Archetype Emulation ('Be Like')",
+  "Existential Comparative Debates (Kafka vs Dostoevsky)",
+  "Raw Emotional Vulnerability & Betrayal",
+  "Uncomfortable Truths & Moral Hardships",
+  "Inner Peace Through Stoic Discipline"
  ],
  "hook_patterns": [
-  "\u2018BE LIKE the\u202f[hero]\u2026\u2019 \u2013 bold identity hook",
-  "\u2018X vs Y:\u202f[dramatic claim]\u2019 \u2013 juxtapose two famous figures",
-  "\u2018[Action] Won\u2019t Happen Until You\u202f[Do This]\u2019 \u2013 urgent call\u2011to\u2011action"
+  "Imperative Character Blueprint ('BE LIKE [X]')",
+  "High-Contrast Philosophical Rivalry ('[Author A] vs [Author B]: [Duality Quote]')",
+  "Provocative Moral Confrontation ('People refuse to let this truth sink in')"
  ],
  "ideas_for_us": [
-  "Be Like Odysseus: Perseverance Lessons from The Odyssey #motivational #classic",
-  "Shakespeare vs Jane Austen: Pride vs Humility in Their Greatest Lines #quotes #philosophy",
-  "Fear and Freedom: Seneca\u2019s Stoic Advice vs Dostoevsky\u2019s Angst #courage #quotes",
-  "Betrayal and Redemption in The Count of Monte Cristo \u2013 Powerful Lessons #life #motivation"
+  {
+   "title": "BE LIKE SHERLOCK HOLMES: Master Cold Detachment | Arthur Conan Doyle",
+   "angle": "Using public domain Holmes quotes to teach emotional discipline and hyper-observation over reactive passion."
+  },
+  {
+   "title": "Oscar Wilde vs Friedrich Nietzsche: Is Morality Just a Mask?",
+   "angle": "A dramatic clash comparing Wilde's witty cynicism on human hypocrisy with Nietzsche's view on moral constructs."
+  },
+  {
+   "title": "The Truth About Human Nature That Most Ignore | Victor Hugo",
+   "angle": "Framing dark, insightful quotes from Les Mis\u00e9rables around the theme of betrayal, social judgment, and redemption."
+  },
+  {
+   "title": "BE LIKE THE COUNT OF MONTE CRISTO: The Art of Patient Strength",
+   "angle": "Leveraging Dumas's iconic protagonist to deliver a high-energy motivational lesson on silence, focus, and long-term triumph."
+  }
  ],
  "updated": "2026-11-19",
  "sample": 56,
- "top_vpd": 154626
+ "top_vpd": 158852
 }

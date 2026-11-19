@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T21:42:05+00:00",
+ "updated": "2026-11-19T22:14:58+00:00",
  "brands": {
   "shelfmade": {
    "totals": {
     "videos": 175,
-    "views": 3282,
+    "views": 3278,
     "likes": 118,
     "subs": 10,
     "est_watch_hours": 18.4
@@ -16,7 +16,7 @@
      "id": "szjjCFDtsFA",
      "title": "You were taught Tao Te Ching wrong.",
      "views": 70,
-     "vpd": 18.53,
+     "vpd": 18.42,
      "age_days": 3.8,
      "avg_percent": 27.169999999999998,
      "subs": 0
@@ -25,7 +25,7 @@
      "id": "318wFWISd8c",
      "title": "Studies In Pessimism",
      "views": 412,
-     "vpd": 11.43,
+     "vpd": 11.42,
      "age_days": 36.1,
      "avg_percent": 59.61,
      "subs": 3
@@ -34,7 +34,7 @@
      "id": "DqPkTxpybRQ",
      "title": "Read this before you open Self-Reliance.",
      "views": 55,
-     "vpd": 10.68,
+     "vpd": 10.63,
      "age_days": 5.2,
      "avg_percent": 21.24,
      "subs": 0
@@ -43,7 +43,7 @@
      "id": "Mkc1Mjjf_kY",
      "title": "Machiavelli would hate how you live.",
      "views": 63,
-     "vpd": 9.29,
+     "vpd": 9.26,
      "age_days": 6.8,
      "avg_percent": 24.67,
      "subs": 0
@@ -52,7 +52,7 @@
      "id": "K1uoKKalsZo",
      "title": "Allen would hate how you live.",
      "views": 34,
-     "vpd": 7.12,
+     "vpd": 7.08,
      "age_days": 4.8,
      "avg_percent": 23.69,
      "subs": 0
@@ -100,7 +100,7 @@
      "title": "Is faith rational?",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 158.1,
+     "age_days": 158.2,
      "avg_percent": null,
      "subs": 0
     }
@@ -453,13 +453,13 @@
    },
    "lifts_scope": "Shorts only (full videos behave differently, mixing them fooled the numbers)",
    "change_3d": {
-    "views": 68,
+    "views": 64,
     "likes": -1,
     "subs": 1,
     "videos": 6
    },
    "change_7d": {
-    "views": 331,
+    "views": 327,
     "likes": 1,
     "subs": 1,
     "videos": 20
@@ -480,7 +480,7 @@
      "id": "6tz6Hvcipk0",
      "title": "Your Kids Expect Shock",
      "views": 1021,
-     "vpd": 198.17,
+     "vpd": 197.3,
      "age_days": 5.2,
      "avg_percent": 41.95,
      "subs": 0
@@ -489,7 +489,7 @@
      "id": "esyld-j420I",
      "title": "Your Face Reacts",
      "views": 251,
-     "vpd": 43.44,
+     "vpd": 43.27,
      "age_days": 5.8,
      "avg_percent": 31.480000000000004,
      "subs": 0
@@ -498,7 +498,7 @@
      "id": "UUoVjHCcU24",
      "title": "Your Joy Is Wild",
      "views": 168,
-     "vpd": 35.16,
+     "vpd": 34.99,
      "age_days": 4.8,
      "avg_percent": 28.09,
      "subs": 0
@@ -507,8 +507,8 @@
      "id": "9WzReCi_1lc",
      "title": "Your Joy Triggers Ancient Brain Networks",
      "views": 121,
-     "vpd": 24.47,
-     "age_days": 4.9,
+     "vpd": 24.36,
+     "age_days": 5.0,
      "avg_percent": 39.19,
      "subs": 0
     },
@@ -516,8 +516,8 @@
      "id": "uOqGecmhSTs",
      "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
      "views": 384,
-     "vpd": 16.11,
-     "age_days": 23.8,
+     "vpd": 16.09,
+     "age_days": 23.9,
      "avg_percent": 124.17,
      "subs": 0
     }
@@ -575,8 +575,8 @@
      "feature": "hook style",
      "value": "you-statement",
      "n": 17,
-     "median_vpd": 5.16,
-     "lift": 5.49,
+     "median_vpd": 5.15,
+     "lift": 5.48,
      "rest_median_vpd": 0.72
     },
     {
@@ -584,8 +584,8 @@
      "feature": "title length",
      "value": "medium title (6-8 words)",
      "n": 22,
-     "median_vpd": 2.6,
-     "lift": 2.77,
+     "median_vpd": 2.59,
+     "lift": 2.76,
      "rest_median_vpd": 0.68
     },
     {
@@ -593,8 +593,8 @@
      "feature": "command/hook opener",
      "value": "opens with a direct word (know, stop, why, how, your...)",
      "n": 38,
-     "median_vpd": 2.59,
-     "lift": 2.76,
+     "median_vpd": 2.58,
+     "lift": 2.75,
      "rest_median_vpd": 0.75
     },
     {
@@ -621,7 +621,7 @@
      "value": "46-75s",
      "n": 80,
      "median_vpd": 1.23,
-     "lift": 1.31,
+     "lift": 1.3,
      "rest_median_vpd": 0.19
     },
     {
@@ -629,8 +629,8 @@
      "feature": "hook style",
      "value": "statement",
      "n": 42,
-     "median_vpd": 1.15,
-     "lift": 1.22,
+     "median_vpd": 1.14,
+     "lift": 1.21,
      "rest_median_vpd": 0.5
     },
     {
@@ -685,7 +685,7 @@
      "n": 51,
      "median_vpd": 0.75,
      "lift": 0.8,
-     "rest_median_vpd": 2.59
+     "rest_median_vpd": 2.58
     },
     {
      "metric": "vpd",
@@ -896,7 +896,7 @@
   "doodles": {
    "totals": {
     "videos": 52,
-    "views": 522,
+    "views": 523,
     "likes": 32,
     "subs": 2,
     "est_watch_hours": 2.7
@@ -908,7 +908,7 @@
      "id": "vz_gR7GgfU0",
      "title": "The Confidence Curve",
      "views": 211,
-     "vpd": 13.06,
+     "vpd": 13.05,
      "age_days": 16.2,
      "avg_percent": 24.06,
      "subs": 1
@@ -917,7 +917,7 @@
      "id": "C0CTlw4ue8A",
      "title": "The 'K' Text Trap | Leo & Mia #11",
      "views": 10,
-     "vpd": 2.09,
+     "vpd": 2.08,
      "age_days": 4.8,
      "avg_percent": 14.69,
      "subs": 0
@@ -926,7 +926,7 @@
      "id": "EWhebXioXqQ",
      "title": "The Sleep Effort Trap",
      "views": 17,
-     "vpd": 1.86,
+     "vpd": 1.85,
      "age_days": 9.2,
      "avg_percent": 40.53,
      "subs": 0
@@ -935,18 +935,18 @@
      "id": "ucEbj1x_lJw",
      "title": "The Unearned Rest | Leo & Mia #16",
      "views": 6,
-     "vpd": 1.59,
+     "vpd": 1.58,
      "age_days": 3.8,
      "avg_percent": 16.33,
      "subs": 0
     },
     {
-     "id": "tmixnQsBjPc",
-     "title": "The Call Scripting Trap",
-     "views": 3,
-     "vpd": 0.95,
-     "age_days": 3.1,
-     "avg_percent": 28.76,
+     "id": "0Bx46Pe0lMQ",
+     "title": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone",
+     "views": 4,
+     "vpd": 0.96,
+     "age_days": 4.2,
+     "avg_percent": 10.96,
      "subs": 0
     }
    ],
@@ -1156,13 +1156,13 @@
    },
    "lifts_scope": "Shorts only (full videos behave differently, mixing them fooled the numbers)",
    "change_3d": {
-    "views": 83,
+    "views": 84,
     "likes": 0,
     "subs": 0,
     "videos": 7
    },
    "change_7d": {
-    "views": 121,
+    "views": 122,
     "likes": 2,
     "subs": 0,
     "videos": 17

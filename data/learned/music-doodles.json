@@ -3,12 +3,12 @@
  "styles": {
   "sm_candle": {
    "n": 3,
-   "vpd": 1.08,
+   "vpd": 1.05,
    "bias": 0.19
   },
   "sm_library": {
    "n": 1,
-   "vpd": 1.9,
+   "vpd": 1.85,
    "bias": 0.0
   },
   "dd_chill": {

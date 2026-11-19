@@ -1,22 +1,39 @@
 {
  "hot_themes": [
-  "Biological & Neurological Explanations for Everyday Behaviors",
-  "Personalized Identity & Name Letter Cold Reading Tricks",
-  "Social Dynamics, Respect, and Spotting Manipulation",
-  "Hidden Subconscious Meanings Behind Daily Habits"
+  "Brain mechanics behind negative emotions and pain",
+  "Social cold reading and behavioral manipulation tricks",
+  "Personalized vulnerability and emotional fate",
+  "Dark psychological realities of human nature",
+  "Interactive optical illusions that alter perception"
  ],
  "hook_patterns": [
-  "Curiosity-driven neuro-visuals explaining 'Why Your Brain Does X'",
-  "Hyper-personalized callouts using specific numbers or categories to trigger personal relevance",
-  "High-stakes social scenarios focused on dignity, heartbreak, and secret motives"
+  "Interactive command forcing real-time physical or visual participation",
+  "Curiosity gap highlighting an unexpected biological or mental counter-function",
+  "Hyper-specific categorization targeting personal identity or relational fear"
  ],
  "ideas_for_us": [
-  "The 1920s Psychology Trick to Detect if Someone is Lying to You (Based on William Moulton Marston's early lie detector research)",
-  "Why Your Brain Focuses on the Worst-Case Scenario: The Evolutionary Survival Glitch (Derived from William James' 'The Principles of Psychology')",
-  "3 Subtle Signs Someone Secretly Disrespects You, According to 19th Century Crowd Psychology (Based on Gustave Le Bon)",
-  "What Really Happens to Your Subconscious Mind When You Habitually Overthink (Derived from Sigmund Freud's 'The Psychopathology of Everyday Life')"
+  {
+   "title": "Why Your Brain Remembers Insults Better Than Compliments",
+   "public_domain_source": "The Principles of Psychology by William James (1890)",
+   "hook_angle": "Interactive test showing how quickly negative stimuli trigger memory retention compared to positive stimuli."
+  },
+  {
+   "title": "3 Psychological Signs Someone Is Secretly Reading Your Mind",
+   "public_domain_source": "Mental Suggestion by Ochorowicz (1891)",
+   "hook_angle": "Analyzing classic observation tactics used to decode subconscious body language cues."
+  },
+  {
+   "title": "The Brutal Truth About Why Fake Friends Target You",
+   "public_domain_source": "The Crowd: A Study of the Popular Mind by Gustave Le Bon (1895)",
+   "hook_angle": "Breaking down the dark psychology of social mimicry and group dynamic leverage."
+  },
+  {
+   "title": "Stare at This Image to Re-wire Your Focus Mechanism",
+   "public_domain_source": "Studies in Gestalt Psychology / Early Perception Texts (1912)",
+   "hook_angle": "An optical focus exercise that visually demonstrates cognitive fatigue and sensory adaptation."
+  }
  ],
  "updated": "2026-11-19",
  "sample": 57,
- "top_vpd": 1267890
+ "top_vpd": 1240761
 }

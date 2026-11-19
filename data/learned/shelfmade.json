@@ -1,49 +1,44 @@
 {
  "short": {
   "do_more": [
-   "Use direct, confrontational hooks that address the viewer's misconceptions (e.g., 'You were taught [Book] wrong,' 'Machiavelli would hate how you live').",
-   "Prioritize direct quotes from the text as the title; this outperforms abstract questions or summaries (compare 'Know your enemy' vs 'What is justice?').",
-   "Focus on 'power' and 'strategy' themes from Art of War, Machiavelli, and Stoic philosophy, which show the highest retention and view velocity.",
-   "Keep videos strictly under 60 seconds; high-performing shorts maintain 50-70% average retention, indicating the content must be punchy and immediate."
+   "Target personal ego, contrarian interpretations, and direct warnings (e.g., 'You were taught X wrong', '[Author] would hate how you live').",
+   "Focus on high-leverage, dark, or power-focused philosophy topics like Tao Te Ching, Art of War, Schopenhauer, and Machiavelli.",
+   "Address the viewer directly using second-person framing ('you', 'your mind', 'your life') to create immediate personal stakes.",
+   "Keep pacing brisk and focused on a single punchy takeaway to protect average percent viewed (APV)."
   ],
   "avoid": [
-   "Do not use abstract, philosophical questions as titles (e.g., 'Is life truly brutish without rules?'); these consistently have 0-1 views.",
-   "Avoid 'summary' or 'in 60 seconds' formats that frame the content as a review rather than a lesson or challenge.",
-   "Stop using clickbait emojis or generic 'wisdom' framing (e.g., 'The book that broke every rule of morality'); these failed to gain traction despite high-quality topics.",
-   "Avoid broad, vague self-help topics without a specific public-domain anchor (e.g., 'Can you face oblivion?'); specificity wins."
+   "Abstract rhetorical questions that sound like academic philosophy exams (e.g., 'What is justice?', 'Is suffering optional?').",
+   "Generic summary packaging like '...in 60 seconds' and emoji-heavy book-report titles.",
+   "Unedited, archaic, long-winded quote fragments as titles (e.g., 'For in those things that properly belong...')."
   ],
-  "title_style": "Winning titles are direct, confrontational, or quote-based statements that challenge the viewer's current understanding, avoiding interrogative or summary-style wording.",
+  "title_style": "High-velocity titles use aggressive, second-person counter-intuitive hooks ('You were taught X wrong', '[Author] had a warning for you') rather than open-ended academic questions.",
   "next_tests": [
-   "Test a 'Myth vs. Reality' series for other classics (e.g., 'You have Thoreau backwards') to replicate the Art of War success.",
-   "Experiment with a 15-second 'single quote' format to see if ultra-short length boosts the already high retention rates further.",
-   "Create a direct sequel to 'Machiavelli would hate how you live' using a different character (e.g., 'Seneca would hate your morning routine') to test the character-confrontation angle."
+   "A/B test a 30s tight format vs. a 45s standard format using the exact same aggressive confrontation hook template: '[Philosopher] would despise your daily routine'.",
+   "Test controversial power/war lessons from 'The Art of War' or 'The Prince' framed around modern corporate or social survival.",
+   "Test a loop-hook format where the final sentence seamlessly resolves into the counter-intuitive title statement to push retention above 70%."
   ],
-  "n": 135,
-  "best_vpd": 19.66,
+  "n": 136,
+  "best_vpd": 18.43,
   "best_title": "You were taught Tao Te Ching wrong."
  },
  "full": {
   "do_more": [
-   "Focus titles on specific historical figures or concrete skills",
-   "Use curiosity\u2011driven questions like \"Can you\u2026\"",
-   "Keep titles under 10 words",
-   "Highlight a surprising fact or challenge",
-   "Emphasize actionable takeaway in description"
+   "Anchor titles to recognizable historical figures or classic texts (e.g., Franklin, The Prince) rather than generic concepts.",
+   "Frame titles around controversy, warnings, or common misconceptions (e.g., 'had a warning', 'gets wrong').",
+   "Open long-form videos with immediate utility or a direct challenge to the viewer's memory or habits."
   ],
   "avoid": [
-   "Use generic motivational themes",
-   "Avoid vague philosophical hooks",
-   "Keep titles longer than 10 words",
-   "Repeat same phrase across videos"
+   "Generic self-help platitudes and cliched rhetorical questions (e.g., 'Put effort into practice', 'create your reality').",
+   "Abstract, textbook-style theme explorations like 'What is Ambition and Success really about?'",
+   "Passive declarative statements that lack tension, urgency, or stakes."
   ],
-  "title_style": "Use a concise, curiosity\u2011driven question or surprising statement about a specific figure or skill\u2014short, concrete, and action\u2011oriented.",
+  "title_style": "Winning titles generate high friction by using specific names paired with conflict, contrarian claims, or explicit warnings directed at the viewer.",
   "next_tests": [
-   "Run 3\u2011minute videos on lesser\u2011known public domain authors with a \"Did you know\u2026\" hook",
-   "Add a 5\u2011second preview of the key quote in the opening",
-   "Compare question vs statement title formats for similar topics"
+   "Test a strong 'misconception' hook format for Marcus Aurelius or Seneca (e.g., 'Why Stoicism is ruining your focus').",
+   "Test contrasting historical rivals in the title/thumbnail to introduce dramatic tension into long-form summaries."
   ],
   "n": 27,
-  "best_vpd": 0.65,
+  "best_vpd": 0.63,
   "best_title": "Franklin had a warning for you."
  },
  "updated": "2026-11-19"
