@@ -81,6 +81,9 @@ jobs:
             data/doodles/*/line_*.wav
             data/doodles/*/shot_*.png
             data/doodles/*/align_*.json
+            data/doodles/*/ls_out/
+            data/doodles/*/ls_in/jobs.json
+            data/doodles/*/lip_*.npz
             data/doodles/*/voice-originals/
             data/doodles/*/pacing-report.json
             data/doodles/*/kaggle_stage1.DONE
