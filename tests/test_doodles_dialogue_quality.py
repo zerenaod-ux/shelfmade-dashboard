@@ -75,6 +75,17 @@ class DialogueTests(unittest.TestCase):
     self.assertEqual(s['shots'][0]['lines'][0]['who'],'leo')
     s['shots'][0]['lines'][0]['who']='Guest'
     with patch.object(writer,'_recent_scripts',return_value=[]):self.assertFalse(writer.valid(s,set(),'complete'))
+ def test_short_validation_never_adds_background_relatives_after_acceptance(self):
+    import types
+    spec=importlib.util.spec_from_file_location('two_person_validation_test',ROOT/'doodles_engine/story_writer.py')
+    writer=importlib.util.module_from_spec(spec)
+    helper=Mock(side_effect=lambda s:s['shots'][-1].update(scene='A worried mom in the background.'))
+    with patch.dict(sys.modules,{'stories':types.SimpleNamespace(STORIES=[],show_people=helper)}):spec.loader.exec_module(writer)
+    s=story();s['shots'][0]['lines'][0]['text']='I moved your chair. You left snacks.'
+    s['shots'][-1]['lines'][-1]['text']='Your mom said those chairs were a terrible idea for our kitchen.'
+    with patch.object(writer,'_recent_scripts',return_value=[]):
+     self.assertTrue(writer.valid(s,set(),'complete'));self.assertTrue(writer.valid(s,set(),'complete'))
+    helper.assert_not_called()
  def test_final_quiet_audio_is_preserved_without_padding_to_target(self):
     import render as renderer
     with tempfile.TemporaryDirectory() as p,patch.dict(os.environ,{'DOODLES_SFX':'0'}),patch.object(renderer,'LAND',False):
