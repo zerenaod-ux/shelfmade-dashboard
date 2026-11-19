@@ -1,0 +1,93 @@
+name: Finish inspected Doodles expression sample
+on:
+  push:
+    paths: ['publish/doodles-finalize.trigger']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DOODLES_PERFORMANCE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: master}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install --quiet numpy scipy pillow opencv-python-headless kaggle six python-slugify python-dateutil requests tqdm urllib3 certifi bleach protobuf text-unidecode faster-whisper
+      - name: Verify tools
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            timeout 180 sudo apt-get update -qq
+            timeout 180 sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          fi
+      - name: Restore exact completed media and pinned lip-sync output
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json,subprocess,sys,shutil
+          from pathlib import Path
+          source='44457109517'
+          run=json.loads(subprocess.check_output(['gh','api','repos/'+__import__('os').environ['GITHUB_REPOSITORY']+'/actions/runs/'+source]))
+          assert run['name']=='Doodles expression proof' and run['head_branch']=='master' and run['conclusion']=='success'
+          subprocess.run(['gh','run','download',source,'--name','doodles-expression-proof-'+source,'--dir','resume'],check=True)
+          work=Path('resume/data/doodles/2026-11-19-chair-throne-mystery')
+          assert json.loads((work/'story.json').read_text())['id']=='chair-throne-mystery'
+          subprocess.run([sys.executable,'doodles_engine/ls_prep.py',str(work)],check=True)
+          from kaggle.api.kaggle_api_extended import KaggleApi
+          api=KaggleApi();api.authenticate()
+          api.kernels_output('minddoodles/doodles-ls-run/91','pinned-lips',quiet=True)
+          jobs=json.loads((work/'ls_in/jobs.json').read_text())['jobs']
+          out=work/'ls_out';out.mkdir(exist_ok=True)
+          for job in jobs:
+              matches=list(Path('pinned-lips').rglob(job['key']+'.mp4'))
+              assert len(matches)==1,'Missing pinned lip-sync line'
+              shutil.copyfile(matches[0],out/matches[0].name)
+          (out/'DONE').write_text('Pinned completed kernel version 91; no new GPU job')
+          Path('work-path.txt').write_text(str(work))
+          PY
+      - name: Render corrected overlay and inspect actual media
+        run: |
+          python doodles_engine/render.py "$(cat work-path.txt)"
+          python doodles_engine/performance_audit.py "$(cat work-path.txt)"
+          python - <<'PY'
+          import json,subprocess,re
+          from pathlib import Path
+          from faster_whisper import WhisperModel
+          p=Path(Path('work-path.txt').read_text())
+          model=WhisperModel('tiny.en',device='cpu',compute_type='int8')
+          segments,_=model.transcribe(str(p/'short.mp4'),language='en',beam_size=5)
+          segments=list(segments);heard=' '.join(s.text for s in segments)
+          story=json.loads((p/'story.json').read_text())
+          expected=' '.join(l['text'] for shot in story['shots'] for l in shot['lines'])
+          words=lambda s:re.findall(r"[a-z0-9]+",s.lower())
+          a,b=words(expected),words(heard);prev=list(range(len(b)+1))
+          for i,x in enumerate(a,1):
+              cur=[i]
+              for j,y in enumerate(b,1):cur.append(min(cur[-1]+1,prev[j]+1,prev[j-1]+(x!=y)))
+              prev=cur
+          wer=prev[-1]/max(1,len(a))
+          report={'independent_asr_word_error_rate':wer,'expected':expected,'heard':heard,'segments':[{'start':s.start,'end':s.end,'text':s.text} for s in segments],'human_listening_completed':False}
+          (p/'independent-audio-review.json').write_text(json.dumps(report,indent=2))
+          assert wer<.25,'Independent transcript needs inspection'
+          PY
+      - name: Retain the exact final review sample
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: doodles-final-review-${{ github.run_id }}
+          path: |
+            resume/data/doodles/*/short.mp4
+            resume/data/doodles/*/story.json
+            resume/data/doodles/*/dialogue-*.json
+            resume/data/doodles/*/independent-audio-review.json
+            resume/data/doodles/*/performance*.json
+            resume/data/doodles/*/performance*.png
+            resume/data/doodles/*/pacing-report.json
+            resume/data/doodles/*/ls_in/jobs.json
+            resume/data/doodles/*/ls_out/
+          retention-days: 14
