@@ -1,80 +1,5 @@
 [
  {
-  "format": "FAKE NEWS REPORT",
-  "mood": "very excited",
-  "end": "a cliffhanger for part two"
- },
- {
-  "format": "RATING GAME",
-  "mood": "overdramatic",
-  "end": "they both give up and laugh"
- },
- {
-  "format": "CONFESSION",
-  "mood": "tired and deadpan",
-  "end": "a cliffhanger for part two"
- },
- {
-  "format": "MINI MYSTERY",
-  "mood": "dry and sarcastic",
-  "end": "a savage one-liner from Mia"
- },
- {
-  "format": "PRANK",
-  "mood": "sweet and warm",
-  "end": "Leo gets what he deserves"
- },
- {
-  "format": "ARGUMENT",
-  "mood": "chaotic",
-  "end": "a sweet moment that gets ruined"
- },
- {
-  "format": "PART TWO",
-  "mood": "dry and sarcastic",
-  "end": "a sweet moment that gets ruined"
- },
- {
-  "format": "FUNNY EXPLAINER",
-  "mood": "chaotic",
-  "end": "a savage one-liner from Mia"
- },
- {
-  "format": "ADVICE FAIL",
-  "mood": "chaotic",
-  "end": "a sudden twist"
- },
- {
-  "format": "CONFESSION",
-  "mood": "tired and deadpan",
-  "end": "they both give up and laugh"
- },
- {
-  "format": "RATING GAME",
-  "mood": "chaotic",
-  "end": "a savage one-liner from Mia"
- },
- {
-  "format": "FAKE NEWS REPORT",
-  "mood": "very excited",
-  "end": "a sudden twist"
- },
- {
-  "format": "MINI MYSTERY",
-  "mood": "dry and sarcastic",
-  "end": "a cliffhanger for part two"
- },
- {
-  "format": "FUNNY EXPLAINER",
-  "mood": "overdramatic",
-  "end": "a sweet moment that gets ruined"
- },
- {
-  "format": "PART TWO",
-  "mood": "tired and deadpan",
-  "end": "a cliffhanger for part two"
- },
- {
   "format": "ADVICE FAIL",
   "mood": "very excited",
   "end": "a cliffhanger for part two"
@@ -146,6 +71,81 @@
  },
  {
   "format": "ARGUMENT",
+  "mood": "dry and sarcastic",
+  "end": "a resolved callback to the opening problem"
+ },
+ {
+  "format": "CONFESSION",
+  "mood": "dry and sarcastic",
+  "end": "a resolved callback to the opening problem"
+ },
+ {
+  "format": "PRANK",
+  "mood": "sweet and warm",
+  "end": "a resolved callback to the opening problem"
+ },
+ {
+  "format": "FAKE NEWS REPORT",
+  "mood": "chaotic",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "RATING GAME",
+  "mood": "tired and deadpan",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "ADVICE FAIL",
+  "mood": "overdramatic",
+  "end": "a sweet moment that gets ruined"
+ },
+ {
+  "format": "MISUNDERSTANDING",
+  "mood": "dry and sarcastic",
+  "end": "Leo gets what he deserves"
+ },
+ {
+  "format": "CONFESSION",
+  "mood": "overdramatic",
+  "end": "a savage one-liner from Mia"
+ },
+ {
+  "format": "FAKE NEWS REPORT",
+  "mood": "tired and deadpan",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "PRANK",
+  "mood": "sweet and warm",
+  "end": "a resolved callback to the opening problem"
+ },
+ {
+  "format": "CALLBACK",
+  "mood": "dry and sarcastic",
+  "end": "a sudden twist"
+ },
+ {
+  "format": "MINI MYSTERY",
+  "mood": "overdramatic",
+  "end": "they both give up and laugh"
+ },
+ {
+  "format": "MISUNDERSTANDING",
+  "mood": "tired and deadpan",
+  "end": "they both give up and laugh"
+ },
+ {
+  "format": "RATING GAME",
+  "mood": "dry and sarcastic",
+  "end": "a savage one-liner from Mia"
+ },
+ {
+  "format": "FAKE NEWS REPORT",
+  "mood": "sweet and warm",
+  "end": "Leo gets what he deserves"
+ },
+ {
+  "format": "FUNNY EXPLAINER",
   "mood": "dry and sarcastic",
   "end": "a resolved callback to the opening problem"
  }
