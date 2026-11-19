@@ -19,3 +19,7 @@ The writer now records each rejected model response and its validation reason, a
 ## Current retry
 
 Cloud code verification 44374586165 passed all seventeen dialogue/performance checks. Isolated proof 44374678352 is active, replacing failed proof 44372099957; no new video is verified yet. It must produce one actual 40–70-second clip and inspection evidence before being called ready. Existing chair/toaster releases from the earlier daily run remain separate. The performance feature remains off by default outside the proof. Microphone/clothing masking and mappings for all existing voice emotions are included in the current implementation.
+
+## Exact rejected-draft cause and current retry
+
+Inspection of retained drafts from 44374678352 found capitalized speaker identifiers Leo/Mia rejected by the lowercase enum, even when line lengths were valid. The previous combined error message was misleading. The writer now canonicalizes only recognized machine identifiers to lowercase; spoken text is unchanged and unknown speakers remain rejected. The prompt states exact speaker/focus/explain_shot types. Twenty-one local checks pass including normalization preserving every spoken word. Retry 44450922817 is active and has passed setup; no expression video is verified yet. Regular expression default remains off; no recurring monitor was restored.
