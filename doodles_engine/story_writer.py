@@ -78,6 +78,13 @@ def _rec(s):
         pass
 def gemini(prompt,system=None):
     key=secret();last=None;rules=system or ((SHORT_RULES if KIND=='short' and RULES==BASE_RULES else RULES)+_lg()+_sr()+" "+ACTION+" "+SPICE+" "+DRAMA)
+    if __import__('os').environ.get('DOODLES_FAST_WRITER')=='1':
+        try:
+            sys.path.insert(0,str(ROOT));import llm
+            if llm.available():
+                t=llm.text(rules,prompt+"\nReturn ONLY the JSON object.",True,.8,6000)
+                m=re.search(r'\{.*\}',t,re.S);return m.group(0) if m else t
+        except Exception as error:print('fast writer unavailable:',str(error)[:100],flush=True)
     for model in models():
         for attempt in range(3):
             if model.startswith('gemma'):
@@ -141,8 +148,8 @@ def valid(s,taken,variant='standard',reasons=None):
         _w=set(re.findall(r'[a-z]{4,}',' '.join([s.get('title','')]+[sh['scene'] for sh in s['shots']]).lower()))
         for _o in _recent_scripts():   # NO_REPEAT: too close to a recent skit
             assert len(_w & _o)/max(1,len(_w)) < 0.45, 'too similar to a recent skit'
-        try:stories.show_people(s)
-        except Exception:pass
+        # Shorts have exactly two characters. The full-episode helper adds mentioned
+        # relatives/bosses into images and would invalidate the accepted short.
         return True
     except Exception as error:
         if reasons is not None:reasons.append(str(error) or type(error).__name__)
