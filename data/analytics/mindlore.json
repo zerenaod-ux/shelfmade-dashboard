@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-19",
+ "collected": "2026-11-20",
  "note": "",
  "videos": [
   {
@@ -11,7 +11,7 @@
    "published": "2026-11-14T18:03:04Z",
    "duration": "PT56S",
    "privacy": "public",
-   "views": 1021,
+   "views": 1022,
    "likes": 18,
    "comments": 1,
    "avgSeconds": 23,
@@ -255,7 +255,7 @@
    "published": "2026-10-19T16:12:09Z",
    "duration": "PT1M31S",
    "privacy": "public",
-   "views": 57,
+   "views": 58,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 55,
@@ -331,7 +331,7 @@
    "duration": "PT1M6S",
    "privacy": "public",
    "views": 49,
-   "likes": 0,
+   "likes": 1,
    "comments": 1,
    "avgSeconds": 27,
    "avgPercent": 41.22,
@@ -824,8 +824,8 @@
    "views": 22,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 116,
-   "avgPercent": 67.95,
+   "avgSeconds": 123,
+   "avgPercent": 71.94,
    "subsGained": 0
   },
   {
@@ -875,6 +875,19 @@
    "comments": 1,
    "avgSeconds": 22,
    "avgPercent": 37.58,
+   "subsGained": 0
+  },
+  {
+   "id": "XzN7lxh73iM",
+   "title": "Almost everyone gets How We Think wrong.",
+   "published": "2026-11-04T03:01:51Z",
+   "duration": "PT1M10S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 12,
+   "avgPercent": 17.3,
    "subsGained": 0
   },
   {
@@ -956,6 +969,19 @@
    "subsGained": 0
   },
   {
+   "id": "0-d5ZC_tONQ",
+   "title": "What Your Sudden Laughter Reveals About Brain",
+   "published": "2026-11-17T03:01:31Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 13,
+   "avgPercent": 23.65,
+   "subsGained": 0
+  },
+  {
    "id": "yza63zQvJqI",
    "title": "How We Think",
    "published": "2026-10-31T17:02:59Z",
@@ -992,6 +1018,19 @@
    "comments": 0,
    "avgSeconds": 0,
    "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "zqBNuIFyTpU",
+   "title": "Why Your Face Freezes On Surprise",
+   "published": "2026-11-17T23:04:12Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 23,
+   "avgPercent": 35.48,
    "subsGained": 0
   },
   {
@@ -1034,32 +1073,6 @@
    "subsGained": 0
   },
   {
-   "id": "zqBNuIFyTpU",
-   "title": "Why Your Face Freezes On Surprise",
-   "published": "2026-11-17T23:04:12Z",
-   "duration": "PT1M7S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 23,
-   "avgPercent": 35.48,
-   "subsGained": 0
-  },
-  {
-   "id": "0-d5ZC_tONQ",
-   "title": "What Your Sudden Laughter Reveals About Brain",
-   "published": "2026-11-17T03:01:31Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 13,
-   "avgPercent": 23.65,
-   "subsGained": 0
-  },
-  {
    "id": "2GlYD2z2jJY",
    "title": "Your Face Freezes On Sudden News",
    "published": "2026-11-15T23:02:24Z",
@@ -1096,6 +1109,19 @@
    "comments": 0,
    "avgSeconds": 20,
    "avgPercent": 41.83,
+   "subsGained": 0
+  },
+  {
+   "id": "UAe6oPKqTX0",
+   "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
+   "published": "2026-10-27T01:08:55Z",
+   "duration": "PT1M41S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 50,
+   "avgPercent": 49.68,
    "subsGained": 0
   },
   {
@@ -1148,19 +1174,6 @@
    "subsGained": 0
   },
   {
-   "id": "UAe6oPKqTX0",
-   "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
-   "published": "2026-10-27T01:08:55Z",
-   "duration": "PT1M41S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 50,
-   "avgPercent": 49.68,
-   "subsGained": 0
-  },
-  {
    "id": "IuMXZIOMMXc",
    "title": "Inquiries Into Human Faculty",
    "published": "2026-10-25T23:21:45Z",
@@ -1172,16 +1185,6 @@
    "avgSeconds": 20,
    "avgPercent": 41.98,
    "subsGained": 0
-  },
-  {
-   "id": "5_T6g4xWs-4",
-   "title": "Why Animals Play Shows Joy",
-   "published": "2026-11-18T03:02:16Z",
-   "duration": "PT1M13S",
-   "privacy": "public",
-   "views": 14,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "u-bjxB9PmgY",
@@ -1262,6 +1265,16 @@
    "subsGained": 0
   },
   {
+   "id": "5_T6g4xWs-4",
+   "title": "Why Animals Play Shows Joy",
+   "published": "2026-11-18T03:02:16Z",
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "D2NH7kCZ1ac",
    "title": "Psychology And Industrial Efficiency",
    "published": "2026-10-28T18:02:03Z",
@@ -1327,6 +1340,16 @@
    "subsGained": 0
   },
   {
+   "id": "h4yc9t1OdDs",
+   "title": "How Unexpected News Freezes Facial Muscles",
+   "published": "2026-11-18T18:05:16Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "3wxpN733RQ8",
    "title": "Why do we laugh?",
    "published": "2026-10-29T02:00:46Z",
@@ -1374,16 +1397,6 @@
    "views": 9,
    "likes": 0,
    "comments": 0
-  },
-  {
-   "id": "h4yc9t1OdDs",
-   "title": "How Unexpected News Freezes Facial Muscles",
-   "published": "2026-11-18T18:05:16Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "ZPz6PwOcS4M",
@@ -1438,6 +1451,16 @@
    "subsGained": 0
   },
   {
+   "id": "3R9qrEuApWU",
+   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
+   "published": "2026-11-20T03:02:14Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "16na_INxwnI",
    "title": "How Mammal Play Signals Pure Joy",
    "published": "2026-11-19T03:02:00Z",
@@ -1445,7 +1468,7 @@
    "privacy": "public",
    "views": 6,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "3sMZ0_phVOA",
@@ -1624,7 +1647,7 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "o3yiUpFfU8c",
@@ -1637,6 +1660,32 @@
    "comments": 1,
    "avgSeconds": 3,
    "avgPercent": 0.64,
+   "subsGained": 0
+  },
+  {
+   "id": "4lZoI4B4VbE",
+   "title": "What if every slip carried a secret?",
+   "published": "2026-11-09T00:00:28Z",
+   "duration": "PT7M26S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 2.22,
+   "subsGained": 0
+  },
+  {
+   "id": "4lZoI4B4VbE",
+   "title": "What if every slip carried a secret?",
+   "published": "2026-11-09T00:00:28Z",
+   "duration": "PT7M26S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 2.22,
    "subsGained": 0
   },
   {
@@ -1679,29 +1728,16 @@
    "subsGained": 0
   },
   {
-   "id": "4lZoI4B4VbE",
-   "title": "What if every slip carried a secret?",
-   "published": "2026-11-09T00:00:28Z",
-   "duration": "PT7M26S",
+   "id": "lzNbwJLpncg",
+   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
+   "published": "2026-11-06T00:00:34Z",
+   "duration": "PT7M47S",
    "privacy": "public",
    "views": 3,
-   "likes": 0,
+   "likes": 1,
    "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 2.22,
-   "subsGained": 0
-  },
-  {
-   "id": "4lZoI4B4VbE",
-   "title": "What if every slip carried a secret?",
-   "published": "2026-11-09T00:00:28Z",
-   "duration": "PT7M26S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 2.22,
+   "avgSeconds": 3,
+   "avgPercent": 0.66,
    "subsGained": 0
   },
   {
@@ -1787,19 +1823,6 @@
    "subsGained": 0
   },
   {
-   "id": "lzNbwJLpncg",
-   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
-   "published": "2026-11-06T00:00:34Z",
-   "duration": "PT7M47S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.66,
-   "subsGained": 0
-  },
-  {
    "id": "Nl1SAPaJEuY",
    "title": "Are children's dreams really simpler than ours? | Freud",
    "published": "2026-11-10T00:00:05Z",
@@ -1810,19 +1833,6 @@
    "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "lzNbwJLpncg",
-   "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
-   "published": "2026-11-06T00:00:34Z",
-   "duration": "PT7M47S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.66,
    "subsGained": 0
   },
   {

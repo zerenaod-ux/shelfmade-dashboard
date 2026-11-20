@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "10",
- "collected": "2026-11-19",
+ "collected": "2026-11-20",
  "note": "",
  "videos": [
   {
@@ -102,7 +102,7 @@
    "published": "2026-11-16T03:01:25Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 70,
+   "views": 71,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 18,
@@ -237,19 +237,6 @@
    "comments": 0,
    "avgSeconds": 13,
    "avgPercent": 57.19,
-   "subsGained": 0
-  },
-  {
-   "id": "88SeG1rSwzc",
-   "title": "What secret lies in wild olive?",
-   "published": "2026-11-05T03:01:29Z",
-   "duration": "PT28S",
-   "privacy": "public",
-   "views": 47,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 61.88,
    "subsGained": 0
   },
   {
@@ -669,6 +656,19 @@
    "subsGained": 0
   },
   {
+   "id": "2W3cnCLXxQo",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-17T18:05:57Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 27,
+   "avgPercent": 39.36,
+   "subsGained": 0
+  },
+  {
    "id": "PqOXPgtpPVY",
    "title": "The Republic \u00b7 Improved replacement",
    "published": "2026-10-14T20:14:26Z",
@@ -755,19 +755,6 @@
    "views": 16,
    "likes": 0,
    "comments": 1
-  },
-  {
-   "id": "2W3cnCLXxQo",
-   "title": "You have Art of War backwards.",
-   "published": "2026-11-17T18:05:57Z",
-   "duration": "PT1M9S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 27,
-   "avgPercent": 39.36,
-   "subsGained": 0
   },
   {
    "id": "skC7OMC7xjU",
@@ -884,6 +871,16 @@
    "comments": 0
   },
   {
+   "id": "j-8zUPTf8LU",
+   "title": "One line in Prince hits hard.",
+   "published": "2026-11-19T18:06:35Z",
+   "duration": "PT1M26S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "PTdWAeBmCG8",
    "title": "Nietzsche wrote this for you.",
    "published": "2026-11-16T18:07:08Z",
@@ -975,6 +972,19 @@
    "subsGained": 0
   },
   {
+   "id": "6z0IxWs-qko",
+   "title": "Can you remember a page without notes?",
+   "published": "2026-11-05T00:00:18Z",
+   "duration": "PT7M25S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 119,
+   "avgPercent": 26.950000000000003,
+   "subsGained": 0
+  },
+  {
    "id": "X3V948qB6Ng",
    "title": "Question what you know",
    "published": "2026-10-29T23:00:17Z",
@@ -1037,19 +1047,6 @@
    "comments": 1,
    "avgSeconds": 22,
    "avgPercent": 5.88,
-   "subsGained": 0
-  },
-  {
-   "id": "6z0IxWs-qko",
-   "title": "Can you remember a page without notes?",
-   "published": "2026-11-05T00:00:18Z",
-   "duration": "PT7M25S",
-   "privacy": "public",
-   "views": 7,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 119,
-   "avgPercent": 26.950000000000003,
    "subsGained": 0
   },
   {
@@ -1392,14 +1389,17 @@
    "subsGained": 0
   },
   {
-   "id": "j-8zUPTf8LU",
-   "title": "One line in Prince hits hard.",
-   "published": "2026-11-19T18:06:35Z",
-   "duration": "PT1M26S",
+   "id": "p079-FpO7QE",
+   "title": "Almost everyone gets Prince wrong.",
+   "published": "2026-11-16T00:00:29Z",
+   "duration": "PT7M23S",
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 1,
+   "avgSeconds": 113,
+   "avgPercent": 25.71,
+   "subsGained": 0
   },
   {
    "id": "v5GPz22mgbU",
@@ -1601,16 +1601,16 @@
    "comments": 0
   },
   {
-   "id": "p079-FpO7QE",
-   "title": "Almost everyone gets Prince wrong.",
-   "published": "2026-11-16T00:00:29Z",
-   "duration": "PT7M23S",
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
    "privacy": "public",
    "views": 2,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 113,
-   "avgPercent": 25.71,
+   "avgSeconds": 3,
+   "avgPercent": 0.69,
    "subsGained": 0
   },
   {
@@ -1618,6 +1618,19 @@
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-13T00:00:09Z",
    "duration": "PT6M56S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "7HnIeRjpoGg",
+   "title": "Listen to what Seneca warned about.",
+   "published": "2026-11-12T00:00:29Z",
+   "duration": "PT6M42S",
    "privacy": "public",
    "views": 2,
    "likes": 0,
@@ -1761,36 +1774,20 @@
    "comments": 0
   },
   {
+   "id": "5GsR3rzr4ks",
+   "title": "Can men refuse to be pleased with words of gentle advice?",
+   "published": "2026-11-20T00:00:35Z",
+   "duration": "PT7M2S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "ArV4A7SljL8",
    "title": "Forget what you know about Self-Reliance.",
    "published": "2026-11-17T00:00:23Z",
    "duration": "PT7M18S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "pLirzW1d_Og",
-   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
-   "published": "2026-11-15T00:00:32Z",
-   "duration": "PT8M42S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.69,
-   "subsGained": 0
-  },
-  {
-   "id": "7HnIeRjpoGg",
-   "title": "Listen to what Seneca warned about.",
-   "published": "2026-11-12T00:00:29Z",
-   "duration": "PT6M42S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
@@ -1836,6 +1833,19 @@
    "comments": 1,
    "avgSeconds": 6,
    "avgPercent": 1.52,
+   "subsGained": 0
+  },
+  {
+   "id": "nlzBtL-I8EE",
+   "title": "Are your diamonds hidden where you stand?",
+   "published": "2026-11-08T00:00:20Z",
+   "duration": "PT6M52S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 2.62,
    "subsGained": 0
   },
   {
@@ -2040,6 +2050,16 @@
    "comments": 0
   },
   {
+   "id": "1RPy1VrMX2I",
+   "title": "Ruskin had a warning for you.",
+   "published": "2026-11-20T13:56:58Z",
+   "duration": "PT6M48S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "igP95PPeC9Y",
    "title": "This Pleasures of Life line is uncomfortable.",
    "published": "2026-11-19T07:47:57Z",
@@ -2067,7 +2087,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "6VO8a_iBrsU",
@@ -2104,16 +2124,6 @@
    "title": "How Chesterfield Judges Your Posture \ud83e\udd28",
    "published": "2026-11-16T19:46:33Z",
    "duration": "PT7M18S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "5GsR3rzr4ks",
-   "title": "Can men refuse to be pleased with words of gentle advice?",
-   "published": "2026-11-16T02:00:21Z",
-   "duration": "PT7M2S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

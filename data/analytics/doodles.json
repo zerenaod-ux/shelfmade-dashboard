@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-19",
+ "collected": "2026-11-20",
  "note": "",
  "videos": [
   {
@@ -26,7 +26,7 @@
    "privacy": "public",
    "views": 54,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "EWhebXioXqQ",
@@ -68,6 +68,19 @@
    "subsGained": 0
   },
   {
+   "id": "C0CTlw4ue8A",
+   "title": "The 'K' Text Trap | Leo & Mia #11",
+   "published": "2026-11-15T03:01:30Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 14.69,
+   "subsGained": 0
+  },
+  {
    "id": "Zc1do-DnYrE",
    "title": "The Rehearsal Trap",
    "published": "2026-11-02T18:03:22Z",
@@ -78,19 +91,6 @@
    "comments": 1,
    "avgSeconds": 10,
    "avgPercent": 24.03,
-   "subsGained": 0
-  },
-  {
-   "id": "C0CTlw4ue8A",
-   "title": "The 'K' Text Trap | Leo & Mia #11",
-   "published": "2026-11-15T03:01:30Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 10,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 6,
-   "avgPercent": 14.69,
    "subsGained": 0
   },
   {
@@ -315,6 +315,19 @@
    "subsGained": 0
   },
   {
+   "id": "0Bx46Pe0lMQ",
+   "title": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone",
+   "published": "2026-11-15T18:03:50Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 10.96,
+   "subsGained": 0
+  },
+  {
    "id": "1cmRYRGsBTY",
    "title": "The Phone Call Script | Leo & Mia #14",
    "published": "2026-11-14T03:02:05Z",
@@ -351,19 +364,6 @@
    "comments": 1,
    "avgSeconds": 35,
    "avgPercent": 75.48,
-   "subsGained": 0
-  },
-  {
-   "id": "0Bx46Pe0lMQ",
-   "title": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone",
-   "published": "2026-11-15T18:03:50Z",
-   "duration": "PT56S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 6,
-   "avgPercent": 10.96,
    "subsGained": 0
   },
   {
@@ -429,6 +429,19 @@
    "comments": 1,
    "avgSeconds": 10,
    "avgPercent": 28.76,
+   "subsGained": 0
+  },
+  {
+   "id": "aItrG7-6LX8",
+   "title": "The 4:30 AM Panic | Leo & Mia Ep. 5 \u2605 Milestone",
+   "published": "2026-11-15T00:00:35Z",
+   "duration": "PT3M15S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 99,
+   "avgPercent": 51.22,
    "subsGained": 0
   },
   {
@@ -505,19 +518,6 @@
    "views": 2,
    "likes": 0,
    "comments": 1
-  },
-  {
-   "id": "aItrG7-6LX8",
-   "title": "The 4:30 AM Panic | Leo & Mia Ep. 5 \u2605 Milestone",
-   "published": "2026-11-15T00:00:35Z",
-   "duration": "PT3M15S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 99,
-   "avgPercent": 51.22,
-   "subsGained": 0
   },
   {
    "id": "1k5nUK42dIE",
@@ -631,6 +631,26 @@
    "subsGained": 0
   },
   {
+   "id": "SHRB6zbL4YQ",
+   "title": "How to Delete Digital Clutter \ud83e\udd16 | Leo & Mia",
+   "published": "2026-11-20T13:57:00Z",
+   "duration": "PT3M23S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "4-5dZuVCWN0",
+   "title": "Your Fake Award",
+   "published": "2026-11-20T03:02:02Z",
+   "duration": "PT32S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "XZe3xqpV1ZA",
    "title": "How I Peaked In Third Grade \ud83c\udf93",
    "published": "2026-11-19T18:06:07Z",
@@ -638,7 +658,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "5Czrci00ZPQ",
