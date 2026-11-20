@@ -1795,6 +1795,91 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261120-1779f",
+   "look": "live-demo",
+   "title": "Why Your Neck Hairs Stand Up",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "chart",
+    "chat",
+    "checklist",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261120-409a4",
+   "look": "live-demo",
+   "title": "Why Your Curiosity Powers Story Twists \ud83e\udde9",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261120-e9585",
+   "look": "live-demo",
+   "title": "Why Rough Housing Builds Strategic Minds \ud83d\udc15",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "brain",
+    "chart",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

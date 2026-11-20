@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261120-1779f",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Neck Hairs Stand Up",
+ "hook": "You freeze when you hear sudden bad news.",
+ "thumbnail_headline": "NECK HAIRS STAND UP",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You freeze when you hear sudden bad news. Your neck hair actually stands up for a reason. In 2012, researchers at the University of Amsterdam studied this reaction. They found it signals a threat. Your brain checks your safety instantly. The result? You stop moving to assess the danger. This is not just fear. It is a survival tool. In 1935, researchers in the US confirmed this response in humans. They measured raised skin bumps on the neck. That's it. It is a physical alarm. So why do we ignore this cue? We treat it as a minor sensation. But evolution kept it for a reason. It forces you to pause. Wide view studies show this across cultures. It is called piloerection. It protects you from harm. So next time you hear sudden bad news, remember you freeze when you hear sudden bad news."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Piloerection (goosebumps) on the neck acts as a physical alarm signaling threat or cold, causing a pause in movement.",
+   "who": "University of Amsterdam researchers",
+   "year": "2012",
+   "place": "Netherlands"
+  },
+  {
+   "claim": "Human piloerection is a conserved trait linked to alertness and survival responses to sudden stimuli.",
+   "who": "US researchers",
+   "year": "1935",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}
