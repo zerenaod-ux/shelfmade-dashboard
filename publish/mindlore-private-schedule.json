@@ -1,0 +1,77 @@
+{
+  "applied": true,
+  "videos": [
+    {
+      "id": "EPGy8t4XRkI",
+      "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
+      "seconds": 444,
+      "state": "already_scheduled",
+      "publishAt": "2026-11-22T00:00:00Z"
+    },
+    {
+      "id": "RwXYKd7gBCE",
+      "title": "Why we believe what impressive people say | Gustave Le Bon",
+      "seconds": 442,
+      "state": "scheduled_verified",
+      "publishAt": "2026-11-26T00:00:00.000Z",
+      "local": "2026-11-25T18:00:00-06:00"
+    },
+    {
+      "id": "4qWHmBcx-I4",
+      "title": "How many explanations do you try before you choose one? | John Dewey",
+      "seconds": 442,
+      "state": "scheduled_verified",
+      "publishAt": "2026-11-29T00:00:00.000Z",
+      "local": "2026-11-28T18:00:00-06:00"
+    },
+    {
+      "id": "D2VOAPsZqKw",
+      "title": "Can a crowd be better than the people in it? | Gustave Le Bon",
+      "seconds": 465,
+      "state": "scheduled_verified",
+      "publishAt": "2026-12-03T00:00:00.000Z",
+      "local": "2026-12-02T18:00:00-06:00"
+    },
+    {
+      "id": "QNTiEqKvMFM",
+      "title": "Do you choose your face, or does it choose you? | Charles Darwin",
+      "seconds": 443,
+      "note": "Owner explicitly approved this existing private upload; same-title public video exists",
+      "state": "scheduled_verified",
+      "publishAt": "2026-12-06T00:00:00.000Z",
+      "local": "2026-12-05T18:00:00-06:00"
+    },
+    {
+      "id": "pnp7OZO0fJA",
+      "title": "Why we notice so little of what is in front of us | William James",
+      "seconds": 493,
+      "state": "scheduled_verified",
+      "publishAt": "2026-12-10T00:00:00.000Z",
+      "local": "2026-12-09T18:00:00-06:00"
+    },
+    {
+      "id": "Ylxy6FpM934",
+      "title": "Do you hold contradictory beliefs at once? | Gustave Le Bon",
+      "seconds": 509,
+      "state": "scheduled_verified",
+      "publishAt": "2026-12-13T00:00:00.000Z",
+      "local": "2026-12-12T18:00:00-06:00"
+    },
+    {
+      "id": "PAXSM0lkgEk",
+      "title": "Why do you suddenly overthink a minor mistake? | Freud",
+      "seconds": 515,
+      "state": "scheduled_verified",
+      "publishAt": "2026-12-17T00:00:00.000Z",
+      "local": "2026-12-16T18:00:00-06:00"
+    },
+    {
+      "id": "P8P40XX9vbk",
+      "title": "Why do you jump to conclusions so quickly? | John Dewey",
+      "seconds": 515,
+      "state": "scheduled_verified",
+      "publishAt": "2026-12-20T00:00:00.000Z",
+      "local": "2026-12-19T18:00:00-06:00"
+    }
+  ]
+}
