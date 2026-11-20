@@ -25,5 +25,5 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
           KEEP: o3yiUpFfU8c
         run: |
-          if grep -q "unschedule" publish/yt-audit.trigger 2>/dev/null; then export UNSCHEDULE=1; fi
+          unset UNSCHEDULE  # Strictly read-only owner-requested visibility audit
           python yt_audit.py
