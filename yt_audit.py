@@ -16,7 +16,7 @@ while len(ids) < 300:
     ids += [i['contentDetails']['videoId'] for i in j.get('items', [])]
     if not j.get('nextPageToken'): break
     tok = '&pageToken=' + j['nextPageToken']
-ids=list(dict.fromkeys(ids+['D2VOAPsZqKw','QNTiEqKvMFM','pMsD8Ac229E']))
+ids=list(dict.fromkeys(ids+(['D2VOAPsZqKw','QNTiEqKvMFM','pMsD8Ac229E'] if Y.KIND=='mlfull' else [])))
 rows = []
 for k in range(0, len(ids), 50):
     with Y.http('https://www.googleapis.com/youtube/v3/videos?part=status,snippet,contentDetails&id=' + ','.join(ids[k:k + 50]), headers=h) as r:
