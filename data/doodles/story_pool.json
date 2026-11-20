@@ -4524,5 +4524,600 @@
   "style": "v2",
   "format": "MINI MYSTERY",
   "improv": true
+ },
+ {
+  "id": "tomato-rating-disaster",
+  "title": "When Honest Feedback Goes Wrong",
+  "concept": "Leo takes Mia's simple cooking advice as grounds for a legal lawsuit against his ingredients.",
+  "insight": "When faced with constructive advice, overthinkers often misinterpret the solution into an escalated battle.",
+  "caption": "When your cooking gets a 2/10 and you take it personally. \ud83c\udf5d",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at their cozy podcast desk. Leo glares at a coffee mug while Mia sets down a cup of tea with closed lips.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "indignant",
+      "beat": "snap",
+      "text": "Wait, two out of ten on the poll?",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "You asked for honest feedback on your garlic pasta!",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "Two out of ten is a hate crime, Mia!",
+      "listener_feel": "skeptical"
+     }
+    ]
+   },
+   {
+    "scene": "Mia places a digital clock showing a time of twelve o clock on the desk. Leo taps the desk surface with a furrowed brow.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "calm",
+      "beat": "quick",
+      "text": "If you want better ratings, just follow actual recipes.",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "leo",
+      "feel": "determined",
+      "beat": "quick",
+      "text": "Okay but hear me out, real genius requires risk!",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "snap",
+      "text": "You literally cried when the tomato was too ripe.",
+      "listener_feel": "concerned"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds his coffee mug while walking and pacing the hallway behind the desk. Mia sips her cup of tea calmly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "indignant",
+      "beat": "snap",
+      "text": "That was a tomato scream, not crying!",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "A scream out of a ripe tomato?",
+      "listener_feel": "skeptical"
+     },
+     {
+      "who": "leo",
+      "feel": "serious",
+      "beat": "quick",
+      "text": "A tomato scream is a valid kitchen emotion!",
+      "listener_feel": "warm"
+     }
+    ]
+   },
+   {
+    "scene": "Mia checks her scoreboard paper on the podcast desk. Leo sits back in his chair with tight closed lips and raised eyebrows.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "The pasta didn't just fail, it judged you.",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "No, the pasta betrayed me! Just like my chair!",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "quick",
+      "text": "That brings my Told You So scoreboard to one twelve.",
+      "listener_feel": "skeptical"
+     }
+    ]
+   },
+   {
+    "scene": "Leo continues walking and pacing the hallway behind the desk. Mia turns her head to watch him with a faint smile.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confident",
+      "beat": "quick",
+      "text": "So your advice means I should sue the ingredients!",
+      "listener_feel": "excited"
+     },
+     {
+      "who": "mia",
+      "feel": "surprised",
+      "beat": "snap",
+      "text": "Wait, what? I said follow a basic cookbook!",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "leo",
+      "feel": "triumphant",
+      "beat": "quick",
+      "text": "Nope, I am taking that tomato straight to court!",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "An alarm going off sounds from the digital clock. Mia smiles warmly while Leo rests his coffee mug firmly on the podcast desk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Anyway, your next dish is already totally doomed.",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "leo",
+      "feel": "proud",
+      "beat": "quick",
+      "text": "Next time: Leo bakes flourless brick bread.",
+      "listener_feel": "warm"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "snap",
+      "text": "At least your legal vibe is completely ironclad!",
+      "listener_feel": "excited"
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 7,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 8,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "Leo's absurdly dramatic reactions to his failed cooking pair perfectly with Mia's sharp dry roasts.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 7,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 8,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "ADVICE FAIL",
+  "improv": true
+ },
+ {
+  "id": "your-signature-laugh-theft",
+  "title": "Your Signature Laugh Theft",
+  "concept": "Leo accuses Mia of stealing his exact laugh and dreams.",
+  "insight": "People will claim ownership over everyday things like laughs.",
+  "caption": "When your best friend steals your signature laugh.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo leans forward at the podcast desk, narrowing his eyes while dropping a coffee mug onto a coaster.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "annoyed",
+      "beat": "snap",
+      "text": "Mia, why are you doing MY signature laugh?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "You think a laugh can just be yours?"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "warm",
+      "beat": "snap",
+      "text": "I trademarked it! It's legally mine!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia rests her chin on her hand, smirking across the podcast desk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Show me the receipt before you blame me."
+     },
+     {
+      "who": "leo",
+      "feel": "stubborn",
+      "listener_feel": "skeptical",
+      "beat": "normal",
+      "text": "I paid in vibes. The receipt is completely imaginary."
+     },
+     {
+      "who": "mia",
+      "feel": "smug",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "So where is the imaginary receipt?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo taps the desk impatiently while walking his fingers across the wood.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "It is locked safely in my dreams. Literally."
+     },
+     {
+      "who": "mia",
+      "feel": "bored",
+      "listener_feel": "concerned",
+      "beat": "quick",
+      "text": "Go get it then, because I am not waking up for that."
+     },
+     {
+      "who": "leo",
+      "feel": "shocked",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "You are literally stealing my sleep now!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo throws his hands up in defeat, leaning back against his chair.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "playful",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Bet. I will steal your dreams too."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "Wait, do you have my dreams already?"
+     },
+     {
+      "who": "mia",
+      "feel": "triumphant",
+      "listener_feel": "amused",
+      "beat": "normal",
+      "text": "No, but I know about your embarrassing ones. The goat one and the pigeon one."
+     }
+    ]
+   },
+   {
+    "scene": "Mia leans in with a wide grin, resting both elbows on the desk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defeated",
+      "listener_feel": "warm",
+      "beat": "pause",
+      "text": "That pigeon had a tiny scarf, Mia. It was fancy."
+     },
+     {
+      "who": "mia",
+      "feel": "smug",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Scoreboard says I win again."
+     },
+     {
+      "who": "leo",
+      "feel": "annoyed",
+      "listener_feel": "skeptical",
+      "beat": "snap",
+      "text": "You just made that scoreboard up!"
+     }
+    ]
+   },
+   {
+    "scene": "Leo covers his face in mock horror while Mia points a finger and laughs quietly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "playful",
+      "listener_feel": "amused",
+      "beat": "normal",
+      "text": "That is the beauty of my imaginary scoreboard."
+     },
+     {
+      "who": "leo",
+      "feel": "defeated",
+      "listener_feel": "warm",
+      "beat": "pause",
+      "text": "I hate this podcast."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "Next time: Leo tries to sue his own houseplant."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 7,
+   "hook": 7,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 8,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The dialogue flows naturally with great comedic chemistry and a solid resolution.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 7,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 8,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "PRANK",
+  "improv": true
+ },
+ {
+  "id": "fries-courtroom-confession",
+  "title": "The Missing Fries",
+  "concept": "Leo brings a lawyer-style evidence folder to prove Mia ate his fries.",
+  "insight": "People will construct elaborate courtroom delusions rather than admit they just ate their own food too fast.",
+  "caption": "The case of the missing fries.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Cozy podcast desk with a heavy manila folder and a coffee mug. Leo slams the desk with narrowed eyes while Mia leans back with raised eyebrows.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Case number one, the incredibly missing fries."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "I honestly did not eat your salty fries, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a red pen and a paper napkin. Leo points aggressively at the paper while Mia taps her chin with a worried expression.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "smug",
+      "beat": "snap",
+      "text": "But that is literally what a guilty lawyer would say."
+     },
+     {
+      "who": "mia",
+      "feel": "defensive",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Objection is not even a real word you can use here."
+     },
+     {
+      "who": "leo",
+      "feel": "excited",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "You just said it though."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a roll of clear tape and an empty cardboard container. Mia rolls her eyes while Leo grabs the tape with wide, serious eyes.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "bored",
+      "beat": "pause",
+      "text": "I was just putting the tape back in the drawer."
+     },
+     {
+      "who": "leo",
+      "feel": "shocked",
+      "listener_feel": "curious",
+      "beat": "quick",
+      "text": "Wait, why did you have tape on the warm fries?"
+     },
+     {
+      "who": "mia",
+      "feel": "casual",
+      "listener_feel": "skeptical",
+      "beat": "snap",
+      "text": "The tape was already there before I even got to the kitchen."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a crinkled brown paper bag and a pair of scissors. Leo gestures wildly at the bag while Mia shakes her head slowly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "quick",
+      "text": "Tape on food? That is completely new and suspicious."
+     },
+     {
+      "who": "mia",
+      "feel": "innocent",
+      "listener_feel": "amused",
+      "beat": "pause",
+      "text": "I do not even know what you are talking about right now."
+     },
+     {
+      "who": "leo",
+      "feel": "triumphant",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "You literally just admitted to seeing it."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a shaking paper bag and a spilled salt packet. Mia folds her arms with a smirk while Leo leans in close with squinted eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "quick",
+      "text": "Admitted to exactly zero missing fries."
+     },
+     {
+      "who": "leo",
+      "feel": "outraged",
+      "listener_feel": "concerned",
+      "beat": "snap",
+      "text": "Zero? The whole bag was literally shaking, Mia."
+     },
+     {
+      "who": "mia",
+      "feel": "calm",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "The paper bag is just feral, not full of food."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a small plush raccoon toy and a closed manila folder. Leo drops his head on the desk in defeat while Mia points a finger with a warm smile.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "exhausted",
+      "beat": "pause",
+      "text": "Feral bags do not chew on their own."
+     },
+     {
+      "who": "mia",
+      "feel": "smug",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "The tiny raccoon did it, I totally saw him."
+     },
+     {
+      "who": "leo",
+      "feel": "defeated",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "Next time, I am locking the heavy fridge."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 6,
+   "hook": 7,
+   "spoken": 7,
+   "relatable": 8,
+   "ending": 7,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The dialogue flows naturally and captures a relatable petty argument between best friends.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 8,
+    "ending": 7,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "CONFESSION",
+  "improv": true
  }
 ]
