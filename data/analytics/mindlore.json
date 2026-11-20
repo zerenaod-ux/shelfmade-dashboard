@@ -11,7 +11,7 @@
    "published": "2026-11-14T18:03:04Z",
    "duration": "PT56S",
    "privacy": "public",
-   "views": 1022,
+   "views": 1023,
    "likes": 18,
    "comments": 1,
    "avgSeconds": 23,
@@ -330,11 +330,11 @@
    "published": "2026-11-11T03:02:00Z",
    "duration": "PT1M6S",
    "privacy": "public",
-   "views": 49,
+   "views": 50,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 27,
-   "avgPercent": 41.22,
+   "avgSeconds": 26,
+   "avgPercent": 40.52,
    "subsGained": 0
   },
   {
@@ -463,8 +463,8 @@
    "views": 40,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 57,
-   "avgPercent": 34.57,
+   "avgSeconds": 60,
+   "avgPercent": 36.51,
    "subsGained": 0
   },
   {
@@ -530,19 +530,6 @@
    "comments": 0,
    "avgSeconds": 38,
    "avgPercent": 71.11,
-   "subsGained": 0
-  },
-  {
-   "id": "Y2dnDEONRD0",
-   "title": "Is blushing a sign of confusion?",
-   "published": "2026-11-06T03:01:33Z",
-   "duration": "PT57S",
-   "privacy": "public",
-   "views": 32,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 25.28,
    "subsGained": 0
   },
   {
@@ -671,8 +658,21 @@
    "views": 26,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 37,
-   "avgPercent": 75.04,
+   "avgSeconds": 33,
+   "avgPercent": 66.71,
+   "subsGained": 0
+  },
+  {
+   "id": "xBaiLW-oBrs",
+   "title": "What psychology fuels revolutions?",
+   "published": "2026-11-04T18:04:07Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 15.54,
    "subsGained": 0
   },
   {
@@ -685,7 +685,7 @@
    "likes": 1,
    "comments": 0,
    "avgSeconds": 12,
-   "avgPercent": 3.71,
+   "avgPercent": 3.84,
    "subsGained": 2
   },
   {
@@ -1094,8 +1094,8 @@
    "views": 16,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 37,
-   "avgPercent": 66.3,
+   "avgSeconds": 29,
+   "avgPercent": 53.290000000000006,
    "subsGained": 0
   },
   {
@@ -1272,7 +1272,10 @@
    "privacy": "public",
    "views": 11,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 53,
+   "avgPercent": 73.78,
+   "subsGained": 0
   },
   {
    "id": "D2NH7kCZ1ac",
@@ -1347,7 +1350,10 @@
    "privacy": "public",
    "views": 10,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 5,
+   "avgPercent": 9.07,
+   "subsGained": 0
   },
   {
    "id": "3wxpN733RQ8",
@@ -1425,6 +1431,16 @@
    "subsGained": 0
   },
   {
+   "id": "3R9qrEuApWU",
+   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
+   "published": "2026-11-20T03:02:14Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "EMQX3FI6-Lk",
    "title": "Inquiries into Human Faculty and Its Development \u00b7 Guided reading",
    "published": "2026-10-30T23:00:10Z",
@@ -1451,16 +1467,6 @@
    "subsGained": 0
   },
   {
-   "id": "3R9qrEuApWU",
-   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
-   "published": "2026-11-20T03:02:14Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "16na_INxwnI",
    "title": "How Mammal Play Signals Pure Joy",
    "published": "2026-11-19T03:02:00Z",
@@ -1468,7 +1474,23 @@
    "privacy": "public",
    "views": 6,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 16.78,
+   "subsGained": 0
+  },
+  {
+   "id": "gq3Q2B0bnQg",
+   "title": "Why Unexpected Story Endings Freeze Brains",
+   "published": "2026-11-18T23:03:35Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 10.69,
+   "subsGained": 0
   },
   {
    "id": "3sMZ0_phVOA",
@@ -1583,8 +1605,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 1,
-   "avgPercent": 0.43,
+   "avgSeconds": 42,
+   "avgPercent": 9.51,
    "subsGained": 0
   },
   {
@@ -1638,16 +1660,6 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
-  },
-  {
-   "id": "gq3Q2B0bnQg",
-   "title": "Why Unexpected Story Endings Freeze Brains",
-   "published": "2026-11-18T23:03:35Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "o3yiUpFfU8c",
@@ -1860,6 +1872,16 @@
    "avgSeconds": 10,
    "avgPercent": 20.3,
    "subsGained": 0
+  },
+  {
+   "id": "45VYT07OEHo",
+   "title": "Why Kids Laugh at Story Twists \ud83d\ude04",
+   "published": "2026-11-20T18:05:31Z",
+   "duration": "PT55S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "MN_liz83nkU",

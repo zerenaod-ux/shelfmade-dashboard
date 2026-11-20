@@ -287,25 +287,25 @@
  {
   "date": "2026-11-20",
   "shelfmade": {
-   "videos": 176,
-   "views": 3249,
+   "videos": 178,
+   "views": 3189,
    "likes": 118,
    "subs": 10,
-   "est_watch_hours": 18.3
+   "est_watch_hours": 18.0
   },
   "mindlore": {
-   "videos": 161,
-   "views": 5839,
+   "videos": 162,
+   "views": 5838,
    "likes": 116,
    "subs": 10,
-   "est_watch_hours": 59.3
+   "est_watch_hours": 59.4
   },
   "doodles": {
    "videos": 54,
-   "views": 526,
+   "views": 525,
    "likes": 32,
    "subs": 2,
-   "est_watch_hours": 2.7
+   "est_watch_hours": 2.8
   }
  }
 ]

@@ -5,7 +5,7 @@
    {
     "id": "6tz6Hvcipk0",
     "title": "Your Kids Expect Shock",
-    "views": 1022,
+    "views": 1023,
     "likes": 18,
     "avgPercent": 41.95
    },
@@ -44,7 +44,7 @@
     "title": "Studies In Pessimism",
     "views": 412,
     "likes": 9,
-    "avgPercent": 59.61
+    "avgPercent": 59.81000000000001
    },
    {
     "id": "BMne6TFjLpk",
@@ -86,15 +86,16 @@
    {
     "id": "a9y0zHRRqKM",
     "title": "Your First Day Shakes \ud83d\ude2c",
-    "views": 54,
-    "likes": 0
+    "views": 52,
+    "likes": 0,
+    "avgPercent": 62.18
    },
    {
     "id": "EWhebXioXqQ",
     "title": "The Sleep Effort Trap",
     "views": 17,
     "likes": 0,
-    "avgPercent": 40.53
+    "avgPercent": 37.65
    },
    {
     "id": "EB1TXPXl1FI",
@@ -108,7 +109,7 @@
     "title": "The Jacket He Never Wears",
     "views": 12,
     "likes": 2,
-    "avgPercent": 160.61
+    "avgPercent": 124.77000000000001
    }
   ]
  }

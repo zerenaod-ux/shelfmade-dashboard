@@ -741,55 +741,55 @@
  },
  "2026-11-20": {
   "shelfmade/youtube": {
-   "views": 3249,
+   "views": 3189,
    "likes": 118,
    "comments": 50,
    "subs": 10,
-   "videos": 176,
+   "videos": 178,
    "as_of": "2026-11-20"
   },
   "shelfmade/instagram": {
-   "views": 342,
+   "views": 444,
    "likes": 1,
    "comments": 0,
    "subs": null,
    "videos": 20,
-   "as_of": "2026-11-19"
+   "as_of": "2026-11-20"
   },
   "shelfmade/tiktok": {
-   "views": 1773,
-   "likes": 7,
-   "comments": 1,
+   "views": 1662,
+   "likes": 5,
+   "comments": 0,
    "subs": null,
-   "videos": 20,
-   "as_of": "2026-11-19"
+   "videos": 19,
+   "as_of": "2026-11-20"
   },
   "mindlore/youtube": {
-   "views": 5839,
+   "views": 5838,
    "likes": 116,
    "comments": 55,
    "subs": 10,
-   "videos": 161,
+   "videos": 162,
    "as_of": "2026-11-20"
   },
   "mindlore/instagram": {
-   "views": 471,
+   "views": 329,
    "likes": 2,
    "comments": 0,
    "subs": null,
    "videos": 21,
-   "as_of": "2026-11-19"
+   "as_of": "2026-11-20"
   },
   "mindlore/tiktok": {
-   "views": 1676,
-   "likes": 15,
+   "views": 1566,
+   "likes": 13,
    "comments": 0,
    "subs": null,
    "videos": 23,
-   "as_of": "2026-11-19"
+   "as_of": "2026-11-20"
   },
   "doodles/youtube": {
-   "views": 526,
+   "views": 525,
    "likes": 32,
    "comments": 47,
    "subs": 2,
@@ -797,20 +797,20 @@
    "as_of": "2026-11-20"
   },
   "doodles/instagram": {
-   "views": 3549,
-   "likes": 8,
+   "views": 3431,
+   "likes": 7,
    "comments": 0,
    "subs": null,
-   "videos": 21,
-   "as_of": "2026-11-19"
+   "videos": 19,
+   "as_of": "2026-11-20"
   },
   "doodles/tiktok": {
-   "views": 1665,
-   "likes": 20,
+   "views": 1799,
+   "likes": 16,
    "comments": 0,
    "subs": null,
    "videos": 22,
-   "as_of": "2026-11-19"
+   "as_of": "2026-11-20"
   }
  }
 }

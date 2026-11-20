@@ -24,9 +24,12 @@
    "published": "2026-11-19T03:01:47Z",
    "duration": "PT19S",
    "privacy": "public",
-   "views": 54,
+   "views": 52,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 62.18,
+   "subsGained": 0
   },
   {
    "id": "EWhebXioXqQ",
@@ -37,8 +40,8 @@
    "views": 17,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 39,
-   "avgPercent": 40.53,
+   "avgSeconds": 36,
+   "avgPercent": 37.65,
    "subsGained": 0
   },
   {
@@ -63,8 +66,8 @@
    "views": 12,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 117,
-   "avgPercent": 160.61,
+   "avgSeconds": 91,
+   "avgPercent": 124.77000000000001,
    "subsGained": 0
   },
   {
@@ -159,6 +162,19 @@
    "subsGained": 0
   },
   {
+   "id": "ucEbj1x_lJw",
+   "title": "The Unearned Rest | Leo & Mia #16",
+   "published": "2026-11-16T03:01:32Z",
+   "duration": "PT30S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 4,
+   "avgPercent": 16.33,
+   "subsGained": 0
+  },
+  {
    "id": "m-mdceIZnsg",
    "title": "The Silent Nod",
    "published": "2026-11-09T18:05:11Z",
@@ -167,8 +183,8 @@
    "views": 7,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 47,
-   "avgPercent": 102.8,
+   "avgSeconds": 36,
+   "avgPercent": 78.59,
    "subsGained": 0
   },
   {
@@ -247,19 +263,6 @@
    "comments": 1,
    "avgSeconds": 13,
    "avgPercent": 62.86000000000001,
-   "subsGained": 0
-  },
-  {
-   "id": "ucEbj1x_lJw",
-   "title": "The Unearned Rest | Leo & Mia #16",
-   "published": "2026-11-16T03:01:32Z",
-   "duration": "PT30S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 4,
-   "avgPercent": 16.33,
    "subsGained": 0
   },
   {
@@ -414,8 +417,8 @@
    "views": 3,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 2,
+   "avgPercent": 4.47,
    "subsGained": 0
   },
   {
@@ -517,7 +520,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "1k5nUK42dIE",
@@ -592,7 +598,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 1,
+   "avgPercent": 7.919999999999999,
+   "subsGained": 0
   },
   {
    "id": "8R1vxqsCRKg",
@@ -602,7 +611,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "j9yPaC1a9eQ",
