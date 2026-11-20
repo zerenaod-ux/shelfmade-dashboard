@@ -32,3 +32,7 @@ Fixed scheduled builds repeatedly consuming a stale one-script push instruction.
 ## Approved private MindLore release cadence
 
 Owner requested the nine named existing private full videos to be scheduled, not released immediately. MindLore full releases use Wednesday and Saturday at 18:00 America/Chicago (three/four days apart). Other channels retain their existing cadence. The bounded private scheduler modifies only release status for those nine IDs, verifies the channel, processed full-video status and each saved date, and records confirmed reservations for future publisher conflict checks. Defaults to read-only. Existing approvals are the owner's; it does not regenerate or upload videos. Same-title existing uploads receive a note rather than overriding the owner's explicit selection.
+
+### Confirmed nine-video schedule
+
+The owner-approved existing private MindLore full videos were scheduled and read back successfully in operation 44668941210. Releases are Wednesday/Saturday at 18:00 Chicago, November 21 through December 19, 2026. All nine remain private until release. Exact confirmed dates are retained in publish/mindlore-private-schedule.json and are included in future publisher occupancy checks. No extra generation was dispatched; the next full build remains automatic.
