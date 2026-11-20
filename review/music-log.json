@@ -1098,5 +1098,31 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-18"
+ },
+ "Ruskin had a warning for you.": {
+  "styles": [
+   "sm_adventure",
+   "sm_adventure",
+   "sm_tender",
+   "sm_adventure",
+   "sm_adventure",
+   "sm_adventure"
+  ],
+  "tracks": [
+   "sm_adventure_02",
+   "sm_adventure_05",
+   "sm_tender_03",
+   "ace_sm_adventure_02",
+   "sm_adventure_01",
+   "sm_adventure_04"
+  ],
+  "mood": "curious",
+  "pace": 2.5,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-20"
  }
 }
