@@ -2,137 +2,128 @@
  "why": [
   {
    "title": "Why You Can\u2019t Quit Even When You Should #psychology",
-   "why": "This video demonstrates that a specific, personal pain point (behavioral addiction/stubbornness) paired with a tiny subscriber base (162) creates a massive breakout (228.7), proving the algorithm prioritizes high-retention niche concepts over channel authority."
+   "why": "It leverages an extreme breakout ratio by tapping into deep personal frustration with sunk-cost fallacy, using a high-curiosity psychological hook about self-sabotage."
   },
   {
-   "title": "Tw\u00f3j M\u00d3ZG b\u0142\u0105ga, \u017ceby\u015b to odstawi\u0142",
-   "why": "The aggressive, direct-address hook ('Your brain is begging you to quit this') targets a visceral fear of self-sabotage, driving a high VPH (2,871) by leveraging the 'urgent warning' psychological lever."
+   "title": "6 DARK PSYCHOLOGY FACTS ABOUT MEN & WOMEN! \ud83d\ude32\ud83d\udda4 | Love & Relationship Truth",
+   "why": "It triggers high engagement by combining dynamic numbered lists with taboo relationship dynamic claims that provoke immediate curiosity and debate."
   },
   {
-   "title": "Body Signals That Warn You Of Burnout Early #early #warn",
-   "why": "It works by reframing burnout not as a vague state but as a set of specific, detectable 'signals,' providing viewers with a practical mental checklist that increases watch time and shareability."
+   "title": "Quiet People Aren't Shy. They're Watching.",
+   "why": "It reframes a common introverted trait into a secret power, offering instant emotional validation and driving high re-watch ability."
   },
   {
-   "title": "The Moon Isn\u2019t Getting Bigger. Your Brain Is Tricking You.",
-   "why": "This leverages the 'perceptual illusion' hook, a classic public-domain psychology trope, to immediately validate the viewer's curiosity and provide a quick, satisfying 'aha' moment that encourages completion."
+   "title": "Knowledge That Can Change Your Life | Facts \u2022 Motivation #shorts #motivation #newtrend #lifelessons",
+   "why": "It gains strong momentum by pairing snappy, actionable self-improvement insights with fast visual transitions and high-stakes transformation phrasing."
   }
  ],
  "hook_patterns": [
-  "Direct physiological warning: 'Your body is screaming for you to stop...'",
-  "The invisible enemy: 'You have a cognitive bias that is costing you money/time.'",
-  "The perceptual lie: 'The object you are looking at is not what it seems.'"
+  "Reframing a common vulnerability or personality trait as a hidden strategic advantage.",
+  "Exposing counterintuitive psychological flaws that explain why people stay stuck in bad habits.",
+  "Delivering rapid-fire dynamic lists that promise secret insights into human relationship motives."
  ],
- "todays_angle": "Focus on 'Invisible Self-Sabotage' by using public-domain concepts (like William James' 'Habit' or Maslow's 'Deficit') to explain why the viewer's brain actively resists their own goals.",
+ "todays_angle": "Uncover century-old, public-domain psychological mechanics behind modern self-sabotage and subconscious social dynamics.",
  "ideas": [
-  {
-   "title": "The 'Habit' Trap (1908)",
-   "concept": "Explain William James' concept that habits are the 'flywheel of society.' Show how a 10-second neural loop creates a 'groove' that makes quitting feel physically painful, not just mentally difficult."
-  },
-  {
-   "title": "The Maslow Deficit",
-   "concept": "Use Maslow's Hierarchy to show why someone can't focus on 'growth' (top of pyramid) when their 'safety' or 'belonging' needs are quietly unmet. Frame it as 'Why your brain prioritizes survival over success.'"
-  },
-  {
-   "title": "The Illusion of Choice",
-   "concept": "Reference classic public-domain studies on priming or framing. Show how a subtle change in question wording changes the brain's 'default' answer, proving that 'choice' is often just a perception."
-  }
+  "The 1920s Sunk Cost Effect: Quote classic texts to reveal why your brain forces you to stay in failing situations.",
+  "Observer vs. Talker: How 19th-century observational psychology proves quiet personalities are reading the room better.",
+  "The Illusion of Deception: Public domain insights on the subtle micro-expressions that reveal dishonest intentions."
  ],
  "avoid": [
-  "Generic '7 Brain Facts' listicles that lack a specific emotional hook or narrative arc.",
-  "Clickbaity 'Hungry Animal' or 'Mystery Object' hooks that have no direct relevance to human psychological mechanics."
+  "Generic 'Dark Psychology Facts' lists lacking authoritative historical depth or classic literature sources.",
+  "Overused optical illusion videos that offer no educational value or context regarding psychological theory."
  ],
- "updated": "2026-11-19",
- "sample": 72,
+ "updated": "2026-11-20",
+ "sample": 71,
  "spikes": [
   {
-   "title": "Why This Hungry Fish Refused to Eat! \ud83d\ude31\ud83d\udc1f",
-   "channel": "Mr mogloo",
-   "views": 530622,
-   "hours": 33,
-   "vph": 16056.1,
-   "subs": 229000,
-   "breakout": 2.3
+   "title": "6 DARK PSYCHOLOGY FACTS ABOUT MEN & WOMEN! \ud83d\ude33\ud83d\udda4 | Love & Relationship Truth",
+   "channel": "YOUR TUTOR CORNER",
+   "views": 147232,
+   "hours": 23,
+   "vph": 6352.6,
+   "subs": 34100,
+   "breakout": 4.3
   },
   {
    "title": "Shoot one of the X's and your brain will create a movement that does not exist. \ud83d\udc40\u2764\ufe0f",
    "channel": "Endless Love",
-   "views": 112501,
-   "hours": 22,
-   "vph": 5114.4,
+   "views": 163270,
+   "hours": 42,
+   "vph": 3917.1,
    "subs": 11800000,
    "breakout": 0.0
   },
   {
-   "title": "Like. Share. Subscribe #psychologyfacts #mindblowingfacts #psychology #realfacts #humanminded #viral",
-   "channel": "Motivation Only ",
-   "views": 144184,
-   "hours": 29,
-   "vph": 4910.0,
-   "subs": 1480,
-   "breakout": 97.4
+   "title": "5 Signs Someone Isn't Being Honest \ud83c\udfad #HumanBehavior",
+   "channel": "MindZenX",
+   "views": 86365,
+   "hours": 24,
+   "vph": 3572.0,
+   "subs": 214000,
+   "breakout": 0.4
   },
   {
    "title": "Tw\u00f3j M\u00d3ZG b\u0142aga, \u017ceby\u015b to odstawi\u0142",
    "channel": "Marek Skoczylas",
-   "views": 26541,
-   "hours": 9,
-   "vph": 2871.1,
+   "views": 63709,
+   "hours": 29,
+   "vph": 2202.3,
    "subs": 1280000,
    "breakout": 0.0
   },
   {
-   "title": "\u0907\u092e\u094b\u0936\u0928\u0932 \u0932\u0921\u093c\u0915\u0940\ud83d\ude22 #psychology #successmind #mindset #growlifebuddy #darkpsychology #motivation",
-   "channel": " GROWLIFEBUDDY ",
-   "views": 60882,
-   "hours": 27,
-   "vph": 2262.2,
-   "subs": 17400,
-   "breakout": 3.5
-  },
-  {
-   "title": "Body Signals That Warn You Of Burnout Early #early #warn   #Quotes #Shorts #Foryou #Success #Facts",
-   "channel": "Mind Psychology Valentin",
-   "views": 63258,
-   "hours": 28,
-   "vph": 2219.9,
-   "subs": 23900,
-   "breakout": 2.6
-  },
-  {
    "title": "Why You Can\u2019t Quit Even When You Should #psychology",
    "channel": "The inner shift",
-   "views": 45736,
-   "hours": 22,
-   "vph": 2055.9,
-   "subs": 162,
-   "breakout": 228.7
+   "views": 83067,
+   "hours": 42,
+   "vph": 1981.1,
+   "subs": 218,
+   "breakout": 381.0
   },
   {
-   "title": "7 Disturbing Brain Facts That Will Blow Your Mind! \ud83e\udde0\ud83d\ude33",
-   "channel": "Mind Decode",
-   "views": 66468,
+   "title": "Things Your Brain Does That You Never Notice #notice #brain  #Quotes #Shorts #Foryou #Success #Facts",
+   "channel": "Mind Psychology Valentin",
+   "views": 52768,
+   "hours": 30,
+   "vph": 1748.5,
+   "subs": 24100,
+   "breakout": 2.2
+  },
+  {
+   "title": "\u0907\u0938\u0947 \u0905\u0915\u0947\u0932\u0947 \u092e\u0947\u0902 \u092a\u0922\u093c\u094b \ud83d\ude32 #motivation #shortsfeed #psychology #motivationalvideo #studytips #gk #facts",
+   "channel": "Mr Ayush K Facts ",
+   "views": 74785,
+   "hours": 47,
+   "vph": 1602.0,
+   "subs": 176000,
+   "breakout": 0.4
+  },
+  {
+   "title": "6 Things Boys Do When They Find You Attractive... #shorts #psychologyfacts",
+   "channel": "HeartSync",
+   "views": 40079,
+   "hours": 25,
+   "vph": 1591.5,
+   "subs": 27500,
+   "breakout": 1.5
+  },
+  {
+   "title": "Knowledge That Can Change Your Life | Facts \u2022 Motivation #shorts #motivation #newtrend  #lifelessons",
+   "channel": "Motiv8 Mind",
+   "views": 38382,
+   "hours": 26,
+   "vph": 1466.1,
+   "subs": 852,
+   "breakout": 45.0
+  },
+  {
+   "title": "6 Dark Psychology Facts About Men & Women \ud83d\udda4#DarkPsychology #PsychologyFacts #HumanPsychology #Shorts",
+   "channel": "@realtabe_yeag",
+   "views": 34260,
    "hours": 33,
-   "vph": 2031.3,
-   "subs": 7130,
-   "breakout": 9.3
-  },
-  {
-   "title": "7 Facts About Love That Hit Different #FactsAboutLove #PsychologyFacts #LovePsychology",
-   "channel": "Harris Wisdom",
-   "views": 18854,
-   "hours": 44,
-   "vph": 423.8,
-   "subs": 38,
-   "breakout": 94.3
-  },
-  {
-   "title": "5 Psychological Facts You Should Know! #psychologyfacts",
-   "channel": "MedToon 3D",
-   "views": 14298,
-   "hours": 37,
-   "vph": 381.3,
-   "subs": 33,
-   "breakout": 71.5
+   "vph": 1048.4,
+   "subs": 897,
+   "breakout": 38.2
   }
  ]
 }
