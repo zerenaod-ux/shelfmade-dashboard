@@ -53,8 +53,8 @@
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 8,
-   "last": 48
+   "uses": 9,
+   "last": 54
   }
  ],
  "catch": {
@@ -677,6 +677,18 @@
    "title": "The Digital Hoarding Trap",
    "concept": "Leo finally cleans his phone: one Saturday, thousands of photos and tabs",
    "gag": "dev",
+   "callback": false,
+   "milestone": false,
+   "season": 1,
+   "date": "2026-11-20"
+  },
+  {
+   "n": 8,
+   "kind": "full",
+   "id": "the-road-trip-trap",
+   "title": "The Wrong Turn Trap",
+   "concept": "Leo's road trip with Mia: a wrong turn, a playlist war, a roadside diner",
+   "gag": "scoreboard",
    "callback": false,
    "milestone": false,
    "season": 1,

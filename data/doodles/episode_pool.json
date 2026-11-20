@@ -3477,5 +3477,462 @@
     }
    }
   ]
+ },
+ {
+  "id": "the-road-trip-trap",
+  "title": "The Wrong Turn Trap",
+  "theme": "Leo's road trip with Mia: a wrong turn, a playlist war, a roadside diner",
+  "premise": "Leo plans a perfectly timed four-hour road trip with a strict 14-point schedule to prove he finally has his life together. When a wrong turn delays them by five minutes, his desperate attempts to catch up turn a simple drive into a mud-soaked disaster.",
+  "running_gag": "Mia's portable mini whiteboard where she updates her 'I told you so' score in real time.",
+  "payoff": "Stranded in a muddy cow pasture after taking a questionable dirt shortcut, Leo surrenders while Mia flips her scoreboard from 113 to 114 and offers him cold diner fries.",
+  "description": "Leo planned the ultimate stress-free road trip, but his color-coded schedule did not survive Mia's playlist choices. Watch what happens when a nine-minute shortcut lands them stuck in a muddy cow pasture. Will Mia's scoreboard ever stop going up?",
+  "scenes": [
+   {
+    "time": "7:00 AM",
+    "setting": "Leo's Car in the Driveway",
+    "concept": "PLAN CONTINUATION TRAP",
+    "beat": "Leo stares in absolute horror at a digital clock showing a time of 7:03 AM, realizing they are already three minutes behind his color-coded itinerary. Mia calmly connects her phone and blasts high-tempo accordion metal, ignoring Leo's strict driving rules while Dev the barista in an oversized apron waves from the sidewalk with a misspelled coffee cup.",
+    "story": {
+     "id": "the-road-trip-trap-01",
+     "title": "Why Three Minutes Ruin A Road Trip \ud83d\ude97",
+     "concept": "PLAN CONTINUATION TRAP",
+     "mood": "dramatic",
+     "insight": "Three late minutes make us drive twice as fast into total doom.",
+     "caption": "Leo planned every second of the trip, but three minutes broke his brain.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Podcast desk with a digital clock showing a time of 7:03 AM and a coffee mug, Leo staring at the numbers in horror.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Seven oh three! The color-coded master schedule is totally dead!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Rest in peace to row four."
+        }
+       ]
+      },
+      {
+       "scene": "Dev the barista in an oversized apron waves from the edge with a misspelled coffee mug while walking.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "normal",
+         "text": "Dev spelled my name Lyle because we are three minutes late!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Lyle actually suits your frantic vibe."
+        }
+       ]
+      },
+      {
+       "scene": "Leo frantically pacing the hallway with a coffee mug while checking a clipboard.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "pause",
+         "text": "We must drive ninety miles an hour to save the timeline!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "That sounds extremely safe for everyone."
+        }
+       ]
+      },
+      {
+       "scene": "Mia holding a portable mini whiteboard updating her score while someone knocking on the door echoes.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Updating my scoreboard to one hundred fourteen."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "quick",
+         "text": "Stop adding points before we even leave the actual driveway!"
+        }
+       ]
+      },
+      {
+       "scene": "Both sitting close at the desk with a coffee mug and a digital clock showing a time of 7:05 AM.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "normal",
+         "text": "Okay but hear me out, we can still hit the scenic overlook."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You are definitely going to drive us into a lake."
+        }
+       ]
+      },
+      {
+       "scene": "Leo pointing wildly at a digital clock showing a time of 7:06 AM while holding a coffee mug.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Next time: why did the first wrong turn happen?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "11:15 AM",
+    "setting": "Gas Station Parking Lot",
+    "concept": "PSYCHOLOGICAL REACTANCE",
+    "beat": "Leo aggressively grips a coffee mug / a cup of tea after missing the main highway turnoff because Mia read a text from Kyle saying 'maps are for tourists, bro, real drivers use instinct.' Refusing to listen to Kyle's terrible logic, Leo takes an unpaved mountain detour just to prove he does not need a map either.",
+    "story": {
+     "id": "the-road-trip-trap-02",
+     "title": "Why A Wrong Turn Ruins Everything \ud83d\ude97",
+     "concept": "PSYCHOLOGICAL REACTANCE",
+     "mood": "dramatic",
+     "insight": "Kyle ruins everything while Mia keeps score.",
+     "caption": "When Kyle ruins the road trip and Leo takes a detour out of pure spite.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Gas station parking lot at 11:15 AM. Leo holds a coffee mug tightly while pacing the dusty pavement, glaring at the horizon. In the background, clearly visible and drawn in the same style, stands a impatient driver leaning on a car horn (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Kyle texted 'maps are for losers' so we're lost!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle says real drivers navigate using pure vibes, bro."
+        }
+       ]
+      },
+      {
+       "scene": "Mia holds her portable mini whiteboard, aggressively updating her score with a squeaky marker near a dusty vending machine.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Okay but hear me out, this mud shortcut saves time."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Scoreboard is at one hundred fourteen for bad calls."
+        }
+       ]
+      },
+      {
+       "scene": "Leo squeezes a coffee mug until his knuckles turn white, staring up at a steep, unpaved cliff road.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "pause",
+         "text": "If I turn around, Kyle wins this mental war!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You are fighting a guy who is currently sleeping."
+        }
+       ]
+      },
+      {
+       "scene": "A distant rumble shakes the ground as a tumbleweed rolls past a digital clock showing 11:20 AM on the dashboard.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Watch me conquer this mountain like a brave pioneer!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Pioneers had horses. You have a broken hatchback."
+        }
+       ]
+      },
+      {
+       "scene": "Leo stomps his foot while holding a cup of tea, splashing lukewarm water across his own yellow hoodie.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "That tea splash was tactical hydration, not a panic!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Anyway. You just cried into your chamomile tea, bro."
+        }
+       ]
+      },
+      {
+       "scene": "Mia taps her whiteboard loudly with the marker cap, pointing toward the winding mud trail ahead.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Next time: we let Kyle drive off a cliff."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "2:30 PM",
+    "setting": "Greasy Roadside Diner",
+    "concept": "ESCALATION OF COMMITMENT",
+    "beat": "Leo is walking / pacing the hallway near the diner kitchen, stubbornly refusing to leave even though they have waited 45 minutes for two plates of lukewarm hashbrowns. Mia points out that staying makes them later, but Leo insists they cannot leave now because they already put in 45 minutes of waiting time.",
+    "story": {
+     "id": "the-road-trip-trap-03",
+     "title": "Why We Waste Time on Bad Choices \ud83c\udf73",
+     "concept": "THE SUNK COST TRAP",
+     "mood": "dramatic",
+     "insight": "We waste even more time trying to rescue wasted time.",
+     "caption": "Leo waited 45 minutes for cold hashbrowns and now refuses to leave. Watch his logic collapse!",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Both sit at the podcast desk. Leo dramatically taps a coffee mug on the desk next to a digital clock showing a time with a stern, closed-mouth glare.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "I refuse to abandon our hashbrowns after a solid forty-five minutes of emotional labor."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits at the podcast desk, calmly writing a new number on her mini whiteboard with a tight, closed-mouth smirk.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "The scoreboard just hit 114 because you are literally burning your life for frozen potatoes."
+        }
+       ]
+      },
+      {
+       "scene": "Leo leaves his seat, walking / pacing the hallway behind the podcast desk while raising one finger dramatically with a tight, closed-mouth scowl.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "Kyle just texted: 'Sunk cost is a lie, just double down until you win, champ.'"
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits at the podcast desk, gently setting down a cup of tea with a cool, closed-mouth gaze toward Leo.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "pause",
+         "text": "Kyle also currently owes five grand for 'investing' in a singular, sad decorative pumpkin."
+        }
+       ]
+      },
+      {
+       "scene": "At the podcast desk, an alarm going off buzzes beside Leo as he ends up pulling the blanket over his face with worried eyes.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "quick",
+         "text": "Okay but hear me out, if we wait another hour, the kitchen owes us respect."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits at the podcast desk holding her mini whiteboard, staring forward with a tired, closed-mouth expression.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "tired",
+         "beat": "pause",
+         "text": "Next time: we are ordering pizza, not haunting a breakfast place like sad ghosts."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "5:00 PM",
+    "setting": "Muddy Farm Field",
+    "concept": "THE COBRA EFFECT",
+    "beat": "Their station wagon is sunk axle-deep in wet mud after Leo's shortcut to save nine minutes backfires completely. Mia resorts to pulling the blanket / pillow / lying in bed in the back hatch, clicking her marker to change her scoreboard to 114 while Leo slumps against a fence post. Next time: Leo tries to fix his sleep schedule with five alarms and instant regret.",
+    "story": {
+     "id": "the-road-trip-trap-04",
+     "title": "How To Turn Five Minutes Into Disaster \ud83d\ude9c",
+     "concept": "THE COBRA EFFECT",
+     "mood": "dramatic",
+     "insight": "Fixing a tiny mistake with a big one makes it huge.",
+     "caption": "Leo's shortcut is going great, if 'great' means sinking our car in a literal swamp. My 'I told you so' list is getting long.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo and Mia sit at the podcast desk; Leo is pacing the hallway behind the desk, clutching a printout map.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "normal",
+         "text": "We are only forty minutes ahead of total disaster."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "We left two hours late, Leo."
+        }
+       ]
+      },
+      {
+       "scene": "Leo grabs a coffee mug from the desk and stares at it like it holds the secrets to time travel.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "normal",
+         "text": "If we cut through the swamp, we save six seconds!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "That is literally a lake with cows in it."
+        }
+       ]
+      },
+      {
+       "scene": "Mia is pulling the blanket over her legs at the desk, looking bored; Leo is frantically gesturing at his imaginary shortcut.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "normal",
+         "text": "It's a bold move and I'm basically a genius."
+        },
+        {
+         "who": "mia",
+         "feel": "tired",
+         "beat": "snap",
+         "text": "Kyle says just drive straight into the abyss, bro."
+        }
+       ]
+      },
+      {
+       "scene": "Leo is holding a digital clock showing 5:00 PM; it suddenly flickers and the frame shakes to show the car sinking.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "normal",
+         "text": "Wait, why is the floor turning into liquid?"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "That's my designer sneakers dissolving, thanks."
+        }
+       ]
+      },
+      {
+       "scene": "Mia is sitting calmly while clicking a whiteboard marker, updating the score to 114; Leo slumps in his chair.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "beat": "normal",
+         "text": "One hundred and fourteen. A personal best for stupidity."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "quick",
+         "text": "Okay but hear me out, the mud feels kind of cozy?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo stares at the camera with mud on his cheek while Mia picks up her tea; they both freeze.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "normal",
+         "text": "Next time: can I fix my sleep schedule with bears?"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]
