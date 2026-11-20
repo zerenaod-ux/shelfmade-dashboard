@@ -11,6 +11,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {kind: mlfull, secret: YT_REFRESH_TOKEN_MINDLORE}
+          - {kind: shfull, secret: YT_REFRESH_TOKEN_SHELFMADE}
+          - {kind: ddfull, secret: YT_REFRESH_TOKEN_DOODLES}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -22,7 +29,9 @@ jobs:
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          YT_REFRESH_TOKEN: ${{ secrets[matrix.secret] }}
+          YT_KIND: ${{ matrix.kind }}
+          YT_CHANNEL_ID: ${{ vars.YT_CHANNEL_DOODLES }}
           KEEP: o3yiUpFfU8c
         run: |
           unset UNSCHEDULE  # Strictly read-only owner-requested visibility audit
