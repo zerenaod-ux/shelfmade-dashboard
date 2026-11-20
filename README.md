@@ -28,3 +28,7 @@ Future shorts now use a complete-conversation policy: natural everyday responses
 ## MindLore full-video recovery — November 19, 2026
 
 Fixed scheduled builds repeatedly consuming a stale one-script push instruction. Full-video selection now respects built IDs and existing titles, including explicit requests. The read-only YouTube audit found no full video currently scheduled; existing private videos remain untouched. Six regression tests passed. See [cause, evidence and limits](docs/MINDLORE-FULL-RECOVERY-2026-11-19.md).
+
+## Approved private MindLore release cadence
+
+Owner requested the nine named existing private full videos to be scheduled, not released immediately. MindLore full releases use Wednesday and Saturday at 18:00 America/Chicago (three/four days apart). Other channels retain their existing cadence. The bounded private scheduler modifies only release status for those nine IDs, verifies the channel, processed full-video status and each saved date, and records confirmed reservations for future publisher conflict checks. Defaults to read-only. Existing approvals are the owner's; it does not regenerate or upload videos. Same-title existing uploads receive a note rather than overriding the owner's explicit selection.

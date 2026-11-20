@@ -1,7 +1,7 @@
 name: MindLore full-video selection checks
 on:
   push:
-    paths: ['ml_full_selection.py', 'gh_ml2d_build.py', '.github/workflows/mindlore-2d.yml', 'tests/test_ml_full_selection.py', '.github/workflows/mindlore-full-checks.yml']
+    paths: ['full_release_slots.py', 'mindlore_private_schedule.py', 'tests/test_full_release_slots.py', 'tests/test_mindlore_private_schedule.py', 'yt_publish.py', 'ml_full_selection.py', 'gh_ml2d_build.py', '.github/workflows/mindlore-2d.yml', 'tests/test_ml_full_selection.py', '.github/workflows/mindlore-full-checks.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,4 +13,6 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
       - run: python -m unittest discover -s tests -p test_ml_full_selection.py -v
+      - run: python -m unittest discover -s tests -p test_full_release_slots.py -v
+      - run: python -m unittest discover -s tests -p test_mindlore_private_schedule.py -v
       - run: python -m py_compile gh_ml2d_build.py ml_full_selection.py

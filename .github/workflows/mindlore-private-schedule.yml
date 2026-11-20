@@ -1,0 +1,44 @@
+name: Schedule owner-selected existing MindLore full videos
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Apply verified private-video release dates; false is read-only
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: yt-publish-mindlore
+  cancel-in-progress: false
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Inspect or schedule existing uploads only
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN_MINDLORE }}
+          APPLY_SCHEDULE: ${{ inputs.apply && '1' || '0' }}
+        run: python mindlore_private_schedule.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mindlore-private-release-plan
+          path: mindlore-schedule-report.json
+          if-no-files-found: warn
+      - name: Retain confirmed schedule reservations
+        if: inputs.apply
+        run: |
+          git config user.name publisher-bot
+          git config user.email bot@users.noreply.github.com
+          git add -f publish/mindlore-private-schedule.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Record owner-selected MindLore private-video schedules'
+          for i in 1 2 3 4; do git pull --rebase --autostash -q && git push -q && exit 0; sleep 5; done
+          exit 1

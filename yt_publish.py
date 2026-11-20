@@ -46,9 +46,12 @@ def taken_days(access):
     pl = 'UU' + CHANNEL[2:]
     with http('https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId=' + pl, headers=h) as r:
         vids = [i['contentDetails']['videoId'] for i in json.load(r).get('items', [])]
+    if KIND == 'mlfull':
+        reserved = load(B / 'publish' / 'mindlore-private-schedule.json', {}).get('videos', [])
+        vids = list(dict.fromkeys(vids + [r['id'] for r in reserved if r.get('state') in ('scheduled_verified', 'already_scheduled')]))
     days = set()
-    if vids:
-        with http('https://www.googleapis.com/youtube/v3/videos?part=status,snippet,contentDetails&id=' + ','.join(vids), headers=h) as r:
+    for offset in range(0,len(vids),50):
+        with http('https://www.googleapis.com/youtube/v3/videos?part=status,snippet,contentDetails&id=' + ','.join(vids[offset:offset+50]), headers=h) as r:
             for v in json.load(r).get('items', []):
                 pa = v.get('status', {}).get('publishAt')
                 if not pa and v.get('status', {}).get('privacyStatus') == 'public':   # a full video already live holds its day too (2026-11-11: two fulls went out on one day)
@@ -61,13 +64,8 @@ def taken_days(access):
 
 
 def next_slot(taken):
-    now = datetime.datetime.now(TZ)
-    day = now.date()
-    while True:
-        slot = datetime.datetime(day.year, day.month, day.day, 18, 0, tzinfo=TZ)
-        if day not in taken and slot > now + datetime.timedelta(minutes=30):
-            return day, slot.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
-        day += datetime.timedelta(days=1)
+    from full_release_slots import next_release
+    return next_release(taken,KIND)
 
 
 def upload(access, path, title, desc, publish_at):
