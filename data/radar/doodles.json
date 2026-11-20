@@ -1,36 +1,36 @@
 {
  "why": [
   {
-   "title": "Writing an essay against your own beliefs... #relatable #animatic #animation #sketch #sketchbook",
-   "why": "It taps into the intense internal tension of cognitive dissonance using a relatable academic scenario, making viewers feel instantly understood."
-  },
-  {
-   "title": "Why Helmets Filled the Hospital With Head Wounds",
-   "why": "It uses a classic counter-intuitive paradox hook that instantly triggers curiosity by contradicting basic common sense."
-  },
-  {
-   "title": "Tell People \u201cDon\u2019t Touch\u201d and Watch What Happens \ud83d\ude32",
-   "why": "It visually demonstrates psychological reactance in a simple, highly shareable social experiment format."
+   "title": "Never Trust a Cheap Barber \ud83d\ude02 #shorts",
+   "why": "A hyper\u2011specific, relatable fear (bad haircut) instantly hooks viewers and sets up a funny trust\u2011psychology lesson."
   },
   {
    "title": "Protecting my locker code from telepaths \ud83d\udc80\ud83e\udde0 #shorts #relatable #viral",
-   "why": "It exaggerates hyper-specific intrusive thoughts using fast-paced comedic animation to create an immediate 'I thought I was the only one' reaction."
+   "why": "Combines paranoia with everyday privacy concerns, using an absurd premise to explore cognitive bias and secrecy."
+  },
+  {
+   "title": "Never Push A Kind Person Too Far",
+   "why": "Touches on social boundaries and empathy, a universal theme that sparks emotional resonance and quick comedic payoff."
+  },
+  {
+   "title": "Why Helmets Filled the Hospital With Head Wounds",
+   "why": "Unexpected twist on safety gear creates curiosity, letting the skit dive into risk compensation psychology."
   }
  ],
  "hook_patterns": [
-  "Presenting a counter-intuitive historical or psychological paradox as an opening visual setup.",
-  "Exaggerating a universal, secret internal anxiety into a dramatic physical situation.",
-  "Challenging the viewer to resist a basic psychological urge within the first 3 seconds."
+  "Unexpected everyday scenario amplified to absurdity, triggering instant curiosity",
+  "Relatable anxiety paired with a comedic exaggeration that reveals a psychological principle",
+  "Quick conflict or moral dilemma introduced in the first 3 seconds to hook the viewer"
  ],
- "todays_angle": "Use comedic animation of Leo and Mia to explore counter-intuitive psychological paradoxes where doing the 'right' thing leads to weird unintended human behavior.",
+ "todays_angle": "Show how tiny social cues can hijack our brain into overthinking simple choices",
  "ideas": [
-  "Leo tries to force himself *not* to think about a pink elephant while Mia monitors his brain, leading to the Ironic Process Theory causing his mind to spiral.",
-  "Mia explains the Cobra Effect by showing Leo trying to fix a messy room with a reward system that accidentally turns into a chaos-creation business.",
-  "Leo panics thinking his mind is being read in public, so Mia explains 'The Spotlight Effect' while showing how utterly ignored he actually is by everyone around him."
+  "Leo and Mia argue over whether to double\u2011check a text before sending, illustrating analysis paralysis and decision fatigue",
+  "Leo hides a secret snack from Mia, leading to a sketch about the foot\u2011in\u2011the\u2011door technique and cognitive dissonance",
+  "Mia explains why we binge\u2011watch short videos when bored, using variable\u2011reward theory and the dopamine loop"
  ],
  "avoid": [
-  "Generic 'GTA 6 wait time' jokes that lack a distinct psychology angle.",
-  "Direct re-hashes of classic Milgram/Shock Button experiments without a fresh comedic or modern framing."
+  "overused \"life hack\" titles that feel generic",
+  "reaction\u2011style formats that lack original scripted comedy"
  ],
  "updated": "2026-11-20",
  "sample": 75,
@@ -38,92 +38,83 @@
   {
    "title": "the gta6 video #funny #relatable #gta6",
    "channel": "So Okay Here's the Thing",
-   "views": 111031,
-   "hours": 11,
-   "vph": 10133.3,
+   "views": 127450,
+   "hours": 15,
+   "vph": 8590.7,
    "subs": 266000,
-   "breakout": 0.4
-  },
-  {
-   "title": "This statistically could happen\ud83d\ude2d. #animation #skit #relatable #gta6 #gaming",
-   "channel": "RefCantDraw ",
-   "views": 460607,
-   "hours": 48,
-   "vph": 9686.1,
-   "subs": 165000,
-   "breakout": 2.8
+   "breakout": 0.5
   },
   {
    "title": "Writing an essay against your own beliefs... #relatable #animatic #animation #sketch #sketchbook",
    "channel": "Cloudy Art ",
-   "views": 180213,
-   "hours": 41,
-   "vph": 4422.6,
+   "views": 183890,
+   "hours": 45,
+   "vph": 4120.6,
    "subs": 30300,
-   "breakout": 5.9
-  },
-  {
-   "title": "\u0e19\u0e49\u0e33\u0e0b\u0e38\u0e1b\u0e16\u0e38\u0e07\u0e25\u0e30\u0e2a\u0e34\u0e1a\u0e1a\u0e32\u0e17 | \u0e19\u0e34\u0e17\u0e32\u0e19\u0e08\u0e34\u0e15\u0e27\u0e34\u0e17\u0e22\u0e32 \u0e40\u0e02\u0e49\u0e32\u0e43\u0e08\u0e15\u0e31\u0e27\u0e40\u0e2d\u0e07 #Shorts",
-   "channel": "\u0e1f\u0e31\u0e07\u0e15\u0e2d\u0e19\u0e02\u0e31\u0e1a\u0e23\u0e16 \u0e1e\u0e35\u0e48\u0e41\u0e21\u0e47\u0e04\u0e40\u0e23\u0e14\u0e34\u0e42\u0e2d | The Mac Radio",
-   "views": 59238,
-   "hours": 28,
-   "vph": 2102.1,
-   "subs": 241000,
-   "breakout": 0.2
-  },
-  {
-   "title": "Who\u2019s seriously trying that #jjk #jujutsukaisen #anime #skit #comedy #relatable #fyp",
-   "channel": "Vinyung",
-   "views": 75953,
-   "hours": 44,
-   "vph": 1745.8,
-   "subs": 168,
-   "breakout": 379.8
+   "breakout": 6.1
   },
   {
    "title": "I really thought they'd be a thing #relatable #animatic #animation #sketch #sketchbook #digitalart",
    "channel": "Cloudy Art ",
-   "views": 26004,
-   "hours": 17,
-   "vph": 1557.2,
+   "views": 34985,
+   "hours": 21,
+   "vph": 1700.2,
    "subs": 30300,
-   "breakout": 0.9
+   "breakout": 1.2
   },
   {
    "title": "Never Trust a Cheap Barber \ud83d\ude02 #shorts",
    "channel": "2D Stick Comedy",
-   "views": 21609,
-   "hours": 16,
-   "vph": 1315.3,
-   "subs": 58,
-   "breakout": 108.0
+   "views": 33320,
+   "hours": 20,
+   "vph": 1640.8,
+   "subs": 59,
+   "breakout": 166.6
+  },
+  {
+   "title": "Who\u2019s seriously trying that #jjk #jujutsukaisen #anime #skit #comedy #relatable #fyp",
+   "channel": "Vinyung",
+   "views": 77305,
+   "hours": 47,
+   "vph": 1631.4,
+   "subs": 169,
+   "breakout": 386.5
   },
   {
    "title": "Protecting my locker code from telepaths \ud83d\udc80\ud83e\udde0 #shorts #relatable #viral",
    "channel": "Odity",
-   "views": 31265,
+   "views": 32102,
+   "hours": 30,
+   "vph": 1085.9,
+   "subs": 390,
+   "breakout": 82.3
+  },
+  {
+   "title": "Never Push A Kind Person Too Far",
+   "channel": "Human Uncovered",
+   "views": 25548,
    "hours": 26,
-   "vph": 1217.3,
-   "subs": 387,
-   "breakout": 80.8
+   "vph": 999.4,
+   "subs": 495,
+   "breakout": 51.6
   },
   {
    "title": "Why Helmets Filled the Hospital With Head Wounds",
    "channel": "Unintended",
-   "views": 38323,
-   "hours": 39,
-   "vph": 978.1,
-   "subs": 67,
-   "breakout": 191.6
+   "views": 38346,
+   "hours": 43,
+   "vph": 890.5,
+   "subs": 68,
+   "breakout": 191.7
   },
   {
-   "title": "Tell People \u201cDon\u2019t Touch\u201d and Watch What Happens \ud83d\ude33",
-   "channel": "Blank Duck",
-   "views": 28878,
-   "hours": 44,
-   "vph": 651.8,
-   "subs": 84,
-   "breakout": 144.4
+   "title": "He Guarded Potatoes Nobody Would Eat",
+   "channel": "OddMinute",
+   "views": 10274,
+   "hours": 20,
+   "vph": 520.3,
+   "subs": 44,
+   "breakout": 51.4
   }
  ]
 }
