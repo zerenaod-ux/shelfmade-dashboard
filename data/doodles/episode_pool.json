@@ -3002,5 +3002,480 @@
     }
    }
   ]
+ },
+ {
+  "id": "the-digital-hoarding-trap",
+  "title": "The Digital Hoarding Trap",
+  "theme": "Leo finally cleans his phone: one Saturday, thousands of photos and tabs",
+  "premise": "Leo decides to clear all 4,112 open tabs and embarrassing screenshots off his phone in one Saturday afternoon. Mia turns his digital decluttering into an absurd trial that uncovers his weirdest secret habits.",
+  "running_gag": "A coffee mug from Dev the barista with Leo's name spelled progressively worse.",
+  "payoff": "Leo hits 'delete all' in a panic to prove he is not a digital hoarder, accidentally wiping his Wi-Fi password and locking them both out, while holding a coffee mug that reads 'Liiii-oh'.",
+  "description": "Leo decides one Saturday is enough to finally delete thousands of useless photos and open tabs. Mia turns his digital cleanup into a hilarious interrogation about his weirdest habits. Next time: Leo tries a 'no-spend weekend' and accidentally buys an antique canoe.",
+  "scenes": [
+   {
+    "time": "10:00 AM",
+    "setting": "Leo's apartment living room at the podcast desk",
+    "concept": "THE SUNK COST FALLACY",
+    "beat": "Leo sets a coffee mug labeled 'Lyle' on the desk next to a digital clock showing a time of 10:00 AM. Mia reads out that he has 4,112 open tabs, including 42 identical garlic bread recipes, three reviews of socks, and a blank page saved for four years.",
+    "story": {
+     "id": "the-digital-hoarding-trap-01",
+     "title": "Why Leo Never Closes His Phone Tabs \ud83d\udcc1",
+     "concept": "THE SUNK COST TRAP",
+     "mood": "dramatic",
+     "insight": "Throwing away four years of a blank page hurts too much.",
+     "caption": "Leo refuses to close 4,112 open tabs because he already invested four years into them. Mia is not impressed.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo sets a coffee mug labeled 'Lyle' on the desk next to a digital clock showing a time of 10:00 AM. Dev the barista waves in the background.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "snap",
+         "text": "I will never close these phone tabs!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You have four thousand one hundred twelve tabs open!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia is pulling the blanket over her knees at the desk while reading Leo's phone with a raised eyebrow.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "You saved forty-two garlic bread recipes and sock reviews!"
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "What if one recipe has the secret trick?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo is walking / pacing the hallway behind the desk, clutching his phone high with worried eyes.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "normal",
+         "text": "You kept a blank page for four years!"
+        },
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "quick",
+         "text": "I put four years of work into that page!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia hears someone knocking on the door in the background and turns back to point sharply at Leo.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "tired",
+         "beat": "normal",
+         "text": "Holding onto junk for spent time is total nonsense!"
+        },
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "snap",
+         "text": "If I delete it, my four years meant nothing!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo takes a sip from a cup of tea while Mia holds up the coffee mug labeled 'Lyle'.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Dev wrote Lyle on your coffee mug again."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "normal",
+         "text": "I paid six bucks, so I am Lyle now!"
+        }
+       ]
+      },
+      {
+       "scene": "An alarm going off on the desk buzzes as Mia turns back to Leo with a flat look.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Next time, why do you refuse to close any tabs?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "1:15 PM",
+    "setting": "The apartment hallway",
+    "concept": "THE ENDOWMENT EFFECT",
+    "beat": "Leo starts walking / pacing the hallway while hugging his phone, screaming that a blurry grey screenshot from 2021 has deep sentimental value. Brenda the neighbor steps out in a floral robe with her clipboard, staring in silence while Mia bumps her 'Told You So' scoreboard up to 112.",
+    "story": {
+     "id": "the-digital-hoarding-trap-02",
+     "title": "Why You Can Never Delete Old Screenshots \ud83d\udcf1",
+     "concept": "THE ENDOWMENT EFFECT",
+     "mood": "dramatic",
+     "insight": "You own it for five seconds and suddenly it's a family heirloom.",
+     "caption": "Leo tries to delete a blurry screenshot from 2021 and loses his entire mind.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo is walking / pacing the hallway outside the apartment while hugging his phone like a baby.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "You can't delete this grey blur, Mia! It has feelings!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia holds a coffee mug with 'Leeo' misspelled on it, leaning against the doorframe.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "It is literally a picture of a random grocery store wall."
+        },
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "normal",
+         "text": "That wall supported me during a very dark Tuesday in twenty-one!"
+        }
+       ]
+      },
+      {
+       "scene": "Brenda the neighbour steps out of her door in a floral robe with her clipboard, staring in total silence.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Even Brenda with her clipboard thinks you need help."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "pause",
+         "text": "Brenda understands modern art. Brenda totally gets it."
+        }
+       ]
+      },
+      {
+       "scene": "Brenda slowly shakes her head and writes something harsh on her clipboard without blinking.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "snap",
+         "text": "Don't write that down, Brenda! I am totally stable!"
+        },
+        {
+         "who": "mia",
+         "feel": "confident",
+         "beat": "quick",
+         "text": "That makes point number one hundred and twelve for me."
+        }
+       ]
+      },
+      {
+       "scene": "Leo clutches the phone tighter against his yellow hoodie while pacing faster down the hall.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Okay but hear me out, what if I need this blur later?"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Anyway. Delete the trash wall right now."
+        }
+       ]
+      },
+      {
+       "scene": "A digital clock showing a time of 1:15 PM flashes red on the hallway wall above them.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Next time: Leo fights a grocery receipt from two thousand nineteen."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "3:30 PM",
+    "setting": "Living room sofa with background window",
+    "concept": "THE SPOTLIGHT EFFECT",
+    "beat": "Leo tries pulling the blanket over his head on the couch while Mia scrolls through 800 blurry selfies he took in a grocery store aisle. Dev the barista walks past the background window holding another takeaway cup, as Mia quotes Kyle saying flatly: 'Kyle says: just throw the phone in the ocean, bro.'",
+    "story": {
+     "id": "the-digital-hoarding-trap-03",
+     "title": "Why Deleting Photos Feels Like Crime Drama \ud83d\udcf1",
+     "concept": "THE SPOTLIGHT EFFECT",
+     "mood": "dramatic",
+     "insight": "Everyone thinks you're starring in a movie where they are the critic.",
+     "caption": "Leo tries to hide under a blanket while Mia judges his 800 blurry grocery selfies.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Cozy living room sofa with scattered pillows, Leo pulling the blanket tightly over his head while Mia scrolls through his phone.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Do not look at the secret onion folder!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Why do you have eight hundred blurry closeups of a single grape?"
+        }
+       ]
+      },
+      {
+       "scene": "Living room sofa, Leo peeking out from the blanket holding a coffee mug with misspelled name 'L-E-O-H', while Dev walks past the background window.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "defensive",
+         "beat": "normal",
+         "text": "It had dramatic lighting and deep emotional resonance."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Dev wrote 'L-e-e-o-h' on this cup and honestly he gets you."
+        }
+       ]
+      },
+      {
+       "scene": "Living room sofa, Mia leaning back holding the phone up high, Dev walking away past the window holding another takeaway cup.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "beat": "pause",
+         "text": "Kyle says just throw the entire phone into the volcano, bro."
+        },
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "quick",
+         "text": "Volcanoes have lava, Mia! The magma will totally mock my angles!"
+        }
+       ]
+      },
+      {
+       "scene": "Living room sofa, Leo gripping a pillow with wide eyes while Mia taps the screen ruthlessly.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Deleting eight hundred grocery selfies in three, two, one."
+        },
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "snap",
+         "text": "My glorious digital legacy is bleeding out on the rug!"
+        }
+       ]
+      },
+      {
+       "scene": "Living room sofa, Leo dramatic-sighing against the sofa armrest while Mia checks her scoreboard notes.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "confident",
+         "beat": "quick",
+         "text": "That makes one hundred twelve points on my scoreboard for basic survival."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "normal",
+         "text": "Okay but hear me out about my secret backup folder."
+        }
+       ]
+      },
+      {
+       "scene": "Living room sofa, Leo staring blankly forward as Mia turns the phone screen back toward him.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "Next time: why did you screenshot your microwave in 2019?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "5:00 PM",
+    "setting": "Apartment kitchen counter",
+    "concept": "DECISION FATIGUE",
+    "beat": "An alarm going off startles Leo right as someone knocking on the door makes him jump and accidentally tap 'Select All' and 'Delete Everything'. He stares at a blank screen, realizes he just deleted their Wi-Fi password, and Mia calmly sips her drink as Greg the boss passes outside carrying a single file folder.",
+    "story": {
+     "id": "the-digital-hoarding-trap-04",
+     "title": "Why Clearing Your Phone Destroys Your Mind \ud83e\udde0",
+     "concept": "DECISION FATIGUE",
+     "mood": "dramatic",
+     "insight": "Too many tiny choices will fry your brain faster than actual work.",
+     "caption": "Leo tried to clean out his 4,000 tabs and ended up deleting his own sanity. Here is what happened!",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo sits at the podcast desk near a digital clock showing a time of five, holding a coffee mug with misspelled text.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Leo spent six hours deleting photos, and Dev named me Lyle!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia sips a cup of tea while Leo starts walking / pacing the hallway behind the desk with raised eyebrows.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You stared at one cat meme for forty minutes."
+        },
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "snap",
+         "text": "That cat had hats, boots, and my soul, Mia!"
+        }
+       ]
+      },
+      {
+       "scene": "An alarm going off startles Leo while someone knocking on the door makes him jump with worried eyes.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Wait, no! I just accidentally deleted everything on earth!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Wait... did you wipe our house Wi-Fi password?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo looks blankly at his phone while outside Greg the boss is walking / pacing the hallway carrying a file folder.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "Okay but hear me out, my screen is completely clean."
+        },
+        {
+         "who": "mia",
+         "feel": "confident",
+         "beat": "quick",
+         "text": "Scoreboard update: Mia one hundred twelve, Leo zero. Anyway."
+        }
+       ]
+      },
+      {
+       "scene": "Mia places a coffee mug on the desk while Leo starts pulling the blanket over his face in defeat.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle says: throw the whole phone in the lake, bro."
+        },
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "quick",
+         "text": "Next time: Leo fixes his life using three sticky notes!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo leans over the desk near a digital clock showing a time, resting his chin on his hands.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "tired",
+         "beat": "snap",
+         "text": "Why does closing four tabs feel like wrestling a bear?"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]
