@@ -23,3 +23,9 @@ class PrivateScheduleTests(unittest.TestCase):
  def test_public_or_unprocessed_upload_is_not_changed(self):
   rows=self.rows();rows[S.TARGETS[0]]['status']['privacyStatus']='public';rows[S.TARGETS[1]]['status']['uploadStatus']='failed'
   result=S.plan(rows,datetime.datetime.now(TZ));self.assertEqual([x['state'] for x in result[:2]],['held','held'])
+
+ def test_timestamp_comparison_accepts_equivalent_offsets(self):
+  self.assertTrue(S.same_instant('2026-11-22T00:00:00Z','2026-11-21T18:00:00-06:00'))
+  self.assertTrue(S.same_instant('2026-11-22T00:00:00.000Z','2026-11-22T00:00:00Z'))
+  self.assertFalse(S.same_instant(None,'2026-11-22T00:00:00Z'))
+  self.assertFalse(S.same_instant('2026-11-22T01:00:00Z','2026-11-22T00:00:00Z'))
