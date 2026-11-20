@@ -24,3 +24,7 @@ The owner explicitly requested skipping the rainbow. That choice was recorded vi
 ## Animation Doodles dialogue update — November 18
 
 Future shorts now use a complete-conversation policy: natural everyday responses, resolved endings, no micro/tight variants or forced dangling loop, measured 40–70-second duration, and preserved final speech with a brief reaction. The existing visual style is retained. Seven local regression tests pass; GitHub verification and the next actual rendered short are tracked separately. No new video was generated to apply these rules. See [implementation and limits](docs/DOODLES-COMPLETE-CONVERSATIONS.md).
+
+## MindLore full-video recovery — November 19, 2026
+
+Fixed scheduled builds repeatedly consuming a stale one-script push instruction. Full-video selection now respects built IDs and existing titles, including explicit requests. The read-only YouTube audit found no full video currently scheduled; existing private videos remain untouched. Six regression tests passed. See [cause, evidence and limits](docs/MINDLORE-FULL-RECOVERY-2026-11-19.md).

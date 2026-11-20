@@ -10,12 +10,12 @@ def load(p, d):
 def main(n):
     state = Path('gh-state/built-2d-mindlore.json'); state.parent.mkdir(exist_ok=True); built = load(state, [])
     series = [e['file'].replace('.json', '') for e in load('data/mindlore/series.json', {}).get('episodes', [])]
-    allf = sorted(p.stem for p in Path('cinematic-scripts-mindlore').glob('*.json'))
-    if not os.environ.get('ML2D_ONLY'): allf = [f for f in allf if load('cinematic-scripts-mindlore/%s.json' % f, {}).get('story_v2')]   # STRICT: only scripts written in the story style are built
-    order = [s for s in series if s in allf] + [s for s in allf if s not in series]
-    todo = [s for s in order if s not in built]; Path('out').mkdir(exist_ok=True); made = 0
-    only = os.environ.get('ML2D_ONLY', '').strip()
-    if only and only in allf: todo = [only]
+    from ml_full_selection import select_scripts
+    known = load('publish/approved-mlfull.json', {}).get('items', [])
+    todo = select_scripts('cinematic-scripts-mindlore', built, series,
+                          os.environ.get('ML2D_ONLY', '').strip(),
+                          [item.get('title', '') for item in known])
+    Path('out').mkdir(exist_ok=True); made = 0
     import ml2d
     for sid in todo[:n]:
         folder = Path('out/d_' + sid)

@@ -36,9 +36,10 @@ jobs:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           COUNT: ${{ github.event.inputs.count || '1' }}
           ML2D_ONLY: ${{ github.event.inputs.script || '' }}
+          ML2D_READ_TRIGGER: ${{ github.event_name == 'push' && '1' || '0' }}
         run: |
           mkdir -p out gh-state
-          if [ -z "$ML2D_ONLY" ] && [ -f publish/ml2d.trigger ]; then S=$(grep -o "script=[^ ]*" publish/ml2d.trigger | head -1 | cut -d= -f2); [ -n "$S" ] && export ML2D_ONLY="$S"; fi   # rebuild a specific script by pushing "ml2d script=<id> <time>"
+          if [ "$ML2D_READ_TRIGGER" = "1" ] && [ -z "$ML2D_ONLY" ] && [ -f publish/ml2d.trigger ]; then S=$(grep -o "script=[^ ]*" publish/ml2d.trigger | head -1 | cut -d= -f2); [ -n "$S" ] && export ML2D_ONLY="$S"; fi   # rebuild a specific script by pushing "ml2d script=<id> <time>"
           python gh_ml2d_build.py "$COUNT"
           ls -lh out/*.zip || true
       - name: Publish to GitHub Release and save state
