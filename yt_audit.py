@@ -3,7 +3,7 @@
 import json, os, re
 import yt_publish as Y
 KEEP = set(x for x in os.environ.get('KEEP', '').split(',') if x)
-GO = os.environ.get('UNSCHEDULE') == '1'
+GO = False  # Read-only inventory; never change YouTube visibility
 
 def sec(s):
     m = re.match(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', s or ''); h, mi, se = [int(x or 0) for x in m.groups()]; return h * 3600 + mi * 60 + se
@@ -22,8 +22,9 @@ for k in range(0, len(ids), 50):
         rows += json.load(r)['items']
 for v in sorted(rows, key=lambda v: v['snippet']['publishedAt']):
     d = sec(v['contentDetails']['duration'])
-    if d < 120: continue
+    if d < 120 and v['status']['privacyStatus'] != 'private': continue
     st = v['status']; pa = st.get('publishAt')
+    print('INVENTORY',json.dumps({'id':v['id'],'title':v['snippet']['title'],'seconds':d,'privacy':st['privacyStatus'],'scheduled':pa,'uploaded':v['snippet']['publishedAt'],'upload_status':st.get('uploadStatus'),'failure_reason':st.get('failureReason'),'rejection_reason':st.get('rejectionReason')},ensure_ascii=True))
     print('AUDIT', v['id'], st['privacyStatus'], 'publishAt=%s' % pa, 'pub=%s' % v['snippet']['publishedAt'][:16], v['snippet']['title'][:50], 'KEEP' if v['id'] in KEEP else '')
     if GO and pa and v['id'] not in KEEP:
         body = {'id': v['id'], 'status': {'privacyStatus': 'private', 'selfDeclaredMadeForKids': st.get('selfDeclaredMadeForKids', False)}}
