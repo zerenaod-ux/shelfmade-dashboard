@@ -1,8 +1,100 @@
 {
  "brand": "shelfmade",
- "collected": "2026-11-19T19:39:15Z",
+ "collected": "2026-11-20T19:17:02Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How Peace Finds You Daily \ud83c\udf3f\n\nThe Way of Peace by James Allen\n\nFollow ShelfMade for a new classic-book lesson e",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-20T02:35:53.586Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "What Self-Reliance really asks of you.\n\nSelf-Reliance (Essays) by Ralph Waldo Emerson\n\nFollow ShelfMade for a ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-20T02:35:52.789Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How Hustle Affects Real Peace \ud83e\uddd8\n\nYou think you need constant hustle to feel at peace.\n\nEvidence: Johns Hopkins",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-20T02:35:52.187Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How Mental Efficiency Shapes You \ud83e\udd14\n\nMental Efficiency, and Other Hints to Men and Women by Arnold Bennett\n\nFol",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-20T02:35:51.626Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=5GsR3rzr4ks",
+   "sent": "2026-11-20T00:00:35.000Z",
+   "text": "Can men refuse to be pleased with words of gentle advice?\n\nLessons and original commentary inspired by The Ana",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-20T00:03:58.060Z"
+  },
   {
    "platform": "tiktok",
    "status": "scheduled",
@@ -93,7 +185,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-19T00:02:42.558Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -119,11 +211,11 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
-   "text": "You have Art of War backwards.\n\nThe Art of War by Sun Tzu\n\nFollow ShelfMade for a new classic-book lesson ever",
-   "views": 0,
+   "status": "sent",
+   "url": "https://www.tiktok.com/@shelfmade.daily/video/7709975712068914445?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+   "sent": "2026-11-19T20:04:27.620Z",
+   "text": "You have Art of War backwards. The Art of War by Sun Tzu Follow ShelfMade for a new classic-book lesson every ",
+   "views": 82,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -137,7 +229,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T01:18:15.178Z"
+   "updated": "2026-11-20T19:16:01.615Z"
   },
   {
    "platform": "instagram",
@@ -177,7 +269,7 @@
    "text": "Nietzsche had a warning for you.\n\nLessons and original commentary inspired by Thus Spake Zarathustra by Friedr",
    "views": 0,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -185,7 +277,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.596Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "instagram",
@@ -253,7 +345,7 @@
    "url": "https://www.youtube.com/watch?v=ArV4A7SljL8",
    "sent": "2026-11-17T00:00:23.000Z",
    "text": "Forget what you know about Self-Reliance.\n\nLessons and original commentary inspired by Self-Reliance (Essays) ",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -263,7 +355,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.596Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "instagram",
@@ -335,7 +427,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "instagram",
@@ -419,15 +511,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@shelfmade.daily/video/7709604717235539213",
+   "url": "https://www.tiktok.com/@shelfmade.daily/video/7709604717235539213?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-18T20:05:16.294Z",
-   "text": "Nietzsche wrote this for you.\n\nThus Spake Zarathustra by Friedrich Nietzsche\n\nFollow ShelfMade for a new class",
-   "views": 83,
+   "text": "Nietzsche wrote this for you. Thus Spake Zarathustra by Friedrich Nietzsche Follow ShelfMade for a new classic",
+   "views": 85,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -441,13 +533,13 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.644Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Df-QwaoCjFE/",
+   "sent": "2026-11-20T18:08:59.962Z",
    "text": "You have Art of War backwards.\n\nThe Art of War by Sun Tzu\n\nFollow ShelfMade for a new classic-book lesson ever",
    "views": null,
    "likes": null,
@@ -457,9 +549,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/NFCFFiU0_hw",
+   "sent": "2026-11-20T18:05:56.801Z",
    "text": "Nobody warns you about Acres of Diamonds.\n\nAcres of Diamonds by Russell Conwell\n\nFollow ShelfMade for a new cl",
    "views": 0,
    "likes": 0,
@@ -471,7 +563,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-14T01:45:24.055Z"
+   "updated": "2026-11-20T19:07:46.494Z"
   },
   {
    "platform": "youtube",
@@ -479,7 +571,7 @@
    "url": "https://www.youtube.com/shorts/j-8zUPTf8LU",
    "sent": "2026-11-19T18:06:07.965Z",
    "text": "One line in Prince hits hard.\n\nThe Prince by Machiavelli\n\nFollow ShelfMade for a new classic-book lesson every",
-   "views": 0,
+   "views": 8,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -489,7 +581,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-19T18:07:38.955Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -507,14 +599,14 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
    "status": "sent",
-   "url": "https://tiktok.com/@shelfmade.daily/video/7709233812596608269",
+   "url": "https://www.tiktok.com/@shelfmade.daily/video/7709233812596608269?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-17T20:05:34.515Z",
-   "text": "You were taught Tao Te Ching wrong.\n\nTao Te Ching by Lao Tzu\n\nFollow ShelfMade for a new classic-book lesson e",
+   "text": "You were taught Tao Te Ching wrong. Tao Te Ching by Lao Tzu Follow ShelfMade for a new classic-book lesson eve",
    "views": 91,
    "likes": 0,
    "comments": 0,
@@ -529,7 +621,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.690Z"
   },
   {
    "platform": "instagram",
@@ -537,19 +629,7 @@
    "url": "https://www.instagram.com/reel/Df7sDhYjEeP/",
    "sent": "2026-11-19T18:09:52.896Z",
    "text": "Nietzsche wrote this for you.\n\nThus Spake Zarathustra by Friedrich Nietzsche\n\nFollow ShelfMade for a new class",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-13T02:07:47.519Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/Df5HdE3geuk/",
-   "sent": "2026-11-18T18:12:57.519Z",
-   "text": "You were taught Tao Te Ching wrong.\n\nTao Te Ching by Lao Tzu\n\nFollow ShelfMade for a new classic-book lesson e",
-   "views": 3,
+   "views": 1,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -564,7 +644,30 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Df5HdE3geuk/",
+   "sent": "2026-11-18T18:12:57.519Z",
+   "text": "You were taught Tao Te Ching wrong.\n\nTao Te Ching by Lao Tzu\n\nFollow ShelfMade for a new classic-book lesson e",
+   "views": 114,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -572,9 +675,9 @@
    "url": "https://www.youtube.com/shorts/NGMGp1KlKt4",
    "sent": "2026-11-18T18:05:54.739Z",
    "text": "Aurelius had a warning for you.\n\nMeditations by Marcus Aurelius\n\nFollow ShelfMade for a new classic-book lesso",
-   "views": 8,
+   "views": 16,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -582,7 +685,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.596Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -600,7 +703,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -608,7 +711,7 @@
    "url": "https://www.youtube.com/shorts/2W3cnCLXxQo",
    "sent": "2026-11-17T18:05:18.177Z",
    "text": "You have Art of War backwards.\n\nThe Art of War by Sun Tzu\n\nFollow ShelfMade for a new classic-book lesson ever",
-   "views": 14,
+   "views": 16,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -618,7 +721,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.596Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -640,7 +743,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.659Z"
   },
   {
    "platform": "instagram",
@@ -663,7 +766,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "instagram",
@@ -686,7 +789,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -704,7 +807,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -722,7 +825,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -740,7 +843,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.596Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -762,7 +865,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.746Z"
   },
   {
    "platform": "instagram",
@@ -785,7 +888,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -793,7 +896,7 @@
    "url": "https://www.youtube.com/shorts/szjjCFDtsFA",
    "sent": "2026-11-16T03:01:08.315Z",
    "text": "You were taught Tao Te Ching wrong.\n\nTao Te Ching by Lao Tzu\n\nFollow ShelfMade for a new classic-book lesson e",
-   "views": 66,
+   "views": 70,
    "likes": 2,
    "comments": 1,
    "metrics": [
@@ -803,7 +906,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.596Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -821,7 +924,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -839,7 +942,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -861,7 +964,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.727Z"
   },
   {
    "platform": "instagram",
@@ -884,7 +987,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -902,7 +1005,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -910,7 +1013,7 @@
    "url": "https://www.tiktok.com/@shelfmade.daily/video/7708235345615244558?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-15T03:31:49.741Z",
    "text": "Why does Thus Spake Zarathustra still matter? Thus Spake Zarathustra by Friedrich Nietzsche Why does Thus Spak",
-   "views": 95,
+   "views": 96,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -924,7 +1027,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.671Z"
   },
   {
    "platform": "instagram",
@@ -947,7 +1050,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -965,7 +1068,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -983,7 +1086,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -1005,7 +1108,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.648Z"
   },
   {
    "platform": "instagram",
@@ -1028,7 +1131,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1046,7 +1149,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -1068,7 +1171,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.639Z"
   },
   {
    "platform": "instagram",
@@ -1091,7 +1194,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1109,7 +1212,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -1127,7 +1230,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -1149,7 +1252,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.686Z"
   },
   {
    "platform": "instagram",
@@ -1172,7 +1275,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1180,7 +1283,7 @@
    "url": "https://www.youtube.com/shorts/D3aLO1j24s8",
    "sent": "2026-11-13T18:04:14.065Z",
    "text": "Nobody warns you about Acres of Diamonds.\n\nAcres of Diamonds by Russell Conwell\n\nNobody warns you about Acres ",
-   "views": 24,
+   "views": 25,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1190,7 +1293,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -1212,7 +1315,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.656Z"
   },
   {
    "platform": "instagram",
@@ -1235,7 +1338,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1253,7 +1356,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -1271,7 +1374,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "instagram",
@@ -1294,7 +1397,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "tiktok",
@@ -1316,7 +1419,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.648Z"
+   "updated": "2026-11-20T19:16:01.697Z"
   },
   {
    "platform": "youtube",
@@ -1334,7 +1437,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -1374,7 +1477,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.649Z"
+   "updated": "2026-11-20T19:16:01.661Z"
   },
   {
    "platform": "instagram",
@@ -1397,7 +1500,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1415,7 +1518,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -1433,7 +1536,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -1455,7 +1558,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.649Z"
+   "updated": "2026-11-20T19:16:01.724Z"
   },
   {
    "platform": "instagram",
@@ -1478,7 +1581,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1486,7 +1589,7 @@
    "url": "https://www.youtube.com/shorts/SAQ1Y0wN0zI",
    "sent": "2026-11-11T18:06:16.014Z",
    "text": "Nobody warns you about Tao Te Ching.\n\nTao Te Ching by Lao Tzu\n\nNobody warns you about Tao Te Ching.\n\nMusic and",
-   "views": 14,
+   "views": 15,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1496,7 +1599,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -1518,7 +1621,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.649Z"
+   "updated": "2026-11-20T19:16:01.654Z"
   },
   {
    "platform": "youtube",
@@ -1536,7 +1639,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "instagram",
@@ -1559,7 +1662,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "tiktok",
@@ -1581,7 +1684,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.649Z"
+   "updated": "2026-11-20T19:16:01.715Z"
   },
   {
    "platform": "youtube",
@@ -1589,7 +1692,7 @@
    "url": "https://www.youtube.com/watch?v=QmvgVXfWJT8",
    "sent": "2026-11-06T00:00:06.000Z",
    "text": "Why does Simple Life still matter?\n\nLessons and original commentary inspired by The Simple Life by Charles Wag",
-   "views": 6,
+   "views": 7,
    "likes": 1,
    "comments": 1,
    "metrics": [
@@ -1599,7 +1702,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -1617,7 +1720,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "instagram",
@@ -1640,7 +1743,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "tiktok",
@@ -1662,7 +1765,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.649Z"
+   "updated": "2026-11-20T19:16:01.733Z"
   },
   {
    "platform": "instagram",
@@ -1685,7 +1788,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1703,7 +1806,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "tiktok",
@@ -1725,7 +1828,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.649Z"
+   "updated": "2026-11-20T19:16:01.730Z"
   },
   {
    "platform": "instagram",
@@ -1748,7 +1851,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   },
   {
    "platform": "youtube",
@@ -1766,7 +1869,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.861Z"
   },
   {
    "platform": "youtube",
@@ -1774,7 +1877,7 @@
    "url": "https://www.youtube.com/watch?v=6z0IxWs-qko",
    "sent": "2026-11-05T00:00:18.000Z",
    "text": "Why does Mental Efficiency still matter?\n\nLessons and original commentary inspired by Mental Efficiency, and O",
-   "views": 5,
+   "views": 7,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1784,7 +1887,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T22:55:34.597Z"
+   "updated": "2026-11-19T22:56:40.862Z"
   },
   {
    "platform": "tiktok",
@@ -1806,7 +1909,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:54:52.649Z"
+   "updated": "2026-11-20T19:16:01.674Z"
   },
   {
    "platform": "instagram",
@@ -1829,110 +1932,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T13:20:42.267Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/JlR5Qt1ALk8",
-   "sent": "2026-11-08T03:01:17.070Z",
-   "text": "Is this really true?\n\nOut from the Heart by James Allen\n\nWithout the right performance of duty, the higher vir",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-18T22:55:34.597Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7705522358068464909?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-07T20:03:25.433Z",
-   "text": "Moreover, nothing is good but virtue, and nothing but vice is bad Meditations by Marcus Aurelius Moreover, not",
-   "views": 93,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-19T13:54:52.649Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/OKEdacXsBrk",
-   "sent": "2026-11-07T18:04:01.444Z",
-   "text": "Mind, I say your 'feelings,' not your 'belief.' For I cannot undertake to explain anybody's beliefs\n\nThe Crown",
-   "views": 29,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-18T22:55:34.597Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7705266690191412493?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-07T03:30:52.872Z",
-   "text": "Moreover, nothing is good but virtue, and nothing but vice is bad Meditations by Marcus Aurelius Moreover, not",
-   "views": 103,
-   "likes": 1,
-   "comments": 1,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-19T13:54:52.649Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfcyBmpjUVi/",
-   "sent": "2026-11-07T18:04:34.654Z",
-   "text": "Moreover, nothing is good but virtue, and nothing but vice is bad\n\nMeditations by Marcus Aurelius\n\nMoreover, n",
-   "views": 10,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-19T13:20:42.267Z"
+   "updated": "2026-11-20T12:20:51.810Z"
   }
  ]
 }
