@@ -36,3 +36,17 @@ jobs:
         run: |
           unset UNSCHEDULE  # Strictly read-only owner-requested visibility audit
           python yt_audit.py
+
+      - name: Read ShelfMade scheduled Shorts only
+        if: matrix.kind == 'shfull'
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_SHELFMADE }}
+          PUBLISH_BRAND: shelfmade
+        run: |
+          python - <<'PYTHON'
+          import publisher as p,json
+          orgs=p.api('{account{organizations{id}}}')['data']['account']['organizations']
+          r=p.api('query($i:PostsInput!){posts(first:100,input:$i){edges{node{channelService dueAt status text}}}}',{'i':{'organizationId':orgs[0]['id'],'filter':{'channelIds':list(p.CHANNELS.values()),'status':['scheduled','sending']}}})
+          if r.get('errors'):raise ValueError('Buffer refused read-only schedule query')
+          print('SHELFMADE_SHORT_SCHEDULE',json.dumps([e['node'] for e in r['data']['posts']['edges']]))
+          PYTHON
