@@ -5119,5 +5119,552 @@
   "style": "v2",
   "format": "CONFESSION",
   "improv": true
+ },
+ {
+  "id": "your-cooking-rating-crime",
+  "title": "Your Cooking Rating Crime",
+  "concept": "Leo acts like a detective investigating why Mia rated his home cooking so low in the family poll.",
+  "insight": "Overreacting to tiny feedback turns dinner into a hilarious crime scene investigation.",
+  "caption": "Detective Leo is on the case of the two-out-of-ten dinner rating.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo drinks from a coffee mug at the cozy podcast desk, narrowing his eyes suspiciously with a tight closed-mouth glare.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Two out of ten? That is a crime!"
+     },
+     {
+      "who": "mia",
+      "feel": "calm",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "It was actually a three and a half."
+     }
+    ]
+   },
+   {
+    "scene": "An alarm going off on the podcast desk timer makes Mia glance over with a subtle smirk and closed-mouth smirk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "indignant",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "Three and a half is still a felony against my cooking!"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "listener_feel": "concerned",
+      "beat": "quick",
+      "text": "You put hot pineapple in burnt pasta, Detective Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Leo taps a digital clock showing a time on the desk, gesturing dramatically with a raised eyebrow and closed mouth.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "Okay but hear me out! I was testing your immune system."
+     },
+     {
+      "who": "mia",
+      "feel": "sarcastic",
+      "listener_feel": "excited",
+      "beat": "snap",
+      "text": "Testing it? You almost destroyed it, bro!"
+     },
+     {
+      "who": "leo",
+      "feel": "confident",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "See? It survived! My secret recipe builds strong champions."
+     }
+    ]
+   },
+   {
+    "scene": "Leo steps back, knocking on the door frame behind the desk while Mia watches with raised eyebrows and closed lips.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "Scoreboard says my point count is officially hundred sixteen now."
+     },
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "listener_feel": "skeptical",
+      "beat": "snap",
+      "text": "Unfair! Even Dev the barista rates my meals higher than you!"
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "listener_feel": "excited",
+      "beat": "quick",
+      "text": "Leeo, he calls you Leeo and sells you cold coffee."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sits at the desk, pulling the blanket around her shoulders while looking at Leo with soft, closed-mouth affection.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "listener_feel": "amused",
+      "beat": "pause",
+      "text": "Worse than caffeine math! You ate the whole plate anyway!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "Because you made it for me, you huge dork."
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds a cup of tea at the desk, offering a warm closed-mouth smile before flinching in alarm.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "warm",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Aww, that is actually sweet. So tomorrow I make lasagna?"
+     },
+     {
+      "who": "mia",
+      "feel": "dry",
+      "listener_feel": "skeptical",
+      "beat": "snap",
+      "text": "Touch that oven and I call the real police."
+     },
+     {
+      "who": "leo",
+      "feel": "chipper",
+      "listener_feel": "neutral",
+      "beat": "quick",
+      "text": "Next time: Leo fixes Gerald the houseplant's dramatic life crisis!"
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 9,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "Fast, sharp banter with a genuinely funny punchline that perfectly captures their loving dynamic.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 9,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": true
+ },
+ {
+  "id": "fake-award-show-sigh",
+  "title": "When You Win Most Dramatic Sigh",
+  "concept": "A fake award show trophy for the loudest sigh leads to an argument about who is the real drama queen.",
+  "insight": "Every group has one friend who treats a tiny annoyance like a major life crisis.",
+  "caption": "The trophy is heavy and so is the drama.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Cozy podcast desk with heavy trophies and a steaming coffee mug. Leo holds a paper golden star while pacing the hallway.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "snap",
+      "text": "Seriously? That was literally one exhale, bro."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "One whole lungful, Leo! You literally shook the wall. Respect the craft."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a digital clock showing a time and a plastic trophy. Mia taps a clipboard angrily.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "annoyed",
+      "beat": "quick",
+      "text": "One lungful? You overthink your breathing every single morning."
+     },
+     {
+      "who": "mia",
+      "feel": "smug",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "You do it every time I sneeze. It's a whole performance."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a tea cup and a small golden trophy cup. Leo leans in close with wide eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "quick",
+      "text": "That is not crying, that is basic survival against dust!"
+     },
+     {
+      "who": "mia",
+      "feel": "cool",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "Survival of the loudest, apparently. Scoreboard says I'm at one hundred eighteen."
+     },
+     {
+      "who": "leo",
+      "feel": "stubborn",
+      "listener_feel": "skeptical",
+      "beat": "pause",
+      "text": "Wait, I am totally quiet when you sneeze."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a water bottle and an award ribbon. Mia points a finger with raised eyebrows.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "smug",
+      "beat": "snap",
+      "text": "That is a total lie and I have receipts right here."
+     },
+     {
+      "who": "leo",
+      "feel": "relaxed",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "I have no receipts, only good vibes."
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "listener_feel": "warm",
+      "beat": "snap",
+      "text": "Well, that's super convenient, your crazy little vibes."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a notepad and a shiny fake gold medal. Leo throws his hands up in defeat.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "proud",
+      "beat": "snap",
+      "text": "My vibes are always right. Just ask Gerald my plant."
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "listener_feel": "concerned",
+      "beat": "quick",
+      "text": "Your plant is literally crunchy and brown."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "He's resting! Anyway, you smell like a wet dog from the rain."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk with a dropped pen and a cardboard award ribbon. Mia holds a damp teal sweater sleeve.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "horrified",
+      "beat": "snap",
+      "text": "You are dripping water on my teal sweater. Next time: I'm keeping the trophy."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 1,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 8,
+   "relatable": 8,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 1,
+   "why": "Candidate 1 has funnier specific details like Gerald the crunchy plant and keeping the trophy at the end.",
+   "scores": {
+    "i": 1,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 8,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 2
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "ARGUMENT",
+  "improv": true
+ },
+ {
+  "id": "your-airport-applause-crime",
+  "title": "Your Airport Applause Crime",
+  "concept": "Leo and Mia argue about airplane landing etiquette and trauma responses.",
+  "insight": "Some people treat landing a commercial flight like a Broadway show.",
+  "caption": "When your best friend starts heckling the pilots.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Cozy podcast desk with big headphones; Leo leaning forward with a dramatic scowl while holding a cold coffee mug.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "annoyed",
+      "beat": "snap",
+      "text": "Why do you clap when a plane lands?"
+     },
+     {
+      "who": "mia",
+      "feel": "defensive",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "Wait, I don't. I'm literally dead inside every single day."
+     },
+     {
+      "who": "leo",
+      "feel": "smug",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "But you clapped so loudly at the airport yesterday afternoon."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk; Mia rolling her eyes dramatically while tapping a ceramic cup on the wooden desk surface.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "sarcastic",
+      "beat": "quick",
+      "text": "That is a completely different kind of clapping."
+     },
+     {
+      "who": "leo",
+      "feel": "curious",
+      "listener_feel": "curious",
+      "beat": "snap",
+      "text": "What's the other kind supposed to mean?"
+     },
+     {
+      "who": "mia",
+      "feel": "dramatic",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "The kind that means I'm faking my entire happiness."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk; Leo throwing his hands up in disbelief, knocking a small notebook across the desk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "outraged",
+      "beat": "snap",
+      "text": "Fake? You clapped with actual feeling and jazz hands!"
+     },
+     {
+      "who": "mia",
+      "feel": "calm",
+      "listener_feel": "surprised",
+      "beat": "pause",
+      "text": "That was just my deep trauma response, Leo."
+     },
+     {
+      "who": "leo",
+      "feel": "confused",
+      "listener_feel": "concerned",
+      "beat": "quick",
+      "text": "Your trauma response to landing was a standing ovation?"
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk; Mia leaning in close with a raised eyebrow, holding her tea mug with both hands.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "smug",
+      "beat": "snap",
+      "text": "For your loud cheering? Absolutely. The sad travelers? No."
+     },
+     {
+      "who": "leo",
+      "feel": "offended",
+      "listener_feel": "surprised",
+      "beat": "pause",
+      "text": "So I'm your actual emotional trauma now?"
+     },
+     {
+      "who": "mia",
+      "feel": "blunt",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "Your enthusiastic flight clapping is my personal trauma."
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk; Leo pausing mid-gesture with wide eyes, realizing what happened.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "shocked",
+      "beat": "quick",
+      "text": "Wait, did I actually start the whole thing back then?"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "You were literally heckling the poor pilots."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "I was just cheering loudly for the jet fuel!"
+     }
+    ]
+   },
+   {
+    "scene": "Cozy podcast desk; Mia shaking her head slowly with a smirk while Leo crosses his arms defiantly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "exasperated",
+      "beat": "snap",
+      "text": "That is so deeply unhinged for a Tuesday."
+     },
+     {
+      "who": "leo",
+      "feel": "proud",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "I respect the combustion and the aerodynamics!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "warm",
+      "beat": "pause",
+      "text": "You just love the fire too much."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 7,
+   "hook": 8,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 8,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It features sharp banter and a strong hook about the universally mocked habit of clapping when a plane lands.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 8,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "you",
+  "style": "v2",
+  "format": "CALLBACK",
+  "improv": true
  }
 ]
