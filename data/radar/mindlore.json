@@ -1,129 +1,129 @@
 {
  "why": [
   {
-   "title": "Why You Can\u2019t Quit Even When You Should #psychology",
-   "why": "It targets the cognitive dissonance of the 'sunk cost fallacy' with a highly relatable personal pain point, delivering massive breakout leverage on a tiny channel."
+   "title": "Never Push A Kind Person Too Far",
+   "why": "Uses a moral warning that feels urgent and relatable, tapping into fear of overstepping boundaries"
   },
   {
-   "title": "The Hypnotized Man Who Felt the Pain Anyway",
-   "why": "It uses a narrative storytelling hook based on a historical-style psychological anomaly, instantly driving curiosity through paradoxical tension."
-  },
-  {
-   "title": "6 DARK PSYCHOLOGY FACTS ABOUT MEN & WOMEN! \ud83d\ude31\ud83d\udda4 | Love & Relationship Truth",
-   "why": "It leverages high-contrast relationship dynamics and sensationalized behavioral framing to trigger rapid curiosity and high retention."
+   "title": "this lines are so deep \ud83d\ude0c|| #shorts #love #psychologyfacts",
+   "why": "Leverages curiosity through ambiguous phrasing and emotive emojis, prompting viewers to click to decode the 'deep' line"
   },
   {
    "title": "7 Signs You Have a Powerful Aura! | Psychology Facts #motivation",
-   "why": "It exploits identity-validation psychology ('Is this me?') using a rapid listicle format that encourages self-assessment and sharing."
+   "why": "Promises personal empowerment with a list format, using a bold claim and visual aura intrigue"
+  },
+  {
+   "title": "8 Psychology Facts About Friendship #psycholgyfacts #booktok #motivation",
+   "why": "Combines niche hashtag #booktok with a friendship theme, delivering bite\u2011size facts that feel shareable"
   }
  ],
  "hook_patterns": [
-  "Paradoxical case study: presenting a historical experiment where the outcome completely contradicts human logic.",
-  "Internal friction callout: asking why the viewer's brain forces them to repeat a self-defeating behavior.",
-  "Unconscious mechanism reveal: pointing out a specific physical or mental micro-habit the viewer does without realizing."
+  "Shock\u2011curiosity hook that teases a surprising fact",
+  "Numbered\u2011list promise that signals quick, digestible takeaways",
+  "Emotion\u2011driven teaser paired with emojis to boost visual appeal"
  ],
- "todays_angle": "Adapt vintage public-domain clinical case studies into fast-paced self-discovery insights about subconscious self-sabotage.",
+ "todays_angle": "Expose a counterintuitive psychology fact that flips a common relationship stereotype",
  "ideas": [
-  "The 1913 Memory Experiment That Proves Your Brain Rewrites Yesterday (Based on Hermann Ebbinghaus's classic research on memory degradation)",
-  "Why Your Subconscious Prefers Familiar Pain over Unknown Joy (Drawing from 19th-century psychoanalytic concepts on habit loops)",
-  "The 1890 William James Trick to Instantly Stop Overthinking (Translating classic principles of habit and attention into a 30-second daily protocol)"
+  "The 'Paradox of Choice' in dating: why too many options sabotage love prospects",
+  "The Spotlight Effect: why we overestimate how much others notice our flaws",
+  "The power of silence: how strategic pauses in conversation deepen intimacy"
  ],
  "avoid": [
-  "Generic 'Dark Psychology' bulleted lists with dramatic text-to-speech overlay and no historical depth.",
-  "Vague high-volume tag-soup titles targeting broad 'motivational quotes' without a specific psychological mechanism."
+  "Generic love\u2011advice listicles that lack a unique angle",
+  "Overused dark\u2011psychology clickbait without solid evidence"
  ],
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "sample": 72,
  "spikes": [
   {
-   "title": "#Motivation#thoughts#3girlshome#trending#shortfeed#subscribe#malayalam#quate#psychologyfacts#success",
-   "channel": "3Girls home",
-   "views": 144854,
-   "hours": 13,
-   "vph": 11556.5,
-   "subs": 15000,
-   "breakout": 9.7
-  },
-  {
    "title": "6 DARK PSYCHOLOGY FACTS ABOUT MEN & WOMEN! \ud83d\ude33\ud83d\udda4 | Love & Relationship Truth",
    "channel": "YOUR TUTOR CORNER",
-   "views": 163782,
-   "hours": 27,
-   "vph": 6053.6,
-   "subs": 34200,
-   "breakout": 4.8
+   "views": 174102,
+   "hours": 45,
+   "vph": 3830.9,
+   "subs": 34600,
+   "breakout": 5.0
   },
   {
-   "title": "Shoot one of the X's and your brain will create a movement that does not exist. \ud83d\udc40\u2764\ufe0f",
-   "channel": "Endless Love",
-   "views": 167202,
-   "hours": 46,
-   "vph": 3669.9,
-   "subs": 11800000,
-   "breakout": 0.0
+   "title": "Never Push A Kind Person Too Far",
+   "channel": "Human Uncovered",
+   "views": 154471,
+   "hours": 44,
+   "vph": 3514.4,
+   "subs": 613,
+   "breakout": 252.0
   },
   {
    "title": "5 Signs Someone Isn't Being Honest \ud83c\udfad #HumanBehavior",
    "channel": "MindZenX",
-   "views": 99467,
-   "hours": 28,
-   "vph": 3545.2,
-   "subs": 214000,
-   "breakout": 0.5
-  },
-  {
-   "title": "Tw\u00f3j M\u00d3ZG b\u0142aga, \u017ceby\u015b to odstawi\u0142",
-   "channel": "Marek Skoczylas",
-   "views": 67358,
-   "hours": 33,
-   "vph": 2053.1,
-   "subs": 1280000,
-   "breakout": 0.1
-  },
-  {
-   "title": "Why You Can\u2019t Quit Even When You Should #psychology",
-   "channel": "The inner shift",
-   "views": 84590,
+   "views": 124936,
    "hours": 46,
-   "vph": 1846.6,
-   "subs": 217,
-   "breakout": 389.8
+   "vph": 2689.8,
+   "subs": 215000,
+   "breakout": 0.6
   },
   {
-   "title": "Caelus, how does your brain even work? #HonkaiStarRail #AeonAha #Akivili #StarRail #Caelus",
-   "channel": "cuuphainon",
-   "views": 8005,
-   "hours": 5,
-   "vph": 1598.1,
-   "subs": 9710,
-   "breakout": 0.8
+   "title": "Accountability is Coming Elon #psychology #politics #lucasbean #trump #elonmusk",
+   "channel": "Lucas Bean",
+   "views": 45920,
+   "hours": 19,
+   "vph": 2392.0,
+   "subs": 108000,
+   "breakout": 0.4
   },
   {
-   "title": "Things Your Brain Does That You Never Notice #notice #brain  #Quotes #Shorts #Foryou #Success #Facts",
-   "channel": "Mind Psychology Valentin",
-   "views": 53454,
-   "hours": 34,
-   "vph": 1569.5,
-   "subs": 24200,
-   "breakout": 2.2
+   "title": "9 Interesting Facts About Men That Will Surprise You! \ud83e\udde0\ud83d\udd25",
+   "channel": "Mind Decode",
+   "views": 41305,
+   "hours": 18,
+   "vph": 2250.9,
+   "subs": 7180,
+   "breakout": 5.8
   },
   {
-   "title": "The Hypnotized Man Who Felt the Pain Anyway",
-   "channel": "Silent Psychology",
-   "views": 15098,
+   "title": "One Day, You'll Miss Your School Life More Than You Think \ud83e\udd14\ud83e\udde0 #shorts #shortsfeed",
+   "channel": "PSYVEXS",
+   "views": 43581,
+   "hours": 21,
+   "vph": 2079.8,
+   "subs": 97800,
+   "breakout": 0.4
+  },
+  {
+   "title": "5 Signs Someone Likes You But Won't Say It... #shorts #psychologyfacts",
+   "channel": "HeartSync",
+   "views": 48419,
+   "hours": 23,
+   "vph": 2064.5,
+   "subs": 27600,
+   "breakout": 1.8
+  },
+  {
+   "title": "7 Signs You Have a Powerful Aura! | Psychology Facts #motivation",
+   "channel": "Psychological Clicks ",
+   "views": 62736,
+   "hours": 32,
+   "vph": 1939.0,
+   "subs": 612,
+   "breakout": 102.5
+  },
+  {
+   "title": "this lines are so deep \ud83d\ude0c|| #shorts #love #psychologyfacts",
+   "channel": "\ud835\ude1a\ud835\ude38\ud835\ude22\ud835\ude2f\ud835\ude39\ud835\ude26\ud835\ude25\ud835\ude2a\ud835\ude35\ud835\ude34 ",
+   "views": 62805,
    "hours": 47,
-   "vph": 318.1,
-   "subs": 159,
-   "breakout": 75.5
+   "vph": 1327.6,
+   "subs": 30,
+   "breakout": 314.0
   },
   {
-   "title": "Knowledge That Can Change Your Life | Facts \u2022 Motivation #shorts #motivation #newtrend  #lifelessons",
-   "channel": "Motiv8 Mind",
-   "views": 44466,
-   "hours": 30,
-   "vph": 1479.3,
-   "subs": 853,
-   "breakout": 52.1
+   "title": "8 Psychology Facts About Friendship  #psycholgyfacts #booktok #motivation",
+   "channel": "Adeel gaming",
+   "views": 17052,
+   "hours": 20,
+   "vph": 851.1,
+   "subs": 103,
+   "breakout": 85.3
   }
  ]
 }
