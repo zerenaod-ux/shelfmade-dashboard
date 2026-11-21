@@ -1,8 +1,116 @@
 {
  "brand": "mindlore",
- "collected": "2026-11-20T19:17:02Z",
+ "collected": "2026-11-21T18:17:17Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Your Brain Hums Before Plot Twists\n\nYou feel a low hum before a surprise.\n\nEvidence: Edward Gibson at MIT ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-21T06:04:19.035Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Teasing Makes Rats Giggle\n\nYou tickle your pet to see them squirm.\n\nEvidence: Jaak Panksepp and Jeffrey Bu",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-21T06:04:18.702Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Your Breathing Changes\n\nYou hold your breath when a story takes an unexpected turn.\n\nEvidence: Herbert Ben",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-21T02:51:31.769Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Your Brain Hums Before Plot Twists\n\nYou feel a low hum before a surprise.\n\nEvidence: Edward Gibson at MIT ",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-21T02:51:31.176Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Your Breathing Changes\n\nYou hold your breath when a story takes an unexpected turn.\n\nEvidence: Herbert Ben",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-21T02:51:30.312Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How Animals Show Happiness\n\nYou feel a lift when you see animals having fun.\n\nEvidence: University of Oxford r",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-20T20:46:21.930Z"
+  },
   {
    "platform": "instagram",
    "status": "scheduled",
@@ -329,9 +437,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DgA1OH0Cnha/",
+   "sent": "2026-11-21T18:05:57.537Z",
    "text": "Why Your Jaw Drops on News\n\nYou drop your jaw when you hear big news.\n\nEvidence: Paul Ekman (1999, Stanford/Wo",
    "views": null,
    "likes": null,
@@ -363,9 +471,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/ZxFKXhCEx_c",
+   "sent": "2026-11-21T18:03:30.522Z",
    "text": "Why Dolphins Flip When Happy\n\nYou feel a rush when you hear a catchy tune.\n\nEvidence: Dr. Diana Reiss (2011, E",
    "views": 0,
    "likes": 0,
@@ -377,15 +485,15 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T05:10:38.746Z"
+   "updated": "2026-11-21T18:06:20.652Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7710461983736270093",
+   "sent": "2026-11-21T03:31:14.899Z",
    "text": "Why Kids Laugh at Story Twists \ud83d\ude04\n\nYou squint when a story ends unexpectedly.\n\nEvidence: Psychologists (1970s, ",
-   "views": 0,
+   "views": 56,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -399,23 +507,34 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T01:20:03.089Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Df_HGvoDCRH/",
+   "sent": "2026-11-21T02:03:15.849Z",
    "text": "Why Kids Laugh at Story Twists \ud83d\ude04\n\nYou squint when a story ends unexpectedly.\n\nEvidence: Psychologists (1970s, ",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-17T23:05:46.202Z"
+   "views": 3,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
+   "status": "error",
    "url": null,
    "sent": null,
    "text": "Why Your Brain Predicts Plots\n\nYou predict the ending of every story you hear.\n\nEvidence: University of Illino",
@@ -433,11 +552,11 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7710408596437077262",
+   "sent": "2026-11-21T00:04:36.771Z",
    "text": "Why Your Face Pauses On Shock \ud83d\ude32\n\nYou freeze your face when you hear shocking news.\n\nEvidence: Paul Ekman (1972",
-   "views": 0,
+   "views": 51,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -451,23 +570,34 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-17T20:05:08.271Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/Df-rvLnErUp/",
+   "sent": "2026-11-20T22:04:35.324Z",
    "text": "Why Your Face Pauses On Shock \ud83d\ude32\n\nYou freeze your face when you hear shocking news.\n\nEvidence: Paul Ekman (1972",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-17T20:05:07.826Z"
+   "views": 9,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
+   "status": "error",
    "url": null,
    "sent": null,
    "text": "Why Your Jaw Drops on News\n\nYou drop your jaw when you hear big news.\n\nEvidence: Paul Ekman (1999, Stanford/Wo",
@@ -485,11 +615,11 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@mindlore.daily/video/7710347223522921741",
+   "sent": "2026-11-20T20:06:10.281Z",
    "text": "Why Play Shows Your Joy \ud83d\ude04\n\nYou laugh when a dog chases a ball.\n\nEvidence: Jaak Panksepp (1998, University of M",
-   "views": 0,
+   "views": 29,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -503,7 +633,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-17T03:31:38.877Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "tiktok",
@@ -511,7 +641,7 @@
    "url": "https://tiktok.com/@mindlore.daily/video/7710090891171581197",
    "sent": "2026-11-20T03:32:26.355Z",
    "text": "How Play Circuits Trigger Animal Joy \ud83d\ude04\n\nYou think play is just a foolish pastime for young animals.\n\nEvidence:",
-   "views": 15,
+   "views": 28,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -525,7 +655,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -533,11 +663,22 @@
    "url": "https://www.instagram.com/reel/Df-QlUZjj2w/",
    "sent": "2026-11-20T18:06:49.143Z",
    "text": "Why Play Shows Your Joy \ud83d\ude04\n\nYou laugh when a dog chases a ball.\n\nEvidence: Jaak Panksepp (1998, University of M",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-17T03:31:37.980Z"
+   "views": 2,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -545,9 +686,9 @@
    "url": "https://www.youtube.com/shorts/45VYT07OEHo",
    "sent": "2026-11-20T18:05:04.494Z",
    "text": "Why Kids Laugh at Story Twists \ud83d\ude04\n\nYou squint when a story ends unexpectedly.\n\nEvidence: Psychologists (1970s, ",
-   "views": 0,
+   "views": 1,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -555,7 +696,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T18:07:35.591Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -563,7 +704,7 @@
    "url": "https://tiktok.com/@mindlore.daily/video/7710037564375190798",
    "sent": "2026-11-20T00:04:30.375Z",
    "text": "How Mammal Play Signals Pure Joy \ud83d\ude04\n\nYou feel a sudden urge to roughhouse with your pet.\n\nEvidence: Jaak Pankse",
-   "views": 37,
+   "views": 51,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -577,7 +718,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "youtube",
@@ -585,9 +726,9 @@
    "url": "https://www.youtube.com/shorts/3R9qrEuApWU",
    "sent": "2026-11-20T03:01:49.136Z",
    "text": "Why Your Face Pauses On Shock \ud83d\ude32\n\nYou freeze your face when you hear shocking news.\n\nEvidence: Paul Ekman (1972",
-   "views": 0,
+   "views": 7,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -595,7 +736,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T03:04:18.773Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "instagram",
@@ -618,7 +759,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -644,7 +785,7 @@
    "url": "https://www.instagram.com/reel/Df8HAo_Ae9J/",
    "sent": "2026-11-19T22:04:38.354Z",
    "text": "How Mammal Play Signals Pure Joy \ud83d\ude04\n\nYou feel a sudden urge to roughhouse with your pet.\n\nEvidence: Jaak Pankse",
-   "views": 5,
+   "views": 6,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -659,7 +800,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -685,7 +826,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7709975818818030861?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-19T20:13:51.663Z",
    "text": "Why Unexpected Story Endings Freeze Brains You freeze when a story takes a sudden twist. Evidence: Uri Hasson ",
-   "views": 37,
+   "views": 41,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -699,7 +840,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "tiktok",
@@ -707,7 +848,7 @@
    "url": "https://www.tiktok.com/@mindlore.daily/video/7709719723881008398?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-19T03:32:04.130Z",
    "text": "How Unexpected News Freezes Facial Muscles You widen your eyes during sudden news. Evidence: Paul Ekman (1965,",
-   "views": 83,
+   "views": 84,
    "likes": 1,
    "comments": 0,
    "metrics": [
@@ -721,7 +862,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -744,7 +885,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "instagram",
@@ -767,7 +908,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -785,7 +926,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "instagram",
@@ -808,7 +949,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "instagram",
@@ -831,7 +972,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "tiktok",
@@ -853,7 +994,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "youtube",
@@ -861,7 +1002,7 @@
    "url": "https://www.youtube.com/shorts/gq3Q2B0bnQg",
    "sent": "2026-11-18T23:03:06.965Z",
    "text": "Why Unexpected Story Endings Freeze Brains\n\nYou freeze when a story takes a sudden twist.\n\nEvidence: Uri Hasso",
-   "views": 4,
+   "views": 8,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -871,7 +1012,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -893,7 +1034,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -916,7 +1057,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "tiktok",
@@ -938,7 +1079,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "youtube",
@@ -946,7 +1087,7 @@
    "url": "https://www.youtube.com/shorts/h4yc9t1OdDs",
    "sent": "2026-11-18T18:04:53.452Z",
    "text": "How Unexpected News Freezes Facial Muscles\n\nYou widen your eyes during sudden news.\n\nEvidence: Paul Ekman (196",
-   "views": 8,
+   "views": 10,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -956,7 +1097,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "youtube",
@@ -964,7 +1105,7 @@
    "url": "https://www.youtube.com/shorts/5_T6g4xWs-4",
    "sent": "2026-11-18T03:01:39.166Z",
    "text": "Why Animals Play Shows Joy\n\nYou spend most of your day scrolling on your phone.\n\nEvidence: Jaak Panksepp (2001",
-   "views": 14,
+   "views": 11,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -974,7 +1115,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "instagram",
@@ -997,7 +1138,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "tiktok",
@@ -1019,7 +1160,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "youtube",
@@ -1027,7 +1168,7 @@
    "url": "https://www.youtube.com/shorts/zqBNuIFyTpU",
    "sent": "2026-11-17T23:03:42.927Z",
    "text": "Why Your Face Freezes On Surprise\n\nYou freeze your face when you hear shocking news.\n\nEvidence: Paul Ekman (19",
-   "views": 15,
+   "views": 17,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1037,7 +1178,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "instagram",
@@ -1060,7 +1201,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "tiktok",
@@ -1082,7 +1223,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -1105,7 +1246,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -1123,7 +1264,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1145,7 +1286,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -1168,7 +1309,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -1186,7 +1327,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1208,7 +1349,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "youtube",
@@ -1226,7 +1367,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "instagram",
@@ -1249,7 +1390,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "tiktok",
@@ -1271,7 +1412,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "youtube",
@@ -1289,7 +1430,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1311,7 +1452,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -1334,7 +1475,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "instagram",
@@ -1357,7 +1498,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -1375,7 +1516,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1397,7 +1538,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -1420,7 +1561,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -1438,7 +1579,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1460,7 +1601,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -1490,7 +1631,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1512,7 +1653,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "tiktok",
@@ -1534,7 +1675,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -1557,7 +1698,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "instagram",
@@ -1580,7 +1721,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -1598,7 +1739,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "youtube",
@@ -1616,7 +1757,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1638,7 +1779,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "tiktok",
@@ -1660,7 +1801,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "instagram",
@@ -1683,7 +1824,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -1701,7 +1842,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "youtube",
@@ -1709,7 +1850,7 @@
    "url": "https://www.youtube.com/shorts/6tz6Hvcipk0",
    "sent": "2026-11-14T18:02:38.792Z",
    "text": "Your Kids Expect Shock\n\nYou think kids love happy endings.\n\nEvidence: Psychologists at the University of Chica",
-   "views": 1021,
+   "views": 1023,
    "likes": 18,
    "comments": 1,
    "metrics": [
@@ -1719,7 +1860,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "youtube",
@@ -1737,7 +1878,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.997Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "youtube",
@@ -1755,7 +1896,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.997Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "instagram",
@@ -1778,7 +1919,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:18:05.325Z"
+   "updated": "2026-11-21T13:18:14.309Z"
   },
   {
    "platform": "youtube",
@@ -1796,7 +1937,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   },
   {
    "platform": "tiktok",
@@ -1818,7 +1959,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T13:55:51.360Z"
   },
   {
    "platform": "youtube",
@@ -1836,132 +1977,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-20T00:37:47.996Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfsqI-kj7_m/",
-   "sent": "2026-11-13T22:04:10.055Z",
-   "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
-   "views": 7,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-20T14:18:05.325Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/S0Ee2i5ao7o",
-   "sent": "2026-11-13T03:00:47.237Z",
-   "text": "Your Brain Plays\n\nYou think you only laugh when you're happy.\n\nEvidence: Jaak Panksepp (1978, University of Ma",
-   "views": 35,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-20T00:37:47.996Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7707749060496674062?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-13T20:04:00.740Z",
-   "text": "Why Faces Freeze On Sudden News You raise your eyebrows when bad news hits. Evidence: Joshua Susskind (2008, U",
-   "views": 85,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-20T14:54:55.277Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/Nw9hdA-AyGs",
-   "sent": "2026-11-12T23:02:04.314Z",
-   "text": "Why Faces Freeze On Sudden News\n\nYou raise your eyebrows when bad news hits.\n\nEvidence: Joshua Susskind (2008,",
-   "views": 74,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-20T00:37:47.996Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7707493217834470670?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-13T03:31:21.903Z",
-   "text": "Your Screen Hours You spend most of your day glued to a screen. Evidence: Richard Lee (1960s, Kalahari !Kung):",
-   "views": 94,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-20T14:54:55.277Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@mindlore.daily/video/7707439731474320654?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-13T00:03:41.433Z",
-   "text": "Why Animals Play Games You think play is just a childish waste of time. Evidence: Gordon Burghardt (2015, Univ",
-   "views": 93,
-   "likes": 2,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-20T14:54:55.277Z"
+   "updated": "2026-11-21T01:52:08.149Z"
   }
  ]
 }
