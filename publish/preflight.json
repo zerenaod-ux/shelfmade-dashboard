@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T20:41:24+00:00",
+ "at": "2026-11-21T19:44:50+00:00",
  "ready": "bad",
  "checks": [
   {
@@ -10,17 +10,17 @@
   {
    "name": "Jobs",
    "level": "warn",
-   "text": "last run failed: blender-test, deps, doodles, mindlore-live-redo, shelfmade-story-short, watchdog"
+   "text": "last run failed: bio-page, blender-test, mindlore-live-redo, shelfmade-story-short, watchdog"
   },
   {
    "name": "Alerts",
    "level": "bad",
-   "text": "3 open: ALERT: system problem; ALERT: Kaggle GPU failing (Doodles pause; ALERT: Doodles using too much free GPU"
+   "text": "6 open: ALERT: system problem; ALERT: a free service is failing; ALERT: Kaggle GPU failing or silent"
   },
   {
    "name": "Keys",
    "level": "ok",
-   "text": "weekly key test success, 3 days ago"
+   "text": "weekly key test success, 4 days ago"
   },
   {
    "name": "Doodles stories",
@@ -35,7 +35,7 @@
   {
    "name": "Waiting for review",
    "level": "ok",
-   "text": "1 videos open (autopilot clears them when ON)"
+   "text": "0 videos open (autopilot clears them when ON)"
   }
  ]
 }
