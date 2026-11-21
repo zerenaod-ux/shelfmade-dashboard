@@ -1,26 +1,26 @@
 {
- "at": "2026-11-20T21:52:13+00:00",
+ "at": "2026-11-21T18:19:48+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 0 h ago"
+   "text": "updated 3 h ago"
   },
   {
    "name": "Doodles daily run",
    "ok": false,
-   "text": "last: failure 2026-11-20T16:20"
+   "text": "last: failure 2026-11-21T15:13"
   },
   {
    "name": "Best-of-3 judge",
    "ok": true,
-   "text": "20 stories carry a judge note"
+   "text": "23 stories carry a judge note"
   },
   {
    "name": "Kaggle GPU",
    "ok": false,
-   "text": "ok=False, checked 2 h ago"
+   "text": "ok=False, checked 0 h ago"
   },
   {
    "name": "Approved videos reach the queue",
@@ -35,7 +35,7 @@
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-20T13:37"
+   "text": "last: success 2026-11-21T13:01"
   },
   {
    "name": "Safety guard",
@@ -60,12 +60,12 @@
   {
    "name": "Playlist flywheel",
    "ok": true,
-   "text": "ok (shelfmade: added 8 video(s); mindlore: added 6 video(s); doodles: added 3 video(s))"
+   "text": "ok (shelfmade: added 8 video(s); mindlore: added 7 video(s); doodles: added 2 video(s))"
   },
   {
    "name": "Retitle campaign",
    "ok": true,
-   "text": "last: success 2026-11-20"
+   "text": "last: success 2026-11-21"
   },
   {
    "name": "Access check (logins)",
@@ -80,27 +80,27 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 2 h ago"
+   "text": "newest public video 0 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 2 h ago"
+   "text": "newest public video 0 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 2 h ago"
+   "text": "newest public video 0 h ago"
   },
   {
    "name": "Service probes",
-   "ok": true,
-   "text": "all probes fine"
+   "ok": false,
+   "text": "Kaggle GPU (Doodles) down 2x"
   },
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "49.7 h used in 7 days, stories/day cap 2"
+   "text": "48.8 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
