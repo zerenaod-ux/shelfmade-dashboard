@@ -93,7 +93,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 20,
-   "avgPercent": 39.62,
+   "avgPercent": 40.65,
    "subsGained": 0
   },
   {
@@ -271,8 +271,8 @@
    "views": 58,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 55,
-   "avgPercent": 61.419999999999995,
+   "avgSeconds": 47,
+   "avgPercent": 52.39,
    "subsGained": 0
   },
   {
@@ -660,6 +660,19 @@
    "comments": 0,
    "avgSeconds": 33,
    "avgPercent": 66.71,
+   "subsGained": 0
+  },
+  {
+   "id": "vf5N9t4z-x0",
+   "title": "The part of Psychology nobody mentions.",
+   "published": "2026-11-05T03:01:46Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 25,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 20,
+   "avgPercent": 32.74,
    "subsGained": 0
   },
   {
@@ -1351,8 +1364,8 @@
    "views": 10,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 5,
-   "avgPercent": 9.07,
+   "avgSeconds": 3,
+   "avgPercent": 5.95,
    "subsGained": 0
   },
   {
@@ -1364,19 +1377,9 @@
    "views": 10,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 23,
-   "avgPercent": 47.18,
+   "avgSeconds": 21,
+   "avgPercent": 42.12,
    "subsGained": 0
-  },
-  {
-   "id": "3R9qrEuApWU",
-   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
-   "published": "2026-11-20T03:02:14Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 9,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "84PQTiIIbHU",
@@ -1413,6 +1416,19 @@
    "views": 9,
    "likes": 0,
    "comments": 0
+  },
+  {
+   "id": "3R9qrEuApWU",
+   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
+   "published": "2026-11-20T03:02:14Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 18,
+   "avgPercent": 30.579999999999995,
+   "subsGained": 0
   },
   {
    "id": "gq3Q2B0bnQg",
@@ -1662,6 +1678,16 @@
    "subsGained": 0
   },
   {
+   "id": "ZxFKXhCEx_c",
+   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
+   "published": "2026-11-21T18:03:51Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "o3yiUpFfU8c",
    "title": "Why does your mind amplify group opinions? | Gustave Le Bon",
    "published": "2026-11-11T00:00:30Z",
@@ -1774,8 +1800,8 @@
    "views": 3,
    "likes": 1,
    "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 0.66,
+   "avgSeconds": 4,
+   "avgPercent": 0.93,
    "subsGained": 0
   },
   {
@@ -1959,6 +1985,16 @@
    "comments": 0
   },
   {
+   "id": "jJFrEF7iTvA",
+   "title": "Why do you make bad split second decisions under pressure? | M\u00fcnsterberg",
+   "published": "2026-11-21T19:16:36Z",
+   "duration": "PT7M13S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "P8P40XX9vbk",
    "title": "Why do you jump to conclusions so quickly? | John Dewey",
    "published": "2026-11-07T21:51:56Z",
@@ -1979,20 +2015,10 @@
    "comments": 0
   },
   {
-   "id": "Ylxy6FpM934",
-   "title": "Do you hold contradictory beliefs at once? | Gustave Le Bon",
-   "published": "2026-11-06T06:48:56Z",
-   "duration": "PT8M29S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "pnp7OZO0fJA",
-   "title": "Why we notice so little of what is in front of us | William James",
-   "published": "2026-11-06T06:33:52Z",
-   "duration": "PT8M13S",
+   "id": "D2VOAPsZqKw",
+   "title": "Can a crowd be better than the people in it? | Gustave Le Bon",
+   "published": "2026-11-04T20:45:23Z",
+   "duration": "PT7M45S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
