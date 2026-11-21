@@ -23,20 +23,20 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 9,
-   "last": 49
+   "uses": 10,
+   "last": 55
   },
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 9,
-   "last": 50
+   "uses": 10,
+   "last": 56
   },
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 9,
-   "last": 51
+   "uses": 10,
+   "last": 57
   },
   {
    "id": "greg",
@@ -693,6 +693,42 @@
    "milestone": false,
    "season": 1,
    "date": "2026-11-20"
+  },
+  {
+   "n": 47,
+   "kind": "short",
+   "id": "your-cooking-rating-crime",
+   "title": "Your Cooking Rating Crime",
+   "concept": "Leo acts like a detective investigating why Mia rated his home cooking so low in the family poll.",
+   "gag": "battery",
+   "callback": true,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-21"
+  },
+  {
+   "n": 48,
+   "kind": "short",
+   "id": "fake-award-show-sigh",
+   "title": "When You Win Most Dramatic Sigh",
+   "concept": "A fake award show trophy for the loudest sigh leads to an argument about who is the real drama queen.",
+   "gag": "minute",
+   "callback": true,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-21"
+  },
+  {
+   "n": 49,
+   "kind": "short",
+   "id": "your-airport-applause-crime",
+   "title": "Your Airport Applause Crime",
+   "concept": "Leo and Mia argue about airplane landing etiquette and trauma responses.",
+   "gag": "gerald",
+   "callback": false,
+   "milestone": false,
+   "season": 5,
+   "date": "2026-11-21"
   }
  ]
 }
