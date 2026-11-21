@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261121-b0de8",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Eyebrows Twitch On Surprises 🤔",
+ "hook": "You raise your eyebrows when you hear unexpected news.",
+ "thumbnail_headline": "EYEBROW SURPRISE SIGNAL",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You raise your eyebrows when you hear unexpected news. Your eyebrow lift is actually a social signal discovered decades ago. In 1975, Paul Ekman and Wallace Friesen observed about 30 percent of participants raise eyebrows at surprising statements. The result? It signals attention to others. That cue appears across cultures, not just Western faces. Later, a 2010 Cambridge study of five societies found about 70 percent showed the same eyebrow raise. This pattern is called the surprise eyebrow effect in facial feedback theory. Researchers also saw the same lift in children during surprise games. So why do we assume only the brain reacts? The face also broadcasts the surprise instantly. What does this mean for daily talk? Your peers read your eyebrows before you speak. Does this help you read emotions faster? Yes, the eyebrow cue speeds social understanding. That's it. Next time a headline jolts you, notice the quick lift. Your next reaction can become a subtle communication tool. Remember, your brain and face work together, so you raise your eyebrows"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 30 percent of participants raise eyebrows at surprising statements",
+   "who": "Paul Ekman and Wallace Friesen",
+   "year": "1975",
+   "place": "University of California, San Francisco"
+  },
+  {
+   "claim": "about 70 percent of participants across five societies showed the same eyebrow raise",
+   "who": "Cambridge University researchers",
+   "year": "2010",
+   "place": "University of Cambridge"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

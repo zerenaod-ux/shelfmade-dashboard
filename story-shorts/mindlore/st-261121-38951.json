@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261121-38951",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Raven Somersaults Mean Deep Trust 🦅",
+ "hook": "You spin around when you celebrate a victory.",
+ "thumbnail_headline": "RAVENS PLAY HARD",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spin around when you celebrate a victory. Wild ravens actually perform aerial acrobatics purely for the fun of it. In 2014, researcher Bernd Heinrich observed about 20 wild ravens flipping upside down in Maine. Why do wild birds risk falling just to mess around? They do it to build social bonds and show zero fear around friends. The result? It turns out this behavior is not limited to one forest. Studies across Europe found identical barrel rolls in wild crow families, a phenomenon biologists call play signaling. So why do we assume animals only move to hunt or survive? Nature prioritizes pure pleasure to test motor skills and strengthen alliances. That's it. Animals use voluntary play to master their bodies and signal peace. So next time you dance during a happy moment, remember you spin around when you celebrate."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Wild ravens engage in object play and acrobatic aerial flips to build social trust and refine motor skills.",
+   "who": "Bernd Heinrich",
+   "year": "2014",
+   "place": "Maine"
+  },
+  {
+   "claim": "Corvid social play through flight acrobatics functions as play signaling across multiple populations.",
+   "who": "University of Vienna researchers",
+   "year": "2011",
+   "place": "Europe"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": ""
+}

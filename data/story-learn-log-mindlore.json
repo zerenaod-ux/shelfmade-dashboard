@@ -1880,6 +1880,91 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261121-38951",
+   "look": "live-demo",
+   "title": "Why Raven Somersaults Mean Deep Trust \ud83e\udd85",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "before_after",
+    "chart",
+    "chat",
+    "checklist",
+    "countdown",
+    "counter",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "quote",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261121-b0de8",
+   "look": "live-demo",
+   "title": "Why Your Eyebrows Twitch On Surprises \ud83e\udd14",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "chat",
+    "checklist",
+    "clock",
+    "counter",
+    "flow",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "timeline",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261121-b36e2",
+   "look": "live-demo",
+   "title": "Why Your Stomach Reacts To Twists \ud83d\ude32",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "crowd",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "search",
+    "timeline",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
