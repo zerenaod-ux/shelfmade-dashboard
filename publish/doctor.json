@@ -4,7 +4,8 @@
   "mindlore-live-redo": 1,
   "blender-test": 2,
   "scene-factory": 1,
-  "shelfmade-story-short": 2
+  "shelfmade-story-short": 2,
+  "doodles": 1
  },
  "pending": [],
  "log": [
@@ -183,9 +184,13 @@
   {
    "t": "11-21 19:09Z",
    "msg": "doodles: API quota/rate limit: resets by itself (no change needed)"
+  },
+  {
+   "t": "11-21 19:44Z",
+   "msg": "doodles: no safe automatic fix found"
   }
  ],
- "at": "2026-11-21T19:09:47Z",
+ "at": "2026-11-21T19:44:52Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
