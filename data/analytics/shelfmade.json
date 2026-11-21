@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "10",
- "collected": "2026-11-20",
+ "collected": "2026-11-21",
  "note": "",
  "videos": [
   {
@@ -131,8 +131,8 @@
    "views": 63,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 24.67,
+   "avgSeconds": 16,
+   "avgPercent": 22.72,
    "subsGained": 0
   },
   {
@@ -669,6 +669,16 @@
    "subsGained": 0
   },
   {
+   "id": "j-8zUPTf8LU",
+   "title": "One line in Prince hits hard.",
+   "published": "2026-11-19T18:06:35Z",
+   "duration": "PT1M26S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "QHacncwEVO4",
    "title": "Now a prig is a pert fellow who gives himself airs of superior wisdom",
    "published": "2026-11-01T23:02:04Z",
@@ -810,16 +820,6 @@
    "avgSeconds": 32,
    "avgPercent": 6.25,
    "subsGained": 0
-  },
-  {
-   "id": "j-8zUPTf8LU",
-   "title": "One line in Prince hits hard.",
-   "published": "2026-11-19T18:06:35Z",
-   "duration": "PT1M26S",
-   "privacy": "public",
-   "views": 12,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -1312,8 +1312,8 @@
    "views": 4,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 1,
-   "avgPercent": 4.27,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -1591,6 +1591,16 @@
    "comments": 0
   },
   {
+   "id": "NFCFFiU0_hw",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-20T18:06:38Z",
+   "duration": "PT1M3S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "cPmS7p3wuaY",
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-13T00:00:09Z",
@@ -1771,7 +1781,20 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 0
+   "comments": 1
+  },
+  {
+   "id": "sWMRO2gaXS8",
+   "title": "Nietzsche had a warning for you.",
+   "published": "2026-11-18T00:00:05Z",
+   "duration": "PT6M52S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "ArV4A7SljL8",
@@ -2053,21 +2076,21 @@
    "comments": 0
   },
   {
-   "id": "a7ehg8GKMJ8",
-   "title": "What happens when you run directly toward your biggest problems instead of hiding?",
-   "published": "2026-11-20T20:00:10Z",
-   "duration": "PT7M2S",
-   "privacy": "private",
+   "id": "XHMYjrKWahc",
+   "title": "How Chesterfield Judges Your Posture \ud83e\udd28",
+   "published": "2026-11-21T00:00:39Z",
+   "duration": "PT7M18S",
+   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0
   },
   {
-   "id": "NFCFFiU0_hw",
-   "title": "Nobody warns you about Acres of Diamonds.",
-   "published": "2026-11-20T18:06:38Z",
-   "duration": "PT1M3S",
-   "privacy": "public",
+   "id": "a7ehg8GKMJ8",
+   "title": "What happens when you run directly toward your biggest problems instead of hiding?",
+   "published": "2026-11-20T20:00:10Z",
+   "duration": "PT7M2S",
+   "privacy": "private",
    "views": 0,
    "likes": 0,
    "comments": 0
@@ -2123,33 +2146,10 @@
    "comments": 0
   },
   {
-   "id": "sWMRO2gaXS8",
-   "title": "Nietzsche had a warning for you.",
-   "published": "2026-11-18T00:00:05Z",
-   "duration": "PT6M52S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "TXgCTuFvgYA",
    "title": "Why does Conduct of Life still matter?",
    "published": "2026-11-16T22:26:54Z",
    "duration": "PT6M56S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "XHMYjrKWahc",
-   "title": "How Chesterfield Judges Your Posture \ud83e\udd28",
-   "published": "2026-11-16T19:46:33Z",
-   "duration": "PT7M18S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

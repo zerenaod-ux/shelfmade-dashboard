@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-20",
+ "collected": "2026-11-21",
  "note": "",
  "videos": [
   {
@@ -370,6 +370,16 @@
    "subsGained": 0
   },
   {
+   "id": "4-5dZuVCWN0",
+   "title": "Your Fake Award",
+   "published": "2026-11-20T03:02:02Z",
+   "duration": "PT32S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "oJkJkxlRaLE",
    "title": "The Phantom Ping Trap | Leo & Mia #13",
    "published": "2026-11-13T18:04:42Z",
@@ -513,6 +523,26 @@
    "subsGained": 0
   },
   {
+   "id": "-hJWONk4WVs",
+   "title": "How to Fake Meeting Nods \ud83e\udd25 | Leo & Mia",
+   "published": "2026-11-21T03:02:04Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "SHRB6zbL4YQ",
+   "title": "How to Delete Digital Clutter \ud83e\udd16 | Leo & Mia",
+   "published": "2026-11-21T00:00:03Z",
+   "duration": "PT3M23S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
    "id": "FXhd_ptBx6o",
    "title": "How Overthinking Messes Up Interviews \ud83d\ude30 | Leo & Mia",
    "published": "2026-11-18T00:00:08Z",
@@ -643,21 +673,11 @@
    "subsGained": 0
   },
   {
-   "id": "SHRB6zbL4YQ",
-   "title": "How to Delete Digital Clutter \ud83e\udd16 | Leo & Mia",
-   "published": "2026-11-20T13:57:00Z",
-   "duration": "PT3M23S",
+   "id": "9U6MGt1-tWk",
+   "title": "How A Shortcut Turned Muddy \ud83d\ude05 | Leo & Mia",
+   "published": "2026-11-21T03:50:32Z",
+   "duration": "PT3M11S",
    "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "4-5dZuVCWN0",
-   "title": "Your Fake Award",
-   "published": "2026-11-20T03:02:02Z",
-   "duration": "PT32S",
-   "privacy": "public",
    "views": 0,
    "likes": 0,
    "comments": 0
