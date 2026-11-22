@@ -315,10 +315,43 @@ function brandCard(b,hist,an){
   if(vids.length){vids.sort(function(x,y){return (y.views||0)-(x.views||0)});var v=vids[0];c.appendChild(el('p','muted','Best this week: “'+(v.title||'').slice(0,60)+'” ('+nf(v.views)+' views)'))}
   return c}
 
+
+/* Video queue: what is waiting for review, booked to post, and approved but not booked yet, per system */
+function showQueue(b){
+  var old=document.getElementById('queue-sheet');if(old)old.remove();
+  var sheet=el('div','');sheet.id='queue-sheet';sheet.style.cssText='position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center';
+  var box=el('div','card');box.style.cssText='width:100%;max-width:560px;max-height:86vh;overflow:auto;border-radius:18px 18px 0 0;margin:0;padding:16px 16px 28px';
+  var top=el('div','row');top.appendChild(el('h3','',b.n+' · video queue'));var x=el('button','btnline','Close');x.type='button';x.onclick=function(){sheet.remove()};top.appendChild(x);box.appendChild(top);
+  var body=el('div','');body.appendChild(el('p','muted','Loading…'));box.appendChild(body);sheet.appendChild(box);sheet.onclick=function(e){if(e.target===sheet)sheet.remove()};document.body.appendChild(sheet);
+  function section(title,rows,empty){body.appendChild(el('p','lab',title));if(!rows.length){body.appendChild(el('p','muted',empty));return}rows.slice(0,40).forEach(function(r){var d=el('div','row');d.style.cssText='gap:8px;padding:6px 0;border-top:1px solid var(--line)';d.appendChild(el('span','',r[0]));d.appendChild(el('span','muted',r[1]));body.appendChild(d)});if(rows.length>40)body.appendChild(el('p','muted','…and '+(rows.length-40)+' more'))}
+  var PLN={youtube:'YouTube',tiktok:'TikTok',instagram:'Instagram'};
+  function pname(id){var m=/(youtube|tiktok|instagram)/.exec(id||'');return m?PLN[m[1]]:''}
+  function review(n){return n==null?'Review count unavailable':n+' waiting for your review (open Review videos)'}
+  var sum=null;try{sum=StudioPublishing.reviewSummary(reviewCoreRows,reviewCeRows)}catch(e){}
+  if(b.ce){
+    Promise.all([jget(CE_RAW+'data/scenes/publishing-status.json'),jget(CE_RAW+'data/scenes/videos.json')]).then(function(d){
+      body.textContent='';var rep=d[0];body.appendChild(el('p','',review(sum?sum[b.k]:null)));
+      if(!rep||!rep.complete){body.appendChild(el('p','muted','Publishing status unavailable right now.'));return}
+      var q=[];(rep.saved||[]).forEach(function(v){Object.keys(v.platforms||{}).forEach(function(pk){(v.platforms[pk]||[]).forEach(function(r){if(r.status==='scheduled'||r.status==='sending')q.push([ (v.title||'').slice(0,60)+' · '+(PLN[pk]||pk),r.due?ceDate(r.due)+' Chicago':'',r.due||''])})})});
+      q.sort(function(a,c){return a[2]<c[2]?-1:1});section('Booked to post ('+q.length+')',q,'Nothing booked right now.');
+      var made=(d[1]||[]).length;body.appendChild(el('p','muted',made+' videos made so far. Approved videos are booked by the publisher automatically.'))});
+    return}
+  Promise.all([Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)})),Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))]).then(function(d){
+    body.textContent='';var done={},items=[];d[0].forEach(function(st){var dn=(st&&st.done)||{};Object.keys(dn).forEach(function(k){done[k]=dn[k]})});
+    d[1].forEach(function(a){var it=(a&&a.items)||[];(Array.isArray(it)?it:Object.values(it)).forEach(function(i){if(i&&i.id)items.push(i)})});
+    body.appendChild(el('p','',review(sum?sum[b.k]:null)));
+    var booked=[],unbooked=[],now=Date.now();
+    Object.keys(done).forEach(function(k){var r=done[k];if(r&&r.due&&Date.parse(r.due)>now&&!/^SKIPPED/.test(r.remote||'')){var it=items.filter(function(i){return i.id===k})[0];booked.push([((it&&it.title)||k).slice(0,60)+' · '+pname(k),ceDate(r.due)+' Chicago',r.due])}});
+    items.forEach(function(i){if(!done[i.id])unbooked.push([(i.title||i.id).slice(0,60)+' · '+pname(i.id),'ready',''])});
+    booked.sort(function(a,c){return a[2]<c[2]?-1:1});
+    section('Booked to post ('+booked.length+')',booked,'Nothing booked in the future.');
+    section('Approved, not booked yet ('+unbooked.length+')',unbooked,'Everything approved is booked.');
+  });
+}
 var reviewCoreRows=null,reviewCeRows=null;
 function addHomeActions(card,b){
   var line=el('p','home-queue','Checking review queue…');line.setAttribute('data-review-brand',b.k);card.appendChild(line);
-  var actions=el('div','home-ops');[['review','Review videos'],['health','Publishing status']].forEach(function(pair){var button=el('button','btnline',pair[1]);button.type='button';button.onclick=function(e){e.stopPropagation();setTab(pair[0])};actions.appendChild(button)});card.appendChild(actions);
+  var actions=el('div','home-ops');[['review','Review videos'],['health','Publishing status']].forEach(function(pair){var button=el('button','btnline',pair[1]);button.type='button';button.onclick=function(e){e.stopPropagation();setTab(pair[0])};actions.appendChild(button)});var qb=el('button','btnline pri','Video queue');qb.type='button';qb.onclick=function(e){e.stopPropagation();showQueue(b)};actions.appendChild(qb);card.appendChild(actions);
 }
 function loadNextBooking(card,b){
   Promise.all(b.s.map(function(file){return jget(RAW+'publish/'+file)})).then(function(states){
