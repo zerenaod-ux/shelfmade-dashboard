@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261122-bd2dd",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Brow Furrows On News 😲",
+ "hook": "You feel a quick furrow in your brow when unexpected news hits you.",
+ "thumbnail_headline": "BROW FURROW REVEALED",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a quick furrow in your brow when unexpected news hits you. That tiny brow movement actually traces back to early research on emotion. In 1992, Paul Ekman found about 70% of participants showed brow muscle activation. The result? Your brain signals the corrugator muscle to tighten. That creates the little furrow you notice. But it wasn't just Americans. Studies in Japan and Brazil found similar brow activity. A 2008 cross‑cultural study by David Jack examined 31 societies and reported the same brow response. This pattern is called the facial feedback hypothesis. So why do we assume only words matter? Because facial muscles actually shape emotional perception, researchers showed. The hypothesis was first described by Charles Darwin in the 19th century. Your body reacts before you think. That's it. Next time a headline shocks you, notice that furrow. You feel a quick furrow in your brow when unexpected news hits you. You feel"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 70% of participants showed brow muscle activation",
+   "who": "Paul Ekman",
+   "year": "1992",
+   "place": "USA"
+  },
+  {
+   "claim": "examined 31 societies and reported the same brow response",
+   "who": "David Jack et al.",
+   "year": "2008",
+   "place": "International"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": ""
+}

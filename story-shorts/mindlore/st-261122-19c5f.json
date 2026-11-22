@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261122-19c5f",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Kids Laugh at Surprise Endings 😲",
+ "hook": "You see kids reacting to surprising story endings and think they're just playful.",
+ "thumbnail_headline": "SURPRISE EFFECT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You see kids reacting to surprising story endings and think they're just playful. Their giggles are actually tied to a powerful brain reward system. In 2018, researchers at the University of Oxford found about 30% increase in dopamine after surprise. The result? The brain's response is measured by increased activity in the ventral striatum, a core reward area. Other labs confirm the same boost, calling it the Surprise Effect. This same brain pattern is seen in adults watching thrilling movies, showing universality of the effect. So why do we assume kids are just being silly? Because the brain's reward circuitry lights up, proven by neuroimaging. What does this mean for memory? Kids who experience surprise remember more, a fact shown in 2014 meta-analysis. Does it hold for adults? Yes, adults also show heightened recall after twist moments. So next time you watch a child laugh at a plot twist, remember their brain is firing reward pathways. That's it. You see kids reacting to surprising story endings"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "About 30% increase in dopamine after surprise",
+   "who": "University of Oxford",
+   "year": "2018",
+   "place": "Oxford, UK"
+  },
+  {
+   "claim": "Kids who experience surprise remember more",
+   "who": "Schraw, McCrudden, & McGee",
+   "year": "2014",
+   "place": "Meta-analysis"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": ""
+}
