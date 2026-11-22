@@ -204,6 +204,51 @@ main{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
 button:focus-visible,a:focus-visible{outline:2px solid #8fb4ff;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media(min-width:900px){.tiles{max-width:680px}}
+
+/* ===== System worlds: each system gets its own full-screen colour world ===== */
+body{--acc:#8f9bff;--acc2:#4fd0ff;--base:#080b14;--glow1:#2b1f5c66;--glow2:#0b6b7a44;transition:background .4s}
+body{background:radial-gradient(120% 55% at 12% -5%,var(--glow1),transparent 62%),radial-gradient(90% 50% at 100% 12%,var(--glow2),transparent 64%),var(--base)!important;background-attachment:fixed!important}
+body[data-sys=shelfmade]{--acc:#2fe0b0;--acc2:#8bf0d6;--base:#04110e;--glow1:#12a37866;--glow2:#0a5a4a66}
+body[data-sys=mindlore]{--acc:#a487ff;--acc2:#d0c1ff;--base:#0a0720;--glow1:#6a3fe066;--glow2:#2b1a7a66}
+body[data-sys=doodles]{--acc:#ff9150;--acc2:#ffc39a;--base:#160905;--glow1:#ff6a2a55;--glow2:#a8265a55}
+body[data-sys=howitticks]{--acc:#3cc8ff;--acc2:#9fe5ff;--base:#03111a;--glow1:#1596e066;--glow2:#0b4f9a66}
+body[data-sys]:not([data-sys=all]) header{background:linear-gradient(180deg,color-mix(in srgb,var(--acc) 20%,#0a0f1c),#0a0f1ccc)}
+body[data-sys]:not([data-sys=all]) nav button.on{background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 45%,transparent),color-mix(in srgb,var(--acc2) 25%,transparent))}
+body[data-sys]:not([data-sys=all]) .tile b{color:var(--acc)}
+body[data-sys]:not([data-sys=all]) .btnline.pri{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#07101a}
+/* system switcher: four coloured doors */
+#sys-switch{display:flex;gap:9px;overflow-x:auto;margin:14px -14px 4px;padding:4px 14px 8px;scrollbar-width:none;scroll-snap-type:x proximity}
+#sys-switch::-webkit-scrollbar{display:none}
+#sys-switch button{flex:0 0 auto;scroll-snap-align:start;appearance:none;border:1px solid #ffffff1c;background:#ffffff0c;color:var(--ink);font:700 14px var(--head);padding:11px 16px;border-radius:99px;display:flex;align-items:center;gap:9px;cursor:pointer;transition:transform .15s}
+#sys-switch button i{width:10px;height:10px;border-radius:50%;background:#aab;display:inline-block}
+#sys-switch button[data-sys=shelfmade] i{background:#2fe0b0;box-shadow:0 0 12px #2fe0b0}
+#sys-switch button[data-sys=mindlore] i{background:#a487ff;box-shadow:0 0 12px #a487ff}
+#sys-switch button[data-sys=doodles] i{background:#ff9150;box-shadow:0 0 12px #ff9150}
+#sys-switch button[data-sys=howitticks] i{background:#3cc8ff;box-shadow:0 0 12px #3cc8ff}
+#sys-switch button[data-sys=all] i{background:conic-gradient(#2fe0b0,#3cc8ff,#a487ff,#ff9150,#2fe0b0)}
+#sys-switch button.on{color:#06101a;border-color:transparent;transform:scale(1.03)}
+#sys-switch button[data-sys=all].on{background:linear-gradient(135deg,#fff,#cfd6ff)}
+#sys-switch button[data-sys=shelfmade].on{background:linear-gradient(135deg,#2fe0b0,#8bf0d6)}
+#sys-switch button[data-sys=mindlore].on{background:linear-gradient(135deg,#a487ff,#d0c1ff)}
+#sys-switch button[data-sys=doodles].on{background:linear-gradient(135deg,#ff9150,#ffc39a)}
+#sys-switch button[data-sys=howitticks].on{background:linear-gradient(135deg,#3cc8ff,#9fe5ff)}
+#sys-switch button.on i{box-shadow:none;background:#06101a!important}
+/* one system at a time when a system is chosen */
+body[data-sys=shelfmade] #h-chans>[data-sys]:not([data-sys=shelfmade]),body[data-sys=mindlore] #h-chans>[data-sys]:not([data-sys=mindlore]),body[data-sys=doodles] #h-chans>[data-sys]:not([data-sys=doodles]),body[data-sys=howitticks] #h-chans>[data-sys]:not([data-sys=howitticks]){display:none}
+body:not([data-sys=all]) .tiles,body:not([data-sys=all]) #t-home>button.btnline.pri[data-go=health]{display:none}
+/* the system card as a poster */
+.qstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0 4px}
+.qstats .q{background:color-mix(in srgb,var(--c) 12%,#ffffff05);border:1px solid color-mix(in srgb,var(--c) 28%,transparent);border-radius:16px;padding:12px 10px}
+.qstats b{display:block;font:800 26px var(--head);letter-spacing:-.8px;color:var(--c2,#fff);line-height:1}
+.qstats span{display:block;font-size:11.5px;color:var(--mut);margin-top:6px;line-height:1.25}
+.home-queue{display:none}
+.chan .plat>div{min-width:0}.chan .plat b{font-size:13.5px;overflow-wrap:normal;word-break:normal;line-height:1.25}
+body:not([data-sys=all]) #h-ap{display:none}
+body:not([data-sys=all]) .chan{padding:22px 18px 20px;border-radius:28px}
+body:not([data-sys=all]) .chan h3{font-size:26px}
+body:not([data-sys=all]) .chan .big{font-size:56px}
+body:not([data-sys=all]) .chan .plat b{font-size:19px}
+body:not([data-sys=all]) .chan:after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 38%,transparent),transparent 68%);pointer-events:none}
 </style>
 </head>
 <body>
@@ -231,6 +276,13 @@ button:focus-visible,a:focus-visible{outline:2px solid #8fb4ff;outline-offset:2p
     </div>
     <button class="btnline pri" data-go="health" type="button">Publishing status · YouTube, TikTok, Instagram ›</button>
     <div id="h-ap"></div>
+    <div id="sys-switch" role="tablist" aria-label="Choose a system">
+      <button type="button" data-sys="all" class="on"><i></i>All</button>
+      <button type="button" data-sys="shelfmade"><i></i>ShelfMade</button>
+      <button type="button" data-sys="mindlore"><i></i>MindLore</button>
+      <button type="button" data-sys="doodles"><i></i>Doodles</button>
+      <button type="button" data-sys="howitticks"><i></i>How It Ticks</button>
+    </div>
     <div id="h-chans"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
     <div class="card"><p class="lab">Quick links</p>
       <button class="btnline pri" data-go="review" type="button">Review and approve ›</button>
@@ -436,9 +488,34 @@ function showQueue(b){
     section('Approved, not booked yet ('+unbooked.length+')',unbooked,'Everything approved is booked.');
   });
 }
+
+/* ---------- System worlds: tap a system and the whole app takes its colour ---------- */
+function applySys(){
+  var v='all';try{v=localStorage.getItem('studio-sys')||'all'}catch(e){}
+  document.body.setAttribute('data-sys',v);
+  document.querySelectorAll('#sys-switch button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-sys')===v)});
+}
+document.querySelectorAll('#sys-switch button').forEach(function(b){b.onclick=function(){try{localStorage.setItem('studio-sys',b.getAttribute('data-sys'))}catch(e){}applySys();window.scrollTo({top:0,behavior:'smooth'})}});
+function queueStats(card,b){
+  var row=el('div','qstats');card.appendChild(row);
+  function tile(n,label,t){var d=el('div','q');d.appendChild(el('b','',n));d.appendChild(el('span','',label));row.appendChild(d);return d}
+  var sum=null;try{sum=StudioPublishing.reviewSummary(reviewCoreRows,reviewCeRows)}catch(e){}
+  var w=tile('…','waiting for you');
+  setTimeout(function(){try{var s2=StudioPublishing.reviewSummary(reviewCoreRows,reviewCeRows);w.firstChild.textContent=s2[b.k]==null?'–':s2[b.k]}catch(e){}},1500);
+  var bk=tile('…','booked to post'),ub=tile('…',b.ce?'made so far':'approved, not booked');
+  if(b.ce){
+    Promise.all([jget(CE_RAW+'data/scenes/publishing-status.json'),jget(CE_RAW+'data/scenes/videos.json')]).then(function(d){
+      var n=0;((d[0]||{}).saved||[]).forEach(function(v){Object.keys(v.platforms||{}).forEach(function(k){(v.platforms[k]||[]).forEach(function(r){if(r.status==='scheduled'||r.status==='sending')n++})})});
+      bk.firstChild.textContent=n;ub.firstChild.textContent=(d[1]||[]).length});return}
+  Promise.all([Promise.all(b.s.map(function(f){return jget(RAW+'publish/'+f)})),Promise.all(b.a.map(function(f){return jget(RAW+'publish/'+f)}))]).then(function(d){
+    var done={},ids=[],now=Date.now(),booked=0,unb=0;d[0].forEach(function(st){var dn=(st&&st.done)||{};Object.keys(dn).forEach(function(k){done[k]=dn[k]})});
+    Object.keys(done).forEach(function(k){var r=done[k];if(r&&r.due&&Date.parse(r.due)>now&&!/^SKIPPED/.test(r.remote||''))booked++});
+    d[1].forEach(function(a){var it=(a&&a.items)||[];(Array.isArray(it)?it:Object.values(it)).forEach(function(i){if(i&&i.id&&!done[i.id])unb++})});
+    bk.firstChild.textContent=booked;ub.firstChild.textContent=unb});
+}
 var reviewCoreRows=null,reviewCeRows=null;
 function addHomeActions(card,b){
-  var line=el('p','home-queue','Checking review queue…');line.setAttribute('data-review-brand',b.k);card.appendChild(line);
+  var line=el('p','home-queue','Checking review queue…');line.setAttribute('data-review-brand',b.k);queueStats(card,b);card.appendChild(line);
   var actions=el('div','home-ops');[['review','Review videos'],['health','Publishing status']].forEach(function(pair){var button=el('button','btnline',pair[1]);button.type='button';button.onclick=function(e){e.stopPropagation();setTab(pair[0])};actions.appendChild(button)});var qb=el('button','btnline pri','Video queue');qb.type='button';qb.onclick=function(e){e.stopPropagation();showQueue(b)};actions.appendChild(qb);card.appendChild(actions);
 }
 function loadNextBooking(card,b){
@@ -487,7 +564,7 @@ function loadHome(){
      var views=0;Object.keys(now).forEach(function(k){if(now[k]&&now[k].views)views+=now[k].views});
      $('k-views').textContent=days.length?nf(views):'n/a';
      $('sub').textContent=days.length?('Numbers from '+days[days.length-1]):'No numbers yet';
-     box.textContent='';BR.forEach(function(b){box.appendChild(brandCard(b,h,an))});applyReviewCounts();cache.home=1})
+     box.textContent='';BR.forEach(function(b){var cd=brandCard(b,h,an);cd.setAttribute('data-sys',b.k);box.appendChild(cd)});applyReviewCounts();applySys();cache.home=1})
    .catch(function(){box.textContent='';box.appendChild(el('p','msg','Could not load the numbers. Pull down or tap Refresh.'))});
   apBanner($('h-ap'));
   updateReviewCounts();
