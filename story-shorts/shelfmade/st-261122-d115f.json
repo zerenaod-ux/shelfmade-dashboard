@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261122-d115f",
+ "title": "Pragmatism",
+ "author": "William James",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Overthinking Freezes Your Hands Part 3 🧠",
+ "hook": "You stare at a hard choice until your hands freeze.",
+ "thumbnail_headline": "WHY DECISIONS FREEZE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You stare at a hard choice until your hands freeze. That sudden hesitation is actually your brain stopping physical motion. In 1907, philosopher William James published Pragmatism, arguing that an idea is only true if it acts as a useful working tool. He believed that pure theory without real action is useless. Does modern brain research back this up? The result? Yes, it does. In 2014, neuroscientist Antonio Damasio at the University of Southern California studied about 30 people with damaged emotional brain centers. He found that without emotional feelings to weight their options, people spent hours trying to decide simple things like what to eat. Other cognitive studies show the same pattern across thousands of test subjects. The brain needs practical outcomes to make a choice. So why do we assume endless analyzing helps? Because we confuse thinking with progress. Action breaks the deadlock. That's it. So next time you feel stuck, remember that practical action matters more than overthinking when you stare at a hard choice until your hands freeze."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "William James published Pragmatism arguing truth is defined by practical working value",
+   "who": "William James",
+   "year": "1907",
+   "place": "Harvard University"
+  },
+  {
+   "claim": "Patients with emotional brain damage get trapped in endless decision paralysis",
+   "who": "Antonio Damasio",
+   "year": "2014",
+   "place": "University of Southern California"
+  }
+ ],
+ "source_url": "",
+ "theme": "Pragmatism by William James",
+ "exp": ""
+}

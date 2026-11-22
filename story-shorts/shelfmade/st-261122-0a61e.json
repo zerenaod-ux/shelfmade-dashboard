@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261122-0a61e",
+ "title": "Politics",
+ "author": "Aristotle",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Your Middle Class Shapes Politics Part 1 🧠",
+ "hook": "You talk about politics at dinner.",
+ "thumbnail_headline": "POLITICS AND MIDDLE CLASS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You talk about politics at dinner. That ancient debate is actually still shaping your choices. In 1995, Cambridge classicist Donald Kagan dated Aristotle's Politics to about 350 BC. Aristotle argued that a strong middle class keeps governments stable. Modern research says the same. In 2000, Harvard sociologist Robert Putnam measured about 50 % middle‑class share linked to about 15 % higher voter turnout. The result? That higher participation reduces extremist swings. Other studies across Europe and Asia confirm the pattern, called the middle‑class stability hypothesis. So why do we assume only elites shape policy? The fact is that broad citizen engagement curtails elite capture, as shown by OECD data. In 2018, the OECD observed societies with income gaps under 20 % experienced about 12 % lower political polarization. So next time you discuss a law, remember the power of your own middle‑class voice. That's it. You talk about politics"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Aristotle's Politics dated to about 350 BC",
+   "who": "Donald Kagan",
+   "year": "1995",
+   "place": "Cambridge"
+  },
+  {
+   "claim": "Middle‑class share linked to about 15 % higher voter turnout",
+   "who": "Robert Putnam",
+   "year": "2000",
+   "place": "Harvard"
+  }
+ ],
+ "source_url": "",
+ "theme": "Politics by Aristotle",
+ "exp": ""
+}
