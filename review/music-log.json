@@ -1150,5 +1150,31 @@
   "brand": "shelfmade",
   "kind": "full",
   "date": "2026-11-20"
+ },
+ "Modern work culture tells us to sprint through every single assignment.": {
+  "styles": [
+   "sm_gothic",
+   "sm_gothic",
+   "sm_adventure",
+   "sm_adventure",
+   "sm_tender",
+   "sm_tender"
+  ],
+  "tracks": [
+   "sm_gothic_01",
+   "ace_sm_gothic_01",
+   "sm_adventure_05",
+   "sm_adventure_01",
+   "sm_tender_02",
+   "sm_tender_01"
+  ],
+  "mood": "curious",
+  "pace": 2.34,
+  "exp": {
+   "music_energy": "lively"
+  },
+  "brand": "shelfmade",
+  "kind": "full",
+  "date": "2026-11-22"
  }
 }
