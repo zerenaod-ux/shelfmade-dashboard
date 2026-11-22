@@ -201,19 +201,6 @@
    "subsGained": 0
   },
   {
-   "id": "Y-FWlbV5SYM",
-   "title": "Can truth unlock hidden peace?",
-   "published": "2026-11-06T18:06:07Z",
-   "duration": "PT36S",
-   "privacy": "public",
-   "views": 52,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 23.36,
-   "subsGained": 0
-  },
-  {
    "id": "NdyYlv5koBQ",
    "title": "You must learn to shut off mental steam when you quit work",
    "published": "2026-10-28T22:00:41Z",
@@ -474,19 +461,6 @@
    "subsGained": 0
   },
   {
-   "id": "8QKdl9NNi3Y",
-   "title": "Do crowds drown true wisdom?",
-   "published": "2026-11-06T03:01:57Z",
-   "duration": "PT34S",
-   "privacy": "public",
-   "views": 27,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 65.1,
-   "subsGained": 0
-  },
-  {
    "id": "fGyknN3M8w4",
    "title": "Confucius had a warning for you.",
    "published": "2026-11-15T18:03:43Z",
@@ -510,6 +484,19 @@
    "comments": 1,
    "avgSeconds": 14,
    "avgPercent": 18.78,
+   "subsGained": 0
+  },
+  {
+   "id": "BiRfxu5fbko",
+   "title": "Why is Bacon's Essays still read today?",
+   "published": "2026-11-04T03:01:07Z",
+   "duration": "PT1M3S",
+   "privacy": "public",
+   "views": 26,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 13,
+   "avgPercent": 22.19,
    "subsGained": 0
   },
   {
@@ -578,6 +565,16 @@
    "subsGained": 0
   },
   {
+   "id": "WJTdDr_NDVQ",
+   "title": "What Self-Reliance really asks of you.",
+   "published": "2026-11-21T18:04:59Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "goI_lzWhMaw",
    "title": "Where is your attention?",
    "published": "2026-11-01T02:01:05Z",
@@ -589,16 +586,6 @@
    "avgSeconds": 4,
    "avgPercent": 13.15,
    "subsGained": 0
-  },
-  {
-   "id": "WJTdDr_NDVQ",
-   "title": "What Self-Reliance really asks of you.",
-   "published": "2026-11-21T18:04:59Z",
-   "duration": "PT1M8S",
-   "privacy": "public",
-   "views": 22,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "qcKc4yxs1xQ",
@@ -1105,6 +1092,16 @@
    "subsGained": 0
   },
   {
+   "id": "hG6pY3pC7f0",
+   "title": "Nobody warns you about Way of Peace.",
+   "published": "2026-11-22T18:04:14Z",
+   "duration": "PT1M5S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "19NEY5x_reI",
    "title": "What if you flow like water?",
    "published": "2026-06-23T20:36:41Z",
@@ -1181,7 +1178,10 @@
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "pLirzW1d_Og",
@@ -1192,8 +1192,21 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 2,
-   "avgPercent": 0.48,
+   "avgSeconds": 11,
+   "avgPercent": 2.16,
+   "subsGained": 0
+  },
+  {
+   "id": "YBzvMjEOTFE",
+   "title": "Franklin had a warning for you.",
+   "published": "2026-11-12T00:00:23Z",
+   "duration": "PT6M53S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 57,
+   "avgPercent": 13.970000000000002,
    "subsGained": 0
   },
   {
@@ -1653,6 +1666,19 @@
    "subsGained": 0
   },
   {
+   "id": "nlzBtL-I8EE",
+   "title": "Are your diamonds hidden where you stand?",
+   "published": "2026-11-08T00:00:20Z",
+   "duration": "PT6M52S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 2.62,
+   "subsGained": 0
+  },
+  {
    "id": "rmj2YzElBjM",
    "title": "Self-Help is not what you think.",
    "published": "2026-11-07T00:00:39Z",
@@ -1676,6 +1702,19 @@
    "comments": 1,
    "avgSeconds": 58,
    "avgPercent": 14.32,
+   "subsGained": 0
+  },
+  {
+   "id": "nlzBtL-I8EE",
+   "title": "Are your diamonds hidden where you stand?",
+   "published": "2026-11-08T00:00:20Z",
+   "duration": "PT6M52S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 2.62,
    "subsGained": 0
   },
   {
@@ -1852,19 +1891,6 @@
    "subsGained": 0
   },
   {
-   "id": "nlzBtL-I8EE",
-   "title": "Are your diamonds hidden where you stand?",
-   "published": "2026-11-08T00:00:20Z",
-   "duration": "PT6M52S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 10,
-   "avgPercent": 2.62,
-   "subsGained": 0
-  },
-  {
    "id": "xIxtLasPyV8",
    "title": "You were taught Meditations wrong.",
    "published": "2026-11-09T00:00:22Z",
@@ -1875,19 +1901,6 @@
    "comments": 1,
    "avgSeconds": 6,
    "avgPercent": 1.52,
-   "subsGained": 0
-  },
-  {
-   "id": "nlzBtL-I8EE",
-   "title": "Are your diamonds hidden where you stand?",
-   "published": "2026-11-08T00:00:20Z",
-   "duration": "PT6M52S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 10,
-   "avgPercent": 2.62,
    "subsGained": 0
   },
   {
@@ -2076,6 +2089,16 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "cLvwNLRELbU",
+   "title": "Why Work Sprints Increase Stress \ud83d\ude30",
+   "published": "2026-11-22T19:55:41Z",
+   "duration": "PT7M7S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
    "comments": 0
   },
   {

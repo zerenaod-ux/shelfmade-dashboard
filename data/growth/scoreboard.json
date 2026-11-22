@@ -1,41 +1,41 @@
 {
- "updated": "2026-11-22T17:02:58+00:00",
+ "updated": "2026-11-22T20:25:34+00:00",
  "brands": {
   "shelfmade": {
    "totals": {
-    "videos": 179,
-    "views": 3218,
-    "likes": 117,
+    "videos": 181,
+    "views": 3179,
+    "likes": 118,
     "subs": 10,
     "est_watch_hours": 18.0
    },
-   "measured_videos": 168,
+   "measured_videos": 169,
    "median_views_per_day": 0.17,
    "top": [
-    {
-     "id": "szjjCFDtsFA",
-     "title": "You were taught Tao Te Ching wrong.",
-     "views": 71,
-     "vpd": 10.78,
-     "age_days": 6.6,
-     "avg_percent": 25.56,
-     "subs": 0
-    },
     {
      "id": "318wFWISd8c",
      "title": "Studies In Pessimism",
      "views": 412,
-     "vpd": 10.6,
-     "age_days": 38.9,
+     "vpd": 10.56,
+     "age_days": 39.0,
      "avg_percent": 59.81000000000001,
      "subs": 3
+    },
+    {
+     "id": "szjjCFDtsFA",
+     "title": "You were taught Tao Te Ching wrong.",
+     "views": 71,
+     "vpd": 10.56,
+     "age_days": 6.7,
+     "avg_percent": 25.56,
+     "subs": 0
     },
     {
      "id": "DqPkTxpybRQ",
      "title": "Read this before you open Self-Reliance.",
      "views": 55,
-     "vpd": 6.91,
-     "age_days": 8.0,
+     "vpd": 6.79,
+     "age_days": 8.1,
      "avg_percent": 20.47,
      "subs": 0
     },
@@ -43,19 +43,19 @@
      "id": "Mkc1Mjjf_kY",
      "title": "Machiavelli would hate how you live.",
      "views": 63,
-     "vpd": 6.57,
-     "age_days": 9.6,
+     "vpd": 6.48,
+     "age_days": 9.7,
      "avg_percent": 22.72,
      "subs": 0
     },
     {
-     "id": "BMne6TFjLpk",
-     "title": "Know your enemy",
-     "views": 138,
-     "vpd": 5.2,
-     "age_days": 26.6,
-     "avg_percent": 70.3,
-     "subs": 1
+     "id": "j-8zUPTf8LU",
+     "title": "One line in Prince hits hard.",
+     "views": 17,
+     "vpd": 5.49,
+     "age_days": 3.1,
+     "avg_percent": 22.92,
+     "subs": 0
     }
    ],
    "bottom": [
@@ -64,7 +64,7 @@
      "title": "Think before you fight | The Art of War",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 11.7,
+     "age_days": 11.9,
      "avg_percent": null,
      "subs": 0
     },
@@ -73,7 +73,7 @@
      "title": "For in those things that properly belong unto the mind, she cannot be hindered by any man",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 13.0,
+     "age_days": 13.1,
      "avg_percent": null,
      "subs": 0
     },
@@ -82,7 +82,7 @@
      "title": "Is virtue the only good?",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 15.6,
+     "age_days": 15.7,
      "avg_percent": null,
      "subs": 0
     },
@@ -91,7 +91,7 @@
      "title": "Think before you fight | The Art of War",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 11.7,
+     "age_days": 11.9,
      "avg_percent": null,
      "subs": 0
     },
@@ -100,7 +100,7 @@
      "title": "Is faith rational?",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 160.9,
+     "age_days": 161.1,
      "avg_percent": null,
      "subs": 0
     }
@@ -111,9 +111,9 @@
      "feature": "hook style",
      "value": "you-statement",
      "n": 5,
-     "median_vpd": 4.04,
-     "lift": 14.43,
-     "rest_median_vpd": 0.25
+     "median_vpd": 3.92,
+     "lift": 14.52,
+     "rest_median_vpd": 0.24
     },
     {
      "metric": "vpd",
@@ -121,17 +121,8 @@
      "value": "title says you/your",
      "n": 38,
      "median_vpd": 1.06,
-     "lift": 3.79,
+     "lift": 3.93,
      "rest_median_vpd": 0.08
-    },
-    {
-     "metric": "vpd",
-     "feature": "publish time (Chicago)",
-     "value": "midday (11-17)",
-     "n": 39,
-     "median_vpd": 0.92,
-     "lift": 3.29,
-     "rest_median_vpd": 0.22
     },
     {
      "metric": "vpd",
@@ -139,8 +130,8 @@
      "value": "not a question",
      "n": 66,
      "median_vpd": 0.79,
-     "lift": 2.82,
-     "rest_median_vpd": 0.05
+     "lift": 2.91,
+     "rest_median_vpd": 0.04
     },
     {
      "metric": "vpd",
@@ -148,7 +139,7 @@
      "value": "long title (9+ words)",
      "n": 40,
      "median_vpd": 0.79,
-     "lift": 2.82,
+     "lift": 2.91,
      "rest_median_vpd": 0.11
     },
     {
@@ -157,43 +148,52 @@
      "value": "up to 30s",
      "n": 54,
      "median_vpd": 0.72,
-     "lift": 2.59,
-     "rest_median_vpd": 0.05
+     "lift": 2.69,
+     "rest_median_vpd": 0.04
+    },
+    {
+     "metric": "vpd",
+     "feature": "publish time (Chicago)",
+     "value": "midday (11-17)",
+     "n": 38,
+     "median_vpd": 0.73,
+     "lift": 2.69,
+     "rest_median_vpd": 0.22
     },
     {
      "metric": "vpd",
      "feature": "hook style",
      "value": "statement",
      "n": 60,
-     "median_vpd": 0.6,
-     "lift": 2.14,
-     "rest_median_vpd": 0.1
+     "median_vpd": 0.59,
+     "lift": 2.2,
+     "rest_median_vpd": 0.09
     },
     {
      "metric": "vpd",
      "feature": "emoji",
      "value": "no emoji",
-     "n": 106,
-     "median_vpd": 0.56,
-     "lift": 1.98,
+     "n": 105,
+     "median_vpd": 0.54,
+     "lift": 2.0,
      "rest_median_vpd": 0.02
     },
     {
      "metric": "vpd",
      "feature": "number in title",
      "value": "no number",
-     "n": 110,
-     "median_vpd": 0.48,
-     "lift": 1.71,
+     "n": 109,
+     "median_vpd": 0.47,
+     "lift": 1.74,
      "rest_median_vpd": 0.02
     },
     {
      "metric": "vpd",
      "feature": "command/hook opener",
      "value": "other opener",
-     "n": 80,
+     "n": 79,
      "median_vpd": 0.28,
-     "lift": 1.0,
+     "lift": 1.04,
      "rest_median_vpd": 0.26
     },
     {
@@ -202,7 +202,7 @@
      "value": "opens with a direct word (know, stop, why, how, your...)",
      "n": 45,
      "median_vpd": 0.26,
-     "lift": 0.93,
+     "lift": 0.96,
      "rest_median_vpd": 0.28
     },
     {
@@ -211,71 +211,71 @@
      "value": "evening (17-23)",
      "n": 81,
      "median_vpd": 0.24,
-     "lift": 0.86,
-     "rest_median_vpd": 0.52
+     "lift": 0.89,
+     "rest_median_vpd": 0.49
     },
     {
      "metric": "vpd",
      "feature": "title length",
      "value": "short title (1-5 words)",
-     "n": 52,
-     "median_vpd": 0.2,
-     "lift": 0.71,
+     "n": 50,
+     "median_vpd": 0.15,
+     "lift": 0.57,
      "rest_median_vpd": 0.55
     },
     {
      "metric": "vpd",
      "feature": "short length",
      "value": "46-75s",
-     "n": 30,
-     "median_vpd": 0.09,
-     "lift": 0.3,
-     "rest_median_vpd": 0.33
+     "n": 31,
+     "median_vpd": 0.1,
+     "lift": 0.37,
+     "rest_median_vpd": 0.28
     },
     {
      "metric": "vpd",
      "feature": "speaks to \"you\"",
      "value": "no you/your",
-     "n": 87,
+     "n": 86,
      "median_vpd": 0.08,
-     "lift": 0.29,
+     "lift": 0.3,
      "rest_median_vpd": 1.06
     },
     {
      "metric": "vpd",
      "feature": "title length",
      "value": "medium title (6-8 words)",
-     "n": 33,
-     "median_vpd": 0.06,
-     "lift": 0.21,
-     "rest_median_vpd": 0.4
+     "n": 34,
+     "median_vpd": 0.08,
+     "lift": 0.3,
+     "rest_median_vpd": 0.34
     },
     {
      "metric": "vpd",
      "feature": "question title",
      "value": "question title",
-     "n": 59,
-     "median_vpd": 0.05,
-     "lift": 0.18,
+     "n": 58,
+     "median_vpd": 0.04,
+     "lift": 0.17,
      "rest_median_vpd": 0.79
     },
     {
      "metric": "vpd",
      "feature": "hook style",
      "value": "question",
-     "n": 59,
-     "median_vpd": 0.05,
-     "lift": 0.18,
+     "n": 58,
+     "median_vpd": 0.04,
+     "lift": 0.17,
      "rest_median_vpd": 0.79
     },
     {
      "metric": "vpd",
      "feature": "short length",
      "value": "31-45s",
-     "n": 41,
-     "median_vpd": 0.04,
-     "lift": 0.14,
-     "rest_median_vpd": 0.59
+     "n": 39,
+     "median_vpd": 0.03,
+     "lift": 0.11,
+     "rest_median_vpd": 0.61
     },
     {
      "metric": "vpd",
@@ -284,7 +284,7 @@
      "n": 15,
      "median_vpd": 0.02,
      "lift": 0.07,
-     "rest_median_vpd": 0.48
+     "rest_median_vpd": 0.47
     },
     {
      "metric": "vpd",
@@ -293,7 +293,7 @@
      "n": 5,
      "median_vpd": 0.02,
      "lift": 0.07,
-     "rest_median_vpd": 0.31
+     "rest_median_vpd": 0.28
     },
     {
      "metric": "vpd",
@@ -302,7 +302,7 @@
      "n": 19,
      "median_vpd": 0.02,
      "lift": 0.07,
-     "rest_median_vpd": 0.56
+     "rest_median_vpd": 0.54
     }
    ],
    "retention_lifts": [
@@ -312,26 +312,17 @@
      "value": "up to 30s",
      "n": 45,
      "median_vpd": 53.92,
-     "lift": 1.24,
-     "rest_median_vpd": 30.12
+     "lift": 1.28,
+     "rest_median_vpd": 29.37
     },
     {
      "metric": "avg_percent",
      "feature": "speaks to \"you\"",
      "value": "no you/your",
-     "n": 47,
-     "median_vpd": 49.25,
-     "lift": 1.13,
+     "n": 46,
+     "median_vpd": 48.5,
+     "lift": 1.15,
      "rest_median_vpd": 31.42
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "publish time (Chicago)",
-     "value": "evening (17-23)",
-     "n": 49,
-     "median_vpd": 49.25,
-     "lift": 1.13,
-     "rest_median_vpd": 36.31
     },
     {
      "metric": "avg_percent",
@@ -339,17 +330,8 @@
      "value": "long title (9+ words)",
      "n": 29,
      "median_vpd": 47.74,
-     "lift": 1.1,
-     "rest_median_vpd": 40.3
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "title length",
-     "value": "short title (1-5 words)",
-     "n": 31,
-     "median_vpd": 45.5,
-     "lift": 1.05,
-     "rest_median_vpd": 39.82
+     "lift": 1.14,
+     "rest_median_vpd": 39.99
     },
     {
      "metric": "avg_percent",
@@ -357,35 +339,53 @@
      "value": "statement",
      "n": 44,
      "median_vpd": 45.68,
-     "lift": 1.05,
+     "lift": 1.09,
+     "rest_median_vpd": 38.52
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "title length",
+     "value": "short title (1-5 words)",
+     "n": 29,
+     "median_vpd": 45.5,
+     "lift": 1.08,
      "rest_median_vpd": 39.65
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "command/hook opener",
+     "value": "other opener",
+     "n": 49,
+     "median_vpd": 45.5,
+     "lift": 1.08,
+     "rest_median_vpd": 38.69
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "publish time (Chicago)",
+     "value": "evening (17-23)",
+     "n": 49,
+     "median_vpd": 45.5,
+     "lift": 1.08,
+     "rest_median_vpd": 37.39
     },
     {
      "metric": "avg_percent",
      "feature": "question title",
      "value": "question title",
-     "n": 29,
-     "median_vpd": 45.36,
-     "lift": 1.04,
+     "n": 28,
+     "median_vpd": 42.67,
+     "lift": 1.01,
      "rest_median_vpd": 42.05
     },
     {
      "metric": "avg_percent",
      "feature": "hook style",
      "value": "question",
-     "n": 29,
-     "median_vpd": 45.36,
-     "lift": 1.04,
+     "n": 28,
+     "median_vpd": 42.67,
+     "lift": 1.01,
      "rest_median_vpd": 42.05
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "command/hook opener",
-     "value": "other opener",
-     "n": 50,
-     "median_vpd": 44.56,
-     "lift": 1.02,
-     "rest_median_vpd": 39.65
     },
     {
      "metric": "avg_percent",
@@ -393,35 +393,35 @@
      "value": "not a question",
      "n": 50,
      "median_vpd": 42.05,
-     "lift": 0.97,
-     "rest_median_vpd": 45.36
+     "lift": 1.0,
+     "rest_median_vpd": 42.67
     },
     {
      "metric": "avg_percent",
      "feature": "command/hook opener",
      "value": "opens with a direct word (know, stop, why, how, your...)",
      "n": 29,
-     "median_vpd": 39.65,
-     "lift": 0.91,
-     "rest_median_vpd": 44.56
+     "median_vpd": 38.69,
+     "lift": 0.92,
+     "rest_median_vpd": 45.5
     },
     {
      "metric": "avg_percent",
      "feature": "publish time (Chicago)",
      "value": "midday (11-17)",
-     "n": 28,
-     "median_vpd": 36.31,
-     "lift": 0.84,
-     "rest_median_vpd": 49.25
+     "n": 27,
+     "median_vpd": 37.39,
+     "lift": 0.89,
+     "rest_median_vpd": 45.5
     },
     {
      "metric": "avg_percent",
      "feature": "short length",
      "value": "31-45s",
-     "n": 17,
+     "n": 15,
      "median_vpd": 34.34,
-     "lift": 0.79,
-     "rest_median_vpd": 46.55
+     "lift": 0.82,
+     "rest_median_vpd": 45.36
     },
     {
      "metric": "avg_percent",
@@ -429,8 +429,8 @@
      "value": "title says you/your",
      "n": 32,
      "median_vpd": 31.42,
-     "lift": 0.72,
-     "rest_median_vpd": 49.25
+     "lift": 0.75,
+     "rest_median_vpd": 48.5
     },
     {
      "metric": "avg_percent",
@@ -438,25 +438,25 @@
      "value": "you-statement",
      "n": 5,
      "median_vpd": 31.1,
-     "lift": 0.72,
-     "rest_median_vpd": 44.49
+     "lift": 0.74,
+     "rest_median_vpd": 43.62
     },
     {
      "metric": "avg_percent",
      "feature": "title length",
      "value": "medium title (6-8 words)",
-     "n": 19,
-     "median_vpd": 31.1,
-     "lift": 0.72,
+     "n": 20,
+     "median_vpd": 31.06,
+     "lift": 0.74,
      "rest_median_vpd": 46.62
     },
     {
      "metric": "avg_percent",
      "feature": "short length",
      "value": "46-75s",
-     "n": 17,
-     "median_vpd": 25.56,
-     "lift": 0.59,
+     "n": 18,
+     "median_vpd": 25.27,
+     "lift": 0.6,
      "rest_median_vpd": 49.98
     }
    ],
@@ -471,22 +471,22 @@
    },
    "lifts_scope": "Shorts only (full videos behave differently, mixing them fooled the numbers)",
    "change_3d": {
-    "views": -60,
-    "likes": -1,
+    "views": -99,
+    "likes": 0,
     "subs": 0,
-    "videos": 4
+    "videos": 6
    },
    "change_7d": {
-    "views": 107,
-    "likes": 0,
+    "views": 68,
+    "likes": 1,
     "subs": 1,
-    "videos": 15
+    "videos": 17
    }
   },
   "mindlore": {
    "totals": {
     "videos": 167,
-    "views": 5906,
+    "views": 5909,
     "likes": 114,
     "subs": 10,
     "est_watch_hours": 52.4
@@ -498,17 +498,17 @@
      "id": "6tz6Hvcipk0",
      "title": "Your Kids Expect Shock",
      "views": 1023,
-     "vpd": 128.55,
-     "age_days": 8.0,
-     "avg_percent": 42.03,
+     "vpd": 126.31,
+     "age_days": 8.1,
+     "avg_percent": 41.98,
      "subs": 0
     },
     {
      "id": "esyld-j420I",
      "title": "Your Face Reacts",
      "views": 251,
-     "vpd": 29.24,
-     "age_days": 8.6,
+     "vpd": 28.77,
+     "age_days": 8.7,
      "avg_percent": 31.480000000000004,
      "subs": 0
     },
@@ -516,8 +516,8 @@
      "id": "UUoVjHCcU24",
      "title": "Your Joy Is Wild",
      "views": 169,
-     "vpd": 22.28,
-     "age_days": 7.6,
+     "vpd": 21.88,
+     "age_days": 7.7,
      "avg_percent": 28.09,
      "subs": 0
     },
@@ -525,8 +525,8 @@
      "id": "9WzReCi_1lc",
      "title": "Your Joy Triggers Ancient Brain Networks",
      "views": 121,
-     "vpd": 15.61,
-     "age_days": 7.8,
+     "vpd": 15.33,
+     "age_days": 7.9,
      "avg_percent": 40.65,
      "subs": 0
     },
@@ -534,8 +534,8 @@
      "id": "uOqGecmhSTs",
      "title": "The Expression of the Emotions in Man and Animals \u00b7 Watching expression \u00b7 Reading 5",
      "views": 385,
-     "vpd": 14.45,
-     "age_days": 26.6,
+     "vpd": 14.37,
+     "age_days": 26.8,
      "avg_percent": 124.17,
      "subs": 0
     }
@@ -546,7 +546,7 @@
      "title": "Why can't we stop reading?",
      "views": 3,
      "vpd": 0.02,
-     "age_days": 158.9,
+     "age_days": 159.0,
      "avg_percent": null,
      "subs": 0
     },
@@ -555,7 +555,7 @@
      "title": "Does class shape your consciousness?",
      "views": 3,
      "vpd": 0.02,
-     "age_days": 160.8,
+     "age_days": 161.0,
      "avg_percent": null,
      "subs": 0
     },
@@ -564,7 +564,7 @@
      "title": "Are your dreams actually meaningful?",
      "views": 3,
      "vpd": 0.02,
-     "age_days": 161.8,
+     "age_days": 161.9,
      "avg_percent": null,
      "subs": 0
     },
@@ -573,7 +573,7 @@
      "title": "Psychology and Industrial Efficiency: The Book That Changed Work Forever",
      "views": 1,
      "vpd": 0.01,
-     "age_days": 156.5,
+     "age_days": 156.7,
      "avg_percent": null,
      "subs": 0
     },
@@ -582,7 +582,7 @@
      "title": "\ud83e\udde0 Human Nature and the Social Order",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 151.6,
+     "age_days": 151.8,
      "avg_percent": null,
      "subs": 0
     }
@@ -593,36 +593,36 @@
      "feature": "hook style",
      "value": "you-statement",
      "n": 17,
-     "median_vpd": 3.65,
-     "lift": 3.56,
-     "rest_median_vpd": 0.76
+     "median_vpd": 3.6,
+     "lift": 3.55,
+     "rest_median_vpd": 0.75
     },
     {
      "metric": "vpd",
      "feature": "title length",
      "value": "medium title (6-8 words)",
      "n": 28,
-     "median_vpd": 2.21,
-     "lift": 2.15,
-     "rest_median_vpd": 0.67
+     "median_vpd": 2.16,
+     "lift": 2.12,
+     "rest_median_vpd": 0.66
     },
     {
      "metric": "vpd",
      "feature": "command/hook opener",
      "value": "opens with a direct word (know, stop, why, how, your...)",
      "n": 46,
-     "median_vpd": 2.12,
-     "lift": 2.07,
-     "rest_median_vpd": 0.67
+     "median_vpd": 2.07,
+     "lift": 2.04,
+     "rest_median_vpd": 0.66
     },
     {
      "metric": "vpd",
      "feature": "speaks to \"you\"",
      "value": "title says you/your",
      "n": 37,
-     "median_vpd": 1.83,
-     "lift": 1.79,
-     "rest_median_vpd": 1.01
+     "median_vpd": 1.81,
+     "lift": 1.78,
+     "rest_median_vpd": 0.98
     },
     {
      "metric": "vpd",
@@ -630,7 +630,7 @@
      "value": "not a question",
      "n": 68,
      "median_vpd": 1.56,
-     "lift": 1.53,
+     "lift": 1.54,
      "rest_median_vpd": 0.21
     },
     {
@@ -638,8 +638,8 @@
      "feature": "emoji",
      "value": "no emoji",
      "n": 87,
-     "median_vpd": 1.27,
-     "lift": 1.24,
+     "median_vpd": 1.25,
+     "lift": 1.23,
      "rest_median_vpd": 0.19
     },
     {
@@ -647,7 +647,7 @@
      "feature": "short length",
      "value": "46-75s",
      "n": 89,
-     "median_vpd": 1.24,
+     "median_vpd": 1.23,
      "lift": 1.21,
      "rest_median_vpd": 0.19
     },
@@ -656,7 +656,7 @@
      "feature": "hook style",
      "value": "statement",
      "n": 51,
-     "median_vpd": 1.16,
+     "median_vpd": 1.15,
      "lift": 1.13,
      "rest_median_vpd": 0.49
     },
@@ -665,45 +665,45 @@
      "feature": "publish time (Chicago)",
      "value": "evening (17-23)",
      "n": 62,
-     "median_vpd": 1.15,
+     "median_vpd": 1.14,
      "lift": 1.12,
      "rest_median_vpd": 0.97
-    },
-    {
-     "metric": "vpd",
-     "feature": "speaks to \"you\"",
-     "value": "no you/your",
-     "n": 61,
-     "median_vpd": 1.01,
-     "lift": 0.99,
-     "rest_median_vpd": 1.83
     },
     {
      "metric": "vpd",
      "feature": "publish time (Chicago)",
      "value": "midday (11-17)",
      "n": 35,
-     "median_vpd": 0.99,
+     "median_vpd": 0.98,
      "lift": 0.97,
-     "rest_median_vpd": 1.13
+     "rest_median_vpd": 1.12
+    },
+    {
+     "metric": "vpd",
+     "feature": "speaks to \"you\"",
+     "value": "no you/your",
+     "n": 61,
+     "median_vpd": 0.98,
+     "lift": 0.97,
+     "rest_median_vpd": 1.81
     },
     {
      "metric": "vpd",
      "feature": "title length",
      "value": "short title (1-5 words)",
      "n": 62,
-     "median_vpd": 0.76,
+     "median_vpd": 0.75,
      "lift": 0.74,
-     "rest_median_vpd": 1.72
+     "rest_median_vpd": 1.69
     },
     {
      "metric": "vpd",
      "feature": "command/hook opener",
      "value": "other opener",
      "n": 52,
-     "median_vpd": 0.67,
+     "median_vpd": 0.66,
      "lift": 0.65,
-     "rest_median_vpd": 2.12
+     "rest_median_vpd": 2.07
     },
     {
      "metric": "vpd",
@@ -712,7 +712,7 @@
      "n": 8,
      "median_vpd": 0.24,
      "lift": 0.23,
-     "rest_median_vpd": 1.2
+     "rest_median_vpd": 1.19
     },
     {
      "metric": "vpd",
@@ -739,7 +739,7 @@
      "n": 11,
      "median_vpd": 0.19,
      "lift": 0.19,
-     "rest_median_vpd": 1.27
+     "rest_median_vpd": 1.25
     },
     {
      "metric": "vpd",
@@ -748,7 +748,7 @@
      "n": 9,
      "median_vpd": 0.19,
      "lift": 0.19,
-     "rest_median_vpd": 1.24
+     "rest_median_vpd": 1.23
     }
    ],
    "retention_lifts": [
@@ -757,9 +757,9 @@
      "feature": "speaks to \"you\"",
      "value": "title says you/your",
      "n": 30,
-     "median_vpd": 38.84,
-     "lift": 1.09,
-     "rest_median_vpd": 33.57
+     "median_vpd": 38.64,
+     "lift": 1.08,
+     "rest_median_vpd": 33.82
     },
     {
      "metric": "avg_percent",
@@ -767,8 +767,8 @@
      "value": "you-statement",
      "n": 15,
      "median_vpd": 37.58,
-     "lift": 1.06,
-     "rest_median_vpd": 35.53
+     "lift": 1.05,
+     "rest_median_vpd": 35.69
     },
     {
      "metric": "avg_percent",
@@ -777,7 +777,7 @@
      "n": 53,
      "median_vpd": 37.11,
      "lift": 1.04,
-     "rest_median_vpd": 32.59
+     "rest_median_vpd": 33.28
     },
     {
      "metric": "avg_percent",
@@ -786,7 +786,7 @@
      "n": 32,
      "median_vpd": 36.72,
      "lift": 1.03,
-     "rest_median_vpd": 33.53
+     "rest_median_vpd": 33.82
     },
     {
      "metric": "avg_percent",
@@ -795,32 +795,14 @@
      "n": 42,
      "median_vpd": 36.45,
      "lift": 1.02,
-     "rest_median_vpd": 33.53
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "question title",
-     "value": "question title",
-     "n": 21,
-     "median_vpd": 35.85,
-     "lift": 1.01,
-     "rest_median_vpd": 35.53
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "hook style",
-     "value": "question",
-     "n": 21,
-     "median_vpd": 35.85,
-     "lift": 1.01,
-     "rest_median_vpd": 35.53
+     "rest_median_vpd": 33.57
     },
     {
      "metric": "avg_percent",
      "feature": "question title",
      "value": "not a question",
      "n": 62,
-     "median_vpd": 35.53,
+     "median_vpd": 35.69,
      "lift": 1.0,
      "rest_median_vpd": 35.85
     },
@@ -829,17 +811,35 @@
      "feature": "emoji",
      "value": "no emoji",
      "n": 78,
-     "median_vpd": 35.69,
+     "median_vpd": 35.81,
      "lift": 1.0,
      "rest_median_vpd": 32.44
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "question title",
+     "value": "question title",
+     "n": 21,
+     "median_vpd": 35.85,
+     "lift": 1.0,
+     "rest_median_vpd": 35.69
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "hook style",
+     "value": "question",
+     "n": 21,
+     "median_vpd": 35.85,
+     "lift": 1.0,
+     "rest_median_vpd": 35.69
     },
     {
      "metric": "avg_percent",
      "feature": "hook style",
      "value": "statement",
      "n": 47,
-     "median_vpd": 35.48,
-     "lift": 1.0,
+     "median_vpd": 35.59,
+     "lift": 0.99,
      "rest_median_vpd": 36.45
     },
     {
@@ -847,27 +847,36 @@
      "feature": "publish time (Chicago)",
      "value": "evening (17-23)",
      "n": 50,
-     "median_vpd": 33.67,
-     "lift": 0.95,
+     "median_vpd": 34.65,
+     "lift": 0.97,
      "rest_median_vpd": 35.85
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "command/hook opener",
-     "value": "opens with a direct word (know, stop, why, how, your...)",
-     "n": 41,
-     "median_vpd": 33.53,
-     "lift": 0.94,
-     "rest_median_vpd": 36.45
     },
     {
      "metric": "avg_percent",
      "feature": "speaks to \"you\"",
      "value": "no you/your",
      "n": 53,
+     "median_vpd": 33.82,
+     "lift": 0.95,
+     "rest_median_vpd": 38.64
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "command/hook opener",
+     "value": "opens with a direct word (know, stop, why, how, your...)",
+     "n": 41,
      "median_vpd": 33.57,
      "lift": 0.94,
-     "rest_median_vpd": 38.84
+     "rest_median_vpd": 36.45
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "title length",
+     "value": "medium title (6-8 words)",
+     "n": 26,
+     "median_vpd": 33.28,
+     "lift": 0.93,
+     "rest_median_vpd": 37.11
     },
     {
      "metric": "avg_percent",
@@ -876,16 +885,7 @@
      "n": 5,
      "median_vpd": 32.44,
      "lift": 0.91,
-     "rest_median_vpd": 35.69
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "title length",
-     "value": "medium title (6-8 words)",
-     "n": 26,
-     "median_vpd": 32.34,
-     "lift": 0.91,
-     "rest_median_vpd": 37.11
+     "rest_median_vpd": 35.81
     }
    ],
    "monetization": {
@@ -899,13 +899,13 @@
    },
    "lifts_scope": "Shorts only (full videos behave differently, mixing them fooled the numbers)",
    "change_3d": {
-    "views": 100,
+    "views": 103,
     "likes": -1,
     "subs": 0,
     "videos": 7
    },
    "change_7d": {
-    "views": 336,
+    "views": 339,
     "likes": 1,
     "subs": 0,
     "videos": 18
@@ -913,21 +913,21 @@
   },
   "doodles": {
    "totals": {
-    "videos": 57,
+    "videos": 58,
     "views": 548,
     "likes": 35,
     "subs": 2,
-    "est_watch_hours": 2.8
+    "est_watch_hours": 2.9
    },
-   "measured_videos": 51,
-   "median_views_per_day": 0.4,
+   "measured_videos": 52,
+   "median_views_per_day": 0.39,
    "top": [
     {
      "id": "a9y0zHRRqKM",
      "title": "Your First Day Shakes \ud83d\ude2c",
      "views": 54,
-     "vpd": 15.07,
-     "age_days": 3.6,
+     "vpd": 14.5,
+     "age_days": 3.7,
      "avg_percent": 58.599999999999994,
      "subs": 0
     },
@@ -935,8 +935,8 @@
      "id": "vz_gR7GgfU0",
      "title": "The Confidence Curve",
      "views": 211,
-     "vpd": 11.13,
-     "age_days": 19.0,
+     "vpd": 11.05,
+     "age_days": 19.1,
      "avg_percent": 24.06,
      "subs": 1
     },
@@ -944,8 +944,8 @@
      "id": "C0CTlw4ue8A",
      "title": "The 'K' Text Trap | Leo & Mia #11",
      "views": 11,
-     "vpd": 1.45,
-     "age_days": 7.6,
+     "vpd": 1.42,
+     "age_days": 7.7,
      "avg_percent": 14.69,
      "subs": 0
     },
@@ -953,8 +953,8 @@
      "id": "EWhebXioXqQ",
      "title": "The Sleep Effort Trap",
      "views": 17,
-     "vpd": 1.42,
-     "age_days": 12.0,
+     "vpd": 1.41,
+     "age_days": 12.1,
      "avg_percent": 37.65,
      "subs": 0
     },
@@ -962,8 +962,8 @@
      "id": "CKqSjL7j5YU",
      "title": "The Pre-Sweat Protocol",
      "views": 5,
-     "vpd": 1.26,
-     "age_days": 4.0,
+     "vpd": 1.22,
+     "age_days": 4.1,
      "avg_percent": 7.919999999999999,
      "subs": 0
     }
@@ -974,7 +974,7 @@
      "title": "The 5 PM Slide Deck Disaster",
      "views": 2,
      "vpd": 0.12,
-     "age_days": 16.7,
+     "age_days": 16.9,
      "avg_percent": 56.13,
      "subs": 0
     },
@@ -983,7 +983,7 @@
      "title": "The Scripting Spiral",
      "views": 1,
      "vpd": 0.09,
-     "age_days": 10.6,
+     "age_days": 10.7,
      "avg_percent": null,
      "subs": 0
     },
@@ -992,7 +992,7 @@
      "title": "The Rest Trap",
      "views": 1,
      "vpd": 0.06,
-     "age_days": 16.6,
+     "age_days": 16.7,
      "avg_percent": 28.46,
      "subs": 0
     },
@@ -1001,7 +1001,7 @@
      "title": "The 40-Minute Pizza Call | Leo & Mia #9",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 10.0,
+     "age_days": 10.1,
      "avg_percent": null,
      "subs": 0
     },
@@ -1010,7 +1010,7 @@
      "title": "The Sunday Spiral",
      "views": 0,
      "vpd": 0.0,
-     "age_days": 14.0,
+     "age_days": 14.1,
      "avg_percent": null,
      "subs": 0
     }
@@ -1020,18 +1020,18 @@
      "metric": "vpd",
      "feature": "short length",
      "value": "up to 30s",
-     "n": 5,
-     "median_vpd": 1.21,
-     "lift": 3.02,
+     "n": 6,
+     "median_vpd": 1.11,
+     "lift": 2.85,
      "rest_median_vpd": 0.39
     },
     {
      "metric": "vpd",
      "feature": "publish time (Chicago)",
      "value": "midday (11-17)",
-     "n": 20,
-     "median_vpd": 0.47,
-     "lift": 1.19,
+     "n": 21,
+     "median_vpd": 0.44,
+     "lift": 1.13,
      "rest_median_vpd": 0.38
     },
     {
@@ -1039,16 +1039,16 @@
      "feature": "number in title",
      "value": "has a number",
      "n": 13,
-     "median_vpd": 0.45,
-     "lift": 1.12,
-     "rest_median_vpd": 0.38
+     "median_vpd": 0.44,
+     "lift": 1.13,
+     "rest_median_vpd": 0.37
     },
     {
      "metric": "vpd",
      "feature": "title length",
      "value": "medium title (6-8 words)",
-     "n": 14,
-     "median_vpd": 0.44,
+     "n": 15,
+     "median_vpd": 0.43,
      "lift": 1.1,
      "rest_median_vpd": 0.37
     },
@@ -1058,8 +1058,17 @@
      "value": "31-45s",
      "n": 11,
      "median_vpd": 0.43,
-     "lift": 1.07,
-     "rest_median_vpd": 0.39
+     "lift": 1.1,
+     "rest_median_vpd": 0.38
+    },
+    {
+     "metric": "vpd",
+     "feature": "command/hook opener",
+     "value": "other opener",
+     "n": 41,
+     "median_vpd": 0.39,
+     "lift": 1.0,
+     "rest_median_vpd": 0.32
     },
     {
      "metric": "vpd",
@@ -1067,8 +1076,8 @@
      "value": "evening (17-23)",
      "n": 25,
      "median_vpd": 0.38,
-     "lift": 0.95,
-     "rest_median_vpd": 0.47
+     "lift": 0.97,
+     "rest_median_vpd": 0.44
     },
     {
      "metric": "vpd",
@@ -1076,17 +1085,17 @@
      "value": "short title (1-5 words)",
      "n": 30,
      "median_vpd": 0.38,
-     "lift": 0.94,
-     "rest_median_vpd": 0.43
+     "lift": 0.96,
+     "rest_median_vpd": 0.42
     },
     {
      "metric": "vpd",
      "feature": "number in title",
      "value": "no number",
-     "n": 32,
-     "median_vpd": 0.38,
-     "lift": 0.94,
-     "rest_median_vpd": 0.45
+     "n": 33,
+     "median_vpd": 0.37,
+     "lift": 0.95,
+     "rest_median_vpd": 0.44
     },
     {
      "metric": "vpd",
@@ -1094,8 +1103,17 @@
      "value": "46-75s",
      "n": 29,
      "median_vpd": 0.37,
-     "lift": 0.92,
-     "rest_median_vpd": 0.47
+     "lift": 0.95,
+     "rest_median_vpd": 0.44
+    },
+    {
+     "metric": "vpd",
+     "feature": "command/hook opener",
+     "value": "opens with a direct word (know, stop, why, how, your...)",
+     "n": 5,
+     "median_vpd": 0.32,
+     "lift": 0.82,
+     "rest_median_vpd": 0.39
     }
    ],
    "retention_lifts": [
@@ -1106,7 +1124,7 @@
      "n": 26,
      "median_vpd": 26.26,
      "lift": 1.09,
-     "rest_median_vpd": 17.19
+     "rest_median_vpd": 21.63
     },
     {
      "metric": "avg_percent",
@@ -1115,7 +1133,16 @@
      "n": 28,
      "median_vpd": 26.26,
      "lift": 1.09,
-     "rest_median_vpd": 16.33
+     "rest_median_vpd": 21.63
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "publish time (Chicago)",
+     "value": "evening (17-23)",
+     "n": 20,
+     "median_vpd": 25.62,
+     "lift": 1.07,
+     "rest_median_vpd": 24.06
     },
     {
      "metric": "avg_percent",
@@ -1124,7 +1151,7 @@
      "n": 17,
      "median_vpd": 24.06,
      "lift": 1.0,
-     "rest_median_vpd": 20.48
+     "rest_median_vpd": 25.62
     },
     {
      "metric": "avg_percent",
@@ -1133,7 +1160,7 @@
      "n": 7,
      "median_vpd": 24.03,
      "lift": 1.0,
-     "rest_median_vpd": 23.42
+     "rest_median_vpd": 31.14
     },
     {
      "metric": "avg_percent",
@@ -1142,24 +1169,6 @@
      "n": 26,
      "median_vpd": 23.42,
      "lift": 0.97,
-     "rest_median_vpd": 24.03
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "publish time (Chicago)",
-     "value": "evening (17-23)",
-     "n": 20,
-     "median_vpd": 20.48,
-     "lift": 0.85,
-     "rest_median_vpd": 24.06
-    },
-    {
-     "metric": "avg_percent",
-     "feature": "title length",
-     "value": "medium title (6-8 words)",
-     "n": 10,
-     "median_vpd": 16.76,
-     "lift": 0.7,
      "rest_median_vpd": 28.46
     },
     {
@@ -1167,9 +1176,18 @@
      "feature": "number in title",
      "value": "has a number",
      "n": 9,
-     "median_vpd": 16.33,
-     "lift": 0.68,
+     "median_vpd": 21.63,
+     "lift": 0.9,
      "rest_median_vpd": 26.26
+    },
+    {
+     "metric": "avg_percent",
+     "feature": "title length",
+     "value": "medium title (6-8 words)",
+     "n": 10,
+     "median_vpd": 19.41,
+     "lift": 0.81,
+     "rest_median_vpd": 28.46
     }
    ],
    "monetization": {
@@ -1177,7 +1195,7 @@
     "subs_now": 2,
     "subs_pct": 0.2,
     "watch_hours_needed": 4000,
-    "est_watch_hours": 2.8,
+    "est_watch_hours": 2.9,
     "hours_pct": 0.1,
     "note": "YouTube Partner Program: 1,000 subscribers AND 4,000 public watch hours in 12 months (or 10 million Shorts views in 90 days). Hours here are an estimate."
    },
@@ -1186,13 +1204,13 @@
     "views": 25,
     "likes": 3,
     "subs": 0,
-    "videos": 5
+    "videos": 6
    },
    "change_7d": {
     "views": 125,
     "likes": 4,
     "subs": 0,
-    "videos": 14
+    "videos": 15
    }
   }
  }

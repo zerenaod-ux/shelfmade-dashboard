@@ -15,7 +15,7 @@
    "likes": 18,
    "comments": 1,
    "avgSeconds": 23,
-   "avgPercent": 42.03,
+   "avgPercent": 41.98,
    "subsGained": 0
   },
   {
@@ -243,7 +243,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 21,
-   "avgPercent": 23.09,
+   "avgPercent": 22.6,
    "subsGained": 0
   },
   {
@@ -331,7 +331,7 @@
    "likes": 1,
    "comments": 1,
    "avgSeconds": 26,
-   "avgPercent": 40.52,
+   "avgPercent": 39.7,
    "subsGained": 0
   },
   {
@@ -1070,6 +1070,19 @@
    "subsGained": 0
   },
   {
+   "id": "UAe6oPKqTX0",
+   "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
+   "published": "2026-10-27T01:08:55Z",
+   "duration": "PT1M41S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 50,
+   "avgPercent": 49.68,
+   "subsGained": 0
+  },
+  {
    "id": "p0PfFIRsQR8",
    "title": "Instinct And The Unconscious",
    "published": "2026-10-25T23:31:01Z",
@@ -1081,6 +1094,16 @@
    "avgSeconds": 11,
    "avgPercent": 23.41,
    "subsGained": 0
+  },
+  {
+   "id": "ZxFKXhCEx_c",
+   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
+   "published": "2026-11-21T18:03:51Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "2GlYD2z2jJY",
@@ -1119,19 +1142,6 @@
    "comments": 0,
    "avgSeconds": 20,
    "avgPercent": 41.83,
-   "subsGained": 0
-  },
-  {
-   "id": "UAe6oPKqTX0",
-   "title": "Psychology and Industrial Efficiency \u00b7 From laboratory to task \u00b7 Reading 5",
-   "published": "2026-10-27T01:08:55Z",
-   "duration": "PT1M41S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 50,
-   "avgPercent": 49.68,
    "subsGained": 0
   },
   {
@@ -1195,16 +1205,6 @@
    "avgSeconds": 20,
    "avgPercent": 41.98,
    "subsGained": 0
-  },
-  {
-   "id": "ZxFKXhCEx_c",
-   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
-   "published": "2026-11-21T18:03:51Z",
-   "duration": "PT1M8S",
-   "privacy": "public",
-   "views": 14,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "u-bjxB9PmgY",
@@ -1371,8 +1371,8 @@
    "views": 10,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 18,
-   "avgPercent": 30.579999999999995,
+   "avgSeconds": 13,
+   "avgPercent": 21.71,
    "subsGained": 0
   },
   {
@@ -1446,8 +1446,8 @@
    "views": 8,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 6,
-   "avgPercent": 10.69,
+   "avgSeconds": 25,
+   "avgPercent": 44.66,
    "subsGained": 0
   },
   {
@@ -1692,7 +1692,10 @@
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 1.38,
+   "subsGained": 0
   },
   {
    "id": "o3yiUpFfU8c",
