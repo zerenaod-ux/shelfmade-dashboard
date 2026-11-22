@@ -275,6 +275,7 @@ details.ok-fold{background:#4ade9a12;border-radius:14px;padding:10px 12px;margin
 #x-brands .pub-platform{margin:10px 0}
 #x-brands>.stsys[data-hit] .row b{font:800 18px var(--head)}
 #x-brands>.stsys[data-hit] .qstats{margin:12px 0 6px}
+#x-brands>.stsys .btnline.pri{width:100%;margin-top:10px;background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 55%,#fff));color:#07101a}
 @media(min-width:900px){#st-sub{top:112px}}
 </style>
 </head>
@@ -328,7 +329,7 @@ details.ok-fold{background:#4ade9a12;border-radius:14px;padding:10px 12px;margin
   <!-- HEALTH -->
   <section class="tab" id="t-health" data-pane-on="overview">
     <div id="st-hero"></div>
-    <div id="st-sub" role="tablist"><button type="button" data-p="overview" class="on">Overview</button><button type="button" data-p="posts">Posts</button><button type="button" data-p="checks">Checks</button><button type="button" data-p="jobs">Jobs</button></div>
+    <div id="st-sub" role="tablist"><button type="button" data-p="overview" class="on">Overview</button><button type="button" data-p="checks">Checks</button><button type="button" data-p="jobs">Jobs</button></div>
     <div id="x-brands"></div>
     <div id="x-pre"></div>
     <div id="x-dep"></div>
@@ -531,7 +532,7 @@ function showQueue(b){
       if(c.getAttribute('data-org'))return;c.setAttribute('data-org','1');
       var t=(c.textContent||'').trim();var key=Object.keys(SYS).filter(function(k){return t.indexOf(k)===0})[0];
       if(key){c.style.setProperty('--c',SYS[key]);c.classList.add('stsys')}
-      if(t.indexOf('How It Ticks')===0){c.setAttribute('data-pane','posts');
+      if(t.indexOf('How It Ticks')===0){c.classList.remove('stsys');var wrap=document.createElement('div');wrap.setAttribute('data-pane','checks');wrap.setAttribute('data-org','1');var wd=fold(wrap,'How It Ticks: every post, by platform',false);wd.className='bn-fold';wrap.appendChild(wd);br.insertBefore(wrap,c);wd.appendChild(c);
         /* fold the long explanations, keep platform cards on top */
         var notes=Array.prototype.filter.call(c.children,function(n){return n.classList.contains('pub-meta')||n.classList.contains('pub-notice')||n.classList.contains('pub-production')});
         if(notes.length){var nd=fold(c,'Notes and video production',false);nd.className='bn-fold';notes.forEach(function(n){nd.appendChild(n)});c.appendChild(nd)}
@@ -540,14 +541,16 @@ function showQueue(b){
         var oc=document.createElement('div');oc.className='card stsys';oc.style.setProperty('--c','var(--hi)');oc.setAttribute('data-org','1');oc.setAttribute('data-pane','overview');oc.setAttribute('data-hit','1');
         var hd=document.createElement('div');hd.className='row';var ti=document.createElement('b');ti.textContent='How It Ticks';var tg=document.createElement('span');tg.className='tag '+(sums[3]?'warn':'ok');tg.textContent=sums[3]?sums[3]+' to check':'All good';hd.appendChild(ti);hd.appendChild(tg);oc.appendChild(hd);
         var tl=document.createElement('div');tl.className='qstats';[['Published',sums[2]],['Scheduled',sums[1]],['Ready',sums[0]]].forEach(function(a){var q=document.createElement('div');q.className='q';var bb=document.createElement('b');bb.textContent=a[1];var sp=document.createElement('span');sp.textContent=a[0];q.appendChild(bb);q.appendChild(sp);tl.appendChild(q)});oc.appendChild(tl);
-        var go=document.createElement('button');go.type='button';go.className='btnline';go.textContent='See each video (Posts)';go.onclick=function(){host.setAttribute('data-pane-on','posts');Array.prototype.forEach.call(document.getElementById('st-sub').children,function(x){x.classList.toggle('on',x.getAttribute('data-p')==='posts')});window.scrollTo({top:0})};oc.appendChild(go);
+        var go=document.createElement('button');go.type='button';go.className='btnline';go.textContent='Video queue';go.className='btnline pri';go.onclick=function(){showQueue(BR.filter(function(b){return b.ce})[0])};oc.appendChild(go);
         Array.prototype.forEach.call(c.querySelectorAll('.pub-platform details'),function(d){d.open=false});
         br.appendChild(oc);
         var h=Array.prototype.filter.call(c.querySelectorAll('*'),function(n){return n.children.length===0&&n.textContent.trim()==='Video production'})[0];
         if(h){var par=h.parentNode,d=fold(c,'Video production details',false),nodes=[h],n=h.nextElementSibling;
           while(n&&!n.classList.contains('pub-platform')&&!n.classList.contains('pub-notice')&&!n.classList.contains('pub-head')){nodes.push(n);n=n.nextElementSibling}
           par.insertBefore(d,h);nodes.forEach(function(x){d.appendChild(x)})}
-      }else c.setAttribute('data-pane','overview');
+      }else{c.setAttribute('data-pane','overview');
+        var bm={ShelfMade:'shelfmade',MindLore:'mindlore',AnimationDoodles:'doodles'}[key];var bo=BR.filter(function(b){return b.k===bm})[0];
+        if(bo){var qb=document.createElement('button');qb.type='button';qb.className='btnline pri';qb.textContent='Video queue';qb.onclick=function(){showQueue(bo)};c.appendChild(qb)}}
     });
     [pre,dep].forEach(function(box,i){if(!box)return;Array.prototype.forEach.call(box.children,function(c){
       if(c.getAttribute('data-org'))return;c.setAttribute('data-org','1');c.setAttribute('data-pane',i?'checks':'overview');
