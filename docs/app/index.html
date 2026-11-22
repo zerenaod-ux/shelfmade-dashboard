@@ -271,6 +271,10 @@ details.bn-fold>summary:after,details.ok-fold>summary:after{content:" ▾";color
 .banner{background:#ffffff08;padding:14px 16px}
 details.ok-fold{background:#4ade9a12;border-radius:14px;padding:10px 12px;margin:8px 0}
 .stsys .pub-platform{background:#ffffff08}
+#x-brands .pub-counts b{font-family:var(--head);color:var(--c)}
+#x-brands .pub-platform{margin:10px 0}
+#x-brands>.stsys[data-hit] .row b{font:800 18px var(--head)}
+#x-brands>.stsys[data-hit] .qstats{margin:12px 0 6px}
 @media(min-width:900px){#st-sub{top:112px}}
 </style>
 </head>
@@ -528,6 +532,17 @@ function showQueue(b){
       var t=(c.textContent||'').trim();var key=Object.keys(SYS).filter(function(k){return t.indexOf(k)===0})[0];
       if(key){c.style.setProperty('--c',SYS[key]);c.classList.add('stsys')}
       if(t.indexOf('How It Ticks')===0){c.setAttribute('data-pane','posts');
+        /* fold the long explanations, keep platform cards on top */
+        var notes=Array.prototype.filter.call(c.children,function(n){return n.classList.contains('pub-meta')||n.classList.contains('pub-notice')||n.classList.contains('pub-production')});
+        if(notes.length){var nd=fold(c,'Notes and video production',false);nd.className='bn-fold';notes.forEach(function(n){nd.appendChild(n)});c.appendChild(nd)}
+        var sums=[0,0,0,0],ok=true;Array.prototype.forEach.call(c.querySelectorAll('.pub-counts'),function(pc){Array.prototype.forEach.call(pc.children,function(x,i){sums[i]+=parseInt(x.textContent)||0})});
+        var attn=c.querySelectorAll('.pub-pill.failed,.pub-entry .tag.bad').length;
+        var oc=document.createElement('div');oc.className='card stsys';oc.style.setProperty('--c','var(--hi)');oc.setAttribute('data-org','1');oc.setAttribute('data-pane','overview');oc.setAttribute('data-hit','1');
+        var hd=document.createElement('div');hd.className='row';var ti=document.createElement('b');ti.textContent='How It Ticks';var tg=document.createElement('span');tg.className='tag '+(sums[3]?'warn':'ok');tg.textContent=sums[3]?sums[3]+' to check':'All good';hd.appendChild(ti);hd.appendChild(tg);oc.appendChild(hd);
+        var tl=document.createElement('div');tl.className='qstats';[['Published',sums[2]],['Scheduled',sums[1]],['Ready',sums[0]]].forEach(function(a){var q=document.createElement('div');q.className='q';var bb=document.createElement('b');bb.textContent=a[1];var sp=document.createElement('span');sp.textContent=a[0];q.appendChild(bb);q.appendChild(sp);tl.appendChild(q)});oc.appendChild(tl);
+        var go=document.createElement('button');go.type='button';go.className='btnline';go.textContent='See each video (Posts)';go.onclick=function(){host.setAttribute('data-pane-on','posts');Array.prototype.forEach.call(document.getElementById('st-sub').children,function(x){x.classList.toggle('on',x.getAttribute('data-p')==='posts')});window.scrollTo({top:0})};oc.appendChild(go);
+        Array.prototype.forEach.call(c.querySelectorAll('.pub-platform details'),function(d){d.open=false});
+        br.appendChild(oc);
         var h=Array.prototype.filter.call(c.querySelectorAll('*'),function(n){return n.children.length===0&&n.textContent.trim()==='Video production'})[0];
         if(h){var par=h.parentNode,d=fold(c,'Video production details',false),nodes=[h],n=h.nextElementSibling;
           while(n&&!n.classList.contains('pub-platform')&&!n.classList.contains('pub-notice')&&!n.classList.contains('pub-head')){nodes.push(n);n=n.nextElementSibling}
