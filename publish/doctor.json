@@ -4,8 +4,8 @@
   "mindlore-live-redo": 1,
   "blender-test": 2,
   "scene-factory": 1,
-  "shelfmade-story-short": 2,
-  "bio-page": 2
+  "bio-page": 2,
+  "doodles": 1
  },
  "pending": [],
  "log": [
@@ -200,9 +200,13 @@
   {
    "t": "11-22 01:32Z",
    "msg": "bio-page: no safe automatic fix found"
+  },
+  {
+   "t": "11-22 19:04Z",
+   "msg": "doodles: no safe automatic fix found"
   }
  ],
- "at": "2026-11-22T11:56:52Z",
+ "at": "2026-11-22T19:04:16Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
