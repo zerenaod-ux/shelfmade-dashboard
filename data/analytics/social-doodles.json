@@ -1,8 +1,130 @@
 {
  "brand": "doodles",
- "collected": "2026-11-21T18:17:17Z",
+ "collected": "2026-11-22T18:40:57Z",
  "more": true,
  "posts": [
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Four AM Dawn Shake \ud83c\udf05\n\nLeo claims 4 AM is the new 8 AM. Mia is not buying it.\n\n#psychology #mindset #anima",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-22T12:01:53.779Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Four AM Dawn Shake \ud83c\udf05\n\nLeo claims 4 AM is the new 8 AM. Mia is not buying it.\n\n#psychology #mindset #anima",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-22T12:01:53.318Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Your Four AM Dawn Shake \ud83c\udf05\n\nLeo claims 4 AM is the new 8 AM. Mia is not buying it.\n\n#psychology #mindset #anima",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-22T12:01:52.888Z"
+  },
+  {
+   "platform": "tiktok",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Landing Applause Is Pure Terror \u2708\ufe0f\n\nLeo investigates the real reason people clap when wheels hit the groun",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-22T01:42:00.121Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=9U6MGt1-tWk",
+   "sent": "2026-11-22T00:00:14.000Z",
+   "text": "Leo planned the ultimate stress-free road trip, but his color-coded schedule did not survive Mia's playlist ch",
+   "views": 2,
+   "likes": 2,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-22T11:10:30.321Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Landing Applause Is Pure Terror \u2708\ufe0f\n\nLeo investigates the real reason people clap when wheels hit the groun",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-21T19:51:15.388Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Landing Applause Is Pure Terror \u2708\ufe0f\n\nLeo investigates the real reason people clap when wheels hit the groun",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-21T19:51:14.955Z"
+  },
   {
    "platform": "tiktok",
    "status": "scheduled",
@@ -63,7 +185,7 @@
    "text": "Leo decides one Saturday is enough to finally delete thousands of useless photos and open tabs. Mia turns his ",
    "views": 2,
    "likes": 1,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -71,7 +193,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -357,9 +479,9 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/S5TXhlxMMJI",
+   "sent": "2026-11-22T18:03:15.987Z",
    "text": "Why Your Stapler Is Revolting \ud83d\udd87\ufe0f | Leo & Mia\n\nLeo and Mia settle the score on the office supply uprising. Next",
    "views": 0,
    "likes": 0,
@@ -371,13 +493,13 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-18T08:11:20.475Z"
+   "updated": "2026-11-22T18:05:54.114Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DgDaF1MD1ye/",
+   "sent": "2026-11-22T18:06:58.887Z",
    "text": "Why Your Stapler Is Revolting \ud83d\udd87\ufe0f | Leo & Mia\n\nLeo and Mia settle the score on the office supply uprising. Next",
    "views": null,
    "likes": null,
@@ -401,11 +523,11 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
+   "status": "error",
    "url": null,
    "sent": null,
    "text": "How Leo Beat First Day Jitters \ud83d\ude05 | Leo & Mia\n\nLeo turned his first day jitters into a full crime scene. Next t",
@@ -417,9 +539,9 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@animationdoodleshq/video/7710832976078081294",
+   "sent": "2026-11-22T03:31:03.380Z",
    "text": "How Leo Beat First Day Jitters \ud83d\ude05 | Leo & Mia\n\nLeo turned his first day jitters into a full crime scene. Next t",
    "views": 0,
    "likes": 0,
@@ -439,7 +561,7 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
+   "status": "error",
    "url": null,
    "sent": null,
    "text": "How Leo Beat First Day Jitters \ud83d\ude05 | Leo & Mia\n\nLeo turned his first day jitters into a full crime scene. Next t",
@@ -457,11 +579,11 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@animationdoodleshq/video/7710717592788585741",
+   "sent": "2026-11-21T20:03:50.878Z",
    "text": "Why Group Chats Become Ghost Towns \ud83d\udcac\n\nWhen you mute the group chat and miss the only good thing.\n\n#psychology ",
-   "views": 0,
+   "views": 48,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -475,7 +597,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-17T04:12:46.708Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "youtube",
@@ -483,9 +605,9 @@
    "url": "https://www.youtube.com/shorts/WVCIHMoMHGM",
    "sent": "2026-11-21T18:03:59.515Z",
    "text": "Why Group Chats Become Ghost Towns \ud83d\udcac\n\nWhen you mute the group chat and miss the only good thing.\n\n#psychology ",
-   "views": 0,
+   "views": 2,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -493,7 +615,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T18:06:37.564Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -501,8 +623,8 @@
    "url": "https://tiktok.com/@animationdoodleshq/video/7710461944653712654",
    "sent": "2026-11-21T03:32:16.167Z",
    "text": "How to Fake Meeting Nods \ud83e\udd25 | Leo & Mia\n\nEver nodded through a meeting when you had no clue what was happening?",
-   "views": 0,
-   "likes": 0,
+   "views": 138,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -515,7 +637,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-17T02:29:48.713Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "instagram",
@@ -547,9 +669,9 @@
    "url": "https://www.youtube.com/shorts/-hJWONk4WVs",
    "sent": "2026-11-21T03:01:39.041Z",
    "text": "How to Fake Meeting Nods \ud83e\udd25 | Leo & Mia\n\nEver nodded through a meeting when you had no clue what was happening?",
-   "views": 0,
+   "views": 2,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -557,7 +679,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -565,7 +687,7 @@
    "url": "https://tiktok.com/@animationdoodleshq/video/7710347348735528205",
    "sent": "2026-11-20T20:06:47.366Z",
    "text": "The Soup Detective\n\nLeo treats honest feedback like a full crime investigation. Mia reminds him that growing m",
-   "views": 27,
+   "views": 87,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -579,7 +701,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "instagram",
@@ -631,7 +753,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "instagram",
@@ -651,7 +773,7 @@
    "url": "https://www.youtube.com/shorts/4-5dZuVCWN0",
    "sent": "2026-11-20T03:01:42.256Z",
    "text": "Your Fake Award\n\nLeo turned Mia's prank into an absolute career victory. Part two incoming!\n\n#psychology #mind",
-   "views": 1,
+   "views": 4,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -661,7 +783,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -683,7 +805,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "instagram",
@@ -703,7 +825,7 @@
    "url": "https://www.youtube.com/shorts/XZe3xqpV1ZA",
    "sent": "2026-11-19T18:05:52.154Z",
    "text": "How I Peaked In Third Grade \ud83c\udf93\n\nI swear, it was all downhill after my third-grade gold star.\n\n#psychology #mind",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -713,7 +835,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "youtube",
@@ -731,7 +853,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -753,7 +875,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "instagram",
@@ -773,7 +895,7 @@
    "url": "https://www.youtube.com/shorts/a9y0zHRRqKM",
    "sent": "2026-11-19T03:01:29.357Z",
    "text": "Your First Day Shakes \ud83d\ude2c\n\nFirst day nerves hit different when your brain mishears literally everything. Next ti",
-   "views": 52,
+   "views": 54,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -783,7 +905,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "instagram",
@@ -791,11 +913,22 @@
    "url": "https://www.instagram.com/reel/Df5HBwykf9q/",
    "sent": "2026-11-18T18:07:47.797Z",
    "text": "The Pre-Sweat Protocol\n\nWhen first-day nerves make you pre-sweat before entering the building. Next time: Leo ",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-14T10:59:35.471Z"
+   "views": 176,
+   "likes": 1,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -803,7 +936,7 @@
    "url": "https://www.youtube.com/shorts/CKqSjL7j5YU",
    "sent": "2026-11-18T18:05:08.272Z",
    "text": "The Pre-Sweat Protocol\n\nWhen first-day nerves make you pre-sweat before entering the building. Next time: Leo ",
-   "views": 1,
+   "views": 5,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -813,7 +946,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -835,7 +968,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "instagram",
@@ -858,7 +991,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.497Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -876,7 +1009,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -898,7 +1031,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.287Z"
   },
   {
    "platform": "instagram",
@@ -906,7 +1039,7 @@
    "url": "https://www.instagram.com/reel/Df3Y2P2DjaK/",
    "sent": "2026-11-18T02:03:49.318Z",
    "text": "Your Phone Dies Now\n\nWhen the phone hits one percent across the room. Good luck.\n\n#psychology #mindset #animat",
-   "views": 148,
+   "views": 163,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -921,7 +1054,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.496Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -939,7 +1072,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -961,7 +1094,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "youtube",
@@ -979,7 +1112,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "instagram",
@@ -987,8 +1120,8 @@
    "url": "https://www.instagram.com/reel/Df2iLPukg0S/",
    "sent": "2026-11-17T18:06:51.195Z",
    "text": "Your First Day Boss Fight\n\nLeo handles first-day panic by turning every awkward wave into a total power move.\n",
-   "views": 193,
-   "likes": 0,
+   "views": 211,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -1002,7 +1135,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.496Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "tiktok",
@@ -1024,7 +1157,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1032,7 +1165,7 @@
    "url": "https://www.instagram.com/reel/Df0z4h0FUkv/",
    "sent": "2026-11-17T02:02:18.425Z",
    "text": "The Robot Replacement Panic | Leo & Mia #17\n\nWhen a simple software update makes you plan your early retiremen",
-   "views": 146,
+   "views": 148,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1047,7 +1180,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.496Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -1055,7 +1188,7 @@
    "url": "https://www.youtube.com/shorts/vG5WGpjUpdc",
    "sent": "2026-11-17T03:01:47.744Z",
    "text": "The Robot Replacement Panic | Leo & Mia #17\n\nWhen a simple software update makes you plan your early retiremen",
-   "views": 3,
+   "views": 4,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1065,7 +1198,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "instagram",
@@ -1088,7 +1221,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.496Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "tiktok",
@@ -1110,7 +1243,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "youtube",
@@ -1128,7 +1261,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1136,7 +1269,7 @@
    "url": "https://www.tiktok.com/@animationdoodleshq/video/7708606427530677518?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-16T03:32:00.250Z",
    "text": "The Unearned Rest | Leo & Mia #16 Do you feel like you aren't allowed to stop? Mia has some thoughts. #psychol",
-   "views": 68,
+   "views": 69,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1150,7 +1283,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1173,7 +1306,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.496Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -1191,7 +1324,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "youtube",
@@ -1199,7 +1332,7 @@
    "url": "https://www.youtube.com/shorts/0Bx46Pe0lMQ",
    "sent": "2026-11-15T18:03:24.402Z",
    "text": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone\n\nWhy does Sunday evening feel like a high-stakes exam you di",
-   "views": 5,
+   "views": 4,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1209,7 +1342,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1231,7 +1364,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1254,7 +1387,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.496Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "tiktok",
@@ -1276,7 +1409,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1299,7 +1432,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.496Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -1317,7 +1450,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1339,7 +1472,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1362,7 +1495,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.497Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -1380,7 +1513,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1402,7 +1535,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1432,7 +1565,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1454,7 +1587,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1477,7 +1610,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.497Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -1495,7 +1628,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1517,7 +1650,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1540,7 +1673,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.497Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -1548,7 +1681,7 @@
    "url": "https://www.youtube.com/shorts/5bvrVUR8iek",
    "sent": "2026-11-13T03:01:00.098Z",
    "text": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone\n\nWhy does Sunday afternoon feel scarier than Monday mornin",
-   "views": 3,
+   "views": 4,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1558,7 +1691,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1580,7 +1713,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "youtube",
@@ -1598,7 +1731,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "instagram",
@@ -1621,7 +1754,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.497Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "instagram",
@@ -1644,7 +1777,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.497Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "tiktok",
@@ -1666,7 +1799,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "youtube",
@@ -1684,7 +1817,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1706,7 +1839,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.053Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   },
   {
    "platform": "instagram",
@@ -1729,7 +1862,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-18T03:45:12.497Z"
+   "updated": "2026-11-22T02:36:02.250Z"
   },
   {
    "platform": "youtube",
@@ -1747,7 +1880,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T11:58:49.246Z"
+   "updated": "2026-11-22T11:10:30.321Z"
   },
   {
    "platform": "tiktok",
@@ -1769,151 +1902,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-21T01:07:59.054Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@animationdoodleshq/video/7706635779220557069?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-10T20:04:27.236Z",
-   "text": "The Sleep Effort Trap Can't sleep? Trying harder might be the reason. Leo and Mia explain the sleep effort tra",
-   "views": 80,
-   "likes": 3,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-21T01:07:59.054Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DflXF5cDFIz/",
-   "sent": "2026-11-11T02:02:29.689Z",
-   "text": "The Infinite Refresh | Leo & Mia #7\n\nWhy we keep refreshing apps for absolutely nothing.\n\n#psychology #mindset",
-   "views": 194,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-18T03:45:12.497Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/vthdpujWnPY",
-   "sent": "2026-11-11T03:01:43.361Z",
-   "text": "The Infinite Refresh | Leo & Mia #7\n\nWhy we keep refreshing apps for absolutely nothing.\n\n#psychology #mindset",
-   "views": 5,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-21T11:58:49.246Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=Zoos5GbVQPU",
-   "sent": "2026-11-07T00:00:14.000Z",
-   "text": "Leo tries to conquer his work inbox before noon and falls straight into the overthinking trap. Mia tracks his ",
-   "views": 3,
-   "likes": 2,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-21T11:58:49.246Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfkgoT2DbEm/",
-   "sent": "2026-11-10T18:06:50.431Z",
-   "text": "The Sleep Effort Trap\n\nCan't sleep? Trying harder might be the reason. Leo and Mia explain the sleep effort tr",
-   "views": 138,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-18T03:45:12.497Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/EWhebXioXqQ",
-   "sent": "2026-11-10T18:03:58.124Z",
-   "text": "The Sleep Effort Trap\n\nCan't sleep? Trying harder might be the reason. Leo and Mia explain the sleep effort tr",
-   "views": 17,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-21T11:58:49.246Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@animationdoodleshq/video/7705893368080944397?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-08T20:03:20.448Z",
-   "text": "The Sunday Spiral Ever spend your Sunday worrying about a Monday that hasn't happened yet? Here is why your br",
-   "views": 68,
-   "likes": 2,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-21T01:07:59.054Z"
+   "updated": "2026-11-22T00:08:39.288Z"
   }
  ]
 }
