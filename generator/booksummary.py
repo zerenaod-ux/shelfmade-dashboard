@@ -64,9 +64,15 @@ def fetch_book(gid):
         f"https://www.gutenberg.org/cache/epub/{gid}/pg{gid}.txt",
         f"https://www.gutenberg.org/files/{gid}/{gid}-0.txt",
         f"https://www.gutenberg.org/files/{gid}/{gid}.txt",
+        f"https://www.gutenberg.org/ebooks/{gid}.txt.utf-8",
     ]
+    # Mirror path = digits of the id, all but the last one, as folders (id 1342 -> 1/3/4/1342); GitHub runners are often refused (503) by the main site.
+    folders = "/".join(str(gid)[:-1]) if len(str(gid)) > 1 else "0"
+    urls += [f"https://gutenberg.pglaf.org/{folders}/{gid}/{gid}-0.txt", f"https://gutenberg.pglaf.org/{folders}/{gid}/{gid}.txt"]
     failures = []
-    for u in urls:
+    import time
+    for u in urls * 2:   # second pass after a pause: outages are usually short
+        if u == urls[0] and failures: time.sleep(20)
         try:
             req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=60) as r:
@@ -77,8 +83,9 @@ def fetch_book(gid):
             failures.append(error)
             continue
     import generation_recovery
-    if len(failures) == len(urls) and all(generation_recovery.transient(e) for e in failures):
-        raise failures[-1]
+    transient = [e for e in failures if generation_recovery.transient(e)]
+    if transient:   # wrong-path 404s are normal; any 503/timeout means an outage, retry later
+        raise transient[-1]
     raise RuntimeError(f"Could not fetch Gutenberg book {gid}")
 
 def strip_gutenberg(text):

@@ -9,12 +9,18 @@ PROVIDERS = [
     ('CEREBRAS_API_KEY', 'https://api.cerebras.ai/v1', ('gpt-oss-120b', 'llama-3.3-70b', 'qwen', 'llama')),
     ('OPENROUTER_API_KEY', 'https://openrouter.ai/api/v1', ('gpt-oss-120b', 'llama-3.3-70b', 'qwen', 'deepseek', 'gemma', 'llama', 'mistral')),
     ('MISTRAL_API_KEY', 'https://api.mistral.ai/v1', ('mistral-large', 'mistral-medium', 'mistral-small', 'mistral')),
+    # Keyless free services (no account, limits per IP): tried last so a used-up key never stops a writer.
+    ('KEYLESS_LLM7', 'https://api.llm7.io/v1', ('gpt-oss', 'llama-3.3', 'qwen', 'deepseek', 'llama', 'mistral')),
+    ('KEYLESS_OVH', 'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1', ('gpt-oss-120b', 'llama-3_3', 'qwen', 'llama', 'mistral')),
 ]
+KEYLESS_KEYS = {'KEYLESS_LLM7': 'unused', 'KEYLESS_OVH': ''}
 _CACHE = {}
 
 
 def _req(url, key, body=None):
-    r = urllib.request.Request(url, json.dumps(body).encode() if body is not None else None, {'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json', 'User-Agent': 'studio/1.0'})
+    h = {'Content-Type': 'application/json', 'User-Agent': 'studio/1.0'}
+    if key: h['Authorization'] = 'Bearer ' + key
+    r = urllib.request.Request(url, json.dumps(body).encode() if body is not None else None, h)
     with urllib.request.urlopen(r, timeout=90) as x:
         return json.load(x)
 
@@ -34,14 +40,14 @@ def _models(env, base, prefs, key):
 
 
 def available():
-    return [e for e, _, _ in PROVIDERS if os.environ.get(e)]
+    return [e for e, _, _ in PROVIDERS if os.environ.get(e) or e in KEYLESS_KEYS]
 
 
 def text(system, prompt, json_mode=True, temperature=0.8, max_tokens=6000):
     last = 'no free LLM key configured'
     for env, base, prefs in PROVIDERS:
-        key = os.environ.get(env, '').strip()
-        if not key:
+        key = os.environ.get(env, '').strip() or KEYLESS_KEYS.get(env, '')
+        if not key and env not in KEYLESS_KEYS:
             continue
         try:
             models = _models(env, base, prefs, key)
