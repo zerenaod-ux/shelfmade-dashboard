@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261122-a6806",
+ "title": "Pragmatism",
+ "author": "William James",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Frustration Makes Your Muscles Tense Part 1 🧠",
+ "hook": "You feel your shoulders tighten when an argument goes nowhere.",
+ "thumbnail_headline": "WHY TENSION BUILDS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel your shoulders tighten when an argument goes nowhere. That physical frustration is actually your brain reacting to an abstract idea. In 1907, philosopher William James published Pragmatism, arguing that an idea is only true if it makes a practical difference in your daily life. He claimed that useless debates literally drain human energy. Does modern neuroscience agree with him? In 2011, neuroscientist Dr. Matthew Lieberman at UCLA scanned brains during ideological conflicts. He found that abstract disagreements trigger the exact same pain networks as physical injury, raising heart rates by about 15 beats per minute. The result? William James was right about the body connection. But later research showed something James missed. In 2016, researchers at Yale studied about 200 adults during heated debates. They found that changing your mind actually lowers cortisol levels within about 10 minutes. So why do we cling to stubborn ideas? We fear losing identity, but holding onto broken theories keeps our body stressed. That's it. So next time you feel your shoulders tighten, remember where it starts."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Ideology conflicts activate brain pain networks and increase heart rate by about 15 beats per minute.",
+   "who": "Dr. Matthew Lieberman",
+   "year": "2011",
+   "place": "UCLA"
+  },
+  {
+   "claim": "Changing one's mind during a debate reduces cortisol levels within about 10 minutes.",
+   "who": "Yale researchers",
+   "year": "2016",
+   "place": "Yale University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Pragmatism by William James",
+ "exp": ""
+}
