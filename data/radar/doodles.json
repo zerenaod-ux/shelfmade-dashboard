@@ -1,129 +1,138 @@
 {
  "why": [
   {
-   "title": "If Bully Pushes You in Public \ud83e\udd2f #shorts #viral",
-   "why": "It uses a high-stakes, highly relatable fear scenario combined with immediate actionable advice, creating instant curiosity about how to respond."
-  },
-  {
-   "title": "Never Trust a Cheap Barber \ud83d\ude02 #shorts",
-   "why": "It taps into a universally understood micro-tragedy using simple 2D animation to deliver rapid visual comedy and relatable embarrassment."
-  },
-  {
    "title": "Why You Hate Your Own Voice \ud83d\ude2c #shorts #science #voice #funfacts #psychology #didyouknow #animation",
-   "why": "It targets a hyper-specific personal insecurity that almost everyone experiences, offering a quick scientific explanation that validates the viewer."
+   "why": "It leverages an extremely relatable, uncomfortable daily sensation combined with an immediate science-backed explanation delivered through simple visual animation."
   },
   {
-   "title": "He Guarded Potatoes Nobody Would Eat",
-   "why": "It relies on counter-intuitive reverse psychology storytelling that creates an irresistible intrigue gap right in the first sentence."
+   "title": "You Go Blind Thousands of Times a Day (Your Brain Hides It)",
+   "why": "It uses a mind-bending counter-intuitive hook about a hidden bodily flaw that triggers instant curiosity and body-awareness."
+  },
+  {
+   "title": "Why One Nice Thing Makes You Want to Buy Everything (One Red Robe Explains It)",
+   "why": "It packages a complex consumer psychology phenomenon (the Diderot Effect) into a compelling storytelling hook using a concrete, visual anchor object."
+  },
+  {
+   "title": "The Buffet Trick Nobody Notices #facts #eating",
+   "why": "It exposes a hidden manipulation in everyday life, provoking consumer paranoia and modern survival curiosity."
   }
  ],
  "hook_patterns": [
-  "Presenting a common, embarrassing personal trait and immediately offering a psychological reason for it.",
-  "Setting up an absurd high-stakes social conflict and pausing right before the resolution.",
-  "Using counter-intuitive historical or behavioral anecdotes that defy basic logic."
+  "Unmasking a sensory illusion your brain plays on you daily",
+  "Explaining an irrational consumer habit using a single weird historical story",
+  "Exposing a subtle public manipulation trick that the viewer has likely fallen for"
  ],
- "todays_angle": "Focus on everyday micro-behaviors that make people feel weird or insecure, framed as funny psychological superpowers between Leo and Mia.",
+ "todays_angle": "Expose the hidden optical or cognitive illusions your brain uses to trick you every single day, framed through Leo falling for the trick and Mia breaking down the science.",
  "ideas": [
-  "Mia records Leo talking and plays it back to explain bone conduction psychology, triggering Leo's existential crisis over his 'real voice.'",
-  "Leo tries using the 'Potato Guarding' reverse-psychology trick to stop Mia from eating his fries, which backfires hilariously.",
-  "Mia uses psychological mirroring techniques on a pushy barista, while Leo narrates her subtle body language like an over-the-top documentary."
+  {
+   "title": "Why You Predict the Future When Walking",
+   "concept": "Mia demonstrates how the brain erases the lag between light hitting your eyes and processing it, while Leo tries to test his 'future sight' by guessing where Mia will throw a couch cushion."
+  },
+  {
+   "title": "The Reason Store Mirrors Make You Look Better",
+   "concept": "Leo boasts about his sudden glow-up in a fitting room mirror, forcing Mia to explain the lighting angles and subtle mirror tilts retail stores use to trick consumer dopamine."
+  },
+  {
+   "title": "Why Fake Smiles Break Your Brain",
+   "concept": "Mia catches Leo doing a customer-service fake smile and uses animation to show how forcing facial muscles tricks the brain into actually feeling happier, causing Leo to accidentally cure his own bad mood."
+  }
  ],
  "avoid": [
-  "Generic stick-figure street fight or self-defense scenarios that lack a clear psychological twist.",
-  "Overly long historical backstories that lose the core comedy dynamic between Leo and Mia."
+  "Overused dark psychology or bully-defense scenario skits",
+  "Generic 'edit style' edits comparing high-ego fictional characters"
  ],
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "sample": 75,
  "spikes": [
   {
    "title": "2 bullets  5 prisoners  How to stop all of them\ud83d\udd2b #uselessfacts #animation",
    "channel": "Useless Truths",
-   "views": 49597,
-   "hours": 6,
-   "vph": 8802.3,
-   "subs": 30200,
-   "breakout": 1.6
+   "views": 786744,
+   "hours": 25,
+   "vph": 31633.2,
+   "subs": 30700,
+   "breakout": 25.6
   },
   {
    "title": "If Bully Pushes You in Public \ud83e\udd2f #shorts #viral",
    "channel": "Decoded Others",
-   "views": 176683,
+   "views": 195234,
+   "hours": 42,
+   "vph": 4659.2,
+   "subs": 13000,
+   "breakout": 15.0
+  },
+  {
+   "title": "Obsession vs Ego \ud83d\udc80\ud83d\udd25 | Patrick Jane Edit | The Mentalist #patrickjane #edit #shorts",
+   "channel": "MAX XD",
+   "views": 33722,
    "hours": 23,
-   "vph": 7794.9,
-   "subs": 12900,
-   "breakout": 13.7
+   "vph": 1473.3,
+   "subs": 169000,
+   "breakout": 0.2
   },
   {
-   "title": "the gta6 video #funny #relatable #gta6",
-   "channel": "So Okay Here's the Thing",
-   "views": 220186,
-   "hours": 38,
-   "vph": 5788.0,
-   "subs": 266000,
-   "breakout": 0.8
+   "title": "Todos chocaban contra el mismo \u00e1rbol\u2026 en una carretera recta #shorts",
+   "channel": "TOONSTORIA",
+   "views": 22667,
+   "hours": 22,
+   "vph": 1030.1,
+   "subs": 3360,
+   "breakout": 6.7
   },
   {
-   "title": "I really thought they'd be a thing #relatable #animatic #animation #sketch #sketchbook #digitalart",
-   "channel": "Cloudy Art ",
-   "views": 69318,
-   "hours": 44,
-   "vph": 1583.2,
-   "subs": 30400,
-   "breakout": 2.3
+   "title": "True artists can relate \ud83e\udd72\ud83e\udd40#art #drawing #relatable #animeart #viral #arttrend #relatablecontent",
+   "channel": "Kensha YT",
+   "views": 38873,
+   "hours": 42,
+   "vph": 919.2,
+   "subs": 3310,
+   "breakout": 11.7
   },
   {
    "title": "Cissia works at a restaurant",
    "channel": "BoiZee",
-   "views": 28413,
-   "hours": 21,
-   "vph": 1368.5,
-   "subs": 75700,
-   "breakout": 0.4
+   "views": 36495,
+   "hours": 40,
+   "vph": 912.4,
+   "subs": 75900,
+   "breakout": 0.5
   },
   {
-   "title": "Never Trust a Cheap Barber \ud83d\ude02 #shorts",
-   "channel": "2D Stick Comedy",
-   "views": 34659,
-   "hours": 44,
-   "vph": 796.5,
-   "subs": 57,
-   "breakout": 173.3
+   "title": "Why can't men be friends with a woman without wanting something more? #shorts",
+   "channel": "Veiloria Invitations",
+   "views": 30700,
+   "hours": 36,
+   "vph": 858.8,
+   "subs": 528,
+   "breakout": 58.1
+  },
+  {
+   "title": "The Wanderer Is Here",
+   "channel": "Pescak",
+   "views": 13888,
+   "hours": 19,
+   "vph": 735.8,
+   "subs": 210000,
+   "breakout": 0.1
   },
   {
    "title": "Why You Hate Your Own Voice \ud83d\ude2c #shorts #science #voice #funfacts #psychology #didyouknow #animation",
    "channel": "Tiny tales",
-   "views": 16923,
-   "hours": 25,
-   "vph": 674.4,
-   "subs": 162,
-   "breakout": 84.6
+   "views": 25944,
+   "hours": 44,
+   "vph": 585.3,
+   "subs": 165,
+   "breakout": 129.7
   },
   {
-   "title": "\u041e\u043d\u0438 \u0412\u0440\u0443\u0442 \u0422\u0435\u0431\u0435 \u0412\u0441\u044e \u0416\u0438\u0437\u043d\u044c  \u00ab\u042f \u041d\u0435 \u0413\u043e\u043b\u043e\u0434\u043d\u0430\u044f, \u0415\u0448\u044c\u00bb #\u043f\u0441\u0438\u0445\u043e\u043b\u043e\u0433\u0438\u044f #shorts",
-   "channel": "SHPEKMAN",
-   "views": 19650,
-   "hours": 31,
-   "vph": 634.4,
-   "subs": 2240,
-   "breakout": 8.8
-  },
-  {
-   "title": "He Guarded Potatoes Nobody Would Eat",
-   "channel": "OddMinute",
-   "views": 25866,
-   "hours": 43,
-   "vph": 602.2,
-   "subs": 53,
-   "breakout": 129.3
-  },
-  {
-   "title": "Why the Airport Moved Its Planes Away",
-   "channel": "Daniel",
-   "views": 25373,
-   "hours": 47,
-   "vph": 536.8,
-   "subs": 50,
-   "breakout": 126.9
+   "title": "You Go Blind Thousands of Times a Day (Your Brain Hides It)",
+   "channel": "Odd Truths",
+   "views": 9307,
+   "hours": 18,
+   "vph": 531.8,
+   "subs": 213,
+   "breakout": 43.7
   }
  ]
 }
