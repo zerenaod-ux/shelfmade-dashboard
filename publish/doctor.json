@@ -5,8 +5,7 @@
   "blender-test": 2,
   "scene-factory": 1,
   "shelfmade-story-short": 2,
-  "doodles": 2,
-  "bio-page": 1
+  "bio-page": 2
  },
  "pending": [],
  "log": [
@@ -197,9 +196,13 @@
   {
    "t": "11-21 20:35Z",
    "msg": "doodles: no safe automatic fix found"
+  },
+  {
+   "t": "11-22 01:32Z",
+   "msg": "bio-page: no safe automatic fix found"
   }
  ],
- "at": "2026-11-21T20:35:42Z",
+ "at": "2026-11-22T01:32:31Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
