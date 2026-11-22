@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-21",
+ "collected": "2026-11-22",
  "note": "",
  "videos": [
   {
@@ -24,7 +24,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 384,
+   "views": 385,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 98,
@@ -63,7 +63,7 @@
    "published": "2026-11-15T03:01:32Z",
    "duration": "PT1M3S",
    "privacy": "public",
-   "views": 168,
+   "views": 169,
    "likes": 4,
    "comments": 1,
    "avgSeconds": 17,
@@ -224,17 +224,14 @@
    "subsGained": 0
   },
   {
-   "id": "qfwKKgBIkvI",
-   "title": "What warning did Darwin give?",
-   "published": "2026-11-06T18:04:24Z",
-   "duration": "PT1M2S",
+   "id": "md9q--G7er8",
+   "title": "Why Wolves Chase Each Other \ud83e\udd14",
+   "published": "2026-11-21T23:01:52Z",
+   "duration": "PT55S",
    "privacy": "public",
-   "views": 69,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 42,
-   "avgPercent": 68.02,
-   "subsGained": 0
+   "views": 63,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "70hQFkZl71o",
@@ -294,7 +291,7 @@
    "published": "2026-10-22T01:12:07Z",
    "duration": "PT46S",
    "privacy": "public",
-   "views": 55,
+   "views": 56,
    "likes": 1,
    "comments": 0,
    "avgSeconds": 23,
@@ -530,6 +527,19 @@
    "comments": 0,
    "avgSeconds": 38,
    "avgPercent": 71.11,
+   "subsGained": 0
+  },
+  {
+   "id": "Y2dnDEONRD0",
+   "title": "Is blushing a sign of confusion?",
+   "published": "2026-11-06T03:01:33Z",
+   "duration": "PT57S",
+   "privacy": "public",
+   "views": 32,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 14,
+   "avgPercent": 25.28,
    "subsGained": 0
   },
   {
@@ -780,6 +790,19 @@
    "subsGained": 0
   },
   {
+   "id": "ufT1qz-t0TI",
+   "title": "Your brain can't truly multitask",
+   "published": "2026-11-10T03:01:09Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 14,
+   "avgPercent": 23.87,
+   "subsGained": 0
+  },
+  {
    "id": "GUUj1ASdeLg",
    "title": "Why does work feel heavy?",
    "published": "2026-06-19T04:29:48Z",
@@ -788,19 +811,6 @@
    "views": 23,
    "likes": 1,
    "comments": 0
-  },
-  {
-   "id": "ufT1qz-t0TI",
-   "title": "Your brain can't truly multitask",
-   "published": "2026-11-10T03:01:09Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 22,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 23.87,
-   "subsGained": 0
   },
   {
    "id": "BeQ1CnMVAns",
@@ -813,19 +823,6 @@
    "comments": 1,
    "avgSeconds": 17,
    "avgPercent": 30.36,
-   "subsGained": 0
-  },
-  {
-   "id": "LFZ1UKXf86A",
-   "title": "Listen to what M\u00fcnsterberg warned about.",
-   "published": "2026-11-07T03:01:33Z",
-   "duration": "PT1M1S",
-   "privacy": "public",
-   "views": 22,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 17,
-   "avgPercent": 27.91,
    "subsGained": 0
   },
   {
@@ -888,6 +885,19 @@
    "comments": 1,
    "avgSeconds": 22,
    "avgPercent": 37.58,
+   "subsGained": 0
+  },
+  {
+   "id": "xGaGRBalAvQ",
+   "title": "Can psychology boost industry efficiency?",
+   "published": "2026-11-05T18:04:28Z",
+   "duration": "PT1M1S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 72,
+   "avgPercent": 118.09,
    "subsGained": 0
   },
   {
@@ -956,19 +966,6 @@
    "subsGained": 1
   },
   {
-   "id": "ivGIglijofs",
-   "title": "Can a collective mind spark revolutions?",
-   "published": "2026-11-07T18:04:02Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 19,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 8,
-   "avgPercent": 13.36,
-   "subsGained": 0
-  },
-  {
    "id": "UbddSXgqSCk",
    "title": "Does your subconscious drive choices?",
    "published": "2026-06-12T04:36:00Z",
@@ -1016,8 +1013,8 @@
    "views": 18,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 1374,
-   "avgPercent": 2862.61,
+   "avgSeconds": 8,
+   "avgPercent": 17.92,
    "subsGained": 0
   },
   {
@@ -1200,6 +1197,16 @@
    "subsGained": 0
   },
   {
+   "id": "ZxFKXhCEx_c",
+   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
+   "published": "2026-11-21T18:03:51Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 14,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "u-bjxB9PmgY",
    "title": "Why you buy things you don't need to impress people you don't like \ud83d\udcb8",
    "published": "2026-06-26T02:27:52Z",
@@ -1356,6 +1363,19 @@
    "subsGained": 0
   },
   {
+   "id": "3R9qrEuApWU",
+   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
+   "published": "2026-11-20T03:02:14Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 18,
+   "avgPercent": 30.579999999999995,
+   "subsGained": 0
+  },
+  {
    "id": "h4yc9t1OdDs",
    "title": "How Unexpected News Freezes Facial Muscles",
    "published": "2026-11-18T18:05:16Z",
@@ -1416,19 +1436,6 @@
    "views": 9,
    "likes": 0,
    "comments": 0
-  },
-  {
-   "id": "3R9qrEuApWU",
-   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
-   "published": "2026-11-20T03:02:14Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 8,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 18,
-   "avgPercent": 30.579999999999995,
-   "subsGained": 0
   },
   {
    "id": "gq3Q2B0bnQg",
@@ -1678,14 +1685,14 @@
    "subsGained": 0
   },
   {
-   "id": "ZxFKXhCEx_c",
-   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
-   "published": "2026-11-21T18:03:51Z",
-   "duration": "PT1M8S",
+   "id": "45VYT07OEHo",
+   "title": "Why Kids Laugh at Story Twists \ud83d\ude04",
+   "published": "2026-11-20T18:05:31Z",
+   "duration": "PT55S",
    "privacy": "public",
    "views": 4,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "o3yiUpFfU8c",
@@ -1766,6 +1773,16 @@
    "subsGained": 0
   },
   {
+   "id": "EPGy8t4XRkI",
+   "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
+   "published": "2026-11-22T00:00:16Z",
+   "duration": "PT7M24S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "Nl1SAPaJEuY",
    "title": "Are children's dreams really simpler than ours? | Freud",
    "published": "2026-11-10T00:00:05Z",
@@ -1777,6 +1794,16 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
+  },
+  {
+   "id": "EPGy8t4XRkI",
+   "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
+   "published": "2026-11-22T00:00:16Z",
+   "duration": "PT7M24S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "Nl1SAPaJEuY",
@@ -1900,29 +1927,6 @@
    "subsGained": 0
   },
   {
-   "id": "45VYT07OEHo",
-   "title": "Why Kids Laugh at Story Twists \ud83d\ude04",
-   "published": "2026-11-20T18:05:31Z",
-   "duration": "PT55S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1
-  },
-  {
-   "id": "MN_liz83nkU",
-   "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
-   "published": "2026-11-07T00:00:20Z",
-   "duration": "PT7M24S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "MN_liz83nkU",
    "title": "Are you tired, or just bored? | Hugo M\u00fcnsterberg",
    "published": "2026-11-07T00:00:20Z",
@@ -1985,6 +1989,26 @@
    "comments": 0
   },
   {
+   "id": "X3V_PUpkS_M",
+   "title": "Why do you feel dizzy when standing still? | William James",
+   "published": "2026-11-22T06:50:24Z",
+   "duration": "PT7M4S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Djn2cCJZsfs",
+   "title": "Why Bad Split Second Decisions Happen \ud83e\udd14",
+   "published": "2026-11-22T01:42:00Z",
+   "duration": "PT7M13S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "jJFrEF7iTvA",
    "title": "Why do you make bad split second decisions under pressure? | M\u00fcnsterberg",
    "published": "2026-11-21T19:16:36Z",
@@ -2015,6 +2039,16 @@
    "comments": 0
   },
   {
+   "id": "QNTiEqKvMFM",
+   "title": "Do you choose your face, or does it choose you? | Charles Darwin",
+   "published": "2026-11-05T23:39:10Z",
+   "duration": "PT7M23S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "D2VOAPsZqKw",
    "title": "Can a crowd be better than the people in it? | Gustave Le Bon",
    "published": "2026-11-04T20:45:23Z",
@@ -2039,16 +2073,6 @@
    "title": "Why we believe what impressive people say | Gustave Le Bon",
    "published": "2026-11-03T20:41:05Z",
    "duration": "PT7M22S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "EPGy8t4XRkI",
-   "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
-   "published": "2026-11-03T15:49:25Z",
-   "duration": "PT7M24S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

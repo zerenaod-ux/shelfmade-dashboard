@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "10",
- "collected": "2026-11-21",
+ "collected": "2026-11-22",
  "note": "",
  "videos": [
   {
@@ -500,6 +500,19 @@
    "subsGained": 0
   },
   {
+   "id": "D3aLO1j24s8",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-13T18:04:35Z",
+   "duration": "PT1M19S",
+   "privacy": "public",
+   "views": 26,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 14,
+   "avgPercent": 18.78,
+   "subsGained": 0
+  },
+  {
    "id": "I0Q6d7pqqEE",
    "title": "And how without this knowledge can you support the truth of Christianity?",
    "published": "2026-10-25T23:19:55Z",
@@ -510,19 +523,6 @@
    "comments": 0,
    "avgSeconds": 11,
    "avgPercent": 49.38,
-   "subsGained": 0
-  },
-  {
-   "id": "D3aLO1j24s8",
-   "title": "Nobody warns you about Acres of Diamonds.",
-   "published": "2026-11-13T18:04:35Z",
-   "duration": "PT1M19S",
-   "privacy": "public",
-   "views": 25,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 18.78,
    "subsGained": 0
   },
   {
@@ -591,6 +591,16 @@
    "subsGained": 0
   },
   {
+   "id": "WJTdDr_NDVQ",
+   "title": "What Self-Reliance really asks of you.",
+   "published": "2026-11-21T18:04:59Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "qcKc4yxs1xQ",
    "title": "Why did the physical sciences never arrive at any true knowledge or make any real progress?",
    "published": "2026-10-31T17:02:45Z",
@@ -601,6 +611,19 @@
    "comments": 0,
    "avgSeconds": 7,
    "avgPercent": 20.16,
+   "subsGained": 0
+  },
+  {
+   "id": "2W3cnCLXxQo",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-17T18:05:57Z",
+   "duration": "PT1M9S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 21,
+   "avgPercent": 31.1,
    "subsGained": 0
   },
   {
@@ -627,19 +650,6 @@
    "comments": 0,
    "avgSeconds": 97,
    "avgPercent": 64.3,
-   "subsGained": 0
-  },
-  {
-   "id": "2W3cnCLXxQo",
-   "title": "You have Art of War backwards.",
-   "published": "2026-11-17T18:05:57Z",
-   "duration": "PT1M9S",
-   "privacy": "public",
-   "views": 19,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 21,
-   "avgPercent": 31.1,
    "subsGained": 0
   },
   {
@@ -1164,6 +1174,16 @@
    "subsGained": 0
   },
   {
+   "id": "NFCFFiU0_hw",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-20T18:06:38Z",
+   "duration": "PT1M3S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "pLirzW1d_Og",
    "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
    "published": "2026-11-15T00:00:32Z",
@@ -1367,16 +1387,6 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
-  },
-  {
-   "id": "NFCFFiU0_hw",
-   "title": "Nobody warns you about Acres of Diamonds.",
-   "published": "2026-11-20T18:06:38Z",
-   "duration": "PT1M3S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "p079-FpO7QE",
@@ -2069,10 +2079,10 @@
    "comments": 0
   },
   {
-   "id": "WJTdDr_NDVQ",
-   "title": "What Self-Reliance really asks of you.",
-   "published": "2026-11-21T18:04:59Z",
-   "duration": "PT1M8S",
+   "id": "TXgCTuFvgYA",
+   "title": "Why does Conduct of Life still matter?",
+   "published": "2026-11-22T00:00:30Z",
+   "duration": "PT6M56S",
    "privacy": "public",
    "views": 0,
    "likes": 0,
@@ -2086,7 +2096,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "a7ehg8GKMJ8",
@@ -2146,16 +2156,6 @@
    "title": "Why does Young Man's Guide still matter?",
    "published": "2026-11-18T20:49:52Z",
    "duration": "PT7M3S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "TXgCTuFvgYA",
-   "title": "Why does Conduct of Life still matter?",
-   "published": "2026-11-16T22:26:54Z",
-   "duration": "PT6M56S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

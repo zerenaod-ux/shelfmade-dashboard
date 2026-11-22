@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-21",
+ "collected": "2026-11-22",
  "note": "",
  "videos": [
   {
@@ -24,11 +24,11 @@
    "published": "2026-11-19T03:01:47Z",
    "duration": "PT19S",
    "privacy": "public",
-   "views": 52,
+   "views": 54,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 11,
-   "avgPercent": 62.18,
+   "avgPercent": 58.599999999999994,
    "subsGained": 0
   },
   {
@@ -318,6 +318,29 @@
    "subsGained": 0
   },
   {
+   "id": "WVCIHMoMHGM",
+   "title": "Why Group Chats Become Ghost Towns \ud83d\udcac",
+   "published": "2026-11-21T18:04:30Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1
+  },
+  {
+   "id": "CKqSjL7j5YU",
+   "title": "The Pre-Sweat Protocol",
+   "published": "2026-11-18T18:05:42Z",
+   "duration": "PT24S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 1,
+   "avgPercent": 7.919999999999999,
+   "subsGained": 0
+  },
+  {
    "id": "1cmRYRGsBTY",
    "title": "The Phone Call Script | Leo & Mia #14",
    "published": "2026-11-14T03:02:05Z",
@@ -367,6 +390,19 @@
    "comments": 1
   },
   {
+   "id": "vG5WGpjUpdc",
+   "title": "The Robot Replacement Panic | Leo & Mia #17",
+   "published": "2026-11-17T03:02:07Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 2,
+   "avgPercent": 4.47,
+   "subsGained": 0
+  },
+  {
    "id": "0Bx46Pe0lMQ",
    "title": "The Sunday Panic Trap | Leo & Mia #15 \u2605 Milestone",
    "published": "2026-11-15T18:03:50Z",
@@ -384,6 +420,19 @@
    "title": "The Phantom Ping Trap | Leo & Mia #13",
    "published": "2026-11-13T18:04:42Z",
    "duration": "PT44S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "5bvrVUR8iek",
+   "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
+   "published": "2026-11-13T03:01:26Z",
+   "duration": "PT38S",
    "privacy": "public",
    "views": 4,
    "likes": 0,
@@ -416,19 +465,6 @@
    "comments": 1,
    "avgSeconds": 2,
    "avgPercent": 3.93,
-   "subsGained": 0
-  },
-  {
-   "id": "vG5WGpjUpdc",
-   "title": "The Robot Replacement Panic | Leo & Mia #17",
-   "published": "2026-11-17T03:02:07Z",
-   "duration": "PT47S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 2,
-   "avgPercent": 4.47,
    "subsGained": 0
   },
   {
@@ -471,19 +507,6 @@
    "subsGained": 0
   },
   {
-   "id": "5bvrVUR8iek",
-   "title": "The Sunday Scaries Trap | Leo & Mia #10 \u2605 Milestone",
-   "published": "2026-11-13T03:01:26Z",
-   "duration": "PT38S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "Zoos5GbVQPU",
    "title": "Leo vs. The Inbox Snare | Leo & Mia Ep. 3",
    "published": "2026-11-07T00:00:14Z",
@@ -523,6 +546,16 @@
    "subsGained": 0
   },
   {
+   "id": "9U6MGt1-tWk",
+   "title": "How A Shortcut Turned Muddy \ud83d\ude05 | Leo & Mia",
+   "published": "2026-11-22T00:00:14Z",
+   "duration": "PT3M11S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 2,
+   "comments": 0
+  },
+  {
    "id": "-hJWONk4WVs",
    "title": "How to Fake Meeting Nods \ud83e\udd25 | Leo & Mia",
    "published": "2026-11-21T03:02:04Z",
@@ -530,7 +563,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "SHRB6zbL4YQ",
@@ -540,7 +573,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 1,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "FXhd_ptBx6o",
@@ -621,16 +654,16 @@
    "subsGained": 0
   },
   {
-   "id": "CKqSjL7j5YU",
-   "title": "The Pre-Sweat Protocol",
-   "published": "2026-11-18T18:05:42Z",
-   "duration": "PT24S",
+   "id": "XZe3xqpV1ZA",
+   "title": "How I Peaked In Third Grade \ud83c\udf93",
+   "published": "2026-11-19T18:06:07Z",
+   "duration": "PT28S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 1,
-   "avgPercent": 7.919999999999999,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -670,39 +703,6 @@
    "comments": 1,
    "avgSeconds": 10,
    "avgPercent": 28.46,
-   "subsGained": 0
-  },
-  {
-   "id": "WVCIHMoMHGM",
-   "title": "Why Group Chats Become Ghost Towns \ud83d\udcac",
-   "published": "2026-11-21T18:04:30Z",
-   "duration": "PT25S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "9U6MGt1-tWk",
-   "title": "How A Shortcut Turned Muddy \ud83d\ude05 | Leo & Mia",
-   "published": "2026-11-21T03:50:32Z",
-   "duration": "PT3M11S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "XZe3xqpV1ZA",
-   "title": "How I Peaked In Third Grade \ud83c\udf93",
-   "published": "2026-11-19T18:06:07Z",
-   "duration": "PT28S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
    "subsGained": 0
   },
   {
