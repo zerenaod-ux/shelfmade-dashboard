@@ -200,6 +200,8 @@ main{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
 .home-ops .btnline.pri{grid-column:1/-1}
 .chan>h3:not(:has(.dot)):before{content:"";width:12px;height:12px;border-radius:50%;background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 25%,transparent),0 0 16px var(--c);margin-right:10px;display:inline-block}
 .chan>h3:not(:has(.dot)){justify-content:flex-start}
+.btns.seg{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:6px 0 12px}.btns.seg button{min-height:46px;font-size:15px;border-radius:99px}
+.chan details.bn-fold{margin-top:12px;background:#ffffff08;border-radius:14px;padding:10px 12px}
 /* focus + motion */
 button:focus-visible,a:focus-visible{outline:2px solid #8fb4ff;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -768,12 +770,16 @@ function sceneCard(it){
   if(pending)trackSceneFiling(it,card,pending,ok,no);
   bt.appendChild(ok);bt.appendChild(no);card.appendChild(bt);return card;
 }
+
+function foldTop(c){var lab=Array.prototype.filter.call(c.children,function(n){return n.className==='lab'&&n.textContent==='Top videos'})[0];if(!lab)return;
+  var vs=[],n=lab.nextElementSibling;while(n&&n.classList.contains('vid')){vs.push(n);n=n.nextElementSibling}
+  var d=document.createElement('details');d.className='bn-fold';var sm=document.createElement('summary');sm.textContent='Top '+vs.length+' videos';d.appendChild(sm);vs.forEach(function(v){d.appendChild(v)});c.insertBefore(d,lab);lab.remove()}
 function loadScenes(){
   var host=$('r-scenes');if(!host){host=el('div');host.id='r-scenes';$('t-review').appendChild(host)}host.textContent='';
   var head=el('div','row');head.appendChild(el('p','lab','How It Ticks'));
   var all=el('a','chip','All videos ↗');all.href='https://github.com/zerenaod-ux/content-engine/releases';all.target='_blank';all.rel='noopener';head.appendChild(all);host.appendChild(head);
-  var tabs=el('div','btns');[['review','Review'],['saved','Saved'],['delete','Delete']].forEach(function(pair){var b=el('button',sceneView===pair[0]?'go':'',pair[1]);b.type='button';b.onclick=function(){sceneView=pair[0];loadScenes()};tabs.appendChild(b)});host.appendChild(tabs);
-  var refresh=el('button','btnline','Refresh folders');refresh.type='button';refresh.onclick=loadScenes;host.appendChild(refresh);
+  var tabs=el('div','btns seg');[['review','Review'],['saved','Saved'],['delete','Skipped']].forEach(function(pair){var b=el('button',sceneView===pair[0]?'go':'',pair[1]);b.type='button';b.onclick=function(){sceneView=pair[0];loadScenes()};tabs.appendChild(b)});host.appendChild(tabs);
+  var refresh=el('button','chip','Refresh');refresh.type='button';refresh.onclick=loadScenes;head.insertBefore(refresh,all);
   var box=el('div');host.appendChild(box);
   if(sceneView==='review'){
     reviewRows(CE_API,'scene-review').then(function(rows){if(rows===null)throw new Error('How It Ticks review list unavailable or incomplete. Refresh to try again.');
@@ -935,7 +941,7 @@ function loadChannels(){
        var rows=el('div','plat');PL.forEach(function(p){var n=now[b.k+'/'+p[0]];var cell=el('div');cell.appendChild(el('small','',p[1]));cell.appendChild(el('b','',n?nf(n.views):'n/a'));cell.appendChild(el('em','',n&&n.videos!=null?nf(n.videos)+' posts':''));rows.appendChild(cell)});
        if(b.ce)c.appendChild(el('p','muted','Not posting yet: accounts created, videos still being tuned.'));
        c.appendChild(el('p','lab','Today on each platform'));c.appendChild(rows);
-       list.appendChild(c)});
+       foldTop(c);list.appendChild(c)});
      applyReviewCounts();cache.channels=1}).catch(function(){list.textContent='';list.appendChild(el('p','msg','Could not load channel numbers. Tap Refresh.'))});
   jget(RAW+'data/growth/scoreboard.json').then(function(c){
     var box=$('c-growth');box.textContent='';
