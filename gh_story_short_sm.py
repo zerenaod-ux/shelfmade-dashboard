@@ -51,7 +51,7 @@ def _fail(built, state, sid):
 def main(n):
     state = Path('gh-state/built-story-shorts-shelfmade-old.json'); state.parent.mkdir(exist_ok=True); built = load(state, [])
     todo = [p for p in sorted(Path('story-shorts/shelfmade').glob('*.json')) if p.stem not in built][:n]
-    Path('out').mkdir(exist_ok=True); made = 0
+    Path('out').mkdir(exist_ok=True); made = 0; waited = 0
     for p in todo:
         sid = p.stem; s = load(p, {}); book = find_book(s)
         if not book: print('no book match for', sid, s.get('title')); continue
@@ -65,6 +65,9 @@ def main(n):
             from story_failure import record
             print('FAILED',sid)
             if record('story-diagnostics',sid,log):
+                built.append('wait:' + sid); waited += 1
+                if built.count('wait:' + sid) >= 4: _fail(built, state, sid); _fail(built, state, sid)   # outage persists for one story: count it as a real failure so it gets parked
+                else: state.write_text(json.dumps(built))
                 print('WAITING',sid,'(temporary outage; retained for a later scheduled attempt)',flush=True)
             else:_fail(built,state,sid)
             continue
@@ -74,5 +77,5 @@ def main(n):
         z = folder / 'zip'; z.mkdir(exist_ok=True); shutil.copy(folder / 'final.mp4', z / 'final.mp4'); (z / 'POST_THIS.txt').write_text(text)
         subprocess.run('cd %s && zip -q %s final.mp4 POST_THIS.txt' % (z, Path('out').resolve() / ('sm-story-%s.zip' % sid)), shell=True, check=True)
         built.append(sid); state.write_text(json.dumps(built)); made += 1; print('BUILT', sid, flush=True); shutil.rmtree(folder, ignore_errors=True)
-    print('made', made); sys.exit(0 if made else 1)
+    print('made', made, 'waiting', waited); sys.exit(0 if (made or waited) else 1)   # outage-only runs are not red
 if __name__ == '__main__': main(int(sys.argv[1]) if len(sys.argv) > 1 else 2)
