@@ -11,6 +11,7 @@ def q(metrics, dims=None, filt=None, sort=None, vid=VIDEO, days=30):
     if dims: p['dimensions'] = dims
     if filt or vid: p['filters'] = filt or ('video==' + vid)
     if sort: p['sort'] = sort
+    if dims == 'video': p['maxResults'] = 50
     try:
         r = json.load(urllib.request.urlopen(urllib.request.Request('https://youtubeanalytics.googleapis.com/v2/reports?' + urllib.parse.urlencode(p), headers={'Authorization': 'Bearer ' + T}), timeout=60))
         return [c['name'] for c in r.get('columnHeaders', [])], r.get('rows', [])
