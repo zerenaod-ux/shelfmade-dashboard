@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-22",
+ "collected": "2026-11-23",
  "note": "",
  "videos": [
   {
@@ -162,6 +162,19 @@
    "subsGained": 0
   },
   {
+   "id": "BV3cQpYluag",
+   "title": "Are you swayed by subtle cues?",
+   "published": "2026-06-16T19:46:38Z",
+   "duration": "PT37S",
+   "privacy": "public",
+   "views": 78,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 13,
+   "avgPercent": 35.85,
+   "subsGained": 0
+  },
+  {
    "id": "8j6NBqbneQ8",
    "title": "Your deepest instincts are running your life silently \ud83d\udc3e",
    "published": "2026-06-19T04:30:23Z",
@@ -170,19 +183,6 @@
    "views": 77,
    "likes": 3,
    "comments": 0
-  },
-  {
-   "id": "BV3cQpYluag",
-   "title": "Are you swayed by subtle cues?",
-   "published": "2026-06-16T19:46:38Z",
-   "duration": "PT37S",
-   "privacy": "public",
-   "views": 77,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 13,
-   "avgPercent": 35.85,
-   "subsGained": 0
   },
   {
    "id": "Nw9hdA-AyGs",
@@ -231,7 +231,7 @@
    "privacy": "public",
    "views": 63,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "70hQFkZl71o",
@@ -465,6 +465,19 @@
    "subsGained": 0
   },
   {
+   "id": "V5cZxesdo6w",
+   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 6",
+   "published": "2026-10-30T22:01:13Z",
+   "duration": "PT1M34S",
+   "privacy": "public",
+   "views": 37,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 12,
+   "avgPercent": 13.4,
+   "subsGained": 0
+  },
+  {
    "id": "xlBpcfuR69U",
    "title": "Crowds trigger ancient survival alarms",
    "published": "2026-11-11T18:05:09Z",
@@ -488,19 +501,6 @@
    "comments": 1,
    "avgSeconds": 24,
    "avgPercent": 40.1,
-   "subsGained": 0
-  },
-  {
-   "id": "V5cZxesdo6w",
-   "title": "Dream Psychology \u00b7 Remembering a dream \u00b7 Reading 6",
-   "published": "2026-10-30T22:01:13Z",
-   "duration": "PT1M34S",
-   "privacy": "public",
-   "views": 35,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 12,
-   "avgPercent": 13.4,
    "subsGained": 0
   },
   {
@@ -862,6 +862,16 @@
    "subsGained": 0
   },
   {
+   "id": "ZxFKXhCEx_c",
+   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
+   "published": "2026-11-21T18:03:51Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 21,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "ldlmq9sPVl0",
    "title": "Why Kids React To Twists",
    "published": "2026-11-16T18:05:47Z",
@@ -938,6 +948,16 @@
    "avgSeconds": 80,
    "avgPercent": 21.9,
    "subsGained": 0
+  },
+  {
+   "id": "jGbwSyyLP9E",
+   "title": "How Animals Show Happiness \ud83e\udd14",
+   "published": "2026-11-23T03:00:52Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "7QFo4yYN-tM",
@@ -1096,16 +1116,6 @@
    "subsGained": 0
   },
   {
-   "id": "ZxFKXhCEx_c",
-   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
-   "published": "2026-11-21T18:03:51Z",
-   "duration": "PT1M8S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "2GlYD2z2jJY",
    "title": "Your Face Freezes On Sudden News",
    "published": "2026-11-15T23:02:24Z",
@@ -1246,6 +1256,19 @@
    "subsGained": 1
   },
   {
+   "id": "s2csm1mzmRY",
+   "title": "The Expression of the Emotions in Man and Animals \u00b7 Guided reading",
+   "published": "2026-10-28T23:00:19Z",
+   "duration": "PT6M4S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 177,
+   "avgPercent": 48.63,
+   "subsGained": 0
+  },
+  {
    "id": "GiSqnmTVkRo",
    "title": "Are emotions built by habit?",
    "published": "2026-10-18T23:27:41Z",
@@ -1269,19 +1292,6 @@
    "comments": 0,
    "avgSeconds": 14,
    "avgPercent": 21.38,
-   "subsGained": 0
-  },
-  {
-   "id": "s2csm1mzmRY",
-   "title": "The Expression of the Emotions in Man and Animals \u00b7 Guided reading",
-   "published": "2026-10-28T23:00:19Z",
-   "duration": "PT6M4S",
-   "privacy": "public",
-   "views": 12,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 177,
-   "avgPercent": 48.63,
    "subsGained": 0
   },
   {
@@ -1529,6 +1539,19 @@
    "subsGained": 0
   },
   {
+   "id": "r5TYsXKyFPA",
+   "title": "What do dreams reveal?",
+   "published": "2026-10-27T03:42:36Z",
+   "duration": "PT6M17S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 132,
+   "avgPercent": 35.06,
+   "subsGained": 0
+  },
+  {
    "id": "oe3Y1OmzJik",
    "title": "Are skeptics wrong about dream science?",
    "published": "2026-10-17T16:17:31Z",
@@ -1553,6 +1576,16 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
+  },
+  {
+   "id": "CEyK5yFTZ0U",
+   "title": "Why Unexpected News Gives You Goosebumps \ud83e\udd14",
+   "published": "2026-11-22T23:01:41Z",
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "vcqR_YZVpvg",
@@ -1643,19 +1676,6 @@
    "comments": 0,
    "avgSeconds": 15,
    "avgPercent": 4.55,
-   "subsGained": 0
-  },
-  {
-   "id": "r5TYsXKyFPA",
-   "title": "What do dreams reveal?",
-   "published": "2026-10-27T03:42:36Z",
-   "duration": "PT6M17S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 132,
-   "avgPercent": 35.06,
    "subsGained": 0
   },
   {
@@ -1771,8 +1791,8 @@
    "views": 4,
    "likes": 0,
    "comments": 0,
-   "avgSeconds": 59,
-   "avgPercent": 36.28,
+   "avgSeconds": 84,
+   "avgPercent": 51.800000000000004,
    "subsGained": 0
   },
   {
@@ -1783,7 +1803,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 2
   },
   {
    "id": "Nl1SAPaJEuY",
@@ -1806,7 +1826,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 2
   },
   {
    "id": "Nl1SAPaJEuY",
@@ -2022,20 +2042,20 @@
    "comments": 0
   },
   {
-   "id": "P8P40XX9vbk",
-   "title": "Why do you jump to conclusions so quickly? | John Dewey",
-   "published": "2026-11-07T21:51:56Z",
-   "duration": "PT8M35S",
+   "id": "Ylxy6FpM934",
+   "title": "Do you hold contradictory beliefs at once? | Gustave Le Bon",
+   "published": "2026-11-06T06:48:56Z",
+   "duration": "PT8M29S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
    "comments": 0
   },
   {
-   "id": "PAXSM0lkgEk",
-   "title": "Why do you suddenly overthink a minor mistake? | Freud",
-   "published": "2026-11-07T19:45:13Z",
-   "duration": "PT8M35S",
+   "id": "pnp7OZO0fJA",
+   "title": "Why we notice so little of what is in front of us | William James",
+   "published": "2026-11-06T06:33:52Z",
+   "duration": "PT8M13S",
    "privacy": "private",
    "views": 0,
    "likes": 0,

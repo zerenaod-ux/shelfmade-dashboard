@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-22",
+ "collected": "2026-11-23",
  "note": "",
  "videos": [
   {
@@ -63,7 +63,7 @@
    "published": "2026-11-04T03:02:07Z",
    "duration": "PT1M13S",
    "privacy": "public",
-   "views": 12,
+   "views": 13,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 91,
@@ -471,6 +471,16 @@
    "subsGained": 0
   },
   {
+   "id": "h4ZDNIp1JyY",
+   "title": "Why a Pastry Triggers Drama \ud83c\udfc6 | Leo & Mia",
+   "published": "2026-11-23T03:00:38Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "tmixnQsBjPc",
    "title": "The Call Scripting Trap",
    "published": "2026-11-16T18:10:17Z",
@@ -556,7 +566,7 @@
    "privacy": "public",
    "views": 2,
    "likes": 2,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "-hJWONk4WVs",
@@ -719,7 +729,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "5Czrci00ZPQ",
