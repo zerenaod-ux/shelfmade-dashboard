@@ -6,8 +6,10 @@ import re, json
 from wb_icons import NAMES
 
 SYSTEM = 'You write spoken explainer scripts that are drawn on a whiteboard. Return ONLY JSON.'
-STYLE = ('Voice: plain everyday words, short sentences (7-18 words), speak to the viewer as "you", concrete numbers and real-life pictures, '
-         'no greetings, no "in this video", no filler. One recurring symbol that returns several times. ')
+STYLE = ('Voice: an energetic, warm friend talking to ONE person, spoken English with contractions (you\'re, it\'s, don\'t), plain everyday words, short punchy sentences (7-16 words), '
+         'concrete numbers and real-life pictures. Mix it up like real speech: a surprising fact, a direct question to the viewer, an exclamation when something is shocking, '
+         'a reaction ("Wild, right?", "Here\'s the crazy part."), and clear orders or suggestions ("Do this today.", "Try this tonight."). '
+         'No greetings, no "in this video", no filler. One recurring symbol that returns several times. ')
 ICON_LIST = ', '.join(NAMES)
 
 

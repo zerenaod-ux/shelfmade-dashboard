@@ -25,9 +25,8 @@ def voice(panels, work):
     if os.environ.get('WB_FAKE_VOICE'):
         for j in jobs: fake_voice(j)
     else:
-        import local_voice
-        os.environ.setdefault('CE_EDGE_RATE', RATE)
-        local_voice.edge_run(jobs)
+        import wb_voice
+        return wb_voice.run(panels, work)
     return [json.loads(Path(j['timing']).read_text()) for j in jobs], [j['wav'] for j in jobs]
 
 

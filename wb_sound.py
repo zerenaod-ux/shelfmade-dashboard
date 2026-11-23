@@ -20,7 +20,7 @@ def build(events, duration, out_wav, seed=7):
         if i0 >= n: continue
         ln = min(ln, n - i0); seg = _scratch(ln, rng).astype(np.float32)
         a = np.minimum(1.0, np.minimum(np.arange(ln) / (0.04 * SR), (ln - np.arange(ln)) / (0.06 * SR)))
-        y[i0:i0 + ln] += seg * a * 0.10          # very quiet pencil scratch
+        y[i0:i0 + ln] += seg * a * 0.03          # barely-there pencil scratch
     chords = [(57, 60, 64), (53, 57, 60), (48, 52, 55), (55, 59, 62)]; seg_s = 7.0; t = np.arange(n) / SR; pad = np.zeros(n, np.float32)
     for k in range(int(duration / seg_s) + 2):
         a0, a1 = int(k * seg_s * SR), min(n, int((k + 1) * seg_s * SR + 2 * SR))
