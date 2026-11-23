@@ -41,14 +41,14 @@
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 9,
-   "last": 52
+   "uses": 10,
+   "last": 58
   },
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 9,
-   "last": 53
+   "uses": 10,
+   "last": 59
   },
   {
    "id": "scoreboard",
@@ -729,6 +729,30 @@
    "milestone": false,
    "season": 5,
    "date": "2026-11-21"
+  },
+  {
+   "n": 50,
+   "kind": "short",
+   "id": "petty-chair-news-desk",
+   "title": "The Anchor Desk Throne War",
+   "concept": "Leo and Mia report a absurd desk chair rivalry as if it were a high-stakes breaking news broadcast.",
+   "gag": "greg",
+   "callback": true,
+   "milestone": true,
+   "season": 5,
+   "date": "2026-11-23"
+  },
+  {
+   "n": 51,
+   "kind": "short",
+   "id": "your-pigeon-hair-war",
+   "title": "Your Pigeon Hair Stinks",
+   "concept": "Leo thinks Mia stole his laugh, but she was mocking his haircut after a misheard compliment.",
+   "gag": "dev",
+   "callback": false,
+   "milestone": false,
+   "season": 6,
+   "date": "2026-11-23"
   }
  ]
 }
