@@ -1,8 +1,80 @@
 {
  "brand": "shelfmade",
- "collected": "2026-11-22T18:40:56Z",
+ "collected": "2026-11-23T22:56:17Z",
  "more": true,
  "posts": [
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Young Man's Guide Is Overlooked \ud83d\udcd6\n\nThe Young Man's Guide by William A. Alcott\n\nFollow ShelfMade for a new ",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-23T19:41:53.911Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Seneca Warns About Freedom \ud83d\uded1\n\nL. Annaeus Seneca on Benefits by Lucius Annaeus Seneca\n\nFollow ShelfMade for",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-23T05:33:00.706Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/gANMXiDY4h0",
+   "sent": "2026-11-23T03:00:19.706Z",
+   "text": "How Chesterfield Warns About Manners \ud83d\udcdc\n\nLetters to His Son, Complete by Earl of Philip Dormer Stanhope Chester",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-23T03:01:37.282Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=6VO8a_iBrsU",
+   "sent": "2026-11-23T00:00:27.000Z",
+   "text": "Why does Young Man's Guide still matter?\n\nLessons and original commentary inspired by The Young Man's Guide by",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-23T00:02:54.745Z"
+  },
   {
    "platform": "tiktok",
    "status": "scheduled",
@@ -85,7 +157,7 @@
    "text": "Why does Conduct of Life still matter?\n\nLessons and original commentary inspired by The Conduct of Life by Ral",
    "views": 0,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -93,7 +165,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-22T00:03:14.650Z"
+   "updated": "2026-11-22T23:35:17.847Z"
   },
   {
    "platform": "tiktok",
@@ -185,7 +257,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.645Z"
+   "updated": "2026-11-22T23:35:17.847Z"
   },
   {
    "platform": "tiktok",
@@ -211,9 +283,9 @@
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@shelfmade.daily/video/7711460251941342478",
+   "sent": "2026-11-23T20:05:27.175Z",
    "text": "What Self-Reliance really asks of you.\n\nSelf-Reliance (Essays) by Ralph Waldo Emerson\n\nFollow ShelfMade for a ",
    "views": 0,
    "likes": 0,
@@ -277,7 +349,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.645Z"
+   "updated": "2026-11-22T23:35:17.847Z"
   },
   {
    "platform": "tiktok",
@@ -299,16 +371,16 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.163Z"
   },
   {
    "platform": "tiktok",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://tiktok.com/@shelfmade.daily/video/7711088787996151054",
+   "sent": "2026-11-22T20:04:09.658Z",
    "text": "Nobody warns you about Acres of Diamonds.\n\nAcres of Diamonds by Russell Conwell\n\nFollow ShelfMade for a new cl",
-   "views": 0,
-   "likes": 0,
+   "views": 96,
+   "likes": 1,
    "comments": 0,
    "metrics": [
     "averageTimeWatched",
@@ -321,7 +393,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-19T02:48:21.739Z"
+   "updated": "2026-11-23T09:58:22.163Z"
   },
   {
    "platform": "instagram",
@@ -369,7 +441,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -391,7 +463,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.163Z"
   },
   {
    "platform": "tiktok",
@@ -413,7 +485,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.163Z"
   },
   {
    "platform": "instagram",
@@ -461,7 +533,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "instagram",
@@ -539,7 +611,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "instagram",
@@ -555,9 +627,9 @@
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DgF_MnDCksT/",
+   "sent": "2026-11-23T18:09:34.600Z",
    "text": "Nobody warns you about Acres of Diamonds.\n\nAcres of Diamonds by Russell Conwell\n\nFollow ShelfMade for a new cl",
    "views": null,
    "likes": null,
@@ -571,11 +643,22 @@
    "url": "https://www.instagram.com/reel/DgDaHUGlENV/",
    "sent": "2026-11-22T18:07:36.457Z",
    "text": "One line in Prince hits hard.\n\nThe Prince by Machiavelli\n\nFollow ShelfMade for a new classic-book lesson every",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-16T03:00:33.244Z"
+   "views": 9,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-23T09:21:22.569Z"
   },
   {
    "platform": "youtube",
@@ -611,7 +694,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "instagram",
@@ -619,7 +702,7 @@
    "url": "https://www.instagram.com/reel/DgA1bcSEX26/",
    "sent": "2026-11-21T18:07:07.485Z",
    "text": "Aurelius had a warning for you.\n\nMeditations by Marcus Aurelius\n\nFollow ShelfMade for a new classic-book lesso",
-   "views": 3,
+   "views": 7,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -634,13 +717,13 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.569Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/M1tqBDu4akY",
+   "sent": "2026-11-23T18:06:31.577Z",
    "text": "Ruskin would hate how you live.\n\nThe Crown of Wild Olive by John Ruskin\n\nFollow ShelfMade for a new classic-bo",
    "views": 0,
    "likes": 0,
@@ -652,7 +735,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-15T03:28:51.070Z"
+   "updated": "2026-11-23T18:08:56.945Z"
   },
   {
    "platform": "youtube",
@@ -660,25 +743,7 @@
    "url": "https://www.youtube.com/shorts/hG6pY3pC7f0",
    "sent": "2026-11-22T18:03:41.935Z",
    "text": "Nobody warns you about Way of Peace.\n\nThe Way of Peace by James Allen\n\nFollow ShelfMade for a new classic-book",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-22T18:06:37.264Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/WJTdDr_NDVQ",
-   "sent": "2026-11-21T18:04:20.847Z",
-   "text": "What Self-Reliance really asks of you.\n\nSelf-Reliance (Essays) by Ralph Waldo Emerson\n\nFollow ShelfMade for a ",
-   "views": 11,
+   "views": 8,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -688,7 +753,25 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.645Z"
+   "updated": "2026-11-22T23:35:17.847Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/WJTdDr_NDVQ",
+   "sent": "2026-11-21T18:04:20.847Z",
+   "text": "What Self-Reliance really asks of you.\n\nSelf-Reliance (Essays) by Ralph Waldo Emerson\n\nFollow ShelfMade for a ",
+   "views": 23,
+   "likes": 0,
+   "comments": 1,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-22T23:35:17.847Z"
   },
   {
    "platform": "youtube",
@@ -706,7 +789,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -728,7 +811,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -736,7 +819,7 @@
    "url": "https://www.instagram.com/reel/Df-QwaoCjFE/",
    "sent": "2026-11-20T18:08:59.962Z",
    "text": "You have Art of War backwards.\n\nThe Art of War by Sun Tzu\n\nFollow ShelfMade for a new classic-book lesson ever",
-   "views": 40,
+   "views": 41,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -751,7 +834,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.569Z"
   },
   {
    "platform": "youtube",
@@ -759,7 +842,7 @@
    "url": "https://www.youtube.com/shorts/NFCFFiU0_hw",
    "sent": "2026-11-20T18:05:56.801Z",
    "text": "Nobody warns you about Acres of Diamonds.\n\nAcres of Diamonds by Russell Conwell\n\nFollow ShelfMade for a new cl",
-   "views": 3,
+   "views": 5,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -769,7 +852,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.645Z"
+   "updated": "2026-11-22T23:35:17.847Z"
   },
   {
    "platform": "youtube",
@@ -787,7 +870,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.645Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -805,7 +888,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -827,7 +910,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -850,7 +933,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "instagram",
@@ -873,7 +956,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -891,7 +974,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -909,7 +992,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -917,7 +1000,7 @@
    "url": "https://www.youtube.com/shorts/2W3cnCLXxQo",
    "sent": "2026-11-17T18:05:18.177Z",
    "text": "You have Art of War backwards.\n\nThe Art of War by Sun Tzu\n\nFollow ShelfMade for a new classic-book lesson ever",
-   "views": 19,
+   "views": 20,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -927,7 +1010,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -949,7 +1032,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -972,7 +1055,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "instagram",
@@ -995,7 +1078,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1013,7 +1096,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1031,7 +1114,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1049,7 +1132,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1071,7 +1154,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -1094,7 +1177,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1112,7 +1195,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1130,7 +1213,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1148,7 +1231,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1156,7 +1239,7 @@
    "url": "https://www.tiktok.com/@shelfmade.daily/video/7708490996639730957?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
    "sent": "2026-11-15T20:02:57.261Z",
    "text": "Read this before you open Self-Reliance. Self-Reliance (Essays) by Ralph Waldo Emerson Read this before you op",
-   "views": 94,
+   "views": 95,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -1170,7 +1253,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -1193,7 +1276,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1211,7 +1294,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1233,7 +1316,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -1256,7 +1339,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1274,7 +1357,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1292,7 +1375,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1314,7 +1397,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -1337,7 +1420,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1355,7 +1438,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1377,7 +1460,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -1400,7 +1483,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1418,7 +1501,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1436,7 +1519,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1458,7 +1541,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.255Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -1481,7 +1564,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1489,7 +1572,7 @@
    "url": "https://www.youtube.com/shorts/D3aLO1j24s8",
    "sent": "2026-11-13T18:04:14.065Z",
    "text": "Nobody warns you about Acres of Diamonds.\n\nAcres of Diamonds by Russell Conwell\n\nNobody warns you about Acres ",
-   "views": 25,
+   "views": 26,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1499,7 +1582,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1521,7 +1604,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.256Z"
+   "updated": "2026-11-23T09:58:22.164Z"
   },
   {
    "platform": "instagram",
@@ -1544,7 +1627,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1562,7 +1645,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1570,7 +1653,7 @@
    "url": "https://www.youtube.com/watch?v=nlzBtL-I8EE",
    "sent": "2026-11-08T00:00:20.000Z",
    "text": "Listen to what Conwell warned about.\n\nLessons and original commentary inspired by Acres of Diamonds by Russell",
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1580,7 +1663,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "instagram",
@@ -1603,7 +1686,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "tiktok",
@@ -1625,7 +1708,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.256Z"
+   "updated": "2026-11-23T09:58:22.165Z"
   },
   {
    "platform": "youtube",
@@ -1643,7 +1726,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1683,7 +1766,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.256Z"
+   "updated": "2026-11-23T09:58:22.165Z"
   },
   {
    "platform": "instagram",
@@ -1706,7 +1789,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1724,7 +1807,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "youtube",
@@ -1742,7 +1825,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1764,7 +1847,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.256Z"
+   "updated": "2026-11-23T09:58:22.165Z"
   },
   {
    "platform": "instagram",
@@ -1787,7 +1870,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:21:12.822Z"
+   "updated": "2026-11-23T09:21:22.570Z"
   },
   {
    "platform": "youtube",
@@ -1805,7 +1888,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   },
   {
    "platform": "tiktok",
@@ -1827,7 +1910,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-22T10:57:22.256Z"
+   "updated": "2026-11-23T09:58:22.165Z"
   },
   {
    "platform": "youtube",
@@ -1845,88 +1928,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-21T23:16:40.646Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfiyYoPirEJ/",
-   "sent": "2026-11-10T02:03:23.189Z",
-   "text": "Why is Bacon's Essays still read today?\n\nBacon's Essays by Francis Bacon\n\nWhy is Bacon's Essays still read tod",
-   "views": 10,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-22T10:21:12.822Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7706264731056672014?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-09T20:04:10.640Z",
-   "text": "Why is Bacon's Essays still read today? Bacon's Essays by Francis Bacon Why is Bacon's Essays still read today",
-   "views": 99,
-   "likes": 1,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-22T10:57:22.256Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=QmvgVXfWJT8",
-   "sent": "2026-11-06T00:00:06.000Z",
-   "text": "Why does Simple Life still matter?\n\nLessons and original commentary inspired by The Simple Life by Charles Wag",
-   "views": 7,
-   "likes": 1,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-21T23:16:40.647Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/g8hW1uT4Eg8",
-   "sent": "2026-11-09T18:04:03.328Z",
-   "text": "For in those things that properly belong unto the mind, she cannot be hindered by any man\n\nMeditations by Marc",
-   "views": 0,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-21T23:16:40.646Z"
+   "updated": "2026-11-22T23:35:17.848Z"
   }
  ]
 }
