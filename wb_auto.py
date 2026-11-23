@@ -14,13 +14,29 @@ def history():
     except Exception: return []
 
 
+def pick_cat(h):
+    """Explore every category, but favour ones whose videos did better (wb_learn weights); never the same category twice in a row."""
+    try:
+        import wb_learn; wt = wb_learn.weights()
+    except Exception:
+        wt = {}
+    last = h[-1]['cat'] if h else None
+    pool = [c for c in CATS if c != last]
+    return random.choices(pool, weights=[wt.get(c, 1.0) for c in pool])[0]
+
+
 def pick(llm=None):
     if llm is None:
         import llm as _l; llm = _l
-    h = history(); cat = random.choice(CATS)
+    h = history(); cat = pick_cat(h); extra = ''
+    try:
+        import learned, winners
+        extra = (learned.trending('shelfmade') or '')[:900] + (winners.follow_up('shelfmade') or '')[:500]
+    except Exception:
+        pass
     p = ('Invent 6 fresh whiteboard-explainer video topics in the category "%s". Each must be a concrete, curious, true idea a general viewer wants to learn in 6-8 minutes, '
          'drawable with simple pictures, no politics, no medical or investment advice. Do NOT repeat or resemble these already made: %s. '
-         'Return {"topics":["plain-words topic",...]}.' % (cat, '; '.join(x['topic'] for x in h[-60:]) or 'none'))
+         '%s Return {"topics":["plain-words topic",...]}.' % (cat, '; '.join(x['topic'] for x in h[-60:]) or 'none', extra))
     d = llm.json_call('You are a creative director for explainer videos. Return ONLY JSON.', p, temperature=1.0, max_tokens=800)
     low = [x['topic'].lower() for x in h]
     for t in d.get('topics', []):

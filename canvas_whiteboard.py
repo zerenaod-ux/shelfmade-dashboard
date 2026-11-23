@@ -34,7 +34,7 @@ def configure(vertical=False):
     global W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT, VERT
     VERT = bool(vertical)
     if vertical:
-        W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT = 720, 1280, 2, (40, 230, 320, 340, 160, 130), 290, (92, 110), 1.5, 0.42, (1080, 1920)
+        W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT = 720, 1280, 2, (40, 140, 320, 340, 160, 130), 290, (92, 110), 1.5, 0.42, (1080, 1920)
     else:
         W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT = 1280, 720, 3, (80, 150, 373, 270, 186, 105), 360, (125, 110), 2.2, 0.5, (1280, 720)
 
@@ -114,8 +114,9 @@ def build_item(panel_idx, slot, it):
             parts.append(('s', 'r', [(x - 6, py + 34), (x + w + 6, py + 34), (x + w + 6, py + 34 + h + 6), (x - 6, py + 34 + h + 6), (x - 6, py + 34)], 4))
             parts.append(('t', 'k', lay, x, py + 38)); x += w + 24
         lay = text_layer(str(it['text']), TITLE_SCALE, 3)
-        if x + lay.shape[1] > px + W - 40:
-            f = (px + W - 40 - x) / lay.shape[1]; lay = cv2.resize(lay, (int(lay.shape[1] * f), max(8, int(lay.shape[0] * f))), interpolation=cv2.INTER_AREA)
+        lim = px + W - (270 if VERT else 40)
+        if x + lay.shape[1] > lim:
+            f = (lim - x) / lay.shape[1]; lay = cv2.resize(lay, (int(lay.shape[1] * f), max(8, int(lay.shape[0] * f))), interpolation=cv2.INTER_AREA)
         parts.append(('t', 'k', lay, x, py + 38))
     elif kind == 'frame':
         px, py = (panel_idx % COLS) * W, (panel_idx // COLS) * H
@@ -127,9 +128,9 @@ def build_item(panel_idx, slot, it):
     return {'parts': parts, 'fills': fills, 'total': max(total, 1.0), 'kind': kind}
 
 
-def make_hand():
+def make_hand(mood='idle'):
     import wb_hand
-    return wb_hand.make_hand()
+    return wb_hand.make_hand(mood)
 
 
 class Renderer:
@@ -181,10 +182,13 @@ class Renderer:
             b['start'], b['dur'] = start, nat; prev_end = start + nat
             b['drawn'] = 0.0; b['done'] = False
         self.items = built
-        self.hand, self.hand_a = make_hand(); self.vis = 0.0; self.tip = (W / 2, H / 2)
+        self.hands = {m: make_hand(m) for m in ('idle', 'wow', 'happy', 'think')}; self.hand, self.hand_a = self.hands['idle']; self.vis = 0.0; self.tip = (W / 2, H / 2)
+        self.moods = sorted((float(a), b) for a, b in spec.get('moods', []))
+        self.punches = sorted(float(x) for x in spec.get('punches', []))
+        self._caps = self._build_caps(spec.get('captions', [])) if VERT else []
         lg = text_layer(BRAND, 2.0, 3); lw = int(W * (0.30 if VERT else 0.17)); lg = cv2.resize(lg, (lw, max(8, int(lg.shape[0] * lw / lg.shape[1]))), interpolation=cv2.INTER_AREA)
         self.logo = (255 - lg).astype(np.float32) / 255.0 * 0.62
-        self.logo_xy = (W - lw - 26, H - lg.shape[0] - 34) if VERT else (W - lw - 30, 26)
+        self.logo_xy = (W - lw - 24, 20) if VERT else (W - lw - 30, 26)
         self._camera_keys()
 
     def _camera_keys(self):
@@ -291,7 +295,48 @@ class Renderer:
             white = (np.abs(self.world.astype(np.int16) - self.base.astype(np.int16)).sum(axis=2) < 30) & (mask > 0)
             self.world[white] = layer[white]
 
+    def _build_caps(self, caps):
+        """caps = [{'t0','t1','words':[w,..]}]: each chunk is pre-drawn once per highlighted word (white text, dark outline, current word in yellow)."""
+        from PIL import ImageFont
+        import wb_cover
+        font = next((ImageFont.truetype(f, 54) for f in wb_cover.FONTS if __import__('os').path.exists(f)), ImageFont.load_default())
+        out = []
+        for cp in caps:
+            words = cp['words']; variants = []
+            for hi in range(len(words)):
+                im = Image.new('RGBA', (W, 96), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+                total = sum(d.textlength(w + ' ', font=font) for w in words); x = (W - total) / 2
+                for j, w in enumerate(words):
+                    d.text((x, 14), w, font=font, fill=(255, 214, 0, 255) if j == hi else (255, 255, 255, 255), stroke_width=6, stroke_fill=(30, 30, 35, 255)); x += d.textlength(w + ' ', font=font)
+                a = np.array(im); variants.append((a[:, :, :3][:, :, ::-1].astype(np.float32), a[:, :, 3:4].astype(np.float32) / 255.0))
+            out.append((cp['t0'], cp['t1'], cp['times'], variants))
+        return out
+
+    def _caption(self, out, t):
+        for t0, t1, times, var in self._caps:
+            if t0 <= t < t1:
+                hi = max(j for j, tt in enumerate(times) if tt <= t + 1e-6) if any(tt <= t for tt in times) else 0
+                bgr, al = var[hi]; y = H - 140
+                reg = out[y:y + 96].astype(np.float32); out[y:y + 96] = (reg * (1 - al) + bgr * al).astype(np.uint8)
+                return
+
+    def _mood(self, t):
+        m = 'idle'
+        for tt, mo in self.moods:
+            if tt <= t: m = mo
+            else: break
+        return m
+
+    def _punch(self, t):
+        p = 0.0
+        for te in self.punches:
+            if te > t: break
+            u = (t - te) / 0.42
+            if 0 <= u <= 1: p = max(p, 0.05 * math.sin(math.pi * u))
+        return p
+
     def _pencil(self, out, tx, ty, hs):
+        self.hand, self.hand_a = self.hands.get(self._mood(self._t), self.hands['idle'])
         hand = cv2.resize(self.hand, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA); ha = cv2.resize(self.hand_a, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA)
         ox, oy = int(tx - 34 * hs), int(ty - 34 * hs)
         hh, hw = hand.shape[:2]
@@ -321,6 +366,7 @@ class Renderer:
         return out
 
     def frame(self, t):
+        self._t = t
         self.advance(t)
         D = float(self.spec.get('duration', 0))
         if t < INTRO:
@@ -337,6 +383,11 @@ class Renderer:
             sc = W / vw; tx, ty = (self.tip[0] - x0) * sc, (self.tip[1] - y0) * sc
             off = (1 - smooth(self.vis)) * 320
             self._pencil(out, tx + off, ty + off, HS)
+        pz = self._punch(t)
+        if pz > 0.002:
+            ww, hh = int(W / (1 + pz)), int(H / (1 + pz)); xx0, yy0 = (W - ww) // 2, (H - hh) // 2
+            out = cv2.resize(out[yy0:yy0 + hh, xx0:xx0 + ww], (W, H), interpolation=cv2.INTER_LINEAR)
+        if self._caps: self._caption(out, t)
         lx, ly = self.logo_xy; lh, lw = self.logo.shape
         reg = out[ly:ly + lh, lx:lx + lw].astype(np.float32); a = self.logo[:, :, None]
         out[ly:ly + lh, lx:lx + lw] = (reg * (1 - a) + np.array(INK['k'], np.float32) * a).astype(np.uint8)

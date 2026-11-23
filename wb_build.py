@@ -64,10 +64,18 @@ def concat_audio(wavs, gap, out_wav):
 
 
 def make_spec(script, timings):
-    panels, t0 = [], VOICE0
+    panels, t0 = [], VOICE0; moods, punches, caps = [], [], []
     for p, tm in zip(script['panels'], timings):
         word_t = locate(tm['tokens'], p['sentences']); items = []
         for si, s in enumerate(p['sentences']):
+            say = s['say'].strip(); ts = t0 + word_t[si][0]
+            moods.append((ts, 'think' if say.endswith('?') else 'wow' if (say.endswith('!') or any(ch.isdigit() for ch in say)) else 'happy' if si == len(p['sentences']) - 1 else 'idle'))
+            if say.endswith('!') or (any(ch.isdigit() for ch in say) and si % 2 == 0): punches.append(ts + 0.2)
+            ws = say.split()
+            for g in range(0, len(ws), 3):
+                grp = ws[g:g + 3]; times = [t0 + word_t[si][g + q] for q in range(len(grp))]
+                end = (t0 + word_t[si][g + 3]) if g + 3 < len(ws) else times[-1] + 0.9
+                caps.append({'t0': times[0], 't1': end, 'words': grp, 'times': times})
             it = s.get('item')
             if not it: continue
             ws = [norm(w) for w in s['say'].split()]
@@ -78,7 +86,7 @@ def make_spec(script, timings):
             items.append(d)
         panels.append({'title': p['title'], 'tag': p.get('tag'), 'items': items, 'start': t0})
         t0 += tm['duration'] + GAP
-    return {'duration': t0 + 1.5, 'panels': panels}
+    return {'duration': t0 + 1.5, 'panels': panels, 'moods': moods, 'punches': sorted(punches), 'captions': caps}
 
 
 RULES = {'short': {'min': 40.0, 'max': 59.0, 'vertical': True}, 'long': {'min': 480.0, 'max': 598.0, 'vertical': False}}   # owner 2026-11-22: Short 40-60 s, long 8-10 min (total incl. name intro + subscribe card)

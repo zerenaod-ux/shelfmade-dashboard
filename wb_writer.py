@@ -9,7 +9,8 @@ SYSTEM = 'You write spoken explainer scripts that are drawn on a whiteboard. Ret
 STYLE = ('Voice: an energetic, warm friend talking to ONE person, spoken English with contractions (you\'re, it\'s, don\'t), plain everyday words, short punchy sentences (7-16 words), '
          'concrete numbers and real-life pictures. Mix it up like real speech: a surprising fact, a direct question to the viewer, an exclamation when something is shocking, '
          'a reaction ("Wild, right?", "Here\'s the crazy part."), and clear orders or suggestions ("Do this today.", "Try this tonight."). '
-         'No greetings, no "in this video", no filler. One recurring symbol that returns several times. ')
+         'No greetings, no "in this video", no filler. One recurring symbol that returns several times. '
+         'TRUTH RULE: only facts you are sure are real; round numbers; never invent statistics, studies, quotes or experts; if unsure, say it in a general way or use a clearly imaginary example ("picture 1,000 emails"). ')
 ICON_LIST = ', '.join(NAMES)
 
 
@@ -81,7 +82,7 @@ def outline(topic, minutes, llm):
     p = (STYLE + 'Topic: %s\nPlan a %d-minute explainer in %d chapters (each about 90-100 seconds). '
          'Return {"title":"starts with How or Why, 4-8 words, no question mark, ends with ONE emoji, e.g. How A Small Jar Saves Your Month 🫙","symbol":"one recurring everyday symbol and what it stands for",'
          '"chapters":[{"title":"plain 2-4 word title","job":"what this chapter says, one sentence","analogy":"one real-life picture used to explain it"}]}. '
-         'Chapter 1 opens with a short true story with numbers. A chapter near the middle states the thesis in one line. The last chapter gives one direct action the viewer does today.' % (topic, minutes, n))
+         'Chapter 1 opens with a short true story with numbers and ends by opening a question the viewer wants answered; the answer comes in the last chapters (curiosity loop). A chapter near the middle states the thesis in one line. Every chapter ends with a one-line teaser of the next. The last chapter gives one direct action the viewer does today.' % (topic, minutes, n))
     d = llm.json_call(SYSTEM, p, temperature=0.7, max_tokens=2500)
     ch = d.get('chapters')
     if not isinstance(ch, list) or len(ch) < 1:
@@ -94,7 +95,8 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
     last = i == len(out['chapters']) - 1
     if short:
         shape = ('with exactly 3 panels. Each panel has exactly 4 sentences of 11-15 words (about 55 words) and EVERY sentence has an item (never null). '
-                 'The first sentence is a surprising true fact that hooks in 3 seconds. The last panel ends with one direct action to do today.')
+                 'The FIRST sentence (max 11 words) hooks in 2 seconds with ONE of: a contradiction ("Everything you know about X is backwards."), a pointed question to the viewer, a mid-action start, or a promise with a number ("Three seconds. That is all it takes."). '
+                 'Never start with "Did you know". The last sentence closes the loop: it answers the hook and echoes its words, so the video replays smoothly. Include one direct action for today.')
     else:
         shape = ('with 3 panels. Each panel has exactly 6 sentences (about 60-80 words) and EVERY sentence has an item (never null): '
                  'the pen draws what each sentence says, so there is never talking without drawing.')
@@ -118,6 +120,10 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
             continue
     if len(panels) < 1:
         raise ValueError('chapter %d gave too few usable panels' % (i + 1))
+    try:
+        import wb_check; panels, _ok = wb_check.review(topic, panels, llm); print('chapter %d reviewed: %s' % (i + 1, 'fixed/confirmed' if _ok else 'kept as written'), flush=True)
+    except Exception as _e:
+        print('review error', str(_e)[:100], flush=True)
     return panels
 
 
