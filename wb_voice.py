@@ -51,11 +51,14 @@ def _say(text, voice, pr):
 
 
 def pick_voice():
+    import os, time
+    if os.environ.get('WB_VOICE'): return os.environ['WB_VOICE']
     for v in VOICES:
-        try:
-            asyncio.run(_one('Okay, here we go.', v, 10, 0, 0)); return v
-        except Exception:
-            continue
+        for a in range(3 if v == VOICES[0] else 1):   # stay with the brand voice: retry it before ever using a backup
+            try:
+                asyncio.run(_one('Okay, here we go.', v, 10, 0, 0)); return v
+            except Exception:
+                time.sleep(4 * (a + 1))
     raise RuntimeError('no edge voice available')
 
 

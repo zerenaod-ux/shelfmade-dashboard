@@ -29,12 +29,17 @@ def pick(llm=None):
     if llm is None:
         import llm as _l; llm = _l
     h = history(); cat = pick_cat(h); extra = ''
+    part2 = None
+    if h and random.random() < 0.25 and not h[-1].get('part2'):   # every 4th video or so: a follow-up series episode
+        part2 = h[-1]
+        cat = part2['cat']
     try:
         import learned, winners
         extra = (learned.trending('shelfmade') or '')[:900] + (winners.follow_up('shelfmade') or '')[:500]
     except Exception:
         pass
-    p = ('Invent 6 fresh whiteboard-explainer video topics in the category "%s". Each must be a concrete, curious, true idea a general viewer wants to learn in 6-8 minutes, '
+    follow = ('IMPORTANT: these must be PART 2 follow-ups of the earlier video "%s": same audience question, a NEW angle, and each topic must start with "Part 2: ". ' % part2['topic']) if part2 else ''
+    p = (follow + 'Invent 6 fresh whiteboard-explainer video topics in the category "%s". Each must be a concrete, curious, true idea a general viewer wants to learn in 6-8 minutes, '
          'drawable with simple pictures, no politics, no medical or investment advice. Do NOT repeat or resemble these already made: %s. '
          '%s Return {"topics":["plain-words topic",...]}.' % (cat, '; '.join(x['topic'] for x in h[-60:]) or 'none', extra))
     d = llm.json_call('You are a creative director for explainer videos. Return ONLY JSON.', p, temperature=1.0, max_tokens=800)
@@ -42,7 +47,7 @@ def pick(llm=None):
     for t in d.get('topics', []):
         t = str(t).strip()[:140]
         if t and t.lower() not in low:
-            HIST.parent.mkdir(exist_ok=True); h.append({'topic': t, 'cat': cat}); HIST.write_text(json.dumps(h[-300:], indent=1)); return t
+            HIST.parent.mkdir(exist_ok=True); h.append({'topic': t, 'cat': cat, **({'part2': True, 'parent': part2['topic']} if part2 else {})}); HIST.write_text(json.dumps(h[-300:], indent=1)); return t
     raise ValueError('no fresh topic')
 
 

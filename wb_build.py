@@ -102,15 +102,24 @@ def fix_title(t):
     return (t[:88] + ' ' + (emo[0] if emo else '\U0001F4A1')).strip()
 
 
+def parent_line(script):
+    try:
+        h = json.loads((Path(__file__).parent / 'data' / 'wb-history.json').read_text())
+        for x in h:
+            if x['topic'] == script.get('topic') and x.get('parent'): return '\nThis is part 2 of: %s\n' % x['parent']
+    except Exception: pass
+    return ''
+
+
 def post_text(script, spec, kind):
     title = fix_title(script['title']); sents = [s['say'] for p in script['panels'] for s in p['sentences']]
     if kind == 'short':
-        return title + '\n\n' + ' '.join(sents[:2]) + '\nFollow ShelfMade for a new idea every day.\n\n' + HASH + '\n'
+        return title + '\n\n' + ' '.join(sents[:2]) + parent_line(script) + '\nFollow ShelfMade for a new idea every day.\n\n' + HASH + '\n'
     ch, k = [], 0
     for pi, (p, sp) in enumerate(zip(script['panels'], spec['panels'])):
         if pi % 3 == 0:
             s = int(sp['start']) if pi else 0; ch.append('%d:%02d %s' % (s // 60, s % 60, p['title']))
-    desc = ' '.join(sents[:3]) + '\n\nChapters:\n' + '\n'.join(ch) + '\n\nSubscribe to ShelfMade for a new idea every day.\n\n' + HASH
+    desc = ' '.join(sents[:3]) + '\n\nChapters:\n' + '\n'.join(ch) + parent_line(script) + '\nSubscribe to ShelfMade for a new idea every day.\n\n' + HASH
     return '--- TITLE ---\n' + title + '\n--- DESCRIPTION ---\n' + desc + '\n'
 
 

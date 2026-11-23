@@ -9,6 +9,9 @@ on:
       only:
         description: 'all, long, or short (default all)'
         default: 'all'
+      clip:
+        description: 'true = also cut an extra Short from the long video (off by default: you asked for 2 Shorts a day)'
+        default: 'false'
       test:
         description: 'true = test run: release is NOT picked up for review/posting'
         default: 'false'
@@ -63,7 +66,11 @@ jobs:
           done
           [ "$OK" = "1" ] || exit 1
           rm -rf out/wb/work
-          python wb_pack.py out/wb $KIND "$(date -u +%Y%m%d)-$JOB"
+          cp out/wb/script.json out/long-script.json 2>/dev/null; python wb_pack.py out/wb $KIND "$(date -u +%Y%m%d)-$JOB"
+      - name: Extra Short cut from the long video (only if clip=true)
+        if: steps.gate.outputs.go == '1' && matrix.job == 'long' && github.event.inputs.clip == 'true'
+        run: |
+          python wb_clip.py out/wb out/clip && python wb_pack.py out/clip short "$(date -u +%Y%m%d)-clip" && mkdir -p out/clipzip && mv out/sm-wb-*-clip.zip out/clipzip/ || echo "clip skipped"
       - name: Release for review and save topic history
         if: steps.gate.outputs.go == '1'
         env:
@@ -72,6 +79,7 @@ jobs:
         run: |
           if [ "$JOB" = "long" ]; then TAG="full-wb-${{ github.run_id }}"; else TAG="shorts-wb-${{ github.run_id }}-$JOB"; fi
           [ "${{ github.event.inputs.test }}" = "true" ] && TAG="wbtest-$TAG"
+          if ls out/clipzip/*.zip >/dev/null 2>&1; then CT="${TAG/full-wb-/shorts-wb-}-clip"; gh release create "$CT" out/clipzip/*.zip --title "ShelfMade whiteboard clip ${{ github.run_id }}" --notes "Extra Short cut from the long video."; fi
           gh release create "$TAG" out/sm-wb-*.zip --title "ShelfMade whiteboard $JOB ${{ github.run_id }}" --notes "Built automatically in the whiteboard style. Review before posting."
           git config user.name github-actions; git config user.email actions@users.noreply.github.com
           git add data/wb-history.json
