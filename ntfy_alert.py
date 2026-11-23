@@ -17,7 +17,7 @@ def send(topic, title, body):
         headers={"Title": title, "Tags": "video_camera", "Click": APP, "Priority": "high"})
     urllib.request.urlopen(req, timeout=30).read()
 
-KEY_JOBS = ["daily-shorts","full-video","mindlore-2d","mindlore-story-short","shelfmade-story-short","doodles","doodles-full",
+KEY_JOBS = ["daily-shorts","full-video","mindlore-2d","mindlore-story-short","shelfmade-story-short","shelfmade-whiteboard","doodles","doodles-full",
             "sm-scripts","ml-scripts","review-publish","review-decide","publisher","publisher-mindlore","publisher-doodles",
             "yt-publish-shelfmade","yt-publish-mindlore","yt-publish-doodles","analytics","bio-page","daily-summary"]
 

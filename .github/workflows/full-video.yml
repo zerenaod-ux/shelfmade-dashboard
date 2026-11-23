@@ -1,7 +1,6 @@
 name: full-video
 on:
-  schedule:
-    - cron: '10 9 * * 1,3,5,0'   # ShelfMade full video about every 2 days (owner 2026-11-11: quality matters, not fewer posts)
+  # schedule OFF 2026-11-22: ShelfMade now builds in the whiteboard style (shelfmade-whiteboard.yml)
   workflow_dispatch:
     inputs:
       count:

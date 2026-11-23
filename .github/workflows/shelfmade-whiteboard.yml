@@ -1,0 +1,74 @@
+name: shelfmade-whiteboard
+# ShelfMade daily production in the ONE-CANVAS WHITEBOARD style (owner 2026-11-22): 1 long video (8-10 min) + 2 Shorts (40-60 s) every day.
+# Replaces shelfmade-story-short and full-video. Each video goes to a GitHub Release (tag shorts-wb-* / full-wb-*) and then the normal review-publish flow.
+on:
+  schedule:
+    - cron: '10 12 * * *'   # 7:10 AM Chicago (CST)
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'all, long, or short (default all)'
+        default: 'all'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        job: [long, short1, short2]
+    steps:
+      - name: Skip jobs not asked for
+        id: gate
+        run: |
+          O="${{ github.event.inputs.only || 'all' }}"; J="${{ matrix.job }}"
+          if [ "$O" = "all" ] || [ "$O" = "${J%%[0-9]*}" ]; then echo "go=1" >> $GITHUB_OUTPUT; else echo "go=0" >> $GITHUB_OUTPUT; fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == '1'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.go == '1'
+        with:
+          python-version: '3.11'
+      - name: System packages
+        if: steps.gate.outputs.go == '1'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+      - name: Python packages
+        if: steps.gate.outputs.go == '1'
+        run: pip install --quiet numpy opencv-python-headless pillow edge-tts requests
+      - name: Build (up to 4 tries, same topic)
+        if: steps.gate.outputs.go == '1'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          CE_VOICE_ENGINE: edge
+          JOB: ${{ matrix.job }}
+        run: |
+          mkdir -p out
+          KIND=short; MIN=1; [ "$JOB" = "long" ] && { KIND=long; MIN=9; }
+          for i in 1 2 3 4 5 6; do TOPIC="$(python wb_auto.py | tail -1)" && break; sleep 120; done
+          [ -n "$TOPIC" ] || { echo "no topic"; exit 1; }
+          echo "TOPIC: $TOPIC"
+          for i in 1 2 3 4; do
+            rm -rf out/wb; python wb_build.py "$TOPIC" out/wb $MIN $KIND && OK=1 && break
+            echo "try $i failed"; sleep 150
+          done
+          [ "$OK" = "1" ] || exit 1
+          rm -rf out/wb/work
+          python wb_pack.py out/wb $KIND "$(date -u +%Y%m%d)-$JOB"
+      - name: Release for review and save topic history
+        if: steps.gate.outputs.go == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB: ${{ matrix.job }}
+        run: |
+          if [ "$JOB" = "long" ]; then TAG="full-wb-${{ github.run_id }}"; else TAG="shorts-wb-${{ github.run_id }}-$JOB"; fi
+          gh release create "$TAG" out/sm-wb-*.zip --title "ShelfMade whiteboard $JOB ${{ github.run_id }}" --notes "Built automatically in the whiteboard style. Review before posting."
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add data/wb-history.json
+          git commit -qm "whiteboard topic history ($JOB)" || true
+          for i in 1 2 3 4 5; do git pull -q --rebase origin master && git push -q origin master && break; sleep 8; done

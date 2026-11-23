@@ -6,7 +6,7 @@ from pathlib import Path
 HIST = Path(__file__).parent / 'data' / 'wb-history.json'
 CATS = ['money habits', 'how everyday things work', 'science and nature', 'history turning points', 'health and sleep habits', 'psychology of choices',
         'animals and how they live', 'space and the planet', 'food and where it comes from', 'tiny stories with a big lesson', 'work and career skills',
-        'technology made simple', 'buildings, cities and transport', 'language and learning', 'myths people believe']
+        'technology made simple', 'buildings, cities and transport', 'language and learning', 'myths people believe', 'big ideas from classic books explained simply']
 
 
 def history():

@@ -1,7 +1,6 @@
 name: shelfmade-story-short
 on:
-  schedule:
-    - cron: '10 14 * * *'   # 9:10 AM Chicago (CDT)
+  # schedule OFF 2026-11-22: ShelfMade now builds in the whiteboard style (shelfmade-whiteboard.yml)
   workflow_dispatch:
     inputs:
       count:

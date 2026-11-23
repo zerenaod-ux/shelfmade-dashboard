@@ -4,6 +4,7 @@ Test mode without network voice: WB_FAKE_VOICE=1 (silent audio, 0.36 s per word)
 import json, os, re, sys, wave, subprocess
 from pathlib import Path
 
+VOICE0 = 1.0   # narration starts 1 s in, while the pencil writes the ShelfMade name
 GAP = 1.4   # seconds of quiet between panels: the camera pulls back while the pen rests
 RATE = '+8%'
 
@@ -55,14 +56,16 @@ def concat_audio(wavs, gap, out_wav):
     sil = out_wav.with_name('gap.wav')
     with wave.open(str(sil), 'wb') as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(b'\x00\x00' * int(24000 * gap))
-    lst = out_wav.with_name('concat.txt')
-    lst.write_text(''.join("file '%s'\nfile '%s'\n" % (Path(w).resolve(), sil.resolve()) for w in wavs))
+    lst = out_wav.with_name('concat.txt'); lead = out_wav.with_name('lead.wav')
+    with wave.open(str(lead), 'wb') as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(b'\x00\x00' * int(24000 * VOICE0))
+    lst.write_text("file '%s'\n" % lead.resolve() + ''.join("file '%s'\nfile '%s'\n" % (Path(w).resolve(), sil.resolve()) for w in wavs))
     r = subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', str(lst), '-c', 'copy', str(out_wav)], capture_output=True, text=True)
     if r.returncode: raise RuntimeError('audio join failed: ' + r.stderr[-300:])
 
 
 def make_spec(script, timings):
-    panels, t0 = [], 0.0
+    panels, t0 = [], VOICE0
     for p, tm in zip(script['panels'], timings):
         word_t = locate(tm['tokens'], p['sentences']); items = []
         for si, s in enumerate(p['sentences']):
@@ -79,41 +82,70 @@ def make_spec(script, timings):
     return {'duration': t0 + 1.5, 'panels': panels}
 
 
-def build(script, outdir, fps=30, vertical=False, max_sec=None):
+RULES = {'short': {'min': 40.0, 'max': 59.0, 'vertical': True}, 'long': {'min': 480.0, 'max': 598.0, 'vertical': False}}   # owner 2026-11-22: Short 40-60 s, long 8-10 min (total incl. name intro + subscribe card)
+HASH = '#ShelfMade #learn #explained #didyouknow'
+
+
+def fix_title(t):
+    import re as _re
+    t = _re.sub(r'\s+', ' ', str(t)).strip().strip('"')
+    emo = _re.findall(r'[\U0001F300-\U0001FAFF\u2600-\u27BF]', t)
+    t = _re.sub(r'[\U0001F300-\U0001FAFF\u2600-\u27BF\uFE0F]', '', t).strip(' -:')
+    if not _re.match(r'(?i)^(how|why)\b', t): t = 'Why ' + t[0].lower() + t[1:] if t else 'Why it works'
+    return (t[:88] + ' ' + (emo[0] if emo else '\U0001F4A1')).strip()
+
+
+def post_text(script, spec, kind):
+    title = fix_title(script['title']); sents = [s['say'] for p in script['panels'] for s in p['sentences']]
+    if kind == 'short':
+        return title + '\n\n' + ' '.join(sents[:2]) + '\nFollow ShelfMade for a new idea every day.\n\n' + HASH + '\n'
+    ch, k = [], 0
+    for pi, (p, sp) in enumerate(zip(script['panels'], spec['panels'])):
+        if pi % 3 == 0:
+            s = int(sp['start']) if pi else 0; ch.append('%d:%02d %s' % (s // 60, s % 60, p['title']))
+    desc = ' '.join(sents[:3]) + '\n\nChapters:\n' + '\n'.join(ch) + '\n\nSubscribe to ShelfMade for a new idea every day.\n\n' + HASH
+    return '--- TITLE ---\n' + title + '\n--- DESCRIPTION ---\n' + desc + '\n'
+
+
+def build(script, outdir, fps=30, kind='long'):
+    rule = RULES[kind]; vertical = rule['vertical']
     out = Path(outdir); work = out / 'work'; work.mkdir(parents=True, exist_ok=True)
-    (out / 'script.json').write_text(json.dumps(script, indent=1))
     timings, wavs = voice(script['panels'], work)
-    if max_sec:    # Shorts: stay under the platform limit by dropping a middle panel (the ending stays)
-        while len(script['panels']) > 2 and sum(t['duration'] + GAP for t in timings) > max_sec:
-            k = len(script['panels']) - 2
-            for l in (script['panels'], timings, wavs): del l[k]
-        (out / 'script.json').write_text(json.dumps(script, indent=1))
+    extra = 2.0 + 1.5 + 2.4 + VOICE0      # intro, spec tail, subscribe card
+    while len(script['panels']) > 2 and VOICE0 + sum(t['duration'] + GAP for t in timings) + extra > rule['max']:
+        k = max(1, len(script['panels']) // 2)   # drop a middle panel; hook and ending stay
+        for l in (script['panels'], timings, wavs): del l[k]
+    (out / 'script.json').write_text(json.dumps(script, indent=1))
     spec = make_spec(script, timings); (out / 'spec.json').write_text(json.dumps(spec, indent=1))
+    import canvas_whiteboard
+    total = spec['duration'] + canvas_whiteboard.END
+    if not rule['min'] <= total <= rule['max']:
+        raise SystemExit('LENGTH %.0f s outside the %s rule %.0f-%.0f s: try again' % (total, kind, rule['min'], rule['max']))
     audio = work / 'narration.wav'; concat_audio(wavs, GAP, audio)
-    import canvas_whiteboard, wb_sound
+    import wb_sound
     canvas_whiteboard.configure(vertical)
     ev = [(x['start'], x['dur'], x['kind']) for x in canvas_whiteboard.Renderer(spec).items if x['kind'] != 'frame']
+    ev += [(0.2, 1.4, 'text'), (spec['duration'] + 0.1, 1.8, 'text')]
     try:
-        audio = wb_sound.mix(audio, ev, spec['duration'], work / 'mixed.wav')
+        audio = wb_sound.mix(audio, ev, total, work / 'mixed.wav')
     except Exception as e:
         print('sound skipped:', e)
     mp4 = out / 'WHITEBOARD.mp4'
     canvas_whiteboard.render(spec, mp4, audio, fps=fps, vertical=vertical, progress=lambda i, n: print('render %d/%d' % (i, n), flush=True))
-    (out / 'POST_THIS.txt').write_text(script['title'] + '\n\n' + ' '.join(s['say'] for p in script['panels'] for s in p['sentences'][:2])[:400] + '\n')
+    (out / 'POST_THIS.txt').write_text(post_text(script, spec, kind))
     return mp4
 
 
 def main(argv):
+    kind = 'short' if 'short' in argv else 'long'
+    argv = [a for a in argv if a not in ('short', 'long')]
+    import wb_writer
     if argv and argv[0] == '--demo':
-        import wb_writer; script = dict(wb_writer.DEMO, panels=[wb_writer.clean_panel(p) for p in wb_writer.DEMO['panels']]); outdir = argv[1]
-        vertical = len(argv) > 2 and argv[2] == 'short'
-        print('BUILT', build(script, outdir, vertical=vertical, max_sec=58 if vertical else None)); return
+        script = dict(wb_writer.DEMO, panels=[wb_writer.clean_panel(p) for p in wb_writer.DEMO['panels']]); outdir = argv[1]
     else:
-        import wb_writer
-        topic, outdir = argv[0], argv[1]; minutes = float(argv[2]) if len(argv) > 2 else 8
-        short = len(argv) > 3 and argv[3] == 'short'
-        script = wb_writer.write(topic, 1 if short else minutes, short=short)
-        print('BUILT', build(script, outdir, vertical=short, max_sec=58 if short else None))
+        topic, outdir = argv[0], argv[1]; minutes = float(argv[2]) if len(argv) > 2 else 9
+        script = wb_writer.write(topic, 1 if kind == 'short' else minutes, short=(kind == 'short'))
+    print('BUILT', build(script, outdir, kind=kind))
 
 
 if __name__ == '__main__':

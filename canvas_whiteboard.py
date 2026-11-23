@@ -25,11 +25,14 @@ SC = 3                    # slot columns inside a panel
 GEOM = (80, 150, 373, 270, 186, 105)   # x0, y0, cell w, cell h, centre dx, centre dy
 MAXW, AM, TITLE_SCALE, HS = 360, (125, 110), 2.2, 0.5
 OUT = (1280, 720)         # final video size
+BRAND, INTRO, END = 'ShelfMade', 2.0, 2.4   # name written by the pen at the start, small corner mark all video, subscribe card at the end
+VERT = False
 
 
 def configure(vertical=False):
     """vertical=True: portrait Short (world cells 720x1280, 2x3 slots, output 1080x1920)."""
-    global W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT
+    global W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT, VERT
+    VERT = bool(vertical)
     if vertical:
         W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT = 720, 1280, 2, (40, 230, 320, 340, 160, 130), 290, (92, 110), 1.5, 0.42, (1080, 1920)
     else:
@@ -137,7 +140,7 @@ class Renderer:
         self.items = []
         for pi, p in enumerate(panels):
             its = [{'t': p.get('t0', 0.0), 'kind': 'title', 'text': p.get('title', ''), 'tag': p.get('tag')}]
-            its[0]['t'] = p['items'][0]['t'] - 1.4 if p.get('items') else 0.0
+            its[0]['t'] = (max(INTRO, p['items'][0]['t'] - 1.4) if pi == 0 else p['items'][0]['t'] - 1.4) if p.get('items') else 0.0
             for i, it in enumerate(p.get('items', [])[:SLOTS_PER_PANEL]):
                 its.append(dict(it, _slot=i))
             self.items += [(pi, it) for it in its]
@@ -167,6 +170,9 @@ class Renderer:
             b['drawn'] = 0.0; b['done'] = False
         self.items = built
         self.hand, self.hand_a = make_hand(); self.vis = 0.0; self.tip = (W / 2, H / 2)
+        lg = text_layer(BRAND, 2.0, 3); lw = int(W * (0.30 if VERT else 0.17)); lg = cv2.resize(lg, (lw, max(8, int(lg.shape[0] * lw / lg.shape[1]))), interpolation=cv2.INTER_AREA)
+        self.logo = (255 - lg).astype(np.float32) / 255.0 * 0.62
+        self.logo_xy = (W - lw - 26, H - lg.shape[0] - 34) if VERT else (W - lw - 30, 26)
         self._camera_keys()
 
     def _camera_keys(self):
@@ -273,8 +279,37 @@ class Renderer:
             white = (self.world.min(axis=2) > 235) & (mask > 0)
             self.world[white] = layer[white]
 
+    def _pencil(self, out, tx, ty, hs):
+        hand = cv2.resize(self.hand, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA); ha = cv2.resize(self.hand_a, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA)
+        ox, oy = int(tx - 34 * hs), int(ty - 34 * hs)
+        hh, hw = hand.shape[:2]
+        ya0, xa0 = max(0, oy), max(0, ox); ya1, xa1 = min(H, oy + hh), min(W, ox + hw)
+        if ya1 > ya0 and xa1 > xa0:
+            a = ha[ya0 - oy: ya1 - oy, xa0 - ox: xa1 - ox, None]
+            out[ya0:ya1, xa0:xa1] = (out[ya0:ya1, xa0:xa1] * (1 - a) + hand[ya0 - oy: ya1 - oy, xa0 - ox: xa1 - ox] * a).astype(np.uint8)
+
+    def _card(self, t, lines, t0, per):
+        """White card; each (text, colour, width fraction) line is written left to right by the pencil, one after another."""
+        out = np.full((H, W, 3), 255, np.uint8); n = len(lines); tip = None
+        for k, (txt, col, wf) in enumerate(lines):
+            lay = text_layer(txt, 4.0, 6); lw = int(W * wf); lay = cv2.resize(lay, (lw, max(8, int(lay.shape[0] * lw / lay.shape[1]))), interpolation=cv2.INTER_AREA)
+            h, w = lay.shape; x = (W - w) // 2; y = int(H / 2 + (k - (n - 1) / 2) * (h + 70) - h / 2)
+            u = smooth((t - t0 - k * per) / per)
+            if u <= 0: continue
+            c1 = max(1, int(u * w)); sub = lay[:, :c1].astype(np.float32) / 255.0
+            reg = out[y:y + h, x:x + c1].astype(np.float32); colv = np.array(INK[col], np.float32)[None, None, :]
+            out[y:y + h, x:x + c1] = np.minimum(reg, sub[:, :, None] * 255 + (1 - sub[:, :, None]) * colv).astype(np.uint8)
+            if u < 1.0 or k == n - 1: tip = (x + c1, y + h * 0.55)
+        if tip: self._pencil(out, tip[0], tip[1], HS)
+        return out
+
     def frame(self, t):
         self.advance(t)
+        D = float(self.spec.get('duration', 0))
+        if t < INTRO:
+            return self._card(t, [(BRAND, 'k', 0.74 if not VERT else 0.86)], 0.15, 1.5)
+        if t >= D:
+            return self._card(t, [('Subscribe', 'k', 0.52 if not VERT else 0.66), ('to ' + BRAND, 'r', 0.74 if not VERT else 0.88)], D + 0.1, 0.95)
         cx, cy, vw = self.camera(t); vh = vw * H / W
         x0, y0 = int(round(cx - vw / 2)), int(round(cy - vh / 2)); w, h = int(round(vw)), int(round(vh))
         x0 = max(0, min(self.world.shape[1] - w, x0)) if w <= self.world.shape[1] else 0
@@ -283,20 +318,16 @@ class Renderer:
         out = cv2.resize(crop, (W, H), interpolation=cv2.INTER_AREA if w > W else cv2.INTER_LINEAR)
         if self.vis > 0.03:
             sc = W / vw; tx, ty = (self.tip[0] - x0) * sc, (self.tip[1] - y0) * sc
-            hs = HS
-            hand = cv2.resize(self.hand, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA); ha = cv2.resize(self.hand_a, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA)
             off = (1 - smooth(self.vis)) * 320
-            ox, oy = int(tx - 34 * hs + off), int(ty - 34 * hs + off)
-            hh, hw = hand.shape[:2]
-            ya0, xa0 = max(0, oy), max(0, ox); ya1, xa1 = min(H, oy + hh), min(W, ox + hw)
-            if ya1 > ya0 and xa1 > xa0:
-                a = ha[ya0 - oy: ya1 - oy, xa0 - ox: xa1 - ox, None]
-                out[ya0:ya1, xa0:xa1] = (out[ya0:ya1, xa0:xa1] * (1 - a) + hand[ya0 - oy: ya1 - oy, xa0 - ox: xa1 - ox] * a).astype(np.uint8)
+            self._pencil(out, tx + off, ty + off, HS)
+        lx, ly = self.logo_xy; lh, lw = self.logo.shape
+        reg = out[ly:ly + lh, lx:lx + lw].astype(np.float32); a = self.logo[:, :, None]
+        out[ly:ly + lh, lx:lx + lw] = (reg * (1 - a) + np.array(INK['k'], np.float32) * a).astype(np.uint8)
         return out
 
 
 def render(spec, out_mp4, audio=None, fps=FPS, progress=None, vertical=False):
-    configure(vertical); r = Renderer(spec); dur = float(spec['duration'])
+    configure(vertical); r = Renderer(spec); dur = float(spec['duration']) + END
     cmd = ['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', '%dx%d' % (W, H), '-r', str(fps), '-i', '-']
     if audio: cmd += ['-i', str(audio)]
     if OUT != (W, H): cmd += ['-vf', 'scale=%d:%d:flags=lanczos' % OUT]

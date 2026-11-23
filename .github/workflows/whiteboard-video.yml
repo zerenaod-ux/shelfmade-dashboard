@@ -1,8 +1,6 @@
 name: whiteboard-video
 # ShelfMade one-canvas whiteboard video. Manual, or twice a week with an AI-chosen topic. Never published automatically: lands in Releases for review.
 on:
-  schedule:
-    - cron: '17 14 * * 2,5'
   workflow_dispatch:
     inputs:
       topic:

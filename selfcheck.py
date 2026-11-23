@@ -54,7 +54,7 @@ def _why_not_posting(brand):
         appr = {'shelfmade': 'approved.json', 'mindlore': 'approved-mindlore.json', 'doodles': 'approved-doodles.json'}[brand]; st = {'shelfmade': 'state.json', 'mindlore': 'state-mindlore.json', 'doodles': 'state-doodles.json'}[brand]
         done = jl('publish/' + st, {}).get('done', {}); wait = [i for i in jl('publish/' + appr, {}).get('items', []) if i['id'] not in done]
         if not wait: out.append('no approved videos waiting (builder not producing / nothing approved)')
-        for wf in {'shelfmade': ['shelfmade-story-short.yml', 'publisher.yml'], 'mindlore': ['mindlore-story-short.yml', 'publisher-mindlore.yml'], 'doodles': ['doodles.yml', 'publisher-doodles.yml']}[brand]:
+        for wf in {'shelfmade': ['shelfmade-whiteboard.yml', 'publisher.yml'], 'mindlore': ['mindlore-story-short.yml', 'publisher-mindlore.yml'], 'doodles': ['doodles.yml', 'publisher-doodles.yml']}[brand]:
             rr = [r for r in last_run(wf) if r.get('status') == 'completed']
             if rr and rr[0].get('conclusion') != 'success': out.append('%s last run %s' % (wf, rr[0].get('conclusion')))
             if rr and (age_h(rr[0].get('createdAt', '')) or 0) > 36 and wf.startswith(brand if brand != 'doodles' else 'doodles'): out.append('%s has not run for %.0f h' % (wf, age_h(rr[0]['createdAt'])))
