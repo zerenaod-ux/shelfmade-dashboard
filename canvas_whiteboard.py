@@ -123,11 +123,25 @@ def build_item(panel_idx, slot, it):
     elif kind == 'door':
         S = 2.1; ox, oy = cx - 50 * S, cy - 50 * S
         tr = lambda p: [(ox + x * S, oy + y * S) for x, y in p]
-        parts.append(('s', 'k', tr([(22, 6), (78, 6), (78, 96), (22, 96), (22, 6)]), 6))                  # doorway
-        parts.append(('s', 'k', tr([(78, 6), (95, -3), (95, 101), (78, 96)]), 6))                          # door swung open
-        parts.append(('s', 'k', tr(circ(88, 52, 3, 12)), 5))                                              # knob
-        parts.append(('s', 'k', tr([(22, 96), (78, 96)]), 6))
-        fills = [((60, 44, 84), tr([(23, 7), (77, 7), (77, 95), (23, 95)])), ((255, 212, 110), tr([(23, 95), (77, 95), (66, 74), (34, 74)])), ((190, 132, 78), tr([(79, 7), (94, -1), (94, 99), (79, 95)]))]
+        v = int(it.get('variant', 0)) % 4
+        if v == 0:     # a door swung open onto a dark, lit room
+            parts.append(('s', 'k', tr([(22, 6), (78, 6), (78, 96), (22, 96), (22, 6)]), 6))
+            parts.append(('s', 'k', tr([(78, 6), (95, -3), (95, 101), (78, 96)]), 6))
+            parts.append(('s', 'k', tr(circ(88, 52, 3, 12)), 5))
+            fills = [((60, 44, 84), tr([(23, 7), (77, 7), (77, 95), (23, 95)])), ((255, 212, 110), tr([(23, 95), (77, 95), (66, 74), (34, 74)])), ((190, 132, 78), tr([(79, 7), (94, -1), (94, 99), (79, 95)]))]
+        elif v == 1:   # elevator: doors slide apart, arrow points down
+            parts.append(('s', 'k', tr([(22, 14), (78, 14), (78, 96), (22, 96), (22, 14)]), 6))
+            parts.append(('s', 'k', tr([(22, 14), (38, 14), (38, 96), (22, 96)]), 5)); parts.append(('s', 'k', tr([(62, 14), (78, 14), (78, 96), (62, 96)]), 5))
+            parts.append(('s', 'r', tr([(50, -8), (50, 8)]), 6)); parts.append(('s', 'r', tr([(42, 2), (50, 10), (58, 2)]), 6))
+            fills = [((70, 60, 96), tr([(39, 15), (61, 15), (61, 95), (39, 95)])), ((255, 212, 110), tr([(39, 95), (61, 95), (56, 80), (44, 80)])), ((196, 204, 216), tr([(23, 15), (37, 15), (37, 95), (23, 95)])), ((196, 204, 216), tr([(63, 15), (77, 15), (77, 95), (63, 95)]))]
+        elif v == 2:   # trapdoor in the floor with a ladder going down
+            parts.append(('s', 'k', tr([(14, 62), (86, 62), (98, 90), (2, 90), (14, 62)]), 6))
+            parts.append(('s', 'k', tr([(14, 62), (86, 62), (80, 28), (20, 28), (14, 62)]), 6))
+            for yy in (68, 76, 84): parts.append(('s', 'k', tr([(36, yy), (64, yy)]), 4))
+            fills = [((60, 44, 84), tr([(15, 63), (85, 63), (96, 89), (4, 89)])), ((190, 132, 78), tr([(21, 29), (79, 29), (84, 61), (16, 61)]))]
+        else:          # portal: swirling rings
+            parts.append(('s', 'k', tr(circ(50, 50, 42, 40)), 6)); parts.append(('s', 'k', tr(circ(50, 50, 28, 32)), 5)); parts.append(('s', 'k', tr(circ(50, 50, 14, 24)), 5))
+            fills = [((92, 64, 180), tr(circ(50, 50, 41, 40))), ((132, 100, 226), tr(circ(50, 50, 27, 32))), ((206, 190, 250), tr(circ(50, 50, 13, 24)))]
     elif kind == 'frame':
         px, py = (panel_idx % COLS) * W, (panel_idx // COLS) * H
         parts.append(('s', ROOM_ACC[panel_idx] if panel_idx < len(ROOM_ACC) else 'a', [(px + 18, py + 18), (px + W - 18, py + 18), (px + W - 18, py + H - 18), (px + 18, py + H - 18), (px + 18, py + 18)], 9))
@@ -175,7 +189,7 @@ class Renderer:
             last = max(it['t'] for it in its)
             if DOORS and pi + 1 < self.n and panels[pi + 1].get('start') is not None:
                 gap = float(spec.get('gap', 1.4)); dt = max(last + 0.6, panels[pi + 1]['start'] - gap - 1.3)
-                self.items.append((pi, {'t': dt, 'kind': 'door', '_slot': 5})); last = dt + 1.4
+                self.items.append((pi, {'t': dt, 'kind': 'door', '_slot': 5, 'variant': pi})); last = dt + 1.4
             self.items.append((pi, {'t': last + 2.2 if not DOORS else last + 0.2, 'kind': 'frame', '_last': True}))
         self.sched = []
         self.items.sort(key=lambda x: x[1]['t'])
@@ -412,6 +426,9 @@ class Renderer:
         for jt in getattr(self, 'jumps', []):
             if abs(t - jt) < 0.16:
                 a = 1 - abs(t - jt) / 0.16; out = (out.astype(np.float32) * (1 - 0.85 * a) + 255 * 0.85 * a).astype(np.uint8)
+        for jt in getattr(self, 'jumps', []):
+            if jt + 0.1 < t < jt + 1.3:
+                u = (t - jt - 0.1) / 1.2; a = 0.5 * (1 - smooth(u)); out = (out.astype(np.float32) * (1 - a) + np.array((60, 40, 70), np.float32) * a).astype(np.uint8)   # the room's light comes on
         pz = self._punch(t)
         if pz > 0.002:
             ww, hh = int(W / (1 + pz)), int(H / (1 + pz)); xx0, yy0 = (W - ww) // 2, (H - hh) // 2
