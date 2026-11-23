@@ -68,14 +68,14 @@ def clean_panel(p, max_items=6):
 
 
 def outline(topic, minutes, llm):
-    n = max(3, round(minutes * 60 / 95))
+    n = max(1, round(minutes * 60 / 95))
     p = (STYLE + 'Topic: %s\nPlan a %d-minute explainer in %d chapters (each about 90-100 seconds). '
          'Return {"title":"result-promise title, no question, max 8 words","symbol":"one recurring everyday symbol and what it stands for",'
          '"chapters":[{"title":"plain 2-4 word title","job":"what this chapter says, one sentence","analogy":"one real-life picture used to explain it"}]}. '
          'Chapter 1 opens with a short true story with numbers. A chapter near the middle states the thesis in one line. The last chapter gives one direct action the viewer does today.' % (topic, minutes, n))
     d = llm.json_call(SYSTEM, p, temperature=0.7, max_tokens=2500)
     ch = d.get('chapters')
-    if not isinstance(ch, list) or len(ch) < 3:
+    if not isinstance(ch, list) or len(ch) < 1:
         raise ValueError('outline too short')
     return d
 
