@@ -26,8 +26,16 @@ def check_broken(token, topic, state):
     runs = api("/actions/runs?per_page=100", token).get("workflow_runs", [])
     done = set(state.get("failed_runs", []))
     fresh = [r for r in runs if r["name"] in KEY_JOBS and r["conclusion"] == "failure" and str(r["id"]) not in done]
-    if fresh:
-        names = sorted({r["name"] for r in fresh})
+    # Doodles jobs fail often while the free GPU is busy: at most ONE ping per day for them (owner request 2026-11-22)
+    today = __import__("datetime").datetime.utcnow().date().isoformat()
+    isdd = lambda n: n.startswith("doodles") or n.endswith("-doodles")
+    if any(isdd(r["name"]) for r in fresh) and state.get("doodles_alert_day") == today:
+        fresh_alert = [r for r in fresh if not isdd(r["name"])]
+    else:
+        fresh_alert = fresh
+        if any(isdd(r["name"]) for r in fresh): state["doodles_alert_day"] = today
+    if fresh_alert:
+        names = sorted({r["name"] for r in fresh_alert})
         send(topic, "Content Engine: a job failed", "Failed: " + ", ".join(names[:6]) + ". Open the app to see the log.")
         print("broken alert", names)
     # keep only failures from the last 3 days so the list stays small
