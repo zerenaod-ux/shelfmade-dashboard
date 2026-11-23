@@ -222,6 +222,9 @@ class Renderer:
         self.logo = (255 - lg).astype(np.float32) / 255.0 * 0.62
         self.logo_xy = (W - lw - 24, 20) if VERT else (W - lw - 30, 26)
         self._camera_keys()
+        import wb_scout
+        self.scouts = [[wb_scout.make_scout(f, rooms[q]) for f in range(5)] for q in range(self.n)] if DOORS else []
+        self.pops = [(b['start'] + b['dur'], slot_center(b['panel'], b['it'].get('_slot', 0))) for b in self.items if b['kind'] in ('icon', 'number', 'text')]
 
     def _camera_keys(self):
         first, last = {}, {}
@@ -360,6 +363,44 @@ class Renderer:
                 reg = out[y:y + 96].astype(np.float32); out[y:y + 96] = (reg * (1 - al) + bgr * al).astype(np.uint8)
                 return
 
+    def _scout(self, out, t, x0, y0, sc):
+        """The explorer: waits in the room, walks to the door when it is drawn, steps in (shrinks into the doorway), and arrives in the next room."""
+        if not self.scouts: return
+        D = float(self.spec.get('duration', 0)); hs_h = (120 if not VERT else 140)
+        for pi in range(self.n):
+            px, py = (pi % COLS) * W, (pi // COLS) * H
+            t_in = (self.jumps[pi - 1] + 0.25) if pi > 0 and len(self.jumps) >= pi else 0.0
+            t_out = self.jumps[pi] if pi < len(self.jumps) else D
+            if not (t_in <= t < t_out + 0.02) or (pi == 0 and t < INTRO + 0.5): continue
+            sx0, sy0 = px + 110, py + H - (62 if not VERT else 235)                 # feet when waiting
+            door = [b for b in self.items if b['panel'] == pi and b['kind'] == 'door']
+            fr, alpha, size = 4, 1.0, 1.0
+            if door:
+                dcx, dcy = slot_center(pi, 5); gx, gy = dcx - 70, dcy + 104; ws = door[0]['start'] + 0.2; we = door[0]['start'] + door[0]['dur'] + 0.7
+                if t < ws: x, y = sx0, sy0; fr = 4
+                elif t < we: u = smooth((t - ws) / (we - ws)); x, y = sx0 + (gx - sx0) * u, sy0 + (gy - sy0) * u; fr = int(t * 8) % 4
+                else:
+                    u = smooth((t - we) / max(0.2, t_out - we)); x, y = gx + (dcx - gx) * u, gy + (dcy + 40 - gy) * u; size = 1 - 0.8 * u; alpha = 1 - 0.7 * u; fr = int(t * 8) % 4
+            else: x, y = sx0, sy0; fr = 4; y -= abs(math.sin(t * 5)) * 18 if t > D - 3 else 0       # last room: hops for joy
+            if pi > 0 and t < t_in + 0.5: alpha *= (t - t_in) / 0.5
+            spr, al = self.scouts[pi][fr]
+            hh = hs_h * size * sc; ww = hh * spr.shape[1] / spr.shape[0]
+            if hh < 3: continue
+            s = cv2.resize(spr, (max(2, int(ww)), max(2, int(hh))), interpolation=cv2.INTER_AREA); a = cv2.resize(al[:, :, 0], (s.shape[1], s.shape[0]), interpolation=cv2.INTER_AREA)[:, :, None] * alpha
+            ox, oy = int((x - x0) * sc - s.shape[1] / 2), int((y - y0) * sc - s.shape[0])
+            ya0, xa0 = max(0, oy), max(0, ox); ya1, xa1 = min(H, oy + s.shape[0]), min(W, ox + s.shape[1])
+            if ya1 > ya0 and xa1 > xa0:
+                aa = a[ya0 - oy:ya1 - oy, xa0 - ox:xa1 - ox]
+                out[ya0:ya1, xa0:xa1] = (out[ya0:ya1, xa0:xa1] * (1 - aa) + s[ya0 - oy:ya1 - oy, xa0 - ox:xa1 - ox] * aa).astype(np.uint8)
+
+    def _pops(self, out, t, x0, y0, sc):
+        """A ring of light pulses out of every picture the moment it is finished."""
+        for te, (wx, wy) in self.pops:
+            u = (t - te) / 0.6
+            if 0 <= u <= 1:
+                ov = out.copy(); cv2.circle(ov, (int((wx - x0) * sc), int((wy - y0) * sc)), int((40 + 150 * u) * sc), (60, 190, 255), max(2, int(5 * sc)), cv2.LINE_AA)
+                a = 0.55 * (1 - u); out[:] = (out.astype(np.float32) * (1 - a) + ov.astype(np.float32) * a).astype(np.uint8)
+
     def _mood(self, t):
         m = 'idle'
         for tt, mo in self.moods:
@@ -423,6 +464,7 @@ class Renderer:
             sc = W / vw; tx, ty = (self.tip[0] - x0) * sc, (self.tip[1] - y0) * sc
             off = (1 - smooth(self.vis)) * 320
             self._pencil(out, tx + off, ty + off, HS)
+        self._pops(out, t, x0, y0, W / vw); self._scout(out, t, x0, y0, W / vw)
         for jt in getattr(self, 'jumps', []):
             if abs(t - jt) < 0.16:
                 a = 1 - abs(t - jt) / 0.16; out = (out.astype(np.float32) * (1 - 0.85 * a) + 255 * 0.85 * a).astype(np.uint8)
