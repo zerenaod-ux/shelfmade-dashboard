@@ -100,7 +100,7 @@ def write_chapter(topic, out, i, llm, previous_say=''):
             panels.append(clean_panel(raw))
         except ValueError:
             continue
-    if len(panels) < 2:
+    if len(panels) < 1:
         raise ValueError('chapter %d gave too few usable panels' % (i + 1))
     return panels
 
@@ -111,7 +111,13 @@ def write(topic, minutes=8, llm=None):
     out = outline(topic, minutes, llm)
     panels, prev = [], ''
     for i in range(len(out['chapters'])):
-        got = write_chapter(topic, out, i, llm, prev)
+        got, err = None, None
+        for _try in range(4):
+            try:
+                got = write_chapter(topic, out, i, llm, prev); break
+            except Exception as e:
+                err = e; print('chapter %d retry %d: %s' % (i + 1, _try + 1, str(e)[:120]), flush=True)
+        if got is None: raise err
         panels += got; prev = got[-1]['sentences'][-1]['say']
     return {'title': str(out.get('title', topic))[:90], 'topic': topic, 'panels': panels}
 
