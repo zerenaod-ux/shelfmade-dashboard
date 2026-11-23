@@ -106,7 +106,7 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
          'Item kinds: {"kind":"icon","name":ICON,"label":"<=14 chars or empty","anchor":"exact word from the sentence"}; {"kind":"text","text":"<=18 chars","color":"r or k","anchor":...}; '
          '{"kind":"number","text":"$10 or 30%%","anchor":...}; {"kind":"cross","ref":index of an earlier item in this panel,"anchor":...}; {"kind":"arrow","frm":earlier item index,"to":earlier item index,"anchor":...}. '
          'Items are numbered 0,1,2... in the order they appear in the panel. ICON must be one of: %s. '
-         'For anything not in that list use {"kind":"emoji","char":"ONE emoji that shows it (any subject: animals, food, places, tools, science, sport, vehicles)","label":...,"anchor":...}. '
+         'PREFER emoji items for every concrete thing named (fridge, bike pump, bread, rocket, brain, coin, tree...) and use the ICON list only for generic ideas (money, time, warning, check, idea). For emoji use {"kind":"emoji","char":"ONE emoji that shows it (any subject: animals, food, places, tools, science, sport, vehicles)","label":...,"anchor":...}. '
          '%s%s Previous chapter ended with: %s'
          % (topic, out.get('symbol', ''), i + 1, len(out['chapters']), c.get('title', ''), c.get('job', ''), c.get('analogy', ''), shape, ICON_LIST,
             'Open with a true story with real numbers, no greeting. ' if i == 0 and not short else '',
