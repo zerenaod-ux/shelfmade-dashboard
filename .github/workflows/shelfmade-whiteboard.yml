@@ -52,7 +52,7 @@ jobs:
           JOB: ${{ matrix.job }}
         run: |
           mkdir -p out
-          KIND=short; MIN=1; [ "$JOB" = "long" ] && { KIND=long; MIN=12; }
+          KIND=short; MIN=1; [ "$JOB" = "long" ] && { KIND=long; MIN=13; }
           for i in 1 2 3 4 5 6; do TOPIC="$(python wb_auto.py | tail -1)" && break; sleep 120; done
           [ -n "$TOPIC" ] || { echo "no topic"; exit 1; }
           echo "TOPIC: $TOPIC"
