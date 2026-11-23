@@ -30,5 +30,11 @@
  {
   "topic": "Why Do Some Animals Live Forever? The Science of Biological Immortality",
   "cat": "science and nature"
+ },
+ {
+  "topic": "Part 2: The Deep Sea Pressure Paradox: Why Squid Heads Explode But Sharks Don't",
+  "cat": "science and nature",
+  "part2": true,
+  "parent": "Why Do Some Animals Live Forever? The Science of Biological Immortality"
  }
 ]
