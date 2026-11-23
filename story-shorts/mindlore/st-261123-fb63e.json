@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261123-fb63e",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Memory Reconstructs Truth 🧠",
+ "hook": "You remember your childhood perfectly.",
+ "thumbnail_headline": "MEMORY IS A LIE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You remember your childhood perfectly. Your brain actually reconstructs these memories every time you recall them. In 1974, psychologist Elizabeth Loftus showed that about 25 percent of people could be influenced by false details. The result? Your past is a reconstruction, not a recording. So why do we trust our own history? It is a process called reconstructive memory. This happens across all human cultures. So next time you recall a memory, remember you remember your childhood perfectly."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "False memories can be implanted through suggestion, affecting about 25 percent of people in specific experimental conditions.",
+   "who": "Elizabeth Loftus",
+   "year": "1974",
+   "place": "University of California"
+  },
+  {
+   "claim": "Memory is a reconstructive process rather than a literal recording of events.",
+   "who": "Elizabeth Loftus",
+   "year": "1970s",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "Kids React to Surprising Story Endings",
+ "exp": "s30"
+}

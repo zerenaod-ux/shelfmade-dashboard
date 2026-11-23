@@ -2053,6 +2053,61 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261123-1e003",
+   "look": "live-demo",
+   "title": "Why Goat Tail Wagging Signals Joy \ud83d\udc10",
+   "theme": "How Animals Show Joy Through Play",
+   "acts": [
+    "counter",
+    "icon_burst",
+    "reaction",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261123-a647f",
+   "look": "live-demo",
+   "title": "Why Your Pupils Expand On Unexpected News \ud83d\udc41\ufe0f",
+   "theme": "Human Facial Cues When Hearing Unexpected News",
+   "acts": [
+    "icon_burst",
+    "reaction",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261123-fb63e",
+   "look": "live-demo",
+   "title": "Why Your Memory Reconstructs Truth \ud83e\udde0",
+   "theme": "Kids React to Surprising Story Endings",
+   "acts": [
+    "brain",
+    "chart",
+    "checklist",
+    "countdown",
+    "counter",
+    "flow",
+    "quote",
+    "reaction",
+    "timeline",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

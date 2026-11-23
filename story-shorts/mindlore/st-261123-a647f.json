@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261123-a647f",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Pupils Expand On Unexpected News 👁️",
+ "hook": "You notice your eyes widen when you hear news.",
+ "thumbnail_headline": "EYES WIDEN ON NEWS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You notice your eyes widen when you hear news. Your pupils react faster than you think. In 1966, Kahneman and Beatty observed about 0.5 mm dilation for unexpected words. The result? Norepinephrine release pulls iris muscles. So why do we assume we only feel a gasp? What triggers that change? Does it happen for every surprise? The answer: pupil change occurs before awareness. That's it. So next time you hear headlines, notice the widening of your pupils, remember your eyes give you cue before you think, you notice your eyes widen."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Observed about 0.5 mm pupil dilation for unexpected words",
+   "who": "Kahneman and Beatty",
+   "year": "1966",
+   "place": "USA (psychology lab)"
+  },
+  {
+   "claim": "Norepinephrine release causes iris muscle contraction leading to dilation",
+   "who": "Bradley and Lang",
+   "year": "2007",
+   "place": "University of Florida"
+  }
+ ],
+ "source_url": "",
+ "theme": "Human Facial Cues When Hearing Unexpected News",
+ "exp": "s30"
+}

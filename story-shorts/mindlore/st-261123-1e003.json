@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261123-1e003",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Goat Tail Wagging Signals Joy 🐐",
+ "hook": "You feel relief when your dog wags its tail.",
+ "thumbnail_headline": "ANIMAL TAIL JOY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel relief when your dog wags its tail. Other species actually express happiness in very similar ways. In 2020, researchers at Queen Mary University of London studied about 30 goats. They recorded their sounds and tail movements during positive events. The result? Goats wagged their tails significantly more when they were happy. Is this rare in nature? No, studies across farm animals show identical patterns. So why do we assume animals lack complex emotion? We simply missed their physical signals. Next time you see a farm animal, remember you feel relief when your dog wags its tail."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Goats display tail wagging and specific vocalizations during positive emotional states.",
+   "who": "Queen Mary University of London researchers",
+   "year": "2020",
+   "place": "London, UK"
+  },
+  {
+   "claim": "Tail movement and body posture indicate positive affective states across multiple domesticated species.",
+   "who": "Researchers in animal welfare science",
+   "year": "2018",
+   "place": "Europe"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Animals Show Joy Through Play",
+ "exp": "s30"
+}
