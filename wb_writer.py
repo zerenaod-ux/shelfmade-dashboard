@@ -118,7 +118,7 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
             panels.append(clean_panel(raw))
         except ValueError:
             continue
-    if len(panels) < 1:
+    if len(panels) < (3 if short else 2):
         raise ValueError('chapter %d gave too few usable panels' % (i + 1))
     try:
         import wb_check; panels, _ok = wb_check.review(topic, panels, llm); print('chapter %d reviewed: %s' % (i + 1, 'fixed/confirmed' if _ok else 'kept as written'), flush=True)

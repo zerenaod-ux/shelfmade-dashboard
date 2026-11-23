@@ -61,7 +61,9 @@ jobs:
           echo "TOPIC: $TOPIC"
           export WB_CACHE="$PWD/out/cache-$JOB.json"
           for i in 1 2 3 4 5 6; do
-            rm -rf out/wb; python wb_build.py "$TOPIC" out/wb $MIN $KIND && OK=1 && break
+            rm -rf out/wb; python wb_build.py "$TOPIC" out/wb $MIN $KIND 2>&1 | tee out/build.log
+            [ "${PIPESTATUS[0]}" = "0" ] && OK=1 && break
+            grep -q "^LENGTH" out/build.log && rm -f "$WB_CACHE"   # a script of the wrong length is thrown away, not reused
             echo "try $i failed"; sleep 240
           done
           [ "$OK" = "1" ] || exit 1
