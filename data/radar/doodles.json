@@ -1,138 +1,129 @@
 {
  "why": [
   {
-   "title": "2 bullets  5 prisoners  How to stop all of them\ud83d\udd2b #uselessfacts #animation",
-   "why": "High-stakes animated riddle logic immediately forces viewer retention to see how the impossible constraint is solved."
+   "title": "How a Fake \"50% Off\" Black Friday Tag Is Built",
+   "why": "The hook of a mysterious tag coupled with a surprising psychology explanation of scarcity keeps viewers intrigued."
   },
   {
-   "title": "It Was Never Rare: The Psychology of Scarcity\ud83d\udd2a | part-2 | #shorts #fact #phycology #wealth",
-   "why": "Exposes a hidden everyday manipulation tactic, driving curiosity and outrage about being secretly tricked."
+   "title": "Your Brain's Secret Idea Zone",
+   "why": "It plays on curiosity about the brain\u2019s hidden processes, using a rapid animation to deliver punchy facts."
   },
   {
-   "title": "Over-Giver vs Balancer vs Taker: Who Gets Drained? #peoplepleasing #psychology",
-   "why": "Uses relatable social categorization that triggers instant self-identification and relational reflection."
+   "title": "If someone yanks your chair away in front of your crush",
+   "why": "The relatable awkward moment hooks viewers, while the humor and social anxiety angle provide emotional resonance."
   },
   {
-   "title": "You Go Blind Thousands of Times a Day (Your Brain Hides It)",
-   "why": "Presents a shocking, counter-intuitive bodily truth that immediately makes the viewer test the phenomenon in real-time."
+   "title": "Why Do Elevators Have Mirrors?",
+   "why": "The everyday question becomes a quick brain\u2011fact reveal, with fast pacing and a quirky twist that satisfies curiosity."
   }
  ],
  "hook_patterns": [
-  "High-stakes moral logic puzzle or paradox introduced in the first 3 seconds",
-  "Exposing a common daily illusion or corporate trick that the viewer actively falls for",
-  "Relatable relationship personality types that force the viewer to self-categorize"
+  "Mysterious teaser or question",
+  "Unexpected everyday scenario",
+  "Surprising science revelation"
  ],
- "todays_angle": "Mia uses a comedic behavioral experiment on Leo to reveal a psychological illusion he falls for every single day.",
+ "todays_angle": "Use a common social anxiety trigger, reveal the psychology behind it, and turn it into a funny animation skit.",
  "ideas": [
-  {
-   "title": "The Decoy Popcorn Trick",
-   "concept": "Leo is convinced he made a smart purchase buying the 'Large' popcorn, but Mia visually proves how a fake 'Medium' option was planted just to manipulate his brain."
-  },
-  {
-   "title": "Why You Blindly Miss Your Own Mistakes",
-   "concept": "Mia catches Leo making a ridiculous editing error and explains Saccadic Masking\u2014how his brain literally erases sight gaps to hide his own dumb blunders."
-  },
-  {
-   "title": "Are You an Over-Giver or a Taker?",
-   "concept": "Leo keeps giving away his lunch expecting gratitude, while Mia breaks down the toxic social triangle causing him to get constantly drained."
-  }
+  "Mia spots a 'No Entry' sign on the bathroom door and asks Leo why we\u2019re afraid of being denied access, leading to a quick explanation of the 'fear of loss' bias.",
+  "Leo pretends to be a magician who makes Leo\u2019s friends' thoughts disappear, illustrating the illusion of control in decision making.",
+  "Mia shows Leo a mirror and asks why it feels safer in elevators, sparking a comedic discussion about safety cues and our brain\u2019s fight-or-flight response."
  ],
  "avoid": [
-  "Literal history stories or generic historical king anecdotes without a sharp personal psychology twist",
-  "Direct copies of fake retail tags or repetitive multi-part Scarcity re-uploads"
+  "Overused 'life hack' style skits that lack fresh insight",
+  "Replaying classic 'why we do X' videos without a new twist"
  ],
  "updated": "2026-11-23",
- "sample": 74,
+ "sample": 75,
  "spikes": [
-  {
-   "title": "2 bullets  5 prisoners  How to stop all of them\ud83d\udd2b #uselessfacts #animation",
-   "channel": "Useless Truths",
-   "views": 1130657,
-   "hours": 48,
-   "vph": 23750.3,
-   "subs": 31100,
-   "breakout": 36.4
-  },
   {
    "title": "The Cursed Man ?;=l0[]",
    "channel": "Pescak",
-   "views": 123689,
+   "views": 384088,
+   "hours": 27,
+   "vph": 14109.0,
+   "subs": 211000,
+   "breakout": 1.8
+  },
+  {
+   "title": "\u0906\u0930\u093e\u092e \u0928\u0947 \u0907\u0928 \u092c\u093e\u091c\u093c\u094b\u0902 \u0915\u0940 \u0909\u0921\u093c\u093e\u0928 \u091b\u0940\u0928 \u0932\u0940! \ud83e\udd85\ud83d\ude28",
+   "channel": "PsychologyXplained",
+   "views": 192766,
    "hours": 17,
-   "vph": 7156.2,
-   "subs": 210000,
-   "breakout": 0.6
+   "vph": 11558.3,
+   "subs": 18400,
+   "breakout": 10.5
   },
   {
-   "title": "It Was Never Rare: The Psychology of Scarcity\ud83d\udd2a | part-2 | #shorts #fact #phycology #wealth",
-   "channel": "INSIDE VERCE ",
-   "views": 86548,
-   "hours": 22,
-   "vph": 4021.1,
-   "subs": 2150,
-   "breakout": 40.3
-  },
-  {
-   "title": "It Was Never Rare: The Psychology of Scarcity \ud83d\udd2a | part-1 | #shorts #fact #phycology #wealth",
-   "channel": "INSIDE VERCE ",
-   "views": 93469,
-   "hours": 46,
-   "vph": 2053.6,
-   "subs": 2150,
-   "breakout": 43.5
+   "title": "All fun and games till they stop the car..\ud83d\udc80 #animation #skit #relatable #dad #car",
+   "channel": "RefCantDraw ",
+   "views": 49451,
+   "hours": 5,
+   "vph": 10704.5,
+   "subs": 165000,
+   "breakout": 0.3
   },
   {
    "title": "How a Fake \"50% Off\" Black Friday Tag Is Built",
    "channel": "Hypothetically",
-   "views": 7871,
-   "hours": 5,
-   "vph": 1585.7,
-   "subs": 208,
-   "breakout": 37.8
+   "views": 95180,
+   "hours": 15,
+   "vph": 6386.8,
+   "subs": 233,
+   "breakout": 408.5
+  },
+  {
+   "title": "It Was Never Rare: The Psychology of Scarcity\ud83d\udd2a | part-2 | #shorts #fact #phycology #wealth",
+   "channel": "INSIDE VERCE ",
+   "views": 122939,
+   "hours": 31,
+   "vph": 3907.5,
+   "subs": 2350,
+   "breakout": 52.3
   },
   {
    "title": "Wenn dich jemand nachmacht\ud83e\udd2b #psychologie #shorts",
    "channel": "Der Framer",
-   "views": 24721,
-   "hours": 17,
-   "vph": 1472.6,
-   "subs": 58700,
-   "breakout": 0.4
+   "views": 50412,
+   "hours": 27,
+   "vph": 1886.2,
+   "subs": 58900,
+   "breakout": 0.9
   },
   {
-   "title": "Over-Giver vs Balancer vs Taker: Who Gets Drained? #peoplepleasing #psychology",
-   "channel": "Think Twice",
-   "views": 52560,
-   "hours": 43,
-   "vph": 1222.7,
-   "subs": 112,
-   "breakout": 262.8
+   "title": "Why Do Elevators Have Mirrors?  #brainfacts #didyouknow",
+   "channel": "Noggin Loop",
+   "views": 24447,
+   "hours": 16,
+   "vph": 1537.2,
+   "subs": 168,
+   "breakout": 122.2
   },
   {
-   "title": "The Wanderer Is Here",
-   "channel": "Pescak",
-   "views": 32685,
-   "hours": 42,
-   "vph": 785.5,
-   "subs": 210000,
-   "breakout": 0.2
+   "title": "How Free Soup Made Him Rich #animation #funny #cartoon",
+   "channel": "The Odd Minute",
+   "views": 19364,
+   "hours": 20,
+   "vph": 978.7,
+   "subs": 38,
+   "breakout": 96.8
   },
   {
-   "title": "What If Someone Paid You to Annoy Them?",
-   "channel": "Whatifville",
-   "views": 20873,
-   "hours": 32,
-   "vph": 647.4,
-   "subs": 53,
-   "breakout": 104.4
+   "title": "Your Brain's Secret Idea Zone",
+   "channel": "CuriousX",
+   "views": 27658,
+   "hours": 29,
+   "vph": 964.7,
+   "subs": 42,
+   "breakout": 138.3
   },
   {
-   "title": "He Saved His Cinema With Popcorn Nobody Bought",
-   "channel": "Side Lives",
-   "views": 20379,
-   "hours": 39,
-   "vph": 519.5,
-   "subs": 103,
-   "breakout": 101.9
+   "title": "If someone yanks your chair away in front of your crush \ud83e\udd2b",
+   "channel": "Other Angle",
+   "views": 26524,
+   "hours": 30,
+   "vph": 875.7,
+   "subs": 91,
+   "breakout": 132.6
   }
  ]
 }
