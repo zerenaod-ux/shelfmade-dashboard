@@ -53,8 +53,8 @@
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 9,
-   "last": 54
+   "uses": 10,
+   "last": 60
   }
  ],
  "catch": {
@@ -749,6 +749,18 @@
    "title": "Your Pigeon Hair Stinks",
    "concept": "Leo thinks Mia stole his laugh, but she was mocking his haircut after a misheard compliment.",
    "gag": "dev",
+   "callback": false,
+   "milestone": false,
+   "season": 6,
+   "date": "2026-11-23"
+  },
+  {
+   "n": 52,
+   "kind": "short",
+   "id": "your-plant-rating-war",
+   "title": "The Plant Rating War",
+   "concept": "Leo rates everyday room items and insists Gerald the houseplant is holding a personal grudge against him.",
+   "gag": "scoreboard",
    "callback": false,
    "milestone": false,
    "season": 6,
