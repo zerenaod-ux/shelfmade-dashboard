@@ -6054,5 +6054,173 @@
   "style": "v2",
   "format": "MISUNDERSTANDING",
   "improv": true
+ },
+ {
+  "id": "your-plant-rating-war",
+  "title": "The Plant Rating War",
+  "concept": "Leo rates everyday room items and insists Gerald the houseplant is holding a personal grudge against him.",
+  "insight": "We often project our own self-doubt onto innocent inanimate objects around us.",
+  "caption": "Rating desk vibes turned into a full foliage trial. \ud83c\udf3f rating game",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at the podcast desk. Leo dramatically sets down a coffee mug near Gerald the potted fern, squinting with worried eyes.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Time for the Roommate Vibe Rating Game!",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "leo",
+      "feel": "serious",
+      "beat": "quick",
+      "text": "First up, Gerald the fern gets zero.",
+      "listener_feel": "skeptical"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Zero? Leo, he is a plant!",
+      "listener_feel": "concerned"
+     }
+    ]
+   },
+   {
+    "scene": "Mia checks a digital clock showing a time on the podcast desk, tilting her head with a raised eyebrow towards a sulking Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "He literally just sits there absorbing sunlight!",
+      "listener_feel": "skeptical"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "snap",
+      "text": "Okay but hear me out. He dropped one crisp yellow leaf right into my lap yesterday.",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Leo taps the base of a cup of tea on the desk, looking at Gerald with skeptical eyes while Mia grins quietly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "quick",
+      "text": "That leaf was a targeted attack. Pure hostile judgment!",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "quick",
+      "text": "That updates my told-you-so scoreboard to one hundred twenty-six. You are warring with foliage.",
+      "listener_feel": "concerned"
+     }
+    ]
+   },
+   {
+    "scene": "Mia startles slightly as an alarm going off sounds on her desk timer, giving Leo a warm smirk across the desk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Fine. What score does Gerald get if I give him a tiny splash of water?",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "leo",
+      "feel": "thoughtful",
+      "beat": "snap",
+      "text": "Four out of ten. He still side-eyes my life choices.",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds a coffee mug with both hands, relaxing his shoulders with a softened expression while Mia chuckles with a closed-mouth smile.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Okay, rating your dramatic relationship with Gerald: ten out of ten for pure comedy.",
+      "listener_feel": "warm"
+     },
+     {
+      "who": "leo",
+      "feel": "playful",
+      "beat": "quick",
+      "text": "Hey! I rate your leaf-defense team a solid nine.",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Both sit comfortably at the desk as a digital clock showing a time clicks forward, exchanging friendly smirks.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Fair enough. We both lose this rating battle.",
+      "listener_feel": "warm"
+     },
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "quick",
+      "text": "Next time: Leo tries to prove Dev the barista is misspelling his name on purpose.",
+      "listener_feel": "amused"
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 8,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The script has great comedic banter about fighting with a plant and natural pacing from start to finish.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 8,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": false
  }
 ]
