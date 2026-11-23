@@ -13,7 +13,7 @@ on:
         description: 'true = built-in test script, no AI'
         default: 'false'
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -42,6 +42,12 @@ jobs:
           mkdir -p out
           if [ "$DEMO" = "true" ]; then python wb_build.py --demo out/wb; else python wb_build.py "$TOPIC" out/wb "$MINUTES"; fi
           rm -rf out/wb/work
+      - name: Keep the video as a release file (14 days is not needed; owner downloads from Releases)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="whiteboard-${{ github.run_id }}"
+          gh release create "$TAG" out/wb/WHITEBOARD.mp4 out/wb/POST_THIS.txt out/wb/script.json out/wb/spec.json --title "Whiteboard video ${{ github.run_id }}" --notes "Built by whiteboard-video workflow. Not published anywhere." --prerelease
       - uses: actions/upload-artifact@v4
         with:
           name: whiteboard-video
