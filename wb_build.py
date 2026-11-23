@@ -158,7 +158,7 @@ def main(argv):
         script = dict(wb_writer.DEMO, panels=[wb_writer.clean_panel(p) for p in wb_writer.DEMO['panels']]); outdir = argv[1]
     else:
         topic, outdir = argv[0], argv[1]; minutes = float(argv[2]) if len(argv) > 2 else 9
-        script = wb_writer.write(topic, 1 if kind == 'short' else minutes, short=(kind == 'short'))
+        script = wb_writer.write(topic, 1 if kind == 'short' else minutes, short=(kind == 'short'), cache=os.environ.get('WB_CACHE'))
     print('BUILT', build(script, outdir, kind=kind))
 
 

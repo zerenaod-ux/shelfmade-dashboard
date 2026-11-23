@@ -56,9 +56,10 @@ jobs:
           for i in 1 2 3 4 5 6; do TOPIC="$(python wb_auto.py | tail -1)" && break; sleep 120; done
           [ -n "$TOPIC" ] || { echo "no topic"; exit 1; }
           echo "TOPIC: $TOPIC"
-          for i in 1 2 3 4; do
+          export WB_CACHE="$PWD/out/cache-$JOB.json"
+          for i in 1 2 3 4 5 6; do
             rm -rf out/wb; python wb_build.py "$TOPIC" out/wb $MIN $KIND && OK=1 && break
-            echo "try $i failed"; sleep 150
+            echo "try $i failed"; sleep 240
           done
           [ "$OK" = "1" ] || exit 1
           rm -rf out/wb/work

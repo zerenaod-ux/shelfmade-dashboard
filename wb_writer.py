@@ -127,21 +127,40 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
     return panels
 
 
-def write(topic, minutes=8, llm=None, short=False):
+def write(topic, minutes=8, llm=None, short=False, cache=None):
+    """cache = JSON path: outline and finished chapters are saved so a retry after a free-AI quota hiccup resumes instead of starting over."""
+    import time
+    from pathlib import Path
     if llm is None:
         import llm as _l; llm = _l
-    out = outline(topic, minutes, llm)
-    if short:
-        out['chapters'] = out['chapters'][:1]
+    st = {}
+    if cache and Path(cache).exists():
+        try: st = json.loads(Path(cache).read_text())
+        except Exception: st = {}
+    def save():
+        if cache: Path(cache).parent.mkdir(parents=True, exist_ok=True); Path(cache).write_text(json.dumps(st))
+    out = st.get('outline')
+    if not out:
+        for _t in range(5):
+            try: out = outline(topic, minutes, llm); break
+            except Exception as e:
+                print('outline retry %d: %s' % (_t + 1, str(e)[:100]), flush=True); time.sleep(20 * (_t + 1))
+        if not out: raise RuntimeError('outline failed')
+        if short: out['chapters'] = out['chapters'][:1]
+        st['outline'] = out; st['done'] = []; save()
     panels, prev = [], ''
     for i in range(len(out['chapters'])):
-        got, err = None, None
-        for _try in range(4):
-            try:
-                got = write_chapter(topic, out, i, llm, prev, short); break
-            except Exception as e:
-                err = e; print('chapter %d retry %d: %s' % (i + 1, _try + 1, str(e)[:120]), flush=True)
-        if got is None: raise err
+        if i < len(st.get('done', [])):
+            got = st['done'][i]
+        else:
+            got, err = None, None
+            for _try in range(6):
+                try:
+                    got = write_chapter(topic, out, i, llm, prev, short); break
+                except Exception as e:
+                    err = e; print('chapter %d retry %d: %s' % (i + 1, _try + 1, str(e)[:120]), flush=True); time.sleep(15 * (_try + 1))
+            if got is None: raise err
+            st.setdefault('done', []).append(got); save()
         panels += got; prev = got[-1]['sentences'][-1]['say']
     return {'title': str(out.get('title', topic))[:90], 'topic': topic, 'panels': panels}
 
