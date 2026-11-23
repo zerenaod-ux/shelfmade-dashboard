@@ -1,0 +1,33 @@
+name: doodles-reslot
+# One-off (owner 2026-11-22): skip Doodles gh243/gh257/gh258 and move later videos up into the freed slots.
+on:
+  push:
+    paths: ['publish/reslot.trigger']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publisher-doodles
+  cancel-in-progress: false
+jobs:
+  reslot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Skip three videos and move the rest up
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN_DOODLES }}
+          PUBLISH_BRAND: doodles
+        run: python doodles_reslot.py
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "publisher-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f publish/state-doodles.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "no state change"; exit 0; }
+          git commit -qm "doodles: skipped 3 videos, moved the rest up"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
