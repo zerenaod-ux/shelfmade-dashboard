@@ -84,9 +84,9 @@ def make_spec(script, timings):
             d = dict(it); d.pop('anchor', None)
             d['t'] = t0 + max(0.0, word_t[si][0] - 0.05)   # the pen starts when the sentence starts and keeps drawing through it
             items.append(d)
-        panels.append({'title': p['title'], 'tag': p.get('tag'), 'items': items, 'start': t0})
+        panels.append({'title': p['title'], 'tag': p.get('tag') or 'Level %d' % (len(panels) + 1), 'items': items, 'start': t0})
         t0 += tm['duration'] + GAP
-    return {'duration': t0 + 1.5, 'panels': panels, 'moods': moods, 'punches': sorted(punches), 'captions': caps}
+    return {'duration': t0 + 1.5, 'gap': GAP, 'panels': panels, 'moods': moods, 'punches': sorted(punches), 'captions': caps}
 
 
 RULES = {'short': {'min': 40.0, 'max': 59.0, 'vertical': True}, 'long': {'min': 480.0, 'max': 598.0, 'vertical': False}}   # owner 2026-11-22: Short 40-60 s, long 8-10 min (total incl. name intro + subscribe card)

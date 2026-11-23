@@ -14,7 +14,7 @@ Spec (JSON-able dict):
 import math, subprocess, sys, json
 import numpy as np, cv2
 from PIL import Image, ImageDraw
-from wb_icons import ICONS, LT
+from wb_icons import ICONS, LT, circ
 
 W, H, FPS = 1280, 720, 30
 COLS = 3
@@ -27,6 +27,8 @@ MAXW, AM, TITLE_SCALE, HS = 360, (125, 110), 2.2, 0.5
 OUT = (1280, 720)         # final video size
 BRAND, INTRO, END = 'ShelfMade', 2.0, 2.4   # name written by the pen at the start, small corner mark all video, subscribe card at the end
 VERT = False
+ROOM_ACC = []   # per panel accent colour (BGR): every room has its own colour
+DOORS = True    # panels are rooms; a door at the end of each room opens into the next one
 
 
 def configure(vertical=False):
@@ -118,9 +120,17 @@ def build_item(panel_idx, slot, it):
         if x + lay.shape[1] > lim:
             f = (lim - x) / lay.shape[1]; lay = cv2.resize(lay, (int(lay.shape[1] * f), max(8, int(lay.shape[0] * f))), interpolation=cv2.INTER_AREA)
         parts.append(('t', 'k', lay, x, py + 38))
+    elif kind == 'door':
+        S = 2.1; ox, oy = cx - 50 * S, cy - 50 * S
+        tr = lambda p: [(ox + x * S, oy + y * S) for x, y in p]
+        parts.append(('s', 'k', tr([(22, 6), (78, 6), (78, 96), (22, 96), (22, 6)]), 6))                  # doorway
+        parts.append(('s', 'k', tr([(78, 6), (95, -3), (95, 101), (78, 96)]), 6))                          # door swung open
+        parts.append(('s', 'k', tr(circ(88, 52, 3, 12)), 5))                                              # knob
+        parts.append(('s', 'k', tr([(22, 96), (78, 96)]), 6))
+        fills = [((60, 44, 84), tr([(23, 7), (77, 7), (77, 95), (23, 95)])), ((255, 212, 110), tr([(23, 95), (77, 95), (66, 74), (34, 74)])), ((190, 132, 78), tr([(79, 7), (94, -1), (94, 99), (79, 95)]))]
     elif kind == 'frame':
         px, py = (panel_idx % COLS) * W, (panel_idx // COLS) * H
-        parts.append(('s', 'a', [(px + 18, py + 18), (px + W - 18, py + 18), (px + W - 18, py + H - 18), (px + 18, py + H - 18), (px + 18, py + 18)], 9))
+        parts.append(('s', ROOM_ACC[panel_idx] if panel_idx < len(ROOM_ACC) else 'a', [(px + 18, py + 18), (px + W - 18, py + 18), (px + W - 18, py + H - 18), (px + 18, py + H - 18), (px + 18, py + 18)], 9))
     total = 0.0
     for p in parts:
         p_len = seg_len(p[2]) if p[0] == 's' else p[2].shape[1] * 1.6
@@ -144,8 +154,12 @@ class Renderer:
         self.world = np.empty((rows * H, COLS * W, 3), np.uint8); self.world[:] = wb_cover.BG[::-1]
         rng = np.random.default_rng(3); g = rng.integers(-3, 4, self.world.shape[:2], dtype=np.int16)
         self.world = np.clip(self.world.astype(np.int16) + g[:, :, None], 0, 255).astype(np.uint8)
-        tn = np.array(wb_cover.tint(self.accent)[::-1], np.int16)
+        global ROOM_ACC
+        base_i = wb_cover.PALETTE.index(self.accent) if self.accent in wb_cover.PALETTE else 0
+        rooms = [wb_cover.PALETTE[(base_i + q * 3) % len(wb_cover.PALETTE)] if DOORS else self.accent for q in range(self.n)]   # every room its own colour
+        ROOM_ACC = [r[::-1] for r in rooms]
         for q in range(self.n):
+            tn = np.array(wb_cover.tint(rooms[q])[::-1], np.int16)
             qx, qy = (q % COLS) * W, (q // COLS) * H
             self.world[qy + 22:qy + H - 22, qx + 22:qx + W - 22] = np.clip(tn + g[qy + 22:qy + H - 22, qx + 22:qx + W - 22, None], 0, 255).astype(np.uint8)
         self.base = self.world.copy()
@@ -154,11 +168,15 @@ class Renderer:
         for pi, p in enumerate(panels):
             its = [{'t': p.get('t0', 0.0), 'kind': 'title', 'text': p.get('title', ''), 'tag': p.get('tag')}]
             its[0]['t'] = (max(INTRO, p['items'][0]['t'] - 1.4) if pi == 0 else p['items'][0]['t'] - 1.4) if p.get('items') else 0.0
-            for i, it in enumerate(p.get('items', [])[:SLOTS_PER_PANEL]):
+            if DOORS and pi > 0 and p.get('start') is not None: its[0]['t'] = max(its[0]['t'], p['start'] + 0.05)   # the title is written after we step into the room
+            for i, it in enumerate(p.get('items', [])[:(5 if DOORS else SLOTS_PER_PANEL)]):
                 its.append(dict(it, _slot=i))
             self.items += [(pi, it) for it in its]
             last = max(it['t'] for it in its)
-            self.items.append((pi, {'t': last + 2.2, 'kind': 'frame', '_last': True}))
+            if DOORS and pi + 1 < self.n and panels[pi + 1].get('start') is not None:
+                gap = float(spec.get('gap', 1.4)); dt = max(last + 0.6, panels[pi + 1]['start'] - gap - 1.3)
+                self.items.append((pi, {'t': dt, 'kind': 'door', '_slot': 5})); last = dt + 1.4
+            self.items.append((pi, {'t': last + 2.2 if not DOORS else last + 0.2, 'kind': 'frame', '_last': True}))
         self.sched = []
         self.items.sort(key=lambda x: x[1]['t'])
         prev_end = -1
@@ -168,8 +186,8 @@ class Renderer:
             built.append(b)
         for i, b in enumerate(built):
             start = max(b['t'], prev_end + 0.05)
-            nat = {'icon': 1.5, 'text': 0.9, 'number': 1.1, 'arrow': 0.7, 'cross': 0.5, 'title': 1.2, 'frame': 0.9}[b['kind']]
-            if b['kind'] in ('icon', 'text', 'number', 'title'):
+            nat = {'icon': 1.5, 'text': 0.9, 'number': 1.1, 'arrow': 0.7, 'cross': 0.5, 'title': 1.2, 'frame': 0.9, 'door': 1.7}[b['kind']]
+            if b['kind'] in ('icon', 'text', 'number', 'title', 'door'):
                 nat = max(nat, b['total'] / 900.0 * 1.2)
             if i + 1 < len(built):
                 avail = max(0.35, built[i + 1]['t'] - start - 0.08)
@@ -206,13 +224,21 @@ class Renderer:
             vw = max(bw, bh * W / H, W * 1.45)
             return ((x0 + x1) / 2, (y0 + y1) / 2, vw)
         keys.append((0.0,) + pv(0))
-        tin = max(0.0, first[0] - 0.6)
+        tin = max(0.0, first[0] - 0.6); self.jumps = []
         for pi in range(self.n):
             tout = last[pi] + 0.15
+            dr = [b for b in self.items if b['panel'] == pi and b['kind'] == 'door']
+            if DOORS and dr: tout = dr[0]['start'] + dr[0]['dur'] + 0.05
             keys.append((tin,) + pv(pi)); keys.append((tout,) + pv(pi))
             if pi + 1 < self.n:
-                tin = max(tout + 1.2, first[pi + 1] - 0.6)
-                keys.append(((tout + tin) / 2,) + ov(pi + 1))
+                st = self.spec['panels'][pi + 1].get('start')
+                if DOORS and st is not None:
+                    dx, dy = slot_center(pi, 5); jt = max(tout + 0.9, st - 0.15)       # walk into the doorway, then step out into the next room
+                    keys.append((jt - 0.03, dx, dy, W * 0.13)); keys.append((jt + 0.02,) + (pv(pi + 1)[0], pv(pi + 1)[1], W * 0.2)); self.jumps.append(jt)
+                    keys.append((jt + 1.1,) + pv(pi + 1)); tin = jt + 1.1
+                else:
+                    tin = max(tout + 1.2, first[pi + 1] - 0.6)
+                    keys.append(((tout + tin) / 2,) + ov(pi + 1))
         end = float(self.spec.get('duration', 0))
         if end > keys[-1][0] + 4:
             keys.append((end - 3.0,) + pv(self.n - 1)); keys.append((end - 0.3,) + ov(self.n))
@@ -259,7 +285,7 @@ class Renderer:
         return tip
 
     def _stroke(self, part, a, z):
-        col, pts, th = INK[part[1]], part[2], part[3]
+        col, pts, th = (part[1] if isinstance(part[1], tuple) else INK[part[1]]), part[2], part[3]
         acc, tip = 0.0, None
         for i in range(len(pts) - 1):
             L = math.dist(pts[i], pts[i + 1])
@@ -383,6 +409,9 @@ class Renderer:
             sc = W / vw; tx, ty = (self.tip[0] - x0) * sc, (self.tip[1] - y0) * sc
             off = (1 - smooth(self.vis)) * 320
             self._pencil(out, tx + off, ty + off, HS)
+        for jt in getattr(self, 'jumps', []):
+            if abs(t - jt) < 0.16:
+                a = 1 - abs(t - jt) / 0.16; out = (out.astype(np.float32) * (1 - 0.85 * a) + 255 * 0.85 * a).astype(np.uint8)
         pz = self._punch(t)
         if pz > 0.002:
             ww, hh = int(W / (1 + pz)), int(H / (1 + pz)); xx0, yy0 = (W - ww) // 2, (H - hh) // 2

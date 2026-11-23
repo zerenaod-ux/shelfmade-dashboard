@@ -17,7 +17,7 @@ ICON_LIST = ', '.join(NAMES)
 def words(s): return re.findall(r"[A-Za-z0-9$%']+", s)
 
 
-def clean_panel(p, max_items=6):
+def clean_panel(p, max_items=5):
     """Return a safe panel or raise ValueError."""
     if not isinstance(p, dict) or not isinstance(p.get('sentences'), list) or not p['sentences']:
         raise ValueError('panel without sentences')
@@ -98,13 +98,14 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
                  'The FIRST sentence (max 11 words) hooks in 2 seconds with ONE of: a contradiction ("Everything you know about X is backwards."), a pointed question to the viewer, a mid-action start, or a promise with a number ("Three seconds. That is all it takes."). '
                  'Never start with "Did you know". The last sentence closes the loop: it answers the hook and echoes its words, so the video replays smoothly. Include one direct action for today.')
     else:
-        shape = ('with 3 panels. Each panel has exactly 6 sentences (about 60-80 words) and EVERY sentence has an item (never null): '
+        shape = ('with 3 panels. Each panel has exactly 5 sentences (about 55-70 words) and EVERY sentence has an item (never null): '
                  'the pen draws what each sentence says, so there is never talking without drawing.')
     p = (STYLE + 'Topic: %s\nSymbol: %s\nWrite chapter %d of %d: "%s". Job: %s Analogy: %s.\n'
-         'Return {"panels":[{"title":"2-4 words","tag":"optional year or number or null","sentences":[{"say":"one spoken sentence","item":{...}}]}]} %s '
+         'Return {"panels":[{"title":"2-4 words, named like a ROOM we walk into (e.g. The Kitchen, The Engine Room, The Vault)","tag":"optional year or number or null","sentences":[{"say":"one spoken sentence","item":{...}}]}]} %s '
          'An item is drawn on the whiteboard while that sentence is spoken, so each item shows what the sentence names. '
          'Item kinds: {"kind":"icon","name":ICON,"label":"<=14 chars or empty","anchor":"exact word from the sentence"}; {"kind":"text","text":"<=18 chars","color":"r or k","anchor":...}; '
          '{"kind":"number","text":"$10 or 30%%","anchor":...}; {"kind":"cross","ref":index of an earlier item in this panel,"anchor":...}; {"kind":"arrow","frm":earlier item index,"to":earlier item index,"anchor":...}. '
+         'The video is a JOURNEY: each panel is a room, and the whole video goes deeper room by room (surface, how it works, the hidden cause, the secret). The LAST sentence of every panel is a short invitation through the door to go deeper (e.g. "But why? Let\'s step inside.", "Open the door.", "Now it gets weird.") except in the very last panel of the video. '
          'Items are numbered 0,1,2... in the order they appear in the panel. ICON must be one of: %s. '
          'PREFER emoji items for every concrete thing named (fridge, bike pump, bread, rocket, brain, coin, tree...) and use the ICON list only for generic ideas (money, time, warning, check, idea). For emoji use {"kind":"emoji","char":"ONE emoji that shows it (any subject: animals, food, places, tools, science, sport, vehicles)","label":...,"anchor":...}. '
          '%s%s Previous chapter ended with: %s'
