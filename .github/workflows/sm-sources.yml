@@ -1,7 +1,6 @@
 name: sm-sources
 on:
-  schedule:
-    - cron: '20 5 * * 1'
+  # schedule removed 2026-11-23: ShelfMade now builds via shelfmade-whiteboard.yml
   workflow_dispatch:
     inputs:
       count:
