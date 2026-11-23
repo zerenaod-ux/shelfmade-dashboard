@@ -72,22 +72,33 @@ def make_spec(script, timings):
             try: k = ws.index(norm(it['anchor']))
             except ValueError: k = 0
             d = dict(it); d.pop('anchor', None)
-            d['t'] = t0 + max(0.0, word_t[si][k] - 0.1)
+            d['t'] = t0 + max(0.0, word_t[si][0] - 0.05)   # the pen starts when the sentence starts and keeps drawing through it
             items.append(d)
         panels.append({'title': p['title'], 'tag': p.get('tag'), 'items': items, 'start': t0})
         t0 += tm['duration'] + GAP
     return {'duration': t0 + 1.5, 'panels': panels}
 
 
-def build(script, outdir, fps=30):
+def build(script, outdir, fps=30, vertical=False, max_sec=None):
     out = Path(outdir); work = out / 'work'; work.mkdir(parents=True, exist_ok=True)
     (out / 'script.json').write_text(json.dumps(script, indent=1))
     timings, wavs = voice(script['panels'], work)
+    if max_sec:    # Shorts: stay under the platform limit by dropping a middle panel (the ending stays)
+        while len(script['panels']) > 2 and sum(t['duration'] + GAP for t in timings) > max_sec:
+            k = len(script['panels']) - 2
+            for l in (script['panels'], timings, wavs): del l[k]
+        (out / 'script.json').write_text(json.dumps(script, indent=1))
     spec = make_spec(script, timings); (out / 'spec.json').write_text(json.dumps(spec, indent=1))
     audio = work / 'narration.wav'; concat_audio(wavs, GAP, audio)
-    import canvas_whiteboard
+    import canvas_whiteboard, wb_sound
+    canvas_whiteboard.configure(vertical)
+    ev = [(x['start'], x['dur'], x['kind']) for x in canvas_whiteboard.Renderer(spec).items if x['kind'] != 'frame']
+    try:
+        audio = wb_sound.mix(audio, ev, spec['duration'], work / 'mixed.wav')
+    except Exception as e:
+        print('sound skipped:', e)
     mp4 = out / 'WHITEBOARD.mp4'
-    canvas_whiteboard.render(spec, mp4, audio, fps=fps, progress=lambda i, n: print('render %d/%d' % (i, n), flush=True))
+    canvas_whiteboard.render(spec, mp4, audio, fps=fps, vertical=vertical, progress=lambda i, n: print('render %d/%d' % (i, n), flush=True))
     (out / 'POST_THIS.txt').write_text(script['title'] + '\n\n' + ' '.join(s['say'] for p in script['panels'] for s in p['sentences'][:2])[:400] + '\n')
     return mp4
 
@@ -95,11 +106,14 @@ def build(script, outdir, fps=30):
 def main(argv):
     if argv and argv[0] == '--demo':
         import wb_writer; script = dict(wb_writer.DEMO, panels=[wb_writer.clean_panel(p) for p in wb_writer.DEMO['panels']]); outdir = argv[1]
+        vertical = len(argv) > 2 and argv[2] == 'short'
+        print('BUILT', build(script, outdir, vertical=vertical, max_sec=58 if vertical else None)); return
     else:
         import wb_writer
         topic, outdir = argv[0], argv[1]; minutes = float(argv[2]) if len(argv) > 2 else 8
-        script = wb_writer.write(topic, minutes)
-    print('BUILT', build(script, outdir))
+        short = len(argv) > 3 and argv[3] == 'short'
+        script = wb_writer.write(topic, 1 if short else minutes, short=short)
+        print('BUILT', build(script, outdir, vertical=short, max_sec=58 if short else None))
 
 
 if __name__ == '__main__':

@@ -12,6 +12,9 @@ on:
       minutes:
         description: 'Length in minutes'
         default: '8'
+      short:
+        description: 'true = vertical 9:16 Short under 60 s'
+        default: 'false'
       demo:
         description: 'true = built-in test script, no AI'
         default: 'false'
@@ -41,11 +44,13 @@ jobs:
           TOPIC: ${{ github.event.inputs.topic }}
           MINUTES: ${{ github.event.inputs.minutes }}
           DEMO: ${{ github.event.inputs.demo }}
+          SHORT: ${{ github.event.inputs.short }}
         run: |
           mkdir -p out
           if [ -z "$TOPIC" ]; then TOPIC="$(python wb_auto.py | tail -1)"; fi
           echo "TOPIC: $TOPIC"
-          if [ "$DEMO" = "true" ]; then python wb_build.py --demo out/wb; else python wb_build.py "$TOPIC" out/wb "${MINUTES:-8}"; fi
+          SH=""; [ "$SHORT" = "true" ] && SH="short"
+          if [ "$DEMO" = "true" ]; then python wb_build.py --demo out/wb $SH; else python wb_build.py "$TOPIC" out/wb "${MINUTES:-8}" $SH; fi
           rm -rf out/wb/work
       - name: Keep the video as a release file (14 days is not needed; owner downloads from Releases)
         env:

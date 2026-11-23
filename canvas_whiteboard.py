@@ -21,6 +21,19 @@ COLS = 3
 INK = {'k': (35, 35, 40), 'r': (45, 45, 210), 'g': (80, 160, 60), 'b': (200, 120, 50), 'y': (30, 190, 240), 'o': (40, 130, 235)}  # BGR
 FONT = cv2.FONT_HERSHEY_SCRIPT_SIMPLEX
 SLOTS_PER_PANEL = 6
+SC = 3                    # slot columns inside a panel
+GEOM = (80, 150, 373, 270, 186, 105)   # x0, y0, cell w, cell h, centre dx, centre dy
+MAXW, AM, TITLE_SCALE, HS = 360, (125, 110), 2.2, 0.5
+OUT = (1280, 720)         # final video size
+
+
+def configure(vertical=False):
+    """vertical=True: portrait Short (world cells 720x1280, 2x3 slots, output 1080x1920)."""
+    global W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT
+    if vertical:
+        W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT = 720, 1280, 2, (40, 230, 320, 340, 160, 130), 290, (92, 110), 1.5, 0.42, (1080, 1920)
+    else:
+        W, H, SC, GEOM, MAXW, AM, TITLE_SCALE, HS, OUT = 1280, 720, 3, (80, 150, 373, 270, 186, 105), 360, (125, 110), 2.2, 0.5, (1280, 720)
 
 
 def smooth(x):
@@ -33,8 +46,9 @@ def seg_len(pts):
 
 def slot_center(panel_idx, slot):
     px, py = (panel_idx % COLS) * W, (panel_idx // COLS) * H
-    c, r = slot % 3, slot // 3
-    return px + 80 + 373 * c + 186, py + 150 + 270 * r + 105
+    c, r = slot % SC, slot // SC
+    x0, y0, cw, ch, dx, dy = GEOM
+    return px + x0 + cw * c + dx, py + y0 + ch * r + dy
 
 
 def text_layer(text, scale, thick):
@@ -65,12 +79,14 @@ def build_item(panel_idx, slot, it):
         fills = [(col, tr(pts)) for col, pts in ic['fills']]
         if it.get('label'):
             lay = text_layer(str(it['label']), 1.5, 2)
+            if lay.shape[1] > GEOM[2] - 20:
+                f = (GEOM[2] - 20) / lay.shape[1]; lay = cv2.resize(lay, (GEOM[2] - 20, max(8, int(lay.shape[0] * f))), interpolation=cv2.INTER_AREA)
             parts.append(('t', it.get('lcolor', 'k'), lay, cx - lay.shape[1] / 2, cy + 105 + 6))
     elif kind in ('text', 'number'):
         lay = text_layer(str(it['text']), 2.3 if kind == 'text' else 3.0, 3 if kind == 'text' else 4)
         h, w = lay.shape
-        if w > 360:
-            f = 360 / w; lay = cv2.resize(lay, (360, max(10, int(h * f))), interpolation=cv2.INTER_AREA); h, w = lay.shape
+        if w > MAXW:
+            f = MAXW / w; lay = cv2.resize(lay, (MAXW, max(10, int(h * f))), interpolation=cv2.INTER_AREA); h, w = lay.shape
         x, y = cx - w / 2, cy - h / 2
         col = it.get('color', 'r' if kind == 'number' else 'k')
         if kind == 'number':
@@ -79,7 +95,7 @@ def build_item(panel_idx, slot, it):
     elif kind == 'arrow':
         a = slot_center(panel_idx, it['frm']); b = slot_center(panel_idx, it['to'])
         d = math.dist(a, b) or 1; ux, uy = (b[0] - a[0]) / d, (b[1] - a[1]) / d
-        s = (a[0] + ux * 125, a[1] + uy * 110 * (1 if abs(uy) > .3 else 0.2)); e = (b[0] - ux * 125, b[1] - uy * 110 * (1 if abs(uy) > .3 else 0.2))
+        s = (a[0] + ux * AM[0], a[1] + uy * AM[1] * (1 if abs(uy) > .3 else 0.2)); e = (b[0] - ux * AM[0], b[1] - uy * AM[1] * (1 if abs(uy) > .3 else 0.2))
         parts.append(('s', 'k', [s, e], 6))
         hx, hy = -uy, ux
         parts.append(('s', 'k', [(e[0] - ux * 26 + hx * 16, e[1] - uy * 26 + hy * 16), e, (e[0] - ux * 26 - hx * 16, e[1] - uy * 26 - hy * 16)], 6))
@@ -91,10 +107,12 @@ def build_item(panel_idx, slot, it):
         px, py = (panel_idx % COLS) * W, (panel_idx // COLS) * H
         x = px + 60
         if it.get('tag'):
-            lay = text_layer(str(it['tag']), 2.2, 3); h, w = lay.shape
+            lay = text_layer(str(it['tag']), TITLE_SCALE, 3); h, w = lay.shape
             parts.append(('s', 'r', [(x - 6, py + 34), (x + w + 6, py + 34), (x + w + 6, py + 34 + h + 6), (x - 6, py + 34 + h + 6), (x - 6, py + 34)], 4))
             parts.append(('t', 'k', lay, x, py + 38)); x += w + 24
-        lay = text_layer(str(it['text']), 2.2, 3)
+        lay = text_layer(str(it['text']), TITLE_SCALE, 3)
+        if x + lay.shape[1] > px + W - 40:
+            f = (px + W - 40 - x) / lay.shape[1]; lay = cv2.resize(lay, (int(lay.shape[1] * f), max(8, int(lay.shape[0] * f))), interpolation=cv2.INTER_AREA)
         parts.append(('t', 'k', lay, x, py + 38))
     elif kind == 'frame':
         px, py = (panel_idx % COLS) * W, (panel_idx // COLS) * H
@@ -138,7 +156,13 @@ class Renderer:
             if b['kind'] in ('icon', 'text', 'number', 'title'):
                 nat = max(nat, b['total'] / 900.0 * 1.2)
             if i + 1 < len(built):
-                nat = min(nat, max(0.35, built[i + 1]['t'] - start - 0.05))
+                avail = max(0.35, built[i + 1]['t'] - start - 0.08)
+                if b['kind'] in ('icon', 'text', 'number'):
+                    nat = min(max(nat, min(avail, 3.5)), avail)     # pen keeps drawing until the next thing is said
+                elif b['kind'] in ('arrow', 'cross'):
+                    nat = min(max(nat, min(avail, 1.2)), avail)
+                else:
+                    nat = min(nat, avail)
             b['start'], b['dur'] = start, nat; prev_end = start + nat
             b['drawn'] = 0.0; b['done'] = False
         self.items = built
@@ -157,7 +181,7 @@ class Renderer:
             cols = [(q % COLS) for q in range(k + 1)]; rows = [(q // COLS) for q in range(k + 1)]
             x0, x1 = min(cols) * W, (max(cols) + 1) * W; y0, y1 = min(rows) * H, (max(rows) + 1) * H
             bw, bh = (x1 - x0) * 1.08, (y1 - y0) * 1.08
-            vw = max(bw, bh * 16 / 9, W * 1.45)
+            vw = max(bw, bh * W / H, W * 1.45)
             return ((x0 + x1) / 2, (y0 + y1) / 2, vw)
         keys.append((0.0,) + pv(0))
         tin = max(0.0, first[0] - 0.6)
@@ -259,7 +283,7 @@ class Renderer:
         out = cv2.resize(crop, (W, H), interpolation=cv2.INTER_AREA if w > W else cv2.INTER_LINEAR)
         if self.vis > 0.03:
             sc = W / vw; tx, ty = (self.tip[0] - x0) * sc, (self.tip[1] - y0) * sc
-            hs = 0.5
+            hs = HS
             hand = cv2.resize(self.hand, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA); ha = cv2.resize(self.hand_a, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA)
             off = (1 - smooth(self.vis)) * 320
             ox, oy = int(tx - 34 * hs + off), int(ty - 34 * hs + off)
@@ -271,10 +295,11 @@ class Renderer:
         return out
 
 
-def render(spec, out_mp4, audio=None, fps=FPS, progress=None):
-    r = Renderer(spec); dur = float(spec['duration'])
+def render(spec, out_mp4, audio=None, fps=FPS, progress=None, vertical=False):
+    configure(vertical); r = Renderer(spec); dur = float(spec['duration'])
     cmd = ['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', '%dx%d' % (W, H), '-r', str(fps), '-i', '-']
     if audio: cmd += ['-i', str(audio)]
+    if OUT != (W, H): cmd += ['-vf', 'scale=%d:%d:flags=lanczos' % OUT]
     cmd += ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p']
     if audio: cmd += ['-af', 'apad', '-c:a', 'aac', '-b:a', '160k', '-shortest']
     cmd += [str(out_mp4)]

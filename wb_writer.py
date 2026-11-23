@@ -57,11 +57,17 @@ def clean_panel(p, max_items=6):
                 a, b = item.get('frm'), item.get('to')
                 if isinstance(a, int) and isinstance(b, int) and 0 <= a < n_items and 0 <= b <= n_items and a != b:
                     good = {'kind': 'arrow', 'frm': a, 'to': b, 'anchor': anchor}
+        if not good and n_items < max_items:
+            cand = [x for x in w if len(x) > 4 and not x.isdigit()] or w
+            key = max(cand, key=len)
+            good = {'kind': 'text', 'text': key[:18], 'anchor': key, 'color': 'k'}
         if good:
             n_items += 1
             if good['kind'] in ('arrow',) and good['to'] >= n_items:
                 good = None; n_items -= 1
         out['sentences'].append({'say': say, 'item': good})
+        if len(out['sentences']) >= max_items:
+            break
     if len(out['sentences']) < 3:
         raise ValueError('panel too short after checks')
     return out
@@ -80,19 +86,26 @@ def outline(topic, minutes, llm):
     return d
 
 
-def write_chapter(topic, out, i, llm, previous_say=''):
+def write_chapter(topic, out, i, llm, previous_say='', short=False):
     c = out['chapters'][i]
     last = i == len(out['chapters']) - 1
+    if short:
+        shape = ('with exactly 3 panels. Each panel has exactly 4 sentences of 8-13 words (about 45 words) and EVERY sentence has an item (never null). '
+                 'The first sentence is a surprising true fact that hooks in 3 seconds. The last panel ends with one direct action to do today.')
+    else:
+        shape = ('with 3 panels. Each panel has exactly 6 sentences (about 60-80 words) and EVERY sentence has an item (never null): '
+                 'the pen draws what each sentence says, so there is never talking without drawing.')
     p = (STYLE + 'Topic: %s\nSymbol: %s\nWrite chapter %d of %d: "%s". Job: %s Analogy: %s.\n'
-         'Return {"panels":[{"title":"2-4 words","tag":"optional year or number or null","sentences":[{"say":"one spoken sentence","item":{...} or null}]}]} with 3 panels. '
-         'Each panel has 7-9 sentences (about 80-100 words) and AT MOST 6 items. An item is drawn on the whiteboard while that sentence is spoken, so each item shows what the sentence names. '
+         'Return {"panels":[{"title":"2-4 words","tag":"optional year or number or null","sentences":[{"say":"one spoken sentence","item":{...}}]}]} %s '
+         'An item is drawn on the whiteboard while that sentence is spoken, so each item shows what the sentence names. '
          'Item kinds: {"kind":"icon","name":ICON,"label":"<=14 chars or empty","anchor":"exact word from the sentence"}; {"kind":"text","text":"<=18 chars","color":"r or k","anchor":...}; '
          '{"kind":"number","text":"$10 or 30%%","anchor":...}; {"kind":"cross","ref":index of an earlier item in this panel,"anchor":...}; {"kind":"arrow","frm":earlier item index,"to":earlier item index,"anchor":...}. '
-         'Items are numbered 0,1,2... in the order they appear in the panel. ICON must be one of: %s. For anything not in that list use {"kind":"emoji","char":"ONE emoji that shows it (any subject: animals, food, places, tools, science, sport, vehicles)","label":...,"anchor":...}. '
+         'Items are numbered 0,1,2... in the order they appear in the panel. ICON must be one of: %s. '
+         'For anything not in that list use {"kind":"emoji","char":"ONE emoji that shows it (any subject: animals, food, places, tools, science, sport, vehicles)","label":...,"anchor":...}. '
          '%s%s Previous chapter ended with: %s'
-         % (topic, out.get('symbol', ''), i + 1, len(out['chapters']), c.get('title', ''), c.get('job', ''), c.get('analogy', ''), ICON_LIST,
-            'Open with a true story with real numbers, no greeting. ' if i == 0 else '',
-            'End with one direct action to do today, then one short sentence crediting where the idea comes from, then one line sending the viewer to the next video.' if last else '', previous_say[:160] or 'nothing'))
+         % (topic, out.get('symbol', ''), i + 1, len(out['chapters']), c.get('title', ''), c.get('job', ''), c.get('analogy', ''), shape, ICON_LIST,
+            'Open with a true story with real numbers, no greeting. ' if i == 0 and not short else '',
+            'End with one direct action to do today.' if short and last else ('End with one direct action to do today, then one short sentence crediting where the idea comes from, then one line sending the viewer to the next video.' if last else ''), previous_say[:160] or 'nothing'))
     d = llm.json_call(SYSTEM, p, temperature=0.7, max_tokens=4500)
     panels = []
     for raw in d.get('panels', []):
@@ -105,16 +118,18 @@ def write_chapter(topic, out, i, llm, previous_say=''):
     return panels
 
 
-def write(topic, minutes=8, llm=None):
+def write(topic, minutes=8, llm=None, short=False):
     if llm is None:
         import llm as _l; llm = _l
     out = outline(topic, minutes, llm)
+    if short:
+        out['chapters'] = out['chapters'][:1]
     panels, prev = [], ''
     for i in range(len(out['chapters'])):
         got, err = None, None
         for _try in range(4):
             try:
-                got = write_chapter(topic, out, i, llm, prev); break
+                got = write_chapter(topic, out, i, llm, prev, short); break
             except Exception as e:
                 err = e; print('chapter %d retry %d: %s' % (i + 1, _try + 1, str(e)[:120]), flush=True)
         if got is None: raise err
