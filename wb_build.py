@@ -116,7 +116,12 @@ def build(script, outdir, fps=30, kind='long'):
         k = max(1, len(script['panels']) // 2)   # drop a middle panel; hook and ending stay
         for l in (script['panels'], timings, wavs): del l[k]
     (out / 'script.json').write_text(json.dumps(script, indent=1))
-    spec = make_spec(script, timings); (out / 'spec.json').write_text(json.dumps(spec, indent=1))
+    spec = make_spec(script, timings)
+    import wb_cover, re as _re
+    _t = fix_title(script['title']); _e = _re.findall(r'[\U0001F300-\U0001FAFF\u2600-\u27BF]', _t)
+    spec['cover'] = {'title': _re.sub(r'[\U0001F300-\U0001FAFF\u2600-\u27BF\uFE0F]', '', _t).strip(), 'emoji': _e[0] if _e else '\U0001F4A1'}
+    spec['accent'] = list(wb_cover.accent_for(spec['cover']['title']))
+    (out / 'spec.json').write_text(json.dumps(spec, indent=1))
     import canvas_whiteboard
     total = spec['duration'] + canvas_whiteboard.END
     if not rule['min'] <= total <= rule['max']:
@@ -124,7 +129,9 @@ def build(script, outdir, fps=30, kind='long'):
     audio = work / 'narration.wav'; concat_audio(wavs, GAP, audio)
     import wb_sound
     canvas_whiteboard.configure(vertical)
-    ev = [(x['start'], x['dur'], x['kind']) for x in canvas_whiteboard.Renderer(spec).items if x['kind'] != 'frame']
+    _r = canvas_whiteboard.Renderer(spec)
+    import cv2; cv2.imwrite(str(out / 'cover.jpg'), _r.frame(canvas_whiteboard.INTRO - 0.05), [cv2.IMWRITE_JPEG_QUALITY, 92])
+    ev = [(x['start'], x['dur'], x['kind']) for x in _r.items if x['kind'] != 'frame']
     ev += [(0.2, 1.4, 'text'), (spec['duration'] + 0.1, 1.8, 'text')]
     try:
         audio = wb_sound.mix(audio, ev, total, work / 'mixed.wav')

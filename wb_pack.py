@@ -9,4 +9,5 @@ z = out / ('sm-wb-%s.zip' % name)
 with zipfile.ZipFile(z, 'w', zipfile.ZIP_DEFLATED) as f:
     f.write(d / 'WHITEBOARD.mp4', 'final.mp4' if kind == 'short' else '%s_LONGFORM.mp4' % name)
     f.write(d / 'POST_THIS.txt', 'POST_THIS.txt')
+    if (d / 'cover.jpg').exists(): f.write(d / 'cover.jpg', 'cover.jpg')
 print(z, z.stat().st_size // 1024, 'KB')

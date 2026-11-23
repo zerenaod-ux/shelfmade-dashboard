@@ -119,7 +119,7 @@ def build_item(panel_idx, slot, it):
         parts.append(('t', 'k', lay, x, py + 38))
     elif kind == 'frame':
         px, py = (panel_idx % COLS) * W, (panel_idx // COLS) * H
-        parts.append(('s', 'k', [(px + 18, py + 18), (px + W - 18, py + 18), (px + W - 18, py + H - 18), (px + 18, py + H - 18), (px + 18, py + 18)], 7))
+        parts.append(('s', 'a', [(px + 18, py + 18), (px + W - 18, py + 18), (px + W - 18, py + H - 18), (px + 18, py + H - 18), (px + 18, py + 18)], 9))
     total = 0.0
     for p in parts:
         p_len = seg_len(p[2]) if p[0] == 's' else p[2].shape[1] * 1.6
@@ -136,7 +136,19 @@ class Renderer:
     def __init__(self, spec):
         self.spec = spec; panels = spec['panels']; self.n = len(panels)
         rows = max(1, math.ceil(self.n / COLS))
-        self.world = np.full((rows * H, COLS * W, 3), 255, np.uint8)
+        import wb_cover
+        cv = spec.get('cover') or {'title': panels[0].get('title', ''), 'emoji': '\U0001F4A1'}
+        self.accent = tuple(spec.get('accent') or wb_cover.accent_for(cv['title']))
+        INK['a'] = self.accent[::-1]
+        self.world = np.empty((rows * H, COLS * W, 3), np.uint8); self.world[:] = wb_cover.BG[::-1]
+        rng = np.random.default_rng(3); g = rng.integers(-3, 4, self.world.shape[:2], dtype=np.int16)
+        self.world = np.clip(self.world.astype(np.int16) + g[:, :, None], 0, 255).astype(np.uint8)
+        tn = np.array(wb_cover.tint(self.accent)[::-1], np.int16)
+        for q in range(self.n):
+            qx, qy = (q % COLS) * W, (q // COLS) * H
+            self.world[qy + 22:qy + H - 22, qx + 22:qx + W - 22] = np.clip(tn + g[qy + 22:qy + H - 22, qx + 22:qx + W - 22, None], 0, 255).astype(np.uint8)
+        self.base = self.world.copy()
+        self.cover_img = wb_cover.cover(cv['title'], cv['emoji'], self.accent, W, H, VERT)
         self.items = []
         for pi, p in enumerate(panels):
             its = [{'t': p.get('t0', 0.0), 'kind': 'title', 'text': p.get('title', ''), 'tag': p.get('tag')}]
@@ -276,7 +288,7 @@ class Renderer:
             layer = np.zeros_like(self.world); mask = np.zeros(self.world.shape[:2], np.uint8)
             for col, pts in b['fills']:
                 rgb = col if isinstance(col, tuple) else LT.get(col, (230, 230, 230)); cv2.fillPoly(layer, [np.array(pts, np.int32)], rgb[::-1]); cv2.fillPoly(mask, [np.array(pts, np.int32)], 255)
-            white = (self.world.min(axis=2) > 235) & (mask > 0)
+            white = (np.abs(self.world.astype(np.int16) - self.base.astype(np.int16)).sum(axis=2) < 30) & (mask > 0)
             self.world[white] = layer[white]
 
     def _pencil(self, out, tx, ty, hs):
@@ -288,16 +300,21 @@ class Renderer:
             a = ha[ya0 - oy: ya1 - oy, xa0 - ox: xa1 - ox, None]
             out[ya0:ya1, xa0:xa1] = (out[ya0:ya1, xa0:xa1] * (1 - a) + hand[ya0 - oy: ya1 - oy, xa0 - ox: xa1 - ox] * a).astype(np.uint8)
 
-    def _card(self, t, lines, t0, per):
+    def _card(self, t, lines, t0, per, cover=False):
+        import wb_cover
         """White card; each (text, colour, width fraction) line is written left to right by the pencil, one after another."""
-        out = np.full((H, W, 3), 255, np.uint8); n = len(lines); tip = None
+        out = (self.cover_img.copy() if cover else np.full((H, W, 3), 255, np.uint8) + 0); n = len(lines); tip = None
+        if not cover: out[:] = self.base[:H, :W][:, :, :] if False else np.array((250, 246, 234)[::-1], np.uint8)
         for k, (txt, col, wf) in enumerate(lines):
             lay = text_layer(txt, 4.0, 6); lw = int(W * wf); lay = cv2.resize(lay, (lw, max(8, int(lay.shape[0] * lw / lay.shape[1]))), interpolation=cv2.INTER_AREA)
             h, w = lay.shape; x = (W - w) // 2; y = int(H / 2 + (k - (n - 1) / 2) * (h + 70) - h / 2)
+            if cover:
+                px0, py0, px1, py1 = wb_cover.pill(VERT); lay = cv2.resize(lay, (int((px1 - px0) * 0.78), max(8, int(lay.shape[0] * (px1 - px0) * 0.78 / lay.shape[1]))), interpolation=cv2.INTER_AREA); h, w = lay.shape
+                x = px0 + ((px1 - px0) - w) // 2; y = py0 + ((py1 - py0) - h) // 2
             u = smooth((t - t0 - k * per) / per)
             if u <= 0: continue
             c1 = max(1, int(u * w)); sub = lay[:, :c1].astype(np.float32) / 255.0
-            reg = out[y:y + h, x:x + c1].astype(np.float32); colv = np.array(INK[col], np.float32)[None, None, :]
+            reg = out[y:y + h, x:x + c1].astype(np.float32); colv = np.array(INK[col] if not cover else INK['k'], np.float32)[None, None, :]
             out[y:y + h, x:x + c1] = np.minimum(reg, sub[:, :, None] * 255 + (1 - sub[:, :, None]) * colv).astype(np.uint8)
             if u < 1.0 or k == n - 1: tip = (x + c1, y + h * 0.55)
         if tip: self._pencil(out, tip[0], tip[1], HS)
@@ -307,9 +324,9 @@ class Renderer:
         self.advance(t)
         D = float(self.spec.get('duration', 0))
         if t < INTRO:
-            return self._card(t, [(BRAND, 'k', 0.74 if not VERT else 0.86)], 0.15, 1.5)
+            return self._card(t, [(BRAND, 'k', 0.30 if not VERT else 0.56)], 0.2, 1.5, cover=True)
         if t >= D:
-            return self._card(t, [('Subscribe', 'k', 0.52 if not VERT else 0.66), ('to ' + BRAND, 'r', 0.74 if not VERT else 0.88)], D + 0.1, 0.95)
+            return self._card(t, [('Subscribe', 'k', 0.52 if not VERT else 0.66), ('to ' + BRAND, 'a', 0.74 if not VERT else 0.88)], D + 0.1, 0.95)
         cx, cy, vw = self.camera(t); vh = vw * H / W
         x0, y0 = int(round(cx - vw / 2)), int(round(cy - vh / 2)); w, h = int(round(vw)), int(round(vh))
         x0 = max(0, min(self.world.shape[1] - w, x0)) if w <= self.world.shape[1] else 0
