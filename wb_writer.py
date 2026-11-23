@@ -22,6 +22,7 @@ def clean_panel(p, max_items=6):
     n_items = 0
     for s in p['sentences']:
         say = str(s.get('say', '')).strip() if isinstance(s, dict) else ''
+        say = re.sub(r'[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F\u200d]', '', say).strip()   # no emoji in spoken text
         w = words(say)
         if not 5 <= len(w) <= 28:
             continue
@@ -90,7 +91,7 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
     c = out['chapters'][i]
     last = i == len(out['chapters']) - 1
     if short:
-        shape = ('with exactly 3 panels. Each panel has exactly 4 sentences of 8-13 words (about 45 words) and EVERY sentence has an item (never null). '
+        shape = ('with exactly 3 panels. Each panel has exactly 4 sentences of 10-14 words (about 50 words) and EVERY sentence has an item (never null). '
                  'The first sentence is a surprising true fact that hooks in 3 seconds. The last panel ends with one direct action to do today.')
     else:
         shape = ('with 3 panels. Each panel has exactly 6 sentences (about 60-80 words) and EVERY sentence has an item (never null): '
