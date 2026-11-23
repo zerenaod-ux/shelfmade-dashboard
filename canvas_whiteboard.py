@@ -102,18 +102,8 @@ def build_item(panel_idx, slot, it):
 
 
 def make_hand():
-    S = 2; sz = 420 * S
-    im = Image.new('RGBA', (sz, sz), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    skin, edge = (238, 186, 150, 255), (90, 60, 50, 255)
-    d.line([(24 * S, 24 * S), (250 * S, 250 * S)], fill=(60, 62, 70, 255), width=22 * S)
-    d.line([(60 * S, 60 * S), (200 * S, 200 * S)], fill=(150, 150, 160, 255), width=8 * S)
-    d.polygon([(24 * S - 7 * S, 24 * S + 7 * S), (24 * S + 7 * S, 24 * S - 7 * S), (24 * S, 24 * S)], fill=(20, 20, 20, 255))
-    d.ellipse([200 * S, 210 * S, 420 * S, 420 * S], fill=skin, outline=edge, width=3 * S)  # palm
-    for (x0, y0, x1, y1) in [(120, 130, 230, 200), (140, 175, 250, 245), (170, 205, 270, 280)]:  # fingers over the pen
-        d.ellipse([x0 * S, y0 * S, x1 * S, y1 * S], fill=skin, outline=edge, width=3 * S)
-    d.ellipse([105 * S, 70 * S, 225 * S, 140 * S], fill=skin, outline=edge, width=3 * S)  # thumb
-    im = im.resize((sz // S, sz // S), Image.LANCZOS)
-    a = np.array(im); return a[:, :, :3][:, :, ::-1].copy(), a[:, :, 3].astype(np.float32) / 255.0
+    import wb_hand
+    return wb_hand.make_hand()
 
 
 class Renderer:
@@ -264,10 +254,10 @@ class Renderer:
         out = cv2.resize(crop, (W, H), interpolation=cv2.INTER_AREA if w > W else cv2.INTER_LINEAR)
         if self.vis > 0.03:
             sc = W / vw; tx, ty = (self.tip[0] - x0) * sc, (self.tip[1] - y0) * sc
-            hs = 0.62
+            hs = 0.5
             hand = cv2.resize(self.hand, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA); ha = cv2.resize(self.hand_a, None, fx=hs, fy=hs, interpolation=cv2.INTER_AREA)
             off = (1 - smooth(self.vis)) * 320
-            ox, oy = int(tx - 24 * hs + off), int(ty - 24 * hs + off)
+            ox, oy = int(tx - 34 * hs + off), int(ty - 34 * hs + off)
             hh, hw = hand.shape[:2]
             ya0, xa0 = max(0, oy), max(0, ox); ya1, xa1 = min(H, oy + hh), min(W, ox + hw)
             if ya1 > ya0 and xa1 > xa0:
