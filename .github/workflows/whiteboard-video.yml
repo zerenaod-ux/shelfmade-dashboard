@@ -1,11 +1,14 @@
 name: whiteboard-video
-# ShelfMade one-canvas whiteboard video (manual only; nothing is published automatically)
+# ShelfMade one-canvas whiteboard video. Manual, or twice a week with an AI-chosen topic. Never published automatically: lands in Releases for review.
 on:
+  schedule:
+    - cron: '17 14 * * 2,5'
   workflow_dispatch:
     inputs:
       topic:
-        description: 'Topic to explain (plain words)'
-        required: true
+        description: 'Topic to explain (plain words); empty = AI picks a fresh one'
+        required: false
+        default: ''
       minutes:
         description: 'Length in minutes'
         default: '8'
@@ -24,7 +27,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: System packages
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
       - name: Python packages
         run: pip install --quiet numpy opencv-python-headless pillow edge-tts requests
       - name: Build video
@@ -40,12 +43,16 @@ jobs:
           DEMO: ${{ github.event.inputs.demo }}
         run: |
           mkdir -p out
-          if [ "$DEMO" = "true" ]; then python wb_build.py --demo out/wb; else python wb_build.py "$TOPIC" out/wb "$MINUTES"; fi
+          if [ -z "$TOPIC" ]; then TOPIC="$(python wb_auto.py | tail -1)"; fi
+          echo "TOPIC: $TOPIC"
+          if [ "$DEMO" = "true" ]; then python wb_build.py --demo out/wb; else python wb_build.py "$TOPIC" out/wb "${MINUTES:-8}"; fi
           rm -rf out/wb/work
       - name: Keep the video as a release file (14 days is not needed; owner downloads from Releases)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add data/wb-history.json && git commit -qm 'whiteboard topic history' && git pull -q --rebase origin master && git push -q origin master || true
           TAG="whiteboard-${{ github.run_id }}"
           gh release create "$TAG" out/wb/WHITEBOARD.mp4 out/wb/POST_THIS.txt out/wb/script.json out/wb/spec.json --title "Whiteboard video ${{ github.run_id }}" --notes "Built by whiteboard-video workflow. Not published anywhere." --prerelease
       - uses: actions/upload-artifact@v4

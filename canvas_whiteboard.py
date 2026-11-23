@@ -51,6 +51,11 @@ def build_item(panel_idx, slot, it):
     parts, fills = [], []
     if kind == 'icon':
         ic = ICONS.get(it['name'])
+        if ic is None and str(it['name']).startswith('emoji:'):
+            try:
+                import wb_emoji; ic = wb_emoji.icon(it['name'][6:])
+            except Exception:
+                ic = None
         if ic is None:
             ic = ICONS['paper']
         S = 1.9; ox, oy = cx - 50 * S, cy - 50 * S
@@ -240,7 +245,7 @@ class Renderer:
         if b['fills']:
             layer = np.zeros_like(self.world); mask = np.zeros(self.world.shape[:2], np.uint8)
             for col, pts in b['fills']:
-                rgb = LT.get(col, (230, 230, 230)); cv2.fillPoly(layer, [np.array(pts, np.int32)], rgb[::-1]); cv2.fillPoly(mask, [np.array(pts, np.int32)], 255)
+                rgb = col if isinstance(col, tuple) else LT.get(col, (230, 230, 230)); cv2.fillPoly(layer, [np.array(pts, np.int32)], rgb[::-1]); cv2.fillPoly(mask, [np.array(pts, np.int32)], 255)
             white = (self.world.min(axis=2) > 235) & (mask > 0)
             self.world[white] = layer[white]
 

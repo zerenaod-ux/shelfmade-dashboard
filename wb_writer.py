@@ -32,7 +32,16 @@ def clean_panel(p, max_items=6):
             anchor = str(item.get('anchor', '')).strip().strip('.,!?"')
             if anchor.lower() not in [x.lower() for x in w]:
                 anchor = next((x for x in w if len(x) > 3), w[0])
-            if kind == 'icon':
+            if kind == 'emoji':
+                ch = str(item.get('char', '')).strip()
+                try:
+                    import wb_emoji
+                    ok = bool(ch) and len(ch) <= 8 and wb_emoji.available() and wb_emoji.icon(ch)
+                except Exception:
+                    ok = False
+                if ok:
+                    good = {'kind': 'icon', 'name': 'emoji:' + ch, 'label': str(item.get('label', '')).strip()[:14], 'anchor': anchor}
+            elif kind == 'icon':
                 nm = str(item.get('name', '')).strip().lower()
                 if nm in NAMES:
                     good = {'kind': 'icon', 'name': nm, 'label': str(item.get('label', '')).strip()[:14], 'anchor': anchor}
@@ -79,7 +88,7 @@ def write_chapter(topic, out, i, llm, previous_say=''):
          'Each panel has 7-9 sentences (about 80-100 words) and AT MOST 6 items. An item is drawn on the whiteboard while that sentence is spoken, so each item shows what the sentence names. '
          'Item kinds: {"kind":"icon","name":ICON,"label":"<=14 chars or empty","anchor":"exact word from the sentence"}; {"kind":"text","text":"<=18 chars","color":"r or k","anchor":...}; '
          '{"kind":"number","text":"$10 or 30%%","anchor":...}; {"kind":"cross","ref":index of an earlier item in this panel,"anchor":...}; {"kind":"arrow","frm":earlier item index,"to":earlier item index,"anchor":...}. '
-         'Items are numbered 0,1,2... in the order they appear in the panel. ICON must be one of: %s. '
+         'Items are numbered 0,1,2... in the order they appear in the panel. ICON must be one of: %s. For anything not in that list use {"kind":"emoji","char":"ONE emoji that shows it (any subject: animals, food, places, tools, science, sport, vehicles)","label":...,"anchor":...}. '
          '%s%s Previous chapter ended with: %s'
          % (topic, out.get('symbol', ''), i + 1, len(out['chapters']), c.get('title', ''), c.get('job', ''), c.get('analogy', ''), ICON_LIST,
             'Open with a true story with real numbers, no greeting. ' if i == 0 else '',
