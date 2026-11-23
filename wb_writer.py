@@ -93,7 +93,7 @@ def write_chapter(topic, out, i, llm, previous_say='', short=False):
     c = out['chapters'][i]
     last = i == len(out['chapters']) - 1
     if short:
-        shape = ('with exactly 3 panels. Each panel has exactly 4 sentences of 10-14 words (about 50 words) and EVERY sentence has an item (never null). '
+        shape = ('with exactly 3 panels. Each panel has exactly 4 sentences of 11-15 words (about 55 words) and EVERY sentence has an item (never null). '
                  'The first sentence is a surprising true fact that hooks in 3 seconds. The last panel ends with one direct action to do today.')
     else:
         shape = ('with 3 panels. Each panel has exactly 6 sentences (about 60-80 words) and EVERY sentence has an item (never null): '
