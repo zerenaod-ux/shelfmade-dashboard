@@ -219,9 +219,12 @@
    "published": "2026-11-23T03:00:33Z",
    "duration": "PT1M4S",
    "privacy": "public",
-   "views": 49,
+   "views": 50,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 12,
+   "avgPercent": 19.29,
+   "subsGained": 0
   },
   {
    "id": "7P-eD_FErv0",
@@ -523,6 +526,19 @@
    "subsGained": 0
   },
   {
+   "id": "8QKdl9NNi3Y",
+   "title": "Do crowds drown true wisdom?",
+   "published": "2026-11-06T03:01:57Z",
+   "duration": "PT34S",
+   "privacy": "public",
+   "views": 27,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 22,
+   "avgPercent": 65.1,
+   "subsGained": 0
+  },
+  {
    "id": "fGyknN3M8w4",
    "title": "Confucius had a warning for you.",
    "published": "2026-11-15T18:03:43Z",
@@ -544,8 +560,8 @@
    "views": 26,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 14,
-   "avgPercent": 18.78,
+   "avgSeconds": 25,
+   "avgPercent": 32.7,
    "subsGained": 0
   },
   {
@@ -731,6 +747,16 @@
    "subsGained": 0
   },
   {
+   "id": "M1tqBDu4akY",
+   "title": "Ruskin would hate how you live.",
+   "published": "2026-11-23T18:06:53Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "QHacncwEVO4",
    "title": "Now a prig is a pert fellow who gives himself airs of superior wisdom",
    "published": "2026-11-01T23:02:04Z",
@@ -833,16 +859,6 @@
    "avgSeconds": 32,
    "avgPercent": 6.25,
    "subsGained": 0
-  },
-  {
-   "id": "M1tqBDu4akY",
-   "title": "Ruskin would hate how you live.",
-   "published": "2026-11-23T18:06:53Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 15,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "SAQ1Y0wN0zI",
@@ -985,6 +1001,16 @@
    "subsGained": 0
   },
   {
+   "id": "BBgga4igaVo",
+   "title": "Why Seneca Warns About Freedom \ud83d\uded1",
+   "published": "2026-11-24T03:01:33Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 9,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "hG6pY3pC7f0",
    "title": "Nobody warns you about Way of Peace.",
    "published": "2026-11-22T18:04:14Z",
@@ -992,7 +1018,10 @@
    "privacy": "public",
    "views": 9,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 56,
+   "avgPercent": 86.62,
+   "subsGained": 0
   },
   {
    "id": "6z0IxWs-qko",
@@ -1058,16 +1087,6 @@
    "avgSeconds": 24,
    "avgPercent": 13.98,
    "subsGained": 0
-  },
-  {
-   "id": "BBgga4igaVo",
-   "title": "Why Seneca Warns About Freedom \ud83d\uded1",
-   "published": "2026-11-24T03:01:33Z",
-   "duration": "PT54S",
-   "privacy": "public",
-   "views": 7,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "GlwLgzeUZsg",
@@ -1256,6 +1275,16 @@
    "subsGained": 0
   },
   {
+   "id": "gwsKVSOf0cY",
+   "title": "Why Sleep Drives Your Daily Drive \ud83d\ude80",
+   "published": "2026-11-24T03:48:02Z",
+   "duration": "PT8M37S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 1,
+   "comments": 0
+  },
+  {
    "id": "NFCFFiU0_hw",
    "title": "Nobody warns you about Acres of Diamonds.",
    "published": "2026-11-20T18:06:38Z",
@@ -1277,8 +1306,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 7,
-   "avgPercent": 1.8000000000000003,
+   "avgSeconds": 16,
+   "avgPercent": 4.18,
    "subsGained": 0
   },
   {
@@ -1345,16 +1374,6 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
-  },
-  {
-   "id": "gwsKVSOf0cY",
-   "title": "Why Sleep Drives Your Daily Drive \ud83d\ude80",
-   "published": "2026-11-24T03:48:02Z",
-   "duration": "PT8M37S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 1,
-   "comments": 0
   },
   {
    "id": "KG74aA9UEFo",
@@ -1703,7 +1722,10 @@
    "privacy": "unlisted",
    "views": 2,
    "likes": 0,
-   "comments": 0
+   "comments": 0,
+   "avgSeconds": 23,
+   "avgPercent": 71.92,
+   "subsGained": 0
   },
   {
    "id": "cPmS7p3wuaY",
@@ -1797,6 +1819,19 @@
    "subsGained": 0
   },
   {
+   "id": "T7anxpbtrAE",
+   "title": "Is love just a lost memory?",
+   "published": "2026-06-23T21:08:45Z",
+   "duration": "PT26S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
    "id": "t1nVb95pmt4",
    "title": "What is Aristotle\u2019s perfect state?",
    "published": "2026-06-18T04:21:51Z",
@@ -1883,7 +1918,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "5GsR3rzr4ks",
@@ -1964,19 +2002,6 @@
    "subsGained": 0
   },
   {
-   "id": "xIxtLasPyV8",
-   "title": "You were taught Meditations wrong.",
-   "published": "2026-11-09T00:00:22Z",
-   "duration": "PT6M49S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 6,
-   "avgPercent": 1.52,
-   "subsGained": 0
-  },
-  {
    "id": "S52fhpBuPEU",
    "title": "Do you lead with virtue daily?",
    "published": "2026-06-24T20:34:36Z",
@@ -1994,19 +2019,6 @@
    "title": "Did a slave shape leaders' advice?",
    "published": "2026-06-24T02:28:48Z",
    "duration": "PT45S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "T7anxpbtrAE",
-   "title": "Is love just a lost memory?",
-   "published": "2026-06-23T21:08:45Z",
-   "duration": "PT26S",
    "privacy": "public",
    "views": 1,
    "likes": 1,
@@ -2162,6 +2174,16 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "4xPi9hO0b8g",
+   "title": "Why The Horizon Moon Looks Giant \ud83c\udf15",
+   "published": "2026-11-24T17:01:23Z",
+   "duration": "PT8M54S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
    "comments": 0
   },
   {

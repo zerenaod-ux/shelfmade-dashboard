@@ -66,8 +66,8 @@
    "views": 13,
    "likes": 2,
    "comments": 1,
-   "avgSeconds": 91,
-   "avgPercent": 124.77000000000001,
+   "avgSeconds": 73,
+   "avgPercent": 100.09000000000002,
    "subsGained": 0
   },
   {
@@ -331,6 +331,19 @@
    "subsGained": 0
   },
   {
+   "id": "h4ZDNIp1JyY",
+   "title": "Why a Pastry Triggers Drama \ud83c\udfc6 | Leo & Mia",
+   "published": "2026-11-23T03:00:38Z",
+   "duration": "PT38S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 8,
+   "avgPercent": 22.03,
+   "subsGained": 0
+  },
+  {
    "id": "CKqSjL7j5YU",
    "title": "The Pre-Sweat Protocol",
    "published": "2026-11-18T18:05:42Z",
@@ -339,8 +352,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 1,
-   "avgPercent": 7.919999999999999,
+   "avgSeconds": 24,
+   "avgPercent": 103.07,
    "subsGained": 0
   },
   {
@@ -487,14 +500,14 @@
    "subsGained": 0
   },
   {
-   "id": "h4ZDNIp1JyY",
-   "title": "Why a Pastry Triggers Drama \ud83c\udfc6 | Leo & Mia",
-   "published": "2026-11-23T03:00:38Z",
-   "duration": "PT38S",
+   "id": "f_eHvch11WM",
+   "title": "How to Own Four AM Mornings \ud83c\udf05 | Leo & Mia",
+   "published": "2026-11-24T03:01:20Z",
+   "duration": "PT19S",
    "privacy": "public",
    "views": 3,
-   "likes": 0,
-   "comments": 1
+   "likes": 1,
+   "comments": 0
   },
   {
    "id": "tmixnQsBjPc",
@@ -560,16 +573,6 @@
    "avgSeconds": 4,
    "avgPercent": 8.98,
    "subsGained": 0
-  },
-  {
-   "id": "f_eHvch11WM",
-   "title": "How to Own Four AM Mornings \ud83c\udf05 | Leo & Mia",
-   "published": "2026-11-24T03:01:20Z",
-   "duration": "PT19S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 1,
-   "comments": 0
   },
   {
    "id": "9U6MGt1-tWk",
@@ -741,6 +744,16 @@
    "subsGained": 0
   },
   {
+   "id": "M7xiwyfmKpk",
+   "title": "Why Landing Applause Is Pure Terror \u2708\ufe0f",
+   "published": "2026-11-24T18:04:17Z",
+   "duration": "PT20S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "S5TXhlxMMJI",
    "title": "Why Your Stapler Is Revolting \ud83d\udd87\ufe0f | Leo & Mia",
    "published": "2026-11-22T18:03:43Z",
@@ -748,7 +761,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "5Czrci00ZPQ",
