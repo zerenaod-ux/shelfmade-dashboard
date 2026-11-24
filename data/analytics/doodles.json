@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-23",
+ "collected": "2026-11-24",
  "note": "",
  "videos": [
   {
@@ -27,8 +27,8 @@
    "views": 54,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 58.599999999999994,
+   "avgSeconds": 10,
+   "avgPercent": 57.36,
    "subsGained": 0
   },
   {
@@ -253,6 +253,19 @@
    "subsGained": 0
   },
   {
+   "id": "WVCIHMoMHGM",
+   "title": "Why Group Chats Become Ghost Towns \ud83d\udcac",
+   "published": "2026-11-21T18:04:30Z",
+   "duration": "PT25S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
    "id": "4aqmr5TjqWY",
    "title": "Your First Day Boss Fight",
    "published": "2026-11-17T18:05:11Z",
@@ -318,16 +331,6 @@
    "subsGained": 0
   },
   {
-   "id": "WVCIHMoMHGM",
-   "title": "Why Group Chats Become Ghost Towns \ud83d\udcac",
-   "published": "2026-11-21T18:04:30Z",
-   "duration": "PT25S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "CKqSjL7j5YU",
    "title": "The Pre-Sweat Protocol",
    "published": "2026-11-18T18:05:42Z",
@@ -388,8 +391,8 @@
    "views": 4,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 2.59,
+   "avgSeconds": 4,
+   "avgPercent": 15.27,
    "subsGained": 0
   },
   {
@@ -471,6 +474,19 @@
    "subsGained": 0
   },
   {
+   "id": "KvC6egp-HYQ",
+   "title": "The IKEA Effect",
+   "published": "2026-11-05T18:05:53Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 68,
+   "avgPercent": 103.54,
+   "subsGained": 0
+  },
+  {
    "id": "h4ZDNIp1JyY",
    "title": "Why a Pastry Triggers Drama \ud83c\udfc6 | Leo & Mia",
    "published": "2026-11-23T03:00:38Z",
@@ -546,19 +562,6 @@
    "subsGained": 0
   },
   {
-   "id": "KvC6egp-HYQ",
-   "title": "The IKEA Effect",
-   "published": "2026-11-05T18:05:53Z",
-   "duration": "PT1M6S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 68,
-   "avgPercent": 103.54,
-   "subsGained": 0
-  },
-  {
    "id": "9U6MGt1-tWk",
    "title": "How A Shortcut Turned Muddy \ud83d\ude05 | Leo & Mia",
    "published": "2026-11-22T00:00:14Z",
@@ -566,7 +569,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 2,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 9.07,
+   "subsGained": 0
   },
   {
    "id": "-hJWONk4WVs",
@@ -576,7 +582,10 @@
    "privacy": "public",
    "views": 2,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 13,
+   "avgPercent": 36.29,
+   "subsGained": 0
   },
   {
    "id": "SHRB6zbL4YQ",

@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-23",
+ "collected": "2026-11-24",
  "note": "",
  "videos": [
   {
@@ -224,6 +224,19 @@
    "subsGained": 0
   },
   {
+   "id": "qfwKKgBIkvI",
+   "title": "What warning did Darwin give?",
+   "published": "2026-11-06T18:04:24Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 69,
+   "likes": 2,
+   "comments": 1,
+   "avgSeconds": 42,
+   "avgPercent": 68.02,
+   "subsGained": 0
+  },
+  {
    "id": "md9q--G7er8",
    "title": "Why Wolves Chase Each Other \ud83e\udd14",
    "published": "2026-11-21T23:01:52Z",
@@ -231,7 +244,10 @@
    "privacy": "public",
    "views": 63,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 31.75,
+   "subsGained": 0
   },
   {
    "id": "70hQFkZl71o",
@@ -239,7 +255,7 @@
    "published": "2026-10-30T02:00:45Z",
    "duration": "PT1M35S",
    "privacy": "public",
-   "views": 58,
+   "views": 59,
    "likes": 0,
    "comments": 0,
    "avgSeconds": 21,
@@ -327,7 +343,7 @@
    "published": "2026-11-11T03:02:00Z",
    "duration": "PT1M6S",
    "privacy": "public",
-   "views": 50,
+   "views": 51,
    "likes": 1,
    "comments": 1,
    "avgSeconds": 26,
@@ -647,6 +663,19 @@
    "subsGained": 0
   },
   {
+   "id": "xBaiLW-oBrs",
+   "title": "What psychology fuels revolutions?",
+   "published": "2026-11-04T18:04:07Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 26,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 9,
+   "avgPercent": 15.54,
+   "subsGained": 0
+  },
+  {
    "id": "EzKs0ef9QYY",
    "title": "Mental Efficiency",
    "published": "2026-11-02T18:04:23Z",
@@ -683,19 +712,6 @@
    "comments": 1,
    "avgSeconds": 20,
    "avgPercent": 32.74,
-   "subsGained": 0
-  },
-  {
-   "id": "xBaiLW-oBrs",
-   "title": "What psychology fuels revolutions?",
-   "published": "2026-11-04T18:04:07Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 25,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 9,
-   "avgPercent": 15.54,
    "subsGained": 0
   },
   {
@@ -790,6 +806,19 @@
    "subsGained": 0
   },
   {
+   "id": "ZxFKXhCEx_c",
+   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
+   "published": "2026-11-21T18:03:51Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 4,
+   "avgPercent": 6.76,
+   "subsGained": 0
+  },
+  {
    "id": "ufT1qz-t0TI",
    "title": "Your brain can't truly multitask",
    "published": "2026-11-10T03:01:09Z",
@@ -860,16 +889,6 @@
    "avgSeconds": 335,
    "avgPercent": 68.21,
    "subsGained": 0
-  },
-  {
-   "id": "ZxFKXhCEx_c",
-   "title": "Why Dolphins Flip When Happy \ud83d\ude04",
-   "published": "2026-11-21T18:03:51Z",
-   "duration": "PT1M8S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "ldlmq9sPVl0",
@@ -948,16 +967,6 @@
    "avgSeconds": 80,
    "avgPercent": 21.9,
    "subsGained": 0
-  },
-  {
-   "id": "jGbwSyyLP9E",
-   "title": "How Animals Show Happiness \ud83e\udd14",
-   "published": "2026-11-23T03:00:52Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 20,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "7QFo4yYN-tM",
@@ -1049,6 +1058,16 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
+  },
+  {
+   "id": "jGbwSyyLP9E",
+   "title": "How Animals Show Happiness \ud83e\udd14",
+   "published": "2026-11-23T03:00:52Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "zqBNuIFyTpU",
@@ -1487,6 +1506,16 @@
    "subsGained": 0
   },
   {
+   "id": "CEyK5yFTZ0U",
+   "title": "Why Unexpected News Gives You Goosebumps \ud83e\udd14",
+   "published": "2026-11-22T23:01:41Z",
+   "duration": "PT1M12S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "EMQX3FI6-Lk",
    "title": "Inquiries into Human Faculty and Its Development \u00b7 Guided reading",
    "published": "2026-10-30T23:00:10Z",
@@ -1578,14 +1607,14 @@
    "subsGained": 0
   },
   {
-   "id": "CEyK5yFTZ0U",
-   "title": "Why Unexpected News Gives You Goosebumps \ud83e\udd14",
-   "published": "2026-11-22T23:01:41Z",
-   "duration": "PT1M12S",
+   "id": "3RqN10egMuw",
+   "title": "Why Your Brain Hums Before Plot Twists \ud83e\udde0",
+   "published": "2026-11-23T23:02:58Z",
+   "duration": "PT52S",
    "privacy": "public",
    "views": 5,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "vcqR_YZVpvg",
@@ -1611,19 +1640,6 @@
    "comments": 1,
    "avgSeconds": 172,
    "avgPercent": 40.4,
-   "subsGained": 0
-  },
-  {
-   "id": "v9w9gRnfbOQ",
-   "title": "Do you choose your face, or does it choose you? | Charles Darwin",
-   "published": "2026-11-08T00:00:27Z",
-   "duration": "PT7M23S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 2,
-   "comments": 1,
-   "avgSeconds": 104,
-   "avgPercent": 23.58,
    "subsGained": 0
   },
   {
@@ -1713,8 +1729,8 @@
    "views": 4,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 1.38,
+   "avgSeconds": 5,
+   "avgPercent": 10.36,
    "subsGained": 0
   },
   {
@@ -1803,7 +1819,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 2
+   "comments": 2,
+   "avgSeconds": 13,
+   "avgPercent": 2.99,
+   "subsGained": 0
   },
   {
    "id": "Nl1SAPaJEuY",
@@ -1826,7 +1845,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 2
+   "comments": 2,
+   "avgSeconds": 13,
+   "avgPercent": 2.99,
+   "subsGained": 0
   },
   {
    "id": "Nl1SAPaJEuY",

@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "10",
- "collected": "2026-11-23",
+ "collected": "2026-11-24",
  "note": "",
  "videos": [
   {
@@ -227,6 +227,19 @@
    "subsGained": 0
   },
   {
+   "id": "88SeG1rSwzc",
+   "title": "What secret lies in wild olive?",
+   "published": "2026-11-05T03:01:29Z",
+   "duration": "PT28S",
+   "privacy": "public",
+   "views": 47,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 61.88,
+   "subsGained": 0
+  },
+  {
    "id": "wxefvX3oShc",
    "title": "It is for everyone's interest to let this truth sink deep into his mind",
    "published": "2026-10-25T23:20:34Z",
@@ -266,6 +279,16 @@
    "subsGained": 0
   },
   {
+   "id": "gANMXiDY4h0",
+   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
+   "published": "2026-11-23T03:00:33Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 40,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "nuQLBWcyPzQ",
    "title": "Plato had a warning for you.",
    "published": "2026-11-04T18:02:59Z",
@@ -290,16 +313,6 @@
    "avgSeconds": 8,
    "avgPercent": 33.26,
    "subsGained": 0
-  },
-  {
-   "id": "gANMXiDY4h0",
-   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
-   "published": "2026-11-23T03:00:33Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 36,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "sGfMrVc9aVQ",
@@ -458,6 +471,19 @@
    "subsGained": 0
   },
   {
+   "id": "WJTdDr_NDVQ",
+   "title": "What Self-Reliance really asks of you.",
+   "published": "2026-11-21T18:04:59Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 37,
+   "avgPercent": 55.65,
+   "subsGained": 0
+  },
+  {
    "id": "DA9pXjqUXfQ",
    "title": "What mystery does James explore?",
    "published": "2026-06-22T03:50:26Z",
@@ -469,16 +495,6 @@
    "avgSeconds": 26,
    "avgPercent": 70.06,
    "subsGained": 0
-  },
-  {
-   "id": "WJTdDr_NDVQ",
-   "title": "What Self-Reliance really asks of you.",
-   "published": "2026-11-21T18:04:59Z",
-   "duration": "PT1M8S",
-   "privacy": "public",
-   "views": 26,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "fGyknN3M8w4",
@@ -663,6 +679,19 @@
    "subsGained": 0
   },
   {
+   "id": "j-8zUPTf8LU",
+   "title": "One line in Prince hits hard.",
+   "published": "2026-11-19T18:06:35Z",
+   "duration": "PT1M26S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 23,
+   "avgPercent": 27.229999999999997,
+   "subsGained": 0
+  },
+  {
    "id": "ysH8vGfZpVA",
    "title": "How a man's truth comes to mind, long after we have forgotten all his words!",
    "published": "2026-10-20T19:27:15Z",
@@ -673,19 +702,6 @@
    "comments": 0,
    "avgSeconds": 9,
    "avgPercent": 38.69,
-   "subsGained": 0
-  },
-  {
-   "id": "j-8zUPTf8LU",
-   "title": "One line in Prince hits hard.",
-   "published": "2026-11-19T18:06:35Z",
-   "duration": "PT1M26S",
-   "privacy": "public",
-   "views": 17,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 19,
-   "avgPercent": 22.92,
    "subsGained": 0
   },
   {
@@ -830,6 +846,16 @@
    "avgSeconds": 32,
    "avgPercent": 6.25,
    "subsGained": 0
+  },
+  {
+   "id": "M1tqBDu4akY",
+   "title": "Ruskin would hate how you live.",
+   "published": "2026-11-23T18:06:53Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 13,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -1189,8 +1215,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 11,
+   "avgPercent": 18.32,
    "subsGained": 0
   },
   {
@@ -1280,8 +1306,8 @@
    "views": 4,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 5,
-   "avgPercent": 1.36,
+   "avgSeconds": 7,
+   "avgPercent": 1.8000000000000003,
    "subsGained": 0
   },
   {
@@ -1683,19 +1709,6 @@
    "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "nlzBtL-I8EE",
-   "title": "Are your diamonds hidden where you stand?",
-   "published": "2026-11-08T00:00:20Z",
-   "duration": "PT6M52S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 10,
-   "avgPercent": 2.62,
    "subsGained": 0
   },
   {
@@ -2112,6 +2125,16 @@
    "comments": 0
   },
   {
+   "id": "mz_mBYr6auA",
+   "title": "This Young Man's Guide line is uncomfortable.",
+   "published": "2026-11-24T00:00:36Z",
+   "duration": "PT7M1S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "x5lAui69vdQ",
    "title": "Why Coleridge Warns About Scrolling \ud83d\udcda",
    "published": "2026-11-23T04:25:30Z",
@@ -2159,7 +2182,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "a7ehg8GKMJ8",
@@ -2186,16 +2212,6 @@
    "title": "This Pleasures of Life line is uncomfortable.",
    "published": "2026-11-19T07:47:57Z",
    "duration": "PT6M40S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "mz_mBYr6auA",
-   "title": "This Young Man's Guide line is uncomfortable.",
-   "published": "2026-11-19T03:24:13Z",
-   "duration": "PT7M1S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
