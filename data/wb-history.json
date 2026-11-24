@@ -56,5 +56,11 @@
  {
   "topic": "How bioluminescent organisms generate light without electricity",
   "cat": "science and nature"
+ },
+ {
+  "topic": "Part 2: The Secret Chemistry Behind Bioluminescence: How Luciferin and Luciferase Light Up the Ocean",
+  "cat": "science and nature",
+  "part2": true,
+  "parent": "How bioluminescent organisms generate light without electricity"
  }
 ]
