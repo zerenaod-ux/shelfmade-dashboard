@@ -6222,5 +6222,186 @@
   "style": "v2",
   "format": "RATING GAME",
   "improv": false
+ },
+ {
+  "id": "one-rude-comment-trap",
+  "title": "The One Rude Comment That Ruins Your Entire Day",
+  "concept": "negativity bias (one rude comment beats ten nice ones)",
+  "insight": "Our brains obsess over a single insult while completely ignoring a mountain of praise.",
+  "caption": "When ten people love your work but one guy hates it.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits at the podcast desk holding a cold cup of tea, leaning forward nervously while Mia sips her drink.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Okay, I need to confess something terrible..."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "Oh god, please don't say you ate the whole cake."
+     },
+     {
+      "who": "leo",
+      "feel": "worried",
+      "listener_feel": "curious",
+      "beat": "quick",
+      "text": "No, it's actually so much worse than cake."
+     }
+    ]
+   },
+   {
+    "scene": "Mia taps her fingers on the podcast desk with a smirk, while Leo rubs his temples in frustration.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Whatever you just did, I'm calling your mom right now."
+     },
+     {
+      "who": "leo",
+      "feel": "worried",
+      "listener_feel": "surprised",
+      "beat": "quick",
+      "text": "No mom! Please, she's gonna lose her mind."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "She's literally just a cool lady named Karen."
+     }
+    ]
+   },
+   {
+    "scene": "Leo gestures wildly with his hands in the air, while Mia raises an eyebrow at him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "You really don't get the vibe at all!"
+     },
+     {
+      "who": "mia",
+      "feel": "curious",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Wait, did you just call your own mom Karen?"
+     },
+     {
+      "who": "leo",
+      "feel": "worried",
+      "beat": "quick",
+      "text": "No! I'm leaking bad vibes everywhere."
+     }
+    ]
+   },
+   {
+    "scene": "Mia laughs softly and shakes her head, leaning back in her chair with her arms crossed.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "You are leaking absolutely no vibes today, buddy."
+     },
+     {
+      "who": "leo",
+      "feel": "excited",
+      "listener_feel": "annoyed",
+      "beat": "quick",
+      "text": "Focus on the actual confession, idiot."
+     },
+     {
+      "who": "mia",
+      "feel": "curious",
+      "beat": "pause",
+      "text": "But you were literally just yelling about Karen."
+     }
+    ]
+   },
+   {
+    "scene": "Leo slams his hands flat on the podcast desk in dramatic defeat, while Mia watches calmly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Karen is my imaginary online therapist, okay?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "Karen is not a therapist, she's just a Karen."
+     },
+     {
+      "who": "leo",
+      "feel": "worried",
+      "beat": "quick",
+      "text": "You keep ruining my whole emotional arc here."
+     }
+    ]
+   },
+   {
+    "scene": "Mia smiles directly at the camera and points at Leo with a deadpan expression.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "Your arc? Congratulations, that is the negativity bias."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 7,
+   "hook": 8,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 7,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It has great snappy pacing and captures their dynamic perfectly.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 7,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "idea",
+  "idea": "negativity bias",
+  "style": "v2",
+  "format": "CONFESSION",
+  "improv": true
  }
 ]
