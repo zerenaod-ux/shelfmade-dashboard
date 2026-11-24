@@ -29,20 +29,20 @@
   {
    "id": "minute",
    "text": "Leo says 'just one more minute' and it is never one minute",
-   "uses": 10,
-   "last": 56
+   "uses": 11,
+   "last": 62
   },
   {
    "id": "gerald",
    "text": "a quick status update on Gerald the plant (thriving, dramatic, or dying)",
-   "uses": 10,
-   "last": 57
+   "uses": 11,
+   "last": 63
   },
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 10,
-   "last": 58
+   "uses": 11,
+   "last": 64
   },
   {
    "id": "dev",
@@ -774,6 +774,42 @@
    "concept": "negativity bias (one rude comment beats ten nice ones)",
    "gag": "battery",
    "callback": true,
+   "milestone": false,
+   "season": 6,
+   "date": "2026-11-24"
+  },
+  {
+   "n": 54,
+   "kind": "short",
+   "id": "your-hoodie-breakup-rating",
+   "title": "The Hoodie Breakup Rating",
+   "concept": "Rating the dramatic emotional attachment to ruined old clothes.",
+   "gag": "minute",
+   "callback": true,
+   "milestone": false,
+   "season": 6,
+   "date": "2026-11-24"
+  },
+  {
+   "n": 55,
+   "kind": "short",
+   "id": "fundamental-attribution-error-drive",
+   "title": "POV Your friend blames everyone else on the road",
+   "concept": "Leo judges a slow driver harshly but makes endless excuses for his own terrible mistakes.",
+   "gag": "gerald",
+   "callback": true,
+   "milestone": true,
+   "season": 6,
+   "date": "2026-11-24"
+  },
+  {
+   "n": 56,
+   "kind": "short",
+   "id": "the-cereal-first-milk-trial",
+   "title": "The Cereal Milk First Trial",
+   "concept": "Mia judges Leo for his cereal eating habits during a mock court trial.",
+   "gag": "greg",
+   "callback": false,
    "milestone": false,
    "season": 6,
    "date": "2026-11-24"
