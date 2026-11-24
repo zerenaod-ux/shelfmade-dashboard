@@ -23,8 +23,8 @@
   {
    "id": "battery",
    "text": "Mia's phone is always at 3% battery at the worst moment",
-   "uses": 10,
-   "last": 55
+   "uses": 11,
+   "last": 61
   },
   {
    "id": "minute",
@@ -765,6 +765,18 @@
    "milestone": false,
    "season": 6,
    "date": "2026-11-23"
+  },
+  {
+   "n": 53,
+   "kind": "short",
+   "id": "one-rude-comment-trap",
+   "title": "The One Rude Comment That Ruins Your Entire Day",
+   "concept": "negativity bias (one rude comment beats ten nice ones)",
+   "gag": "battery",
+   "callback": true,
+   "milestone": false,
+   "season": 6,
+   "date": "2026-11-24"
   }
  ]
 }
