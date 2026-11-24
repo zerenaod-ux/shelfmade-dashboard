@@ -53,5 +53,5 @@ jobs:
           TAG=mindlore-story-$(date -u +%Y%m%d-%H%M)
           gh release create "$TAG" "${F[@]}" --title "MindLore story Shorts $TAG" --notes "Built automatically. Review before posting. Nothing is posted automatically."
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add -f gh-state/built-story-shorts.json story-shorts data/story-learn-log-mindlore.json data/story-learn-mindlore.json data/mindlore/story-shorts.json data/winner-ideas-mindlore.json; git add -f data/look-log-*.json 2>/dev/null || true; git commit -m "Record story Shorts"
+          git add -f gh-state/built-story-shorts.json story-shorts data/story-learn-log-mindlore.json data/story-learn-mindlore.json data/mindlore/story-shorts.json data/winner-ideas-mindlore.json; git add -f data/look-log-*.json data/style-log-*.json 2>/dev/null || true; git commit -m "Record story Shorts"
           for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push && break; sleep 8; done

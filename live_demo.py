@@ -2,7 +2,7 @@
 funny reaction beats, loop ending. A 'director' (free LLM, rule-based fallback) turns any story script into a scene plan from a fixed toolkit.
   python live_demo.py <story.json> <out.mp4>      FAKE=1 silent timing for local look-tests, DUMP=2,5,9 saves PNG frames
 Test-only until the roll-out in ROADMAP-LIVE.md (section L)."""
-import asyncio, json, math, os, re, subprocess, sys, bisect, random
+import asyncio, json, math, os, re, subprocess, sys, bisect, random, hashlib, datetime
 from pathlib import Path
 from PIL import Image
 import brain_demo as B
@@ -444,6 +444,13 @@ def topic_pal(title, text):
     return sc[0][1] if sc and sc[0][0] > 0 else sum(ord(ch) for ch in title) % len(PALS)
 TRANS = ['wipe', 'wipe_v', 'iris', 'flash', 'slide', 'wipe']; CAMS = ['punch', 'drift', 'tilt', 'punch', 'push']
 def assign_style(beats, title, text):
+    if _DNA.get('pals') and BRANDKEY == 'mindlore':   # invented palettes for this video only: appended after the fixed ones, used by index
+        base = len(PALS); PALS.extend([tuple(tuple(c) for c in p) for p in _DNA['pals']]); idx = list(range(base, len(PALS)))
+        prev = idx[0]; _look_save(title, beats[0].get('kind') if beats else '', prev)
+        for n_, b in enumerate(beats):
+            rr_ = random.Random(b['at'] * 7 + len(title)); p = idx[n_ % len(idx)] if n_ == 0 else rr_.choice([q for q in idx if q != prev])
+            b['_pal'] = prev = p; b['_tr'] = rr_.choice(_DNA.get('tr') or TRANS); b['_cam'] = rr_.choice(_DNA.get('cam') or CAMS); b['_seed'] = rr_.randrange(1000)
+        return
     prev = topic_pal(title, text) if beats else 0
     if beats and title: prev = _fresh_pal(prev, beats[0].get('kind'), title); _look_save(title, beats[0].get('kind'), prev)
     for n_, b in enumerate(beats):
@@ -452,12 +459,65 @@ def assign_style(beats, title, text):
         else:
             p = (prev + 1 + rr_.randrange(len(PALS) - 1)) % len(PALS)
             while p == prev: p = (p + 1) % len(PALS)
-        b['_pal'] = prev = p; b['_tr'] = rr_.choice(TRANS); b['_cam'] = rr_.choice(CAMS); b['_seed'] = rr_.randrange(1000)
+        b['_pal'] = prev = p; b['_tr'] = rr_.choice(_DNA.get('tr') or TRANS); b['_cam'] = rr_.choice(_DNA.get('cam') or CAMS); b['_seed'] = rr_.randrange(1000)
+
+
+# STYLE_DNA (owner 2026-11-23: MindLore videos all looked and felt the same). Every MindLore video gets its own invented style plan: a director voice,
+# a different set of scene types, a different pace and ending, 4 freshly invented colour palettes, and its own transitions/camera moves.
+# The plan is checked against the last 5 plans (data/style-log-mindlore.json) so it cannot repeat. Any failure = the old look, so posting never stops.
+TONES = ['a deadpan stand-up comedian who underreacts to wild facts', 'a nature-documentary narrator watching humans as animals', 'a detective solving a case where the culprit is your own brain',
+         'a hyper game-show host with points and buzzers', 'a calm sleepy-voiced friend whispering secrets', 'a sports commentator calling a play-by-play of your body',
+         'a breaking-news anchor reporting the shocking truth', 'a gossip friend spilling what your brain does behind your back', 'a science teacher who is secretly thrilled',
+         'a movie-trailer voice with huge dramatic stakes', 'a skeptical friend who needs convincing and gets convinced', 'a time traveler comparing ancient brains to today']
+ENDINGS = ['loop back to the very first image so it replays smoothly', 'end on a direct question the viewer will want to answer in the comments', 'end on a twist that reverses the opening',
+           'end with a tiny challenge the viewer can try today', 'end on the funniest reaction beat, then cut instantly']
+def _lum(rgb): return sum(c * k for c, k in zip([(v / 255) ** 2.2 for v in rgb], (.2126, .7152, .0722)))
+def _contrast(a, b): x, y = sorted((_lum(a) + .05, _lum(b) + .05)); return y / x
+def _invent_pals(rnd, n=4):
+    import colorsys
+    out = []; h0 = rnd.random()
+    for k in range(n * 6):
+        if len(out) >= n: break
+        h = (h0 + rnd.choice([0, .08, .33, .5, .66, .83]) + rnd.random() * .04) % 1; dark = rnd.random() < .5
+        bg = colorsys.hsv_to_rgb(h, rnd.uniform(.45, .85) if dark else rnd.uniform(.05, .25), rnd.uniform(.12, .3) if dark else rnd.uniform(.9, 1))
+        acc = colorsys.hsv_to_rgb((h + rnd.choice([.5, .33, .17, .6])) % 1, rnd.uniform(.65, .95), rnd.uniform(.85, 1))
+        bg, acc = tuple(int(255 * x) for x in bg), tuple(int(255 * x) for x in acc); ink = (255, 255, 255) if dark else (22, 22, 34)
+        if _contrast(bg, ink) >= 7 and _contrast(bg, acc) >= 2.6 and all(_contrast(bg, o[0]) > 1.15 or _contrast(acc, o[1]) > 1.2 for o in out): out.append((bg, acc, ink))
+    return out
+def _style_file(): return Path(__file__).resolve().parent / 'data' / ('style-log-%s.json' % BRANDKEY)
+def style_dna(title, op):
+    if BRANDKEY != 'mindlore' or os.environ.get('MINDLORE_STYLE_DNA', '1') == '0': return None
+    try:
+        try: log = json.loads(_style_file().read_text())
+        except Exception: log = []
+        log = [x for x in log if x.get('title') != title]; rnd = random.Random(hashlib.md5((title + str(len(log)) + datetime.datetime.utcnow().isoformat()[:13]).encode()).hexdigest())
+        pool = [k for k in KINDS if k != op]; best = None
+        for _ in range(80):
+            kinds = set(rnd.sample(pool, rnd.randint(8, 12))) | {op, 'reaction'}
+            tone = rnd.choice(TONES); end = rnd.choice(ENDINGS); pace = round(rnd.uniform(1.6, 3.0), 2)
+            if tone in [x.get('tone') for x in log[-4:]] or end in [x.get('end') for x in log[-2:]]: continue
+            if any(len(kinds & set(x.get('kinds', []))) / max(1, len(kinds | set(x.get('kinds', [])))) > .55 for x in log[-5:]): continue
+            if log and abs(pace - float(log[-1].get('pace', 0))) < .3: continue
+            best = (kinds, tone, end, pace); break
+        if not best: return None
+        kinds, tone, end, pace = best; pals = _invent_pals(rnd)
+        if len(pals) < 3: return None
+        d = {'title': title, 'kinds': sorted(kinds), 'tone': tone, 'end': end, 'pace': pace, 'pals': [[list(c) for c in p] for p in pals],
+             'tr': rnd.sample(sorted(set(TRANS)), rnd.randint(2, 4)), 'cam': rnd.sample(sorted(set(CAMS)), rnd.randint(2, 3))}
+        _style_file().parent.mkdir(parents=True, exist_ok=True); _style_file().write_text(json.dumps((log + [d])[-40:], indent=1, ensure_ascii=False))
+        print('style plan: %s | ends: %s | pace %s | %d scene types | new palettes %d' % (tone, end, pace, len(kinds), len(pals)), flush=True); return d
+    except Exception as e:
+        print('style plan skipped (old look used):', str(e)[:100], flush=True); return None
+_DNA = {}
 
 def make_plan(words, total, text, title='', opening=True, long=False):
     """Director for one video. Long videos are directed in ~45 s chunks (free LLM per chunk, rule fallback per chunk)."""
     if not long:
-        beats = llm_director(words, total, title, opening); src = 'llm'
+        _d = style_dna(title, pick_open(title)) if opening else None; _DNA.clear()
+        if _d:
+            _DNA.update(_d)
+            beats = llm_director(words, total, title, opening, pace=_d['pace'], kinds_ok=set(_d['kinds']), mood_hint='STYLE FOR THIS VIDEO (be fully in character, make it feel unlike any other video): direct it like %s. %s. ' % (_d['tone'], _d['end'][0].upper() + _d['end'][1:])); src = 'llm'
+        else: beats = llm_director(words, total, title, opening); src = 'llm'
         if not beats: beats = rule_director(words, title, opening); src = 'rules'
     else:
         beats = []; srcs = set(); n = len(words); i = 0
