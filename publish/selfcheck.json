@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T23:17:33+00:00",
+ "at": "2026-11-24T23:30:26+00:00",
  "level": "warn",
  "checks": [
   {
@@ -80,17 +80,17 @@
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 5 h ago"
+   "text": "newest public video 6 h ago"
   },
   {
    "name": "Posting: mindlore",
    "ok": true,
-   "text": "newest public video 0 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 3 h ago"
+   "text": "newest public video 4 h ago"
   },
   {
    "name": "Service probes",
