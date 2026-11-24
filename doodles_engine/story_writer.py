@@ -271,6 +271,19 @@ def improv(topic,fmt,turns=18):
         return (" RAW IMPROV: two actors really talked this out with no script. This is the natural flow you must keep. Build the final episode FROM it: keep their best lines, words and rhythm in their natural order (keep the strongest exchanges, add believable reactions where needed to reach 125–165 words, cut weak filler, and add one complete payoff that resolves the original situation). Do not replace their human phrasing with polished writing. "+"\nRAW IMPROV TRANSCRIPT:\n"+raw)
     except BaseException as e:
         print('improv skipped:',str(e)[:100]);return ''
+
+IDEAS=['Dunning-Kruger effect (Leo thinks he is an expert after one tutorial)','spotlight effect (Leo is sure everyone noticed his tiny mistake)','Mandela effect (they argue over a logo or a line they both remember wrong)','Baader-Meinhof effect (Leo sees the same thing everywhere after learning it)','IKEA effect (Leo loves his badly built shelf)','Zeigarnik effect (Leo cannot stop thinking about the one unfinished task)','sunk cost (Leo keeps watching a terrible movie because he paid)','planning fallacy (Leo swears it takes ten minutes)','confirmation bias (Leo only finds proof he is right)','anchoring (a fake sale price tricks Leo)','decoy effect (the medium popcorn trap)','paradox of choice (Leo cannot pick a snack)','halo effect (Leo trusts anyone with nice glasses)','bystander effect (nobody picks up the ringing thing)','placebo effect (Leo feels better after fake medicine)','hindsight bias (Leo says he knew it all along)','illusion of transparency (Leo thinks everyone can see he is nervous)','curse of knowledge (Leo explains something badly because it is obvious to him)','availability bias (Leo is scared of sharks after one movie)','gambler fallacy (Leo is sure heads is due)','endowment effect (Leo will not sell his junk)','foot-in-the-door (Mia tricks Leo into a big favor with a small one)','door-in-the-face (Mia asks huge first so small feels easy)','Streisand effect (the more Leo hides it the more people look)','Ben Franklin effect (Leo likes Mia more after she borrows his pen)','mere exposure (Leo likes the song he hated)','self-serving bias (Leo wins and it was skill, loses and it was luck)','optimism bias (Leo thinks bad things only happen to others)','negativity bias (one rude comment beats ten nice ones)','pratfall effect (a small clumsy moment makes Leo more likable)','overjustification (Leo stops enjoying a hobby once it pays)','choice-supportive bias (Leo defends his bad purchase)','illusion of control (Leo blows on the dice)','false consensus (Leo thinks everyone loves pineapple pizza)','fundamental attribution error (Leo blames the slow driver, excuses himself)','peak-end rule (one great moment saves a bad trip)','tip-of-the-tongue (Leo knows the word but cannot say it)','cocktail party effect (Leo hears his name across a loud room)','déjà vu (Leo is sure this already happened)','procrastination (Leo cleans everything except the thing)','decision fatigue (Leo cannot choose dinner after a day of choices)','impostor syndrome (Leo is sure they will find out he is a fraud)','comfort zone (Leo avoids anything new)','goldilocks effect (not too hot, not too cold, Leo is picky)','rubber duck debugging (Leo explains his problem to a duck and solves it)','Pygmalion effect (Mia expects Leo to do well and he does)','social proof (Leo joins the longest line without knowing why)','scarcity (only 2 left makes Leo panic buy)','reciprocity (a free sample makes Leo buy)','loss aversion (Leo hates losing five dollars more than he loves finding five)','status quo bias (Leo keeps the same order for years)']
+def _viral():
+    """Inspiration from the daily viral scan (viral_scan.py): shape only, never a copy."""
+    try:
+        v=json.loads((ROOT/'data/doodles/viral_patterns.json').read_text());import random
+        pick=lambda k,n:'; '.join(random.sample(v.get(k,[]),min(n,len(v.get(k,[])))))
+        return (" INSPIRATION from what is going viral right now (copy only the SHAPE, never a video, name, joke or line): title wording like: "+pick('title_shapes',2)+". Kinds of situation people watch: "+pick('situations',2)+". Opening ideas: "+pick('openings',2)+". Ending ideas: "+pick('endings',2)+".")
+    except Exception:return ''
+CRAFT=(" CRAFT (owner 2026-11-23, very important): (1) the problem or the joke lands in the FIRST 2 SECONDS, no scene-setting, no greeting; (2) the title says plainly what the video is about (the situation or the famous idea), a stranger must understand it before swiping; "
+       "(3) the LAST line is ONE punchline from Mia of 10 words or fewer that lands the joke or names the idea in plain words, then the video ends instantly, no wrap-up, no moral; (4) one clear mistake that escalates, shown, not explained.")
+IDEA_NOTE=(" FAMOUS IDEA EPISODE (overrides the earlier rules about concept names, psychology and the banned-words list, for the idea's name only, in THIS video only): the skit shows this famous idea in action as one everyday mistake that Leo makes and that escalates: {idea}. "
+           "Everything is said in simple words; at the end Mia names the idea in plain words in her ONE punchline (for example: 'Congratulations, that is the Dunning-Kruger effect.'). No lecture, no study, no numbers.")
 def load():return json.loads(POOL.read_text()) if POOL.exists() else []
 def main():
     n=int(sys.argv[1]) if len(sys.argv)>1 else 3;pool=load();taken={s['id'] for s in stories.STORIES}|{s['id'] for s in pool};made=0
@@ -280,13 +293,19 @@ def main():
         TOPICS.remove(topic) if topic in TOPICS else None
         variant='complete'
         vnote=' COMPLETE SHORT: 125–165 spoken words; target 50–60 seconds, complete final reply and resolved situation. Never use micro/tight length variants or a dangling replay loop.'
-        tstyle='you' if len(pool)%2==0 else 'plain'   # title test (Nov 9): half the Doodles titles start with You/Your (our data: ~4x views on the other channels)
-        if tstyle=='you':vnote+=' TITLE STYLE: the title is 2 to 5 words and starts with You or Your (a statement, e.g. "You Replied K Again").'
+        # owner 2026-11-23: half the episodes are a FAMOUS IDEA shown as a skit (our best Doodles video, The Confidence Curve, was one); the other half a plain everyday situation.
+        import random
+        used_ideas=' '.join(str(p.get('idea','')) for p in pool[-25:]);idea=None
+        if len(pool)%2==0:
+            fresh=[i for i in IDEAS if i.split(' (')[0] not in used_ideas]
+            if fresh:idea=random.choice(fresh);topic=idea;vnote+=IDEA_NOTE.format(idea=idea)
+        tstyle='idea' if idea else 'plain'
+        vnote+=CRAFT+_viral()
         fmt,fnote=pick_format()
         raw=improv(topic,fmt)
         s=pick_best(topic,taken,variant,vnote+fnote+raw)
         if s is None:continue
-        if valid(s,taken,variant):s['variant']=variant;s['tstyle']=tstyle;s['style']='v2';s['format']=fmt;s['improv']=bool(raw);pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
+        if valid(s,taken,variant):s['variant']=variant;s['tstyle']=tstyle;s['idea']=(idea or '').split(' (')[0];s['style']='v2';s['format']=fmt;s['improv']=bool(raw);pool.append(s);_rec(s);taken.add(s['id']);made+=1;POOL.write_text(json.dumps(pool,indent=1));print('wrote',s['id'])
         else:print('rejected a story (format)')
     print('pool size',len(pool))
 if __name__=='__main__':main()
