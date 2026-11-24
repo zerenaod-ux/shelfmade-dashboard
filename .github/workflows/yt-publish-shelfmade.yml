@@ -25,6 +25,7 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN_SHELFMADE }}
           PUBLISH_LIVE: ${{ vars.PUBLISH_LIVE_SHFULL }}
           YT_KIND: shfull
+          YT_PUBLISH_NOW_ID: gh364-shfull
         run: python yt_publish.py
       - name: Save state
         if: always()

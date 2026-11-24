@@ -115,6 +115,11 @@ def main():
     taken = taken_days(access) | {datetime.date.fromisoformat(v['day']) for v in state['done'].values() if v.get('day')}
     item = todo[0]
     day, when = next_slot(taken)
+    _now_id = os.environ.get('YT_PUBLISH_NOW_ID', '')   # owner 2026-11-23: this one long video goes out today (about 15 min from now)
+    if _now_id and any(i['id'] == _now_id for i in todo):
+        item = [i for i in todo if i['id'] == _now_id][0]
+        _t = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(minutes=15)
+        day, when = _t.astimezone(TZ).date(), _t.strftime('%Y-%m-%dT%H:%M:%S.000Z')
     print('next:', item['title'], '->', when)
     if not LIVE:
         return
