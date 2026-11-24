@@ -162,6 +162,19 @@
    "subsGained": 1
   },
   {
+   "id": "DqPkTxpybRQ",
+   "title": "Read this before you open Self-Reliance.",
+   "published": "2026-11-14T18:03:43Z",
+   "duration": "PT1M5S",
+   "privacy": "public",
+   "views": 56,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 13,
+   "avgPercent": 20.47,
+   "subsGained": 0
+  },
+  {
    "id": "pWVzUeSbav0",
    "title": "That which is necessary in order to learn something else is an Axiom",
    "published": "2026-10-16T16:28:52Z",
@@ -172,19 +185,6 @@
    "comments": 0,
    "avgSeconds": 48,
    "avgPercent": 168.72,
-   "subsGained": 0
-  },
-  {
-   "id": "DqPkTxpybRQ",
-   "title": "Read this before you open Self-Reliance.",
-   "published": "2026-11-14T18:03:43Z",
-   "duration": "PT1M5S",
-   "privacy": "public",
-   "views": 55,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 13,
-   "avgPercent": 20.47,
    "subsGained": 0
   },
   {
@@ -214,6 +214,16 @@
    "subsGained": 0
   },
   {
+   "id": "gANMXiDY4h0",
+   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
+   "published": "2026-11-23T03:00:33Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 49,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "7P-eD_FErv0",
    "title": "Where is your attention?",
    "published": "2026-10-18T23:44:02Z",
@@ -238,16 +248,6 @@
    "avgSeconds": 17,
    "avgPercent": 61.88,
    "subsGained": 0
-  },
-  {
-   "id": "gANMXiDY4h0",
-   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
-   "published": "2026-11-23T03:00:33Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 44,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "wxefvX3oShc",
@@ -458,6 +458,19 @@
    "subsGained": 0
   },
   {
+   "id": "WJTdDr_NDVQ",
+   "title": "What Self-Reliance really asks of you.",
+   "published": "2026-11-21T18:04:59Z",
+   "duration": "PT1M8S",
+   "privacy": "public",
+   "views": 31,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 37,
+   "avgPercent": 55.65,
+   "subsGained": 0
+  },
+  {
    "id": "6ekA7k96fUk",
    "title": "Where does your mind wander?",
    "published": "2026-11-05T23:03:00Z",
@@ -482,19 +495,6 @@
    "avgSeconds": 26,
    "avgPercent": 102.15,
    "subsGained": 1
-  },
-  {
-   "id": "WJTdDr_NDVQ",
-   "title": "What Self-Reliance really asks of you.",
-   "published": "2026-11-21T18:04:59Z",
-   "duration": "PT1M8S",
-   "privacy": "public",
-   "views": 30,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 37,
-   "avgPercent": 55.65,
-   "subsGained": 0
   },
   {
    "id": "hzAmyueIWyQ",
@@ -822,6 +822,29 @@
    "subsGained": 0
   },
   {
+   "id": "nw9L0WbCy1s",
+   "title": "Can mercy survive in the middle of war?",
+   "published": "2026-06-11T16:37:06Z",
+   "duration": "PT8M37S",
+   "privacy": "public",
+   "views": 16,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 32,
+   "avgPercent": 6.25,
+   "subsGained": 0
+  },
+  {
+   "id": "M1tqBDu4akY",
+   "title": "Ruskin would hate how you live.",
+   "published": "2026-11-23T18:06:53Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "SAQ1Y0wN0zI",
    "title": "Nobody warns you about Tao Te Ching.",
    "published": "2026-11-11T18:06:41Z",
@@ -859,29 +882,6 @@
    "avgSeconds": 15,
    "avgPercent": 56.330000000000005,
    "subsGained": 0
-  },
-  {
-   "id": "nw9L0WbCy1s",
-   "title": "Can mercy survive in the middle of war?",
-   "published": "2026-06-11T16:37:06Z",
-   "duration": "PT8M37S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 32,
-   "avgPercent": 6.25,
-   "subsGained": 0
-  },
-  {
-   "id": "M1tqBDu4akY",
-   "title": "Ruskin would hate how you live.",
-   "published": "2026-11-23T18:06:53Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 13,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -1060,6 +1060,16 @@
    "subsGained": 0
   },
   {
+   "id": "BBgga4igaVo",
+   "title": "Why Seneca Warns About Freedom \ud83d\uded1",
+   "published": "2026-11-24T03:01:33Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "GlwLgzeUZsg",
    "title": "Why does Thus Spake Zarathustra still matter?",
    "published": "2026-11-14T03:02:32Z",
@@ -1164,6 +1174,19 @@
    "subsGained": 0
   },
   {
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 2.16,
+   "subsGained": 0
+  },
+  {
    "id": "19NEY5x_reI",
    "title": "What if you flow like water?",
    "published": "2026-06-23T20:36:41Z",
@@ -1246,16 +1269,16 @@
    "subsGained": 0
   },
   {
-   "id": "pLirzW1d_Og",
-   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
-   "published": "2026-11-15T00:00:32Z",
-   "duration": "PT8M42S",
+   "id": "7HnIeRjpoGg",
+   "title": "Listen to what Seneca warned about.",
+   "published": "2026-11-12T00:00:29Z",
+   "duration": "PT6M42S",
    "privacy": "public",
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 2.16,
+   "avgSeconds": 7,
+   "avgPercent": 1.8000000000000003,
    "subsGained": 0
   },
   {
@@ -1324,27 +1347,14 @@
    "subsGained": 0
   },
   {
-   "id": "BBgga4igaVo",
-   "title": "Why Seneca Warns About Freedom \ud83d\uded1",
-   "published": "2026-11-24T03:01:33Z",
-   "duration": "PT54S",
+   "id": "gwsKVSOf0cY",
+   "title": "Why Sleep Drives Your Daily Drive \ud83d\ude80",
+   "published": "2026-11-24T03:48:02Z",
+   "duration": "PT8M37S",
    "privacy": "public",
    "views": 4,
-   "likes": 0,
+   "likes": 1,
    "comments": 0
-  },
-  {
-   "id": "7HnIeRjpoGg",
-   "title": "Listen to what Seneca warned about.",
-   "published": "2026-11-12T00:00:29Z",
-   "duration": "PT6M42S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 7,
-   "avgPercent": 1.8000000000000003,
-   "subsGained": 0
   },
   {
    "id": "KG74aA9UEFo",
@@ -1856,6 +1866,26 @@
    "comments": 0
   },
   {
+   "id": "6VO8a_iBrsU",
+   "title": "Why does Young Man's Guide still matter?",
+   "published": "2026-11-23T00:00:27Z",
+   "duration": "PT7M3S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1
+  },
+  {
+   "id": "TXgCTuFvgYA",
+   "title": "Why does Conduct of Life still matter?",
+   "published": "2026-11-22T00:00:30Z",
+   "duration": "PT6M56S",
+   "privacy": "public",
+   "views": 1,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "5GsR3rzr4ks",
    "title": "Can men refuse to be pleased with words of gentle advice?",
    "published": "2026-11-20T00:00:35Z",
@@ -2135,16 +2165,6 @@
    "comments": 0
   },
   {
-   "id": "gwsKVSOf0cY",
-   "title": "Why Sleep Drives Your Daily Drive \ud83d\ude80",
-   "published": "2026-11-24T03:48:02Z",
-   "duration": "PT8M37S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "mz_mBYr6auA",
    "title": "This Young Man's Guide line is uncomfortable.",
    "published": "2026-11-24T00:00:36Z",
@@ -2165,16 +2185,6 @@
    "comments": 0
   },
   {
-   "id": "6VO8a_iBrsU",
-   "title": "Why does Young Man's Guide still matter?",
-   "published": "2026-11-23T00:00:27Z",
-   "duration": "PT7M3S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1
-  },
-  {
    "id": "cLvwNLRELbU",
    "title": "Why Work Sprints Increase Stress \ud83d\ude30",
    "published": "2026-11-22T19:55:41Z",
@@ -2183,16 +2193,6 @@
    "views": 0,
    "likes": 0,
    "comments": 0
-  },
-  {
-   "id": "TXgCTuFvgYA",
-   "title": "Why does Conduct of Life still matter?",
-   "published": "2026-11-22T00:00:30Z",
-   "duration": "PT6M56S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "XHMYjrKWahc",
