@@ -1,27 +1,27 @@
 {
  "short": {
   "do_more": [
-   "Focus on a single, well\u2011known psychological bias or principle (e.g., a \u2018trap\u2019, \u2018curve\u2019, or \u2018effect\u2019) and build the skit around it.",
-   "Start with a punchy hook that names the bias in a \u2018The X \u2026\u2019 format to signal the lesson instantly.",
-   "Keep the scenario relatable and universal (calls, emails, everyday decisions) rather than niche personal anecdotes.",
-   "Use concise storytelling that fits the 30\u201142\u202fs standard length, maximizing the first 5\u202fseconds for curiosity.",
-   "Add a clear visual metaphor that reinforces the bias (e.g., a literal trap, curve, or scale)."
+   "Keep runtime around 30\u201145 seconds \u2013 use micro (\u224830s) for simple jokes and standard (\u224842s) for deeper concepts",
+   "Open with a vivid, relatable scenario that shows the problem within the first 3\u20115 seconds",
+   "Title the video as a concise, curiosity\u2011driven phrase naming a specific bias or trap (e.g., \u201cThe Confidence Curve\u201d) and omit emojis",
+   "Use exaggerated visual comedy to illustrate the psychological idea, then deliver a punchy takeaway",
+   "Add a single, clear call\u2011to\u2011action (e.g., \u201cEver felt this? Comment below\u201d)"
   ],
   "avoid": [
-   "Overusing emojis or overly casual phrasing in titles.",
-   "Choosing overly specific or obscure situations that don\u2019t resonate broadly.",
-   "Long intros that delay the hook beyond the first few seconds.",
-   "Repeating the same hook pattern from rejected videos."
+   "Generic \u201cYour ___\u201d titles that rely on emojis or filler words",
+   "Repeating the same hook pattern across episodes (e.g., \u201cYour ___ Panic\u201d)",
+   "Long intros or slow builds that delay the joke beyond 5 seconds",
+   "Overly abstract titles that don\u2019t name a concrete concept"
   ],
-  "title_style": "Use a concise \u2018The\u202f[Psychology Term]\u202f[Trap/Curve/Effect]\u2019 headline that names the bias and hints at the dilemma.",
+  "title_style": "Use a concise, curiosity\u2011driven phrase that names a specific psychological bias or trap (e.g., \u201cThe Confidence Curve\u201d) without emojis or filler",
   "next_tests": [
-   "Create a \u2018The\u202f[Bias]\u202fTrap\u2019 short with a completely new everyday scenario (e.g., grocery checkout) and compare VPD.",
-   "Try a 30\u2011second \u2018tight\u2019 version of a high\u2011performing concept to see if shorter length boosts completion.",
-   "A/B test titles with and without emojis for the same script to measure click\u2011through impact."
+   "A/B test titles: \u201cThe ___ Trap\u201d vs. \u201cWhy ___ Happens\u201d for the same video",
+   "Compare micro (\u224830s) vs. standard (\u224842s) length on identical content to see which drives higher VPD",
+   "Insert a distinct visual gag in the first 3 seconds and measure its impact on average watch percent"
   ],
-  "n": 43,
-  "best_vpd": 13.05,
-  "best_title": "The Confidence Curve"
+  "n": 50,
+  "best_vpd": 10.92,
+  "best_title": "Your First Day Shakes \ud83d\ude2c"
  },
- "updated": "2026-11-19"
+ "updated": "2026-11-24"
 }

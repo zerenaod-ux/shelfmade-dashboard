@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-24",
  "styles": {
   "sm_candle": {
    "n": 3,
-   "vpd": 1.05,
-   "bias": 0.19
+   "vpd": 0.72,
+   "bias": 0.18
   },
   "sm_library": {
    "n": 1,
-   "vpd": 1.85,
+   "vpd": 1.28,
    "bias": 0.0
   },
   "dd_chill": {
    "n": 1,
-   "vpd": 0.17,
+   "vpd": 0.13,
    "bias": 0.0
   },
   "dd_sneak": {
    "n": 2,
-   "vpd": 0.08,
+   "vpd": 0.06,
    "bias": 0.0
   }
  }

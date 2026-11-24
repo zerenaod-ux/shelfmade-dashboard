@@ -1,39 +1,23 @@
 {
  "hot_themes": [
-  "Brain mechanics behind negative emotions and pain",
-  "Social cold reading and behavioral manipulation tricks",
-  "Personalized vulnerability and emotional fate",
-  "Dark psychological realities of human nature",
-  "Interactive optical illusions that alter perception"
+  "Neuroscience of daily habits and screen consumption",
+  "Categorization of relationships and personality types",
+  "Dark side vs. high-power traits of the mind",
+  "Cognitive biases behind negative emotions and pain",
+  "Birth order and social identity psychology"
  ],
  "hook_patterns": [
-  "Interactive command forcing real-time physical or visual participation",
-  "Curiosity gap highlighting an unexpected biological or mental counter-function",
-  "Hyper-specific categorization targeting personal identity or relational fear"
+  "Shocking biological mechanism ('[X] is literally changing your brain')",
+  "Relatable taxonomy ('3 types of [people/friends] everyone deals with')",
+  "Counter-intuitive self-validation ('Rare signs of a powerful mind')"
  ],
  "ideas_for_us": [
-  {
-   "title": "Why Your Brain Remembers Insults Better Than Compliments",
-   "public_domain_source": "The Principles of Psychology by William James (1890)",
-   "hook_angle": "Interactive test showing how quickly negative stimuli trigger memory retention compared to positive stimuli."
-  },
-  {
-   "title": "3 Psychological Signs Someone Is Secretly Reading Your Mind",
-   "public_domain_source": "Mental Suggestion by Ochorowicz (1891)",
-   "hook_angle": "Analyzing classic observation tactics used to decode subconscious body language cues."
-  },
-  {
-   "title": "The Brutal Truth About Why Fake Friends Target You",
-   "public_domain_source": "The Crowd: A Study of the Popular Mind by Gustave Le Bon (1895)",
-   "hook_angle": "Breaking down the dark psychology of social mimicry and group dynamic leverage."
-  },
-  {
-   "title": "Stare at This Image to Re-wire Your Focus Mechanism",
-   "public_domain_source": "Studies in Gestalt Psychology / Early Perception Texts (1912)",
-   "hook_angle": "An optical focus exercise that visually demonstrates cognitive fatigue and sensory adaptation."
-  }
+  "The 1920s Psychology Behind Why Your Brain Remembers Negative Gossip (The Zeigarnik Effect)",
+  "3 Classic Signs of a 'Superior Intellect' According to 19th-Century Psychology Books",
+  "How Modern Screens Are Tricking Your Primitive Brain (Based on Early Habit Formation Theories)",
+  "Why Being the Eldest Child Changes Your Trait Development (Adler's Birth Order Theory)"
  ],
- "updated": "2026-11-19",
- "sample": 57,
- "top_vpd": 1240761
+ "updated": "2026-11-24",
+ "sample": 55,
+ "top_vpd": 916370
 }

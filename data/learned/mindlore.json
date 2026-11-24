@@ -1,43 +1,44 @@
 {
  "short": {
   "do_more": [
-   "Open titles and first lines with direct, physical second-person assertions ('Your Face...', 'Your Kids...', 'Your Brain...') instead of abstract questions.",
-   "Focus on visceral, observable physiological reactions (shock, facial freezing, laughter, eye blinks) rather than internal philosophical pondering.",
-   "Frame psychological concepts around ancient survival mechanisms, evolution, and primal brain wiring.",
-   "Keep pacing punchy and under 35 seconds to maximize loop potential, as top-retention performers thrive when viewers can finish easily."
+   "Focus on physical, instinctual facial reactions and involuntary bodily shifts (e.g., 'Face Freezes', 'Face Reacts', 'Kids Expect Shock').",
+   "Use direct, second-person personal hooks that force immediate self-identification ('Your Face...', 'Your Kids...', 'Your Brain...').",
+   "Keep short-form video length tight (around 30 seconds) to maintain high average percentage viewed and trigger re-watches.",
+   "Frame public domain book concepts as real-time physiological or emotional phenomena rather than historical citations."
   ],
   "avoid": [
-   "Avoid weak yes/no inquiry titles starting with 'Can your...', 'Does your...', or 'Do you...'.",
-   "Avoid academic book titles, citation subtitles ('Reading 5', '1890 blueprint'), and dry book reviews without personal stakes.",
-   "Avoid intellectual, abstract themes like ego survival, subconscious theory, and historical eugenics."
+   "Avoid dry, academic book titles or reading citations as hooks (e.g., 'The Analysis of Mind', 'Did Munsterberg predict this?').",
+   "Avoid abstract, open-ended existential questions that feel like homework (e.g., 'Can the mind be measured?', 'Does class shape your consciousness?').",
+   "Avoid vague or broad productivity/money tropes that lack an visceral physiological angle."
   ],
-  "title_style": "Short, punchy 3-to-5 word declarative statements starting with 'Your [Body Part / Emotion]' tied to an intense physical or evolutionary reaction.",
+  "title_style": "High-performing titles use visceral, second-person action statements ('Your [Body Part/Emotion] [Action]') that trigger immediate curiosity about immediate physical reactions.",
   "next_tests": [
-   "A/B test declarative physical hooks ('Your Pupils Dilate When Lying') against question hooks ('Do your eyes give you away?') on the exact same 30s script.",
-   "Test high-urgency parenting and developmental psychology hooks ('Your Toddler Expects Danger') based on the standout success of 'Your Kids Expect Shock'."
+   "Test a 30-second 'Tight' format script comparing a raw instinctual reaction vs. a historical book citation to directly measure retention drop-off.",
+   "Test framing micro-expressions using the winning 'Your [Body Part] [Action]' title formula applied to public domain Darwin concepts."
   ],
-  "n": 111,
-  "best_vpd": 197.41,
+  "n": 123,
+  "best_vpd": 109.8,
   "best_title": "Your Kids Expect Shock"
  },
  "full": {
   "do_more": [
-   "Anchor titles to relatable visceral experiences like dreams, facial expressions, or daily personal struggles rather than abstract academic concepts.",
-   "Include recognizable household author names like Sigmund Freud or Charles Darwin directly in the title to leverage built-in search intent and curiosity.",
-   "Frame opening hooks around an immediate, mysterious physical or emotional sensation that the viewer personally experiences."
+   "Anchor titles to universally relatable bodily sensations or visceral subconscious phenomena (falling dreams, daily habits, facial expressions) rather than abstract cognitive theory.",
+   "Prominently feature universally recognizable public-domain authors (e.g., '| Sigmund Freud', '| William James') in the title to provide instant authority and search pull.",
+   "Deliver immediate, sensory-driven opening hooks that describe a vivid internal experience instead of generic rhetorical questions."
   ],
   "avoid": [
-   "Dry academic textbook titles like 'Reading 1' or generic lecture style titles like 'What does psychoanalysis say about your mind?'",
-   "Abstract sociological questions about group opinions or social change that lack direct personal stakes for the individual viewer."
+   "Abstract textbook titles, academic section headers, and numbered chapter formats (e.g., 'How We Think \u00b7 Reading 1').",
+   "Lukewarm intellectual queries about social dynamics or attention mechanisms (e.g., 'Why does attention choose focus?', 'Why does your mind amplify group opinions?').",
+   "Weak opening lines that start with passive conversational filler like 'You notice your opinions shift... but why does that happen?'"
   ],
-  "title_style": "High-performing titles frame a highly personal, direct question about the viewer's body or subconscious mind paired with an iconic public-domain author.",
+  "title_style": "Frame high-curiosity questions around universally experienced physical or subconscious phenomena paired directly with a heavyweight thinker (e.g., 'Why do you dream about falling? | Sigmund Freud').",
   "next_tests": [
-   "Test a visceral self-analysis title using Sigmund Freud focusing on hidden slips, secret motives, or guilt.",
-   "Test an evolution-based self-preservation question attached to Charles Darwin focusing on fear or flight responses."
+   "Test visceral subconscious concepts anchored to Freud or Jung (e.g., 'Why do you sabotage your own success? | Sigmund Freud').",
+   "Test a dramatic psychological paradox anchored to William James with an abrupt first-sentence hook that skips introductory framing entirely."
   ],
-  "n": 33,
-  "best_vpd": 9.37,
+  "n": 30,
+  "best_vpd": 6.61,
   "best_title": "Why do you dream about falling? | Sigmund Freud"
  },
- "updated": "2026-11-19"
+ "updated": "2026-11-24"
 }

@@ -1,45 +1,51 @@
 {
  "short": {
   "do_more": [
-   "Target personal ego, contrarian interpretations, and direct warnings (e.g., 'You were taught X wrong', '[Author] would hate how you live').",
-   "Focus on high-leverage, dark, or power-focused philosophy topics like Tao Te Ching, Art of War, Schopenhauer, and Machiavelli.",
-   "Address the viewer directly using second-person framing ('you', 'your mind', 'your life') to create immediate personal stakes.",
-   "Keep pacing brisk and focused on a single punchy takeaway to protect average percent viewed (APV)."
+   "Start with a bold personal hook using \"you\" and a famous name (e.g., \"You were taught Tao Te Ching wrong\"),",
+   "Present a surprising warning or contrast that the author would dislike about the viewer's life,",
+   "Keep the video tight (~30\u202fs) and deliver 1\u20112 concrete takeaways,",
+   "Use strong visual cues (text overlay of the author\u2019s name) within the first 3\u202fseconds,",
+   "End with a clear call\u2011to\u2011action that invites sharing or commenting"
   ],
   "avoid": [
-   "Abstract rhetorical questions that sound like academic philosophy exams (e.g., 'What is justice?', 'Is suffering optional?').",
-   "Generic summary packaging like '...in 60 seconds' and emoji-heavy book-report titles.",
-   "Unedited, archaic, long-winded quote fragments as titles (e.g., 'For in those things that properly belong...')."
+   "Vague titles without a named authority or personal angle,",
+   "Long, descriptive titles that lack a hook,",
+   "Neutral or purely informational tone without a challenge or surprise,",
+   "Running time much longer than 45\u202fseconds"
   ],
-  "title_style": "High-velocity titles use aggressive, second-person counter-intuitive hooks ('You were taught X wrong', '[Author] had a warning for you') rather than open-ended academic questions.",
+  "title_style": "Hook the viewer with a direct \"you\" challenge and a famous author\u2019s name, then add a surprising warning or secret (e.g., \"You\u2019re living the way Machiavelli would hate\"),",
   "next_tests": [
-   "A/B test a 30s tight format vs. a 45s standard format using the exact same aggressive confrontation hook template: '[Philosopher] would despise your daily routine'.",
-   "Test controversial power/war lessons from 'The Art of War' or 'The Prince' framed around modern corporate or social survival.",
-   "Test a loop-hook format where the final sentence seamlessly resolves into the counter-intuitive title statement to push retention above 70%."
+   "Compare 30\u2011second vs 45\u2011second runtimes to see impact on avg% watch,",
+   "A/B test titles that start with a question vs a bold statement,",
+   "Add a single eye\u2011catching emoji at the front of the title and track VPD"
   ],
   "n": 136,
-  "best_vpd": 18.43,
-  "best_title": "You were taught Tao Te Ching wrong."
+  "best_vpd": 10.24,
+  "best_title": "Studies In Pessimism"
  },
  "full": {
   "do_more": [
-   "Anchor titles to recognizable historical figures or classic texts (e.g., Franklin, The Prince) rather than generic concepts.",
-   "Frame titles around controversy, warnings, or common misconceptions (e.g., 'had a warning', 'gets wrong').",
-   "Open long-form videos with immediate utility or a direct challenge to the viewer's memory or habits."
+   "Start titles with a clear, curiosity\u2011sparking question.",
+   "Mention the author or source in the title to add credibility.",
+   "Keep video length around 3\u20134 minutes; avoid dragging beyond 5.",
+   "Focus on a single strong emotional hook (e.g., curiosity, challenge).",
+   "Add a concise CTA at the end to encourage shares."
   ],
   "avoid": [
-   "Generic self-help platitudes and cliched rhetorical questions (e.g., 'Put effort into practice', 'create your reality').",
-   "Abstract, textbook-style theme explorations like 'What is Ambition and Success really about?'",
-   "Passive declarative statements that lack tension, urgency, or stakes."
+   "Avoid generic or vague titles that don't pose a question.",
+   "Don't use overly long titles or too many emojis that clutter.",
+   "Steer clear of repeating content; keep angles fresh.",
+   "Do not let the video run too long; watch for drop\u2011off."
   ],
-  "title_style": "Winning titles generate high friction by using specific names paired with conflict, contrarian claims, or explicit warnings directed at the viewer.",
+  "title_style": "Use a provocative question followed by the author\u2019s name to instantly signal value and curiosity.",
   "next_tests": [
-   "Test a strong 'misconception' hook format for Marcus Aurelius or Seneca (e.g., 'Why Stoicism is ruining your focus').",
-   "Test contrasting historical rivals in the title/thumbnail to introduce dramatic tension into long-form summaries."
+   "Try titles that start with a bold claim (e.g., \u2018This one trick will change your life\u2019).",
+   "Experiment with a 3\u2011minute format versus a 5\u2011minute format to see drop\u2011off rates.",
+   "Add a single emoji to the title to test engagement impact."
   ],
-  "n": 27,
-  "best_vpd": 0.63,
-  "best_title": "Franklin had a warning for you."
+  "n": 36,
+  "best_vpd": 0.55,
+  "best_title": "Is Your Suffering Actually Good for You? | Samuel Smiles"
  },
- "updated": "2026-11-19"
+ "updated": "2026-11-24"
 }

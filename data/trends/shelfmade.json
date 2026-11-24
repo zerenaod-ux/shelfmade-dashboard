@@ -1,35 +1,39 @@
 {
  "hot_themes": [
-  "Archetype Emulation ('Be Like')",
-  "Existential Comparative Debates (Kafka vs Dostoevsky)",
-  "Raw Emotional Vulnerability & Betrayal",
-  "Uncomfortable Truths & Moral Hardships",
-  "Inner Peace Through Stoic Discipline"
+  "Unconventional edge & subverting advice ('BE DISRESPECTFUL')",
+  "Author vs Author contrasts (e.g., Kafka vs Dostoevsky)",
+  "Stoic resilience & harsh life truths",
+  "One-sided effort and romantic disillusionment",
+  "Finding hidden depth 'between the lines'"
  ],
  "hook_patterns": [
-  "Imperative Character Blueprint ('BE LIKE [X]')",
-  "High-Contrast Philosophical Rivalry ('[Author A] vs [Author B]: [Duality Quote]')",
-  "Provocative Moral Confrontation ('People refuse to let this truth sink in')"
+  "Imperative contrarian command ('BE LIKE X' or 'BE DISRESPECTFUL')",
+  "Dichotomy vs clash ('[Author A] vs [Author B]: [Key Conflict]')",
+  "Direct blunt declaration of painful reality ('One Sided Effort Always Ends in Zero')"
  ],
  "ideas_for_us": [
   {
-   "title": "BE LIKE SHERLOCK HOLMES: Master Cold Detachment | Arthur Conan Doyle",
-   "angle": "Using public domain Holmes quotes to teach emotional discipline and hyper-observation over reactive passion."
+   "title_concept": "BE UNFORGIVING\u2026 like Count of Monte Cristo",
+   "author_source": "Alexandre Dumas (The Count of Monte Cristo)",
+   "angle": "Why patience in revenge is the ultimate form of self-discipline, twisting conventional motivational advice."
   },
   {
-   "title": "Oscar Wilde vs Friedrich Nietzsche: Is Morality Just a Mask?",
-   "angle": "A dramatic clash comparing Wilde's witty cynicism on human hypocrisy with Nietzsche's view on moral constructs."
+   "title_concept": "Dostoevsky vs Nietzsche: Can Suffering Actually Save You?",
+   "author_source": "Fyodor Dostoevsky & Friedrich Nietzsche",
+   "angle": "A high-drama contrast exploring whether pain is a path to redemption or power."
   },
   {
-   "title": "The Truth About Human Nature That Most Ignore | Victor Hugo",
-   "angle": "Framing dark, insightful quotes from Les Mis\u00e9rables around the theme of betrayal, social judgment, and redemption."
+   "title_concept": "Unrequited Love is a Slow Suicide",
+   "author_source": "Johann Wolfgang von Goethe (The Sorrows of Young Werther)",
+   "angle": "Emotional, relatable heart-break advice leveraging classic literature about one-sided emotional effort."
   },
   {
-   "title": "BE LIKE THE COUNT OF MONTE CRISTO: The Art of Patient Strength",
-   "angle": "Leveraging Dumas's iconic protagonist to deliver a high-energy motivational lesson on silence, focus, and long-term triumph."
+   "title_concept": "A Wise Man Never Explains Himself | Sun Tzu",
+   "author_source": "Sun Tzu (The Art of War)",
+   "angle": "Stoic and strategic wisdom about silence, power dynamics, and protecting your energy."
   }
  ],
- "updated": "2026-11-19",
- "sample": 56,
- "top_vpd": 158852
+ "updated": "2026-11-24",
+ "sample": 59,
+ "top_vpd": 202524
 }
