@@ -6403,5 +6403,472 @@
   "style": "v2",
   "format": "CONFESSION",
   "improv": true
+ },
+ {
+  "id": "your-hoodie-breakup-rating",
+  "title": "The Hoodie Breakup Rating",
+  "concept": "Rating the dramatic emotional attachment to ruined old clothes.",
+  "insight": "We overvalue worthless possessions simply because they hold memories.",
+  "caption": "Rating Leo's dramatic hoodie breakup! #shorts",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Mia and Leo sit angled at a podcast desk. Mia points excitedly at a torn cloth near a coffee mug with a smirking expression.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Rating tragic breakups: item one, your old hoodie!",
+      "listener_feel": "excited"
+     },
+     {
+      "who": "leo",
+      "feel": "passionate",
+      "beat": "quick",
+      "text": "Ten out of ten! That legendary sweater was soft, faithful, and super warm!",
+      "listener_feel": "skeptical"
+     }
+    ]
+   },
+   {
+    "scene": "Leo holds a shredded grey sleeve near a digital clock showing a time on the podcast desk while Mia raises an eyebrow.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Minus fifty out of ten! It had twenty holes and smelled like cold soup!",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "Okay but hear me out, those holes provided essential cooling airflow!",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Both sit angled at the podcast desk. Leo gestures dramatically about walking near the desk with pouting eyes while Mia watches with a grin.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "snap",
+      "text": "You literally wept while walking to throw it into the dumpster!",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "leo",
+      "feel": "indignant",
+      "beat": "quick",
+      "text": "I was walking in deep grief! That hoodie deserved a grand royal funeral!",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Mia writes on her notepad at the podcast desk as Leo holds his sleeve with worried eyes.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "triumphant",
+      "beat": "quick",
+      "text": "Zero out of ten drama! My official Told You So Scoreboard now reaches one hundred thirty!",
+      "listener_feel": "surprised"
+     },
+     {
+      "who": "leo",
+      "feel": "earnest",
+      "beat": "quick",
+      "text": "Wait, I saved one fuzzy sleeve to use as a tiny emotional pillow!",
+      "listener_feel": "skeptical"
+     }
+    ]
+   },
+   {
+    "scene": "Leo hugs the fabric sleeve like a soft pillow at the podcast desk with wide eyes. Mia glares with a raised eyebrow.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "beat": "quick",
+      "text": "Anyway. You promised to bin the sleeve in just one more minute, right?",
+      "listener_feel": "warm"
+     },
+     {
+      "who": "leo",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "It's a sweet, cozy souvenir representing our wonderful ten-year best friend bond!",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Both sit at the cozy podcast desk. Leo accidentally bumps into a cup of tea, spilling it across the desk as Mia smirks.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "snap",
+      "text": "Your sweet souvenir just knocked over my cup of tea.",
+      "listener_feel": "neutral"
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 9,
+   "hook": 9,
+   "spoken": 9,
+   "relatable": 9,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It features sharp comedic timing, a brilliant escalation of petty drama, and a hilarious punchline.",
+   "scores": {
+    "i": 0,
+    "funny": 9,
+    "hook": 9,
+    "spoken": 9,
+    "relatable": 9,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "idea": "",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": false
+ },
+ {
+  "id": "fundamental-attribution-error-drive",
+  "title": "POV Your friend blames everyone else on the road",
+  "concept": "Leo judges a slow driver harshly but makes endless excuses for his own terrible mistakes.",
+  "insight": "We judge others by their character, but ourselves by our circumstances.",
+  "caption": "Tag a friend who always does this!",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at the podcast desk; Leo slams a coffee mug down, rolling his eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Look at this snail in front of us!"
+     },
+     {
+      "who": "mia",
+      "listener_feel": "curious",
+      "beat": "quick",
+      "text": "Maybe they're just being careful, Leo."
+     },
+     {
+      "who": "leo",
+      "feel": "skeptical",
+      "beat": "snap",
+      "text": "No, they're just completely clueless and shouldn't even have a license!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia takes a slow sip of tea while watching Leo wave his hands angrily.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Weren't you the one who drove the wrong way down Main Street yesterday for two hours?"
+     },
+     {
+      "who": "leo",
+      "feel": "concerned",
+      "beat": "pause",
+      "text": "That was totally different, okay?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans forward defensively, resting his chin in his hand.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "skeptical",
+      "beat": "quick",
+      "text": "My GPS literally died, road construction blocked every single turn, and the sun was blinding me."
+     },
+     {
+      "who": "mia",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "Right, so your massive mistakes are just cruel fate."
+     },
+     {
+      "who": "leo",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Exactly! I had completely valid reasons for my detour."
+     }
+    ]
+   },
+   {
+    "scene": "Mia points a finger across the desk with a knowing smirk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "And that driver's reason is just being a terrible person?"
+     },
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Obviously! They clearly lack all basic road skills and common sense."
+     }
+    ]
+   },
+   {
+    "scene": "Leo checks his watch impatiently while tapping his fingers on the desk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "concerned",
+      "beat": "quick",
+      "text": "Even Gerald my houseplant is driving better than them today."
+     },
+     {
+      "who": "mia",
+      "listener_feel": "skeptical",
+      "beat": "pause",
+      "text": "Gerald dried up and died last week, Leo."
+     }
+    ]
+   },
+   {
+    "scene": "Mia looks straight at Leo, delivering the final deadpan verdict.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "surprised",
+      "beat": "snap",
+      "text": "Wait, what happened to my plant?"
+     },
+     {
+      "who": "mia",
+      "listener_feel": "warm",
+      "beat": "snap",
+      "text": "Scoreboard is one hundred thirty two. You always blame everyone else."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 9,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It has sharp comedic timing, a great deadpan roast about the dead houseplant, and a strong relatable dynamic.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 9,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "idea",
+  "idea": "fundamental attribution error",
+  "style": "v2",
+  "format": "CALLBACK",
+  "improv": false
+ },
+ {
+  "id": "the-cereal-first-milk-trial",
+  "title": "The Cereal Milk First Trial",
+  "concept": "Mia judges Leo for his cereal eating habits during a mock court trial.",
+  "insight": "Even best friends cannot agree on the basic physics of breakfast preparation.",
+  "caption": "Is it milk first or cereal first? The trial is in session.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits at the desk, nervously holding a giant, empty cereal bowl. Mia points a wooden spoon like a gavel at him.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "Order! Leo, explain this bowl of plain milk."
+     },
+     {
+      "who": "leo",
+      "feel": "skeptical",
+      "beat": "quick",
+      "text": "It is just milk, Mia. Stop being so dramatic."
+     }
+    ]
+   },
+   {
+    "scene": "Leo reaches for a cereal box, shaking it over the bowl of milk while Mia covers her face with her hands in mock horror.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "concerned",
+      "beat": "snap",
+      "text": "You put the milk in before the cereal? You monster."
+     },
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "quick",
+      "text": "It stops the crunch from dying too fast, okay? It is science."
+     }
+    ]
+   },
+   {
+    "scene": "A digital clock on the desk glows bright red. Leo leans back, looking defensive while Mia stares him down.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "beat": "pause",
+      "text": "That is the most chaotic thing I have ever heard in my life."
+     },
+     {
+      "who": "leo",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Okay but hear me out, the texture stays perfectly crispy for way longer!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia pulls a small notebook from under the desk and starts writing with a heavy pen, while Leo looks on.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "That is one massive point on your record, sir."
+     },
+     {
+      "who": "leo",
+      "feel": "concerned",
+      "beat": "quick",
+      "text": "Wait, don't write that down. What is my total score now?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo looks at a coffee mug on the desk. Mia suddenly taps her chin, holding up her fingers to calculate.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "One hundred thirty-four! You are losing so badly, it is honestly impressive."
+     },
+     {
+      "who": "leo",
+      "feel": "skeptical",
+      "beat": "quick",
+      "text": "Anyway, can I just eat my soggy breakfast in peace now?"
+     }
+    ]
+   },
+   {
+    "scene": "Leo takes a spoonful of cereal. Mia smiles and points at the bowl, finally signaling the end of the argument.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "snap",
+      "text": "Fine, but you are officially banned from ever hosting breakfast again."
+     },
+     {
+      "who": "leo",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Next time: we are testing how you butter toast."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 7,
+   "hook": 8,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 8,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It features a strong, immediately engaging opening and snappy banter about a relatable debate.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 8,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "idea": "",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": false
  }
 ]
