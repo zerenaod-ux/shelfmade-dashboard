@@ -10,6 +10,19 @@ THEMES = ['working hours and rest', 'sleep', 'attention and distraction', 'memor
           'crowds and strangers', 'a deadline and the knot in your stomach', 'why your heart pounds before you speak', 'why your hands sweat when you are nervous', 'why a song gives you chills', 'why you cannot fall asleep when you are tired', 'why bad news makes your chest tight', 'why you blush when someone looks at you', 'why waiting makes your skin crawl', 'why you yawn when others yawn', 'why you get hungry when you are stressed', 'time in nature', 'laughter and play', 'anger', 'curiosity', 'gratitude', 'multitasking', 'social media comparison', 'decision fatigue', 'creativity', 'dreams', 'community and belonging',
           'storytelling', 'morning light and body clock', 'silence and noise', 'learning a language', 'walking and thinking', 'money and happiness', 'touch and hugs', 'smiling and mood', 'procrastination',
           'first impressions', 'jealousy', 'trust', 'kindness', 'nostalgia', 'risk and thrill', 'sharing food', 'handwriting vs typing']
+
+MORE_THEMES = ['why you replay embarrassing moments at night', 'why a smell can throw you back ten years', 'why you forget why you walked into a room', 'why you check your phone with no notification', 'why cold water wakes you up', 'why you talk to yourself', 'why you laugh at funerals', 'why a stranger smile feels good', 'why you get goosebumps from music', 'why the last bite tastes best', 'why you cannot tickle yourself', 'why time flies when you are busy', 'why you feel watched when alone', 'why your name catches your ear in a noisy room', 'why you crave sugar when tired', 'why you wake up just before the alarm', 'why you hold your breath when concentrating', 'why bad memories feel louder than good ones', 'why a messy desk changes your thinking', 'why you say yes when you want to say no', 'why queues feel longer than they are', 'why red makes you hungry', 'why you feel déjà vu', 'why you get a second wind', 'why your mind wanders in the shower', 'why you hate the sound of your own voice', 'why lists feel good to finish', 'why you see faces in clouds', 'why sad songs feel good', 'why you eat more with friends', 'why a deadline makes you suddenly productive', 'why you remember where you were on a big day', 'why you feel braver in a group', 'why you crave a nap at 3 pm', 'why you rewatch the same show', 'why a free sample makes you buy', 'why you cannot ignore a ringing phone', 'why gifts feel better to give', 'why you get stuck on a song', 'why you blame the weather for your mood', 'why you doubt yourself after a compliment', 'why you feel lighter after a good cry', 'why you walk faster when you are worried', 'why you open the fridge and stare', 'why you avoid the thing you love to do', 'why a pet calms you down', 'why you fidget when you are bored', 'why you remember insults for years', 'why a clean room clears your head', 'why you copy the people near you', 'why you feel sleepy after a big meal', 'why your first idea is rarely your best', 'why you feel guilty over small things', 'why you hum without noticing', 'why you pick the middle option', 'why you trust a confident voice', 'why you feel dizzy when you stand up fast', 'why you can read a mood from a face in a blink', 'why you get hiccups', 'why rain makes you sleepy', 'why you picture the worst before good news']
+THEMES += MORE_THEMES
+_WIN = {'on': False}
+_STOP = set('why your you the and that this with from when what have does about into they them their there then than make makes feel feels'.split())
+def _main_words(t): return set(w for w in re.findall(r'[a-z]{4,}', str(t).lower()) if w not in _STOP)
+def _blocked(theme, h):
+    # owner 2026-11-23: block any topic whose main words match the last 10 videos
+    mw = _main_words(theme)
+    if not mw: return False
+    for i in h['items'][-10:]:
+        if mw & (_main_words(i.get('theme', '')) | _main_words(i.get('title', ''))): return True
+    return False
 def load(p, d):
     try: return json.loads(Path(p).read_text())
     except Exception: return d
@@ -18,16 +31,21 @@ def pick_theme(h):
     used = [i.get('theme') for i in h['items'][-30:]]
     try:   # G4: a cloned winner idea goes first (MindLore)
         wf = B / ('data/winner-ideas-%s.json' % BRAND); q = load(wf, [])
-        if q and not SM: t0 = q.pop(0); wf.write_text(json.dumps(q, indent=1)); print('winner idea theme:', t0, flush=True); return t0
+        # owner 2026-11-23: a copied winner idea is used at most once in every 20 videos, and never if it matches the last 10 videos
+        if q and not SM and not any(i.get('winner') for i in h['items'][-20:]):
+            for k, t0 in enumerate(q):
+                if not _blocked(t0, h):
+                    q.pop(k); wf.write_text(json.dumps(q, indent=1)); _WIN['on'] = True; print('winner idea theme:', t0, flush=True); return t0
     except Exception: pass
     if SM:   # ShelfMade: "a classic book vs today"
         if len(h['items']) >= 1 and h['items'][-1].get('theme') and h['items'][-1].get('part', 1) < 3 and h['items'][-1].get('date', '') >= (datetime.date.today() - datetime.timedelta(days=3)).isoformat():
             return h['items'][-1]['theme']   # SERIES (owner OK 2026-11-11): the same book for 3 Shorts in a row, "Part 1/2/3"
         books = load(B / 'books.json', []); cand = [b for b in books if ('%s by %s' % (b['title'], b['author'])) not in used] or books
         b = random.choice(cand); return '%s by %s' % (b['title'], b['author'])
-    cand = [t for t in THEMES if t not in used] or THEMES
-    w = load(B / ('data/story-learn-%s.json' % BRAND), {}).get('theme') or {}   # learned from real views (story_learn.py); 30% exploration
-    if w and random.random() > .3:
+    used = [i.get('theme') for i in h['items'][-60:]]
+    cand = [t for t in THEMES if t not in used and not _blocked(t, h)] or [t for t in THEMES if t not in used] or THEMES
+    w = load(B / ('data/story-learn-%s.json' % BRAND), {}).get('theme') or {}   # learned from real views (story_learn.py); mostly exploration now (owner 2026-11-23: always new ideas)
+    if w and random.random() > .75:
         best = sorted(cand, key=lambda t: -float(w.get(t, 0)))
         if w.get(best[0]): return best[0]
     return random.choice(cand)
@@ -87,7 +105,7 @@ def one(llm_call):
     out = {'book_id': sid, 'title': bk[0], 'author': bk[-1] if SM else '', 'brand': BRAND, 'story_short': True, 'public_title': str(d.get('public_title') or d['hook'])[:95], 'hook': d['hook'], 'thumbnail_headline': str(d.get('thumb', ''))[:40].upper(),
            'sections': d['sections'], 'claims': d.get('claims', []), 'source_url': '', 'theme': theme, 'exp': exp}
     OUT.mkdir(parents=True, exist_ok=True); (OUT / (sid + '.json')).write_text(json.dumps(out, indent=1, ensure_ascii=False))
-    h['items'].append({'id': sid, 'title': out['public_title'], 'theme': theme, 'part': part, 'exp': exp, 'date': datetime.date.today().isoformat()}); h['items'] = h['items'][-200:]
+    h['items'].append({'id': sid, 'title': out['public_title'], 'theme': theme, 'part': part, 'exp': exp, 'winner': bool(_WIN['on']), 'date': datetime.date.today().isoformat()}); h['items'] = h['items'][-200:]
     HIST.parent.mkdir(parents=True, exist_ok=True); HIST.write_text(json.dumps(h, indent=1))
     print('story_short: wrote', sid, '-', out['public_title'], flush=True)
     return sid
