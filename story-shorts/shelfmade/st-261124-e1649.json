@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261124-e1649",
+ "title": "Politics",
+ "author": "Aristotle",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Your Guilt Shapes Politics Part 2 🤔",
+ "hook": "You vote based on your gut feeling.",
+ "thumbnail_headline": "GUILT IS DATA",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You vote based on your gut feeling. Aristotle warned that anger makes us blind. In 2011, researchers tested about 200 voters. They found emotion overrides logic. The result? Your brain uses fear to pick sides. That is not a flaw. It is a survival tool. So why do we assume reason wins? It does not. So next time you vote based on your gut feeling, remember the danger."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Emotional states, particularly fear and anger, significantly override rational logical processing during political decision making.",
+   "who": "Keith Bailey and colleagues",
+   "year": "2011",
+   "place": "USA"
+  },
+  {
+   "claim": "Anger reduces the ability to process complex political arguments accurately.",
+   "who": "Political Psychology Researchers",
+   "year": "2011",
+   "place": "USA"
+  }
+ ],
+ "source_url": "",
+ "theme": "Politics by Aristotle",
+ "exp": "s30"
+}
