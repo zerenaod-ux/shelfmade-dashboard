@@ -3,7 +3,7 @@ name: shelfmade-whiteboard
 # Replaces shelfmade-story-short and full-video. Each video goes to a GitHub Release (tag shorts-wb-* / full-wb-*) and then the normal review-publish flow.
 on:
   schedule:
-    - cron: '10 12 * * *'   # 7:10 AM Chicago (CST)
+    - cron: '10 13 * * *'   # 7:10 AM Chicago in winter (CST = UTC-6). Fixed 2026-11-24: was 12:10 UTC (6:10 AM). Change to '10 12' when daylight saving starts in March.
   workflow_dispatch:
     inputs:
       only:

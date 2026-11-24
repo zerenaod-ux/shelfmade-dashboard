@@ -43,10 +43,10 @@ def _pcm(mp3):
 
 def _say(text, voice, pr):
     last = None
-    for a in range(4):
+    for a in range(7):   # 2026-11-24: Microsoft's free voice sometimes answers 'No audio' for minutes; wait longer before giving up
         try: return asyncio.run(_one(text, voice, *pr))
         except Exception as e:
-            last = e; import time; time.sleep(2 + 3 * a)
+            last = e; import time; time.sleep(3 + 8 * a)
     raise RuntimeError('voice failed: ' + str(last)[:200])
 
 
