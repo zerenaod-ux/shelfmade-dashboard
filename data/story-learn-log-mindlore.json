@@ -2108,6 +2108,75 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261124-3104c",
+   "look": "live-demo",
+   "title": "Why Your Brain Keeps Slashing Deadlines \ud83e\udde0",
+   "theme": "habits",
+   "acts": [
+    "chart",
+    "flow",
+    "headline",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "timeline",
+    "versus",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261124-86675",
+   "look": "live-demo",
+   "title": "Why Extra Cash Burns out Brains \ud83d\udcb8",
+   "theme": "money and happiness",
+   "acts": [
+    "brain",
+    "chat",
+    "checklist",
+    "counter",
+    "icon_burst",
+    "meter",
+    "reaction",
+    "scale",
+    "timeline",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261124-88e79",
+   "look": "live-demo",
+   "title": "Why Your Hands Shake On Deadlines \u23f3",
+   "theme": "How Cognitive Biases Shape Everyday Decisions",
+   "acts": [
+    "clock",
+    "crowd",
+    "flow",
+    "headline",
+    "meter",
+    "notif",
+    "quote",
+    "reaction",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

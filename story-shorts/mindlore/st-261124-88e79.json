@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261124-88e79",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Hands Shake On Deadlines ⏳",
+ "hook": "You check your inbox every five minutes when a tight deadline approaches.",
+ "thumbnail_headline": "HAND SHAKE SECRETS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You check your inbox every five minutes when a tight deadline approaches. That restless habit is actually your brain misinterpreting stress as physical danger. In 1998, psychologist Daniel Kahneman measured about 80 percent of people making irrational choices under time pressure. The result? Your brain abandons logic and hyper-focuses on instant relief. Similar experiments across Europe showed the exact same panic response in corporate teams. Psychologists call this cognitive bias the scarcity mindset. So why do we assume we are just bad at managing stress? Because our ancestors evolved to prioritize immediate survival threats over long-term goals. When time feels scarce, your brain treats a work email like a predator in the bushes. Does this instinct still control your workday today? Absolutely. That's it. Your nervous system is trying to protect you, not sabotage your productivity. So next time you feel that frantic rush, remember that you check your inbox every five minutes."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "About 80 percent of people make irrational choices when operating under strict time pressure.",
+   "who": "Daniel Kahneman",
+   "year": "1998",
+   "place": "Princeton University"
+  },
+  {
+   "claim": "Scarcity mindset causes individuals across corporate environments to prioritize short-term relief over long-term logic.",
+   "who": "Behavioral economics researchers",
+   "year": "2013",
+   "place": "Europe"
+  }
+ ],
+ "source_url": "",
+ "theme": "How Cognitive Biases Shape Everyday Decisions",
+ "exp": ""
+}

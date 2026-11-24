@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261124-3104c",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Brain Keeps Slashing Deadlines 🧠",
+ "hook": "You struggle to stick to your self imposed deadlines.",
+ "thumbnail_headline": "WHY DEADLINES FAIL",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You struggle to stick to your self imposed deadlines. That frustrating delay is actually a built in cognitive bias. In 1979, psychologist Daniel Kahneman and Amos Tversky found that about 80 percent of people underestimate task time. Researchers call this the planning fallacy. It is not just an individual failure. In 1994, Roger Buehler tested university students in Canada. Even when guessing their absolute worst case scenarios, only about 45 percent finished on time. So why do we assume we will be faster next time? Your brain naturally visualizes the smoothest possible path. It ignores unexpected interruptions before they even happen. Throughout history, massive projects suffered the same trap. For instance, the Sydney Opera House was planned in 1957 to take four years. It actually took 16 years and cost over 1400 percent more than the original budget. That is it. The result? Your mind naturally expects ideal conditions every single time. So next time you plan a project, remember you struggle to stick to your self imposed deadlines."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "About 80 percent of people consistently underestimate how long a task will take due to the planning fallacy.",
+   "who": "Daniel Kahneman and Amos Tversky",
+   "year": "1979",
+   "place": "Stanford University"
+  },
+  {
+   "claim": "Only about 45 percent of students completed their academic tasks within their predicted worst-case timelines.",
+   "who": "Roger Buehler",
+   "year": "1994",
+   "place": "Simon Fraser University, Canada"
+  }
+ ],
+ "source_url": "",
+ "theme": "habits",
+ "exp": ""
+}

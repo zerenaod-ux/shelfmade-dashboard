@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261124-86675",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Extra Cash Burns out Brains 💸",
+ "hook": "You work hard every week to earn more cash.",
+ "thumbnail_headline": "MONEY VS HAPPINESS",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You work hard every week to earn more cash. That extra pay might actually stop raising your daily happiness after a set point. In 2010, researchers Daniel Kahneman and Angus Deaton at Princeton University analyzed about 450,000 survey responses. The result? Emotional well-being stopped rising after an annual income of about 75,000 dollars. Beyond that number, extra money bought life satisfaction, but not more daily joy. Is this just a modern American habit? A 2018 study led by Andrew Jebb at Purdue University looked at about 1.7 million people worldwide. They found a similar ceiling for daily happiness across every continent. So why do we assume more wealth always brings more joy? Evolutionary biologists explain that our brains evolved to seek short-term security, not endless accumulation. That constant drive kept hunter-gatherers alive, but it tricks modern workers into endless stress. So next time you chase a bigger paycheck, remember why you work hard every week to earn more cash."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Emotional well-being plateaus after earning about 75,000 dollars annually.",
+   "who": "Daniel Kahneman and Angus Deaton",
+   "year": "2010",
+   "place": "Princeton University"
+  },
+  {
+   "claim": "Satiation points for daily emotional happiness exist globally around similar income levels.",
+   "who": "Andrew Jebb",
+   "year": "2018",
+   "place": "Purdue University"
+  }
+ ],
+ "source_url": "",
+ "theme": "money and happiness",
+ "exp": ""
+}
