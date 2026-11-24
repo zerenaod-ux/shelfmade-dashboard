@@ -240,6 +240,16 @@
    "subsGained": 0
   },
   {
+   "id": "gANMXiDY4h0",
+   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
+   "published": "2026-11-23T03:00:33Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 44,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "wxefvX3oShc",
    "title": "It is for everyone's interest to let this truth sink deep into his mind",
    "published": "2026-10-25T23:20:34Z",
@@ -279,16 +289,6 @@
    "subsGained": 0
   },
   {
-   "id": "gANMXiDY4h0",
-   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
-   "published": "2026-11-23T03:00:33Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 40,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "nuQLBWcyPzQ",
    "title": "Plato had a warning for you.",
    "published": "2026-11-04T18:02:59Z",
@@ -312,6 +312,19 @@
    "comments": 1,
    "avgSeconds": 8,
    "avgPercent": 33.26,
+   "subsGained": 0
+  },
+  {
+   "id": "JvIgBaYCJdU",
+   "title": "Why does pessimism feel uncomfortable?",
+   "published": "2026-11-05T18:03:48Z",
+   "duration": "PT57S",
+   "privacy": "public",
+   "views": 38,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 22,
+   "avgPercent": 39.29,
    "subsGained": 0
   },
   {
@@ -442,6 +455,19 @@
    "comments": 1,
    "avgSeconds": 25,
    "avgPercent": 31.14,
+   "subsGained": 0
+  },
+  {
+   "id": "6ekA7k96fUk",
+   "title": "Where does your mind wander?",
+   "published": "2026-11-05T23:03:00Z",
+   "duration": "PT35S",
+   "privacy": "public",
+   "views": 31,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 12,
+   "avgPercent": 36.86,
    "subsGained": 0
   },
   {
@@ -855,7 +881,7 @@
    "privacy": "public",
    "views": 13,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "mX0Yjfx_vsM",
@@ -1298,6 +1324,16 @@
    "subsGained": 0
   },
   {
+   "id": "BBgga4igaVo",
+   "title": "Why Seneca Warns About Freedom \ud83d\uded1",
+   "published": "2026-11-24T03:01:33Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "7HnIeRjpoGg",
    "title": "Listen to what Seneca warned about.",
    "published": "2026-11-12T00:00:29Z",
@@ -1503,19 +1539,6 @@
    "subsGained": 0
   },
   {
-   "id": "JlR5Qt1ALk8",
-   "title": "Do duties unlock higher virtues?",
-   "published": "2026-11-08T03:01:43Z",
-   "duration": "PT34S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "eimcxgtfNtc",
    "title": "Are philosophers secretly self\u2011deceived?",
    "published": "2026-10-17T15:03:20Z",
@@ -1696,19 +1719,6 @@
    "comments": 1,
    "avgSeconds": 58,
    "avgPercent": 14.32,
-   "subsGained": 0
-  },
-  {
-   "id": "vSqKjuyAJhM",
-   "title": "Can love turn desire into gold?",
-   "published": "2026-11-08T18:03:07Z",
-   "duration": "PT31S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -2125,6 +2135,16 @@
    "comments": 0
   },
   {
+   "id": "gwsKVSOf0cY",
+   "title": "Why Sleep Drives Your Daily Drive \ud83d\ude80",
+   "published": "2026-11-24T03:48:02Z",
+   "duration": "PT8M37S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "mz_mBYr6auA",
    "title": "This Young Man's Guide line is uncomfortable.",
    "published": "2026-11-24T00:00:36Z",
@@ -2132,7 +2152,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "x5lAui69vdQ",
@@ -2152,7 +2172,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "cLvwNLRELbU",
