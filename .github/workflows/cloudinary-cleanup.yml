@@ -1,5 +1,7 @@
 name: cloudinary-cleanup
 on:
+  schedule:
+    - cron: '17 6 * * 0'   # weekly; same safe rules (never touches anything queued, approved, parked or newer than 7 days)
   workflow_dispatch:
     inputs:
       apply:
@@ -23,6 +25,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           CLOUDINARY_JSON: ${{ secrets.CLOUDINARY_JSON }}
           CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
-          APPLY: ${{ github.event.inputs.apply }}
-          MIN_DAYS: ${{ github.event.inputs.days }}
+          APPLY: ${{ github.event.inputs.apply || '1' }}
+          MIN_DAYS: ${{ github.event.inputs.days || '7' }}
         run: python cloudinary_cleanup.py
