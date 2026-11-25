@@ -3,6 +3,7 @@ name: shelfmade-whiteboard
 # Replaces shelfmade-story-short and full-video. Each video goes to a GitHub Release (tag shorts-wb-* / full-wb-*) and then the normal review-publish flow.
 on:
   schedule:
+    - cron: '40 14 * * *'   # BACKUP slot: GitHub sometimes drops the 13:10 run (2026-11-25). Skips itself if today's videos already exist.
     - cron: '10 13 * * *'   # 7:10 AM Chicago in winter (CST = UTC-6). Fixed 2026-11-24: was 12:10 UTC (6:10 AM). Change to '10 12' when daylight saving starts in March.
   workflow_dispatch:
     inputs:
@@ -29,9 +30,16 @@ jobs:
     steps:
       - name: Skip jobs not asked for
         id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           O="${{ github.event.inputs.only || 'all' }}"; J="${{ matrix.job }}"
           if [ "$O" = "all" ] || [ "$O" = "${J%%[0-9]*}" ]; then echo "go=1" >> $GITHUB_OUTPUT; else echo "go=0" >> $GITHUB_OUTPUT; fi
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            TODAY=$(date -u +%F)
+            if [ "$J" = "long" ]; then PAT='^full-wb-'; else PAT="^shorts-wb-.*-$J\$"; fi
+            if gh api "repos/${{ github.repository }}/releases?per_page=30" --jq ".[]|select(.created_at|startswith(\"$TODAY\"))|.tag_name" | grep -Eq "$PAT"; then echo "today's $J video already exists; skipping this scheduled run"; echo "go=0" >> $GITHUB_OUTPUT; fi
+          fi
       - uses: actions/checkout@v4
         if: steps.gate.outputs.go == '1'
       - uses: actions/setup-python@v5
