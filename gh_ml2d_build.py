@@ -33,5 +33,7 @@ def main(n):
         subprocess.run('cd %s && zip -q ../%s ml2d_LONGFORM.mp4 THUMBNAIL.jpg POST_THIS.txt ml2d-plan.json%s' % (folder, z.name, extra), shell=True, check=True)
         built.append(sid); state.write_text(json.dumps(built)); made += 1; print('BUILT', sid, flush=True)
         shutil.rmtree(folder, ignore_errors=True)
-    print('made', made); sys.exit(0 if made else 1)
+    print('made', made)
+    if not made and not todo: print('no unused MindLore script is ready; waiting for ml-scripts to write more'); sys.exit(0)
+    sys.exit(0 if made else 1)
 if __name__ == '__main__': main(max(1, min(int(sys.argv[1]) if len(sys.argv) > 1 else 1, 3)))

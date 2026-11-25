@@ -112,7 +112,7 @@ def main():
     try:
         r = sh('gh', 'issue', 'list', '--state', 'closed', '--label', 'review', '--limit', '30', '--json', 'number,title,labels,closedAt')
         known = ''
-        for f in ('publish/approved.json', 'publish/approved-mindlore.json', 'publish/approved-mindlore-parked-oldlook.json', 'publish/approved-doodles.json', 'publish/approved-mlfull.json', 'publish/approved-shfull.json', 'publish/approved-ddfull.json', 'publish/state.json', 'publish/state-mindlore.json'):
+        for f in ('publish/approved.json', 'publish/approved-mindlore.json', 'publish/approved-mindlore-parked-oldlook.json', 'publish/approved-doodles.json', 'publish/approved-mlfull.json', 'publish/approved-shfull.json', 'publish/approved-ddfull.json', 'publish/approved-parked-oldstories.json', 'publish/state.json', 'publish/state-mindlore.json'):
             try: known += open(f).read()
             except Exception: pass
         lost = []

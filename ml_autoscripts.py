@@ -10,7 +10,8 @@ SRC = B / 'sources' / ('shelfmade' if SH else 'mindlore')
 OUT = B / ('cinematic-scripts' if SH else 'cinematic-scripts-mindlore')
 OUTNAME = OUT.name
 REPO = Path.home() / 'Dev/repos/shelfmade-dashboard'
-TARGET = 40          # keep up to this many scripts in total
+TARGET = 40          # (ShelfMade uses its own cap of 90 files)
+READY_TARGET = 8     # MindLore: keep this many UNUSED story_v2 scripts ready; used or old-format scripts do not count (fix 2026-11-25: 33 old files had filled the old cap of 40 so nothing new was written for 18 days)
 PER_PASS = int(os.environ.get('ML_PER_PASS', '2'))  # new scripts per run
 MODEL = 'gemini-2.5-flash'
 
@@ -649,7 +650,7 @@ def top_up():
     if not _key():
         return 'no key'
     made = 0
-    while len(list(OUT.glob('*.json'))) < (90 if SH else TARGET) and made < PER_PASS:
+    while (len(list(OUT.glob('*.json'))) < 90 if SH else ready_unused() < READY_TARGET) and made < PER_PASS:
         try:
             if not make_one():
                 break
@@ -661,6 +662,20 @@ def top_up():
     return made
 
 
+def ready_unused():
+    """Count scripts the video builders can still use: story_v2 and not built by any MindLore pipeline."""
+    used = set()
+    for f in ('built-2d-mindlore.json', 'built-full-mindlore.json', 'built-mindlore.json'):
+        try: used |= set(json.loads((B / 'gh-state' / f).read_text()))
+        except Exception: pass
+    n = 0
+    for p in OUT.glob('*.json'):
+        try:
+            if json.loads(p.read_text()).get('story_v2') and p.stem not in used: n += 1
+        except Exception: pass
+    return n
+
+
 if __name__ == '__main__':
-    print('ml_autoscripts: start, scripts on disk =', len(list(OUT.glob('*.json'))), 'target =', 90 if SH else TARGET, flush=True)
+    print('ml_autoscripts: start, scripts on disk =', len(list(OUT.glob('*.json'))), 'unused ready =', ('n/a' if SH else ready_unused()), flush=True)
     print('ml_autoscripts: DONE, scripts made =', top_up(), flush=True)

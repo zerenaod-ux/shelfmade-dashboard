@@ -40,7 +40,7 @@ def make(story):
         if r.returncode:log('Kaggle stage 1 failed; using the local Mac engines')
     # 1 voices
     progress(work,'Recording Leo and Mia',5);log('voices...')
-    vj=[{'who':l['who'],'text':l['text'],'feel':l['feel'],'wav':str(work/f'line_{si:02d}_{li:02d}.wav')} for si,sh in enumerate(story['shots']) for li,l in enumerate(sh['lines'])]
+    vj=[{'who':l['who'],'text':l['text'],'feel':l.get('feel') or 'warm','wav':str(work/f'line_{si:02d}_{li:02d}.wav')} for si,sh in enumerate(story['shots']) for li,l in enumerate(sh['lines'])]
     if not all(Path(v['wav']).is_file() for v in vj):
         r=subprocess.run([str(TTS_PY),str(HERE/'voices.py')],input=json.dumps({'jobs':vj}),text=True,capture_output=True,env={**clean_env(),'HF_HUB_OFFLINE':'1'})
         print(r.stdout[-600:])

@@ -17,7 +17,7 @@ WIDE = (" WIDE CINEMATIC 16:9 COMPOSITION: the two characters stand close togeth
 def main(work):
     work = Path(work).resolve(); st = json.loads((work / 'story.json').read_text())
     if (work / 'kaggle_stage1.DONE').exists(): log('stage 1 already done'); return
-    vj = [{'who': l['who'], 'text': l['text'], 'feel': l['feel'], 'wav': f'line_{si:02d}_{li:02d}.wav'} for si, sh in enumerate(st['shots']) for li, l in enumerate(sh['lines'])]
+    vj = [{'who': l['who'], 'text': l['text'], 'feel': l.get('feel') or 'warm', 'wav': f'line_{si:02d}_{li:02d}.wav'} for si, sh in enumerate(st['shots']) for li, l in enumerate(sh['lines'])]
     wide = bool(st.get('landscape'))
     SINGLE = os.environ.get('DOODLES_SINGLE_SET', '1') == '1' and not wide
     if SINGLE:   # ONE_SET (owner 2026-11-15): one picture for the whole video; the render camera moves between Leo and Mia instead of changing the background
