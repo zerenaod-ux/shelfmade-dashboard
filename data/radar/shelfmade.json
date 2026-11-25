@@ -1,129 +1,129 @@
 {
  "why": [
   {
-   "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
-   "why": "A massive, multi\u2011hashtag title hijacks dozens of niche searches, creating instant discoverability and curiosity."
-  },
-  {
-   "title": "#stoicism #marcusaurelius #philosophy #quotes #deepthoughts",
-   "why": "Combining a famous philosopher\u2019s name with emotive hashtags triggers authority bias and promises deep insight in a bite\u2011size format."
+   "title": "Cicero's Warning to Men Who Ignore History. #cicero #philosophy #shorts",
+   "why": "It leverages an urgent, high-stakes warning frame combined with historical authority to trigger curiosity and fear of missing crucial wisdom."
   },
   {
    "title": "They Ignored You? Never Give Them Access Again | Machiavelli #shorts #philosophy #machiavelliquotes",
-   "why": "A provocative question + Machiavelli\u2019s name creates intrigue and an empowerment hook that compels clicks."
+   "why": "It hooks viewers through relatable social rejection, delivering a dark, highly actionable boundary-setting lesson attributed to Machiavelli."
   },
   {
-   "title": "This Marcus Aurelius quote hits hard #stoicism #discipline #motivation",
-   "why": "Authority + a bold claim of impact delivers an emotional punch that drives immediate viewership."
+   "title": "Your Mind Is More Powerful Than You Think. #shorts",
+   "why": "It taps into the timeless desire for self-mastery with a bold statement hook that promises immediate internal empowerment."
+  },
+  {
+   "title": "4 Charlie Chaplin Quotes That Will Change Your Life \ud83c\udf1f #Motivation #CharlieChaplin #LifeLessons",
+   "why": "It combines a clear listicle structure with an unexpected, highly recognizable historic figure to drive exceptionally high casual viewer retention."
   }
  ],
  "hook_patterns": [
-  "Question + bold promise that taps personal pain or desire",
-  "Authority figure name + shocking or contrarian claim",
-  "Rapid succession of niche hashtags that capture algorithmic relevance"
+  "Rejection/boundary setting combined with pragmatic historical advice.",
+  "Urgent historical warnings that challenge the viewer's current behavior.",
+  "Numbered life advice lists attributed to unexpected public-domain icons."
  ],
- "todays_angle": "Use a controversial quote from a classic philosopher to deliver a quick, actionable life\u2011hack.",
+ "todays_angle": "Use historical literature on human nature to address modern feelings of betrayal and social dynamics.",
  "ideas": [
-  "\"Nietzsche\u2019s \u2018Become Who You Are\u2019\u20143 bold steps to own your destiny in 45 seconds.\"",
-  "\"Socratic \u2018Know Yourself\u2019 challenge: pose 3 probing questions and answer them on camera for a rapid self\u2011growth short.\"",
-  "\"Machiavelli\u2019s \u2018Better to be feared than loved\u2019\u2014modern relationship tip: when to set firm boundaries, presented in a 30\u2011second dramatization.\""
+  "Public Domain Book: The Count of Monte Cristo by Alexandre Dumas. Hook: 'When people betray your trust, master the art of silent patience.' Highlight Edmond Dant\u00e8s' classic lessons on emotional restraint.",
+  "Public Domain Book: The Art of War by Sun Tzu. Hook: '3 signs someone is secretly competing with you.' Use Sun Tzu's strategic wisdom applied to modern social relationships.",
+  "Public Domain Book: Meditations by Marcus Aurelius. Hook: 'Stop caring about people who only reach out when they need something.' Focus on Stoic detachment from fake friends."
  ],
  "avoid": [
-  "Overloading titles with generic hashtags without a clear hook",
-  "Repeating the same quote across multiple videos without adding a fresh angle"
+  "Generic background-music slideshows tagged with unspecific hashtags like #wisdom or #stoicism.",
+  "Overused, generic Marcus Aurelius quotes about working hard without a specific personal or social angle."
  ],
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "sample": 59,
  "spikes": [
   {
    "title": "4 Charlie Chaplin Quotes That Will Change Your Life \ud83c\udf1f #Motivation #CharlieChaplin #LifeLessons",
    "channel": "My Famous Writer",
-   "views": 95309,
-   "hours": 23,
-   "vph": 4175.3,
+   "views": 144633,
+   "hours": 37,
+   "vph": 3894.2,
    "subs": 30300,
-   "breakout": 3.1
+   "breakout": 4.8
   },
   {
-   "title": "#philosophy #philosopher #betrayal #poetry #quotes #emotions #life #lessons #hate #love #hurt #books",
-   "channel": "Letters to Nobody with Riya",
-   "views": 55990,
-   "hours": 34,
-   "vph": 1650.2,
-   "subs": 1000,
-   "breakout": 56.0
+   "title": "#quotes #wiseadvise #inspirationalquotes #stoicism #motivationstatus #stoicmindset #motivational",
+   "channel": "The Mental Health Space",
+   "views": 15238,
+   "hours": 13,
+   "vph": 1198.4,
+   "subs": 6180,
+   "breakout": 2.5
+  },
+  {
+   "title": "#quotes #wiseadvise #inspirationalquotes #stoicism #motivationstatus #stoicmindset #motivational",
+   "channel": "The Mental Health Space",
+   "views": 13532,
+   "hours": 13,
+   "vph": 1063.9,
+   "subs": 6180,
+   "breakout": 2.2
   },
   {
    "title": "#CriticalMind #CriticalThinking #DeepThoughts #Philosophy #DeepQuotes #LifeQuotes #Poetry #Human",
    "channel": "CRITICAL MIND ",
-   "views": 33377,
-   "hours": 28,
-   "vph": 1186.6,
-   "subs": 5580,
-   "breakout": 6.0
+   "views": 39040,
+   "hours": 42,
+   "vph": 919.8,
+   "subs": 5650,
+   "breakout": 6.9
   },
   {
    "title": "\u092e\u093e\u0901 \u0915\u092d\u0940 \u092c\u0921\u093c\u0947 \u0936\u092c\u094d\u0926\u094b\u0902 \u092e\u0947\u0902 \u092a\u094d\u092f\u093e\u0930..\ud83c\udf3f#maa #motivation#lifechangingthoughts #shorts#lifelessons#shortsfeed",
    "channel": "Safalta Ki Raah_92",
-   "views": 16900,
-   "hours": 17,
-   "vph": 977.7,
-   "subs": 65500,
+   "views": 22538,
+   "hours": 32,
+   "vph": 713.2,
+   "subs": 65700,
    "breakout": 0.3
   },
   {
    "title": "#quotes #wiseadvise #inspirationalquotes #stoicism #motivationstatus #stoicmindset #motivational",
    "channel": "The Mental Health Space",
-   "views": 26047,
-   "hours": 28,
-   "vph": 926.0,
-   "subs": 6170,
-   "breakout": 4.2
+   "views": 28886,
+   "hours": 42,
+   "vph": 680.6,
+   "subs": 6180,
+   "breakout": 4.7
   },
   {
    "title": "Most Powerful Motivational Quotes That Will Change Your Life | Charlie Chaplin & Life Lessons",
    "channel": "Zoya",
-   "views": 8665,
-   "hours": 11,
-   "vph": 816.5,
+   "views": 10376,
+   "hours": 25,
+   "vph": 416.3,
    "subs": 3060,
-   "breakout": 2.8
+   "breakout": 3.4
   },
   {
-   "title": "#CriticalMind #CriticalThinking #DeepThoughts #Philosophy #DeepQuotes #LifeQuotes #Poetry #Human",
-   "channel": "CRITICAL MIND ",
-   "views": 22198,
-   "hours": 37,
-   "vph": 593.2,
-   "subs": 5580,
-   "breakout": 4.0
+   "title": "Cicero's Warning to Men Who Ignore History. #cicero #philosophy #shorts",
+   "channel": "Masculinity Oracle",
+   "views": 16558,
+   "hours": 43,
+   "vph": 388.7,
+   "subs": 1850,
+   "breakout": 9.0
   },
   {
-   "title": "tagged for life \u2764\ufe0f\u200d\ud83e\ude79 #hurtquotes #booktok #books #bookstagram #ytshorts #love #booklover #bookquotes",
-   "channel": "mausthoughts_",
-   "views": 8737,
-   "hours": 15,
-   "vph": 564.0,
-   "subs": 43500,
-   "breakout": 0.2
-  },
-  {
-   "title": "#stoicism #marcusaurelius #philosophy #quotes #deepthoughts",
-   "channel": "The Philosopher's Bible",
-   "views": 13032,
-   "hours": 47,
-   "vph": 279.1,
-   "subs": 393,
-   "breakout": 33.2
+   "title": "#quotes #wisdom #wisewords #philosophy #stoicism #shorts",
+   "channel": "Echoes of Wisdom",
+   "views": 8868,
+   "hours": 27,
+   "vph": 325.9,
+   "subs": 312,
+   "breakout": 28.4
   },
   {
    "title": "They Ignored You? Never Give Them Access Again | Machiavelli #shorts #philosophy #machiavelliquotes",
    "channel": "Mind Control & Calm",
-   "views": 3256,
-   "hours": 31,
-   "vph": 104.1,
-   "subs": 189,
-   "breakout": 16.3
+   "views": 4407,
+   "hours": 46,
+   "vph": 96.7,
+   "subs": 201,
+   "breakout": 21.9
   }
  ]
 }
