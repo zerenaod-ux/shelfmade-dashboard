@@ -639,7 +639,7 @@
  },
  {
   "id": "your-first-day-shake",
-  "title": "Your First Day Shakes \ud83d\ude2c",
+  "title": "Your First Day Shakes 😬",
   "concept": "FIRST DAY PANIC",
   "mood": "dramatic",
   "insight": "Nerves make every sentence sound like a total crisis.",
@@ -740,7 +740,7 @@
  },
  {
   "id": "unironed-genius-peak",
-  "title": "How I Peaked In Third Grade \ud83c\udf93",
+  "title": "How I Peaked In Third Grade 🎓",
   "concept": "IMPOSTER SYNDROME REALITY",
   "mood": "warm",
   "insight": "We feel like fakes, but we are just unironed.",
@@ -859,7 +859,7 @@
  },
  {
   "id": "your-dinner-excuse-factory",
-  "title": "Your Endless Dinner Rejections \ud83c\udf55",
+  "title": "Your Endless Dinner Rejections 🍕",
   "concept": "CHOICE OVERLOAD CHAOS",
   "mood": "dramatic",
   "insight": "Choosing dinner takes more energy than working all day.",
@@ -977,7 +977,7 @@
  },
  {
   "id": "group-chat-ghost-town",
-  "title": "Why Group Chats Become Ghost Towns \ud83d\udcac",
+  "title": "Why Group Chats Become Ghost Towns 💬",
   "concept": "MUTUAL GROUP CHAT MUTE",
   "mood": "dramatic",
   "insight": "Muting a chat means missing the pizza.",
@@ -1078,7 +1078,7 @@
  },
  {
   "id": "wrong-chat-grandma",
-  "title": "Your Grandma Text Panic \ud83d\udc75",
+  "title": "Your Grandma Text Panic 👵",
   "concept": "TEXTING MISTAKE CHAOS",
   "mood": "dramatic",
   "insight": "Nothing beats texting your boss like a relative.",
@@ -1190,11 +1190,11 @@
  },
  {
   "id": "first-day-detective-panic",
-  "title": "How Detective Leo Handled First Day Nerves \ud83d\udd75\ufe0f\u200d\u2642\ufe0f",
+  "title": "How Detective Leo Handled First Day Nerves 🕵️‍♂️",
   "concept": "FIRST DAY INVESTIGATION",
   "mood": "dramatic",
   "insight": "No one notices your first day panic when you act mysterious.",
-  "caption": "Leo turned his first day jitters into a full crime scene. Next time: Leo tries negotiating flat rent with Brenda! \ud83c\udfe0",
+  "caption": "Leo turned his first day jitters into a full crime scene. Next time: Leo tries negotiating flat rent with Brenda! 🏠",
   "explain_shot": 3,
   "shots": [
    {
@@ -1321,7 +1321,7 @@
  },
  {
   "id": "stapler-rage-war",
-  "title": "Your Stapler Hates You \ud83d\udd87\ufe0f",
+  "title": "Your Stapler Hates You 🖇️",
   "concept": "STAPLER RAGE WAR",
   "mood": "dramatic",
   "insight": "Objects that attack back are definitely a sign to quit your job.",
@@ -1412,7 +1412,7 @@
  },
  {
   "id": "instant-reply-demon",
-  "title": "Why Fast Texting Makes You A Demon \ud83d\udc7b",
+  "title": "Why Fast Texting Makes You A Demon 👻",
   "concept": "INSTANT REPLY PANIC",
   "mood": "dramatic",
   "insight": "Replying instantly is proof you have no life left.",
@@ -1518,11 +1518,11 @@
  },
  {
   "id": "dinner-dilemma",
-  "title": "How Dinner Turns Crazy \ud83c\udf72",
+  "title": "How Dinner Turns Crazy 🍲",
   "concept": "DINNER DRAMA",
   "mood": "warm",
   "insight": "Choosing dinner can be a wild ride.",
-  "caption": "When \u201canything\u201d turns into a food debate in seconds.",
+  "caption": "When “anything” turns into a food debate in seconds.",
   "explain_shot": 3,
   "shots": [
    {
@@ -1539,7 +1539,7 @@
       "who": "leo",
       "feel": "deadpan",
       "beat": "snap",
-      "text": "Anything, I\u2019m not picky at all."
+      "text": "Anything, I’m not picky at all."
      }
     ]
    },
@@ -1557,7 +1557,7 @@
       "who": "mia",
       "feel": "amused",
       "beat": "snap",
-      "text": "You're naming the food like it\u2019s a person?"
+      "text": "You're naming the food like it’s a person?"
      }
     ]
    },
@@ -1575,7 +1575,7 @@
       "who": "mia",
       "feel": "amused",
       "beat": "snap",
-      "text": "Soup is the new fish? That\u2019s weird."
+      "text": "Soup is the new fish? That’s weird."
      }
     ]
    },
@@ -1587,7 +1587,7 @@
       "who": "leo",
       "feel": "excited",
       "beat": "quick",
-      "text": "Okay but hear me out, I\u2019m craving pizza now."
+      "text": "Okay but hear me out, I’m craving pizza now."
      },
      {
       "who": "mia",
@@ -1605,13 +1605,13 @@
       "who": "leo",
       "feel": "sheepish",
       "beat": "quick",
-      "text": "Fine, I\u2019ll just have nothing, that\u2019s it."
+      "text": "Fine, I’ll just have nothing, that’s it."
      },
      {
       "who": "mia",
       "feel": "warm",
       "beat": "snap",
-      "text": "Anyway, I\u2019ll just order something we both can eat."
+      "text": "Anyway, I’ll just order something we both can eat."
      }
     ]
    },
@@ -1636,7 +1636,7 @@
  },
  {
   "id": "pizza-shield-war",
-  "title": "Why Leo Is My Living Pizza Shield \ud83c\udf55",
+  "title": "Why Leo Is My Living Pizza Shield 🍕",
   "concept": "PIZZA SHIELD WAR",
   "mood": "very excited",
   "insight": "Your best friend views you purely as a food bodyguard.",
@@ -1737,7 +1737,7 @@
  },
  {
   "id": "your-speed-demon-text",
-  "title": "Your Speed Demon Text \ud83d\udcf1",
+  "title": "Your Speed Demon Text 📱",
   "concept": "TEXTING SPEED RUN",
   "mood": "dramatic",
   "insight": "Replying in zero seconds is not speed, it is a call for help.",
@@ -1868,7 +1868,7 @@
  },
  {
   "id": "dinner-trap-part-two",
-  "title": "How 'Anything' Means Nothing For Dinner \ud83c\udf55",
+  "title": "How 'Anything' Means Nothing For Dinner 🍕",
   "concept": "THE DINNER PARADOX",
   "mood": "dramatic",
   "insight": "Saying 'anything' actually means rejecting every food on earth.",
@@ -1999,7 +1999,7 @@
  },
  {
   "id": "your-lasagna-two-out-of-ten",
-  "title": "Your Lasagna Score Is Violent \ud83c\udf5d",
+  "title": "Your Lasagna Score Is Violent 🍝",
   "concept": "BRUTAL GOURMET CRITIQUE",
   "mood": "dramatic",
   "insight": "Family group chats are where culinary dreams go to die.",
@@ -2087,7 +2087,7 @@
  },
  {
   "id": "petty-throne-war",
-  "title": "How One Word Started A Studio War \ud83e\ude91",
+  "title": "How One Word Started A Studio War 🪑",
   "concept": "THE MISHEARD THRONE WAR",
   "mood": "dramatic",
   "insight": "Hearing what you fear is faster than listening to what was said.",
@@ -2218,7 +2218,7 @@
  },
  {
   "id": "drama-dumpster-fire",
-  "title": "Why Your Acceptance Speech Needs Fire \ud83d\udd25",
+  "title": "Why Your Acceptance Speech Needs Fire 🔥",
   "concept": "MOST DRAMATIC SIGH",
   "mood": "dramatic",
   "insight": "Leo takes awards very seriously, even fake ones.",
@@ -2306,7 +2306,7 @@
  },
  {
   "id": "hoodie-breakup-crime",
-  "title": "Why A Hoodie Ghosted Leo \ud83e\udde5",
+  "title": "Why A Hoodie Ghosted Leo 🧥",
   "concept": "DRAMATIC BREAKUP INVESTIGATION",
   "mood": "dramatic",
   "insight": "Nothing hurts quite like a betrayal from laundry.",
@@ -2407,7 +2407,7 @@
  },
  {
   "id": "your-dramatic-sigh-trophy",
-  "title": "Your Dramatic Sigh Trophy \ud83c\udfc6",
+  "title": "Your Dramatic Sigh Trophy 🏆",
   "concept": "MOST DRAMATIC SIGH",
   "mood": "warm",
   "insight": "winning the wrong award at breakfast hits different",
@@ -2525,7 +2525,7 @@
  },
  {
   "id": "nasal-confetti-theft-trial",
-  "title": "Why Your Sneezes Belong To Everyone Except You \ud83e\udd27",
+  "title": "Why Your Sneezes Belong To Everyone Except You 🤧",
   "concept": "UNAUTHORIZED NOISE THEFT",
   "mood": "warm",
   "insight": "Sneezes are public domain whether you like it or not",
@@ -2643,7 +2643,7 @@
  },
  {
   "id": "your-four-am-alibi",
-  "title": "Your Four AM Alibi \u23f0",
+  "title": "Your Four AM Alibi ⏰",
   "concept": "THE FOUR AM DETECTIVE",
   "mood": "warm",
   "insight": "Claiming you love mornings at four am is pure fiction",
@@ -2731,11 +2731,11 @@
  },
  {
   "id": "kebab-slug",
-  "title": "Why Counting Your Feelings Is Hard \ud83d\udcc9",
+  "title": "Why Counting Your Feelings Is Hard 📉",
   "concept": "EMOTIONAL TAX AUDIT",
   "mood": "curious",
   "insight": "Counting your feelings is basically just emotional tax fraud.",
-  "caption": "Leo\u2019s trying to prep for a fake argument, but his math is failing him.",
+  "caption": "Leo’s trying to prep for a fake argument, but his math is failing him.",
   "explain_shot": 3,
   "shots": [
    {
@@ -2776,7 +2776,7 @@
       "who": "mia",
       "feel": "deadpan",
       "beat": "snap",
-      "text": "So I\u2019m supposed to believe that?"
+      "text": "So I’m supposed to believe that?"
      }
     ]
    },
@@ -2837,7 +2837,7 @@
  },
  {
   "id": "four-am-dawn-shake",
-  "title": "Your Four AM Dawn Shake \ud83c\udf05",
+  "title": "Your Four AM Dawn Shake 🌅",
   "concept": "MORNING PERSON MYTH",
   "mood": "dramatic",
   "insight": "Being a morning person is just being a zombie with a better PR team.",
@@ -2968,7 +2968,7 @@
  },
  {
   "id": "plane-landing-panic",
-  "title": "Why Landing Applause Is Pure Terror \u2708\ufe0f",
+  "title": "Why Landing Applause Is Pure Terror ✈️",
   "concept": "FLIGHT PANIC",
   "mood": "chaotic",
   "insight": "Clapping when a plane lands is just synchronized terror.",
@@ -3069,7 +3069,7 @@
  },
  {
   "id": "your-wet-dog-cologne",
-  "title": "Your Hoodie Crime Scene \ud83e\udde5",
+  "title": "Your Hoodie Crime Scene 🧥",
   "concept": "HOODIE BREAKUP RATING",
   "mood": "warm",
   "insight": "Rating your old clothes always ends in heartbreak",
@@ -3187,7 +3187,7 @@
  },
  {
   "id": "toaster-soggy-disaster",
-  "title": "Why The Toaster Cartoon Destroyed Us \ud83c\udf5e",
+  "title": "Why The Toaster Cartoon Destroyed Us 🍞",
   "concept": "CARTOON TRAUMA OVERLOAD",
   "mood": "dramatic",
   "insight": "Nothing unites best friends like sobbing over animated appliances.",
@@ -3311,7 +3311,7 @@
  },
  {
   "id": "your-fern-detective",
-  "title": "Your Fern Is Judging You \ud83c\udf3f",
+  "title": "Your Fern Is Judging You 🌿",
   "concept": "FERN JUDGMENT CASE",
   "mood": "warm",
   "insight": "Plants have zero time for your daily drama.",
@@ -3412,7 +3412,7 @@
  },
  {
   "id": "laugh-heist-drama",
-  "title": "Why Mia stole my signature giggle \ud83c\udfad",
+  "title": "Why Mia stole my signature giggle 🎭",
   "concept": "SOUL THRIFTING DILEMMA",
   "mood": "dramatic",
   "insight": "My personality is now on sale for half off.",
@@ -3512,7 +3512,7 @@
  },
  {
   "id": "your-chair-rating-stinks",
-  "title": "Your Chair Rating Stinks \ud83e\ude91",
+  "title": "Your Chair Rating Stinks 🪑",
   "concept": "PETTY CHAIR WARS",
   "mood": "dramatic",
   "insight": "A good desk chair turns any best friend into your worst rival.",
@@ -3630,7 +3630,7 @@
  },
  {
   "id": "toaster-tears-argument",
-  "title": "Why Leo Cried Over A Toaster \ud83c\udf5e",
+  "title": "Why Leo Cried Over A Toaster 🍞",
   "concept": "CARTOON TOASTER TEARS",
   "mood": "dramatic",
   "insight": "Never let your best friend catch you crying over animated kitchenware.",
@@ -3718,7 +3718,7 @@
  },
  {
   "id": "your-caffeine-math",
-  "title": "Your Caffeine Math Sucks \u2615",
+  "title": "Your Caffeine Math Sucks ☕",
   "concept": "AGGRESSIVE MATH",
   "mood": "dry",
   "insight": "Five cups of coffee is totally a typo",
@@ -3739,7 +3739,7 @@
       "who": "mia",
       "feel": "deadpan",
       "beat": "quick",
-      "text": "You\u2019re literally impossible to live with."
+      "text": "You’re literally impossible to live with."
      }
     ]
    },
@@ -3751,7 +3751,7 @@
       "who": "leo",
       "feel": "sheepish",
       "beat": "normal",
-      "text": "That\u2019s just the truth."
+      "text": "That’s just the truth."
      },
      {
       "who": "mia",
@@ -3811,7 +3811,7 @@
       "who": "mia",
       "feel": "amused",
       "beat": "snap",
-      "text": "You\u2019re literally hallucinating again."
+      "text": "You’re literally hallucinating again."
      }
     ]
    },
@@ -3836,7 +3836,7 @@
  },
  {
   "id": "your-chili-two-out-of-ten",
-  "title": "Why Leo Turned Dinner Into A Crime \ud83d\udd75\ufe0f",
+  "title": "Why Leo Turned Dinner Into A Crime 🕵️",
   "concept": "SECRET FAMILY POLL REVEAL",
   "mood": "mysterious",
   "insight": "Never host a poll if you can't swallow the rating.",
@@ -4530,7 +4530,7 @@
   "title": "When Honest Feedback Goes Wrong",
   "concept": "Leo takes Mia's simple cooking advice as grounds for a legal lawsuit against his ingredients.",
   "insight": "When faced with constructive advice, overthinkers often misinterpret the solution into an escalated battle.",
-  "caption": "When your cooking gets a 2/10 and you take it personally. \ud83c\udf5d",
+  "caption": "When your cooking gets a 2/10 and you take it personally. 🍝",
   "explain_shot": 3,
   "shots": [
    {
@@ -6060,7 +6060,7 @@
   "title": "The Plant Rating War",
   "concept": "Leo rates everyday room items and insists Gerald the houseplant is holding a personal grudge against him.",
   "insight": "We often project our own self-doubt onto innocent inanimate objects around us.",
-  "caption": "Rating desk vibes turned into a full foliage trial. \ud83c\udf3f rating game",
+  "caption": "Rating desk vibes turned into a full foliage trial. 🌿 rating game",
   "explain_shot": 3,
   "shots": [
    {
@@ -6581,7 +6581,8 @@
       "who": "mia",
       "listener_feel": "curious",
       "beat": "quick",
-      "text": "Maybe they're just being careful, Leo."
+      "text": "Maybe they're just being careful, Leo.",
+      "feel": "warm"
      },
      {
       "who": "leo",
@@ -6599,7 +6600,8 @@
       "who": "mia",
       "listener_feel": "amused",
       "beat": "quick",
-      "text": "Weren't you the one who drove the wrong way down Main Street yesterday for two hours?"
+      "text": "Weren't you the one who drove the wrong way down Main Street yesterday for two hours?",
+      "feel": "warm"
      },
      {
       "who": "leo",
@@ -6623,7 +6625,8 @@
       "who": "mia",
       "listener_feel": "surprised",
       "beat": "snap",
-      "text": "Right, so your massive mistakes are just cruel fate."
+      "text": "Right, so your massive mistakes are just cruel fate.",
+      "feel": "warm"
      },
      {
       "who": "leo",
@@ -6641,7 +6644,8 @@
       "who": "mia",
       "listener_feel": "amused",
       "beat": "quick",
-      "text": "And that driver's reason is just being a terrible person?"
+      "text": "And that driver's reason is just being a terrible person?",
+      "feel": "warm"
      },
      {
       "who": "leo",
@@ -6665,7 +6669,8 @@
       "who": "mia",
       "listener_feel": "skeptical",
       "beat": "pause",
-      "text": "Gerald dried up and died last week, Leo."
+      "text": "Gerald dried up and died last week, Leo.",
+      "feel": "warm"
      }
     ]
    },
@@ -6683,7 +6688,8 @@
       "who": "mia",
       "listener_feel": "warm",
       "beat": "snap",
-      "text": "Scoreboard is one hundred thirty two. You always blame everyone else."
+      "text": "Scoreboard is one hundred thirty two. You always blame everyone else.",
+      "feel": "warm"
      }
     ]
    }
