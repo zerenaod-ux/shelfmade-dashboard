@@ -6876,5 +6876,209 @@
   "style": "v2",
   "format": "RATING GAME",
   "improv": false
+ },
+ {
+  "id": "impostor-syndrome-rating",
+  "title": "Leo vs. Mia: The Fraud Rating Showdown",
+  "concept": "Leo rates himself as a fraud based on small mistakes while Mia rates him as a zero",
+  "insight": "Impostor syndrome makes specific errors feel like evidence of being a fake",
+  "caption": "They rank Leo's 'fraud status' from zero to ten.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo slams a coffee mug on the podcast desk, eyes wide with panic.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panic",
+      "beat": "snap",
+      "text": "Okay rate this: am I a total fraud?",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "mia",
+      "feel": "deadpan",
+      "beat": "quick",
+      "text": "Zero. Definitive zero.",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "Wait, you need to actually look at the proof first.",
+      "listener_feel": "skeptical"
+     }
+    ]
+   },
+   {
+    "scene": "Mia leans in, raising an eyebrow as Leo points at a prop envelope on the desk.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Okay, lay the cards on the table.",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "leo",
+      "feel": "embarrassed",
+      "beat": "pause",
+      "text": "Fine, I accidentally sent 'omw' to the boss.",
+      "listener_feel": "surprised"
+     },
+     {
+      "who": "mia",
+      "feel": "shocked",
+      "beat": "snap",
+      "text": "Ten? I sent 'lol' to my ex once.",
+      "listener_feel": "curious"
+     }
+    ]
+   },
+   {
+    "scene": "Leo paces near the desk while a small hedgehog toy sits nearby.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "confused",
+      "beat": "quick",
+      "text": "That literally makes zero sense.",
+      "listener_feel": "neutral"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "Wait, I almost called the HR guy Dave.",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "mia",
+      "feel": "neutral",
+      "beat": "quick",
+      "text": "Actually, his name is Dave.",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Mia points at the hedgehog toy, which is positioned near a digital clock showing 9:00.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "frustrated",
+      "beat": "snap",
+      "text": "WHY WOULD I KNOW HIS NAME",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Because everyone knows Dave. He's a giant hedgehog.",
+      "listener_feel": "curious"
+     },
+     {
+      "who": "leo",
+      "feel": "accusing",
+      "beat": "quick",
+      "text": "That hedgehog owes me rent for eating my confidence.",
+      "listener_feel": "amused"
+     }
+    ]
+   },
+   {
+    "scene": "Leo grabs the hedgehog toy and shakes it slightly, worried eyes scanning the room.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "He pays in quills. That's a gift, Leo.",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "leo",
+      "feel": "defeated",
+      "beat": "pause",
+      "text": "I guess that's fair. I'm definitely a fraud.",
+      "listener_feel": "concerned"
+     },
+     {
+      "who": "mia",
+      "feel": "playful",
+      "beat": "quick",
+      "text": "Next time, I have to listen to that recording.",
+      "listener_feel": "curious"
+     }
+    ]
+   },
+   {
+    "scene": "Mia rests her chin on her hand, smiling softly as Leo holds the hedgehog.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "playful",
+      "beat": "quick",
+      "text": "You are not a fraud, you just like drama.",
+      "listener_feel": "warm"
+     },
+     {
+      "who": "leo",
+      "feel": "relieved",
+      "beat": "snap",
+      "text": "Okay, that actually makes sense to me.",
+      "listener_feel": "amused"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "Plus, your impostor score is officially zero points.",
+      "listener_feel": "warm"
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 6,
+   "hook": 7,
+   "spoken": 7,
+   "relatable": 8,
+   "ending": 7,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The dialogue flows naturally with great comedic timing and relatable friend chemistry.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 8,
+    "ending": 7,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "idea",
+  "idea": "impostor syndrome",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": true
  }
 ]
