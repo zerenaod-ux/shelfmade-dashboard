@@ -30,6 +30,10 @@ def run(who, env):
     try: c = json.loads(os.environ.get(env, '') or '{}')
     except ValueError: c = {}
     if not c.get('cloud_name'): print(who, 'no credentials, skipped'); return
+    try:
+        u = call(c, 'GET', 'usage')
+        print(who, 'usage:', json.dumps({k: u.get(k) for k in ('plan', 'last_updated', 'credits', 'storage', 'bandwidth', 'transformations', 'resources')})[:900], flush=True)
+    except Exception as e: print(who, 'usage unreadable', str(e)[:80])
     refs = referenced_text(); items = []; cursor = None
     while True:
         q = 'resources/video?max_results=500' + ('&next_cursor=' + cursor if cursor else '')
