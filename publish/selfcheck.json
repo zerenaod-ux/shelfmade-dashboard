@@ -1,16 +1,16 @@
 {
- "at": "2026-11-24T23:30:26+00:00",
+ "at": "2026-11-25T20:52:00+00:00",
  "level": "warn",
  "checks": [
   {
    "name": "Growth scoreboard",
    "ok": true,
-   "text": "updated 0 h ago"
+   "text": "updated 3 h ago"
   },
   {
    "name": "Doodles daily run",
-   "ok": false,
-   "text": "last: cancelled 2026-11-24T10:58"
+   "ok": true,
+   "text": "last: success 2026-11-25T14:43"
   },
   {
    "name": "Best-of-3 judge",
@@ -19,23 +19,23 @@
   },
   {
    "name": "Kaggle GPU",
-   "ok": true,
-   "text": "ok=True, checked 1 h ago"
+   "ok": false,
+   "text": "ok=False, checked 9 h ago"
   },
   {
    "name": "Approved videos reach the queue",
-   "ok": false,
-   "text": "approved but NOT queued: #359 Review: Why Taking Action Creates Your B; #358 Review: Why Pain Hits Harder Than Pleasu; #354 Review: Why Boredom Drains Your Energy P; #353 Review: Why Confidence Makes Your Chest ; #346 Review: Why Questioning Improves Your Re"
+   "ok": true,
+   "text": "all approved Issues are queued"
   },
   {
    "name": "Free-tier room",
-   "ok": false,
-   "text": "running out: Cloudinary (ShelfMade+MindLore) 83.6%"
+   "ok": true,
+   "text": "all services under 80%"
   },
   {
    "name": "GitLab backup",
    "ok": true,
-   "text": "last: success 2026-11-24T15:17"
+   "text": "last: success 2026-11-25T14:58"
   },
   {
    "name": "Safety guard",
@@ -60,27 +60,27 @@
   {
    "name": "Playlist flywheel",
    "ok": true,
-   "text": "ok (shelfmade: added 8 video(s); mindlore: added 6 video(s); doodles: added 2 video(s))"
+   "text": "ok (shelfmade: added 8 video(s); mindlore: added 7 video(s); doodles: added 3 video(s))"
   },
   {
    "name": "Retitle campaign",
    "ok": true,
-   "text": "last: success 2026-11-24"
+   "text": "last: success 2026-11-25"
   },
   {
    "name": "Access check (logins)",
    "ok": false,
-   "text": "last: failure 2026-11-24 | auto-fix started"
+   "text": "last: failure 2026-11-25 | auto-fix started"
   },
   {
    "name": "Viral DNA study",
    "ok": true,
-   "text": "last: success 2026-11-18"
+   "text": "last: success 2026-11-25"
   },
   {
    "name": "Posting: shelfmade",
    "ok": true,
-   "text": "newest public video 6 h ago"
+   "text": "newest public video 3 h ago"
   },
   {
    "name": "Posting: mindlore",
@@ -90,7 +90,7 @@
   {
    "name": "Posting: doodles",
    "ok": true,
-   "text": "newest public video 4 h ago"
+   "text": "newest public video 1 h ago"
   },
   {
    "name": "Service probes",
@@ -100,7 +100,7 @@
   {
    "name": "Doodles GPU budget",
    "ok": false,
-   "text": "59.9 h used in 7 days, stories/day cap 2"
+   "text": "63.9 h used in 7 days, stories/day cap 2"
   },
   {
    "name": "No module shadowing",
