@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "Personifying the brain as a cute, reactive character (the 'baby brain' trope) generates high attachment and positive sentiment, driving shares through emotional resonance rather than just information.",
-  "Using tangible, everyday objects or simple games (like Pong, menus, or juggling) to explain abstract neural processes creates an immediate visual hook that lowers the cognitive load for new viewers.",
-  "Framing psychological quirks as 'tricks' or 'glitches' (e.g., rubber hand, negative focus) satisfies curiosity about the hidden mechanics of the self, positioning the viewer as someone who now knows a secret.",
-  "Short-form content in the 30-45 second range allows for a complete narrative arc: a quick setup, a visual demonstration of the illusion/phenomenon, and a punchy takeaway, keeping retention high.",
-  "Titles that promise a specific, counter-intuitive reaction or state (e.g., 'Your Brain Hates...', 'Can't Juggle...') create an information gap that compels the click, often paired with high-emotion emojis."
+  "Interactive sensory illusions that trick the viewer's visual or cognitive processing within seconds",
+  "Relatable anthropomorphic framing of daily brain functions (e.g., fatigue, focus, caffeine response)",
+  "Counter-intuitive neurological phenomena featuring sudden, surprising real-world trade-offs",
+  "Micro-visualizations of internal neural mechanics using simple everyday analogies (e.g., car brakes, filtering networks)",
+  "Ultra-concise high-concept visual demonstrations optimized for immediate loopability under 40 seconds"
  ],
  "title_formulas": [
-  "Your Brain [Unexpected Verb] [Common Object/Action]",
-  "What Happens When Your Brain [Does A Weird/Funny Thing]",
-  "Why You Can't [Simple Physical Task] (It's Not What You Think)"
+  "How Your Brain [Surprising Everyday Function] Without You Knowing",
+  "Why Your Brain [Unexpected Cognitive Habit] Under Stress",
+  "What Really Happens Inside Your Brain When You [Common Daily Action]"
  ],
  "opening_3s": [
-  "Show a classic optical illusion or a 'broken' visual pattern immediately, then cut to the animated brain character reacting with confusion or delight.",
-  "Start with a close-up of a mundane object (like a coffee cup or a hand) and have the brain character whisper a judgment about it before the explanation begins.",
-  "Display a rapid-fire sequence of two conflicting images to force a 'glitch' in the viewer's perception, prompting an immediate internal 'wait, what?' reaction."
+  "Display an immediate optical trick on screen and prompt the viewer to test their perception right away",
+  "Show a fast visual metaphor comparing a daily sensation to a mechanical lock or barrier inside the head",
+  "State a common mental habit and visually cut to a stylized neural map responding instantly"
  ],
  "comment_themes": [
-  "Viewers strongly anthropomorphize the brain character, using terms like 'baby brain' or 'cute' and asking for more episodes in this series.",
-  "Audiences love seeing the brain 'suffer' or 'react' to everyday annoyances (like bad food or lack of sleep), treating it as a shared emotional experience.",
-  "There is a high demand for simple, actionable 'hacks' or foods that 'help' the brain, framed in a lighthearted, non-clinical way.",
-  "Viewers enjoy identifying with the brain's 'errors' or quirks, commenting on how their own brains did the same thing during the video."
+  "Appreciation for vivid, easy-to-understand physical metaphors and everyday analogies",
+  "Strong positive reaction to charming, expressive visual representations of psychological concepts",
+  "Humorous self-deprecating confirmation that their own mind experiences the exact same quirk",
+  "Curiosity about practical everyday applications for focus, learning, and daily habits"
  ],
  "avoid": [
-  "Do not link brain injuries or accidents to sudden genius or miraculous recovery, as this relies on shock-bait and medical inaccuracy.",
-  "Avoid making definitive medical claims about specific foods curing mental states; keep the language focused on general preferences or energy sources.",
-  "Steer clear of dark psychology 'manipulation' tactics that feel exploitative; instead, focus on understanding cognitive biases for self-improvement."
+  "Exaggerated medical claims, dramatic injury shock-bait, or promising instant mental cures",
+  "Overly clinical, jargon-heavy lectures that lack immediate visual demonstrations or relatable metaphors",
+  "Intrusive ambient audio or overly alarming music cues that distract from simple educational clarity"
  ],
  "try_next": [
-  "Create a 'Brain's Grocery List' short where the animated brain picks and rejects items from a public-domain text on nutrition, explaining why certain tastes are evolutionary survival mechanisms.",
-  "Animate a classic public-domain experiment on attention (like the 'Invisible Gorilla' concept but with a different object) to show how the brain filters out important details, ending with the brain character looking guilty.",
-  "Produce a 'Brain's Morning Routine' video where the character struggles to wake up, using the animation to explain the inertia of habit loops and the role of dopamine in motivation, sourced from classic behaviorist texts."
+  "A 30-second breakdown on the psychological illusion of attention based on early 20th-century perception studies, using a quick visual spot-the-change test",
+  "A 35-second visual metaphor exploring how memory consolidation works during sleep, framed as a librarian organizing index cards",
+  "A 40-second clip on why selective listening occurs under sensory overload, grounded in classic attention theories with a simple audio-visual exercise"
  ],
- "updated": "2026-11-18",
+ "updated": "2026-11-25",
  "n_hits": 30,
  "shares": {
-  "question title": 33,
-  "speaks to \"you\"": 67,
+  "question title": 30,
+  "speaks to \"you\"": 63,
   "number in title": 13,
-  "has emoji": 60,
-  "ALL-CAPS word": 3,
+  "has emoji": 57,
+  "ALL-CAPS word": 7,
   "title <= 6 words": 20,
-  "video <= 30s": 33,
-  "video 30-60s": 50,
+  "video <= 30s": 37,
+  "video 30-60s": 47,
   "video > 60s": 17
  },
- "median_hit_views": 9671627
+ "median_hit_views": 9578554
 }

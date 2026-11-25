@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "Short-form videos (under 30s) dominate reach, while longer videos (60s+) drive higher watch time and deeper emotional connection.",
-  "Titles addressing the viewer directly ('you') and using specific numbers create the highest click-through and engagement rates.",
-  "Viewers respond strongly to themes of self-preservation, boundaries, and emotional detachment, often framing them as 'wisdom' or 'gravity'.",
-  "High breakout scores correlate with metaphorical or nature-based analogies (e.g., wolves, gravity) rather than direct didactic instruction.",
-  "Comment sections show a strong preference for validation of personal experiences, especially regarding aging, loneliness, and setting limits."
+  "A provocative question or paradox in the first 2\u20113 seconds that promises a single, timeless lesson from a classic work.",
+  "A quick list tease (e.g., \u201c3\u201d, \u201c5\u201d, \u201c10\u201d) that signals bite\u2011size wisdom, keeping the video under 30 seconds.",
+  "Contrast: ancient philosophy vs. modern problem, using a striking quote to bridge the gap.",
+  "Visually\u2011driven hook \u2013 a close\u2011up of an old manuscript or illustration that immediately draws curiosity.",
+  "Emotional payoff: end with a concise, actionable \u201ctry this today\u201d statement that feels personal and empowering."
  ],
  "title_formulas": [
-  "[Number] [Unexpected Truth] About [Life Stage/Concept] That [Action]",
-  "Stop [Common Behavior] If You Want [Desired Outcome]",
-  "The [Metaphor] Approach to [Life Problem]"
+  "\"[Number] SURPRISING LESSONS FROM [PUBLIC\u2011DOMAIN CLASSIC] YOU\u2019LL USE TODAY\"",
+  "\"WHAT [FAMOUS PHILOSOPHER] REALLY MEANT BY \u2018[SHORT QUOTE]\u2019\"",
+  "\"[ONE\u2011WORD EMOTION]: THE [PUBLIC\u2011DOMAIN BOOK] QUOTE THAT WILL CHANGE YOUR [NOUN]\""
  ],
  "opening_3s": [
-  "Start with a stark, counter-intuitive statement about human nature or social dynamics.",
-  "Pose a direct question that challenges the viewer's current behavior or belief.",
-  "Show a brief, evocative visual of a nature element or classic statue to set a contemplative tone."
+  "A rapid flip of a parchment page with a voice\u2011over: \u201cWhat if a 19th\u2011century novel could solve your biggest stress?\u201d",
+  "Show a stark black\u2011and\u2011white silhouette of a philosopher with text appearing: \u201cEver wondered why this ancient line still hurts?\u201d",
+  "Begin with a bold on\u2011screen question: \u201cAre you living the life you\u2019re reading about?\u201d followed by a flash of the original title page."
  ],
  "comment_themes": [
-  "Viewers seek validation for their own struggles with aging, health, and social isolation.",
-  "Many users express gratitude for reminders to prioritize peace and self-care over external validation.",
-  "There is a recurring request for more practical, actionable advice on setting boundaries with family or friends.",
-  "Users often share personal anecdotes that align with the video's core lesson, creating a community of shared experience."
+  "Viewers ask for deeper context about the author\u2019s life and why the quote matters.",
+  "Requests for more concrete, daily\u2011action tips linked to the classic lesson.",
+  "Appreciation of the visual style that makes old texts feel fresh.",
+  "Desire for longer \u201clist\u201d videos that compile multiple short lessons."
  ],
  "avoid": [
-  "Do not make specific medical, financial, or legal promises or advice.",
-  "Avoid using copyrighted quotes or compilations from modern authors or creators.",
-  "Steer clear of overly generic motivational phrases that lack specific, actionable insight."
+  "Any medical, financial or dietary claims that sound like a miracle cure.",
+  "Quoting modern, copyrighted works or using other creators\u2019 compilations.",
+  "Overly sensational language that promises unrealistic results (e.g., \u201close 10\u202fkg in a week\u201d)."
  ],
  "try_next": [
-  "Create a 20-second video on 'The Art of Saying No' using a public-domain quote from a classical philosopher.",
-  "Develop a 45-second piece on 'Why Solitude is Strength' using a nature metaphor and a direct address to the viewer.",
-  "Produce a 15-second clip on 'The Price of Approval' that challenges the viewer's need for external validation."
+  "A 20\u2011second montage of Marcus Aurelius\u2019 \u201cMeditations\u201d verses over city\u2011rush footage, ending with a one\u2011sentence daily stoic practice.",
+  "A \u201cOne\u2011Page\u2011ADay\u201d series using public\u2011domain novels like\u202f\u2018Pride and Prejudice\u2019, each short revealing a single actionable habit.",
+  "A split\u2011screen debate where Socrates and Confucius (text excerpts) argue a current social issue, with captions guiding the viewer\u2019s own stance."
  ],
- "updated": "2026-11-18",
+ "updated": "2026-11-25",
  "n_hits": 30,
  "shares": {
-  "question title": 7,
-  "speaks to \"you\"": 47,
-  "number in title": 40,
-  "has emoji": 27,
-  "ALL-CAPS word": 7,
+  "question title": 10,
+  "speaks to \"you\"": 30,
+  "number in title": 17,
+  "has emoji": 20,
+  "ALL-CAPS word": 13,
   "title <= 6 words": 10,
-  "video <= 30s": 43,
-  "video 30-60s": 13,
-  "video > 60s": 43
+  "video <= 30s": 77,
+  "video 30-60s": 3,
+  "video > 60s": 20
  },
- "median_hit_views": 301653
+ "median_hit_views": 93864
 }

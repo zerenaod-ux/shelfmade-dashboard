@@ -1,49 +1,49 @@
 {
  "patterns": [
-  "Quick relatable hook with absurd exaggeration",
-  "Question-based explanation of common thought patterns",
-  "Minimal dialogue, exaggerated 2D expressions",
-  "Short, emoji-laden titles that invite self-identification",
-  "Countdown/list format for punchy points"
+  "Relatable scenarios sparking self-recognition",
+  "Humor through exaggeration of everyday thoughts",
+  "Vivid animations bringing abstract ideas to life",
+  "Short, punchy videos with immediate payoff",
+  "Exploring the inner world of overthinking and emotions"
  ],
  "title_formulas": [
-  "Why ___ is actually ___",
-  "When ___ happens, you should ___",
-  "The ___ way to stop ___"
+  "When [common situation] goes [unexpected direction]",
+  "The [surprising truth] about [familiar concept]",
+  "What happens when [relatable character] [takes action]"
  ],
  "opening_3s": [
-  "Leo says, \u2018Ever notice how your brain turns a simple question into a whole drama?\u2019 with a quick brain animation",
-  "Mia holds a sticky note that reads \u2018I\u2019m overthinking\u2019 and flips it to a silly scenario",
-  "A rapid montage of Leo and Mia in a silly situation with bold text: \u2018We all overthink.\u2019"
+  "A character's inner monologue sets the tone",
+  "A visually striking animation grabs attention",
+  "A relatable question or statement hooks the viewer"
  ],
  "comment_themes": [
-  "Praise for relatable humor",
-  "Requests for deeper psychology explanations",
-  "Appreciation for clean, simple animation",
-  "Suggestions for new topics like anxiety and procrastination"
+  "Viewers sharing personal experiences and relating to the content",
+  "Asking for more content on specific topics or themes",
+  "Praising the animation style and humor",
+  "Requesting longer or more in-depth videos"
  ],
  "avoid": [
-  "Copying other channels\u2019 catchphrases",
-  "Using copyrighted music",
-  "Overly complex animation that distracts from humor"
+  "Using another channel's distinctive style or characters",
+  "Relying on clich\u00e9s or overused tropes",
+  "Failing to deliver on the promise of the title or opening"
  ],
  "try_next": [
-  "Animated short on turning overthinking into productive planning",
-  "Sketch comparing Leo and Mia\u2019s overthinking to a cat chasing a laser pointer",
-  "Micro-episode series busting common mental\u2011health myths with quick jokes"
+  "Create a video exploring the psychology of procrastination",
+  "Develop a series on the benefits and drawbacks of introversion",
+  "Produce a video showcasing the comedic side of decision-making processes"
  ],
- "updated": "2026-11-18",
+ "updated": "2026-11-25",
  "n_hits": 30,
  "shares": {
-  "question title": 3,
-  "speaks to \"you\"": 20,
-  "number in title": 17,
-  "has emoji": 77,
-  "ALL-CAPS word": 10,
+  "question title": 10,
+  "speaks to \"you\"": 17,
+  "number in title": 23,
+  "has emoji": 73,
+  "ALL-CAPS word": 3,
   "title <= 6 words": 10,
-  "video <= 30s": 77,
+  "video <= 30s": 70,
   "video 30-60s": 10,
-  "video > 60s": 13
+  "video > 60s": 20
  },
- "median_hit_views": 45278
+ "median_hit_views": 83187
 }
