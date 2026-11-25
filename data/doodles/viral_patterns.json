@@ -1,79 +1,43 @@
 {
  "title_shapes": [
-  "When you [action] and [unexpected result] – e.g., \"When you borrow a friend's charger and it turns into a midnight karaoke session\"",
-  "The [adjective] [noun] that [verb] your [noun] – e.g., \"The sneaky roommate that steals your snacks and sparks a food war\"",
-  "[Number] Things You Never Knew About [topic] – e.g., \"5 Things You Never Knew About Office Coffee Machines\"",
-  "[Person] vs. [Person]: The [adjective] Showdown – e.g., \"Alex vs. Sam: The Ultimate Silent Elevator Battle\"",
-  "POV: [scenario] – e.g., \"POV: You accidentally walk into a Zoom call with your cat as the presenter\""
+  "Entity A VS Entity B: [Adjective] [Noun]! [Emoji] (Example: Cats VS Dogs: FURIOUS Chase! 🐱🐶)",
+  "[Action Verb] [Adjective] [Noun] #Hashtag (Example: Ranking Hilarious Fails #Funny)",
+  "[Noun] [Noun]: [Adjective] [Noun]! [Emoji] (Example: Robots VS Humans: CHAOTIC Battle! 🤖)",
+  "How to [Verb] [Noun] in [Timeframe] (Example: How to Fix a Leaky Faucet in 5 Seconds)",
+  "[Adjective] [Noun] That Will [Verb] You (Example: Silent Prank That Will Shock You)"
  ],
  "situations": [
-  "having a crush on a friend's parent",
-  "being noticeably shorter than the rest of the group",
-  "trying to be a third wheel but making it awkward",
-  "getting caught breaking school rules by strict parents",
-  "dealing with a roommate who constantly borrows stuff without asking"
+  "Two distinct objects or characters interacting in a conflict or comparison",
+  "A rapid sequence of relatable, awkward, or mundane daily struggles",
+  "A sudden, unexpected physical reaction to a simple stimulus",
+  "A side-by-side comparison of two similar items with one clearly superior",
+  "A quick transformation or before-and-after reveal of a messy state"
  ],
  "openings": [
-  "Text overlay with a bold question that appears within the first second",
-  "Immediate reaction shot with a startled facial expression and a sound effect",
-  "Voice‑over asking “Ever been in this situation?” while the camera pans",
-  "Quick cut to a written caption that sets up the premise, followed by the first action"
+  "Immediate visual clash or collision between two subjects",
+  "A close-up of a face showing extreme emotion (shock, anger, joy)",
+  "A text overlay stating a bold claim or question",
+  "A fast-cut montage of 3-4 rapid actions to establish pace"
  ],
  "endings": [
-  "A punchline caption that appears as the video freezes",
-  "A call‑to‑action overlay encouraging likes/comments",
-  "A laugh track that fades out with the final frame",
-  "A rapid montage of related bloopers ending in a fade‑to‑black"
+  "A freeze-frame on the final result or reaction",
+  "A quick loop back to the start for seamless repetition",
+  "A call-to-action text overlay (e.g., 'Follow for more')",
+  "A sudden cut to black or a static image with a logo"
  ],
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "based_on": [
   {
-   "title": "That One Friend You Shouldn&#39;t Have Invited Over #skit #relatable #comedy",
-   "views": 31135522
-  },
-  {
-   "title": "FRIEND’S DAD🫣 #shorts",
-   "views": 1640884
-  },
-  {
-   "title": "MOM AND DAD?!?! 😭 #shorts",
-   "views": 1108590
+   "title": "Tales VS Toys: WICKED Argument! 🪄🧙‍♀️ #PeppaPig #Shorts #toys #toyplay",
+   "views": 299959
   },
   {
    "title": "Tales VS Toys: WICKED Argument! 🪄🧙‍♀️ #PeppaPig #Shorts #toys #toyplay",
-   "views": 295872
-  },
-  {
-   "title": "The friend that can’t hear #friend #shorts",
-   "views": 215993
-  },
-  {
-   "title": "POV: Your friend is the worst third wheel ever 🤣👀 #shorts",
-   "views": 86070
-  },
-  {
-   "title": "Tag THAT short friend 💀😂",
-   "views": 65206
-  },
-  {
-   "title": "Yar mummy sabke samne bolne ka kya jarurt hai😢 #relatable #funny #comedy #shorts #ytshorts #mom",
-   "views": 45357
-  },
-  {
-   "title": "That One Friend Who Makes EVERYTHING Awkward 💀😂| Key &amp; Peele",
-   "views": 36400
-  },
-  {
-   "title": "He Tested His Girlfriend’s Friend… And Things Got Awkward 😂 #shorts",
-   "views": 35228
-  },
-  {
-   "title": "POV: Your friend ruins every single handshake 🤣🙅‍♂️ #shorts",
-   "views": 26952
+   "views": 59604
   },
   {
    "title": "ranking relatable life moments #usa",
-   "views": 24778
+   "views": 24779
   }
  ]
 }

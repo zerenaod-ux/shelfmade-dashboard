@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "10",
- "collected": "2026-11-24",
+ "collected": "2026-11-25",
  "note": "",
  "videos": [
   {
@@ -63,7 +63,7 @@
    "published": "2026-10-28T03:52:19Z",
    "duration": "PT24S",
    "privacy": "public",
-   "views": 86,
+   "views": 87,
    "likes": 1,
    "comments": 0,
    "avgSeconds": 15,
@@ -201,6 +201,19 @@
    "subsGained": 0
   },
   {
+   "id": "Y-FWlbV5SYM",
+   "title": "Can truth unlock hidden peace?",
+   "published": "2026-11-06T18:06:07Z",
+   "duration": "PT36S",
+   "privacy": "public",
+   "views": 52,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 8,
+   "avgPercent": 23.36,
+   "subsGained": 0
+  },
+  {
    "id": "NdyYlv5koBQ",
    "title": "You must learn to shut off mental steam when you quit work",
    "published": "2026-10-28T22:00:41Z",
@@ -303,6 +316,16 @@
    "avgSeconds": 19,
    "avgPercent": 37.41,
    "subsGained": 0
+  },
+  {
+   "id": "c2RncDhV5iw",
+   "title": "Why Your Brain Lies About Spanish \ud83e\udde0",
+   "published": "2026-11-25T03:01:25Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 39,
+   "likes": 1,
+   "comments": 0
   },
   {
    "id": "0OxyEvY3YvU",
@@ -526,6 +549,19 @@
    "subsGained": 0
   },
   {
+   "id": "D3aLO1j24s8",
+   "title": "Nobody warns you about Acres of Diamonds.",
+   "published": "2026-11-13T18:04:35Z",
+   "duration": "PT1M19S",
+   "privacy": "public",
+   "views": 28,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 25,
+   "avgPercent": 32.7,
+   "subsGained": 0
+  },
+  {
    "id": "8QKdl9NNi3Y",
    "title": "Do crowds drown true wisdom?",
    "published": "2026-11-06T03:01:57Z",
@@ -549,19 +585,6 @@
    "comments": 1,
    "avgSeconds": 22,
    "avgPercent": 31.019999999999996,
-   "subsGained": 0
-  },
-  {
-   "id": "D3aLO1j24s8",
-   "title": "Nobody warns you about Acres of Diamonds.",
-   "published": "2026-11-13T18:04:35Z",
-   "duration": "PT1M19S",
-   "privacy": "public",
-   "views": 26,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 25,
-   "avgPercent": 32.7,
    "subsGained": 0
   },
   {
@@ -721,6 +744,16 @@
    "subsGained": 0
   },
   {
+   "id": "M1tqBDu4akY",
+   "title": "Ruskin would hate how you live.",
+   "published": "2026-11-23T18:06:53Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "j-8zUPTf8LU",
    "title": "One line in Prince hits hard.",
    "published": "2026-11-19T18:06:35Z",
@@ -745,16 +778,6 @@
    "avgSeconds": 9,
    "avgPercent": 38.69,
    "subsGained": 0
-  },
-  {
-   "id": "M1tqBDu4akY",
-   "title": "Ruskin would hate how you live.",
-   "published": "2026-11-23T18:06:53Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 17,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "QHacncwEVO4",
@@ -962,6 +985,19 @@
    "subsGained": 0
   },
   {
+   "id": "6z0IxWs-qko",
+   "title": "Can you remember a page without notes?",
+   "published": "2026-11-05T00:00:18Z",
+   "duration": "PT7M25S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 119,
+   "avgPercent": 26.950000000000003,
+   "subsGained": 0
+  },
+  {
    "id": "jTyrD15cQHM",
    "title": "Can one page change you?",
    "published": "2026-10-14T02:39:25Z",
@@ -1008,7 +1044,7 @@
    "privacy": "public",
    "views": 9,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "hG6pY3pC7f0",
@@ -1021,19 +1057,6 @@
    "comments": 1,
    "avgSeconds": 56,
    "avgPercent": 86.62,
-   "subsGained": 0
-  },
-  {
-   "id": "6z0IxWs-qko",
-   "title": "Can you remember a page without notes?",
-   "published": "2026-11-05T00:00:18Z",
-   "duration": "PT7M25S",
-   "privacy": "public",
-   "views": 9,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 119,
-   "avgPercent": 26.950000000000003,
    "subsGained": 0
   },
   {
@@ -1206,6 +1229,32 @@
    "subsGained": 0
   },
   {
+   "id": "7HnIeRjpoGg",
+   "title": "Listen to what Seneca warned about.",
+   "published": "2026-11-12T00:00:29Z",
+   "duration": "PT6M42S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 4.18,
+   "subsGained": 0
+  },
+  {
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
+   "privacy": "public",
+   "views": 6,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 2.16,
+   "subsGained": 0
+  },
+  {
    "id": "19NEY5x_reI",
    "title": "What if you flow like water?",
    "published": "2026-06-23T20:36:41Z",
@@ -1282,7 +1331,7 @@
    "privacy": "public",
    "views": 5,
    "likes": 1,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "NFCFFiU0_hw",
@@ -1295,19 +1344,6 @@
    "comments": 1,
    "avgSeconds": 11,
    "avgPercent": 18.32,
-   "subsGained": 0
-  },
-  {
-   "id": "7HnIeRjpoGg",
-   "title": "Listen to what Seneca warned about.",
-   "published": "2026-11-12T00:00:29Z",
-   "duration": "PT6M42S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 4.18,
    "subsGained": 0
   },
   {
@@ -1514,6 +1550,16 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
+  },
+  {
+   "id": "igP95PPeC9Y",
+   "title": "This Pleasures of Life line is uncomfortable.",
+   "published": "2026-11-25T00:00:06Z",
+   "duration": "PT6M40S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "p079-FpO7QE",
@@ -1976,19 +2022,6 @@
    "subsGained": 0
   },
   {
-   "id": "WCx2ToBGPhU",
-   "title": "Can generosity survive hardship?",
-   "published": "2026-11-09T03:01:37Z",
-   "duration": "PT32S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "xIxtLasPyV8",
    "title": "You were taught Meditations wrong.",
    "published": "2026-11-09T00:00:22Z",
@@ -2177,6 +2210,16 @@
    "comments": 0
   },
   {
+   "id": "lQdm_UpFuzA",
+   "title": "How Organisms Light Up Without Power \ud83e\ude90",
+   "published": "2026-11-25T18:03:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "4xPi9hO0b8g",
    "title": "Why The Horizon Moon Looks Giant \ud83c\udf15",
    "published": "2026-11-24T17:01:23Z",
@@ -2250,16 +2293,6 @@
    "comments": 0
   },
   {
-   "id": "igP95PPeC9Y",
-   "title": "This Pleasures of Life line is uncomfortable.",
-   "published": "2026-11-19T07:47:57Z",
-   "duration": "PT6M40S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "63_zRWkaCXg",
    "title": "Lao Tzu would hate how you live.",
    "published": "2026-11-19T00:00:00Z",
@@ -2290,19 +2323,6 @@
    "title": "Think before you fight | The Art of War",
    "published": "2026-11-11T00:00:40Z",
    "duration": "PT6M43S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "g8hW1uT4Eg8",
-   "title": "For in those things that properly belong unto the mind, she cannot be hindered by any man",
-   "published": "2026-11-09T18:04:33Z",
-   "duration": "PT58S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

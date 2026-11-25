@@ -403,5 +403,29 @@
    "subs": 2,
    "est_watch_hours": 2.9
   }
+ },
+ {
+  "date": "2026-11-25",
+  "shelfmade": {
+   "videos": 190,
+   "views": 3534,
+   "likes": 122,
+   "subs": 10,
+   "est_watch_hours": 19.9
+  },
+  "mindlore": {
+   "videos": 172,
+   "views": 6161,
+   "likes": 116,
+   "subs": 10,
+   "est_watch_hours": 54.0
+  },
+  "doodles": {
+   "videos": 61,
+   "views": 564,
+   "likes": 36,
+   "subs": 2,
+   "est_watch_hours": 2.9
+  }
  }
 ]
