@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T22:43:52+00:00",
+ "at": "2026-11-25T21:57:21+00:00",
  "ready": "bad",
  "checks": [
   {
@@ -10,22 +10,22 @@
   {
    "name": "Jobs",
    "level": "warn",
-   "text": "last run failed: bio-page, blender-test, mindlore-live-redo, tokencheck, watchdog"
+   "text": "last run failed: blender-test, mindlore-live-redo, watchdog"
   },
   {
    "name": "Alerts",
    "level": "bad",
-   "text": "6 open: ALERT: token problem; ALERT: system problem; ALERT: YouTube login check failing or st"
+   "text": "5 open: ALERT: system problem; ALERT: Kaggle GPU failing or silent; ALERT: YouTube login check failing or st"
   },
   {
    "name": "Keys",
-   "level": "warn",
-   "text": "weekly key test failure, 0 days ago"
+   "level": "ok",
+   "text": "weekly key test success, 0 days ago"
   },
   {
    "name": "Doodles stories",
    "level": "ok",
-   "text": "5 unused saved (more are written automatically)"
+   "text": "2 unused saved (more are written automatically)"
   },
   {
    "name": "ShelfMade posts waiting",
@@ -35,7 +35,7 @@
   {
    "name": "Waiting for review",
    "level": "ok",
-   "text": "0 videos open (autopilot clears them when ON)"
+   "text": "2 videos open (autopilot clears them when ON)"
   }
  ]
 }
