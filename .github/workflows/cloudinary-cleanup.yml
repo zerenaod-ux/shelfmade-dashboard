@@ -1,0 +1,28 @@
+name: cloudinary-cleanup
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: '1 = really delete, 0 = dry run (only counts)'
+        default: '0'
+      days:
+        description: 'only videos older than this many days'
+        default: '7'
+permissions:
+  contents: read
+  issues: read
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          CLOUDINARY_JSON: ${{ secrets.CLOUDINARY_JSON }}
+          CLOUDINARY_JSON_DOODLES: ${{ secrets.CLOUDINARY_JSON_DOODLES }}
+          APPLY: ${{ github.event.inputs.apply }}
+          MIN_DAYS: ${{ github.event.inputs.days }}
+        run: python cloudinary_cleanup.py
