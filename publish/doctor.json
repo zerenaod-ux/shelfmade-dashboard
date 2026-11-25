@@ -3,10 +3,7 @@
  "attempts": {
   "mindlore-live-redo": 1,
   "blender-test": 2,
-  "scene-factory": 1,
-  "tokencheck": 2,
-  "mindlore-2d": 1,
-  "doodles": 1
+  "scene-factory": 1
  },
  "pending": [],
  "log": [
@@ -247,7 +244,7 @@
    "msg": "doodles: no safe automatic fix found"
   }
  ],
- "at": "2026-11-25T19:34:08Z",
+ "at": "2026-11-25T21:37:48Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
