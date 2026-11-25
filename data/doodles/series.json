@@ -47,8 +47,8 @@
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 10,
-   "last": 59
+   "uses": 11,
+   "last": 65
   },
   {
    "id": "scoreboard",
@@ -813,6 +813,18 @@
    "milestone": false,
    "season": 6,
    "date": "2026-11-24"
+  },
+  {
+   "n": 57,
+   "kind": "short",
+   "id": "impostor-syndrome-rating",
+   "title": "Leo vs. Mia: The Fraud Rating Showdown",
+   "concept": "Leo rates himself as a fraud based on small mistakes while Mia rates him as a zero",
+   "gag": "dev",
+   "callback": true,
+   "milestone": false,
+   "season": 6,
+   "date": "2026-11-25"
   }
  ]
 }
