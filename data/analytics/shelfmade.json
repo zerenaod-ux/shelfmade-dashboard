@@ -76,7 +76,7 @@
    "published": "2026-10-15T01:32:23Z",
    "duration": "PT23S",
    "privacy": "public",
-   "views": 76,
+   "views": 77,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 11,
@@ -171,7 +171,7 @@
    "likes": 0,
    "comments": 1,
    "avgSeconds": 13,
-   "avgPercent": 20.47,
+   "avgPercent": 20.32,
    "subsGained": 0
   },
   {
@@ -235,8 +235,8 @@
    "views": 50,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 12,
-   "avgPercent": 19.29,
+   "avgSeconds": 13,
+   "avgPercent": 21.69,
    "subsGained": 0
   },
   {
@@ -318,16 +318,6 @@
    "subsGained": 0
   },
   {
-   "id": "c2RncDhV5iw",
-   "title": "Why Your Brain Lies About Spanish \ud83e\udde0",
-   "published": "2026-11-25T03:01:25Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 39,
-   "likes": 1,
-   "comments": 0
-  },
-  {
    "id": "0OxyEvY3YvU",
    "title": "Moreover, nothing is good but virtue, and nothing but vice is bad",
    "published": "2026-11-03T01:26:52Z",
@@ -352,6 +342,16 @@
    "avgSeconds": 22,
    "avgPercent": 39.29,
    "subsGained": 0
+  },
+  {
+   "id": "c2RncDhV5iw",
+   "title": "Why Your Brain Lies About Spanish \ud83e\udde0",
+   "published": "2026-11-25T03:01:25Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 36,
+   "likes": 1,
+   "comments": 0
   },
   {
    "id": "sGfMrVc9aVQ",
@@ -492,8 +492,8 @@
    "views": 31,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 37,
-   "avgPercent": 55.65,
+   "avgSeconds": 23,
+   "avgPercent": 34.81,
    "subsGained": 0
   },
   {
@@ -751,7 +751,10 @@
    "privacy": "public",
    "views": 18,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 11.48,
+   "subsGained": 0
   },
   {
    "id": "j-8zUPTf8LU",
@@ -882,6 +885,16 @@
    "avgSeconds": 32,
    "avgPercent": 6.25,
    "subsGained": 0
+  },
+  {
+   "id": "lQdm_UpFuzA",
+   "title": "How Organisms Light Up Without Power \ud83e\ude90",
+   "published": "2026-11-25T18:03:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 15,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "SAQ1Y0wN0zI",
@@ -1044,7 +1057,10 @@
    "privacy": "public",
    "views": 9,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 7,
+   "avgPercent": 13.4,
+   "subsGained": 0
   },
   {
    "id": "hG6pY3pC7f0",
@@ -1112,6 +1128,19 @@
    "subsGained": 0
   },
   {
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 2.16,
+   "subsGained": 0
+  },
+  {
    "id": "GlwLgzeUZsg",
    "title": "Why does Thus Spake Zarathustra still matter?",
    "published": "2026-11-14T03:02:32Z",
@@ -1122,6 +1151,32 @@
    "comments": 1,
    "avgSeconds": 28,
    "avgPercent": 39.99,
+   "subsGained": 0
+  },
+  {
+   "id": "7HnIeRjpoGg",
+   "title": "Listen to what Seneca warned about.",
+   "published": "2026-11-12T00:00:29Z",
+   "duration": "PT6M42S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 16,
+   "avgPercent": 4.18,
+   "subsGained": 0
+  },
+  {
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
+   "privacy": "public",
+   "views": 7,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 2.16,
    "subsGained": 0
   },
   {
@@ -1213,45 +1268,6 @@
    "comments": 0,
    "avgSeconds": 1,
    "avgPercent": 2.22,
-   "subsGained": 0
-  },
-  {
-   "id": "pLirzW1d_Og",
-   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
-   "published": "2026-11-15T00:00:32Z",
-   "duration": "PT8M42S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 2.16,
-   "subsGained": 0
-  },
-  {
-   "id": "7HnIeRjpoGg",
-   "title": "Listen to what Seneca warned about.",
-   "published": "2026-11-12T00:00:29Z",
-   "duration": "PT6M42S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 4.18,
-   "subsGained": 0
-  },
-  {
-   "id": "pLirzW1d_Og",
-   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
-   "published": "2026-11-15T00:00:32Z",
-   "duration": "PT8M42S",
-   "privacy": "public",
-   "views": 6,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 2.16,
    "subsGained": 0
   },
   {
@@ -1787,19 +1803,6 @@
    "subsGained": 0
   },
   {
-   "id": "lX71jEZ8QNg",
-   "title": "Allen would hate how you live.",
-   "published": "2026-11-10T00:00:16Z",
-   "duration": "PT6M45S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 58,
-   "avgPercent": 14.32,
-   "subsGained": 0
-  },
-  {
    "id": "cPmS7p3wuaY",
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-13T00:00:09Z",
@@ -1954,7 +1957,10 @@
    "privacy": "public",
    "views": 1,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 10,
+   "avgPercent": 2.38,
+   "subsGained": 0
   },
   {
    "id": "TXgCTuFvgYA",
@@ -1965,8 +1971,8 @@
    "views": 1,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 412,
+   "avgPercent": 99.23,
    "subsGained": 0
   },
   {
@@ -2210,11 +2216,11 @@
    "comments": 0
   },
   {
-   "id": "lQdm_UpFuzA",
-   "title": "How Organisms Light Up Without Power \ud83e\ude90",
-   "published": "2026-11-25T18:03:01Z",
-   "duration": "PT52S",
-   "privacy": "public",
+   "id": "21fD3Ljmee0",
+   "title": "How Venus Spins Backward \ud83c\udf0d",
+   "published": "2026-11-25T21:55:44Z",
+   "duration": "PT9M38S",
+   "privacy": "private",
    "views": 0,
    "likes": 0,
    "comments": 0
@@ -2237,7 +2243,10 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
   },
   {
    "id": "x5lAui69vdQ",
@@ -2349,6 +2358,19 @@
    "title": "Think before you fight | The Art of War",
    "published": "2026-11-11T00:00:40Z",
    "duration": "PT6M43S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "NZEHVdWXKhQ",
+   "title": "Is virtue the only good?",
+   "published": "2026-11-07T03:01:44Z",
+   "duration": "PT27S",
    "privacy": "public",
    "views": 0,
    "likes": 0,

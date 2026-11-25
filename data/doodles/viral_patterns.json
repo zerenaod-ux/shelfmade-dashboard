@@ -1,39 +1,40 @@
 {
  "title_shapes": [
-  "Entity A VS Entity B: [Adjective] [Noun]! [Emoji] (Example: Cats VS Dogs: FURIOUS Chase! 🐱🐶)",
-  "[Action Verb] [Adjective] [Noun] #Hashtag (Example: Ranking Hilarious Fails #Funny)",
-  "[Noun] [Noun]: [Adjective] [Noun]! [Emoji] (Example: Robots VS Humans: CHAOTIC Battle! 🤖)",
-  "How to [Verb] [Noun] in [Timeframe] (Example: How to Fix a Leaky Faucet in 5 Seconds)",
-  "[Adjective] [Noun] That Will [Verb] You (Example: Silent Prank That Will Shock You)"
+  "X vs Y: Adjective Noun! 🎉 #Tag #Shorts #keyword",
+  "Ranking: relatable life moments #country",
+  "How to do Z in 60 seconds #DIY #Shorts",
+  "Top 5 surprising facts about A #list #shorts",
+  "Unexpected B caught on camera #funny #shorts"
  ],
  "situations": [
-  "Two distinct objects or characters interacting in a conflict or comparison",
-  "A rapid sequence of relatable, awkward, or mundane daily struggles",
-  "A sudden, unexpected physical reaction to a simple stimulus",
-  "A side-by-side comparison of two similar items with one clearly superior",
-  "A quick transformation or before-and-after reveal of a messy state"
+  "awkward elevator rides",
+  "waiting in line for coffee",
+  "losing a single sock",
+  "receiving endless spam calls",
+  "cooking a meal that goes wrong",
+  "pet causing harmless chaos"
  ],
  "openings": [
-  "Immediate visual clash or collision between two subjects",
-  "A close-up of a face showing extreme emotion (shock, anger, joy)",
-  "A text overlay stating a bold claim or question",
-  "A fast-cut montage of 3-4 rapid actions to establish pace"
+  "A bold text hook like \"You won’t believe this!\" with fast music",
+  "Close‑up of a surprising action followed by a quick caption",
+  "A rapid jump‑cut showing the problem in the first second",
+  "A voice‑over saying \"Watch this!\" as the scene starts"
  ],
  "endings": [
-  "A freeze-frame on the final result or reaction",
-  "A quick loop back to the start for seamless repetition",
-  "A call-to-action text overlay (e.g., 'Follow for more')",
-  "A sudden cut to black or a static image with a logo"
+  "Call‑to‑action overlay: \"Like, comment, and follow for more!\"",
+  "Fade to channel logo with a short jingle",
+  "Prompt to watch the next short: \"Up next...\"",
+  "Text prompt: \"What would you do? Comment below!\""
  ],
  "updated": "2026-11-25",
  "based_on": [
   {
    "title": "Tales VS Toys: WICKED Argument! 🪄🧙‍♀️ #PeppaPig #Shorts #toys #toyplay",
-   "views": 299959
+   "views": 301298
   },
   {
    "title": "Tales VS Toys: WICKED Argument! 🪄🧙‍♀️ #PeppaPig #Shorts #toys #toyplay",
-   "views": 59604
+   "views": 61049
   },
   {
    "title": "ranking relatable life moments #usa",
