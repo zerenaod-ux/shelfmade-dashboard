@@ -1,36 +1,36 @@
 {
  "why": [
   {
-   "title": "Cicero's Warning to Men Who Ignore History. #cicero #philosophy #shorts",
-   "why": "It leverages an urgent, high-stakes warning frame combined with historical authority to trigger curiosity and fear of missing crucial wisdom."
+   "title": "Aristotle's Forgotten Rule for Anger Nobody Quotes",
+   "why": "High breakout (12.1) driven by the 'forgotten/secret' curiosity gap applied to a well-known figure, which signals exclusive value to a small audience."
   },
   {
-   "title": "They Ignored You? Never Give Them Access Again | Machiavelli #shorts #philosophy #machiavelliquotes",
-   "why": "It hooks viewers through relatable social rejection, delivering a dark, highly actionable boundary-setting lesson attributed to Machiavelli."
+   "title": "Echoes of Wisdom",
+   "why": "Extreme breakout (35.1) creates a 'blue ocean' moment for pure Stoic/Philosophical quotes, indicating high demand for calm, intellectual content free from personality-driven noise."
   },
   {
    "title": "Your Mind Is More Powerful Than You Think. #shorts",
-   "why": "It taps into the timeless desire for self-mastery with a bold statement hook that promises immediate internal empowerment."
+   "why": "Breakout of 30.0 on a micro-channel proves that simple, empowering affirmations about mental agency resonate deeply without needing complex production or famous names."
   },
   {
-   "title": "4 Charlie Chaplin Quotes That Will Change Your Life \ud83c\udf1f #Motivation #CharlieChaplin #LifeLessons",
-   "why": "It combines a clear listicle structure with an unexpected, highly recognizable historic figure to drive exceptionally high casual viewer retention."
+   "title": "4 Charlie Chaplin Quotes That Will Change Your Life \u2728 #Motivation #CharlieChaplin #LifeLessons",
+   "why": "High VPH (3356) and healthy breakout (5.1) show that pairing time-tested public domain icons with universal life struggles (love, success) drives mass appeal and shareability."
   }
  ],
  "hook_patterns": [
-  "Rejection/boundary setting combined with pragmatic historical advice.",
-  "Urgent historical warnings that challenge the viewer's current behavior.",
-  "Numbered life advice lists attributed to unexpected public-domain icons."
+  "The 'Lost Wisdom' Hook: Frame a common philosophical concept as a 'forgotten' or 'hidden' rule from a historical giant.",
+  "The 'Mindset Shift' Hook: Start with a direct, empowering statement about the viewer's internal power (e.g., 'Your mind is...').",
+  "The 'Timeless Icon' Hook: Pair a beloved public domain figure (Chaplin, Austen, Dickens) with a modern emotional pain point."
  ],
- "todays_angle": "Use historical literature on human nature to address modern feelings of betrayal and social dynamics.",
+ "todays_angle": "Leverage the 'Forgotten Wisdom' trend by extracting specific, actionable psychological strategies from public-domain philosophers that feel counter-intuitive to modern hustle culture.",
  "ideas": [
-  "Public Domain Book: The Count of Monte Cristo by Alexandre Dumas. Hook: 'When people betray your trust, master the art of silent patience.' Highlight Edmond Dant\u00e8s' classic lessons on emotional restraint.",
-  "Public Domain Book: The Art of War by Sun Tzu. Hook: '3 signs someone is secretly competing with you.' Use Sun Tzu's strategic wisdom applied to modern social relationships.",
-  "Public Domain Book: Meditations by Marcus Aurelius. Hook: 'Stop caring about people who only reach out when they need something.' Focus on Stoic detachment from fake friends."
+  "A 30-second visual essay unpacking Schopenhauer\u2019s 'Rule of Silence' for avoiding conflict, using archival footage of 19th-century streets to set the mood.",
+  "A text-on-screen breakdown of Montaigne\u2019s essay on 'Sloth' as a form of mental clarity, contrasting it with the modern fear of missing out.",
+  "A montage of Oscar Wilde\u2019s sharpest retorts to mediocrity, presented as 'mental armor' for when you feel judged, with a slow, confident pace."
  ],
  "avoid": [
-  "Generic background-music slideshows tagged with unspecific hashtags like #wisdom or #stoicism.",
-  "Overused, generic Marcus Aurelius quotes about working hard without a specific personal or social angle."
+  "Generic 'Stoic Mindset' listicles that lack a specific narrative hook or unique perspective.",
+  "Overused 'Self-Help' affirmations that feel hollow without a grounding source in a specific book or historical context."
  ],
  "updated": "2026-11-25",
  "sample": 59,
@@ -38,92 +38,92 @@
   {
    "title": "4 Charlie Chaplin Quotes That Will Change Your Life \ud83c\udf1f #Motivation #CharlieChaplin #LifeLessons",
    "channel": "My Famous Writer",
-   "views": 144633,
-   "hours": 37,
-   "vph": 3894.2,
+   "views": 154083,
+   "hours": 46,
+   "vph": 3356.0,
    "subs": 30300,
-   "breakout": 4.8
+   "breakout": 5.1
+  },
+  {
+   "title": "\u0938\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u092c\u094b\u0932\u0947\u0902 \u092f\u0947 5 \u091a\u092e\u0924\u094d\u0915\u093e\u0930\u0940 \u092e\u0902\u0924\u094d\u0930 ! \ud83e\udd40\ud83c\udf0d#motivation #lifelessons #trendingshorts",
+   "channel": "Motivational quotes ",
+   "views": 4461,
+   "hours": 4,
+   "vph": 1133.3,
+   "subs": 156000,
+   "breakout": 0.0
   },
   {
    "title": "#quotes #wiseadvise #inspirationalquotes #stoicism #motivationstatus #stoicmindset #motivational",
    "channel": "The Mental Health Space",
-   "views": 15238,
-   "hours": 13,
-   "vph": 1198.4,
-   "subs": 6180,
-   "breakout": 2.5
+   "views": 23981,
+   "hours": 21,
+   "vph": 1116.0,
+   "subs": 6190,
+   "breakout": 3.9
   },
   {
    "title": "#quotes #wiseadvise #inspirationalquotes #stoicism #motivationstatus #stoicmindset #motivational",
    "channel": "The Mental Health Space",
-   "views": 13532,
-   "hours": 13,
-   "vph": 1063.9,
-   "subs": 6180,
-   "breakout": 2.2
-  },
-  {
-   "title": "#CriticalMind #CriticalThinking #DeepThoughts #Philosophy #DeepQuotes #LifeQuotes #Poetry #Human",
-   "channel": "CRITICAL MIND ",
-   "views": 39040,
-   "hours": 42,
-   "vph": 919.8,
-   "subs": 5650,
-   "breakout": 6.9
+   "views": 19576,
+   "hours": 21,
+   "vph": 910.9,
+   "subs": 6190,
+   "breakout": 3.2
   },
   {
    "title": "\u092e\u093e\u0901 \u0915\u092d\u0940 \u092c\u0921\u093c\u0947 \u0936\u092c\u094d\u0926\u094b\u0902 \u092e\u0947\u0902 \u092a\u094d\u092f\u093e\u0930..\ud83c\udf3f#maa #motivation#lifechangingthoughts #shorts#lifelessons#shortsfeed",
    "channel": "Safalta Ki Raah_92",
-   "views": 22538,
-   "hours": 32,
-   "vph": 713.2,
-   "subs": 65700,
-   "breakout": 0.3
+   "views": 23528,
+   "hours": 40,
+   "vph": 582.8,
+   "subs": 66100,
+   "breakout": 0.4
   },
   {
-   "title": "#quotes #wiseadvise #inspirationalquotes #stoicism #motivationstatus #stoicmindset #motivational",
-   "channel": "The Mental Health Space",
-   "views": 28886,
-   "hours": 42,
-   "vph": 680.6,
-   "subs": 6180,
-   "breakout": 4.7
+   "title": "u are your own home\ud83c\udf37 #hurtquotes #booktok #bookstagram #books #bookquotes #bookreview #bingeread#fyp",
+   "channel": "mausthoughts_",
+   "views": 3311,
+   "hours": 6,
+   "vph": 555.5,
+   "subs": 44000,
+   "breakout": 0.1
+  },
+  {
+   "title": "Aristotle's Forgotten Rule for Anger Nobody Quotes",
+   "channel": "STORYWISE-LEARN",
+   "views": 2419,
+   "hours": 6,
+   "vph": 378.0,
+   "subs": 32,
+   "breakout": 12.1
   },
   {
    "title": "Most Powerful Motivational Quotes That Will Change Your Life | Charlie Chaplin & Life Lessons",
    "channel": "Zoya",
-   "views": 10376,
-   "hours": 25,
-   "vph": 416.3,
-   "subs": 3060,
-   "breakout": 3.4
-  },
-  {
-   "title": "Cicero's Warning to Men Who Ignore History. #cicero #philosophy #shorts",
-   "channel": "Masculinity Oracle",
-   "views": 16558,
-   "hours": 43,
-   "vph": 388.7,
-   "subs": 1850,
-   "breakout": 9.0
+   "views": 12400,
+   "hours": 34,
+   "vph": 368.0,
+   "subs": 3070,
+   "breakout": 4.0
   },
   {
    "title": "#quotes #wisdom #wisewords #philosophy #stoicism #shorts",
    "channel": "Echoes of Wisdom",
-   "views": 8868,
-   "hours": 27,
-   "vph": 325.9,
-   "subs": 312,
-   "breakout": 28.4
+   "views": 11484,
+   "hours": 36,
+   "vph": 319.1,
+   "subs": 327,
+   "breakout": 35.1
   },
   {
-   "title": "They Ignored You? Never Give Them Access Again | Machiavelli #shorts #philosophy #machiavelliquotes",
-   "channel": "Mind Control & Calm",
-   "views": 4407,
-   "hours": 46,
-   "vph": 96.7,
-   "subs": 201,
-   "breakout": 21.9
+   "title": "Your Mind Is More Powerful Than You Think.             #shorts",
+   "channel": "MINDVAULT666",
+   "views": 6002,
+   "hours": 29,
+   "vph": 209.3,
+   "subs": 129,
+   "breakout": 30.0
   }
  ]
 }
