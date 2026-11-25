@@ -17,6 +17,7 @@ on:
         default: 'false'
 permissions:
   contents: write
+  actions: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -87,3 +88,12 @@ jobs:
           git add data/wb-history.json
           git commit -qm "whiteboard topic history ($JOB)" || true
           for i in 1 2 3 4 5; do git pull -q --rebase origin master && git push -q origin master && break; sleep 8; done
+  kick-review:
+    # GitHub's schedule/workflow_run triggers are often hours late (seen 2026-11-25: videos waited 3 h for review). Start review-publish ourselves.
+    needs: build
+    if: always() && github.event.inputs.test != 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST repos/${{ github.repository }}/actions/workflows/review-publish.yml/dispatches -f ref=master
