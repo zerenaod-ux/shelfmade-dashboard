@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261125-363bf",
+ "title": "Autobiography of Ben Franklin",
+ "author": "Benjamin Franklin",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Your Willpower Fails Part 1 🧠",
+ "hook": "You try to stick to your goals, but you keep giving in.",
+ "thumbnail_headline": "WILLPOWER FAILURE",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You try to stick to your goals, but you keep giving in. Actually, Benjamin Franklin said he failed 20 times before he could keep a daily journal. In 1771, he recorded about 20 lapses in self-control. The result? He thought willpower was a skill to build. That's it. But modern research shows otherwise. In 2014, the University of Washington measured about 10 to 12 hours of willpower use per day. The result? Willpower depletes like a battery. That's it. So next time you fail to stick to your goals, remember: your willpower is not a muscle. It's a limited resource."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Benjamin Franklin recorded about 20 lapses in self-control in 1771",
+   "who": "Benjamin Franklin",
+   "year": "1771",
+   "place": "Philadelphia"
+  },
+  {
+   "claim": "The University of Washington measured about 10 to 12 hours of willpower use per day",
+   "who": "University of Washington",
+   "year": "2014",
+   "place": "Seattle"
+  }
+ ],
+ "source_url": "",
+ "theme": "Autobiography of Ben Franklin by Benjamin Franklin",
+ "exp": "s30"
+}

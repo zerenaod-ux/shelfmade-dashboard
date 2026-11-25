@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261125-bdddd",
+ "title": "Politics",
+ "author": "Aristotle",
+ "brand": "shelfmade",
+ "story_short": true,
+ "public_title": "Why Tired Eyes Change Decisions Part 3 👁️",
+ "hook": "You make choices every single day.",
+ "thumbnail_headline": "FATIGUE BLINDS CHOICES",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You make choices every single day. Decision fatigue actually shifts your fairness. In 2011, researcher Shai Danziger studied about 1,000 court rulings in Israel. Judges granted parole far less often before meal breaks. The result? Exhausted brains default to the easiest answer. Aristotle wrote in Politics that fatigue ruins good judgment in citizens. Research proves he was right. So why do we ignore body rest? We assume willpower is endless. So next time you decide, remember you make choices."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Judges granted parole about 65 percent of the time at the start of the day, dropping to near zero before meal breaks.",
+   "who": "Shai Danziger",
+   "year": "2011",
+   "place": "Israel"
+  },
+  {
+   "claim": "Mental fatigue causes decision-makers to fall back on default, risk-averse choices.",
+   "who": "Jonathan Levav and Shai Danziger",
+   "year": "2011",
+   "place": "Columbia University"
+  }
+ ],
+ "source_url": "",
+ "theme": "Politics by Aristotle",
+ "exp": "s30"
+}
