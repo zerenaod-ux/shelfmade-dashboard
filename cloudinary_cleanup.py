@@ -17,6 +17,10 @@ def referenced_text():
     for p in Path('publish').glob('*.json'):
         try: t += p.read_text()
         except OSError: pass
+    for d in ('data', 'gh-state'):
+        for p in Path(d).rglob('*.json'):
+            try: t += p.read_text()
+            except OSError: pass
     try:
         t += subprocess.run(['gh', 'issue', 'list', '--state', 'open', '--limit', '200', '--json', 'body'], capture_output=True, text=True).stdout
     except Exception: pass
