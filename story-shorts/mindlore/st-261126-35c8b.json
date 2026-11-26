@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261126-35c8b",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Panic Makes Your Mouth Dry 💧",
+ "hook": "You feel your mouth turn dry when you get terrified.",
+ "thumbnail_headline": "DRY MOUTH PANIC",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel your mouth turn dry when you get terrified. That sudden thirst is actually your nervous system shutting down your digestion. In 1915, physiologist Walter Cannon at Harvard showed blood flow drops by over 80 percent in non-vital organs during acute fear. When terror strikes, your sympathetic system redirects every drop of fluid to your lungs and muscles. The result? Your salivary glands halt in less than 3 seconds. That's it. It was not just laboratory subjects who showed this response. In the 1930s, clinicians documented identical salivary pauses across hundreds of patients facing dental drills. We call this the fight or flight response. So why does your body stop producing simple spit? Because digesting a sandwich will not save you from a charging predator. Every ounce of water is reserved to help you sprint away. So next time you freeze before giving a speech, remember the hidden reason you feel your mouth turn dry."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Acute fear shunts blood flow away from digestive systems like salivary glands to large muscles",
+   "who": "Walter Cannon",
+   "year": "1915",
+   "place": "Harvard University"
+  },
+  {
+   "claim": "Sympathetic arousal completely suppresses salivation under immediate threat",
+   "who": "Nathaniel Kleitman and clinicians",
+   "year": "1930s",
+   "place": "United States"
+  }
+ ],
+ "source_url": "",
+ "theme": "stress and fear",
+ "exp": ""
+}

@@ -296,5 +296,102 @@
    "drift",
    "push"
   ]
+ },
+ {
+  "title": "Why Panic Makes Your Mouth Dry 💧",
+  "kinds": [
+   "before_after",
+   "chart",
+   "chat",
+   "clock",
+   "countdown",
+   "icon_burst",
+   "meter",
+   "notif",
+   "reaction",
+   "slots"
+  ],
+  "tone": "a deadpan stand-up comedian who underreacts to wild facts",
+  "end": "loop back to the very first image so it replays smoothly",
+  "pace": 1.6,
+  "pals": [
+   [
+    [
+     226,
+     247,
+     211
+    ],
+    [
+     251,
+     28,
+     210
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     205,
+     216,
+     249
+    ],
+    [
+     195,
+     69,
+     232
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     230,
+     215,
+     186
+    ],
+    [
+     81,
+     31,
+     228
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     38,
+     28,
+     9
+    ],
+    [
+     38,
+     226,
+     161
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ]
+  ],
+  "tr": [
+   "slide",
+   "flash",
+   "wipe_v"
+  ],
+  "cam": [
+   "tilt",
+   "punch"
+  ]
  }
 ]

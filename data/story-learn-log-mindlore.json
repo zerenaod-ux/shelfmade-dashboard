@@ -2177,6 +2177,28 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261126-35c8b",
+   "look": "live-demo",
+   "title": "Why Panic Makes Your Mouth Dry \ud83d\udca7",
+   "theme": "stress and fear",
+   "acts": [
+    "before_after",
+    "chart",
+    "chat",
+    "clock",
+    "countdown",
+    "icon_burst",
+    "meter",
+    "notif",
+    "reaction",
+    "slots"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }
