@@ -7080,5 +7080,360 @@
   "style": "v2",
   "format": "PRANK",
   "improv": false
+ },
+ {
+  "id": "lasagna-gym-meat-crime-scene",
+  "title": "What happens when you give your friend a two out of ten on pasta",
+  "concept": "Leo finds out Mia secretly rated his gym meat lasagna two out of ten on a family group poll.",
+  "insight": "Friendship survives bad culinary choices only if the tongue's lawyer gets paid.",
+  "caption": "Did you just rate my lasagna two out of ten?",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits at the podcast desk holding a cold coffee mug, glaring at Mia with worried eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "shocked",
+      "beat": "snap",
+      "text": "A two? For my world famous lasagna?"
+     },
+     {
+      "who": "mia",
+      "feel": "smug",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "It had weird crunchy bits in it, Leo."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "No crunch, pure muscle. It was gym meat."
+     }
+    ]
+   },
+   {
+    "scene": "Mia sets a tea cup down on the desk, leaning in close with a raised eyebrow.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "concerned",
+      "beat": "snap",
+      "text": "Gym meat sounds like a literal crime."
+     },
+     {
+      "who": "leo",
+      "feel": "annoyed",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "A crime against your terrible taste, yeah."
+     },
+     {
+      "who": "mia",
+      "feel": "playful",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "A crime against my innocent little tongue."
+     }
+    ]
+   },
+   {
+    "scene": "Leo taps his fingers on the wooden podcast desk while looking straight at the camera.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "curious",
+      "listener_feel": "amused",
+      "beat": "pause",
+      "text": "So my protein lasagna attacked your mouth?"
+     },
+     {
+      "who": "mia",
+      "feel": "dramatic",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "My tongue literally filed a restraining order."
+     },
+     {
+      "who": "leo",
+      "feel": "confused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "Does a mouth have a lawyer now?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia takes a slow sip of tea, keeping her eyes fixed on Leo with a smirk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "Yes, and she charges top dollar."
+     },
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "listener_feel": "surprised",
+      "beat": "quick",
+      "text": "Wait, so I am paying that legal bill, huh?"
+     },
+     {
+      "who": "mia",
+      "feel": "dismissive",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "That bill went straight to collection agencies."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans back in his seat, rubbing his temples in utter disbelief.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "stressed",
+      "beat": "pause",
+      "text": "Hold on, my tongue is in financial debt?"
+     },
+     {
+      "who": "mia",
+      "feel": "playful",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "Your poor tongue is in serious credit card debt."
+     },
+     {
+      "who": "leo",
+      "feel": "defeated",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "So my cooking actually bankrupted my own mouth?"
+     }
+    ]
+   },
+   {
+    "scene": "Mia points at Leo with her tea spoon, nodding slowly with a wide grin as the final joke lands.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "cheerful",
+      "beat": "snap",
+      "text": "Probably crying into multiple billable hours."
+     },
+     {
+      "who": "leo",
+      "feel": "shocked",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Next time I am ordering pizza."
+     },
+     {
+      "who": "mia",
+      "feel": "smug",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "My lawyer accepts pepperoni."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 8,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The escalating joke about the tongue filing a lawsuit over protein lasagna lands every punchline naturally.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 8,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "idea": "",
+  "style": "v2",
+  "format": "FUNNY EXPLAINER",
+  "improv": true
+ },
+ {
+  "id": "availability-bias-shark-fear",
+  "title": "Leo Is Terrified Of Sharks In A Pool",
+  "concept": "availability bias",
+  "insight": "overestimating risk based on recent vivid memories",
+  "caption": "When one movie ruins pools forever.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Pod desk setting; Leo drops a giant yellow inflatable pool ring with wide worried eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "overdramatic",
+      "beat": "snap",
+      "text": "I can't go to the community pool anymore."
+     },
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "listener_feel": "curious",
+      "beat": "quick",
+      "text": "Why? It's literally three feet deep and filled with kids."
+     }
+    ]
+   },
+   {
+    "scene": "Pod desk setting; Mia holds a hot coffee mug while shaking her head at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "worried",
+      "beat": "snap",
+      "text": "A crazy shark movie popped up on my feed yesterday."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "So now you think great whites live in heavily chlorinated public water?"
+     }
+    ]
+   },
+   {
+    "scene": "Pod desk setting; Leo paces the hallway space behind his chair waving his arms.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "You don't know that for sure! The tile is painted blue just like the deep ocean!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "amused",
+      "beat": "pause",
+      "text": "Okay but hear me out, your logic makes zero sense."
+     }
+    ]
+   },
+   {
+    "scene": "Pod desk setting; Mia taps a digital clock showing a time on her desk.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "confident",
+      "beat": "snap",
+      "text": "You went swimming every single day last summer without a single problem."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "That was entirely before I saw the terrifying fin trailer!"
+     }
+    ]
+   },
+   {
+    "scene": "Pod desk setting; Leo pulls a small couch blanket over his head in fear.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "scared",
+      "beat": "snap",
+      "text": "I am officially taking a bath with my heavy winter boots on from now on."
+     },
+     {
+      "who": "mia",
+      "feel": "exasperated",
+      "listener_feel": "concerned",
+      "beat": "quick",
+      "text": "In your tiny apartment bathtub? Are you actually serious right now?"
+     }
+    ]
+   },
+   {
+    "scene": "Pod desk setting; Mia gestures with her tea cup as an alarm going off plays.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "stubborn",
+      "beat": "snap",
+      "text": "Safety comes first, Mia, and I refuse to become a midnight snack."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "Congratulations on letting one silly video completely ruin your entire summer."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 6,
+   "hook": 7,
+   "spoken": 7,
+   "relatable": 6,
+   "ending": 7,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The dialogue is funny and natural with a clear setup and payoff about an absurd fear.",
+   "scores": {
+    "i": 0,
+    "funny": 6,
+    "hook": 7,
+    "spoken": 7,
+    "relatable": 6,
+    "ending": 7,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "idea",
+  "idea": "availability bias",
+  "style": "v2",
+  "format": "CONFESSION",
+  "improv": false
  }
 ]
