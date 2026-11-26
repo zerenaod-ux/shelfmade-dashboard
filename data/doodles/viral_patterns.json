@@ -1,79 +1,81 @@
 {
  "title_shapes": [
-  "What happens when you ___? (e.g., What happens when you cross the street?)",
-  "Did you just ___? (e.g., Did you just bully my baby?)",
-  "___ as kids, right? (e.g., We all did this as kids, right?)",
-  "___? (e.g., One little pigeon sitting in the tree?)"
+  "Nostalgic Universal Question: 'We All Did This As Kids, Right? (Animation Meme)' -> Example: 'Did You Steal This Too? (Cartoon Recap)'",
+  "Character + Action + Reaction Emoji: 'JJ & His Son Are OUT! 😂 - MAIZEN Minecraft Animation' -> Example: 'Milo & The Cat Are MAD! 😡 - Pixel Life #shorts'",
+  "Simple Cause-Effect Query: 'What happens when you cross the street? #shorts #funny #animation' -> Example: 'What happens if you touch the red button? #shorts #cartoon'",
+  "Rhyming or Song-Like Hook: 'One little pigeon sitting in the tree #animation #funny #shorts' -> Example: 'Two little ducks in the pond #shorts #kids #funny'",
+  "Exclamation + Sensory Word: 'THE BOOGER SONG! 🤧🤣 EW EW EW! | Iggy's Funny Nose Dance!' -> Example: 'THE SLIME SPLASH! 💦😱 YUCK YUCK YUCK! | Max's Messy Morning'",
+  "Direct Confrontation/Scenario: 'Did you just bully my baby ? #monstertruck #animation #shorts #funny' -> Example: 'Did you just break my toy? #robot #animation #shorts #funny'"
  ],
  "situations": [
-  "childhood memory reenacted",
-  "family member doing a silly act",
-  "random street crossing scenario",
-  "pet or animal doing something funny",
-  "unexpected dance or song moment",
-  "prank or joke involving a child or adult"
+  "A child or character encounters a minor, relatable annoyance like a booger, a stuck shoe, or a dropped ice cream cone.",
+  "A simple physical gag where a character trips, falls, or bumps into something unexpected in a mundane setting.",
+  "A parent or authority figure reacts with exaggerated surprise or anger to a child's harmless mischief.",
+  "A character tries to perform a simple task (like crossing the street or eating) but it goes wrong in a silly, predictable way.",
+  "A quick, rhythmic song or dance break that focuses on a specific body part or silly sound effect.",
+  "A 'what if' scenario where a normal object (like a pigeon or a monster truck) behaves in a human-like or absurd way."
  ],
  "openings": [
-  "quick animated splash screen",
-  "jump cut to character’s face with a sound effect",
-  "text overlay popping up with a question",
-  "fast montage of the upcoming gag"
+  "A close-up of a character's face making an exaggerated expression (shock, disgust, or joy) before the action starts.",
+  "A loud, distinct sound effect (like a 'boing', 'slap', or 'sneeze') that immediately grabs attention without context.",
+  "A rapid zoom-in on a specific object or body part that is about to be the source of the comedy.",
+  "A character speaking directly to the camera or the audience with a high-pitched, urgent question or statement."
  ],
  "endings": [
-  "fade to a comedic punchline",
-  "call to action to like/share",
-  "quick outro animation with music",
-  "final text revealing the twist"
+  "A sudden freeze-frame on the character's most exaggerated reaction face, often with a 'record scratch' sound.",
+  "A quick, abrupt cut to black or a logo screen after the punchline lands, leaving no room for lingering thought.",
+  "A character looking directly at the camera and winking, shrugging, or giving a thumbs up to acknowledge the joke.",
+  "A final, loud laugh track or a silly sound effect that plays over the last second of the animation."
  ],
  "updated": "2026-11-26",
  "based_on": [
   {
    "title": "We All Did This As Kids, Right? (Animation Meme)",
-   "views": 18604910
+   "views": 18975661
   },
   {
    "title": "JJ &amp; His Son Are OUT! 😂 - MAIZEN Minecraft Animation #shorts #funny",
-   "views": 2203446
+   "views": 2212340
   },
   {
    "title": "What happens when you cross the street? #shorts #funny #animation",
-   "views": 1751534
+   "views": 1769751
   },
   {
    "title": "One little pigeon sitting in the tree #animation #funny #shorts",
-   "views": 1671727
+   "views": 1673251
   },
   {
    "title": "THE BOOGER SONG! 🤧🤣 EW EW EW! | Iggy&#39;s Funny Nose Dance! English | Kelli&#39;s Korner #Shorts",
-   "views": 1662260
+   "views": 1662750
   },
   {
    "title": "Did you just bully my baby ? #monstertruck #animation #shorts #funny",
-   "views": 1537629
+   "views": 1566431
   },
   {
    "title": "You want to eat ice cream #funny #shorts #animation",
-   "views": 1368102
+   "views": 1374495
   },
   {
    "title": "Savage mum is your neighbor 😂😂 ft @S@Sheddianime#funnyanimation #funny #lol #animation #hilarious",
-   "views": 1219538
+   "views": 1226721
   },
   {
-   "title": "Homer wants to do what all guys do #funny #shorts #comedy",
-   "views": 800485
+   "title": "Creator Takes Control Of ThatMob ?! - Verity Mod //#verity#verityminecraft#funny#animation#shorts",
+   "views": 364026
   },
   {
    "title": "Baby JJ’s CRAZIEST Pranks! 😂 - MAIZEN Minecraft Animation #shorts #funny",
-   "views": 358193
+   "views": 360544
   },
   {
-   "title": "Dandy&#39;s World Funny Animations pt. 2😭🙏 | cr: description",
-   "views": 323676
+   "title": "Do You Know How Amazing Bart&#39;s Ballet Talent Is!? #shorts #simpsons #cartoon #animation #funny",
+   "views": 180095
   },
   {
-   "title": "Tales VS Toys: WICKED Argument! 🪄🧙‍♀️ #PeppaPig #Shorts #toys #toyplay",
-   "views": 303877
+   "title": "Prokopal se z vězení… přímo do trezoru 🏦 #funny #animation #shorts",
+   "views": 51676
   }
  ]
 }

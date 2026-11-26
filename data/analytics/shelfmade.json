@@ -643,6 +643,16 @@
    "subsGained": 0
   },
   {
+   "id": "T_kbgjhQxpU",
+   "title": "How Tiny Molecules Light the Sea \ud83c\udf0a",
+   "published": "2026-11-26T18:04:19Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "epWlk-Ra3Rs",
    "title": "Let thus much be accepted as a definition of Knowledge",
    "published": "2026-10-29T17:02:58Z",
@@ -708,6 +718,16 @@
    "subsGained": 0
   },
   {
+   "id": "lQdm_UpFuzA",
+   "title": "How Organisms Light Up Without Power \ud83e\ude90",
+   "published": "2026-11-25T18:03:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "2W3cnCLXxQo",
    "title": "You have Art of War backwards.",
    "published": "2026-11-17T18:05:57Z",
@@ -745,16 +765,6 @@
    "avgSeconds": 97,
    "avgPercent": 64.3,
    "subsGained": 0
-  },
-  {
-   "id": "lQdm_UpFuzA",
-   "title": "How Organisms Light Up Without Power \ud83e\ude90",
-   "published": "2026-11-25T18:03:01Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 19,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "M1tqBDu4akY",
@@ -1369,16 +1379,6 @@
    "subsGained": 0
   },
   {
-   "id": "T_kbgjhQxpU",
-   "title": "How Tiny Molecules Light the Sea \ud83c\udf0a",
-   "published": "2026-11-26T18:04:19Z",
-   "duration": "PT47S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "NFCFFiU0_hw",
    "title": "Nobody warns you about Acres of Diamonds.",
    "published": "2026-11-20T18:06:38Z",
@@ -1676,6 +1676,19 @@
    "title": "What is Ambition and Success really about?",
    "published": "2026-11-13T00:00:09Z",
    "duration": "PT6M56S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "JlR5Qt1ALk8",
+   "title": "Do duties unlock higher virtues?",
+   "published": "2026-11-08T03:01:43Z",
+   "duration": "PT34S",
    "privacy": "public",
    "views": 3,
    "likes": 0,
@@ -2057,19 +2070,6 @@
    "subsGained": 0
   },
   {
-   "id": "qreV4UF_HS4",
-   "title": "The Character of Man, Theophrastus' greatest work, was begun on his ninetieth birthday",
-   "published": "2026-11-10T18:04:55Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "xIxtLasPyV8",
    "title": "You were taught Meditations wrong.",
    "published": "2026-11-09T00:00:22Z",
@@ -2255,6 +2255,16 @@
    "privacy": "public",
    "views": 1,
    "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "bWMR74vlbjw",
+   "title": "Why Your Phone Battery Dies So Fast \ud83d\udd0b",
+   "published": "2026-11-26T21:50:35Z",
+   "duration": "PT9M50S",
+   "privacy": "private",
+   "views": 0,
+   "likes": 0,
    "comments": 0
   },
   {
