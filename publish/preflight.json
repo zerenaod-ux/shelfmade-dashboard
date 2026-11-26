@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T21:57:21+00:00",
+ "at": "2026-11-26T21:53:41+00:00",
  "ready": "bad",
  "checks": [
   {
@@ -15,12 +15,12 @@
   {
    "name": "Alerts",
    "level": "bad",
-   "text": "5 open: ALERT: system problem; ALERT: Kaggle GPU failing or silent; ALERT: YouTube login check failing or st"
+   "text": "4 open: ALERT: system problem; ALERT: Learning + scoreboard job not wor; ALERT: Kaggle GPU failing (Doodles pause"
   },
   {
    "name": "Keys",
    "level": "ok",
-   "text": "weekly key test success, 0 days ago"
+   "text": "weekly key test success, 1 days ago"
   },
   {
    "name": "Doodles stories",
@@ -35,7 +35,7 @@
   {
    "name": "Waiting for review",
    "level": "ok",
-   "text": "2 videos open (autopilot clears them when ON)"
+   "text": "3 videos open (autopilot clears them when ON)"
   }
  ]
 }
