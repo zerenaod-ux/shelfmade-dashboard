@@ -4,14 +4,10 @@
   "mindlore-live-redo": 1,
   "blender-test": 2,
   "scene-factory": 1,
-  "bio-page": 1
+  "bio-page": 2
  },
  "pending": [],
  "log": [
-  {
-   "t": "11-08 17:06Z",
-   "msg": "doctor-drill: AI patch in drill_target.py: removes intentional failure to allow CI to pass -> re-run started"
-  },
   {
    "t": "11-08 18:04Z",
    "msg": "VERIFIED fix for doctor-drill (AI patch in drill_target.py: removes intentional failure to allow CI to pass)"
@@ -247,9 +243,13 @@
   {
    "t": "11-26 03:45Z",
    "msg": "bio-page: no safe automatic fix found"
+  },
+  {
+   "t": "11-26 08:08Z",
+   "msg": "bio-page: no safe automatic fix found"
   }
  ],
- "at": "2026-11-26T03:45:02Z",
+ "at": "2026-11-26T08:08:52Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
