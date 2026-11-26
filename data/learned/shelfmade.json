@@ -1,51 +1,51 @@
 {
  "short": {
   "do_more": [
-   "Start with a bold personal hook using \"you\" and a famous name (e.g., \"You were taught Tao Te Ching wrong\"),",
-   "Present a surprising warning or contrast that the author would dislike about the viewer's life,",
-   "Keep the video tight (~30\u202fs) and deliver 1\u20112 concrete takeaways,",
-   "Use strong visual cues (text overlay of the author\u2019s name) within the first 3\u202fseconds,",
-   "End with a clear call\u2011to\u2011action that invites sharing or commenting"
+   "Use a personal hook that frames the viewer as the subject\u2014e.g., \"X would hate how you live\" or \"X had a warning for you\".",
+   "Keep titles short (5\u201110 words) and punchy, using a well\u2011known figure or concept to spark curiosity.",
+   "Avoid the generic \"in 60 seconds\" tagline\u2014stick to a 30\u201142 second runtime (tight length).",
+   "Add a provocative emoji to signal tone but keep it relevant to the content.",
+   "Use a statement hook instead of a question for stronger immediacy."
   ],
   "avoid": [
-   "Vague titles without a named authority or personal angle,",
-   "Long, descriptive titles that lack a hook,",
-   "Neutral or purely informational tone without a challenge or surprise,",
-   "Running time much longer than 45\u202fseconds"
+   "Drop vague titles like \"What is X\" or \"Why ignore Y\".",
+   "Avoid overly long, explanatory titles that exceed 10 words.",
+   "Refrain from using the 60\u2011second format; it dilutes urgency.",
+   "Skip titles that lack a clear angle or personal implication."
   ],
-  "title_style": "Hook the viewer with a direct \"you\" challenge and a famous author\u2019s name, then add a surprising warning or secret (e.g., \"You\u2019re living the way Machiavelli would hate\"),",
+  "title_style": "Hook viewers by implying they\u2019re doing something wrong or missing a warning from a known figure, using a concise, provocative phrase that starts with that figure or concept.",
   "next_tests": [
-   "Compare 30\u2011second vs 45\u2011second runtimes to see impact on avg% watch,",
-   "A/B test titles that start with a question vs a bold statement,",
-   "Add a single eye\u2011catching emoji at the front of the title and track VPD"
+   "Test a 30\u2011second versus a 42\u2011second version of the same script to measure engagement differences.",
+   "Compare the performance of \"X would hate how you live\" versus \"X would love how you live\" hooks.",
+   "Try a question hook (e.g., \"What would X think of your habits?\") against a statement hook to see which yields higher completion rates."
   ],
-  "n": 136,
-  "best_vpd": 10.24,
-  "best_title": "Studies In Pessimism"
+  "n": 141,
+  "best_vpd": 12.66,
+  "best_title": "How Chesterfield Warns About Manners \ud83d\udcdc"
  },
  "full": {
   "do_more": [
-   "Start titles with a clear, curiosity\u2011sparking question.",
-   "Mention the author or source in the title to add credibility.",
-   "Keep video length around 3\u20134 minutes; avoid dragging beyond 5.",
-   "Focus on a single strong emotional hook (e.g., curiosity, challenge).",
-   "Add a concise CTA at the end to encourage shares."
+   "Open with a striking question or claim that references a recognizable historical figure or concept",
+   "Keep the first 30 seconds tight\u2014set up the hook and promise a concrete takeaway",
+   "Deliver one clear, counter\u2011intuitive lesson per video",
+   "Use curiosity\u2011driven phrasing (e.g., \"Why\u2026?\",\"Did you know\u2026?\")",
+   "Add a visual cue (portrait, book cover) of the quoted author early on"
   ],
   "avoid": [
-   "Avoid generic or vague titles that don't pose a question.",
-   "Don't use overly long titles or too many emojis that clutter.",
-   "Steer clear of repeating content; keep angles fresh.",
-   "Do not let the video run too long; watch for drop\u2011off."
+   "Vague, generic titles without a named authority",
+   "Long, descriptive intros that exceed 45 seconds",
+   "Lack of a clear hook or promise in the first few seconds",
+   "Repeating the same title without new angle"
   ],
-  "title_style": "Use a provocative question followed by the author\u2019s name to instantly signal value and curiosity.",
+  "title_style": "A short, question\u2011based hook that names a known thinker and teases a surprising insight",
   "next_tests": [
-   "Try titles that start with a bold claim (e.g., \u2018This one trick will change your life\u2019).",
-   "Experiment with a 3\u2011minute format versus a 5\u2011minute format to see drop\u2011off rates.",
-   "Add a single emoji to the title to test engagement impact."
+   "A/B test a 30\u2011second tight intro vs a 45\u2011second standard intro for the same script",
+   "Create two versions: one with the author's name in the title, one without, and compare vpd",
+   "Experiment with adding a direct \"You\" address in the hook (e.g., \"Can you\u2026?\" vs neutral phrasing)"
   ],
-  "n": 36,
-  "best_vpd": 0.55,
+  "n": 37,
+  "best_vpd": 0.68,
   "best_title": "Is Your Suffering Actually Good for You? | Samuel Smiles"
  },
- "updated": "2026-11-24"
+ "updated": "2026-11-26"
 }

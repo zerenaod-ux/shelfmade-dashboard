@@ -248,8 +248,8 @@
    "views": 47,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 13,
-   "avgPercent": 21.69,
+   "avgSeconds": 14,
+   "avgPercent": 21.99,
    "subsGained": 0
   },
   {
@@ -305,16 +305,6 @@
    "subsGained": 0
   },
   {
-   "id": "c2RncDhV5iw",
-   "title": "Why Your Brain Lies About Spanish \ud83e\udde0",
-   "published": "2026-11-25T03:01:25Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 40,
-   "likes": 1,
-   "comments": 1
-  },
-  {
    "id": "nuQLBWcyPzQ",
    "title": "Plato had a warning for you.",
    "published": "2026-11-04T18:02:59Z",
@@ -325,6 +315,19 @@
    "comments": 1,
    "avgSeconds": 19,
    "avgPercent": 37.41,
+   "subsGained": 0
+  },
+  {
+   "id": "c2RncDhV5iw",
+   "title": "Why Your Brain Lies About Spanish \ud83e\udde0",
+   "published": "2026-11-25T03:01:25Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 39,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 27.51,
    "subsGained": 0
   },
   {
@@ -536,6 +539,19 @@
    "subsGained": 0
   },
   {
+   "id": "OKEdacXsBrk",
+   "title": "Do feelings outweigh beliefs?",
+   "published": "2026-11-07T18:04:23Z",
+   "duration": "PT28S",
+   "privacy": "public",
+   "views": 29,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 24.55,
+   "subsGained": 0
+  },
+  {
    "id": "DA9pXjqUXfQ",
    "title": "What mystery does James explore?",
    "published": "2026-06-22T03:50:26Z",
@@ -731,6 +747,16 @@
    "subsGained": 0
   },
   {
+   "id": "lQdm_UpFuzA",
+   "title": "How Organisms Light Up Without Power \ud83e\ude90",
+   "published": "2026-11-25T18:03:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "M1tqBDu4akY",
    "title": "Ruskin would hate how you live.",
    "published": "2026-11-23T18:06:53Z",
@@ -781,16 +807,6 @@
    "avgSeconds": 9,
    "avgPercent": 38.69,
    "subsGained": 0
-  },
-  {
-   "id": "lQdm_UpFuzA",
-   "title": "How Organisms Light Up Without Power \ud83e\ude90",
-   "published": "2026-11-25T18:03:01Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 17,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "QHacncwEVO4",
@@ -1006,8 +1022,21 @@
    "views": 11,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 119,
-   "avgPercent": 26.950000000000003,
+   "avgSeconds": 91,
+   "avgPercent": 20.67,
+   "subsGained": 0
+  },
+  {
+   "id": "mcV0u5NRAvI",
+   "title": "Can you control your calm?",
+   "published": "2026-10-23T04:05:15Z",
+   "duration": "PT22S",
+   "privacy": "public",
+   "views": 11,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 20,
+   "avgPercent": 91.81,
    "subsGained": 0
   },
   {
@@ -1032,21 +1061,8 @@
    "views": 10,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 7,
-   "avgPercent": 13.4,
-   "subsGained": 0
-  },
-  {
-   "id": "mcV0u5NRAvI",
-   "title": "Can you control your calm?",
-   "published": "2026-10-23T04:05:15Z",
-   "duration": "PT22S",
-   "privacy": "public",
-   "views": 10,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 20,
-   "avgPercent": 91.81,
+   "avgSeconds": 22,
+   "avgPercent": 42.17,
    "subsGained": 0
   },
   {
@@ -1161,7 +1177,10 @@
    "privacy": "public",
    "views": 7,
    "likes": 1,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 118,
+   "avgPercent": 22.87,
+   "subsGained": 0
   },
   {
    "id": "GlwLgzeUZsg",
@@ -1185,8 +1204,8 @@
    "views": 7,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 16,
-   "avgPercent": 4.18,
+   "avgSeconds": 15,
+   "avgPercent": 3.7900000000000005,
    "subsGained": 0
   },
   {
@@ -1348,6 +1367,16 @@
    "avgSeconds": 25,
    "avgPercent": 40.6,
    "subsGained": 0
+  },
+  {
+   "id": "T_kbgjhQxpU",
+   "title": "How Tiny Molecules Light the Sea \ud83c\udf0a",
+   "published": "2026-11-26T18:04:19Z",
+   "duration": "PT47S",
+   "privacy": "public",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
   },
   {
    "id": "NFCFFiU0_hw",
@@ -1581,6 +1610,16 @@
    "subsGained": 0
   },
   {
+   "id": "1RPy1VrMX2I",
+   "title": "Ruskin had a warning for you.",
+   "published": "2026-11-26T00:00:19Z",
+   "duration": "PT6M48S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 1,
+   "comments": 0
+  },
+  {
    "id": "igP95PPeC9Y",
    "title": "This Pleasures of Life line is uncomfortable.",
    "published": "2026-11-25T00:00:06Z",
@@ -1588,7 +1627,10 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 110,
+   "avgPercent": 27.72,
+   "subsGained": 0
   },
   {
    "id": "p079-FpO7QE",
@@ -1627,19 +1669,6 @@
    "comments": 1,
    "avgSeconds": 0,
    "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "L8fBZiNE9xA",
-   "title": "Nobody warns you about Analects.",
-   "published": "2026-11-10T03:02:03Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 20,
-   "avgPercent": 31.730000000000004,
    "subsGained": 0
   },
   {
@@ -1799,16 +1828,6 @@
    "duration": "PT38S",
    "privacy": "public",
    "views": 3,
-   "likes": 1,
-   "comments": 0
-  },
-  {
-   "id": "1RPy1VrMX2I",
-   "title": "Ruskin had a warning for you.",
-   "published": "2026-11-26T00:00:19Z",
-   "duration": "PT6M48S",
-   "privacy": "public",
-   "views": 2,
    "likes": 1,
    "comments": 0
   },

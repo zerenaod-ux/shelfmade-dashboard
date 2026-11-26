@@ -1,39 +1,23 @@
 {
  "hot_themes": [
-  "Unconventional edge & subverting advice ('BE DISRESPECTFUL')",
-  "Author vs Author contrasts (e.g., Kafka vs Dostoevsky)",
-  "Stoic resilience & harsh life truths",
-  "One-sided effort and romantic disillusionment",
-  "Finding hidden depth 'between the lines'"
+  "empowerment through bold imperatives",
+  "contrasting classic wisdom with modern life",
+  "high\u2011energy motivational hooks",
+  "cultural/foreign language flair",
+  "short\u2011form quote compilations"
  ],
  "hook_patterns": [
-  "Imperative contrarian command ('BE LIKE X' or 'BE DISRESPECTFUL')",
-  "Dichotomy vs clash ('[Author A] vs [Author B]: [Key Conflict]')",
-  "Direct blunt declaration of painful reality ('One Sided Effort Always Ends in Zero')"
+  "Start with a commanding \u201cBE \u2026\u201d statement followed by a surprising analogy",
+  "Pair two iconic thinkers/characters and pose a tension (\u201cX vs Y: \u2026\u201d)",
+  "Use \u201cPowerful/Impactful Quotes That \u2026\u201d phrasing with emojis or symbols to signal intensity"
  ],
  "ideas_for_us": [
-  {
-   "title_concept": "BE UNFORGIVING\u2026 like Count of Monte Cristo",
-   "author_source": "Alexandre Dumas (The Count of Monte Cristo)",
-   "angle": "Why patience in revenge is the ultimate form of self-discipline, twisting conventional motivational advice."
-  },
-  {
-   "title_concept": "Dostoevsky vs Nietzsche: Can Suffering Actually Save You?",
-   "author_source": "Fyodor Dostoevsky & Friedrich Nietzsche",
-   "angle": "A high-drama contrast exploring whether pain is a path to redemption or power."
-  },
-  {
-   "title_concept": "Unrequited Love is a Slow Suicide",
-   "author_source": "Johann Wolfgang von Goethe (The Sorrows of Young Werther)",
-   "angle": "Emotional, relatable heart-break advice leveraging classic literature about one-sided emotional effort."
-  },
-  {
-   "title_concept": "A Wise Man Never Explains Himself | Sun Tzu",
-   "author_source": "Sun Tzu (The Art of War)",
-   "angle": "Stoic and strategic wisdom about silence, power dynamics, and protecting your energy."
-  }
+  "BE UNSTOPPABLE like Odysseus: Survival lessons from Homer\u2019s Odyssey \u2013 a 60\u2011second montage of daring quotes with dynamic visuals.",
+  "TAKE ADVANTAGE of Sun\u202fTzu\u2019s strategies: Ancient war tactics for today\u2019s productivity \u2013 quick cuts of The Art of War paired with modern work\u2011from\u2011home scenes.",
+  "WHY MARIE\u2011CURIE WOULD SAY \u201cFAIL FAST\u201d: Science and resilience lessons from Mary Shelley\u2019s Frankenstein \u2013 juxtaposing classic novel lines with motivational narration.",
+  "FROM SHAKESPEARE TO SELF\u2011HELP: 5 timeless quotes that flip the script on self\u2011doubt \u2013 rapid\u2011fire delivery of Shakespearean lines re\u2011framed as personal growth tips."
  ],
- "updated": "2026-11-24",
- "sample": 59,
- "top_vpd": 202524
+ "updated": "2026-11-26",
+ "sample": 58,
+ "top_vpd": 148545
 }

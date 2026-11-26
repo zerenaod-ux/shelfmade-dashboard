@@ -1,44 +1,48 @@
 {
  "short": {
   "do_more": [
-   "Focus on physical, instinctual facial reactions and involuntary bodily shifts (e.g., 'Face Freezes', 'Face Reacts', 'Kids Expect Shock').",
-   "Use direct, second-person personal hooks that force immediate self-identification ('Your Face...', 'Your Kids...', 'Your Brain...').",
-   "Keep short-form video length tight (around 30 seconds) to maintain high average percentage viewed and trigger re-watches.",
-   "Frame public domain book concepts as real-time physiological or emotional phenomena rather than historical citations."
+   "Focus on universal, visceral biological reactions (facial freezes, shock, face revealing joy) rather than abstract cognitive concepts or philosophical questions.",
+   "Use direct, second-person hooks that describe a specific physical sensation or behavior the viewer is experiencing right now (e.g., 'Your Face Reacts', 'Your Kids Expect Shock').",
+   "Pair psychological concepts with concrete, observable actions like play, laughing, or freezing to make the content visually demonstrable in a short format.",
+   "Keep titles under 6 words and punchy, avoiding explanatory subtitles or book series names in the main title unless the series is already established and high-performing."
   ],
   "avoid": [
-   "Avoid dry, academic book titles or reading citations as hooks (e.g., 'The Analysis of Mind', 'Did Munsterberg predict this?').",
-   "Avoid abstract, open-ended existential questions that feel like homework (e.g., 'Can the mind be measured?', 'Does class shape your consciousness?').",
-   "Avoid vague or broad productivity/money tropes that lack an visceral physiological angle."
+   "Stop publishing abstract questions about the nature of the mind, consciousness, or reality (e.g., 'Is self-consciousness a trap?', 'Can thoughts shape reality?') as these consistently underperform.",
+   "Avoid referencing specific authors or book titles directly in the hook (e.g., 'Did Munsterberg predict this?') which likely alienates casual scrollers.",
+   "Do not use titles that are purely descriptive of the book content or academic topics (e.g., 'The Analysis of Mind', 'Psychology and Industrial Efficiency')."
   ],
-  "title_style": "High-performing titles use visceral, second-person action statements ('Your [Body Part/Emotion] [Action]') that trigger immediate curiosity about immediate physical reactions.",
+  "title_style": "Winning titles are short, direct statements about a specific physical or emotional reaction the viewer can immediately identify with, avoiding abstract questions or academic references.",
   "next_tests": [
-   "Test a 30-second 'Tight' format script comparing a raw instinctual reaction vs. a historical book citation to directly measure retention drop-off.",
-   "Test framing micro-expressions using the winning 'Your [Body Part] [Action]' title formula applied to public domain Darwin concepts."
+   "Test a series of 'Your Body Betrays You' scripts focusing on micro-expressions like eye movements or hand gestures, using the same direct 'Your [Body Part] [Action]' title structure.",
+   "Create a 30-second tight variant of 'Your Kids Expect Shock' to see if a faster pace improves the average percent watched and retention compared to the standard length.",
+   "Experiment with a 'Why Animals Do [X]' angle using high-cute-factor or high-shock-value animal behavior (like the dolphin/wolf tests) but with a stronger, more specific human comparison hook in the first 3 seconds."
   ],
-  "n": 123,
-  "best_vpd": 109.8,
+  "n": 126,
+  "best_vpd": 84.64,
   "best_title": "Your Kids Expect Shock"
  },
  "full": {
   "do_more": [
-   "Anchor titles to universally relatable bodily sensations or visceral subconscious phenomena (falling dreams, daily habits, facial expressions) rather than abstract cognitive theory.",
-   "Prominently feature universally recognizable public-domain authors (e.g., '| Sigmund Freud', '| William James') in the title to provide instant authority and search pull.",
-   "Deliver immediate, sensory-driven opening hooks that describe a vivid internal experience instead of generic rhetorical questions."
+   "Start with a concrete, curiosity\u2011driven hook (e.g., \"Why X happens\" or \"What Y really means\") that promises a specific insight",
+   "Mention a recognizable author or classic work in the title to add authority",
+   "Keep the main segment around 40\u201145 seconds (standard length) to allow a clear explanation",
+   "Structure the script like a guided reading: brief intro, key point, vivid example, quick recap",
+   "Inject emotional triggers such as surprise or personal relevance to boost retention"
   ],
   "avoid": [
-   "Abstract textbook titles, academic section headers, and numbered chapter formats (e.g., 'How We Think \u00b7 Reading 1').",
-   "Lukewarm intellectual queries about social dynamics or attention mechanisms (e.g., 'Why does attention choose focus?', 'Why does your mind amplify group opinions?').",
-   "Weak opening lines that start with passive conversational filler like 'You notice your opinions shift... but why does that happen?'"
+   "Vague or overly generic titles like \"How We Think\" without a clear promise",
+   "Videos under 30 seconds that don\u2019t develop the idea fully",
+   "Leaving out the author/name that signals public\u2011domain credibility"
   ],
-  "title_style": "Frame high-curiosity questions around universally experienced physical or subconscious phenomena paired directly with a heavyweight thinker (e.g., 'Why do you dream about falling? | Sigmund Freud').",
+  "title_style": "Use a punchy \"Why/What\" question followed by a famous psychologist\u2019s name, e.g., \"Why beliefs outlast reasons | Gustave Le Bon\"",
   "next_tests": [
-   "Test visceral subconscious concepts anchored to Freud or Jung (e.g., 'Why do you sabotage your own success? | Sigmund Freud').",
-   "Test a dramatic psychological paradox anchored to William James with an abrupt first-sentence hook that skips introductory framing entirely."
+   "Compare a 30\u2011second micro\u2011hook version against a 45\u2011second standard version for the same topic",
+   "Add a brief \"Did you know...\" teaser at the very start and measure watch\u2011through rates",
+   "Create two title formats: one with the author name first, another with the hook first, to see which drives higher clicks"
   ],
   "n": 30,
-  "best_vpd": 6.61,
-  "best_title": "Why do you dream about falling? | Sigmund Freud"
+  "best_vpd": 1.01,
+  "best_title": "Psychology: Briefer Course \u00b7 Observation and interpretation \u00b7 Reading 4"
  },
- "updated": "2026-11-24"
+ "updated": "2026-11-26"
 }

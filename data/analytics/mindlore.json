@@ -117,19 +117,9 @@
    "privacy": "public",
    "views": 105,
    "likes": 2,
-   "comments": 1
-  },
-  {
-   "id": "V8InsNplcoc",
-   "title": "Why do you dream about falling? | Sigmund Freud",
-   "published": "2026-11-10T00:00:03Z",
-   "duration": "PT8M23S",
-   "privacy": "public",
-   "views": 93,
-   "likes": 2,
    "comments": 1,
-   "avgSeconds": 120,
-   "avgPercent": 23.9,
+   "avgSeconds": 32,
+   "avgPercent": 51.38,
    "subsGained": 0
   },
   {
@@ -239,7 +229,7 @@
    "published": "2026-11-06T18:04:24Z",
    "duration": "PT1M2S",
    "privacy": "public",
-   "views": 69,
+   "views": 70,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 42,
@@ -269,7 +259,7 @@
    "likes": 0,
    "comments": 0,
    "avgSeconds": 21,
-   "avgPercent": 22.6,
+   "avgPercent": 22.31,
    "subsGained": 0
   },
   {
@@ -452,6 +442,19 @@
    "subsGained": 0
   },
   {
+   "id": "NIb4cEtDf24",
+   "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
+   "published": "2026-06-18T04:47:26Z",
+   "duration": "PT2M45S",
+   "privacy": "public",
+   "views": 42,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 61,
+   "avgPercent": 37.32,
+   "subsGained": 0
+  },
+  {
    "id": "0toRAe_otrI",
    "title": "The Expression of the Emotions in Man and Animals \u00b7 Opposite postures \u00b7 Reading 2",
    "published": "2026-10-20T19:36:17Z",
@@ -462,19 +465,6 @@
    "comments": 0,
    "avgSeconds": 12,
    "avgPercent": 14.39,
-   "subsGained": 0
-  },
-  {
-   "id": "NIb4cEtDf24",
-   "title": "Darwin's Hidden Masterpiece: The Expression of Emotions Explained",
-   "published": "2026-06-18T04:47:26Z",
-   "duration": "PT2M45S",
-   "privacy": "public",
-   "views": 40,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 61,
-   "avgPercent": 37.32,
    "subsGained": 0
   },
   {
@@ -764,6 +754,19 @@
    "subsGained": 0
   },
   {
+   "id": "-FD8LOO2XG4",
+   "title": "The Psychology Of Suggestion",
+   "published": "2026-10-31T22:01:42Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 19,
+   "avgPercent": 40.78,
+   "subsGained": 1
+  },
+  {
    "id": "QgbUl7uQ00I",
    "title": "Mind Power",
    "published": "2026-10-22T01:05:55Z",
@@ -814,19 +817,6 @@
    "avgSeconds": 14,
    "avgPercent": 23.87,
    "subsGained": 0
-  },
-  {
-   "id": "-FD8LOO2XG4",
-   "title": "The Psychology Of Suggestion",
-   "published": "2026-10-31T22:01:42Z",
-   "duration": "PT49S",
-   "privacy": "public",
-   "views": 23,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 19,
-   "avgPercent": 40.78,
-   "subsGained": 1
   },
   {
    "id": "GUUj1ASdeLg",
@@ -963,6 +953,19 @@
    "comments": 0,
    "avgSeconds": 80,
    "avgPercent": 21.9,
+   "subsGained": 0
+  },
+  {
+   "id": "7QFo4yYN-tM",
+   "title": "Do dreams reveal the future?",
+   "published": "2026-11-08T03:01:50Z",
+   "duration": "PT56S",
+   "privacy": "public",
+   "views": 20,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 18,
+   "avgPercent": 33.53,
    "subsGained": 0
   },
   {
@@ -1153,8 +1156,8 @@
    "views": 16,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 21,
-   "avgPercent": 36.88,
+   "avgSeconds": 16,
+   "avgPercent": 29.220000000000002,
    "subsGained": 0
   },
   {
@@ -1280,8 +1283,8 @@
    "views": 14,
    "likes": 1,
    "comments": 0,
-   "avgSeconds": 177,
-   "avgPercent": 48.63,
+   "avgSeconds": 160,
+   "avgPercent": 44.12,
    "subsGained": 0
   },
   {
@@ -1735,6 +1738,16 @@
    "avgSeconds": 0,
    "avgPercent": 0,
    "subsGained": 0
+  },
+  {
+   "id": "lYrj96knUBo",
+   "title": "Why Your Stomach Reacts To Twists \ud83d\ude32",
+   "published": "2026-11-26T18:05:40Z",
+   "duration": "PT1M13S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 1,
+   "comments": 0
   },
   {
    "id": "EPGy8t4XRkI",

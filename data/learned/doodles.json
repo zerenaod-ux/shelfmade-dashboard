@@ -1,27 +1,23 @@
 {
  "short": {
   "do_more": [
-   "Keep runtime around 30\u201145 seconds \u2013 use micro (\u224830s) for simple jokes and standard (\u224842s) for deeper concepts",
-   "Open with a vivid, relatable scenario that shows the problem within the first 3\u20115 seconds",
-   "Title the video as a concise, curiosity\u2011driven phrase naming a specific bias or trap (e.g., \u201cThe Confidence Curve\u201d) and omit emojis",
-   "Use exaggerated visual comedy to illustrate the psychological idea, then deliver a punchy takeaway",
-   "Add a single, clear call\u2011to\u2011action (e.g., \u201cEver felt this? Comment below\u201d)"
+   "Lead with visceral, physical sensory details (sweat, shaking, stomach drops) rather than abstract psychological labels to hook the viewer in the first 3 seconds.",
+   "Use the 'micro' variant (approx. 30s) for faster pacing, as it correlates with the highest avgPercent retention (57-100%) and allows for comedic beats to land without dragging.",
+   "Frame psychology concepts as specific, relatable 'traps' or 'fights' that the characters are actively losing in the moment, rather than explaining the theory first.",
+   "Prioritize 'internal crisis' topics (anxiety, first-day nerves, overthinking) which generate higher engagement than 'social etiquette' or 'communication' topics."
   ],
   "avoid": [
-   "Generic \u201cYour ___\u201d titles that rely on emojis or filler words",
-   "Repeating the same hook pattern across episodes (e.g., \u201cYour ___ Panic\u201d)",
-   "Long intros or slow builds that delay the joke beyond 5 seconds",
-   "Overly abstract titles that don\u2019t name a concrete concept"
+   "Stop using 'Leo & Mia #XX' series numbering in titles; it creates friction and signals 'episode 12' rather than standalone value, which correlates with lower VPD.",
+   "Avoid generic 'The [Concept] Trap' titles without a specific, high-stakes scenario attached (e.g., 'The Sleep Effort Trap' is weak vs 'Your First Day Shakes')."
   ],
-  "title_style": "Use a concise, curiosity\u2011driven phrase that names a specific psychological bias or trap (e.g., \u201cThe Confidence Curve\u201d) without emojis or filler",
+  "title_style": "Use short, urgent, second-person statements that describe a specific, embarrassing physical reaction or immediate social threat, often accompanied by a single relevant emoji.",
   "next_tests": [
-   "A/B test titles: \u201cThe ___ Trap\u201d vs. \u201cWhy ___ Happens\u201d for the same video",
-   "Compare micro (\u224830s) vs. standard (\u224842s) length on identical content to see which drives higher VPD",
-   "Insert a distinct visual gag in the first 3 seconds and measure its impact on average watch percent"
+   "Test a 'micro' length video on a new anxiety topic (e.g., 'The Elevator Glow') to see if the high retention of 'Your First Day Shakes' replicates with fresh material.",
+   "Create a 'twin' video: take a previously underperforming topic (like 'Group Chat Silence') but rewrite the hook to focus on the physical sensation of dread (holding breath) rather than the social dynamic, keeping the title punchy."
   ],
-  "n": 50,
-  "best_vpd": 10.92,
-  "best_title": "Your First Day Shakes \ud83d\ude2c"
+  "n": 54,
+  "best_vpd": 9.14,
+  "best_title": "The Confidence Curve"
  },
- "updated": "2026-11-24"
+ "updated": "2026-11-26"
 }

@@ -23,14 +23,6 @@
   ],
   "started": "2026-11-05"
  },
- "shelfmade:full": {
-  "factor": "music_energy",
-  "variants": [
-   "calm",
-   "lively"
-  ],
-  "started": "2026-11-05"
- },
  "mindlore:full": {
   "factor": "music_energy",
   "variants": [

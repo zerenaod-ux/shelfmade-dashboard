@@ -1,23 +1,24 @@
 {
  "hot_themes": [
-  "Neuroscience of daily habits and screen consumption",
-  "Categorization of relationships and personality types",
-  "Dark side vs. high-power traits of the mind",
-  "Cognitive biases behind negative emotions and pain",
-  "Birth order and social identity psychology"
+  "quick psychological hacks",
+  "fake\u2011person detection",
+  "everyday behavior secrets",
+  "shocking listicles",
+  "brain impact of media",
+  "relationship psychology"
  ],
  "hook_patterns": [
-  "Shocking biological mechanism ('[X] is literally changing your brain')",
-  "Relatable taxonomy ('3 types of [people/friends] everyone deals with')",
-  "Counter-intuitive self-validation ('Rare signs of a powerful mind')"
+  "Numbered \"X Facts/Tricks\" that promise shocking or mind\u2011reading results",
+  "Instant skill promise (e.g., spot fake people, read character) with a bold warning emoji",
+  "Combining everyday objects or activities with a psychological twist"
  ],
  "ideas_for_us": [
-  "The 1920s Psychology Behind Why Your Brain Remembers Negative Gossip (The Zeigarnik Effect)",
-  "3 Classic Signs of a 'Superior Intellect' According to 19th-Century Psychology Books",
-  "How Modern Screens Are Tricking Your Primitive Brain (Based on Early Habit Formation Theories)",
-  "Why Being the Eldest Child Changes Your Trait Development (Adler's Birth Order Theory)"
+  "5 Classic Freud Dream Insights That Still Shock Modern Viewers",
+  "How to Spot Manipulative People in Seconds Using 3 Old\u2011School Social Experiments",
+  "What Your Shoes Reveal About Personality \u2013 4 19th\u2011Century Psychology Findings",
+  "The Brain\u2011Boosting Effects of Reading: 3 Lessons from William James for Today"
  ],
- "updated": "2026-11-24",
- "sample": 55,
- "top_vpd": 916370
+ "updated": "2026-11-26",
+ "sample": 56,
+ "top_vpd": 571642
 }
