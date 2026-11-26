@@ -76,6 +76,21 @@ def geom(rgb,face):
             E['tex']=cv2.GaussianBlur(inp,(0,0),max(1.5,0.05*d))
         except Exception:E['tex']=None
         out.append(E)
+    # ONE EYE MEASURED, THE OTHER NOT (2026-11-26 owner: Mia and Leo each blinked with one eye only): the second eye got no lid at all.
+    # Cartoon eyes are the same shape, so reuse the measured eye's opening mask, moved onto the other eye's landmark.
+    if len(out)==2:
+        for i in (0,1):
+            E,P=out[i],out[1-i]
+            if E.get('mask') is not None or P.get('mask') is None:continue
+            try:
+                px0,py0,px1,py1=P['box'];dx=int(round(E['cx']-P['cx']));dy=int(round(E['cy']-P['cy']))
+                X0,Y0,X1,Y1=px0+dx,py0+dy,px1+dx,py1+dy
+                if X0<0 or Y0<0 or X1>W or Y1>H:continue
+                E['box']=(X0,Y0,X1,Y1);E['mask']=P['mask'].copy();E['measured']=False;E['copied']=True
+                mk=E['mask'];roi=np.ascontiguousarray(rgb[Y0:Y1,X0:X1]);hole=(cv2.dilate(mk.astype('uint8'),np.ones((3,3),'uint8'),iterations=2)*255).astype('uint8')
+                inp=cv2.inpaint(roi,hole,max(3,int(0.12*d)),cv2.INPAINT_TELEA).astype('float32')
+                E['tex']=cv2.GaussianBlur(inp,(0,0),max(1.5,0.05*d))
+            except Exception:E['mask']=None;E['tex']=None
     return out
 def apply(arr,eyes,blink,gaze):
     """arr: HxWx3 uint8 (modified in place). blink 0 open..1 closed. gaze (gx,gy) in units of eye distance d."""
