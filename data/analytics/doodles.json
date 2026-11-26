@@ -2,7 +2,7 @@
  "brand": "doodles",
  "channel": "Animation Doodles Studio",
  "subscribers": "2",
- "collected": "2026-11-25",
+ "collected": "2026-11-26",
  "note": "",
  "videos": [
   {
@@ -37,7 +37,7 @@
    "published": "2026-11-10T18:04:30Z",
    "duration": "PT1M37S",
    "privacy": "public",
-   "views": 19,
+   "views": 20,
    "likes": 0,
    "comments": 1,
    "avgSeconds": 36,
@@ -757,6 +757,16 @@
    "subsGained": 0
   },
   {
+   "id": "IpmXMjieMOQ",
+   "title": "Why The Toaster Cartoon Destroyed Us \ud83c\udf5e",
+   "published": "2026-11-26T03:01:18Z",
+   "duration": "PT42S",
+   "privacy": "public",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "-7pRmP5QM8w",
    "title": "How Hoodie Stink Becomes Crime Scene \ud83d\ude37 | Leo & Mia",
    "published": "2026-11-25T18:05:16Z",
@@ -764,7 +774,7 @@
    "privacy": "public",
    "views": 0,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "S5TXhlxMMJI",

@@ -2,7 +2,7 @@
  "brand": "shelfmade",
  "channel": "ShelfMade",
  "subscribers": "10",
- "collected": "2026-11-25",
+ "collected": "2026-11-26",
  "note": "",
  "videos": [
   {
@@ -102,7 +102,7 @@
    "published": "2026-11-16T03:01:25Z",
    "duration": "PT1M7S",
    "privacy": "public",
-   "views": 71,
+   "views": 72,
    "likes": 2,
    "comments": 1,
    "avgSeconds": 17,
@@ -227,19 +227,6 @@
    "subsGained": 0
   },
   {
-   "id": "gANMXiDY4h0",
-   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
-   "published": "2026-11-23T03:00:33Z",
-   "duration": "PT1M4S",
-   "privacy": "public",
-   "views": 50,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 13,
-   "avgPercent": 21.69,
-   "subsGained": 0
-  },
-  {
    "id": "7P-eD_FErv0",
    "title": "Where is your attention?",
    "published": "2026-10-18T23:44:02Z",
@@ -250,6 +237,19 @@
    "comments": 0,
    "avgSeconds": 13,
    "avgPercent": 57.19,
+   "subsGained": 0
+  },
+  {
+   "id": "gANMXiDY4h0",
+   "title": "How Chesterfield Warns About Manners \ud83d\udcdc",
+   "published": "2026-11-23T03:00:33Z",
+   "duration": "PT1M4S",
+   "privacy": "public",
+   "views": 47,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 13,
+   "avgPercent": 21.69,
    "subsGained": 0
   },
   {
@@ -305,6 +305,16 @@
    "subsGained": 0
   },
   {
+   "id": "c2RncDhV5iw",
+   "title": "Why Your Brain Lies About Spanish \ud83e\udde0",
+   "published": "2026-11-25T03:01:25Z",
+   "duration": "PT43S",
+   "privacy": "public",
+   "views": 40,
+   "likes": 1,
+   "comments": 1
+  },
+  {
    "id": "nuQLBWcyPzQ",
    "title": "Plato had a warning for you.",
    "published": "2026-11-04T18:02:59Z",
@@ -342,16 +352,6 @@
    "avgSeconds": 22,
    "avgPercent": 39.29,
    "subsGained": 0
-  },
-  {
-   "id": "c2RncDhV5iw",
-   "title": "Why Your Brain Lies About Spanish \ud83e\udde0",
-   "published": "2026-11-25T03:01:25Z",
-   "duration": "PT43S",
-   "privacy": "public",
-   "views": 36,
-   "likes": 1,
-   "comments": 0
   },
   {
    "id": "sGfMrVc9aVQ",
@@ -731,6 +731,19 @@
    "subsGained": 0
   },
   {
+   "id": "M1tqBDu4akY",
+   "title": "Ruskin would hate how you live.",
+   "published": "2026-11-23T18:06:53Z",
+   "duration": "PT1M",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 6,
+   "avgPercent": 11.48,
+   "subsGained": 0
+  },
+  {
    "id": "PqOXPgtpPVY",
    "title": "The Republic \u00b7 Improved replacement",
    "published": "2026-10-14T20:14:26Z",
@@ -741,19 +754,6 @@
    "comments": 0,
    "avgSeconds": 7,
    "avgPercent": 43.49,
-   "subsGained": 0
-  },
-  {
-   "id": "M1tqBDu4akY",
-   "title": "Ruskin would hate how you live.",
-   "published": "2026-11-23T18:06:53Z",
-   "duration": "PT1M",
-   "privacy": "public",
-   "views": 18,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 6,
-   "avgPercent": 11.48,
    "subsGained": 0
   },
   {
@@ -781,6 +781,16 @@
    "avgSeconds": 9,
    "avgPercent": 38.69,
    "subsGained": 0
+  },
+  {
+   "id": "lQdm_UpFuzA",
+   "title": "How Organisms Light Up Without Power \ud83e\ude90",
+   "published": "2026-11-25T18:03:01Z",
+   "duration": "PT52S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 0,
+   "comments": 1
   },
   {
    "id": "QHacncwEVO4",
@@ -885,16 +895,6 @@
    "avgSeconds": 32,
    "avgPercent": 6.25,
    "subsGained": 0
-  },
-  {
-   "id": "lQdm_UpFuzA",
-   "title": "How Organisms Light Up Without Power \ud83e\ude90",
-   "published": "2026-11-25T18:03:01Z",
-   "duration": "PT52S",
-   "privacy": "public",
-   "views": 15,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "SAQ1Y0wN0zI",
@@ -1024,6 +1024,19 @@
    "subsGained": 0
   },
   {
+   "id": "BBgga4igaVo",
+   "title": "Why Seneca Warns About Freedom \ud83d\uded1",
+   "published": "2026-11-24T03:01:33Z",
+   "duration": "PT54S",
+   "privacy": "public",
+   "views": 10,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 7,
+   "avgPercent": 13.4,
+   "subsGained": 0
+  },
+  {
    "id": "mcV0u5NRAvI",
    "title": "Can you control your calm?",
    "published": "2026-10-23T04:05:15Z",
@@ -1047,19 +1060,6 @@
    "comments": 0,
    "avgSeconds": 30,
    "avgPercent": 56.39999999999999,
-   "subsGained": 0
-  },
-  {
-   "id": "BBgga4igaVo",
-   "title": "Why Seneca Warns About Freedom \ud83d\uded1",
-   "published": "2026-11-24T03:01:33Z",
-   "duration": "PT54S",
-   "privacy": "public",
-   "views": 9,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 7,
-   "avgPercent": 13.4,
    "subsGained": 0
   },
   {
@@ -1102,6 +1102,32 @@
    "subsGained": 0
   },
   {
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 2.16,
+   "subsGained": 0
+  },
+  {
+   "id": "pLirzW1d_Og",
+   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
+   "published": "2026-11-15T00:00:32Z",
+   "duration": "PT8M42S",
+   "privacy": "public",
+   "views": 8,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 11,
+   "avgPercent": 2.16,
+   "subsGained": 0
+  },
+  {
    "id": "X3V948qB6Ng",
    "title": "Question what you know",
    "published": "2026-10-29T23:00:17Z",
@@ -1128,17 +1154,14 @@
    "subsGained": 0
   },
   {
-   "id": "pLirzW1d_Og",
-   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
-   "published": "2026-11-15T00:00:32Z",
-   "duration": "PT8M42S",
+   "id": "gwsKVSOf0cY",
+   "title": "Why Sleep Drives Your Daily Drive \ud83d\ude80",
+   "published": "2026-11-24T03:48:02Z",
+   "duration": "PT8M37S",
    "privacy": "public",
    "views": 7,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 2.16,
-   "subsGained": 0
+   "likes": 1,
+   "comments": 1
   },
   {
    "id": "GlwLgzeUZsg",
@@ -1164,19 +1187,6 @@
    "comments": 1,
    "avgSeconds": 16,
    "avgPercent": 4.18,
-   "subsGained": 0
-  },
-  {
-   "id": "pLirzW1d_Og",
-   "title": "Is Your Suffering Actually Good for You? | Samuel Smiles",
-   "published": "2026-11-15T00:00:32Z",
-   "duration": "PT8M42S",
-   "privacy": "public",
-   "views": 7,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 2.16,
    "subsGained": 0
   },
   {
@@ -1340,16 +1350,6 @@
    "subsGained": 0
   },
   {
-   "id": "gwsKVSOf0cY",
-   "title": "Why Sleep Drives Your Daily Drive \ud83d\ude80",
-   "published": "2026-11-24T03:48:02Z",
-   "duration": "PT8M37S",
-   "privacy": "public",
-   "views": 5,
-   "likes": 1,
-   "comments": 1
-  },
-  {
    "id": "NFCFFiU0_hw",
    "title": "Nobody warns you about Acres of Diamonds.",
    "published": "2026-11-20T18:06:38Z",
@@ -1425,6 +1425,19 @@
    "comments": 0,
    "avgSeconds": 0,
    "avgPercent": 0,
+   "subsGained": 0
+  },
+  {
+   "id": "yw-m_m8OYiE",
+   "title": "Ruskin wrote this for you.",
+   "published": "2026-11-11T00:00:16Z",
+   "duration": "PT6M57S",
+   "privacy": "public",
+   "views": 4,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 2,
+   "avgPercent": 0.54,
    "subsGained": 0
   },
   {
@@ -1575,7 +1588,7 @@
    "privacy": "public",
    "views": 3,
    "likes": 0,
-   "comments": 0
+   "comments": 1
   },
   {
    "id": "p079-FpO7QE",
@@ -1588,6 +1601,19 @@
    "comments": 1,
    "avgSeconds": 77,
    "avgPercent": 17.48,
+   "subsGained": 0
+  },
+  {
+   "id": "cPmS7p3wuaY",
+   "title": "What is Ambition and Success really about?",
+   "published": "2026-11-13T00:00:09Z",
+   "duration": "PT6M56S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -1604,19 +1630,6 @@
    "subsGained": 0
   },
   {
-   "id": "yw-m_m8OYiE",
-   "title": "Ruskin wrote this for you.",
-   "published": "2026-11-11T00:00:16Z",
-   "duration": "PT6M57S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 2,
-   "avgPercent": 0.54,
-   "subsGained": 0
-  },
-  {
    "id": "L8fBZiNE9xA",
    "title": "Nobody warns you about Analects.",
    "published": "2026-11-10T03:02:03Z",
@@ -1627,6 +1640,19 @@
    "comments": 1,
    "avgSeconds": 20,
    "avgPercent": 31.730000000000004,
+   "subsGained": 0
+  },
+  {
+   "id": "cPmS7p3wuaY",
+   "title": "What is Ambition and Success really about?",
+   "published": "2026-11-13T00:00:09Z",
+   "duration": "PT6M56S",
+   "privacy": "public",
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -1777,6 +1803,16 @@
    "comments": 0
   },
   {
+   "id": "1RPy1VrMX2I",
+   "title": "Ruskin had a warning for you.",
+   "published": "2026-11-26T00:00:19Z",
+   "duration": "PT6M48S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 1,
+   "comments": 0
+  },
+  {
    "id": "5RaDUc1Ugb0",
    "title": "November 22, 2026",
    "published": "2026-11-23T04:05:27Z",
@@ -1790,29 +1826,16 @@
    "subsGained": 0
   },
   {
-   "id": "cPmS7p3wuaY",
-   "title": "What is Ambition and Success really about?",
-   "published": "2026-11-13T00:00:09Z",
-   "duration": "PT6M56S",
+   "id": "6VO8a_iBrsU",
+   "title": "Why does Young Man's Guide still matter?",
+   "published": "2026-11-23T00:00:27Z",
+   "duration": "PT7M3S",
    "privacy": "public",
    "views": 2,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
-   "id": "cPmS7p3wuaY",
-   "title": "What is Ambition and Success really about?",
-   "published": "2026-11-13T00:00:09Z",
-   "duration": "PT6M56S",
-   "privacy": "public",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 10,
+   "avgPercent": 2.38,
    "subsGained": 0
   },
   {
@@ -1950,16 +1973,16 @@
    "comments": 0
   },
   {
-   "id": "6VO8a_iBrsU",
-   "title": "Why does Young Man's Guide still matter?",
-   "published": "2026-11-23T00:00:27Z",
-   "duration": "PT7M3S",
+   "id": "mz_mBYr6auA",
+   "title": "This Young Man's Guide line is uncomfortable.",
+   "published": "2026-11-24T00:00:36Z",
+   "duration": "PT7M1S",
    "privacy": "public",
    "views": 1,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 10,
-   "avgPercent": 2.38,
+   "avgSeconds": 0,
+   "avgPercent": 0,
    "subsGained": 0
   },
   {
@@ -2236,19 +2259,6 @@
    "comments": 0
   },
   {
-   "id": "mz_mBYr6auA",
-   "title": "This Young Man's Guide line is uncomfortable.",
-   "published": "2026-11-24T00:00:36Z",
-   "duration": "PT7M1S",
-   "privacy": "public",
-   "views": 0,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "x5lAui69vdQ",
    "title": "Why Coleridge Warns About Scrolling \ud83d\udcda",
    "published": "2026-11-23T04:25:30Z",
@@ -2286,16 +2296,6 @@
    "title": "What happens when you run directly toward your biggest problems instead of hiding?",
    "published": "2026-11-20T20:00:10Z",
    "duration": "PT7M2S",
-   "privacy": "private",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "1RPy1VrMX2I",
-   "title": "Ruskin had a warning for you.",
-   "published": "2026-11-20T13:56:58Z",
-   "duration": "PT6M48S",
    "privacy": "private",
    "views": 0,
    "likes": 0,
