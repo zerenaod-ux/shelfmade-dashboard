@@ -6,10 +6,14 @@ on:
       count:
         description: 'How many story Shorts to write and build'
         default: '2'
+      confirm_old_style:
+        description: 'OLD look. ShelfMade is whiteboard-only (owner 2026-11-23). Type yes to really build the old look.'
+        default: 'no'
 permissions:
   contents: write
 jobs:
   build:
+    if: github.event.inputs.confirm_old_style == 'yes'   # blocks accidental/automatic starts of the old look (kick.py used to start it daily)
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
