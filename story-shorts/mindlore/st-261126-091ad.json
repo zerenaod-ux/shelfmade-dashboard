@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261126-091ad",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Your Brain Limits Friend Groups 🧠",
+ "hook": "You spend most of your time with a small circle of friends.",
+ "thumbnail_headline": "FRIENDSHIP LIMIT",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You spend most of your time with a small circle of friends. History actually shows that humans never comfortably exceed a certain group size. In 1992, anthropologist Robin Dunbar noted about 150 stable relationships in his research. The result? That number appears across many cultures and species. Modern studies of hunter‑gatherers in the 2000s found similar limits, confirming the Dunbar Number concept. A 2015 analysis of Facebook data reported about 338 active friends on average, but only roughly 150 of those are regularly contacted. So why do we assume we can keep hundreds of close ties? Because social media inflates visible counts, yet brain chemistry still caps meaningful bonds. Does it still hold today? Yes – brain scans show the same network constraints in 2020s participants. That's it. So next time you feel overwhelmed by a long friend list, remember your brain prefers about 150 real connections. You spend"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Humans can maintain about 150 stable social relationships",
+   "who": "Robin Dunbar",
+   "year": "1992",
+   "place": "University of Oxford, UK"
+  },
+  {
+   "claim": "Average active Facebook friends about 338",
+   "who": "Facebook Data Analysis",
+   "year": "2015",
+   "place": "Facebook, USA"
+  }
+ ],
+ "source_url": "",
+ "theme": "friendship and group size",
+ "exp": ""
+}

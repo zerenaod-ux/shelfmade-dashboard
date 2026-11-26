@@ -2199,6 +2199,65 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261126-091ad",
+   "look": "live-demo",
+   "title": "Why Your Brain Limits Friend Groups \ud83e\udde0",
+   "theme": "friendship and group size",
+   "acts": [
+    "before_after",
+    "countdown",
+    "counter",
+    "flow",
+    "headline",
+    "quote",
+    "reaction",
+    "search",
+    "title_slam",
+    "versus"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261126-2cb8f",
+   "look": "live-demo",
+   "title": "Why Noise Hurts Your Brain \ud83d\ude31",
+   "theme": "silence and noise",
+   "acts": [
+    "before_after",
+    "brain",
+    "counter",
+    "headline",
+    "notif",
+    "reaction",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261126-69b68",
+   "look": "live-demo",
+   "title": "Why Rain Causes Mood Slumps \ud83c\udf27\ufe0f",
+   "theme": "why you blame the weather for your mood",
+   "acts": [
+    "counter",
+    "icon_burst",
+    "reaction",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
   }
  ]
 }

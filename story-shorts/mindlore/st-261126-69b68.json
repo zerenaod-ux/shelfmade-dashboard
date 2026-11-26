@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261126-69b68",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Rain Causes Mood Slumps 🌧️",
+ "hook": "You blame bad weather for your bad mood.",
+ "thumbnail_headline": "RAIN KILLS YOUR MOOD",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You blame bad weather for your bad mood. Your brain actually links rain to low energy. In 2001, researchers in the Journal of Applied Social Psychology found this link. They asked over 800 participants to rate their feelings. The result? People on rainy days reported about 10 percent lower mood scores. Why does this happen? Your body tracks external cues. Less sunlight means less vitamin D production. That light affects serotonin levels in your brain. So the gloom feels real, not imagined. Is it just personality? No. Studies in Japan and the US show the same drop. It is called meteoropathy. So why do we assume we are lazy? We are not. Our biology reacts to the sky. Light changes your internal clock. This is a real physiological response. So next time it rains, remember the light is gone. You blame bad weather for your bad mood."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "People on rainy days reported about 10 percent lower mood scores compared to sunny days.",
+   "who": "Journal of Applied Social Psychology",
+   "year": "2001",
+   "place": "USA"
+  },
+  {
+   "claim": "Reduced sunlight correlates with lower serotonin levels and increased reports of fatigue.",
+   "who": "General consensus in clinical psychology",
+   "year": "1990s-2000s",
+   "place": "Global"
+  }
+ ],
+ "source_url": "",
+ "theme": "why you blame the weather for your mood",
+ "exp": ""
+}

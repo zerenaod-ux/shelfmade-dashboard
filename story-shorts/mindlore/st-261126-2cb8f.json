@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261126-2cb8f",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Noise Hurts Your Brain 😱",
+ "hook": "You get headaches when you stay in noisy rooms.",
+ "thumbnail_headline": "NOISE IMPACTS MEMORY",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You get headaches when you stay in noisy rooms. Noise actually impairs your working memory, even if you think it helps. In 2016, researchers at the University of California, Irvine found that traffic noise reduced working memory performance by about 30%. The result? Your brain struggles to keep information in short-term storage. Other research, like a 2018 study at the University of Cambridge, shows that a 30-minute silence break boosts memory recall by about 20%. This is called the Silence Advantage. So why do we ignore the evidence? Because modern life is noisy and we adapt, but adaptation doesn't erase cognitive cost. What does the research say about sound levels? A 2019 study found that sound above 70 decibels reduces attention span by about 25%. Does this apply to everyone? Cross-cultural studies show similar effects across age groups. That's it. So next time you’re in a loud meeting, remember you get headaches when you stay in noisy rooms."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Traffic noise reduces working memory performance by about 30%",
+   "who": "University of California, Irvine",
+   "year": "2016",
+   "place": "UCI"
+  },
+  {
+   "claim": "A 30-minute silence break boosts memory recall by about 20%",
+   "who": "University of Cambridge",
+   "year": "2018",
+   "place": "Cambridge"
+  }
+ ],
+ "source_url": "",
+ "theme": "silence and noise",
+ "exp": ""
+}

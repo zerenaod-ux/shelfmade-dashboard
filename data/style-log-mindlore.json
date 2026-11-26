@@ -393,5 +393,302 @@
    "tilt",
    "punch"
   ]
+ },
+ {
+  "title": "Why Your Brain Limits Friend Groups 🧠",
+  "kinds": [
+   "before_after",
+   "countdown",
+   "counter",
+   "crowd",
+   "flow",
+   "headline",
+   "quote",
+   "reaction",
+   "search",
+   "title_slam",
+   "versus"
+  ],
+  "tone": "a calm sleepy-voiced friend whispering secrets",
+  "end": "end on the funniest reaction beat, then cut instantly",
+  "pace": 2.92,
+  "pals": [
+   [
+    [
+     231,
+     241,
+     227
+    ],
+    [
+     177,
+     48,
+     229
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     216,
+     250,
+     202
+    ],
+    [
+     195,
+     77,
+     244
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     238,
+     211,
+     254
+    ],
+    [
+     237,
+     70,
+     126
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     50,
+     20,
+     65
+    ],
+    [
+     129,
+     234,
+     74
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ]
+  ],
+  "tr": [
+   "iris",
+   "wipe",
+   "flash",
+   "slide"
+  ],
+  "cam": [
+   "push",
+   "drift"
+  ]
+ },
+ {
+  "title": "Why Noise Hurts Your Brain 😱",
+  "kinds": [
+   "before_after",
+   "brain",
+   "checklist",
+   "counter",
+   "crowd",
+   "headline",
+   "meter",
+   "notif",
+   "reaction",
+   "search",
+   "title_slam",
+   "versus",
+   "zoom"
+  ],
+  "tone": "a skeptical friend who needs convincing and gets convinced",
+  "end": "end with a tiny challenge the viewer can try today",
+  "pace": 1.83,
+  "pals": [
+   [
+    [
+     196,
+     249,
+     234
+    ],
+    [
+     190,
+     73,
+     241
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     38,
+     24,
+     8
+    ],
+    [
+     71,
+     140,
+     221
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     30,
+     9,
+     18
+    ],
+    [
+     112,
+     227,
+     29
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     60,
+     14,
+     29
+    ],
+    [
+     31,
+     178,
+     230
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ]
+  ],
+  "tr": [
+   "wipe_v",
+   "wipe",
+   "flash",
+   "slide"
+  ],
+  "cam": [
+   "drift",
+   "punch"
+  ]
+ },
+ {
+  "title": "Why Rain Causes Mood Slumps 🌧️",
+  "kinds": [
+   "before_after",
+   "checklist",
+   "counter",
+   "flow",
+   "headline",
+   "icon_burst",
+   "quote",
+   "reaction",
+   "search",
+   "zoom"
+  ],
+  "tone": "a movie-trailer voice with huge dramatic stakes",
+  "end": "loop back to the very first image so it replays smoothly",
+  "pace": 2.37,
+  "pals": [
+   [
+    [
+     43,
+     17,
+     26
+    ],
+    [
+     33,
+     239,
+     165
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     33,
+     52,
+     25
+    ],
+    [
+     237,
+     38,
+     180
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     200,
+     236,
+     220
+    ],
+    [
+     32,
+     115,
+     232
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     24,
+     47,
+     12
+    ],
+    [
+     168,
+     53,
+     228
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ]
+  ],
+  "tr": [
+   "slide",
+   "iris",
+   "flash"
+  ],
+  "cam": [
+   "tilt",
+   "push"
+  ]
  }
 ]

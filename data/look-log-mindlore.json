@@ -1,10 +1,5 @@
 [
  {
-  "title": "Why Your Jaw Drops on News 🤐",
-  "opener": "zoom",
-  "pal": 5
- },
- {
   "title": "Why Your Brain Predicts Plots 🧠",
   "opener": "notif",
   "pal": 2
@@ -138,5 +133,20 @@
   "title": "Why Panic Makes Your Mouth Dry 💧",
   "opener": "notif",
   "pal": 7
+ },
+ {
+  "title": "Why Your Brain Limits Friend Groups 🧠",
+  "opener": "countdown",
+  "pal": 7
+ },
+ {
+  "title": "Why Noise Hurts Your Brain 😱",
+  "opener": "title_slam",
+  "pal": 11
+ },
+ {
+  "title": "Why Rain Causes Mood Slumps 🌧️",
+  "opener": "icon_burst",
+  "pal": 15
  }
 ]
