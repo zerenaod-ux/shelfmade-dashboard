@@ -53,8 +53,8 @@
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 10,
-   "last": 60
+   "uses": 11,
+   "last": 66
   }
  ],
  "catch": {
@@ -825,6 +825,18 @@
    "milestone": false,
    "season": 6,
    "date": "2026-11-25"
+  },
+  {
+   "n": 58,
+   "kind": "short",
+   "id": "pineapple-consensus-prank",
+   "title": "False Consensus: The Pineapple Pizza Trap",
+   "concept": "Leo assumes everyone loves pineapple on pizza because he does, leading to Mia setting a prank that completely backfires.",
+   "gag": "scoreboard",
+   "callback": true,
+   "milestone": false,
+   "season": 6,
+   "date": "2026-11-26"
   }
  ]
 }
