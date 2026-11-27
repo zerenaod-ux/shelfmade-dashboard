@@ -93,7 +93,7 @@
    "likes": 2,
    "comments": 0,
    "avgSeconds": 11,
-   "avgPercent": 49.25,
+   "avgPercent": 48.48,
    "subsGained": 0
   },
   {
@@ -324,7 +324,7 @@
    "likes": 1,
    "comments": 1,
    "avgSeconds": 11,
-   "avgPercent": 27.51,
+   "avgPercent": 26.009999999999998,
    "subsGained": 0
   },
   {
@@ -445,6 +445,19 @@
    "subsGained": 0
   },
   {
+   "id": "WEAr0dGdw2M",
+   "title": "You have Art of War backwards.",
+   "published": "2026-11-12T03:02:25Z",
+   "duration": "PT1M22S",
+   "privacy": "public",
+   "views": 34,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 25,
+   "avgPercent": 31.14,
+   "subsGained": 0
+  },
+  {
    "id": "jwCDi7yBZQA",
    "title": "Neon Dreams: Futuristic Journey #shorts",
    "published": "2025-01-22T05:45:02Z",
@@ -455,19 +468,6 @@
    "comments": 0,
    "avgSeconds": 33,
    "avgPercent": 98.53,
-   "subsGained": 0
-  },
-  {
-   "id": "WEAr0dGdw2M",
-   "title": "You have Art of War backwards.",
-   "published": "2026-11-12T03:02:25Z",
-   "duration": "PT1M22S",
-   "privacy": "public",
-   "views": 33,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 25,
-   "avgPercent": 31.14,
    "subsGained": 0
   },
   {
@@ -692,6 +692,16 @@
    "subsGained": 0
   },
   {
+   "id": "o8pUXAmKaOE",
+   "title": "Why City Streets Look Like Spaghetti \ud83c\udf5d",
+   "published": "2026-11-27T03:01:20Z",
+   "duration": "PT50S",
+   "privacy": "public",
+   "views": 23,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "goI_lzWhMaw",
    "title": "Where is your attention?",
    "published": "2026-11-01T02:01:05Z",
@@ -718,16 +728,6 @@
    "subsGained": 0
   },
   {
-   "id": "o8pUXAmKaOE",
-   "title": "Why City Streets Look Like Spaghetti \ud83c\udf5d",
-   "published": "2026-11-27T03:01:20Z",
-   "duration": "PT50S",
-   "privacy": "public",
-   "views": 21,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "lQdm_UpFuzA",
    "title": "How Organisms Light Up Without Power \ud83e\ude90",
    "published": "2026-11-25T18:03:01Z",
@@ -735,7 +735,10 @@
    "privacy": "public",
    "views": 21,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 21,
+   "avgPercent": 41.11,
+   "subsGained": 0
   },
   {
    "id": "M1tqBDu4akY",
@@ -746,8 +749,8 @@
    "views": 21,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 6,
-   "avgPercent": 11.48,
+   "avgSeconds": 8,
+   "avgPercent": 14.42,
    "subsGained": 0
   },
   {
@@ -881,6 +884,19 @@
    "subsGained": 0
   },
   {
+   "id": "nw9L0WbCy1s",
+   "title": "Can mercy survive in the middle of war?",
+   "published": "2026-06-11T16:37:06Z",
+   "duration": "PT8M37S",
+   "privacy": "public",
+   "views": 17,
+   "likes": 2,
+   "comments": 0,
+   "avgSeconds": 32,
+   "avgPercent": 6.25,
+   "subsGained": 0
+  },
+  {
    "id": "NGMGp1KlKt4",
    "title": "Aurelius had a warning for you.",
    "published": "2026-11-18T18:06:32Z",
@@ -917,19 +933,6 @@
    "comments": 0,
    "avgSeconds": 11,
    "avgPercent": 54.08,
-   "subsGained": 0
-  },
-  {
-   "id": "nw9L0WbCy1s",
-   "title": "Can mercy survive in the middle of war?",
-   "published": "2026-06-11T16:37:06Z",
-   "duration": "PT8M37S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 2,
-   "comments": 0,
-   "avgSeconds": 32,
-   "avgPercent": 6.25,
    "subsGained": 0
   },
   {
@@ -980,8 +983,8 @@
    "views": 12,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 22,
-   "avgPercent": 42.17,
+   "avgSeconds": 20,
+   "avgPercent": 37.75,
    "subsGained": 0
   },
   {
@@ -995,6 +998,19 @@
    "comments": 1,
    "avgSeconds": 28,
    "avgPercent": 39.99,
+   "subsGained": 0
+  },
+  {
+   "id": "6z0IxWs-qko",
+   "title": "Can you remember a page without notes?",
+   "published": "2026-11-05T00:00:18Z",
+   "duration": "PT7M25S",
+   "privacy": "public",
+   "views": 12,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 91,
+   "avgPercent": 20.67,
    "subsGained": 0
   },
   {
@@ -1057,19 +1073,6 @@
    "comments": 1,
    "avgSeconds": 17,
    "avgPercent": 26.669999999999998,
-   "subsGained": 0
-  },
-  {
-   "id": "6z0IxWs-qko",
-   "title": "Can you remember a page without notes?",
-   "published": "2026-11-05T00:00:18Z",
-   "duration": "PT7M25S",
-   "privacy": "public",
-   "views": 11,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 91,
-   "avgPercent": 20.67,
    "subsGained": 0
   },
   {
@@ -1159,8 +1162,8 @@
    "views": 8,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 2.16,
+   "avgSeconds": 43,
+   "avgPercent": 8.41,
    "subsGained": 0
   },
   {
@@ -1172,8 +1175,8 @@
    "views": 8,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 15,
-   "avgPercent": 3.7900000000000005,
+   "avgSeconds": 21,
+   "avgPercent": 5.26,
    "subsGained": 0
   },
   {
@@ -1185,8 +1188,8 @@
    "views": 8,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 11,
-   "avgPercent": 2.16,
+   "avgSeconds": 43,
+   "avgPercent": 8.41,
    "subsGained": 0
   },
   {
@@ -1410,8 +1413,8 @@
    "views": 5,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 110,
-   "avgPercent": 27.72,
+   "avgSeconds": 85,
+   "avgPercent": 21.49,
    "subsGained": 0
   },
   {
@@ -1651,8 +1654,8 @@
    "views": 3,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 1,
+   "avgPercent": 0.26,
    "subsGained": 0
   },
   {
@@ -1677,8 +1680,8 @@
    "views": 3,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
+   "avgSeconds": 1,
+   "avgPercent": 0.26,
    "subsGained": 0
   },
   {

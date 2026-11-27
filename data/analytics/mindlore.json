@@ -289,6 +289,19 @@
    "subsGained": 0
   },
   {
+   "id": "X9Z1e8QV6PQ",
+   "title": "Why Silence Heals Your Brain",
+   "published": "2026-11-11T03:02:00Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 57,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 26,
+   "avgPercent": 40.74,
+   "subsGained": 0
+  },
+  {
    "id": "HwKLVKQylv8",
    "title": "Your brain is wired to stop wanting things",
    "published": "2026-11-12T03:01:54Z",
@@ -299,19 +312,6 @@
    "comments": 1,
    "avgSeconds": 17,
    "avgPercent": 31.929999999999996,
-   "subsGained": 0
-  },
-  {
-   "id": "X9Z1e8QV6PQ",
-   "title": "Why Silence Heals Your Brain",
-   "published": "2026-11-11T03:02:00Z",
-   "duration": "PT1M6S",
-   "privacy": "public",
-   "views": 56,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 26,
-   "avgPercent": 39.7,
    "subsGained": 0
   },
   {
@@ -728,16 +728,6 @@
    "subsGained": 0
   },
   {
-   "id": "Q5jlEzEH7as",
-   "title": "Why Kids Laugh at Surprise Endings \ud83d\ude04",
-   "published": "2026-11-26T23:02:11Z",
-   "duration": "PT1M2S",
-   "privacy": "public",
-   "views": 24,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "ZxFKXhCEx_c",
    "title": "Why Dolphins Flip When Happy \ud83d\ude04",
    "published": "2026-11-21T18:03:51Z",
@@ -836,6 +826,16 @@
    "privacy": "public",
    "views": 23,
    "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "Q5jlEzEH7as",
+   "title": "Why Kids Laugh at Surprise Endings \ud83d\ude04",
+   "published": "2026-11-26T23:02:11Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
    "comments": 0
   },
   {
@@ -999,7 +999,10 @@
    "privacy": "public",
    "views": 19,
    "likes": 0,
-   "comments": 1
+   "comments": 1,
+   "avgSeconds": 24,
+   "avgPercent": 42.79,
+   "subsGained": 0
   },
   {
    "id": "ivGIglijofs",
@@ -1293,8 +1296,8 @@
    "views": 14,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 3,
-   "avgPercent": 5.95,
+   "avgSeconds": 5,
+   "avgPercent": 10.14,
    "subsGained": 0
   },
   {

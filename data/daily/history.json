@@ -1259,31 +1259,31 @@
  },
  "2026-11-27": {
   "shelfmade/youtube": {
-   "views": 3692,
+   "views": 3697,
    "likes": 123,
    "comments": 67,
-   "subs": 10,
+   "subs": 11,
    "videos": 194,
    "as_of": "2026-11-27"
   },
   "shelfmade/instagram": {
-   "views": 541,
+   "views": 555,
    "likes": 0,
    "comments": 0,
    "subs": null,
-   "videos": 21,
-   "as_of": "2026-11-26"
+   "videos": 22,
+   "as_of": "2026-11-27"
   },
   "shelfmade/tiktok": {
-   "views": 1917,
+   "views": 1738,
    "likes": 7,
    "comments": 0,
    "subs": null,
-   "videos": 21,
-   "as_of": "2026-11-26"
+   "videos": 19,
+   "as_of": "2026-11-27"
   },
   "mindlore/youtube": {
-   "views": 6110,
+   "views": 6109,
    "likes": 114,
    "comments": 71,
    "subs": 10,
@@ -1291,44 +1291,44 @@
    "as_of": "2026-11-27"
   },
   "mindlore/instagram": {
-   "views": 265,
+   "views": 285,
    "likes": 2,
    "comments": 0,
    "subs": null,
-   "videos": 26,
-   "as_of": "2026-11-26"
-  },
-  "mindlore/tiktok": {
-   "views": 1418,
-   "likes": 6,
-   "comments": 0,
-   "subs": null,
-   "videos": 25,
-   "as_of": "2026-11-26"
-  },
-  "doodles/youtube": {
-   "views": 570,
-   "likes": 36,
-   "comments": 58,
-   "subs": 2,
-   "videos": 65,
+   "videos": 24,
    "as_of": "2026-11-27"
   },
-  "doodles/instagram": {
-   "views": 3446,
-   "likes": 17,
-   "comments": 0,
-   "subs": null,
-   "videos": 17,
-   "as_of": "2026-11-26"
-  },
-  "doodles/tiktok": {
-   "views": 2111,
-   "likes": 16,
+  "mindlore/tiktok": {
+   "views": 1345,
+   "likes": 5,
    "comments": 0,
    "subs": null,
    "videos": 24,
-   "as_of": "2026-11-26"
+   "as_of": "2026-11-27"
+  },
+  "doodles/youtube": {
+   "views": 569,
+   "likes": 36,
+   "comments": 58,
+   "subs": 2,
+   "videos": 66,
+   "as_of": "2026-11-27"
+  },
+  "doodles/instagram": {
+   "views": 3404,
+   "likes": 19,
+   "comments": 0,
+   "subs": null,
+   "videos": 17,
+   "as_of": "2026-11-27"
+  },
+  "doodles/tiktok": {
+   "views": 2060,
+   "likes": 17,
+   "comments": 0,
+   "subs": null,
+   "videos": 23,
+   "as_of": "2026-11-27"
   }
  }
 }
