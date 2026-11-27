@@ -41,14 +41,14 @@
   {
    "id": "greg",
    "text": "Greg's one-word email arrives at the worst possible moment ('Noted.')",
-   "uses": 11,
-   "last": 64
+   "uses": 12,
+   "last": 70
   },
   {
    "id": "dev",
    "text": "the barista writes Leo's name wrong on the cup, again",
-   "uses": 11,
-   "last": 65
+   "uses": 12,
+   "last": 71
   },
   {
    "id": "scoreboard",
@@ -872,6 +872,30 @@
    "callback": true,
    "milestone": false,
    "season": 1,
+   "date": "2026-11-27"
+  },
+  {
+   "n": 61,
+   "kind": "short",
+   "id": "hoodie-betrayal-detective-desk",
+   "title": "Why did Leo put his favorite hoodie on trial",
+   "concept": "Leo investigates his missing hoodie like a noir detective while Mia acts unimpressed.",
+   "gag": "greg",
+   "callback": true,
+   "milestone": false,
+   "season": 7,
+   "date": "2026-11-27"
+  },
+  {
+   "n": 62,
+   "kind": "short",
+   "id": "leo-sweat-rate",
+   "title": "Rate My Panic Out Of Ten",
+   "concept": "illusion of transparency",
+   "gag": "dev",
+   "callback": true,
+   "milestone": false,
+   "season": 7,
    "date": "2026-11-27"
   }
  ]
