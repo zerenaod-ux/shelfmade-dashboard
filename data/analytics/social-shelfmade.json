@@ -1,6 +1,6 @@
 {
  "brand": "shelfmade",
- "collected": "2026-11-26T20:34:39Z",
+ "collected": "2026-11-27T20:20:49Z",
  "more": true,
  "posts": [
   {
@@ -8,6 +8,108 @@
    "status": "scheduled",
    "url": null,
    "sent": null,
+   "text": "How Children Shift Accents When They Move \ud83d\udde3\n\nYou can change your voice over a few months. Maya moved from Texa",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-27T01:55:15.049Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Your Middle Class Shapes Politics Part 1\n\nYou talk about politics at dinner.\n\nEvidence: Donald Kagan (1995",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-27T01:55:14.503Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Chasing Happiness Makes Your Heart Ache Part 1\n\nYou feel a sudden ache in your heart when a big goal final",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-27T01:55:13.826Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why City Streets Look Like Spaghetti \ud83c\udf5d\n\nYour city's layout is not random; it was a deliberate choice. A grid l",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "metrics": [],
+   "updated": "2026-11-27T01:55:13.203Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "How Kids Flip Languages Instantly \ud83e\udde9\n\nEverything you think about language switching is actually backwards. Maya",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-27T01:55:12.543Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "scheduled",
+   "url": null,
+   "sent": null,
+   "text": "Why Dreams Paint in Color \ud83c\udf08\n\nEverything you think about dreaming colors is completely backwards, trust me. Mos",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-27T01:55:11.913Z"
+  },
+  {
+   "platform": "youtube",
+   "status": "sent",
+   "url": "https://www.youtube.com/watch?v=a7ehg8GKMJ8",
+   "sent": "2026-11-27T00:00:27.000Z",
+   "text": "What happens when you run directly toward your biggest problems instead of hiding?\n\nLessons and original comme",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "comments",
+    "engagementRate",
+    "likes",
+    "reactions",
+    "views"
+   ],
+   "updated": "2026-11-27T04:56:47.909Z"
+  },
+  {
+   "platform": "instagram",
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DgQR6XqKSfn/",
+   "sent": "2026-11-27T18:04:36.017Z",
    "text": "How Tiny Molecules Light the Sea \ud83c\udf0a\n\nEverything you think about jellyfish light is wrong, especially tonight. J",
    "views": null,
    "likes": null,
@@ -21,23 +123,45 @@
    "url": "https://www.instagram.com/reel/DgNtEFOIDBh/",
    "sent": "2026-11-26T18:03:46.834Z",
    "text": "How Organisms Light Up Without Power \ud83e\ude90\n\nEverything you think about shrimp light is completely backwards, trust",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-26T03:45:50.372Z"
+   "views": 15,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "instagram",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.instagram.com/reel/DgOjwunypHB/",
+   "sent": "2026-11-27T02:02:49.737Z",
    "text": "Why Your Brain Loves Mild Pain \ud83d\udcaa\n\nEverything you know about cold is backwards. A quick splash of ice triggers ",
-   "views": null,
-   "likes": null,
-   "comments": null,
-   "metrics": [],
-   "updated": "2026-11-26T03:45:50.822Z"
+   "views": 2,
+   "likes": 0,
+   "comments": 0,
+   "metrics": [
+    "averageTimeWatched",
+    "comments",
+    "engagementRate",
+    "likes",
+    "reach",
+    "reactions",
+    "saves",
+    "shares",
+    "totalTimeWatched",
+    "views"
+   ],
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -99,9 +223,9 @@
    "url": "https://www.youtube.com/watch?v=1RPy1VrMX2I",
    "sent": "2026-11-26T00:00:19.000Z",
    "text": "Ruskin had a warning for you.\n\nLessons and original commentary inspired by Sesame and Lilies by John Ruskin. M",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
+   "views": 3,
+   "likes": 1,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -109,7 +233,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -131,11 +255,11 @@
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
-   "url": null,
-   "sent": null,
+   "status": "sent",
+   "url": "https://www.youtube.com/shorts/o8pUXAmKaOE",
+   "sent": "2026-11-27T03:00:56.376Z",
    "text": "Why City Streets Look Like Spaghetti \ud83c\udf5d\n\nYour city's layout is not random; it was a deliberate choice. A grid l",
-   "views": 0,
+   "views": 11,
    "likes": 0,
    "comments": 0,
    "metrics": [
@@ -145,11 +269,11 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-25T00:06:31.240Z"
+   "updated": "2026-11-27T04:56:47.909Z"
   },
   {
    "platform": "youtube",
-   "status": "scheduled",
+   "status": "error",
    "url": null,
    "sent": null,
    "text": "Why Chasing Happiness Makes Your Heart Ache Part 1\n\nYou feel a sudden ache in your heart when a big goal final",
@@ -171,9 +295,9 @@
    "url": "https://www.youtube.com/shorts/T_kbgjhQxpU",
    "sent": "2026-11-26T18:04:02.468Z",
    "text": "How Tiny Molecules Light the Sea \ud83c\udf0a\n\nEverything you think about jellyfish light is wrong, especially tonight. J",
-   "views": 0,
+   "views": 41,
    "likes": 0,
-   "comments": 0,
+   "comments": 1,
    "metrics": [
     "comments",
     "engagementRate",
@@ -181,7 +305,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T18:06:22.873Z"
+   "updated": "2026-11-27T04:56:47.909Z"
   },
   {
    "platform": "youtube",
@@ -207,7 +331,7 @@
    "url": "https://www.youtube.com/shorts/lQdm_UpFuzA",
    "sent": "2026-11-25T18:02:36.124Z",
    "text": "How Organisms Light Up Without Power \ud83e\ude90\n\nEverything you think about shrimp light is completely backwards, trust",
-   "views": 16,
+   "views": 21,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -217,7 +341,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -225,7 +349,7 @@
    "url": "https://www.youtube.com/watch?v=igP95PPeC9Y",
    "sent": "2026-11-25T00:00:06.000Z",
    "text": "This Pleasures of Life line is uncomfortable.\n\nLessons and original commentary inspired by The Pleasures of Li",
-   "views": 3,
+   "views": 5,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -235,7 +359,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -243,7 +367,7 @@
    "url": "https://www.youtube.com/watch?v=gwsKVSOf0cY",
    "sent": "2026-11-24T03:48:02.000Z",
    "text": "Emma worked eighteen hours straight. She felt like a draining battery. Her brain pushed her toward sleep.\n\nCha",
-   "views": 5,
+   "views": 7,
    "likes": 1,
    "comments": 1,
    "metrics": [
@@ -253,7 +377,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -261,7 +385,7 @@
    "url": "https://www.youtube.com/shorts/c2RncDhV5iw",
    "sent": "2026-11-25T03:01:00.540Z",
    "text": "Why Your Brain Lies About Spanish \ud83e\udde0\n\nYou feel fluent, but you are actually stuck. Picture a rubber band stretc",
-   "views": 37,
+   "views": 40,
    "likes": 1,
    "comments": 1,
    "metrics": [
@@ -271,7 +395,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -311,7 +435,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.772Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "tiktok",
@@ -333,7 +457,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -356,7 +480,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "instagram",
@@ -379,7 +503,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -387,7 +511,7 @@
    "url": "https://www.youtube.com/watch?v=mz_mBYr6auA",
    "sent": "2026-11-24T00:00:36.000Z",
    "text": "This Young Man's Guide line is uncomfortable.\n\nLessons and original commentary inspired by The Young Man's Gui",
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -397,7 +521,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -405,7 +529,7 @@
    "url": "https://www.youtube.com/shorts/BBgga4igaVo",
    "sent": "2026-11-24T03:01:04.292Z",
    "text": "Why Seneca Warns About Freedom \ud83d\uded1\n\nL. Annaeus Seneca on Benefits by Lucius Annaeus Seneca\n\nFollow ShelfMade for",
-   "views": 9,
+   "views": 10,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -415,7 +539,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -423,7 +547,7 @@
    "url": "https://www.youtube.com/shorts/gANMXiDY4h0",
    "sent": "2026-11-23T03:00:19.706Z",
    "text": "How Chesterfield Warns About Manners \ud83d\udcdc\n\nLetters to His Son, Complete by Earl of Philip Dormer Stanhope Chester",
-   "views": 50,
+   "views": 47,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -433,7 +557,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -441,7 +565,7 @@
    "url": "https://www.youtube.com/watch?v=6VO8a_iBrsU",
    "sent": "2026-11-23T00:00:27.000Z",
    "text": "Why does Young Man's Guide still matter?\n\nLessons and original commentary inspired by The Young Man's Guide by",
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -451,7 +575,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -469,7 +593,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -487,7 +611,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -509,7 +633,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "youtube",
@@ -527,7 +651,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -549,7 +673,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "tiktok",
@@ -571,7 +695,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "youtube",
@@ -589,7 +713,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -611,7 +735,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "tiktok",
@@ -633,7 +757,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "youtube",
@@ -651,7 +775,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -669,7 +793,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "instagram",
@@ -692,7 +816,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "instagram",
@@ -715,7 +839,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -733,7 +857,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "instagram",
@@ -756,7 +880,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -764,7 +888,7 @@
    "url": "https://www.youtube.com/shorts/M1tqBDu4akY",
    "sent": "2026-11-23T18:06:31.577Z",
    "text": "Ruskin would hate how you live.\n\nThe Crown of Wild Olive by John Ruskin\n\nFollow ShelfMade for a new classic-bo",
-   "views": 18,
+   "views": 19,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -774,7 +898,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -792,7 +916,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.379Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -810,7 +934,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -818,7 +942,7 @@
    "url": "https://www.youtube.com/watch?v=pLirzW1d_Og",
    "sent": "2026-11-15T00:00:32.000Z",
    "text": "You often think that pain is a sign of failure, but what if it is actually a hidden teacher?\n\nLessons and orig",
-   "views": 7,
+   "views": 8,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -828,7 +952,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -850,7 +974,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -873,7 +997,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -891,7 +1015,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -909,7 +1033,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -927,7 +1051,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -949,7 +1073,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -972,7 +1096,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "instagram",
@@ -995,7 +1119,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -1013,7 +1137,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1021,7 +1145,7 @@
    "url": "https://www.youtube.com/watch?v=cPmS7p3wuaY",
    "sent": "2026-11-13T00:00:09.000Z",
    "text": "What is Ambition and Success really about?\n\nLessons and original commentary inspired by Ambition and Success b",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1031,7 +1155,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1049,7 +1173,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -1071,7 +1195,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1094,7 +1218,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "instagram",
@@ -1117,7 +1241,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -1125,7 +1249,7 @@
    "url": "https://www.youtube.com/watch?v=7HnIeRjpoGg",
    "sent": "2026-11-12T00:00:29.000Z",
    "text": "Listen to what Seneca warned about.\n\nLessons and original commentary inspired by L. Annaeus Seneca on Benefits",
-   "views": 7,
+   "views": 8,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1135,7 +1259,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1153,7 +1277,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1171,7 +1295,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -1193,7 +1317,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1216,7 +1340,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -1224,7 +1348,7 @@
    "url": "https://www.youtube.com/shorts/szjjCFDtsFA",
    "sent": "2026-11-16T03:01:08.315Z",
    "text": "You were taught Tao Te Ching wrong.\n\nTao Te Ching by Lao Tzu\n\nFollow ShelfMade for a new classic-book lesson e",
-   "views": 71,
+   "views": 72,
    "likes": 2,
    "comments": 1,
    "metrics": [
@@ -1234,7 +1358,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1252,7 +1376,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1260,7 +1384,7 @@
    "url": "https://www.youtube.com/watch?v=yw-m_m8OYiE",
    "sent": "2026-11-11T00:00:16.000Z",
    "text": "Ruskin wrote this for you.\n\nLessons and original commentary inspired by The Crown of Wild Olive by John Ruskin",
-   "views": 3,
+   "views": 4,
    "likes": 0,
    "comments": 1,
    "metrics": [
@@ -1270,7 +1394,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -1292,7 +1416,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1315,7 +1439,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -1333,7 +1457,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -1355,7 +1479,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1378,7 +1502,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -1396,7 +1520,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1414,7 +1538,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.911Z"
   },
   {
    "platform": "tiktok",
@@ -1436,7 +1560,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1459,7 +1583,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -1477,7 +1601,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -1499,7 +1623,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1522,7 +1646,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.761Z"
   },
   {
    "platform": "youtube",
@@ -1540,7 +1664,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1558,7 +1682,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.911Z"
   },
   {
    "platform": "tiktok",
@@ -1580,7 +1704,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1603,7 +1727,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.762Z"
   },
   {
    "platform": "youtube",
@@ -1621,7 +1745,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "tiktok",
@@ -1643,7 +1767,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "instagram",
@@ -1666,7 +1790,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.762Z"
   },
   {
    "platform": "youtube",
@@ -1684,7 +1808,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1702,7 +1826,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.911Z"
   },
   {
    "platform": "instagram",
@@ -1725,7 +1849,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
+   "updated": "2026-11-27T05:22:04.762Z"
   },
   {
    "platform": "tiktok",
@@ -1747,7 +1871,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.396Z"
   },
   {
    "platform": "youtube",
@@ -1765,7 +1889,7 @@
     "reactions",
     "views"
    ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T04:56:47.910Z"
   },
   {
    "platform": "youtube",
@@ -1805,7 +1929,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T07:01:26.773Z"
+   "updated": "2026-11-27T06:02:19.397Z"
   },
   {
    "platform": "instagram",
@@ -1828,146 +1952,7 @@
     "totalTimeWatched",
     "views"
    ],
-   "updated": "2026-11-26T06:21:53.276Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/WEAr0dGdw2M",
-   "sent": "2026-11-12T03:01:55.438Z",
-   "text": "You have Art of War backwards.\n\nThe Art of War by Sun Tzu\n\nYou have Art of War backwards.\n\nBy means of these s",
-   "views": 32,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-26T01:08:48.380Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/watch?v=rmj2YzElBjM",
-   "sent": "2026-11-07T00:00:39.000Z",
-   "text": "Self-Help is not what you think.\n\nLessons and original commentary inspired by Self-Help by Samuel Smiles. Mode",
-   "views": 2,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-26T01:08:48.380Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7707007204850715917?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-11T20:05:12.688Z",
-   "text": "This Studies in Pessimism line is uncomfortable. Studies in Pessimism by Arthur Schopenhauer This Studies in P",
-   "views": 84,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-26T07:01:26.773Z"
-  },
-  {
-   "platform": "instagram",
-   "status": "sent",
-   "url": "https://www.instagram.com/reel/DfnFkwKlqr7/",
-   "sent": "2026-11-11T18:07:50.917Z",
-   "text": "Plato had a warning for you.\n\nPhaedrus by Plato\n\nPlato had a warning for you.\n\nPHAEDRUS: You shall hear, if yo",
-   "views": 3,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "saves",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-26T06:21:53.276Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/SAQ1Y0wN0zI",
-   "sent": "2026-11-11T18:06:16.014Z",
-   "text": "Nobody warns you about Tao Te Ching.\n\nTao Te Ching by Lao Tzu\n\nNobody warns you about Tao Te Ching.\n\nMusic and",
-   "views": 15,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-26T01:08:48.380Z"
-  },
-  {
-   "platform": "tiktok",
-   "status": "sent",
-   "url": "https://www.tiktok.com/@shelfmade.daily/video/7706380011124641038?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-   "sent": "2026-11-10T03:32:09.192Z",
-   "text": "Plato had a warning for you. Phaedrus by Plato Plato had a warning for you. PHAEDRUS: You shall hear, if you c",
-   "views": 95,
-   "likes": 0,
-   "comments": 0,
-   "metrics": [
-    "averageTimeWatched",
-    "comments",
-    "engagementRate",
-    "likes",
-    "reach",
-    "reactions",
-    "shares",
-    "totalTimeWatched",
-    "views"
-   ],
-   "updated": "2026-11-26T07:01:26.773Z"
-  },
-  {
-   "platform": "youtube",
-   "status": "sent",
-   "url": "https://www.youtube.com/shorts/L8fBZiNE9xA",
-   "sent": "2026-11-10T03:01:31.305Z",
-   "text": "Nobody warns you about Analects.\n\nThe Analects by Confucius\n\nNobody warns you about Analects.\n\nHow can a man c",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "metrics": [
-    "comments",
-    "engagementRate",
-    "likes",
-    "reactions",
-    "views"
-   ],
-   "updated": "2026-11-26T01:08:48.380Z"
+   "updated": "2026-11-27T05:22:04.762Z"
   }
  ]
 }
