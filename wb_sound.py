@@ -10,6 +10,7 @@ def _scratch(n, rng):
     x = rng.standard_normal(n); x = np.diff(x, prepend=0.0); x = np.diff(x, prepend=0.0)   # bright noise
     t = np.arange(n) / SR
     mod = 0.55 + 0.45 * np.abs(np.sin(2 * np.pi * (9 + 5 * rng.random()) * t + rng.random() * 6))
+    x = np.convolve(x, np.ones(4) / 4.0, mode='same')   # soften the brightest hiss (owner 2026-11-27)
     return x * mod / 4.0
 
 
@@ -20,7 +21,7 @@ def build(events, duration, out_wav, seed=7):
         if i0 >= n: continue
         ln = min(ln, n - i0); seg = _scratch(ln, rng).astype(np.float32)
         a = np.minimum(1.0, np.minimum(np.arange(ln) / (0.04 * SR), (ln - np.arange(ln)) / (0.06 * SR)))
-        y[i0:i0 + ln] += seg * a * 0.03          # barely-there pencil scratch
+        y[i0:i0 + ln] += seg * a * 0.02          # almost silent pencil scratch (owner 2026-11-27: was too noisy in headphones)
     chords = [(57, 60, 64), (53, 57, 60), (48, 52, 55), (55, 59, 62)]; seg_s = 7.0; t = np.arange(n) / SR; pad = np.zeros(n, np.float32)
     for k in range(int(duration / seg_s) + 2):
         a0, a1 = int(k * seg_s * SR), min(n, int((k + 1) * seg_s * SR + 2 * SR))
