@@ -7435,5 +7435,345 @@
   "style": "v2",
   "format": "CONFESSION",
   "improv": false
+ },
+ {
+  "id": "hoodie-betrayal-detective-desk",
+  "title": "Why did Leo put his favorite hoodie on trial",
+  "concept": "Leo investigates his missing hoodie like a noir detective while Mia acts unimpressed.",
+  "insight": "Attachment to worn-out clothes defies all logic.",
+  "caption": "The case of the missing sleeve.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo slams a coffee mug down on the wooden desk, glaring at the empty chair.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "serious",
+      "beat": "snap",
+      "text": "The grey hoodie is gone."
+     },
+     {
+      "who": "leo",
+      "feel": "urgent",
+      "beat": "quick",
+      "text": "Someone staged a fake kidnapping right here in this room."
+     }
+    ]
+   },
+   {
+    "scene": "Mia takes a slow sip of tea, raising one eyebrow at Leo's intense stare.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "It walked away by itself because it was too crusty to live.",
+      "listener_reaction": "He is not joking."
+     },
+     {
+      "who": "leo",
+      "feel": "suspicious",
+      "beat": "snap",
+      "text": "Don't joke about the cuffs. The left sleeve had character."
+     }
+    ]
+   },
+   {
+    "scene": "Leo paces the hallway behind the podcast desk, checking his notes with narrowed eyes.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "urgent",
+      "beat": "quick",
+      "text": "Greg emailed me this morning and said Noted. That means he knows."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "amused",
+      "beat": "normal",
+      "text": "Greg does not care about your stained laundry, Leo.",
+      "listener_reaction": "She smirks at his panic."
+     },
+     {
+      "who": "leo",
+      "feel": "suspicious",
+      "beat": "snap",
+      "text": "He sent one word. That is a threat in corporate code."
+     }
+    ]
+   },
+   {
+    "scene": "Mia pulls a dusty sweater from under the desk and drops it right in front of Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "quick",
+      "text": "It was behind the radiator, detective. Stop crying.",
+      "listener_reaction": "She drops the smelly fabric on the table."
+     },
+     {
+      "who": "leo",
+      "feel": "surprised",
+      "listener_feel": "surprised",
+      "beat": "pause",
+      "text": "Oh. My baby. You came back to me."
+     },
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "It smells like burnt toast and old sadness."
+     }
+    ]
+   },
+   {
+    "scene": "Leo cradles the old sweater against his chest while Mia shakes her head slowly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "quick",
+      "text": "We are taking a break after this trust exercise."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "warm",
+      "beat": "snap",
+      "text": "Scoreboard is one hundred forty-six.",
+      "listener_reaction": "She counts her easy win."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "quick",
+      "text": "The scoreboard is rigged by you."
+     }
+    ]
+   },
+   {
+    "scene": "Leo stares blankly at the wall as a digital clock on the desk flashes the time.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "neutral",
+      "beat": "quick",
+      "text": "Okay but hear me out."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "amused",
+      "beat": "snap",
+      "text": "Give it back to the radiator.",
+      "listener_reaction": "She cuts him off instantly."
+     },
+     {
+      "who": "leo",
+      "feel": "serious",
+      "beat": "snap",
+      "text": "Never."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 8,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It features sharp banter about a lost crusty hoodie with great comedic escalation and a solid payoff.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 8,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "idea": "",
+  "style": "v2",
+  "format": "MINI MYSTERY",
+  "improv": false
+ },
+ {
+  "id": "leo-sweat-rate",
+  "title": "Rate My Panic Out Of Ten",
+  "concept": "illusion of transparency",
+  "insight": "Leo thinks everyone can see his sweat",
+  "caption": "Rate My Panic Out Of Ten",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo sits sweating at the desk, tapping a coffee mug nervously while pacing eyes stare.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "Rate my panic out of ten, right now."
+     },
+     {
+      "who": "mia",
+      "feel": "curious",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "What are we rating? You look totally normal today."
+     }
+    ]
+   },
+   {
+    "scene": "Mia holds a warm cup of tea, leaning forward with a skeptical smirk at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "beat": "snap",
+      "text": "Normal? My soul is literally leaving my body through my forehead!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "Dude, your face is completely dry. You honestly just look bored."
+     }
+    ]
+   },
+   {
+    "scene": "Leo points wildly at his own temples while gripping the edge of the podcast desk.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "panicked",
+      "beat": "snap",
+      "text": "No way! Dev the barista just judged my whole existence over a muffin!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "curious",
+      "beat": "pause",
+      "text": "Dev? He literally spelled your name 'Lyle' again on purpose."
+     }
+    ]
+   },
+   {
+    "scene": "Mia counts on her fingers with a triumphant grin while looking at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "defeated",
+      "beat": "snap",
+      "text": "He knows I am terrified! Everyone within five miles knows my secrets!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "That makes my told you so scoreboard hit one hundred forty-eight."
+     }
+    ]
+   },
+   {
+    "scene": "Leo slumps back into his chair, crossing his arms in stubborn denial.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "stubborn",
+      "beat": "snap",
+      "text": "I demand an independent audit of my sweat levels right this second."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "Okay but hear me out, your brain is totally lying to you."
+     }
+    ]
+   },
+   {
+    "scene": "Mia points a finger at Leo with a playful smile as the final joke lands.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "curious",
+      "beat": "snap",
+      "text": "Lying? I am literally glowing with sheer terror in front of the microphone!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "beat": "snap",
+      "text": "Next time, remember nobody can actually read your paranoid little mind."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 8,
+   "hook": 8,
+   "spoken": 9,
+   "relatable": 8,
+   "ending": 9,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "It captures their dynamic instantly with sharp roasts and a satisfying resolution to Leo's panic.",
+   "scores": {
+    "i": 0,
+    "funny": 8,
+    "hook": 8,
+    "spoken": 9,
+    "relatable": 8,
+    "ending": 9,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "idea",
+  "idea": "illusion of transparency",
+  "style": "v2",
+  "format": "RATING GAME",
+  "improv": false
  }
 ]
