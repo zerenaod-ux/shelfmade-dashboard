@@ -4409,5 +4409,486 @@
     }
    }
   ]
+ },
+ {
+  "id": "leos-first-5k-disaster",
+  "title": "Leo's 5K Disaster",
+  "theme": "Leo runs his first 5K (training, gear, the starting line)",
+  "premise": "Leo signs up for his first 5K race to prove to Mia that he is officially a person who has his life together. If he fails to finish, Mia gets to claim point number 150 on her official scoreboard.",
+  "running_gag": "Mia aggressively clicking her handheld counter to update her 'I Told You So' scoreboard.",
+  "payoff": "Leo crawls across the finish line behind their nosy neighbor Brenda, but Mia hands him pineapple pizza and marks point 150 with a rare compliment on his effort.",
+  "description": "Leo enters his very first 5K race to finally prove he has his life together, but zero training and way too much fancy gear turn it into a total disaster. Mia brings her trusty scoreboard to tally every single mistake along the route. Will Leo survive the final milestone of the season?",
+  "scenes": [
+   {
+    "time": "6:00 AM",
+    "setting": "Leo's messy bedroom with sports gear strewn everywhere",
+    "concept": "PLANNING FALLACY",
+    "beat": "An alarm going off blares while Leo is pulling the blanket / pillow / lying in bed wearing three-hundred-dollar running shoes. Mia enters and points out that watching four fitness videos on phone screen does not count as actual cardio training.",
+    "story": {
+     "id": "leos-first-5k-disaster-01",
+     "title": "How Leo Planned His First 5K \ud83c\udfc3",
+     "concept": "THE 5K BRAIN TRAP",
+     "mood": "dramatic",
+     "insight": "Four workout videos and expensive shoes do not equal cardio.",
+     "caption": "Leo thinks buying fancy shoes means he already ran the race. Mia is ready to claim point 150 on the board.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo is pulling the blanket / pillow / lying in bed with worried eyes while an alarm going off rings loudly on the nightstand.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "normal",
+         "text": "My 5K running strategy is totally bulletproof."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "You bought three-hundred-dollar neon shoes to nap."
+        }
+       ]
+      },
+      {
+       "scene": "A digital clock showing a time of six AM flashes red. In the doorway background, Brenda watches with a clipboard and raised eyebrows.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "They give my tired feet aerodynamic momentum!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You haven't even jogged to the fridge."
+        }
+       ]
+      },
+      {
+       "scene": "Someone knocking on the door makes the bedroom tremble. In the background doorway, Greg peeks in with deadpan, tired eyes. In the background, clearly visible and drawn in the same style, stands a curious stranger watching from a bench (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "snap",
+         "text": "Okay but hear me out, I binged four sports docs."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Staring at sweaty strangers isn't cardio, Leo."
+        }
+       ]
+      },
+      {
+       "scene": "Mia is walking / pacing the hallway outside the messy bedroom, holding a small metal counter with a confident smirk.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "It worked when I planned that pineapple pizza party!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Nobody came, and poor Gerald almost died."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sips from a coffee mug / a cup of tea while clicking the counter. Leo clutches a sneaker with worried eyes.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "excited",
+         "beat": "quick",
+         "text": "One tiny tap away from told-you-so number one-fifty."
+        },
+        {
+         "who": "leo",
+         "feel": "sheepish",
+         "beat": "snap",
+         "text": "Kyle says just sprint the first mile, bro."
+        }
+       ]
+      },
+      {
+       "scene": "Leo is pulling the blanket / pillow / lying in bed again, looking up with anxious eyes as Mia gives a smirk.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "pause",
+         "text": "So remind me your master plan again?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "7:15 AM",
+    "setting": "Apartment hallway near the front door",
+    "concept": "SPOTLIGHT EFFECT",
+    "beat": "A digital clock showing a time of 7:15 AM sits on the shelf as Leo is walking / pacing the hallway in glowing neon tights, convinced the entire town will laugh at his running form. Mia dryly quotes Kyle saying 'just wing it bro' and reminds Leo of his pineapple pizza panic from last month.",
+    "story": {
+     "id": "leos-first-5k-disaster-02",
+     "title": "Why Everyone Is Secretly Staring At You \ud83c\udfc3",
+     "concept": "SPOTLIGHT EFFECT PARANOIA",
+     "mood": "dramatic",
+     "insight": "Nobody is looking at your knees as much as you think.",
+     "caption": "Leo is convinced the entire city is watching his 5K run. Mia is just counting his meltdowns.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo is walking / pacing the hallway in neon tights. A digital clock showing a time of 7:15 AM rests nearby. Neighbor Brenda stands small in the background frame.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "My left knee is making a weird squeak!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Leo, zero people care about your kneecaps."
+        }
+       ]
+      },
+      {
+       "scene": "Mia holds a coffee mug / a cup of tea while clicking her clicker. Leo continues walking / pacing the hallway with dramatic hand gestures.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "The pigeons are judging my running shorts!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "You lost your mind over pizza toppings too."
+        }
+       ]
+      },
+      {
+       "scene": "Hearing someone knocking on the door startles Leo. Mia casually sips from a coffee mug / a cup of tea.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle says: just wing it, bro."
+        },
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "snap",
+         "text": "Kyle doesn't sweat mayonnaise like I do!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia adjusts the digital clock showing a time on the shelf, holding her handheld counter ready.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Scoreboard hit one hundred and forty-nine today."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "quick",
+         "text": "You brought a clicker to my panic attack?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo sits on the bench, pulling the blanket / pillow tight over his face while Mia smirks.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "normal",
+         "text": "One more meltdown makes it one fifty."
+        },
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "snap",
+         "text": "Okay but hear me out, what if I fake an alien abduction?"
+        }
+       ]
+      },
+      {
+       "scene": "Mia points to the exit while someone knocking on the door echoes again.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Go open the door before I..."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "7:45 AM",
+    "setting": "Starting line at the park near Dev's coffee cart",
+    "concept": "EFFORT JUSTIFICATION",
+    "beat": "Dev hands Leo a coffee mug / a cup of tea with the name 'Leonard' written on it while someone knocking on the door of the portable restroom startles Leo in the background. Boss Greg stands nearby giving a blank stare as Leo insists his hyper-expensive gear makes him a pro athlete.",
+    "story": {
+     "id": "leos-first-5k-disaster-03",
+     "title": "Why Expensive Gear Doesn't Save You \ud83c\udfc3",
+     "concept": "EFFORT JUSTIFICATION",
+     "mood": "dramatic",
+     "insight": "Spent four hundred bucks on socks just to quit at mile one.",
+     "caption": "Leo spent four hundred dollars on running gear to prove he has his life together.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo and Mia sit at the podcast desk near the park starting line. Dev stands in the background holding a coffee mug / a cup of tea. Leo grips his neon water bottle.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "These four hundred dollar shoes practically run the race for me!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Too bad your legs gave up during the stretch."
+        }
+       ]
+      },
+      {
+       "scene": "Dev hands Leo the coffee mug / a cup of tea with 'Leonard' misspelled on it. Boss Greg stands nearby giving a blank stare. Leo glares at his shoes.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "defensive",
+         "beat": "normal",
+         "text": "Kyle just texted: real runners drink raw butter."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Kyle lost to a kid on a tricycle."
+        }
+       ]
+      },
+      {
+       "scene": "Someone knocking on the door of a portable restroom in the background startles Leo. Mia clicks her handheld tally counter with a sharp grin.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Wait- was that the horn or my stomach collapsing?"
+        },
+        {
+         "who": "mia",
+         "feel": "excited",
+         "beat": "quick",
+         "text": "That's point one hundred and fifty for my scoreboard!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo drops his fancy water bottle on the desk with a loud clatter. Greg stares harder from the background. Mia sips her drink calmly.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "pause",
+         "text": "This is worse than the pineapple pizza incident."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You've been standing still for three whole minutes."
+        }
+       ]
+      },
+      {
+       "scene": "Leo leans forward over the desk, frantically adjusting his neon headband while Dev watches from behind. Mia clicks her counter again.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "snap",
+         "text": "Okay but hear me out, what if I buy faster socks?"
+        },
+        {
+         "who": "mia",
+         "feel": "warm",
+         "beat": "quick",
+         "text": "Anyway. We made it through season one together, buddy."
+        }
+       ]
+      },
+      {
+       "scene": "Leo stares directly into the camera with wide terrified eyes, clutching his knees. Mia points a thumb at him.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Next season I am buying six hundred dollar shoes!"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "8:30 AM",
+    "setting": "Park finish line bench",
+    "concept": "PEAK-END RULE",
+    "beat": "Leo crosses the finish line dead last, immediately pulling the blanket / pillow / lying in bed on a park bench while nosy neighbor Brenda holds a clipboard in victory. Mia clicks her scoreboard to 150, hands him a slice of pineapple pizza, and admits he actually stuck to his plan.",
+    "story": {
+     "id": "leos-first-5k-disaster-04",
+     "title": "Why Horrible Runs Feel Amazingly Good \ud83c\udfc3",
+     "concept": "PEAK END MAGIC",
+     "mood": "warm",
+     "insight": "We judge an entire experience by its peak and how it ends.",
+     "caption": "Leo survived his 5K race for free pizza. Here is why his brain thinks he won gold!",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Both sit at cozy podcast desk. Leo is dramatically pulling the blanket / pillow / lying in bed across his chair with exhausted eyes. Mia smirks nearby.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "snap",
+         "text": "I survived a brutal five-kilometer death march today, bro!"
+        }
+       ]
+      },
+      {
+       "scene": "Both sit at podcast desk. Mia clicks her handheld counter while a digital clock showing a time sits between them. Leo sits up, frowning slightly.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You crawled three blocks and took two juice box naps."
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "That is number one hundred fifty on my scoreboard!"
+        }
+       ]
+      },
+      {
+       "scene": "Both sit at cozy podcast desk. Mia holds a coffee mug / a cup of tea and a pizza slice, smiling. Leo reaches over with wide curious eyes.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "Okay but hear me out, the finish line had pizza."
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "normal",
+         "text": "It is pineapple pizza, your absolute nemesis."
+        }
+       ]
+      },
+      {
+       "scene": "Podcast desk set. Nosy neighbor Brenda is visible in background walking / pacing the hallway trail with a clipboard. Leo smirks with closed lips.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "quick",
+         "text": "Best morning of my entire adult life, dude!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "You literally cried behind a dumpster at minute forty-two."
+        }
+       ]
+      },
+      {
+       "scene": "Both sit at podcast desk while an alarm going off signals on the table. Mia hands him the food with a soft smile. Leo looks touched.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "warm",
+         "beat": "normal",
+         "text": "Ending with warm cheese makes the misery totally worth it."
+        },
+        {
+         "who": "mia",
+         "feel": "warm",
+         "beat": "pause",
+         "text": "Honestly? You didn't quit. I am proud of you."
+        }
+       ]
+      },
+      {
+       "scene": "Both sit at podcast desk as someone knocking on the door sounds in background. Leo tilts his head with an expectant closed-mouth grin.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "quick",
+         "text": "Does this mean I have my life together now?"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]

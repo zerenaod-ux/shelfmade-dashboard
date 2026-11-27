@@ -53,8 +53,8 @@
   {
    "id": "scoreboard",
    "text": "Mia announces her 'I told you so' scoreboard",
-   "uses": 11,
-   "last": 66
+   "uses": 12,
+   "last": 72
   }
  ],
  "catch": {
@@ -896,6 +896,18 @@
    "callback": true,
    "milestone": false,
    "season": 7,
+   "date": "2026-11-27"
+  },
+  {
+   "n": 10,
+   "kind": "full",
+   "id": "leos-first-5k-disaster",
+   "title": "Leo's 5K Disaster",
+   "concept": "Leo runs his first 5K (training, gear, the starting line)",
+   "gag": "scoreboard",
+   "callback": true,
+   "milestone": true,
+   "season": 1,
    "date": "2026-11-27"
   }
  ]
