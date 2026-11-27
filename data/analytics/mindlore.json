@@ -2,7 +2,7 @@
  "brand": "mindlore",
  "channel": "MindLore",
  "subscribers": "10",
- "collected": "2026-11-26",
+ "collected": "2026-11-27",
  "note": "",
  "videos": [
   {
@@ -24,7 +24,7 @@
    "published": "2026-10-27T01:30:23Z",
    "duration": "PT1M19S",
    "privacy": "public",
-   "views": 385,
+   "views": 386,
    "likes": 2,
    "comments": 0,
    "avgSeconds": 98,
@@ -302,6 +302,19 @@
    "subsGained": 0
   },
   {
+   "id": "X9Z1e8QV6PQ",
+   "title": "Why Silence Heals Your Brain",
+   "published": "2026-11-11T03:02:00Z",
+   "duration": "PT1M6S",
+   "privacy": "public",
+   "views": 56,
+   "likes": 1,
+   "comments": 1,
+   "avgSeconds": 26,
+   "avgPercent": 39.7,
+   "subsGained": 0
+  },
+  {
    "id": "j1B3iRBBZZY",
    "title": "The Theory Of The Leisure Class",
    "published": "2026-10-22T01:12:07Z",
@@ -313,19 +326,6 @@
    "avgSeconds": 23,
    "avgPercent": 50.81,
    "subsGained": 1
-  },
-  {
-   "id": "X9Z1e8QV6PQ",
-   "title": "Why Silence Heals Your Brain",
-   "published": "2026-11-11T03:02:00Z",
-   "duration": "PT1M6S",
-   "privacy": "public",
-   "views": 55,
-   "likes": 1,
-   "comments": 1,
-   "avgSeconds": 26,
-   "avgPercent": 39.7,
-   "subsGained": 0
   },
   {
    "id": "_l6TVDbYKnE",
@@ -546,6 +546,19 @@
    "subsGained": 0
   },
   {
+   "id": "up2dlmMxvcg",
+   "title": "Suggestion and Autosuggestion",
+   "published": "2026-10-23T04:16:27Z",
+   "duration": "PT53S",
+   "privacy": "public",
+   "views": 31,
+   "likes": 0,
+   "comments": 0,
+   "avgSeconds": 17,
+   "avgPercent": 32.22,
+   "subsGained": 0
+  },
+  {
    "id": "GzQK0sKMEEs",
    "title": "Is self-consciousness a trap?",
    "published": "2026-06-19T04:31:04Z",
@@ -582,19 +595,6 @@
    "comments": 0,
    "avgSeconds": 20,
    "avgPercent": 40.86,
-   "subsGained": 0
-  },
-  {
-   "id": "up2dlmMxvcg",
-   "title": "Suggestion and Autosuggestion",
-   "published": "2026-10-23T04:16:27Z",
-   "duration": "PT53S",
-   "privacy": "public",
-   "views": 30,
-   "likes": 0,
-   "comments": 0,
-   "avgSeconds": 17,
-   "avgPercent": 32.22,
    "subsGained": 0
   },
   {
@@ -663,6 +663,19 @@
    "subsGained": 0
   },
   {
+   "id": "-FD8LOO2XG4",
+   "title": "The Psychology Of Suggestion",
+   "published": "2026-10-31T22:01:42Z",
+   "duration": "PT49S",
+   "privacy": "public",
+   "views": 26,
+   "likes": 1,
+   "comments": 0,
+   "avgSeconds": 19,
+   "avgPercent": 40.78,
+   "subsGained": 1
+  },
+  {
    "id": "uDTf6cqlUUI",
    "title": "Are emotions your survival edge?",
    "published": "2026-06-12T22:34:27Z",
@@ -715,6 +728,16 @@
    "subsGained": 0
   },
   {
+   "id": "Q5jlEzEH7as",
+   "title": "Why Kids Laugh at Surprise Endings \ud83d\ude04",
+   "published": "2026-11-26T23:02:11Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 24,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "ZxFKXhCEx_c",
    "title": "Why Dolphins Flip When Happy \ud83d\ude04",
    "published": "2026-11-21T18:03:51Z",
@@ -752,19 +775,6 @@
    "avgSeconds": 105,
    "avgPercent": 223.53,
    "subsGained": 0
-  },
-  {
-   "id": "-FD8LOO2XG4",
-   "title": "The Psychology Of Suggestion",
-   "published": "2026-10-31T22:01:42Z",
-   "duration": "PT49S",
-   "privacy": "public",
-   "views": 24,
-   "likes": 1,
-   "comments": 0,
-   "avgSeconds": 19,
-   "avgPercent": 40.78,
-   "subsGained": 1
   },
   {
    "id": "QgbUl7uQ00I",
@@ -827,6 +837,19 @@
    "views": 23,
    "likes": 1,
    "comments": 0
+  },
+  {
+   "id": "BeQ1CnMVAns",
+   "title": "Are strong sensations always painful?",
+   "published": "2026-11-08T18:03:11Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 22,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 17,
+   "avgPercent": 30.36,
+   "subsGained": 0
   },
   {
    "id": "LFZ1UKXf86A",
@@ -969,6 +992,16 @@
    "subsGained": 0
   },
   {
+   "id": "O2gB9Lwy3MQ",
+   "title": "Why Rough Housing Builds Strategic Minds \ud83e\udde0",
+   "published": "2026-11-25T18:05:58Z",
+   "duration": "PT58S",
+   "privacy": "public",
+   "views": 19,
+   "likes": 0,
+   "comments": 1
+  },
+  {
    "id": "ivGIglijofs",
    "title": "Can a collective mind spark revolutions?",
    "published": "2026-11-07T18:04:02Z",
@@ -1005,6 +1038,19 @@
    "comments": 2,
    "avgSeconds": 18,
    "avgPercent": 36.35,
+   "subsGained": 0
+  },
+  {
+   "id": "zqBNuIFyTpU",
+   "title": "Why Your Face Freezes On Surprise",
+   "published": "2026-11-17T23:04:12Z",
+   "duration": "PT1M7S",
+   "privacy": "public",
+   "views": 18,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 23,
+   "avgPercent": 35.48,
    "subsGained": 0
   },
   {
@@ -1094,21 +1140,8 @@
    "views": 17,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 20,
-   "avgPercent": 33.7,
-   "subsGained": 0
-  },
-  {
-   "id": "zqBNuIFyTpU",
-   "title": "Why Your Face Freezes On Surprise",
-   "published": "2026-11-17T23:04:12Z",
-   "duration": "PT1M7S",
-   "privacy": "public",
-   "views": 17,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 23,
-   "avgPercent": 35.48,
+   "avgSeconds": 19,
+   "avgPercent": 31.53,
    "subsGained": 0
   },
   {
@@ -1136,16 +1169,6 @@
    "avgSeconds": 11,
    "avgPercent": 23.41,
    "subsGained": 0
-  },
-  {
-   "id": "O2gB9Lwy3MQ",
-   "title": "Why Rough Housing Builds Strategic Minds \ud83e\udde0",
-   "published": "2026-11-25T18:05:58Z",
-   "duration": "PT58S",
-   "privacy": "public",
-   "views": 16,
-   "likes": 0,
-   "comments": 1
   },
   {
    "id": "_DHqhKUPTdo",
@@ -1314,6 +1337,19 @@
    "subsGained": 0
   },
   {
+   "id": "3R9qrEuApWU",
+   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
+   "published": "2026-11-20T03:02:14Z",
+   "duration": "PT1M2S",
+   "privacy": "public",
+   "views": 13,
+   "likes": 0,
+   "comments": 1,
+   "avgSeconds": 21,
+   "avgPercent": 34.37,
+   "subsGained": 0
+  },
+  {
    "id": "Z5ifzR5nOV0",
    "title": "The Instinct Of Workmanship",
    "published": "2026-11-02T23:01:53Z",
@@ -1353,16 +1389,16 @@
    "subsGained": 0
   },
   {
-   "id": "3R9qrEuApWU",
-   "title": "Why Your Face Pauses On Shock \ud83d\ude32",
-   "published": "2026-11-20T03:02:14Z",
-   "duration": "PT1M2S",
+   "id": "gq3Q2B0bnQg",
+   "title": "Why Unexpected Story Endings Freeze Brains",
+   "published": "2026-11-18T23:03:35Z",
+   "duration": "PT58S",
    "privacy": "public",
    "views": 11,
    "likes": 0,
    "comments": 1,
-   "avgSeconds": 21,
-   "avgPercent": 34.37,
+   "avgSeconds": 25,
+   "avgPercent": 44.66,
    "subsGained": 0
   },
   {
@@ -1493,17 +1529,14 @@
    "comments": 0
   },
   {
-   "id": "gq3Q2B0bnQg",
-   "title": "Why Unexpected Story Endings Freeze Brains",
-   "published": "2026-11-18T23:03:35Z",
-   "duration": "PT58S",
+   "id": "lYrj96knUBo",
+   "title": "Why Your Stomach Reacts To Twists \ud83d\ude32",
+   "published": "2026-11-26T18:05:40Z",
+   "duration": "PT1M13S",
    "privacy": "public",
    "views": 8,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 25,
-   "avgPercent": 44.66,
-   "subsGained": 0
+   "likes": 1,
+   "comments": 1
   },
   {
    "id": "ZPz6PwOcS4M",
@@ -1740,16 +1773,6 @@
    "subsGained": 0
   },
   {
-   "id": "lYrj96knUBo",
-   "title": "Why Your Stomach Reacts To Twists \ud83d\ude32",
-   "published": "2026-11-26T18:05:40Z",
-   "duration": "PT1M13S",
-   "privacy": "public",
-   "views": 4,
-   "likes": 1,
-   "comments": 0
-  },
-  {
    "id": "EPGy8t4XRkI",
    "title": "Why beliefs can outlast the reasons for them | Gustave Le Bon",
    "published": "2026-11-22T00:00:16Z",
@@ -1867,19 +1890,6 @@
    "subsGained": 0
   },
   {
-   "id": "Nl1SAPaJEuY",
-   "title": "Are children's dreams really simpler than ours? | Freud",
-   "published": "2026-11-10T00:00:05Z",
-   "duration": "PT7M31S",
-   "privacy": "public",
-   "views": 3,
-   "likes": 0,
-   "comments": 1,
-   "avgSeconds": 0,
-   "avgPercent": 0,
-   "subsGained": 0
-  },
-  {
    "id": "lzNbwJLpncg",
    "title": "Why people say things in a group they would never say alone | Gustave Le Bon",
    "published": "2026-11-06T00:00:34Z",
@@ -1962,6 +1972,26 @@
    "comments": 0
   },
   {
+   "id": "RwXYKd7gBCE",
+   "title": "Why we believe what impressive people say | Gustave Le Bon",
+   "published": "2026-11-26T00:00:17Z",
+   "duration": "PT7M22S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 2
+  },
+  {
+   "id": "RwXYKd7gBCE",
+   "title": "Why we believe what impressive people say | Gustave Le Bon",
+   "published": "2026-11-26T00:00:17Z",
+   "duration": "PT7M22S",
+   "privacy": "public",
+   "views": 2,
+   "likes": 0,
+   "comments": 2
+  },
+  {
    "id": "6QgLvzJ8GV8",
    "title": "What does psychoanalysis say about your mind?",
    "published": "2026-10-18T15:03:19Z",
@@ -1986,26 +2016,6 @@
    "avgSeconds": 10,
    "avgPercent": 20.3,
    "subsGained": 0
-  },
-  {
-   "id": "RwXYKd7gBCE",
-   "title": "Why we believe what impressive people say | Gustave Le Bon",
-   "published": "2026-11-26T00:00:17Z",
-   "duration": "PT7M22S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "RwXYKd7gBCE",
-   "title": "Why we believe what impressive people say | Gustave Le Bon",
-   "published": "2026-11-26T00:00:17Z",
-   "duration": "PT7M22S",
-   "privacy": "public",
-   "views": 1,
-   "likes": 0,
-   "comments": 0
   },
   {
    "id": "MN_liz83nkU",
