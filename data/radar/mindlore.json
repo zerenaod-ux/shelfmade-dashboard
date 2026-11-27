@@ -1,129 +1,141 @@
 {
  "why": [
   {
-   "title": "7 Colors That Reveal Your Personality! \ud83c\udfa8\ud83d\ude31 | Color Psychology Facts #Shorts",
-   "why": "A vivid visual hook + numbered promise taps curiosity and leverages easy-to-show color clips for rapid pacing"
-  },
-  {
-   "title": "6 Psychology Secrets That Reveal Who You Really Are",
-   "why": "The \"secrets\" listicle frames classic personality theory as insider knowledge, driving immediate intrigue"
-  },
-  {
-   "title": "Your Birth Month Reveals Something Special. | #shorts #birthday #psychology",
-   "why": "Personalized birth\u2011month angle makes viewers feel the content is directly about them, boosting engagement"
-  },
-  {
    "title": "Vibe Check #shorts #shortsfeed #tricks #psychology #humanbehavior #lifelessons #selfimprovement #fyp",
-   "why": "Ultra\u2011short, meme\u2011style phrasing with a challenge hook sparks massive shareability despite minimal production"
+   "why": "It uses high-stakes social intuition ('vibe checking') formatted as a quick self-test, driving massive engagement from a tiny channel by stoking paranoia about how others perceive the viewer."
+  },
+  {
+   "title": "Never Hurt Someone Without Thinking Twice | Niccol\u00f2 Machiavelli #shorts #machiavelliphilosophy #fyp",
+   "why": "It pairs dark classic philosophy with a sinister warning, tapping into emotions of self-preservation and cold pragmatism that perform exceptionally well in short-form loops."
+  },
+  {
+   "title": "7 Psychological Facts About Human Behavior That Will Surprise You! \ud83e\udde0\ud83d\ude32",
+   "why": "It leverages classic curiosity gap and listicle pacing, promising rapid-fire high-utility revelations about human nature that feel immediately relatable."
+  },
+  {
+   "title": "Woman Ignore About Man | Psychology Facts | #psychology #quotes",
+   "why": "It exploits modern romantic anxiety and gender dynamics by framing basic behavioral observations as secret 'ignored' knowledge."
   }
  ],
  "hook_patterns": [
-  "Bold promise + emoji + hashtag sparks curiosity instantly",
-  "Numbered \"secrets\" or \"facts\" list creates a clear, digestible structure",
-  "Personal identity triggers (your birth month, colors, vibe) make viewers feel the video is about them"
+  "The Diagnostic Warning: Framing a classic psychological concept as a subtle warning sign to test yourself or your friends.",
+  "The Forgotten Masterwork: Hooking viewers with dark/practical wisdom from 19th-century public domain texts framed as forbidden knowledge.",
+  "The Unconscious Trigger: Explaining an everyday, automatic human reaction using historical observational psychology."
  ],
- "todays_angle": "Turn classic temperament theory into a quick \"Which ancient personality type matches your vibe?\" short",
+ "todays_angle": "Adapt dark classic observational psychology from public domain texts (like Machiavelli, William James, or Gustave Le Bon) into modern self-diagnostic 'tests' for social dynamics.",
  "ideas": [
-  "Show the four Hippocratic temperaments (sanguine, choleric, melancholic, phlegmatic) with a single daily habit cue for each, using public\u2011domain texts for narration",
-  "Demonstrate a 3\u2011second handwriting\u2011analysis trick from 19th\u2011century graphology, revealing a hidden trait in the viewer\u2019s script",
-  "Decode a common dream symbol (e.g., falling) using Freud\u2019s early dream analysis, linking it to a simple self\u2011improvement tip"
+  {
+   "title": "3 Signs You Are Being Manipulated (According to 1895 Crowd Psychology)",
+   "hook": "If someone uses these 3 subtle tactics on you, Gustave Le Bon warned your brain is being hijacked.",
+   "source_text": "The Crowd: A Study of the Popular Mind by Gustave Le Bon (1895)"
+  },
+  {
+   "title": "The Machiavellian Respect Test: Do People Actually Value You?",
+   "hook": "Niccol\u00f2 Machiavelli wrote that people respect only two types of boundaries\u2014here is how to test which one you have.",
+   "source_text": "The Prince by Niccol\u00f2 Machiavelli (1532)"
+  },
+  {
+   "title": "The 5-Second Habit Rule That Rewires Your Brain (1890 Psychology)",
+   "hook": "William James discovered a terrifying truth about human habits in 1890 that explains why you feel stuck.",
+   "source_text": "The Principles of Psychology by William James (1890)"
+  }
  ],
  "avoid": [
-  "Sensational \"dark psychology\" clich\u00e9s that lack scholarly grounding",
-  "Generic listicles without a unique historical source or fresh visual twist"
+  "Generic 'Birth Month' or astrology-adjacent pseudoscientific lists that dilute public-domain authority.",
+  "Overused '7 Facts About Sleep/Love' lazy text-on-screen slide shows without a specific literary or historical anchor."
  ],
- "updated": "2026-11-26",
- "sample": 68,
+ "updated": "2026-11-27",
+ "sample": 72,
  "spikes": [
   {
-   "title": "Flip the Script When Everyone Laughs at You in Class \ud83d\udd25\ud83d\udc51 #ConfidenceBoost #DesiReels",
-   "channel": "Chatting Mindset ",
-   "views": 104463,
-   "hours": 12,
-   "vph": 8435.4,
-   "subs": 103000,
-   "breakout": 1.0
+   "title": "7 Psychological Facts About Human Behavior That Will Surprise You! \ud83e\udde0\ud83d\ude31",
+   "channel": "Daily Reminder 904",
+   "views": 114312,
+   "hours": 10,
+   "vph": 11569.5,
+   "subs": 30900,
+   "breakout": 3.7
   },
   {
-   "title": "Your Birth Month Reveals Something Special. | #shorts #birthday #psychology",
-   "channel": "The Discipline ",
-   "views": 85307,
-   "hours": 13,
-   "vph": 6759.2,
-   "subs": 64900,
-   "breakout": 1.3
+   "title": "Do Your Friends REALLY Respect You? \ud83e\udd2f 3 Psychology Tests#shorts",
+   "channel": "Qrax Mind",
+   "views": 234777,
+   "hours": 20,
+   "vph": 11520.5,
+   "subs": 197000,
+   "breakout": 1.2
   },
   {
-   "title": "How to EXPOSE FAKE People in Seconds\ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83c\udfad#darkpsychology #mindset #shorts",
-   "channel": "reboot memory",
-   "views": 214469,
-   "hours": 37,
-   "vph": 5857.8,
-   "subs": 93100,
-   "breakout": 2.3
+   "title": "7 Psychological Truths About People You Should Never Ignore",
+   "channel": "Daily Reminderr2",
+   "views": 129417,
+   "hours": 26,
+   "vph": 5000.2,
+   "subs": 85900,
+   "breakout": 1.5
   },
   {
    "title": "Some Connections Aren't From This Lifetime \u2764\ufe0f\u2728 | Deep Love Psychology #shorts #psychology",
    "channel": "R\u0e04hul \u0eae\u0e04\u13a5n\u13a5",
-   "views": 150042,
-   "hours": 26,
-   "vph": 5735.7,
+   "views": 170793,
+   "hours": 41,
+   "vph": 4128.0,
    "subs": 102000,
-   "breakout": 1.5
+   "breakout": 1.7
+  },
+  {
+   "title": "Your Birth Month Reveals Something Special. | #shorts #birthday #psychology",
+   "channel": "The Discipline ",
+   "views": 103931,
+   "hours": 28,
+   "vph": 3733.6,
+   "subs": 65100,
+   "breakout": 1.6
   },
   {
    "title": "6 Psychology Secrets That Reveal Who You Really Are",
    "channel": "Daily Reminderr2",
-   "views": 142104,
-   "hours": 30,
-   "vph": 4790.0,
-   "subs": 85600,
+   "views": 148299,
+   "hours": 45,
+   "vph": 3304.2,
+   "subs": 85900,
    "breakout": 1.7
   },
   {
-   "title": "7 Colors That Reveal Your Personality! \ud83c\udfa8\ud83d\ude31 | Color Psychology Facts #Shorts",
-   "channel": "YOUR TUTOR CORNER",
-   "views": 114174,
-   "hours": 33,
-   "vph": 3468.3,
-   "subs": 36500,
-   "breakout": 3.1
-  },
-  {
-   "title": "6 Psychology Secrets That Make People Notice You Instantly",
-   "channel": "Daily Reminderr2",
-   "views": 157161,
-   "hours": 47,
-   "vph": 3367.5,
-   "subs": 85600,
-   "breakout": 1.8
+   "title": "9 Psychology Facts About Sleep That Will Surprise You! \ud83d\ude34\ud83e\udde0 #Shorts",
+   "channel": "Daily Reminder 904",
+   "views": 34528,
+   "hours": 16,
+   "vph": 2174.9,
+   "subs": 30900,
+   "breakout": 1.1
   },
   {
    "title": "Vibe Check #shorts #shortsfeed #tricks #psychology #humanbehavior #lifelessons #selfimprovement #fyp",
    "channel": "Psychology Decoded",
-   "views": 77191,
-   "hours": 29,
-   "vph": 2692.5,
-   "subs": 743,
-   "breakout": 103.9
+   "views": 90415,
+   "hours": 44,
+   "vph": 2060.3,
+   "subs": 789,
+   "breakout": 114.6
   },
   {
-   "title": "Atheists = LESS Moral? #socialexperiment #psychologyfacts #psychologyshorts #psychology #philosophy",
-   "channel": "10SecondPsych",
-   "views": 22089,
-   "hours": 40,
-   "vph": 550.4,
-   "subs": 174,
-   "breakout": 110.4
+   "title": "Never Hurt Someone Without Thinking Twice | Niccol\u00f2 Machiavelli #shorts #machiavelliphilosophy #fyp",
+   "channel": "Mind Control & Calm",
+   "views": 26644,
+   "hours": 26,
+   "vph": 1007.5,
+   "subs": 285,
+   "breakout": 93.5
   },
   {
-   "title": "8 Dark Psychology Facts About Men & Women That Hit Different \ud83d\udc40\ud83e\udde0 #HumanPsychology #PsychologyFacts",
-   "channel": "Harris Wisdom",
-   "views": 18622,
-   "hours": 46,
-   "vph": 407.8,
-   "subs": 88,
-   "breakout": 93.1
+   "title": "Woman Ignore About Man | Psychology Facts | #psychology #quotes",
+   "channel": "Velqoris",
+   "views": 63925,
+   "hours": 33,
+   "vph": 1965.4,
+   "subs": 1060,
+   "breakout": 60.3
   }
  ]
 }
