@@ -10,14 +10,6 @@
  "pending": [],
  "log": [
   {
-   "t": "11-08 19:06Z",
-   "msg": "DRILL COMPLETE: rollback path verified end to end (break -> revert -> re-run green). Drill files removed by owner-assistant."
-  },
-  {
-   "t": "11-09 06:17Z",
-   "msg": "mindlore-live-redo: no safe automatic fix found"
-  },
-  {
    "t": "11-09 18:40Z",
    "msg": "review-decide: no safe automatic fix found"
   },
@@ -248,9 +240,17 @@
   {
    "t": "11-27 20:39Z",
    "msg": "doodles: API quota/rate limit: resets by itself (no change needed)"
+  },
+  {
+   "t": "11-27 21:10Z",
+   "msg": "shelfmade-whiteboard: API quota/rate limit: resets by itself (no change needed)"
+  },
+  {
+   "t": "11-27 21:10Z",
+   "msg": "doodles: API quota/rate limit: resets by itself (no change needed)"
   }
  ],
- "at": "2026-11-27T20:39:59Z",
+ "at": "2026-11-27T21:10:49Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
