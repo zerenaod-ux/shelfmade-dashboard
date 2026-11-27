@@ -9,10 +9,6 @@
  "pending": [],
  "log": [
   {
-   "t": "11-08 18:04Z",
-   "msg": "VERIFIED fix for doctor-drill (AI patch in drill_target.py: removes intentional failure to allow CI to pass)"
-  },
-  {
    "t": "11-08 18:36Z",
    "msg": "doctor-drill: no safe automatic fix found"
   },
@@ -247,9 +243,13 @@
   {
    "t": "11-26 08:08Z",
    "msg": "bio-page: no safe automatic fix found"
+  },
+  {
+   "t": "11-27 13:04Z",
+   "msg": "doodles: API quota/rate limit: resets by itself (no change needed)"
   }
  ],
- "at": "2026-11-27T08:19:00Z",
+ "at": "2026-11-27T13:04:07Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
