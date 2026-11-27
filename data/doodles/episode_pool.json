@@ -3934,5 +3934,480 @@
     }
    }
   ]
+ },
+ {
+  "id": "gerald-the-plant-survival",
+  "title": "Leo's 7-Day Plant Disaster",
+  "theme": "Leo adopts a plant named Gerald and tries to keep him alive for a week (told as seven days)",
+  "premise": "Leo adopts a moody houseplant named Gerald to prove to Mia that he is a responsible adult who has his life together. If Gerald dies before Sunday, Mia wins their annual bet and gets to pick Leo's wardrobe for a month.",
+  "running_gag": "Leo checking Gerald's health using a digital meat thermometer",
+  "payoff": "Gerald survives the week and actually sprouts a flower, but only because Mia secretly took care of him while Leo was overthinking his watering schedule",
+  "description": "Leo buys a houseplant named Gerald to prove he can adult with the best of them. Mia keeps score while Leo turns simple plant care into a week-long dramatic crisis. Can Gerald survive seven days in this apartment?",
+  "scenes": [
+   {
+    "time": "Day 1 - 7:00 AM",
+    "setting": "Leo and Mia's cluttered living room with packed bookshelves",
+    "concept": "ILLUSION OF CONTROL",
+    "beat": "With an alarm going off on his phone, Leo jabs a meat thermometer into the soil of a tiny potted plant while holding a coffee mug. Mia adds point 144 to her Told You So scoreboard as Leo insists 98.6 degrees means the plant is glowing with life.",
+    "story": {
+     "id": "gerald-the-plant-survival-01",
+     "title": "Why Leo Thinks His Plant Has Fever \ud83c\udf3f",
+     "concept": "ILLUSION OF CONTROL",
+     "mood": "dramatic",
+     "insight": "Poking dirt with kitchen tools does not make you a botanist.",
+     "caption": "Leo got a plant to prove he has his life together. Day one is already a medical emergency.",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo grips a metal thermometer over a tiny potted plant with an alarm going off beside him, his eyes worried and wide.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Gerald has a slight fever of ninety-nine degrees!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Leo, you put a turkey thermometer into damp dirt."
+        }
+       ]
+      },
+      {
+       "scene": "Mia raises a coffee mug with a calm smirk, while Leo hovers defensively over the tiny pot with raised eyebrows.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "quick",
+         "text": "Okay but hear me out, his soil is breathing!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "That makes score point one forty-four for me."
+        }
+       ]
+      },
+      {
+       "scene": "Leo taps his fingers near a digital clock showing a time, nodding firmly with tight lips and determined eyes.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "I control his sunlight, water, and emotional well-being!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Like your pineapple pizza trap where everybody secretly hated it?"
+        }
+       ]
+      },
+      {
+       "scene": "Mia mimics someone knocking on the door with her knuckles against the desk, giving Leo a dry, unimpressed stare.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "quick",
+         "text": "Exactly, because I am totally in charge of Gerald!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Anyway, Kyle says just hydrate plants with beef broth."
+        }
+       ]
+      },
+      {
+       "scene": "Leo steps back, walking / pacing the hallway behind the desk with nervous, stiff steps and pursed lips.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "pause",
+         "text": "Wait, do succulents drink organic beef broth?"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "He is plastic, you absolute little walnut."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits back, pulling the blanket over her lap with a sly smirk while looking sideways at Leo.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Next time: how to stop treating plastic plants like humans."
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "Day 3 - 2:00 PM",
+    "setting": "The hallway outside Leo's apartment",
+    "concept": "OVERJUSTIFICATION EFFECT",
+    "beat": "Leo is walking / pacing the hallway for 14 minutes straight because Gerald dropped one crispy brown leaf. Mia flatly reads a text saying Kyle suggests soaking the roots in energy drinks, then hits Leo with 'Anyway.' as Dev the barista walks past in the background.",
+    "story": {
+     "id": "gerald-the-plant-survival-02",
+     "title": "Why Your Bribes Destroy Your Brain \ud83c\udf3f",
+     "concept": "REWARD OVERLOAD TRAP",
+     "mood": "dramatic",
+     "insight": "When a bet takes over, even caring for a plant becomes a nightmare.",
+     "caption": "Leo's plant bet is spiraling on Day 3. Can Gerald survive until Sunday?",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "Leo and Mia sit at podcast desk in corridor. Leo is walking / pacing the hallway with worried eyes holding a pot. Dev walks in background.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Gerald dropped one leaf and his dirt is sweating!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "You've been pacing this corridor for fifteen minutes."
+        }
+       ]
+      },
+      {
+       "scene": "Leo sits at desk near a digital clock showing a time of 2:00 PM with raised eyebrows. Mia smirks.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "anxious",
+         "beat": "quick",
+         "text": "Okay but hear me out, winning this bet is my whole life!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Point one hundred forty-four for me."
+        }
+       ]
+      },
+      {
+       "scene": "Mia holds a coffee mug / a cup of tea with a deadpan expression, reading her phone. Leo squints. In the background, clearly visible and drawn in the same style, stands a calm doctor in a white coat (the person being talked about), smaller than Leo and Mia and at the edge of the frame, never blocking their faces.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle says: pour blue energy drink on Gerald's roots right now."
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Kyle tried to give C P R to a fake plant!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo holds a digital thermometer up high while an alarm going off chirps loudly on his wrist.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "Anyway, moving on."
+        },
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "quick",
+         "text": "I put a meat thermometer in his soil! Ninety-nine degrees!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia reacts with a smirk to someone knocking on the door behind them in the hallway. Leo points.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "He's a fern, Leo. Not a roasted turkey."
+        },
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Remember pineapple pizza? If Gerald lives, you owe me twenty bucks!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo flops forward on desk, pulling the blanket / pillow / lying in bed over his head in despair.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Next time: will Gerald survive Leo's crazy plant surgery?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "Day 5 - 11:15 PM",
+    "setting": "Leo's bedroom late at night",
+    "concept": "ESCALATION OF COMMITMENT",
+    "beat": "With a digital clock showing a time of 3:14 AM red on the nightstand, Leo is lying in bed pulling the blanket up while apologizing out loud to Gerald. Mia leans in the doorway holding a pillow and reminds him this is worse than the pineapple pizza trap.",
+    "story": {
+     "id": "gerald-the-plant-survival-03",
+     "title": "Why Leo Fights A Houseplant At Night \ud83c\udf3f",
+     "concept": "SUNK COST DISASTER",
+     "mood": "dramatic",
+     "insight": "When you spend eighty bucks on Mozart just to win a stupid bet.",
+     "caption": "Leo is losing sleep and eighty bucks over a moody houseplant. Can Gerald survive until Sunday?",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "At the podcast desk, Leo is pulling the blanket around his shoulders while a digital clock showing a time of 3:14 AM glows red.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "I am not losing fifty bucks to a moody leaf!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "It's three in the morning, Leo."
+        }
+       ]
+      },
+      {
+       "scene": "Mia rests a pillow on her lap at the desk as neighbour Brenda with a clipboard watches from the background doorway.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "normal",
+         "text": "Gerald's leaf drooped three millimeters! It's over!"
+        },
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "You stuck a meat thermometer in dirt?"
+        }
+       ]
+      },
+      {
+       "scene": "Leo taps a coffee mug angrily on the desk next to a droopy plant and his microphone.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "quick",
+         "text": "I paid eighty bucks for organic plant music!"
+        },
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "pause",
+         "text": "This is worse than your pineapple pizza freakout."
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits at the desk with an alarm going off near her elbow while barista Dev sweeps in the background.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Kyle says: just sing to his roots, bro."
+        },
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Kyle is right! Okay but hear me out!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo starts pacing the hallway behind the desk, hugging the plant pot close to his hoodie.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "Scoreboard is one hundred forty-four for me."
+        },
+        {
+         "who": "leo",
+         "feel": "dramatic",
+         "beat": "quick",
+         "text": "Next time: Gerald gets his own lawyer!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits holding her pillow at the podcast desk while someone knocking on the door echoes outside.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "snap",
+         "text": "Why are you still apologizing to a bush?"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "time": "Day 7 - 8:30 AM",
+    "setting": "The podcast desk setup",
+    "concept": "BEN FRANKLIN EFFECT",
+    "beat": "There is someone knocking on the door as Brenda the neighbour peers in to see Gerald thriving with a pink flower because Mia secretly watered him all week. Leo takes all the credit for being a master gardener, unaware of Mia's smirk as she sets up the next disaster: Next time: Leo faces the ultimate milestone test.",
+    "story": {
+     "id": "gerald-the-plant-survival-04",
+     "title": "How Doing Small Favors Triggers Sudden Love \ud83e\udeb4",
+     "concept": "ACCIDENTAL FAVOR TRAP",
+     "mood": "dramatic",
+     "insight": "Doing someone a small favor tricks your brain into liking them.",
+     "caption": "Leo thinks he is a master gardener, but Mia's secret favors reveal a chaotic psychological twist!",
+     "explain_shot": 3,
+     "shots": [
+      {
+       "scene": "At the podcast desk, Leo probes Gerald the plant while setting down a coffee mug.",
+       "focus": "leo",
+       "lines": [
+        {
+         "who": "leo",
+         "feel": "confident",
+         "beat": "snap",
+         "text": "Look at Gerald, I'm officially a plant wizard!"
+        }
+       ]
+      },
+      {
+       "scene": "Mia sits at the desk as someone knocking on the door in the background.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Leo, you jabbed him with a meat thermometer ninety times."
+        },
+        {
+         "who": "leo",
+         "feel": "excited",
+         "beat": "snap",
+         "text": "And his temperature is a perfect seventy-two degrees!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo looks shocked at the podcast desk while an alarm going off nearby.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "quick",
+         "text": "You know I secretly watered him every night, right?"
+        },
+        {
+         "who": "leo",
+         "feel": "panicked",
+         "beat": "snap",
+         "text": "Wait\u2014 what? Why would you save my plant?"
+        }
+       ]
+      },
+      {
+       "scene": "Mia smiles at the desk while Brenda is walking / pacing the hallway outside.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "warm",
+         "beat": "normal",
+         "text": "Helping your dumb plant made me care about him!"
+        },
+        {
+         "who": "leo",
+         "feel": "hopeful",
+         "beat": "snap",
+         "text": "So I win the bet! My wardrobe is safe!"
+        }
+       ]
+      },
+      {
+       "scene": "Leo reacts dramatically near a digital clock showing a time of 8:30 AM.",
+       "focus": "both",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "deadpan",
+         "beat": "quick",
+         "text": "Nope. Next time: Leo faces the ultimate milestone test."
+        }
+       ]
+      },
+      {
+       "scene": "Mia gestures toward the blooming plant while holding a cup of tea.",
+       "focus": "mia",
+       "lines": [
+        {
+         "who": "mia",
+         "feel": "amused",
+         "beat": "snap",
+         "text": "Are you really claiming all the credit right now?"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  }
 ]
