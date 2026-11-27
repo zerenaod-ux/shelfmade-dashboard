@@ -5,18 +5,10 @@
   "blender-test": 2,
   "scene-factory": 1,
   "bio-page": 2,
-  "shelfmade-whiteboard": 1
+  "shelfmade-whiteboard": 2
  },
  "pending": [],
  "log": [
-  {
-   "t": "11-09 18:40Z",
-   "msg": "review-decide: no safe automatic fix found"
-  },
-  {
-   "t": "11-09 18:40Z",
-   "msg": "sm-scripts: no safe automatic fix found"
-  },
   {
    "t": "11-09 20:01Z",
    "msg": "review-decide: no safe automatic fix found"
@@ -248,9 +240,17 @@
   {
    "t": "11-27 21:10Z",
    "msg": "doodles: API quota/rate limit: resets by itself (no change needed)"
+  },
+  {
+   "t": "11-27 23:11Z",
+   "msg": "shelfmade-whiteboard: no safe automatic fix found"
+  },
+  {
+   "t": "11-27 23:12Z",
+   "msg": "doodles: API quota/rate limit: resets by itself (no change needed)"
   }
  ],
- "at": "2026-11-27T21:10:49Z",
+ "at": "2026-11-27T23:12:00Z",
  "undone": [
   {
    "sha": "6f5aefb7c491fc98f6cf17d60587c8db64b7dd25"
