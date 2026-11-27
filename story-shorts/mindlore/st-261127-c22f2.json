@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261127-c22f2",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why You Can't Sleep When Tired 🤔",
+ "hook": "You stare at the ceiling when you try to sleep.",
+ "thumbnail_headline": "CAN'T SLEEP?",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You stare at the ceiling when you try to sleep. Your brain is actually reacting to an alarm, research shows. In 2015, the National Sleep Foundation reported 35 percent of adults struggle to fall asleep within 30 minutes. Why does your brain sound an alarm? Researchers found cortisol spikes at bedtime, triggering wakefulness. The result? The alarm is a stress hormone called cortisol. Cortisol rises even when you feel exhausted, delaying sleep. What hormone spikes even when you’re exhausted? It spikes 20 minutes after you lie down, as shown in lab tests. In the 1990s, researchers at the University of Michigan showed cortisol stays high for about 20 minutes after bedtime. That pattern wasn’t limited to one group; office workers and ancient farmers both showed the same cortisol surge. So why do we assume fatigue should guarantee sleep? Because fatigue lowers sleep pressure, but cortisol overrides it, delaying sleep onset. Another study by Matthew Walker in 2008 at UC Berkeley measured 20 percent higher sleep latency after caffeine, showing triggers can amplify the alarm. That's it. So next time you toss and turn, remember the hidden alarm, and you stare at the ceiling when you try to sleep."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "35 percent of adults struggle to fall asleep within 30 minutes",
+   "who": "National Sleep Foundation",
+   "year": "2015",
+   "place": "USA"
+  },
+  {
+   "claim": "cortisol spikes 20 minutes after lying down",
+   "who": "University of Michigan researchers",
+   "year": "1990s",
+   "place": "USA"
+  }
+ ],
+ "source_url": "",
+ "theme": "why you cannot fall asleep when you are tired",
+ "exp": ""
+}

@@ -690,5 +690,300 @@
    "tilt",
    "push"
   ]
+ },
+ {
+  "title": "Why You Can't Sleep When Tired 🤔",
+  "kinds": [
+   "before_after",
+   "brain",
+   "chart",
+   "checklist",
+   "clock",
+   "icon_burst",
+   "notif",
+   "quote",
+   "reaction",
+   "slots",
+   "title_slam",
+   "zoom"
+  ],
+  "tone": "a nature-documentary narrator watching humans as animals",
+  "end": "end on the funniest reaction beat, then cut instantly",
+  "pace": 2.95,
+  "pals": [
+   [
+    [
+     42,
+     50,
+     18
+    ],
+    [
+     14,
+     249,
+     76
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     59,
+     13,
+     69
+    ],
+    [
+     228,
+     25,
+     57
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     51,
+     29,
+     59
+    ],
+    [
+     224,
+     176,
+     60
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     246,
+     198,
+     251
+    ],
+    [
+     237,
+     55,
+     67
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ]
+  ],
+  "tr": [
+   "flash",
+   "iris",
+   "wipe",
+   "slide"
+  ],
+  "cam": [
+   "punch",
+   "tilt",
+   "drift"
+  ]
+ },
+ {
+  "title": "Why Stress Makes You Hungry 🍔",
+  "kinds": [
+   "checklist",
+   "clock",
+   "countdown",
+   "crowd",
+   "flow",
+   "meter",
+   "reaction",
+   "scale",
+   "search",
+   "slots",
+   "timeline"
+  ],
+  "tone": "a time traveler comparing ancient brains to today",
+  "end": "end on a direct question the viewer will want to answer in the comments",
+  "pace": 2.11,
+  "pals": [
+   [
+    [
+     60,
+     20,
+     36
+    ],
+    [
+     39,
+     191,
+     229
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     246,
+     251,
+     220
+    ],
+    [
+     93,
+     67,
+     247
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     73,
+     71,
+     35
+    ],
+    [
+     78,
+     241,
+     230
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     211,
+     232,
+     250
+    ],
+    [
+     149,
+     71,
+     229
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ]
+  ],
+  "tr": [
+   "wipe_v",
+   "flash"
+  ],
+  "cam": [
+   "push",
+   "drift"
+  ]
+ },
+ {
+  "title": "Why You Feel Watched Alone 👀",
+  "kinds": [
+   "before_after",
+   "brain",
+   "chart",
+   "chat",
+   "clock",
+   "flow",
+   "icon_burst",
+   "meter",
+   "reaction",
+   "scale",
+   "zoom"
+  ],
+  "tone": "a sports commentator calling a play-by-play of your body",
+  "end": "end on a twist that reverses the opening",
+  "pace": 2.57,
+  "pals": [
+   [
+    [
+     7,
+     7,
+     36
+    ],
+    [
+     122,
+     242,
+     44
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     198,
+     233,
+     201
+    ],
+    [
+     223,
+     55,
+     206
+    ],
+    [
+     22,
+     22,
+     34
+    ]
+   ],
+   [
+    [
+     41,
+     16,
+     38
+    ],
+    [
+     250,
+     49,
+     23
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    [
+     24,
+     50,
+     59
+    ],
+    [
+     217,
+     196,
+     61
+    ],
+    [
+     255,
+     255,
+     255
+    ]
+   ]
+  ],
+  "tr": [
+   "wipe_v",
+   "flash"
+  ],
+  "cam": [
+   "push",
+   "tilt"
+  ]
  }
 ]

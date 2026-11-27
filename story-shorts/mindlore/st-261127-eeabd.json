@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261127-eeabd",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why You Feel Watched Alone 👀",
+ "hook": "You sometimes feel like someone is watching you when you're alone.",
+ "thumbnail_headline": "WATCHED WHEN SOLO",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You sometimes feel like someone is watching you when you're alone. That uneasy sensation is actually a deep‑rooted alert system. In 2000, psychologist Richard Wiseman at the University of Hertfordshire recorded about 37 percent of people feeling watched while alone. The result? Your brain triggers hypervigilance, a survival instinct to spot predators. Other studies show the same pattern across cultures and ages. Researchers call it the vigilance instinct, rooted in early human hunter‑gatherer life. What triggers that feeling in modern life? Research shows that even subtle cues like a closed door can spark the same alarm. So why do we assume we are being observed? Because the brain lights up the amygdala, increasing alertness by about 20 percent. In 2009, University of Chicago researchers found pictures of eyes boosted helping behavior by about 30 percent. The result? Your mind treats imagined eyes like real gaze, keeping you on edge. Does this hypervigilance still help today? It keeps us safe, but can cause anxiety in quiet rooms. That's it. So next time you sit alone, notice the subtle tension and remember You sometimes feel"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "about 37 percent of people felt watched while alone",
+   "who": "Richard Wiseman",
+   "year": "2000",
+   "place": "University of Hertfordshire"
+  },
+  {
+   "claim": "pictures of eyes boosted helping behavior by about 30 percent",
+   "who": "University of Chicago researchers",
+   "year": "2009",
+   "place": "University of Chicago"
+  }
+ ],
+ "source_url": "",
+ "theme": "why you feel watched when alone",
+ "exp": ""
+}

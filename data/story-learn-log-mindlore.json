@@ -2258,6 +2258,89 @@
     "live"
    ],
    "props": []
+  },
+  {
+   "id": "st-261127-c22f2",
+   "look": "live-demo",
+   "title": "Why You Can't Sleep When Tired \ud83e\udd14",
+   "theme": "why you cannot fall asleep when you are tired",
+   "acts": [
+    "before_after",
+    "brain",
+    "chart",
+    "checklist",
+    "clock",
+    "icon_burst",
+    "notif",
+    "quote",
+    "reaction",
+    "title_slam",
+    "zoom"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261127-ca8aa",
+   "look": "live-demo",
+   "title": "Why Stress Makes You Hungry \ud83c\udf54",
+   "theme": "why you get hungry when you are stressed",
+   "acts": [
+    "checklist",
+    "countdown",
+    "crowd",
+    "flow",
+    "meter",
+    "reaction",
+    "scale",
+    "search",
+    "slots",
+    "timeline",
+    "title_slam"
+   ],
+   "bgs": [
+    "live"
+   ],
+   "props": []
+  },
+  {
+   "id": "st-261127-eeabd",
+   "look": "old",
+   "title": "Why You Feel Watched Alone \ud83d\udc40",
+   "theme": "why you feel watched when alone",
+   "acts": [
+    "explain",
+    "lookup",
+    "point",
+    "shrug",
+    "sit",
+    "think"
+   ],
+   "bgs": [
+    "brain",
+    "home",
+    "library",
+    "mountain",
+    "office",
+    "school",
+    "stage",
+    "study"
+   ],
+   "props": [
+    "book",
+    "brain",
+    "bulb",
+    "chart",
+    "clock",
+    "crowd",
+    "door",
+    "eye",
+    "heart",
+    "num",
+    "question"
+   ]
   }
  ]
 }

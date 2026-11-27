@@ -1,0 +1,33 @@
+{
+ "book_id": "st-261127-ca8aa",
+ "title": "",
+ "author": "",
+ "brand": "mindlore",
+ "story_short": true,
+ "public_title": "Why Stress Makes You Hungry 🍔",
+ "hook": "You feel a sudden need to eat when you are stressed.",
+ "thumbnail_headline": "STRESS TRIGGERS HUNGER",
+ "sections": [
+  {
+   "title": "Story",
+   "narration": "You feel a sudden need to eat when you are stressed. That hunger is actually a survival signal. In 2001, researchers at Yale found that stress hormones reduce physical activity. The result? Your body hoards energy. When you are worried, your brain signals your stomach to demand fuel. It assumes you need strength to fight or flee. That is why you crave carbs. A study in the journal Physiology and Behavior confirmed this link. They measured cortisol levels in students during exams. High stress meant higher calorie intake. So why do we think stress kills appetite? We do not. It redirects energy. Your brain prioritizes survival over focus. It wants you ready for danger. So next time you are stressed and hungry, remember. Your body is not weak. It is preparing you for a threat. You feel a sudden need to eat when you are stressed."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Stress hormones reduce physical activity, leading to energy hoarding.",
+   "who": "Yale researchers",
+   "year": "2001",
+   "place": "Yale University"
+  },
+  {
+   "claim": "High cortisol levels during exams correlate with higher calorie intake.",
+   "who": "Physiology and Behavior study authors",
+   "year": "2000s",
+   "place": "Academic institutions"
+  }
+ ],
+ "source_url": "",
+ "theme": "why you get hungry when you are stressed",
+ "exp": ""
+}
