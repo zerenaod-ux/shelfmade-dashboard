@@ -7775,5 +7775,395 @@
   "style": "v2",
   "format": "RATING GAME",
   "improv": false
+ },
+ {
+  "id": "plane-landing-rage-showdown",
+  "title": "Leo's Airport Air Fight",
+  "concept": "Leo goes on a dramatic villain monologue against people who clap when planes land",
+  "insight": "Overreacting to tiny everyday annoyances turns you into the main villain of your own airport",
+  "caption": "Why do people clap for pilots doing their actual job?",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Podcast desk with a tiny model airplane and a coffee mug. Leo slams his hand on the desk, eyes wide with pure fury.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "furious",
+      "beat": "snap",
+      "text": "Why do you clap at the ground?!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "You're so dramatic, mate. The pilot just landed safely without crashing us into a tree."
+     },
+     {
+      "who": "leo",
+      "feel": "dramatic",
+      "beat": "snap",
+      "text": "Dramatic is my god given talent."
+     }
+    ]
+   },
+   {
+    "scene": "Podcast desk where Mia sips from a cup of tea while pointing a finger at Leo.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "teasing",
+      "beat": "quick",
+      "text": "So you clapped for the plane?"
+     },
+     {
+      "who": "leo",
+      "feel": "indignant",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "No! I screamed at the sky until Gerald shook!"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "quick",
+      "text": "Screamed? That sounds like a total meltdown."
+     }
+    ]
+   },
+   {
+    "scene": "Podcast desk with Leo crossing his arms tightly, narrowing his eyes at Mia in absolute betrayal.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "offended",
+      "beat": "pause",
+      "text": "That is a mean insult, Mia."
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "It was just a joke, you absolute weirdo."
+     },
+     {
+      "who": "leo",
+      "feel": "intense",
+      "beat": "snap",
+      "text": "Well my nerves hate turbulence more than you do!"
+     }
+    ]
+   },
+   {
+    "scene": "Podcast desk with Mia leaning back in shock, holding her head in her hands while laughing silently.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "shocked",
+      "beat": "snap",
+      "text": "Okay, that is deeply unhinged behaviour."
+     },
+     {
+      "who": "leo",
+      "feel": "proud",
+      "listener_feel": "surprised",
+      "beat": "quick",
+      "text": "My scream had real power behind it."
+     },
+     {
+      "who": "mia",
+      "feel": "curious",
+      "beat": "quick",
+      "text": "So you literally fought the wind?"
+     }
+    ]
+   },
+   {
+    "scene": "Podcast desk where Leo gestures wildly at empty space, pretending to box the invisible air currents.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "fierce",
+      "beat": "snap",
+      "text": "Wind could not handle my pure rage."
+     },
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Okay, now you're just yelling at the air like a crazy person."
+     },
+     {
+      "who": "leo",
+      "feel": "dismissive",
+      "beat": "snap",
+      "text": "Air is a weak opponent anyway."
+     }
+    ]
+   },
+   {
+    "scene": "Podcast desk with Mia staring blankly at Leo's hands resting on the desk, raising one eyebrow.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "curious",
+      "beat": "quick",
+      "text": "Wait, did you punch the mist outside?"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "surprised",
+      "beat": "snap",
+      "text": "I don't have boxing gloves, Mia."
+     },
+     {
+      "who": "mia",
+      "feel": "shocked",
+      "beat": "snap",
+      "text": "Next time: pack snacks instead."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 7,
+   "hook": 8,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 8,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The script captures authentic, fast-paced banter with a solid opening hook and a clear, grounded punchline.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 8,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "plain",
+  "idea": "",
+  "style": "v2",
+  "format": "PRANK",
+  "improv": true
+ },
+ {
+  "id": "decoy-effect-popcorn-trap",
+  "title": "Medium popcorn is a scam \ud83c\udf7f #funny #animation",
+  "concept": "decoy effect (the medium popcorn trap)",
+  "insight": "People fall for the pricing trap because the medium exists only to make the large look like a deal.",
+  "caption": "Medium popcorn trap gets Leo every single time.",
+  "explain_shot": 3,
+  "shots": [
+   {
+    "scene": "Leo and Mia sit at the podcast desk leaning in close, a giant paper popcorn bucket between them with butter dripping over the edge, bodies angled toward each other.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Medium popcorn is a total scam, admit it."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "You have the longest memory ever, Leo."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "I bought two mediums last week."
+     }
+    ]
+   },
+   {
+    "scene": "Leo drops his head back against the backrest with raised eyebrows, while Mia points a finger at the popcorn bucket with a smirk on her face.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "Two mediums? You're an absolute monster."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "curious",
+      "beat": "quick",
+      "text": "I just like big popcorn, okay?"
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "skeptical",
+      "beat": "quick",
+      "text": "It\u2019s not the size, Leo, it\u2019s the math."
+     }
+    ]
+   },
+   {
+    "scene": "Leo throws his hands up in the air in frustration, knocking a stray popcorn kernel off the wooden desk while Mia watches calmly.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "What math?! The paper cone doesn't have a calculator inside!"
+     },
+     {
+      "who": "mia",
+      "feel": "warm",
+      "listener_feel": "surprised",
+      "beat": "quick",
+      "text": "It\u2019s the price-to-kernel ratio, genius!"
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "The corn doesn't know it's a trap!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia rests her chin in her hand with a wide smirk, looking directly at Leo who crosses his arms tightly across his chest.",
+    "focus": "mia",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "amused",
+      "beat": "snap",
+      "text": "It does now. Just shut up."
+     },
+     {
+      "who": "leo",
+      "feel": "excited",
+      "listener_feel": "surprised",
+      "beat": "quick",
+      "text": "Shut up, I\u2019m paying, that\u2019s my absolute right."
+     },
+     {
+      "who": "mia",
+      "feel": "skeptical",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "Your right doesn't cover my dignity."
+     }
+    ]
+   },
+   {
+    "scene": "Leo leans forward over the desk with worried eyes, pointing an accusing finger at the empty snack wrapper while Mia shakes her head slowly.",
+    "focus": "leo",
+    "lines": [
+     {
+      "who": "leo",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "My dignity cost me eight fifty!"
+     },
+     {
+      "who": "mia",
+      "feel": "surprised",
+      "listener_feel": "concerned",
+      "beat": "quick",
+      "text": "Eight fifty?! You practically bought a kidney."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "amused",
+      "beat": "quick",
+      "text": "A kidney?! That's just the small combo!"
+     }
+    ]
+   },
+   {
+    "scene": "Mia leans back and gestures broadly at the entire desk setup with a triumphant smirk, while Leo rubs his temples in defeat.",
+    "focus": "both",
+    "lines": [
+     {
+      "who": "mia",
+      "feel": "excited",
+      "beat": "snap",
+      "text": "You\u2019re not paying for snacks, you\u2019re paying for pure regret."
+     },
+     {
+      "who": "leo",
+      "feel": "defensive",
+      "listener_feel": "warm",
+      "beat": "quick",
+      "text": "Regret is free, you know that."
+     },
+     {
+      "who": "mia",
+      "feel": "amused",
+      "listener_feel": "warm",
+      "beat": "normal",
+      "text": "Free regret... I'd like to file a formal complaint now."
+     }
+    ]
+   }
+  ],
+  "dialogue_policy": "complete-conversation-v1",
+  "dialogue_review": {
+   "i": 0,
+   "funny": 7,
+   "hook": 8,
+   "spoken": 8,
+   "relatable": 7,
+   "ending": 7,
+   "complete": true,
+   "natural": true
+  },
+  "judge": {
+   "best": 0,
+   "why": "The dialogue has great comedic timing and captures a natural, funny argument between close friends about movie theater pricing.",
+   "scores": {
+    "i": 0,
+    "funny": 7,
+    "hook": 8,
+    "spoken": 8,
+    "relatable": 7,
+    "ending": 7,
+    "complete": true,
+    "natural": true
+   },
+   "n": 1
+  },
+  "variant": "complete",
+  "tstyle": "idea",
+  "idea": "decoy effect",
+  "style": "v2",
+  "format": "ARGUMENT",
+  "improv": true
  }
 ]
